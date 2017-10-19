@@ -52,8 +52,17 @@ extract_sdks() {
 	echo "Target SDK: "$targetSDK	
 }
 
+extract_permissions() {
+	result=`aapt d permissions $1`
+	result_array=($result)
+
+	`printf "%s %s\n" "${result_array[@]}" > extracted-permissions.txt`
+
+}
+
 if [[ $APK == *".apk"* ]]; then
 	extract_sdks $APK
+	extract_permissions $APK
 	if [[ $OUTPUT != "" ]]; then
 		echo "`extract_sdks $APK`" > $OUTPUT
 	fi
