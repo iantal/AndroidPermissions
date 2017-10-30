@@ -6,7 +6,7 @@ while [[ $# -gt 0 ]]
 do
 key="$1"
 
-case $key in
+case ${key} in
     -h|--help)
 	HELP="./extract-sdk -apk <file.apk> [-o| --out] <file.out>"
 	shift
@@ -38,7 +38,7 @@ RES=""
 
 extract_sdks() {
 	result=`aapt list -a $1 | grep SdkVersion`
-	stringarray=($result)
+	stringarray=(${result})
 
 	min=${stringarray[2]}
 	target=${stringarray[5]}
@@ -54,17 +54,17 @@ extract_sdks() {
 
 extract_permissions() {
 	result=`aapt d permissions $1`
-	result_array=($result)
+	result_array=(${result})
 
 	`printf "%s %s\n" "${result_array[@]}" > extracted-permissions.txt`
 
 }
 
-if [[ $APK == *".apk"* ]]; then
-	extract_sdks $APK
-	extract_permissions $APK
-	if [[ $OUTPUT != "" ]]; then
-		echo "`extract_sdks $APK`" > $OUTPUT
+if [[ ${APK} == *".apk"* ]]; then
+	extract_sdks ${APK}
+	extract_permissions ${APK}
+	if [[ ${OUTPUT} != "" ]]; then
+		echo "`extract_sdks $APK`" > ${OUTPUT}
 	fi
 else
 	echo "You must provide a valid .apk file"
