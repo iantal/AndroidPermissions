@@ -12,8 +12,7 @@ function check(){
 
     if [ "$grep" -eq "1" ]
     then
-#        echo "-->   $1  is installed"
-        printf "* %10s is installed\n" $1
+        echo "[+] $1" $'\t' "is installed"
     else
         missing_tools+=($1)
     fi
