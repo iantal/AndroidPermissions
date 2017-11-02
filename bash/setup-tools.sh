@@ -4,7 +4,7 @@ RED='\033[1;31m'
 GREEN='\033[1;32m'
 NC='\033[0m'
 
-tools_to_install=("adb" "aapt" "apktool")
+tools_to_install=("adb"  "apktool")
 missing_tools=()
 
 function check(){
@@ -31,3 +31,4 @@ echo "--------------------------"
 for i in ${missing_tools[@]}; do
     install ${i}
 done
+
