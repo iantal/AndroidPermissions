@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_action_save" android:id="@id/save" android:title="@string/save" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_action_discard" android:id="@id/delete" android:title="@string/delete" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/collections_go_to_today" android:id="@id/calendar" android:title="@string/select_date_title" app:showAsAction="ifRoom" />
+</menu>

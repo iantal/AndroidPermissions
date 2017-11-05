@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:scrollbarStyle="outsideOverlay" android:gravity="center|top" android:id="@id/currency_rates_list" android:paddingLeft="@dimen/half_margin" android:paddingTop="@dimen/half_margin" android:paddingRight="@dimen/half_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/transaction_list_state_drawable" android:horizontalSpacing="@dimen/single_margin" android:verticalSpacing="@dimen/single_margin" android:stretchMode="columnWidth" android:divider="@android:color/transparent" android:dividerHeight="10.0sp" android:fadeScrollbars="true" />
+    <ViewStub android:gravity="center|top" android:id="@id/empty" android:layout="@layout/empty_exchange_rate_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

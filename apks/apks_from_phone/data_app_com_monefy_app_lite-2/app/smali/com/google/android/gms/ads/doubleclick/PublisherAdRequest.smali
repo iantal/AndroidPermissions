@@ -1,0 +1,27 @@
+.class public final Lcom/google/android/gms/ads/doubleclick/PublisherAdRequest;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/android/gms/ads/doubleclick/PublisherAdRequest$1;,
+        Lcom/google/android/gms/ads/doubleclick/PublisherAdRequest$Builder;
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:Ljava/lang/String;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    sget-object v0, Lcom/google/android/gms/ads/internal/client/zzy;->a:Ljava/lang/String;
+
+    sput-object v0, Lcom/google/android/gms/ads/doubleclick/PublisherAdRequest;->a:Ljava/lang/String;
+
+    return-void
+.end method

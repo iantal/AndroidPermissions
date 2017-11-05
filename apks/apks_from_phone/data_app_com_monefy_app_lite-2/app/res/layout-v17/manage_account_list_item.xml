@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/relativeLayoutManageCategoriesListItem" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/imageViewCategoryImage" android:layout_width="@dimen/list_icon_size" android:layout_height="@dimen/list_icon_size" android:layout_marginLeft="@dimen/single_margin" android:layout_marginTop="@dimen/list_item_icon_margin" android:layout_marginRight="@dimen/half_margin" android:layout_marginBottom="@dimen/list_item_icon_margin" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_icon_margin" android:layout_marginBottom="@dimen/list_item_icon_margin" android:layout_toRightOf="@id/imageViewCategoryImage" android:layout_centerInParent="true" android:layout_toEndOf="@id/imageViewCategoryImage">
+        <com.monefy.widget.RamblaTextView android:textSize="@dimen/medium_font_size" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/textViewName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Category name" android:lines="1" android:shadowColor="#40000000" android:shadowDx="-1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+        <com.monefy.widget.RamblaTextView android:textSize="@dimen/small_font_size" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/textViewAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+    </LinearLayout>
+</RelativeLayout>

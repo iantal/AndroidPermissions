@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="decimal_separator_spinner_items">
+        <item>"Decimal point '.'"</item>
+        <item>"Decimal comma ','"</item>
+    </string-array>
+    <string-array name="delimiter_character_spinner_items">
+        <item>"Comma ','"</item>
+        <item>"Semicolon ';'"</item>
+    </string-array>
+    <string-array name="lock_timeout_titles">
+        <item>立刻</item>
+        <item>1 分钟后</item>
+        <item>2 分钟后</item>
+        <item>15 分钟后</item>
+        <item>1 小时后</item>
+    </string-array>
+    <string-array name="security_questions">
+        <item>你最喜欢的乐队是哪支？</item>
+        <item>你小时候最好的玩伴是谁？</item>
+        <item>你第一辆车的型号是什么？</item>
+        <item>你初吻是和谁？</item>
+        <item>你最喜欢的水果是什么？</item>
+        <item>你第一只宠物的名字是什么？</item>
+    </string-array>
+</resources>

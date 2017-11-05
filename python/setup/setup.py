@@ -13,6 +13,7 @@ _DIRECTORY = os.getcwd()
 # URLS for libraries
 dex2jar = "https://sourceforge.net/projects/dex2jar/files/dex2jar-2.0.zip/download"
 apktool = "https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.3.0.jar"
+jd_core = "https://github.com/nviennot/jd-core-java.git"
 
 
 def create_dir(name):
@@ -64,3 +65,10 @@ if not is_directory_created("dex2jar"):
 
 if not is_directory_created("apktool"):
     download("apktool", apktool)
+
+if not is_directory_created("jd-code-java"):
+    os.chdir('../libs')
+    subprocess.check_call(['git', 'clone', jd_core])
+    os.chdir("jd-core-java")
+    subprocess.check_call(['./gradlew', 'assemble'])
+

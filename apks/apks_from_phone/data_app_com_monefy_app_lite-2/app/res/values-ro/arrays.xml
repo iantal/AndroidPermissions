@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="decimal_separator_spinner_items">
+        <item>"Punct zecimal '.'"</item>
+        <item>"Virgulă zecimală ','"</item>
+    </string-array>
+    <string-array name="delimiter_character_spinner_items">
+        <item>"Virgulă ','"</item>
+        <item>"Punct și virgulă ';'"</item>
+    </string-array>
+    <string-array name="lock_timeout_titles">
+        <item>Imediat</item>
+        <item>După 1 minut</item>
+        <item>După 2 minute</item>
+        <item>După 15 minute</item>
+        <item>După 1 oră</item>
+    </string-array>
+    <string-array name="security_questions">
+        <item>Care este trupa dumneavoastră favorită?</item>
+        <item>Care este numele celui mai bun prieten din copilărie?</item>
+        <item>Care a fost modelul primei mașini a dumneavoastră?</item>
+        <item>Care este numele primei persoane pe care ați sărutat-o?</item>
+        <item>Care este fructul dumneavoastră preferat?</item>
+        <item>Care este numele primului animal de companie al dumneavoastră?</item>
+    </string-array>
+</resources>

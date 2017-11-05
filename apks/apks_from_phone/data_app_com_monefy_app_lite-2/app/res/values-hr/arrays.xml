@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="decimal_separator_spinner_items">
+        <item>"Decimalna točkat '.'"</item>
+        <item>"Decimalni zarez ','"</item>
+    </string-array>
+    <string-array name="delimiter_character_spinner_items">
+        <item>"Zarez ','"</item>
+        <item>"Tocka zarez ';'"</item>
+    </string-array>
+    <string-array name="lock_timeout_titles">
+        <item>Odmah</item>
+        <item>Nakon 1 minute</item>
+        <item>Nakon 2 minute</item>
+        <item>Nakon 15 minuta</item>
+        <item>Nakon 1 sat</item>
+    </string-array>
+    <string-array name="security_questions">
+        <item>Koji je vaš omiljeni glazbeni sastav?</item>
+        <item>Koji je naziv vašeg najboljeg prijatelja iz djetinjstva?</item>
+        <item>Koji je model vašeg prvog auta?</item>
+        <item>Koje je ime osobe koja vas poljubila prvi put?</item>
+        <item>Koje je vaše omiljeno voće?</item>
+        <item>Koje je ime vašeg prvog ljubimca?</item>
+    </string-array>
+</resources>

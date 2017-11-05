@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?android:activatedBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/imageViewCategoryType" android:padding="@dimen/half_margin" android:layout_width="@dimen/pie_chart_icon_size" android:layout_height="@dimen/pie_chart_icon_size" android:layout_marginLeft="33.0dip" android:scaleType="centerInside" />
+    <LinearLayout android:gravity="center|left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+        <com.monefy.widget.MoneyTextView android:textSize="@dimen/medium_font_size" android:textColor="#ff708e86" android:id="@id/textViewTransactionAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <com.monefy.widget.MoneyTextView android:textSize="@dimen/small_font_size" android:textColor="#ff868686" android:id="@id/textViewTransactionAmountConverted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <com.monefy.widget.RamblaTextView android:textSize="@dimen/small_font_size" android:textColor="#ff495854" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/textViewTransactionNote" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/half_margin" android:layout_marginRight="8.0dip" android:lines="3" android:layout_weight="1.0" />
+    <com.monefy.widget.RamblaTextView android:textSize="@dimen/medium_font_size" android:textColor="#ff708e86" android:layout_gravity="center_vertical" android:id="@id/textViewTransactionDate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

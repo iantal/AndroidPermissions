@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/activity_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <com.monefy.widget.RamblaTextView android:textSize="@dimen/large_font_size" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/title" android:background="@color/action_bar_background" android:padding="@dimen/half_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Sorry, the error happened" android:shadowColor="#ff777777" android:shadowDx="-1.0" android:shadowDy="1.0" android:shadowRadius="1.5" android:layout_below="@id/toolbar" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/delimiter" android:layout_below="@id/title">
+        <TextView android:textSize="16.0sp" android:textColor="#ff205d2e" android:layout_gravity="center_horizontal" android:id="@id/error_description" android:padding="@dimen/half_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:layout_above="@id/delimiter" android:layout_centerHorizontal="true" />
+    </ScrollView>
+    <View android:id="@id/delimiter" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/send_report" />
+    <Button android:textColor="#ff205d2e" android:layout_gravity="center_horizontal" android:id="@id/send_report" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Send report" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:textAllCaps="false" style="?android:attr/buttonBarButtonStyle" />
+</RelativeLayout>

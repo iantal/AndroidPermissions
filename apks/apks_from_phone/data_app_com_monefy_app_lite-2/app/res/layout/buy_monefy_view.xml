@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/action_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="32.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/monefyProTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/buy_monefy_pro_header" />
+        <Button android:textAppearance="@style/TextAppearance.AppCompat" android:textSize="16.0sp" android:layout_gravity="center" android:id="@id/buttonGetOnGooglePlay" android:background="@drawable/error_amount_background" android:paddingLeft="32.0dip" android:paddingTop="4.0dip" android:paddingRight="32.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/buy_monefy_pro_button_title" android:lineSpacingExtra="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/allowAdsSection" android:background="@color/action_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/buttonAllowAds" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_marginBottom="16.0dip" android:text="@string/allow_showing_adds_title" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/listTitleSection" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center" android:background="#ffaaaaaa" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginLeft="32.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/large_font_size" android:textColor="#ffaaaaaa" android:gravity="center" android:layout_gravity="center" android:id="@id/listTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="Pro Features" />
+        <View android:layout_gravity="center" android:background="#ffaaaaaa" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginRight="32.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ListView android:id="@id/featureList" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/feature_list_divider" android:dividerHeight="1.0dip" />
+</LinearLayout>

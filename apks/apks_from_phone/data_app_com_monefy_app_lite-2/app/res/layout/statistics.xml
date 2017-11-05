@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.monefy.widget.SlidingUpPanelLayout android:id="@id/sliding_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.monefy.chart.PieGraph android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/piegraph" android:paddingBottom="20.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/half_margin" android:layout_marginRight="@dimen/half_margin" android:layout_weight="1.0" android:layout_centerInParent="true" app:doughnutThickness="@dimen/pie_chart_doughnut_thickness" app:iconSize="@dimen/pie_chart_icon_size" app:iconTitleFontSize="@dimen/small_font_size" app:titleFontSize="@dimen/medium_font_size" app:doughnutMargin="@dimen/pie_chart_doughnut_margin" app:innerMargin="@dimen/pie_chart_inner_margin" />
+                <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/contentLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/balance_button_layout" />
+            <FrameLayout android:id="@id/contentLayoutFragment" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ExpandableListView android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="outsideOverlay" android:id="@id/expandableListViewTransactions" android:paddingLeft="@dimen/single_margin" android:paddingRight="@dimen/single_margin" android:paddingBottom="@dimen/half_margin" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/transaction_list_state_drawable" android:groupIndicator="@drawable/group_indicator" android:childDivider="@drawable/transaction_child_items_divider" android:divider="@drawable/transaction_items_divider" android:fadeScrollbars="false" />
+                <ViewStub android:layout_gravity="center" android:id="@id/empty" android:layout="@layout/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.monefy.widget.SlidingUpPanelLayout>
+</LinearLayout>

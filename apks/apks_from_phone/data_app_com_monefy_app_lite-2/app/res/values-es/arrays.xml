@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="decimal_separator_spinner_items">
+        <item>"Punto decimal '.'"</item>
+        <item>"Coma decimal ','"</item>
+    </string-array>
+    <string-array name="delimiter_character_spinner_items">
+        <item>"Coma ','"</item>
+        <item>"Punto y coma ';'"</item>
+    </string-array>
+    <string-array name="lock_timeout_titles">
+        <item>De inmediato</item>
+        <item>Después de 1 minuto</item>
+        <item>Después de 2 minutos</item>
+        <item>Después de 15 minutos</item>
+        <item>Después de 1 hora</item>
+    </string-array>
+    <string-array name="security_questions">
+        <item>¿Cual es tu grupo de música favorito?</item>
+        <item>¿Nombre de tu mejor amigo?</item>
+        <item>¿Modelo de tu primer coche?</item>
+        <item>¿Nombre de la persona que besaste primero?</item>
+        <item>¿Tu fruta favorita?</item>
+        <item>¿Nombre de tu primera mascota?</item>
+    </string-array>
+</resources>

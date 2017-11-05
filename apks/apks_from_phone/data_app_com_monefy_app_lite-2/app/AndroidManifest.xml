@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:backupAgent="PreferencesBackupAgent" android:sharedUserId="com.monefy.app.sharedid" package="com.monefy.app.lite" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <application android:allowBackup="true" android:backupAgent="com.monefy.heplers.PreferencesBackupAgent" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.monefy.application.ClearCashApplication_" android:supportsRtl="false" android:theme="@style/MonefyAppTheme.NoActionBar">
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIxP_rC2Znl6u0IbJqOqtNdBOcrLF1uSjjrwpHqA"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <activity android:configChanges="locale|layoutDirection" android:launchMode="singleTop" android:name="com.monefy.activities.main.MainActivity_" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity android:configChanges="locale|layoutDirection" android:name="com.monefy.activities.transaction.NewTransactionActivity_" android:parentActivityName="com.monefy.activities.main.MainActivity_" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.monefy.activities.main.MainActivity_"/>
+        </activity>
+        <activity android:configChanges="locale|layoutDirection" android:name="com.monefy.activities.transfer.ManageTransferActivity_" android:parentActivityName="com.monefy.activities.main.MainActivity_" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.monefy.activities.main.MainActivity_"/>
+        </activity>
+        <activity android:configChanges="locale|layoutDirection" android:name="com.monefy.activities.password_settings.PasswordSettingsActivity_" android:parentActivityName="com.monefy.activities.main.MainActivity_" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.monefy.activities.main.MainActivity_"/>
+        </activity>
+        <activity android:configChanges="locale|layoutDirection" android:name="com.monefy.activities.password_settings.ChangeSecurityQuestionActivity_" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="locale|layoutDirection" android:name="com.monefy.activities.password_settings.NewPasswordActivity_" android:noHistory="true" android:parentActivityName="com.monefy.activities.password_settings.PasswordSettingsActivity_" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.monefy.activities.password_settings.PasswordSettingsActivity_"/>
+        </activity>
+        <intent-filter>
+            <action android:name="android.intent.action.SEND"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <data android:mimeType="text/csv"/>
+        </intent-filter>
+        <activity android:configChanges="locale|layoutDirection" android:name="com.monefy.activities.password_settings.EnterPasswordActivity_" android:noHistory="true" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|layoutDirection" android:label="Edit category" android:name="com.monefy.activities.category.EditCategoryActivity_" android:parentActivityName="com.monefy.activities.main.MainActivity_" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.monefy.activities.main.MainActivity_"/>
+        </activity>
+        <activity android:configChanges="locale|layoutDirection" android:label="Edit account" android:name="com.monefy.activities.account.EditAccountActivity_" android:parentActivityName="com.monefy.activities.main.MainActivity_" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.monefy.activities.main.MainActivity_"/>
+        </activity>
+        <activity android:configChanges="locale|layoutDirection" android:label="Edit currency" android:name="com.monefy.activities.currency.CurrencyActivity_" android:parentActivityName="com.monefy.activities.main.MainActivity_" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.monefy.activities.main.MainActivity_"/>
+        </activity>
+        <activity android:configChanges="locale|layoutDirection" android:label="Add category" android:name="com.monefy.activities.category.AddCategoryActivity_" android:parentActivityName="com.monefy.activities.main.MainActivity_" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.monefy.activities.main.MainActivity_"/>
+        </activity>
+        <activity android:configChanges="locale|layoutDirection" android:label="Add account" android:name="com.monefy.activities.account.AddAccountActivity_" android:parentActivityName="com.monefy.activities.main.MainActivity_" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.monefy.activities.main.MainActivity_"/>
+        </activity>
+        <activity android:configChanges="locale|layoutDirection" android:label="Application error" android:name="com.monefy.activities.crash.CrashActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="locale|layoutDirection" android:label="Buy Monefy Pro" android:name="com.monefy.activities.buy.BuyMonefyActivity_" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="locale|layoutDirection" android:name="com.monefy.activities.widget.WidgetSettingsActivity_" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|layoutDirection" android:name="com.monefy.activities.widget.CollectionWidgetSettingsActivity_" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboard|orientation" android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="com.dropbox.core.android.AuthActivity">
+            <intent-filter>
+                <data android:scheme="@string/DROPBOX_DB_SCHEME"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.monefy.activities.widget.WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info"/>
+        </receiver>
+        <receiver android:label="Monefy - categories collection" android:name="com.monefy.activities.widget.CollectionWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_collection"/>
+        </receiver>
+        <service android:exported="false" android:name="com.monefy.activities.widget.CategoriesWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+    </application>
+</manifest>

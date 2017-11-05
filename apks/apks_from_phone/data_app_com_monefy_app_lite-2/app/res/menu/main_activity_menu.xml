@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/transfer_white" android:id="@id/transfer_menu_item" android:title="@string/transfer" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_menu_overflow" android:id="@id/overflow" android:title="@string/settings_title" app:showAsAction="always" />
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/double_margin" android:insetRight="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="line">
+        <stroke android:color="#ffd6eae5" />
+        <size android:height="2.0dip" />
+    </shape>
+</inset>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/shortcuts_isons_expense" android:enabled="true">
+        <intent android:launchMode="singleInstance" android:targetPackage="com.monefy.app.lite" android:action="android.intent.action.CREATE" android:targetClass="com.monefy.activities.transaction.NewTransactionActivity_">
+            <extra android:name="Categories type" android:value="Expense" />
+            <extra android:name="STARTED_FROM_WIDGET" android:value="true" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@drawable/shortcuts_isons_income" android:enabled="true" android:launchMode="singleInstance">
+        <intent android:targetPackage="com.monefy.app.lite" android:action="android.intent.action.CREATE" android:targetClass="com.monefy.activities.transaction.NewTransactionActivity_">
+            <extra android:name="Categories type" android:value="Income" />
+            <extra android:name="STARTED_FROM_WIDGET" android:value="true" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@drawable/shortcuts_isons_transfer" android:enabled="true" android:launchMode="singleInstance">
+        <intent android:targetPackage="com.monefy.app.lite" android:action="android.intent.action.CREATE" android:targetClass="com.monefy.activities.transfer.ManageTransferActivity_">
+            <extra android:name="STARTED_FROM_WIDGET" android:value="true" />
+        </intent>
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayoutKeyboard" android:paddingLeft="@dimen/keyboard_button_margin" android:paddingRight="@dimen/keyboard_button_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/keyboard_button_margin" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboard1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="1" android:layout_weight="1.0" android:onClick="numberButtonKeyboardClicked" style="@style/TopCalculatorKeyboardButton" />
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboard2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="2" android:layout_weight="1.0" android:onClick="numberButtonKeyboardClicked" style="@style/TopCalculatorKeyboardButton" />
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboard3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="3" android:layout_weight="1.0" android:onClick="numberButtonKeyboardClicked" style="@style/TopCalculatorKeyboardButton" />
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboardPlus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="+" android:layout_weight="1.0" style="@style/TopCalculatorOperationKeyboardButton" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboard4" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="4" android:layout_weight="1.0" android:onClick="numberButtonKeyboardClicked" style="@style/CalculatorKeyboardButton" />
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboard5" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="5" android:layout_weight="1.0" android:onClick="numberButtonKeyboardClicked" style="@style/CalculatorKeyboardButton" />
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboard6" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="6" android:layout_weight="1.0" android:onClick="numberButtonKeyboardClicked" style="@style/CalculatorKeyboardButton" />
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboardMinus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="-" android:layout_weight="1.0" style="@style/CalculatorOperationKeyboardButton" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboard7" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="7" android:layout_weight="1.0" android:onClick="numberButtonKeyboardClicked" style="@style/CalculatorKeyboardButton" />
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboard8" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="8" android:layout_weight="1.0" android:onClick="numberButtonKeyboardClicked" style="@style/CalculatorKeyboardButton" />
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboard9" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="9" android:layout_weight="1.0" android:onClick="numberButtonKeyboardClicked" style="@style/CalculatorKeyboardButton" />
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboardMultiply" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="×" android:layout_weight="1.0" style="@style/CalculatorOperationKeyboardButton" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <Button android:id="@id/buttonKeyboardDot" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="." android:layout_weight="1.0" style="@style/CalculatorKeyboardButton" />
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboard0" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="0" android:layout_weight="1.0" android:onClick="numberButtonKeyboardClicked" style="@style/CalculatorKeyboardButton" />
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboardEquals" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="=" android:layout_weight="1.0" style="@style/CalculatorKeyboardButton" />
+        <com.monefy.widget.RamblaButton android:id="@id/buttonKeyboardDevide" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="÷" android:layout_weight="1.0" style="@style/CalculatorOperationKeyboardButton" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="@dimen/keyboard_button_margin" android:layout_marginBottom="@dimen/keyboard_button_margin" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/relativeLayoutChooseCategory" android:background="@drawable/calculator_keyboard_top_operation_button_state" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.monefy.widget.RamblaTextView android:textSize="@dimen/nt_buttons_text_size" android:textColor="@color/keyboard_button_color" android:gravity="center" android:id="@id/textViewChooseCategory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/choose_category" android:shadowColor="#40000000" android:shadowDx="1.0" android:shadowDy="0.0" android:shadowRadius="1.0" android:layout_centerInParent="true" android:textAllCaps="false" />
+            <ImageView android:id="@id/imageViewKeyboardCategoryImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/half_margin" android:layout_marginRight="@dimen/half_margin" android:layout_marginBottom="@dimen/half_margin" android:scaleType="fitEnd" android:layout_toLeftOf="@id/textViewChooseCategory" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

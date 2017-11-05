@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_light" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/half_margin" />
+    <com.monefy.widget.ExpandablePanel android:orientation="vertical" android:id="@id/categories_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" app:handle="@id/categories_button" app:content="@id/category_list" app:animationDuration="250">
+        <LinearLayout android:id="@id/categories_button" style="@style/menu_button_background_style">
+            <ImageButton android:id="@id/categories_imagebutton" android:src="@drawable/categories_button_state" style="@style/menu_image_button_style" />
+            <com.monefy.widget.RamblaTextView android:id="@id/categories_textview" android:text="@string/manage_categories" style="@style/menu_title_style" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/categories_bottom_image" android:layout_width="fill_parent" android:layout_height="@dimen/single_margin" android:layout_marginTop="@dimen/half_margin" android:src="@null" android:scaleType="fitXY" />
+        </LinearLayout>
+        <ListView android:id="@id/category_list" android:background="@color/action_bar_background" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="1.0px" android:listSelector="@drawable/category_item_selector" android:divider="@null" android:dividerHeight="0.0dip" />
+    </com.monefy.widget.ExpandablePanel>
+    <com.monefy.widget.ExpandablePanel android:orientation="vertical" android:id="@id/accounts_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" app:handle="@id/accounts_button" app:content="@id/accounts_list" app:animationDuration="250">
+        <LinearLayout android:id="@id/accounts_button" style="@style/menu_button_background_style">
+            <ImageButton android:id="@id/accounts_imagebutton" android:src="@drawable/accounts_button_state" style="@style/menu_image_button_style" />
+            <com.monefy.widget.RamblaTextView android:id="@id/accounts_textview" android:text="@string/manage_accounts" style="@style/menu_title_style" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/accounts_bottom_image" android:layout_width="fill_parent" android:layout_height="@dimen/single_margin" android:layout_marginTop="@dimen/half_margin" android:src="@null" android:scaleType="fitXY" />
+        </LinearLayout>
+        <ListView android:id="@id/accounts_list" android:background="@color/action_bar_background" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="1.0px" android:listSelector="@drawable/category_item_selector" android:divider="@null" android:dividerHeight="0.0dip" android:contentDescription="List of accounts" />
+    </com.monefy.widget.ExpandablePanel>
+    <com.monefy.widget.ExpandablePanel android:orientation="vertical" android:id="@id/currency_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" app:handle="@id/currency_button" app:content="@id/currency_list" app:animationDuration="250">
+        <LinearLayout android:id="@id/currency_button" style="@style/menu_button_background_style">
+            <ImageButton android:id="@id/currency_imagebutton" app:srcCompat="@drawable/currency_button_state" style="@style/menu_image_button_style" />
+            <com.monefy.widget.RamblaTextView android:id="@id/currency_textview" android:text="@string/currencies" style="@style/menu_title_style" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/currency_bottom_image" android:layout_width="fill_parent" android:layout_height="@dimen/single_margin" android:layout_marginTop="@dimen/half_margin" android:src="@null" android:scaleType="fitXY" />
+        </LinearLayout>
+        <ListView android:id="@id/currency_list" android:background="@color/action_bar_background" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="1.0px" android:listSelector="@drawable/category_item_selector" android:divider="@null" android:dividerHeight="0.0dip" android:contentDescription="List of currencies" />
+    </com.monefy.widget.ExpandablePanel>
+    <com.monefy.widget.ExpandablePanel android:orientation="vertical" android:id="@id/settings_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" app:handle="@id/settings_button" app:content="@id/settings_list" app:animationDuration="250">
+        <LinearLayout android:id="@id/settings_button" style="@style/menu_button_background_style">
+            <ImageButton android:id="@id/settings_imagebutton" android:src="@drawable/settings_button_state" style="@style/menu_image_button_style" />
+            <com.monefy.widget.RamblaTextView android:id="@id/settings_textview" android:text="@string/settings" style="@style/menu_title_style" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/settings_bottom_image" android:layout_width="fill_parent" android:layout_height="@dimen/single_margin" android:layout_marginTop="@dimen/half_margin" android:src="@null" android:scaleType="fitXY" />
+        </LinearLayout>
+        <include layout="@layout/menu_settings_layout" />
+    </com.monefy.widget.ExpandablePanel>
+</LinearLayout>

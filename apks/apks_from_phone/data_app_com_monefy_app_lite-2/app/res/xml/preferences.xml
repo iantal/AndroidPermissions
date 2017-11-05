@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Budget">
+        <CheckBoxPreference android:title="Budget mode enabled" android:key="budget_checkbox_preference" />
+        <EditTextPreference android:numeric="decimal" android:title="Monthly budget amount" android:key="budget_edittext_preference" android:summary="5000.0" android:dialogTitle="Set monthly budget amount" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Synchronization">
+        <CheckBoxPreference android:title="Sync your data with Dropbox" android:key="sync_dropbox_preference" />
+    </PreferenceCategory>
+</PreferenceScreen>

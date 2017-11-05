@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="decimal_separator_spinner_items">
+        <item>"Decimal point '.'"</item>
+        <item>"Decimal comma ','"</item>
+    </string-array>
+    <string-array name="delimiter_character_spinner_items">
+        <item>"Comma ','"</item>
+        <item>"Semicolon ';'"</item>
+    </string-array>
+    <string-array name="lock_timeout_titles">
+        <item>Imediatamente</item>
+        <item>Após 1 minuto</item>
+        <item>Após 2 minutos</item>
+        <item>Após 15 minutos</item>
+        <item>Após 1 hora</item>
+    </string-array>
+    <string-array name="security_questions">
+        <item>Qual sua banda favorita?</item>
+        <item>Qual o nome do seu melhor amigo de infância?</item>
+        <item>Qual é o modelo do seu primeiro carro?</item>
+        <item>Qual é o nome da pessoa que você beijou pela primeira vez?</item>
+        <item>Qual é a sua fruta favorita?</item>
+        <item>Qual é o nome do seu primeiro animal de estimação?</item>
+    </string-array>
+</resources>

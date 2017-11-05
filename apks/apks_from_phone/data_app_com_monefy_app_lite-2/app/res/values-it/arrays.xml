@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="decimal_separator_spinner_items">
+        <item>"Punto decimale '.'"</item>
+        <item>"Virgola decimale ','"</item>
+    </string-array>
+    <string-array name="delimiter_character_spinner_items">
+        <item>"Virgola ','"</item>
+        <item>"Punto e virgola ';'"</item>
+    </string-array>
+    <string-array name="lock_timeout_titles">
+        <item>Immediatamente</item>
+        <item>Dopo 1 minuto</item>
+        <item>Dopo 2 minuti</item>
+        <item>Dopo 15 minuti</item>
+        <item>Dopo 1 ora</item>
+    </string-array>
+    <string-array name="security_questions">
+        <item>"Qual'è il tuo gruppo musicale preferito?"</item>
+        <item>"Qual'è il nome del tuo migliore amico d'infanzia?"</item>
+        <item>"Qual'era il modello della tua prima auto?"</item>
+        <item>"Qual'è il nome della persona che hai baciato per la prima volta?"</item>
+        <item>"Qual'è il tuo frutto preferito?"</item>
+        <item>"Qual'è il nome del tuo primo animale domestico?"</item>
+    </string-array>
+</resources>

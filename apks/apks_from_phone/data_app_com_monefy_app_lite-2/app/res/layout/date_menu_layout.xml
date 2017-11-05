@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_light" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:id="@id/date_period_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Spinner android:id="@id/account_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/account_spinner_style" />
+        <com.monefy.widget.RamblaRadioButton android:id="@id/day_period_button" android:text="@string/day" style="@style/meny_period_selection_style" />
+        <com.monefy.widget.RamblaRadioButton android:id="@id/week_period_button" android:text="@string/week" style="@style/meny_period_selection_style" />
+        <com.monefy.widget.RamblaRadioButton android:id="@id/month_period_button" android:text="@string/month" style="@style/meny_period_selection_style" />
+        <com.monefy.widget.RamblaRadioButton android:id="@id/year_period_button" android:checked="false" android:text="@string/year" style="@style/meny_period_selection_style" />
+    </RadioGroup>
+    <LinearLayout android:id="@id/show_datepicker_button" android:paddingBottom="@dimen/half_margin" android:layout_marginLeft="@dimen/half_margin" android:layout_marginRight="@dimen/half_margin" style="@style/menu_button_background_style">
+        <ImageButton android:id="@id/show_datepicker_imagebutton" android:src="@drawable/date_button_state" style="@style/menu_image_button_style" />
+        <com.monefy.widget.RamblaTextView android:id="@id/show_datepicker_textview" android:text="@string/choose_date" style="@style/menu_title_style" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="decimal_separator_spinner_items">
+        <item>"Десятичная точка '.'"</item>
+        <item>"Десятичная запятая ','"</item>
+    </string-array>
+    <string-array name="delimiter_character_spinner_items">
+        <item>"Запятая ','"</item>
+        <item>"Точка с запятой ';'"</item>
+    </string-array>
+    <string-array name="lock_timeout_titles">
+        <item>Сразу</item>
+        <item>Через 1 минуту</item>
+        <item>Через 2 минуты</item>
+        <item>Через 15 минут</item>
+        <item>Через 1 час</item>
+    </string-array>
+    <string-array name="security_questions">
+        <item>Ваш любимый музыкальный коллектив?</item>
+        <item>Имя Вашего лучшего друга детства?</item>
+        <item>Модель Вашей первой машины?</item>
+        <item>Имя человека, которого Вы впервые поцеловали?</item>
+        <item>Ваш любимый фрукт?</item>
+        <item>Имя Вашего первого домашнего питомца?</item>
+    </string-array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/spinnersContainer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Spinner android:id="@id/spinnerAccountFrom" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/account_spinner_style_for_transfer" />
+    <ImageView android:id="@id/imageViewArrowFromTo" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_margin="@dimen/half_margin" android:src="@drawable/green_arrow" android:scaleType="centerInside" android:layout_below="@id/spinnerAccountFrom" android:layout_centerHorizontal="true" />
+    <Spinner android:id="@id/spinnerAccountTo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imageViewArrowFromTo" style="@style/account_spinner_style_for_transfer" />
+</RelativeLayout>
