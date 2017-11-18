@@ -8,11 +8,11 @@ Features: <br/>
 *    \[ X \] extract jar from dex <br/>
 *    \[ X \] extract source code in Smali <br/>
 *    \[ X \] extract source code in Java <br/>
-*    \[ \] analyses permissions used by the application and classifies them into: <br/>
-     * \[ \] normal permissions
-     * \[ \] dangerous permissions
-     * \[ \] overprivileged permissions (defined in AndroidManifest.xml but not used in the code)
-     * \[ \] underprivileged permissions (not defined in AndroidManifest.xml but used in code) <br/>
+*    \[ X \] analyses permissions used by the application and classifies them into: <br/>
+     * \[ X \] normal permissions
+     * \[ X \] dangerous permissions
+     * \[ X \] overprivileged permissions (defined in AndroidManifest.xml but not used in the code)
+     * \[ X \] underprivileged permissions (not defined in AndroidManifest.xml but used in code) <br/>
 *   \[ \] check if permissions can be migrated to the newest API (Oreo) and include this info in the final report 
 *   \[ \] create a report based on findings (will be written using LATEX and the final result will be a PDF file)
 *   \[ \] include plots, statistics in the final report (if possible)

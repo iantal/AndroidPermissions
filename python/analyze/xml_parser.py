@@ -1,13 +1,18 @@
-
 import xml.etree.ElementTree as ET
 import re
 import json
+
 
 class XMLParser(object):
 
     def __init__(self, xml_file):
         self.xml_file = xml_file
         self.xml_tree = ET.parse(xml_file)
+
+    def __get_permission_name(self, permission):
+        pattern = re.compile(r'[A-Z_]*[A-Z]')
+        res = re.findall(pattern, permission)
+        return res[0]
 
     def get_package_name(self):
         """
@@ -27,7 +32,7 @@ class XMLParser(object):
         lines = [list(ln.attrib.values()) for ln in root.iter('uses-permission')]
         for ln in lines:
             for permission in ln:
-                permissions.add(permission)
+                permissions.add(self.__get_permission_name(permission))
         return permissions
 
     def __append_json_to_list(self, activities, dictionary):
