@@ -20,4 +20,10 @@ Features: <br/>
 *   \[ \] detect if APK is goodware or malware based on various ML techniques (--> OPTIONAL <--)
 *   \[ \] check APK against malware using andrototal.org API (free service) (--> OPTIONAL <--) https://bitbucket.org/andrototal/tools <br/>
 
-
+TODO:
+- extract custom permissions
+- comment the code
+- apt-get install python-dev
+- graph-tool
+- apt-get install libboost-filesystem-dev libboost-thread-dev
+- apt-get install libboost-system-dev

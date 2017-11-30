@@ -31,3 +31,14 @@ class DirectoryAnalyzer(object):
             for file in fnmatch.filter(files, "*.smali"):
                 smali_files.append(os.path.join(root, file))
         return smali_files
+
+    def get_smali_files2(self, dire):
+        """
+        Extracts the .smali files from the APP/smali directory and its subdirectories
+        :return: list
+        """
+        smali_files = []
+        for root, dirs, files in os.walk(dire):
+            for file in fnmatch.filter(files, "*.smali"):
+                smali_files.append(os.path.join(root, file))
+        return smali_files
