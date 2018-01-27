@@ -104,7 +104,11 @@
 
 # from permissions_parser import PermissionsParser
 # from directory_analyzer import DirectoryAnalyzer
-# from xml_parser import XMLParser
+from xml_parser import XMLParser
+import xml.etree.ElementTree as ET
+import pprint
+pp = pprint.PrettyPrinter(indent=4)
+
 #
 # base_dir = "/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_monefy_app_lite-2"
 # d = DirectoryAnalyzer(base_dir)
@@ -113,9 +117,19 @@
 # pp = PermissionsParser(d)
 # # print(pp.parse_all_java_files())
 #
-# xml = '/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_monefy_app_lite-2/app/AndroidManifest.xml'
-#
+# xml = '/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_adobe_reader-2/app/AndroidManifest.xml'
 # prs = XMLParser(xml)
+# root = prs.parsed_manifest()
+# ns = dict(android='http://schemas.android.com/apk/res/android')
+#
+# from lxml import etree
+#
+# l = prs.parsed_manifest().getroot().xpath('//activity[not(@android:permission)]/intent-filter/../@android:name', namespaces=ns)
+# for k in l:
+#     for i in k:
+#         print(etree.tostring(i))
+#         print()
+
 
 # from permissions_classifier import PermissionsClassifier
 # pc = PermissionsClassifier(d, prs)
@@ -131,5 +145,5 @@
 
 # print(pc.get_classification())
 
-s = 'NoThrowInputStream.smali'
-s.rsplit('.')
+# s = 'NoThrowInputStream.smali'
+# s.rsplit('.')

@@ -1,16 +1,30 @@
 import re
+from directory_analyser import DirectoryAnalyser
+import os
+import fnmatch
 
 
-class SmaliAnalyzer(object):
+class SmaliAnalyser(DirectoryAnalyser):
 
-    def __init__(self, directory_analyzer, package_name, regex):
-        self.dependencies = {}
-        self.directory_analyzer = directory_analyzer
+    def __init__(self, base_dir, package_name, regex):
+        DirectoryAnalyser.__init__(self, base_dir)
         self.package_name = package_name
         self.regex = regex
+        self.dependencies = {}
 
     def get_dependencies(self):
         return self.dependencies
+
+    def get_smali_files(self):
+        """
+        Extracts the .smali files from the APP/smali directory and its subdirectories
+        :return: list
+        """
+        smali_files = []
+        for root, dirs, files in os.walk(self.base_apk_dir + self.APP + '/smali'):
+            for file in fnmatch.filter(files, "*.smali"):
+                smali_files.append(os.path.join(root, file))
+        return smali_files
 
     def get_filtered_dependencies(self):
         filtered_dependencies = {}
@@ -25,7 +39,7 @@ class SmaliAnalyzer(object):
         return filtered_dependencies
 
     def parse_smali_files(self):
-        files = self.directory_analyzer.get_smali_files()
+        files = self.get_smali_files()
         for f in files:
             self.__process_file(f)
 
@@ -40,7 +54,7 @@ class SmaliAnalyzer(object):
         return False
 
     def __is_anonymous(self, file_name):
-        if "$" in file_name and file_name[file_name.rindex("$")+1:len(file_name)].isdigit():
+        if "$" in file_name and file_name[file_name.rindex("$") + 1:len(file_name)].isdigit():
             return True
         return False
 
@@ -85,7 +99,6 @@ class SmaliAnalyzer(object):
                 if simple_name is not "":
                     if self.__is_base_class(simple_name, file_name):
                         dependency_names.add(full_name)
-                        # dependency_names.add(simple_name)
             if self.__is_inner_class(file_name):
                 dependency_names.add(self.__get_outer_class(file_name))
             if not dependency_names == set():
@@ -113,10 +126,10 @@ class SmaliAnalyzer(object):
             if pattern.match(class_name):
                 try:
                     start_generic = self.__search_for_character(class_name, "<", 0)
-                    if start_generic != -1 and class_name[start_generic+1] == 'L':
+                    if start_generic != -1 and class_name[start_generic + 1] == 'L':
                         start_generic_index = start_generic + 1 + index
                         end_generic_index = self.__get_end_of_generic_index(line, start_generic_index)
-                        generic_line = line[start_generic_index+1: end_generic_index]
+                        generic_line = line[start_generic_index + 1: end_generic_index]
                         self.__add_parsed_class_names(class_names, generic_line)
                         index = self.__search_for_character(line, "L", end_generic_index)
                         class_name = class_name[0:start_generic]
@@ -141,7 +154,7 @@ class SmaliAnalyzer(object):
             simple_name = full_name[index: len(full_name)]
             start_generic = self.__search_for_character(simple_name, "<", 0)
             if start_generic != -1:
-                simple_name = simple_name[0: start_generic-1]
+                simple_name = simple_name[0: start_generic - 1]
             return simple_name
         except ValueError:
             return ""

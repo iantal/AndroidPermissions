@@ -1,13 +1,17 @@
 import xml.etree.ElementTree as ET
 import re
 import json
-
+import lxml.etree as ETXML
 
 class XMLParser(object):
 
     def __init__(self, xml_file):
         self.xml_file = xml_file
         self.xml_tree = ET.parse(xml_file)
+
+    def parsed_manifest(self):
+        with open(self.xml_file, 'rb') as f:
+            return ETXML.parse(f, parser=ETXML.XMLParser(recover=True))
 
     def __get_permission_name(self, permission):
         pattern = re.compile(r'[A-Z_]*[A-Z]')
@@ -65,3 +69,4 @@ class XMLParser(object):
             dictionary = i.replace("'", "\"")
             self.__append_json_to_list(activities, dictionary)
         return activities
+

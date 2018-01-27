@@ -57,8 +57,3 @@ class PermissionsClassifier(object):
                 **self.get_under_and_over_privileges(),
                 **self.get_auto_granted_dangerous_permissions()}
 
-
-    mumu
-    zuzu
-    zizi
-    kiki

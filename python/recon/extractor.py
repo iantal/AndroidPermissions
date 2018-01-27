@@ -29,6 +29,21 @@ class Extractor(object):
             if e.errno != errno.EEXIST:
                 print("Directory already created")
 
+    def get_current_working_directory(self):
+        return self.working_directory
+
+    def get_unzip_directory(self):
+        return self.working_directory + "/" + Extractor.unzip_dir
+
+    def get_app_directory(self):
+        return self.working_directory + "/" + Extractor.readable_data
+
+    def get_java_source_code_directory(self):
+        return self.working_directory + "/" + Extractor.java_source_dir
+
+    def get_apk(self):
+        return self.apk
+
     def unzip(self):
         """
         Extracts apk to the 'raw' directory
@@ -43,7 +58,7 @@ class Extractor(object):
         """
         Extracts data from apk in a readable form using apktool
         to the app directory
-        :param apktool_path: complete path to the apktool
+        :param apktool_path: absolute path to the apktool
         :return: void
         """
         self.__create_directory(Extractor.readable_data)
@@ -53,7 +68,7 @@ class Extractor(object):
     def extract_jar(self, dex2jar_path):
         """
         Extracts jar from classes.dex file. The jar file will remain in the 'raw' directory.
-        :param dex2jar_path: complete path to the d2j-dex2jar.sh
+        :param dex2jar_path: absolute path to the d2j-dex2jar.sh
         :return: void
         """
         print("[*] Running d2j-dex2jar.sh ...")
@@ -64,7 +79,7 @@ class Extractor(object):
     def extract_java_source_code(self, jd_core_java):
         """
         Extracts jar to java source code into the 'source' directory
-        :param jd_core_java: complete path to the java-core-java.jar
+        :param jd_core_java: absolute path to the java-core-java.jar
         :return: void
         """
         print("[*] Running jd-core-java ...")
