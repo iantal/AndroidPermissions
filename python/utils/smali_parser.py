@@ -13,6 +13,19 @@ class SmaliParser(object):
         """Start main task"""
         self.parse_dir()
 
+    def parse_file_for_const(self, buf, number_of_parameters):
+        rev_buf = []
+        for ll in buf[::-1]:
+            if ".line" not in ll:
+                rev_buf.append(ll)
+            else:
+                break
+        params = 0
+        for i in rev_buf:
+            if "const" in i and params < number_of_parameters:
+                params += 1
+                yield i.rstrip('\r\n')
+
     def parse_file(self, filename):
         """
         Parses the given file for:
@@ -28,9 +41,10 @@ class SmaliParser(object):
             current_method = None
             current_call_index = 0
             current_const = None
+            buf = []
 
             for l in f.readlines():
-
+                buf.append(l)
                 if '.class' in l:
                     match_class = self.is_class(l)
                     if match_class:
@@ -67,6 +81,14 @@ class SmaliParser(object):
                     if match_method_call:
                         m = self.extract_method_call(l)
 
+                        parameters = dict()
+                        args = m['local_args'].strip('{}').split(", ")
+                        for i in self.parse_file_for_const(buf, len(args) - 1):
+                            parameters.update(self.extract_parameter(i.lstrip().split(" ")))
+
+                        # Add function parameters
+                        m['params'] = parameters
+
                         # Add calling method (src)
                         m['src'] = current_method['name']
 
@@ -88,7 +110,6 @@ class SmaliParser(object):
                 if f.endswith(self.suffix):
                     file_path = os.path.join(root, f)
                     self.current_path = file_path
-                    # print("[*] Parsing file:\t %s" % f)
                     self.parse_file(file_path)
 
     def is_class(self, line):
@@ -99,7 +120,6 @@ class SmaliParser(object):
         """
         match = re.search("\.class\s+(?P<class>.*);", line)
         if match:
-            # print("[+] Found class: %s" % match.group('class'))
             return match.group('class')
         else:
             return None
@@ -112,7 +132,6 @@ class SmaliParser(object):
         """
         match = re.search("\.super\s+(?P<parent>.*);", line)
         if match:
-            # print("\t\t[+] Found parent class: %s" % match.group('parent'))
             return match.group('parent')
         else:
             return None
@@ -125,7 +144,6 @@ class SmaliParser(object):
         """
         match = re.search("\.field\s+(?P<property>.*);", line)
         if match:
-            # print("\t\t[+] Found property: %s" % match.group('property'))
             return match.group('property')
         else:
             return None
@@ -138,7 +156,6 @@ class SmaliParser(object):
         """
         match = re.search("const-string\s+(?P<const>.*)", line)
         if match:
-            print("\t\t[+] Found const-string: %s" % match.group('const'))
             return match.group('const')
         else:
             return None
@@ -151,7 +168,6 @@ class SmaliParser(object):
         """
         match = re.search("\.method\s+(?P<method>.*)$", line)
         if match:
-            # print("\t\t[+] Found method: %s" % match.group('method'))
             return match.group('method')
         else:
             return None
@@ -164,7 +180,6 @@ class SmaliParser(object):
         """
         match = re.search("invoke-\w+(?P<invoke>.*)", line)
         if match:
-            # print("\t\t[+] Found invoke: %s" % match.group('invoke'))
             return match.group('invoke')
         else:
             return None
@@ -176,7 +191,6 @@ class SmaliParser(object):
         :return: json containing class information
         """
         class_info = data.split(" ")
-        # print("class_info: %s" % class_info[-1].split('/')[:-1])
         c = {
             # Last element is the class name
             'name': class_info[-1],
@@ -238,6 +252,15 @@ class SmaliParser(object):
             return c
         else:
             return None
+
+    def extract_parameter(self, data):
+        c = {
+            data[1].split(",")[0]: {
+                'type': data[0],
+                'value': data[2].strip(" ")
+            }
+        }
+        return c
 
     def extract_class_method(self, data):
         """
