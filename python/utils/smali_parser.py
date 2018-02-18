@@ -13,18 +13,17 @@ class SmaliParser(object):
         """Start main task"""
         self.parse_dir()
 
-    def parse_file_for_const(self, buf, number_of_parameters):
+    def parse_file_for_const(self, buf, args):
         rev_buf = []
         for ll in buf[::-1]:
-            if ".line" not in ll:
+            if ".method" not in ll:
                 rev_buf.append(ll)
             else:
                 break
-        params = 0
-        for i in rev_buf:
-            if "const" in i and params < number_of_parameters:
-                params += 1
-                yield i.rstrip('\r\n')
+        for a in args:
+            for i in rev_buf:
+                if "const" in i and a in i:
+                    yield i.rstrip('\r\n')
 
     def parse_file(self, filename):
         """
@@ -82,8 +81,11 @@ class SmaliParser(object):
                         m = self.extract_method_call(l)
 
                         parameters = dict()
-                        args = m['local_args'].strip('{}').split(", ")
-                        for i in self.parse_file_for_const(buf, len(args) - 1):
+                        if m['local_args'] is not None:
+                            args = m['local_args'].strip('{}').split(", ")
+                        else:
+                            args = []
+                        for i in self.parse_file_for_const(buf, args):
                             parameters.update(self.extract_parameter(i.lstrip().split(" ")))
 
                         # Add function parameters

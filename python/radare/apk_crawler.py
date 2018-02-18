@@ -106,6 +106,6 @@ class SymbolsAnalyser(AbstractRadareAnalyser):
 
 
 configfile = "/root/Documents/GITHUB/AndroidPermissions/python/radare/radare_config.json"
-dexfile = "/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_monefy_app_lite-2/raw/classes.dex"
+dexfile = "/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/raw/classes.dex"
 r = RadareResults(dexfile, configfile)
 r.print_findings()
