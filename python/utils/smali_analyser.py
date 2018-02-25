@@ -1,5 +1,13 @@
+import os
+import sys
+import time
+
+script_path = os.path.dirname(__file__)
+project_dir = os.path.abspath(os.path.join(script_path, '..'))
+sys.path.insert(0, project_dir)
+
 import re
-from directory_analyser import DirectoryAnalyser
+from utils.directory_analyser import DirectoryAnalyser
 import os
 import fnmatch
 

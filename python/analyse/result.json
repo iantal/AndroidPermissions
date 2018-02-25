@@ -1,0 +1,30 @@
+{
+    'auto_granted_dangerous_permissions': ['WRITE_CONTACTS',
+        'ANSWER_PHONE_CALLSREAD_PHONE_NUMBERS',
+        'CALL_PHONE',
+        'WRITE_CALL_LOG',
+        'ADD_VOICEMAIL',
+        'USE_SIP',
+        'PROCESS_OUTGOING_CALLS',
+        'RECEIVE_SMS',
+        'READ_SMS',
+        'RECEIVE_WAP_PUSH',
+        'RECEIVE_MMS'
+    ],
+    'dangerous': ['ACCESS_FINE_LOCATION',
+        'ACCESS_COARSE_LOCATION',
+        'WRITE_EXTERNAL_STORAGE'
+    ],
+    'normal': ['ACCESS_NETWORK_STATE', 'INTERNET'],
+    'over': ['',
+        'READ_CALL_LOG',
+        'SEND_SMS',
+        'READ_EXTERNAL_STORAGE',
+        'READ_CONTACTS',
+        'GET_ACCOUNTS',
+        'READ_PROFILE',
+        'READ_PHONE_STATE',
+        'USE_CREDENTIALS'
+    ],
+    'under': ['ACCESS_FINE_LOCATION']
+}

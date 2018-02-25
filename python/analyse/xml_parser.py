@@ -16,7 +16,10 @@ class XMLParser(object):
     def __get_permission_name(self, permission):
         pattern = re.compile(r'[A-Z_]*[A-Z]')
         res = re.findall(pattern, permission)
-        return res[0]
+        try:
+            return res[0]
+        except:
+            return ''
 
     def get_package_name(self):
         """

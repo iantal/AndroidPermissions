@@ -1,4 +1,4 @@
-# Android Reversing and Analysis Tool
+# Android Reversing and Analysis Tool - AndroART
 
 ## Specifications:
 Project will be mainly written in Python. 

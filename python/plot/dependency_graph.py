@@ -1,24 +1,18 @@
-import os
-import sys
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import networkx as nx
 import matplotlib.pyplot as plt
-from dependencygraph.smali_analyzer import SmaliAnalyzer
-import threading
 from queue import Queue
-import time
 from itertools import count
 
 
 class SmaliGraph(object):
-    def __init__(self, directory_analyzer, package_name, regex):
-        self.smali_analyzer = SmaliAnalyzer(directory_analyzer, package_name, regex)
+    def __init__(self, smali_analyser):
+        self.smali_analyser = smali_analyser
         self.results = []
         self.queue = Queue(maxsize=0)
 
     def __create_graph(self):
-        self.smali_analyzer.parse_smali_files()
-        dependency_dictionary = self.smali_analyzer.get_filtered_dependencies()
+        self.smali_analyser.parse_smali_files()
+        dependency_dictionary = self.smali_analyser.get_filtered_dependencies()
         g = nx.Graph()
         nodes = []
         for key in dependency_dictionary:
