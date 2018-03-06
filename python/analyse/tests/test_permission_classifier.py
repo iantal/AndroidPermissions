@@ -1,16 +1,14 @@
-import os
-import sys
-import time
 import pprint
+import sys
+import os
 
-script_path = os.path.dirname(__file__)
-project_dir = os.path.abspath(os.path.join(script_path, '..'))
-sys.path.insert(0, project_dir)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, BASE_DIR)
+
 
 from utils.directory_analyser import DirectoryAnalyser
-from xml_parser import XMLParser
-from permissions_classifier import PermissionsClassifier
-
+from analyse.xml_parser import XMLParser
+from analyse.permissions_classifier import PermissionsClassifier
 
 
 if __name__ == "__main__":
@@ -21,3 +19,5 @@ if __name__ == "__main__":
     perm_classifier = PermissionsClassifier(d, p)
     result = perm_classifier.get_classification()
     pprint.pprint(result)
+
+

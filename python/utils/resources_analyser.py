@@ -1,5 +1,5 @@
 import os
-from directory_analyser import DirectoryAnalyser
+from utils.directory_analyser import DirectoryAnalyser
 import lxml.etree as ET
 
 

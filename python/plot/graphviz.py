@@ -52,6 +52,6 @@ class GraphViz(object):
         dot += self.__create_dot_file_content(nodes)
         dot += "}"
         self.__create_dot_file(dot_content=dot, file="auxiliary")
-        self.__unflatten_dot_file("auxiliary", "graph.dot")
-        subprocess.Popen(['neato', 'graph.dot', '-Tpng', '-O'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        self.__unflatten_dot_file("auxiliary", "graph_insecure_bank.dot")
+        subprocess.Popen(['neato', 'graph_insecure_bank.dot', '-Tpng', '-O'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         os.remove("auxiliary")

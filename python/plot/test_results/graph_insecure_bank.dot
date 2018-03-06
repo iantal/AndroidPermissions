@@ -1,0 +1,32 @@
+digraph G {
+	graph [overlap=false];
+	"com.android.insecurebankv2.LoginActivity"	 [fillcolor="#ffca28",
+		style=filled];
+	"com.android.insecurebankv2.FilePrefActivity"	 [fillcolor="#ffca28",
+		style=filled];
+	"com.android.insecurebankv2.LoginActivity" -> "com.android.insecurebankv2.FilePrefActivity"	 [style=invis];
+	"com.android.insecurebankv2.DoLogin"	 [fillcolor="#ffca28",
+		style=filled];
+	"com.android.insecurebankv2.FilePrefActivity" -> "com.android.insecurebankv2.DoLogin"	 [style=invis];
+	"com.android.insecurebankv2.PostLogin"	 [fillcolor="#ffca28",
+		style=filled];
+	"com.android.insecurebankv2.DoLogin" -> "com.android.insecurebankv2.PostLogin"	 [style=invis];
+	"com.android.insecurebankv2.WrongLogin"	 [fillcolor="#ffca28",
+		style=filled];
+	"com.android.insecurebankv2.PostLogin" -> "com.android.insecurebankv2.WrongLogin"	 [style=invis];
+	"com.android.insecurebankv2.DoTransfer"	 [fillcolor="#ffca28",
+		style=filled];
+	"com.android.insecurebankv2.WrongLogin" -> "com.android.insecurebankv2.DoTransfer"	 [style=invis];
+	"com.android.insecurebankv2.ViewStatement"	 [fillcolor="#ffca28",
+		style=filled];
+	"com.android.insecurebankv2.DoTransfer" -> "com.android.insecurebankv2.ViewStatement"	 [style=invis];
+	"com.android.insecurebankv2.ChangePassword"	 [fillcolor="#ffca28",
+		style=filled];
+	"com.android.insecurebankv2.ViewStatement" -> "com.android.insecurebankv2.ChangePassword"	 [style=invis];
+	"com.google.android.gms.ads.AdActivity"	 [fillcolor="#ffca28",
+		style=filled];
+	"com.android.insecurebankv2.ChangePassword" -> "com.google.android.gms.ads.AdActivity"	 [style=invis];
+	"com.google.android.gms.ads.purchase.InAppPurchaseActivity"	 [fillcolor="#ffca28",
+		style=filled];
+	"com.google.android.gms.ads.AdActivity" -> "com.google.android.gms.ads.purchase.InAppPurchaseActivity"	 [style=invis];
+}

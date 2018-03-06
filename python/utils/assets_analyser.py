@@ -1,5 +1,5 @@
-from directory_analyser import DirectoryAnalyser
 import os
+from utils.directory_analyser import DirectoryAnalyser
 
 
 class AssetsAnalyser(DirectoryAnalyser):

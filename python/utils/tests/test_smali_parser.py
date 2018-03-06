@@ -1,11 +1,16 @@
-from smali_parser import SmaliParser
 import pprint
+import sys
+import os
 import json
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, BASE_DIR)
+
+from utils.smali_parser import SmaliParser
 
 
 # s = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/webview/app/smali/com/aditya/webviewvuln', 'smali')
-# s = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats', 'smali')
-
+s = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats', 'smali')
 
 
 def test_get_results():
@@ -30,16 +35,14 @@ def test_get_class_desc():
 
 def test_parse_file():
     ss = SmaliParser("/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali", 'smali')
-
     filename = "/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali/com/google/android/gms/internal/zzig.smali"
     ss.parse_file(filename)
 
 
-
-# test_get_results()
-# test_get_class_desc()
-
-test_parse_file()
-# test_get_class_names()
+if __name__ == "__main__":
+    test_get_results()
+    test_get_class_desc()
+    test_parse_file()
+    test_get_class_names()
 
 

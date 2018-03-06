@@ -1,4 +1,11 @@
-from string_file_analyzer import StringFileAnalyzer
+import pprint
+import sys
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, BASE_DIR)
+
+from analyse.string_file_analyzer import StringFileAnalyzer
 
 
 class PermissionChecker(object):

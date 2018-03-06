@@ -1,5 +1,12 @@
-from permission_checker import PermissionChecker
-from regex_file_analyzer import RegexFileAnalyzer
+import pprint
+import sys
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, BASE_DIR)
+
+from analyse.permission_checker import PermissionChecker
+from analyse.regex_file_analyzer import RegexFileAnalyzer
 
 
 class PermissionsParser(object):

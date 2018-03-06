@@ -1,10 +1,9 @@
-import os
 import sys
+import os
 import time
 
-script_path = os.path.dirname(__file__)
-project_dir = os.path.abspath(os.path.join(script_path, '..'))
-sys.path.insert(0, project_dir)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, BASE_DIR)
 
 from analyse.xml_parser import XMLParser
 from plot.graphviz import GraphViz
@@ -20,4 +19,4 @@ if __name__ == "__main__":
     xml1 = '/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_monefy_app_lite-2/app/AndroidManifest.xml'
     xml2 = '/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/AndroidManifest.xml'
     xml3 = '/root/Documents/GITHUB/AndroidPermissions/apks/malware_apps/krep_banking_malware/app/AndroidManifest.xml'
-    test_graphviz(xml1)
+    test_graphviz(xml2)

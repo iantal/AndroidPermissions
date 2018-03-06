@@ -3,6 +3,7 @@ import re
 import json
 import lxml.etree as ETXML
 
+
 class XMLParser(object):
 
     def __init__(self, xml_file):

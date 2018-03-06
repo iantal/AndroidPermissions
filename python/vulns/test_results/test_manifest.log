@@ -1,3 +1,4 @@
+/root/Documents/GITHUB/AndroidPermissions/python
 
 [+] Activities
 com.thinkdesquared.banking.LoginActivity
@@ -8,6 +9,9 @@ com.thinkdesquared.banking.widget.content.RZBAppWidgetProvider
 
 [+] Content Providers
 android.support.v4.content.FileProvider
+
+[+] Services
+com.thinkdesquared.banking.widget.services.WidgetGetDataService
 
 [+] Backup
 False

@@ -1,0 +1,1623 @@
+
+[+] Smali files
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/database/DatabaseUtilsCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/Loader$OnLoadCompleteListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/Loader$ForceLoadContentObserver.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/CursorLoader.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/LocalBroadcastManager$BroadcastRecord.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/ModernAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/ModernAsyncTask$4.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/ModernAsyncTask$AsyncTaskResult.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/ModernAsyncTask$Status.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/LocalBroadcastManager.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/ModernAsyncTask$3.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/LocalBroadcastManager$ReceiverRecord.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/AsyncTaskLoader.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/ModernAsyncTask$2.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/IntentCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/AsyncTaskLoader$LoadTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/LocalBroadcastManager$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/ModernAsyncTask$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/ModernAsyncTask$InternalHandler.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/Loader.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/ModernAsyncTask$WorkerRunnable.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/content/pm/ActivityInfoCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/MotionEventCompat$BaseMotionEventVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewGroupCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateStubImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/MenuCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/VelocityTrackerCompatHoneycomb.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewPager$SimpleOnPageChangeListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/MotionEventCompat$MotionEventVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/MotionEventCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewGroupCompat$ViewGroupCompatIcsImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/MenuItemCompat$BaseMenuVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/PagerTitleStrip$PageListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/VelocityTrackerCompat$BaseVelocityTrackerVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewConfigurationCompatFroyo.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/VelocityTrackerCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewConfigurationCompat$BaseViewConfigurationVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewPager.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/AccessibilityDelegateCompatIcs$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/MenuItemCompatHoneycomb.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewPager$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/PagerAdapter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/MotionEventCompat$EclairMotionEventVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewPager$2.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/MenuItemCompat$HoneycombMenuVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewCompat$ViewCompatImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewPager$SavedState$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewPager$PagerObserver.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/KeyEventCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewCompat$BaseViewCompatImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/KeyEventCompat$KeyEventVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/PagerTitleStrip$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/AccessibilityDelegateCompatIcs.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/PagerTitleStrip.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewPager$SavedState.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewPager$LayoutParams.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/MotionEventCompatEclair.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewCompat$GBViewCompatImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewConfigurationCompat$FroyoViewConfigurationVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewCompat$ICSViewCompatImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/MenuCompat$HoneycombMenuVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/MenuItemCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewGroupCompat$ViewGroupCompatStubImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewPager$OnAdapterChangeListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewCompatGingerbread.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewCompatICS.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewPager$ItemInfo.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/KeyEventCompat$HoneycombKeyEventVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/MenuItemCompat$MenuVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewPager$Decor.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/KeyEventCompat$BaseKeyEventVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewGroupCompatIcs.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewPager$OnPageChangeListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/AccessibilityDelegateCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/MenuCompat$MenuVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/MenuCompat$BaseMenuVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/ViewConfigurationCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/KeyEventCompatHoneycomb.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityNodeInfoIcsImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerBridge.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityRecordCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventIcsImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventStubImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityManagerCompatIcs.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordIcsImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityRecordCompatIcs.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerIcsImpl$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityManagerCompatIcs$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerIcsImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordStubImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityManagerCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityNodeInfoImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityNodeInfoStubImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityNodeInfoCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityEventCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityEventCompatIcs.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerStubImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/CursorAdapter$MyDataSetObserver.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/CursorAdapter$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/EdgeEffectCompat$EdgeEffectIcsImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/SearchViewCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/ResourceCursorAdapter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/SimpleCursorAdapter$ViewBinder.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/SimpleCursorAdapter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/CursorFilter$CursorFilterClient.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/EdgeEffectCompat$BaseEdgeEffectImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/SearchViewCompat$SearchViewCompatImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/SearchViewCompat$SearchViewCompatStubImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/CursorFilter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/SearchViewCompatHoneycomb.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/SimpleCursorAdapter$CursorToStringConverter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/EdgeEffectCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/CursorAdapter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/CursorAdapter$ChangeObserver.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/EdgeEffectCompatIcs.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/SearchViewCompatHoneycomb$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/widget/SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentState.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/_ActionBarSherlockTrojanHorse$OnOptionsItemSelectedListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/BackStackState$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/NotificationCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/ListFragment.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/TaskStackBuilderHoneycomb.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/LoaderManager.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/DialogFragment.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentManagerImpl$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentActivity$FragmentTag.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentManager$OnBackStackChangedListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/ShareCompat$IntentReader.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/Fragment$SavedState$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentManagerImpl$5.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/BackStackRecord.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentManagerImpl$2.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentManagerState$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentActivity.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentManagerImpl$3.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/TaskStackBuilder$TaskStackBuilderImplHoneycomb.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/LoaderManagerImpl$LoaderInfo.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/ShareCompat$ShareCompatImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/ShareCompat$ShareCompatImplBase.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/_ActionBarSherlockTrojanHorse$OnCreateOptionsMenuListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/SuperNotCalledException.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/NotificationCompatHoneycomb.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/NoSaveStateFrameLayout.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentManagerImpl$4.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/_ActionBarSherlockTrojanHorse$OnPrepareOptionsMenuListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/_ActionBarSherlockTrojanHorse.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/LoaderManagerImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/NotificationCompat$NotificationCompatImplHoneycomb.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/ShareCompat$ShareCompatImplICS.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentActivity$NonConfigurationInstances.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/ShareCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/ShareCompat$IntentBuilder.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/Fragment.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentTransaction.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentManager.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/NotificationCompat$Builder.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/NotificationCompat$NotificationCompatImplBase.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentManagerImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/NavUtils.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentState$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/BackStackState.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/ActivityCompatHoneycomb.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/ServiceCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/ShareCompatICS.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentManagerState.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/ActivityCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/ListFragment$2.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/Fragment$SavedState.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/HCSparseArray.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/LoaderManager$LoaderCallbacks.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/TaskStackBuilder$TaskStackBuilderImplBase.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/ListFragment$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentStatePagerAdapter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/TaskStackBuilder.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/BackStackRecord$Op.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/Fragment$InstantiationException.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/TaskStackBuilder$TaskStackBuilderImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentPagerAdapter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/NotificationCompat$NotificationCompatImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentManager$BackStackEntry.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/app/FragmentActivity$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/os/ParcelableCompatCreatorHoneycombMR2Stub.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/os/ParcelableCompat$CompatCreator.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/os/ParcelableCompatCreatorCallbacks.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/os/ParcelableCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/os/ParcelableCompatCreatorHoneycombMR2.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/accessibilityservice/AccessibilityServiceInfoCompatIcs.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/util/DebugUtils.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/util/TimeUtils.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/util/LruCache.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/android/support/v4/util/LogWriter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/R$id.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/R$styleable.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/R$bool.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/R$attr.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/R$color.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/R$layout.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/BuildConfig.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/R$drawable.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/R$string.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/R$array.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/R$menu.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/R$dimen.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/R$style.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/R.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/R$integer.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/requestresponse/RequestMethod.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/requestresponse/CustomSSLSocketFactory.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/requestresponse/AuthenticatedRestClient.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/requestresponse/RestClient.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/requestresponse/CustomSSLSocketFactory$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/requestresponse/ResponseBase.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/broadcastreceivers/SendSMSNowReceiver.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/SocialAPIAuthentication$AuthenticateAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/Checkins.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/ViewFriendRequest$AcceptRequestAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/AdminHome.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/History.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/Friends.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/Preferences$GetExistingPreferences.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/ViewCheckin$GetCommentData.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/About.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/ViewCheckin.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/Home.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/Preferences.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/ViewProfile$GetProfileInfo.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/AdminOptions.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/SocialAPIAuthentication.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/Rewards.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/AddVenue$AddVenueAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/DoAdminDeleteUser.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/ViewFriendRequest$DenyRequestAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/Preferences$UpdatePreferencesAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/DoAdminPasswordReset$ResetPasswordAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/Login$ValidateCredsAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/DoAdminDeleteUser$DeleteUserAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/History$GetHistory.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/ViewProfile$RequestFriendAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/Main$CheckSessionToken.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/DoComment.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/DoComment$DoCommentAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/DestinationInfo.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/Register.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/Register$RegisterAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/AddVenue.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/ViewFriendRequest.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/DoAdminPasswordReset.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/GenericWebViewActivity.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/ViewProfile.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/Login.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/SendSMS.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/activities/Main.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/misc/Constants.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/misc/Utils.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/adapter/AvailableRewardsAdapter$ViewHolder.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/adapter/AvailableRewardsAdapter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/adapter/SearchForFriendsAdapter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/adapter/SearchForFriendsAdapter$ViewHolder.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/javascriptinterfaces/SmsJSInterface.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/javascriptinterfaces/WebViewJSInterface.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/javascriptinterfaces/ViewCheckinJSInterface.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/register/RegisterResponse.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/register/RegisterRequest.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/friends/FriendResponse.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/friends/FriendRequest.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/comments/CommentsResponse.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/comments/CommentsRequest.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/preferences/PreferencesResponse.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/preferences/PreferencesRequest.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/checkin/CheckinResponse.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/checkin/CheckinRequest.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/viewcheckin/ViewCheckinResponse.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/viewcheckin/ViewCheckinRequest.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/history/HistoryRequest.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/history/HistoryResponse.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/admin/AdminResponse.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/admin/AdminRequest.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/searchforfriends/SearchForFriendsRequest.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/searchforfriends/SearchForFriendsResponse.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/rewards/RewardsResponse.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/rewards/RewardsRequest.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/addvenue/AddVenueResponse.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/addvenue/AddVenueRequest.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/login/LoginResponse.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/rest/login/LoginRequest.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/base/BaseTabsViewPagerActivity$TabsAdapter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/base/BaseActivity.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/base/BaseUnauthenticatedActivity.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/base/BaseTabsViewPagerActivity$TabsAdapter$TabInfo.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/base/RequestBase.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/base/BaseTabsViewPagerActivity.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/base/BaseFragmentActivity.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/base/BaseActivity$LogOutAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/base/BaseFragmentActivity$LogOutAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/base/ResponseBase.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/base/BaseTabsViewPagerActivity$LogOutAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/db/CheckinDBHelper.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/db/UserInfoDBHelper.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/db/CheckinDBHelper$CheckinOpenHelper.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/db/UserInfoDBHelper$UserInfoOpenHelper.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/DeleteUsers$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/SearchForFriends$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/HistoryDialogFragment$GetHistory.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/HistoryDialogFragment.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/MyFriends$SearchFriends.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/MyFriends.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/MyRewards$GetMyRewards.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/AvailableRewards.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/DoCheckin$MyLocationListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/SearchForFriends.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/DoCheckin.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/MyFriends$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/ResetUserPasswords.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/PendingFriendRequests.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/HistoryFragment$GetHistory.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/MyRewards.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/ResetUserPasswords$SearchForUsers.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/DeleteUsers$SearchForUsers.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/SearchForFriends$SearchFriends.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/PendingFriendRequests$GetPendingFriendRequests.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/ResetUserPasswords$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/HistoryFragment.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/DoCheckin$DoCheckinAsyncTask.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/DeleteUsers.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/AvailableRewards$GetAvailableRewards.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/PendingFriendRequests$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/fragments/DoCheckin$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/services/LocationService$MyLocationListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/services/LocationService.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats/services/LocationService$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/R$id.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/ActionBarSherlock$OnPreparePanelListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/R$styleable.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/ActionBarSherlock$OnActionModeStartedListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/ActionBarSherlock$Implementation.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/R$bool.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/ActionBarSherlock$OnActionModeFinishedListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/R$attr.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/ActionBarSherlock$OnCreateOptionsMenuListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/R$color.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/R$layout.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/R$drawable.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/R$string.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/R$array.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/R$menu.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/R$dimen.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/R$style.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/ActionBarSherlock.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/ActionBarSherlock$OnCreatePanelMenuListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/ActionBarSherlock$OnMenuItemSelectedListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/R.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/ActionBarSherlock$OnPrepareOptionsMenuListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/ActionBarSherlock$OnOptionsItemSelectedListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/R$integer.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/MenuInflater$InflatedOnMenuItemClickListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/MenuItem$OnMenuItemClickListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/ActionProvider$SubUiVisibilityListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/Window.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/ActionMode$Callback.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/ActionMode.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/Menu.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/MenuItem$OnActionExpandListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/MenuItem.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/SubMenu.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/MenuInflater$MenuState.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/CollapsibleActionView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/Window$Callback.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/MenuInflater.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/view/ActionProvider.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserModel$SerialExecutor$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ShareActionProvider$ShareMenuItemOnMenuItemClickListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserModel$ActivitySorter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserView$2.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ShareActionProvider$OnShareTargetSelectedListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserView$3.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ShareActionProvider$ShareAcitivityChooserModelPolicy.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserView$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserModel$OnChooseActivityListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserModel$SerialExecutor.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserModel$HistoryLoader.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserModel$HistoryLoader$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserModel$ActivityResolveInfo.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ShareActionProvider.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserModel.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserView$Callbacks.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserView$SetActivated.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserView$ActivityChooserViewAdapter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserModel$ActivityChooserModelClient.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/widget/ActivityChooserModel$DefaultSorter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/ActionBarSherlockCompat$ActionModeCallbackWrapper.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/ActionBarSherlockCompat$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/ActionBarSherlockNative.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeWrapper.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeCallbackWrapper.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/ResourcesCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/ActionBarSherlockCompat.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/View_OnAttachStateChangeListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/View_HasStateListenerSupport.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/ActionProviderWrapper.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/StandaloneActionMode.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/BaseMenuPresenter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/MenuItemWrapper$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowPopup.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenuItem.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/MenuItemWrapper.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/MenuBuilder.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/MenuPopupHelper.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$HasPermanentMenuKey.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenuView$LayoutParams.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/MenuWrapper.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenuView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$PopupPresenterCallback.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ListMenuItemView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/MenuView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OpenOverflowRunnable.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowMenuButton.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/MenuBuilder$Callback.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/MenuPopupHelper$ExpandedIndexObserver.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/MenuPopupHelper$MenuAdapter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/MenuPresenter$Callback.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$SavedState$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenuItemView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$ActionButtonSubmenu.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenuView$ActionMenuChildView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/SubMenuWrapper.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/SubMenuBuilder.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/MenuPresenter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/MenuItemImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/MenuView$ItemView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/MenuBuilder$ItemInvoker.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$SavedState.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/view/menu/ActionMenu.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ActionBarView$SavedState.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/AbsActionBarView$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsSpinner$DropdownPopup.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsAdapterView$OnItemSelectedListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsAdapterView$AdapterContextMenuInfo.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsAbsSpinner$SavedState$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabClickListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ActionBarView$3.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupScrollListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ActionBarView$HomeView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsLinearLayout.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ActionBarView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsAdapterView$AdapterDataSetObserver.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsAbsSpinner$RecycleBin.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsListPopupWindow$ResizePopupRunnable.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ActionBarContextView$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsSpinner$DropdownPopup$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ScrollingTabContainerView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsProgressBar$SavedState.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/AbsActionBarView$VisibilityAnimListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ScrollingTabContainerView$VisibilityAnimListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/CapitalizingTextView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ActionBarContainer.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsProgressBar$SavedState$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsListPopupWindow$DropDownListView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ActionBarView$SavedState$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ScrollingTabContainerView$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ActionBarContextView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ActionBarView$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/CapitalizingButton.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsAbsSpinner.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsAdapterView$SelectionNotifier.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/FakeDialogPhoneWindow.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupDataSetObserver.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsAdapterView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsProgressBar$RefreshProgressRunnable.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsListPopupWindow.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ActionBarView$2.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsAbsSpinner$SavedState.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsProgressBar.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/AbsActionBarView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsListPopupWindow$ListSelectorHider.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabAdapter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsListPopupWindow$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsSpinner.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsProgressBar$AccessibilityEventSender.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupTouchInterceptor.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/IcsAdapterView$OnItemLongClickListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/widget/ActionBarView$ExpandedActionViewMenuPresenter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/view/NineViewGroup.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/widget/NineHorizontalScrollView.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/widget/NineFrameLayout.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$4.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/ObjectAnimator.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/FloatKeyframeSet.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/IntEvaluator.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$2.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/Keyframe.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$Builder.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$3.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$5.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/Animator$AnimatorListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/IntKeyframeSet.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$AnimationHandler.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$IntPropertyValuesHolder.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorListenerAdapter.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/Animator.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$AnimatorSetListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$Dependency.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$AnimatorUpdateListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$IntKeyframe.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/FloatEvaluator.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$Node.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$ObjectKeyframe.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$DependencyListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/app/ActionBarImpl$2.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/app/ActionBarWrapper.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/app/ActionBarImpl$TabImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/app/ActionBarWrapper$TabWrapper.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/app/ActionBarImpl$ActionModeImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/app/ActionBarImpl.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/internal/app/ActionBarImpl$1.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/app/ActionBar$LayoutParams.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/app/ActionBar$OnNavigationListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/app/ActionBar$Tab.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/app/SherlockPreferenceActivity.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/app/ActionBar.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/app/SherlockFragmentActivity.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/app/SherlockExpandableListActivity.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/app/SherlockDialogFragment.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/app/SherlockFragment.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/app/SherlockListFragment.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/app/SherlockActivity.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/app/ActionBar$OnMenuVisibilityListener.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/app/SherlockListActivity.smali
+/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/com/actionbarsherlock/app/ActionBar$TabListener.smali
+
+[+] Filtered dependencies
+{'org/owasp/goatdroid/fourgoats/BuildConfig': ['java/lang/Object',
+                                               'org/owasp/goatdroid/fourgoats/BuildConfig'],
+ 'org/owasp/goatdroid/fourgoats/R': ['dalvik/annotation/InnerClass',
+                                     'dalvik/annotation/EnclosingClass',
+                                     'java/lang/Object'],
+ 'org/owasp/goatdroid/fourgoats/activities/About': ['android/os/Bundle',
+                                                    'org/owasp/goatdroid/fourgoats/base/BaseActivity',
+                                                    'org/owasp/goatdroid/fourgoats/activities/About'],
+ 'org/owasp/goatdroid/fourgoats/activities/AddVenue': ['android/os/AsyncTask',
+                                                       'org/owasp/goatdroid/fourgoats/activities/AddVenue',
+                                                       'org/owasp/goatdroid/fourgoats/base/BaseActivity',
+                                                       'org/owasp/goatdroid/fourgoats/activities/Login',
+                                                       'java/lang/Object',
+                                                       'android/widget/EditText',
+                                                       'dalvik/annotation/MemberClasses',
+                                                       'android/view/View',
+                                                       'android/text/Editable',
+                                                       'java/lang/String',
+                                                       'java/lang/Void',
+                                                       'java/lang/Class',
+                                                       'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                       'org/owasp/goatdroid/fourgoats/activities/ViewCheckin',
+                                                       'android/content/Intent',
+                                                       'android/content/Context',
+                                                       'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/AdminHome': ['org/owasp/goatdroid/fourgoats/activities/Friends',
+                                                        'org/owasp/goatdroid/fourgoats/services/LocationService',
+                                                        'org/owasp/goatdroid/fourgoats/activities/Checkins',
+                                                        'org/owasp/goatdroid/fourgoats/base/BaseActivity',
+                                                        'org/owasp/goatdroid/fourgoats/activities/AdminHome',
+                                                        'java/lang/CharSequence',
+                                                        'android/content/Context',
+                                                        'android/view/View',
+                                                        'com/actionbarsherlock/app/ActionBar',
+                                                        'java/lang/Class',
+                                                        'android/content/Intent',
+                                                        'android/content/ComponentName',
+                                                        'android/widget/ListView',
+                                                        'org/owasp/goatdroid/fourgoats/activities/AdminOptions',
+                                                        'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/AdminOptions': ['org/owasp/goatdroid/fourgoats/fragments/DeleteUsers',
+                                                           'com/actionbarsherlock/app/ActionBar',
+                                                           'java/lang/Class',
+                                                           'org/owasp/goatdroid/fourgoats/base/BaseTabsViewPagerActivity',
+                                                           'org/owasp/goatdroid/fourgoats/activities/AdminOptions',
+                                                           'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/Checkins': ['org/owasp/goatdroid/fourgoats/fragments/DoCheckin',
+                                                       'org/owasp/goatdroid/fourgoats/activities/Checkins',
+                                                       'com/actionbarsherlock/app/ActionBar',
+                                                       'java/lang/Class',
+                                                       'org/owasp/goatdroid/fourgoats/base/BaseTabsViewPagerActivity',
+                                                       'org/owasp/goatdroid/fourgoats/fragments/HistoryFragment',
+                                                       'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/DestinationInfo': ['org/owasp/goatdroid/fourgoats/base/BaseUnauthenticatedActivity',
+                                                              'org/owasp/goatdroid/fourgoats/activities/DestinationInfo',
+                                                              'java/lang/CharSequence',
+                                                              'org/owasp/goatdroid/fourgoats/activities/Login',
+                                                              'java/util/HashMap',
+                                                              'android/widget/EditText',
+                                                              'android/widget/CheckBox',
+                                                              'java/lang/String',
+                                                              'android/view/View',
+                                                              'java/lang/Object',
+                                                              'android/text/Editable',
+                                                              'java/lang/Class',
+                                                              'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                              'android/content/Intent',
+                                                              'android/content/Context',
+                                                              'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/DoAdminDeleteUser': ['android/os/AsyncTask',
+                                                                'android/os/Bundle',
+                                                                'dalvik/annotation/EnclosingClass',
+                                                                'org/owasp/goatdroid/fourgoats/db/UserInfoDBHelper',
+                                                                'java/util/HashMap',
+                                                                'java/lang/Object',
+                                                                'java/lang/String',
+                                                                'dalvik/annotation/Signature',
+                                                                'java/lang/Void',
+                                                                'org/owasp/goatdroid/fourgoats/rest/admin/AdminRequest',
+                                                                'java/lang/Exception',
+                                                                'dalvik/annotation/InnerClass',
+                                                                'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                                'android/content/Context',
+                                                                'org/owasp/goatdroid/fourgoats/activities/DoAdminDeleteUser'],
+ 'org/owasp/goatdroid/fourgoats/activities/DoAdminPasswordReset': ['android/os/AsyncTask',
+                                                                   'org/owasp/goatdroid/fourgoats/activities/DoAdminPasswordReset',
+                                                                   'org/owasp/goatdroid/fourgoats/base/BaseActivity',
+                                                                   'org/owasp/goatdroid/fourgoats/activities/AdminHome',
+                                                                   'org/owasp/goatdroid/fourgoats/activities/Login',
+                                                                   'java/lang/CharSequence',
+                                                                   'java/lang/Object',
+                                                                   'android/widget/EditText',
+                                                                   'dalvik/annotation/MemberClasses',
+                                                                   'android/view/View',
+                                                                   'android/text/Editable',
+                                                                   'java/lang/String',
+                                                                   'java/lang/Void',
+                                                                   'java/lang/Class',
+                                                                   'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                                   'android/content/Intent',
+                                                                   'android/content/Context',
+                                                                   'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/DoComment': ['android/os/AsyncTask',
+                                                        'dalvik/annotation/EnclosingClass',
+                                                        'org/owasp/goatdroid/fourgoats/db/UserInfoDBHelper',
+                                                        'org/owasp/goatdroid/fourgoats/activities/DoComment',
+                                                        'org/owasp/goatdroid/fourgoats/rest/comments/CommentsRequest',
+                                                        'java/lang/Object',
+                                                        'java/util/HashMap',
+                                                        'java/lang/String',
+                                                        'dalvik/annotation/Signature',
+                                                        'java/lang/Void',
+                                                        'android/widget/EditText',
+                                                        'android/text/Editable',
+                                                        'java/lang/Exception',
+                                                        'dalvik/annotation/InnerClass',
+                                                        'org/owasp/goatdroid/fourgoats/activities/ViewCheckin',
+                                                        'android/content/Intent',
+                                                        'java/lang/Class',
+                                                        'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                        'android/content/Context',
+                                                        'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/Friends': ['org/owasp/goatdroid/fourgoats/activities/Friends',
+                                                      'org/owasp/goatdroid/fourgoats/fragments/SearchForFriends',
+                                                      'com/actionbarsherlock/app/ActionBar',
+                                                      'org/owasp/goatdroid/fourgoats/fragments/MyFriends',
+                                                      'java/lang/Class',
+                                                      'org/owasp/goatdroid/fourgoats/base/BaseTabsViewPagerActivity',
+                                                      'org/owasp/goatdroid/fourgoats/fragments/PendingFriendRequests',
+                                                      'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/GenericWebViewActivity': ['org/owasp/goatdroid/fourgoats/base/BaseActivity',
+                                                                     'android/webkit/WebView',
+                                                                     'android/view/View',
+                                                                     'java/lang/String',
+                                                                     'android/webkit/WebSettings',
+                                                                     'android/content/Intent',
+                                                                     'org/owasp/goatdroid/fourgoats/activities/GenericWebViewActivity',
+                                                                     'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/History': ['android/os/AsyncTask',
+                                                      'org/owasp/goatdroid/fourgoats/activities/History',
+                                                      'android/widget/TextView',
+                                                      'org/owasp/goatdroid/fourgoats/rest/history/HistoryRequest',
+                                                      'dalvik/annotation/EnclosingClass',
+                                                      'org/owasp/goatdroid/fourgoats/db/UserInfoDBHelper',
+                                                      'android/webkit/WebView',
+                                                      '(Ljava/util/ArrayList',
+                                                      'java/lang/CharSequence',
+                                                      'java/lang/Object',
+                                                      'java/util/HashMap',
+                                                      'java/lang/String',
+                                                      'dalvik/annotation/Signature',
+                                                      'java/lang/Void',
+                                                      'java/lang/Exception',
+                                                      'java/util/ArrayList',
+                                                      'dalvik/annotation/InnerClass',
+                                                      'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                      'android/content/Context',
+                                                      'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/Home': ['android/os/Bundle',
+                                                   'org/owasp/goatdroid/fourgoats/activities/Friends',
+                                                   'org/owasp/goatdroid/fourgoats/services/LocationService',
+                                                   'org/owasp/goatdroid/fourgoats/activities/Checkins',
+                                                   'org/owasp/goatdroid/fourgoats/base/BaseActivity',
+                                                   'java/lang/CharSequence',
+                                                   'android/view/View',
+                                                   'com/actionbarsherlock/app/ActionBar',
+                                                   'java/lang/Class',
+                                                   'android/content/Intent',
+                                                   'android/content/ComponentName',
+                                                   'android/widget/ListView',
+                                                   'android/content/Context',
+                                                   'org/owasp/goatdroid/fourgoats/activities/Home'],
+ 'org/owasp/goatdroid/fourgoats/activities/Login': ['android/os/AsyncTask',
+                                                    'org/owasp/goatdroid/fourgoats/base/BaseUnauthenticatedActivity',
+                                                    'org/owasp/goatdroid/fourgoats/activities/Home',
+                                                    'java/lang/NullPointerException',
+                                                    'org/owasp/goatdroid/fourgoats/activities/AdminHome',
+                                                    'org/owasp/goatdroid/fourgoats/activities/Login',
+                                                    'java/lang/CharSequence',
+                                                    'java/lang/Object',
+                                                    'android/widget/EditText',
+                                                    'android/widget/CheckBox',
+                                                    'java/lang/String',
+                                                    'java/lang/Void',
+                                                    'java/lang/Class',
+                                                    'dalvik/annotation/MemberClasses',
+                                                    'android/content/SharedPreferences',
+                                                    'android/view/View',
+                                                    'android/text/Editable',
+                                                    'android/content/Intent',
+                                                    'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                    'android/content/Context',
+                                                    'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/Main': ['android/os/AsyncTask',
+                                                   'android/app/Activity',
+                                                   'org/owasp/goatdroid/fourgoats/activities/Main',
+                                                   'java/lang/Object',
+                                                   'dalvik/annotation/MemberClasses',
+                                                   'java/lang/Void',
+                                                   'android/content/Context',
+                                                   'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/Preferences': ['android/os/AsyncTask',
+                                                          'dalvik/annotation/EnclosingClass',
+                                                          'org/owasp/goatdroid/fourgoats/activities/Preferences',
+                                                          'org/owasp/goatdroid/fourgoats/db/UserInfoDBHelper',
+                                                          'java/lang/Object',
+                                                          'java/util/HashMap',
+                                                          'java/lang/String',
+                                                          'dalvik/annotation/Signature',
+                                                          'java/lang/Void',
+                                                          'android/widget/CheckBox',
+                                                          'org/owasp/goatdroid/fourgoats/rest/preferences/PreferencesRequest',
+                                                          'java/lang/Exception',
+                                                          'dalvik/annotation/InnerClass',
+                                                          'java/lang/Boolean',
+                                                          'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                          'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/activities/Register': ['android/os/AsyncTask',
+                                                       'dalvik/annotation/EnclosingClass',
+                                                       'java/lang/Object',
+                                                       'java/util/HashMap',
+                                                       'java/lang/String',
+                                                       'dalvik/annotation/Signature',
+                                                       'java/lang/Void',
+                                                       'android/view/View',
+                                                       'android/widget/EditText',
+                                                       'android/text/Editable',
+                                                       'dalvik/annotation/InnerClass',
+                                                       'java/lang/Exception',
+                                                       'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                       'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/activities/Rewards': ['org/owasp/goatdroid/fourgoats/fragments/MyRewards',
+                                                      'com/actionbarsherlock/app/ActionBar',
+                                                      'java/lang/Class',
+                                                      'org/owasp/goatdroid/fourgoats/base/BaseTabsViewPagerActivity',
+                                                      'org/owasp/goatdroid/fourgoats/fragments/AvailableRewards',
+                                                      'android/content/Context',
+                                                      'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/SendSMS': ['android/telephony/SmsManager',
+                                                      'android/app/PendingIntent',
+                                                      'org/owasp/goatdroid/fourgoats/base/BaseActivity',
+                                                      'java/lang/CharSequence',
+                                                      'java/lang/StringBuilder',
+                                                      'org/owasp/goatdroid/fourgoats/activities/SendSMS',
+                                                      'android/widget/EditText',
+                                                      'android/text/Editable',
+                                                      'java/lang/String',
+                                                      'java/lang/Object',
+                                                      'android/view/View',
+                                                      'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                      'android/content/Intent',
+                                                      'android/content/Context',
+                                                      'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/SocialAPIAuthentication': ['android/os/AsyncTask',
+                                                                      'android/app/Activity',
+                                                                      'org/owasp/goatdroid/fourgoats/activities/Login',
+                                                                      'java/lang/Object',
+                                                                      'android/widget/EditText',
+                                                                      'dalvik/annotation/MemberClasses',
+                                                                      'java/lang/String',
+                                                                      'android/view/View',
+                                                                      'java/lang/Void',
+                                                                      'java/lang/Class',
+                                                                      'android/content/Intent',
+                                                                      'org/owasp/goatdroid/fourgoats/activities/SocialAPIAuthentication',
+                                                                      'android/content/Context',
+                                                                      'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/ViewCheckin': ['org/owasp/goatdroid/fourgoats/javascriptinterfaces/ViewCheckinJSInterface',
+                                                          'org/owasp/goatdroid/fourgoats/base/BaseActivity',
+                                                          'org/owasp/goatdroid/fourgoats/activities/Login',
+                                                          'java/lang/String',
+                                                          'android/content/Context',
+                                                          'org/owasp/goatdroid/fourgoats/javascriptinterfaces/WebViewJSInterface',
+                                                          'java/lang/StringBuilder',
+                                                          'org/owasp/goatdroid/fourgoats/activities/ViewCheckin',
+                                                          'dalvik/annotation/Signature',
+                                                          'java/lang/Void',
+                                                          'java/lang/Class',
+                                                          'android/os/Bundle',
+                                                          'android/os/AsyncTask',
+                                                          'dalvik/annotation/MemberClasses',
+                                                          'android/webkit/WebSettings',
+                                                          'android/content/Intent',
+                                                          'android/webkit/WebView',
+                                                          'java/util/HashMap',
+                                                          'java/lang/Object',
+                                                          'android/view/View',
+                                                          'org/owasp/goatdroid/fourgoats/javascriptinterfaces/SmsJSInterface',
+                                                          '(Ljava/util/HashMap'],
+ 'org/owasp/goatdroid/fourgoats/activities/ViewFriendRequest': ['android/os/AsyncTask',
+                                                                'android/widget/TextView',
+                                                                'org/owasp/goatdroid/fourgoats/base/BaseActivity',
+                                                                'java/lang/CharSequence',
+                                                                'java/lang/StringBuilder',
+                                                                'java/lang/Object',
+                                                                'dalvik/annotation/MemberClasses',
+                                                                'android/view/View',
+                                                                'java/lang/Void',
+                                                                'org/owasp/goatdroid/fourgoats/activities/ViewFriendRequest',
+                                                                'java/lang/String',
+                                                                'android/content/Intent',
+                                                                'android/content/Context',
+                                                                'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/activities/ViewProfile': ['android/os/AsyncTask',
+                                                          'org/owasp/goatdroid/fourgoats/activities/History',
+                                                          'android/widget/TextView',
+                                                          'org/owasp/goatdroid/fourgoats/base/BaseActivity',
+                                                          'java/lang/Object',
+                                                          'dalvik/annotation/MemberClasses',
+                                                          'android/view/View',
+                                                          'org/owasp/goatdroid/fourgoats/activities/ViewProfile',
+                                                          'java/lang/Void',
+                                                          'java/lang/Class',
+                                                          'android/content/Intent',
+                                                          'android/content/Context',
+                                                          'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/adapter/AvailableRewardsAdapter': ['org/owasp/goatdroid/fourgoats/adapter/AvailableRewardsAdapter',
+                                                                   'android/app/Activity',
+                                                                   'java/lang/CharSequence',
+                                                                   'android/view/LayoutInflater',
+                                                                   'android/view/ViewGroup',
+                                                                   'java/lang/Object',
+                                                                   'java/lang/String',
+                                                                   'dalvik/annotation/Signature',
+                                                                   'android/widget/ArrayAdapter',
+                                                                   'dalvik/annotation/MemberClasses',
+                                                                   'android/view/View',
+                                                                   'ayoutInflater()Landroid/view/LayoutInflater',
+                                                                   'android/content/Context',
+                                                                   'android/widget/TextView'],
+ 'org/owasp/goatdroid/fourgoats/adapter/SearchForFriendsAdapter': ['org/owasp/goatdroid/fourgoats/adapter/SearchForFriendsAdapter',
+                                                                   'dalvik/annotation/InnerClass',
+                                                                   'dalvik/annotation/EnclosingClass',
+                                                                   'java/lang/Object',
+                                                                   'android/widget/TextView'],
+ 'org/owasp/goatdroid/fourgoats/base/BaseActivity': ['android/os/AsyncTask',
+                                                     'dalvik/annotation/EnclosingClass',
+                                                     'org/owasp/goatdroid/fourgoats/rest/login/LoginRequest',
+                                                     'org/owasp/goatdroid/fourgoats/db/UserInfoDBHelper',
+                                                     'org/owasp/goatdroid/fourgoats/base/BaseActivity',
+                                                     'org/owasp/goatdroid/fourgoats/activities/Login',
+                                                     'java/lang/Object',
+                                                     'java/util/HashMap',
+                                                     'java/lang/String',
+                                                     'dalvik/annotation/Signature',
+                                                     'java/lang/Void',
+                                                     'java/lang/Exception',
+                                                     'java/lang/Class',
+                                                     'dalvik/annotation/InnerClass',
+                                                     'android/content/Intent',
+                                                     'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                     'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/base/BaseFragmentActivity': ['android/os/AsyncTask',
+                                                             'org/owasp/goatdroid/fourgoats/base/BaseFragmentActivity',
+                                                             'dalvik/annotation/EnclosingClass',
+                                                             'org/owasp/goatdroid/fourgoats/rest/login/LoginRequest',
+                                                             'org/owasp/goatdroid/fourgoats/db/UserInfoDBHelper',
+                                                             'org/owasp/goatdroid/fourgoats/activities/Login',
+                                                             'java/lang/Object',
+                                                             'java/util/HashMap',
+                                                             'java/lang/String',
+                                                             'dalvik/annotation/Signature',
+                                                             'java/lang/Void',
+                                                             'java/lang/Exception',
+                                                             'java/lang/Class',
+                                                             'dalvik/annotation/InnerClass',
+                                                             'android/content/Intent',
+                                                             'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                             'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/base/BaseTabsViewPagerActivity': ['android/os/AsyncTask',
+                                                                  'dalvik/annotation/EnclosingClass',
+                                                                  'org/owasp/goatdroid/fourgoats/rest/login/LoginRequest',
+                                                                  'org/owasp/goatdroid/fourgoats/db/UserInfoDBHelper',
+                                                                  'org/owasp/goatdroid/fourgoats/activities/Login',
+                                                                  'java/lang/Object',
+                                                                  'java/util/HashMap',
+                                                                  'java/lang/String',
+                                                                  'dalvik/annotation/Signature',
+                                                                  'java/lang/Void',
+                                                                  'java/lang/Exception',
+                                                                  'org/owasp/goatdroid/fourgoats/base/BaseTabsViewPagerActivity',
+                                                                  'java/lang/Class',
+                                                                  'dalvik/annotation/InnerClass',
+                                                                  'android/content/Intent',
+                                                                  'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                                  'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/base/BaseUnauthenticatedActivity': ['com/actionbarsherlock/app/SherlockActivity',
+                                                                    'com/actionbarsherlock/view/Menu',
+                                                                    'com/actionbarsherlock/view/MenuInflater',
+                                                                    'com/actionbarsherlock/view/MenuItem',
+                                                                    'org/owasp/goatdroid/fourgoats/base/BaseUnauthenticatedActivity',
+                                                                    'org/owasp/goatdroid/fourgoats/activities/DestinationInfo',
+                                                                    'org/owasp/goatdroid/fourgoats/activities/Login',
+                                                                    'com/actionbarsherlock/app/ActionBar',
+                                                                    'java/lang/Class',
+                                                                    'android/content/Intent',
+                                                                    'android/content/Context',
+                                                                    'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/base/RequestBase': ['java/lang/Object'],
+ 'org/owasp/goatdroid/fourgoats/base/ResponseBase': ['org/json/JSONObject',
+                                                     'org/json/JSONArray',
+                                                     'org/json/JSONException',
+                                                     'java/lang/StringBuilder',
+                                                     'java/lang/Object',
+                                                     'java/util/HashMap',
+                                                     'java/lang/String',
+                                                     'dalvik/annotation/Signature',
+                                                     'java/lang/Exception',
+                                                     'dalvik/annotation/Throws'],
+ 'org/owasp/goatdroid/fourgoats/broadcastreceivers/SendSMSNowReceiver': ['android/telephony/SmsManager',
+                                                                         'android/app/PendingIntent',
+                                                                         'android/content/BroadcastReceiver',
+                                                                         'org/owasp/goatdroid/fourgoats/broadcastreceivers/SendSMSNowReceiver',
+                                                                         'java/lang/String',
+                                                                         'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                                         'android/content/Intent',
+                                                                         'android/content/Context',
+                                                                         'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/db/CheckinDBHelper': ['android/util/Log',
+                                                      'android/database/sqlite/SQLiteDatabase',
+                                                      'dalvik/annotation/EnclosingClass',
+                                                      '(Ljava/lang/String',
+                                                      'android/database/sqlite/SQLiteOpenHelper',
+                                                      'org/owasp/goatdroid/fourgoats/db/CheckinDBHelper',
+                                                      'java/lang/String',
+                                                      'dalvik/annotation/InnerClass',
+                                                      'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/db/UserInfoDBHelper': ['android/util/Log',
+                                                       'android/database/sqlite/SQLiteDatabase',
+                                                       'dalvik/annotation/EnclosingClass',
+                                                       '(Ljava/lang/String',
+                                                       'android/database/sqlite/SQLiteOpenHelper',
+                                                       'org/owasp/goatdroid/fourgoats/db/UserInfoDBHelper',
+                                                       'java/lang/String',
+                                                       'dalvik/annotation/InnerClass',
+                                                       'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/fragments/AvailableRewards': ['org/owasp/goatdroid/fourgoats/adapter/AvailableRewardsAdapter',
+                                                              'dalvik/annotation/EnclosingClass',
+                                                              'android/support/v4/app/FragmentActivity',
+                                                              'org/owasp/goatdroid/fourgoats/activities/Login',
+                                                              'java/lang/String',
+                                                              'org/owasp/goatdroid/fourgoats/fragments/AvailableRewards',
+                                                              'android/content/Context',
+                                                              'org/owasp/goatdroid/fourgoats/db/UserInfoDBHelper',
+                                                              'dalvik/annotation/Signature',
+                                                              'java/lang/Void',
+                                                              'java/lang/Class',
+                                                              'dalvik/annotation/InnerClass',
+                                                              'istView(Ljava/util/ArrayList',
+                                                              'android/os/AsyncTask',
+                                                              'android/app/Activity',
+                                                              'android/widget/ListAdapter',
+                                                              'java/lang/Exception',
+                                                              'android/widget/ListView',
+                                                              'android/content/Intent',
+                                                              'java/lang/Object',
+                                                              'java/util/HashMap',
+                                                              'java/util/ArrayList',
+                                                              'org/owasp/goatdroid/fourgoats/misc/Utils'],
+ 'org/owasp/goatdroid/fourgoats/fragments/DeleteUsers': ['android/os/AsyncTask',
+                                                         'org/owasp/goatdroid/fourgoats/fragments/DeleteUsers',
+                                                         'com/actionbarsherlock/app/SherlockFragment',
+                                                         'android/support/v4/app/FragmentActivity',
+                                                         'java/util/ArrayList',
+                                                         'android/view/LayoutInflater',
+                                                         'java/lang/StringBuilder',
+                                                         'android/view/ViewGroup',
+                                                         'java/util/HashMap',
+                                                         'java/lang/String',
+                                                         'dalvik/annotation/Signature',
+                                                         'java/lang/Void',
+                                                         'dalvik/annotation/MemberClasses',
+                                                         'java/lang/Object',
+                                                         'java/util/Iterator',
+                                                         'android/view/View',
+                                                         'istView(Ljava/util/ArrayList',
+                                                         'android/widget/ListView',
+                                                         'android/content/Context',
+                                                         'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/fragments/DoCheckin': ['org/owasp/goatdroid/fourgoats/fragments/DoCheckin',
+                                                       'android/view/LayoutInflater',
+                                                       'android/view/ViewGroup',
+                                                       'java/lang/Object',
+                                                       'android/view/View',
+                                                       'dalvik/annotation/InnerClass',
+                                                       'dalvik/annotation/EnclosingMethod',
+                                                       'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/fragments/HistoryDialogFragment': ['org/owasp/goatdroid/fourgoats/javascriptinterfaces/ViewCheckinJSInterface',
+                                                                   'android/support/v4/app/FragmentActivity',
+                                                                   'org/owasp/goatdroid/fourgoats/activities/Login',
+                                                                   'android/view/LayoutInflater',
+                                                                   'java/lang/String',
+                                                                   'android/content/Context',
+                                                                   'org/owasp/goatdroid/fourgoats/fragments/HistoryDialogFragment',
+                                                                   'java/lang/StringBuilder',
+                                                                   'dalvik/annotation/Signature',
+                                                                   'java/lang/Void',
+                                                                   'java/lang/Class',
+                                                                   'java/util/Iterator',
+                                                                   'android/view/ViewGroup',
+                                                                   'android/os/Bundle',
+                                                                   'android/os/AsyncTask',
+                                                                   '(Ljava/util/ArrayList',
+                                                                   'dalvik/annotation/MemberClasses',
+                                                                   'android/webkit/WebSettings',
+                                                                   'android/content/Intent',
+                                                                   'com/actionbarsherlock/app/SherlockDialogFragment',
+                                                                   'android/webkit/WebView',
+                                                                   'java/util/HashMap',
+                                                                   'java/lang/Object',
+                                                                   'android/view/View',
+                                                                   'java/util/ArrayList',
+                                                                   'android/widget/TextView'],
+ 'org/owasp/goatdroid/fourgoats/fragments/HistoryFragment': ['org/owasp/goatdroid/fourgoats/javascriptinterfaces/ViewCheckinJSInterface',
+                                                             'android/support/v4/app/FragmentActivity',
+                                                             'org/owasp/goatdroid/fourgoats/activities/Login',
+                                                             'android/view/LayoutInflater',
+                                                             'java/lang/String',
+                                                             'org/owasp/goatdroid/fourgoats/fragments/HistoryFragment',
+                                                             'android/content/Context',
+                                                             'java/util/ArrayList',
+                                                             'java/lang/StringBuilder',
+                                                             'dalvik/annotation/Signature',
+                                                             'java/lang/Void',
+                                                             'java/lang/Class',
+                                                             'android/view/ViewGroup',
+                                                             'android/os/Bundle',
+                                                             'android/os/AsyncTask',
+                                                             '(Ljava/util/ArrayList',
+                                                             'dalvik/annotation/MemberClasses',
+                                                             'android/webkit/WebSettings',
+                                                             'android/content/Intent',
+                                                             'android/graphics/Color',
+                                                             'com/actionbarsherlock/app/SherlockFragment',
+                                                             'android/webkit/WebView',
+                                                             'java/util/HashMap',
+                                                             'java/lang/Object',
+                                                             'android/view/View',
+                                                             'java/util/Iterator',
+                                                             'android/widget/TextView'],
+ 'org/owasp/goatdroid/fourgoats/fragments/MyFriends': ['ist":Ljava/lang/String',
+                                                       'dalvik/annotation/EnclosingMethod',
+                                                       'android/widget/ListView',
+                                                       'android/support/v4/app/FragmentActivity',
+                                                       'android/content/Context',
+                                                       'android/view/LayoutInflater',
+                                                       'android/widget/AdapterView',
+                                                       'java/lang/Object',
+                                                       'ist":[Ljava/lang/String',
+                                                       'java/lang/String',
+                                                       'org/owasp/goatdroid/fourgoats/fragments/MyFriends',
+                                                       'dalvik/annotation/Signature',
+                                                       'java/lang/Class',
+                                                       'android/widget/AdapterView<*>',
+                                                       'android/view/View',
+                                                       'dalvik/annotation/InnerClass',
+                                                       'org/owasp/goatdroid/fourgoats/activities/ViewProfile',
+                                                       'android/content/Intent',
+                                                       'android/view/ViewGroup',
+                                                       'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/fragments/MyRewards': ['android/os/AsyncTask',
+                                                       'android/widget/TextView',
+                                                       'com/actionbarsherlock/app/SherlockFragment',
+                                                       'org/owasp/goatdroid/fourgoats/fragments/MyRewards',
+                                                       'android/support/v4/app/FragmentActivity',
+                                                       'java/util/ArrayList',
+                                                       'android/view/LayoutInflater',
+                                                       'java/lang/StringBuilder',
+                                                       'android/view/ViewGroup',
+                                                       'java/util/HashMap',
+                                                       'java/lang/String',
+                                                       'dalvik/annotation/Signature',
+                                                       'java/lang/Void',
+                                                       'dalvik/annotation/MemberClasses',
+                                                       'java/lang/Object',
+                                                       'java/util/Iterator',
+                                                       'android/view/View',
+                                                       'istView(Ljava/util/ArrayList',
+                                                       'android/widget/ListView',
+                                                       'android/content/Context',
+                                                       'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/fragments/PendingFriendRequests': ['ist":Ljava/lang/String',
+                                                                   'android/support/v4/app/FragmentActivity',
+                                                                   'android/content/Context',
+                                                                   'android/view/LayoutInflater',
+                                                                   'android/widget/AdapterView',
+                                                                   'android/view/ViewGroup',
+                                                                   'java/lang/Object',
+                                                                   'ist":[Ljava/lang/String',
+                                                                   'java/lang/String',
+                                                                   'dalvik/annotation/Signature',
+                                                                   'android/view/View',
+                                                                   'android/widget/AdapterView<*>',
+                                                                   'org/owasp/goatdroid/fourgoats/activities/ViewFriendRequest',
+                                                                   'java/lang/Class',
+                                                                   'dalvik/annotation/InnerClass',
+                                                                   'android/content/Intent',
+                                                                   'android/widget/ListView',
+                                                                   'org/owasp/goatdroid/fourgoats/fragments/PendingFriendRequests',
+                                                                   'dalvik/annotation/EnclosingMethod',
+                                                                   'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/fragments/ResetUserPasswords': ['ist":Ljava/lang/String',
+                                                                'org/owasp/goatdroid/fourgoats/activities/DoAdminPasswordReset',
+                                                                'android/support/v4/app/FragmentActivity',
+                                                                'android/content/Context',
+                                                                'android/view/LayoutInflater',
+                                                                'android/widget/AdapterView',
+                                                                'android/view/ViewGroup',
+                                                                'java/lang/Object',
+                                                                'ist":[Ljava/lang/String',
+                                                                'java/lang/String',
+                                                                'dalvik/annotation/Signature',
+                                                                'android/view/View',
+                                                                'android/widget/AdapterView<*>',
+                                                                'java/lang/Class',
+                                                                'android/content/Intent',
+                                                                'dalvik/annotation/InnerClass',
+                                                                'android/widget/ListView',
+                                                                'dalvik/annotation/EnclosingMethod',
+                                                                'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/fragments/SearchForFriends': ['dalvik/annotation/EnclosingClass',
+                                                              'org/owasp/goatdroid/fourgoats/fragments/SearchForFriends',
+                                                              'android/support/v4/app/FragmentActivity',
+                                                              'org/owasp/goatdroid/fourgoats/activities/Login',
+                                                              'java/lang/String',
+                                                              'android/content/Context',
+                                                              'org/owasp/goatdroid/fourgoats/db/UserInfoDBHelper',
+                                                              'dalvik/annotation/Signature',
+                                                              'java/lang/Void',
+                                                              'java/lang/Class',
+                                                              'dalvik/annotation/InnerClass',
+                                                              'istView(Ljava/util/ArrayList',
+                                                              'android/os/AsyncTask',
+                                                              'org/owasp/goatdroid/fourgoats/rest/searchforfriends/SearchForFriendsRequest',
+                                                              'android/app/Activity',
+                                                              'android/widget/ListAdapter',
+                                                              'java/lang/Exception',
+                                                              'android/content/Intent',
+                                                              'android/widget/ListView',
+                                                              'java/lang/Object',
+                                                              'java/util/HashMap',
+                                                              'java/util/ArrayList',
+                                                              'org/owasp/goatdroid/fourgoats/adapter/SearchForFriendsAdapter',
+                                                              'org/owasp/goatdroid/fourgoats/misc/Utils'],
+ 'org/owasp/goatdroid/fourgoats/javascriptinterfaces/SmsJSInterface': ['android/telephony/SmsManager',
+                                                                       'android/app/PendingIntent',
+                                                                       'java/lang/Object',
+                                                                       'org/owasp/goatdroid/fourgoats/activities/SendSMS',
+                                                                       'java/lang/String',
+                                                                       'java/lang/Cloneable',
+                                                                       'org/owasp/goatdroid/fourgoats/javascriptinterfaces/SmsJSInterface',
+                                                                       'java/lang/Class',
+                                                                       'android/content/Intent',
+                                                                       'android/content/Context',
+                                                                       'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/javascriptinterfaces/ViewCheckinJSInterface': ['org/owasp/goatdroid/fourgoats/javascriptinterfaces/ViewCheckinJSInterface',
+                                                                               'org/owasp/goatdroid/fourgoats/db/UserInfoDBHelper',
+                                                                               'org/owasp/goatdroid/fourgoats/activities/DoComment',
+                                                                               'org/owasp/goatdroid/fourgoats/rest/comments/CommentsRequest',
+                                                                               'java/util/HashMap',
+                                                                               'java/lang/Object',
+                                                                               'java/lang/String',
+                                                                               'org/owasp/goatdroid/fourgoats/activities/ViewCheckin',
+                                                                               'java/lang/Exception',
+                                                                               'java/lang/Class',
+                                                                               'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                                               'android/content/Intent',
+                                                                               'android/content/Context',
+                                                                               'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/javascriptinterfaces/WebViewJSInterface': ['org/owasp/goatdroid/fourgoats/activities/GenericWebViewActivity',
+                                                                           'org/owasp/goatdroid/fourgoats/javascriptinterfaces/WebViewJSInterface',
+                                                                           'java/lang/Object',
+                                                                           'java/lang/String',
+                                                                           'java/lang/Cloneable',
+                                                                           'java/lang/Class',
+                                                                           'android/content/Intent',
+                                                                           'android/content/Context',
+                                                                           'android/os/Bundle'],
+ 'org/owasp/goatdroid/fourgoats/misc/Constants': ['LY_REMOVED:Ljava/lang/String',
+                                                  'OGIN_FAILED:Ljava/lang/String',
+                                                  'org/owasp/goatdroid/fourgoats/misc/Constants',
+                                                  'ID_SESSION:Ljava/lang/String',
+                                                  'java/lang/Object',
+                                                  'java/lang/String',
+                                                  'F_NO_CHECKINS:Ljava/lang/String',
+                                                  ':Ljava/lang/String',
+                                                  'L_FIELDS_REQUIRED:Ljava/lang/String',
+                                                  'OCATION:Ljava/lang/String',
+                                                  'ETION_SUCCESS:Ljava/lang/String',
+                                                  'INED_SENT:Ljava/lang/String',
+                                                  'D_NOT_CONNECT:Ljava/lang/String'],
+ 'org/owasp/goatdroid/fourgoats/misc/Utils': ['java/text/SimpleDateFormat',
+                                              'android/widget/Toast',
+                                              'java/lang/CharSequence',
+                                              'java/util/Calendar',
+                                              'java/lang/StringBuilder',
+                                              'java/lang/Object',
+                                              'android/content/SharedPreferences',
+                                              'java/lang/String',
+                                              'java/util/HashMap',
+                                              'dalvik/annotation/Signature',
+                                              'java/util/Date',
+                                              'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                              'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/requestresponse/AuthenticatedRestClient': ['java/io/InputStreamReader',
+                                                                           'java/util/List',
+                                                                           'java/net/URLEncoder',
+                                                                           'java/lang/String',
+                                                                           'org/apache/http/client/methods/HttpGet',
+                                                                           'ine()Ljava/lang/String',
+                                                                           'org/apache/http/client/ClientProtocolException',
+                                                                           'android/content/Context',
+                                                                           'org/owasp/goatdroid/fourgoats/requestresponse/AuthenticatedRestClient',
+                                                                           'org/apache/http/NameValuePair',
+                                                                           'java/io/BufferedReader',
+                                                                           'org/apache/http/client/entity/UrlEncodedFormEntity',
+                                                                           'org/apache/http/StatusLine',
+                                                                           'java/lang/StringBuilder',
+                                                                           'org/apache/http/HttpEntity',
+                                                                           'dalvik/annotation/Signature',
+                                                                           'ine()Lorg/apache/http/StatusLine',
+                                                                           'java/lang/NoSuchFieldError',
+                                                                           'org/apache/http/params/HttpParams',
+                                                                           'dalvik/annotation/Throws',
+                                                                           'java/util/Iterator',
+                                                                           'org/apache/http/client/HttpClient',
+                                                                           'org/apache/http/conn/ClientConnectionManager',
+                                                                           'java/io/InputStream',
+                                                                           'java/security/NoSuchAlgorithmException',
+                                                                           'org/apache/http/message/BasicNameValuePair',
+                                                                           'org/apache/http/HttpResponse',
+                                                                           'java/lang/Exception',
+                                                                           'java/io/IOException',
+                                                                           'org/apache/http/HttpHost',
+                                                                           'org/owasp/goatdroid/fourgoats/requestresponse/CustomSSLSocketFactory',
+                                                                           'org/apache/http/client/methods/HttpUriRequest',
+                                                                           'java/lang/Integer',
+                                                                           'java/lang/Object',
+                                                                           'java/util/HashMap',
+                                                                           'org/apache/http/client/methods/HttpPost',
+                                                                           'java/util/ArrayList',
+                                                                           'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                                           'java/security/KeyManagementException'],
+ 'org/owasp/goatdroid/fourgoats/requestresponse/CustomSSLSocketFactory': ['org/owasp/goatdroid/fourgoats/requestresponse/CustomSSLSocketFactory',
+                                                                          'java/security/cert/X509Certificate',
+                                                                          'java/security/KeyStore',
+                                                                          'java/lang/Object',
+                                                                          'java/security/cert/CertificateException',
+                                                                          'java/lang/String',
+                                                                          'javax/net/ssl/X509TrustManager',
+                                                                          'dalvik/annotation/InnerClass',
+                                                                          'dalvik/annotation/Throws',
+                                                                          'dalvik/annotation/EnclosingMethod'],
+ 'org/owasp/goatdroid/fourgoats/requestresponse/RequestMethod': ['java/lang/Enum',
+                                                                 'java/lang/Object',
+                                                                 'java/lang/String',
+                                                                 'dalvik/annotation/Signature',
+                                                                 'java/lang/Class',
+                                                                 'java/lang/System'],
+ 'org/owasp/goatdroid/fourgoats/requestresponse/ResponseBase': ['org/json/JSONObject',
+                                                                'org/json/JSONException',
+                                                                'java/lang/Object',
+                                                                'java/util/HashMap',
+                                                                'java/lang/String',
+                                                                'dalvik/annotation/Signature'],
+ 'org/owasp/goatdroid/fourgoats/requestresponse/RestClient': ['java/io/InputStreamReader',
+                                                              'java/util/List',
+                                                              'java/net/URLEncoder',
+                                                              'java/lang/String',
+                                                              'org/apache/http/client/methods/HttpGet',
+                                                              'ine()Ljava/lang/String',
+                                                              'org/apache/http/client/ClientProtocolException',
+                                                              'android/content/Context',
+                                                              'org/apache/http/NameValuePair',
+                                                              'java/io/BufferedReader',
+                                                              'org/apache/http/client/entity/UrlEncodedFormEntity',
+                                                              'org/apache/http/StatusLine',
+                                                              'java/lang/StringBuilder',
+                                                              'org/apache/http/HttpEntity',
+                                                              'dalvik/annotation/Signature',
+                                                              'ine()Lorg/apache/http/StatusLine',
+                                                              'java/lang/NoSuchFieldError',
+                                                              'org/apache/http/params/HttpParams',
+                                                              'dalvik/annotation/Throws',
+                                                              'java/util/Iterator',
+                                                              'org/apache/http/client/HttpClient',
+                                                              'org/apache/http/conn/ClientConnectionManager',
+                                                              'java/io/InputStream',
+                                                              'org/apache/http/message/BasicNameValuePair',
+                                                              'org/apache/http/HttpResponse',
+                                                              'java/lang/Exception',
+                                                              'java/io/IOException',
+                                                              'org/apache/http/HttpHost',
+                                                              'org/owasp/goatdroid/fourgoats/requestresponse/CustomSSLSocketFactory',
+                                                              'org/apache/http/client/methods/HttpUriRequest',
+                                                              'java/lang/Integer',
+                                                              'java/lang/Object',
+                                                              'java/util/HashMap',
+                                                              'org/apache/http/client/methods/HttpPost',
+                                                              'java/util/ArrayList',
+                                                              'org/owasp/goatdroid/fourgoats/misc/Utils'],
+ 'org/owasp/goatdroid/fourgoats/rest/addvenue/AddVenueRequest': ['org/owasp/goatdroid/fourgoats/rest/addvenue/AddVenueResponse',
+                                                                 'org/owasp/goatdroid/fourgoats/rest/addvenue/AddVenueRequest',
+                                                                 'org/owasp/goatdroid/fourgoats/requestresponse/AuthenticatedRestClient',
+                                                                 'java/lang/StringBuilder',
+                                                                 'java/lang/Object',
+                                                                 'java/util/HashMap',
+                                                                 'java/lang/String',
+                                                                 'dalvik/annotation/Signature',
+                                                                 'java/lang/Exception',
+                                                                 'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                                 'dalvik/annotation/Throws',
+                                                                 'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/rest/addvenue/AddVenueResponse': ['org/owasp/goatdroid/fourgoats/rest/addvenue/AddVenueResponse',
+                                                                  'org/json/JSONObject',
+                                                                  'org/json/JSONArray',
+                                                                  'org/json/JSONException',
+                                                                  'java/lang/StringBuilder',
+                                                                  'java/lang/Object',
+                                                                  'java/util/HashMap',
+                                                                  'java/lang/String',
+                                                                  'dalvik/annotation/Signature'],
+ 'org/owasp/goatdroid/fourgoats/rest/admin/AdminRequest': ['org/owasp/goatdroid/fourgoats/requestresponse/AuthenticatedRestClient',
+                                                           'org/owasp/goatdroid/fourgoats/rest/admin/AdminResponse',
+                                                           'java/lang/StringBuilder',
+                                                           'org/owasp/goatdroid/fourgoats/rest/admin/AdminRequest',
+                                                           'java/lang/Object',
+                                                           'java/lang/String',
+                                                           'java/util/HashMap',
+                                                           'dalvik/annotation/Signature',
+                                                           'java/lang/Exception',
+                                                           'java/util/ArrayList',
+                                                           'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                           'dalvik/annotation/Throws',
+                                                           'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/rest/admin/AdminResponse': ['org/json/JSONObject',
+                                                            'org/json/JSONArray',
+                                                            'org/json/JSONException',
+                                                            'org/owasp/goatdroid/fourgoats/rest/admin/AdminResponse',
+                                                            'java/lang/StringBuilder',
+                                                            'java/util/HashMap',
+                                                            'java/lang/Object',
+                                                            'java/lang/String',
+                                                            'dalvik/annotation/Signature',
+                                                            'java/util/ArrayList'],
+ 'org/owasp/goatdroid/fourgoats/rest/checkin/CheckinRequest': ['org/owasp/goatdroid/fourgoats/rest/checkin/CheckinResponse',
+                                                               'org/owasp/goatdroid/fourgoats/requestresponse/AuthenticatedRestClient',
+                                                               'java/lang/StringBuilder',
+                                                               'org/owasp/goatdroid/fourgoats/rest/checkin/CheckinRequest',
+                                                               'java/lang/Object',
+                                                               'java/lang/String',
+                                                               'java/util/HashMap',
+                                                               'dalvik/annotation/Signature',
+                                                               'java/lang/Exception',
+                                                               'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                               'dalvik/annotation/Throws',
+                                                               'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/rest/checkin/CheckinResponse': ['org/owasp/goatdroid/fourgoats/rest/checkin/CheckinResponse',
+                                                                'org/json/JSONObject',
+                                                                'org/json/JSONArray',
+                                                                'org/json/JSONException',
+                                                                'java/lang/StringBuilder',
+                                                                'java/lang/Object',
+                                                                'java/util/HashMap',
+                                                                'java/lang/String',
+                                                                'dalvik/annotation/Signature'],
+ 'org/owasp/goatdroid/fourgoats/rest/comments/CommentsRequest': ['org/owasp/goatdroid/fourgoats/requestresponse/AuthenticatedRestClient',
+                                                                 'org/owasp/goatdroid/fourgoats/rest/comments/CommentsResponse',
+                                                                 'org/owasp/goatdroid/fourgoats/rest/comments/CommentsRequest',
+                                                                 'java/lang/StringBuilder',
+                                                                 'java/lang/Object',
+                                                                 'java/util/HashMap',
+                                                                 'java/lang/String',
+                                                                 'dalvik/annotation/Signature',
+                                                                 'java/lang/Exception',
+                                                                 'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                                 'dalvik/annotation/Throws',
+                                                                 'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/rest/comments/CommentsResponse': ['org/json/JSONObject',
+                                                                  'org/owasp/goatdroid/fourgoats/rest/comments/CommentsResponse',
+                                                                  'org/json/JSONArray',
+                                                                  'org/json/JSONException',
+                                                                  'java/lang/StringBuilder',
+                                                                  'java/util/HashMap',
+                                                                  'java/lang/Object',
+                                                                  'java/lang/String',
+                                                                  'dalvik/annotation/Signature'],
+ 'org/owasp/goatdroid/fourgoats/rest/friends/FriendRequest': ['org/owasp/goatdroid/fourgoats/requestresponse/AuthenticatedRestClient',
+                                                              'istFriendsResponse(Ljava/lang/String',
+                                                              'org/owasp/goatdroid/fourgoats/rest/friends/FriendResponse',
+                                                              'java/util/ArrayList',
+                                                              'java/lang/StringBuilder',
+                                                              'java/lang/Object',
+                                                              'java/util/HashMap',
+                                                              'java/lang/String',
+                                                              'dalvik/annotation/Signature',
+                                                              'java/lang/Exception',
+                                                              'org/owasp/goatdroid/fourgoats/rest/friends/FriendRequest',
+                                                              'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                              'dalvik/annotation/Throws',
+                                                              'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/rest/friends/FriendResponse': ['org/json/JSONObject',
+                                                               'istFriendsResponse(Ljava/lang/String',
+                                                               'org/json/JSONArray',
+                                                               'org/json/JSONException',
+                                                               'java/lang/StringBuilder',
+                                                               'java/util/HashMap',
+                                                               'java/lang/Object',
+                                                               'java/lang/String',
+                                                               'dalvik/annotation/Signature',
+                                                               'java/util/ArrayList',
+                                                               'org/owasp/goatdroid/fourgoats/rest/friends/FriendResponse'],
+ 'org/owasp/goatdroid/fourgoats/rest/history/HistoryRequest': ['org/owasp/goatdroid/fourgoats/rest/history/HistoryResponse',
+                                                               'org/owasp/goatdroid/fourgoats/rest/history/HistoryRequest',
+                                                               'org/owasp/goatdroid/fourgoats/requestresponse/AuthenticatedRestClient',
+                                                               'java/lang/StringBuilder',
+                                                               'java/lang/Object',
+                                                               'java/lang/String',
+                                                               'dalvik/annotation/Signature',
+                                                               'java/lang/Exception',
+                                                               'java/util/ArrayList',
+                                                               'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                               'dalvik/annotation/Throws',
+                                                               'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/rest/history/HistoryResponse': ['org/owasp/goatdroid/fourgoats/rest/history/HistoryResponse',
+                                                                'org/json/JSONObject',
+                                                                'org/json/JSONArray',
+                                                                'org/json/JSONException',
+                                                                'java/lang/StringBuilder',
+                                                                'java/lang/Object',
+                                                                'java/util/HashMap',
+                                                                'java/lang/String',
+                                                                'dalvik/annotation/Signature',
+                                                                'java/util/ArrayList'],
+ 'org/owasp/goatdroid/fourgoats/rest/login/LoginRequest': ['org/owasp/goatdroid/fourgoats/rest/login/LoginRequest',
+                                                           'org/owasp/goatdroid/fourgoats/requestresponse/AuthenticatedRestClient',
+                                                           'oginResponse(Ljava/lang/String',
+                                                           'org/owasp/goatdroid/fourgoats/rest/login/LoginResponse',
+                                                           'java/lang/StringBuilder',
+                                                           'java/lang/Object',
+                                                           'java/util/HashMap',
+                                                           'java/lang/String',
+                                                           'java/lang/Exception',
+                                                           'dalvik/annotation/Signature',
+                                                           'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                           'dalvik/annotation/Throws',
+                                                           'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/rest/login/LoginResponse': ['org/json/JSONObject',
+                                                            'org/json/JSONArray',
+                                                            'oginResponse(Ljava/lang/String',
+                                                            'org/json/JSONException',
+                                                            'org/owasp/goatdroid/fourgoats/rest/login/LoginResponse',
+                                                            'java/util/HashMap',
+                                                            'java/lang/Object',
+                                                            'java/lang/String',
+                                                            'dalvik/annotation/Signature'],
+ 'org/owasp/goatdroid/fourgoats/rest/preferences/PreferencesRequest': ['org/owasp/goatdroid/fourgoats/requestresponse/AuthenticatedRestClient',
+                                                                       'java/lang/StringBuilder',
+                                                                       'java/lang/Object',
+                                                                       'java/util/HashMap',
+                                                                       'java/lang/String',
+                                                                       'org/owasp/goatdroid/fourgoats/rest/preferences/PreferencesRequest',
+                                                                       'dalvik/annotation/Signature',
+                                                                       'java/lang/Exception',
+                                                                       'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                                       'dalvik/annotation/Throws',
+                                                                       'org/owasp/goatdroid/fourgoats/rest/preferences/PreferencesResponse',
+                                                                       'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/rest/preferences/PreferencesResponse': ['org/owasp/goatdroid/fourgoats/rest/preferences/PreferencesResponse'],
+ 'org/owasp/goatdroid/fourgoats/rest/register/RegisterRequest': ['java/lang/StringBuilder',
+                                                                 'java/lang/Object',
+                                                                 'java/util/HashMap',
+                                                                 'java/lang/String',
+                                                                 'dalvik/annotation/Signature',
+                                                                 'java/lang/Exception',
+                                                                 'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                                 'dalvik/annotation/Throws',
+                                                                 'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/rest/rewards/RewardsRequest': ['org/owasp/goatdroid/fourgoats/requestresponse/AuthenticatedRestClient',
+                                                               'java/lang/StringBuilder',
+                                                               'java/lang/Object',
+                                                               'java/lang/String',
+                                                               'dalvik/annotation/Signature',
+                                                               'java/lang/Exception',
+                                                               'java/util/ArrayList',
+                                                               'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                               'dalvik/annotation/Throws',
+                                                               'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/rest/rewards/RewardsResponse': ['org/json/JSONObject',
+                                                                'org/json/JSONArray',
+                                                                'org/json/JSONException',
+                                                                'java/lang/StringBuilder',
+                                                                'java/util/HashMap',
+                                                                'java/lang/Object',
+                                                                'java/lang/String',
+                                                                'dalvik/annotation/Signature',
+                                                                'java/util/ArrayList'],
+ 'org/owasp/goatdroid/fourgoats/rest/searchforfriends/SearchForFriendsRequest': ['org/owasp/goatdroid/fourgoats/rest/searchforfriends/SearchForFriendsRequest',
+                                                                                 'org/owasp/goatdroid/fourgoats/requestresponse/AuthenticatedRestClient',
+                                                                                 'java/lang/StringBuilder',
+                                                                                 'java/lang/Object',
+                                                                                 'org/owasp/goatdroid/fourgoats/rest/searchforfriends/SearchForFriendsResponse',
+                                                                                 'java/lang/String',
+                                                                                 'dalvik/annotation/Signature',
+                                                                                 'java/lang/Exception',
+                                                                                 'java/util/ArrayList',
+                                                                                 'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                                                 'dalvik/annotation/Throws',
+                                                                                 'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/rest/searchforfriends/SearchForFriendsResponse': ['org/json/JSONObject',
+                                                                                  'org/json/JSONArray',
+                                                                                  'org/json/JSONException',
+                                                                                  'java/lang/StringBuilder',
+                                                                                  'java/lang/Object',
+                                                                                  'org/owasp/goatdroid/fourgoats/rest/searchforfriends/SearchForFriendsResponse',
+                                                                                  'java/lang/String',
+                                                                                  'dalvik/annotation/Signature',
+                                                                                  'java/util/HashMap',
+                                                                                  'java/util/ArrayList'],
+ 'org/owasp/goatdroid/fourgoats/rest/viewcheckin/ViewCheckinRequest': ['org/owasp/goatdroid/fourgoats/rest/viewcheckin/ViewCheckinRequest',
+                                                                       'org/owasp/goatdroid/fourgoats/requestresponse/AuthenticatedRestClient',
+                                                                       'java/lang/StringBuilder',
+                                                                       'java/lang/Object',
+                                                                       'java/util/HashMap',
+                                                                       'java/lang/String',
+                                                                       'dalvik/annotation/Signature',
+                                                                       'java/lang/Exception',
+                                                                       'org/owasp/goatdroid/fourgoats/rest/viewcheckin/ViewCheckinResponse',
+                                                                       'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                                       'dalvik/annotation/Throws',
+                                                                       'android/content/Context'],
+ 'org/owasp/goatdroid/fourgoats/rest/viewcheckin/ViewCheckinResponse': ['org/json/JSONObject',
+                                                                        'org/json/JSONArray',
+                                                                        'org/json/JSONException',
+                                                                        'java/lang/StringBuilder',
+                                                                        'org/owasp/goatdroid/fourgoats/rest/viewcheckin/ViewCheckinResponse',
+                                                                        'java/util/HashMap',
+                                                                        'java/lang/String',
+                                                                        'dalvik/annotation/Signature',
+                                                                        'java/lang/Object'],
+ 'org/owasp/goatdroid/fourgoats/services/LocationService': ['org/owasp/goatdroid/fourgoats/services/LocationService',
+                                                            'java/lang/Thread',
+                                                            'org/owasp/goatdroid/fourgoats/db/CheckinDBHelper',
+                                                            'android/content/Context',
+                                                            'java/lang/String',
+                                                            'dalvik/annotation/InnerClass',
+                                                            'org/owasp/goatdroid/fourgoats/misc/Utils',
+                                                            'dalvik/annotation/EnclosingMethod',
+                                                            'java/lang/InterruptedException']}

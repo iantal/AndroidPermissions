@@ -1,5 +1,12 @@
-from permissions_parser import PermissionsParser
-from permissions_list import PermissionsList
+import pprint
+import sys
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, BASE_DIR)
+
+from analyse.permissions_parser import PermissionsParser
+from analyse.permissions_list import PermissionsList
 
 
 class PermissionsClassifier(object):

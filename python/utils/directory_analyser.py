@@ -29,7 +29,7 @@ class DirectoryAnalyser(object):
                 for file in files:
                     print(os.path.join(root, file))
         else:
-            print("\n[*] No native libraries found")
+            print("\n -> No native libraries found")
 
     def get_interesting_files(self):
         for root, dirs, files in os.walk(self.base_apk_dir + self.RAW):
