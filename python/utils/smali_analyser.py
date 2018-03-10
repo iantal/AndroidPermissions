@@ -8,7 +8,6 @@ sys.path.insert(0, project_dir)
 
 import re
 from utils.directory_analyser import DirectoryAnalyser
-import os
 import fnmatch
 
 
@@ -42,6 +41,20 @@ class SmaliAnalyser(DirectoryAnalyser):
                 for dep in self.dependencies.get(key):
                     if "$" not in dep:
                         dep_set.add(dep)
+                if dep_set != set():
+                    filtered_dependencies[key] = list(dep_set)
+        return filtered_dependencies
+
+    def get_filtered_dependencies_full_path(self):
+        name = self.package_name.split("/")[0]
+        filtered_dependencies = {}
+        for key in self.dependencies:
+            if "$" not in key and name in key:
+                dep_set = set()
+                for dep in self.dependencies.get(key):
+                    if "$" not in dep:
+                        if name in dep:
+                            dep_set.add(dep)
                 if dep_set != set():
                     filtered_dependencies[key] = list(dep_set)
         return filtered_dependencies

@@ -4,7 +4,7 @@ RED='\033[1;31m'
 GREEN='\033[1;32m'
 NC='\033[0m'
 
-tools_to_install=("adb"  "graphviz")
+tools_to_install=("adb"  "graphviz"  "wkhtmltopdf")
 missing_tools=()
 
 function check(){

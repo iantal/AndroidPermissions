@@ -63,7 +63,10 @@ class Extractor(object):
         """
         self.__create_directory(Extractor.readable_data)
         print("[*] Running apktool ...")
-        subprocess.check_call(['java', '-jar', apktool_path, 'd', self.path, '-f', '-o', Extractor.readable_data])
+        r = subprocess.run(['java', '-jar', apktool_path, 'd', self.path, '-f', '-o', Extractor.readable_data], stdout=subprocess.DEVNULL)
+        if r:
+            print("[+] Done apktool")
+        # subprocess.check_call(['java', '-jar', apktool_path, 'd', self.path, '-f', '-o', Extractor.readable_data])
 
     def extract_jar(self, dex2jar_path):
         """
@@ -74,7 +77,11 @@ class Extractor(object):
         print("[*] Running d2j-dex2jar.sh ...")
         output_jar_file = self.working_directory + "/raw/" + str(self.apk.rsplit('.', 1)[0]) + '.jar'
         path_to_dex_file = self.working_directory + '/raw/classes.dex'
-        subprocess.check_call([dex2jar_path, '-o', output_jar_file, '--force', path_to_dex_file])
+        r = subprocess.run([dex2jar_path, '-o', output_jar_file, '--force', path_to_dex_file], stdout=subprocess.DEVNULL)
+        if r:
+            # TODO: report info
+            print("[+] Done dex2jar")
+        # subprocess.check_call([dex2jar_path, '-o', output_jar_file, '--force', path_to_dex_file])
 
     def extract_java_source_code(self, jd_core_java):
         """
@@ -86,5 +93,9 @@ class Extractor(object):
         self.__create_directory(Extractor.java_source_dir)
         output_jar_file = self.working_directory + "/raw/" + str(self.apk.rsplit('.', 1)[0]) + '.jar'
         source_dir = self.working_directory + "/" + Extractor.java_source_dir
-        subprocess.check_call(['timeout', '1m', 'java', '-jar', jd_core_java, output_jar_file, source_dir])
+        r = subprocess.run(['timeout', '1m', 'java', '-jar', jd_core_java, output_jar_file, source_dir], stdout=subprocess.DEVNULL)
+        if r:
+            # TODO: report info
+            print("[+] Done java source code")
+        # subprocess.check_call(['timeout', '1m', 'java', '-jar', jd_core_java, output_jar_file, source_dir])
 

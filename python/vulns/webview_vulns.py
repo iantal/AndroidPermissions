@@ -86,8 +86,10 @@ class LoadClearTextContent(object):
                         if 'loadUrl' in call['to_method']:
                             if self.check_const_strings(cl):
                                 print("FIRM : loadUrl found")
-            except Exception as e:
-                pass
+            except TypeError:
+                continue
+            except KeyError:
+                continue
 
 
 class AccessLocalResources(object):
@@ -96,13 +98,16 @@ class AccessLocalResources(object):
 
     def check_file_access(self, method):
         for call in method['calls']:
-            if 'setAllowFileAccess' in call['to_method']:
-                for arg in call['local_args'].strip('{}').split(", "):
-                    try:
-                        if call['params'][arg]['value'] == '0x1':
-                            return True
-                    except KeyError:
-                        pass
+            try:
+                if 'setAllowFileAccess' in call['to_method']:
+                    for arg in call['local_args'].strip('{}').split(", "):
+                        try:
+                            if call['params'][arg]['value'] == '0x1':
+                                return True
+                        except KeyError:
+                            pass
+            except TypeError:
+                continue
         return False
 
     def detect(self):
@@ -111,5 +116,5 @@ class AccessLocalResources(object):
                 for method in cl['methods']:
                     if self.check_file_access(method):
                         print("FOUND setAllowFileAccess " + cl['name'])
-            except Exception as e:
-                print(e)
+            except KeyError:
+                continue
