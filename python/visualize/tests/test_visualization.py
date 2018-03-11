@@ -22,6 +22,9 @@ if __name__ == "__main__":
     # ha.get_directory_tree(data)
     # print(ha.get_directory_tree(data))
 
-    ch = ChordVisualizer(base_dir)
+    """
+        package_name = krep -> only the root of the package we want to represent
+    """
+    ch = ChordVisualizer(base_dir, 'krep')
     data = json.load(open('/root/Documents/GITHUB/AndroidPermissions/python/visualize/chord.json'))
-    print(ch.get_directory_tree(data))
+    ch.get_chord_diagram_data(data, 'chord.csv')

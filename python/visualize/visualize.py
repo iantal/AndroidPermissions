@@ -43,9 +43,10 @@ class HotspotVisualizer(DirectoryAnalyser):
 
 
 class ChordVisualizer(DirectoryAnalyser):
-    def __init__(self, base_dir):
+    def __init__(self, base_dir, package_name):
         DirectoryAnalyser.__init__(self, base_dir)
         self.base_dir = base_dir
+        self.pack_name = package_name
 
     def compute_lines_of_code(self, file):
         with open(self.base_dir + "/app/smali/" + file + ".smali", "r") as f:
@@ -63,7 +64,15 @@ class ChordVisualizer(DirectoryAnalyser):
             dependency_list.append(d)
         return dependency_list
 
-    def get_directory_tree(self, nodes_dictionary):
-        # smali_dir = os.path.join(self.base_dir, self.APP.split("/")[1], 'smali')
-        d = self.__path_to_dict(nodes_dictionary)
-        return json.dumps(d)
+    def get_chord_diagram_data(self, nodes_dictionary, output_csv_file):
+        data = self.__path_to_dict(nodes_dictionary)
+        weights = json.load(open('/root/Documents/GITHUB/AndroidPermissions/python/visualize/vulns.json'))
+        with open(output_csv_file, 'w') as f:
+            f.write('creditor,debtor,amount,risk\n')
+            for d in data:
+                for v in d["imports"]:
+                    if self.pack_name in v:
+                        try:
+                            f.write(d["name"] + "," + v + "," + str(d["size"]) + "," + str(20*weights[os.path.join(self.base_dir, 'app', 'smali', v + ".smali")]) + "\n")
+                        except KeyError:
+                            f.write(d["name"] + "," + v + "," + str(d["size"]) + "," + "10\n")
