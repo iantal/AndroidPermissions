@@ -20,7 +20,8 @@ directory = os.fsencode(test_apks_path)
 # e = Extractor("/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/goatdroid.apk")
 # e = Extractor("/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/webview/webview.apk")
 # e = Extractor("/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/herdfinancial/financial.apk")
-e = Extractor("/root/Downloads/FDroid.apk")
+# e = Extractor("/root/Downloads/FDroid.apk")
+e = Extractor("/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/receipt_personal_apk/app-release.apk")
 
 
 e.unzip()
