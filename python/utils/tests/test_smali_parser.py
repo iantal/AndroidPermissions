@@ -35,14 +35,19 @@ def test_get_class_desc():
 
 def test_parse_file():
     ss = SmaliParser("/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali", 'smali')
-    filename = "/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali/com/google/android/gms/internal/zzig.smali"
+    filename = "/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_advantage_RaiffeisenBank-1/app/smali/com/thinkdesquared/banking/utilities/CryptoUtils.smali"
     ss.parse_file(filename)
+
+
+def test_parse_file_for_local_param():
+    ss = SmaliParser("/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali", 'smali')
+    ss.parse_file_for_local_param(buf)
 
 
 if __name__ == "__main__":
     test_get_results()
-    test_get_class_desc()
-    test_parse_file()
-    test_get_class_names()
-
+    # test_get_class_desc()
+    # test_parse_file()
+    # test_get_class_names()
+    # test_parse_file_for_local_param()
 

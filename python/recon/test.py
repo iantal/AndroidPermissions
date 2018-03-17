@@ -21,8 +21,8 @@ directory = os.fsencode(test_apks_path)
 # e = Extractor("/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/webview/webview.apk")
 # e = Extractor("/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/herdfinancial/financial.apk")
 # e = Extractor("/root/Downloads/FDroid.apk")
-e = Extractor("/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/receipt_personal_apk/app-release.apk")
-
+# e = Extractor("/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/receipt_personal_apk/app-release.apk")
+e = Extractor("/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_advantage_RaiffeisenBank-1/base.apk")
 
 e.unzip()
 e.extract_readable_data(libs_apktool)

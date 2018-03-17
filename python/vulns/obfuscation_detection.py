@@ -95,24 +95,3 @@ class ObfuscationDetector(object):
             else:
                 result["obfuscator"] = proguard_result["obfuscator"]
         return json.dumps(result)
-
-
-if __name__ == "__main__":
-    bd = "/root/Documents/GITHUB/AndroidPermissions/apks/malware_apps/krep_banking_malware/raw/"
-    bd2 = "/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/raw/"
-    bd3 = "/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_advantage_RaiffeisenBank-1/"
-    bd4 = "/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_evernote-1/"
-    b5 = "/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_google_android_keep-1/"
-
-    b6 = "/root/Documents/GITHUB/android-malware/candy_corn/"
-    b7 = "/root/Documents/GITHUB/android-malware/trendmicro_banking_malware/"
-    b8 = '/root/Documents/GITHUB/AndroidPermissions/apks/open_source/2048-game/'
-
-    plant_vs_zombies = "/root/Documents/GITHUB/AndroidPermissions/apks/apkid_test_dex_files/plant_vs_zombies/"
-    whatsapp_update = "/root/Documents/GITHUB/AndroidPermissions/apks/apkid_test_dex_files/whatsapp_update/"
-    app_9 = "/root/Documents/GITHUB/AndroidPermissions/apks/apkid_test_dex_files/9apps/"
-    uber = "/root/Documents/GITHUB/AndroidPermissions/apks/apkid_test_dex_files/uber/"
-    flash = "/root/Documents/GITHUB/AndroidPermissions/apks/apkid_test_dex_files/flash/"
-    color = "/root/Documents/GITHUB/AndroidPermissions/apks/apkid_test_dex_files/rgb_color/"
-    data = apkid_analysis(flash)
-    # pprint.pprint(data)

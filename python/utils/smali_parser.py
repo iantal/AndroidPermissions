@@ -24,6 +24,21 @@ class SmaliParser(object):
             for i in rev_buf:
                 if "const" in i and a in i:
                     yield i.rstrip('\r\n')
+                elif "new-instance" in i and a in i:
+                    yield i.rstrip('\r\n')
+
+    def parse_file_for_local_param(self, buf):
+        rev_buf = []
+        for ll in buf[::-1]:
+            if ".method" not in ll:
+                rev_buf.append(ll)
+            else:
+                break
+        l = []
+        for line in rev_buf[::-1]:
+            if self.is_method_local_param(line):
+                l.append(self.extract_local_method_params(line))
+        return l
 
     def parse_file(self, filename):
         """
@@ -41,10 +56,11 @@ class SmaliParser(object):
             current_call_index = 0
             current_const = None
             buf = []
-
+            method_index = 0
             for l in f.readlines():
                 buf.append(l)
                 if '.class' in l:
+                    method_index = 0
                     match_class = self.is_class(l)
                     if match_class:
                         current_class = self.extract_class(l)
@@ -74,11 +90,17 @@ class SmaliParser(object):
                         current_method = m
                         current_call_index = 0
                         current_class['methods'].append(m)
+                        method_index += 1
+
+                elif '.param' in l:
+                    current_method['local_method_params'] = self.parse_file_for_local_param(buf)
 
                 elif 'invoke' in l:
                     match_method_call = self.is_method_invocation(l)
                     if match_method_call:
                         m = self.extract_method_call(l)
+
+                        # m['local_method_params'] = self.parse_file_for_local_param(buf)
 
                         parameters = dict()
                         if m['local_args'] is not None:
@@ -174,6 +196,13 @@ class SmaliParser(object):
         else:
             return None
 
+    def is_method_local_param(self, line):
+        match = re.search("\.param\s+(?P<param>.*)$", line)
+        if match:
+            return match.group('param')
+        else:
+            return None
+
     def is_method_invocation(self, line):
         """
         Checks if the line contains a method invocation
@@ -264,11 +293,26 @@ class SmaliParser(object):
         }
         return c
 
+    def extract_local_method_params(self, data):
+        data = data.strip(" ")
+
+        try:
+            v = data.split(",")[1].strip(" ").split("#")[0].strip()
+        except IndexError:
+            v = ""
+
+        c = {
+            "name": data.split(" ")[1],
+            "value": v  # data.split(",")[1].strip(" ").split("#")[0].strip()
+        }
+        return c
+
     def extract_class_method(self, data):
         """
         Extracts method information for the given data (i.e public onPostExecute(Ljava/util/ArrayList;)V)
         Method format: <name>(<arguments>)<return value>
         :param data: string
+        :param buf: string
         :return: json
         """
         method_info = data.split(" ")
