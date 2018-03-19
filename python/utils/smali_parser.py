@@ -26,6 +26,8 @@ class SmaliParser(object):
                     yield i.rstrip('\r\n')
                 elif "new-instance" in i and a in i:
                     yield i.rstrip('\r\n')
+                elif "new-array" in i and a in i:
+                    yield i.rstrip('\r\n')
 
     def parse_file_for_local_param(self, buf):
         rev_buf = []
@@ -285,6 +287,15 @@ class SmaliParser(object):
             return None
 
     def extract_parameter(self, data):
+        if "new-array" in data:
+            c = {
+                data[1].split(",")[0]: {
+                    'type': data[0],
+                    'array_type': data[3],
+                    'value': data[2].split(",")[0].strip(" ")
+                }
+            }
+            return c
         c = {
             data[1].split(",")[0]: {
                 'type': data[0],

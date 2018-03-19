@@ -69,7 +69,6 @@ class CryptoNonRandomIVForCBC(object):
                     for call in method['calls']:
                         if 'Ljavax/crypto/Cipher' in call['to_class'] and 'init' in call['to_method'] and 'AlgorithmParameterSpec' in call['dst_args']:
                             if self.check_call_params(call):
-                                print(method)
                                 p = self.get_iv_local_param(method)
                                 if p:
                                     for c in method['calls']:
@@ -81,3 +80,70 @@ class CryptoNonRandomIVForCBC(object):
                 continue
 
 
+class CryptoConstantEncryptionKeys(object):
+    def __init__(self, smali_parser):
+        self.sp = smali_parser
+
+    def get_key_local_param(self, method):
+        for i in method['local_method_params']:
+            if 'key' in i['value']:
+                return i['name']
+        return None
+
+    def check_static_key_initialisation(self, call, p):
+        try:
+            if '[B' in call['params'][p]['array_type']:
+                return True
+        except KeyError:
+            return False
+
+    def get_last_param(self, call):
+        return call['local_args'].strip('{}').split(", ")[::-1][0]
+
+    def detect(self):
+        title = """
+            Constant Encryption Keys
+        """
+        description = """
+            Backtracking the key parameter of SecretKeySpec constructors does not not necessarily lead
+            to an unambiguous result. In practice, it is probable that a statically defined value is concatenated
+            with a non-constant input. Declaring the resulting key as a constant would not resemble the actual
+            situation since a the non-constant part might still provide enough entropy. Of course, the contrary
+            would be true if the statically defined part prevails. As a consequence, we decided for a compromise:
+            if statically defined values influence the resulting key, a warning is raised although the key is
+            not entirely constant. Thereby, we emphasize the fact that the key might be substantially affected,
+            rather than stating that it is statically defined.
+        """
+
+        asymetric_encryption_schemes = ['DHIES', 'ECIES', 'ElGamal', 'RSA']
+        for cl in self.sp.get_results():
+            try:
+                for method in cl['methods']:
+                    for call in method['calls']:
+                        if 'Ljavax/crypto/spec/SecretKeySpec' in call['to_class'] and 'init' in call['to_method']:
+                            # print(method)
+                            p = self.get_key_local_param(method)
+
+                            found = False
+                            if p:
+
+                                if p.split(",")[0] in str(call['local_args']):
+                                    for c in method['calls']:
+                                        if p.split(",")[0] in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
+                                            found = True
+                                if self.check_static_key_initialisation(call, p.split(",")[0]):
+                                    found = True
+                            if found:
+                                print(cl['path'])
+                                last_p = self.get_last_param(call)
+                                for m in method['local_method_params']:
+                                    if last_p in m['name'] and m['value'] not in asymetric_encryption_schemes:
+                                        print(m['value'])
+                                        print("issue2")
+                                try:
+                                    if call['params'][last_p]['value'] not in asymetric_encryption_schemes:
+                                        print("issue")
+                                except KeyError:
+                                    pass
+            except KeyError:
+                continue

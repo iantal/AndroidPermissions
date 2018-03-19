@@ -16,5 +16,9 @@ ss.run()
 # cv.detect()
 
 
-cc = CryptoNonRandomIVForCBC(ss)
-cc.detect()
+# cc = CryptoNonRandomIVForCBC(ss)
+# cc.detect()
+
+
+cnk = CryptoConstantEncryptionKeys(ss)
+cnk.detect()
