@@ -147,3 +147,165 @@ class CryptoConstantEncryptionKeys(object):
                                     pass
             except KeyError:
                 continue
+
+
+class CryptoConstantPasswordsOrSaltsPBE(object):
+    def __init__(self, smali_parser):
+        self.sp = smali_parser
+
+    def check_static_key_initialisation(self, call, p):
+        try:
+            if '[B' in call['params'][p]['array_type']:
+                return True
+        except KeyError:
+            return False
+
+    def get_param(self, call, index):
+        return call['local_args'].strip('{}').split(", ")[index]
+
+    def detect(self):
+        title = """
+            Constant Passwords or Salts for PBE
+        """
+        description = """
+            Password-based encryption (PBE) misses the intended purpose if the induced password or salt
+            value is statically defined. Basically, a cryptographically secure key is deduced from a given secret
+            by repeating a key derivation function (KDF) multiple times. A randomly chosen salt value
+            ensures that the derived key is unique and slows down brute-force and dictionary-based attacks
+            dramatically. However, if the password is hard-coded, the derived encryption key has to be considered
+            broken since the confidentiality of the encrypted data is no longer guaranteed. Likewise,
+            specifying a constant salt value contradicts the goal of using PBE to hinder table-based attacks.
+            Practically occurring in the same construction, our rule targets both misconceptions.
+        """
+
+        for cl in self.sp.get_results():
+            try:
+                for method in cl['methods']:
+                    for call in method['calls']:
+                        if 'Ljavax/crypto/spec/PBEKeySpec' in call['to_class'] and 'init' in call['to_method']:
+                            try:
+                                password = self.get_param(call, 1)  # password
+                                salt = self.get_param(call, 2)  # salt
+
+                                if call['params'][password]['type'] == 'const-string':
+                                    print("const param passwprd ")
+
+                                if call['params'][salt]['type'] == 'const-string':
+                                    print("const param salt ")
+
+                                if self.check_static_key_initialisation(call, password) or self.check_static_key_initialisation(call, salt):
+                                    for lp in method['local_method_params']:
+                                        p_name = lp['name'].split(',')[0]
+                                        if password in p_name:
+                                            print("pass " + p_name + " " + lp['value'])
+                                            for c in method['calls']:
+                                                if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
+                                                    print("issue: String->getBytes() initialisation for password")
+                                                    break
+                                                if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'toCharArray' in c['to_method']:
+                                                    print("issue: String->toCharArray() initialisation for password")
+                                                    break
+                                                if p_name in str(c['local_args']) and 'javax/util/Random' in c['to_class']:
+                                                    print("issue: Random API for password")
+                                                    break
+
+                                        if salt in p_name:
+                                            print("salt " + p_name + " " + lp['value'])
+                                            for c in method['calls']:
+                                                if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
+                                                    print("issue: String->getBytes() initialisation for salt")
+                                                    break
+                                                if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'toCharArray' in c['to_method']:
+                                                    print("issue: String->toCharArray() initialisation for salt")
+                                                    break
+                                                if p_name in str(c['local_args']) and 'javax/util/Random' in c['to_class']:
+                                                    print("issue: Random API for salt")
+                                                    break
+                            except IndexError:
+                                pass
+
+                        if 'Ljavax/crypto/spec/PBEParameterSpec' in call['to_class'] and 'init' in call['to_method']:
+                            for lp in method['local_method_params']:
+                                try:
+                                    salt = self.get_param(call, 1)
+
+                                    if call['params'][salt]['type'] == 'const-string':
+                                        print("const param salt2 ")
+
+                                    if self.check_static_key_initialisation(call, password):
+                                        if password in lp['name']:
+                                            for c in method['calls']:
+                                                if salt in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
+                                                    print("issue: String->getBytes() initialisation for salt2")
+                                                    break
+                                                if salt in str(c['local_args']) and 'String' in c['to_class'] and 'toCharArray' in c['to_method']:
+                                                    print("issue: String->toCharArray() initialisation for salt2")
+                                                    break
+                                                if salt in str(c['local_args']) and 'javax/util/Random' in c['to_class']:
+                                                    print("issue: Random API for salt2")
+                                                    break
+                                except IndexError:
+                                    continue
+
+            except KeyError:
+                continue
+
+
+class CryptoSecureRandom(object):
+    def __init__(self, smali_parser):
+        self.sp = smali_parser
+
+    def get_param(self, call, index):
+        return call['local_args'].strip('{}').split(", ")[index]
+
+    def check_static_key_initialisation(self, call, p):
+        try:
+            if '[B' in call['params'][p]['array_type']:
+                return True
+        except KeyError:
+            return False
+
+    def detect(self):
+        for cl in self.sp.get_results():
+            try:
+                for method in cl['methods']:
+                    for call in method['calls']:
+                        if 'Ljava/security/SecureRandom' in call['to_class'] and 'init' in call['to_method']:
+                            try:
+                                seed = self.get_param(call, 1)
+
+                                if 'const-' in call['params'][seed]['type']:
+                                    print("issue const param seed init ")
+
+                                if self.check_static_key_initialisation(call, seed):
+                                    print("issue init " + call['params'][seed])
+                                    for lp in method['local_method_params']:
+                                        p_name = lp['name'].split(',')[0]
+                                        if seed in p_name:
+                                            for c in method['calls']:
+                                                if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
+                                                    print("issue: String->getBytes() initialisation for seed")
+                                                    break
+                            except IndexError:
+                                continue
+
+                        if 'Ljava/security/SecureRandom' in call['to_class'] and 'setSeed' in call['to_method']:
+                            try:
+                                seed = self.get_param(call, 1)
+
+                                if 'const-' in call['params'][seed]['type']:
+                                    print("issue const param seed2 ")
+
+                                if self.check_static_key_initialisation(call, seed):
+                                    print("issue setSeed " + call['params'][seed])
+                                    for lp in method['local_method_params']:
+                                        p_name = lp['name'].split(',')[0]
+                                        if seed in p_name:
+                                            for c in method['calls']:
+                                                if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
+                                                    print("issue: String->getBytes() initialisation for seed")
+                                                    break
+                            except IndexError:
+                                continue
+            except KeyError:
+                continue

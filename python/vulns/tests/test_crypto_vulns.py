@@ -9,8 +9,8 @@ from vulns.crypto_vulns import *
 from utils.smali_parser import SmaliParser
 
 
-ss = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_advantage_RaiffeisenBank-1/app/smali', 'smali')
-ss.run()
+# ss = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_advantage_RaiffeisenBank-1/app/smali', 'smali')
+# ss.run()
 
 # cv = CryptoEcbDetector(ss)
 # cv.detect()
@@ -20,5 +20,14 @@ ss.run()
 # cc.detect()
 
 
-cnk = CryptoConstantEncryptionKeys(ss)
-cnk.detect()
+# cnk = CryptoConstantEncryptionKeys(ss)
+# cnk.detect()
+#
+# cp = CryptoConstantPasswordsOrSaltsPBE(ss)
+# cp.detect()
+
+
+sss = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali', 'smali')
+sss.run()
+csr = CryptoSecureRandom(sss)
+csr.detect()
