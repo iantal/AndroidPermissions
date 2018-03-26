@@ -73,8 +73,10 @@ class CryptoNonRandomIVForCBC(object):
                                 if p:
                                     for c in method['calls']:
                                         if p.split(",")[0] in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
+                                            # TODO: report issue
                                             print("issue")
                                         if p.split(",")[0] in str(c['local_args']) and 'java/util/Random' in c['to_class']:
+                                            # TODO: report issue
                                             print("issue")
             except KeyError:
                 continue
@@ -139,9 +141,11 @@ class CryptoConstantEncryptionKeys(object):
                                 for m in method['local_method_params']:
                                     if last_p in m['name'] and m['value'] not in asymetric_encryption_schemes:
                                         print(m['value'])
+                                        # TODO: report issue
                                         print("issue2")
                                 try:
                                     if call['params'][last_p]['value'] not in asymetric_encryption_schemes:
+                                        # TODO: report issue
                                         print("issue")
                                 except KeyError:
                                     pass
@@ -188,9 +192,11 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
                                 salt = self.get_param(call, 2)  # salt
 
                                 if call['params'][password]['type'] == 'const-string':
+                                    # TODO: report issue
                                     print("const param passwprd ")
 
                                 if call['params'][salt]['type'] == 'const-string':
+                                    # TODO: report issue
                                     print("const param salt ")
 
                                 if self.check_static_key_initialisation(call, password) or self.check_static_key_initialisation(call, salt):
@@ -200,12 +206,15 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
                                             print("pass " + p_name + " " + lp['value'])
                                             for c in method['calls']:
                                                 if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
+                                                    # TODO: report issue
                                                     print("issue: String->getBytes() initialisation for password")
                                                     break
                                                 if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'toCharArray' in c['to_method']:
+                                                    # TODO: report issue
                                                     print("issue: String->toCharArray() initialisation for password")
                                                     break
                                                 if p_name in str(c['local_args']) and 'javax/util/Random' in c['to_class']:
+                                                    # TODO: report issue
                                                     print("issue: Random API for password")
                                                     break
 
@@ -213,12 +222,15 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
                                             print("salt " + p_name + " " + lp['value'])
                                             for c in method['calls']:
                                                 if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
+                                                    # TODO: report issue
                                                     print("issue: String->getBytes() initialisation for salt")
                                                     break
                                                 if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'toCharArray' in c['to_method']:
+                                                    # TODO: report issue
                                                     print("issue: String->toCharArray() initialisation for salt")
                                                     break
                                                 if p_name in str(c['local_args']) and 'javax/util/Random' in c['to_class']:
+                                                    # TODO: report issue
                                                     print("issue: Random API for salt")
                                                     break
                             except IndexError:
@@ -230,18 +242,22 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
                                     salt = self.get_param(call, 1)
 
                                     if call['params'][salt]['type'] == 'const-string':
+                                        # TODO: report issue
                                         print("const param salt2 ")
 
                                     if self.check_static_key_initialisation(call, password):
                                         if password in lp['name']:
                                             for c in method['calls']:
                                                 if salt in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
+                                                    # TODO: report issue
                                                     print("issue: String->getBytes() initialisation for salt2")
                                                     break
                                                 if salt in str(c['local_args']) and 'String' in c['to_class'] and 'toCharArray' in c['to_method']:
+                                                    # TODO: report issue
                                                     print("issue: String->toCharArray() initialisation for salt2")
                                                     break
                                                 if salt in str(c['local_args']) and 'javax/util/Random' in c['to_class']:
+                                                    # TODO: report issue
                                                     print("issue: Random API for salt2")
                                                     break
                                 except IndexError:
@@ -275,6 +291,7 @@ class CryptoSecureRandom(object):
                                 seed = self.get_param(call, 1)
 
                                 if 'const-' in call['params'][seed]['type']:
+                                    # TODO: report issue
                                     print("issue const param seed init ")
 
                                 if self.check_static_key_initialisation(call, seed):
@@ -284,6 +301,7 @@ class CryptoSecureRandom(object):
                                         if seed in p_name:
                                             for c in method['calls']:
                                                 if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
+                                                    # TODO: report issue
                                                     print("issue: String->getBytes() initialisation for seed")
                                                     break
                             except IndexError:
@@ -294,6 +312,7 @@ class CryptoSecureRandom(object):
                                 seed = self.get_param(call, 1)
 
                                 if 'const-' in call['params'][seed]['type']:
+                                    # TODO: report issue
                                     print("issue const param seed2 ")
 
                                 if self.check_static_key_initialisation(call, seed):
@@ -303,9 +322,29 @@ class CryptoSecureRandom(object):
                                         if seed in p_name:
                                             for c in method['calls']:
                                                 if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
+                                                    # TODO: report issue
                                                     print("issue: String->getBytes() initialisation for seed")
                                                     break
                             except IndexError:
                                 continue
             except KeyError:
                 continue
+
+
+class CryptoNonRandomXor(object):
+    def __init__(self, smali_analyser):
+        self.sa = smali_analyser
+
+    def detect(self):
+        results = set()
+        for f in self.sa.get_smali_files():
+            with open(f, 'r') as file:
+                for line in file.readlines():
+                    if "xor-int/lit8" in line:
+                        lst = line.strip().split(" ")
+                        if lst[1].split(',')[0] == lst[2].split(',')[0]:
+                            results.add(f.split(self.sa.base_apk_dir)[1] + " " + line.strip())
+        for r in results:
+            # TODO: report issue
+            print(r)
+

@@ -144,3 +144,5 @@ class CryptoYaraRulesDetector(object):
                 logging.error("error scanning: {}".format(e))
         if output_json:
             return json.dumps(self.get_json_output(results))
+
+

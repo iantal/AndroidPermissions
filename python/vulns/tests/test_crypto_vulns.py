@@ -7,6 +7,7 @@ sys.path.insert(0, BASE_DIR)
 
 from vulns.crypto_vulns import *
 from utils.smali_parser import SmaliParser
+from utils.smali_analyser import SmaliAnalyser
 
 
 # ss = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_advantage_RaiffeisenBank-1/app/smali', 'smali')
@@ -27,7 +28,13 @@ from utils.smali_parser import SmaliParser
 # cp.detect()
 
 
-sss = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali', 'smali')
-sss.run()
-csr = CryptoSecureRandom(sss)
-csr.detect()
+# sss = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali', 'smali')
+# sss.run()
+# csr = CryptoSecureRandom(sss)
+# csr.detect()
+
+
+base_dir = "/root/Documents/GITHUB/AndroidPermissions/apks/malware_apps/krep_banking_malware"
+sa = SmaliAnalyser(base_dir, "", "")
+cx = CryptoNonRandomXor(sa)
+cx.detect()

@@ -55,6 +55,7 @@ class RadareResults(object):
 
     def print_findings(self):
         for c in self.configs:
+            print("[***] " + c)
             print(StringsAnalyser(self.dex_file).analyse(self.configs[c]))
             print(ImportsAnalyser(self.dex_file).analyse(self.configs[c]))
             print(MethodsAnalyser(self.dex_file).analyse(self.configs[c]))

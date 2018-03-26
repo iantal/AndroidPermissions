@@ -1,6 +1,8 @@
+[***] emulator
 
 
 
+[***] url
 0x43a278 162 161 Analytics service at risk of not starting. For more reliable analytics, add the WAKE_LOCK permission to your manifest. See http://goo.gl/8Rd3yj for instructions.
 0x43a36a 170 169 AnalyticsReceiver is not registered or is disabled. Register the receiver for reliable dispatching on non-Google Play devices. See http://goo.gl/8Rd3yj for instructions.
 0x43a416 137 136 AnalyticsService is not registered or is disabled. Analytics service at risk of not starting. See http://goo.gl/8Rd3yj for instructions.
@@ -72,10 +74,12 @@
 0x4fa688 23 22 https://www.paypal.com
 
 
+[***] root
 0x40413f 26 25 /system/app/Superuser.apk
 0x4ec47b 22 21 doesSuperuserApkExist
 
 
+[***] apk
 0x40413f 26 25 /system/app/Superuser.apk
 0x4df08f 16 15 buddyApkVersion
 0x4ec47b 22 21 doesSuperuserApkExist
@@ -303,6 +307,7 @@
 0x5218c7 7 6 zIndex
 
 
+[***] network
 0x401a00 50 49 0 because the games client is no longer connected
 0x401b16 11 10 \t clients=
 0x402a23 44 43 * was never registered with GoogleApiClient
@@ -1887,9 +1892,11 @@ Ljavax/net/ssl/HttpsURLConnection.method.setSSLSocketFactory(Ljavax/net/ssl/SSLS
 0x00105920 [0x003f496c - 0x003f4994] Lcom/google/android/gms/games/internal/api/RequestsImpl$SendRequestImpl Lcom/google/android/gms/games/Games$BaseGamesApiMethodImpl;
 0x00107ae0 [0x003fe438 - 0x003fe474] Lcom/google/android/gms/games/internal/api/RequestsImpl$4 Lcom/google/android/gms/games/internal/api/RequestsImpl$SendRequestImpl;
 0x00107b00 [0x003fe484 - 0x003fe4c0] Lcom/google/android/gms/games/internal/api/RequestsImpl$5 Lcom/google/android/gms/games/internal/api/RequestsImpl$SendRequestImpl;
+[***] libs
 
 
 
+[***] file
 0x443e32 51 50 1CsiReporter: Cannot close file: sdk_csi_data.txt.
 0x443e65 54 53 4CsiReporter: Cannot write to file: sdk_csi_data.txt.
 0x448eaf 40 39 &Error reading historical recrod file: 
@@ -2087,6 +2094,7 @@ Ljava/io/FileOutputStream.method.write([B)V
 Ljava/io/FileOutputStream.method.write([BII)V
 Ljava/io/FileWriter.method.<init>(Ljava/lang/String;Z)V
 
+[***] other
 0x4bcbb7 23 22 PLACES_API_KEY_EXPIRED
 0x4bcbcf 23 22 PLACES_API_KEY_INVALID0x402744 15 14  password is: 
 0x403fd6 16 15 /changepassword
@@ -2235,6 +2243,7 @@ Ljava/io/FileWriter.method.<init>(Ljava/lang/String;Z)V
 0x000dd400 [0x001cac1c - 0x001cac5e] Lcom/android/insecurebankv2/ChangePassword$RequestChangePasswordTask$2 Ljava/lang/Object;
 0x000dd420 [0x001cac70 - 0x001caf92] Lcom/android/insecurebankv2/ChangePassword$RequestChangePasswordTask Landroid/os/AsyncTask;
 0x000dd440 [0x001cafa4 - 0x001cb26c] Lcom/android/insecurebankv2/ChangePassword Landroid/app/Activity;
+[***] api
 
 Landroid/content/pm/PackageInstaller$SessionInfo.method.getAppPackageName()Ljava/lang/String;
 Landroid/content/pm/PackageInstaller.method.getAllSessions()Ljava/util/List;
@@ -2282,6 +2291,7 @@ Landroid/content/pm/ResolveInfo.method.loadLabel(Landroid/content/pm/PackageMana
 0x000fc480 [0x00386a70 - 0x00386aa6] Lcom/google/android/gms/tagmanager/InstallReferrerReceiver Lcom/google/android/gms/analytics/CampaignTrackingReceiver;
 0x000fc4a0 [0x00386ab8 - 0x00386ac0] Lcom/google/android/gms/tagmanager/InstallReferrerService Lcom/google/android/gms/analytics/CampaignTrackingService;
 0x00101640 [0x003c99a8 - 0x003c9c9e] Lcom/google/android/gms/internal/zzcp Lcom/google/android/gms/ads/formats/NativeAppInstallAd;0x000fd960 [0x003937f4 - 0x00393858] Lcom/google/android/gms/wearable/internal/PackageStorageInfo Ljava/lang/Object;
+[***] sms
 
 Landroid/telephony/SmsManager.method.getDefault()Landroid/telephony/SmsManager;
 Landroid/telephony/SmsManager.method.sendTextMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)VLandroid/telephony/SmsManager.method.getDefault()Landroid/telephony/SmsManager;
@@ -2291,6 +2301,7 @@ Landroid/telephony/TelephonyManager.method.getNetworkOperator()Ljava/lang/String
 Landroid/telephony/TelephonyManager.method.getNetworkType()I
 Landroid/telephony/TelephonyManager.method.getPhoneType()I
 
+[***] location
 
 
 
