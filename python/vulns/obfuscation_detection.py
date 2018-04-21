@@ -87,6 +87,7 @@ class ObfuscationDetector(object):
         return {"obfuscator": ""}
 
     def detect(self):
+        # TODO: title, desc, evidence, recommendation
         result = self.apkid_analysis(os.path.join(self.sa.base_apk_dir, self.sa.RAW.split('/')[1]))
         proguard_result = self.proguard_check()
         if proguard_result["obfuscator"] != "":

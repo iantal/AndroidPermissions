@@ -34,7 +34,27 @@ from utils.smali_analyser import SmaliAnalyser
 # csr.detect()
 
 
-base_dir = "/root/Documents/GITHUB/AndroidPermissions/apks/malware_apps/krep_banking_malware"
+base_dir = "/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank"
 sa = SmaliAnalyser(base_dir, "", "")
+
+ss = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali', 'smali')
+ss.run()
+print("Non-random")
 cx = CryptoNonRandomXor(sa)
-cx.detect()
+cx.write_results(base_dir+"/report/vulns/nonranom.json")
+
+print("ecb")
+cv = CryptoEcbDetector(ss)
+cv.write_results(base_dir+"/report/vulns/ecb.json")
+
+print("ivforcbc")
+cc = CryptoNonRandomIVForCBC(ss)
+cc.write_results(base_dir+"/report/vulns/nonrandomiv.json")
+
+print("enckeys")
+cnk = CryptoConstantEncryptionKeys(ss)
+cnk.write_results(base_dir+"/report/vulns/constantenckeys.json")
+
+print("saltspbe")
+cp = CryptoConstantPasswordsOrSaltsPBE(ss)
+cp.write_results(base_dir+"/report/vulns/constpass.json")

@@ -11,11 +11,13 @@ class Extractor(object):
     unzip_dir = 'raw'
     readable_data = 'app'
     java_source_dir = 'source'
+    report = 'report/vulns'
 
     def __init__(self, apk_path):
         self.path = apk_path
         self.working_directory, self.apk = os.path.split(apk_path)
         os.chdir(self.working_directory)
+        self.__create_directory(Extractor.report)
 
     def __create_directory(self, dir_name):
         """
