@@ -88,11 +88,35 @@ class ObfuscationDetector(object):
 
     def detect(self):
         # TODO: title, desc, evidence, recommendation
-        result = self.apkid_analysis(os.path.join(self.sa.base_apk_dir, self.sa.RAW.split('/')[1]))
+        title = ""
+        description = ""
+        recommendation = ""
+        ret_list = []
+
+        evidence = self.apkid_analysis(os.path.join(self.sa.base_apk_dir, self.sa.RAW.split('/')[1]))
         proguard_result = self.proguard_check()
         if proguard_result["obfuscator"] != "":
-            if result["obfuscator"]:
-                result["obfuscator"] = [result["obfuscator"], proguard_result["obfuscator"]]
+            if evidence["obfuscator"]:
+                evidence["obfuscator"] = [evidence["obfuscator"], proguard_result["obfuscator"]]
             else:
-                result["obfuscator"] = proguard_result["obfuscator"]
-        return json.dumps(result)
+                evidence["obfuscator"] = proguard_result["obfuscator"]
+
+        if evidence:
+            ret_list.append({
+                "title": title,
+                "stat": "low",
+                "description": description,
+                "recommendation": recommendation,
+                "evidence": evidence
+            })
+
+        # return json.dumps(result)
+        print(evidence)
+        return ret_list
+
+    def write_results(self, out_file):
+        rl = self.detect()
+        if rl:
+            r = {"findings": rl}
+            with open(out_file, "w") as f:
+                f.write(json.dumps(r))

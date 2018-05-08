@@ -1,11 +1,18 @@
 import pprint
+import json
 from abc import ABC, abstractmethod
 
 
+# TODO: title, desc, recommendation for each vuln
 class AbstractWebViewAnalyser(ABC):
-
     def __init__(self, smali_parser):
         self.sp = smali_parser
+        self.title = ""
+        self.description = ""
+        self.recommendation = ""
+        self.stat = ""
+        self.ret_list = []
+        self.evidence = []
         self.targets = ['WebView', 'XWalkView', 'GeckoView', 'Main']
         super().__init__()
 
@@ -26,46 +33,75 @@ class AbstractWebViewAnalyser(ABC):
                 if target in cl['name'] or target in cl['parent']:
                     for method in cl['methods']:
                         if self.check_javascript_enabled(method):
-                            self.hook(method)
+                            self.hook(method, cl)
+        if self.evidence:
+            self.ret_list.append({
+                "title": self.title,
+                "stat": self.stat,
+                "description": self.description,
+                "recommendation": self.recommendation,
+                "evidence": self.evidence
+            })
+
+        return self.ret_list
 
     @abstractmethod
-    def hook(self, method):
+    def hook(self, method, cl):
         pass
+
+    def write_results(self, out_file):
+        rl = self.detect()
+        if rl:
+            r = {"findings": rl}
+            with open(out_file, "w") as f:
+                f.write(json.dumps(r))
 
 
 class JavascriptInterfaceAnalyser(AbstractWebViewAnalyser):
-
-    def check_javascript_interface(self, method):
+    def check_javascript_interface(self, method, cl):
         for call in method['calls']:
             if 'addJavascriptInterface' in call['to_method']:
+                self.evidence.append(cl['path'] + " " + call['to_method'])
                 return True
         return False
 
-    def hook(self, method):
-        if self.check_javascript_interface(method):
-            print("FIRM : WebView vuln")
+    def hook(self, method, cl):
+        if self.check_javascript_interface(method, cl):
+            self.title = "JavascriptInterfaceAnalyser"
+            self.description = ""
+            self.recommendation = ""
+            self.stat = "high"
         else:
-            print("TENTATIVE : WebView vuln")
+            self.title = "WebView vuln"
+            self.description = ""
+            self.recommendation = ""
+            self.stat = "low"
 
 
 class MixedContentAnalyser(AbstractWebViewAnalyser):
-
-    def check_mixed_content(self, method):
+    def check_mixed_content(self, method, cl):
         for call in method['calls']:
             if 'setMixedContentMode' in call['to_method']:
                 for arg in call['local_args'].strip('{}').split(", "):
                     try:
                         if call['params'][arg]['value'] == '0x0':
+                            self.evidence.append(cl['path'])
                             return True
                     except KeyError:
                         pass
         return False
 
-    def hook(self, method):
-        if self.check_mixed_content(method):
-            print("Enabled Mix Content !!")
+    def hook(self, method, cl):
+        if self.check_mixed_content(method, cl):
+            self.title = "MixedContentAnalyser"
+            self.description = ""
+            self.recommendation = ""
+            self.stat = "high"
         else:
-            print("TENTATIVE : WebView vuln")
+            self.title = "WebView vuln"
+            self.description = ""
+            self.recommendation = ""
+            self.stat = "low"
 
 
 class LoadClearTextContent(object):
@@ -79,6 +115,12 @@ class LoadClearTextContent(object):
         return False
 
     def detect(self):
+        title = "Load cleartext content"
+        description = ""
+        recommendation = ""
+        stat = "high"
+        evidence = []
+        ret_list = []
         for cl in self.sp.get_results():
             try:
                 for method in cl['methods']:
@@ -86,10 +128,29 @@ class LoadClearTextContent(object):
                         if 'loadUrl' in call['to_method']:
                             if self.check_const_strings(cl):
                                 print("FIRM : loadUrl found")
+                                evidence.append(cl['path'] + " " + call['to_method'])
+
             except TypeError:
                 continue
             except KeyError:
                 continue
+        if evidence:
+            ret_list.append({
+                "title": title,
+                "stat": stat,
+                "description": description,
+                "recommendation": recommendation,
+                "evidence": evidence
+            })
+
+        return ret_list
+
+    def write_results(self, out_file):
+        rl = self.detect()
+        if rl:
+            r = {"findings": rl}
+            with open(out_file, "w") as f:
+                f.write(json.dumps(r))
 
 
 class AccessLocalResources(object):
@@ -111,10 +172,34 @@ class AccessLocalResources(object):
         return False
 
     def detect(self):
+        title = "Access local ressources"
+        description = ""
+        recommendation = ""
+        stat = "high"
+        evidence = []
+        ret_list = []
         for cl in self.sp.get_results():
             try:
                 for method in cl['methods']:
                     if self.check_file_access(method):
+                        evidence.append(cl['path'])
                         print("FOUND setAllowFileAccess " + cl['name'])
             except KeyError:
                 continue
+        if evidence:
+            ret_list.append({
+                "title": title,
+                "stat": stat,
+                "description": description,
+                "recommendation": recommendation,
+                "evidence": evidence
+            })
+
+        return ret_list
+
+    def write_results(self, out_file):
+        rl = self.detect()
+        if rl:
+            r = {"findings": rl}
+            with open(out_file, "w") as f:
+                f.write(json.dumps(r))

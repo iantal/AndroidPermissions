@@ -10,6 +10,9 @@ class LogDetector(object):
     def detect(self):
         # TODO: title, desc, recommendation
         d = {}
+        title = ""
+        description = ""
+        recommendation = ""
         ret_list = []
         evidence = []
         for cl in self.sp.get_results():
@@ -30,7 +33,7 @@ class LogDetector(object):
                 "title": title,
                 "stat": "low",
                 "description": description,
-                "recommendation": '',
+                "recommendation": recommendation,
                 "evidence": evidence
             })
 

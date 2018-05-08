@@ -1,7 +1,6 @@
 # Android Reversing and Analysis Tool - AndroART
 
 ## Specifications:
-Project will be mainly written in Python. 
 
 Features: <br/>
 *    \[ X \] unzip APK file <br/>
@@ -22,7 +21,6 @@ TODO:
 - extract custom permissions
 - comment the code
 - apt-get install python-dev
-- graph-tool
 - apt-get install libboost-filesystem-dev libboost-thread-dev
 - apt-get install libboost-system-dev
 

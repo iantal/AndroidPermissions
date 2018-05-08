@@ -49,5 +49,5 @@ def test_file_access():
 
 if __name__ == "__main__":
     test_webview()
-    test_load_clear_text_content()
-    test_file_access()
+    # test_load_clear_text_content()
+    # test_file_access()

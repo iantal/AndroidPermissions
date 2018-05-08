@@ -1,6 +1,8 @@
 import pprint
+import json
 
 
+# TODO: title, desc, recommendation
 class ReflectionChecker(object):
     def __init__(self, smali_parser):
         self.sp = smali_parser
@@ -28,7 +30,13 @@ class ReflectionChecker(object):
         """
         return True if dcn in acn and self.__is_valid_to_method_call(mcl, mc) else False
 
-    def check(self):
+    def detect(self):
+        title = ""
+        description = ""
+        recommendation = ""
+        ret_list = []
+        evidence = []
+
         m_methods = [
             'getDeclaredMethod',
             'getDeclaredMethods',
@@ -59,13 +67,34 @@ class ReflectionChecker(object):
                 for method in cl['methods']:
                     for call in method['calls']:
                         if self.__is_class_name_found("Method", call['to_class'], m_methods, call['to_method']):
-                                pprint.pprint(call)
+                                # pprint.pprint(call)
+                                evidence.append(cl['path'] + " " + call['to_method'])
                                 break
                         if self.__is_class_name_found("Class", call['to_class'], c_methods, call['to_method']):
-                                pprint.pprint(call)
+                                # pprint.pprint(call)
+                                evidence.append(cl['path'] + " " + call['to_method'])
                                 break
                         if self.__is_class_name_found("Field", call['to_class'], f_methods, call['to_method']):
-                                pprint.pprint(call)
+                                # pprint.pprint(call)
+                                evidence.append(cl['path'] + " " + call['to_method'])
                                 break
             except KeyError:
                 continue
+
+        if evidence:
+            ret_list.append({
+                "title": title,
+                "stat": "low",
+                "description": description,
+                "recommendation": recommendation,
+                "evidence": evidence
+            })
+
+        return ret_list
+
+    def write_results(self, out_file):
+        rl = self.detect()
+        if rl:
+            r = {"findings": rl}
+            with open(out_file, "w") as f:
+                f.write(json.dumps(r))

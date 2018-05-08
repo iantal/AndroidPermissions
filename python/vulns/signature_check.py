@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+import json
 import fnmatch
 import subprocess
 import re
@@ -30,9 +31,10 @@ class SignatureChecker(DirectoryAnalyser):
         self.key = ""
         self.__run_keytool()
 
-    def check(self):
+    def detect(self):
         self.__check_certificate_validity()
         self.__check_key_length()
+        return self.get_signature_info()
 
     def get_signature_info(self):
         return {
@@ -44,6 +46,13 @@ class SignatureChecker(DirectoryAnalyser):
             "sha256": self.sha256,
             "algorithm": self.algorithm
         }
+
+    def write_results(self, out_file):
+        rl = self.detect()
+        if rl:
+            r = {"findings": rl}
+            with open(out_file, "w") as f:
+                f.write(json.dumps(r))
 
     def __parse_line(self, line):
         if "Owner:" in line:
@@ -99,6 +108,7 @@ class SignatureChecker(DirectoryAnalyser):
         if (a-b).days <= 30:
             print("Bad certificate! ")
 
+    # TODO: instead of printing, report the issue in json file, so it could be included in the report
     def __check_key_length(self):
         length = int(self.key.split("-")[0])
         if length <= 1024:
