@@ -10,6 +10,12 @@ from tkinter import filedialog
 from tkinter import ttk
 
 from ui.run import ApplicationAnalyzer
+from recon.extractor import Extractor
+
+
+libs_apktool = '/root/Documents/GITHUB/AndroidPermissions/libs/apktool/apktool_2.3.0.jar'
+libs_d2j = '/root/Documents/GITHUB/AndroidPermissions/libs/dex2jar-2.0/d2j-dex2jar.sh'
+jd_core = '/root/Documents/GITHUB/AndroidPermissions/libs/jd-core-java/build/libs/jd-core-java-1.2.jar'
 
 
 class MainApplication(object):
@@ -74,14 +80,13 @@ class MainApplication(object):
         Label(self.frame_content, text=self.filename).grid(row=0, column=0, padx=5)
 
     def analyse(self):
-        pass
         apk_file = self.filename
         print("## " + apk_file)
-        # base_dir = "/root/Documents/GITHUB/AndroidPermissions/apks/malware_apps/krep_banking_malware"
-
         l = apk_file.split("/")
         base_dir = "/".join(l[:len(l) - 1])
         print("## " + base_dir)
+
+        self.__extract(apk_file)
 
         ap = ApplicationAnalyzer(base_dir)
         if self.v1_1.get() == "ok":
@@ -105,6 +110,13 @@ class MainApplication(object):
         if self.v7_1.get() == "ok":
             print("[*] Signature")
             ap.find_signature()
+
+    def __extract(self, apk):
+        e = Extractor(apk)
+        e.unzip()
+        e.extract_readable_data(libs_apktool)
+        e.extract_jar(libs_d2j)
+        e.extract_java_source_code(jd_core)
 
 
 def main():

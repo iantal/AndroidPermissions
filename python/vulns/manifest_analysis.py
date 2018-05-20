@@ -727,7 +727,7 @@ class ManifestAnalyser(object):
             "is_perm_exist": is_perm_exist
         }
 
-    def __check_permission_protection_level(self, permission, permission_dict, perm, tag_full_name, item, possible_findings, app):
+    def __check_permission_protection_level(self, permission, permission_dict, perm, tag_full_name, item, possible_findings, appl):
         prot_level_exist = False
         protlevel = ''
         prot = ""
@@ -735,7 +735,7 @@ class ManifestAnalyser(object):
             prot = "protectionLevel: " + permission_dict[permission]
             prot_level_exist = True
             protlevel = permission_dict[permission]
-        if app:
+        if appl:
             return self.__check_app_protection(prot_level_exist, protlevel, tag_full_name, item, perm, prot, possible_findings)
         else:
             return self.__check_content_provider_protection(prot_level_exist, protlevel, tag_full_name, item, perm, prot, possible_findings)
@@ -781,15 +781,16 @@ class ManifestAnalyser(object):
                                     "a_prot_sign_sys",
                                     "a_prot_unknown"
                                 ]
-                                exported += self.__check_permission_protection_level(
-                                    perm_appl_level,
-                                    permission_dict,
-                                    perm,
-                                    tag_full_name,
-                                    item,
-                                    possible_findings,
-                                    app=True
-                                )
+                                if exported:
+                                    exported += self.__check_permission_protection_level(
+                                        perm_appl_level,
+                                        permission_dict,
+                                        perm,
+                                        tag_full_name,
+                                        item,
+                                        possible_findings,
+                                        appl=True
+                                    )
                             else:
                                 if perm_appl_level_exists is False:
                                     self.findings.append(
@@ -811,15 +812,16 @@ class ManifestAnalyser(object):
                                         "a_prot_sign_sys_appl",
                                         "a_prot_unknown_appl"
                                     ]
-                                    exported += self.__check_permission_protection_level(
-                                        perm_appl_level,
-                                        permission_dict,
-                                        perm,
-                                        tag_full_name,
-                                        item,
-                                        possible_findings,
-                                        app=True
-                                    )
+                                    if exported:
+                                        exported += self.__check_permission_protection_level(
+                                            perm_appl_level,
+                                            permission_dict,
+                                            perm,
+                                            tag_full_name,
+                                            item,
+                                            possible_findings,
+                                            appl=True
+                                        )
 
                     elif node.getAttribute("android:exported") != 'false':
                         if self.__is_intent_filter(node):
@@ -841,15 +843,16 @@ class ManifestAnalyser(object):
                                         "a_prot_sign_sys",
                                         "a_prot_unknown"
                                     ]
-                                    exported += self.__check_permission_protection_level(
-                                        perm_appl_level,
-                                        permission_dict,
-                                        perm,
-                                        tag_full_name,
-                                        item,
-                                        possible_findings,
-                                        app=True
-                                    )
+                                    if exported:
+                                        exported += self.__check_permission_protection_level(
+                                            perm_appl_level,
+                                            permission_dict,
+                                            perm,
+                                            tag_full_name,
+                                            item,
+                                            possible_findings,
+                                            appl=True
+                                        )
 
                                 else:
                                     # Esteve 24.07.2016 - begin - At this point, we are dealing with components that do not have a permission neither at the component level nor at the
@@ -881,15 +884,16 @@ class ManifestAnalyser(object):
                                             "a_prot_sign_sys_appl",
                                             "a_prot_unknown_appl"
                                         ]
-                                        exported += self.__check_permission_protection_level(
-                                            perm_appl_level,
-                                            permission_dict,
-                                            perm,
-                                            tag_full_name,
-                                            item,
-                                            possible_findings,
-                                            app=True
-                                        )
+                                        if exported:
+                                            exported += self.__check_permission_protection_level(
+                                                perm_appl_level,
+                                                permission_dict,
+                                                perm,
+                                                tag_full_name,
+                                                item,
+                                                possible_findings,
+                                                appl=True
+                                            )
 
                         # Esteve 29.07.2016 - begin The component is not explicitly exported (android:exported is not "true"). It is not implicitly exported either (it does not
                         # make use of an intent filter). Despite that, it could still be exported by default, if it is a content provider and the android:targetSdkVersion
@@ -913,15 +917,9 @@ class ManifestAnalyser(object):
                                             "c_prot_sign_sys",
                                             "c_prot_unknown"
                                         ]
-                                        exported += self.__check_permission_protection_level(
-                                            perm_appl_level,
-                                            permission_dict,
-                                            perm,
-                                            tag_full_name,
-                                            item,
-                                            possible_findings,
-                                            app=False
-                                        )
+
+                                        if exported:
+                                            exported += self.__check_permission_protection_level(perm_appl_level,permission_dict,perm, tag_full_name, item, possible_findings, appl=False)
 
                                     else:
                                         if perm_appl_level_exists is False:
@@ -942,15 +940,16 @@ class ManifestAnalyser(object):
                                                 "c_prot_sign_sys_appl",
                                                 "c_prot_unknown_appl"
                                             ]
-                                            exported += self.__check_permission_protection_level(
-                                                perm_appl_level,
-                                                permission_dict,
-                                                perm,
-                                                tag_full_name,
-                                                item,
-                                                possible_findings,
-                                                app=False
-                                            )
+                                            if exported:
+                                                exported += self.__check_permission_protection_level(
+                                                    perm_appl_level,
+                                                    permission_dict,
+                                                    perm,
+                                                    tag_full_name,
+                                                    item,
+                                                    possible_findings,
+                                                    appl=False
+                                                )
 
                                     # Esteve 29.07.2016 - end
                                     # Esteve 08.08.2016 - begin - If the content provider does not target an API version lower than 17, it could still be exported by default, depending
@@ -970,15 +969,16 @@ class ManifestAnalyser(object):
                                                 "c_prot_sign_sys_new",
                                                 "c_prot_unknown_new"
                                             ]
-                                            exported += self.__check_permission_protection_level(
-                                                perm_appl_level,
-                                                permission_dict,
-                                                perm,
-                                                tag_full_name,
-                                                item,
-                                                possible_findings,
-                                                app=False
-                                            )
+                                            if exported:
+                                                exported += self.__check_permission_protection_level(
+                                                    perm_appl_level,
+                                                    permission_dict,
+                                                    perm,
+                                                    tag_full_name,
+                                                    item,
+                                                    possible_findings,
+                                                    appl=False
+                                                )
 
                                         else:
                                             if perm_appl_level_exists is False:
@@ -999,15 +999,16 @@ class ManifestAnalyser(object):
                                                     "c_prot_sign_sys_new_appl",
                                                     "c_prot_unknown_new_appl"
                                                 ]
-                                                exported += self.__check_permission_protection_level(
-                                                    perm_appl_level,
-                                                    permission_dict,
-                                                    perm,
-                                                    tag_full_name,
-                                                    item,
-                                                    possible_findings,
-                                                    app=False
-                                                )
+                                                if exported:
+                                                    exported += self.__check_permission_protection_level(
+                                                        perm_appl_level,
+                                                        permission_dict,
+                                                        perm,
+                                                        tag_full_name,
+                                                        item,
+                                                        possible_findings,
+                                                        appl=False
+                                                    )
 
                 try:
                     if check_result_dict['browsable_dict']['browsable']:
