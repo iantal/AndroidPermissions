@@ -107,7 +107,7 @@ class SymbolsAnalyser(AbstractRadareAnalyser):
 
 
 if __name__ == "__main__":
-    configfile = "/root/Documents/GITHUB/AndroidPermissions/python/radare/radare_config.json"
-    dexfile = "/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/raw/classes.dex"
+    configfile = "/home/miki/Documents/GITHUB/AndroidPermissions/python/radare/radare_config.json"
+    dexfile = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/raw/classes.dex"
     r = RadareResults(dexfile, configfile)
     r.print_findings()

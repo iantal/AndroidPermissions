@@ -79,7 +79,7 @@ class Extractor(object):
         print("[*] Running d2j-dex2jar.sh ...")
         output_jar_file = self.working_directory + "/raw/" + str(self.apk.rsplit('.', 1)[0]) + '.jar'
         path_to_dex_file = self.working_directory + '/raw/classes.dex'
-        r = subprocess.run([dex2jar_path, '-o', output_jar_file, '--force', path_to_dex_file], stdout=subprocess.DEVNULL)
+        r = subprocess.run(["sudo", dex2jar_path, '-o', output_jar_file, '--force', path_to_dex_file], stdout=subprocess.DEVNULL)
         if r:
             # TODO: report info
             print("[+] Done dex2jar")
@@ -95,7 +95,7 @@ class Extractor(object):
         self.__create_directory(Extractor.java_source_dir)
         output_jar_file = self.working_directory + "/raw/" + str(self.apk.rsplit('.', 1)[0]) + '.jar'
         source_dir = self.working_directory + "/" + Extractor.java_source_dir
-        r = subprocess.run(['timeout', '1m', 'java', '-jar', jd_core_java, output_jar_file, source_dir], stdout=subprocess.DEVNULL)
+        r = subprocess.run(['timeout', '1m', "sudo", 'java', '-jar', jd_core_java, output_jar_file, source_dir], stdout=subprocess.DEVNULL)
         if r:
             # TODO: report info
             print("[+] Done java source code")

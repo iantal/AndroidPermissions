@@ -44,9 +44,9 @@ if __name__ == "__main__":
     server = SimpleHttpServer(path=webserver_dir, port=port)
 
     server.start()
-    skt.screenshot_webpage("http://127.0.0.1:" + str(port) + "/pie/pie_chart.html", "/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report/pie_chart.png")
-    skt.screenshot_webpage("http://127.0.0.1:" + str(port) + "/chord/index.html?file=rm.csv", "/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report/chord_diagram.png")
-    skt.screenshot_webpage("http://127.0.0.1:" + str(port) + "/hotspot/hibzoomable.html", "/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report/hotspot.png")
+    skt.screenshot_webpage("http://127.0.0.1:" + str(port) + "/pie/pie_chart.html", "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report/pie_chart.png")
+    skt.screenshot_webpage("http://127.0.0.1:" + str(port) + "/chord/index.html?file=rm.csv", "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report/chord_diagram.png")
+    skt.screenshot_webpage("http://127.0.0.1:" + str(port) + "/hotspot/hibzoomable.html", "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report/hotspot.png")
     server.stop()
 
-    skt.crop_image("/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report/chord_diagram.png")
+    skt.crop_image("/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report/chord_diagram.png")

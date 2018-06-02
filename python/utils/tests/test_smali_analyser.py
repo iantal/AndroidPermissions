@@ -34,8 +34,9 @@ if __name__ == "__main__":
     # base_dir = "/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid"
     # s = SmaliAnalyser(base_dir, "/org/owasp/goatdroid/fourgoats", r"org\/owasp\/goatdroid\/fourgoats[\w\/]*")
 
-    base_dir = "/root/Documents/GITHUB/AndroidPermissions/apks/malware_apps/krep_banking_malware"
-    s = SmaliAnalyser(base_dir, "/krep/itmtd/ywtjexf", r"krep\/itmtd\/ywtjexf[\w\/]*")
+    # base_dir = "/root/Documents/GITHUB/AndroidPermissions/apks/malware_apps/krep_banking_malware"
+    base_dir = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank"
+    s = SmaliAnalyser(base_dir, "/com/android/insecurebankv2", r"com\/android\/insecurebankv2[\w\/]*")
 
     # test_get_smali_files(s)
     test_get_filtered_dependencies_full_path(s)

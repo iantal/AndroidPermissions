@@ -64,9 +64,9 @@ class ChordVisualizer(DirectoryAnalyser):
             dependency_list.append(d)
         return dependency_list
 
-    def get_chord_diagram_data(self, nodes_dictionary, output_csv_file):
+    def get_chord_diagram_data(self, weights_file, nodes_dictionary, output_csv_file):
         data = self.__path_to_dict(nodes_dictionary)
-        weights = json.load(open('/root/Documents/GITHUB/AndroidPermissions/python/visualize/vulns.json'))
+        weights = json.load(open(weights_file))
         with open(output_csv_file, 'w') as f:
             f.write('creditor,debtor,amount,risk\n')
             for d in data:

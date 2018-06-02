@@ -67,7 +67,7 @@ if not is_directory_created("apktool"):
     download("apktool", apktool)
 
 if not is_directory_created("jd-code-java"):
-    os.chdir('../libs')
+    # os.chdir('../libs')
     subprocess.check_call(['git', 'clone', jd_core])
     os.chdir("jd-core-java")
     subprocess.check_call(['./gradlew', 'assemble'])

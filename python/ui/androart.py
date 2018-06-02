@@ -13,9 +13,9 @@ from ui.run import ApplicationAnalyzer
 from recon.extractor import Extractor
 
 
-libs_apktool = '/root/Documents/GITHUB/AndroidPermissions/libs/apktool/apktool_2.3.0.jar'
-libs_d2j = '/root/Documents/GITHUB/AndroidPermissions/libs/dex2jar-2.0/d2j-dex2jar.sh'
-jd_core = '/root/Documents/GITHUB/AndroidPermissions/libs/jd-core-java/build/libs/jd-core-java-1.2.jar'
+libs_apktool = '/home/miki/Documents/GITHUB/AndroidPermissions/libs/apktool/apktool_2.3.0.jar'
+libs_d2j = '/home/miki/Documents/GITHUB/AndroidPermissions/libs/dex2jar-2.0/d2j-dex2jar.sh'
+jd_core = '/home/miki/Documents/GITHUB/AndroidPermissions/libs/jd-core-java/build/libs/jd-core-java-1.2.jar'
 
 
 class MainApplication(object):

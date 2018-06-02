@@ -10,13 +10,14 @@ import json
 
 
 def test_detect(od):
-    print(od.detect())
+    od.detect()
+    # write_results("/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report/vulns")
 
 
 if __name__ == "__main__":
-    base_dir = "/root/Documents/GITHUB/AndroidPermissions/apks/malware_apps/krep_banking_malware"
+    base_dir = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank"
     base_dir_proguard = "/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/receipt_personal_apk"
-    s = SmaliAnalyser(base_dir_proguard, "", "")
+    s = SmaliAnalyser(base_dir, "", "")
 
     od = ObfuscationDetector(s)
     test_detect(od)

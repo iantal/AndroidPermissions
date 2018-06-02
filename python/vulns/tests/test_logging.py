@@ -18,5 +18,5 @@ def test_log():
 
 if __name__ == "__main__":
     # ss = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/malware_apps/krep_banking_malware/app/smali', 'smali')
-    ss = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali', 'smali')
+    ss = SmaliParser('/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali', 'smali')
     test_log()

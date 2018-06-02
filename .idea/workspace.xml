@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7bb13603-be0e-45bf-888f-a0ab45ef8049" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/apks/test_apks/insb/InsecureBankv2.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/apkid/rule_compiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apks/test_apks/insecurebank/app/original/META-INF/CERT.SF" beforeDir="false" afterPath="$PROJECT_DIR$/apks/test_apks/insecurebank/app/original/META-INF/CERT.SF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apks/test_apks/insecurebank/app/original/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/apks/test_apks/insecurebank/app/original/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apks/test_apks/insecurebank/raw/META-INF/CERT.SF" beforeDir="false" afterPath="$PROJECT_DIR$/apks/test_apks/insecurebank/raw/META-INF/CERT.SF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apks/test_apks/insecurebank/raw/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/apks/test_apks/insecurebank/raw/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/apktool/apktool_2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-baksmali.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-baksmali.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-dex-recompute-checksum.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-dex-recompute-checksum.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-dex2jar.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-dex2jar.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-dex2smali.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-dex2smali.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-jar2dex.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-jar2dex.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-jar2jasmin.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-jar2jasmin.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-jasmin2jar.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-jasmin2jar.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-smali.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-smali.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-std-apk.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j-std-apk.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j_invoke.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/d2j_invoke.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/lib/antlr-runtime-3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/lib/asm-debug-all-4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/lib/d2j-base-cmd-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/lib/d2j-jasmin-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/lib/d2j-smali-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/lib/dex-ir-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/lib/dex-reader-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/lib/dex-reader-api-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/lib/dex-tools-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/lib/dex-translator-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/lib/dex-writer-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/dex2jar-2.0/lib/dx-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jd-core-java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/jd-core-java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/python/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/analyse/tests/test_permission_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/analyse/tests/test_permission_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/apkid/apkid.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/apkid/apkid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/apkid/rules/rules.yarc" beforeDir="false" afterPath="$PROJECT_DIR$/python/apkid/rules/rules.yarc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/radare/apk_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/radare/apk_crawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/recon/extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/recon/extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/recon/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/recon/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/setup/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/setup/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/ui/androart.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ui/androart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/utils/tests/test_smali_analyser.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/utils/tests/test_smali_analyser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/utils/tests/test_smali_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/utils/tests/test_smali_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/visualize/chord.json" beforeDir="false" afterPath="$PROJECT_DIR$/python/visualize/chord.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/visualize/screenshot.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/visualize/screenshot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/visualize/tests/chord.csv" beforeDir="false" afterPath="$PROJECT_DIR$/python/visualize/tests/chord.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/visualize/tests/test_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/visualize/tests/test_visualization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/visualize/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/visualize/visualize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/visualize/vulns.json" beforeDir="false" afterPath="$PROJECT_DIR$/python/visualize/vulns.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/log_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/log_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/obfuscation_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/obfuscation_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/tests/test_crypto_vulns.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/tests/test_crypto_vulns.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/tests/test_logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/tests/test_logging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/tests/test_manifest_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/tests/test_manifest_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/tests/test_obfuscation.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/tests/test_obfuscation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/tests/test_reflection_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/tests/test_reflection_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/tests/test_signature_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/tests/test_signature_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/tests/test_webview.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/tests/test_webview.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="apkid.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/apkid/apkid.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="153" column="29" selection-start-line="153" selection-start-column="29" selection-end-line="153" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="report.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/vulns/report.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3195">
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_obfuscation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_obfuscation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="obfuscation_detection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/vulns/obfuscation_detection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="121" column="22" selection-start-line="121" selection-start-column="22" selection-end-line="121" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_report.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_report.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.local/share/virtualenvs/python-wbiElawc/lib/python3.6/site-packages/pkg_resources/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="467" selection-start-line="467" selection-end-line="467" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rule_compiler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/apkid/rule_compiler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="89">
+              <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+              <folding>
+                <element signature="e#22#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="screenshot.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/visualize/screenshot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="androart.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/ui/androart.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="129" column="10" lean-forward="true" selection-start-line="129" selection-start-column="10" selection-end-line="129" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xml_parser.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python/analyse/xml_parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-405">
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>/krep/itmtd/ywtjexf/R.smali'</find>
+      <find>/krep/itmtd/ywtjexf</find>
+      <find>apki</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ioanantal &lt;antal.micky@yahoo.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/python/setup/setup.py" />
+        <option value="$PROJECT_DIR$/python/recon/extractor.py" />
+        <option value="$PROJECT_DIR$/python/recon/test.py" />
+        <option value="$PROJECT_DIR$/python/analyse/tests/test_permission_classifier.py" />
+        <option value="$PROJECT_DIR$/python/radare/apk_crawler.py" />
+        <option value="$PROJECT_DIR$/python/utils/tests/test_smali_parser.py" />
+        <option value="$PROJECT_DIR$/python/visualize/screenshot.py" />
+        <option value="$PROJECT_DIR$/python/visualize/tests/chord.csv" />
+        <option value="$PROJECT_DIR$/python/utils/tests/test_smali_analyser.py" />
+        <option value="$PROJECT_DIR$/python/visualize/chord.json" />
+        <option value="$PROJECT_DIR$/python/visualize/visualize.py" />
+        <option value="$PROJECT_DIR$/python/visualize/tests/test_visualization.py" />
+        <option value="$PROJECT_DIR$/python/vulns/log_detection.py" />
+        <option value="$PROJECT_DIR$/python/vulns/tests/test_logging.py" />
+        <option value="$PROJECT_DIR$/python/visualize/vulns.json" />
+        <option value="$PROJECT_DIR$/web/chord/rm.csv" />
+        <option value="$PROJECT_DIR$/python/vulns/tests/test_crypto_vulns.py" />
+        <option value="$PROJECT_DIR$/python/vulns/tests/test_reflection_check.py" />
+        <option value="$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/reflection.json" />
+        <option value="$PROJECT_DIR$/python/vulns/tests/test_signature_check.py" />
+        <option value="$PROJECT_DIR$/python/vulns/tests/test_webview.py" />
+        <option value="$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/jsenabled.json" />
+        <option value="$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/mixedcontent.json" />
+        <option value="$PROJECT_DIR$/python/vulns/tests/test_manifest_analysis.py" />
+        <option value="$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/manifest.json" />
+        <option value="$PROJECT_DIR$/python/apkid/rules/apk/packers.yar" />
+        <option value="$PROJECT_DIR$/python/apkid/rule_compiler.py" />
+        <option value="$PROJECT_DIR$/python/apkid/apkid.py" />
+        <option value="$PROJECT_DIR$/python/vulns/tests/test_obfuscation.py" />
+        <option value="$PROJECT_DIR$/python/vulns/obfuscation_detection.py" />
+        <option value="$PROJECT_DIR$/python/ui/androart.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="218" />
+    <option name="y" value="27" />
+    <option name="width" value="1316" />
+    <option name="height" value="760" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollToSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="apks_from_phone" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="test_apks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="test_apks" type="462c0819:PsiDirectoryNode" />
+              <item name="insecurebank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="test_apks" type="462c0819:PsiDirectoryNode" />
+              <item name="insecurebank" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="test_apks" type="462c0819:PsiDirectoryNode" />
+              <item name="insecurebank" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+              <item name="vulns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="test_apks" type="462c0819:PsiDirectoryNode" />
+              <item name="insecurebank" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="test_apks" type="462c0819:PsiDirectoryNode" />
+              <item name="insecurebank" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="test_apks" type="462c0819:PsiDirectoryNode" />
+              <item name="insecurebank" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="google" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="test_apks" type="462c0819:PsiDirectoryNode" />
+              <item name="insecurebank" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="marcohc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="bash" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="jd-core-java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="jd-core-java" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="jd-core-java" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="analyse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="analyse" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="apkid" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="apkid" type="462c0819:PsiDirectoryNode" />
+              <item name="rules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="plot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="plot" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="radare" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="recon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="setup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="visualize" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="visualize" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="vulns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="vulns" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apks/test_apks/insb" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="setup" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AndroidPermissions" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/setup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/setup/setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.setup" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7bb13603-be0e-45bf-888f-a0ab45ef8049" name="Default" comment="" />
+      <created>1527433181186</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527433181186</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1533" height="762" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22450331" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289183" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34658188" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ubuntu vm" />
+    <option name="LAST_COMMIT_MESSAGE" value="ubuntu vm" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/hotspot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/visualize/webserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/plot/graphviz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/plot/dependency_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-686">
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/utils/smali_analyser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/visualize/chord.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2055">
+          <caret line="236" selection-start-line="236" selection-end-line="236" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/app/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/log_detection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/signature_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/visualize/tests/test_crop_image.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/visualize/tests/test_visualization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/chord_diagram.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/visualize/tests/take_screenshot.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/visualize/tests/chord.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="19" column="9" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chord/rm.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/crypto_vulns.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/nonranom.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/ecb.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_logging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_crypto_vulns.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="59" column="55" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/reflection.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/webview_vulns.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_webview.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="38" column="125" selection-start-line="38" selection-start-column="125" selection-end-line="38" selection-end-column="125" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/jsenabled.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/mixedcontent.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_manifest_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/manifest_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="729" column="131" selection-start-line="729" selection-start-column="131" selection-end-line="729" selection-end-column="131" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#354#32179#0" />
+            <element signature="e#32235#32780#0" />
+            <element signature="e#35245#36517#0" />
+            <element signature="e#36584#36848#0" />
+            <element signature="e#36914#37301#0" />
+            <element signature="e#37365#38303#0" />
+            <element signature="e#38554#38866#0" />
+            <element signature="e#38929#39055#0" />
+            <element signature="e#39105#39366#0" />
+            <element signature="e#39481#40957#0" />
+            <element signature="e#41085#41820#0" />
+            <element signature="e#41887#41982#0" />
+            <element signature="e#42158#42454#0" />
+            <element signature="e#42596#43160#0" />
+            <element signature="e#43211#60516#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/reflection_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="94" column="21" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/visualize/visualize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="66" column="51" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/utils/tests/test_smali_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/utils/tests/test_smali_analyser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="38" column="100" selection-start-line="38" selection-start-column="100" selection-end-line="38" selection-end-column="100" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/pie_chart.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_reflection_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_signature_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/visualize/vulns.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/apkid/rules/apk/common.yar">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/Pipfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2916" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/apkid/rules/dex/abnormal.yar">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/apkid/rules/dex/abnorma.yar">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="12" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/apkid/rules/apk/packers.yar">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="508" selection-start-line="508" selection-end-line="508" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/apkid/rule_compiler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+          <folding>
+            <element signature="e#22#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/python-wbiElawc/lib/python3.6/site-packages/pkg_resources/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="467" selection-start-line="467" selection-end-line="467" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/apkid/apkid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="153" column="29" selection-start-line="153" selection-start-column="29" selection-end-line="153" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3195">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_obfuscation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/obfuscation_detection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="121" column="22" selection-start-line="121" selection-start-column="22" selection-end-line="121" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/visualize/screenshot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/ui/androart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="129" column="10" lean-forward="true" selection-start-line="129" selection-start-column="10" selection-end-line="129" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/analyse/xml_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405">
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

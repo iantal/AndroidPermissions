@@ -37,7 +37,7 @@ class LogDetector(object):
                 "evidence": evidence
             })
 
-        with open('/root/Documents/GITHUB/AndroidPermissions/python/visualize/vulns.json', 'w') as f:
+        with open('/home/miki/Documents/GITHUB/AndroidPermissions/python/visualize/vulns.json', 'w') as f:
             f.write(json.dumps(d))
 
         return ret_list

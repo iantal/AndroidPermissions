@@ -34,10 +34,10 @@ from utils.smali_analyser import SmaliAnalyser
 # csr.detect()
 
 
-base_dir = "/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank"
+base_dir = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank"
 sa = SmaliAnalyser(base_dir, "", "")
 
-ss = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali', 'smali')
+ss = SmaliParser('/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali', 'smali')
 ss.run()
 print("Non-random")
 cx = CryptoNonRandomXor(sa)

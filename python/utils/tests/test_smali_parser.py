@@ -10,8 +10,9 @@ from utils.smali_parser import SmaliParser
 
 
 # s = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/webview/app/smali/com/aditya/webviewvuln', 'smali')
-s = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats', 'smali')
+# s = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats', 'smali')
 
+s = SmaliParser("/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank", "smali")
 
 def test_get_results():
     s.run()

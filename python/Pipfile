@@ -4,7 +4,6 @@ name = "pypi"
 url = "https://pypi.python.org/simple"
 
 [packages]
-
 requests = "*"
 "urllib3" = "*"
 tqdm = "*"
@@ -20,6 +19,7 @@ plyj = "*"
 imgkit = "*"
 numpy = "*"
 "yara-python" = "*"
-
+pillow = "*"
+pypandoc = "*"
 
 [dev-packages]

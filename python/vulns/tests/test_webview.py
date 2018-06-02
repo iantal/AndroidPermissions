@@ -12,7 +12,7 @@ from vulns.webview_vulns import *
 
 s1 = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/goatdroid/app/smali/org/owasp/goatdroid/fourgoats', 'smali')
 s2 = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/webview/app/smali/com/aditya/webviewvuln', 'smali')
-ss = SmaliParser('/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali/com/google/android/gms/internal', 'smali')
+ss = SmaliParser('/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali/com/google/android/gms/internal', 'smali')
 
 
 def test_js_enabled():
@@ -25,18 +25,18 @@ def test_js_enabled():
 def test_webview():
     ss.run()
     e = JavascriptInterfaceAnalyser(ss)
-    e.detect()
+    e.write_results("/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report/vulns/jsenabled.json")
     e = MixedContentAnalyser(ss)
-    e.detect()
+    e.write_results("/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report/vulns/mixedcontent.json")
 
 
 def test_load_clear_text_content():
     s4 = SmaliParser(
-        '/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali/com/google/android/gms',
+        '/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali/com/google/android/gms',
         'smali')
     s4.run()
     e = LoadClearTextContent(s4)
-    e.detect()
+    e.write_results("/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report/vulns/cleartextcontent.json")
 
 
 def test_file_access():
@@ -49,5 +49,6 @@ def test_file_access():
 
 if __name__ == "__main__":
     test_webview()
+    test_load_clear_text_content()
     # test_load_clear_text_content()
     # test_file_access()

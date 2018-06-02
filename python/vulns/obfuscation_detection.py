@@ -2,12 +2,19 @@ import pprint
 import sys
 import os
 import re
+
+
+BASE_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'python')
+sys.path.insert(0, BASE_DIR)
+
+from apkid.apkid import *
+
 import json
+#
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# sys.path.insert(0, os.path.join(BASE_DIR, 'python', 'apkid'))
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.insert(0, os.path.join(BASE_DIR, 'python', 'apkid'))
 
-import apkid
 import json
 
 
@@ -22,7 +29,7 @@ class ObfuscationDetector(object):
             return {'error': True}
 
         apkid_dict = {}
-        result = apkid.scan(dex_file, 30, True)
+        result = scan(dex_file, 30, True)
 
         if result:
             if "files" in result:
@@ -111,7 +118,8 @@ class ObfuscationDetector(object):
             })
 
         # return json.dumps(result)
-        print(evidence)
+        # print(evidence)
+        print(ret_list)
         return ret_list
 
     def write_results(self, out_file):

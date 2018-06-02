@@ -25,15 +25,6 @@
 """
 
 
-"""
-Modifcations
- ------------
- * Return Data as Python dict to MobSF
- * Removed __init__.py contents
- * Removed get_distribution() that uses pkg_resources
- * Removed yara rule files and added compiled yarac rule file
-"""
-
 import json
 import logging
 import os
@@ -161,9 +152,8 @@ def scan_apk(apk_path, rules, timeout, output_json):
 
 
 def get_json_output(results):
-    import pkg_resources
     output = {
-        'apkid_version': pkg_resources.get_distribution('apkid').version,
+        'apkid_version': 0,
         'files': [],
     }
     for filename in results:

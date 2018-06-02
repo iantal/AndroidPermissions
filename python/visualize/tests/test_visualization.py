@@ -14,7 +14,7 @@ def test_compute_lines_of_code(ha, file):
 
 
 if __name__ == "__main__":
-    base_dir = '/root/Documents/GITHUB/AndroidPermissions/apks/malware_apps/krep_banking_malware'
+    base_dir = '/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank'
     # ha = HotspotVisualizer(base_dir)
 
     # data = json.load(open('/root/Documents/GITHUB/AndroidPermissions/python/visualize/vulns.json'))
@@ -23,8 +23,9 @@ if __name__ == "__main__":
     # print(ha.get_directory_tree(data))
 
     """
-        package_name = krep -> only the root of the package we want to represent
+        package_name = com -> only the root of the package we want to represent
     """
-    ch = ChordVisualizer(base_dir, 'krep')
-    data = json.load(open('/root/Documents/GITHUB/AndroidPermissions/python/visualize/chord.json'))
-    ch.get_chord_diagram_data(data, 'chord.csv')
+    ch = ChordVisualizer(base_dir, 'com')
+    data = json.load(open('/home/miki/Documents/GITHUB/AndroidPermissions/python/visualize/chord.json'))
+    weights_file = "/home/miki/Documents/GITHUB/AndroidPermissions/python/visualize/vulns.json"
+    ch.get_chord_diagram_data(weights_file, data, 'chord.csv')

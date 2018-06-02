@@ -60,21 +60,21 @@ def test_get_xml_info(xmlp):
 
 
 if __name__ == "__main__":
-    xml_file = '/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/AndroidManifest.xml'
+    xml_file = '/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/AndroidManifest.xml'
     xml_file2 = '/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_monefy_app_lite-2/app/AndroidManifest.xml'
     xml_file3= '/root/Documents/GITHUB/AndroidPermissions/apks/apks_from_phone/data_app_com_advantage_RaiffeisenBank-1/app/AndroidManifest.xml'
 
-    p = XMLParser(xml_file2)
-    # base_dir = '/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank'
-    # d = DirectoryAnalyser(base_dir)
-    # perm_classifier = PermissionsClassifier(d, p)
-    # result = perm_classifier.get_classification()
-    # pprint.pprint(result)
+    p = XMLParser(xml_file)
+    base_dir = '/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank'
+    d = DirectoryAnalyser(base_dir)
+    perm_classifier = PermissionsClassifier(d, p)
+    result = perm_classifier.get_classification()
+    pprint.pprint(result)
 
     # print("Applications")
     # test_get_application(p)
-    # # print("Package name")
-    # # test_get_package_name(p)
+    # print("Package name")
+    # test_get_package_name(p)
     # print("Sdk")
     # test_get_sdk(p)
     # # print("Categories")
@@ -89,7 +89,7 @@ if __name__ == "__main__":
     # test_get_providers(p)
     # print("Receivers")
     # test_get_receivers(p)
-    #
+
     # # test_get_main_activity(p)
     # test_get_info(p)
     test_get_xml_info(p)

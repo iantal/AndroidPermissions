@@ -13,11 +13,11 @@ from vulns.reflection_check import ReflectionChecker
 def test_check(ss):
     ss.run()
     rc = ReflectionChecker(ss)
-    rc.check()
+    rc.write_results("/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report/vulns/reflection.json")
 
 
 if __name__ == "__main__":
     ss = SmaliParser(
-        '/root/Documents/GITHUB/AndroidPermissions/apks/malware_apps/krep_banking_malware/app/smali',
+        '/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali',
         'smali')
     test_check(ss)
