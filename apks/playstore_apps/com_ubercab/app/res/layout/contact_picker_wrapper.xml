@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.feature.invite.sharerides.contacts.ContactPickerWrapperView android:orientation="vertical" android:background="?android:colorBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:analyticsId="802b7ffd-0e56"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__contact_picker_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.ubercab.ui.core.UFrameLayout android:layout_gravity="bottom" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UButton android:enabled="false" android:layout_gravity="bottom" android:id="@id/ub__contact_picker_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/contact_picker_button" app:analyticsId="7801d8ff-c892" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.presidio.feature.invite.sharerides.contacts.ContactPickerWrapperView>

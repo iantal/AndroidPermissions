@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:theme="@style/Theme.Helix.Light" android:orientation="vertical" android:padding="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="bc50743d-4b90"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.presidio.pricing.core.PricingTextView android:id="@id/pass_upsell_two_button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" style="@style/Platform.TextAppearance.H2.Book" />
+    <com.ubercab.ui.core.UTextView android:id="@id/pass_upsell_two_button_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:text="@string/plus_one_pass_upsell_buy_a_ride_pack_and_save" style="@style/Platform.TextAppearance.H3.Book.Secondary" />
+    <com.ubercab.presidio.pricing.core.PricingButton android:id="@id/pass_upsell_two_button_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/ub__pricing_plus_one_continue" uber:analyticsId="e8114633-1268" style="?platformButtonSecondary" />
+    <com.ubercab.ui.core.UButton android:id="@id/pass_upsell_two_button_purchase" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/plus_one_pass_upsell_get_a_ride_pack" uber:analyticsId="b24e9a49-795d" style="?platformButtonPrimary" />
+</com.ubercab.ui.core.ULinearLayout>

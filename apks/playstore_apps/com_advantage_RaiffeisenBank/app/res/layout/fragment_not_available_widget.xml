@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/rounded_corners_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/textView10" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/widget_not_available_version" style="@style/DSQTextAppearance.Label" />
+    <Button android:textSize="14.0dip" android:textColor="@color/raiffeisen_black" android:gravity="center" android:id="@id/close" android:background="@drawable/rounded_corners_login" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="50.0dip" android:layout_marginBottom="10.0dip" android:src="@color/raiffeisen_yellow" android:text="@string/close" />
+</LinearLayout>

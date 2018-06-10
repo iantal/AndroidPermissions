@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/web_view_etoken_splash" style="@style/MatchParentWrapContent" />
+    <CheckBox android:id="@id/etoken_alert_show_again" android:layout_margin="5.0dip" android:text="@string/etoken_remember" style="@style/MatchParentWrapContent" />
+</LinearLayout>

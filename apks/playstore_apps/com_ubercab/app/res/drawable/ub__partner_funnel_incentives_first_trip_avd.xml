@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/ub__partner_funnel_incentives_first_trip_vd"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="date0" android:animation="@animator/ub__partner_funnel_incentives_first_trip_date0" />
+    <target android:name="date1" android:animation="@animator/ub__partner_funnel_incentives_first_trip_date1" />
+    <target android:name="date2" android:animation="@animator/ub__partner_funnel_incentives_first_trip_date2" />
+    <target android:name="front_wheel" android:animation="@animator/ub__partner_funnel_incentives_first_trip_front_wheel" />
+    <target android:name="rear_wheel" android:animation="@animator/ub__partner_funnel_incentives_first_trip_rear_wheel" />
+    <target android:name="car" android:animation="@animator/ub__partner_funnel_incentives_first_trip_car" />
+</animated-vector>

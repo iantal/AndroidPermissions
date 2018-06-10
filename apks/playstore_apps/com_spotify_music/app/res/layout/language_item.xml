@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spotify.music.features.languagepicker.view.RoundedRelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="@dimen/line_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+    <ImageView android:id="@id/overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+    <FrameLayout android:padding="@dimen/language_item_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/text_size_language" android:textStyle="bold" android:layout_gravity="start|center" android:id="@id/language" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="end|center" android:id="@id/icon" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:contentDescription="@null" />
+    </FrameLayout>
+</com.spotify.music.features.languagepicker.view.RoundedRelativeLayout>

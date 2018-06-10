@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.paypal.operation.manage.PaypalManageView android:orientation="vertical" android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="4c24518c-2809"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_4x" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__attribute_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__payment_paypal_username_title" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__paypal_detail_email" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.presidio.payment.paypal.operation.manage.PaypalManageView>

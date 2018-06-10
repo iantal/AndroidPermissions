@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout style="@style/MediumItem.Padding">
+    <ImageView n1:id="@id/loyalty_offer_simple_icon" n1:background="@drawable/account_card_placeholder" n1:layout_width="56.0dip" n1:layout_height="36.0dip" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintTop_toTopOf="parent"
+      xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n3:id="@id/loyalty_offer_simple_merchant_name" n3:background="@color/placeholder_item_dark" n3:layout_width="140.0dip" n3:layout_height="20.0dip" n3:layout_marginLeft="@dimen/offset_from_edge" n4:layout_constraintBottom_toTopOf="@id/loyalty_offer_simple_offer_title" n4:layout_constraintLeft_toRightOf="@id/loyalty_offer_simple_icon" n4:layout_constraintTop_toTopOf="parent" n4:layout_constraintVertical_chainStyle="packed"
+      xmlns:n3="http://schemas.android.com/apk/res/android" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <View n5:id="@id/loyalty_offer_simple_offer_title" n5:background="@color/placeholder_item_dark" n5:layout_width="180.0dip" n5:layout_height="16.0dip" n5:layout_marginTop="2.0dip" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintLeft_toLeftOf="@id/loyalty_offer_simple_merchant_name" n6:layout_constraintTop_toBottomOf="@id/loyalty_offer_simple_merchant_name"
+      xmlns:n5="http://schemas.android.com/apk/res/android" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</android.support.constraint.ConstraintLayout>

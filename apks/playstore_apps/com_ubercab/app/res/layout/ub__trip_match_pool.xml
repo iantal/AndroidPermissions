@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.match.pool.PoolTripMatchView android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="?contentInset" android:paddingTop="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__trip_status_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" />
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__trip_status_text" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/trip_match_status_new_default" android:singleLine="true" android:layout_weight="1.0" android:paddingEnd="?contentInset" style="@style/Platform.TextAppearance.H6.News.Primary" />
+    <com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.match.pool.PoolMatchSearchProgressView android:id="@id/ub__trip_corider_spinner" android:layout_width="@dimen/ui__avatar_size_tiny" android:layout_height="@dimen/ui__avatar_size_tiny" />
+    <com.ubercab.ui.core.URelativeLayout android:id="@id/ub__trip_corider_photo_container" android:layout_width="wrap_content" android:layout_height="@dimen/ui__avatar_size_tiny" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.match.pool.PoolTripMatchView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ScreenContent">
+    <TextView n1:textSize="@dimen/text_medium" n1:textColor="@color/white" n1:id="@id/group_description" n1:layout_width="fill_parent" n1:alpha="0.0" style="@style/SubtitleTextItem"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <RelativeLayout n2:id="@id/phone_number_action" n2:background="@drawable/selector_contact_item" n2:paddingTop="@dimen/offset_from_edge" n2:paddingBottom="@dimen/offset_from_edge" n2:layout_width="fill_parent" n2:layout_height="wrap_content" n2:layout_marginLeft="@dimen/offset_from_edge" n2:layout_marginRight="@dimen/offset_from_edge" n2:layout_marginBottom="@dimen/offset_from_edge" n2:alpha="0.0" n2:translationY="-20.0dip"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <ImageView n2:id="@id/imageView" n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:layout_marginLeft="@dimen/offset_from_edge" n2:src="@drawable/ic_phone_green" n2:layout_alignParentLeft="true" n2:layout_centerVertical="true" />
+        <LinearLayout n2:orientation="vertical" n2:layout_width="fill_parent" n2:layout_height="wrap_content" n2:layout_marginLeft="@dimen/offset_from_edge_large" n2:layout_marginRight="@dimen/offset_from_edge" n2:layout_centerVertical="true">
+            <TextView n2:textAppearance="@style/Text.Small.Light" n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:text="@string/contacts_dial_russian_phone_title" />
+            <TextView n2:textAppearance="@style/Text.Default.White" n2:id="@id/phone_number" n2:layout_width="wrap_content" n2:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout n3:id="@id/roaming_phone_number_action" n3:background="@drawable/selector_contact_item" n3:paddingTop="@dimen/offset_from_edge" n3:paddingBottom="@dimen/offset_from_edge" n3:layout_width="fill_parent" n3:layout_height="wrap_content" n3:layout_marginLeft="@dimen/offset_from_edge" n3:layout_marginRight="@dimen/offset_from_edge" n3:alpha="0.0" n3:translationY="-20.0dip"
+      xmlns:n3="http://schemas.android.com/apk/res/android">
+        <ImageView n3:id="@id/imageView1" n3:layout_width="wrap_content" n3:layout_height="wrap_content" n3:layout_marginLeft="@dimen/offset_from_edge" n3:src="@drawable/ic_phone_green" n3:layout_alignParentLeft="true" n3:layout_centerVertical="true" />
+        <LinearLayout n3:orientation="vertical" n3:layout_width="fill_parent" n3:layout_height="wrap_content" n3:layout_marginLeft="@dimen/offset_from_edge_large" n3:layout_marginRight="@dimen/offset_from_edge" n3:layout_centerVertical="true">
+            <TextView n3:textAppearance="@style/Text.Small.Light" n3:layout_width="wrap_content" n3:layout_height="wrap_content" n3:text="@string/contacts_dial_international_phone_title" />
+            <TextView n3:textAppearance="@style/Text.Default.White" n3:id="@id/roaming_phone_number" n3:layout_width="wrap_content" n3:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView n1:layout_gravity="center_horizontal" n1:id="@id/virtual_card_back" n1:visibility="gone" n1:layout_width="290.0dip" n1:layout_height="183.0dip" n1:layout_margin="32.0dip" n1:transformPivotX="145.0dip" n1:transformPivotY="91.5dip" n2:cardCornerRadius="12.0dip" n2:cardElevation="2.0dip" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <View n1:id="@id/virtual_card_back_outline" n1:background="@drawable/card_background" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <View n1:background="@color/wallet_card_black" n1:layout_width="fill_parent" n1:layout_height="48.0dip" n1:layout_marginTop="12.0dip" />
+        <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center|right" n1:orientation="horizontal" n1:background="@color/white" n1:layout_width="100.0dip" n1:layout_height="36.0dip" n1:layout_marginRight="16.0dip">
+            <TextView n1:textSize="16.0sp" n1:textColor="@color/text_grey" n1:gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/wallet_cvc_label" />
+            <TextView n1:textSize="16.0sp" n1:textColor="@color/text_dark" n1:gravity="center_vertical" n1:id="@id/virtual_card_cvc" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:maxLines="1" />
+        </LinearLayout>
+        <View n1:id="@id/virtual_card_back_shade" n1:background="#59ffffff" n1:visibility="visible" n1:layout_width="60.0dip" n1:layout_height="300.0dip" n1:layout_marginLeft="-60.0dip" n1:layout_marginTop="-50.0dip" n1:rotation="25.0" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView n1:layout_gravity="center_horizontal" n1:id="@id/virtual_card_front" n1:visibility="visible" n1:layout_width="290.0dip" n1:layout_height="183.0dip" n1:layout_margin="32.0dip" n1:transformPivotX="145.0dip" n1:transformPivotY="91.5dip" n3:cardCornerRadius="12.0dip" n3:cardElevation="2.0dip" xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <View n1:id="@id/virtual_card_front_outline" n1:background="@drawable/card_background" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <ImageView n1:id="@id/virtual_card_logo" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="14.0dip" n1:layout_marginTop="22.0dip" n1:src="@drawable/tinkoff_bank_logo" />
+        <TextView n1:textSize="22.0sp" n1:textColor="@color/text_dark" n1:layout_gravity="center_horizontal" n1:id="@id/virtual_card_number" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="86.0dip" />
+        <TextView n1:textSize="14.0sp" n1:textColor="@color/text_dark" n1:layout_gravity="center_horizontal" n1:id="@id/virtual_card_date" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="123.0dip" />
+        <TextView n1:textSize="14.0sp" n1:textColor="@color/text_dark" n1:layout_gravity="bottom" n1:id="@id/virtual_card_holder" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="14.0dip" n1:layout_marginBottom="18.0dip" />
+        <ImageView n1:layout_gravity="bottom|center|right" n1:id="@id/virtual_card_system" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" />
+        <View n1:id="@id/virtual_card_front_shade" n1:background="#59ffffff" n1:visibility="gone" n1:layout_width="60.0dip" n1:layout_height="300.0dip" n1:layout_marginLeft="-60.0dip" n1:layout_marginTop="-50.0dip" n1:rotation="25.0" />
+        <include n1:layout_gravity="center" n1:id="@id/progress" n1:visibility="visible" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" layout="@layout/inc_loader_progress" />
+    </android.support.v7.widget.CardView>
+    <ViewFlipper n1:layout_gravity="center_horizontal" n1:id="@id/virtual_card_btn_view_flipper" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="232.0dip" n1:inAnimation="@anim/fade_in_100" n1:outAnimation="@anim/fade_out_100">
+        <TextView n1:textSize="14.0sp" n1:textColor="@color/main_blue" n1:layout_gravity="center_horizontal" n1:id="@id/virtual_card_btn_show_cvc" n1:padding="12.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/wallet_show_cvc" />
+        <TextView n1:textSize="14.0sp" n1:textColor="@color/main_blue" n1:layout_gravity="center_horizontal" n1:id="@id/virtual_card_btn_hide_cvc" n1:padding="12.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/wallet_hide_cvc" />
+        <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center_horizontal" n1:id="@id/virtual_card_btn_progress" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+    </ViewFlipper>
+</FrameLayout>

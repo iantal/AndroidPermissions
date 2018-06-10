@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/background" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/arrangementSummaryTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/arrangement_summary_title" style="@style/ArrangementSummary.Title" />
+    <View n1:id="@id/arrangementSummaryDivider" n1:background="@color/light_grey" n1:layout_width="fill_parent" n1:layout_height="@dimen/arrangement_summary_title_bottom_divider_height" />
+    <com.mobile.ui.common.view.HeaderFooterRecyclerView n1:id="@id/arrangementSummaryList" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:splitMotionEvents="false" n1:importantForAccessibility="no" n2:dividerDrawable="@drawable/all_list_divider" n2:layoutManager="android.support.v7.widget.LinearLayoutManager" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

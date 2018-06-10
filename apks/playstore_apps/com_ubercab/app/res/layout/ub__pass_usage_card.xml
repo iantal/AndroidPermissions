@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/ui__gutter_size" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="@dimen/ui__gutter_size" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.presidio.pass.tracking.ui.PassUsageTileView android:id="@id/pass_tracking_rides_left_usage_card" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.ubercab.presidio.pass.tracking.ui.PassUsageTileView android:id="@id/pass_tracking_days_left_usage_card" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_marginStart="@dimen/ui__spacing_unit_4x" />
+</com.ubercab.ui.core.ULinearLayout>

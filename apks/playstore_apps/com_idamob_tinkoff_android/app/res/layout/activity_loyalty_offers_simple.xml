@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout n1:id="@id/loyalty_offers_promo_appbar" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="@dimen/loyalty_category_promo_header_height">
+        <android.support.design.widget.CollapsingToolbarLayout n1:id="@id/loyalty_offers_promo_collapsing" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:contentScrim="@android:color/transparent" n2:layout_scrollFlags="exitUntilCollapsed|scroll" n2:statusBarScrim="@android:color/transparent" n2:titleEnabled="false" xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <com.commit451.foregroundviews.ForegroundImageView n1:id="@id/loyalty_offers_promo_image" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:foreground="@drawable/offer_scrim_gradient" n1:src="@color/n7" n1:scaleType="centerCrop" n2:layout_collapseMode="parallax" />
+            <TextView n1:textAppearance="@style/Text.Header.White" n1:textSize="@dimen/text_extra_large" n1:layout_gravity="bottom" n1:id="@id/loyalty_offers_promo_title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="24.0dip" fontPath="@string/roboto_medium" />
+            <View n1:id="@id/loyalty_offers_promo_scrim" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+            <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" n2:layout_collapseMode="pin" n2:titleTextColor="@color/white" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView n1:id="@id/loyalty_offers_promo_recycler" n1:background="@color/white" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge_half" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n3:layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/button_insurance_review_add_another" android:foreground="?selectableItemBackground" android:paddingStart="16.0dip" android:paddingEnd="10.0dip" style="@style/InsuranceReviewItemLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/text_insurance_review_add_button_label" android:text="@string/insurance_review_add_more_title" android:layout_toEndOf="@id/image_insurance_review_add_button" android:layout_alignParentStart="true" style="@style/InsuranceReviewItemCategory" />
+    <TextView android:id="@id/text_insurance_review_add_button_description" android:text="@string/insurance_review_add_more_subtitle" android:layout_below="@id/text_insurance_review_add_button_label" android:layout_toEndOf="@id/image_insurance_review_add_button" android:layout_alignParentStart="true" style="@style/InsuranceReviewItemProvider" />
+    <ImageView android:id="@id/image_insurance_review_add_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_insurance_add_another" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

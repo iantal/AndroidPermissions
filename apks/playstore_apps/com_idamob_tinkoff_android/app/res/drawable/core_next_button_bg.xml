@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_enabled="false"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape n1:shape="rectangle">
+            <corners n1:radius="@dimen/core_button_radius" />
+            <solid n1:color="@color/core_next_btn_bg_disabled" />
+        </shape>
+    </item>
+    <item n2:state_enabled="true" n2:state_pressed="true"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape n2:shape="rectangle">
+            <corners n2:radius="@dimen/core_button_radius" />
+            <solid n2:color="@color/core_next_btn_bg_disabled" />
+        </shape>
+    </item>
+    <item n3:state_enabled="true" n3:state_pressed="false"
+      xmlns:n3="http://schemas.android.com/apk/res/android">
+        <shape n3:shape="rectangle">
+            <corners n3:radius="@dimen/core_button_radius" />
+            <solid n3:color="@color/core_next_btn_bg" />
+        </shape>
+    </item>
+</selector>

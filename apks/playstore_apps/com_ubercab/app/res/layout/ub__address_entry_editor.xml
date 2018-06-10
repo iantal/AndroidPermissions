@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.core.root.main.ride.address_entry.AddressEntryEditorView android:id="@id/ub__location_edit_view" android:fitsSystemWindows="@bool/use_transparent_status_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="e7d57e12-c412"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UCardView android:id="@id/ub__address_entry_editor_card_view" android:fitsSystemWindows="@bool/use_transparent_status_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ub__home_where_to_margin_bottom" uber:cardCornerRadius="@dimen/ui__corner_radius" uber:cardElevation="@dimen/ui__spacing_unit_1x">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__location_edit_search_box" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingRight="@dimen/ui__spacing_unit_2x" android:fitsSystemWindows="@bool/use_transparent_status_bar" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__header_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_5x">
+                <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ub__address_entry_header_plugin_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.ubercab.ui.core.UImageView android:layout_gravity="start" android:id="@id/ub__location_edit_back_arrow" android:paddingTop="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/ui__spacing_unit_3x" android:minHeight="@dimen/ui__spacing_unit_3x" android:foregroundGravity="center" android:contentDescription="@string/back_button_desc" uber:srcCompat="@drawable/navigation_icon_back" uber:analyticsId="c9b133dd-3a78" />
+            </com.ubercab.ui.core.UFrameLayout>
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.presidio.app.core.root.main.ride.location_edit.icon_view.UberSourceToDestinationView android:id="@id/ub__source_destination_view" android:layout_width="@dimen/ub__location_editor_source_to_destination_view_width" android:layout_height="fill_parent" />
+                <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/ui__spacing_unit_2x">
+                    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:id="@id/ub__address_entry_top_plugin_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__location_edit_search_container_pickup" style="@style/Helix.Appearance.LocationEditor.Container">
+                        <com.ubercab.ui.core.UTextView android:id="@id/ub__location_edit_search_pickup_view" uber:analyticsId="0ba16d5f-b6e3" style="@style/Helix.Appearance.LocationEditor.TextView" />
+                        <com.ubercab.ui.commons.widget.ClearableEditText android:id="@id/ub__location_edit_search_pickup_edit" android:visibility="gone" android:hint="@string/pick_location" uber:analyticsId="87855661-5b20" style="@style/Helix.Appearance.LocationEditor.EditText" />
+                    </com.ubercab.ui.core.UFrameLayout>
+                    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__location_edit_search_container_destination" style="@style/Helix.Appearance.LocationEditor.Container">
+                        <com.ubercab.ui.core.UTextView android:id="@id/ub__location_edit_search_destination_view" uber:analyticsId="b76ba518-aba4" style="@style/Helix.Appearance.LocationEditor.TextView" />
+                        <com.ubercab.ui.commons.widget.ClearableEditText android:id="@id/ub__location_edit_search_destination_edit" android:visibility="gone" android:hint="@string/destination_search_prompt" uber:analyticsId="d872c1c1-e371" style="@style/Helix.Appearance.LocationEditor.EditText" />
+                    </com.ubercab.ui.core.UFrameLayout>
+                </com.ubercab.ui.core.ULinearLayout>
+                <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:id="@id/ub__address_entry_right_plugin_container" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UFrameLayout android:layout_gravity="bottom" android:id="@id/loading_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight">
+            <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:bli_bitColor="?colorPrimary" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.UCardView>
+</com.ubercab.presidio.app.core.root.main.ride.address_entry.AddressEntryEditorView>

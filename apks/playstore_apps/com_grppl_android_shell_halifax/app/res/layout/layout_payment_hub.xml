@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/paymentHubWrapperFromPlaceholder" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.mobile.ui.paymenthub.view.ArrangementUnselectedView n1:id="@id/paymentHubFromPlaceholder" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:headerContentDescription="@string/accessibility_payment_hub_account_from_label" n2:headerText="@string/beneficiary_account_tile_header_from_text" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <include layout="@layout/layout_list_divider" />
+    <FrameLayout n1:id="@id/paymentHubWrapperToPlaceholder" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.mobile.ui.paymenthub.view.ArrangementUnselectedView n1:id="@id/paymentHubToPlaceholder" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:headerContentDescription="@string/accessibility_payment_hub_account_to_label" n3:headerText="@string/beneficiary_account_tile_header_to_text" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <include layout="@layout/layout_list_divider" />
+    <include layout="@layout/layout_payment_hub_payment_details" />
+    <View n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0" />
+    <Button n1:enabled="false" n1:id="@id/paymentHubContinueButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_content_padding" n1:layout_marginTop="@dimen/fragment_content_padding" n1:layout_marginRight="@dimen/fragment_content_padding" n1:layout_marginBottom="@dimen/fragment_content_padding" n1:text="@string/payment_hub_continue_button_text" style="@style/Widget.Button.Primary" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.alipay_international.operation.login.AlipayInternationalLoginView android:orientation="vertical" android:background="?android:colorBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="07799549-cc28"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/fixed_header" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__alipayintl_login_description" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" style="@style/Platform.TextAppearance.H5.News" />
+                <com.ubercab.ui.commons.widget.PresidioTextInputLayout android:id="@id/ub__alipayintl_email_text_container" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_4x" uber:hintEnabled="false">
+                    <com.ubercab.ui.FloatingLabelEditText android:id="@id/ub__alipayintl_email_text_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/ub__alipayintl_email" android:inputType="textWebEmailAddress" android:imeOptions="actionNext" style="@style/Platform.TextAppearance.H3.News" />
+                </com.ubercab.ui.commons.widget.PresidioTextInputLayout>
+                <com.ubercab.ui.commons.widget.PresidioTextInputLayout android:id="@id/ub__alipayintl_mobile_input_container" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_4x" uber:hintEnabled="false">
+                    <com.ubercab.ui.FloatingLabelEditText android:id="@id/ub__alipayintl_phone_text_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/ub__alipayintl_login_phone_number" android:inputType="phone" android:imeOptions="actionNext" style="@style/Platform.TextAppearance.H3.News" />
+                </com.ubercab.ui.commons.widget.PresidioTextInputLayout>
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.UScrollView>
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__alipayintl_login_create_account" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H5.News.Tertiary" />
+        <com.ubercab.ui.commons.widget.KeyboardButton android:layout_gravity="bottom" android:id="@id/ub__alipayintl_login_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__alipayintl_login" uber:analyticsId="7ed12e5e-340e" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.payment.alipay_international.operation.login.AlipayInternationalLoginView>

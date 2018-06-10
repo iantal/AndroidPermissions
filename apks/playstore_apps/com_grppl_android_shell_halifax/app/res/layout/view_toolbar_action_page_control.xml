@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/navigationHeaderPageBackButton" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/toolbar_action_back" n1:paddingStart="@dimen/toolbar_action_page_padding_start" n1:paddingEnd="@dimen/toolbar_action_page_padding_end" style="@style/Widget.Toolbar.Action" />
+    <View n1:background="@color/toolbar_page_control_divider_color" n1:layout_width="@dimen/toolbar_page_control_divider_width" n1:layout_height="fill_parent" n1:layout_marginTop="@dimen/toolbar_page_control_divider_margin" n1:layout_marginBottom="@dimen/toolbar_page_control_divider_margin" />
+    <TextView n1:id="@id/navigationHeaderPageNextButton" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/toolbar_action_next" n1:paddingStart="@dimen/toolbar_action_page_padding_start" n1:paddingEnd="@dimen/toolbar_action_page_padding_end" style="@style/Widget.Toolbar.Action" />
+</LinearLayout>

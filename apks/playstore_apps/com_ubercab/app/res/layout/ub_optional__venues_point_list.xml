@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UFrameLayout android:theme="@style/Theme.Helix.Light" android:layout_gravity="center" android:orientation="vertical" android:background="?android:colorBackground" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__venue_point_name" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Platform.TextAppearance.H2.News" />
+    <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__venue_point_hint" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ub__venue_point_name" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+</com.ubercab.ui.core.UFrameLayout>

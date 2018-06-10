@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.profiles_feature.complete_profile.ProfileEditView android:orientation="vertical" android:background="?android:colorBackground" android:padding="?contentInset" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UEditText android:textColorHint="?android:textColorTertiary" android:gravity="start|center" android:id="@id/ub__profiles_profile_edit_email_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/email_address" android:maxLines="1" android:layout_weight="1.0" android:inputType="textEmailAddress" android:imeOptions="actionDone" uber:analyticsId="b9759add-5f57" style="@style/Platform.TextAppearance.H3.News.Tertiary" />
+            <com.ubercab.ui.core.UButton android:id="@id/ub__profiles_profile_edit_next_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/next" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.presidio.profiles_feature.complete_profile.ProfileEditView>

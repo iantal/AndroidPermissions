@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/import_additional_card_offer_icon" n1:layout_width="170.0dip" n1:layout_height="170.0dip" n1:layout_marginTop="56.0dip" n1:layout_centerHorizontal="true" />
+    <TextView n1:textAppearance="@style/Text.Default.White" n1:gravity="center" n1:id="@id/text" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginTop="@dimen/screen_content_double_margin" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:text="@string/import_additional_card_offer_text" n1:layout_below="@id/import_additional_card_offer_icon" />
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Hint" n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginTop="@dimen/screen_content_margin" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:text="@string/import_additional_card_offer_hint" n1:layout_below="@id/text" />
+    <Button n1:textAppearance="@style/Text.Small.Dark" n1:id="@id/button_import_card" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:layout_marginBottom="56.0dip" n1:minHeight="@dimen/tile_height_medium_item" n1:text="@string/import_additional_card_offer_button" n1:layout_alignParentBottom="true" style="@style/Button.Round.Yellow" />
+</RelativeLayout>

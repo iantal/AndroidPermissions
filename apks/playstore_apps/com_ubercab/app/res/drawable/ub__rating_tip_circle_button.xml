@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false" android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/ub__ui_core_white" />
+            <stroke android:width="@dimen/ub__rating_tip_circle_selection_border" android:color="@color/ub__ui_core_grey_60" />
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/ub__ui_core_celebration_green" />
+            <stroke android:width="@dimen/ub__rating_tip_circle_selection_border" android:color="@color/ub__ui_core_celebration_green" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/ub__ui_core_white" />
+            <stroke android:width="@dimen/ub__rating_tip_circle_selection_border" android:color="@color/ub__ui_core_grey_60" />
+        </shape>
+    </item>
+</selector>

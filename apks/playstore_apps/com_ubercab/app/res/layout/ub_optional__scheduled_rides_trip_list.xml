@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.scheduled_rides.trips.ScheduledTripsView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="00d85d79-21f0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:layout_gravity="top" android:id="@id/scheduled_trips_loading_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BitLoadingIndicator" />
+    <com.ubercab.ui.core.URecyclerView android:id="@id/scheduled_rides_trip_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.ubercab.presidio.scheduled_rides.trips.ScheduledTripsView>

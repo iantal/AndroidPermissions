@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/accountTileArrowHeaderContainer" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:importantForAccessibility="yes" style="@style/AccountTile.MainContainer"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/headerArrangementWrapper" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:importantForAccessibility="no">
+        <TextView n1:id="@id/beneficiaryAccountTileHeader" n1:layout_width="@dimen/beneficiary_account_headline_width" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/beneficiary_account_headline_margin_top" n1:text="@string/beneficiary_account_tile_header_to_text" n1:importantForAccessibility="no" style="@style/BeneficiaryAccountTile.Header" />
+    </LinearLayout>
+    <ImageView n1:id="@id/beneficiaryTileIcon" n1:layout_alignParentRight="true" n1:layout_centerInParent="true" n1:importantForAccessibility="no" n2:srcCompat="@drawable/beneficiary_account_tile_chevron" style="@style/Arrangement.Icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

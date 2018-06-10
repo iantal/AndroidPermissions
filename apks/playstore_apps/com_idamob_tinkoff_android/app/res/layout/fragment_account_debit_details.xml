@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/account_details_tariff_limits" n1:text="@string/account_additional_details_tariff_limits_button" n1:drawableLeft="@drawable/ic_more_settings_limits" style="@style/AccountDetailsActionItem.Padding" />
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/saving_percents_container" style="@style/DefaultItem.Margin">
+        <TextView n1:id="@id/saving_percents_label_title" n1:layout_width="0.0dip" n1:text="@string/account_additional_details_saving_percents_label" n1:drawableLeft="@drawable/ic_account_details_percent" n1:layout_weight="1.0" style="@style/AccountDetailsActionItem" />
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/saving_percents_label" n1:text="@string/ada_rate_value" style="@style/WrapContent" />
+    </LinearLayout>
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/rate_hint" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/screen_content_margin" />
+    <include n1:id="@id/rate_hint_info_divider" n1:visibility="gone" layout="@layout/inc_divider_margin" />
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/account_details_authorization_container" style="@style/DefaultItem.Margin">
+        <TextView n1:id="@id/account_details_authorization_amount_title" n1:layout_width="0.0dip" n1:text="@string/account_additional_details_authorization_amount" n1:drawableLeft="@drawable/ic_account_details_auth_sum" n1:layout_weight="1.0" style="@style/AccountDetailsActionItem" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/account_details_authorization_amount" style="@style/MoneyView.AccountDetails" />
+    </LinearLayout>
+    <include n1:id="@id/account_details_info_divider" layout="@layout/inc_divider_margin" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/account_details_overdraft_switch_container" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:text="@string/account_additional_details_overdraft_title" style="@style/DefaultItem.Margin" />
+        <Switch n1:id="@id/account_details_overdraft_switch" n1:text="@string/account_additional_details_overdraft_button_info" n1:drawableLeft="@drawable/ic_account_details_percent" style="@style/AccountDetailsActionItem.Padding" />
+        <TextView n1:id="@id/account_details_overdraft" n1:text="@string/account_additional_details_overdraft_button_enable" n1:drawableLeft="@drawable/ic_account_details_percent" style="@style/AccountDetailsActionItem.Padding" />
+        <TextView n1:id="@id/account_details_overdraft_connecting_view" n1:text="@string/account_additional_details_overdraft_button_in_progress" n1:drawableLeft="@drawable/ic_account_details_percent" style="@style/AccountDetailsActionItem.Padding" />
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/account_details_overdraft_limit_container" style="@style/DefaultItem.Margin">
+            <TextView n1:id="@id/account_details_overdraft_limit_title" n1:layout_width="0.0dip" n1:text="@string/account_additional_details_credit_limit_overdraft" n1:drawableLeft="@drawable/ic_account_details_credit_limit" n1:layout_weight="1.0" style="@style/AccountDetailsActionItem" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/account_details_overdraft_limit" style="@style/MoneyView.AccountDetails" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/account_details_overdraft_available_balance_container" style="@style/DefaultItem.Margin">
+            <TextView n1:id="@id/account_details_overdraft_available_balance_title" n1:layout_width="0.0dip" n1:text="@string/account_additional_details_available_balance" n1:drawableLeft="@drawable/ic_account_details_available_balance" n1:layout_weight="1.0" style="@style/AccountDetailsActionItem" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/account_details_overdraft_available_balance" style="@style/MoneyView.AccountDetails" />
+        </LinearLayout>
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/account_details_overdraft_hint" n1:text="@string/account_additional_details_overdraft_hint" style="@style/DefaultItem.Margin" />
+        <include layout="@layout/inc_divider_margin" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/account_details_services_content" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <TextView n1:id="@id/account_details_statements" n1:text="@string/account_additional_details_statements_button" n1:drawableLeft="@drawable/ic_account_details_statements" style="@style/AccountDetailsActionItem.Padding" />
+    <TextView n1:id="@id/account_details_document" n1:text="@string/account_additional_details_account_documents_button" n1:drawableLeft="@drawable/ic_account_details_documents" style="@style/AccountDetailsActionItem.Padding" />
+    <TextView n1:id="@id/account_details_tariffs" n1:text="@string/account_additional_details_tariff_button" n1:drawableLeft="@drawable/ic_account_details_tariffs" style="@style/AccountDetailsActionItem.Padding" />
+    <TextView n1:id="@id/account_details_abroad_operations" n1:text="@string/account_additional_details_abroad_operations_button" n1:drawableLeft="@drawable/ic_operations_abroad" style="@style/AccountDetailsActionItem.Padding" />
+    <fragment n1:name="ru.tcsbank.mb.ui.accounts.details.CardActionsFragment" n1:id="@id/card_actions_fragment" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/Arrangement.Container"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/arrangementUnselectedTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/arrangement_unselected_header_text" style="@style/Arrangement.Name" />
+    <TextView n1:id="@id/arrangementUnselectedSubtitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/arrangement_list_small_margin" n1:text="@string/arrangement_unselected_subtitle_text" n1:layout_below="@id/arrangementUnselectedTitle" n1:layout_alignStart="@id/arrangementUnselectedTitle" style="@style/Arrangement.Body" />
+</RelativeLayout>

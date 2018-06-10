@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list>
+    <item n1:duration="@integer/chat_typing_indicator_duration" n1:drawable="@drawable/chat_typing_indicator_frame0"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:duration="@integer/chat_typing_indicator_duration" n2:drawable="@drawable/chat_typing_indicator_frame1"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item n3:duration="@integer/chat_typing_indicator_duration" n3:drawable="@drawable/chat_typing_indicator_frame2"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item n4:duration="@integer/chat_typing_indicator_duration" n4:drawable="@drawable/chat_typing_indicator_frame3"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <item n5:duration="@integer/chat_typing_indicator_duration" n5:drawable="@drawable/chat_typing_indicator_frame4"
+      xmlns:n5="http://schemas.android.com/apk/res/android" />
+</animation-list>

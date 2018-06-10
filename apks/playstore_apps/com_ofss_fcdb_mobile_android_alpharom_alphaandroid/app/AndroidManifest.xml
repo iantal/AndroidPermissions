@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.ofss.fcdb.mobile.android.alpharom.alphaandroid">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/ABRTheme">
+        <service android:name="com.iflex.fcat.mobile.android.infra.DownloadPDFService"/>
+        <activity android:name="com.ofss.fcdb.mobile.android.alpharom.alphaandroid.LaunchApplication" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.iflex.fcat.mobile.android.infra.FCDBLoginTab" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="standard" android:name="com.iflex.fcat.mobile.android.infra.LandingScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.BaseActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleInstance" android:name="com.iflex.fcat.mobile.android.infra.LoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/>
+        <activity android:name="com.iflex.fcat.mobile.android.infra.ForexActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.HelpUrlActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.TemplateTwo" android:screenOrientation="portrait" android:theme="@android:style/Theme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.TransactionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.iflex.fcat.mobile.android.infra.BranchLocatorActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.TemplateFour" android:screenOrientation="portrait" android:theme="@android:style/Theme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.TemplateOne" android:screenOrientation="portrait" android:theme="@android:style/Theme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.iflex.fcat.mobile.android.infra.PreLoginOffers" android:screenOrientation="portrait"/>
+        <activity android:name="com.iflex.fcat.mobile.android.infra.ContactUs" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.OffersActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.ATGWebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.iflex.fcat.mobile.android.infra.TemplateThree" android:screenOrientation="portrait" android:theme="@android:style/Theme"/>
+        <activity android:label="@string/title_activity_alerts" android:name="com.iflex.fcat.mobile.android.infra.TemplateFive"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_edit_favorites" android:name="com.iflex.fcat.mobile.android.infra.EditFavorites" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_add_attachment" android:name="com.iflex.fcat.mobile.android.infra.AddAttachment" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/>
+        <activity android:name="com.iflex.fcat.mobile.android.infra.LogoffActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+    </application>
+</manifest>

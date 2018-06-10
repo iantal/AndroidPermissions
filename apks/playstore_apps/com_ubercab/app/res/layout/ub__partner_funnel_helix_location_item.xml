@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/ub__partner_funnel_helix_location_item_container" android:background="@drawable/ub__partner_funnel_helix_white_ripple" android:paddingLeft="?gutterSize" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="?gutterSize" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_helix_location_item_name" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Funnel.Helix.TextAppearance.H6.News.Secondary" />
+        <LinearLayout android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_helix_location_item_address" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Funnel.Helix.TextAppearance.H5.News" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_helix_location_item_distance" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Funnel.Helix.TextAppearance.H5.News.Grey" />
+        </LinearLayout>
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_helix_location_item_hours" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Funnel.Helix.TextAppearance.H6.News.Tertiary" />
+    </LinearLayout>
+    <ImageView android:paddingLeft="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ub__partner_funnel_row_right_arrow" />
+</LinearLayout>

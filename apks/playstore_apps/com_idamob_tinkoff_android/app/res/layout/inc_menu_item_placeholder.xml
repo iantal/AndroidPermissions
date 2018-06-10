@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:gravity="center_vertical" n1:layout_width="fill_parent" n1:layout_height="88.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/image" n1:layout_marginLeft="@dimen/offset_from_edge" n1:src="@drawable/circle_placeholder_dark" style="@style/ImageItem" />
+    <View n1:id="@id/title" n1:background="@color/placeholder_item_dark" n1:layout_width="fill_parent" n1:layout_height="22.0dip" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="72.0dip" n1:layout_toRightOf="@id/image" />
+    <View n1:background="@color/placeholder_item_dark" n1:layout_width="fill_parent" n1:layout_height="38.0dip" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginTop="4.0dip" n1:layout_marginRight="72.0dip" n1:layout_toRightOf="@id/image" n1:layout_below="@id/title" />
+</RelativeLayout>

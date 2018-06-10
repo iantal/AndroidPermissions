@@ -1,0 +1,22 @@
+.class public interface abstract Lru/tcsbank/mb/ui/adapters/a/a/c/b$d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lru/tcsbank/mb/ui/adapters/a/a/c/b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "d"
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Lru/tinkoff/mb/api/entities/offers/personal/PersonalOffer;)V
+.end method
+
+.method public abstract a(Lru/tinkoff/mb/api/entities/offers/personal/PersonalOffer;Ljava/lang/String;)V
+.end method

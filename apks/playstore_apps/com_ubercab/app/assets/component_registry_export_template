@@ -1,0 +1,8 @@
+var schema = JSON.parse('%1');
+var components = loadSchema(schema);
+
+var global = this;
+
+Object.keys(components).forEach(function (key) {
+     return global[key] = components[key];
+});

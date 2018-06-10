@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.promotion.list.PromoListView android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:analyticsId="f1427a9d-4210"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.URecyclerView android:id="@id/promo_list_recyclerview" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/promo_list_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:bli_bitColor="?colorAccent" />
+</com.ubercab.presidio.promotion.list.PromoListView>

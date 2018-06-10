@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small.Hint" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/empty_stub" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="30.0dip" />
+    <RelativeLayout n1:id="@id/empty" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/holder" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+            <ImageView n1:id="@id/image" n1:src="@drawable/noitem" style="@style/EmptyViewImage" />
+            <TextView n1:id="@id/text" style="@style/EmptyViewText" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/next_page_progress_bar" n1:visibility="visible" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" n1:layout_margin="@dimen/offset_from_edge" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.pass.purchase.flow.PassPurchaseFlowView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="28f83ce1-0d2e"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/pass_app_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/collapsing_header" />
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/pass_loading_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorAccent" />
+</com.ubercab.presidio.pass.purchase.flow.PassPurchaseFlowView>

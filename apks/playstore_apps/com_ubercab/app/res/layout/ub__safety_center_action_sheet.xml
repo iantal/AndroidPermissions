@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.safety.safety_center_action_sheet.SafetyCenterActionSheetView android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="5b97aeea-964b"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__safety_center_action_sheet_title" android:padding="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__safety_action_sheet_title" style="@style/Platform.TextAppearance.H2.News.Primary" />
+            <com.ubercab.ui.core.UPlainView android:background="?android:listDivider" android:layout_width="wrap_content" android:layout_height="?dividerWidth" />
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__safety_center_action_list" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.safety.safety_center_action_sheet.SafetyCenterActionSheetView>

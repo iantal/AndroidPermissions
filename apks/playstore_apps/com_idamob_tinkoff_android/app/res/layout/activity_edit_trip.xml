@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/container_trip_fields" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <TextView n1:textAppearance="@style/Text.Default.Red" n1:id="@id/btn_remove_trip" n1:background="?selectableItemBackground" n1:text="@string/edit_abroad_operations_button_delete" style="@style/AccountDetailsActionItem.Padding" />
+</LinearLayout>

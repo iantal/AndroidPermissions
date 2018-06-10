@@ -1,0 +1,320 @@
+.class final Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;
+.super Lcom/ubercab/healthline/server_side/mitigation/core/model/DeviceInformation$Builder;
+.source "SourceFile"
+
+
+# instance fields
+.field private isRooted:Ljava/lang/Boolean;
+
+.field private locale:Ljava/lang/String;
+
+.field private manufacturer:Ljava/lang/String;
+
+.field private model:Ljava/lang/String;
+
+.field private osType:Ljava/lang/String;
+
+.field private uuid:Ljava/lang/String;
+
+.field private version:Ljava/lang/String;
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 131
+    invoke-direct {p0}, Lcom/ubercab/healthline/server_side/mitigation/core/model/DeviceInformation$Builder;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public build()Lcom/ubercab/healthline/server_side/mitigation/core/model/DeviceInformation;
+    .locals 11
+
+    const-string v0, ""
+
+    .line 186
+    iget-object v1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->osType:Ljava/lang/String;
+
+    if-nez v1, :cond_0
+
+    .line 187
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, " osType"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 189
+    :cond_0
+    iget-object v1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->version:Ljava/lang/String;
+
+    if-nez v1, :cond_1
+
+    .line 190
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, " version"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 192
+    :cond_1
+    iget-object v1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->manufacturer:Ljava/lang/String;
+
+    if-nez v1, :cond_2
+
+    .line 193
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, " manufacturer"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 195
+    :cond_2
+    iget-object v1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->model:Ljava/lang/String;
+
+    if-nez v1, :cond_3
+
+    .line 196
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, " model"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 198
+    :cond_3
+    iget-object v1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->locale:Ljava/lang/String;
+
+    if-nez v1, :cond_4
+
+    .line 199
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, " locale"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 201
+    :cond_4
+    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_5
+
+    .line 204
+    new-instance v0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation;
+
+    iget-object v3, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->osType:Ljava/lang/String;
+
+    iget-object v4, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->version:Ljava/lang/String;
+
+    iget-object v5, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->manufacturer:Ljava/lang/String;
+
+    iget-object v6, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->model:Ljava/lang/String;
+
+    iget-object v7, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->locale:Ljava/lang/String;
+
+    iget-object v8, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->isRooted:Ljava/lang/Boolean;
+
+    iget-object v9, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->uuid:Ljava/lang/String;
+
+    const/4 v10, 0x0
+
+    move-object v2, v0
+
+    invoke-direct/range {v2 .. v10}, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$1;)V
+
+    return-object v0
+
+    .line 202
+    :cond_5
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Missing required properties:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public isRooted(Ljava/lang/Boolean;)Lcom/ubercab/healthline/server_side/mitigation/core/model/DeviceInformation$Builder;
+    .locals 0
+
+    .line 175
+    iput-object p1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->isRooted:Ljava/lang/Boolean;
+
+    return-object p0
+.end method
+
+.method public locale(Ljava/lang/String;)Lcom/ubercab/healthline/server_side/mitigation/core/model/DeviceInformation$Builder;
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    .line 170
+    iput-object p1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->locale:Ljava/lang/String;
+
+    return-object p0
+
+    .line 168
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string v0, "Null locale"
+
+    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public manufacturer(Ljava/lang/String;)Lcom/ubercab/healthline/server_side/mitigation/core/model/DeviceInformation$Builder;
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    .line 154
+    iput-object p1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->manufacturer:Ljava/lang/String;
+
+    return-object p0
+
+    .line 152
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string v0, "Null manufacturer"
+
+    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public model(Ljava/lang/String;)Lcom/ubercab/healthline/server_side/mitigation/core/model/DeviceInformation$Builder;
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    .line 162
+    iput-object p1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->model:Ljava/lang/String;
+
+    return-object p0
+
+    .line 160
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string v0, "Null model"
+
+    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public osType(Ljava/lang/String;)Lcom/ubercab/healthline/server_side/mitigation/core/model/DeviceInformation$Builder;
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    .line 138
+    iput-object p1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->osType:Ljava/lang/String;
+
+    return-object p0
+
+    .line 136
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string v0, "Null osType"
+
+    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public uuid(Ljava/lang/String;)Lcom/ubercab/healthline/server_side/mitigation/core/model/DeviceInformation$Builder;
+    .locals 0
+
+    .line 180
+    iput-object p1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->uuid:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public version(Ljava/lang/String;)Lcom/ubercab/healthline/server_side/mitigation/core/model/DeviceInformation$Builder;
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    .line 146
+    iput-object p1, p0, Lcom/ubercab/healthline/server_side/mitigation/core/model/AutoValue_DeviceInformation$Builder;->version:Ljava/lang/String;
+
+    return-object p0
+
+    .line 144
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string v0, "Null version"
+
+    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method

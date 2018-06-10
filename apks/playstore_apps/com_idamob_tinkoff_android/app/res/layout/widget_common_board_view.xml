@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:background="@color/bg_dark" n1:paddingTop="13.0dip" n1:paddingBottom="13.0dip" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:layout_gravity="center" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <ru.tcsbank.mb.ui.widgets.board.BoardDigitView n1:id="@id/pos_5" style="@style/BoardDigitView.Miles" />
+        <ru.tcsbank.mb.ui.widgets.board.BoardDigitView n1:id="@id/pos_4" style="@style/BoardDigitView.Miles" />
+        <ru.tcsbank.mb.ui.widgets.board.BoardDigitView n1:id="@id/pos_3" style="@style/BoardDigitView.Miles" />
+        <ru.tcsbank.mb.ui.widgets.board.BoardDigitView n1:id="@id/pos_2" style="@style/BoardDigitView.Miles" />
+        <ru.tcsbank.mb.ui.widgets.board.BoardDigitView n1:id="@id/pos_1" style="@style/BoardDigitView.Miles" />
+        <ru.tcsbank.mb.ui.widgets.board.BoardDigitView n1:id="@id/pos_0" style="@style/BoardDigitView.Miles" />
+    </LinearLayout>
+    <View n1:layout_gravity="center" n1:id="@id/divider" n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+</FrameLayout>

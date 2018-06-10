@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.URelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__features_icon_view" android:layout_width="@dimen/ui__rental_feature_icon_size" android:layout_height="@dimen/ui__rental_feature_icon_size" android:scaleType="fitCenter" android:layout_marginEnd="@dimen/ub__rental_dummy_dimen" android:layout_alignParentStart="true" />
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__features_title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:layout_centerVertical="true" android:paddingStart="@dimen/ui__spacing_unit_1x" android:paddingEnd="@dimen/ub__rental_dummy_dimen" android:layout_toEndOf="@id/ub__features_icon_view" android:layout_alignParentEnd="true" style="@style/Platform.TextAppearance.H6.News" />
+</com.ubercab.ui.core.URelativeLayout>

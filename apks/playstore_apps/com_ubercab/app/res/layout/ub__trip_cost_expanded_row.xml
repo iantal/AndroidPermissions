@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.trip_details.optional.fare.row.cost.TripCostExpandedRowView android:orientation="vertical" android:paddingLeft="?contentInset" android:paddingTop="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__trip_cost_expanded_horizontal_row" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_cost_expanded_text" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="0.0dip" android:paddingEnd="?contentInset" style="@style/Platform.TextAppearance.H2.Book" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.trip_details.optional.fare.row.cost.TripCostExpandedRowView>

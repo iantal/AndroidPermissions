@@ -1,0 +1,47 @@
+import java.io.Closeable;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public final class avz
+{
+  static final Logger a = Logger.getLogger(avz.class.getName());
+  
+  private avz() {}
+  
+  public static void a(Closeable paramCloseable, boolean paramBoolean)
+    throws IOException
+  {
+    if (paramCloseable == null) {
+      return;
+    }
+    try
+    {
+      paramCloseable.close();
+      return;
+    }
+    catch (IOException paramCloseable)
+    {
+      if (paramBoolean)
+      {
+        a.log(Level.WARNING, "IOException thrown while closing Closeable.", paramCloseable);
+        return;
+      }
+      throw paramCloseable;
+    }
+  }
+  
+  public static void a(InputStream paramInputStream)
+  {
+    try
+    {
+      a(paramInputStream, true);
+      return;
+    }
+    catch (IOException paramInputStream)
+    {
+      throw new AssertionError(paramInputStream);
+    }
+  }
+}

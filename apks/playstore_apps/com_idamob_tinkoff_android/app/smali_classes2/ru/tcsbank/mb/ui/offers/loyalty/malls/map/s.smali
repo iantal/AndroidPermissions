@@ -1,0 +1,32 @@
+.class interface abstract Lru/tcsbank/mb/ui/offers/loyalty/malls/map/s;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/Throwable;)V
+.end method
+
+.method public abstract a(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List",
+            "<",
+            "Lru/tinkoff/mb/api/entities/offers/loyalty/LoyaltyOffer;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract b(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List",
+            "<",
+            "Lru/tinkoff/mb/api/entities/loyalty/mall/g;",
+            ">;)V"
+        }
+    .end annotation
+.end method

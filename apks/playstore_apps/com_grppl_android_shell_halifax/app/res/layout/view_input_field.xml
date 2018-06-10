@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/inputFieldContainer" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ViewStub n1:id="@id/inputFieldEditText" n1:inflatedId="@id/inputFieldEditText" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_toEndOf="@id/inputFieldStatusIcon" n1:layout_alignParentStart="true" />
+    <ImageView n1:id="@id/inputFieldStatusIcon" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" n1:paddingStart="@dimen/input_field_icon_padding_start" n1:paddingEnd="@dimen/input_field_icon_padding_end_half" n1:layout_alignParentEnd="true" n2:srcCompat="@drawable/all_input_field_clear_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

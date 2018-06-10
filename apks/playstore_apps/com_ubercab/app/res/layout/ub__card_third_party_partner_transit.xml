@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.feed.items.cards.transit.TransitCardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="25417950-6ead"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset" android:layout_marginStart="?contentInset" android:layout_marginEnd="?contentInset">
+        <com.ubercab.presidio.feed.views.CardHeaderView android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__transit_headline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" style="@style/Platform.TextAppearance.H3.Book" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.URecyclerView android:id="@id/ub__transit_route_list" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+    <com.ubercab.presidio.feed.views.CardCallToActionView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" />
+</com.ubercab.presidio.feed.items.cards.transit.TransitCardView>

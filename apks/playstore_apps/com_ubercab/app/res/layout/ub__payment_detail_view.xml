@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ub__payment_manage_payment_error_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:textColor="?colorNegative" android:id="@id/ub__payment_manage_payment_error_header" android:paddingBottom="?contentInset" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset" style="@style/Platform.TextAppearance.H5" />
+    </LinearLayout>
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__payment_detail_description" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ub__payment_manage_payment_error_header_container" style="@style/Platform.TextAppearance.H4" />
+    <com.ubercab.presidio.payment.base.ui.widget.detail.PaymentDetailInformationView android:id="@id/ub__payment_detail_information" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ub__payment_detail_description" />
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__payment_manage_payment_footer_view" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

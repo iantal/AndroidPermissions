@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:id="@id/calendarInputContainer" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:layout_gravity="left" n1:id="@id/calendarInputTextView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:freezesText="true" n1:importantForAccessibility="no" style="@style/Widget.InputCalendarField" />
+    <ImageView n1:layout_gravity="center|right" n1:id="@id/calendarInputStatusIcon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:paddingStart="@dimen/input_field_icon_padding_start" n1:paddingEnd="@dimen/calendar_field_icon_padding_end" n2:srcCompat="@drawable/registration_calendar_view_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

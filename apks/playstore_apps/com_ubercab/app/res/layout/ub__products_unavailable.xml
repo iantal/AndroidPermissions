@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.confirmation.product_selection.unavailable.ProductsUnavailableView android:id="@id/product_selection" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/ub__top_drop_shadow" />
+    <com.ubercab.ui.core.URelativeLayout android:background="?android:colorBackground" android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ub__drop_shadow_height" uber:analyticsId="c591da44-6b78">
+        <com.ubercab.ui.core.UImageView android:id="@id/icon" android:paddingTop="@dimen/ui__spacing_unit_4x" android:layout_width="@dimen/ui__spacing_unit_8x" android:layout_height="wrap_content" android:layout_centerHorizontal="true" uber:srcCompat="@drawable/ub__avatar_unavailable" />
+        <com.ubercab.presidio.pricing.core.PricingTextView android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginTop="@dimen/ui__spacing_unit_4x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" android:text="@string/product_selection_unavailable_message" android:layout_below="@id/icon" android:layout_centerHorizontal="true" style="@style/Platform.TextAppearance.H4.News" />
+    </com.ubercab.ui.core.URelativeLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.request.confirmation.product_selection.unavailable.ProductsUnavailableView>

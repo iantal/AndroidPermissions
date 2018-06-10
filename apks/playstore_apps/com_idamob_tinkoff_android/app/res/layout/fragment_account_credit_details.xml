@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/account_details_credit_limit_container" style="@style/DefaultItem.Margin">
+        <TextView n1:id="@id/account_details_credit_limit_title" n1:layout_width="0.0dip" n1:layout_marginRight="@dimen/screen_content_margin_half" n1:text="@string/account_credit_limit" n1:drawableLeft="@drawable/ic_account_details_credit_limit" n1:layout_weight="1.0" style="@style/AccountDetailsActionItem" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/account_details_credit_limit" style="@style/MoneyView.AccountDetails" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/account_details_min_payment_container" style="@style/DefaultItem.Margin">
+        <TextView n1:id="@id/account_details_minimal_payment_title" n1:layout_width="0.0dip" n1:layout_marginRight="@dimen/screen_content_margin_half" n1:text="@string/account_minimal_payment" n1:drawableLeft="@drawable/ic_account_details_min_payment" n1:layout_weight="1.0" style="@style/AccountDetailsActionItem" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/account_details_minimal_payment" n1:visibility="gone" style="@style/MoneyView.AccountDetails" />
+        <TextView n1:textAppearance="@style/Text.Default.Light" n1:id="@id/account_details_minimal_payment_paid" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/account_minimal_payment_paid" />
+        <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:id="@id/account_details_minimal_payment_progress_bar" n1:layout_width="@dimen/pd_width_small" n1:layout_height="@dimen/pd_height_small" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/account_details_last_debt_panel" style="@style/DefaultItem.Margin">
+        <TextView n1:id="@id/account_details_last_debt_title" n1:layout_width="0.0dip" n1:layout_marginRight="@dimen/screen_content_margin_half" n1:text="@string/account_additional_details_last_statement_debt_amount" n1:drawableLeft="@drawable/ic_account_details_statements" n1:layout_weight="1.0" style="@style/AccountDetailsActionItem" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/account_details_last_debt" style="@style/MoneyView.AccountDetails" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/account_details_credit_debt_container" style="@style/DefaultItem.Margin">
+        <TextView n1:id="@id/account_details_debt_title" n1:layout_width="0.0dip" n1:layout_marginRight="@dimen/screen_content_margin_half" n1:text="@string/account_additional_details_debt_amount" n1:drawableLeft="@drawable/ic_account_details_statements" n1:layout_weight="1.0" style="@style/AccountDetailsActionItem" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/account_details_debt" style="@style/MoneyView.AccountDetails" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/account_details_authorization_container" style="@style/DefaultItem.Margin">
+        <TextView n1:id="@id/account_details_authorization_amount_title" n1:layout_width="0.0dip" n1:layout_marginRight="@dimen/screen_content_margin_half" n1:text="@string/account_additional_details_authorization_amount" n1:drawableLeft="@drawable/ic_account_details_auth_sum" n1:layout_weight="1.0" style="@style/AccountDetailsActionItem" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/account_details_authorization_amount" style="@style/MoneyView.AccountDetails" />
+    </LinearLayout>
+    <include n1:id="@id/account_details_info_divider" layout="@layout/inc_divider_margin" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/account_details_services_content" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <TextView n1:id="@id/account_details_statements" n1:text="@string/account_additional_details_statements_button" n1:drawableLeft="@drawable/ic_account_details_statements" style="@style/AccountDetailsActionItem.Padding" />
+    <TextView n1:id="@id/account_details_document" n1:text="@string/account_additional_details_account_documents_button" n1:drawableLeft="@drawable/ic_account_details_documents" style="@style/AccountDetailsActionItem.Padding" />
+    <TextView n1:id="@id/account_details_tariffs" n1:text="@string/account_additional_details_tariff_button" n1:drawableLeft="@drawable/ic_account_details_tariffs" style="@style/AccountDetailsActionItem.Padding" />
+    <TextView n1:id="@id/account_details_abroad_operations" n1:text="@string/account_additional_details_abroad_operations_button" n1:drawableLeft="@drawable/ic_operations_abroad" style="@style/AccountDetailsActionItem.Padding" />
+    <fragment n1:name="ru.tcsbank.mb.ui.accounts.details.CardActionsFragment" n1:id="@id/card_actions_fragment" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</LinearLayout>

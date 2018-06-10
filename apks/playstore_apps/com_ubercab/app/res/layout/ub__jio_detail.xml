@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.jio.operation.detail.JioDetailView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="@string/ub__jio_detail_impression_analytics_key"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UCoordinatorLayout android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/collapsing_header" />
+        <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ui__spacing_unit_4x" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:showDividers="middle">
+                <com.ubercab.presidio.payment.base.ui.widget.detail.PaymentDetailView android:id="@id/jio_detail_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.ubercab.ui.core.UButton android:id="@id/jio_add_money" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:layout_marginRight="?contentInset" android:layout_marginBottom="?contentInset" android:text="@string/ub__payment_jio_add_money_to_wallet" uber:analyticsId="@string/ub__jio_detail_add_money_button_analytics_key" style="@style/Platform.Button.Secondary" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.UScrollView>
+    </com.ubercab.ui.core.UCoordinatorLayout>
+</com.ubercab.presidio.payment.jio.operation.detail.JioDetailView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="@dimen/tile_height_default_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.ExtraSmall" n1:textColor="@color/tab_title_main" n1:gravity="center" n1:id="@id/title" n1:background="?selectableItemBackground" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:maxLines="1" n1:textAllCaps="true" />
+    <TextView n1:id="@id/tab_badge" n1:visibility="gone" n1:layout_marginLeft="14.0dip" style="@style/BadgeStyle" />
+</FrameLayout>

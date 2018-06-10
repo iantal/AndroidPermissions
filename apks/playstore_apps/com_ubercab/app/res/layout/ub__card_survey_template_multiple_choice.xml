@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.feed.items.cards.survey.template.card.MultipleChoiceCardSurveyStepView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__card_survey_multiple_choice_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__card_survey_multiple_choice_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.URecyclerView android:id="@id/ub__card_survey_multiple_choice_answers" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__card_survey_multiple_choice_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__card_survey_submit_label" style="?platformButtonPrimary" />
+</com.ubercab.presidio.feed.items.cards.survey.template.card.MultipleChoiceCardSurveyStepView>

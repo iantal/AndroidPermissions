@@ -1,0 +1,26 @@
+package com.google.zxing.client.result;
+
+import com.google.zxing.Result;
+
+public final class BookmarkDoCoMoResultParser
+  extends AbstractDoCoMoResultParser
+{
+  public BookmarkDoCoMoResultParser() {}
+  
+  public URIParsedResult parse(Result paramResult)
+  {
+    Object localObject = paramResult.getText();
+    if (!((String)localObject).startsWith("MEBKM:")) {}
+    do
+    {
+      do
+      {
+        return null;
+        paramResult = matchSingleDoCoMoPrefixedField("TITLE:", (String)localObject, true);
+        localObject = matchDoCoMoPrefixedField("URL:", (String)localObject, true);
+      } while (localObject == null);
+      localObject = localObject[0];
+    } while (!URIResultParser.isBasicallyValidURI((String)localObject));
+    return new URIParsedResult((String)localObject, paramResult);
+  }
+}

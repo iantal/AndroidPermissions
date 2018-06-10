@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.promotion.promodetails.ActivatePromoErrorDialog android:orientation="vertical" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_3x">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__activate_promo_error_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/error_dialog_title" style="@style/Platform.TextAppearance.H2" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__activate_promo_error_message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_3x" android:layout_marginRight="@dimen/ui__spacing_unit_3x" android:layout_marginBottom="@dimen/ui__spacing_unit_3x">
+        <com.ubercab.ui.core.UButton android:id="@id/ub__activate_promo_cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" uber:analyticsId="b4426a97-7f01" style="?platformButtonSecondary" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__activate_promo_retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry" android:layout_weight="1.0" android:layout_marginStart="@dimen/ui__spacing_unit_1x" uber:analyticsId="1710c0b1-b04e" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.promotion.promodetails.ActivatePromoErrorDialog>

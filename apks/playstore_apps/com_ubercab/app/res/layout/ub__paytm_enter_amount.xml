@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.paytm.operation.enteramount.PaytmEnterAmountView android:background="?android:colorBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="566677df-fedb"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?dividerHorizontal" android:showDividers="end">
+                <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x">
+                    <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:background="?android:windowBackground" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" uber:srcCompat="@drawable/ub__payment_method_paytm" />
+                    <com.ubercab.ui.core.ULinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0">
+                        <com.ubercab.ui.core.UTextView android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paytm_wallet_balance" style="@style/Platform.TextAppearance.H4" />
+                        <com.ubercab.ui.core.UTextView android:layout_gravity="start" android:id="@id/minimum_wallet_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minimum_wallet_balance" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+                    </com.ubercab.ui.core.ULinearLayout>
+                    <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/current_balance_amount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ub__no_amount_symbol" android:layout_weight="1.0" />
+                </com.ubercab.ui.core.ULinearLayout>
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__amount_message_field" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__view_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" android:text="@string/ub__payment_paytm_enter_amount_view_details" style="@style/Platform.TextAppearance.H5.News.Link" />
+                <com.ubercab.ui.core.UEditText android:id="@id/ub__enter_amount_field" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" android:inputType="numberDecimal" style="@style/Platform.TextAppearance.H2" />
+                <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__amount_entry_button_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UButton android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+    <com.ubercab.ui.commons.widget.KeyboardButton android:layout_gravity="bottom" android:id="@id/ub__amount_entry_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/next" android:contentDescription="@string/next" uber:analyticsId="0303ca41-343b" style="?platformButtonPrimary" />
+</com.ubercab.presidio.payment.paytm.operation.enteramount.PaytmEnterAmountView>

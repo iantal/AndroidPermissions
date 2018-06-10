@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/AccountsCarouselPage">
+    <RelativeLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:paddingLeft="@dimen/offset_account_page" n1:paddingRight="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/inc_page_account" />
+        <RelativeLayout n1:id="@id/content" n1:layout_below="@id/amount" style="@style/VerticalWrapping">
+            <TextView n1:id="@id/goal" n1:visibility="gone" n1:text="@string/pba_goal" n1:layout_below="@id/amount" style="@style/AccountPage.Note" />
+            <TextView n1:id="@id/percent_title" n1:visibility="gone" n1:text="@string/pba_profit" n1:layout_below="@id/goal" style="@style/AccountPage.Note" />
+            <TextView n1:id="@id/percent" n1:visibility="gone" n1:layout_toRightOf="@id/percent_title" n1:layout_below="@id/goal" n1:layout_alignBaseline="@id/percent_title" style="@style/AccountPage.Note.White" />
+            <TextView n1:id="@id/period_title" n1:visibility="gone" n1:text="@string/account_additional_details_saving_accrued_percents_label" n1:layout_below="@id/percent_title" style="@style/AccountPage.Note" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/percents" n1:visibility="gone" n1:layout_marginLeft="5.0dip" n1:layout_toRightOf="@id/period_title" n1:layout_below="@id/amount" n1:layout_alignBaseline="@id/period_title" style="@style/AccountPage.Amount.Medium" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

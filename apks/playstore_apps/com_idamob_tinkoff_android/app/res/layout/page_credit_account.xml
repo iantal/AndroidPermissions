@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/AccountsCarouselPage">
+    <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:paddingLeft="@dimen/offset_account_page" n1:paddingRight="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/inc_page_account" />
+        <RelativeLayout n1:id="@id/content" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:animateLayoutChanges="true">
+            <TextView n1:id="@id/debt_title" n1:text="@string/pba_debt" n1:layout_alignParentTop="true" style="@style/AccountPage.Note" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/debt" n1:layout_toRightOf="@id/debt_title" n1:layout_alignBaseline="@id/debt_title" n1:layout_alignParentTop="true" style="@style/AccountPage.Amount.Medium" />
+            <TextView n1:id="@id/min_payment_title" n1:visibility="gone" n1:layout_below="@id/debt_title" style="@style/AccountPage.Note" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/min_payment" n1:visibility="gone" n1:layout_toRightOf="@id/min_payment_title" n1:layout_below="@id/debt_title" n1:layout_alignBaseline="@id/min_payment_title" style="@style/AccountPage.Amount.Medium" />
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.White" n1:gravity="center" n1:id="@id/account_loyalty_label" n1:background="@drawable/bg_loyalty" n1:paddingLeft="@dimen/offset_loyalty_btn" n1:paddingRight="@dimen/offset_loyalty_btn" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="@dimen/tile_height_loyalty_btn" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_below="@id/min_payment_title" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

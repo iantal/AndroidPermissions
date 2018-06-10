@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:id="@id/payment_container" style="@style/PayHub.FavItemContainer"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageView n1:layout_gravity="center" n1:layout_width="@dimen/tile_height_medium_item" n1:layout_height="@dimen/tile_height_medium_item" n1:src="@drawable/circle_placeholder" n1:tint="@color/main_blue" />
+        <ImageView n1:layout_gravity="center" n1:id="@id/bill_item_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <TextView n1:layout_gravity="center|right|top" n1:id="@id/new_bill_count" style="@style/BadgeStyle" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.White.Medium" n1:textColor="@color/text_blue" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/total_bill_count" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="2.0dip" />
+    </FrameLayout>
+    <TextView n1:id="@id/payment_name" n1:text="@string/payments_bill_button" style="@style/PayHub.FavItemText" />
+</LinearLayout>

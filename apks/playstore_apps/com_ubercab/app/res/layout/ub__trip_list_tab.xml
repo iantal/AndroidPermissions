@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.trip_list.tab.TabView android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UTabLayout android:layout_gravity="bottom" android:id="@id/ub__trip_list_tab" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:tabMode="fixed" style="@style/Platform.TabLayout" />
+    <com.ubercab.ui.core.UViewPager android:id="@id/ub__trip_list_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</com.ubercab.presidio.app.optional.root.main.trip_list.tab.TabView>

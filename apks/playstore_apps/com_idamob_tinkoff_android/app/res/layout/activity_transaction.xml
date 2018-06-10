@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" n2:navigationIcon="@drawable/ic_close_white" n2:titleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/toolbar">
+        <ru.tcsbank.mb.ui.widgets.LinearLayoutWithDividers n1:orientation="vertical" n1:id="@id/content" n1:paddingBottom="@dimen/screen_content_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:llwd_child_threshold="2" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </ScrollView>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:id="@id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" n1:layout_centerInParent="true" />
+</RelativeLayout>

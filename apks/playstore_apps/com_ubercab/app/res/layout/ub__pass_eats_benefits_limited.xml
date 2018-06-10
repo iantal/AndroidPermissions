@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__pass_eats_benefit_limited_card" android:background="?brandQuinary" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="29966708-9fd5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__pass_eats_benefit_limited_top_container" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_eats_benefit_limited_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Primary" />
+        <com.ubercab.ui.core.UPlainView android:id="@id/ub__pass_eats_cta_spacer" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_eats_benefit_limited_header" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__pass_eats_benefit_limited_detail_container" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_eats_benefit_limited_detail_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Primary" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_eats_benefit_limited_detail_count" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Pass.UsageTile.Count.TextAppearance" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_eats_benefit_limited_detail_body" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.Book" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.presidio.pass.tracking.ui.PassEatsCtaRowView android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__pass_eats_benefit_limited_cta" android:background="?colorPositive" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.ui.core.ULinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="68.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/main_layout" android:focusable="true" android:layout_width="fill_parent" android:layout_height="66.0dip" android:layout_marginBottom="6.0dip" android:minHeight="52.0dip">
+        <com.thinkdesquared.banking.helpers.ui.widgets.AutoResizeTextView android:id="@id/labelTextView" android:layout_width="0.0dip" android:layout_height="52.0dip" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="true" android:layout_width="0.0dip" android:layout_height="52.0dip" android:layout_weight="4.0">
+            <Button android:id="@id/CnpButton" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/UsemyCnp" android:maxLines="1" android:singleLine="true" style="?attr/dsq_button_style" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

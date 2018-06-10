@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.URelativeLayout android:gravity="center_vertical" android:background="?brandWhite" android:padding="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__commute_driver_trip_details_card_photo_imageview" android:layout_width="@dimen/ui__avatar_size_medium" android:layout_height="@dimen/ui__avatar_size_medium" app:srcCompat="@drawable/avatar_blank" />
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H2.Book" android:id="@id/ub__commute_driver_trip_details_card_photo_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ui__spacing_unit_2x" android:layout_toEndOf="@id/ub__commute_driver_trip_details_card_photo_imageview" />
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__commute_driver_trip_details_card_more_actions_btn" android:layout_width="@dimen/ui__avatar_size_extra_tiny" android:layout_height="@dimen/ui__avatar_size_extra_tiny" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_details_more_icon" />
+</com.ubercab.ui.core.URelativeLayout>

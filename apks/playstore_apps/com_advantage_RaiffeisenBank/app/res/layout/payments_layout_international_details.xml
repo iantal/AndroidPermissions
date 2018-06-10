@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/additionalBankDetailsLinearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:minHeight="52.0dip">
+            <com.thinkdesquared.banking.helpers.ui.widgets.AutoResizeTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bankToBankInfo" android:scrollHorizontally="false" style="@style/DSQTextAppearance.Label.material" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText android:id="@id/bank2bank1" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:singleLine="true" android:maxLength="35" android:inputType="textCapSentences" style="@style/DSQWidget.Holo.AlphanumericWithSomeSpecialCharactersAllowedEditText.value" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText android:id="@id/bank2bank2" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:singleLine="true" android:maxLength="35" android:inputType="textCapSentences" style="@style/DSQWidget.Holo.AlphanumericWithSomeSpecialCharactersAllowedEditText.value" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatEditText android:id="@id/bank2bank3" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:singleLine="true" android:maxLength="35" android:inputType="textCapSentences" style="@style/DSQWidget.Holo.AlphanumericWithSomeSpecialCharactersAllowedEditText.value" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

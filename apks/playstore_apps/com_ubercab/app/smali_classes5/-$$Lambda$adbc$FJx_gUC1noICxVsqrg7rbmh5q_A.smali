@@ -1,0 +1,46 @@
+.class public final synthetic L-$$Lambda$adbc$FJx_gUC1noICxVsqrg7rbmh5q_A;
+.super Ljava/lang/Object;
+.source "lambda"
+
+# interfaces
+.implements Lio/reactivex/functions/Predicate;
+
+
+# static fields
+.field public static final synthetic INSTANCE:L-$$Lambda$adbc$FJx_gUC1noICxVsqrg7rbmh5q_A;
+
+
+# direct methods
+.method static synthetic constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, L-$$Lambda$adbc$FJx_gUC1noICxVsqrg7rbmh5q_A;
+
+    invoke-direct {v0}, L-$$Lambda$adbc$FJx_gUC1noICxVsqrg7rbmh5q_A;-><init>()V
+
+    sput-object v0, L-$$Lambda$adbc$FJx_gUC1noICxVsqrg7rbmh5q_A;->INSTANCE:L-$$Lambda$adbc$FJx_gUC1noICxVsqrg7rbmh5q_A;
+
+    return-void
+.end method
+
+.method private synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final test(Ljava/lang/Object;)Z
+    .locals 0
+
+    check-cast p1, Lcom/uber/model/core/generated/rtapi/services/cobrandcard/Status;
+
+    invoke-static {p1}, Ladbc;->lambda$FJx_gUC1noICxVsqrg7rbmh5q_A(Lcom/uber/model/core/generated/rtapi/services/cobrandcard/Status;)Z
+
+    move-result p1
+
+    return p1
+.end method

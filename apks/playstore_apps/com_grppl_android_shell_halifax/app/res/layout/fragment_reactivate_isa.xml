@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:id="@id/reactivateIsaDeclarationPage" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.mobile.ui.common.view.HeadingTextView n1:id="@id/reactivateIsaHeader" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/reactivate_isa_view_title" style="@style/ReactivateIsaView.ReactivateIsaTitle" />
+        <TextView n1:id="@id/reactivateIsaInformation" n1:padding="@dimen/activity_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_margin" n1:layout_marginRight="@dimen/activity_margin" n1:layout_marginBottom="@dimen/activity_margin" n1:text="@string/reactivate_isa_warning_message" style="@style/TextAppearance.Information" />
+        <TableLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_margin" n1:layout_marginRight="@dimen/activity_margin">
+            <TableRow n1:layout_marginBottom="@dimen/activity_margin">
+                <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_margin" n1:text="@string/reactivate_isa_account_text" n1:importantForAccessibility="no" style="@style/TextAppearance.Body" />
+                <include n1:id="@id/accountPlaceHolder" layout="@layout/view_reactivate_isa_arrangement" />
+            </TableRow>
+            <TableRow n1:layout_marginBottom="@dimen/activity_margin">
+                <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_margin" n1:text="@string/reactivate_isa_account_holder_text" style="@style/TextAppearance.Body" />
+                <TextView n1:id="@id/reactivateIsaAccountHolderName" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/ReactivateIsaView.ArrangementField" />
+            </TableRow>
+            <TableRow n1:layout_marginBottom="@dimen/activity_margin">
+                <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_margin" n1:text="@string/reactivate_isa_address_text" style="@style/TextAppearance.Body" />
+                <TextView n1:id="@id/reactivateIsaAccountHolderAddress" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0" style="@style/ReactivateIsaView.ArrangementField" />
+            </TableRow>
+            <TableRow n1:layout_marginBottom="@dimen/activity_margin">
+                <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_margin" n1:text="@string/reactivate_isa_date_of_birth_text" style="@style/TextAppearance.Body" />
+                <TextView n1:id="@id/reactivateIsaAccountHolderDateOfBirth" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/ReactivateIsaView.ArrangementField" />
+            </TableRow>
+            <TableRow n1:layout_marginBottom="@dimen/activity_margin">
+                <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_margin" n1:text="@string/reactivate_isa_national_insurance_text" style="@style/TextAppearance.Body" />
+                <TextView n1:id="@id/reactivateIsaAccountHolderNiNumber" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/ReactivateIsaView.ArrangementField" />
+            </TableRow>
+        </TableLayout>
+        <com.mobile.ui.common.view.LinkTextView n1:id="@id/reactivateIsaUpdateAddressLinkTextView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/activity_margin" n1:text="@string/reactivate_isa_how_to_address" style="@style/ReactivateIsaView.LinkTextView" />
+        <com.mobile.ui.common.view.LinkTextView n1:id="@id/reactivateIsaUpdateNiNumberLinkTextView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_margin" n1:layout_marginRight="@dimen/activity_margin" n1:layout_marginBottom="@dimen/activity_margin" n1:text="@string/reactivate_isa_how_to_national_insurance_number" style="@style/ReactivateIsaView.LinkTextView" />
+        <View n1:background="@color/reactivate_isa_divider_background_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/reactivate_isa_list_divider_drawable_height" n1:layout_marginLeft="@dimen/activity_margin" n1:layout_marginRight="@dimen/activity_margin" />
+        <com.mobile.ui.common.view.SecureCoreWebView n1:id="@id/reactivateIsaEligibilityCriteriaWebView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_content_padding" n1:layout_marginTop="@dimen/fragment_content_padding" n1:layout_marginRight="@dimen/fragment_content_padding" />
+        <LinearLayout n1:orientation="horizontal" n1:background="@color/background" n1:padding="@dimen/activity_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <CheckBox n1:id="@id/checkBoxAgreement" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:checked="false" style="@style/ReactivateIsaView.CheckBox" />
+            <TextView n1:id="@id/reactivateIsaConfirmDeclaration" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/reactivate_isa_agreement_margin_medium" n1:text="@string/reactivate_isa_confirm_declaration" style="@style/TextAppearance.Body" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/reactivateIsaButtons" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_margin="@dimen/activity_margin">
+            <Button n1:id="@id/reactivateIsaCancelButton" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_margin" n1:text="@string/reactivate_isa_cancel" n1:layout_weight="1.0" style="@style/Widget.Button.Secondary" />
+            <Button n1:enabled="false" n1:id="@id/reactivateIsaConfirmButton" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/reactivate_isa_confirm" n1:layout_weight="1.0" n1:contentDescription="@string/accessibility_reactivate_isa_confirm_button" style="@style/Widget.Button.Primary" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

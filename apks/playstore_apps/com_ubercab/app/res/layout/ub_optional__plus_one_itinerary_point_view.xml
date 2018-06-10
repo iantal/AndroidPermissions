@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.itinerary.PlusOneItineraryStepPointView android:orientation="horizontal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.URelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UPlainView android:id="@id/ub__itinerary_point_step_number_circle" android:layout_width="@dimen/ui__spacing_unit_4x" android:layout_height="@dimen/ui__spacing_unit_4x" android:layout_marginTop="@dimen/ub__plus_one_itinerary_line_margin" android:layout_marginBottom="@dimen/ub__plus_one_itinerary_line_margin" android:layout_centerInParent="true" />
+        <com.ubercab.ui.core.UTextView android:textColor="@color/ub__plus_one_itinerary_point_circle_text_color" android:id="@id/ub__itinerary_point_step_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerInParent="true" style="@style/Platform.TextAppearance.H5.News" />
+        <com.ubercab.ui.core.UPlainView android:id="@id/ub__itinerary_point_upper_line" android:background="?android:textColorSecondary" android:layout_width="@dimen/ub__plus_one_itinerary_divider_height" android:layout_height="fill_parent" android:layout_above="@id/ub__itinerary_point_step_number_circle" android:layout_centerHorizontal="true" />
+        <com.ubercab.ui.core.UPlainView android:id="@id/ub__itinerary_point_lower_line" android:background="?android:textColorSecondary" android:layout_width="@dimen/ub__plus_one_itinerary_divider_height" android:layout_height="fill_parent" android:layout_below="@id/ub__itinerary_point_step_number_circle" android:layout_centerHorizontal="true" />
+    </com.ubercab.ui.core.URelativeLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ub__plus_one_itinerary_point_margin" android:layout_marginBottom="@dimen/ub__plus_one_itinerary_point_margin" android:layout_marginStart="?contentInset">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__itinerary_point_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H4.News" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__itinerary_point_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.itinerary.PlusOneItineraryStepPointView>

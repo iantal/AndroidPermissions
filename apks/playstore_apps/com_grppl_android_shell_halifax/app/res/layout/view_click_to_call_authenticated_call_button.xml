@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@drawable/click_to_call_background_with_bottom_divider" n1:paddingBottom="@dimen/call_us_screen_medium_spacing" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:paddingStart="@dimen/call_us_screen_medium_spacing" n1:paddingEnd="@dimen/call_us_screen_medium_spacing"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <Button n1:id="@id/callUsButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:contentDescription="@string/click_to_call_call_us_button_text" style="@style/Widget.Button.Primary" />
+    <TextView n1:gravity="center_vertical" n1:id="@id/callUsButtonInnerText" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/click_to_call_call_us_button_text" n1:drawablePadding="@dimen/call_us_screen_small_spacing" n1:layout_centerHorizontal="true" n1:importantForAccessibility="no" style="@style/ClickToCall.CallUsButtonInnerText" />
+</RelativeLayout>

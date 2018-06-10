@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub_locked_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ui__spacing_unit_2x">
+        <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__commute_locked_view_title" android:layout_centerInParent="true" style="@style/Platform.TextAppearance.H1.Book" />
+        <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/ub__commute_locked_view_description_primary" android:layout_centerInParent="true" style="@style/Platform.TextAppearance.P.Book" />
+        <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:text="@string/ub__commute_locked_view_description_secondary" android:layout_centerInParent="true" style="@style/Platform.TextAppearance.P.Book" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UPercentRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:layout_above="@id/ub_commute_route_locked_try_driving" android:layout_below="@id/ub_locked_text" android:layout_alignParentEnd="true" app:layout_widthPercent="60.000004%" app:layout_heightPercent="60.000004%">
+        <com.ubercab.ui.core.UImageView android:layout_width="wrap_content" android:scaleType="fitEnd" android:adjustViewBounds="true" android:layout_alignParentBottom="true" android:foregroundGravity="right" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_ub__rider_route_locked" app:layout_widthPercent="100.0%" app:layout_heightPercent="100.0%" />
+    </com.ubercab.ui.core.UPercentRelativeLayout>
+</merge>

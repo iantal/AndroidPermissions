@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/divider" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.number26.machete.android.ui.components.ItemView android:id="@id/fee" android:layout_width="fill_parent" android:layout_height="wrap_content" app:subtitle="@string/review_fee_in_total" app:title="@string/review_fee" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="72.0dip">
+        <TextView android:textAppearance="@style/TextAppearance.Caption" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/review_exchange_rate" />
+        <include layout="@layout/exchange_rate" />
+    </LinearLayout>
+</LinearLayout>

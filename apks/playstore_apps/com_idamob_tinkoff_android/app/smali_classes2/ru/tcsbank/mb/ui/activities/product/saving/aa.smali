@@ -1,0 +1,35 @@
+.class final synthetic Lru/tcsbank/mb/ui/activities/product/saving/aa;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lio/reactivex/c/g;
+
+
+# instance fields
+.field private final a:Lru/tcsbank/mb/ui/activities/product/saving/m;
+
+
+# direct methods
+.method constructor <init>(Lru/tcsbank/mb/ui/activities/product/saving/m;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lru/tcsbank/mb/ui/activities/product/saving/aa;->a:Lru/tcsbank/mb/ui/activities/product/saving/m;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;)V
+    .locals 1
+
+    iget-object v0, p0, Lru/tcsbank/mb/ui/activities/product/saving/aa;->a:Lru/tcsbank/mb/ui/activities/product/saving/m;
+
+    check-cast p1, Lru/tinkoff/core/money/b;
+
+    invoke-virtual {v0, p1}, Lru/tcsbank/mb/ui/activities/product/saving/m;->a(Lru/tinkoff/core/money/b;)V
+
+    return-void
+.end method

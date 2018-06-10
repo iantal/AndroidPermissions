@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__payment_add_payment_header_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_add_payment_header_title" android:layout_marginStart="@dimen/ui__spacing_unit_3x" style="@style/Platform.TextAppearance.H3.Book" />
+</com.ubercab.ui.core.UFrameLayout>

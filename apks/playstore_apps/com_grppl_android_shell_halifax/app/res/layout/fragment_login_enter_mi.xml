@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="vertical" n1:id="@id/enterMiContainer" n1:padding="@dimen/fragment_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_login_field_spacing_large">
+                    <ImageView n1:layout_width="@dimen/fragment_otp_enter_image_size" n1:layout_height="@dimen/fragment_otp_enter_image_size" n1:layout_marginRight="@dimen/fragment_otp_enter_spacing_medium" n2:srcCompat="@drawable/enrollment_padlock_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                    <com.mobile.ui.common.view.HeadingTextView n1:textAppearance="@style/TextAppearance.Headline" n1:id="@id/enterMiTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/enter_mi_title" n1:contentDescription="@string/accessibility_enter_mi_title" />
+                </LinearLayout>
+                <com.mobile.ui.common.view.AccessibleLinkTextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/enterMiDescription" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+                <include n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/fragment_enter_mi_characters_margin_top" n1:layout_marginBottom="@dimen/fragment_enter_mi_characters_margin_bottom" layout="@layout/layout_enter_mi_input_field" />
+                <TextView n1:layout_gravity="center" n1:id="@id/enterMiForgotDetailsLink" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_login_field_spacing_large" n1:text="@string/enter_mi_button_forgot_details" n1:contentDescription="@string/accessibility_enter_mi_forgot_details" style="@style/Widget.Link" />
+            </LinearLayout>
+            <include n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/enterMiContainer" n1:layout_alignParentBottom="true" layout="@layout/view_fscs_banner" />
+        </RelativeLayout>
+    </ScrollView>
+    <com.mobile.ui.common.view.NotificationView n1:id="@id/enterMiErrorNotificationView" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <com.mobile.ui.common.keyboard.KeyboardView n1:layout_gravity="bottom" n1:id="@id/miCustomKeyboard" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/CustomKeyboard.Keyboard" />
+</FrameLayout>

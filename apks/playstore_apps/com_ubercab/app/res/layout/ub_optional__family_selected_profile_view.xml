@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.family.trip_history.profile_selector.FamilyProfileSelectorView android:gravity="center_vertical" android:background="?selectableItemBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.CircleImageView android:layout_width="@dimen/ui__avatar_size_small" android:layout_height="@dimen/ui__avatar_size_small" app:srcCompat="@drawable/ic_family_icon" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__family_profile_item_name" android:paddingLeft="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H5.News.Primary" />
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__family_profile_item_check" android:visibility="gone" android:layout_width="@dimen/ui__avatar_size_micro" android:layout_height="@dimen/ui__avatar_size_micro" android:scaleType="fitCenter" app:srcCompat="@drawable/ic_caret_down_16" />
+</com.ubercab.presidio.family.trip_history.profile_selector.FamilyProfileSelectorView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/pass_payment_switch" android:paddingTop="@dimen/ui__spacing_unit_2x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UPlainView android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="@dimen/purchase_payment_selection_card_divider" />
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x">
+        <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:id="@id/pass_payment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H6.News.Primary" />
+        <com.ubercab.ui.core.UTextView android:layout_gravity="center_vertical" android:id="@id/pass_payment_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H6.News.Primary" />
+        <com.ubercab.ui.core.UTextView android:layout_gravity="end|center" android:id="@id/pass_payment_switch_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uber_pass_payment_profile_change" android:layout_marginStart="@dimen/ui__spacing_unit_1x" uber:analyticsId="050c958d-fff2" style="@style/Platform.TextAppearance.H5.News.Link" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

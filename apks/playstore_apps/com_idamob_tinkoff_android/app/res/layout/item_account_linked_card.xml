@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:background="?selectableItemBackground" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingRight="@dimen/screen_content_padding" n1:layout_width="fill_parent" n1:layout_height="56.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/account_linked_card_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" style="@style/Text.Default.Dark" />
+    <ru.tcsbank.mb.ui.widgets.account.AccountCardView n1:id="@id/account_linked_card_icon" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" style="@style/AccountCard" />
+</RelativeLayout>

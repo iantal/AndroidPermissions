@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/minimumAmount" android:background="@color/grey_bright" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cross" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/error_cross" android:tint="@color/grey" />
+    <TextView android:textAppearance="@style/TextAppearance.Item.Sub" android:textSize="22.0sp" android:gravity="center_horizontal" android:id="@id/errorTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/ten_minimum" />
+    <TextView android:textAppearance="@style/TextAppearance.Item.Sub" android:gravity="center_horizontal" android:id="@id/errorText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_padding_large" android:layout_marginTop="40.0dip" android:layout_marginRight="@dimen/default_padding_large" android:text="@string/ten_minimum_desc" />
+</LinearLayout>

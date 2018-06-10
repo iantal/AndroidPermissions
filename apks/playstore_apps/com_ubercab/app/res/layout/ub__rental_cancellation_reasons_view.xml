@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.URelativeLayout android:background="?brandWhite" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__rental_cancellation_reasons_category_title" android:padding="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+    <com.ubercab.ui.core.URecyclerView android:id="@id/ub__rental_cancellation_reasons_category_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" android:layout_below="@id/ub__rental_cancellation_reasons_category_title" />
+</com.ubercab.ui.core.URelativeLayout>

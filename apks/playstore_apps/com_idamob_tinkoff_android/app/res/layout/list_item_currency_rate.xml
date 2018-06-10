@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="@dimen/exchange_rate_container_item_space" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="@dimen/exchange_rate_container_item_space" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:layout_gravity="left" n1:id="@id/rate_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/core_simple_item_vertical_padding" n1:layout_marginBottom="@dimen/core_simple_item_vertical_padding" n1:text="Medium Text" style="@style/CurrencyRates.SmallText" />
+    <TextView n1:layout_gravity="left" n1:id="@id/rate_types" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/core_simple_item_vertical_padding" n1:layout_marginBottom="@dimen/core_simple_item_vertical_padding" n1:text="Large Text" style="@style/CurrencyRates.NormalText" />
+    <TextView n1:layout_gravity="left" n1:id="@id/rate_notes" n1:paddingTop="@dimen/core_simple_item_vertical_padding" n1:paddingBottom="@dimen/core_simple_item_vertical_padding" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="New Text" style="@style/CurrencyRates.SmallText" />
+    <LinearLayout n1:layout_gravity="center_horizontal" n1:orientation="horizontal" n1:id="@id/rate_table_layout" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/exchange_rate_container_item_space" n1:layout_marginBottom="@dimen/exchange_rate_container_item_space">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:id="@id/rates_table_title1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Large Text" style="@style/CurrencyRates.SmallText" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/rates_table_money1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:fractionalMode="enabled" n2:textSize="@dimen/text_medium" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:id="@id/rates_table_title2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Large Text" style="@style/CurrencyRates.SmallText" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/rates_table_money2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n3:fractionalMode="enabled" n3:textSize="@dimen/text_medium" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_weight="0.0">
+            <TextView n1:id="@id/rates_table_title3" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Large Text" style="@style/CurrencyRates.SmallText" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/rates_table_money3" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n4:fractionalMode="enabled" n4:textSize="@dimen/text_medium" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:layout_gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/rate_row_layout" n1:layout_width="fill_parent" n1:layout_height="48.0dip">
+        <TextView n1:gravity="center_vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/tcs_rates_rate_row_label" n1:layout_weight="1.0" n1:textAllCaps="true" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:gravity="center_vertical" n1:id="@id/rates_money" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n5:fractionalMode="enabled" n5:textSize="@dimen/text_medium" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</LinearLayout>

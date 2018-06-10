@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:gravity="bottom" android:id="@id/account_edit_mobile_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_6x" android:minHeight="@dimen/ui__spacing_unit_6x" android:text="@string/account_edit_mobile" style="@style/Platform.TextAppearance.H5.News.Tertiary" />
+    <com.ubercab.ui.core.UFrameLayout android:gravity="center" android:id="@id/account_edit_mobile_input_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" />
+    <com.ubercab.ui.core.UButton android:id="@id/account_edit_save_mobile" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/account_edit_save_mobile" uber:analyticsId="2878debe-ccae" style="?platformButtonPrimary" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:id="@id/checkboxContainer" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <CheckBox n1:id="@id/checkboxDialogContainer" n1:paddingLeft="0.0dip" n1:layout_width="wrap_content" n1:layout_marginLeft="@dimen/ics_deposit_cheque_head_check_margin_left" n1:layout_marginBottom="@dimen/ics_deposit_cheque_camera_image_tick" n1:checked="false" style="@style/DepositCheque.CheckBox.ICSCheckBox" />
+    <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/ics_deposit_cheque_camera_image_tick_margin_bottom" n1:layout_marginBottom="@dimen/ics_deposit_cheque_camera_image_tick" n1:text="@string/ics_more_information_do_not_show_message" n1:contentDescription="@string/ics_more_information_do_not_show_message" style="@style/TextAppearance.Body.MoreInformationText" />
+</LinearLayout>

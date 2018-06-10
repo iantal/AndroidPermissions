@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/ApplicationTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/view_account_detail_header" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/account_detail_scroll_view" />
+    <LinearLayout android:gravity="center|right" android:paddingRight="3.0dip" android:layout_marginTop="15.0dip" style="@style/OperationBar">
+        <TextView android:textColor="@color/button_text_color" android:gravity="center" android:id="@id/tv_operation_strip" android:background="@drawable/operation_button_selector" android:paddingLeft="20.0dip" android:paddingRight="7.0dip" android:visibility="gone" android:drawableRight="@drawable/right_arrow_white" android:drawablePadding="20.0dip" style="@style/AllWrapContent" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/view_account_description_container" style="@style/ListTheme">
+        <LinearLayout android:orientation="horizontal" android:id="@id/view_account_footer_container" android:visibility="gone" android:layout_alignParentBottom="true" style="@style/ScreenFooter" />
+        <at.spardat.bcrmobile.view.pulltorefresh.scrollview.PullToRefreshScrollView android:id="@id/view_transaction_history_container" android:fadingEdge="none" android:layout_above="@id/view_account_footer_container" android:layout_alignParentTop="true" ptr:ptrHeaderTextColor="@color/text_default" ptr:ptrMode="disabled" ptr:ptrScrollingWhileRefreshingEnabled="true" style="@style/AllMatchParent" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+            <FrameLayout android:id="@id/view_account_transaction_history" style="@style/MatchParentWrapContent" />
+        </at.spardat.bcrmobile.view.pulltorefresh.scrollview.PullToRefreshScrollView>
+        <include android:id="@id/view_progress_view_container" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_account_footer_container" android:layout_alignParentTop="true" layout="@layout/data_loading_progress_view" />
+        <TextView android:id="@id/tv_error" android:visibility="gone" android:layout_alignParentTop="true" style="@style/ErrorStrip" />
+    </RelativeLayout>
+</LinearLayout>

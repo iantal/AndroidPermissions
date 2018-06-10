@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:id="@id/note_holder" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/note_image" n1:src="@drawable/alert_card" n1:scaleType="fitStart" style="@style/ImageItem.Margin" />
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:autoLink="email|web" n1:id="@id/note_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/note_image" />
+</LinearLayout>

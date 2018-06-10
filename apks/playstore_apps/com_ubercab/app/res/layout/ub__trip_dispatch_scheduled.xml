@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.dispatch.scheduled.TripDispatchScheduledView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsId="d4a808f5-f191"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__trip_dispatch_info_container" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.URelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_dispatch_scheduled_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dispatch_scheduled_card_title" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_dispatch_scheduled_fare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+        </com.ubercab.ui.core.URelativeLayout>
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:paddingTop="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_dispatch_scheduled_pickup_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dispatch_scheduled_card_pickup_title_only" style="@style/Platform.TextAppearance.H3.News" />
+            <com.ubercab.ui.core.UTextView android:textColor="?accentPrimary" android:id="@id/ub__trip_dispatch_scheduled_pickup_countdown" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H3.News" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_dispatch_scheduled_destination" android:paddingTop="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H4.News" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_dispatch_scheduled_message_with_time" android:paddingTop="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H4.Book" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <include layout="@layout/ub__grey_horizontal_line" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__trip_dispatch_buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.dispatch.scheduled.TripDispatchScheduledView>

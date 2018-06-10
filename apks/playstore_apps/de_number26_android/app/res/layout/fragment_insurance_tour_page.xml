@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/insurance_tour_info_height">
+        <ImageView android:layout_gravity="center" android:id="@id/image_insurance_tour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="@integer/insurance_tour_page_image_scale" android:scaleY="@integer/insurance_tour_page_image_scale" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/insurance_tour_info_height">
+        <TextView android:id="@id/text_insurance_tour_page_title" android:layout_marginBottom="8.0dip" style="@style/InsuranceTourTitle" />
+        <TextView android:id="@id/text_insurance_tour_page_subtitle" style="@style/InsuranceTourText" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.scheduled_rides.trips.card.TripCardView android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?gutterSize" uber:cardCornerRadius="@dimen/scheduled_rides_trip_card_radius" uber:cardElevation="@dimen/scheduled_rides_trip_card_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News" android:id="@id/scheduled_rides_pickup_datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/scheduled_rides_line_spacing" />
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News.Secondary" android:id="@id/scheduled_rides_vehicle_view_description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="@dimen/scheduled_rides_divider_size" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_1x" android:layout_marginStart="@dimen/ui__spacing_unit_1x" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" />
+                <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News.Secondary" android:id="@id/scheduled_rides_fare_estimate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/scheduled_rides_profile_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x">
+                <com.ubercab.profiles.view.BadgeView android:id="@id/scheduled_rides_profile_badge" android:layout_width="@dimen/ui__avatar_size_micro" android:layout_height="@dimen/ui__avatar_size_micro" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" />
+                <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News" android:ellipsize="end" android:id="@id/scheduled_rides_profile_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="@dimen/scheduled_rides_divider_size" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UFrameLayout android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="?contentInset" android:paddingEnd="?contentInset">
+                <com.ubercab.presidio.ui.core.item_to_item_view.UberItemToItemView android:id="@id/scheduled_rides_item_to_item_view" android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="fill_parent" />
+            </com.ubercab.ui.core.UFrameLayout>
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News.Primary" android:id="@id/scheduled_rides_pickup_location" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="@dimen/scheduled_rides_divider_size" />
+                <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News.Primary" android:id="@id/scheduled_rides_dropoff_location" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="@dimen/scheduled_rides_divider_size" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UButton android:textAppearance="@style/Platform.TextAppearance.H5.News.Link" android:id="@id/scheduled_rides_cancel_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/scheduled_rides_cancel" android:layout_weight="1.0" android:textAllCaps="false" uber:analyticsId="3e611237-a9d0" style="?borderlessButtonStyle" />
+            <com.ubercab.ui.core.UButton android:textAppearance="@style/Platform.TextAppearance.H5.News.Link" android:id="@id/scheduled_rides_edit_time_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/scheduled_rides_edit_time" android:layout_weight="1.0" android:textAllCaps="false" uber:analyticsId="8396c51f-aaf7" style="?borderlessButtonStyle" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.scheduled_rides.trips.card.TripCardView>

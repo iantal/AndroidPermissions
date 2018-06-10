@@ -1,0 +1,49 @@
+.class final synthetic Lru/tcsbank/mb/ui/settings/c/c;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lrx/b/b;
+
+
+# instance fields
+.field private final a:Lru/tcsbank/mb/ui/settings/c/b;
+
+
+# direct methods
+.method constructor <init>(Lru/tcsbank/mb/ui/settings/c/b;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lru/tcsbank/mb/ui/settings/c/c;->a:Lru/tcsbank/mb/ui/settings/c/b;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;)V
+    .locals 2
+
+    .prologue
+    .line 0
+    iget-object v0, p0, Lru/tcsbank/mb/ui/settings/c/c;->a:Lru/tcsbank/mb/ui/settings/c/b;
+
+    check-cast p1, Lru/tinkoff/mb/api/entities/contacts/f;
+
+    .line 1039
+    invoke-virtual {v0}, Lru/tcsbank/mb/ui/settings/c/b;->o()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lru/tcsbank/mb/ui/settings/c/m;
+
+    .line 2013
+    iget-boolean v1, p1, Lru/tinkoff/mb/api/entities/contacts/f;->a:Z
+
+    .line 1039
+    invoke-interface {v0, v1}, Lru/tcsbank/mb/ui/settings/c/m;->b(Z)V
+
+    .line 0
+    return-void
+.end method

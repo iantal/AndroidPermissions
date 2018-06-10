@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.presidio.app.optional.root.main.ride.trip.dispatching.overlay.bouncing_marker.RipplingCircleView android:id="@id/ub__rippling_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.ubercab.presidio.app.optional.root.main.ride.trip.dispatching.overlay.bouncing_marker.BouncingDotView android:id="@id/ub__bouncing_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.ubercab.ui.core.UFrameLayout>

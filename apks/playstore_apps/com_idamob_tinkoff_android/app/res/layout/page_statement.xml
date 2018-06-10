@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:background="@color/bg_dark" n1:paddingLeft="@dimen/offset_from_edge_large" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textColor="@color/text_light" n1:paddingLeft="0.0dip" n1:paddingRight="4.0dip" n1:layout_width="wrap_content" n1:text="@string/for_prefix" style="@style/TextView.Default" />
+    <TextView n1:textColor="@color/white" n1:id="@id/date" n1:paddingLeft="4.0dip" n1:layout_width="wrap_content" style="@style/TextView.Default" />
+</LinearLayout>

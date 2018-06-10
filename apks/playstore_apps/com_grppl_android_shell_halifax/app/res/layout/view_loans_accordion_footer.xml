@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/transactionsAccordionLayoutFooter" n1:background="@color/statement_loans_accordion_footer_color" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <GridLayout n1:id="@id/loanDetailsGridLayout" n1:padding="@dimen/loans_statement_accordion_margin" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:rowCount="3" n1:columnCount="2">
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_column="0" n1:text="@string/loans_accordion_opening_date" n1:layout_row="0" n1:layout_marginEnd="@dimen/loans_statement_accordion_text_margin" style="@style/Statements.Loans.Accordion.FieldName" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_column="0" n1:text="@string/loans_accordion_monthly_amount" n1:layout_row="1" n1:layout_marginEnd="@dimen/loans_statement_accordion_text_margin" style="@style/Statements.Loans.Accordion.FieldName" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_column="0" n1:text="@string/loans_accordion_original_term" n1:layout_row="2" n1:layout_marginEnd="@dimen/loans_statement_accordion_text_margin" style="@style/Statements.Loans.Accordion.FieldName" />
+        <TextView n1:id="@id/loanDetailsOpeningDate" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_column="1" n1:layout_row="0" style="@style/Statements.Loans.Accordion.FieldValue" />
+        <TextView n1:id="@id/loanDetailsMonthlyAmount" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_column="1" n1:layout_row="1" style="@style/Statements.Loans.Accordion.FieldValue" />
+        <TextView n1:id="@id/loanDetailsOriginalTerm" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_column="1" n1:layout_row="2" style="@style/Statements.Loans.Accordion.FieldValue" />
+    </GridLayout>
+    <TextView n1:paddingBottom="@dimen/loans_statement_accordion_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/loans_accordion_note_annual_statement" n1:paddingStart="@dimen/loans_statement_accordion_margin" n1:paddingEnd="@dimen/loans_statement_accordion_margin" style="@style/Statements.Loans.Accordion.Note" />
+    <View n1:background="@color/list_divider_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/list_divider_drawable_height" />
+</LinearLayout>

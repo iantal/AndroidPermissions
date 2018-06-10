@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:padding="@dimen/ui__spacing_unit_1x" android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="?brandWhite" />
+    <corners android:radius="@dimen/ub__pill_corner_radius" />
+</shape>

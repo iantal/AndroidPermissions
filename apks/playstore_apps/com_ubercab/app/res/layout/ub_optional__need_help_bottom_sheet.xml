@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="02a8d92a-cef5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:paddingTop="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/for_more_assistance" style="@style/Platform.TextAppearance.H2.Book" />
+    <com.ubercab.ui.core.UTextView android:paddingTop="?contentInset" android:paddingBottom="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/require_attention" style="@style/Platform.TextAppearance.H5.News.Tertiary" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__need_help_call_911" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/call_emergency_number" uber:analyticsId="29ccb3ba-c6b1" style="?platformButtonPrimary" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__need_help_support" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/learn_more" uber:analyticsId="bbd9af70-3f99" style="?platformButtonPrimary" />
+</com.ubercab.ui.core.ULinearLayout>

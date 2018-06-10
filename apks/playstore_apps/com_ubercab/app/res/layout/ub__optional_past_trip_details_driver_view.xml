@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.CircleImageView android:layout_gravity="center_vertical" android:id="@id/ub__past_trip_details_driver_image" android:layout_width="?avatarExtraTiny" android:layout_height="?avatarExtraTiny" android:contentDescription="@string/past_trip_details_driver_photo_content_description" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" uber:srcCompat="@drawable/avatar_blank" />
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H4.News" android:layout_gravity="center_vertical" android:id="@id/ub__past_trip_details_driver_rating_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.ubercab.rating.common.RatingIndicatorView android:enabled="false" android:id="@id/ub__past_trip_details_driver_rating_stars" android:background="@drawable/ub__selectable_star_background" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/past_trip_details_rate_trip" uber:analyticsId="9d1baf83-bfe8" />
+</merge>

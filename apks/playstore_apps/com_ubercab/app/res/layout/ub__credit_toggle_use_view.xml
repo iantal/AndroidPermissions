@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.credits.ui.CreditToggleUseView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="fill_horizontal|center" android:orientation="horizontal" android:id="@id/ub__credit_toggle_use_container" android:background="?android:selectableItemBackground" android:padding="?contentInset" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsEnabled="false">
+        <com.ubercab.ui.core.UTextView android:layout_gravity="fill_horizontal|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/credits_toggle_use_label" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H5.News" />
+        <com.ubercab.ui.core.USwitchCompat android:layout_gravity="end|center" android:id="@id/ub__credit_toggle_use_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="0feea880-1c56" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.credits.ui.CreditToggleUseView>

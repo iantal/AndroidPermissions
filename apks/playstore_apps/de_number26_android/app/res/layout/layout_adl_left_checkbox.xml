@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.Guideline android:orientation="horizontal" android:id="@id/horizontal_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="16.0dip" />
+    <CheckBox android:id="@id/checkBoxLeftCheckBox" android:paddingTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_marginStart="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/horizontal_guideline" style="@style/Checkbox" />
+    <TextView android:id="@id/textLeftCheckBox" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/checkBoxLeftCheckBox" app:layout_constraintTop_toBottomOf="@id/horizontal_guideline" style="@style/Text.Checkbox" />
+</merge>

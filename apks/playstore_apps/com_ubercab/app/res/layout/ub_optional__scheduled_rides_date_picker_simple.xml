@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.scheduled_rides.datepicker.ScheduledTripsDatePickerView android:theme="@style/Theme.Helix.Light" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scheduled_rides_datepicker_title" style="@style/Platform.TextAppearance.H3.News" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub_optional__date_time_text" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.Book.Secondary" />
+        <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <DatePicker android:id="@id/ub_optional__date_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:calendarViewShown="false" />
+            <TimePicker android:id="@id/ub_optional__time_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0" android:layout_marginStart="@dimen/ui__spacing_unit_1x" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+        <com.ubercab.ui.core.ULinearLayout android:paddingTop="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UButton android:layout_gravity="center" android:id="@id/ub_optional__confirm_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scheduled_rides_datepicker_confirm_button_label" android:contentDescription="@string/scheduled_rides_datepicker_confirm_button_content_description" android:textAlignment="center" uber:analyticsId="c52216af-c2da" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.scheduled_rides.datepicker.ScheduledTripsDatePickerView>

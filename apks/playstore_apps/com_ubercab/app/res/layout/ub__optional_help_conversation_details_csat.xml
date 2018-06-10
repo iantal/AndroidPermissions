@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.P" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/help_conversation_details_csat_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" />
+    <com.ubercab.ui.core.ULinearLayout android:id="@id/help_conversation_details_csat_positive_negative_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_space_2x" android:showDividers="middle">
+        <com.ubercab.ui.core.UButton android:id="@id/help_conversation_details_csat_positive_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/help_conversation_details_csat_yes_button" android:layout_weight="1.0" uber:analyticsId="abe9a035-6c1f" style="@style/Platform.Button.Secondary" />
+        <com.ubercab.ui.core.UButton android:id="@id/help_conversation_details_csat_negative_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/help_conversation_details_csat_no_button" android:layout_weight="1.0" uber:analyticsId="a821d3d2-1ab7" style="@style/Platform.Button.Secondary" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UButton android:id="@id/help_conversation_details_csat_reply_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_conversation_details_csat_reply_button" uber:analyticsId="ce4121d1-1cde" style="@style/Platform.Button.Secondary" />
+</merge>

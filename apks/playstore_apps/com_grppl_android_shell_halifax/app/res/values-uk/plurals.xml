@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lp_ttr_message_days">
+        <item quantity="other">" %1$s дн."</item>
+        <item quantity="one">" %1$s дн."</item>
+        <item quantity="few">" %1$s Кілька днів"</item>
+        <item quantity="many">" %1$s Багато днів"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_hours">
+        <item quantity="other">" %1$s год."</item>
+        <item quantity="one">" %1$s год."</item>
+        <item quantity="few">" %1$s Кілька годин"</item>
+        <item quantity="many">" %1$s Багато годин"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_minutes">
+        <item quantity="other">" %1$s хв."</item>
+        <item quantity="one">" %1$s хв."</item>
+        <item quantity="few">" %1$s Кілька хвилин"</item>
+        <item quantity="many">" %1$s Багато хвилин"</item>
+    </plurals>
+    <plurals name="lp_unread_message">
+        <item quantity="other">%1$d НЕПРОЧИТАНІ(-ИХ) ПОВІДОМЛЕННЯ(-НЬ)</item>
+        <item quantity="one">%1$d НЕПРОЧИТАНЕ ПОВІДОМЛЕННЯ</item>
+        <item quantity="few">%1$d КІЛЬКА НЕПРОЧИТАНИХ ПОВІДОМЛЕНЬ</item>
+        <item quantity="many">%1$d БАГАТО НЕПРОЧИТАНИХ ПОВІДОМЛЕНЬ</item>
+    </plurals>
+</resources>

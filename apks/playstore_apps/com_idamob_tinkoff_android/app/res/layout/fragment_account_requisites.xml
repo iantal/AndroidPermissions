@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/ScreenContent.Padding">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/req_qr_block" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <FrameLayout n1:layout_gravity="center_horizontal" n1:layout_width="@dimen/req_qr_tile" n1:layout_height="@dimen/req_qr_tile" n1:layout_margin="@dimen/offset_from_edge">
+                <ImageView n1:id="@id/qr_image" n1:layout_width="@dimen/req_qr_tile" n1:layout_height="@dimen/req_qr_tile" />
+                <include n1:layout_gravity="center" n1:id="@id/subscription_progress" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" layout="@layout/inc_loader_progress" />
+            </FrameLayout>
+            <TextView n1:textAppearance="@style/Text.Default.Dark" n1:layout_gravity="center_horizontal" n1:id="@id/full_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout n1:id="@id/req_account_id_block" style="@style/BlockContent">
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_account_id" />
+            <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/req_account_id" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+        </LinearLayout>
+        <include layout="@layout/inc_divider_margin" />
+        <TextView n1:id="@id/bank_requisites_header" n1:text="@string/req_bank_requisites" style="@style/SubtitleTextItem" />
+        <RadioGroup n1:id="@id/currency_categories" n1:visibility="visible" style="@style/CategoriesRadioGroup">
+            <RadioButton n1:id="@id/rub_category" n1:checked="false" n1:text="@string/req_in_rub" style="@style/CategoryRadioButton" />
+            <RadioButton n1:id="@id/usd_category" n1:text="@string/req_in_usd" style="@style/CategoryRadioButton" />
+            <RadioButton n1:id="@id/eur_category" n1:text="@string/req_in_eur" style="@style/CategoryRadioButton" />
+            <RadioButton n1:id="@id/gbp_category" n1:text="@string/req_in_gbp" style="@style/CategoryRadioButton" />
+        </RadioGroup>
+        <LinearLayout n1:id="@id/req_tableLayoutRequisites" style="@style/ScreenContent.Padding">
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_beneficiary_bank" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/beneficiary_bank" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_correspondent_account" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/correspondent_account" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_bik" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/bik" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_recipient" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/recipient" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_recipient_external_account" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/recipient_external_account" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/req_benef_info" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_beneficiary_info" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/req_payments_details" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_inn" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/inn" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_kpp" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/kpp" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout n1:id="@id/req_LinearLayoutRequisitesEng" n1:visibility="gone" style="@style/ScreenContent.Padding">
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_bank_corr_name_eng" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/bank_corr_name_en" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_bank_corr_swift_eng" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/bank_corr_swift_en" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_correspondent_account_eng" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/correspondent_account_en" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_beneficiary_bank_eng" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/beneficiary_bank_en" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_recipient_bank_address_eng" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/recipient_bank_address_en" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_recipient_bank_swift_eng" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/recipient_bank_swift_en" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_recipient_eng" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/recipient_en" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_recipient_external_account_eng" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/recipient_external_account_en" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+            <LinearLayout style="@style/BlockContent.Vertical">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/req_benef_info_en" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/req_beneficiary_info_eng" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/req_payments_details_en" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textIsSelectable="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout n1:id="@id/req_add_currency_view" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <ImageView n1:id="@id/req_add_currency_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_above="@id/req_add_currency_info" n1:layout_centerHorizontal="true" />
+            <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center" n1:id="@id/req_add_currency_info" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge" n1:layout_centerInParent="true" />
+            <Button n1:id="@id/req_add_currency_btn" n1:text="@string/account_additional_details_add_currency_button" n1:layout_alignParentBottom="true" style="@style/Button.Yellow.Normal" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

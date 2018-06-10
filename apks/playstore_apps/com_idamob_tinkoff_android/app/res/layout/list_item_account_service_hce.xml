@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.SwitchWithHint n1:id="@id/account_service_hce" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <ru.tcsbank.mb.ui.widgets.SwitchWithHint n1:id="@id/account_service_hce_default_card" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</LinearLayout>

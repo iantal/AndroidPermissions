@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.widget.HelixListItem android:id="@id/text_search_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.ubercab.ui.core.UPlainView android:id="@id/text_search_list_item_divider" android:background="?brandGrey40" android:layout_width="fill_parent" android:layout_height="@dimen/ui__divider_width" android:layout_weight="0.0" />
+</merge>

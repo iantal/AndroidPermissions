@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tcsbank.mb.ui.widgets.StickySwipeRefreshLayout n1:id="@id/swipe_refresh_layout" style="@style/MatchParent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.CoordinatorLayout n1:theme="@style/MbActionBarTheme" n1:background="@color/n6" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout n1:id="@id/appbar" n1:background="@drawable/main_appbar_background" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:layout_behavior="ru.tcsbank.mb.ui.widgets.SnapAppBarBehavior" xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <android.support.design.widget.CollapsingToolbarLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="?actionBarSize" n2:layout_scrollFlags="exitUntilCollapsed|scroll">
+                <LinearLayout n1:orientation="vertical" n1:id="@id/collapsing_toolbar_content" n1:paddingBottom="@dimen/payments_extra_padding_for_overlap" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:layout_collapseMode="parallax" n2:layout_collapseParallaxMultiplier="@dimen/main_parallax_multiplier">
+                    <include n1:id="@id/search_view" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" layout="@layout/inc_search_layout_main_screen" />
+                    <TextView n1:id="@id/txt_title" n1:text="@string/pac_label" style="@style/MainPage.DummyTitle" />
+                    <FrameLayout n1:id="@id/payments_top_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <ru.tcsbank.mb.ui.widgets.SlopNestedScrollView n1:id="@id/main_payhub_scrollview" n1:paddingTop="@dimen/offset_from_edge_half" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n3:behavior_overlapTop="@dimen/payments_content_overlap" n3:layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <LinearLayout n1:orientation="vertical" n1:id="@id/payments_fragments_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </ru.tcsbank.mb.ui.widgets.SlopNestedScrollView>
+        <android.support.v7.widget.Toolbar n1:id="@id/toolbar" style="@style/MainPage.Toolbar">
+            <TextView n1:textAppearance="@style/Text.Header.White.Medium" n1:id="@id/toolbar_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/pac_label" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.CoordinatorLayout>
+</ru.tcsbank.mb.ui.widgets.StickySwipeRefreshLayout>

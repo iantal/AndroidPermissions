@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.credits.detail.CreditDetailView android:orientation="vertical" android:background="?android:colorBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="11037f3e-e5a4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UScrollView android:paddingTop="@dimen/ui__spacing_unit_4x" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:showDividers="middle">
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ub__credit_detail_amount_container" android:background="?android:colorBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/credits_amount_label" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__credit_detail_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ub__credit_detail_expiration_container" android:background="?android:colorBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/credits_expiration_label" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__credit_detail_expiration" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.credits.detail.CreditDetailView>

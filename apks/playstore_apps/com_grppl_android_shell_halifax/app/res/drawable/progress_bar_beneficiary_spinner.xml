@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list n1:oneshot="false"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <item n1:duration="@integer/progress_bar_halifax_duration" n1:drawable="@drawable/progress_bar_halifax_spinner_1" />
+    <item n1:duration="@integer/progress_bar_halifax_duration" n1:drawable="@drawable/progress_bar_halifax_spinner_2" />
+    <item n1:duration="@integer/progress_bar_halifax_duration" n1:drawable="@drawable/progress_bar_halifax_spinner_4" />
+    <item n1:duration="@integer/progress_bar_halifax_duration" n1:drawable="@drawable/progress_bar_halifax_spinner_5" />
+</animation-list>

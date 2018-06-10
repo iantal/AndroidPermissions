@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:baselineAligned="false"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:layout_gravity="bottom" n1:id="@id/item_statement_transaction_details" n1:layout_width="fill_parent" n1:layout_height="wrap_content" layout="@layout/view_item_statement_transaction" />
+    <View n1:id="@id/transactionDivider" n1:background="@color/due_soon_list_divider_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/list_divider_drawable_height" n1:layout_marginTop="@dimen/transaction_row_outer_margin" n1:layout_below="@id/item_statement_transaction_details" />
+</RelativeLayout>

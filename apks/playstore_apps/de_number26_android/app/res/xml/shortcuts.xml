@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/shortcut_cash" android:enabled="true">
+        <intent android:targetPackage="de.number26.android" android:action="android.intent.action.VIEW" android:targetClass="de.number26.machete.android.ui.HomeActivity" />
+        <intent android:targetPackage="de.number26.android" android:action="android.intent.action.VIEW" android:targetClass="de.number26.machete.android.ui.cash26.Cash26Activity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/shortcut_request" android:enabled="true">
+        <intent android:targetPackage="de.number26.android" android:action="android.intent.action.VIEW" android:targetClass="de.number26.machete.android.ui.HomeActivity" />
+        <intent android:targetPackage="de.number26.android" android:action="android.intent.action.VIEW" android:targetClass="de.number26.machete.android.ui.transfers.request.send.SendRequestActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/shortcut_moneybeam" android:enabled="true">
+        <intent android:targetPackage="de.number26.android" android:action="android.intent.action.VIEW" android:targetClass="de.number26.machete.android.ui.HomeActivity" />
+        <intent android:targetPackage="de.number26.android" android:action="android.intent.action.VIEW" android:targetClass="de.number26.machete.android.ui.transfers.moneybeam.MoneyBeamActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/shortcut_transfers" android:enabled="true">
+        <intent android:targetPackage="de.number26.android" android:action="android.intent.action.VIEW" android:targetClass="de.number26.machete.android.ui.HomeActivity" />
+        <intent android:targetPackage="de.number26.android" android:action="android.intent.action.VIEW" android:targetClass="de.number26.machete.android.ui.transfers.TransferContactListActivity" />
+    </shortcut>
+</shortcuts>

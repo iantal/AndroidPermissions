@@ -1,0 +1,197 @@
+.class final Lhox;
+.super Lhsh;
+.source "SourceFile"
+
+
+# instance fields
+.field private a:Ljava/lang/Integer;
+
+.field private b:Lcom/ubercab/android/map/NetworkHeaders;
+
+.field private c:[B
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 86
+    invoke-direct {p0}, Lhsh;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Lhsg;
+    .locals 5
+
+    const-string v0, ""
+
+    .line 117
+    iget-object v1, p0, Lhox;->a:Ljava/lang/Integer;
+
+    if-nez v1, :cond_0
+
+    .line 118
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, " statusCode"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 120
+    :cond_0
+    iget-object v1, p0, Lhox;->b:Lcom/ubercab/android/map/NetworkHeaders;
+
+    if-nez v1, :cond_1
+
+    .line 121
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, " headers"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 123
+    :cond_1
+    iget-object v1, p0, Lhox;->c:[B
+
+    if-nez v1, :cond_2
+
+    .line 124
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, " body"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 126
+    :cond_2
+    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    .line 129
+    new-instance v0, Lhow;
+
+    iget-object v1, p0, Lhox;->a:Ljava/lang/Integer;
+
+    .line 130
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    iget-object v2, p0, Lhox;->b:Lcom/ubercab/android/map/NetworkHeaders;
+
+    iget-object v3, p0, Lhox;->c:[B
+
+    const/4 v4, 0x0
+
+    invoke-direct {v0, v1, v2, v3, v4}, Lhow;-><init>(ILcom/ubercab/android/map/NetworkHeaders;[BLhow$1;)V
+
+    return-object v0
+
+    .line 127
+    :cond_3
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Missing required properties:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public a(I)Lhsh;
+    .locals 0
+
+    .line 95
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lhox;->a:Ljava/lang/Integer;
+
+    return-object p0
+.end method
+
+.method public a(Lcom/ubercab/android/map/NetworkHeaders;)Lhsh;
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    .line 103
+    iput-object p1, p0, Lhox;->b:Lcom/ubercab/android/map/NetworkHeaders;
+
+    return-object p0
+
+    .line 101
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string v0, "Null headers"
+
+    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public a([B)Lhsh;
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    .line 111
+    iput-object p1, p0, Lhox;->c:[B
+
+    return-object p0
+
+    .line 109
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string v0, "Null body"
+
+    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method

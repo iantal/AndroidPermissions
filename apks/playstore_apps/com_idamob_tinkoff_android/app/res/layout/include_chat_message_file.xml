@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/chat_file_icon" n1:layout_width="fill_parent" n1:layout_height="@dimen/chat_message_file_top_height" n1:scaleType="center"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <ru.tinkoff.chat.webim.ui.view.WrapWidthTextView n2:id="@id/chat_file_name" n2:layout_width="fill_parent" n2:layout_height="wrap_content" n2:layout_marginLeft="@dimen/chat_message_file_inner_padding" n2:layout_marginTop="@dimen/chat_message_file_name_inner_margin" n2:layout_marginRight="@dimen/chat_message_file_inner_padding" n2:layout_marginBottom="@dimen/chat_message_file_span" n2:maxWidth="@dimen/chat_message_file_name_max_width" style="@style/Chat.Message.File.Name"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <ru.tinkoff.chat.webim.ui.view.WrapWidthTextView n3:id="@id/chat_file_size" n3:layout_width="fill_parent" n3:layout_height="wrap_content" n3:layout_marginLeft="@dimen/chat_message_file_inner_padding" n3:layout_marginRight="@dimen/chat_message_file_inner_padding" n3:maxWidth="@dimen/chat_message_file_name_max_width" style="@style/Chat.Message.File.Size"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</merge>

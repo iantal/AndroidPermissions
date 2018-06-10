@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.edit.text.TextViewWithClickableIcon n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:layout_gravity="center" n1:id="@id/currency_title" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/atm_withdraw_currency_title" />
+    <RadioGroup n1:id="@id/currency_group" style="@style/VerticalWrapping">
+        <android.support.v7.widget.AppCompatRadioButton n1:id="@id/rub_currency" n1:text="@string/common_currency_rub" n1:drawableTint="@color/main_blue" style="@style/RadioButton" />
+        <android.support.v7.widget.AppCompatRadioButton n1:id="@id/usd_currency" n1:text="@string/common_currency_usd" n1:drawableTint="@color/main_blue" style="@style/RadioButton" />
+        <android.support.v7.widget.AppCompatRadioButton n1:id="@id/eur_currency" n1:text="@string/common_currency_eur" n1:drawableTint="@color/main_blue" style="@style/RadioButton" />
+        <android.support.v7.widget.AppCompatRadioButton n1:id="@id/any_currency" n1:text="@string/common_currency_any" n1:drawableTint="@color/main_blue" style="@style/RadioButton" />
+    </RadioGroup>
+    <include layout="@layout/inc_divider_margin" />
+</LinearLayout>

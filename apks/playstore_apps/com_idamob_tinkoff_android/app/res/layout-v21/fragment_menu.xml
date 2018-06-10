@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout n1:theme="@style/MbActionBarTheme" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager n1:id="@id/fragment_pager" n1:background="@color/white" n1:focusable="true" n1:clickable="true" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true" n2:layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <android.support.design.widget.AppBarLayout n1:id="@id/appbar" n1:background="@drawable/main_appbar_background" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:stateListAnimator="@animator/appbar_fixed_elevation" n3:layout_behavior="ru.tcsbank.mb.ui.widgets.SnapAppBarBehavior" xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <android.support.design.widget.CollapsingToolbarLayout n1:id="@id/collapsing_toolbar_layout" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="?actionBarSize" n3:layout_scrollFlags="exitUntilCollapsed|scroll" n3:titleEnabled="false">
+            <LinearLayout n1:orientation="vertical" n1:id="@id/container_profile" n1:background="?selectableItemBackground" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:layout_collapseMode="pin">
+                <ImageView n1:id="@id/image_profile" n1:layout_width="@dimen/profile_image_size" n1:layout_height="@dimen/profile_image_size" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginTop="@dimen/offset_from_edge" />
+                <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textAppearance="@style/Text.Header.White.Medium" n1:gravity="center_vertical" n1:id="@id/name_profile" n1:layout_width="wrap_content" n1:layout_height="?actionBarSize" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_weight="1.0" />
+                    <Button n1:layout_gravity="center_vertical" n1:id="@id/premium_button" n1:layout_width="wrap_content" n1:layout_height="36.0dip" n1:text="@string/main_menu_premium_button" n1:layout_marginEnd="@dimen/screen_content_margin" style="@style/Button.Round.Yellow" />
+                </LinearLayout>
+            </LinearLayout>
+            <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:background="@drawable/main_appbar_background" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" n3:layout_collapseMode="pin">
+                <TextView n1:textAppearance="@style/Text.Header.White.Medium" n1:ellipsize="end" n1:gravity="center_vertical" n1:id="@id/toolbar_title" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:singleLine="true" />
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <android.support.design.widget.TabLayout n1:id="@id/tabs_menu" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="48.0dip" n3:tabBackground="?selectableItemBackground" n3:tabGravity="fill" n3:tabMaxWidth="0.0dip" n3:tabMode="fixed" n3:tabPaddingBottom="-1.0dip" n3:tabPaddingEnd="-1.0dip" n3:tabPaddingStart="-1.0dip" n3:tabPaddingTop="-1.0dip" n3:tabSelectedTextColor="@color/white" n3:tabTextColor="@color/white" />
+    </android.support.design.widget.AppBarLayout>
+</android.support.design.widget.CoordinatorLayout>

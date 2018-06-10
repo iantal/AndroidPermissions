@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/fingerprintLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0dip" android:gravity="center_vertical" android:background="@color/grey_bright" android:focusable="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="45.0dip" android:text="@string/only_one_login_method" android:paddingStart="@dimen/default_padding" android:paddingEnd="@dimen/default_padding" />
+                <de.number26.machete.android.ui.components.SwitchPreferenceView android:icon="@drawable/icon_fingerprint" android:id="@id/fingerPrintSwitch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_device_fingerprint_title" android:summary="@string/settings_device_fingerprint_subtitle" />
+                <include layout="@layout/preferences_empty_item" />
+            </LinearLayout>
+            <include layout="@layout/pattern_settings_layout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

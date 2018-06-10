@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:id="@id/search_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:background="@drawable/main_search_light_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/offset_from_edge_half" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginRight="@dimen/offset_from_edge_half">
+        <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center_vertical" n1:id="@id/icon_search" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge_half" n1:layout_marginRight="@dimen/offset_from_edge_half" n1:src="@drawable/ic_search" n2:tint="@color/main_search_light_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+</FrameLayout>

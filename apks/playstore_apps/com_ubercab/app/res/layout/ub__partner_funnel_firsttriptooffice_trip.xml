@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:paddingBottom="@dimen/ub__partner_funnel_step_standard_footer_margin" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="@color/ub__white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/ub__partner_funnel_map_view" android:layout_width="fill_parent" android:layout_height="@dimen/ub__partner_funnel_default_narrow_map_height" />
+            <View android:background="@color/ub__teal_divider" android:layout_width="fill_parent" android:layout_height="@dimen/ub__partner_funnel_large_row_divider_height" />
+            <LinearLayout android:orientation="vertical" android:background="@color/ub__uber_white_20" android:paddingLeft="@dimen/ub__partner_funnel_step_standard_header_margin_small" android:paddingTop="@dimen/ub__partner_funnel_padding_list_cell_small" android:paddingRight="@dimen/ub__partner_funnel_step_standard_header_margin_small" android:paddingBottom="@dimen/ub__partner_funnel_padding_list_cell_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:paddingBottom="@dimen/ub__partner_funnel_spacing_half" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_ftto_office_status_label" android:paddingRight="@dimen/ub__partner_funnel_spacing_half" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Uber.Partner.Funnel.TextAppearance.FTTO.Grey.Small" />
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_ftto_office_status" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Uber.Partner.Funnel.TextAppearance.FTTO.Green" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_ftto_office_address" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Uber.Partner.Funnel.TextAppearance.Byline.Dark" />
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_ftto_change_office_cta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" style="@style/Uber.Partner.Funnel.TextAppearance.FTTO.Blue" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/ub__uber_white_100" android:layout_width="fill_parent" android:layout_height="@dimen/ub__partner_funnel_row_divider_height" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_ftto_trip_screen_detail" android:paddingLeft="@dimen/ub__partner_funnel_padding_list_cell" android:paddingTop="@dimen/ub__partner_funnel_padding_list_cell_small" android:paddingRight="@dimen/ub__partner_funnel_padding_list_cell" android:paddingBottom="@dimen/ub__partner_funnel_padding_list_cell_small" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Uber.Partner.Funnel.TextAppearance.Step.Header" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ub__partner_funnel_step_standard_description" />
+            <com.ubercab.android.partner.funnel.onboarding.view.MultiLineBodyLayout android:id="@id/ub__partner_funnel_checklist_viewgroup" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" layout="@layout/ub__partner_funnel_step_standard_footer" />
+</merge>

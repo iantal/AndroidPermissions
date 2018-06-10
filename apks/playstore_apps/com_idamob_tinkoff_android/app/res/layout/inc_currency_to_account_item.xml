@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/currency" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" />
+    <TextView n1:textAppearance="@style/Text.Default.Light" n1:ellipsize="end" n1:gravity="right" n1:id="@id/to_account" n1:paddingLeft="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge_half" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:lines="1" n1:layout_toRightOf="@id/currency" n1:layout_alignBaseline="@id/currency" n1:layout_alignParentRight="true" />
+</RelativeLayout>

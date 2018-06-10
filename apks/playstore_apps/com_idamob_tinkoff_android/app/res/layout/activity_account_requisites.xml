@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/aar_main_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.tab.SlidingIndicator.SlidingTabLayout n1:id="@id/aar_sliding_tabs" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_radio_button_group" />
+    <android.support.v4.view.ViewPager n1:id="@id/aar_viewpager" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</LinearLayout>

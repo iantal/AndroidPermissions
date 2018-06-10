@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ub__partner_funnel_viewgroup_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.android.partner.funnel.onboarding.view.StepStandardHeaderLayout android:id="@id/ub__partner_funnel_step_standard_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ub__partner_funnel_step_standard_description" />
+        <com.ubercab.android.partner.funnel.onboarding.view.MultiLineBodyLayout android:id="@id/ub__partner_funnel_vehicle_checklist_viewgroup" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

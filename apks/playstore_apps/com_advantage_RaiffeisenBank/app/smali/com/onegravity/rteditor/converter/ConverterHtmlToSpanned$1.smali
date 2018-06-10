@@ -1,0 +1,14 @@
+.class synthetic Lcom/onegravity/rteditor/converter/ConverterHtmlToSpanned$1;
+.super Ljava/lang/Object;
+.source "ConverterHtmlToSpanned.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/onegravity/rteditor/converter/ConverterHtmlToSpanned;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation

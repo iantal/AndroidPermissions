@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lp_ttr_message_days">
+        <item quantity="other">" %1$s ימים"</item>
+        <item quantity="one">" %1$s יום"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_hours">
+        <item quantity="other">" %1$s שעות"</item>
+        <item quantity="one">" %1$s שעה"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_minutes">
+        <item quantity="other">" %1$s דקות"</item>
+        <item quantity="one">" %1$s דקה"</item>
+    </plurals>
+    <plurals name="lp_unread_message">
+        <item quantity="other">%1$d הודעות שלא נקראו</item>
+        <item quantity="one">%1$d הודעה שלא נקראה</item>
+    </plurals>
+</resources>

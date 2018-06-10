@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/ub__square_with_checkmark" />
+    <item android:state_selected="false">
+        <inset android:insetLeft="@dimen/ui__spacing_unit_1x" android:insetRight="@dimen/ui__spacing_unit_1x" android:insetTop="@dimen/ui__spacing_unit_1x" android:insetBottom="@dimen/ui__spacing_unit_1x">
+            <shape android:shape="rectangle">
+                <stroke android:width="@dimen/ui__divider_width" android:color="?brandGrey40" />
+                <corners android:topLeftRadius="@dimen/small_icon_height_width" android:topRightRadius="@dimen/small_icon_height_width" android:bottomLeftRadius="@dimen/small_icon_height_width" android:bottomRightRadius="@dimen/small_icon_height_width" />
+            </shape>
+        </inset>
+    </item>
+</selector>

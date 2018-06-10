@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.calendar.connect.CalendarConnectView android:background="?brandWhite" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="b7e7ab79-077a"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UScrollView android:id="@id/ub_optional__calendar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="?contentInset" android:paddingEnd="?contentInset">
+            <com.ubercab.ui.core.UImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/calendar_icon" uber:srcCompat="@drawable/ub__optional__calendar_icon" />
+            <com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/calendar_connect_title" style="@style/Platform.TextAppearance.H3.Book" />
+            <com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/calendar_connect_body" style="@style/Platform.TextAppearance.H5.Book" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub_optional__calendar_learn_more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/calendar_learn_more" uber:analyticsId="f7888d99-c72e" style="@style/Platform.TextAppearance.H5.News.Link" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+    <com.ubercab.ui.core.UButton android:id="@id/ub_optional__calendar_connect_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_2x" android:text="@string/connect_calendar" uber:layout_anchor="@id/ub_optional__calendar_layout" uber:layout_anchorGravity="bottom" uber:analyticsId="a1bd8747-0f62" style="?platformButtonPrimary" />
+</com.ubercab.calendar.connect.CalendarConnectView>

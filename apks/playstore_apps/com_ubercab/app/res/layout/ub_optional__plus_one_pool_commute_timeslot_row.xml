@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.URelativeLayout android:theme="@style/Theme.Helix.Light" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:textColor="?brandGrey60" android:gravity="center_vertical" android:id="@id/ub__pool_commute_timeslot_row_pickup" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="@dimen/ui__spacing_unit_1x" android:layout_centerVertical="true" style="@style/Platform.TextAppearance.H4" />
+    <com.ubercab.ui.core.UTextView android:textColor="?brandGrey40" android:gravity="center_vertical" android:id="@id/ub__pool_commute_timeslot_row_dropoff" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ui__spacing_unit_4x" android:layout_toEndOf="@id/ub__pool_commute_timeslot_row_pickup" style="@style/Platform.TextAppearance.H6" />
+</com.ubercab.ui.core.URelativeLayout>

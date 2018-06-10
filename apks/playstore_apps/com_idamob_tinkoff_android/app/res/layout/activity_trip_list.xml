@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:id="@id/smooth_progress" style="@style/SmoothProgress" />
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="vertical" n1:id="@id/block_upcoming_trips" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/abroad_operations_upcoming_trips" style="@style/Profile.Title" />
+                <android.support.v7.widget.RecyclerView n1:id="@id/rv_upcoming_trips" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+                <include n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" layout="@layout/inc_divider" />
+            </LinearLayout>
+            <TextView n1:textAppearance="@style/Text.Default.Blue" n1:id="@id/btn_add_trip" n1:background="?selectableItemBackground" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingRight="@dimen/screen_content_padding" n1:text="@string/abroad_operations_button_add_trip" n1:drawableLeft="@drawable/ic_add_circle_outline_blue" n1:drawablePadding="@dimen/screen_content_double_padding" style="@style/DefaultItem" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/block_expired_trips" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <include n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" layout="@layout/inc_divider" />
+                <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/abroad_operations_expired_trips" style="@style/Profile.Title" />
+                <android.support.v7.widget.RecyclerView n1:id="@id/rv_expired_trips" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

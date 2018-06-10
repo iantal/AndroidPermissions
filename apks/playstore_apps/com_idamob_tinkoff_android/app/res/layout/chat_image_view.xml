@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:background="@color/chat_gallery_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ProgressBar n1:layout_gravity="center" n1:id="@id/image_progress_bar" n1:visibility="invisible" n1:layout_width="@dimen/chat_progress_size" n1:layout_height="@dimen/chat_progress_size" style="?android:progressBarStyleLarge" />
+    <com.github.chrisbanes.photoview.PhotoView n1:id="@id/full_screen_image" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:background="@color/chat_gallery_background" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:navigationIcon="@drawable/ic_chat_close" n2:popupTheme="@style/ThemeOverlay.AppCompat.Light" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

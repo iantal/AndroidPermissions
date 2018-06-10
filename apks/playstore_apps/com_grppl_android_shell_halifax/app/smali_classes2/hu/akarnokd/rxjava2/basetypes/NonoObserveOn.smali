@@ -1,0 +1,57 @@
+.class final Lhu/akarnokd/rxjava2/basetypes/NonoObserveOn;
+.super Lhu/akarnokd/rxjava2/basetypes/Nono;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lhu/akarnokd/rxjava2/basetypes/NonoObserveOn$ObserveOnSubscriber;
+    }
+.end annotation
+
+
+# instance fields
+.field final scheduler:Lio/reactivex/Scheduler;
+
+.field final source:Lhu/akarnokd/rxjava2/basetypes/Nono;
+
+
+# direct methods
+.method constructor <init>(Lhu/akarnokd/rxjava2/basetypes/Nono;Lio/reactivex/Scheduler;)V
+    .locals 0
+
+    invoke-direct {p0}, Lhu/akarnokd/rxjava2/basetypes/Nono;-><init>()V
+
+    iput-object p1, p0, Lhu/akarnokd/rxjava2/basetypes/NonoObserveOn;->source:Lhu/akarnokd/rxjava2/basetypes/Nono;
+
+    iput-object p2, p0, Lhu/akarnokd/rxjava2/basetypes/NonoObserveOn;->scheduler:Lio/reactivex/Scheduler;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected subscribeActual(Lorg/reactivestreams/Subscriber;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lorg/reactivestreams/Subscriber",
+            "<-",
+            "Ljava/lang/Void;",
+            ">;)V"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lhu/akarnokd/rxjava2/basetypes/NonoObserveOn;->source:Lhu/akarnokd/rxjava2/basetypes/Nono;
+
+    new-instance v1, Lhu/akarnokd/rxjava2/basetypes/NonoObserveOn$ObserveOnSubscriber;
+
+    iget-object v2, p0, Lhu/akarnokd/rxjava2/basetypes/NonoObserveOn;->scheduler:Lio/reactivex/Scheduler;
+
+    invoke-direct {v1, p1, v2}, Lhu/akarnokd/rxjava2/basetypes/NonoObserveOn$ObserveOnSubscriber;-><init>(Lorg/reactivestreams/Subscriber;Lio/reactivex/Scheduler;)V
+
+    invoke-virtual {v0, v1}, Lhu/akarnokd/rxjava2/basetypes/Nono;->subscribe(Lorg/reactivestreams/Subscriber;)V
+
+    return-void
+.end method

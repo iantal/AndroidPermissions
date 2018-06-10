@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="baa_notes_map">
+        <item>cardMaxCount:card_max_count</item>
+        <item>controlExpenses:control_expenses</item>
+        <item>costOfReissuing:cost_of_reissuing</item>
+        <item>deliveredCardByPost:delivered_card_by_post</item>
+        <item>internetBank:internet_bank</item>
+        <item>reissueCard:reissue_card</item>
+        <item>responsibility:responsibility</item>
+        <item>smsBank:sms_bank</item>
+        <item>supportRelatives:support_relatives</item>
+        <item>userData:user_data</item>
+        <item>alert_card:alert_card</item>
+    </string-array>
+    <array name="balance_analysis_colors">
+        <item>@color/n3</item>
+        <item>@color/n9</item>
+        <item>@color/n8</item>
+    </array>
+    <string-array name="calendar_months">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+    <string-array name="calendar_months_prepositional">
+        <item>январе</item>
+        <item>феврале</item>
+        <item>марте</item>
+        <item>апреле</item>
+        <item>мае</item>
+        <item>июне</item>
+        <item>июле</item>
+        <item>августе</item>
+        <item>сентябре</item>
+        <item>октябре</item>
+        <item>ноябре</item>
+        <item>декабре</item>
+    </string-array>
+    <string-array name="calendar_months_short">
+        <item>янв.</item>
+        <item>Февр.</item>
+        <item>марта</item>
+        <item>апр.</item>
+        <item>мая</item>
+        <item>июня</item>
+        <item>июля</item>
+        <item>авг.</item>
+        <item>сен.</item>
+        <item>окт.</item>
+        <item>нояб.</item>
+        <item>дек.</item>
+    </string-array>
+    <string-array name="calendar_months_short_nominative">
+        <item>Янв</item>
+        <item>Фев</item>
+        <item>Мар</item>
+        <item>Апр</item>
+        <item>Май</item>
+        <item>Июн</item>
+        <item>Июл</item>
+        <item>Авг</item>
+        <item>Сен</item>
+        <item>Окт</item>
+        <item>Ноя</item>
+        <item>Дек</item>
+    </string-array>
+    <string-array name="card_application_reasons_titles">
+        <item>Кража</item>
+        <item>Утеря</item>
+        <item>Повреждена</item>
+        <item>Другое</item>
+    </string-array>
+    <string-array name="card_application_reasons_values">
+        <item>STOLEN</item>
+        <item>LOST</item>
+        <item>BROKEN</item>
+        <item>CLIENTINITIATED</item>
+    </string-array>
+    <array name="char_drawable_background">
+        <item>#ff00bee0</item>
+        <item>#ff9887f1</item>
+        <item>#fff94d4d</item>
+        <item>#ff34bfb1</item>
+        <item>#ffffad5c</item>
+        <item>#ff929ded</item>
+        <item>#ff45ad2d</item>
+        <item>#ff3392db</item>
+        <item>#ffdf8400</item>
+        <item>#ffae59d4</item>
+        <item>#fffd7171</item>
+        <item>#ff52bbe1</item>
+        <item>#fffe9b4b</item>
+        <item>#ffbf69f1</item>
+        <item>#ffec4d6b</item>
+        <item>#ff3daf69</item>
+        <item>#ffff7047</item>
+        <item>#ff994abd</item>
+        <item>#ffdd4444</item>
+        <item>#ff36c578</item>
+        <item>#ff1daca4</item>
+        <item>#fff14789</item>
+    </array>
+    <array name="char_drawable_text">
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_background</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_background</item>
+        <item>@color/cdc_background</item>
+        <item>@color/cdc_background</item>
+        <item>@color/cdc_background</item>
+        <item>@color/cdc_background</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_background</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_background</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_background</item>
+        <item>@color/cdc_background</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_background</item>
+        <item>@color/cdc_background</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_text</item>
+        <item>@color/cdc_background</item>
+    </array>
+    <string-array name="chat_failed_message_actions">
+        <item>Повторить отправку</item>
+        <item>Удалить</item>
+    </string-array>
+    <string-array name="chat_message_file_actions">
+        <item>Сохранить</item>
+    </string-array>
+    <string-array name="chat_message_text_actions">
+        <item>Скопировать</item>
+    </string-array>
+    <string-array name="common_days_of_week_short">
+        <item>пн</item>
+        <item>вт</item>
+        <item>ср</item>
+        <item>чт</item>
+        <item>пт</item>
+        <item>сб</item>
+        <item>вс</item>
+    </string-array>
+    <string-array name="core_choice_image_source">
+        <item>Из галереи</item>
+        <item>Сфотографировать</item>
+    </string-array>
+    <string-array name="days_of_month">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>Последнее число месяца</item>
+    </string-array>
+    <string-array name="days_of_month_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="days_of_week">
+        <item>Понедельник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Суббота</item>
+        <item>Воскресенье</item>
+    </string-array>
+    <integer-array name="days_of_week_atm_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>0</item>
+    </integer-array>
+    <string-array name="days_of_week_genitive_case">
+        <item>понедельника</item>
+        <item>вторника</item>
+        <item>среды</item>
+        <item>четверга</item>
+        <item>пятницы</item>
+        <item>субботы</item>
+        <item>воскресенья</item>
+    </string-array>
+    <string-array name="days_of_week_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <array name="events_colors">
+        <item>@color/category_first</item>
+        <item>@color/category_second</item>
+        <item>@color/category_third</item>
+        <item>@color/category_fourth</item>
+        <item>@color/category_fifth</item>
+        <item>@color/category_sixth</item>
+    </array>
+    <string-array name="exchanges">
+        <item>Курсы валют Тинькофф Банка</item>
+        <item>Курсы валют ЦБ</item>
+    </string-array>
+    <string-array name="ffa_cred_subjects">
+        <item>Погашение</item>
+        <item>Финансовая информация</item>
+        <item>Закрытие кредитной карты</item>
+        <item>Другое</item>
+        <item>Как пользоваться</item>
+    </string-array>
+    <string-array name="ffa_deposit_subjects">
+        <item>Открыть/закрыть вклад или карту</item>
+        <item>Тарифы</item>
+        <item>Пополнение</item>
+        <item>Финансовая информация</item>
+    </string-array>
+    <string-array name="ffa_mib_subjects">
+        <item>Проблемы в работе</item>
+        <item>Предложения</item>
+        <item>Другое</item>
+        <item>Помощь</item>
+    </string-array>
+    <string-array name="mfms_server_id_list">
+        <item>mfms</item>
+    </string-array>
+    <string-array name="mfms_server_url_list">
+        <item>https://pushserver.mfms.ru/tcsbank</item>
+    </string-array>
+    <string-array name="month_names">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+    <string-array name="month_of_year">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+    <string-array name="month_of_year2">
+        <item>Января</item>
+        <item>Февраля</item>
+        <item>Марта</item>
+        <item>Апреля</item>
+        <item>Мая</item>
+        <item>Июня</item>
+        <item>Июля</item>
+        <item>Августа</item>
+        <item>Сентября</item>
+        <item>Октября</item>
+        <item>Ноября</item>
+        <item>Декабря</item>
+    </string-array>
+    <string-array name="oha_c_to_c">
+        <item>На карту другого банка</item>
+        <item>С карты другого банка</item>
+    </string-array>
+    <string-array name="oha_inside">
+        <item>По номеру карты</item>
+        <item>По номеру договора</item>
+        <item>По номеру телефона</item>
+        <item>По QR-коду</item>
+    </string-array>
+    <string-array name="oha_oneself">
+        <item>Между моими счетами</item>
+    </string-array>
+    <string-array name="oha_outside">
+        <item>3-му лицу в другой банк</item>
+        <item>Юридическому лицу</item>
+        <item>На мой счет в другой банк</item>
+        <item>Юр.лицу внутри банка</item>
+    </string-array>
+    <string-array name="oha_taxes">
+        <item>Бюджетные организации</item>
+        <item>Оплата налогов/сборов</item>
+    </string-array>
+    <string-array name="periodicity_title">
+        <item>Раз в неделю</item>
+        <item>Раз в месяц</item>
+    </string-array>
+    <string-array name="periodicity_value">
+        <item>weekly</item>
+        <item>monthly</item>
+    </string-array>
+    <string-array name="security_question_numbers">
+        <item>Первый вопрос</item>
+        <item>Второй вопрос</item>
+        <item>Третий вопрос</item>
+        <item>Четвёртый вопрос</item>
+        <item>Пятый вопрос</item>
+        <item>Шестой вопрос</item>
+        <item>Седьмой вопрос</item>
+        <item>Восьмой вопрос</item>
+        <item>Девятый вопрос</item>
+        <item>Десятый вопрос</item>
+        <item>Одиннадцатый вопрос</item>
+        <item>Двенадцатый вопрос</item>
+        <item>Тринадцатый вопрос</item>
+        <item>Четырнадцатый вопрос</item>
+    </string-array>
+    <string-array name="sex_titles">
+        <item>Мужской</item>
+        <item>Женский</item>
+    </string-array>
+    <string-array name="sex_values">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+    <array name="social_links_images">
+        <item>@drawable/fb_icon</item>
+        <item>@drawable/vkontakte_icon</item>
+        <item>@drawable/twitter_icon</item>
+        <item>@drawable/googleplus_icon</item>
+        <item>@drawable/youtube_icon</item>
+        <item>@drawable/instagram_icon</item>
+    </array>
+    <string-array name="social_links_titles">
+        <item>fb</item>
+        <item>vk</item>
+        <item>tw</item>
+        <item>gp</item>
+        <item>yt</item>
+        <item>ig</item>
+    </string-array>
+    <string-array name="tpa_dlg_tcs_items">
+        <item>По номеру договора</item>
+        <item>По номеру телефона</item>
+        <item>По номеру карты</item>
+    </string-array>
+    <string-array name="transfer_provider_ids">
+        <item>transfer-deposit</item>
+        <item>transfer-inner</item>
+        <item>transfer-inner-third-party</item>
+        <item>transfer-third-party</item>
+        <item>transfer-post</item>
+        <item>c2c-out</item>
+        <item>transfer-bank</item>
+        <item>transfer-legal</item>
+        <item>transfer-taxes</item>
+        <item>transfer-nontaxes</item>
+    </string-array>
+    <string-array name="transfer_provider_titles">
+        <item>на вклад</item>
+        <item>на счёт</item>
+        <item>клиенту Тинькофф</item>
+        <item>в другой банк</item>
+        <item>на почту</item>
+        <item>на карту</item>
+        <item>себе в другой банк</item>
+        <item>юридическому лицу</item>
+        <item>в налоговую организацию</item>
+        <item>в бюджетную организацию</item>
+    </string-array>
+    <string-array name="txf_receiver">
+        <item>Ваш e-mail</item>
+        <item>Другой e-mail</item>
+    </string-array>
+</resources>

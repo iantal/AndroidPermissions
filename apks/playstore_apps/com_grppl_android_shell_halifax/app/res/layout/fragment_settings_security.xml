@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:id="@id/fragmentSettingsSecurity" n1:background="@color/settings_background_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <com.mobile.ui.common.view.NotificationView n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <TextView n1:textAppearance="@style/TextAppearance.Headline" n1:id="@id/securityDetailsTitle" n1:background="@color/security_settings_items_background" n1:paddingLeft="@dimen/fragment_security_settings_vertical_margin" n1:paddingTop="@dimen/fragment_security_settings_padding" n1:paddingRight="@dimen/fragment_security_settings_vertical_margin" n1:paddingBottom="@dimen/fragment_security_settings_vertical_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/settings_security_title" />
+            <TableLayout n1:background="@color/security_settings_items_background" n1:paddingLeft="@dimen/fragment_security_settings_vertical_margin" n1:paddingTop="@dimen/fragment_security_settings_vertical_margin" n1:paddingRight="@dimen/fragment_security_settings_vertical_margin" n1:paddingBottom="@dimen/fragment_security_settings_vertical_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TableRow n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <TextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/securityDetailsUserIDLabel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/settings_security_user_id" />
+                    <TextView n1:textAppearance="@style/TextAppearance.SecurityDetails" n1:id="@id/securityDetailsUserIDValue" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_security_settings_vertical_margin" n1:text="" />
+                </TableRow>
+                <TableRow n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="@dimen/fragment_security_settings_table_vertical_margin">
+                    <TextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/securityDetailsAppVersionLabel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/settings_security_app_version" />
+                    <TextView n1:textAppearance="@style/TextAppearance.SecurityDetails" n1:id="@id/securityDetailsAppVersionValue" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_security_settings_vertical_margin" n1:text="" />
+                </TableRow>
+                <TableRow n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="@dimen/fragment_security_settings_table_vertical_margin">
+                    <TextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/securityDetailsDeviceNameLabel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/settings_security_device_name" />
+                    <TextView n1:textAppearance="@style/TextAppearance.SecurityDetails" n1:id="@id/securityDetailsDeviceNameValue" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_security_settings_vertical_margin" n1:text="" />
+                </TableRow>
+                <TableRow n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="@dimen/fragment_security_settings_table_vertical_margin">
+                    <TextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/securityDetailsDeviceTypeLabel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/settings_security_device_type" />
+                    <TextView n1:textAppearance="@style/TextAppearance.SecurityDetails" n1:id="@id/securityDetailsDeviceTypeValue" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_security_settings_vertical_margin" n1:text="" />
+                </TableRow>
+            </TableLayout>
+            <View n1:background="@drawable/settings_list_divider" n1:layout_width="fill_parent" n1:layout_height="@dimen/settings_list_divider_height" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/securityDetailsForgottenPasswordButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/SettingItem.Clickable">
+                <TextView n1:textAppearance="@style/TextAppearance.SettingTitle" n1:id="@id/securityDetailsForgottenPasswordLabel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_security_settings_vertical_margin" n1:layout_marginRight="@dimen/fragment_security_settings_vertical_margin" n1:text="@string/settings_security_forgotten_password_title" />
+                <TextView n1:textAppearance="@style/TextAppearance.SettingDescription" n1:id="@id/securityDetailsForgottenPasswordInfo" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_security_settings_vertical_margin" n1:layout_marginRight="@dimen/fragment_security_settings_vertical_margin" n1:text="@string/settings_security_forgotten_password_description" />
+            </LinearLayout>
+            <View n1:background="@drawable/settings_list_divider" n1:layout_width="fill_parent" n1:layout_height="@dimen/settings_list_divider_height" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/securityDetailsAutoLogOffButton" n1:layout_width="fill_parent" n1:layout_height="fill_parent" style="@style/SettingItem.Clickable">
+                <TextView n1:textAppearance="@style/TextAppearance.SettingTitle" n1:id="@id/securityDetailsAutoLogOffLabel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_security_settings_vertical_margin" n1:layout_marginRight="@dimen/fragment_security_settings_vertical_margin" n1:text="@string/settings_security_auto_log_off_title" />
+                <TextView n1:textAppearance="@style/TextAppearance.SettingDescription" n1:id="@id/securityDetailsAutoLogOffInfo" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_security_settings_vertical_margin" n1:layout_marginRight="@dimen/fragment_security_settings_vertical_margin" n1:text="@string/settings_security_auto_log_off_description" />
+            </LinearLayout>
+            <View n1:background="@drawable/settings_list_divider" n1:layout_width="fill_parent" n1:layout_height="@dimen/fragment_security_settings_list_divider_height" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/settingsSecurityFingerprintSection" n1:background="@color/security_settings_items_background" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.mobile.ui.common.view.HeadingTextView n1:textAppearance="@style/TextAppearance.Headline" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_security_settings_vertical_margin" n1:layout_marginTop="@dimen/fragment_security_settings_horizontal_margin" n1:layout_marginRight="@dimen/fragment_security_settings_vertical_margin" n1:text="@string/settings_security_fingerprint_title" />
+                <TextView n1:textAppearance="@style/TextAppearance.SettingFingerprintContent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_security_settings_vertical_margin" n1:layout_marginTop="@dimen/fragment_security_settings_vertical_margin" n1:layout_marginRight="@dimen/fragment_security_settings_vertical_margin" n1:layout_marginBottom="@dimen/fragment_security_settings_text_margin_bottom" n1:text="@string/settings_security_fingerprint_description" />
+                <View n1:background="@drawable/settings_list_divider" n1:layout_width="fill_parent" n1:layout_height="@dimen/settings_list_divider_height" />
+                <LinearLayout n1:orientation="horizontal" n1:id="@id/settingsSecurityFingerprintSwitchContainer" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_security_settings_horizontal_margin" n1:layout_marginTop="@dimen/fragment_security_settings_layout_margin_top" n1:layout_marginRight="@dimen/fragment_security_settings_horizontal_margin" n1:layout_marginBottom="@dimen/fragment_security_settings_layout_margin_bottom" style="@style/SettingItem">
+                    <TextView n1:textAppearance="@style/TextAppearance.SettingFingerprintContent" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/settings_security_fingerprint_toggle_body" n1:layout_weight="1.0" />
+                    <android.support.v7.widget.SwitchCompat n1:theme="@style/Widget.Switch" n1:layout_gravity="center_vertical" n1:id="@id/settingsSecurityFingerprintSwitch" n1:focusable="false" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.mobile.ui.common.view.NotificationView n1:id="@id/settingsSecurityNotificationView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</FrameLayout>

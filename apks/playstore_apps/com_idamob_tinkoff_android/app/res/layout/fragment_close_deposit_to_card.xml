@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/VerticalWrapping">
+    <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/carousel_accounts" style="@style/AccountsCarouselPager"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <View n2:background="@color/dividers" n2:layout_width="fill_parent" n2:layout_height="@dimen/divider_height" n2:layout_alignParentTop="true"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <View n3:background="@color/dividers" n3:layout_width="fill_parent" n3:layout_height="@dimen/divider_height" n3:layout_alignParentBottom="true"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <ProgressBar n4:layout_gravity="center_horizontal" n4:id="@id/commission_loader" n4:visibility="gone" n4:indeterminate="true" style="@style/WrapContent"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+</RelativeLayout>

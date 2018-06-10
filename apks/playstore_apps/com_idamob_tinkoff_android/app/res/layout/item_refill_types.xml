@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:background="@drawable/selector_item_bg" style="@style/MediumItem"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:gravity="center_vertical" n1:id="@id/refill_type_logo" n1:background="@drawable/circle_placeholder" n1:scaleType="centerInside" n1:tint="@color/white" style="@style/ImageItem.Margin" />
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center_vertical" n1:id="@id/refill_type_name" n1:layout_width="wrap_content" n1:layout_height="@dimen/tile_height_medium_item" n1:layout_marginRight="@dimen/offset_from_edge" />
+</LinearLayout>

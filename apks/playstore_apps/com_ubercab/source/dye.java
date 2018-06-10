@@ -1,0 +1,39 @@
+import android.view.View;
+import android.view.ViewTreeObserver;
+import android.view.ViewTreeObserver.OnScrollChangedListener;
+import java.lang.ref.WeakReference;
+
+@fug
+final class dye
+  extends dyf
+  implements ViewTreeObserver.OnScrollChangedListener
+{
+  private final WeakReference<ViewTreeObserver.OnScrollChangedListener> a;
+  
+  public dye(View paramView, ViewTreeObserver.OnScrollChangedListener paramOnScrollChangedListener)
+  {
+    super(paramView);
+    this.a = new WeakReference(paramOnScrollChangedListener);
+  }
+  
+  protected final void a(ViewTreeObserver paramViewTreeObserver)
+  {
+    paramViewTreeObserver.addOnScrollChangedListener(this);
+  }
+  
+  protected final void b(ViewTreeObserver paramViewTreeObserver)
+  {
+    paramViewTreeObserver.removeOnScrollChangedListener(this);
+  }
+  
+  public final void onScrollChanged()
+  {
+    ViewTreeObserver.OnScrollChangedListener localOnScrollChangedListener = (ViewTreeObserver.OnScrollChangedListener)this.a.get();
+    if (localOnScrollChangedListener != null)
+    {
+      localOnScrollChangedListener.onScrollChanged();
+      return;
+    }
+    b();
+  }
+}

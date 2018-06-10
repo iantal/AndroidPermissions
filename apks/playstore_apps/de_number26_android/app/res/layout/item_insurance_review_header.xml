@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="28.0dip" android:paddingStart="@dimen/screen_insurance_padding_start_end" android:paddingEnd="@dimen/screen_insurance_padding_start_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_insurance_review_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/ic_insurance_review" />
+    <TextView android:id="@id/text_insurance_review_header_title" android:layout_marginBottom="4.0dip" style="@style/InsuranceReviewTextHeader" />
+    <TextView android:id="@id/text_insurance_review_header_subtitle" style="@style/InsuranceReviewTextDescription" />
+</LinearLayout>

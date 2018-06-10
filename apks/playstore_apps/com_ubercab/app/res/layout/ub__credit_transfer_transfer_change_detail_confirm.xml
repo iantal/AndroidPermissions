@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.credittransfer.transferchange.detail.TransferChangeDetailConfirmView android:background="?android:colorBackground" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="2592a6b7-1d77"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/credit_transfer_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/credit_transfer_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/credit_transfer_transfer_change_detail_confirm_title" style="@style/Platform.TextAppearance.H2.News.Primary" />
+        <com.ubercab.ui.core.UTextView android:id="@id/credit_transfer_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/credit_transfer_transfer_change_detail_confirm_message" style="@style/Platform.TextAppearance.P" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x">
+            <com.ubercab.ui.core.UButton android:id="@id/credit_transfer_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/credit_transfer_transfer_change_detail_confirm_cancel" android:layout_weight="1.0" uber:analyticsId="ce5ffb0c-06c5" style="?platformButtonSecondary" />
+            <Space android:id="@id/confirmation_modal_button_space" android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+            <com.ubercab.ui.core.UButton android:id="@id/credit_transfer_ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/credit_transfer_transfer_change_detail_confirm_ok" android:layout_weight="1.0" uber:analyticsId="332f7357-7270" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.payment.credittransfer.transferchange.detail.TransferChangeDetailConfirmView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/root" n1:background="#e5ea3838" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="13.0sp" n1:textColor="@color/white" n1:gravity="center" n1:layout_gravity="center" n1:padding="12.0dip" n1:text="@string/network_not_available" n1:drawableLeft="@drawable/ic_exclamation" n1:drawablePadding="8.0dip" style="@style/WrapContent" />
+</LinearLayout>

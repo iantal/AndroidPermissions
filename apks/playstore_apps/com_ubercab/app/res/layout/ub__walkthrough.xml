@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.uber.walkthrough.WalkthroughView android:theme="@style/Theme.Helix.Dark" android:background="?brandBlack" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UViewPager android:id="@id/walkthrough_view_pager" android:background="?brandTransparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UTabLayout android:layout_gravity="bottom" android:id="@id/walkthrough_indicator" android:background="?android:colorBackground" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorHeight="0.0dip" app:tabBackground="@drawable/ub__walkthrough_indicator_selector" app:tabGravity="center" />
+    </com.ubercab.ui.core.UViewPager>
+    <com.ubercab.ui.core.UImageView android:id="@id/walkthrough_dismiss_button" android:padding="?contentInset" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" android:tint="?iconColor" android:contentDescription="@string/walkthrough_dismiss_button_description" android:layout_marginStart="@dimen/ui__spacing_unit_1x" app:srcCompat="@drawable/ic_close" />
+</com.uber.walkthrough.WalkthroughView>

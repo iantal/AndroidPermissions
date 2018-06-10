@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.suggested_pickups.SuggestedPickupConfirmationView android:theme="@style/Theme.Helix.Light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/confirmation_container" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" uber:analyticsId="5782b1df-7e63">
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorAccent" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/modal_confirmation_content" />
+            <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x">
+                <com.ubercab.ui.core.UButton android:id="@id/confirmation_modal_button_secondary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/suggested_pickup_secondary_button_text" android:layout_weight="1.0" uber:analyticsId="9093bd25-63a4" style="?platformButtonSecondary" />
+                <Space android:id="@id/confirmation_modal_button_space" android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+                <com.ubercab.ui.core.UButton android:id="@id/confirmation_modal_button_primary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/confirm" android:layout_weight="1.0" uber:analyticsId="e70f89cd-3ec5" style="?platformButtonPrimary" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.trip.suggested_pickups.SuggestedPickupConfirmationView>

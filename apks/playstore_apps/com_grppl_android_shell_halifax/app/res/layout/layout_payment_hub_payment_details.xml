@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/paymentHubAmountAndReferenceFieldContainer" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/paymentHubAmountInputFieldContainer" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_content_padding" n1:layout_marginTop="@dimen/fragment_content_padding" n1:layout_marginRight="@dimen/fragment_content_padding">
+            <com.mobile.ui.paymenthub.view.PaymentAmountInputField n1:id="@id/paymentHubAmountAmountInputField" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/payment_hub_amount_field_hint_text" n2:clearButton="true" n2:icon_right="@drawable/all_amount_field_icon" style="@style/Widget.AmountInputField" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <com.mobile.ui.common.view.InputFieldTipView n1:id="@id/paymentHubAmountInputFieldTipView" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/Widget.InputFieldTip" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/paymentHubReferenceInputFieldContainer" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_content_padding" n1:layout_marginTop="@dimen/fragment_content_padding" n1:layout_marginRight="@dimen/fragment_content_padding">
+            <com.mobile.ui.common.view.InputWithHintField n1:id="@id/paymentHubReferenceInputWithHintField" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/payment_hub_reference_input_view_hint_text" n1:maxLength="@integer/add_beneficiary_reference_max_length" n1:digits="@string/reference_field_regex" n1:contentDescription="@string/vtd_accessibility_reference" style="@style/Widget.InputWithHintField" />
+            <com.mobile.ui.common.view.InputFieldTipView n1:id="@id/paymentHubReferenceInputFieldTipView" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:importantForAccessibility="no" style="@style/Widget.InputFieldTip" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.mobile.ui.common.view.CalendarPickerView n3:id="@id/paymentHubCalendarPickerView" n3:visibility="gone" n3:layout_width="fill_parent" n3:layout_height="wrap_content" n3:layout_marginLeft="@dimen/fragment_content_padding" n3:layout_marginTop="@dimen/activity_vertical_margin" n3:layout_marginRight="@dimen/fragment_content_padding" n3:hint="@string/payment_hub_calendar_input_view_hint_text" style="@style/Widget.CalendarPickerView"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <TextView n4:id="@id/paymentHubPaymentDueDate" n4:visibility="gone" n4:layout_width="fill_parent" n4:layout_height="wrap_content" n4:layout_marginTop="@dimen/action_input_field_controller_padding" n4:layout_marginStart="@dimen/fragment_content_padding" n4:layout_marginEnd="@dimen/fragment_content_padding" style="@style/PaymentHubDueDateTextStyle"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <include layout="@layout/layout_payment_hub_standing_order_option" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingLeft="@dimen/screen_content_padding" n1:paddingRight="@dimen/screen_content_padding" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatRadioButton n1:id="@id/transaction_details_redeem_operation_btn" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" n2:buttonTint="@color/main_blue" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center_vertical" n1:id="@id/transaction_details_redeem_operation_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="72.0dip" n1:layout_centerVertical="true" />
+    <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/transaction_details_redeem_operation_amount" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n3:fractionalMode="enabled" n3:textColorAmount="@color/text_dark" n3:textColorCurrency="@color/text_light" n3:textColorFractional="@color/text_light" n3:textColorSign="@color/text_dark" n3:textSizeAmount="@dimen/text_medium" n3:textSizeCurrency="@dimen/text_medium" n3:textSizeFractional="@dimen/text_medium" n3:textSizeSign="@dimen/text_medium" style="@style/SmartMoneyView" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

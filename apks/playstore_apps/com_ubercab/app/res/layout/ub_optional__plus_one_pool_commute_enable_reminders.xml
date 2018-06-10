@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.pool_commute.enable_reminders.PlusOnePoolCommuteEnableRemindersView android:theme="@style/Theme.Helix.Light" android:layout_gravity="bottom" android:orientation="vertical" android:background="?android:colorBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__bottom_panel_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__pool_commute_trip_reminder_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H2.Book" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__pool_commute_trip_reminder_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H5.News" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x">
+            <com.ubercab.ui.core.UButton android:id="@id/ub__pool_commute_trip_reminder_do_not_enable_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" uber:analyticsId="709e2d88-6833" style="?platformButtonSecondary" />
+            <android.support.v4.widget.Space android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+            <com.ubercab.ui.core.UButton android:id="@id/ub__pool_commute_trip_reminder_enable_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" uber:analyticsId="d066d980-efef" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.pool_commute.enable_reminders.PlusOnePoolCommuteEnableRemindersView>

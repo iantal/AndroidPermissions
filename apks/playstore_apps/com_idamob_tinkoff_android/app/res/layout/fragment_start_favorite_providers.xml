@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/bg_top_products" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/text_medium" n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" n1:layout_marginBottom="@dimen/screen_content_padding" n1:text="@string/anonymous_pay_showcase_title_top_payments" />
+    <GridView n1:gravity="center_horizontal" n1:id="@id/favorites_providers_grid_view" n1:layout_width="fill_parent" n1:layout_height="96.0dip" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:verticalSpacing="@dimen/screen_content_padding" n1:stretchMode="spacingWidth" n1:columnWidth="40.0dip" n1:numColumns="6" n1:rowCount="2" />
+    <Button n1:textAppearance="@style/Text.ExtraSmall.White" n1:textColor="@color/black" n1:gravity="center_vertical" n1:layout_gravity="center_horizontal" n1:id="@id/payments_all_providers" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="26.0dip" n1:text="@string/anonymous_pay_showcase_button_all_payments" n1:drawableRight="@drawable/ic_arrow_circle_black" n1:drawablePadding="@dimen/screen_content_padding_half" n1:textAllCaps="true" style="?borderlessButtonStyle" />
+</LinearLayout>

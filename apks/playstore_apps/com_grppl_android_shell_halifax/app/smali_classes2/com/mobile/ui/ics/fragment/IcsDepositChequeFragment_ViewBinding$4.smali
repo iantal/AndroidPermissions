@@ -1,0 +1,173 @@
+.class public Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;
+.super Lbutterknife/internal/DebouncingOnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding;-><init>(Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment;Landroid/view/View;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# static fields
+.field public static b044B044Bыы044B044B044Bы:I = 0x2
+
+.field public static b044Bыыы044B044B044Bы:I = 0x0
+
+.field public static bы044Bыы044B044B044Bы:I = 0x1
+
+.field public static bыыыы044B044B044Bы:I = 0x6
+
+
+# instance fields
+.field public final synthetic this$0:Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding;
+
+.field public final synthetic val$target:Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment;
+
+
+# direct methods
+.method public constructor <init>(Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding;Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->this$0:Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding;
+
+    iput-object p2, p0, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->val$target:Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment;
+
+    invoke-direct {p0}, Lbutterknife/internal/DebouncingOnClickListener;-><init>()V
+
+    return-void
+.end method
+
+.method public static b044Bы044Bы044B044B044Bы()I
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public static bыы044Bы044B044B044Bы()I
+    .locals 1
+
+    const/16 v0, 0x63
+
+    return v0
+.end method
+
+
+# virtual methods
+.method public doClick(Landroid/view/View;)V
+    .locals 3
+
+    const/4 v2, 0x1
+
+    sget v0, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->bыыыы044B044B044Bы:I
+
+    sget v1, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->bы044Bыы044B044B044Bы:I
+
+    add-int/2addr v0, v1
+
+    sget v1, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->bыыыы044B044B044Bы:I
+
+    mul-int/2addr v0, v1
+
+    sget v1, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->b044B044Bыы044B044B044Bы:I
+
+    rem-int/2addr v0, v1
+
+    sget v1, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->b044Bыыы044B044B044Bы:I
+
+    if-eq v0, v1, :cond_0
+
+    :pswitch_0
+    packed-switch v2, :pswitch_data_0
+
+    :goto_0
+    packed-switch v2, :pswitch_data_1
+
+    goto :goto_0
+
+    :pswitch_1
+    invoke-static {}, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->bыы044Bы044B044B044Bы()I
+
+    move-result v0
+
+    sput v0, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->bыыыы044B044B044Bы:I
+
+    const/4 v0, 0x2
+
+    sput v0, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->b044Bыыы044B044B044Bы:I
+
+    :cond_0
+    :try_start_0
+    iget-object v0, p0, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->val$target:Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+
+    invoke-static {}, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->bыы044Bы044B044B044Bы()I
+
+    move-result v1
+
+    invoke-static {}, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->b044Bы044Bы044B044B044Bы()I
+
+    move-result v2
+
+    add-int/2addr v2, v1
+
+    mul-int/2addr v1, v2
+
+    sget v2, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->b044B044Bыы044B044B044Bы:I
+
+    rem-int/2addr v1, v2
+
+    packed-switch v1, :pswitch_data_2
+
+    invoke-static {}, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->bыы044Bы044B044B044Bы()I
+
+    move-result v1
+
+    sput v1, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->bыыыы044B044B044Bы:I
+
+    const/16 v1, 0x1f
+
+    sput v1, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment_ViewBinding$4;->b044Bыыы044B044B044Bы:I
+
+    :pswitch_2
+    :try_start_1
+    invoke-virtual {v0}, Lcom/mobile/ui/ics/fragment/IcsDepositChequeFragment;->onFrontImageClicked()V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    throw v0
+
+    :catch_1
+    move-exception v0
+
+    throw v0
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+
+    :pswitch_data_2
+    .packed-switch 0x0
+        :pswitch_2
+    .end packed-switch
+.end method

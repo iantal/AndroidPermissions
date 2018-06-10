@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/content" n1:background="?selectableItemBackground" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center_vertical" n1:paddingLeft="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_account_details_documents" n1:tint="@color/main_blue" />
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:layout_gravity="center_vertical" n1:id="@id/name" n1:paddingLeft="@dimen/offset_from_edge_large" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:gravity="center_vertical" n1:id="@id/description" n1:padding="@dimen/screen_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <include n1:id="@id/divider" layout="@layout/inc_divider_margin" />
+</LinearLayout>

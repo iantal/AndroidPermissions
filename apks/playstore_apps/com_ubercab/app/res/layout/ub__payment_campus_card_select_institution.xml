@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.campuscard.operation.selectinstitution.CampusCardSelectInstitutionView android:orientation="vertical" android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:analyticsId="738fc266-1410"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/fixed_header" />
+    <com.ubercab.ui.core.UFrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__campus_card_loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.ubercab.ui.core.URecyclerView android:id="@id/ub__campus_card_select_institutions_list" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.presidio.payment.campuscard.operation.selectinstitution.CampusCardSelectInstitutionView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tags" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.number26.machete.android.ui.components.TransactionDetailsSection android:id="@id/section" android:layout_width="fill_parent" android:layout_height="wrap_content" app:icon="@drawable/icon_tag">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+            <de.number26.machete.android.ui.components.TagsView android:textSize="@dimen/textSizePrimary" android:textColor="@color/textColorPrimary" android:id="@id/input" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:cursorVisible="false" android:drawablePadding="@dimen/transactions_padding" android:layout_weight="1.0" />
+            <ImageView android:id="@id/edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/icon_pen" android:contentDescription="@string/transaction_details_tags_edit" />
+        </LinearLayout>
+    </de.number26.machete.android.ui.components.TransactionDetailsSection>
+    <de.number26.machete.android.ui.components.TransactionDetailsActionButton android:id="@id/action" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/transaction_details_tags_empty" app:actionIcon="@drawable/icon_add" app:icon="@drawable/icon_tag" />
+</LinearLayout>

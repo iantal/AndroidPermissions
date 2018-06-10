@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/tile_arrangement_very_small_margin"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TableRow n1:paddingTop="@dimen/tile_arrangement_very_small_margin">
+        <TextView n1:id="@id/accountTileCreditLimitLabel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="0.0dip" n1:layout_marginRight="@dimen/tile_arrangement_large_margin" n1:text="@string/tile_arrangement_credit_limit" style="@style/Tile.ArrangementDetailsLabel" />
+        <TextView n1:id="@id/accountCreditLimitText" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/Tile.ArrangementDetails" />
+    </TableRow>
+    <TableRow n1:paddingTop="@dimen/tile_arrangement_very_small_margin">
+        <TextView n1:id="@id/accountTileAvailableCreditLabel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="0.0dip" n1:layout_marginRight="@dimen/tile_arrangement_large_margin" n1:text="@string/tile_arrangement_available_credit" style="@style/Tile.ArrangementDetailsLabel" />
+        <TextView n1:id="@id/accountTileAvailableCreditText" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/Tile.ArrangementDetails" />
+    </TableRow>
+    <TableRow n1:paddingTop="@dimen/tile_arrangement_very_small_margin">
+        <TextView n1:id="@id/accountTileOverdueMoneyLabel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="0.0dip" n1:layout_marginRight="@dimen/tile_arrangement_large_margin" n1:text="@string/tile_arrangement_overdue_money" style="@style/Tile.ArrangementDetailsLabel" />
+        <TextView n1:id="@id/accountTileOverdueMoneyText" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/Tile.ArrangementDetails" />
+    </TableRow>
+</TableLayout>

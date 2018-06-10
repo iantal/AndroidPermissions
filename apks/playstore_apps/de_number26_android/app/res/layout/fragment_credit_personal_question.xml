@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:id="@id/creditPersonalQuestion" android:paddingTop="@dimen/creditScreenPaddingTopBottom" android:minLines="2" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditTitle" />
+        <ImageView android:id="@id/creditPersonalQuestionImage" android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="100.0dip" android:layout_weight="1.0" style="@style/creditPersonalQuestionImage" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/creditPersonalQuestionViewAll" android:visibility="invisible" android:layout_marginBottom="8.0dip" style="@style/creditPersonalQuestionViewAllButton" />
+        <LinearLayout android:id="@id/creditPersonalQuestionAnswers" style="@style/creditPersonalQuestionAnswersLayout" />
+    </LinearLayout>
+</ScrollView>

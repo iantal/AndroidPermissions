@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="16.0dip">
+        <com.mklimek.frameviedoview.FrameVideoView android:layout_gravity="bottom|center" android:id="@id/videoOverdraftCalculation" android:layout_width="56.0dip" android:layout_height="68.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="24.0sp" android:layout_gravity="center" android:id="@id/textOverdraftCalculationHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/overdraft_calculation_header" fontPath="@string/font_medium" />
+    <TextView android:textSize="18.0sp" android:layout_gravity="center" android:id="@id/textOverdraftCalculationBody" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/overdraft_calculation_body" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" fontPath="@string/font_regular" style="@style/creditTitle" />
+</LinearLayout>

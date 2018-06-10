@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.request_error_handler.low_balance.LowBalanceRequestErrorHandlerView android:orientation="vertical" android:background="?android:windowBackground" android:padding="?contentInset" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="001fe66f-f999"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/insufficient_funds" style="@style/Platform.TextAppearance.H2.Book" />
+    <com.ubercab.ui.core.UTextView android:gravity="start" android:id="@id/ub__low_balance_description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.P" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__low_balance_current_balance_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x">
+        <com.ubercab.ui.core.UTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/current_balance_h" android:layout_weight="1.0" style="@style/Platform.TextAppearance.P" />
+        <com.ubercab.ui.core.UTextView android:textColor="?colorNegative" android:id="@id/ub__current_balance_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ub__no_amount_symbol" android:layout_weight="1.0" style="@style/Platform.TextAppearance.P" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__low_balance_minimum_balance_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x">
+        <com.ubercab.ui.core.UTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/minimum_balance" android:layout_weight="1.0" style="@style/Platform.TextAppearance.P" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__minimum_balance_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ub__no_amount_symbol" android:layout_weight="1.0" style="@style/Platform.TextAppearance.P" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UButton android:id="@id/ub__button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/low_balance_close" style="?platformButtonPrimary" />
+</com.ubercab.presidio.app.optional.root.main.ride.request.request_error_handler.low_balance.LowBalanceRequestErrorHandlerView>

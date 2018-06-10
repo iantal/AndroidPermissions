@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.commit451.foregroundviews.ForegroundLinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/provider_header_root_layout" n1:paddingLeft="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/provider_header_height" n1:foreground="?selectableItemBackground"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ToggleButton n1:enabled="false" n1:id="@id/provider_header_expand_btn" n1:background="@null" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/side_padding" n1:checked="true" n1:textOn="" n1:textOff="" n1:minWidth="0.0dip" n1:minHeight="0.0dip" />
+    <LinearLayout n1:gravity="center|left" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_weight="1.0">
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/provider_header_optional_text" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLines="1" n1:alpha="0.5" />
+        <TextView n1:textAppearance="@style/Text.Default.White" n1:ellipsize="end" n1:id="@id/provider_header_name_text" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLines="2" />
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:ellipsize="end" n1:id="@id/provider_header_bottom_text" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="2" n1:alpha="0.7" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/provider_header_bottom_money" n1:paddingLeft="@dimen/offset_from_edge_quarter" n1:visibility="gone" n2:textColorAmount="@color/white" n2:textColorCurrency="@color/white" n2:textColorFractional="@color/white" n2:textSizeAmount="@dimen/text_extra_small" n2:textSizeCurrency="@dimen/text_extra_small" n2:textSizeFractional="@dimen/text_extra_small" style="@style/SmartMoneyView" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout n1:id="@id/provider_header_show_description_icon_container" n1:padding="12.0dip" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="-16.0dip" n1:foreground="?selectableItemBackgroundBorderless">
+        <ImageView n1:id="@id/provider_header_show_description_icon" n1:layout_width="22.0dip" n1:layout_height="22.0dip" />
+    </FrameLayout>
+    <ImageView n1:id="@id/provider_header_logo" n1:layout_width="@dimen/provider_header_large_logo_size" n1:layout_height="@dimen/provider_header_large_logo_size" n1:layout_marginRight="@dimen/provider_header_big_logo_margin" />
+</com.commit451.foregroundviews.ForegroundLinearLayout>

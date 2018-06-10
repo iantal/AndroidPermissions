@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UFrameLayout android:layout_width="@dimen/ui__avatar_medium" android:layout_height="@dimen/ui__avatar_medium">
+        <com.ubercab.ui.core.UImageView android:id="@id/ub__cobrandcard_offer_benefit_item_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ub__cobrandcard_benefit_percent" android:background="@drawable/ub__cobrandcard_offer_benefit_tile" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__cobrandcard_benefit_item_percent_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Cobrandcard.Offer.H1.Book.Inverse" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__cobrandcard_benefit_item_cashback_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cobrandcard_offer_cashback_label" style="@style/Cobrandcard.Offer.H6.News.Inverse" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/ui__spacing_unit_2x" android:paddingEnd="0.0dip">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__cobrandcard_benefit_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Cobrandcard.Offer.H4" />
+        <com.ubercab.ui.core.UTextView android:linksClickable="true" android:id="@id/ub__cobrandcard_benefit_item_description" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Cobrandcard.Offer.P" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

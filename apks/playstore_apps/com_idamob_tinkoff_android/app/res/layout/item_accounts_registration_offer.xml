@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center" n1:background="@drawable/divider_up_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/account_height" n1:text="@string/accounts_registration_label" />
+    <Button n1:id="@id/button_register" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="36.0dip" n1:text="@string/accounts_registration_action_button" style="@style/Button.Yellow" />
+</LinearLayout>

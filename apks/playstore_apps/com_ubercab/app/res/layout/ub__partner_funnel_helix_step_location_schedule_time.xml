@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ub__partner_funnel_scheduler_date_background" android:background="@drawable/ub__partner_funnel_helix_time_background" android:padding="?gutterSize" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ub__partner_funnel_large_row_divider_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:textColor="@drawable/ub__partner_funnel_helix_date_primary_text_color" android:gravity="center" android:id="@id/ub__partner_funnel_time_view_holder_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Funnel.Helix.TextAppearance.H3.News" />
+</LinearLayout>

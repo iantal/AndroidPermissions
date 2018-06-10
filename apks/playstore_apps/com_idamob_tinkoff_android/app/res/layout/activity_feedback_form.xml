@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:fillViewport="true" style="@style/MatchParent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:paddingTop="@dimen/offset_from_edge" style="@style/VerticalWrapping">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/smart_fields_group" n1:paddingBottom="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:inputType="textEmailAddress" n2:fieldKey="email" n2:fieldTitle="@string/ffa_email_hint" n2:fieldType="text" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:fieldKey="topic" n3:fieldTitle="@string/ffa_topic_title" n3:fieldType="simpleList" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <ru.tinkoff.core.smartfields.view.SmartFieldView n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:fieldKey="subject" n4:fieldTitle="@string/ffa_subject_title" n4:fieldType="simpleList" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n5:fieldKey="message" n5:fieldShortValueMultiline="true" n5:fieldTitle="@string/ffa_message_hint" n5:fieldType="text" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <Button n1:id="@id/ffa_submit" n1:text="@string/ffa_send" style="@style/Button.Yellow.Normal" />
+    </LinearLayout>
+</ScrollView>

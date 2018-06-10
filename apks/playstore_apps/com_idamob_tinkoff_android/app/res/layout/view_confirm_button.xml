@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n1:background="@drawable/background_confirm_button_default" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_gravity="center" n1:id="@id/icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_apply_big" />
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/progress" n1:visibility="gone" n1:layout_width="28.0dip" n1:layout_height="28.0dip" n2:ringColor="@color/white" n2:ringWidth="4.0dip" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</merge>

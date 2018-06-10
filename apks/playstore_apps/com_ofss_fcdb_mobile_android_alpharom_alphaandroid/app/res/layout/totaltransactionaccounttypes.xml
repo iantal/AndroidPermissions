@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/totaltransactionhiddenparameter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/imageviewaccounttype" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/totaltransactionLabelContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:weightSum="1.0" android:layout_toRightOf="@id/imageviewaccounttype" android:layout_centerVertical="true">
+        <TextView android:textSize="13.0sp" android:textColor="@color/alpha_blue" android:id="@id/totaltransactionLabel1" android:background="@color/transparent" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/alpha_blue" android:gravity="right" android:id="@id/totaltransactionLabel2" android:background="@color/transparent" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/totaltransactionLabelContainer2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:weightSum="1.0" android:layout_below="@id/totaltransactionLabelContainer">
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/totaltransactionLabel3" android:background="@color/transparent" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/totaltransactionLabel4" android:background="@color/transparent" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_weight="0.5" />
+    </LinearLayout>
+    <ImageView android:id="@id/totaltransactionimageviewselector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/minheightpillar" android:layout_width="1.0dip" android:layout_height="50.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_alignParentLeft="true" />
+    <ImageView android:background="@color/alpha_dark_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

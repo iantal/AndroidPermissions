@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item>
+        <shape>
+            <solid n1:color="@color/chat_background"
+              xmlns:n1="http://schemas.android.com/apk/res/android" />
+            <padding n2:left="2.0dip" n2:top="2.0dip" n2:right="2.0dip" n2:bottom="2.0dip"
+              xmlns:n2="http://schemas.android.com/apk/res/android" />
+            <corners n3:radius="10.0dip"
+              xmlns:n3="http://schemas.android.com/apk/res/android" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid n4:color="@color/chat_message_operator_rating_dot_bg"
+              xmlns:n4="http://schemas.android.com/apk/res/android" />
+            <corners n5:radius="8.0dip"
+              xmlns:n5="http://schemas.android.com/apk/res/android" />
+            <size n6:height="16.0dip" n6:width="25.0dip"
+              xmlns:n6="http://schemas.android.com/apk/res/android" />
+        </shape>
+    </item>
+</layer-list>

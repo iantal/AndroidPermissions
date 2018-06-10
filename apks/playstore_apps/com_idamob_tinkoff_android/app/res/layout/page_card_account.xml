@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="@dimen/carousel_height_accounts_simple"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small" n1:textColor="@color/white_half_transparent" n1:ellipsize="end" n1:layout_gravity="center_horizontal" n1:id="@id/account" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="24.0dip" n1:maxLines="1" />
+    <ru.tinkoff.core.money.view.MoneyAmountView n1:gravity="center_vertical" n1:layout_gravity="center_horizontal" n1:id="@id/account_amount" n1:layout_width="wrap_content" n1:layout_height="40.0dip" n1:layout_marginTop="4.0dip" n2:fontPath="@string/roboto" n2:fractionalMode="enabled_if_non_empty_total" n2:textColor="@color/white" n2:textColorCurrency="@color/white_transparent_30" n2:textColorFractional="@color/white_transparent_30" n2:textSize="34.0sp" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textAppearance="@style/Text.Header" n1:textColor="@color/white_half_transparent" n1:ellipsize="end" n1:layout_gravity="center_horizontal" n1:id="@id/external_account_name" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" />
+</LinearLayout>

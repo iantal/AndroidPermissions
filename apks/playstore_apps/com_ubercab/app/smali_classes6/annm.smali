@@ -1,0 +1,36 @@
+.class public Lannm;
+.super Lamsz;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lamsz<",
+        "Lcom/ubercab/presidio/profiles/model/AccessoryViewContext;",
+        "Lannk;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Ljyi;Lamte;Lamtd;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljyi;",
+            "Lamte;",
+            "Lamtd<",
+            "Lcom/ubercab/presidio/profiles/model/AccessoryViewContext;",
+            "Lannk;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 25
+    invoke-direct {p0, p1, p2, p3}, Lamsz;-><init>(Ljyi;Lamte;Lamtd;)V
+
+    return-void
+.end method

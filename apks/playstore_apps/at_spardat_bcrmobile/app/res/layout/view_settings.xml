@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/DashboardTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/view_header" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/click24_header_view" />
+    <at.spardat.bcrmobile.view.widget.NonFocusingScrollView android:focusable="false" android:fadingEdge="none" android:layout_marginTop="1.0dip" android:fillViewport="true" style="@style/AllMatchParent">
+        <LinearLayout android:orientation="vertical" android:padding="10.0dip" style="@style/ApplicationTheme">
+            <TextView android:textColor="@color/text_title" android:paddingLeft="5.0dip" android:paddingBottom="5.0dip" android:text="@string/general_setting" style="@style/TextBoldMatchWrap" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/roundrect_shape" android:padding="2.0dip" style="@style/MatchParentWrapContent">
+                <LinearLayout android:background="@drawable/list_first_item_selector" android:clickable="true" style="@style/SettingRowStyle">
+                    <RelativeLayout style="@style/AllWrapContent">
+                        <ImageView android:id="@id/img_mailbox" android:background="@drawable/ic_setting_mailbox" android:contentDescription="@string/no_description" style="@style/AllWrapContent" />
+                        <TextView android:textColor="@color/text_on_dark" android:gravity="center" android:id="@id/tv_mailbox_count" android:background="@drawable/message_count_background" android:visibility="gone" android:layout_alignTop="@id/img_mailbox" android:layout_alignRight="@id/img_mailbox" style="@style/AllWrapContent.TextVerySmallBold" />
+                    </RelativeLayout>
+                    <TextView android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@id/tv_mailbox" android:layout_marginLeft="10.0dip" android:text="@string/mailbox_home_title" android:drawableRight="@drawable/right_arrow_blue" style="@style/TextSmallBoldMatchWrap" />
+                </LinearLayout>
+                <View style="@style/ListSeparator" />
+                <TextView android:id="@id/tv_language" android:background="@drawable/list_last_item_selector" android:text="@string/label_language_change" android:drawableLeft="@drawable/ic_setting_language" style="@style/SettingRowStyle" />
+            </LinearLayout>
+            <TextView android:textColor="@color/text_title" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:text="@string/authentication_setting" style="@style/TextBoldMatchWrap" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/roundrect_shape" android:padding="2.0dip" style="@style/MatchParentWrapContent">
+                <TextView android:id="@id/tv_phone_number_change" android:background="@drawable/list_first_item_selector" android:text="@string/label_phone_number_change" android:drawableLeft="@drawable/ic_setting_phone" style="@style/SettingRowStyle" />
+                <View style="@style/ListSeparator" />
+                <TextView android:id="@id/tv_password_change" android:background="@drawable/list_default_selector" android:text="@string/label_password_change" android:drawableLeft="@drawable/ic_setting_password" style="@style/SettingRowStyle" />
+                <View style="@style/ListSeparator" />
+                <TextView android:id="@id/tv_alias_change" android:background="@drawable/list_last_item_selector" android:text="@string/label_alias_change" android:drawableLeft="@drawable/ic_setting_alias" style="@style/SettingRowStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </at.spardat.bcrmobile.view.widget.NonFocusingScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.product_switch.standard.PlusOneProductSwitchStandardView android:theme="@style/Theme.Helix.Light" android:layout_gravity="bottom" android:orientation="vertical" android:background="?android:colorBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.presidio.pricing.core.PricingTextView android:id="@id/ub__product_switch_standard_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H2.Book" />
+    <com.ubercab.presidio.pricing.core.PricingTextView android:id="@id/ub__product_switch_standard_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H2.Book" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__product_switch_standard_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H5.News" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x">
+        <com.ubercab.ui.core.UButton android:id="@id/ub__product_switch_opt_out" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" uber:analyticsId="4d98d6f2-af8d" style="?platformButtonSecondary" />
+        <android.support.v4.widget.Space android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__product_switch_opt_in" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" uber:analyticsId="b51c4e0d-7a93" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.product_switch.standard.PlusOneProductSwitchStandardView>

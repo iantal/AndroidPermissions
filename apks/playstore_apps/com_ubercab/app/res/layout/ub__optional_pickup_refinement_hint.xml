@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.pickup_refinement.HintView android:theme="@style/Theme.Helix.Dark" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardElevation="@dimen/ub__pickup_refinement_hint_shadow" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UFrameLayout android:background="?brandGrey80" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.6">
+        <com.ubercab.ui.core.UTextView android:id="@id/hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary" />
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.pickup_refinement.HintView>

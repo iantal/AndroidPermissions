@@ -1,0 +1,11 @@
+.class interface abstract Lmhl;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a()V
+.end method
+
+.method public abstract a(Lcom/uber/model/core/generated/rt/colosseum/PickupLocation;)V
+.end method

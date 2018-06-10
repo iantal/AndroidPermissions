@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="c231ed34-8ef5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.P.Book" android:id="@id/ub__commute_driver_ineligible_message_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?gutterSize" android:text="@string/ub__commute_dialog_r2d_ineligible_description" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__commute_driver_inelligble_ok_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_dialog_r2d_ineligible_positive" uber:analyticsId="0845c73d-96ec" style="@style/Platform.Button.Primary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

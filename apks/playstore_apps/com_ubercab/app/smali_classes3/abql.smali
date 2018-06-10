@@ -1,0 +1,11 @@
+.class public interface abstract Labql;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a()V
+.end method
+
+.method public abstract a(Lcom/uber/model/core/generated/rtapi/services/silkscreen/CreditCardHint;)V
+.end method

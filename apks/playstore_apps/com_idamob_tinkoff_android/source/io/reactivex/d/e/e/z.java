@@ -1,0 +1,186 @@
+package io.reactivex.d.e.e;
+
+import io.reactivex.c.h;
+import io.reactivex.d.j.g;
+import io.reactivex.f;
+import io.reactivex.r;
+import io.reactivex.u;
+import io.reactivex.w;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
+
+public final class z<T>
+  extends io.reactivex.b
+  implements io.reactivex.d.c.d<T>
+{
+  final u<T> a;
+  final h<? super T, ? extends f> b;
+  final boolean c;
+  
+  public z(u<T> paramU, h<? super T, ? extends f> paramH)
+  {
+    this.a = paramU;
+    this.b = paramH;
+    this.c = false;
+  }
+  
+  protected final void a(io.reactivex.d paramD)
+  {
+    this.a.b(new a(paramD, this.b, this.c));
+  }
+  
+  public final r<T> u_()
+  {
+    return io.reactivex.g.a.a(new y(this.a, this.b, this.c));
+  }
+  
+  static final class a<T>
+    extends AtomicInteger
+    implements io.reactivex.b.b, w<T>
+  {
+    private static final long serialVersionUID = 8443155186132538303L;
+    final io.reactivex.d a;
+    final io.reactivex.d.j.c b;
+    final h<? super T, ? extends f> c;
+    final boolean d;
+    final io.reactivex.b.a e;
+    io.reactivex.b.b f;
+    volatile boolean g;
+    
+    a(io.reactivex.d paramD, h<? super T, ? extends f> paramH, boolean paramBoolean)
+    {
+      this.a = paramD;
+      this.c = paramH;
+      this.d = paramBoolean;
+      this.b = new io.reactivex.d.j.c();
+      this.e = new io.reactivex.b.a();
+      lazySet(1);
+    }
+    
+    public final void a(io.reactivex.b.b paramB)
+    {
+      if (io.reactivex.d.a.c.a(this.f, paramB))
+      {
+        this.f = paramB;
+        this.a.a(this);
+      }
+    }
+    
+    final void a(a<T>.a paramA)
+    {
+      this.e.c(paramA);
+      w_();
+    }
+    
+    final void a(a<T>.a paramA, Throwable paramThrowable)
+    {
+      this.e.c(paramA);
+      a(paramThrowable);
+    }
+    
+    public final void a(Throwable paramThrowable)
+    {
+      if (g.a(this.b, paramThrowable))
+      {
+        if (this.d) {
+          if (decrementAndGet() == 0)
+          {
+            paramThrowable = g.a(this.b);
+            this.a.a(paramThrowable);
+          }
+        }
+        do
+        {
+          return;
+          b();
+        } while (getAndSet(0) <= 0);
+        paramThrowable = g.a(this.b);
+        this.a.a(paramThrowable);
+        return;
+      }
+      io.reactivex.g.a.a(paramThrowable);
+    }
+    
+    public final void a_(T paramT)
+    {
+      try
+      {
+        paramT = (f)io.reactivex.d.b.b.a(this.c.a(paramT), "The mapper returned a null CompletableSource");
+        getAndIncrement();
+        a localA = new a();
+        if ((!this.g) && (this.e.a(localA))) {
+          paramT.b(localA);
+        }
+        return;
+      }
+      catch (Throwable paramT)
+      {
+        io.reactivex.exceptions.a.a(paramT);
+        this.f.b();
+        a(paramT);
+      }
+    }
+    
+    public final void b()
+    {
+      this.g = true;
+      this.f.b();
+      this.e.b();
+    }
+    
+    public final boolean c()
+    {
+      return this.f.c();
+    }
+    
+    public final void w_()
+    {
+      if (decrementAndGet() == 0)
+      {
+        Throwable localThrowable = g.a(this.b);
+        if (localThrowable != null) {
+          this.a.a(localThrowable);
+        }
+      }
+      else
+      {
+        return;
+      }
+      this.a.a();
+    }
+    
+    final class a
+      extends AtomicReference<io.reactivex.b.b>
+      implements io.reactivex.b.b, io.reactivex.d
+    {
+      private static final long serialVersionUID = 8606673141535671828L;
+      
+      a() {}
+      
+      public final void a()
+      {
+        z.a.this.a(this);
+      }
+      
+      public final void a(io.reactivex.b.b paramB)
+      {
+        io.reactivex.d.a.c.b(this, paramB);
+      }
+      
+      public final void a(Throwable paramThrowable)
+      {
+        z.a.this.a(this, paramThrowable);
+      }
+      
+      public final void b()
+      {
+        io.reactivex.d.a.c.a(this);
+      }
+      
+      public final boolean c()
+      {
+        return io.reactivex.d.a.c.a((io.reactivex.b.b)get());
+      }
+    }
+  }
+}

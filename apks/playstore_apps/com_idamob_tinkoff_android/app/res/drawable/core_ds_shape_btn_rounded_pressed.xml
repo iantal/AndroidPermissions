@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape>
+    <solid n1:color="@color/core_ds_button_pressed"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <stroke n2:width="@dimen/core_ds_btn_outline_width" n2:color="@color/core_ds_n4"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <corners n3:topLeftRadius="@dimen/core_ds_button_height_half" n3:topRightRadius="@dimen/core_ds_button_height_half" n3:bottomLeftRadius="@dimen/core_ds_button_height_half" n3:bottomRightRadius="@dimen/core_ds_button_height_half"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</shape>

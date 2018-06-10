@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/ub__card_webview_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/ub__card_message_webview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.ui.core.ULinearLayout>

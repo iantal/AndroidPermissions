@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:animateLayoutChanges="true" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/point_map_header" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/map_poi_header_height" />
+    <include layout="@layout/inc_divider" />
+    <android.support.v4.widget.NestedScrollView n1:id="@id/point_map_scroll" n1:paddingBottom="@dimen/offset_from_edge_half" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ru.tinkoff.core.smartfields.view.BrickLayout n1:orientation="vertical" n1:id="@id/point_map_content" n2:articleOffset="@dimen/offset_from_edge" style="@style/VerticalWrapping" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

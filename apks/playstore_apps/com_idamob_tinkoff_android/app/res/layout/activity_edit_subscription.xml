@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" style="@style/MatchParent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar n1:id="@id/edit_subscription_toolbar" n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" n2:navigationIcon="@drawable/ic_close_white" n2:titleTextColor="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="vertical" n1:id="@id/edit_subscription_header_fields_container" n1:background="@color/n7" n1:paddingTop="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <fragment n1:name="ru.tcsbank.mb.ui.fragments.operation.PaymentFieldsFragment" n1:id="@id/edit_subscription_payment_fields" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="24.0dip" />
+            <fragment n1:name="ru.tcsbank.mb.ui.subscriptions.manage.SubscriptionAutopaySettingsFragment" n1:id="@id/edit_subscription_autopay_settings_fragment" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <include layout="@layout/inc_divider_margin" />
+            <TextView n1:textAppearance="@style/DarkTextItem" n1:textColor="@color/error_red" n1:gravity="center_vertical" n1:id="@id/edit_subscription_delete" n1:background="?selectableItemBackground" n1:paddingLeft="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:layout_marginBottom="40.0dip" n1:text="@string/subscription_edit_delete" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

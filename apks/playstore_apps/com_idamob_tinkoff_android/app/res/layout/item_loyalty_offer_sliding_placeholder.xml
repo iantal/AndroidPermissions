@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingLeft="4.0dip" n1:paddingRight="4.0dip" n1:layout_width="@dimen/loyalty_offer_sliding_block_width" n1:layout_height="156.0dip" n1:layout_marginBottom="16.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:background="@color/placeholder_item_dark" n1:layout_width="fill_parent" n1:layout_height="@dimen/loyalty_offer_sliding_image_height" />
+    <View n1:background="@color/placeholder_item_dark" n1:layout_width="fill_parent" n1:layout_height="30.0dip" n1:layout_marginTop="9.0dip" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/parent_view" n1:background="?android:selectableItemBackground" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView n1:id="@id/switch_icon" n1:visibility="gone" n1:layout_width="24.0dip" n1:layout_height="24.0dip" n1:layout_marginRight="32.0dip" n1:layout_centerVertical="true" n2:tint="@color/main_blue" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:textColor="@color/selector_text_dark" n1:id="@id/subscribe_title" n1:paddingTop="@dimen/offset_from_edge_small" n1:paddingBottom="@dimen/offset_from_edge_small" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_toLeftOf="@id/help_btn" n1:layout_toRightOf="@id/switch_icon" n1:layout_centerVertical="true" />
+        <ImageButton n1:id="@id/help_btn" n1:layout_marginRight="@dimen/screen_content_margin_half" n1:layout_toLeftOf="@id/subscribe_progress_switcher" n1:layout_centerVertical="true" style="@style/ActivityCardAccountSettings.WidgetEditServiceImageButton" />
+        <ViewSwitcher n1:id="@id/subscribe_progress_switcher" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:inAnimation="@anim/fade_in_400" n1:layout_alignParentRight="true" n1:layout_centerVertical="true">
+            <android.support.v7.widget.SwitchCompat n1:layout_gravity="center" n1:id="@id/subscribe_toggle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/subscription_progress" n1:visibility="invisible" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+        </ViewSwitcher>
+    </RelativeLayout>
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Hint" n1:textSize="12.0sp" n1:textColorLink="@color/text_hint" n1:id="@id/subscribe_description" n1:padding="16.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+</LinearLayout>

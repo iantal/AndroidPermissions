@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:id="@id/smart_fields_group" style="@style/ScreenContent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:fieldKey="period" n2:fieldTitle="@string/repeat_template_regular_period" n2:fieldType="simpleList" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:fieldKey="week_day" n3:fieldTitle="@string/repeat_template_regular_period_week_day_hint" n3:fieldType="simpleList" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:fieldKey="month_day" n4:fieldTitle="@string/repeat_template_regular_period_choose_date" n4:fieldType="simpleList" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n5:fieldClass="ru.tcsbank.mb.ui.smartfields.DateWithStringDefaultValueSmartField" n5:fieldKey="end_date" n5:fieldTitle="@string/repeat_template_regular_end_date" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:inputType="numberDecimal" n6:fieldClass="ru.tinkoff.core.smartfields.api.fields.MoneyInputSmartField" n6:fieldKey="amount" n6:fieldTitle="@string/pcf_pay_amount_hint" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

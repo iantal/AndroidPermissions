@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UFrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="efe16b3f-b108"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/pass_offer_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="?gutterSize">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/pass_offer_upper_container" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/offer_upper_line1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.News" />
+            <com.ubercab.ui.core.UTextView android:id="@id/offer_upper_line2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/pass_offer_lower_container" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/offer_lower_line1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Primary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/offer_lower_line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H6.News.Primary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/offer_lower_line3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H6.News.Primary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.UFrameLayout>

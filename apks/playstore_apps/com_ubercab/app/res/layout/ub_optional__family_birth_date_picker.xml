@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.family.invitation.date_picker.BirthDatePickerView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/fixed_header" />
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__family_birth_date_linear_layout" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_8x" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="?contentInset" android:paddingEnd="?contentInset">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__family_teen_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__family_teen_birth_date" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/select_date_of_birth" uber:analyticsId="dfb765e7-c131" style="@style/Platform.TextAppearance.H4.News" />
+            <com.ubercab.ui.core.UPlainView android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+            <com.ubercab.ui.core.UTextView android:paddingTop="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_teen_enter_dob" style="@style/Platform.TextAppearance.H5.News.Tertiary" />
+            <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.ubercab.ui.core.UButton android:enabled="false" android:layout_gravity="bottom" android:id="@id/ub__family_birth_date_done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?contentInset" android:layout_marginBottom="?contentInset" android:text="@string/invite_done" style="?platformButtonPrimary" />
+            </com.ubercab.ui.core.UFrameLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.presidio.family.invitation.date_picker.BirthDatePickerView>

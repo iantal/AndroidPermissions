@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/MatchParent">
+    <LinearLayout n1:orientation="vertical" n1:paddingBottom="@dimen/offset_from_edge" style="@style/VerticalWrapping"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <FrameLayout n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" n1:minHeight="@dimen/qr_code_atm" style="@style/VerticalWrapping">
+            <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@android:id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+            <ImageView n1:layout_gravity="center" n1:id="@id/qr_code_image" n1:layout_width="@dimen/qr_code_atm" n1:layout_height="@dimen/qr_code_atm" />
+        </FrameLayout>
+        <include n1:id="@id/divider_top" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" layout="@layout/inc_divider" />
+        <TableLayout n1:layout_marginTop="@dimen/screen_content_padding_medium" n1:layout_marginBottom="@dimen/screen_content_padding_medium" n1:stretchColumns="*" style="@style/VerticalWrapping">
+            <TableRow>
+                <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:gravity="center" n1:layout_width="0.0dip" n1:text="@string/view_qr_info_sum_hint" />
+                <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:gravity="center" n1:layout_width="0.0dip" n1:text="@string/view_qr_info_expire_date_hint" />
+                <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:gravity="center" n1:layout_width="0.0dip" n1:text="@string/view_qr_info_account_name_hint" />
+            </TableRow>
+            <TableRow>
+                <TextView n1:textAppearance="@style/Text.Small.Dark" n1:gravity="center" n1:id="@id/info_sum" n1:layout_width="0.0dip" />
+                <TextView n1:textAppearance="@style/Text.Small.Dark" n1:gravity="center" n1:id="@id/info_expire_date" n1:layout_width="0.0dip" />
+                <TextView n1:textAppearance="@style/Text.Small.Dark" n1:gravity="center" n1:id="@id/info_card_name" n1:layout_width="0.0dip" />
+            </TableRow>
+        </TableLayout>
+        <include n1:id="@id/divider_center" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" layout="@layout/inc_divider" />
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center|left" n1:id="@id/title_currency" n1:background="?selectableItemBackground" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="64.0dip" />
+        <include n1:id="@id/divider_bottom" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" layout="@layout/inc_divider" />
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:id="@id/list_note" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" n1:text="@string/view_qr_qrs_list_note" style="@style/VerticalWrapping" />
+        <Button n1:enabled="false" n1:id="@id/btn_save_qr_code" n1:text="@string/view_qr_save_image_button" style="@style/Button.Yellow" />
+    </LinearLayout>
+</ScrollView>

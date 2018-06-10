@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.time.TripTimeView android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__trip_time_icon" android:layout_width="?avatarMicro" android:layout_height="?avatarMicro" android:layout_marginTop="?contentInset" android:layout_marginBottom="?contentInset" android:tint="?brandGrey60" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" app:srcCompat="@drawable/ub__ic_eta_16" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingTop="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingEnd="?contentInset">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_time_text" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trip_etd_state_loading" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Primary" />
+        <com.ubercab.ui.core.ULinearLayout android:id="@id/ub__trip_time_subtitle_container" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UFrameLayout android:layout_gravity="center_vertical" android:id="@id/ub__trip_time_share_button_container" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.time.TripTimeView>

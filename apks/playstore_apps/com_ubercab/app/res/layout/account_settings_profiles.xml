@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.account_settings.settings_section.profiles.ProfilesSettingsSectionView android:orientation="vertical" android:background="?android:colorBackground" android:paddingTop="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub_profile_settings_header" android:paddingTop="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profiles" android:paddingStart="?contentInset" android:paddingEnd="?contentInset" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    <com.ubercab.ui.core.URecyclerView android:id="@id/ub__profile_settings_list_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__profile_settings_list_onboarding_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__profile_footer_text" android:padding="?contentInset" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_list_footer_text" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+</com.ubercab.presidio.app.optional.root.main.account_settings.settings_section.profiles.ProfilesSettingsSectionView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.product_options.capacity.selection.CapacitySelectionProductOptionView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="?selectableItemBackground" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:analyticsId="2dfb2d30-e629"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_1x" android:importantForAccessibility="no" app:srcCompat="@drawable/ub__ic_person" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__capacity_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" style="@style/Platform.TextAppearance.H6.News.Primary" />
+</com.ubercab.presidio.product_options.capacity.selection.CapacitySelectionProductOptionView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.socialprofiles.question.selection_options.user_input.SocialProfilesQuestionSelectionOptionsWithUserInputView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" style="@style/Base.Theme.Platform.Light">
+        <com.ubercab.socialprofiles.question.selection_options.SocialProfilesQuestionSelectionOptionsView android:id="@id/ub__social_profiles_question_selection_options_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__social_profiles_question_selection_options_user_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" style="@style/Base.Theme.Platform.Light">
+        <com.ubercab.ui.core.UEditText android:gravity="start|center|top" android:id="@id/ub__social_profiles_question_selection_options_text_input" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_2x" android:inputType="textAutoCorrect|textCapSentences" style="@style/Platform.TextAppearance.H3.News" />
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.socialprofiles.question.selection_options.user_input.SocialProfilesQuestionSelectionOptionsWithUserInputView>

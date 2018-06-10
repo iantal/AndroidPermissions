@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView n1:id="@id/list" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@android:id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+</FrameLayout>

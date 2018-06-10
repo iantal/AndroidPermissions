@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app_onboarding.optional.entry.post_onboard.wrapper.PostOnboardingWrapperView android:theme="@style/Theme.Helix.Light" android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UFrameLayout android:id="@id/post_onboarding_scene_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.ubercab.ui.core.UFrameLayout android:id="@id/post_onboarding_toolbar" android:background="?brandTransparent" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+            <com.ubercab.ui.core.UTextView android:layout_gravity="end|center" android:id="@id/post_onboarding_skip" android:background="?selectableItemBackgroundBorderless" android:padding="@dimen/ui__spacing_unit_1x" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skip" android:textAllCaps="true" android:layout_marginEnd="@dimen/ui__spacing_unit_3x" uber:analyticsId="e810f5a1-3adc" style="@style/Platform.TextAppearance.H4.Medium.Link" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.presidio.app_onboarding.optional.entry.post_onboard.wrapper.PostOnboardingWrapperView>

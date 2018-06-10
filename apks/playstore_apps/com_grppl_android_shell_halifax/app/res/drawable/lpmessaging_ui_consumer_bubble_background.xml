@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape>
+    <solid n1:color="@color/consumer_bubble_background_color"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <corners n2:topLeftRadius="@dimen/end_bubble_top_left_radius" n2:topRightRadius="@dimen/end_bubble_top_right_radius" n2:bottomLeftRadius="@dimen/end_bubble_bottom_left_radius" n2:bottomRightRadius="@dimen/end_bubble_bottom_right_radius"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <padding n3:left="@dimen/chat_bubble_padding_left" n3:top="@dimen/chat_bubble_padding_top" n3:right="@dimen/chat_bubble_padding_right" n3:bottom="@dimen/chat_bubble_padding_bottom"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <stroke n4:width="@dimen/consumer_bubble_stroke_width" n4:color="@color/consumer_bubble_stroke_color"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+</shape>

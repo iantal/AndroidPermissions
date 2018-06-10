@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/start_apps_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Default.White" n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" n1:text="@string/anonymous_main_title_applications" />
+    <android.support.v4.view.ViewPager n1:id="@id/pager" n1:layout_width="fill_parent" n1:layout_height="105.0dip" />
+    <com.viewpagerindicator.CirclePageIndicator n1:layout_gravity="center_horizontal" n1:id="@id/pager_indicator" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/screen_content_padding_plus" n2:centered="true" n2:fillColor="@color/white" n2:pageColor="@color/n3" n2:strokeWidth="0.0dip" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

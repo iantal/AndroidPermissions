@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="5.0dip" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/text_title" android:id="@id/tv_day" android:layout_width="60.0dip" android:layout_height="wrap_content" style="@style/TextNormal" />
+    <TextView android:textColor="@color/text_title" android:id="@id/tv_time" android:paddingLeft="20.0dip" android:layout_toRightOf="@id/tv_day" style="@style/TextNormalAllWrap" />
+</RelativeLayout>

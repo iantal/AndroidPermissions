@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/selectionIndicator" android:layout_width="5.0dip" android:layout_height="fill_parent" android:layout_alignTop="@id/content" android:layout_alignBottom="@id/content" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/content" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="26.0dip" android:scaleType="centerInside" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/textSizePrimary" android:id="@id/label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/textSizePrimary" android:id="@id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" />
+    </LinearLayout>
+</RelativeLayout>

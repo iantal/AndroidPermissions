@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ub_optional__profile_list_item" android:background="?android:selectableItemBackground" android:padding="?contentInset" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x">
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ubercab.profiles.view.BadgeView android:id="@id/ub__profile_item_badge" android:layout_width="?avatarSmall" android:layout_height="?avatarSmall" android:layout_marginRight="@dimen/ui__spacing_unit_2x" android:contentDescription="@string/profile_badge" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" />
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__profile_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News.Primary" />
+                </com.ubercab.ui.core.ULinearLayout>
+                <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__profile_email" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+                <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__profile_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UImageView android:gravity="center" android:id="@id/ub__profile_selected_check" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?android:textColorTertiary" app:srcCompat="@drawable/ic_checkmark" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UPlainView android:id="@id/ub__profile_payment_divider" android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__profile_default_payment_row" android:paddingTop="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ubercab.ui.core.UImageView android:layout_width="?avatarSmall" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" android:scaleType="centerInside" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" app:srcCompat="@drawable/ub_optional__expense_info_icon" />
+            <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__profile_default_payment_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UTextView android:textColor="?textColorAccent" android:ellipsize="end" android:id="@id/ub__profile_default_payment_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trip_settings_payment_change" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

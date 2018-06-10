@@ -1,0 +1,30 @@
+public final class dgr
+{
+  private final String a;
+  private final String b;
+  private final int c;
+  private final boolean d;
+  
+  public dgr(String paramString1, String paramString2, boolean paramBoolean, int paramInt)
+  {
+    this.b = paramString1;
+    this.a = paramString2;
+    this.d = false;
+    this.c = 129;
+  }
+  
+  final String a()
+  {
+    return this.a;
+  }
+  
+  final String b()
+  {
+    return this.b;
+  }
+  
+  final int c()
+  {
+    return this.c;
+  }
+}

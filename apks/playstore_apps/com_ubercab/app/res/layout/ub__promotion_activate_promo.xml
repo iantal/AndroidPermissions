@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.promotion.promodetails.PromoDetailsView android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="12c7634b-aaab"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UCoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ub__activate_button_bottom_layout">
+        <include layout="@layout/collapsing_header" />
+        <com.ubercab.ui.core.UScrollView android:id="@id/ub__activate_content_container" android:paddingLeft="@dimen/ui__spacing_unit_3x" android:paddingRight="@dimen/ui__spacing_unit_3x" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__promo_headline" android:paddingTop="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H1" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__promo_expiration" android:paddingTop="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__promo_description" android:paddingTop="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.P" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__promo_restrictions" android:paddingTop="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.P" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__promo_legal" android:paddingTop="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.UScrollView>
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__promo_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:layout_behavior="@string/appbar_scrolling_view_behavior" uber:bli_bitColor="?colorAccent" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/ub__promo_anim_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:lottie_fileName="confetti-promo.json" uber:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </com.ubercab.ui.core.UCoordinatorLayout>
+    <com.ubercab.ui.core.ULinearLayout android:id="@id/ub__activate_button_bottom_layout" android:background="?brandGrey40" android:paddingLeft="@dimen/ui__spacing_unit_3x" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="@dimen/ui__spacing_unit_3x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.ubercab.ui.core.UButton android:id="@id/ub__activate_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activate" android:textAllCaps="true" uber:analyticsId="76179fbe-2a00" style="@style/Platform.Button" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.promotion.promodetails.PromoDetailsView>

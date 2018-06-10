@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="bcd2ff87-caa3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H2.Book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="?gutterSize" android:text="@string/ub__commute_driver_navigation_dialog_title" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__commute_driver_navigation_dialog_google_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_driver_navigation_dialog_google" uber:analyticsId="df605a59-4944" style="@style/Platform.Button.Primary" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__commute_driver_navigation_dialog_apple_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_driver_navigation_dialog_apple" uber:analyticsId="86c7ba87-af08" style="@style/Platform.Button.Primary" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__commute_driver_navigation_dialog_skip_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_driver_navigation_dialog_skip" uber:analyticsId="f2948f2a-8997" style="@style/Platform.Button.Primary" />
+</com.ubercab.ui.core.ULinearLayout>

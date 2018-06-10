@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/content" n1:background="@drawable/chat_message_dialog_background" n1:padding="@dimen/chat_message_dialog_padding" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/chat_message_dialog_margin"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/description" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/chat_message_dialog_description_bottom_margin" style="@style/Chat.Message.Dialog.Description" />
+    <android.support.v7.widget.AppCompatButton n1:theme="@style/Chat.Message.Dialog.Button.Negative" n1:id="@id/negative_button" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/chat_message_permission_dialog_button_reject" n1:layout_toLeftOf="@id/positive_button" n1:layout_below="@id/description" />
+    <android.support.v7.widget.AppCompatButton n1:theme="@style/Chat.Message.Dialog.Button.Positive" n1:id="@id/positive_button" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/chat_message_permission_dialog_button_accept" n1:layout_below="@id/description" n1:layout_alignParentRight="true" />
+</RelativeLayout>

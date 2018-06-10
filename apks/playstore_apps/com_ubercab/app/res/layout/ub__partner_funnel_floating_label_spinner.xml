@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Uber.TextAppearance.FloatingLabel.Label" android:id="@id/ub__component_textview_title" android:paddingLeft="@dimen/ub__partner_funnel_spacing_half" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Spinner android:id="@id/ub__component_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__component_textview_description" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ub__padding_small" style="@style/Uber.TextAppearance.Byline" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__component_textview_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ub__padding_small" style="@style/Uber.Partner.Funnel.TextAppearance.Byline.Red" />
+</LinearLayout>

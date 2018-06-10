@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/standingOrderUnderReviewReferenceContainer" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/activity_margin"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/standingOrderReferenceField" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/StandingOrderReview.ReferenceField" />
+    <TextView n1:id="@id/standingOrderReferenceTipField" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/payment_hub_standing_order_under_review_reference_tip_field_text" style="@style/StandingOrderReview.ReferenceTipField" />
+</LinearLayout>

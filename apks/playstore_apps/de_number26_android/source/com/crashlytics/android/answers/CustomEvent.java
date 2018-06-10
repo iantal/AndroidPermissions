@@ -1,0 +1,32 @@
+package com.crashlytics.android.answers;
+
+public class CustomEvent
+  extends AnswersEvent<CustomEvent>
+{
+  private final String eventName;
+  
+  public CustomEvent(String paramString)
+  {
+    if (paramString == null) {
+      throw new NullPointerException("eventName must not be null");
+    }
+    this.eventName = this.validator.limitStringLength(paramString);
+  }
+  
+  String getCustomType()
+  {
+    return this.eventName;
+  }
+  
+  public String toString()
+  {
+    StringBuilder localStringBuilder = new StringBuilder();
+    localStringBuilder.append("{eventName:\"");
+    localStringBuilder.append(this.eventName);
+    localStringBuilder.append('"');
+    localStringBuilder.append(", customAttributes:");
+    localStringBuilder.append(this.customAttributes);
+    localStringBuilder.append("}");
+    return localStringBuilder.toString();
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.visa.rewards.VisaRewardsListView android:orientation="vertical" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="2934b048-d231"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UAppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/appbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/header_elevation" uber:contentInsetStartWithNavigation="0.0dip">
+        <com.ubercab.ui.core.UToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" uber:contentInsetStartWithNavigation="0.0dip" uber:popupTheme="@style/ThemeOverlay.AppCompat.Light" uber:titleTextAppearance="@style/Platform.TextAppearance.H3.Book" uber:layout_collapseMode="pin" style="@style/Widget.Platform.Toolbar" />
+    </com.ubercab.ui.core.UAppBarLayout>
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__visa_rewards_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" />
+    <com.ubercab.ui.commons.widget.ClearableEditText android:id="@id/ub__search_view" android:visibility="gone" android:hint="@string/visa_reward_list_search_hint" style="@style/Platform.TextAppearance.VisaRewards.Search" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__visa_rewards_no_results_container" android:background="?brandGrey20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__visa_rewards_no_results_query" android:paddingLeft="@dimen/ui__gutter_size" android:paddingRight="@dimen/ui__gutter_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+        <com.ubercab.ui.core.UTextView android:paddingLeft="@dimen/ui__gutter_size" android:paddingRight="@dimen/ui__gutter_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visa_reward_list_empty_result_try_different" style="@style/Platform.TextAppearance.H5.News.Tertiary" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.URecyclerView android:id="@id/ub__visa_rewards_recyclerview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" uber:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+</com.ubercab.presidio.visa.rewards.VisaRewardsListView>

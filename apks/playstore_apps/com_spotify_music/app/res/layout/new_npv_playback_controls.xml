@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/player_overlay_content_padding_right_left" android:paddingTop="@dimen/std_16dp" android:paddingRight="@dimen/player_overlay_content_padding_right_left" android:paddingBottom="@dimen/std_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.spotify.music.nowplaying.common.view.controls.shuffle.ShuffleButton android:id="@id/shuffle_button" android:layout_width="@dimen/player_regular_button_size" android:layout_height="@dimen/player_regular_button_size" android:layout_marginRight="@dimen/player_v2_margin_extended_buttons" />
+    <com.spotify.music.nowplaying.common.view.controls.playback.previous.PreviousButton android:id="@id/previous_button" android:layout_width="@dimen/player_regular_button_size" android:layout_height="@dimen/player_regular_button_size" android:layout_marginRight="@dimen/player_v2_margin_prev_next_buttons" />
+    <com.spotify.music.nowplaying.newnpv.playpause.PlayPauseButton android:id="@id/play_pause_button" android:layout_width="72.0dip" android:layout_height="72.0dip" />
+    <com.spotify.music.nowplaying.common.view.controls.playback.next.NextButton android:id="@id/next_button" android:layout_width="@dimen/player_regular_button_size" android:layout_height="@dimen/player_regular_button_size" android:layout_marginLeft="@dimen/player_v2_margin_prev_next_buttons" />
+    <com.spotify.music.nowplaying.common.view.controls.repeat.RepeatButton android:id="@id/repeat_button" android:layout_width="@dimen/player_regular_button_size" android:layout_height="@dimen/player_regular_button_size" android:layout_marginLeft="@dimen/player_v2_margin_extended_buttons" />
+</LinearLayout>

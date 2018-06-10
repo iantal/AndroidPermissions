@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:visibility="gone" layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+            <com.ubercab.ui.core.UImageView android:id="@id/family_field_edit_back_arrow" android:padding="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foregroundGravity="center" android:contentDescription="@string/family_go_back" app:srcCompat="@drawable/navigation_icon_back" />
+        </com.ubercab.ui.core.UFrameLayout>
+        <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ubercab.ui.core.UTextInputLayout android:layout_gravity="center_vertical" android:id="@id/text_input_layout" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintEnabled="true">
+                <com.ubercab.ui.core.UTextInputEditText android:id="@id/family_field_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" style="@style/Platform.TextAppearance.H3.News" />
+            </com.ubercab.ui.core.UTextInputLayout>
+        </com.ubercab.ui.core.UFrameLayout>
+        <com.ubercab.ui.core.UFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UButton android:id="@id/ub__family_update_name_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/save" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</merge>

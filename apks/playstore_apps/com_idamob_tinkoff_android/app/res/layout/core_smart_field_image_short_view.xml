@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:baselineAligned="false" n1:minHeight="@dimen/core_short_height" style="?coreShortSmartFieldViewsStyle"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/header" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <TextView n1:id="@id/title" style="@style/SmartFieldShortFilledTitle" />
+    <android.support.v7.widget.RecyclerView n1:id="@id/rv_horizontal_list" n1:layout_width="fill_parent" n1:layout_height="@dimen/core_smart_field_image_short_view_height" n1:layout_marginTop="@dimen/core_short_padding_vertical" />
+</LinearLayout>

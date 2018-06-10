@@ -1,0 +1,52 @@
+{
+  "return": {
+    "resultCode": "S",
+    "numberOfDirectLogs": "5",
+    "workflowId": "VIEW_EMAIL:368c3d1a-22d2-41f4-a705-559b80bce4fa:7f58f5d9-c7b6-4341-b0d6-da239bfd44a9",
+    "numberFilesAllowed": "3",
+    "topics": {
+      "topic": [
+        {
+          "code": "1",
+          "description": "Any"
+        },
+        {
+          "code": "2",
+          "description": "Topic 1"
+        },
+        {
+          "code": "3",
+          "description": "Topic 2"
+        }
+      ]
+    },
+    "allowedAttachmentFileTypes": {
+      "allowedAttachmentFileType": [
+        {
+          "code": "docx",
+          "description": "docx"
+        },
+        {
+          "code": "jpg",
+          "description": "jpg"
+        },
+        {
+          "code": "png",
+          "description": "png"
+        },
+        {
+          "code": "pdf",
+          "description": "pdf"
+        },
+        {
+          "code": "txt",
+          "description": "txt"
+        },
+        {
+          "code": "xls",
+          "description": "xls"
+        }
+      ]
+    }
+  }
+}

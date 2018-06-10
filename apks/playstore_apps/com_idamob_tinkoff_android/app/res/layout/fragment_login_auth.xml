@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingTop="@dimen/progress_bar_title_offset" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.SwitchCompat n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/fingerprint_auth" n1:text="@string/security_fingerprint_auth" style="@style/SwitchRipple" />
+    <ru.tcsbank.mb.ui.widgets.SwitchWithHint n1:id="@id/authorization_phone_auth" n2:switch_hint="@string/security_phone_auth_hint" n2:switch_title="@string/security_phone_auth_title" style="@style/DefaultItem" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <include n1:id="@id/authorization_block_divider" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" layout="@layout/inc_limits_divider" />
+    <RelativeLayout style="@style/VerticalWrapping">
+        <TextView n1:id="@id/questions_button" n1:background="?selectableItemBackground" n1:text="@string/security_security_security_questions" style="@style/DarkTextItem" />
+        <TextView n1:id="@id/questions_badge" n1:visibility="gone" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_alignBaseline="@id/questions_button" n1:layout_alignParentRight="true" style="@style/BadgeStyle" />
+    </RelativeLayout>
+    <include n1:id="@id/manage_app_pin_divider" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" layout="@layout/inc_limits_divider" />
+    <TextView n1:textColor="@color/text_blue" n1:id="@id/manage_app_pin" n1:background="?selectableItemBackground" n1:text="@string/settings_auth_change_access_code" style="@style/DarkTextItem" />
+</LinearLayout>

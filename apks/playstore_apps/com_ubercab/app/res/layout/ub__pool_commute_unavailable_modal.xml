@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__pool_commute_unavailable_modal_bottom_sheet_view" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UImageView android:gravity="center_horizontal" android:id="@id/ub__pool_commute_unavailable_modal_logo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="center_horizontal" android:id="@id/ub__pool_commute_unavailable_modal_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H2.News" />
+    <com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:gravity="start" android:id="@id/ub__pool_commute_unavailable_modal_description" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News" />
+    <com.ubercab.ui.core.UButton android:textColor="?android:textColorPrimaryInverse" android:gravity="center_horizontal" android:id="@id/ub__pool_commute_unavailable_modal_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="center" style="@style/Platform.Button.Primary" />
+</com.ubercab.ui.core.ULinearLayout>

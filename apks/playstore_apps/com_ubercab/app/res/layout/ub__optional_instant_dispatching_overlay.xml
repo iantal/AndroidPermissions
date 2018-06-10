@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.dispatching.overlay.instant.InstantDispatchingOverlayView android:theme="@style/Theme.Helix.Dark" android:paddingBottom="@dimen/ui__spacing_unit_8x" android:fitsSystemWindows="@bool/use_transparent_status_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="f278ffa2-0a71"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.presidio.app.optional.root.main.ride.trip.dispatching.overlay.bouncing_marker.BouncingMarkerView android:id="@id/ub__dispatching_bouncing_marker" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="2a676972-ad51" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.dispatching.overlay.instant.InstantDispatchingOverlayView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.partner_onboarding.core.PartnerOnboardingView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="bottom" android:id="@id/ub__carbon_upload_document_progress_bar" android:background="?brandWhite" android:padding="@dimen/ub__carbon_upload_document_progress_bar_margin_padding" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/ub__carbon_upload_document_progress_bar_height" android:layout_marginBottom="@dimen/ub__carbon_upload_document_progress_bar_margin_bottom" android:indeterminateDrawable="@drawable/upload_document_circular_spinner" />
+</com.ubercab.partner_onboarding.core.PartnerOnboardingView>

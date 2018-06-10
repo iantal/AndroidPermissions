@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/autoconcierge_content" n1:paddingTop="@dimen/screen_content_padding_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <FrameLayout n1:id="@id/autoconcierge_note_block" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <at.blogc.android.views.ExpandableTextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/autoconcierge_note" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="12.0dip" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="12.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/autoconcierge_note" n1:maxLines="3" n2:animation_duration="250" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <View n1:layout_gravity="bottom" n1:id="@id/autoconcierge_note_overlay" n1:background="@drawable/show_more_gradient" n1:layout_width="fill_parent" n1:layout_height="32.0dip" />
+            <View n1:background="?selectableItemBackground" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/autoconcierge_contact_block" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <View n1:background="@color/dividers" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="7.0dip" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toTopOf="parent" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <android.support.constraint.ConstraintLayout n1:id="@id/autoconcierge_contact_item" n1:background="?selectableItemBackground" n1:layout_width="fill_parent" n1:layout_height="56.0dip">
+                <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:src="@drawable/ic_phone" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintTop_toTopOf="parent" n4:tint="@color/main_blue" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/autoconcierge_contact_title" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge_large" n1:text="@string/autoconcierge_contacts_title" n5:layout_constraintBottom_toTopOf="@id/autoconcierge_contact_phone" n5:layout_constraintLeft_toLeftOf="parent" n5:layout_constraintRight_toRightOf="parent" n5:layout_constraintTop_toTopOf="parent" n5:layout_constraintVertical_chainStyle="packed" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/autoconcierge_contact_phone" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge_large" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintLeft_toLeftOf="parent" n6:layout_constraintRight_toRightOf="parent" n6:layout_constraintTop_toBottomOf="@id/autoconcierge_contact_title" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+        <View n1:background="@color/dividers" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="7.0dip" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/autoconcierge_car_numbers_block" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/autoconcierge_cars_title" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/autoconcierge_car_numbers_list" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button n1:textAppearance="@style/Text.Default.Blue" n1:gravity="center|left" n1:id="@id/autoconcierge_add_car" n1:background="?selectableItemBackground" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/autoconcierge_cars_add_button" n1:textAllCaps="false" />
+    </LinearLayout>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@android:id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" n1:layout_margin="30.0dip" />
+    <ru.tcsbank.mb.ui.widgets.EmptyView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:layout_gravity="center" n1:id="@android:id/empty" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="30.0dip" n1:text="@string/autoconcierge_data_loading_error" />
+</FrameLayout>

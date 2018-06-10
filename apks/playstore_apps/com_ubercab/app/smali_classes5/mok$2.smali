@@ -1,0 +1,82 @@
+.class Lmok$2;
+.super Lcom/ubercab/rx2/java/CrashOnErrorConsumer;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lmok;->d()V
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/ubercab/rx2/java/CrashOnErrorConsumer<",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lmok;
+
+
+# direct methods
+.method constructor <init>(Lmok;)V
+    .locals 0
+
+    .line 233
+    iput-object p1, p0, Lmok$2;->a:Lmok;
+
+    invoke-direct {p0}, Lcom/ubercab/rx2/java/CrashOnErrorConsumer;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/Boolean;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 236
+    iget-object v0, p0, Lmok$2;->a:Lmok;
+
+    invoke-virtual {v0}, Lmok;->c()Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/ubercab/help/feature/conversation_details/HelpConversationDetailsView;
+
+    invoke-virtual {v0}, Lcom/ubercab/help/feature/conversation_details/HelpConversationDetailsView;->i()Lcom/ubercab/help/feature/conversation_details/HelpConversationDetailsComposerView;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    invoke-virtual {v0, p1}, Lcom/ubercab/help/feature/conversation_details/HelpConversationDetailsComposerView;->c(Z)Lcom/ubercab/help/feature/conversation_details/HelpConversationDetailsComposerView;
+
+    return-void
+.end method
+
+.method public bridge synthetic a(Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 233
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p0, p1}, Lmok$2;->a(Ljava/lang/Boolean;)V
+
+    return-void
+.end method

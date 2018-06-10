@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/card_scan_fragment" n1:paddingLeft="0.0dip" n1:paddingRight="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="16.0dip" />
+    <Button n1:enabled="false" n1:id="@id/pay_button" n1:text="@string/common_pay_button" style="@style/Button.Round.Yellow" />
+    <TextView n1:textAppearance="@style/Text.Default.Light" n1:gravity="center" n1:layout_gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge" n1:text="@string/anonymous_pay_and_auth_enter_card_number_hint" />
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:textColorLink="@color/text_light" n1:gravity="center" n1:id="@id/wallet_note_text" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" />
+</LinearLayout>

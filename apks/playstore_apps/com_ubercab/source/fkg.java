@@ -1,0 +1,53 @@
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.RemoteException;
+
+public abstract class fkg
+  extends eul
+  implements fkf
+{
+  public fkg()
+  {
+    attachInterface(this, "com.google.android.gms.ads.internal.formats.client.INativeAdImage");
+  }
+  
+  public static fkf a(IBinder paramIBinder)
+  {
+    if (paramIBinder == null) {
+      return null;
+    }
+    IInterface localIInterface = paramIBinder.queryLocalInterface("com.google.android.gms.ads.internal.formats.client.INativeAdImage");
+    if ((localIInterface instanceof fkf)) {
+      return (fkf)localIInterface;
+    }
+    return new fkh(paramIBinder);
+  }
+  
+  public boolean onTransact(int paramInt1, Parcel paramParcel1, Parcel paramParcel2, int paramInt2)
+    throws RemoteException
+  {
+    if (a(paramInt1, paramParcel1, paramParcel2, paramInt2)) {
+      return true;
+    }
+    switch (paramInt1)
+    {
+    default: 
+      return false;
+    case 3: 
+      double d = c();
+      paramParcel2.writeNoException();
+      paramParcel2.writeDouble(d);
+      return true;
+    case 2: 
+      paramParcel1 = b();
+      paramParcel2.writeNoException();
+      eum.b(paramParcel2, paramParcel1);
+      return true;
+    }
+    paramParcel1 = a();
+    paramParcel2.writeNoException();
+    eum.a(paramParcel2, paramParcel1);
+    return true;
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.pass.purchase.flow.step.PassPurchaseNotifyMeView android:orientation="vertical" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="8e4de0db-1b9a"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UFrameLayout android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UImageView android:layout_gravity="center_horizontal" android:id="@id/ub__pass_notify_me_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" uber:srcCompat="@drawable/ub__pass_ic_calendar" />
+            <com.ubercab.ui.core.UTextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/ub__pass_notify_me_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" style="@style/Platform.TextAppearance.H2.Book" />
+            <com.ubercab.ui.core.UTextView android:gravity="center_horizontal" android:id="@id/ub__pass_notify_me_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.UButton android:layout_gravity="bottom" android:id="@id/pass_purchase_notify_me" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?gutterSize" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginRight="?gutterSize" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" style="@style/Platform.Button.Secondary" />
+</com.ubercab.presidio.pass.purchase.flow.step.PassPurchaseNotifyMeView>

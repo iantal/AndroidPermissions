@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:id="@id/paymentHubReviewContentContainer" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/paymentHubReviewBottomButtonsWrapper">
+        <LinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView n1:id="@id/paymentHubReviewInfoImage" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/payment_hub_under_review_margin" n1:layout_centerVertical="true" n2:srcCompat="@drawable/warning_info_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <com.mobile.ui.common.view.HeadingTextView n1:id="@id/paymentHubReviewTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/payment_hub_review_title_text" n1:layout_toRightOf="@id/paymentHubReviewInfoImage" n1:contentDescription="@string/payment_hub_review_title_text" style="@style/ScreenHeadline" />
+            </RelativeLayout>
+            <TextView n1:id="@id/paymentHubReviewPrimaryInfoText" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/payment_hub_under_review_margin" n1:layout_marginRight="@dimen/payment_hub_under_review_margin" n1:text="@string/payment_hub_under_review_payment_info_text" style="@style/TextAppearance.Information" />
+            <TextView n1:id="@id/paymentHubReviewSecondaryInfoText" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/payment_hub_under_review_margin" n1:layout_marginTop="@dimen/payment_hub_under_review_margin" n1:layout_marginRight="@dimen/payment_hub_under_review_margin" style="@style/TextAppearance.Body" />
+            <com.mobile.ui.paymenthub.view.PaymentHubSummaryView n1:id="@id/paymentHubReviewPaymentSummaryView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <TextView n1:id="@id/paymentHubReviewTertiaryInfoText" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/payment_hub_under_review_margin" n1:layout_marginTop="@dimen/payment_hub_under_review_margin" n1:layout_marginRight="@dimen/payment_hub_under_review_margin" style="@style/TextAppearance.Body" />
+            <include n1:id="@id/standingOrderUnderReviewReference" n1:visibility="gone" layout="@layout/view_standing_order_reference_field" />
+            <TextView n1:id="@id/paymentHubReviewPaymentMessage" n1:padding="@dimen/information_text_view_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_vertical_margin" n1:text="@string/payment_hub_review_transfer_confirmation" style="@style/TextAppearance.Body.Medium" />
+            <LinearLayout n1:layout_gravity="bottom" n1:orientation="horizontal" n1:id="@id/paymentHubReviewWarningConfirmationContainer" n1:background="@color/background" n1:padding="@dimen/activity_margin" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <CheckBox n1:id="@id/paymentHubReviewWarningConfirmationCheckBox" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:checked="false" style="@style/PaymentHubReview.CheckBox" />
+                <TextView n1:id="@id/paymentHubReviewWarningConfirmationMessage" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/payment_hub_review_medium_margin" style="@style/TextAppearance.Body" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout n1:id="@id/paymentHubReviewBottomButtonsWrapper" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/paymentHubReviewBottomHorizontalButtons" n1:padding="@dimen/payment_hub_review_screen_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0">
+            <Button n1:id="@id/editPaymentReviewButton" n1:layout_width="0.0dip" n1:layout_height="@dimen/payment_hub_review_button_height" n1:layout_marginRight="@dimen/payment_hub_review_button_middle_margin" n1:text="@string/payment_hub_review_edit_button_text" n1:layout_weight="0.5" style="@style/Widget.Button.Secondary" />
+            <Button n1:id="@id/paymentHubReviewConfirmButton" n1:layout_width="0.0dip" n1:layout_height="@dimen/payment_hub_review_button_height" n1:layout_marginLeft="@dimen/payment_hub_review_button_middle_margin" n1:text="@string/payment_hub_review_confirm_button_text" n1:layout_weight="0.5" style="@style/Widget.Button.Primary" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/paymentHubReviewBottomVerticalButtons" n1:padding="@dimen/payment_hub_review_screen_padding" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0">
+            <Button n1:id="@id/paymentHubReviewPrimaryButton" n1:layout_width="fill_parent" n1:layout_height="@dimen/payment_hub_review_button_height" n1:text="@string/payment_hub_under_review_call_us_button_text" style="@style/Widget.Button.Primary" />
+            <Button n1:id="@id/paymentHubReviewSecondaryButton" n1:layout_width="fill_parent" n1:layout_height="@dimen/payment_hub_review_button_height" n1:layout_marginTop="@dimen/payment_hub_under_review_margin" n1:text="@string/payment_hub_under_review_transfers_and_payments_button_text" style="@style/Widget.Button.Secondary" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.mobile.ui.common.view.NotificationView n1:id="@id/errorNotificationView" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</RelativeLayout>

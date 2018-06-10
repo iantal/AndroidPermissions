@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:windowBackground" android:paddingLeft="?gutterSize" android:paddingTop="?gutterSize" android:paddingRight="?gutterSize" android:paddingBottom="?titleItemMarginBottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_step_header_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?headerStyle" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_step_header_subtitle_textview" android:paddingTop="@dimen/ui__spacing_unit_1x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?descriptionStyle" />
+</LinearLayout>

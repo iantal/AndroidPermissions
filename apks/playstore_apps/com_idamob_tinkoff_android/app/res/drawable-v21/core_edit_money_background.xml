@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset n1:insetLeft="@dimen/core_edit_money_inset_left" n1:insetRight="@dimen/core_edit_money_inset_right" n1:insetTop="@dimen/core_edit_money_inset_top" n1:insetBottom="@dimen/core_edit_money_inset_bottom"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item n1:state_enabled="false">
+            <nine-patch n1:src="@drawable/core_edit_money_background_default" n1:alpha="?android:disabledAlpha" />
+        </item>
+        <item n1:state_focused="false" n1:state_pressed="false">
+            <nine-patch n1:src="@drawable/core_edit_money_background_default" />
+        </item>
+        <item>
+            <nine-patch n1:src="@drawable/core_edit_money_background_activated" />
+        </item>
+    </selector>
+</inset>

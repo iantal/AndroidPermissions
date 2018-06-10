@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="?selectableItemBackground" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingTop="@dimen/screen_content_padding_half" n1:paddingRight="@dimen/screen_content_padding" n1:paddingBottom="@dimen/screen_content_padding_plus" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:id="@id/question_number" style="@style/DefaultItem" />
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Hint" n1:text="@string/security_questions_question_saved" n1:layout_alignBaseline="@id/question_number" n1:layout_alignParentRight="true" style="@style/WrapContent" />
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/question_text" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge_small2" n1:layout_below="@id/question_number" style="@style/VerticalWrapping" />
+</RelativeLayout>

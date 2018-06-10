@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.product_selection_item.core.ProductIconStickerView android:layout_width="@dimen/ub__promo_sticker_height" android:layout_height="@dimen/ub__promo_sticker_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.presidio.pricing.core.PricingTextView android:textSize="@dimen/ui__text_size_micro" android:textColor="@drawable/ub__promo_sticker_text_selector" android:gravity="center" android:layout_gravity="center" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/ub__promo_sticker_height" android:maxLines="2" android:textAlignment="center" uber:analyticsId="88854201-264c" />
+</com.ubercab.product_selection_item.core.ProductIconStickerView>

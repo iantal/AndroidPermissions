@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="?contentInset">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__profile_editor_text_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?contentInset" style="@style/Platform.TextAppearance.H3.Book" />
+        <com.ubercab.ui.core.UTextInputLayout android:layout_gravity="center_vertical" android:id="@id/text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?contentInset" app:hintTextAppearance="@style/Platform.TextAppearance.H6.News.Secondary" app:hintEnabled="true">
+            <com.ubercab.ui.commons.widget.ClearableEditText android:id="@id/ub__profile_editor_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapWords" android:imeOptions="actionDone" style="@style/Platform.TextAppearance.H5.News" />
+        </com.ubercab.ui.core.UTextInputLayout>
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__profile_editor_text_subtext" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</merge>

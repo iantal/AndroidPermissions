@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/main_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/header_title" n1:padding="@dimen/offset_from_edge" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:text="@string/multi_currency_card_add_note_1" />
+        <View n1:id="@id/divider_header" n1:background="@color/dividers" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" />
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/multi_currency_card_add_currencies_opened_title" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/multicard_opened_currencies" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <View n1:background="@color/dividers" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" />
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/multi_currency_card_add_currencies_title" />
+        <CheckBox n1:id="@id/rub_currency" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:text="@string/common_currency_rub" style="@style/CheckBoxGreenCircle" />
+        <CheckBox n1:id="@id/usd_currency" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:text="@string/common_currency_usd" style="@style/CheckBoxGreenCircle" />
+        <CheckBox n1:id="@id/eur_currency" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:text="@string/common_currency_eur" style="@style/CheckBoxGreenCircle" />
+        <CheckBox n1:id="@id/gbp_currency" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:text="@string/common_currency_gbp" style="@style/CheckBoxGreenCircle" />
+        <Button n1:enabled="false" n1:id="@id/add" n1:layout_width="fill_parent" n1:layout_height="56.0dip" n1:layout_marginTop="24.0dip" n1:text="@string/multi_currency_card_add_action_button_add" style="@style/Button.Yellow.Normal" />
+        <Button n1:textColor="@color/text_blue" n1:id="@id/add_later" n1:background="?selectableItemBackground" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/multi_currency_card_add_action_button_later" style="@style/Button" />
+    </LinearLayout>
+</ScrollView>

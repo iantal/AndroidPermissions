@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layoutDirection="ltr"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.liveperson.infra.messaging_ui.toolbar.CaptionPreviewToolBar n1:id="@id/lpui_tool_bar_caption" n1:background="@color/lp_colorPrimary" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="?android:actionBarSize" />
+    <ImageView n1:id="@id/lpui_caption_preview_image" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="?android:actionBarSize" n1:layout_marginBottom="@dimen/lp_caption_preview_edit_text_height" n1:contentDescription="@string/lp_accessibility_photo_preview" />
+    <include n1:layout_gravity="bottom" n1:id="@id/lpui_base_enter_message" n1:layout_width="fill_parent" n1:layout_height="wrap_content" layout="@layout/lpinfra_ui_base_enter_message_layout" />
+</FrameLayout>

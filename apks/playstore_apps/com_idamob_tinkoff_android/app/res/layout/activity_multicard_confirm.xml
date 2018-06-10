@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.ConstraintLayout n1:orientation="vertical" n1:id="@id/multicard_confirm_content" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginRight="@dimen/screen_content_double_margin">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:layout_constraintBottom_toBottomOf="@id/multicard_confirm_button" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent" xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <com.google.android.flexbox.FlexboxLayout n1:id="@id/multicard_confirm_card_list" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:flexWrap="wrap" n2:justifyContent="center" />
+            <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center" n1:id="@id/multicard_confirm_title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="16.0dip" />
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:id="@id/multicard_confirm_description" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" />
+        </LinearLayout>
+        <Button n1:id="@id/multicard_confirm_button" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/screen_content_double_margin" n1:text="@string/common_continue" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" style="@style/Button.Round.Yellow" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </android.support.constraint.ConstraintLayout>
+    <ru.tcsbank.mb.ui.widgets.EmptyView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:layout_gravity="center" n1:id="@android:id/empty" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/multi_currency_data_loading_error" />
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@android:id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+</FrameLayout>

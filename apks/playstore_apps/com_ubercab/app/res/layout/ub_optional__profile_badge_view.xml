@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.profiles_feature.switcher.optional.badge.ProfileBadgeView android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="e37df20a-b07d"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UPlainView android:layout_width="0.0dip" android:layout_height="@dimen/ui__spacing_unit_1x" android:layout_weight="1.0" />
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H4" android:ellipsize="end" android:gravity="end|center" android:id="@id/ub__profile_name" android:layout_width="wrap_content" android:layout_height="?avatarTiny" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:maxLines="1" />
+    <com.ubercab.ui.core.UFrameLayout android:layout_gravity="center" android:id="@id/ub__profile_badge_container" android:clickable="true" android:layout_width="?avatarMedium" android:layout_height="?avatarMedium" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" uber:analyticsId="dca8500f-bef2">
+        <com.ubercab.ui.core.UFrameLayout android:layout_gravity="center" android:background="@drawable/ub_optional__accelerator_icon_background" android:layout_width="?avatarTiny" android:layout_height="?avatarTiny">
+            <com.ubercab.profiles.view.BadgeView android:layout_gravity="top" android:id="@id/ub__profile_badge" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/ui__avatar_border" android:contentDescription="@string/profile_badge" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.presidio.profiles_feature.switcher.optional.badge.ProfileBadgeView>

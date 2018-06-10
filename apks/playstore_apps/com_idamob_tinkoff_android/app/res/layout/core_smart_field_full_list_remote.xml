@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:paddingTop="@dimen/core_expanded_field_padding" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <TextView n1:id="@id/title" n1:paddingLeft="@dimen/core_expanded_field_padding" n1:paddingRight="@dimen/core_expanded_field_padding" n1:layout_marginBottom="8.0dip" style="@style/SmartFieldFullTitle" />
+        <android.support.v7.widget.RecyclerView n1:id="@id/list" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="6.0dip" n1:splitMotionEvents="false" />
+    </LinearLayout>
+    <ru.tinkoff.core.ui.widget.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/progress_bar" n1:visibility="gone" style="@style/SmartFieldFullProgress" />
+    <LinearLayout n1:layout_gravity="center" n1:orientation="vertical" n1:id="@id/empty_view" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:text="@string/core_smart_field_full_empty_text" style="@style/SmartFieldFullEmptyText" />
+        <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/refresh_button" n1:contentDescription="@string/core_smart_field_full_refresh_content_description" style="@style/SmartFieldFullRefreshButton" />
+    </LinearLayout>
+</FrameLayout>

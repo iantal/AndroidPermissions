@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/currencies_title" n1:paddingLeft="16.0dip" n1:paddingTop="24.0dip" n1:paddingBottom="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/mortgage_application_note" />
+    <include n1:id="@id/smart_fields_group" layout="@layout/inc_name_surname_phone_smart_fields" />
+    <Button n1:id="@id/fma_btn_send_application" n1:layout_marginTop="16.0dip" n1:text="@string/mortgage_application_send" style="@style/Button.Yellow.Normal" />
+    <TextView n1:textAppearance="@style/Text.Small.Blue" n1:gravity="center" n1:id="@id/fma_btn_mortgage_details" n1:background="@drawable/selector_item_bg" n1:text="@string/mortgage_application_tariff" n1:layout_alignParentBottom="true" style="@style/DefaultItem" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:id="@id/point_map_header" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/map_poi_header_height"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_gravity="center_vertical" n1:id="@id/point_map_logo" n1:adjustViewBounds="true" style="@style/ImageItem.Margin" />
+    <RelativeLayout n1:paddingTop="@dimen/offset_from_edge" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge_large" n1:layout_marginRight="@dimen/offset_from_edge" n1:minHeight="@dimen/tile_height_large_item">
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:ellipsize="end" n1:id="@id/point_map_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" n1:layout_toLeftOf="@id/point_map_distance" n1:layout_alignParentLeft="true" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:ellipsize="end" n1:id="@id/point_map_description" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" n1:layout_toLeftOf="@id/point_map_distance" n1:layout_below="@id/point_map_title" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/point_map_distance" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_alignBaseline="@id/point_map_description" n1:layout_alignParentRight="true" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall" n1:id="@id/point_map_is_open" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/point_map_description" />
+    </RelativeLayout>
+</FrameLayout>

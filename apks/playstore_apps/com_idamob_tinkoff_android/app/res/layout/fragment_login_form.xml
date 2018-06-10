@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/login_form_container" n1:paddingLeft="@dimen/screen_content_margin" n1:paddingRight="@dimen/screen_content_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:id="@id/focus_trap" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="0.0dip" n1:layout_height="0.0dip">
+        <requestFocus />
+    </View>
+    <TextView n1:textAppearance="@style/Text.Small.White" n1:gravity="center" n1:id="@id/password_note" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="48.0dip" n1:layout_marginBottom="@dimen/screen_content_margin" n1:text="@string/login_login_edit_password_note" />
+    <ru.tcsbank.mb.ui.widgets.edit.text.HintHideEditText n1:gravity="bottom|center" n1:id="@id/auth_login_et" n1:visibility="visible" n1:layout_height="@dimen/tile_height_large_item" n1:layout_marginTop="0.0dip" n1:hint="@string/login_login_edit_hint" n1:inputType="textNoSuggestions" n1:textCursorDrawable="@drawable/white_cursor" style="@style/EditText.White.Center" />
+    <ru.tcsbank.mb.ui.widgets.edit.text.HintHideEditText n1:gravity="bottom|center" n1:id="@id/auth_password_et" n1:visibility="invisible" n1:layout_height="@dimen/tile_height_large_item" n1:layout_marginTop="0.0dip" n1:hint="@string/login_login_edit_password_hint" n1:inputType="textPassword" n1:textCursorDrawable="@drawable/white_cursor" style="@style/EditText.White.Center" />
+    <CheckedTextView n1:textSize="@dimen/text_medium" n1:textColor="@color/n4" n1:gravity="center_vertical" n1:id="@id/set_pin" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:checked="true" n1:checkMark="?android:listChoiceIndicatorMultiple" n1:text="@string/auth_set_pin_caption" />
+    <Button n1:enabled="false" n1:id="@id/auth_login_btn" n1:visibility="visible" n1:layout_height="48.0dip" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/screen_content_double_margin" n1:text="@string/auth_sign_in" style="@style/Button.Round.Yellow" />
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:id="@id/login_note" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item" n1:text="@string/login_login_edit_note" />
+    <TextView n1:textAppearance="@style/Text.Small.Blue" n1:layout_gravity="center_horizontal" n1:id="@id/auth_change_input_type_btn" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="16.0dip" n1:text="@string/login_login_by_login_and_password" n1:textAllCaps="true" />
+</LinearLayout>

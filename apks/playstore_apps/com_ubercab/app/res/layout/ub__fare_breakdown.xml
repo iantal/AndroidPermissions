@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uber:com.ubercab.presidio.app.core.root.main.ride.request.confirmation.product_selection.fare_breakdown.FareBreakdownView android:orientation="vertical" android:id="@id/product_price_breakdown" android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="5ebc13f9-fb3b"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_4x">
+            <com.ubercab.ui.core.UTextView android:id="@id/legal_disclaimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_4x" android:text="@string/fare_breakdown_legal_disclaimer" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+            <include android:id="@id/baseFare" layout="@layout/ub__product_selection_details_line_item" />
+            <include android:id="@id/bookingFee" layout="@layout/ub__product_selection_details_line_item" />
+            <include android:id="@id/minFare" layout="@layout/ub__product_selection_details_line_item" />
+            <include android:id="@id/perMin" layout="@layout/ub__product_selection_details_line_item" />
+            <include android:id="@id/perMile" layout="@layout/ub__product_selection_details_line_item" />
+            <com.ubercab.ui.core.URecyclerView android:id="@id/upfrontPriceFareBreakdown" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.ubercab.ui.core.UTextView android:id="@id/waitTimeDisclaimer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_4x" uber:analyticsId="78b878a7-0e2b" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</uber:com.ubercab.presidio.app.core.root.main.ride.request.confirmation.product_selection.fare_breakdown.FareBreakdownView>

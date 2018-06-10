@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.confirmation.request_with_schedule_button.RequestWithScheduleButtonView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.URelativeLayout android:id="@id/ub__request_schedule_parent_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:id="@id/ub__request_schedule_schedule_container" android:paddingTop="@dimen/ub__abc_button_inset_vertical_material" android:paddingBottom="@dimen/ub__abc_button_inset_vertical_material" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignTop="@id/ub__request_schedule_request_container" android:layout_alignBottom="@id/ub__request_schedule_request_container" android:paddingStart="@dimen/ui__spacing_unit_1x" android:layout_alignParentEnd="true" uber:analyticsId="c988492a-5e0c" />
+        <com.ubercab.ui.core.ULinearLayout android:id="@id/ub__request_schedule_request_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentStart="true" />
+    </com.ubercab.ui.core.URelativeLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.request.confirmation.request_with_schedule_button.RequestWithScheduleButtonView>

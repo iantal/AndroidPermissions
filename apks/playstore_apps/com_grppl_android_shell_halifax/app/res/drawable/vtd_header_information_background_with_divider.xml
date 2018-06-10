@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item n1:left="@dimen/vtd_bottom_divider_negative_height" n1:right="@dimen/vtd_bottom_divider_negative_height" n1:bottom="@dimen/vtd_bottom_divider_negative_height"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape>
+            <solid n1:color="@color/information_text_view_background_color" />
+            <stroke n1:width="@dimen/vtd_bottom_divider_height" n1:color="@color/information_text_view_border_color" />
+        </shape>
+    </item>
+</layer-list>

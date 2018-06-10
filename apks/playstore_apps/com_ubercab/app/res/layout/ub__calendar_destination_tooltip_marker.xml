@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.calendar.refinement.map_layer.tooltip.CalendarDestinationTooltipView android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="ea5f331a-d6f7"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/ub__tooltip_min_height">
+        <com.ubercab.ui.core.UTextView android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/calendar_destination_title" android:paddingLeft="@dimen/ub__tooltip_padding_extra" android:paddingRight="@dimen/ub__tooltip_padding_extra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__calendar_destination_title_tooltip_default" android:maxLines="1" android:includeFontPadding="false" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+        <Space android:layout_width="@dimen/ui__spacing_unit_1x" android:layout_height="wrap_content" />
+        <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" uber:srcCompat="@drawable/ic_caret_right_16" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.calendar.refinement.map_layer.tooltip.CalendarDestinationTooltipView>

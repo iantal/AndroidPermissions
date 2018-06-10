@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.helix.rental.util.map_layer.RentalMapTooltipView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:gravity="start" android:layout_gravity="start" android:id="@id/rental_map_tooltip_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_1x" android:maxLines="1" android:textAllCaps="false" style="@style/Platform.TextAppearance.H6.News.Primary" />
+</com.ubercab.helix.rental.util.map_layer.RentalMapTooltipView>

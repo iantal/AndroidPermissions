@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/update_popup" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:background="#ffa8a8a8" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <RelativeLayout n1:background="@color/white" style="@style/VerticalWrapping">
+        <ImageView n1:id="@id/image" n1:layout_marginLeft="13.0dip" n1:layout_marginTop="13.0dip" n1:layout_marginBottom="13.0dip" n1:src="@drawable/ic_update_popup_logo" n1:scaleType="fitXY" n1:contentDescription="@null" style="@style/WrapContent" />
+        <TextView n1:textSize="16.0sp" n1:id="@id/text" n1:layout_marginLeft="13.0dip" n1:layout_toRightOf="@id/image" n1:layout_alignTop="@id/image" style="@style/WrapContent" />
+        <Button n1:id="@id/update" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_marginTop="13.0dip" n1:text="@string/up_install_update" n1:layout_below="@id/text" n1:layout_alignLeft="@id/text" style="@style/VerticalWrapping" />
+        <View n1:layout_width="fill_parent" n1:layout_height="18.0dip" n1:layout_below="@id/update" />
+        <ImageView n1:id="@id/close" n1:layout_width="wrap_content" n1:src="@drawable/ic_close_update_popup" n1:scaleType="fitXY" n1:layout_alignParentTop="true" n1:layout_alignParentRight="true" n1:contentDescription="@null" style="@style/WrapContent" />
+    </RelativeLayout>
+</LinearLayout>

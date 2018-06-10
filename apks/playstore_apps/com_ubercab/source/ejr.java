@@ -1,0 +1,60 @@
+public final class ejr
+  implements czt
+{
+  public static final ejr a = new ejr(false, false, null, false, null, false, null, null);
+  private final boolean b = false;
+  private final boolean c = false;
+  private final String d = null;
+  private final boolean e = false;
+  private final String f = null;
+  private final boolean g = false;
+  private final Long h = null;
+  private final Long i = null;
+  
+  static
+  {
+    new ejs();
+  }
+  
+  private ejr(boolean paramBoolean1, boolean paramBoolean2, String paramString1, boolean paramBoolean3, String paramString2, boolean paramBoolean4, Long paramLong1, Long paramLong2) {}
+  
+  public final boolean a()
+  {
+    return this.b;
+  }
+  
+  public final boolean b()
+  {
+    return this.c;
+  }
+  
+  public final String c()
+  {
+    return this.d;
+  }
+  
+  public final boolean d()
+  {
+    return this.e;
+  }
+  
+  public final String e()
+  {
+    return this.f;
+  }
+  
+  public final boolean f()
+  {
+    return this.g;
+  }
+  
+  public final Long g()
+  {
+    return this.h;
+  }
+  
+  public final Long h()
+  {
+    return this.i;
+  }
+}

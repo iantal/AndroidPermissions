@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:theme="@style/Theme.Helix.Light" android:orientation="vertical" android:padding="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="243f6c6f-00b0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:id="@id/pass_upsell_one_button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" android:text="@string/confirm_your_fare" style="@style/Platform.TextAppearance.H2.Book" />
+    <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/pass_upsell_one_button_items_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Space android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_1x" />
+    <com.ubercab.ui.core.UButton android:id="@id/pass_upsell_one_button_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__pricing_plus_one_continue" uber:analyticsId="fdbd327f-64cd" style="?platformButtonPrimary" />
+</com.ubercab.ui.core.ULinearLayout>

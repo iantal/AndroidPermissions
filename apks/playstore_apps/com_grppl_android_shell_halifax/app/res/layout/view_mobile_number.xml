@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/beneficiaryAccountContainer" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/Beneficiary.AccountContainer"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/beneficiaryIcon" n2:srcCompat="@drawable/beneficiary_pay_a_contact_icon" style="@style/Beneficiary.Icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:ellipsize="end" n1:id="@id/beneficiaryTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/arrangement_list_large_margin" n1:layout_marginRight="@dimen/arrangement_list_medium_margin" n1:maxLines="1" n1:layout_toRightOf="@id/beneficiaryIcon" style="@style/Beneficiary.Name" />
+    <TextView n1:id="@id/beneficiaryPhoneNumber" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/arrangement_list_small_margin" n1:layout_below="@id/beneficiaryTitle" style="@style/Beneficiary.Body" />
+</RelativeLayout>

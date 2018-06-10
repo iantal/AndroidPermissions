@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/arrangementView" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/arrangementIcon" n1:importantForAccessibility="no" n2:srcCompat="@drawable/arrangement_isa_icon" style="@style/Arrangement.Icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:id="@id/arrangementTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/arrangement_list_medium_margin" n1:layout_toRightOf="@id/arrangementIcon" n1:importantForAccessibility="no" style="@style/Arrangement.Name" />
+    <TextView n1:id="@id/arrangementSortCode" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/tile_arrangement_medium_margin" n1:layout_marginRight="@dimen/tile_arrangement_medium_margin" n1:layout_below="@id/arrangementIcon" n1:importantForAccessibility="no" n1:layout_alignStart="@id/arrangementIcon" style="@style/Arrangement.Body" />
+    <View n1:id="@id/arrangementSeparator" n1:background="@color/arrangement_sort_code_account_number_separator_color" n1:layout_width="1.0dip" n1:layout_height="@dimen/activity_horizontal_margin" n1:layout_marginTop="@dimen/tile_arrangement_medium_margin" n1:layout_marginRight="@dimen/tile_arrangement_medium_margin" n1:layout_toRightOf="@id/arrangementSortCode" n1:layout_below="@id/arrangementIcon" n1:importantForAccessibility="no" />
+    <TextView n1:id="@id/arrangementAccountNumber" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/tile_arrangement_medium_margin" n1:layout_toRightOf="@id/arrangementSeparator" n1:layout_below="@id/arrangementIcon" n1:importantForAccessibility="no" style="@style/Arrangement.Body" />
+</RelativeLayout>

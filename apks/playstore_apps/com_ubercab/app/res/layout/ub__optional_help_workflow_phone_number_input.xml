@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News.Secondary" android:id="@id/help_workflow_phone_number_input_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/help_workflow_phone_number_input_country_picker" android:background="?android:editTextBackground" android:paddingBottom="@dimen/ui__text_size_medium" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:id="@id/help_workflow_phone_number_input_country_flag" android:background="?android:colorBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+            <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?android:textColorTertiary" android:paddingStart="@dimen/ui__spacing_unit_1x" android:paddingEnd="@dimen/ui__spacing_unit_1x" app:srcCompat="@drawable/ic_dropdown_arrow" />
+            <com.ubercab.ui.core.UTextView android:textAppearance="?editTextStyle" android:id="@id/help_workflow_phone_number_input_country_dialing_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UEditText android:id="@id/help_workflow_phone_number_input_digits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="phone" android:layout_marginStart="@dimen/ui__spacing_unit_1x" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News" android:textColor="?textColorError" android:id="@id/help_workflow_phone_number_input_error" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

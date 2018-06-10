@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:paddingTop="20.0dip" n1:paddingBottom="20.0dip" n1:clickable="false" n1:descendantFocusability="blocksDescendants" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.liveperson.infra.ui.view.ui.CustomTextView n1:textSize="@dimen/regular_text_size" n1:textColor="@color/unread_indicator_bubble_text_color" n1:gravity="center" n1:id="@id/lpui_message_text" n1:background="@drawable/lpinfra_ui_unread_indicator_bubble_shape" n1:paddingLeft="@dimen/margin_double" n1:paddingTop="@dimen/margin_regular" n1:paddingRight="@dimen/margin_double" n1:paddingBottom="@dimen/margin_regular" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:paddingStart="@dimen/margin_double" n1:paddingEnd="@dimen/margin_double" n2:font_name="@string/custom_font_name_conversation_feed" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

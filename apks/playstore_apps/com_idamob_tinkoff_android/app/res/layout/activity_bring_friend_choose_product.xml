@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/n7" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar n1:id="@id/bring_friend_toolbar" n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" n2:navigationIcon="@drawable/ic_back_white" n2:subtitle="@string/bring_a_friend_debit_card_subtitle" n2:subtitleTextAppearance="@style/Text.Small" n2:subtitleTextColor="@color/subtitle_text_color" n2:title="@string/bring_a_friend_recommend_label" n2:titleTextAppearance="@style/Text.Default.White.Medium" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <android.support.design.widget.AppBarLayout n1:id="@id/bring_friend_products_appbar" n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="@dimen/bring_friend_products_appbar_height">
+                <LinearLayout n1:orientation="vertical" n1:id="@id/bring_friend_app_bar_content" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <ru.tcsbank.mb.ui.activities.account.appbar.RecyclerViewPagerOverlappingRender n1:id="@id/bring_friend_products_recycler" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="@dimen/bring_friend_products_products_pager_height" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" />
+                    <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator n1:layout_gravity="center_horizontal" n1:id="@id/bring_friend_products_indicator" n1:layout_width="wrap_content" n1:layout_height="@dimen/bring_friend_products_products_indicator_height" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" n3:spi_looped="true" style="@style/PagerIndicator" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                </LinearLayout>
+            </android.support.design.widget.AppBarLayout>
+            <LinearLayout n1:orientation="vertical" n1:id="@id/bring_friend_product_top_block" n1:background="@color/white" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:divider="@drawable/divider_list_margin" n1:showDividers="middle">
+                <LinearLayout n1:orientation="vertical" n1:id="@id/bring_friend_product_accounts_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:text="@string/bring_a_friend_my_product_text" style="@style/DefaultItem.Padding" />
+                    <android.support.v7.widget.RecyclerView n1:id="@id/bring_friend_product_accounts_recycler" n1:paddingLeft="4.0dip" n1:paddingRight="4.0dip" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:id="@id/bring_friend_product_friends_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:text="@string/bring_a_friend_friends_title" style="@style/DefaultItem.Padding" />
+                    <android.support.v7.widget.RecyclerView n1:id="@id/bring_friend_product_friends_recycler" n1:paddingLeft="4.0dip" n1:paddingRight="4.0dip" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout n1:orientation="horizontal" n1:paddingLeft="@dimen/offset_from_edge_half" n1:paddingTop="26.0dip" n1:paddingRight="@dimen/offset_from_edge_half" n1:paddingBottom="24.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:paddingLeft="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge_half" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                    <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:ellipsize="end" n1:gravity="center_horizontal" n1:id="@id/bring_friend_products_bonus_for_me_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/bring_a_friend_for_me_text_empty" n1:maxLines="1" />
+                    <ViewFlipper n1:id="@id/bring_friend_products_bonus_for_me_view_flipper" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="2.0dip">
+                        <View n1:layout_gravity="center_horizontal" n1:id="@id/bring_friend_products_bonus_for_me_placeholder" n1:background="@color/n6" n1:layout_width="@dimen/bring_friend_products_friend_placeholder_width" n1:layout_height="@dimen/bring_friend_products_friend_placeholder_height" n1:layout_marginTop="6.0dip" />
+                        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:id="@id/bring_friend_products_bonus_for_me" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                    </ViewFlipper>
+                </LinearLayout>
+                <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/bring_friend_products_bonus_for_friend_container" n1:paddingLeft="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge_half" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                    <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/bring_a_friend_for_friend_text" />
+                    <ViewFlipper n1:id="@id/bring_friend_products_bonus_for_friend_flipper" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="2.0dip">
+                        <View n1:layout_gravity="center_horizontal" n1:id="@id/bring_friend_products_bonus_for_friend_placeholder" n1:background="@color/n6" n1:layout_width="@dimen/bring_friend_products_friend_placeholder_width" n1:layout_height="@dimen/bring_friend_products_friend_placeholder_height" n1:layout_marginTop="6.0dip" />
+                        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:id="@id/bring_friend_products_bonus_for_friend" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                    </ViewFlipper>
+                </LinearLayout>
+            </LinearLayout>
+            <ViewFlipper n1:id="@id/bring_friend_products_button_flipper" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item" n1:layout_marginBottom="@dimen/offset_from_edge">
+                <Button n1:enabled="false" n1:textAppearance="@style/Text.Small.Dark" n1:id="@id/bring_friend_products_button" n1:layout_width="fill_parent" n1:layout_height="fill_parent" fontPath="@string/roboto_medium" style="@style/Button.Yellow.Normal" />
+                <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/bring_friend_products_button_progress" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+            </ViewFlipper>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

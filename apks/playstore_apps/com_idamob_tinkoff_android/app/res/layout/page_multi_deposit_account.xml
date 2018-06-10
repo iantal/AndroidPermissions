@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/AccountsCarouselPage">
+    <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:paddingLeft="@dimen/offset_account_page" n1:paddingRight="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/inc_page_account" />
+        <RelativeLayout n1:id="@id/content" style="@style/VerticalWrapping">
+            <TextView n1:id="@id/period_title" style="@style/AccountPage.Note" />
+            <TextView n1:id="@id/date" n1:layout_toRightOf="@id/period_title" n1:layout_alignBaseline="@id/period_title" style="@style/AccountPage.Note.White" />
+            <TextView n1:id="@id/percent_title" n1:text="@string/pba_profit" n1:layout_below="@id/period_title" style="@style/AccountPage.Note" />
+            <TextView n1:id="@id/percent" n1:text="@string/pba_percents" n1:layout_toRightOf="@id/percent_title" n1:layout_alignBaseline="@id/percent_title" style="@style/AccountPage.Note.White" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

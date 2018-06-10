@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView n1:id="@id/content" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <fragment n1:name="ru.tcsbank.mb.ui.providers.ProviderHeaderFragment" n1:id="@id/fragment_provider_header" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/screen_content_double_margin" />
+            <TextView n1:textAppearance="@style/Text.Default.Blue" n1:gravity="center" n1:id="@id/button_scan_qr_code" n1:background="@drawable/core_short_field_bg" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" n1:text="@string/transfers_to_people_scan_qr_button" />
+            <fragment n1:name="ru.tcsbank.mb.ui.fragments.operation.PaymentFieldsFragment" n1:id="@id/fragment_payment_fields" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <fragment n1:name="ru.tcsbank.mb.ui.fragments.pay.CommissionFragment" n1:id="@id/fragment_commission" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@android:id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" n1:layout_margin="@dimen/offset_from_edge" />
+    <TextView n1:layout_gravity="center" n1:id="@android:id/empty" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge" n1:text="@string/transfers_to_people_load_provider_error" />
+</FrameLayout>

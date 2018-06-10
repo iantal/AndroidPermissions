@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/MatchParent">
+    <ScrollView style="@style/MatchParent">
+        <RelativeLayout style="@style/VerticalWrapping">
+            <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/accounts" n1:descendantFocusability="blocksDescendants" style="@style/AccountsCarouselPager"
+              xmlns:n1="http://schemas.android.com/apk/res/android" />
+            <ru.tcsbank.mb.ui.widgets.SmoothProgress n2:id="@id/progress" n2:layout_below="@id/accounts" style="@style/SmoothProgress"
+              xmlns:n2="http://schemas.android.com/apk/res/android" />
+            <android.support.v7.widget.RecyclerView n3:id="@id/list" n3:layout_width="fill_parent" n3:layout_height="wrap_content" n3:layout_marginTop="@dimen/screen_content_margin_half" n3:layout_below="@id/accounts"
+              xmlns:n3="http://schemas.android.com/apk/res/android" />
+        </RelativeLayout>
+    </ScrollView>
+    <TextView n4:textAppearance="@style/Text.Small.Hint" n4:gravity="center" n4:id="@id/empty" n4:visibility="gone" n4:layout_width="fill_parent" n4:layout_height="fill_parent" n4:layout_marginTop="@dimen/carousel_height_accounts_simple" n4:text="@string/account_documents_empty_list"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+</FrameLayout>

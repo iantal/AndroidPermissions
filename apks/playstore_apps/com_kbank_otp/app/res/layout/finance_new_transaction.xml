@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff4f7fc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#fff4f7fc" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/top_panel" android:background="@color/top_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/top_panel_height">
+            <ImageButton android:id="@id/menu" style="@style/MenuStyle" />
+            <TextView android:id="@id/title_new_transaction" android:text="@string/title_new_transaction" style="@style/CaptionStyle" />
+        </RelativeLayout>
+        <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:background="#ff69ae20" android:paddingLeft="80.0dip" android:paddingTop="8.0dip" android:paddingRight="80.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <RadioButton android:textColor="@drawable/radio_color_selector" android:gravity="center" android:id="@id/expense" android:background="@drawable/radio_left" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:checked="true" android:button="@null" android:text="@string/expense" android:layout_weight="1.0" />
+            <RadioButton android:textColor="@drawable/radio_color_selector" android:gravity="center" android:id="@id/income" android:background="@drawable/radio_right" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/income" android:layout_weight="1.0" />
+        </RadioGroup>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fadeScrollbars="false">
+            <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/category_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="66.0dip">
+                    <ImageView android:id="@id/category_icon" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/default_icon" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/grey" android:id="@id/category_name" android:clickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="@string/choose_category" android:layout_weight="1.0" />
+                    <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ar_right" />
+                </LinearLayout>
+                <View android:background="@drawable/new_transaction_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@drawable/roundrect" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:text="@string/new_payment_amount" />
+                    <EditText android:textColorHint="#ffbebebe" android:ellipsize="start" android:gravity="right" android:id="@id/amountEdit" android:background="#00000000" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:hint="@string/watermark" android:lines="1" android:layout_toRightOf="@id/amount" android:layout_alignBaseline="@id/amount" android:inputType="numberDecimal" android:imeOptions="actionDone" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@drawable/roundrect" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/roundrect" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/date_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:text="@string/date" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:layout_gravity="right" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignBaseline="@id/date_caption" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@drawable/roundrect" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/description_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:text="@string/description" />
+                    <EditText android:textColorHint="#ffbebebe" android:ellipsize="start" android:gravity="right" android:id="@id/description" android:background="#00000000" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:maxLines="1" android:layout_toRightOf="@id/description_caption" android:layout_alignBaseline="@id/description_caption" android:inputType="text" android:imeOptions="actionDone" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@drawable/roundrect" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/tag_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:text="@string/tag" />
+                    <TextView android:textColorHint="#ffbebebe" android:ellipsize="start" android:gravity="right" android:id="@id/tag" android:background="#00000000" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:maxLines="1" android:layout_toRightOf="@id/tag_caption" android:layout_alignBaseline="@id/tag_caption" android:inputType="text" android:imeOptions="actionDone" />
+                </RelativeLayout>
+                <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@drawable/login_text_selector" android:id="@id/save" android:background="@drawable/login_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/cmd_save" />
+                <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@drawable/login_text_selector" android:id="@id/delete" android:background="@drawable/delete_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/cmd_del_transaction" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@id/popup" android:background="#b0000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="center" android:background="@drawable/sub_panel" android:layout_width="160.0dip" android:layout_height="178.0dip">
+            <ProgressBar android:id="@id/isreg_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/processing" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/success_popup" android:background="#b0000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="center" android:background="@drawable/sub_panel" android:layout_width="160.0dip" android:layout_height="178.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:src="@drawable/mark" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/cmd_ok" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

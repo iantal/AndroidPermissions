@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="?gutterSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:theme="@style/Theme.Helix.Dark" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ub__social_profiles_tooltip_indicator_text" android:background="?colorAccentInverse" android:paddingLeft="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="@dimen/ub__simple_tooltip_indicator_height" android:text="@string/ub__social_profiles_tooltip_text" android:includeFontPadding="false" android:paddingStart="@dimen/ui__spacing_unit_1x" android:paddingEnd="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H6.News" />
+    <com.ubercab.ui.core.UPlainView android:background="@drawable/ub_optional__social_profiles_tooltip_arrow" android:layout_width="@dimen/ub__social_profiles_tooltip_arrow_size" android:layout_height="@dimen/ub__social_profiles_tooltip_arrow_size" android:rotation="180.0" android:layout_marginStart="@dimen/ui__spacing_unit_3x" />
+</com.ubercab.ui.core.ULinearLayout>

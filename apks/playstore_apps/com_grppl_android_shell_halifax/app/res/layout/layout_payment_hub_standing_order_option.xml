@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/paymentHubStandingOrderContainer" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:background="@drawable/all_list_divider" n1:layout_width="fill_parent" n1:layout_height="@dimen/list_divider_drawable_height" n1:layout_marginTop="@dimen/fragment_content_padding" />
+    <RelativeLayout n1:background="@color/white" n1:paddingLeft="@dimen/fragment_content_padding" n1:paddingRight="@dimen/fragment_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/payment_hub_content_height">
+        <android.support.v7.widget.SwitchCompat n1:theme="@style/Widget.Switch" n1:id="@id/paymentHubStandingOrderSwitch" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" />
+        <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/payment_hub_standing_order_title_text" n1:layout_toLeftOf="@id/paymentHubStandingOrderSwitch" n1:layout_centerVertical="true" style="@style/TextAppearance.Body" />
+    </RelativeLayout>
+    <include layout="@layout/layout_list_divider" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/paymentHubFrequencyContainer" n1:background="@color/white" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.mobile.ui.common.view.TitledPickerView n1:id="@id/paymentHubFrequencyTitledPickerView" n1:paddingLeft="@dimen/fragment_content_padding" n1:paddingRight="@dimen/fragment_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/payment_hub_frequency_please_select" n1:hint="@string/payment_hub_frequency_title_text" style="@style/Widget.TitledPickerView" />
+        <include layout="@layout/layout_list_divider" />
+        <com.mobile.ui.common.view.CalendarPickerView n1:id="@id/paymentHubStandingOrderFirstPayment" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/payment_hub_calendar_picker_margin" n1:hint="@string/payment_hub_first_payment_input_view_hint_text" style="@style/Widget.CalendarPickerView" />
+        <com.mobile.ui.common.view.CalendarPickerView n1:id="@id/paymentHubStandingOrderLastPayment" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/payment_hub_calendar_picker_margin" n1:hint="@string/payment_hub_last_payment_input_view_hint_text" style="@style/Widget.CalendarPickerView" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/standingOrderReferenceInputFieldContainer" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_content_padding" n1:layout_marginTop="@dimen/fragment_content_padding" n1:layout_marginRight="@dimen/fragment_content_padding">
+            <com.mobile.ui.common.view.InputWithHintField n1:id="@id/standingOrderReferenceInputWithHintField" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/payment_hub_reference_input_view_hint_text" n1:maxLength="@integer/add_beneficiary_reference_max_length" n1:digits="@string/reference_field_regex" style="@style/Widget.InputWithHintField" />
+            <com.mobile.ui.common.view.InputFieldTipView n1:id="@id/standingOrderReferenceInputFieldTipView" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/Widget.InputFieldTip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

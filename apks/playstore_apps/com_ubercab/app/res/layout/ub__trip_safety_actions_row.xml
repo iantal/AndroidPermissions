@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.safety_action.TripSafetyActionsRowView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="e89578f1-e896"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__trip_safet_actions_row_combined_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/ub__trip_safety_actions_row_buttons_container" layout="@layout/ub__trip_buttons" />
+        <include android:id="@id/ub__trip_safety_actions_row_tool_tip_container" layout="@layout/ub__trip_safety_tooltip" />
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.safety_action.TripSafetyActionsRowView>

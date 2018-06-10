@@ -1,0 +1,454 @@
+.class public Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lcom/uber/model/core/adapter/gson/GsonSerializable;
+    value = Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback_GsonTypeAdapter;
+.end annotation
+
+.annotation runtime Lhfw;
+    a = Lcom/uber/model/core/generated/rtapi/models/restaurantorder/RestaurantorderRaveValidationFactory;
+.end annotation
+
+
+# instance fields
+.field private volatile transient $hashCode:I
+
+.field private volatile transient $hashCodeMemoized:Z
+
+.field private volatile transient $toString:Ljava/lang/String;
+
+.field private final schema:Ljava/lang/String;
+
+.field private final subject:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;
+
+.field private final uuid:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;
+
+.field private final value:Ljava/lang/String;
+
+
+# direct methods
+.method private constructor <init>(Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 43
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 44
+    iput-object p1, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->uuid:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;
+
+    .line 45
+    iput-object p2, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->subject:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;
+
+    .line 46
+    iput-object p3, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->schema:Ljava/lang/String;
+
+    .line 47
+    iput-object p4, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->value:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;Ljava/lang/String;Ljava/lang/String;Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback$1;)V
+    .locals 0
+
+    .line 24
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;-><init>(Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static builder()Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback$Builder;
+    .locals 2
+
+    .line 51
+    new-instance v0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback$Builder;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback$Builder;-><init>(Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback$1;)V
+
+    return-object v0
+.end method
+
+.method public static builderWithDefaults()Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback$Builder;
+    .locals 1
+
+    .line 86
+    invoke-static {}, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->builder()Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static stub()Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;
+    .locals 1
+
+    .line 91
+    invoke-static {}, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->builderWithDefaults()Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback$Builder;->build()Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x0
+
+    if-nez p1, :cond_0
+
+    return v0
+
+    :cond_0
+    const/4 v1, 0x1
+
+    if-ne p1, p0, :cond_1
+
+    return v1
+
+    .line 102
+    :cond_1
+    instance-of v2, p1, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;
+
+    if-eqz v2, :cond_7
+
+    .line 103
+    check-cast p1, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;
+
+    .line 104
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->uuid:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;
+
+    if-nez v2, :cond_2
+
+    iget-object v2, p1, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->uuid:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;
+
+    if-nez v2, :cond_6
+
+    goto :goto_0
+
+    :cond_2
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->uuid:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;
+
+    iget-object v3, p1, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->uuid:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;
+
+    invoke-virtual {v2, v3}, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_6
+
+    :goto_0
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->subject:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;
+
+    if-nez v2, :cond_3
+
+    iget-object v2, p1, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->subject:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;
+
+    if-nez v2, :cond_6
+
+    goto :goto_1
+
+    :cond_3
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->subject:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;
+
+    iget-object v3, p1, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->subject:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;
+
+    .line 105
+    invoke-virtual {v2, v3}, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_6
+
+    :goto_1
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->schema:Ljava/lang/String;
+
+    if-nez v2, :cond_4
+
+    iget-object v2, p1, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->schema:Ljava/lang/String;
+
+    if-nez v2, :cond_6
+
+    goto :goto_2
+
+    :cond_4
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->schema:Ljava/lang/String;
+
+    iget-object v3, p1, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->schema:Ljava/lang/String;
+
+    .line 106
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_6
+
+    :goto_2
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->value:Ljava/lang/String;
+
+    if-nez v2, :cond_5
+
+    iget-object p1, p1, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->value:Ljava/lang/String;
+
+    if-nez p1, :cond_6
+
+    goto :goto_3
+
+    :cond_5
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->value:Ljava/lang/String;
+
+    iget-object p1, p1, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->value:Ljava/lang/String;
+
+    .line 107
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_6
+
+    :goto_3
+    const/4 v0, 0x1
+
+    :cond_6
+    return v0
+
+    :cond_7
+    return v0
+.end method
+
+.method public hashCode()I
+    .locals 4
+
+    .line 135
+    iget-boolean v0, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->$hashCodeMemoized:Z
+
+    if-nez v0, :cond_4
+
+    .line 138
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->uuid:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->uuid:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;->hashCode()I
+
+    move-result v0
+
+    :goto_0
+    const v2, 0xf4243
+
+    xor-int/2addr v0, v2
+
+    mul-int v0, v0, v2
+
+    .line 140
+    iget-object v3, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->subject:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;
+
+    if-nez v3, :cond_1
+
+    const/4 v3, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    iget-object v3, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->subject:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;
+
+    invoke-virtual {v3}, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;->hashCode()I
+
+    move-result v3
+
+    :goto_1
+    xor-int/2addr v0, v3
+
+    mul-int v0, v0, v2
+
+    .line 142
+    iget-object v3, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->schema:Ljava/lang/String;
+
+    if-nez v3, :cond_2
+
+    const/4 v3, 0x0
+
+    goto :goto_2
+
+    :cond_2
+    iget-object v3, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->schema:Ljava/lang/String;
+
+    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
+
+    move-result v3
+
+    :goto_2
+    xor-int/2addr v0, v3
+
+    mul-int v0, v0, v2
+
+    .line 144
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->value:Ljava/lang/String;
+
+    if-nez v2, :cond_3
+
+    goto :goto_3
+
+    :cond_3
+    iget-object v1, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->value:Ljava/lang/String;
+
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    move-result v1
+
+    :goto_3
+    xor-int/2addr v0, v1
+
+    .line 145
+    iput v0, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->$hashCode:I
+
+    const/4 v0, 0x1
+
+    .line 146
+    iput-boolean v0, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->$hashCodeMemoized:Z
+
+    .line 148
+    :cond_4
+    iget v0, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->$hashCode:I
+
+    return v0
+.end method
+
+.method public schema()Ljava/lang/String;
+    .locals 1
+    .annotation build Lcom/uber/model/core/annotation/Property;
+    .end annotation
+
+    .line 69
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->schema:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public subject()Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;
+    .locals 1
+    .annotation build Lcom/uber/model/core/annotation/Property;
+    .end annotation
+
+    .line 63
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->subject:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;
+
+    return-object v0
+.end method
+
+.method public toBuilder()Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback$Builder;
+    .locals 2
+
+    .line 81
+    new-instance v0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback$Builder;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback$Builder;-><init>(Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback$1;)V
+
+    return-object v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    .line 114
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->$toString:Ljava/lang/String;
+
+    if-nez v0, :cond_0
+
+    .line 115
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "Feedback{uuid="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->uuid:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", subject="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->subject:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/FeedbackSubject;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", schema="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->schema:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", value="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->value:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, "}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->$toString:Ljava/lang/String;
+
+    .line 130
+    :cond_0
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->$toString:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public uuid()Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;
+    .locals 1
+    .annotation build Lcom/uber/model/core/annotation/Property;
+    .end annotation
+
+    .line 57
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->uuid:Lcom/uber/model/core/generated/rtapi/models/restaurantorder/UUID;
+
+    return-object v0
+.end method
+
+.method public value()Ljava/lang/String;
+    .locals 1
+    .annotation build Lcom/uber/model/core/annotation/Property;
+    .end annotation
+
+    .line 75
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/models/restaurantorder/Feedback;->value:Ljava/lang/String;
+
+    return-object v0
+.end method

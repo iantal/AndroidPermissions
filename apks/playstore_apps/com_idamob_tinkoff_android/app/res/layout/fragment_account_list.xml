@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tcsbank.mb.ui.widgets.StickySwipeRefreshLayout n1:id="@id/swipe_refresh_layout" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.CoordinatorLayout n1:theme="@style/MbActionBarTheme" n1:id="@id/account_list_coordinator" n1:background="@color/n7" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView n1:id="@id/accounts" n1:scrollbars="vertical" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <android.support.design.widget.AppBarLayout n1:id="@id/appbar" n1:background="@drawable/main_appbar_background" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="@dimen/app_bar_height" n3:layout_behavior="ru.tcsbank.mb.ui.widgets.SnapAppBarBehavior" xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <ru.tcsbank.mb.ui.activities.account.appbar.CollapsingAppBarLayout n1:id="@id/account_list_collapsing_appbar" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="@dimen/app_bar_height" n3:layout_scrollFlags="exitUntilCollapsed|scroll">
+                <ru.tcsbank.mb.ui.events.widget.ToolbarSearchView n1:id="@id/account_list_toolbar_search_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="?actionBarSize" />
+                <ru.tcsbank.mb.ui.fragments.account.StoriesPreviewView n1:id="@id/account_list_stories_review" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="0.0dip" />
+                <ru.tcsbank.mb.ui.fragments.account.CollapsibleSpace n1:id="@id/account_list_header_bottom_space" n1:layout_width="fill_parent" n1:layout_height="28.0dip" n1:minHeight="0.0dip" />
+            </ru.tcsbank.mb.ui.activities.account.appbar.CollapsingAppBarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/account_placeholder_progress" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:n4="http://schemas.android.com/apk/res-auto">
+            <include layout="@layout/list_item_section_divider" />
+            <include n1:id="@id/account_placeholder" layout="@layout/list_item_accounts_account_content_placeholder" />
+        </LinearLayout>
+        <android.support.v7.widget.Toolbar n1:id="@id/toolbar" style="@style/MainPage.Toolbar">
+            <TextView n1:textAppearance="@style/Text.Header.White.Medium" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/common_tab_accounts" />
+        </android.support.v7.widget.Toolbar>
+        <ru.tcsbank.mb.ui.widgets.ConfirmButtonView n1:layout_gravity="bottom|center" n1:id="@id/confirm_drag_button" n1:visibility="gone" n1:layout_width="60.0dip" n1:layout_height="60.0dip" n1:layout_marginBottom="@dimen/offset_from_edge" n1:translationY="@dimen/confirm_button_translation" />
+    </android.support.design.widget.CoordinatorLayout>
+</ru.tcsbank.mb.ui.widgets.StickySwipeRefreshLayout>

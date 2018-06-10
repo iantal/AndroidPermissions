@@ -1,0 +1,44 @@
+.class public final Lbel;
+.super Ljava/lang/Object;
+
+
+# instance fields
+.field public final a:Lcom/facebook/ads/internal/AdErrorType;
+
+.field public final b:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(ILjava/lang/String;)V
+    .locals 0
+
+    invoke-static {p1}, Lcom/facebook/ads/internal/AdErrorType;->a(I)Lcom/facebook/ads/internal/AdErrorType;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1, p2}, Lbel;-><init>(Lcom/facebook/ads/internal/AdErrorType;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/facebook/ads/internal/AdErrorType;Ljava/lang/String;)V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 1000
+    iget-object p2, p1, Lcom/facebook/ads/internal/AdErrorType;->b:Ljava/lang/String;
+
+    :cond_0
+    iput-object p1, p0, Lbel;->a:Lcom/facebook/ads/internal/AdErrorType;
+
+    iput-object p2, p0, Lbel;->b:Ljava/lang/String;
+
+    return-void
+.end method

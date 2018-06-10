@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.cobrandcard.application.agreement.CobrandCardAgreementView android:orientation="vertical" android:background="?brandWhite" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="f5f102c5-efec"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/ub__cobrandcard_application_header" />
+    <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <WebView android:id="@id/ub__cobrandcard_agreement_webview" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="b06eae68-197c" />
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__cobrandcard_agreement_webview_loading" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorPrimary" />
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.UFrameLayout android:background="?brandGrey20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UButton android:id="@id/ub__cobrandcard_agreement_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/cobrandcard_agreement_button" uber:analyticsId="2d103bd5-50f2" style="@style/Platform.Button" />
+        <com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/ub__cobrandcard_agreement_submitting" android:background="?brandGrey20" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/cobrandcard_agreement_submitting" android:textAllCaps="true" style="@style/Platform.Button.Primary" />
+        <com.ubercab.ui.core.UPlainView android:layout_gravity="top" android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__cobrandcard_agreement_button_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" />
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.presidio.cobrandcard.application.agreement.CobrandCardAgreementView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.itinerary.TripItineraryCardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/itinerary_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/itinerary_divider" android:visibility="gone" layout="@layout/ub__grey_horizontal_line" />
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:id="@id/share_trip_container" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.itinerary.TripItineraryCardView>

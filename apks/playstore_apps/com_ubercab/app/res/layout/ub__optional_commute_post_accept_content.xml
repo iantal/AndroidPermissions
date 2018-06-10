@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:theme="@style/Theme.Helix.Light" android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="?contentInset" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.CircleImageView android:id="@id/commute_post_accept_driver_photo" android:layout_width="?avatarMedium" android:layout_height="?avatarMedium" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ui__spacing_unit_2x">
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:id="@id/commute_post_accept_driver_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News.Primary" />
+                <com.ubercab.ui.core.UTextView android:id="@id/commute_post_accept_driver_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H6.News.Primary" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UTextView android:id="@id/commute_post_accept_driver_vehicle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="@dimen/ui__divider_width" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/commute_post_accept_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.Book" />
+        <Space android:layout_width="wrap_content" android:layout_height="@dimen/ui__spacing_unit_1x" />
+        <com.ubercab.ui.core.UTextView android:id="@id/commute_post_accept_message" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.P" />
+        <Space android:layout_width="wrap_content" android:layout_height="@dimen/ui__spacing_unit_2x" />
+        <com.ubercab.ui.core.UButton android:id="@id/commute_post_accept_accept" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/ui__min_button_height" android:text="@string/accept" uber:analyticsId="e5b5c6ea-8cdf" style="@style/Platform.Button.Primary" />
+        <com.ubercab.ui.core.UButton android:id="@id/commute_post_accept_decline" android:background="?selectableItemBackground" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/ui__min_button_height" android:text="@string/decline" android:textAllCaps="false" uber:analyticsId="3cced91f-53e8" style="@style/Platform.Button.Secondary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

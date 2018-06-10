@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ub__partner_funnel_viewgroup_content" android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_step_header_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" style="@style/Funnel.Helix.TextAppearance.H1.Book" />
+        <com.ubercab.android.partner.funnel.onboarding.view.HelixFloatingLabelEditText android:id="@id/ub__partner_funnel_step_input_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" app:floatingLabelEditTextAppearance="@style/Funnel.Helix.TextAppearance.H3.News" app:floatingLabelSubTextAppearance="@style/Funnel.Helix.TextAppearance.P" app:floatingLabelInfoTextColor="?android:textColorSecondary" app:floatingLabelErrorTextColor="?colorNegative" />
+        <com.ubercab.android.partner.funnel.onboarding.view.MultiLineBodyLayout android:id="@id/ub__partner_funnel_bgc_ssn_checklist_viewgroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

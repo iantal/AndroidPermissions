@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.headerview.HeaderView android:theme="@style/Theme.Helix.Dark" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/ub__header_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <com.ubercab.ui.core.UPlainView android:id="@id/ub__header_background" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="@dimen/ub__header_height_expanded" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__header" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:gravity="center_vertical" android:id="@id/ub__header_title_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/home_header_title" android:maxLines="1" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H2.Book" />
+        <com.ubercab.ui.core.UTextView android:gravity="center_vertical" android:id="@id/ub__header_subtitle" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__header_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?contentInset" android:foreground="?selectableItemBackgroundBorderless" android:contentDescription="@string/back_button_description" android:paddingStart="?contentInset" android:paddingEnd="0.0dip" app:srcCompat="@drawable/navigation_icon_back" />
+</com.ubercab.presidio.app.optional.root.main.ride.headerview.HeaderView>

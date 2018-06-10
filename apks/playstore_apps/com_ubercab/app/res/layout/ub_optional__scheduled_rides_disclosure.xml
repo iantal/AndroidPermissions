@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.scheduled_rides.disclosure.DisclosureView android:fitsSystemWindows="@bool/use_transparent_status_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="1a2c8af5-d57e"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/ub_optional__scheduled_rides_loading" />
+</com.ubercab.presidio.scheduled_rides.disclosure.DisclosureView>

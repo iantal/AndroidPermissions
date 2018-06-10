@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.giftcard.operation.add.GiftCardAddView android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="31cbbc5d-bbf4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/fixed_header" />
+    <com.ubercab.ui.core.URelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.commons.widget.PresidioTextInputLayout android:id="@id/ub_optional__gift_code_layout" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:hintEnabled="false">
+            <com.ubercab.ui.commons.widget.ClearableEditText android:id="@id/ub_optional__gift_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/gift_card_enter_code" android:inputType="textNoSuggestions" style="@style/Platform.TextAppearance.H3" />
+        </com.ubercab.ui.commons.widget.PresidioTextInputLayout>
+        <com.ubercab.ui.core.UFrameLayout android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub_optional__gift_add_loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorPrimary" />
+            <com.ubercab.ui.core.UButton android:enabled="false" android:id="@id/ub_optional__gift_code_save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gift_card_save" uber:analyticsId="f4c8cc19-16b2" style="@style/Platform.Button" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.URelativeLayout>
+</com.ubercab.presidio.payment.giftcard.operation.add.GiftCardAddView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background_result" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_horizontal_margin" android:layout_centerInParent="true">
+        <de.idnow.sdk.UI_AnimationView android:layout_gravity="center_horizontal" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="@dimen/activity_horizontal_margin" android:src="@drawable/logo0" android:scaleType="fitEnd" android:contentDescription="@string/image_description" />
+        <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/photo_dialog_content" />
+        <TextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:id="@id/textViewProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" />
+        <ProgressBar android:id="@id/progressBarUpload" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progress="0" style="?android:progressBarStyleHorizontal" />
+    </LinearLayout>
+</RelativeLayout>

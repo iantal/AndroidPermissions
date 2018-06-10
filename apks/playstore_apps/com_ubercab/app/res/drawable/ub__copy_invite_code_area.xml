@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="0.0dip" android:insetRight="0.0dip" android:insetTop="@dimen/ub__abc_button_inset_vertical_material" android:insetBottom="@dimen/ub__abc_button_inset_vertical_material"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <stroke android:width="@dimen/ub__stroke_width" android:color="@color/ub__ui_core_grey_60" />
+        <solid android:color="@color/ub__ui_core_brand_white" />
+        <padding android:top="@dimen/ub__abc_control_padding_material" android:bottom="@dimen/ub__abc_control_padding_material" />
+    </shape>
+</inset>

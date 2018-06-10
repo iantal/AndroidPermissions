@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/calendar_title_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <Button n1:id="@id/calendar_left_arrow" n1:background="@drawable/bitmap_spa_left_arrow" n1:layout_alignParentLeft="true" n1:layout_alignParentStart="true" style="@style/SpaMonthButton" />
+        <TextView n1:id="@id/calendar_month_year_textview" n1:layout_toLeftOf="@id/calendar_right_arrow" n1:layout_toRightOf="@id/calendar_left_arrow" n1:layout_toStartOf="@id/calendar_right_arrow" n1:layout_toEndOf="@id/calendar_left_arrow" style="@style/SpaMonthText" />
+        <Button n1:id="@id/calendar_right_arrow" n1:background="@drawable/bitmap_spa_right_arrow" n1:layout_alignParentRight="true" n1:layout_alignParentEnd="true" style="@style/SpaMonthButton" />
+    </RelativeLayout>
+    <GridView n1:id="@id/weekday_gridview" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@null" n1:numColumns="7" />
+    <com.antonyt.infiniteviewpager.InfiniteViewPager n1:id="@id/months_infinite_pager" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</LinearLayout>

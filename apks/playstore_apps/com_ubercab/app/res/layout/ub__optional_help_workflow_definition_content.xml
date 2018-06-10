@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/help_workflow_definition_label_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.Medium" />
+    <com.ubercab.ui.core.UTextView android:id="@id/help_workflow_definition_content_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.P" />
+</merge>

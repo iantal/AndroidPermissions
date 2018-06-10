@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:layout_gravity="center_horizontal" n1:id="@id/homeInsurancePolicyErrorMessage" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/activity_margin" style="@style/TextAppearance.Information" />
+    <View n1:id="@id/home_insurance_static_top_divider" n1:background="@drawable/all_list_divider" n1:layout_width="fill_parent" n1:layout_height="@dimen/list_divider_drawable_height" />
+    <android.support.v4.widget.NestedScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true" n1:layout_below="@id/home_insurance_static_top_divider">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:divider="@drawable/all_list_divider" n1:showDividers="middle">
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/homeInsurancePolicyNumberHolder" n1:padding="@dimen/activity_margin" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/home_insurance_policy_number" n1:layout_weight="1.0" style="@style/HomeInsurancePolicyTitle" />
+                <TextView n1:gravity="right" n1:id="@id/homeInsurancePolicyNumber" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" style="@style/HomeInsurancePolicyValue" />
+            </LinearLayout>
+            <TableLayout n1:id="@id/homeInsurancePolicyPhoneNumbers" n1:background="@color/home_insurance_phones_background_colour" n1:padding="@dimen/activity_margin" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <TextView n1:id="@id/homeInsurancePolicyAmendmentDate" n1:padding="@dimen/activity_margin" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/TextAppearance.Body" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/homeInsurancePolicyInvolvedPartiesHolder" n1:padding="@dimen/activity_margin" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:importantForAccessibility="yes">
+                <TextView n1:id="@id/homeInsurancePolicyInvolvedPartiesHeader" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/home_insurance_policyholders_title" n1:importantForAccessibility="no" style="@style/HomeInsurancePolicySectionHeader" />
+                <TextView n1:id="@id/homeInsurancePolicyInvolvedPartiesContent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:importantForAccessibility="yes" style="@style/TextAppearance.Body" />
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:id="@id/homeInsurancePolicyInsuredAddressHolder" n1:padding="@dimen/activity_margin" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:importantForAccessibility="yes">
+                <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/home_insurance_address_title" n1:importantForAccessibility="no" style="@style/HomeInsurancePolicySectionHeader" />
+                <TextView n1:id="@id/homeInsurancePolicyInsuredAddress" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:importantForAccessibility="no" style="@style/TextAppearance.Body" />
+            </LinearLayout>
+            <TextView n1:id="@id/homeInsurancePolicyWhatsIncluded" n1:padding="@dimen/activity_margin" n1:focusable="true" n1:visibility="gone" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/home_insurance_policy_whats_included" n1:contentDescription="@string/home_insurance_policy_whats_included_accessibility" style="@style/HomeInsuranceWebLinkButton" />
+            <TextView n1:id="@id/homeInsurancePolicyOptionalCover" n1:padding="@dimen/activity_margin" n1:focusable="true" n1:visibility="gone" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/home_insurance_policy_optional_cover" n1:contentDescription="@string/home_insurance_policy_optional_cover_accessibility" style="@style/HomeInsuranceWebLinkButton" />
+            <TextView n1:id="@id/homeInsurancePolicyCostsAndPayments" n1:padding="@dimen/activity_margin" n1:focusable="true" n1:visibility="gone" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/home_insurance_policy_costs_and_payments" n1:contentDescription="@string/home_insurance_policy_costs_and_payments_accessibility" style="@style/HomeInsuranceWebLinkButton" />
+            <TextView n1:id="@id/homeInsurancePolicyTermsAndConditions" n1:padding="@dimen/activity_margin" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/home_insurance_policy_terms_and_conditions" style="@style/TextAppearance.Body" />
+            <TextView n1:id="@id/homeInsurancePolicyLegalDisclaimer" n1:padding="@dimen/activity_margin" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/home_insurance_policy_legal_disclaimer" style="@style/HomeInsuranceBodyTextSmall" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

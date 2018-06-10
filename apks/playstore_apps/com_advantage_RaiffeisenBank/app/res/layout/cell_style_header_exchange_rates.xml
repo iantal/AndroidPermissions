@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/rzb_white" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:gravity="center" android:id="@id/isoCodeTextView" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+    <TextView android:textSize="16.0dip" android:gravity="center" android:id="@id/buyValueTextView" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:text="@string/exchange_rates_buy_label" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+    <TextView android:textSize="16.0dip" android:gravity="center" android:id="@id/bookValueTextView" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:text="@string/exchange_rates_book_label" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+    <TextView android:textSize="16.0dip" android:gravity="center" android:id="@id/sellValueTextView" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:text="@string/exchange_rates_sell_label" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+</LinearLayout>

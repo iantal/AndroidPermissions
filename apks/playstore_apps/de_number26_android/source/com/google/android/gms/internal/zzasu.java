@@ -1,0 +1,92 @@
+package com.google.android.gms.internal;
+
+public final class zzasu
+{
+  public static zzasv<Boolean> zza;
+  public static zzasv<Long> zzaa;
+  public static zzasv<Long> zzab;
+  public static zzasv<Long> zzac = zzasv.zza("analytics.service_client.reconnect_throttle_millis", 1800000L, 1800000L);
+  public static zzasv<Long> zzad = zzasv.zza("analytics.monitoring.sample_period_millis", 86400000L, 86400000L);
+  public static zzasv<Long> zzae = zzasv.zza("analytics.initialization_warning_threshold", 5000L, 5000L);
+  private static zzasv<Boolean> zzaf = zzasv.zza("analytics.service_enabled", false, false);
+  private static zzasv<Long> zzag;
+  private static zzasv<Float> zzah;
+  private static zzasv<Integer> zzai;
+  private static zzasv<Long> zzaj;
+  private static zzasv<Long> zzak;
+  private static zzasv<Integer> zzal;
+  private static zzasv<Long> zzam;
+  private static zzasv<String> zzan;
+  private static zzasv<Integer> zzao;
+  private static zzasv<Long> zzap;
+  private static zzasv<Long> zzaq;
+  public static zzasv<String> zzb;
+  public static zzasv<Integer> zzc;
+  public static zzasv<Integer> zzd;
+  public static zzasv<Long> zze;
+  public static zzasv<Long> zzf;
+  public static zzasv<Long> zzg;
+  public static zzasv<Long> zzh;
+  public static zzasv<Integer> zzi;
+  public static zzasv<Integer> zzj;
+  public static zzasv<String> zzk;
+  public static zzasv<String> zzl;
+  public static zzasv<String> zzm;
+  public static zzasv<String> zzn;
+  public static zzasv<Integer> zzo;
+  public static zzasv<String> zzp;
+  public static zzasv<String> zzq;
+  public static zzasv<Integer> zzr;
+  public static zzasv<Integer> zzs;
+  public static zzasv<Integer> zzt;
+  public static zzasv<String> zzu;
+  public static zzasv<Integer> zzv;
+  public static zzasv<Integer> zzw;
+  public static zzasv<Integer> zzx;
+  public static zzasv<Long> zzy;
+  public static zzasv<Boolean> zzz;
+  
+  static
+  {
+    zza = zzasv.zza("analytics.service_client_enabled", true, true);
+    zzb = zzasv.zza("analytics.log_tag", "GAv4", "GAv4-SVC");
+    zzag = zzasv.zza("analytics.max_tokens", 60L, 60L);
+    zzah = zzasv.zza("analytics.tokens_per_sec", 0.5F, 0.5F);
+    zzc = zzasv.zza("analytics.max_stored_hits", 2000, 20000);
+    zzai = zzasv.zza("analytics.max_stored_hits_per_app", 2000, 2000);
+    zzd = zzasv.zza("analytics.max_stored_properties_per_app", 100, 100);
+    zze = zzasv.zza("analytics.local_dispatch_millis", 1800000L, 120000L);
+    zzf = zzasv.zza("analytics.initial_local_dispatch_millis", 5000L, 5000L);
+    zzaj = zzasv.zza("analytics.min_local_dispatch_millis", 120000L, 120000L);
+    zzak = zzasv.zza("analytics.max_local_dispatch_millis", 7200000L, 7200000L);
+    zzg = zzasv.zza("analytics.dispatch_alarm_millis", 7200000L, 7200000L);
+    zzh = zzasv.zza("analytics.max_dispatch_alarm_millis", 32400000L, 32400000L);
+    zzi = zzasv.zza("analytics.max_hits_per_dispatch", 20, 20);
+    zzj = zzasv.zza("analytics.max_hits_per_batch", 20, 20);
+    zzk = zzasv.zza("analytics.insecure_host", "http://www.google-analytics.com", "http://www.google-analytics.com");
+    zzl = zzasv.zza("analytics.secure_host", "https://ssl.google-analytics.com", "https://ssl.google-analytics.com");
+    zzm = zzasv.zza("analytics.simple_endpoint", "/collect", "/collect");
+    zzn = zzasv.zza("analytics.batching_endpoint", "/batch", "/batch");
+    zzo = zzasv.zza("analytics.max_get_length", 2036, 2036);
+    zzp = zzasv.zza("analytics.batching_strategy.k", zzasc.zzb.name(), zzasc.zzb.name());
+    String str = zzasi.zza.name();
+    zzq = zzasv.zza("analytics.compression_strategy.k", str, str);
+    zzal = zzasv.zza("analytics.max_hits_per_request.k", 20, 20);
+    zzr = zzasv.zza("analytics.max_hit_length.k", 8192, 8192);
+    zzs = zzasv.zza("analytics.max_post_length.k", 8192, 8192);
+    zzt = zzasv.zza("analytics.max_batch_post_length", 8192, 8192);
+    zzu = zzasv.zza("analytics.fallback_responses.k", "404,502", "404,502");
+    zzv = zzasv.zza("analytics.batch_retry_interval.seconds.k", 3600, 3600);
+    zzam = zzasv.zza("analytics.service_monitor_interval", 86400000L, 86400000L);
+    zzw = zzasv.zza("analytics.http_connection.connect_timeout_millis", 60000, 60000);
+    zzx = zzasv.zza("analytics.http_connection.read_timeout_millis", 61000, 61000);
+    zzy = zzasv.zza("analytics.campaigns.time_limit", 86400000L, 86400000L);
+    zzan = zzasv.zza("analytics.first_party_experiment_id", "", "");
+    zzao = zzasv.zza("analytics.first_party_experiment_variant", 0, 0);
+    zzz = zzasv.zza("analytics.test.disable_receiver", false, false);
+    zzaa = zzasv.zza("analytics.service_client.idle_disconnect_millis", 10000L, 10000L);
+    zzab = zzasv.zza("analytics.service_client.connect_timeout_millis", 5000L, 5000L);
+    zzap = zzasv.zza("analytics.service_client.second_connect_delay_millis", 5000L, 5000L);
+    zzaq = zzasv.zza("analytics.service_client.unexpected_reconnect_millis", 60000L, 60000L);
+  }
+}

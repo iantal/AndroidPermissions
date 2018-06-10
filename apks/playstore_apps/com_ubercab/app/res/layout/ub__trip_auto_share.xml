@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.safety.auto_share.TripAutoShareView android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="a48dd0e9-c31d"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:background="@drawable/ub__pill_shape" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?contentInset" android:animateLayoutChanges="true" android:layout_marginStart="?contentInset" android:layout_marginEnd="?contentInset">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/ub__share_icon" android:layout_width="?avatarMicro" android:layout_height="?avatarMicro" android:layout_marginEnd="?contentInset" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ubercab.ui.core.UTextSwitcher android:id="@id/ub__share_text_switcher1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureAllChildren="false" android:animateLayoutChanges="true" style="@style/Platform.TextAppearance.H6.News.Primary" />
+            <com.ubercab.ui.core.UTextSwitcher android:id="@id/ub__share_text_switcher2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureAllChildren="false" android:animateLayoutChanges="true" style="@style/Platform.TextAppearance.H6.News.Primary" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__share_button" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/ub__share" android:paddingStart="?contentInset" uber:analyticsId="02defab8-c996" style="@style/Platform.TextAppearance.H6.News.Link" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.safety.auto_share.TripAutoShareView>

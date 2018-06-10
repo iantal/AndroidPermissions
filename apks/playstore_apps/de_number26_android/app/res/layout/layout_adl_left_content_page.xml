@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.Guideline android:orientation="horizontal" android:id="@id/guidelineLeftContentPage" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+    <FrameLayout android:id="@id/layoutLeftContentPageImage" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/guidelineLeftContentPage" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="1.0">
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/imageLeftContentPage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <de.number26.machete.android.adl.atoms.CenterHeadline android:id="@id/headlineLeftContentPage" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/layoutLeftContentPageImage" />
+    <ScrollView android:id="@id/scrollTextLeftContentPage" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/headlineLeftContentPage">
+        <de.number26.machete.android.adl.atoms.LeftBodyText android:id="@id/textLeftContentPage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" app:layout_constraintTop_toBottomOf="@id/headlineLeftContentPage" />
+    </ScrollView>
+</merge>

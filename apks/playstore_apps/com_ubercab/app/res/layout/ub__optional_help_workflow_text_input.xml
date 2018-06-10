@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News.Secondary" android:id="@id/help_workflow_text_input_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:labelFor="@id/help_workflow_text_input_edittext" />
+    <com.ubercab.ui.core.UEditText android:gravity="start|center|top" android:id="@id/help_workflow_text_input_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.EditText" />
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News" android:textColor="?textColorError" android:id="@id/help_workflow_text_input_error" android:layout_width="fill_parent" android:layout_height="wrap_content" android:labelFor="@id/help_workflow_text_input_edittext" />
+</merge>

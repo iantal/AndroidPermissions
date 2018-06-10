@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:paddingStart="@dimen/global_menu_spacing_large" n1:paddingEnd="@dimen/global_menu_spacing_large"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mobile.ui.common.view.HeadingTextView n1:id="@id/globalMenuHeaderTitle" n1:background="@drawable/global_menu_background_with_bottom_divider" n1:paddingTop="@dimen/global_menu_spacing_medium" n1:paddingBottom="@dimen/global_menu_header_text_spacing_bottom" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/global_menu_spacing_medium" style="@style/GlobalMenu.Item.HeaderText" />
+</FrameLayout>

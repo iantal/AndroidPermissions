@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.admin_settings.install_referrer.InstallReferrerSettingsView android:background="?android:windowBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/install_referrer_kv_label" />
+            <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News.Secondary" android:id="@id/install_referrer_kv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:text="@string/install_referrer_na" />
+            <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/install_referrer_kvp_label" />
+            <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News.Secondary" android:id="@id/install_referrer_kvp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/install_referrer_na" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.presidio.app.optional.root.main.admin_settings.install_referrer.InstallReferrerSettingsView>

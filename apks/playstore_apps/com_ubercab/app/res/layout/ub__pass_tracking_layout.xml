@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.pass.tracking.PassTrackingView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/pass_tracking_loading_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:bli_bitColor="?colorAccent" />
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__pass_tracking_toast_container" android:background="?colorPositive" android:paddingLeft="?gutterSize" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="?gutterSize" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_tracking_toast_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary.Inverse" />
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.presidio.pass.tracking.PassTrackingContainerView android:id="@id/pass_tracking_scroll_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/pass_tracking_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.ubercab.presidio.pass.tracking.PassTrackingContainerView>
+</com.ubercab.presidio.pass.tracking.PassTrackingView>

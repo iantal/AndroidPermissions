@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.pickup_correction.follow_up.PickupCorrectionSurveyTripCancellationFollowUpModalView android:orientation="vertical" android:background="?android:colorBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="b858171a-63e9"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pickup_correction_cancellation_follow_up_title" style="@style/Platform.TextAppearance.H1.Book" />
+    <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+    <com.ubercab.ui.core.ULinearLayout android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H5" />
+        <com.ubercab.ui.core.UTextView android:id="@id/eta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News.Tertiary" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UButton android:id="@id/cancel_trip_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/pickup_correction_cancellation_follow_up_cancel_trip_button" android:layout_weight="1.0" uber:analyticsId="ce67a128-7328" style="?platformButtonSecondary" />
+        <Space android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+        <com.ubercab.ui.core.UButton android:id="@id/change_pickup_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/pickup_correction_cancellation_follow_up_change_pickup_button" android:layout_weight="1.0" uber:analyticsId="c5fe13b7-e42c" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.trip.pickup_correction.follow_up.PickupCorrectionSurveyTripCancellationFollowUpModalView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/croppingRoot" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="left" n1:orientation="horizontal" n1:background="@color/croppingButtonsBG" n1:paddingLeft="20.0dip" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageButton n1:id="@id/cancelImageBtn" n1:background="#00000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/cropping_back_selector" />
+    </LinearLayout>
+    <FrameLayout n1:background="@color/croppingBG" n1:padding="0.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+        <FrameLayout n1:id="@id/imageFrameLayout" n1:background="@color/croppingTransparentBG" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <ImageView n1:layout_gravity="center" n1:id="@id/backgroundImageView" n1:background="@color/croppingTransparentBG" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="matrix" />
+            <ImageView n1:layout_gravity="center" n1:id="@id/originalImageView" n1:background="@color/croppingTransparentBG" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="matrix" />
+        </FrameLayout>
+        <com.topimagesystems.ui.SelectionCroppingView n1:layout_gravity="center" n1:id="@id/selectionPolygonView" n1:padding="0.0dip" n1:focusable="false" n1:focusableInTouchMode="false" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <FrameLayout n1:id="@id/confirmLayout" n1:background="@color/croppingBG" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <com.topimagesystems.ui.TouchImageView n1:layout_gravity="center" n1:id="@id/previewCroppedImage" n1:background="@color/croppingTransparentBG" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/intro_wrong_2x" n1:scaleType="fitCenter" />
+        </FrameLayout>
+        <ProgressBar n1:layout_gravity="center" n1:id="@id/mc_progress_bar" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout n1:orientation="horizontal" n1:background="@color/croppingButtonsBG" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageButton n1:id="@id/rotateImageBtn" n1:tag="clock" n1:background="#00000000" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:src="@drawable/cropping_rotate_selector" n1:layout_weight="1.0" />
+        <ImageButton n1:id="@id/rotateRevImageBtn" n1:tag="counterClock" n1:background="#00000000" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:src="@drawable/cropping_rotate_selector" n1:layout_weight="1.0" n1:scaleX="-1.0" />
+        <ImageButton n1:id="@id/expandImageBtn" n1:background="#00000000" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:src="@drawable/cropping_expand_selector" n1:layout_weight="1.0" />
+        <ImageButton n1:id="@id/magnetImageBtn" n1:background="#00000000" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:src="@drawable/cropping_magnet_selector" n1:layout_weight="1.0" />
+        <ImageButton n1:id="@id/confirmImageBtn" n1:background="#00000000" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:src="@drawable/cropping_confirm_selector" n1:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

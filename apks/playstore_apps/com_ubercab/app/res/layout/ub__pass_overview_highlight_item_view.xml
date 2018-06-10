@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.pass.purchase.v2.entry.OfferHighlightItemView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UCardView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/ui__spacing_unit_3x" app:cardBackgroundColor="@color/ub__pass_purchase_theme_color" app:cardCornerRadius="@dimen/ui__corner_radius" app:cardElevation="@dimen/ui__spacing_unit_0.5x" app:contentPadding="@dimen/ui__spacing_unit_3x">
+        <com.ubercab.ui.core.UConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_offer_highlight_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H2.Book.Primary.Inverse" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_offer_highlight_card_price" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/ub__pass_offer_highlight_card_title" style="@style/Platform.TextAppearance.H3.Book.Primary.Inverse" />
+            <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/ub__pass_offer_highlight_button" app:layout_constraintTop_toBottomOf="@id/ub__pass_offer_highlight_card_price">
+                <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__pass_offer_highlight_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.ubercab.ui.core.UScrollView>
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_offer_highlight_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" style="@style/Platform.TextAppearance.Link.Bold" />
+        </com.ubercab.ui.core.UConstraintLayout>
+    </com.ubercab.ui.core.UCardView>
+</com.ubercab.presidio.pass.purchase.v2.entry.OfferHighlightItemView>

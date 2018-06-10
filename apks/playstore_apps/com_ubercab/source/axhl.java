@@ -1,0 +1,3 @@
+class axhl
+  extends axhk
+{}

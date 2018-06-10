@@ -1,0 +1,152 @@
+.class public final Lwfs;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lawxs;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lawxs<",
+        "Lakgo;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Lwfc;
+
+.field private final b:Laxga;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Laxga<",
+            "Lajad;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lwfc;Laxga;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lwfc;",
+            "Laxga<",
+            "Lajad;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 20
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 21
+    iput-object p1, p0, Lwfs;->a:Lwfc;
+
+    .line 22
+    iput-object p2, p0, Lwfs;->b:Laxga;
+
+    return-void
+.end method
+
+.method public static a(Lwfc;Lajad;)Lakgo;
+    .locals 0
+
+    .line 42
+    invoke-virtual {p0, p1}, Lwfc;->a(Lajad;)Lakgo;
+
+    move-result-object p0
+
+    const-string p1, "Cannot return null from a non-@Nullable @Provides method"
+
+    invoke-static {p0, p1}, Lawxv;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lakgo;
+
+    return-object p0
+.end method
+
+.method public static a(Lwfc;Laxga;)Lakgo;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lwfc;",
+            "Laxga<",
+            "Lajad;",
+            ">;)",
+            "Lakgo;"
+        }
+    .end annotation
+
+    .line 32
+    invoke-interface {p1}, Laxga;->get()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lajad;
+
+    invoke-static {p0, p1}, Lwfs;->a(Lwfc;Lajad;)Lakgo;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static b(Lwfc;Laxga;)Lwfs;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lwfc;",
+            "Laxga<",
+            "Lajad;",
+            ">;)",
+            "Lwfs;"
+        }
+    .end annotation
+
+    .line 37
+    new-instance v0, Lwfs;
+
+    invoke-direct {v0, p0, p1}, Lwfs;-><init>(Lwfc;Laxga;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public a()Lakgo;
+    .locals 2
+
+    .line 27
+    iget-object v0, p0, Lwfs;->a:Lwfc;
+
+    iget-object v1, p0, Lwfs;->b:Laxga;
+
+    invoke-static {v0, v1}, Lwfs;->a(Lwfc;Laxga;)Lakgo;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 10
+    invoke-virtual {p0}, Lwfs;->a()Lakgo;
+
+    move-result-object v0
+
+    return-object v0
+.end method

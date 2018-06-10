@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:padding="@dimen/personal_details_screen_medium_spacing" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mobile.ui.common.view.HeadingTextView n1:id="@id/clickToCallPersonalDetailsAddressTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/call_us_screen_medium_spacing" n1:text="@string/personal_details_address_title" style="@style/TextAppearance.Headline" />
+    <include n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/clickToCallPersonalDetailsAddressTitle" layout="@layout/view_settings_personal_details_address" />
+    <Button n1:id="@id/settingsPersonalDetailsChangeAddressButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/click_to_call_us_change_address_button_text" n1:layout_alignParentBottom="true" n1:contentDescription="@string/accessibility_personal_details_address_change_button" style="@style/Widget.Button.Primary" />
+</RelativeLayout>

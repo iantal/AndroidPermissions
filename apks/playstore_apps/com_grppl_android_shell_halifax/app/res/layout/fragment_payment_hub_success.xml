@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:id="@id/paymentHubSuccessScrollView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/paymentHubReviewBottomButtonContainer">
+        <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/paymentHubSuccessIcon" n2:srcCompat="@drawable/payment_success_tick_icon" style="@style/PaymentHubSuccess.SuccessIcon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <TextView n1:gravity="center_horizontal" n1:id="@id/paymentHubSuccessTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/payment_hub_success_title_margin_top" n1:text="@string/payment_hub_success_title_text" n1:contentDescription="@string/accessibility_payment_hub_success_heading" style="@style/PaymentHubSuccess.Title" />
+            <TextView n1:id="@id/paymentHubSuccessMessage" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/PaymentHubSuccess.Message" />
+            <com.mobile.ui.paymenthub.view.PaymentHubSummaryView n1:id="@id/paymentHubSuccessPaymentSummary" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/PaymentHubSuccess.SummaryView" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/paymentHubReviewBottomButtonContainer" n1:padding="@dimen/payment_hub_success_screen_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true" n1:layout_alignParentStart="true">
+        <Button n1:id="@id/paymentHubSuccessStandingOrderPaymentButton" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/payment_hub_review_button_height" n1:layout_marginBottom="@dimen/payment_hub_success_button_margin_top" n1:text="@string/payment_hub_standing_order_success_primary_button_text" style="@style/Widget.Button.Primary" />
+        <Button n1:id="@id/paymentHubSuccessAnotherPaymentButton" n1:layout_width="fill_parent" n1:layout_height="@dimen/payment_hub_review_button_height" n1:text="@string/payment_hub_success_make_another_payment_button_text" style="@style/Widget.Button.Primary" />
+        <Button n1:id="@id/paymentHubSuccessViewTransactionsButton" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/payment_hub_success_button_height" n1:layout_marginTop="@dimen/payment_hub_success_button_margin_top" n1:text="@string/payment_hub_success_view_transactions_button_text" style="@style/Widget.Button.Secondary" />
+        <FrameLayout n1:layout_gravity="bottom" n1:id="@id/transactionSuccessBannerLeadContainer" n1:paddingTop="@dimen/banner_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

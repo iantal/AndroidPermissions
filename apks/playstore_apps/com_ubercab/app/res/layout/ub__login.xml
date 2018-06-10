@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.core.root.login.LoginView android:orientation="vertical" android:background="@android:color/white" android:padding="@dimen/ui__spacing_unit_4x" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.FloatingLabelEditText android:id="@id/login_page_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:imeOptions="actionNext" uber:floatingLabelLabelText="@string/email" />
+    <com.ubercab.ui.FloatingLabelEditText android:id="@id/login_page_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPassword" uber:floatingLabelLabelText="@string/password" />
+    <com.ubercab.ui.core.UButton android:layout_gravity="bottom|center" android:id="@id/login_page_login_button" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_signin" uber:analyticsId="048996d4-6f12" style="?platformButtonPrimary" />
+</com.ubercab.presidio.app.core.root.login.LoginView>

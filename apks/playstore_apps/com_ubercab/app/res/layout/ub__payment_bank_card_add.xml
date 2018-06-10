@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.base.ui.bankcard.add.BankCardAddView android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="f33ec290-815d"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/fixed_header" />
+    <com.ubercab.ui.core.URelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.UScrollView android:id="@id/scrolling_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ub__payment_bank_card_add_next_button" android:overScrollMode="never">
+            <include android:id="@id/ub__payment_bank_card_add_form_view" layout="@layout/ub__payment_bank_card_form_view" />
+        </com.ubercab.ui.core.UScrollView>
+        <com.ubercab.ui.commons.widget.KeyboardButton android:theme="@style/Platform.Button.Primary" android:layout_gravity="bottom|center" android:id="@id/ub__payment_bank_card_add_next_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/next" android:layout_alignParentBottom="true" uber:analyticsId="false" />
+    </com.ubercab.ui.core.URelativeLayout>
+</com.ubercab.presidio.payment.base.ui.bankcard.add.BankCardAddView>

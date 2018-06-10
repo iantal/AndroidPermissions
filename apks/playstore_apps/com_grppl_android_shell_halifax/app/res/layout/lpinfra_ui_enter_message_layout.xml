@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:gravity="center_horizontal" n1:id="@id/lpui_drop_preview_view" n1:visibility="gone" layout="@layout/lpinfra_ui_enter_message_preview_content_layout" />
+    <View n1:id="@id/lpui_enter_message_divider" n1:background="@color/enter_message_top_separator_color" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <include n1:id="@id/lpui_base_enter_message" layout="@layout/lpinfra_ui_base_enter_message_layout" />
+</LinearLayout>

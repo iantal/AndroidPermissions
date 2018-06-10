@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.profiles.features.travel_report.ProfileEditorTravelReportView android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UCoordinatorLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/collapsing_header" />
+        <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="?contentInset" android:layout_weight="1.0">
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__profile_editor_travel_report_title" android:paddingBottom="?contentInset" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?contentInset" style="@style/Platform.TextAppearance.H3.Book" />
+                <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ubercab.ui.core.UTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/profile_travel_report_weekly" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H5.News.Primary" />
+                    <com.ubercab.ui.core.USwitchCompat android:layout_gravity="end|center" android:id="@id/ub__profile_editor_travel_report_switch_weekly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="?avatarMedium" android:minHeight="?avatarMedium" />
+                </com.ubercab.ui.core.ULinearLayout>
+                <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ubercab.ui.core.UTextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/profile_travel_report_monthly" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H5.News.Primary" />
+                    <com.ubercab.ui.core.USwitchCompat android:layout_gravity="end|center" android:id="@id/ub__profile_editor_travel_report_switch_monthly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="?avatarMedium" android:minHeight="?avatarMedium" />
+                </com.ubercab.ui.core.ULinearLayout>
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.UScrollView>
+    </com.ubercab.ui.core.UCoordinatorLayout>
+    <com.ubercab.ui.core.UButton android:id="@id/ub__profile_editor_text_primary_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" style="?platformButtonPrimary" />
+</com.ubercab.profiles.features.travel_report.ProfileEditorTravelReportView>

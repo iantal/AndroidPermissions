@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.thinkdesquared.banking.helpers.ui.widgets.CircleImageView android:layout_gravity="center_horizontal" android:id="@id/profile_image" android:layout_width="@dimen/avatar_width_small" android:layout_height="@dimen/avatar_width_small" android:src="@drawable/user_avatar" android:layout_centerHorizontal="true" app:border_width="2.0dip" app:border_color="#ffebebeb" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="Nikolaos" android:layout_below="@id/profile_image" android:layout_alignParentBottom="false" android:layout_centerHorizontal="true" style="@style/DSQTextAppearance.Label" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/view_payment_container" style="@style/AllMatchParent">
+        <TextView android:textColor="@color/text_title" android:id="@id/tv_auth2_not_active" android:padding="10.0dip" android:visibility="gone" style="@style/MatchParentWrapContent" />
+        <TextView android:textColor="@color/text_title" android:id="@id/tv_payment_not_allowed" android:padding="10.0dip" android:visibility="gone" style="@style/FxRateTextSmallNormal" />
+        <TextView android:id="@id/tv_error" android:visibility="gone" style="@style/ErrorStrip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/view_payment_options" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <RelativeLayout android:id="@id/view_footer" android:paddingTop="5.0dip" android:paddingBottom="3.0dip" style="@style/ScreenFooter">
+            <Button android:gravity="center_vertical" android:id="@id/btn_submit" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:text="@string/submit" android:layout_centerInParent="true" style="@style/ButtonStyleNormal" />
+            <RelativeLayout android:gravity="center" android:id="@id/view_submit_progress_container" android:visibility="gone" style="@style/MatchParentWrapContent">
+                <ProgressBar android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmall" />
+                <TextView android:textColor="@color/text_on_dark" android:id="@id/tv_progress" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/progress_bar" android:layout_centerVertical="true" style="@style/TextBoldAllWrap" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:id="@id/view_progress_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/data_loading_progress_view" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.time.subtitle.etd.TripEtdStateView android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__trip_etd_state_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trip_etd_state_loading" android:maxLines="1" android:textIsSelectable="false" android:layout_alignParentStart="true" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+    <Space android:layout_width="@dimen/ui__divider_width" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__trip_etd_late_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.time.subtitle.etd.TripEtdStateView>

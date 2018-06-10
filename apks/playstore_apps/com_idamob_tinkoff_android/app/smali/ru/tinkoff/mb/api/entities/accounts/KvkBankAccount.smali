@@ -1,0 +1,240 @@
+.class public Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lru/tinkoff/mb/api/entities/accounts/c;
+
+
+# annotations
+.annotation runtime Lcom/j256/ormlite/table/DatabaseTable;
+.end annotation
+
+
+# instance fields
+.field public account:Lru/tinkoff/mb/api/entities/accounts/BaseBankAccount;
+    .annotation runtime Lcom/j256/ormlite/field/DatabaseField;
+        foreign = true
+        foreignAutoCreate = true
+        foreignAutoRefresh = true
+    .end annotation
+.end field
+
+.field public creditAccounts:Ljava/util/ArrayList;
+    .annotation runtime Lcom/google/gson/a/c;
+        a = "creditAccounts"
+    .end annotation
+
+    .annotation runtime Lcom/j256/ormlite/field/DatabaseField;
+        dataType = .enum Lcom/j256/ormlite/field/DataType;->SERIALIZABLE:Lcom/j256/ormlite/field/DataType;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList",
+            "<",
+            "Lru/tinkoff/mb/api/entities/accounts/e;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public id:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/a/c;
+        a = "id"
+    .end annotation
+
+    .annotation runtime Lcom/j256/ormlite/field/DatabaseField;
+        id = true
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 16
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 31
+    iget-object v0, p0, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;->id:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final a(Lru/tinkoff/mb/api/entities/accounts/BaseBankAccount;)V
+    .locals 0
+
+    .prologue
+    .line 41
+    iput-object p1, p0, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;->account:Lru/tinkoff/mb/api/entities/accounts/BaseBankAccount;
+
+    .line 42
+    return-void
+.end method
+
+.method public final b()Lru/tinkoff/mb/api/entities/accounts/BaseBankAccount;
+    .locals 1
+
+    .prologue
+    .line 36
+    iget-object v0, p0, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;->account:Lru/tinkoff/mb/api/entities/accounts/BaseBankAccount;
+
+    return-object v0
+.end method
+
+.method public final c()Lru/tinkoff/mb/api/entities/accounts/b;
+    .locals 1
+
+    .prologue
+    .line 46
+    .line 1036
+    iget-object v0, p0, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;->account:Lru/tinkoff/mb/api/entities/accounts/BaseBankAccount;
+
+    .line 1163
+    iget-object v0, v0, Lru/tinkoff/mb/api/entities/accounts/BaseBankAccount;->accountType:Lru/tinkoff/mb/api/entities/accounts/b;
+
+    .line 46
+    return-object v0
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    .prologue
+    .line 51
+    .line 2036
+    iget-object v0, p0, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;->account:Lru/tinkoff/mb/api/entities/accounts/BaseBankAccount;
+
+    .line 2129
+    iget-boolean v0, v0, Lru/tinkoff/mb/api/entities/accounts/BaseBankAccount;->hidden:Z
+
+    .line 51
+    return v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .prologue
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    .line 60
+    if-ne p0, p1, :cond_1
+
+    .line 65
+    :cond_0
+    :goto_0
+    return v0
+
+    .line 61
+    :cond_1
+    if-eqz p1, :cond_2
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v3
+
+    if-eq v2, v3, :cond_3
+
+    :cond_2
+    move v0, v1
+
+    goto :goto_0
+
+    .line 62
+    :cond_3
+    check-cast p1, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;
+
+    .line 63
+    iget-object v2, p0, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;->id:Ljava/lang/String;
+
+    iget-object v3, p1, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;->id:Ljava/lang/String;
+
+    invoke-static {v2, v3}, Lcom/google/common/a/j;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    iget-object v2, p0, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;->account:Lru/tinkoff/mb/api/entities/accounts/BaseBankAccount;
+
+    iget-object v3, p1, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;->account:Lru/tinkoff/mb/api/entities/accounts/BaseBankAccount;
+
+    .line 64
+    invoke-static {v2, v3}, Lcom/google/common/a/j;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    iget-object v2, p0, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;->creditAccounts:Ljava/util/ArrayList;
+
+    iget-object v3, p1, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;->creditAccounts:Ljava/util/ArrayList;
+
+    .line 65
+    invoke-static {v2, v3}, Lcom/google/common/a/j;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    :cond_4
+    move v0, v1
+
+    .line 63
+    goto :goto_0
+.end method
+
+.method public hashCode()I
+    .locals 3
+
+    .prologue
+    .line 70
+    const/4 v0, 0x3
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    const/4 v1, 0x0
+
+    iget-object v2, p0, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;->id:Ljava/lang/String;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    iget-object v2, p0, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;->account:Lru/tinkoff/mb/api/entities/accounts/BaseBankAccount;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    iget-object v2, p0, Lru/tinkoff/mb/api/entities/accounts/KvkBankAccount;->creditAccounts:Ljava/util/ArrayList;
+
+    aput-object v2, v0, v1
+
+    .line 3079
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result v0
+
+    .line 70
+    return v0
+.end method

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.driver_vehicle.TripDriverFocusView android:orientation="horizontal" android:id="@id/ub__trip_driver_focus" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="12b15211-8bed"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.CircleImageView android:id="@id/ub__driver_photo" android:layout_width="?avatarMedium" android:layout_height="?avatarMedium" android:importantForAccessibility="no" uber:analyticsId="815701c4-b298" uber:circleImageBorderWidth="@dimen/ub__driver_border_width" />
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="?contentInset">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__driver" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H4.News" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H6.News.Primary" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__bullet" android:paddingLeft="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_1x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bullet" android:paddingStart="@dimen/ui__spacing_unit_1x" android:paddingEnd="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.driver_vehicle.TripDriverFocusView>

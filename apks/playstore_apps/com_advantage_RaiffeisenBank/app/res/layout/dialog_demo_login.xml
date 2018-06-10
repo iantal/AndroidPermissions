@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.AppCompatTextView android:id="@id/choose_customer_type_header_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/choose_customer_type" app:textAllCaps="true" style="@style/ChooseCustomerDialogTitleStyle" />
+    <TextView android:id="@id/private_individual_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/private_individuals" style="@style/ChooseCustomerDialogButtonStyle" />
+    <TextView android:id="@id/sme_legal_person_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sme_legal_entities" style="@style/ChooseCustomerDialogButtonStyle" />
+    <TextView android:id="@id/corporate_legal_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/corporate_legal_entities" style="@style/ChooseCustomerDialogButtonStyle" />
+</LinearLayout>

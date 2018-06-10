@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.dispatch.waiting.TripDispatchWaitingView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="8a902b6c-e5ca"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:id="@id/ub__pool_waiting_image" android:layout_width="?avatarSmall" android:layout_height="?avatarSmall" uber:srcCompat="@drawable/ub__ic_dispatching" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ub__pool_waiting_progress_padding">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__pool_waiting_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pool_waiting_title" uber:lineHeightHint="0.0dip" style="@style/Platform.TextAppearance.H5.News.Primary" />
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/ub__pool_waiting_icon_margin" />
+            <com.ubercab.ui.core.UTextSwitcher android:id="@id/ub__pool_waiting_subtitle_switcher" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inAnimation="@anim/ub__push_up_in" android:outAnimation="@anim/ub__push_up_out" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <ProgressBar android:id="@id/ub__pool_waiting_progress" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ub__pool_waiting_progress_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/ub__pool_waiting_progress_height" android:progressDrawable="@drawable/ub__pool_waiting_progress_bar" android:minHeight="@dimen/ub__pool_waiting_progress_height" style="?android:attr/progressBarStyleHorizontal" />
+    <com.ubercab.ui.core.UConstraintLayout android:orientation="horizontal" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ub__pool_waiting_progress_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextSwitcher android:id="@id/ub__pool_waiting_time_message_switcher" android:layout_width="0.0dip" android:layout_height="wrap_content" android:inAnimation="@anim/ub__push_up_in" android:outAnimation="@anim/ub__push_up_out" uber:layout_constraintLeft_toLeftOf="parent" uber:layout_constraintRight_toLeftOf="@id/ub__pool_waiting_info_container" />
+        <com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/ub__pool_waiting_info_container" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:layout_constraintBottom_toBottomOf="@id/ub__pool_waiting_time_message_switcher" uber:layout_constraintRight_toRightOf="parent" uber:analyticsId="b176a50d-b954">
+            <com.ubercab.ui.core.UTextView android:textSize="@dimen/ub__text_size_micro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pool_waiting_more_info" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+            <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/ui__text_size_tiny" android:layout_height="@dimen/ui__text_size_tiny" android:tint="?android:textColorTertiary" android:layout_marginStart="@dimen/ub__pool_waiting_icon_margin" uber:srcCompat="@drawable/ub__ic_info" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UConstraintLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__trip_dispatch_waiting_hidden_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/ub__grey_horizontal_line" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__trip_dispatch_waiting_buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.dispatch.waiting.TripDispatchWaitingView>

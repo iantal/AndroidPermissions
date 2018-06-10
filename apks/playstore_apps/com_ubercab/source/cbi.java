@@ -1,0 +1,45 @@
+import android.util.SparseIntArray;
+
+public class cbi
+{
+  private final SparseIntArray a = new SparseIntArray();
+  
+  public cbi() {}
+  
+  public void a(long paramLong)
+  {
+    this.a.put((int)paramLong, 0);
+  }
+  
+  public void b(long paramLong)
+  {
+    SparseIntArray localSparseIntArray = this.a;
+    int i = (int)paramLong;
+    int j = localSparseIntArray.get(i, -1);
+    if (j != -1)
+    {
+      this.a.put(i, j + 1);
+      return;
+    }
+    throw new RuntimeException("Tried to increment non-existent cookie");
+  }
+  
+  public short c(long paramLong)
+  {
+    int i = this.a.get((int)paramLong, -1);
+    if (i != -1) {
+      return (short)(i & 0xFFFF);
+    }
+    throw new RuntimeException("Tried to get non-existent cookie");
+  }
+  
+  public void d(long paramLong)
+  {
+    this.a.delete((int)paramLong);
+  }
+  
+  public boolean e(long paramLong)
+  {
+    return this.a.get((int)paramLong, -1) != -1;
+  }
+}

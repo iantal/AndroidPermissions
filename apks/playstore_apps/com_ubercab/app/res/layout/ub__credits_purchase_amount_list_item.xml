@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge uber:cardCornerRadius="@dimen/ui__corner_radius" uber:cardElevation="@dimen/ui__spacing_unit_1x" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_2x"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.ubercab.ui.core.UTextView android:gravity="center_horizontal" android:id="@id/credits_purchase_amount" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="@dimen/ui__spacing_unit_12x" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.Book" />
+        <com.ubercab.ui.core.UPlainView android:id="@id/credits_purchase_bonus_divider" android:background="?dividerVertical" android:layout_width="?dividerWidth" android:layout_height="fill_parent" />
+        <com.ubercab.ui.core.UTextView android:id="@id/credits_purchase_bonus_credits" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/ui__spacing_unit_2x" android:paddingEnd="@dimen/ui__spacing_unit_4x" style="@style/Platform.TextAppearance.H5.News.Primary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</merge>

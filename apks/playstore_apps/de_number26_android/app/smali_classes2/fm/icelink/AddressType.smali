@@ -1,0 +1,226 @@
+.class final enum Lfm/icelink/AddressType;
+.super Ljava/lang/Enum;
+.source "AddressType.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Lfm/icelink/AddressType;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final synthetic $VALUES:[Lfm/icelink/AddressType;
+
+.field public static final enum IPv4:Lfm/icelink/AddressType;
+
+.field public static final enum IPv6:Lfm/icelink/AddressType;
+
+.field public static final enum Unknown:Lfm/icelink/AddressType;
+
+.field private static final lookup:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/Integer;",
+            "Lfm/icelink/AddressType;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field private final value:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 6
+
+    .line 4
+    new-instance v0, Lfm/icelink/AddressType;
+
+    const-string v1, "Unknown"
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    invoke-direct {v0, v1, v2, v3}, Lfm/icelink/AddressType;-><init>(Ljava/lang/String;II)V
+
+    sput-object v0, Lfm/icelink/AddressType;->Unknown:Lfm/icelink/AddressType;
+
+    .line 5
+    new-instance v0, Lfm/icelink/AddressType;
+
+    const-string v1, "IPv4"
+
+    const/4 v4, 0x4
+
+    invoke-direct {v0, v1, v3, v4}, Lfm/icelink/AddressType;-><init>(Ljava/lang/String;II)V
+
+    sput-object v0, Lfm/icelink/AddressType;->IPv4:Lfm/icelink/AddressType;
+
+    .line 6
+    new-instance v0, Lfm/icelink/AddressType;
+
+    const-string v1, "IPv6"
+
+    const/4 v4, 0x2
+
+    const/4 v5, 0x6
+
+    invoke-direct {v0, v1, v4, v5}, Lfm/icelink/AddressType;-><init>(Ljava/lang/String;II)V
+
+    sput-object v0, Lfm/icelink/AddressType;->IPv6:Lfm/icelink/AddressType;
+
+    const/4 v0, 0x3
+
+    .line 3
+    new-array v0, v0, [Lfm/icelink/AddressType;
+
+    sget-object v1, Lfm/icelink/AddressType;->Unknown:Lfm/icelink/AddressType;
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lfm/icelink/AddressType;->IPv4:Lfm/icelink/AddressType;
+
+    aput-object v1, v0, v3
+
+    sget-object v1, Lfm/icelink/AddressType;->IPv6:Lfm/icelink/AddressType;
+
+    aput-object v1, v0, v4
+
+    sput-object v0, Lfm/icelink/AddressType;->$VALUES:[Lfm/icelink/AddressType;
+
+    .line 15
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    sput-object v0, Lfm/icelink/AddressType;->lookup:Ljava/util/Map;
+
+    .line 17
+    const-class v0, Lfm/icelink/AddressType;
+
+    invoke-static {v0}, Ljava/util/EnumSet;->allOf(Ljava/lang/Class;)Ljava/util/EnumSet;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/util/EnumSet;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lfm/icelink/AddressType;
+
+    .line 18
+    sget-object v2, Lfm/icelink/AddressType;->lookup:Ljava/util/Map;
+
+    invoke-virtual {v1}, Lfm/icelink/AddressType;->getAssignedValue()I
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-interface {v2, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/lang/String;II)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)V"
+        }
+    .end annotation
+
+    .line 10
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 11
+    iput p3, p0, Lfm/icelink/AddressType;->value:I
+
+    return-void
+.end method
+
+.method public static getByAssignedValue(I)Lfm/icelink/AddressType;
+    .locals 1
+
+    .line 22
+    sget-object v0, Lfm/icelink/AddressType;->lookup:Ljava/util/Map;
+
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lfm/icelink/AddressType;
+
+    return-object p0
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lfm/icelink/AddressType;
+    .locals 1
+
+    .line 3
+    const-class v0, Lfm/icelink/AddressType;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Lfm/icelink/AddressType;
+
+    return-object p0
+.end method
+
+.method public static values()[Lfm/icelink/AddressType;
+    .locals 1
+
+    .line 3
+    sget-object v0, Lfm/icelink/AddressType;->$VALUES:[Lfm/icelink/AddressType;
+
+    invoke-virtual {v0}, [Lfm/icelink/AddressType;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Lfm/icelink/AddressType;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public getAssignedValue()I
+    .locals 1
+
+    .line 20
+    iget v0, p0, Lfm/icelink/AddressType;->value:I
+
+    return v0
+.end method

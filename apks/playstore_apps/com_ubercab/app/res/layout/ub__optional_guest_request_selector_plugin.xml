@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ub__guest_request_dedicated_entry_point" android:background="?selectableItemBackground" android:paddingLeft="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="@dimen/ui__spacing_unit_4x" uber:analyticsId="6d99ae19-009b"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.CircleImageView android:id="@id/ub__guest_request_selector_accessory_photo" android:layout_width="@dimen/ui__spacing_unit_3x" android:layout_height="@dimen/ui__spacing_unit_3x" uber:srcCompat="@drawable/ub__avatar1" />
+    <com.ubercab.ui.core.UTextSwitcher android:id="@id/ub__guest_request_selector_accessory_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:measureAllChildren="false" android:maxWidth="@dimen/ub__guest_request_selector_accessory_max_width" style="@style/Platform.TextAppearance.H5.News" />
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__guest_request_selector_accessory_caret" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:srcCompat="@drawable/ic_caret_down_16" />
+</com.ubercab.ui.core.ULinearLayout>

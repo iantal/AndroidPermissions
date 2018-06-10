@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.spotify.music.freetier.experiments.artistsyoumightlike.view.RoundedCornerImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/dark_gradient" android:background="@drawable/free_tier_artists_you_might_like_dark_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageButton android:layout_gravity="end|center|top" android:id="@id/heart_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:contentDescription="@string/free_tier_artists_you_might_like_heart_button_description" />
+    <LinearLayout android:gravity="bottom|center" android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/text_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?pasteTextAppearanceHeaderSmall" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+        <TextView android:textAppearance="?pasteTextAppearanceMetadata" android:textColor="@color/glue_white" android:gravity="center" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="16.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+    </LinearLayout>
+</merge>

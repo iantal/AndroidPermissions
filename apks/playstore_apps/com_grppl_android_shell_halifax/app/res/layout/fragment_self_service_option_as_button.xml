@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/click_to_call_background_with_bottom_divider" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mobile.ui.common.view.HeadingTextView n1:gravity="center_vertical" n1:id="@id/clickToCallSelfServicesHeadline" n1:background="@color/background" n1:padding="@dimen/call_us_screen_medium_spacing" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/click_to_call_self_service_section_header_text" n1:drawablePadding="8.0dip" style="@style/TextAppearance.SectionHeadline" />
+    <TextView n1:id="@id/callUsScreenDescriptionText" n1:background="@drawable/background_with_top_divider" n1:paddingTop="@dimen/call_us_screen_medium_spacing" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/click_to_call_self_service_supporting_text" n1:paddingStart="@dimen/call_us_screen_medium_spacing" n1:paddingEnd="@dimen/call_us_screen_medium_spacing" style="@style/TextAppearance.Body" />
+    <Button n1:id="@id/lostOrStolenSelfServiceButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/call_us_screen_medium_spacing" n1:text="@string/click_to_call_self_service_button_text" style="@style/Widget.Button.Primary" />
+</LinearLayout>

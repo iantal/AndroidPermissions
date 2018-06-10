@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <LinearLayout n1:layout_gravity="center" n1:orientation="horizontal" n1:id="@id/lpui_avatar_layout" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <ImageView n1:id="@id/lpui_toolbar_agent_avatar" n1:background="@drawable/lpinfra_ui_avatar_bubble_shape" n1:layout_width="@dimen/avatar_size" n1:layout_height="@dimen/avatar_size" n1:contentDescription="@string/lp_accessibility_agent_icon" />
+        <com.liveperson.infra.ui.view.ui.CustomTextView n1:textSize="@dimen/xlarge_text_size" n1:textColor="@color/lp_brand_header_text_color" n1:ellipsize="end" n1:gravity="center_vertical" n1:id="@id/lpui_toolbar_title" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/margin_half" n1:maxLines="1" n1:layout_marginStart="@dimen/margin_half" n2:font_name="@string/custom_font_name_non_conversation_feed" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <com.liveperson.infra.ui.view.ui.CustomTextView n3:textSize="@dimen/small_text_size" n3:textColor="#ff9b9b9b" n3:gravity="center_horizontal" n3:id="@id/lpui_toolbar_typing" n3:visibility="invisible" n3:layout_width="wrap_content" n3:layout_height="wrap_content" n3:text="@string/lp_is_typing" n3:layout_alignParentBottom="true" n3:layout_centerHorizontal="true" n3:contentDescription="@string/lp_is_typing" n4:font_name="@string/custom_font_name_non_conversation_feed"
+      xmlns:n3="http://schemas.android.com/apk/res/android" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/image" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:src="@drawable/bring_a_friend_offer_step_1" n2:layout_constraintBottom_toTopOf="@id/guideline" n2:layout_constraintTop_toTopOf="parent" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <android.support.constraint.Guideline n1:orientation="horizontal" n1:id="@id/guideline" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n3:layout_constraintGuide_end="132.0dip" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center" n1:id="@id/title" n1:paddingLeft="@dimen/screen_content_double_padding" n1:paddingRight="@dimen/screen_content_double_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n4:layout_constraintTop_toTopOf="@id/guideline" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:id="@id/description" n1:paddingLeft="@dimen/screen_content_double_padding" n1:paddingRight="@dimen/screen_content_double_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge_small2" n5:layout_constraintTop_toBottomOf="@id/title" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</android.support.constraint.ConstraintLayout>

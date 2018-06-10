@@ -1,0 +1,213 @@
+.class Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private infoScreen:Lcom/uber/model/core/generated/rtapi/services/payments/InfoScreen;
+
+.field private type:Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayloadUnionType;
+
+.field private webViewScreen:Lcom/uber/model/core/generated/rtapi/services/payments/WebViewScreen;
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    .line 188
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 182
+    iput-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->webViewScreen:Lcom/uber/model/core/generated/rtapi/services/payments/WebViewScreen;
+
+    .line 184
+    iput-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->infoScreen:Lcom/uber/model/core/generated/rtapi/services/payments/InfoScreen;
+
+    .line 186
+    sget-object v0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayloadUnionType;->UNKNOWN:Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayloadUnionType;
+
+    iput-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->type:Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayloadUnionType;
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$1;)V
+    .locals 0
+
+    .line 181
+    invoke-direct {p0}, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;-><init>()V
+
+    return-void
+.end method
+
+.method private constructor <init>(Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload;)V
+    .locals 1
+
+    .line 190
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 182
+    iput-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->webViewScreen:Lcom/uber/model/core/generated/rtapi/services/payments/WebViewScreen;
+
+    .line 184
+    iput-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->infoScreen:Lcom/uber/model/core/generated/rtapi/services/payments/InfoScreen;
+
+    .line 186
+    sget-object v0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayloadUnionType;->UNKNOWN:Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayloadUnionType;
+
+    iput-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->type:Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayloadUnionType;
+
+    .line 191
+    invoke-virtual {p1}, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload;->webViewScreen()Lcom/uber/model/core/generated/rtapi/services/payments/WebViewScreen;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->webViewScreen:Lcom/uber/model/core/generated/rtapi/services/payments/WebViewScreen;
+
+    .line 192
+    invoke-virtual {p1}, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload;->infoScreen()Lcom/uber/model/core/generated/rtapi/services/payments/InfoScreen;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->infoScreen:Lcom/uber/model/core/generated/rtapi/services/payments/InfoScreen;
+
+    .line 193
+    invoke-virtual {p1}, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload;->type()Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayloadUnionType;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->type:Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayloadUnionType;
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload;Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$1;)V
+    .locals 0
+
+    .line 181
+    invoke-direct {p0, p1}, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;-><init>(Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public build()Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload;
+    .locals 5
+    .annotation build Lcom/uber/model/core/annotation/RequiredMethods;
+        value = {
+            "type"
+        }
+    .end annotation
+
+    const-string v0, ""
+
+    .line 227
+    iget-object v1, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->type:Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayloadUnionType;
+
+    if-nez v1, :cond_0
+
+    .line 228
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, " type"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 230
+    :cond_0
+    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 233
+    new-instance v0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload;
+
+    iget-object v1, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->webViewScreen:Lcom/uber/model/core/generated/rtapi/services/payments/WebViewScreen;
+
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->infoScreen:Lcom/uber/model/core/generated/rtapi/services/payments/InfoScreen;
+
+    iget-object v3, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->type:Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayloadUnionType;
+
+    const/4 v4, 0x0
+
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload;-><init>(Lcom/uber/model/core/generated/rtapi/services/payments/WebViewScreen;Lcom/uber/model/core/generated/rtapi/services/payments/InfoScreen;Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayloadUnionType;Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$1;)V
+
+    return-object v0
+
+    .line 231
+    :cond_1
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Missing required properties:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public infoScreen(Lcom/uber/model/core/generated/rtapi/services/payments/InfoScreen;)Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;
+    .locals 0
+
+    .line 202
+    iput-object p1, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->infoScreen:Lcom/uber/model/core/generated/rtapi/services/payments/InfoScreen;
+
+    return-object p0
+.end method
+
+.method public type(Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayloadUnionType;)Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    .line 211
+    iput-object p1, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->type:Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayloadUnionType;
+
+    return-object p0
+
+    .line 209
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
+
+    const-string v0, "Null type"
+
+    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public webViewScreen(Lcom/uber/model/core/generated/rtapi/services/payments/WebViewScreen;)Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;
+    .locals 0
+
+    .line 197
+    iput-object p1, p0, Lcom/uber/model/core/generated/rtapi/services/payments/OnboardingScreenPayload$Builder;->webViewScreen:Lcom/uber/model/core/generated/rtapi/services/payments/WebViewScreen;
+
+    return-object p0
+.end method

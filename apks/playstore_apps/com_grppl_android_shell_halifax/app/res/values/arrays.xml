@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="calculateVideoToScreenAspectRatio">
+        <item>All</item>
+    </string-array>
+    <string-array name="calendarWeekDays">
+        <item>SUN</item>
+        <item>MON</item>
+        <item>TUE</item>
+        <item>WED</item>
+        <item>THU</item>
+        <item>FRI</item>
+        <item>SAT</item>
+    </string-array>
+    <array name="exception_devices_name_stills_only" />
+    <array name="exception_devices_use_cameraAPI2" />
+    <string-array name="legal_information_options">
+        <item>@string/legal_information_legal_and_privacy_title</item>
+        <item>@string/legal_information_cookie_use_and_permissions_title</item>
+        <item>@string/legal_information_third_party_acknowledgments_title</item>
+    </string-array>
+    <string-array name="lp_feedback_array">
+        <item>@string/lp_feedback_1</item>
+        <item>@string/lp_feedback_2</item>
+        <item>@string/lp_feedback_3</item>
+        <item>@string/lp_feedback_4</item>
+        <item>@string/lp_feedback_5</item>
+    </string-array>
+    <string-array name="message_receive_text">
+        <item>Sent</item>
+        <item>Delivered</item>
+        <item>Read</item>
+        <item>Not delivered</item>
+        <item>Sending</item>
+    </string-array>
+    <string-array name="paymentHubFrequency">
+        <item>Weekly</item>
+        <item>Every four weeks</item>
+        <item>Monthly</item>
+        <item>Every two months</item>
+        <item>Quarterly</item>
+        <item>Half yearly</item>
+        <item>Yearly</item>
+    </string-array>
+    <string-array name="reset_password_tooltip_description_array">
+        <item>The longer the safer.</item>
+        <item>Try using the first letter of each word from a made up phrase, sentence or song. For example the sentence \"Long and complex passwords are safest, I keep mine secret\" becomes \"lacpasikms\".</item>
+        <item>Try swapping some letters for numbers or insert numbers in between. For example \"lacpas1210ikms\".</item>
+        <item>Or try combining two unrelated items such as memorable address with a car registration or birthday (not your own).</item>
+        <item>"Avoid using plain words in any language because they're more vulnerable."</item>
+        <item>"Avoid repetition and obvious sequences like '123456', '2222222' or 'abcdefg'."</item>
+    </string-array>
+</resources>

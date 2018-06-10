@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:background="@color/start_telecom_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout n1:id="@id/appbar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:elevation="0.0dip" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" n2:navigationIcon="@drawable/ic_close_white" />
+    </android.support.design.widget.AppBarLayout>
+    <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/telecom_icon" n1:background="@drawable/bg_mvno_gradient" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="56.0dip" n1:src="@drawable/ic_mvno_logo" n1:layout_below="@id/appbar" n1:layout_centerHorizontal="true" />
+    <TextView n1:textAppearance="@style/Text.Default.White" n1:gravity="center" n1:id="@id/note" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginTop="@dimen/screen_content_double_margin" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:text="@string/telecom_account_application_note" n1:layout_below="@id/telecom_icon" n1:layout_centerHorizontal="true" />
+    <Button n1:layout_gravity="center" n1:id="@id/button_next" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:layout_marginBottom="56.0dip" n1:text="@string/telecom_account_application_action_button" n1:layout_alignParentBottom="true" style="@style/Button.Round.Yellow" />
+</RelativeLayout>

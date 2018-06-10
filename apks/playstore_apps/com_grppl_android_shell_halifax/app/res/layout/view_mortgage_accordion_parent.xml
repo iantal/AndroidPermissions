@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/mortgageDetailsTitle" n1:paddingLeft="@dimen/activity_margin" n1:layout_marginTop="@dimen/activity_margin" style="@style/Mortgage.Title" />
+    <GridLayout n1:id="@id/detailsGridLayout" n1:paddingLeft="@dimen/activity_margin" n1:paddingBottom="@dimen/activity_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/mortgage_summary_details_header_margin_top" n1:layout_below="@id/mortgageDetailsTitle" n1:rowCount="2" n1:columnCount="2">
+        <TextView n1:layout_column="0" n1:text="@string/mortgage_accordion_next_payment_due_text" n1:layout_row="0" style="@style/Mortgage.Label" />
+        <TextView n1:id="@id/mortgageSummaryNextPaymentDue" n1:layout_column="1" n1:layout_row="0" style="@style/Mortgage.Info" />
+        <TextView n1:layout_column="0" n1:text="@string/mortgage_accordion_remaining_full_term_text" n1:layout_row="1" style="@style/Mortgage.Label" />
+        <TextView n1:id="@id/mortgageSummaryRemainingFullTerm" n1:layout_column="1" n1:layout_row="1" style="@style/Mortgage.Info" />
+    </GridLayout>
+    <View n1:background="@color/list_divider_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/list_divider_drawable_height" n1:layout_below="@id/detailsGridLayout" />
+    <ImageView n1:id="@id/mortgageAccordion" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_margin" n1:layout_alignParentRight="true" n1:layout_centerInParent="true" n2:srcCompat="@drawable/open_accordion_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

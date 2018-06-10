@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="76.0dip">
+        <ImageView android:id="@id/image_insurance_wallet_inquiry_item" android:src="@drawable/ic_insurance_review_item_default" style="@style/InsuranceWalletItemIcon" />
+        <TextView android:id="@id/text_insurance_wallet_inquiry_item_category" android:layout_marginEnd="16.0dip" android:layout_toStartOf="@id/layout_insurance_wallet_inquiry_item_icons" android:layout_toEndOf="@id/image_insurance_wallet_inquiry_item" style="@style/InsuranceWalletItemCategory" />
+        <TextView android:id="@id/text_insurance_wallet_inquiry_item_provider" android:layout_below="@id/text_insurance_wallet_inquiry_item_category" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/layout_insurance_wallet_inquiry_item_icons" android:layout_toEndOf="@id/image_insurance_wallet_inquiry_item" style="@style/InsuranceWalletItemProvider" />
+        <FrameLayout android:id="@id/layout_insurance_wallet_inquiry_item_icons" android:layout_width="wrap_content" android:layout_height="76.0dip" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true">
+            <TextView android:id="@id/text_insurance_wallet_inquiry_item_pending" style="@style/InsuranceWalletInquiryItemPending" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/image_insurance_wallet_inquiry_item_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_insurance_inquiry_error" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/layout_insurance_wallet_inquiry_item_description" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/text_insurance_wallet_inquiry_item_description" android:layout_marginTop="12.0dip" android:layout_marginStart="16.0dip" android:layout_toStartOf="@id/layout_insurance_wallet_inquiry_item_description_illustrations" android:layout_alignParentStart="true" style="@style/InsuranceWalletInquiryItemDescriptionText" />
+        <FrameLayout android:id="@id/layout_insurance_wallet_inquiry_item_description_illustrations" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/animation_view_insurance_wallet_inquiry_item_description" android:layout_width="56.0dip" android:layout_height="72.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+            <ImageView android:id="@id/image_insurance_wallet_inquiry_item_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" android:layout_marginEnd="16.0dip" />
+        </FrameLayout>
+        <Button android:textSize="18.0sp" android:id="@id/button_insurance_wallet_inquiry_item_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="4.0dip" android:text="@string/insurance_dashboard_pending_inquiry_upload" android:layout_below="@id/text_insurance_wallet_inquiry_item_description" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="@style/BorderlessButton" />
+    </RelativeLayout>
+    <View android:id="@id/divider_insurance_wallet_item_steps" android:visibility="gone" android:layout_marginTop="12.0dip" style="@style/InsuranceWalletItemInnerDivider" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_insurance_wallet_item_steps" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="12.0dip">
+        <LinearLayout style="@style/InsuranceWalletInquiryItemStepLayout">
+            <TextView android:id="@id/text_insurance_wallet_inquiry_item_step_request_sent" android:layout_marginBottom="4.0dip" android:text="@string/insurance_dashboard_pending_inquiry_request_sent" style="@style/InsuranceWalletInquiryItemStepText" />
+            <ImageView android:id="@id/image_insurance_wallet_inquiry_item_step_request_sent" style="@style/InsuranceWalletInquiryItemStepIcon" />
+        </LinearLayout>
+        <LinearLayout style="@style/InsuranceWalletInquiryItemStepLayout">
+            <TextView android:id="@id/text_insurance_wallet_inquiry_item_step_preparing" android:layout_marginBottom="4.0dip" android:text="@string/insurance_dashboard_pending_inquiry_preparing" style="@style/InsuranceWalletInquiryItemStepText" />
+            <ImageView android:id="@id/image_insurance_wallet_inquiry_item_step_preparing" style="@style/InsuranceWalletInquiryItemStepIcon" />
+        </LinearLayout>
+        <LinearLayout style="@style/InsuranceWalletInquiryItemStepLayout">
+            <TextView android:id="@id/text_insurance_wallet_inquiry_item_step_digitizing" android:layout_marginBottom="4.0dip" android:text="@string/insurance_dashboard_pending_inquiry_digitising" style="@style/InsuranceWalletInquiryItemStepText" />
+            <ImageView android:id="@id/image_insurance_wallet_inquiry_item_step_digitizing" style="@style/InsuranceWalletInquiryItemStepIcon" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

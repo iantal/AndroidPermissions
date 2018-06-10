@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/suspicious_operations_group_layout" n1:background="@color/main_yellow" n1:layout_width="fill_parent" n1:layout_height="@dimen/suspicious_panel_height"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/suspicious_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge" n1:src="@drawable/ic_suspicious_alert_big" />
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:textSize="@dimen/suspicious_panel_text_size" n1:id="@id/suspicious_text" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLines="2" n1:layout_toRightOf="@id/suspicious_icon" n1:layout_centerVertical="true" />
+</RelativeLayout>

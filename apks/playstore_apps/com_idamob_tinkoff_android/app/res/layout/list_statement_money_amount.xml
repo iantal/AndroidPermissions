@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/content_wrapper" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/amount" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:visibility="gone" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n2:textColorAmount="@color/text_dark" n2:textColorCurrency="@color/text_light" n2:textColorFractional="@color/text_dark" n2:textColorSign="@color/text_dark" n2:textSizeAmount="@dimen/text_medium" n2:textSizeCurrency="@dimen/text_medium" n2:textSizeFractional="@dimen/text_medium" n2:textSizeSign="@dimen/text_medium" style="@style/SmartMoneyView" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:id="@id/title" n1:layout_toLeftOf="@id/amount" n1:layout_alignParentLeft="true" style="@style/TextView.Default" />
+</RelativeLayout>

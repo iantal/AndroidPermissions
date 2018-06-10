@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingTop="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/ub__form_field_edit_label" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.Small.Normal" />
+    <com.ubercab.ui.commons.widget.PresidioTextInputLayout android:id="@id/ub__form_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.commons.widget.ClearableEditText android:textColor="?android:textColorPrimary" android:gravity="center_vertical" android:id="@id/ub__form_field_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="text" />
+    </com.ubercab.ui.commons.widget.PresidioTextInputLayout>
+</com.ubercab.ui.core.ULinearLayout>

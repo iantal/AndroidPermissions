@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/player_overlay_footer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.spotify.music.nowplaying.common.view.trackinfo.MarqueeTrackInfoView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/track_info_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.spotify.music.nowplaying.common.view.controls.seekbar.SeekbarView android:id="@id/seek_bar_view" android:paddingLeft="@dimen/player_overlay_content_padding_right_left" android:paddingRight="@dimen/player_overlay_content_padding_right_left" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/player_v2_seekbar_height" />
+    <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/new_npv_playback_controls" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_gravity="center|left" android:paddingLeft="@dimen/player_overlay_content_padding_right_left" android:paddingRight="@dimen/player_overlay_content_padding_right_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" layout="@layout/connect_unit" />
+        <com.spotify.music.nowplaying.common.view.share.ShareButton android:layout_gravity="center|right" android:id="@id/share_button" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="@dimen/new_npv_share_button_margin_right" />
+    </FrameLayout>
+</LinearLayout>

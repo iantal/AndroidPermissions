@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:id="@id/help_workflow_image_list_input_label" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    <com.ubercab.ui.core.UCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:animateLayoutChanges="true" app:cardBackgroundColor="?ruleColor" app:cardCornerRadius="@dimen/ui__corner_radius" app:cardElevation="0.0dip" app:cardMaxElevation="0.0dip">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/help_workflow_image_list_input_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <com.ubercab.ui.core.UHorizontalScrollView android:layout_width="0.0dip" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1.0">
+                <com.ubercab.ui.core.ULinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/help_workflow_image_list_input_container" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/ub__optional_help_workflow_image_list_input_container_height" android:divider="@drawable/divider_space_1x" android:animateLayoutChanges="true" android:showDividers="middle" />
+            </com.ubercab.ui.core.UHorizontalScrollView>
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/help_workflow_image_list_input_add_image" android:background="?selectableItemBackground" android:paddingLeft="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="@dimen/ub__optional_help_workflow_image_list_input_container_height">
+                <com.ubercab.ui.core.UImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ub__optional_help_workflow_image_list_input_camera" />
+                <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News.Secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help_workflow_image_list_input_add_image" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/help_workflow_image_list_input_empty_add_image" android:background="?selectableItemBackground" android:focusable="true" android:layout_width="fill_parent" android:layout_height="88.0dip">
+            <com.ubercab.ui.core.UImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" app:srcCompat="@drawable/ub__optional_help_workflow_image_list_input_camera" />
+            <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News.Secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help_workflow_image_list_input_add_image" />
+            <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News.Secondary" android:id="@id/help_workflow_image_list_input_empty_add_image_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UCardView>
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News" android:textColor="?textColorError" android:id="@id/help_workflow_image_list_input_error" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.profiles_feature.settings.sections.preferences.ProfileSettingsPreferencesView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?dividerHorizontal" android:showDividers="end|beginning"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_setting_section_preferences_title" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__profile_settings_section_preferences" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ubercab.ui.core.UTextView android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_5x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_setting_section_preferences_footer" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+</com.ubercab.presidio.profiles_feature.settings.sections.preferences.ProfileSettingsPreferencesView>

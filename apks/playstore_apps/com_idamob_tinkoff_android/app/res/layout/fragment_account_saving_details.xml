@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" style="@style/DefaultItem.Margin">
+        <TextView n1:id="@id/percents_rate_title" n1:layout_width="0.0dip" n1:text="@string/account_additional_details_saving_percents_label" n1:drawableLeft="@drawable/ic_account_details_percent" n1:layout_weight="1.0" style="@style/AccountDetailsActionItem" />
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/percents_rate" style="@style/WrapContent" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/asd_percent_added_panel" style="@style/DefaultItem.Margin">
+        <TextView n1:id="@id/percents_added_title" n1:layout_width="0.0dip" n1:text="@string/account_additional_details_saving_accrued_percents_label" n1:drawableLeft="@drawable/ic_account_details_interest" n1:layout_weight="1.0" style="@style/AccountDetailsActionItem" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/percents_added" style="@style/MoneyView.AccountDetails" />
+    </LinearLayout>
+    <include layout="@layout/inc_divider_margin" />
+    <TextView n1:id="@id/account_details_tariffs" n1:text="@string/account_additional_details_tariff_button" n1:drawableLeft="@drawable/ic_account_details_tariffs" style="@style/AccountDetailsActionItem.Padding" />
+    <TextView n1:id="@id/account_details_close_saving" n1:text="@string/account_additional_details_close_account_button" n1:drawableLeft="@drawable/ic_account_details_close" style="@style/AccountDetailsActionItem.Padding" />
+</LinearLayout>

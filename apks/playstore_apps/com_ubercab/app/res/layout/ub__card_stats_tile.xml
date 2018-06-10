@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimaryInverse" android:id="@id/stats_tile_text_header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsEnabled="false" style="@style/Platform.TextAppearance.Mega.Book" />
+    <com.ubercab.ui.core.UTextView android:id="@id/stats_tile_text_bottom" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsEnabled="false" style="@style/Platform.TextAppearance.H6.News.Primary.Inverse" />
+</merge>

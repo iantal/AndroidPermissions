@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/commission_hint" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginRight="@dimen/screen_content_double_margin"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <RelativeLayout n2:id="@id/commission_value_wrapper" n2:visibility="visible" n2:layout_width="fill_parent" n2:layout_height="wrap_content"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <TextView n2:textAppearance="@style/Text.Small.Light" n2:gravity="center" n2:id="@id/commission_value_hint" n2:layout_width="fill_parent" n2:layout_height="wrap_content" n2:layout_marginLeft="@dimen/screen_content_padding" n2:layout_marginRight="@dimen/screen_content_padding" n2:layout_centerVertical="true" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n2:id="@id/commission_value" n2:layout_toLeftOf="@id/commission_value_help" n2:layout_centerVertical="true" n3:textColorCurrency="@color/text_light" style="@style/CommissionRate" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <ImageView n2:id="@id/commission_value_help" n2:visibility="gone" n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:layout_marginLeft="@dimen/screen_content_padding_half" n2:layout_marginRight="@dimen/screen_content_padding" n2:src="@drawable/ic_help" n2:layout_alignParentRight="true" n2:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n4:layout_gravity="center_horizontal" n4:id="@id/commission_loader" n4:visibility="gone" n4:layout_width="@dimen/pd_width" n4:layout_height="@dimen/pd_height"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+</merge>

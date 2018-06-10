@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.profiles_feature.view.ProfileButtonView android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="153f07d7-3f53"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__profile_button_badge_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ubercab.profiles.view.BadgeView android:id="@id/ub__profile_button_badge" android:layout_width="?avatarExtraTiny" android:layout_height="?avatarExtraTiny" />
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__profile_info_container" android:paddingLeft="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_1x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__profile_button_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Primary" />
+        <com.ubercab.presidio.pricing.core.PricingTextView android:ellipsize="end" android:id="@id/ub__profile_button_payment_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+        <com.ubercab.ui.core.UTextView android:textColor="?colorNegative" android:ellipsize="end" android:id="@id/ub__profile_button_payment_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__accessory_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ui__spacing_unit_1x" />
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__profile_button_caret" android:padding="?contentInset" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?android:textColorTertiary" uber:srcCompat="@drawable/ic_caret_down_16" />
+</com.ubercab.presidio.profiles_feature.view.ProfileButtonView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/bg_slightly_transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" n1:alpha="0.0" />
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <TextView n1:textAppearance="@style/Text.Default.White.Thin" n1:id="@id/hce_cards_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/screen_content_double_padding" n1:alpha="0.0" />
+        <GridView n1:scrollbarStyle="outsideOverlay" n1:gravity="center" n1:id="@id/hce_cards_grid_view" n1:clipToPadding="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:verticalSpacing="@dimen/hce_card_spacing" />
+    </LinearLayout>
+    <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/mastercard_logo" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" n1:src="@drawable/mc_text_white_logo" />
+</LinearLayout>

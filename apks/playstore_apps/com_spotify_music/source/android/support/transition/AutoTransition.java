@@ -1,0 +1,25 @@
+package android.support.transition;
+
+import android.content.Context;
+import android.util.AttributeSet;
+
+public class AutoTransition
+  extends TransitionSet
+{
+  public AutoTransition()
+  {
+    g();
+  }
+  
+  public AutoTransition(Context paramContext, AttributeSet paramAttributeSet)
+  {
+    super(paramContext, paramAttributeSet);
+    g();
+  }
+  
+  private void g()
+  {
+    a(1);
+    b(new Fade(2)).b(new ChangeBounds()).b(new Fade(1));
+  }
+}

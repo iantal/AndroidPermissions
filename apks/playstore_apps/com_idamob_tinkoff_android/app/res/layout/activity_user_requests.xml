@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView n1:id="@id/requests_list_view" style="@style/ScreenContent" />
+    <TextView n1:textAppearance="@style/Text.Small.Hint" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/requests_empty" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="30.0dip" n1:text="@string/requests_empty_list_text" />
+</FrameLayout>

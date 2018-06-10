@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_cancellation.survey.additional_views.ChangeLocationView android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="8caf5dec-933d"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UPlainView android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/ui__divider_width" />
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UImageView android:id="@id/ub__trip_location_icon" android:layout_width="?avatarMicro" android:layout_height="?avatarMicro" android:tint="?brandGrey60" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" uber:srcCompat="@drawable/ub__ic_location_16" />
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/edit_pickup_text" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancellation_additional_row_change_location_text" android:singleLine="true" android:layout_weight="1.0" android:paddingEnd="?contentInset" style="@style/Platform.TextAppearance.H6.News.Primary" />
+        <com.ubercab.ui.core.UFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/edit_pickup_loading" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" style="@style/Platform.TextAppearance.H6.News.Primary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/edit_pickup_action" android:background="?selectableItemBackground" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pickup_correction_cancellation_follow_up_change_pickup_button" android:textAllCaps="true" uber:analyticsId="ace86ab4-3512" style="@style/Platform.TextAppearance.H6.News.Link" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UPlainView android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/ui__divider_width" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_cancellation.survey.additional_views.ChangeLocationView>

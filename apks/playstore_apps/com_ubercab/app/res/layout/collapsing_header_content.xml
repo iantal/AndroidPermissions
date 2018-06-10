@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.widget.HeaderLayout android:id="@id/collapsing_toolbar" android:background="?colorPrimary" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentInsetStartWithNavigation="0.0dip" app:layout_scrollFlags="exitUntilCollapsed|scroll|snap" app:expandedTitleMarginStart="?contentInset" app:expandedTitleMarginTop="0.0dip" app:expandedTitleMarginEnd="?contentInset" app:expandedTitleMarginBottom="@dimen/ui__spacing_unit_3x" app:expandedTitleTextAppearance="@style/Platform.TextAppearance.H2.Book" app:collapsedTitleTextAppearance="@style/Platform.TextAppearance.H3.Book" fontPath="@string/ub__font_book">
+        <com.ubercab.ui.core.UToolbar android:theme="@style/ThemeOverlay.ToolbarFont" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:layout_collapseMode="pin" style="@style/Widget.Platform.Toolbar" />
+    </com.ubercab.ui.core.widget.HeaderLayout>
+</merge>

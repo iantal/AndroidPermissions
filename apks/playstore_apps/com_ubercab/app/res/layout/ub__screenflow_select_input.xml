@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.screenflow_uber_components.view.USelectInputView android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/title" android:padding="@dimen/ui__spacing_unit_0.5x" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+    <com.ubercab.ui.core.USpinner android:id="@id/spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.ubercab.screenflow_uber_components.view.USelectInputView>

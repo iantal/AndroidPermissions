@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.confirmation.location.row.ConfirmationLocationRowView android:orientation="horizontal" android:id="@id/location_row_container" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.URelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/ui__spacing_unit_3x">
+        <com.ubercab.ui.core.UPlainView android:id="@id/waypoint_connector" android:background="?ruleColor" android:layout_width="@dimen/ub__confirmation_location_origin_destination_line_width" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ub__confirmation_location_origin_destination_line_margin" android:layout_above="@id/row_waypoint_indicator" android:layout_centerInParent="true" />
+        <com.ubercab.ui.core.UImageView android:id="@id/row_waypoint_indicator" android:layout_width="@dimen/ub__confirmation_location_source_width" android:layout_height="@dimen/ub__confirmation_location_source_width" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_confirmation_location_destination" />
+    </com.ubercab.ui.core.URelativeLayout>
+    <include android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/ub_optional__confirmation_location_row" />
+</com.ubercab.presidio.app.optional.root.main.ride.request.confirmation.location.row.ConfirmationLocationRowView>

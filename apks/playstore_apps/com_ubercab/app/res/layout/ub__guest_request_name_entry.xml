@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.guest_request.name_entry.GuestRequestNameEntryView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/ui__spacing_unit_2x" uber:analyticsId="1d91b274-fab9"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/name_entry_description" style="@style/Platform.TextAppearance.H5.News.Tertiary" />
+    <com.ubercab.ui.core.ULinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x">
+        <com.ubercab.ui.commons.widget.PresidioTextInputLayout android:id="@id/ub__guest_request_name_first_name_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ubercab.ui.commons.widget.ClearableEditText android:id="@id/ub__guest_request_name_first_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:hint="@string/name_entry_first" />
+        </com.ubercab.ui.commons.widget.PresidioTextInputLayout>
+        <com.ubercab.ui.commons.widget.PresidioTextInputLayout android:id="@id/ub__guest_request_name_last_name_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ubercab.ui.commons.widget.ClearableEditText android:id="@id/ub__guest_request_name_last_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:hint="@string/name_entry_last" />
+        </com.ubercab.ui.commons.widget.PresidioTextInputLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.guest_request.name_entry.GuestRequestNameEntryView>

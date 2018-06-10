@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_saving_tile_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__gutter_size" android:layout_marginRight="@dimen/ui__gutter_size" android:layout_marginStart="@dimen/ui__gutter_size" android:layout_marginEnd="@dimen/ui__gutter_size" app:analyticsEnabled="false" style="@style/Platform.TextAppearance.H5.News" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_saving_tile_body" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__gutter_size" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__gutter_size" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:layout_marginStart="@dimen/ui__gutter_size" android:layout_marginEnd="@dimen/ui__gutter_size" app:analyticsEnabled="false" style="@style/Platform.TextAppearance.H2.Book" />
+    <com.ubercab.ui.core.UPlainView android:id="@id/ub__pass_saving_tile_select_indicator" android:background="?colorPositive" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" android:layout_marginEnd="@dimen/ui__gutter_size" />
+</merge>

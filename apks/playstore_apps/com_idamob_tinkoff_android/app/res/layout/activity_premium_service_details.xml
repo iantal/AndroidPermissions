@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout n1:id="@id/appbar" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="244.0dip">
+        <android.support.design.widget.CollapsingToolbarLayout n1:id="@id/collapsing_toolbar" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:contentScrim="@android:color/transparent" n2:layout_scrollFlags="exitUntilCollapsed|scroll" n2:statusBarScrim="@android:color/transparent" n2:titleEnabled="false" n2:toolbarId="@id/toolbar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <com.commit451.foregroundviews.ForegroundImageView n1:id="@id/premium_service_header" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:foreground="@drawable/offer_scrim_gradient" n1:scaleType="centerCrop" n2:layout_collapseMode="parallax" />
+            <LinearLayout n1:layout_gravity="bottom" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView n1:id="@id/premium_service_floating_image" n1:layout_width="64.0dip" n1:layout_height="64.0dip" n1:src="@drawable/circle_background_blue" n1:layout_marginStart="@dimen/screen_content_margin" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" />
+                <TextView n1:textAppearance="@style/Text.Header.White" n1:textSize="@dimen/text_extra_large" n1:id="@id/header_title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginTop="12.0dip" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" fontPath="@string/roboto_medium" />
+            </LinearLayout>
+            <View n1:id="@id/premium_service_appbar_scrim" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+            <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" n2:layout_collapseMode="pin" n2:navigationIcon="@drawable/ic_back_white" n2:titleTextColor="@color/white" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n3:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior" xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n1:id="@id/premium_service_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

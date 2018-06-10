@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.trip_details.optional.fare_split.TripFareSplitRowView android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UImageView android:layout_width="?avatarMicro" android:layout_height="?avatarMicro" android:tint="?brandGrey60" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" app:srcCompat="@drawable/ub__split_fare_icon" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/riding_with_someone" android:layout_weight="1.0" android:importantForAccessibility="no" style="@style/Platform.TextAppearance.H6.News.Primary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.trip_details.optional.fare_split.TripFareSplitRowView>

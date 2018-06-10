@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.gift.form.GiftFormView android:background="?android:colorBackground" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:analyticsId="e2248921-fb6a"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.UScrollView android:id="@id/ub_optional__gift_form_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub_optional__gift_form_scrolled" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <com.ubercab.ui.core.UTextView android:gravity="center_vertical" android:id="@id/ub_optional__gift_form_title" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gift_title" android:drawablePadding="?contentInset" style="@style/Platform.TextAppearance.H2.Book" />
+                    <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.ubercab.ui.FloatingLabelEditText android:id="@id/ub_optional__gift_form_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="numberDecimal" android:imeOptions="actionNext" app:floatingLabelLabelText="@string/hint_gift_amount" />
+                        <include android:id="@id/ub_optional__gift_amount_options" android:visibility="gone" layout="@layout/ub_optional__gift_form_amount" />
+                    </com.ubercab.ui.core.UFrameLayout>
+                    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub_optional__gift_form_to_row" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.ubercab.ui.FloatingLabelEditText android:id="@id/ub_optional__gift_form_to" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textEmailAddress" android:imeOptions="actionNext" app:analyticsId="1acc6350-1adf" app:floatingLabelLabelText="@string/hint_to" />
+                        <com.ubercab.ui.core.UFrameLayout android:layout_gravity="end" android:id="@id/ub_optional__gift_form_to_contacts" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/gift_contacts_accessibility" android:paddingStart="@dimen/ui__spacing_unit_2x" android:paddingEnd="@dimen/ui__spacing_unit_1x" app:analyticsId="7779175d-bc57">
+                            <com.ubercab.ui.core.UImageView android:background="?android:colorBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ub__gift_person_add" />
+                        </com.ubercab.ui.core.UFrameLayout>
+                    </com.ubercab.ui.core.UFrameLayout>
+                    <com.ubercab.ui.FloatingLabelEditText android:id="@id/ub_optional__gift_form_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="380" android:inputType="textCapSentences|textShortMessage" app:floatingLabelLabelText="@string/hint_message" />
+                    <com.ubercab.ui.core.UFrameLayout android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingBottom="@dimen/ui__spacing_unit_5x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.ubercab.ui.core.UButton android:id="@id/ub_optional__gift_form_review" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/review" app:analyticsId="f8412039-210d" style="@style/Platform.Button" />
+                    </com.ubercab.ui.core.UFrameLayout>
+                </com.ubercab.ui.core.ULinearLayout>
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.UScrollView>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.gift.form.GiftFormView>

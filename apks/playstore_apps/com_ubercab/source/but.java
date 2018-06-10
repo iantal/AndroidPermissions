@@ -1,0 +1,25 @@
+import android.app.DatePickerDialog;
+import android.app.DatePickerDialog.OnDateSetListener;
+import android.content.Context;
+import android.os.Build.VERSION;
+
+public class but
+  extends DatePickerDialog
+{
+  public but(Context paramContext, int paramInt1, DatePickerDialog.OnDateSetListener paramOnDateSetListener, int paramInt2, int paramInt3, int paramInt4)
+  {
+    super(paramContext, paramInt1, paramOnDateSetListener, paramInt2, paramInt3, paramInt4);
+  }
+  
+  public but(Context paramContext, DatePickerDialog.OnDateSetListener paramOnDateSetListener, int paramInt1, int paramInt2, int paramInt3)
+  {
+    super(paramContext, paramOnDateSetListener, paramInt1, paramInt2, paramInt3);
+  }
+  
+  protected void onStop()
+  {
+    if (Build.VERSION.SDK_INT > 19) {
+      super.onStop();
+    }
+  }
+}

@@ -1,0 +1,166 @@
+.class public final Laakp;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lawxs;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lawxs<",
+        "Lawvc;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Laakm;
+
+.field private final b:Laxga;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Laxga<",
+            "Lcom/uber/model/core/generated/rtapi/services/routing/RoutingClient<",
+            "Laput;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Laakm;Laxga;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laakm;",
+            "Laxga<",
+            "Lcom/uber/model/core/generated/rtapi/services/routing/RoutingClient<",
+            "Laput;",
+            ">;>;)V"
+        }
+    .end annotation
+
+    .line 21
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 22
+    iput-object p1, p0, Laakp;->a:Laakm;
+
+    .line 23
+    iput-object p2, p0, Laakp;->b:Laxga;
+
+    return-void
+.end method
+
+.method public static a(Laakm;Laxga;)Lawvc;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laakm;",
+            "Laxga<",
+            "Lcom/uber/model/core/generated/rtapi/services/routing/RoutingClient<",
+            "Laput;",
+            ">;>;)",
+            "Lawvc;"
+        }
+    .end annotation
+
+    .line 33
+    invoke-interface {p1}, Laxga;->get()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/uber/model/core/generated/rtapi/services/routing/RoutingClient;
+
+    invoke-static {p0, p1}, Laakp;->a(Laakm;Lcom/uber/model/core/generated/rtapi/services/routing/RoutingClient;)Lawvc;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static a(Laakm;Lcom/uber/model/core/generated/rtapi/services/routing/RoutingClient;)Lawvc;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laakm;",
+            "Lcom/uber/model/core/generated/rtapi/services/routing/RoutingClient<",
+            "Laput;",
+            ">;)",
+            "Lawvc;"
+        }
+    .end annotation
+
+    .line 43
+    invoke-virtual {p0, p1}, Laakm;->a(Lcom/uber/model/core/generated/rtapi/services/routing/RoutingClient;)Lawvc;
+
+    move-result-object p0
+
+    const-string p1, "Cannot return null from a non-@Nullable @Provides method"
+
+    invoke-static {p0, p1}, Lawxv;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lawvc;
+
+    return-object p0
+.end method
+
+.method public static b(Laakm;Laxga;)Laakp;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laakm;",
+            "Laxga<",
+            "Lcom/uber/model/core/generated/rtapi/services/routing/RoutingClient<",
+            "Laput;",
+            ">;>;)",
+            "Laakp;"
+        }
+    .end annotation
+
+    .line 38
+    new-instance v0, Laakp;
+
+    invoke-direct {v0, p0, p1}, Laakp;-><init>(Laakm;Laxga;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public a()Lawvc;
+    .locals 2
+
+    .line 28
+    iget-object v0, p0, Laakp;->a:Laakm;
+
+    iget-object v1, p0, Laakp;->b:Laxga;
+
+    invoke-static {v0, v1}, Laakp;->a(Laakm;Laxga;)Lawvc;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 11
+    invoke-virtual {p0}, Laakp;->a()Lawvc;
+
+    move-result-object v0
+
+    return-object v0
+.end method

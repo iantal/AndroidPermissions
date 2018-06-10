@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/MatchParent">
+    <LinearLayout style="@style/ScreenContent">
+        <TextView n1:id="@id/invoices_found" n1:background="?selectableItemBackground" n1:padding="@dimen/offset_from_edge" n1:visibility="gone" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" style="@style/TextView.Default"
+          xmlns:n1="http://schemas.android.com/apk/res/android" />
+        <include n2:id="@id/invoices_found_divider" layout="@layout/inc_divider"
+          xmlns:n2="http://schemas.android.com/apk/res/android" />
+        <fragment n3:name="ru.tcsbank.mb.ui.fragments.operation.PaymentFieldsFragment" n3:id="@id/fragment_fields" n3:layout_width="fill_parent" n3:layout_height="wrap_content"
+          xmlns:n3="http://schemas.android.com/apk/res/android" />
+        <TextView n4:textAppearance="@style/Text.Default.Blue" n4:gravity="center" n4:id="@id/get_inn" n4:background="@drawable/core_short_field_bg" n4:visibility="gone" n4:layout_width="fill_parent" n4:layout_height="@dimen/tile_height_medium_item" n4:text="@string/get_inn"
+          xmlns:n4="http://schemas.android.com/apk/res/android" />
+        <FrameLayout n5:id="@id/total_amount" n5:visibility="gone" n5:layout_width="fill_parent" n5:layout_height="wrap_content"
+          xmlns:n5="http://schemas.android.com/apk/res/android" />
+        <Button n6:id="@id/invoices_btn" n6:layout_marginTop="@dimen/offset_from_edge" n6:text="@string/invoices_next" style="@style/Button.Yellow"
+          xmlns:n6="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+</ScrollView>

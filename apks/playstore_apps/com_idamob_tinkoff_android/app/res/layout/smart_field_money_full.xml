@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:paddingLeft="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:baselineAligned="false">
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge_half" n1:layout_weight="1.0">
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:ellipsize="end" n1:id="@id/money_title_src" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/offset_from_edge_quarter" n1:lines="1" />
+            <ru.tinkoff.core.money.view.EditMoney n1:id="@id/money_value_src" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:currency="RUB" n2:currencyVisible="true" n2:textColorAmount="@color/white" n2:textColorCurrency="@color/light_gray" n2:textSize="@dimen/text_money_large" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/dst_view" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge_half" n1:layout_weight="1.0">
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:ellipsize="end" n1:id="@id/money_title_dst" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/offset_from_edge_quarter" n1:lines="1" />
+            <ru.tinkoff.core.money.view.EditMoney n1:id="@id/money_value_dst" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:currency="RUB" n3:currencyVisible="true" n3:textColorAmount="@color/white" n3:textColorCurrency="@color/light_gray" n3:textSize="@dimen/text_money_large" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView n1:textAppearance="@style/Text.Small.White" n1:gravity="center" n1:id="@id/limit_hint" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/core_suggest_item_height" n1:layout_marginTop="@dimen/offset_from_edge_half" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/info_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge_half">
+        <android.support.v7.widget.RecyclerView n1:id="@id/credit_options_list" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:id="@id/conversion_hint" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/core_suggest_item_height" n1:text="@string/money_conversion_hint" />
+        <GridView n1:id="@id/conversion_rates" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/offset_from_edge_half" n1:listSelector="@color/transparent" n1:numColumns="3" />
+    </LinearLayout>
+</LinearLayout>

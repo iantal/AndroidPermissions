@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout n1:id="@id/coordinator_root" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <fragment n1:name="com.google.android.gms.maps.SupportMapFragment" n1:id="@id/map" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <fragment n1:id="@id/map_controls_fragment" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent" class="ru.tcsbank.mb.ui.fragments.map.MapGoogleControlsFragment" />
+    <android.support.v4.view.ViewPager n1:id="@id/bottom_sheet_pager" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:behavior_hideable="true" n2:behavior_peekHeight="180.0dip" n2:layout_behavior="@string/bottom_sheet_behavior" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <android.support.design.widget.FloatingActionButton n1:id="@id/navigation_fab" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/activity_vertical_margin" n1:src="@drawable/ic_directions" n3:layout_anchor="@id/bottom_sheet_pager" n3:layout_anchorGravity="end|center|top" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</android.support.design.widget.CoordinatorLayout>

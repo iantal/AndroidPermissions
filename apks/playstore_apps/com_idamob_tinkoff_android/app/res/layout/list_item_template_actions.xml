@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:background="#ff656c79" style="@style/HorizontalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/action_unassociate" n1:background="@drawable/selector_action_red" n1:layout_width="@dimen/tile_height_medium_item" n1:layout_height="fill_parent" n1:layout_marginRight="@dimen/divider_height">
+        <ImageView n1:layout_gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_act_unbind" />
+    </FrameLayout>
+    <FrameLayout n1:id="@id/action_rename" n1:background="@drawable/selector_action_dark" n1:layout_width="@dimen/tile_height_medium_item" n1:layout_height="fill_parent" n1:layout_marginRight="@dimen/divider_height">
+        <ImageView n1:layout_gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_act_edit" />
+    </FrameLayout>
+    <FrameLayout n1:id="@id/action_remove" n1:background="@drawable/selector_action_red" n1:layout_width="@dimen/tile_height_medium_item" n1:layout_height="fill_parent">
+        <ImageView n1:layout_gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_act_trash" />
+    </FrameLayout>
+</LinearLayout>

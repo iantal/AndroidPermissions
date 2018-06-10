@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager android:id="@id/ub__partner_funnel_vs_trust_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ubercab.ui.PagerIndicator android:layout_gravity="bottom|center" android:id="@id/ub__partner_funnel_vs_trust_view_pager_indicator" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" android:scaleX="@integer/ub__partner_funnel_trust_carousel_pager_indicator_scale" android:scaleY="@integer/ub__partner_funnel_trust_carousel_pager_indicator_scale" uber:selectedIndicatorColor="@color/ub__white" uber:unselectedIndicatorColor="@color/ub__uber_white_80" />
+</com.ubercab.ui.core.UFrameLayout>

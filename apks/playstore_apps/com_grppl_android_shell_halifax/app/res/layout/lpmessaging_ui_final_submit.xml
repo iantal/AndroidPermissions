@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:layout_gravity="center" n1:orientation="vertical" n1:id="@id/lpui_feedback_thankyou" n1:background="@color/feedback_fragment_background_color" n1:focusable="true" n1:focusableInTouchMode="true" n1:visibility="gone" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_gravity="bottom|center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:srcCompat="@drawable/lpmessaging_ui_csat_check" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.liveperson.infra.ui.view.ui.CustomTextView n1:textSize="@dimen/xlarge_text_size" n1:textColor="@android:color/black" n1:gravity="center|top" n1:id="@id/lp_survey_submitted_successfully_text_view" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/lp_feedback_thank_you" n3:font_name="@string/custom_font_name_non_conversation_feed" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

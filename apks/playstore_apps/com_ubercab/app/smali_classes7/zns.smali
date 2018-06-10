@@ -1,0 +1,133 @@
+.class public final Lzns;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lawxs;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lawxs<",
+        "Ljkq<",
+        "Ljir;",
+        ">;>;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final a:Lzns;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 14
+    new-instance v0, Lzns;
+
+    invoke-direct {v0}, Lzns;-><init>()V
+
+    sput-object v0, Lzns;->a:Lzns;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 13
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static b()Ljkq;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljkq<",
+            "Ljir;",
+            ">;"
+        }
+    .end annotation
+
+    .line 22
+    invoke-static {}, Lzns;->d()Ljkq;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static c()Lzns;
+    .locals 1
+
+    .line 26
+    sget-object v0, Lzns;->a:Lzns;
+
+    return-object v0
+.end method
+
+.method public static d()Ljkq;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljkq<",
+            "Ljir;",
+            ">;"
+        }
+    .end annotation
+
+    .line 30
+    invoke-static {}, Lznh;->b()Ljkq;
+
+    move-result-object v0
+
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+
+    invoke-static {v0, v1}, Lawxv;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljkq;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public a()Ljkq;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljkq<",
+            "Ljir;",
+            ">;"
+        }
+    .end annotation
+
+    .line 18
+    invoke-static {}, Lzns;->b()Ljkq;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 9
+    invoke-virtual {p0}, Lzns;->a()Ljkq;
+
+    move-result-object v0
+
+    return-object v0
+.end method

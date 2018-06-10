@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.rds.feature.view.TripMapView android:id="@id/past_trips_card_map" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.rds.feature.view.TripContextView android:id="@id/past_trips_card_details" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.ui.core.ULinearLayout>

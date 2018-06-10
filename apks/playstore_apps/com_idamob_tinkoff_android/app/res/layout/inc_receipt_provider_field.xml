@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Hint" n1:gravity="center" n1:id="@id/field_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center" n1:id="@id/field_value" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+</LinearLayout>

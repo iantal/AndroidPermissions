@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.onegravity.rteditor.RTEditText android:textColorHint="?dsq_text_color_hint" android:gravity="center|left|top" android:id="@id/email_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/inbox_message_element_side_margin" android:layout_marginTop="@dimen/inbox_message_general_margin" android:layout_marginRight="@dimen/inbox_message_element_side_margin" android:layout_marginBottom="@dimen/inbox_message_general_margin" android:minHeight="140.0dip" android:hint="@string/compose_email" android:textCursorDrawable="?dsq_text_cursor_drawable" style="@style/RTE_Editext_style" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/attachment_container" android:background="@color/rzb_attachment_color" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/InboxMessageStyle" />
+</LinearLayout>

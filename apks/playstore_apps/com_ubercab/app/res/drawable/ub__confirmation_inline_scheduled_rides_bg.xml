@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid>
+        <selector>
+            <item android:state_pressed="true" android:color="@color/ub__selector_light" />
+            <item android:color="@color/ub__ui_core_white" />
+        </selector>
+    </solid>
+    <stroke android:width="@dimen/ub__confirmation_location_row_accessory_bg_width" android:color="@color/ub__ui_core_grey_60_alpha_30" />
+    <corners android:radius="@dimen/ub__confirmation_location_row_accessory_bg_radius" />
+</shape>

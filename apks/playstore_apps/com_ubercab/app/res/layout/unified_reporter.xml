@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnCount="2" style="@style/MobileStudio.Plugin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:layout_gravity="end|start|fill_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ub__mobilestudio_reporter_header" android:layout_columnSpan="2" style="@style/MobileStudio.Plugin.Header" />
+    <com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:text="@string/ub__mobilestudio_reporter_enable" style="@style/MobileStudio.Plugin.RowTitle" />
+    <com.ubercab.ui.core.USwitchCompat android:layout_gravity="start|center" android:id="@id/mobilestudio_enable_logging" style="@style/MobileStudio.Plugin.RowWidget" />
+    <com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:id="@id/mobilestudio_message_type_title" android:text="@string/ub__mobilestudio_reporter_message_type" style="@style/MobileStudio.Plugin.RowTitle" />
+    <com.ubercab.ui.core.USpinner android:layout_gravity="end|start|fill_horizontal|center" android:id="@id/mobilestudio_message_type_spinner" android:layout_width="0.0dip" />
+    <com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:id="@id/mobilestudio_filter_title" android:text="@string/ub__mobilestudio_reporter_message_id" style="@style/MobileStudio.Plugin.RowTitle" />
+    <com.ubercab.ui.core.UEditText android:layout_gravity="start|center" android:id="@id/mobilestudio_filter_input" android:layout_width="fill_parent" android:lines="1" />
+</GridLayout>

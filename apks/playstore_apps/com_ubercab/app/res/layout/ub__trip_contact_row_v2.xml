@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.trip_contact.TripContactRowView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UPlainView android:background="?brandGrey40" android:layout_width="fill_parent" android:layout_height="@dimen/ui__divider_width" />
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.ubercab.ui.core.UImageView android:layout_gravity="center" android:id="@id/ub__call_button_v2" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" uber:srcCompat="@drawable/ic_trip_contact_call" uber:analyticsId="d164615f-b716" />
+        <com.ubercab.ui.core.UPlainView android:layout_gravity="center" android:id="@id/ub__divider_v2" android:background="?brandGrey40" android:layout_width="@dimen/ui__divider_width" android:layout_height="fill_parent" />
+        <com.ubercab.ui.core.UImageView android:layout_gravity="center" android:id="@id/ub__intercom_new_message_v2" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" uber:srcCompat="@drawable/ic_trip_contact_message" uber:analyticsId="a29a95b7-ad8c" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.trip_contact.TripContactRowView>

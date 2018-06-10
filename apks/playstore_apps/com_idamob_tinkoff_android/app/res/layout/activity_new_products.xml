@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:id="@id/root_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <fragment n1:name="ru.tcsbank.mb.ui.products.cards.CardsFragment" n1:id="@id/fragment_cards" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/npa_deposits_and_goals_container" n1:background="@color/start_deposit_background" n1:padding="@dimen/padding_normal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ru.tcsbank.mb.ui.products.NewProductItemView n1:id="@id/deposit_item" n1:background="@drawable/start_large_button_background" n1:layout_width="0.0dip" n1:layout_height="@dimen/new_product_item_view_height" n1:layout_margin="@dimen/screen_content_margin_half" n1:layout_weight="1.0" n2:npi_icon="@drawable/ic_deposit_white" n2:npi_subtitle_visible="false" n2:npi_title="@string/new_products_deposit_title" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <ru.tcsbank.mb.ui.products.NewProductItemView n1:id="@id/goal_item" n1:background="@drawable/start_large_button_background" n1:layout_width="0.0dip" n1:layout_height="@dimen/new_product_item_view_height" n1:layout_margin="@dimen/screen_content_margin_half" n1:layout_weight="1.0" n3:npi_icon="@drawable/ic_goal_white" n3:npi_subtitle_visible="false" n3:npi_title="@string/new_products_saving_account_title" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+            <FrameLayout n1:id="@id/broker_container" n1:background="@color/start_broker_background" n1:padding="@dimen/padding_normal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ru.tcsbank.mb.ui.products.NewProductItemView n1:id="@id/broker_item" n1:background="@drawable/start_large_button_background" n1:layout_width="fill_parent" n1:layout_height="@dimen/new_product_item_view_height" n1:layout_margin="@dimen/screen_content_margin_half" n4:npi_icon="@drawable/ic_invest_white" n4:npi_title="@string/new_products_broker_title" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            </FrameLayout>
+            <FrameLayout n1:id="@id/telecom_container" n1:background="@color/start_telecom_background" n1:padding="@dimen/padding_normal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ru.tcsbank.mb.ui.products.NewProductItemView n1:id="@id/telecom_item" n1:background="@drawable/start_large_button_background" n1:layout_width="fill_parent" n1:layout_height="@dimen/new_product_item_view_height" n1:layout_margin="@dimen/screen_content_margin_half" n5:npi_icon="@drawable/ic_telecom_white" n5:npi_title="@string/new_products_telecom_title" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+            </FrameLayout>
+            <FrameLayout n1:id="@id/external_cards_container" n1:background="@color/baa_white" n1:padding="@dimen/padding_normal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ru.tcsbank.mb.ui.products.NewProductItemView n1:id="@id/external_card_item" n1:background="@drawable/start_large_button_background_dark" n1:layout_width="fill_parent" n1:layout_height="@dimen/new_product_item_view_height" n1:layout_margin="@dimen/screen_content_margin_half" n6:npi_dark_mode="false" n6:npi_icon="@drawable/ic_external_card_yellow" n6:npi_subtitle="@string/new_products_additional_card_hint" n6:npi_title="@string/new_products_additional_card_title" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+            </FrameLayout>
+            <FrameLayout n1:id="@id/import_additional_card_container" n1:background="@drawable/bg_import_additional_card" n1:padding="@dimen/padding_normal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ru.tcsbank.mb.ui.products.NewProductItemView n1:id="@id/additional_card" n1:background="@drawable/start_large_button_background" n1:layout_width="fill_parent" n1:layout_height="@dimen/new_product_item_view_height" n1:layout_margin="@dimen/screen_content_margin_half" n7:npi_icon="@drawable/ic_additional_card_offer" n7:npi_subtitle="@string/new_products_additional_card_import_hint" n7:npi_title="@string/new_products_additional_card_import" xmlns:n7="http://schemas.android.com/apk/res-auto" />
+            </FrameLayout>
+            <FrameLayout n1:id="@id/insurance_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/mortgage_container" n1:background="@color/start_mortgage_background" n1:padding="@dimen/padding_normal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ru.tcsbank.mb.ui.products.NewProductItemView n1:id="@id/cash_loan_item" n1:background="@drawable/start_large_button_background" n1:layout_width="0.0dip" n1:layout_height="@dimen/new_product_item_view_height" n1:layout_margin="@dimen/screen_content_margin_half" n1:layout_weight="1.0" n8:npi_icon="@drawable/ic_cash_credit" n8:npi_subtitle_visible="false" n8:npi_title="@string/new_products_cashloan_title" n8:npi_title_text_size="@dimen/text_small" xmlns:n8="http://schemas.android.com/apk/res-auto" />
+                <ru.tcsbank.mb.ui.products.NewProductItemView n1:id="@id/mortgage_item" n1:background="@drawable/start_large_button_background" n1:layout_width="0.0dip" n1:layout_height="@dimen/new_product_item_view_height" n1:layout_margin="@dimen/screen_content_margin_half" n1:layout_weight="1.0" n9:npi_icon="@drawable/ic_mortgage_white" n9:npi_title="@string/new_products_mortgage_title" xmlns:n9="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:id="@id/smooth_progress" style="@style/SmoothProgress" />
+</FrameLayout>

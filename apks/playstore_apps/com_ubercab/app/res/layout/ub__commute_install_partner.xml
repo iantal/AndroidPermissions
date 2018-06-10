@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.scheduled_commute.onboarding.install.InstallPartnerView android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingRight="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="3a7f4899-5d90"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:background="?brandGrey20" android:paddingTop="@dimen/ui__spacing_unit_5x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ub__commute_install_partner_bottom_view">
+        <com.ubercab.ui.core.UTextView android:gravity="start" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__commute_install_partner_view_title" style="@style/Platform.TextAppearance.H1.Book" />
+        <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__commute_install_partner_view_description_1" style="@style/Platform.TextAppearance.P.Book" />
+        <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/ub__commute_install_partner_view_description_2" style="@style/Platform.TextAppearance.P.Book" />
+        <com.ubercab.ui.core.UPercentRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ubercab.ui.core.UImageView android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentBottom="true" uber:srcCompat="@drawable/ub__rider_first_time_commute" uber:layout_widthPercent="100.0%" uber:layout_heightPercent="55.000008%" />
+        </com.ubercab.ui.core.UPercentRelativeLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__commute_install_partner_bottom_view" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.ubercab.ui.core.UButton android:id="@id/ub__commute_install_partner_download_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_install_partner_view_primary" uber:analyticsId="5414b4d9-bbf0" style="?platformButtonPrimary" />
+        <com.ubercab.ui.core.UTextView android:layout_gravity="center_horizontal" android:id="@id/ub__commute_install_partner_prefer_text_link" android:paddingTop="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__commute_install_partner_view_secondary" uber:analyticsId="168d85bc-855e" style="@style/Platform.TextAppearance.H4.Medium.Link" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.scheduled_commute.onboarding.install.InstallPartnerView>

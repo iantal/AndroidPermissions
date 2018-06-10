@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content_frame" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/logout_popup" android:background="#b0000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_gravity="center" android:id="@id/logout_inner" android:background="@drawable/sub_panel" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="178.0dip">
+                <ImageView android:id="@id/logout_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:src="@drawable/mark" android:layout_centerHorizontal="true" />
+                <ProgressBar android:id="@id/logout_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:layout_centerHorizontal="true" style="@android:style/Widget.ProgressBar" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/logging_out" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/disconnecting" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+    <include layout="@layout/left_drawer" />
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,7 @@
+package com.bumptech.glide.load.b.a;
+
+import com.bumptech.glide.load.b.l;
+
+public abstract interface b
+  extends l
+{}

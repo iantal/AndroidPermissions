@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.social_favorites_shared.request.SocialConnectionsRequestView android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__social_connections_request_contact_picker_container" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ub__social_connections_request_send_button_container" android:background="?brandBlack" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+        <com.ubercab.ui.core.UTextView android:background="?brandGrey20" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__social_connections_request_legal_text" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__social_connections_request_send_button" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.social_favorites_shared.request.SocialConnectionsRequestView>

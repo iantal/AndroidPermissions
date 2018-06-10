@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.gift.review.GiftMobileVerifyView android:orientation="vertical" android:background="?android:colorBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="682e3123-89bd"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub_optional__gift_mobile_verify_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gift_mobile_verify_description_default" style="@style/Platform.TextAppearance.H3.News" />
+            <com.ubercab.ui.commons.widget.OTPInput android:id="@id/ub_optional__gift_mobile_verify_otp_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?contentInset" android:layout_marginBottom="?contentInset" uber:otp_count="@integer/ub__gift_otp_length" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub_optional__gift_mobile_verify_resend_code" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gift_mobile_verify_send_code_again" style="@style/Platform.TextAppearance.H5.News.Link" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.gift.review.GiftMobileVerifyView>

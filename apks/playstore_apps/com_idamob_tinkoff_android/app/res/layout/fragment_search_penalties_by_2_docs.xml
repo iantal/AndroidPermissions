@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView style="@style/MatchParent">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/info_group" style="@style/VerticalWrapping">
+            <TextView n1:id="@id/fines_found_btn" n1:background="?selectableItemBackground" n1:padding="@dimen/offset_from_edge" n1:visibility="gone" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" style="@style/TextView.Default" />
+            <include n1:id="@id/fines_found_btn_divider" n1:visibility="gone" layout="@layout/inc_divider" />
+            <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:fieldFormatterMaskTerminated="terminated" n2:fieldFormatterName="@string/questionMarkFormatter" n2:fieldKey="regCert" n2:fieldTitle="@string/fines_check_hint_reg_certificate" n2:fieldType="imageSuggestedField" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:fieldFormatterMaskTerminated="terminated" n3:fieldFormatterName="@string/questionMarkFormatter" n3:fieldKey="driverLicense" n3:fieldTitle="@string/fines_check_hint_drivers_license" n3:fieldType="imageSuggestedField" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <Button n1:id="@id/search_fines_by_2_docs_btn" n1:layout_marginTop="@dimen/offset_from_edge" n1:text="@string/fines_check_button_check" style="@style/Button.Yellow" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

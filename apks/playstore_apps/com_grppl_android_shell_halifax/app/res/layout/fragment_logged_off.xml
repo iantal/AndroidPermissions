@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_vertical_margin"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mobile.ui.common.view.HeadingTextView n1:gravity="left" n1:id="@id/logoffPageTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/fragment_content_padding" n1:layout_marginBottom="@dimen/fragment_content_padding" n1:text="@string/auto_log_off_title" n1:layout_alignParentTop="true" style="@style/TextAppearance.Headline" />
+    <TextView n1:id="@id/logoffPageContent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_content_padding" n1:text="@string/auto_log_off_message" n1:layout_below="@id/logoffPageTitle" style="@style/TextAppearance.Body" />
+    <Button n1:id="@id/logoffPageStartSurveyButton" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_content_padding" n1:text="@string/survey_log_off_action_start_survey" n1:layout_above="@id/logoffPageLogonToMobileBankingButton" n1:contentDescription="@string/accessibility_survey_log_off_action_start_survey" style="@style/Widget.Button.Primary" />
+    <Button n1:id="@id/logoffPageLogonToMobileBankingButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_content_padding" n1:text="@string/survey_log_off_action_log_on" n1:layout_alignParentBottom="true" n1:contentDescription="@string/accessibility_auto_logged_out_action_log_on" style="@style/Widget.Button.Primary" />
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_content_padding" n1:layout_above="@id/logoffPageStartSurveyButton" n1:layout_below="@id/logoffPageContent">
+        <com.mobile.ui.common.view.SecureCoreWebView n1:layout_gravity="center" n1:id="@id/loggedOffStaticAdvertWebView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

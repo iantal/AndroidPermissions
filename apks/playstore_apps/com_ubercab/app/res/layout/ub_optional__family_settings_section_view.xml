@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.family.settings.FamilySettingsSectionView android:orientation="vertical" android:paddingTop="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub_profile_settings_header" android:paddingTop="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/family" android:paddingStart="?contentInset" android:paddingEnd="?contentInset" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    <com.ubercab.ui.core.URecyclerView android:id="@id/ub__family_settings_list_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.widget.HelixListItem android:id="@id/ub__profile_add_family_group_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:primaryText="@string/set_up_your_family" app:primaryTextStyle="@style/Platform.TextAppearance.H5.News.Link" app:secondaryText="@string/pay_for_your_loved_ones" app:secondaryTextStyle="@style/Platform.TextAppearance.H6.News.Tertiary" />
+</com.ubercab.presidio.family.settings.FamilySettingsSectionView>

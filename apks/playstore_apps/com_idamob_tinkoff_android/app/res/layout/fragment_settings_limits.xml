@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/limits_container" n1:paddingTop="@dimen/progress_bar_title_offset" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/limits_for_card" n1:background="?selectableItemBackground" n1:visibility="gone" n1:text="@string/security_limits_for_card" style="@style/DarkTextItem" />
+    <TextView n1:id="@id/limits_for_hce" n1:background="?selectableItemBackground" n1:text="@string/security_limits_for_hce" style="@style/DarkTextItem" />
+</LinearLayout>

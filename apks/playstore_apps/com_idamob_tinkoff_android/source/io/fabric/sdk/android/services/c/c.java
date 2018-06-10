@@ -1,0 +1,28 @@
+package io.fabric.sdk.android.services.c;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
+public abstract interface c
+{
+  public abstract int a();
+  
+  public abstract void a(String paramString)
+    throws IOException;
+  
+  public abstract void a(List<File> paramList);
+  
+  public abstract void a(byte[] paramArrayOfByte)
+    throws IOException;
+  
+  public abstract boolean a(int paramInt1, int paramInt2);
+  
+  public abstract boolean b();
+  
+  public abstract List<File> c();
+  
+  public abstract List<File> d();
+  
+  public abstract void e();
+}

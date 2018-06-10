@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.idamob.tinkoff.android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <permission android:name="com.idamob.tinkoff.android.permission.pushserver.RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.idamob.tinkoff.android.permission.pushserver.RECEIVE"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+    <uses-feature android:name="android.hardware.nfc.hce" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <permission android:name="com.idamob.tinkoff.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.idamob.tinkoff.android.permission.C2D_MESSAGE"/>
+    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:name="ru.tcsbank.mb.App" android:resizeableActivity="false" android:roundIcon="@drawable/icon_round" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/Theme">
+        <meta-data android:name="com.pushserver.android.logs" android:value="false"/>
+        <meta-data android:name="com.pushserver.android.senderId" android:value="@string/mfms_sender_id"/>
+        <meta-data android:name="com.pushserver.android.serverIdList" android:resource="@array/mfms_server_id_list"/>
+        <meta-data android:name="com.pushserver.android.serverUrlList" android:resource="@array/mfms_server_url_list"/>
+        <meta-data android:name="com.pushserver.android.serverPrimaryId" android:value="mfms"/>
+        <meta-data android:name="com.pushserver.android.service" android:value="ru.tcsbank.mb.push.MbMfmsServiceIntentService"/>
+        <meta-data android:name="com.pushserver.android.providerUid" android:value="@string/mfms_provider_uid"/>
+        <meta-data android:name="com.pushserver.android.useDefaultDeviceUID" android:value="false"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_maps_api_key"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="b475d58714359428920bff8af242ed434b2594ff"/>
+        <provider android:authorities="@string/file_export_provider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/exported_file_paths"/>
+        </provider>
+        <receiver android:exported="false" android:name="ru.tcsbank.mb.push.MbPushBroadcastReceiver" android:permission="com.idamob.tinkoff.android.permission.pushserver.RECEIVE">
+            <intent-filter>
+                <action android:name="com.pushserver.android.NEW_PUSH_MESSAGE_EVENT"/>
+                <action android:name="com.pushserver.android.RECEIVER_CHANGED_EVENT"/>
+                <action android:name="com.pushserver.android.DEVICE_ADDRESS_CHANGED_EVENT"/>
+                <action android:name="com.pushserver.android.HAS_SECURED_MESSAGE"/>
+                <action android:name="com.pushserver.android.ERROR_EVENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="ru.tcsbank.mb.ui.deeplink.DeferredDeeplinkingBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="ru.tcsbank.mb.push.PushClickedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="ru.tinkoff.mb.PUSH_CLICKED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="ru.tcsbank.mb.push.PushMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="ru.tcsbank.mb.push.MbInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="ru.tcsbank.mb.push.MbMfmsServiceIntentService"/>
+        <service android:exported="false" android:name="ru.tcsbank.mb.push.PushRegistrationService"/>
+        <activity android:name="ru.tcsbank.mb.ui.activities.SplashActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="ru.tcsbank.mb.ui.start.StartActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Authorization" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="ru.tcsbank.mb.ui.search.SearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Search" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="ru.tcsbank.mb.ui.search.UnauthorizedSearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Search" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:launchMode="singleTask" android:name="ru.tcsbank.mb.ui.activities.SuccessFullScreenActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:launchMode="singleTask" android:name="ru.tcsbank.mb.ui.activities.UnauthorizedSuccessFullScreenActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="ru.tcsbank.mb.ui.main.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.TranslucentStatusBar"/>
+        <activity android:label="@string/ca_label" android:name="ru.tcsbank.mb.ui.activities.contacts.ContactsActivity" android:parentActivityName="ru.tcsbank.mb.ui.main.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Transparent.FadeAnimation">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.main.MainActivity"/>
+        </activity>
+        <activity android:label="@string/ca_label" android:name="ru.tcsbank.mb.ui.activities.contacts.UnauthorizedContactsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Transparent.FadeAnimation"/>
+        <activity android:label="@string/ffa_label" android:name="ru.tcsbank.mb.ui.activities.contacts.FeedbackFormActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:launchMode="singleTask" android:name="ru.tcsbank.mb.ui.activities.account.AccountActivity" android:parentActivityName="ru.tcsbank.mb.ui.main.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="ru.tcsbank.mb.ui.main.MainActivity"/>
+        </activity>
+        <activity android:label="@string/deposit_account_title" android:name="ru.tcsbank.mb.ui.activities.account.refill.RefillAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/increase_cash_limit_title" android:name="ru.tcsbank.mb.ui.accounts.details.IncreaseCashLimitActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="ru.tcsbank.mb.ui.exchangerates.ExchangeRatesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/ada_label" android:name="ru.tcsbank.mb.ui.accounts.details.AccountDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/account_services_title" android:launchMode="singleTask" android:name="ru.tcsbank.mb.ui.activities.account.CardServicesActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/abroad_operations_title" android:name="ru.tcsbank.mb.ui.settings.abroad.TripListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/add_abroad_operations_title" android:name="ru.tcsbank.mb.ui.settings.abroad.AddTripActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/edit_abroad_operations_title" android:name="ru.tcsbank.mb.ui.settings.abroad.EditTripActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/card_product_activity_title" android:name="ru.tcsbank.mb.ui.products.cards.CardApplicationActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/card_product_activity_title" android:name="ru.tcsbank.mb.ui.products.cards.UnauthorizedCardApplicationActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/deposit_product_activity_label" android:name="ru.tcsbank.mb.ui.accounts.deposit.DepositApplicationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/deposit_product_activity_label" android:name="ru.tcsbank.mb.ui.accounts.deposit.UnauthorizedDepositApplicationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/security_title" android:launchMode="singleTask" android:name="ru.tcsbank.mb.ui.settings.SettingItemActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/security_questions_title" android:name="ru.tcsbank.mb.ui.settings.questions.SecurityQuestionsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ru.tcsbank.mb.ui.settings.questions.AddSecurityQuestionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:name="ru.tcsbank.mb.ui.activities.account.applications.ReissueCardActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/block_card_title" android:name="ru.tcsbank.mb.ui.activities.account.applications.BlockCardActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/issue_additional_card_label" android:name="ru.tcsbank.mb.ui.activities.account.applications.additional.IssueAdditionalCardActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_link_to" android:name="ru.tcsbank.mb.ui.activities.ContactLinkToTemplateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ru.tcsbank.mb.ui.activities.AboutActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/stat_title" android:name="ru.tcsbank.mb.ui.accounts.statements.StatementsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:launchMode="singleTask" android:name="ru.tcsbank.mb.ui.payments.PayHubActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable_providers"/>
+        </activity>
+        <activity android:label="@string/payments" android:name="ru.tcsbank.mb.ui.providers.ProviderGroupListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/payments" android:name="ru.tcsbank.mb.ui.providers.UnauthorizedProviderGroupListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ru.tcsbank.mb.ui.providers.ProvidersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ru.tcsbank.mb.ui.providers.UnauthorizedProvidersActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/ra_title" android:name="ru.tcsbank.mb.ui.regions.RegionsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/ra_title" android:name="ru.tcsbank.mb.ui.regions.UnauthorizedRegionsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/transfers_groups_title_me" android:name="ru.tcsbank.mb.ui.activities.pay.transfer.TransferMyselfActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/qr_code_offer_title" android:name="ru.tcsbank.mb.ui.activities.pay.transfer.qrcodeatm.OfferQrCodeAtmActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog.Dark"/>
+        <activity android:label="@string/transfers_groups_title_atm_qr_code" android:name="ru.tcsbank.mb.ui.activities.pay.transfer.qrcodeatm.GenerateQrCodeAtmActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/view_qr_code_atm_title" android:name="ru.tcsbank.mb.ui.activities.pay.transfer.qrcodeatm.DisplayQrCodeAtmActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/transfers_to_people_title" android:name="ru.tcsbank.mb.ui.activities.pay.transfer.TransferPeopleUniversalActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/transfers_groups_title_organizations" android:name="ru.tcsbank.mb.ui.activities.pay.transfer.TransferOrganizationActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/transfer_oneself_title" android:name="ru.tcsbank.mb.ui.activities.pay.transfer.TransferBetweenAccountsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/card_to_card_title" android:name="ru.tcsbank.mb.ui.activities.pay.transfer.TransferCardToCardNewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/card_to_card_title" android:name="ru.tcsbank.mb.ui.activities.pay.transfer.UnauthorizedTransferCardToCardNewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ru.tcsbank.mb.ui.accounts.requisites.AccountRequisitesActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/req_send_email" android:name="ru.tcsbank.mb.ui.activities.SendEmailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Transparent.TransparentStatusBar.NoDialogAnimation"/>
+        <activity android:label="@string/transfers_title" android:name="ru.tcsbank.mb.ui.payments.TransferListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/confirm_sms_title" android:name="ru.tcsbank.mb.ui.confirm.SmsConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/SmsConfirm" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/confirm_3ds_title" android:name="ru.tcsbank.mb.ui.confirm.ThreeDSecureConfirmationActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/confirm_loop_title" android:name="ru.tcsbank.mb.ui.confirm.LoopConfirmationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/confirm_question_title" android:name="ru.tcsbank.mb.ui.confirm.QuestionConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog.Dark" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:label="@string/pac_label" android:name="ru.tcsbank.mb.ui.activities.pay.PayProviderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/rpa_title" android:name="ru.tcsbank.mb.ui.activities.pay.PayProviderRussianPostActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/payment_mobile_label" android:name="ru.tcsbank.mb.ui.activities.operation.payment.PaymentMobileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/close_multi_deposit_label" android:name="ru.tcsbank.mb.ui.accounts.deposit.CloseMultiDepositActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/close_deposit_label" android:name="ru.tcsbank.mb.ui.accounts.deposit.CloseDepositActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/deposit_withdrawal_label" android:name="ru.tcsbank.mb.ui.accounts.deposit.DepositPartialWithdrawalActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/deposit_prolongation_label" android:name="ru.tcsbank.mb.ui.accounts.deposit.DepositProlongationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/close_saving_account_label" android:name="ru.tcsbank.mb.ui.activities.closesaving.CloseSavingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/template_title" android:name="ru.tcsbank.mb.ui.activities.pay.PayTemplateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/template_title" android:name="ru.tcsbank.mb.ui.activities.pay.transfer.TransferTemplateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/anonymous_pay_title" android:name="ru.tcsbank.mb.ui.activities.pay.UnauthorizedPaymentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/pin_activity_label" android:launchMode="singleTop" android:name="ru.tcsbank.mb.ui.auth.pin.PinActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/pin_setup_activity_label" android:name="ru.tcsbank.mb.ui.auth.pin.PinSetupActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="@string/label_atms" android:launchMode="singleTask" android:name="ru.tcsbank.mb.ui.activities.map.AtmMapActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/label_filter_atm" android:name="ru.tcsbank.mb.ui.activities.map.AtmFilterActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/label_depositions" android:launchMode="singleTask" android:name="ru.tcsbank.mb.ui.activities.map.DepositionPointsMapActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:launchMode="singleTask" android:name="ru.tcsbank.mb.ui.activities.LoyaltyOffersMapActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.TransparentStatusBar"/>
+        <activity android:label="@string/deposition_points_filter_title" android:name="ru.tcsbank.mb.ui.activities.dialogs.map.DepositionPartnersFilterActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:label="@string/ofha_label" android:name="ru.tcsbank.mb.ui.activities.offer.loyalty.LoyaltyOffersHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ru.tcsbank.mb.ui.activities.offer.loyalty.LoyaltyOfferInformationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:name="ru.tcsbank.mb.ui.offers.loyalty.LoyaltyOfferSearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LoyaltyOfferSearch" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="ru.tcsbank.mb.ui.offers.loyalty.MallSearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LoyaltyOfferSearch" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="ru.tcsbank.mb.ui.activities.dialogs.map.DepositionDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:label="@string/reorder_title" android:name="ru.tcsbank.mb.ui.activities.template.EditTemplatesListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="ru.tcsbank.mb.ui.activities.loyalty.LoyaltyActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/lha_label" android:name="ru.tcsbank.mb.ui.activities.loyalty.LoyaltyHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/lca_label" android:name="ru.tcsbank.mb.ui.activities.loyalty.LoyaltyCompensationActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/get_login_and_password_title" android:name="ru.tcsbank.mb.ui.registration.RegistrationCardNumberActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/import_additional_card_title" android:name="ru.tcsbank.mb.ui.activities.account.ImportAdditionalCardActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/label_offers" android:name="ru.tcsbank.mb.ui.activities.offer.loyalty.LoyaltyOffersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ru.tcsbank.mb.ui.activities.offer.loyalty.list.simple.LoyaltyOffersSimpleActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/get_login_and_password_title_login" android:name="ru.tcsbank.mb.ui.registration.RegistrationLoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.RegistrationLogin"/>
+        <activity android:label="@string/get_login_and_password_title_password" android:name="ru.tcsbank.mb.ui.registration.RegistrationPasswordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.RegistrationLogin"/>
+        <activity android:label="@string/registration_offer_title" android:name="ru.tcsbank.mb.ui.registration.RegistrationOfferActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog.Dark"/>
+        <activity android:label="@string/registration_offer_title" android:name="ru.tcsbank.mb.ui.registration.UnauthorizedRegistrationOfferActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog.Dark"/>
+        <activity android:label="@string/aea_label" android:name="ru.tcsbank.mb.ui.activities.product.AttachExternalAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ru.tcsbank.mb.ui.activities.ScanNfcActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Transparent.Half"/>
+        <activity android:label="@string/nsa_label" android:name="ru.tcsbank.mb.ui.activities.product.saving.NewSavingAccountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/nsc_label" android:name="ru.tcsbank.mb.ui.activities.product.saving.NewSavingAccountCategoryActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/profile_label" android:name="ru.tcsbank.mb.ui.profile.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/profile_contacts_button" android:name="ru.tcsbank.mb.ui.profile.ProfileContactsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/profile_addresses_label" android:name="ru.tcsbank.mb.ui.profile.ProfileAddressesActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/profile_employer_label" android:name="ru.tcsbank.mb.ui.profile.ProfileEmployerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/profile_requests_label" android:name="ru.tcsbank.mb.ui.requests.UserRequestsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/profile_edit_title" android:name="ru.tcsbank.mb.ui.profile.EditEmailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:name="ru.tcsbank.mb.ui.receipt.ReceiptActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Transparent.TranslucentAnimation"/>
+        <activity android:name="ru.tcsbank.mb.ui.receipt.UnAuthReceiptActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Transparent.TranslucentAnimation"/>
+        <activity android:name="ru.tcsbank.mb.ui.activities.offer.loyalty.LoyaltyOfferOperationListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ru.tcsbank.mb.ui.operations.details.TransactionDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:name="ru.tcsbank.mb.ui.operations.details.TransactionDetailsMapActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Transparent.TransparentStatusBar"/>
+        <activity android:label="@string/phone_contacts_title" android:name="ru.tcsbank.mb.ui.activities.phone.contacts.PhoneContactsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/phone_contacts_title" android:name="ru.tcsbank.mb.ui.activities.phone.contacts.UnauthorizedPhoneContactsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/favorites_title" android:name="ru.tcsbank.mb.ui.activities.pay.favorites.TemplateListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/contact_title" android:name="ru.tcsbank.mb.ui.activities.phone.contacts.PhoneContactDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/contact_title" android:name="ru.tcsbank.mb.ui.activities.phone.contacts.UnauthorizedPhoneContactDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/limits_title" android:name="ru.tcsbank.mb.ui.limits.LimitsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="" android:name="ru.tcsbank.mb.ui.activities.ImagePreviewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Transparent.TransparentStatusBar"/>
+        <activity android:label="@string/tra_title" android:name="ru.tcsbank.mb.ui.activities.template.TemplateRenameActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:label="@string/repeat_template_title" android:name="ru.tcsbank.mb.ui.activities.pay.favorites.TemplateRepeatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/favorites_title" android:name="ru.tcsbank.mb.ui.activities.template.TemplateCreateActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:label="@string/template_editing_title" android:name="ru.tcsbank.mb.ui.activities.template.EditTemplateActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="ru.tcsbank.mb.ui.activities.QrCodeCaptureActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Fullscreen"/>
+        <activity android:label="@string/autopayment_label" android:name="ru.tcsbank.mb.ui.activities.offer.personal.AutopaymentCreateActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:label="@string/close_deposit_request_label" android:name="ru.tcsbank.mb.ui.activities.CloseDepositRequestActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:name="ru.tcsbank.mb.ui.common.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ru.tcsbank.mb.ui.products.insurance.InsuranceActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/empty" android:name="ru.tcsbank.mb.ui.activities.RateActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.ActivityDialog"/>
+        <activity android:label="@string/ffa_label" android:name="ru.tcsbank.mb.ui.activities.RateFeedBackActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="ru.tcsbank.mb.ui.chat.ImageViewerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Transparent"/>
+        <activity android:label="" android:name="ru.tcsbank.mb.ui.hce.offer.HceOfferActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:label="" android:name="ru.tcsbank.mb.ui.hce.offer.HceOfferNewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:name="ru.tcsbank.mb.ui.hce.AddHceAccountListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Transparent"/>
+        <activity android:name="ru.tcsbank.mb.ui.hce.HceSelectDefaultCardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Transparent"/>
+        <activity android:name="ru.tcsbank.mb.ui.hce.payment.HcePaymentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Dark"/>
+        <activity android:label="@string/hce_offer_title" android:name="ru.tcsbank.mb.ui.hce.HceConnectedActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:label="@string/profile_subscriptions_notifications_title" android:name="ru.tcsbank.mb.ui.activities.subscriptions.SubscriptionSettingsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:label="@string/profile_add_subscription_title" android:name="ru.tcsbank.mb.ui.subscriptions.manage.CreateSubscriptionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/profile_subscriptions_list_title" android:name="ru.tcsbank.mb.ui.activities.subscriptions.SubscriptionListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/invoice_list_title" android:name="ru.tcsbank.mb.ui.subscriptions.list.InvoiceListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/invoices_details_title" android:name="ru.tcsbank.mb.ui.subscriptions.details.EInvoiceDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/invoices_details_title" android:name="ru.tcsbank.mb.ui.subscriptions.details.BillDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/invoices_details_title" android:name="ru.tcsbank.mb.ui.subscriptions.details.UnauthorizedBillDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/invoices_details_requisites" android:name="ru.tcsbank.mb.ui.subscriptions.details.BillRequisitesActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/invoices_details_requisites" android:name="ru.tcsbank.mb.ui.subscriptions.details.UnauthorizedBillRequisitesActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/invoices_title" android:name="ru.tcsbank.mb.ui.activities.subscriptions.SearchBillActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/invoices_title" android:name="ru.tcsbank.mb.ui.activities.subscriptions.UnauthorizedSearchBillActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/fines_check_title_pay" android:name="ru.tcsbank.mb.ui.activities.subscriptions.penalties.SearchPenaltyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/fines_check_title_pay" android:name="ru.tcsbank.mb.ui.activities.subscriptions.penalties.UnauthorizedSearchPenaltyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/fines_check_title_pay" android:name="ru.tcsbank.mb.ui.activities.operation.payment.BillsPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fines_check_title_pay" android:name="ru.tcsbank.mb.ui.activities.operation.payment.UnauthorizedBillPaymentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/activate_card_default_title" android:name="ru.tcsbank.mb.ui.activities.activation.ActivateCardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.RegistrationLogin"/>
+        <activity android:label="@string/activate_card_default_title" android:name="ru.tcsbank.mb.ui.activities.activation.UnauthorizedActivateCardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.RegistrationLogin"/>
+        <activity android:label="@string/get_pin_code_success_title" android:name="ru.tcsbank.mb.ui.activities.activation.GetNewCardPinActivity" android:screenOrientation="portrait" android:theme="@style/Theme.RegistrationLogin"/>
+        <activity android:label="@string/anonymous_tinkoff_cards_title_tinkoff_cards" android:name="ru.tcsbank.mb.ui.products.cards.ProductListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Dark"/>
+        <activity android:label="@string/anonymous_tinkoff_cards_title_tinkoff_cards" android:name="ru.tcsbank.mb.ui.products.cards.UnauthorizedProductListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Dark"/>
+        <activity android:label="@string/anonymous_tinkoff_cards_title_tinkoff_cards" android:name="ru.tcsbank.mb.ui.products.cards.CardDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Dark"/>
+        <activity android:label="@string/anonymous_tinkoff_cards_title_tinkoff_cards" android:name="ru.tcsbank.mb.ui.products.cards.UnauthorizedCardDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Dark"/>
+        <activity android:label="@string/cash_loan_appeal_title" android:name="ru.tcsbank.mb.ui.products.cashloan.CashLoanActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ru.tcsbank.mb.ui.accounts.cashloan.CashloanEarlyRepaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/subscription_edit_title" android:name="ru.tcsbank.mb.ui.subscriptions.manage.EditSubscriptionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/fine_details_title_fine" android:name="ru.tcsbank.mb.ui.activities.subscriptions.penalties.PenaltyDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/subscriptions_list_title" android:name="ru.tcsbank.mb.ui.activities.subscriptions.BillListToPayActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/invoices_list_title" android:name="ru.tcsbank.mb.ui.activities.subscriptions.BillListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/invoices_list_title" android:name="ru.tcsbank.mb.ui.activities.subscriptions.UnauthorizedBillListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:name="ru.tcsbank.mb.ui.activities.pay.PayCommissionChooserActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Transparent.FadeAnimation.N3" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="ru.tcsbank.mb.ui.activities.pay.PayWithAuthorizationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog.Dark"/>
+        <activity android:name="ru.tcsbank.mb.ui.search.provider.UnauthorizedSearchProviderActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="ru.tcsbank.mb.ui.search.provider.SearchProviderActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="ru.tinkoff.core.fingerprint.ui.FingerprintSetupActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/login_title" android:name="ru.tcsbank.mb.ui.auth.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <service android:exported="false" android:name="ru.tcsbank.mb.model.hce.HceIntentService"/>
+        <activity android:label="@string/npa_title" android:name="ru.tcsbank.mb.ui.products.NewProductsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:label="@string/broker_account_application_title" android:name="ru.tcsbank.mb.ui.products.broker.NewBrokerAccountActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:label="@string/telecom_account_application_title" android:name="ru.tcsbank.mb.ui.products.telecom.NewTelecomAccountActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/telecom_account_application_title" android:name="ru.tcsbank.mb.ui.products.telecom.UnauthorizedNewTelecomAccountActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/anonymous_pay_title" android:name="ru.tcsbank.mb.ui.activities.operation.payment.UnauthorizedPaymentMobileActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/identify_simple_title" android:name="ru.tcsbank.mb.ui.profile.LightIdentityActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/get_inn" android:name="ru.tcsbank.mb.ui.inn.GetInnActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/get_inn" android:name="ru.tcsbank.mb.ui.inn.UnauthorizedGetInnActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/multipayment_error" android:name="ru.tcsbank.mb.ui.activities.pay.partial.PartialGroupPaymentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:name="ru.tcsbank.mb.ui.smartfields.MbExpandedSmartFieldsActivity" android:screenOrientation="portrait" android:theme="@style/MbSmartFieldsTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="ru.tcsbank.mb.ui.smartfields.MbFullFormExpandedActivity" android:screenOrientation="portrait" android:theme="@style/MbSmartFieldsTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="ru.tcsbank.mb.ui.activities.FullApplicationActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="ru.tcsbank.mb.ui.activities.contacts.SyncContactsOfferActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog.Dark"/>
+        <activity android:label="@string/investing_app_offer_title" android:name="ru.tcsbank.mb.ui.activities.account.InvestingOfferActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog.Dark"/>
+        <activity android:label="@string/import_additional_card_offer_title" android:name="ru.tcsbank.mb.ui.activities.offer.personal.ImportAdditionalCardOfferActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog.Dark"/>
+        <activity android:label="@string/security_pin_codes_title" android:name="ru.tcsbank.mb.ui.settings.pin.ManagePinActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/account_documents_title" android:name="ru.tcsbank.mb.ui.activities.accountdocument.AccountDocumentListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/order_account_document_title" android:name="ru.tcsbank.mb.ui.activities.accountdocument.OrderAccountDocumentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/baf_offer_title_tinkoff_cards" android:name="ru.tcsbank.mb.ui.activities.phone.contacts.InviteContactActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Dark"/>
+        <activity android:name="ru.tinkoff.core.passport.ui.activity.PassportScanActivity" android:screenOrientation="portrait" android:theme="@style/DocScanTheme"/>
+        <activity android:name="ru.tcsbank.mb.ui.deeplink.DeeplinkProviderActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:name="ru.tcsbank.mb.ui.deeplink.DeeplinkAccountActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Splash"/>
+        <activity android:name="ru.tcsbank.mb.ui.appointment.AppointmentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ru.tcsbank.mb.ui.appointment.SimpleResultActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:launchMode="singleTask" android:name="ru.tcsbank.mb.ui.deeplink.DeeplinkingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Splash">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.VIEW"/>
+                <data android:host="Main" android:scheme="tinkoffbank"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/high_cashback_title" android:name="ru.tcsbank.mb.ui.activities.cashback.HighCashbackActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog.Dark"/>
+        <activity android:label="@string/receipt_pdf_title" android:name="ru.tcsbank.mb.ui.pdf.PdfDownloadActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/pdf_viewer_title" android:name="ru.tcsbank.mb.ui.pdf.PdfViewerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/empty" android:name="ru.tcsbank.mb.ui.activities.subscriptions.penalties.PenaltyPhotoViewerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.SwipePhotoViewer"/>
+        <activity android:label="@string/overdraft_title" android:name="ru.tcsbank.mb.ui.overdraft.ConnectOverdraftActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:name="ru.tcsbank.mb.ui.androidpay.AndroidPayActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Transparent"/>
+        <activity android:label="@string/suspicious_operations_title" android:name="ru.tcsbank.mb.ui.events.SuspiciousOperationsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/multi_currency_card_add_title" android:name="ru.tcsbank.mb.ui.accounts.multicard.MulticardAddCurrencyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:name="ru.tcsbank.mb.ui.accounts.multicard.MulticardConversionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:name="ru.tcsbank.mb.ui.accounts.multicard.MulticardConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:name="ru.tcsbank.mb.ui.MbOnlineCallActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/bring_a_friend_header_title" android:name="ru.tcsbank.mb.ui.bringfriend.BringFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/main_menu_contacts_button_header" android:name="ru.tcsbank.mb.ui.bringfriend.contacts.InvitePhoneContactsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/bring_a_friend_invitations_header" android:name="ru.tcsbank.mb.ui.bringfriend.statistic.StatisticFriendListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/bring_a_friend_recommend_label" android:name="ru.tcsbank.mb.ui.bringfriend.products.BringFriendChooseProductActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="" android:name="ru.tcsbank.mb.ui.bringfriend.offer.BringFriendOfferActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog.White"/>
+        <activity android:label="@string/booking_select_city_title" android:name="ru.tcsbank.mb.ui.booking.cities.CitySelectionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:name="ru.tcsbank.mb.ui.booking.restaurants.RestaurantBookingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/restaurants_list_title" android:name="ru.tcsbank.mb.ui.booking.restaurants.list.RestaurantListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.RestaurantList"/>
+        <activity android:name="ru.tcsbank.mb.ui.booking.restaurants.list.RestaurantSearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.RestaurantList" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/tariff_limits_title" android:name="ru.tcsbank.mb.ui.accounts.limits.TariffLimitsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fine_details_photo_need_auto_number_header" android:name="ru.tcsbank.mb.ui.activities.subscriptions.penalties.captcha.PenaltyCaptchaActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/empty" android:name="ru.tcsbank.mb.ui.offers.loyalty.malls.MallActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/malls_label" android:name="ru.tcsbank.mb.ui.offers.loyalty.malls.list.MallListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ru.tcsbank.mb.ui.products.cashloan.activate.CashLoanActivateActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:name="ru.tcsbank.mb.ui.settings.apppin.ManageAppPinActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/empty" android:name="ru.tcsbank.mb.ui.offers.loyalty.malls.map.MallFloorsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.Transparent.TransparentStatusBar"/>
+        <activity android:label="@string/empty" android:name="ru.tcsbank.mb.ui.offers.loyalty.malls.map.MallMapActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless.TransparentStatusBar"/>
+        <activity android:label="@string/confirm_sms_title" android:name="ru.tcsbank.mb.ui.products.broker.BrokerSmsConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/SmsConfirm" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/add_currency_label" android:name="ru.tcsbank.mb.ui.accounts.deposit.AddDepositCurrencyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:label="@string/premium_services_label" android:name="ru.tcsbank.mb.ui.vip.list.PremiumServiceListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/premium_services_manager_details_title" android:name="ru.tcsbank.mb.ui.vip.manager.PersonalManagerDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/empty" android:name="ru.tcsbank.mb.ui.vip.PremiumServiceActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <activity android:label="@string/autoconcierge_add_auto_title" android:name="ru.tcsbank.mb.ui.vip.autoconcierge.AutoconciergeAddCarActivity" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:label="@string/registration_offer_title" android:name="ru.tcsbank.mb.ui.p2p.offer.VisaAliasOfferActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog.White"/>
+        <activity android:label="@string/tourist_list_title" android:name="ru.tcsbank.mb.ui.vip.travel.TouristListActivity" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:label="@string/tourist_details_title" android:name="ru.tcsbank.mb.ui.vip.travel.TouristDetailsActivity" android:theme="@style/Theme.ActivityDialog"/>
+        <activity android:label="" android:name="ru.tcsbank.mb.ui.vip.conversion.ConvertToPremiumActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActivityDialog.White"/>
+        <activity android:label="@string/premium_offer_title" android:name="ru.tcsbank.mb.ui.vip.offer.PremiumOfferActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Headless"/>
+        <service android:exported="true" android:name="com.mastercard.mcbp.hce.DefaultHceService" android:permission="android.permission.BIND_NFC_SERVICE">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/>
+            </intent-filter>
+            <meta-data android:name="android.nfc.cardemulation.host_apdu_service" android:resource="@xml/apduservice"/>
+        </service>
+        <service android:exported="false" android:name="ru.tcsbank.mb.model.contacts.sync.ContactSyncService"/>
+        <service android:exported="false" android:name="ru.tcsbank.mb.ui.activities.subscriptions.penalties.PenaltyPhotoService"/>
+        <activity android:name="ru.tinkoff.core.scan.creditcard.ui.activity.CreditCardScanActivity" android:screenOrientation="portrait" android:theme="@style/DocScanTheme"/>
+        <activity android:name="ru.tinkoff.core.call.ui.OnlineCallActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.idamob.tinkoff.android.chat.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="ru.tinkoff.chat.webim.ChatFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/core_chat_file_paths"/>
+        </provider>
+        <service android:name="com.pushserver.android.PushFcmIntentService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.pushserver.android.PushInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.pushserver.android.PushRegistrationIntentService"/>
+        <service android:exported="false" android:name="com.pushserver.android.SecurityTokenService"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.idamob.tinkoff.android.crashlyticsinitprovider" android:exported="false" android:initOrder="100" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.idamob.tinkoff.android"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"/>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.idamob.tinkoff.android.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+    </application>
+</manifest>

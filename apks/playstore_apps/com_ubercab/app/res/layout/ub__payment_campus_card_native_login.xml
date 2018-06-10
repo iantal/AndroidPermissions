@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.campuscard.operation.nativelogin.CampusCardNativeLoginView android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="6ef93c4d-a625"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/fixed_header" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.UScrollView android:id="@id/ub__campus_card_native_login_scroll_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ui__gutter_size" android:layout_marginRight="@dimen/ui__gutter_size">
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__campus_card_native_login_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_4x" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:text="@string/campus_card_native_login_subtitle" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+                <com.ubercab.presidio.payment.base.ui.util.ClickableFloatingLabelEditText android:id="@id/ub__campus_card__edittext_username" android:nextFocusDown="@id/ub__campus_card__edittext_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:nextFocusForward="@id/ub__campus_card__edittext_password" uber:floatingLabelLabelText="@string/campus_card_user_name" style="@style/FloatingLabel" />
+                <com.ubercab.presidio.payment.base.ui.util.ClickableFloatingLabelEditText android:id="@id/ub__campus_card__edittext_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPassword" uber:floatingLabelLabelText="@string/campus_card_password" style="@style/FloatingLabel" />
+                <com.ubercab.ui.core.UTextView android:textColor="?colorNegative" android:id="@id/ub__campus_card_error_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.UScrollView>
+        <com.ubercab.ui.commons.widget.KeyboardButton android:theme="@style/Platform.Button.Primary" android:id="@id/ub__campus_card_login_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/campus_card_log_in" android:contentDescription="@string/campus_card_log_in" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.payment.campuscard.operation.nativelogin.CampusCardNativeLoginView>

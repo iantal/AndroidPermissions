@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="right" n1:orientation="vertical" n1:background="@drawable/lpmessaging_ui_background_color_selector" n1:padding="@dimen/margin_half" n1:clickable="true" n1:descendantFocusability="blocksDescendants" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="right" n1:padding="@dimen/margin_regular" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/lpui_message_status_image_size">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/lpui_image_message_view" n1:background="@drawable/lpmessaging_ui_consumer_bubble_background" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <FrameLayout n1:layout_width="@dimen/lpui_message_image_size" n1:layout_height="@dimen/lpui_message_image_size" n1:importantForAccessibility="no">
+                <ImageView n1:layout_gravity="center" n1:id="@id/lpui_message_image" n1:layout_width="@dimen/lpui_message_image_size" n1:layout_height="@dimen/lpui_message_image_size" n1:contentDescription="@string/lp_accessibility_image" />
+                <ImageView n1:layout_gravity="center" n1:id="@id/lpui_message_status_image" n1:visibility="invisible" n1:layout_width="@dimen/lpui_message_status_image_size" n1:layout_height="@dimen/lpui_message_status_image_size" n1:elevation="@dimen/margin_half" n2:srcCompat="@drawable/lpmessaging_ui_image_download" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <ProgressBar n1:layout_gravity="center" n1:id="@id/lpui_message_progress_bar_image" n1:visibility="invisible" n1:layout_width="@dimen/lpui_message_status_image_size" n1:layout_height="@dimen/lpui_message_status_image_size" n3:srcCompat="@drawable/lpmessaging_ui_image_progress_bar" style="?android:progressBarStyleSmall" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            </FrameLayout>
+            <com.liveperson.infra.ui.view.ui.CustomTextView n1:id="@id/lpui_message_text" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="This is the image of the item" n1:importantForAccessibility="no" n4:font_name="@string/custom_font_name_conversation_feed" style="@style/LpConsumerMessageStyle" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <ImageView n1:id="@id/lpui_message_error" n1:visibility="gone" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/margin_half" n1:layout_toLeftOf="@id/lpui_image_message_view" n1:layout_centerVertical="true" n1:contentDescription="@string/lp_accessibility_resend" n5:srcCompat="@drawable/lpmessaging_ui_ic_msg_error" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <ImageView n1:id="@id/lpui_message_state_icon" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/margin_half" n1:layout_toLeftOf="@id/lpui_image_message_view" n1:layout_alignBottom="@id/lpui_image_message_view" n1:contentDescription="" n6:srcCompat="@drawable/lpmessaging_ui_ic_msg_read" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <include layout="@layout/lpmessaging_ui_status_text" />
+</LinearLayout>

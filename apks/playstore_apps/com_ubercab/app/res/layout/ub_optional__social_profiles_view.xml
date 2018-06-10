@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/fixed_header" />
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__social_profiles_loading" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:bli_bitColor="?colorAccent" />
+    <com.ubercab.ui.core.UScrollView android:id="@id/ub__social_profiles_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__social_profile_sections_container_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.UScrollView>
+    <include android:id="@id/ub__social_profiles_error_view" android:visibility="gone" layout="@layout/ub_optional__social_profiles_error_view" />
+</merge>

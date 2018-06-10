@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.momo.operation.addsuccess.MomoAddSuccessView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="@string/ub__momo_add_success_impression_analytics_key"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UCoordinatorLayout android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/collapsing_header" />
+        <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UImageView android:id="@id/ub__add_success_display_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__add_success_heading_text" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:text="@string/ub__momo_add_success_title" style="@style/Platform.TextAppearance.H3.Book" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__add_success_phone_number_display" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/ub__momo_add_success_description" style="@style/Platform.TextAppearance.P" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.UScrollView>
+    </com.ubercab.ui.core.UCoordinatorLayout>
+    <com.ubercab.ui.core.UButton android:id="@id/ub__momo_add_success_close" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:layout_marginRight="?contentInset" android:layout_marginBottom="?contentInset" android:text="@string/close" uber:analyticsId="@string/ub__momo_add_success_close_button_analytics_key" style="?platformButtonPrimary" />
+</com.ubercab.presidio.payment.momo.operation.addsuccess.MomoAddSuccessView>

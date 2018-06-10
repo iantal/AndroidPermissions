@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:background="@drawable/selector_account_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/visibility_button_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="27.0dip" n1:layout_marginTop="14.0dip" n1:layout_marginBottom="14.0dip" n1:src="@drawable/ic_account_item_hidden_button" />
+    <TextView n1:textAppearance="@style/Text.XXSSmall.Hint.Medium" n1:gravity="center_vertical" n1:id="@id/caption" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge_large" n1:minHeight="44.0dip" n1:textAllCaps="true" />
+</FrameLayout>

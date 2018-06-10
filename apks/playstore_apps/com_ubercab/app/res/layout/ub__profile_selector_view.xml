@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.profiles_feature.switcher.optional.selector.ProfileSelectorView android:fitsSystemWindows="@bool/use_transparent_status_bar" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__profile_selector_overlay" android:background="?colorPrimary" android:fitsSystemWindows="@bool/use_transparent_status_bar" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" app:analyticsEnabled="false" />
+    <com.ubercab.ui.core.URecyclerView android:id="@id/ub__profile_list" android:background="?android:colorBackground" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+</com.ubercab.presidio.profiles_feature.switcher.optional.selector.ProfileSelectorView>

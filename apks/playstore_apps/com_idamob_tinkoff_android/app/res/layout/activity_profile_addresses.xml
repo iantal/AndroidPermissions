@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/MatchParent">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/addresses" n1:visibility="gone" n1:layout_marginTop="@dimen/screen_content_margin" n1:layout_marginBottom="@dimen/screen_content_margin" style="@style/MatchParent"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <TextView n1:text="@string/profile_addresses_registration_address" style="@style/Profile.Title" />
+        <TextView n1:id="@id/profile_addresses_registration_address" style="@style/TextView.Default" />
+        <TextView n1:id="@id/profile_addresses_registration_mobile" style="@style/TextView.Default" />
+        <ru.tcsbank.mb.ui.widgets.CheckBoxRight n1:id="@id/profile_addresses_registration_cb" n1:background="@drawable/selector_item_bg" n1:paddingLeft="@dimen/screen_content_margin" n1:paddingRight="@dimen/screen_content_margin" n1:text="@string/profile_addresses_primary_address" style="@style/TextView.Default" />
+        <include n1:id="@id/divider" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginTop="@dimen/screen_content_margin_half" n1:layout_marginBottom="@dimen/screen_content_margin_half" layout="@layout/inc_divider" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/profile_addresses_home_panel" n1:visibility="gone" style="@style/VerticalWrapping">
+            <TextView n1:text="@string/profile_addresses_home_address" style="@style/Profile.Title" />
+            <TextView n1:id="@id/profile_addresses_home_address" style="@style/TextView.Default" />
+            <TextView n1:id="@id/profile_addresses_home_mobile" style="@style/TextView.Default" />
+            <ru.tcsbank.mb.ui.widgets.CheckBoxRight n1:id="@id/profile_addresses_home_cb" n1:background="@drawable/selector_item_bg" n1:paddingLeft="@dimen/screen_content_margin" n1:paddingRight="@dimen/screen_content_margin" n1:text="@string/profile_addresses_primary_address" style="@style/TextView.Default" />
+        </LinearLayout>
+        <TextView n1:id="@id/profile_addresses_add_home_address" n1:background="@drawable/selector_item_bg" n1:visibility="gone" n1:text="@string/profile_addresses_add_address" style="@style/TextView.Default" />
+    </LinearLayout>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n2:layout_gravity="center" n2:id="@id/progress_bar" n2:visibility="visible" n2:layout_width="@dimen/pd_width" n2:layout_height="@dimen/pd_height"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+</FrameLayout>

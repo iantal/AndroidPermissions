@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.stories.DriverEndStoryView android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/ui__spacing_unit_3x" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="@dimen/ui__spacing_unit_3x" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="9e4b33f5-ee13"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:id="@id/driver_story_icon" android:layout_width="?avatarTiny" android:layout_height="?avatarTiny" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:contentDescription="@string/ub__driver_story_icon_description" uber:analyticsId="88cdf33d-3d54" uber:circleImageBorderWidth="@dimen/ub__driver_border_width" />
+    <com.ubercab.ui.core.UTextView android:id="@id/driver_story_cta" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="06d1842d-d8cd" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.stories.DriverEndStoryView>

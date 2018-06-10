@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/fragment_content_padding" n1:layout_marginTop="@dimen/fragment_content_padding" n1:layout_marginRight="@dimen/fragment_content_padding" n1:layout_marginBottom="@dimen/fragment_content_padding"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:paddingBottom="@dimen/fragment_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/base_URL" style="@style/TextAppearance.Headline" />
+    <RadioGroup n1:orientation="horizontal" n1:id="@id/baseUrlOptions" n1:paddingBottom="@dimen/fragment_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <RadioButton n1:id="@id/buttonAuth" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/cwa_radio_auth" n1:layout_weight="1.0" />
+        <RadioButton n1:id="@id/buttonUnauth" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/cwa_radio_uauth" n1:layout_weight="1.0" />
+        <RadioButton n1:id="@id/buttonSalesUnauth" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/cwa_radio_sales_uauth" n1:layout_weight="1.0" />
+    </RadioGroup>
+    <TextView n1:id="@id/editTextUrlTitle" n1:paddingBottom="@dimen/fragment_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/cwa_url" n1:labelFor="@id/editTextUrl" style="@style/TextAppearance.Headline" />
+    <EditText n1:gravity="center|left|top" n1:id="@id/editTextUrl" n1:paddingBottom="@dimen/fragment_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:inputType="textMultiLine|textUri" />
+    <Button n1:enabled="true" n1:layout_gravity="center_horizontal" n1:id="@id/buttonSubmit" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/cwa_button_confirm" style="@style/Widget.Button.Primary" />
+</LinearLayout>

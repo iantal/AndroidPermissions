@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:paddingBottom="@dimen/ub__partner_funnel_step_standard_footer_margin" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_step_standard_header" android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" style="@style/Funnel.Helix.TextAppearance.H1.Book" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_step_description_textview" android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" style="@style/Funnel.Helix.TextAppearance.P" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" android:scaleType="centerCrop" android:adjustViewBounds="true" app:srcCompat="@drawable/ub__partner_funnel_helix_car" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

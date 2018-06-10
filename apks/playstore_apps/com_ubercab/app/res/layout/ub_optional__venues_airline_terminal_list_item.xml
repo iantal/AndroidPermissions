@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:theme="@style/Theme.Helix.Light" android:orientation="vertical" android:id="@id/ub__venue_airline_terminal_list_row" android:background="?android:colorBackground" android:paddingLeft="@dimen/ui__spacing_unit_3x" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="@dimen/ui__spacing_unit_3x" android:paddingBottom="@dimen/ui__spacing_unit_0x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:gravity="start" android:id="@id/ub__venue_airline_name" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.News" />
+    <com.ubercab.ui.core.ULinearLayout android:theme="@style/Theme.Helix.Light" android:gravity="start" android:orientation="horizontal" android:id="@id/ub__venue_terminal_container" android:paddingTop="@dimen/ui__spacing_unit_1x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UButton android:gravity="center" android:id="@id/ub__venue_terminal_button_domestic" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?platformButtonSecondary" />
+        <android.support.v4.widget.Space android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="fill_parent" />
+        <com.ubercab.ui.core.UButton android:gravity="center" android:id="@id/ub__venue_terminal_button_international" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?platformButtonSecondary" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" android:layout_marginTop="@dimen/ui__spacing_unit_2x" />
+</com.ubercab.ui.core.ULinearLayout>

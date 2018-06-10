@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="30fe359a-bee1"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__pass_purchase_map_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.UFrameLayout android:layout_gravity="bottom" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UFrameLayout android:layout_gravity="center_horizontal" android:id="@id/ub__pass_purchase_map_label_container" android:background="?accentCta" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:textSize="@dimen/purchase_map_label_text_size" android:id="@id/ub__pass_purchase_map_label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Primary.Inverse" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.ui.core.UFrameLayout>

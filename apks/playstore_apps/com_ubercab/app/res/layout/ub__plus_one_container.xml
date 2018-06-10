@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.core.root.main.ride.request.plus_one.PlusOneContainerView android:fitsSystemWindows="@bool/use_transparent_status_bar" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UPlainView android:theme="@style/Theme.Helix.Dark" android:id="@id/plus_one_dim_background_view" android:background="?android:windowBackground" android:clickable="true" android:layout_width="0.0dip" android:layout_height="0.0dip" android:alpha="0.8" />
+</com.ubercab.presidio.app.core.root.main.ride.request.plus_one.PlusOneContainerView>

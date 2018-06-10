@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/travel_insurance_content" n1:paddingTop="@dimen/screen_content_padding_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/travel_insurance_policy_block" n1:background="?selectableItemBackground" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+            <ImageView n1:layout_gravity="center_vertical" n1:background="@drawable/circle_placeholder_main_blue" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginLeft="@dimen/screen_content_margin" n1:src="@drawable/ic_search_route_account_documents" n1:scaleType="centerInside" n1:tint="@color/white" />
+            <TextView n1:textAppearance="@style/Text.Default.Dark" n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_margin" n1:text="@string/travel_insurance_insurance_policy" />
+        </LinearLayout>
+        <include n1:id="@id/travel_insurance_policy_divider" n1:visibility="gone" layout="@layout/inc_divider_margin" />
+        <FrameLayout n1:id="@id/travel_insurance_note_block" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <at.blogc.android.views.ExpandableTextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/travel_insurance_note" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="12.0dip" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="12.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/travel_insurance_note" n1:maxLines="3" n2:animation_duration="250" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <View n1:layout_gravity="bottom" n1:id="@id/travel_insurance_note_overlay" n1:background="@drawable/show_more_gradient" n1:layout_width="fill_parent" n1:layout_height="32.0dip" />
+            <View n1:background="?selectableItemBackground" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        </FrameLayout>
+        <include n1:id="@id/travel_insurance_tourists_divider" n1:visibility="gone" layout="@layout/inc_divider_margin" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/travel_insurance_tourists" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:layout_marginLeft="@dimen/screen_content_margin" n1:layout_marginRight="@dimen/screen_content_margin" n1:text="@string/travel_insurance_tourist_list_header" />
+        </LinearLayout>
+        <android.support.constraint.ConstraintLayout n1:id="@id/travel_insurance_info_block" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <View n1:id="@id/travel_insurance_info_divider" n1:background="@color/dividers" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="7.0dip" n3:layout_constraintBottom_toTopOf="@id/travel_insurance_options_block" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:layout_constraintVertical_chainStyle="packed" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <ImageView n1:id="@id/travel_insurance_info_icon" n1:layout_width="24.0dip" n1:layout_height="24.0dip" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginTop="12.0dip" n1:src="@drawable/action_info" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintTop_toTopOf="@id/travel_insurance_options_block" n4:tint="@color/main_blue" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/travel_insurance_options_block" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="56.0dip" n5:layout_constraintLeft_toLeftOf="parent" n5:layout_constraintRight_toRightOf="parent" n5:layout_constraintTop_toBottomOf="@id/travel_insurance_info_divider" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        </android.support.constraint.ConstraintLayout>
+        <Button n1:id="@id/travel_insurance_issue_button" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item" n1:layout_marginTop="40.0dip" n1:text="@string/travel_insurance_action_button" style="@style/Button.Yellow.Medium" />
+    </LinearLayout>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@android:id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" n1:layout_margin="30.0dip" />
+    <ru.tcsbank.mb.ui.widgets.EmptyView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:id="@android:id/empty" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="30.0dip" n1:text="@string/travel_insurance_data_loading_error" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <NumberPicker android:theme="@style/ScheduledCommuteDateTimePickerTheme" android:id="@id/ub__scheduled_commute_window_start_time" android:descendantFocusability="blocksDescendants" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+    <NumberPicker android:theme="@style/ScheduledCommuteDateTimePickerTheme" android:id="@id/ub__scheduled_commute_window_end_time" android:descendantFocusability="blocksDescendants" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+</com.ubercab.ui.core.ULinearLayout>

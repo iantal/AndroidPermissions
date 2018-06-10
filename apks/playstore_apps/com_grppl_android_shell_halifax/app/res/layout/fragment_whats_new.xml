@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:background="@drawable/whats_new_page_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager n1:id="@id/whatsNewPages" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0" />
+    <com.mobile.ui.common.view.ViewPagerIndicator n1:id="@id/pageIndicator" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/whats_new_pages_snapshots_margin_top" n2:indicator_active="@drawable/pager_indicator_active_icon" n2:indicator_animated="false" n2:indicator_inactive="@drawable/pager_indicator_inactive_icon" n2:indicator_margin="@dimen/whats_new_pages_snapshots_indicator_margin" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/whatsNewNavigationControls" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="3.0">
+        <Button n1:id="@id/previousWhatsNewPage" n1:text="@string/fragment_whats_new_page_previous_button_text" style="@style/WhatsNewPage.Button" />
+        <Button n1:id="@id/skipWhatsNewPage" n1:text="@string/fragment_whats_new_page_skip_button_text" style="@style/WhatsNewPage.Button" />
+        <Button n1:id="@id/nextWhatsNewPage" n1:text="@string/fragment_whats_new_page_next_button_text" style="@style/WhatsNewPage.Button" />
+    </LinearLayout>
+</LinearLayout>

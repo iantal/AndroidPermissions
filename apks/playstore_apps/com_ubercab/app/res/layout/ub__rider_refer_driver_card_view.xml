@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" uber:analyticsId="2a511754-c7e3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:header="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.presidio.feed.views.CardHeaderView android:id="@id/ub__card_header" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:title="@string/ub__card_share_rides_label" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ubercab.ui.core.UTextView android:id="@id/header_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__card_rider_refer_driver_headline" style="@style/Platform.TextAppearance.H3.Book" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__how_referring_drivers_works" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__card_rider_refer_driver_learn_more_link" style="@style/Platform.TextAppearance.H5.News.Link" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UImageView android:id="@id/ub__rrd_icon_view" android:layout_width="@dimen/ub__rider_refer_driver_card_view_icon_width" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__card_rider_refer_driver_share_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/ub__card_rider_refer_driver_share_label" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__referral_code_button" android:background="@drawable/ub__copy_invite_code_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:minHeight="@dimen/ui__min_button_height" android:contentDescription="@string/ub__char_share_rides_code_button_description" uber:analyticsId="797443a5-1e60">
+        <com.ubercab.ui.core.UTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ub__referral_code_text" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H4.News" />
+        <com.ubercab.ui.core.UImageView android:background="@null" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitCenter" uber:srcCompat="@drawable/ic_share" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

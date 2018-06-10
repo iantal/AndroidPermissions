@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:layout_gravity="center_vertical" android:id="@id/ub__avatar_background" android:background="@drawable/ub__avatar_circle" android:layout_width="@dimen/ui__spacing_unit_5x" android:layout_height="@dimen/ui__spacing_unit_5x">
+        <com.ubercab.ui.core.UImageView android:layout_gravity="center" android:id="@id/ub__trusted_contacts_edit_avatar" android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="@dimen/ui__spacing_unit_2x" app:srcCompat="@drawable/ub__avatar_icon" />
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ui__spacing_unit_2x" android:layout_marginEnd="@dimen/ui__spacing_unit_2x">
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H4.Medium" android:id="@id/ub__trusted_contacts_edit_avatar_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H4.Book" android:id="@id/ub__trusted_contacts_edit_avatar_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UPlainView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</com.ubercab.ui.core.ULinearLayout>

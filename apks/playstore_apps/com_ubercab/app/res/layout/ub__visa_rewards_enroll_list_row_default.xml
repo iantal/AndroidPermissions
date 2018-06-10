@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.feed_composite_card.items.visa_rewards.row.default_row.DefaultVisaRewardsListRowView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?contentInset" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__composite_card_visa_rewards_list_row_icon" android:layout_width="?avatarSmall" android:layout_height="?avatarSmall" android:scaleType="centerCrop" android:layout_marginEnd="?contentInset" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__composite_card_visa_rewards_list_row_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__composite_card_visa_rewards_list_row_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/ub__composite_card_visa_rewards_list_row_subtitle" android:layout_toEndOf="@id/ub__composite_card_visa_rewards_list_row_icon" style="@style/Platform.TextAppearance.H5.News.Primary" />
+</com.ubercab.presidio.feed_composite_card.items.visa_rewards.row.default_row.DefaultVisaRewardsListRowView>

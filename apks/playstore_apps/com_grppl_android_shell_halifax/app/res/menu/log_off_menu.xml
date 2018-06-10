@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item n1:icon="@drawable/toolbar_overflow_icon" n1:id="@id/logOffMenu" n1:title="@string/toolbar_overflow_menu_title" n2:showAsAction="always"
+      xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <menu>
+            <item n1:icon="@drawable/log_off_menu_log_off_icon" n1:id="@id/logOffMenuLogOff" n1:title="@string/toolbar_action_log_off" />
+        </menu>
+    </item>
+</menu>

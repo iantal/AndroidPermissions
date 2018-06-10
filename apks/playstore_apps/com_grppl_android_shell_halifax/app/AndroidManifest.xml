@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.grppl.android.shell.halifax">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.fingerprint" android:required="false"/>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <application android:allowBackup="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.mobile.halifax.HalifaxApp" android:resizeableActivity="@bool/support_split_screen" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="false" android:theme="@style/AppTheme">
+        <activity android:name="com.mobile.ui.analyticsconsents.activity.AnalyticsConsentsPreferencesActivity"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyC4Z48cUrndy_cWxxwJ5OHRFMqYkdWJFoE"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.grppl.android.shell.halifax.com.mobile.pdf.file.provider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_path"/>
+        </provider>
+        <activity android:name="com.mobile.ui.splash.activity.SplashActivity" android:noHistory="true" android:screenOrientation="portrait"/>
+        <activity-alias android:name="com.halifax.halifax.GrappleActivity" android:targetActivity="com.mobile.ui.splash.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="com.mobile.ui.error.ErrorActivity"/>
+        <activity android:name="com.mobile.ui.login.activity.LoginActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.mobile.ui.welcome.activity.WelcomeActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.mobile.ui.webjourney.activity.AuthWebJourneyActivity"/>
+        <activity android:name="com.mobile.ui.webjourney.activity.UnauthWebJourneyActivity"/>
+        <activity android:name="com.mobile.ui.home.activity.HomeActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.mobile.ui.home.activity.YourAccountsActivity"/>
+        <activity android:name="com.mobile.ui.enrollment.activity.EnrollmentActivity"/>
+        <activity android:name="com.mobile.ui.settings.activity.AutoLogOffSettingsActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.mobile.ui.settings.activity.SecuritySettingsActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.mobile.ui.settings.activity.PersonalDetailsSettingsActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.mobile.ui.settings.activity.SettingsAndInfoActivity"/>
+        <activity android:name="com.mobile.ui.settings.activity.LegalInformationSettingsActivity"/>
+        <activity android:name="com.mobile.ui.interstitial.activity.InterstitialActivity"/>
+        <activity android:name="com.mobile.ui.clicktocall.activity.ClickToCallHubActivity"/>
+        <activity android:name="com.mobile.ui.clicktocall.activity.CallUsActivity"/>
+        <activity android:name="com.mobile.ui.registration.RegistrationActivity"/>
+        <activity android:name="com.mobile.ui.registration.autologoff.activity.AutoLogOffRegistrationActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mobile.ui.ics.activity.IcsMainActivity"/>
+        <activity android:name="com.mobile.ui.ics.activity.IcsTransactionDetailActivity"/>
+        <activity android:name="com.mobile.ui.settings.activity.DarkUrlSettingsActivity"/>
+        <activity android:name="com.mobile.ui.settings.activity.RealTimeAlertsSettingsActivity"/>
+        <activity android:name="com.mobile.ui.realtimealerts.activity.RealTimeAlertsConflictActivity"/>
+        <activity android:name="com.mobile.ui.ics.activity.IcsChequeImageReviewActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.mobile.ui.ics.activity.IcsDepositChequeReviewActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mobile.ui.ics.activity.IcsCameraControllerActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.topimagesystems.controllers.imageanalyze.CameraManagerController" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="false" android:name="com.topimagesystems.controllers.imageanalyze.CameraController" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="false" android:name="com.topimagesystems.controllers.imageanalyze.DynamicCaptureCameraController" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.topimagesystems.ui.InfoScreenActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.mobile.ui.ics.activity.IcsDepositChequeResponseActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.mobile.ui.producthub.activity.ProductHubActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.mobile.ui.mobilechat.activity.MobileChatActivity" android:theme="@style/AppTheme.MobileChat"/>
+        <activity android:name="com.mobile.ui.paymenthub.activity.PaymentHubActivity"/>
+        <activity android:name="com.mobile.ui.paymenthub.activity.PaymentHubReactivateIsaActivity"/>
+        <activity android:name="com.mobile.ui.paymenthub.activity.StandingOrderDeclinedActivity"/>
+        <activity android:name="com.mobile.ui.whatsnew.activity.WhatsNewActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.mobile.ui.branchfinder.activity.BranchFinderActivity"/>
+        <activity android:name="com.mobile.ui.logoff.activity.LoggedOffActivity"/>
+        <activity android:name="com.mobile.ui.ics.activity.IcsViewDemoActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.mobile.ui.spendingrewards.activity.SpendingRewardsRegistrationActivity"/>
+        <activity android:name="com.mobile.ui.reactivateisa.activity.ReactivateIsaActivity"/>
+        <activity android:name="com.mobile.ui.marketinghub.activity.MarketingHubActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.mobile.ui.unsuretransaction.activity.UnsureTransactionActivity"/>
+        <activity android:name="com.mobile.ui.coa.activity.CoaCctmDeclineActivity"/>
+        <activity android:name="com.mobile.ui.home.activity.StatementsActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.liveperson.infra.messaging_ui.ConversationActivity" android:theme="@style/SDKAppTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.liveperson.infra.messaging_ui.screens.CaptionPreviewActivity" android:theme="@style/SDKAppTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <provider android:authorities="com.liveperson.infra.provider.com.grppl.android.shell.halifax" android:exported="false" android:grantUriPermissions="true" android:name="com.liveperson.infra.messaging_ui.utils.LpFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.liveperson.messaging.background.BackgroundActionsService"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <service android:exported="false" android:name="com.trusteer.taz.service.TasService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.trusteer.taz.service.TasIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>

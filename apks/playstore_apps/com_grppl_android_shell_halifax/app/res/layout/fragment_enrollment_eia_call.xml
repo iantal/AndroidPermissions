@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginTop="@dimen/activity_vertical_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin">
+        <ViewStub n1:id="@id/registrationProgressViewStub" n1:layout="@layout/layout_eia_call_progress_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_eia_call_spacing_small" />
+        <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_eia_call_spacing_small">
+            <ImageView n1:layout_width="@dimen/fragment_eia_call_image_size" n1:layout_height="@dimen/fragment_eia_call_image_size" n1:layout_marginRight="@dimen/fragment_eia_call_spacing_small" n2:srcCompat="@drawable/enrollment_telephone_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <TextView n1:textAppearance="@style/TextAppearance.Headline" n1:id="@id/eiaCallTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/enrollment_eia_call_title" />
+        </LinearLayout>
+        <TextView n1:id="@id/eiaCallBody" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_eia_call_spacing_large" n1:text="@string/enrollment_eia_call_body" style="@style/EiaCall.EiaCallProgressBody" />
+        <LinearLayout n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_eia_call_spacing_large">
+            <TextView n1:id="@id/eiaPinFirstDigit" style="@style/Widget.PinNumber" />
+            <TextView n1:id="@id/eiaPinSecondDigit" n1:layout_marginLeft="@dimen/fragment_eia_call_pin_border_negative" style="@style/Widget.PinNumber" />
+            <TextView n1:id="@id/eiaPinThirdDigit" n1:layout_marginLeft="@dimen/fragment_eia_call_pin_border_negative" style="@style/Widget.PinNumber" />
+            <TextView n1:id="@id/eiaPinFourthDigit" n1:layout_marginLeft="@dimen/fragment_eia_call_pin_border_negative" style="@style/Widget.PinNumber" />
+        </LinearLayout>
+        <com.mobile.ui.common.view.IconProgressBar n1:layout_gravity="center" n1:layout_marginBottom="@dimen/fragment_eia_call_spacing_large" style="@style/IconProgressBar.Padlock.Dialog" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/enrollment_eia_call_footer" style="@style/EiaCall.EiaCallProgressBody" />
+    </LinearLayout>
+</ScrollView>

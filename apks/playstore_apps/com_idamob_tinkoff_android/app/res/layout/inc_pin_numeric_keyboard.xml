@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_marginLeft="40.0dip" n1:layout_marginRight="40.0dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tinkoff.core.keyboard.newkeyboard.KeyboardView n1:id="@id/pin_numeric_keyboard" n1:layout_marginBottom="@dimen/offset_from_edge" style="@style/Keyboard" />
+</LinearLayout>

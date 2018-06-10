@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/nsa_progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+    <ScrollView n1:id="@id/nsa_content" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ru.tcsbank.mb.ui.widgets.edit.text.TextViewWithClickableIcon n1:gravity="center_vertical" n1:id="@id/currency_title" n1:layout_width="fill_parent" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:text="@string/nsa_label_currency" style="@style/SubtitleTextItem" />
+            <RadioGroup n1:id="@id/currency_group" style="@style/CategoriesRadioGroup" />
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/currency_error" n1:padding="@dimen/offset_from_edge" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/nsa_currency_error" />
+            <android.support.v7.widget.SwitchCompat n1:id="@id/target_switch" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:text="@string/nsa_target" style="@style/SwitchRipple" />
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/goal_hint" n1:paddingLeft="@dimen/screen_content_margin" n1:paddingRight="@dimen/screen_content_margin" n1:paddingBottom="@dimen/screen_content_margin" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <TextView n1:textAppearance="@style/Text.Default" n1:id="@id/select_category" n1:background="@drawable/selector_item_bg" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:visibility="gone" n1:text="@string/nsc_label" style="@style/DefaultItem" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/target_wrapper" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <include layout="@layout/inc_divider_margin" />
+                <include n1:id="@id/category" layout="@layout/list_item_saving_category" />
+                <ru.tcsbank.mb.ui.widgets.edit.text.MbEditText n1:id="@id/goal_name" n1:hint="@string/nsa_account_name" n1:inputType="text" style="@style/EditText.Margin" />
+                <fragment n1:id="@id/image_chooser" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_margin" n1:layout_marginRight="@dimen/screen_content_margin" n1:minHeight="@dimen/tile_height_default_item" class="ru.tcsbank.mb.ui.fragments.avatar.ImageUploadFragment" />
+                <ru.tinkoff.core.money.view.EditMoney n1:id="@id/goal_amount" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n2:currency="RUB" n2:currencyVisible="true" n2:textColorAmount="@color/text_dark" n2:textColorCurrency="@color/light_gray" n2:textSize="@dimen/text_large" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <RelativeLayout n1:id="@id/duration_block" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:id="@id/duration_hint" n1:paddingLeft="@dimen/screen_content_margin" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minHeight="@dimen/tile_height_default_item" n1:text="@string/open_target_period_hint" n1:layout_toLeftOf="@id/duration_month" n1:layout_alignParentLeft="true" />
+                    <TextView n1:id="@id/duration_month" n1:layout_width="wrap_content" n1:layout_toLeftOf="@id/duration_end_date" n1:layout_alignBaseline="@id/duration_hint" style="@style/TextView.Default" />
+                    <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/duration_end_date" n1:paddingRight="@dimen/screen_content_margin" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignBaseline="@id/duration_hint" n1:layout_alignParentRight="true" n1:textAllCaps="true" />
+                </RelativeLayout>
+                <ru.tcsbank.mb.ui.widgets.SteppedSeekBar n1:id="@id/duration_bar" style="@style/SeekBar" />
+                <RelativeLayout n1:id="@id/monthly_block" style="@style/DefaultItem.Margin">
+                    <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/monthly_payment_label" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/nsa_monthly_payment" n1:layout_toLeftOf="@id/monthly_payment_amount" n1:layout_centerVertical="true" />
+                    <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/monthly_payment_amount" n1:layout_toLeftOf="@id/monthly_payment_hint" n1:layout_centerVertical="true" n3:textColorAmount="@color/text_dark" n3:textColorCurrency="@color/text_light" n3:textColorFractional="@color/text_dark" n3:textSizeAmount="@dimen/text_medium" n3:textSizeCurrency="@dimen/text_medium" n3:textSizeFractional="@dimen/text_medium" style="@style/SmartMoneyView" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                    <ImageView n1:id="@id/monthly_payment_hint" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_help" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ru.tcsbank.mb.ui.widgets.SteppedSeekBar n1:id="@id/monthly_payment_bar" style="@style/SeekBar" />
+                <RelativeLayout style="@style/VerticalWrapping">
+                    <include layout="@layout/inc_divider" />
+                    <TextView n1:id="@id/income_label" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge_half" n1:text="@string/nsa_income" n1:lines="2" n1:layout_toLeftOf="@id/profit_amount" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" style="@style/TextView.Default" />
+                    <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/profit_amount" n1:layout_toLeftOf="@id/income_hint" n1:layout_centerVertical="true" n4:textColorAmount="@color/text_dark" n4:textColorCurrency="@color/text_light" n4:textColorFractional="@color/text_dark" n4:textSizeAmount="@dimen/text_medium" n4:textSizeCurrency="@dimen/text_medium" n4:textSizeFractional="@dimen/text_medium" style="@style/SmartMoneyView" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+                    <ImageView n1:id="@id/income_hint" n1:paddingRight="@dimen/screen_content_margin" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_help" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button n1:id="@id/create_account" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" n1:text="@string/nsa_create_target_account" n1:onClick="createAccountClick" style="@style/Button.Yellow.Normal" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/MatchParent">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/content_container" n1:paddingTop="@dimen/cash_loan_half_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:inputType="number" n2:fieldClass="ru.tinkoff.core.smartfields.api.fields.MoneyInputSmartField" n2:fieldKey="income" n2:fieldTitle="@string/cash_loan_appeal_income_title" n2:fieldType="text" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <include n1:id="@id/divider" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginTop="@dimen/cash_loan_half_margin" n1:layout_marginBottom="@dimen/cash_loan_half_margin" layout="@layout/inc_divider" />
+        <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:inputType="number" n3:fieldClass="ru.tinkoff.core.smartfields.api.fields.MoneyInputSmartField" n3:fieldKey="credit_sum" n3:fieldTitle="@string/cash_loan_appeal_amount_title" n3:fieldType="text" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:fieldKey="credit_period" n4:fieldTitle="@string/cash_loan_appeal_period_title" n4:fieldType="slider" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/monthly_payment" n1:paddingBottom="@dimen/cash_loan_half_margin" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/cash_loan_half_margin">
+            <include n1:id="@id/divider" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginBottom="@dimen/cash_loan_margin" layout="@layout/inc_divider" />
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Hint" n1:id="@id/monthly_payment_hint" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/cash_loan_appeal_info_view_title" n1:textAllCaps="true" n1:textAlignment="center" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:gravity="center" n1:id="@id/monthly_payment_value" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/screen_content_padding_half" n5:fractionalMode="disabled" style="@style/SmartMoneyView" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <Button n1:id="@id/next_button" n1:layout_marginTop="@dimen/cash_loan_half_margin" n1:text="@string/np_next_step" style="@style/Button.Yellow.Normal" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__expense_info_item" android:background="?selectableItemBackground" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__expense_info_item_code_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News.Primary" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__expense_info_item_description_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UTextView android:textColor="?accentLink" android:layout_gravity="end|center" android:id="@id/ub__expense_info_item_change_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/expense_info_change" android:layout_marginStart="@dimen/ui__spacing_unit_2x" uber:analyticsId="af28a177-4a73" style="@style/Platform.TextAppearance.H6.News.Link" />
+</com.ubercab.ui.core.ULinearLayout>

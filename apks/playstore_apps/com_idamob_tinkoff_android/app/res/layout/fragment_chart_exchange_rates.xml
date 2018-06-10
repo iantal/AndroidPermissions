@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/MatchParent">
+    <com.github.mikephil.charting.charts.LineChart n1:id="@id/line_chart" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <ru.tinkoff.core.money.view.MoneyAmountView n2:id="@id/amount" style="@style/CBRates.ChartPopup"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <ImageView n3:id="@id/selected_point" n3:visibility="gone" n3:src="@drawable/point" style="@style/WrapContent"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</RelativeLayout>

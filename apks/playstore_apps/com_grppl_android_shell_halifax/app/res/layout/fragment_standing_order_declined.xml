@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:id="@id/standingOrderDeclinedContainer" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/payment_hub_under_review_margin" n1:layout_marginBottom="@dimen/payment_hub_under_review_margin">
+                <ImageView n1:id="@id/standingOrderDeclinedErrorImage" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/payment_hub_under_review_margin" n1:layout_marginRight="@dimen/payment_hub_under_review_margin" n2:srcCompat="@drawable/standing_order_declined_alert_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <com.mobile.ui.common.view.HeadingTextView n1:id="@id/standingOrderDeclinedErrorTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/payment_hub_standing_order_under_declined_title_text" n1:layout_toRightOf="@id/standingOrderDeclinedErrorImage" style="@style/TextAppearance.Headline.Error" />
+            </RelativeLayout>
+            <TextView n1:id="@id/standingOrderDeclinedPrimaryInfoText" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/payment_hub_under_review_margin" n1:layout_marginRight="@dimen/payment_hub_under_review_margin" n1:text="@string/payment_hub_standing_order_under_declined_primary_info_text" style="@style/TextAppearance.Information" />
+            <TextView n1:id="@id/standingOrderDeclinedSecondaryInfoText" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/payment_hub_under_review_margin" n1:layout_marginTop="@dimen/payment_hub_under_review_margin" n1:layout_marginRight="@dimen/payment_hub_under_review_margin" n1:text="@string/payment_hub_standing_order_under_declined_secondary_info_text" style="@style/TextAppearance.Body.Medium" />
+            <include n1:id="@id/standingOrderDeclinedReference" layout="@layout/view_standing_order_reference_field" />
+            <TextView n1:id="@id/standingOrderDeclinedPaymentMessage" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/information_text_view_margin_medium" n1:layout_marginRight="@dimen/information_text_view_margin_medium" n1:text="@string/payment_hub_standing_order_under_review_warning_message" style="@style/TextAppearance.Body.Medium" />
+            <Button n1:id="@id/standingOrderDeclinedExitButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/payment_hub_under_review_margin" n1:layout_marginTop="@dimen/payment_hub_under_review_margin" n1:layout_marginRight="@dimen/payment_hub_under_review_margin" n1:layout_marginBottom="@dimen/payment_hub_under_review_margin" n1:text="@string/payment_hub_standing_order_under_declined_exit_button_text" style="@style/Widget.Button.Primary" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

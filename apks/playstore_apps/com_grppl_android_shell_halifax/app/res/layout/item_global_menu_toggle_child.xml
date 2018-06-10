@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:background="@drawable/global_menu_child_item_selector" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/globalMenuToggleChildTitle" n1:paddingLeft="@dimen/global_menu_toggle_child_spacing_left" n1:paddingTop="@dimen/global_menu_spacing_medium" n1:paddingRight="@dimen/global_menu_spacing_large" n1:paddingBottom="@dimen/global_menu_spacing_medium" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/GlobalMenu.Item.PrimaryText" />
+</FrameLayout>

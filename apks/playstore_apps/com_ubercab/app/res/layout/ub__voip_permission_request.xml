@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:background="?brandWhite" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="2b968793-7d1c"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:contentDescription="@string/ub__voip_permission_dialog_title" uber:srcCompat="@drawable/ub__voip_activate_call" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__voip_permission_dialog_title" style="@style/Platform.TextAppearance.H2" />
+        <TextView android:gravity="start" android:layout_gravity="center" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__voip_permission_dialog_description" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UButton android:id="@id/ub__voip_permission_deny_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ub__voip_permission_dialog_cancel" android:layout_weight="1.0" uber:analyticsId="4d9a02e4-bddf" style="?platformButtonSecondary" />
+        <Space android:layout_width="?contentInset" android:layout_height="fill_parent" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__voip_permission_accept_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ub__voip_permission_dialog_turn_on" android:layout_weight="1.0" uber:analyticsId="90f2cab3-edb0" style="?platformButtonPrimary" />
+    </LinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

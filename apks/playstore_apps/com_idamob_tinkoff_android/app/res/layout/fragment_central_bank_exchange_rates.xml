@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/screen_background" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:id="@id/content" style="@style/ScreenContent">
+        <RelativeLayout n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:id="@id/today_caption" n1:layout_width="@dimen/exchange_rate_container_width" n1:text="@string/cb_today" n1:layout_toLeftOf="@id/grow_caption" style="@style/SubtitleTextItem" />
+            <TextView n1:id="@id/grow_caption" n1:layout_width="@dimen/exchange_rate_grow_arrow_width" n1:layout_toLeftOf="@id/tomorrow_caption" style="@style/SubtitleTextItem" />
+            <TextView n1:id="@id/tomorrow_caption" n1:layout_width="@dimen/exchange_rate_container_width" n1:text="@string/cb_tomorrow" n1:layout_alignParentRight="true" style="@style/SubtitleTextItem" />
+            <LinearLayout n1:id="@id/usd_selector_container" n1:layout_alignTop="@id/cb_usd_title" n1:layout_alignBottom="@id/cb_usd_title" style="@style/CentralBankRates.CurrencySelectorContainer">
+                <LinearLayout n1:id="@id/usd_selector" style="@style/CBRates.CurrencySelector">
+                    <View style="@style/CentralBankRates.CurrencySelectorIcon" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView n1:id="@id/cb_usd_title" n1:layout_height="@dimen/exchange_rate_container_height" n1:layout_below="@id/today_caption" style="@style/SubtitleTextItem" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/cb_usd_today" n1:layout_height="@dimen/exchange_rate_container_height" n1:layout_alignLeft="@id/today_caption" n1:layout_alignBottom="@id/cb_usd_title" style="@style/ExchangeMoneyView.Rate.Precise" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/cb_usd_tomor" n1:layout_height="@dimen/exchange_rate_container_height" n1:layout_alignLeft="@id/tomorrow_caption" n1:layout_alignBottom="@id/cb_usd_title" style="@style/ExchangeMoneyView.Rate.Precise" />
+            <TextView n1:gravity="center" n1:id="@id/cb_usd_grow" n1:layout_toLeftOf="@id/cb_usd_tomor" n1:layout_toRightOf="@id/cb_usd_today" n1:layout_alignBottom="@id/cb_usd_title" style="@style/CentralBankRates.GrowArrow" />
+            <LinearLayout n1:id="@id/eur_selector_container" n1:layout_alignTop="@id/cb_eur_title" n1:layout_alignBottom="@id/cb_eur_title" style="@style/CentralBankRates.CurrencySelectorContainer">
+                <LinearLayout n1:id="@id/eur_selector" n1:visibility="gone" style="@style/CBRates.CurrencySelector">
+                    <View style="@style/CentralBankRates.CurrencySelectorIcon" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView n1:id="@id/cb_eur_title" n1:layout_height="@dimen/exchange_rate_container_height" n1:layout_below="@id/cb_usd_title" style="@style/SubtitleTextItem" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/cb_eu_today" n1:layout_height="@dimen/exchange_rate_container_height" n1:layout_alignLeft="@id/cb_usd_today" n1:layout_alignBottom="@id/cb_eur_title" style="@style/ExchangeMoneyView.Rate.Precise" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/cb_eu_tomor" n1:layout_height="@dimen/exchange_rate_container_height" n1:layout_alignLeft="@id/cb_usd_tomor" n1:layout_alignBottom="@id/cb_eur_title" style="@style/ExchangeMoneyView.Rate.Precise" />
+            <TextView n1:gravity="center" n1:id="@id/cb_eu_grow" n1:layout_toLeftOf="@id/cb_eu_tomor" n1:layout_toRightOf="@id/cb_eu_today" n1:layout_alignBottom="@id/cb_eur_title" style="@style/CentralBankRates.GrowArrow" />
+            <LinearLayout n1:id="@id/gbp_selector_container" n1:layout_alignTop="@id/cb_gbp_title" n1:layout_alignBottom="@id/cb_gbp_title" style="@style/CentralBankRates.CurrencySelectorContainer">
+                <LinearLayout n1:id="@id/gbp_selector" n1:visibility="gone" style="@style/CBRates.CurrencySelector">
+                    <View style="@style/CentralBankRates.CurrencySelectorIcon" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView n1:id="@id/cb_gbp_title" n1:layout_height="@dimen/exchange_rate_container_height" n1:layout_below="@id/cb_eur_title" style="@style/SubtitleTextItem" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/cb_gbp_today" n1:layout_height="@dimen/exchange_rate_container_height" n1:layout_alignLeft="@id/cb_eu_today" n1:layout_alignBottom="@id/cb_gbp_title" style="@style/ExchangeMoneyView.Rate.Precise" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/cb_gbp_tomor" n1:layout_height="@dimen/exchange_rate_container_height" n1:layout_alignLeft="@id/cb_eu_tomor" n1:layout_alignBottom="@id/cb_gbp_title" style="@style/ExchangeMoneyView.Rate.Precise" />
+            <TextView n1:gravity="center" n1:id="@id/cb_gbp_grow" n1:layout_toLeftOf="@id/cb_gbp_tomor" n1:layout_toRightOf="@id/cb_gbp_today" n1:layout_alignBottom="@id/cb_gbp_title" style="@style/CentralBankRates.GrowArrow" />
+        </RelativeLayout>
+        <android.support.v4.view.ViewPager n1:id="@id/pager_chart" n1:layout_weight="1.0" style="@style/ViewPager.Bordered" />
+        <ru.tcsbank.mb.ui.widgets.tab.SlidingIndicator.SlidingTabLayout n1:id="@id/categories_chart" n1:layout_marginTop="-2.0dip" style="@style/SlidingTabIndicator.IndicatorTop.NoDivider" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/empty_stub" n1:paddingTop="50.0dip" n1:paddingBottom="50.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/image" n1:src="@drawable/noitem" style="@style/EmptyViewImage" />
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/era_no_data" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/transactionheadingpane" android:background="@drawable/titlebg" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="0.0dip" android:scaleType="fitXY"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageButton android:id="@id/transactionActivityBackButton" android:background="@drawable/bclose" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/transactionheading9" android:paddingLeft="5.0dip" android:visibility="invisible" android:layout_width="230.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:background="@drawable/abrlogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageButton android:textSize="15.0sp" android:gravity="center" android:id="@id/transactionActvityHeaderbutton" android:background="@drawable/action" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/transactionheadingpane2" android:background="@color/alpha_blue" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:scaleType="fitXY" android:layout_below="@id/transactionheadingpane">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/transactionheading" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ViewFlipper android:id="@id/flip1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/transactionheadingpane2">
+        <RelativeLayout android:background="@layout/transactionactivitybackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <ScrollView android:id="@id/scrollLayout2" android:background="@color/white" android:paddingTop="5.0dip" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginLeft="50.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView android:textStyle="bold" android:textColor="@color/alpha_blue" android:id="@id/errormsgview" android:paddingRight="10.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="false" />
+            </ScrollView>
+            <RelativeLayout android:id="@id/errheader" android:layout_width="wrap_content" android:layout_height="75.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentLeft="true">
+                <Button android:gravity="center_vertical" android:id="@id/err_button" android:background="@drawable/errormsg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/txn_data_layout" android:background="@drawable/bg" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <Button android:id="@id/atgbutton" android:background="@drawable/calltoclick" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" />
+                <ScrollView android:id="@id/scrollLayout1" android:background="@drawable/transparent_background" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip"
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+                    <TableLayout android:id="@id/myTableLayout" android:background="@color/white" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="0" android:shrinkColumns="1"
+                      xmlns:android="http://schemas.android.com/apk/res/android" />
+                </ScrollView>
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/txn_layout" android:background="@drawable/transparent_background" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="2.0dip" android:layout_alignParentRight="true"
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+                    <Button android:gravity="center" android:id="@id/info_button" android:background="@drawable/txn_info_white" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </LinearLayout>
+                <Button android:id="@id/addFav_button" android:background="@drawable/f1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_below="@id/info_button" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center|right" android:id="@id/txn_info_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/scrollLayout2" android:layout_alignParentRight="true"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/transparent_background" android:paddingRight="0.0dip" android:layout_width="200.0dip" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true"
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+                    <Button android:gravity="center_vertical" android:id="@id/txn_button" android:background="@drawable/txn_info" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+                    <RelativeLayout android:background="@layout/textviewbox" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true"
+                      xmlns:android="http://schemas.android.com/apk/res/android">
+                        <TextView android:textColor="@color/white" android:id="@id/info_data" android:background="@drawable/boxbg" android:padding="5.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="18" android:layout_toLeftOf="@id/txn_button" android:lineSpacingExtra="1.0dip" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:id="@id/blank1" android:background="@drawable/transparent_background" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+            <TableLayout android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/favTxn" android:background="@color/alpha_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerInParent="true"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:paddingLeft="14.0dip" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <TableLayout android:id="@id/favDesc" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <Button android:id="@id/Button_previous1" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/MESSAGE_BUTTON_CLOSE" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </ViewFlipper>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ad_layout" android:background="@color/alpha_blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginRight="55.0dip" android:layout_alignParentBottom="true">
+        <include android:id="@id/transactionfooter1" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/menu_footer" />
+    </LinearLayout>
+    <include android:id="@id/transactionmenufooterpopup1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/menu_footer_popup" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/menutop" android:visibility="gone" android:layout_width="55.0dip" android:layout_height="60.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <Button android:gravity="center_horizontal" android:id="@id/transactionactivityFavoritesButton" android:background="@drawable/f1" android:padding="5.0dip" android:drawingCacheQuality="high" android:layout_width="60.0dip" android:layout_height="25.0dip" android:layout_marginTop="10.0dip" />
+        <TextView android:textSize="10.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/favtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/fav" android:maxLines="1" android:lines="1" android:singleLine="false" />
+    </LinearLayout>
+    <include android:id="@id/transactionactivityfooterpopup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/menu_footer_popup" />
+</RelativeLayout>

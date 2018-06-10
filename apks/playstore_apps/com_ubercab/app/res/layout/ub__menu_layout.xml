@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.core.root.main.menu.MenuView android:orientation="vertical" android:background="?android:colorBackground" android:fitsSystemWindows="@bool/use_transparent_status_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="b4e9a054-4f8d"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/settings_options" android:importantForAccessibility="yes">
+        <android.support.design.widget.UNavigationView android:id="@id/menu_items" android:background="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" android:listPreferredItemHeightSmall="@dimen/ub__navigation_item_height_small" android:listPreferredItemPaddingStart="?contentInset" android:listPreferredItemPaddingEnd="?contentInset" uber:itemTextAppearance="@style/Platform.TextAppearance.H3.Book" uber:headerLayout="@layout/ub__menu_header" />
+        <com.ubercab.ui.core.UPlainView android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/ui__divider_width" />
+        <com.ubercab.ui.core.UFrameLayout android:layout_gravity="bottom" android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/bottom_action_container" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:id="@id/bottom_action_1" uber:analyticsEnabled="false" style="@style/Helix.Appearance.Menu.BottomAction" />
+                <com.ubercab.ui.core.UTextView android:id="@id/bottom_action_2" uber:analyticsEnabled="false" style="@style/Helix.Appearance.Menu.BottomAction" />
+                <com.ubercab.ui.core.UTextView android:id="@id/bottom_action_3" uber:analyticsEnabled="false" style="@style/Helix.Appearance.Menu.BottomAction" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UTextView android:layout_gravity="end|bottom|center" android:id="@id/version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?gutterSize" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginRight="?gutterSize" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:layout_marginStart="?gutterSize" android:layout_marginEnd="?gutterSize" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.core.root.main.menu.MenuView>

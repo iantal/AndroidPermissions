@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:gravity="center" n1:id="@id/termsAndConditionsWinbackTitle" n1:layout_width="fill_parent" n1:layout_height="@dimen/ib_terms_and_conditions_win_back_title_bar_height" n1:text="@string/ib_terms_and_conditions_win_back_title_text" style="@style/IBTermsAndConditionsWinBack.Header" />
+    <TextView n1:id="@id/fragment_terms_and_conditions_win_back_content_text_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/activity_margin" n1:text="@string/ib_terms_and_condition_win_back_content_text" n1:layout_below="@id/termsAndConditionsWinbackTitle" style="@style/IBTermsAndConditionsWinBack.Content" />
+    <Button n1:gravity="center" n1:id="@id/termsAndConditionsWinbackDeclineButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_horizontal_margin" n1:text="@string/ib_terms_and_condition_win_back_primary_button_text" n1:layout_above="@id/termsAndConditionsWinbackBackButton" n1:layout_marginStart="@dimen/activity_horizontal_margin" n1:layout_marginEnd="@dimen/activity_horizontal_margin" style="@style/Widget.Button.Primary" />
+    <Button n1:gravity="center" n1:id="@id/termsAndConditionsWinbackBackButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/activity_margin" n1:text="@string/ib_terms_and_condition_win_back_secondary_button_text" n1:layout_alignParentBottom="true" style="@style/Widget.Button.Primary" />
+</RelativeLayout>

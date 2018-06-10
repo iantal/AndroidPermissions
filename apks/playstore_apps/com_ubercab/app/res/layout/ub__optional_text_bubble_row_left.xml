@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginTop="@dimen/ub__intercom_space_between_messages" android:layout_marginRight="@dimen/ui__spacing_unit_2x"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:circleImageView="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="?avatarMedium">
+        <com.ubercab.ui.CircleImageView android:layout_gravity="bottom" android:id="@id/ub__bubble_avatar" android:layout_width="?avatarSmall" android:layout_height="?avatarSmall" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" app:srcCompat="@drawable/ub__chat_default_avatar" app:circleImageBorderWidth="0.0dip" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__chat_message_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__chat_bubble_content_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__bubble_text_and_time" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.ubercab.ui.core.UTextView android:layout_gravity="center_vertical" android:id="@id/ub__bubble_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" style="@style/Platform.TextAppearance.P" />
+                    <com.ubercab.ui.core.UTextView android:textSize="@dimen/ub__intercom_timestamp_textsize" android:layout_gravity="end|bottom|center" android:id="@id/ub__bubble_timestamp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+                </com.ubercab.ui.core.ULinearLayout>
+            </com.ubercab.ui.core.UFrameLayout>
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__chat_send_state" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <android.support.v4.widget.Space android:id="@id/group_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ub__intercom_space_between_groups" />
+</com.ubercab.ui.core.ULinearLayout>

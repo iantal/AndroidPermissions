@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ub__survey_multiplechoice_item_height">
+        <com.ubercab.ui.core.URadioButton android:textAppearance="@style/Platform.TextAppearance.H5.News" android:gravity="center_vertical" android:id="@id/ub__survey_multiplechoice_item_radiobutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset" android:layout_marginStart="?contentInset" android:layout_marginEnd="?contentInset" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__survey_multiplechoice_item_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

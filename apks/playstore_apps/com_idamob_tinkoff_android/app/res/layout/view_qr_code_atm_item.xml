@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:id="@id/root" n1:background="@drawable/selector_item_bg" n1:minHeight="@dimen/tile_height_large_item" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_marginTop="@dimen/offset_from_edge" n1:src="@drawable/ic_timeline_qr_code_atm_yellow" style="@style/ImageItem.Margin" />
+    <TableLayout n1:layout_marginLeft="@dimen/transaction_message_incoming_margin_left" n1:stretchColumns="1" n1:shrinkColumns="0" style="@style/MatchParent">
+        <TableRow n1:baselineAligned="false">
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:ellipsize="end" n1:id="@id/caption" n1:layout_marginLeft="@dimen/margin_left_from_incoming_message" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge_quarter" n1:singleLine="true" n1:drawablePadding="@dimen/offset_from_edge_quarter" />
+            <LinearLayout n1:gravity="center|right" n1:layout_marginTop="10.0dip" n1:layout_marginRight="@dimen/offset_from_edge">
+                <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/amount" n2:fractionalMode="enabled" n2:textColorAmount="@color/black" n2:textColorCurrency="@color/text_light" n2:textColorFractional="@color/black" n2:textSize="@dimen/text_large" n2:textSizeAmount="@dimen/text_large" n2:textSizeCurrency="@dimen/text_large" n2:textSizeFractional="@dimen/text_extra_small" style="@style/SmartMoneyView" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+        </TableRow>
+        <LinearLayout n1:orientation="horizontal" n1:layout_marginLeft="@dimen/margin_left_from_incoming_message" n1:layout_marginRight="@dimen/offset_from_edge" n1:baselineAligned="false">
+            <TextView n1:textAppearance="@style/Text.Small.Dark" n1:ellipsize="end" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="-1.5dip" n1:layout_marginRight="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge" n1:text="@string/qr_code_atm_item_description" n1:maxLines="1" n1:layout_weight="1.0" />
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:ellipsize="end" n1:id="@id/txt_expiration_date" n1:maxWidth="@dimen/text_max_width" n1:maxLines="1" n1:drawablePadding="@dimen/offset_from_edge_half" style="@style/WrapContent" />
+        </LinearLayout>
+    </TableLayout>
+</FrameLayout>

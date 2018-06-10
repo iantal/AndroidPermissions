@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:background="@color/white" style="@style/ScreenContent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.StickySwipeRefreshLayout n1:orientation="vertical" n1:id="@id/swipe_refresh_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView n1:id="@id/list" n1:scrollbars="vertical" n1:clipToPadding="false" style="@style/ScreenContent.Padding" />
+    </ru.tcsbank.mb.ui.widgets.StickySwipeRefreshLayout>
+    <include layout="@layout/inc_no_search_items" />
+    <TextView n1:textAppearance="@style/Text.Small.Hint" n1:layout_gravity="center_horizontal" n1:id="@id/no_contacts" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="50.0dip" n1:text="@string/empty_contacts_label" />
+    <Button n1:layout_gravity="bottom|center" n1:id="@id/invite_friend_button" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="56.0dip" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:layout_marginBottom="@dimen/offset_from_edge" n1:translationY="@dimen/bring_friend_offset_for_invite_button" n1:translationZ="6.0dip" n1:elevation="10.0dip" fontPath="@string/roboto_medium" style="@style/Button.Round.Yellow" />
+</FrameLayout>

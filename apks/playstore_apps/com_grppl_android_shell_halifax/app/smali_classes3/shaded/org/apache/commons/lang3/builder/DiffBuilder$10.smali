@@ -1,0 +1,96 @@
+.class Lshaded/org/apache/commons/lang3/builder/DiffBuilder$10;
+.super Lshaded/org/apache/commons/lang3/builder/Diff;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lshaded/org/apache/commons/lang3/builder/DiffBuilder;->append(Ljava/lang/String;[F[F)Lshaded/org/apache/commons/lang3/builder/DiffBuilder;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lshaded/org/apache/commons/lang3/builder/Diff",
+        "<[",
+        "Ljava/lang/Float;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x1L
+
+
+# instance fields
+.field final synthetic this$0:Lshaded/org/apache/commons/lang3/builder/DiffBuilder;
+
+.field final synthetic val$lhs:[F
+
+.field final synthetic val$rhs:[F
+
+
+# direct methods
+.method constructor <init>(Lshaded/org/apache/commons/lang3/builder/DiffBuilder;Ljava/lang/String;[F[F)V
+    .locals 0
+
+    iput-object p1, p0, Lshaded/org/apache/commons/lang3/builder/DiffBuilder$10;->this$0:Lshaded/org/apache/commons/lang3/builder/DiffBuilder;
+
+    iput-object p3, p0, Lshaded/org/apache/commons/lang3/builder/DiffBuilder$10;->val$lhs:[F
+
+    iput-object p4, p0, Lshaded/org/apache/commons/lang3/builder/DiffBuilder$10;->val$rhs:[F
+
+    invoke-direct {p0, p2}, Lshaded/org/apache/commons/lang3/builder/Diff;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic getLeft()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Lshaded/org/apache/commons/lang3/builder/DiffBuilder$10;->getLeft()[Ljava/lang/Float;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getLeft()[Ljava/lang/Float;
+    .locals 1
+
+    iget-object v0, p0, Lshaded/org/apache/commons/lang3/builder/DiffBuilder$10;->val$lhs:[F
+
+    invoke-static {v0}, Lshaded/org/apache/commons/lang3/ArrayUtils;->toObject([F)[Ljava/lang/Float;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic getRight()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Lshaded/org/apache/commons/lang3/builder/DiffBuilder$10;->getRight()[Ljava/lang/Float;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getRight()[Ljava/lang/Float;
+    .locals 1
+
+    iget-object v0, p0, Lshaded/org/apache/commons/lang3/builder/DiffBuilder$10;->val$rhs:[F
+
+    invoke-static {v0}, Lshaded/org/apache/commons/lang3/ArrayUtils;->toObject([F)[Ljava/lang/Float;
+
+    move-result-object v0
+
+    return-object v0
+.end method

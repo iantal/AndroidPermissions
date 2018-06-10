@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="app_bar_elevation_anim_duration">150</integer>
+    <integer name="bottom_sheet_slide_duration">150</integer>
+    <integer name="button_inactive_alpha_value">119</integer>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="config_tooltipAnimTime">150</integer>
+    <integer name="creditOfferAmountChangeHideOffset">800</integer>
+    <integer name="creditOfferAmountChangeHideTime">400</integer>
+    <integer name="creditOfferAmountChangeShowTime">400</integer>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <integer name="default_title_indicator_footer_indicator_style">2</integer>
+    <integer name="default_title_indicator_line_position">0</integer>
+    <integer name="default_underline_indicator_fade_delay">300</integer>
+    <integer name="default_underline_indicator_fade_length">400</integer>
+    <integer name="design_snackbar_text_max_lines">2</integer>
+    <integer name="google_play_services_version">12197000</integer>
+    <integer name="hide_password_duration">320</integer>
+    <item type="integer" name="insurance_tour_page1_phone_scale">0.3</item>
+    <item type="integer" name="insurance_tour_page2_phone_scale">0.4</item>
+    <item type="integer" name="insurance_tour_page2_products_scale">0.3</item>
+    <item type="integer" name="insurance_tour_page3_phone_scale">0.6</item>
+    <item type="integer" name="insurance_tour_page3_products_scale">0.6</item>
+    <item type="integer" name="insurance_tour_page4_phone_scale">@integer/insurance_tour_page1_phone_scale</item>
+    <item type="integer" name="insurance_tour_page_image_scale">0.8</item>
+    <integer name="salesforce_live_agent_message_retry_timeout_ms">2000</integer>
+    <integer name="show_password_duration">200</integer>
+    <integer name="spb_default_interpolator">0</integer>
+    <integer name="spb_default_sections_count">4</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+</resources>

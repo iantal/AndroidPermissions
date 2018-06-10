@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.profiles_feature.flagged_trips.reply.FlaggedTripReplyView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:analyticsId="110922df-4a1a"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UCoordinatorLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/collapsing_header" />
+        <com.ubercab.ui.core.UScrollView android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ui__spacing_unit_1x" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.ubercab.ui.core.UEditText android:textColorHint="?android:textColorTertiary" android:id="@id/ub__flagged_trip_reply_edit_text" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/flagged_trips_list_error" app:analyticsId="e20d6835-14cf" style="@style/Platform.TextAppearance.H4.News" />
+        </com.ubercab.ui.core.UScrollView>
+    </com.ubercab.ui.core.UCoordinatorLayout>
+    <com.ubercab.ui.core.UButton android:enabled="false" android:id="@id/ub__flagged_trip_reply_send_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/flagged_trip_reply_send" app:analyticsId="e1aec7fb-edef" style="?platformButtonPrimary" />
+</com.ubercab.presidio.profiles_feature.flagged_trips.reply.FlaggedTripReplyView>

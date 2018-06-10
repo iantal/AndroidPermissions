@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.pass.PassBlockingView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="c7cfd5df-e2aa"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UScrollView android:paddingLeft="?gutterSize" android:paddingTop="@dimen/ui__spacing_unit_6x" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingTop="@dimen/ui__spacing_unit_6x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UImageView android:layout_gravity="center_horizontal" android:id="@id/ub__pass_blocking_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" uber:srcCompat="@drawable/ub__pass_ic_alert" />
+            <com.ubercab.ui.core.UTextView android:gravity="center_horizontal" android:id="@id/ub__pass_blocking_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:text="@string/uber_pass_blocking_title" style="@style/Platform.TextAppearance.H2.Book" />
+            <com.ubercab.ui.core.UTextView android:gravity="center_horizontal" android:id="@id/ub__pass_blocking_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/uber_pass_blocking_body" style="@style/Platform.TextAppearance.H5.News.Primary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.presidio.pass.PassBlockingView>

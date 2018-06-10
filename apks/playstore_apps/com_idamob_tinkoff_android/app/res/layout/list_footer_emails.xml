@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:id="@id/divider" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginTop="@dimen/screen_content_margin_half" n1:layout_marginBottom="@dimen/screen_content_margin_half" layout="@layout/inc_divider" />
+    <TextView n1:background="?selectableItemBackground" n1:text="@string/profile_contacts_add_email" style="@style/TextView.Default" />
+</LinearLayout>

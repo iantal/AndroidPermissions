@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="351bb357-d070"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H2.Book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="?gutterSize" android:text="@string/ub__commute_more_actions_dialog_title" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__commute_more_actions_dialog_action_call_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_more_actions_dialog_action_call" uber:analyticsId="8cfc5ecd-f51b" style="@style/Platform.Button.Primary" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__commute_more_actions_dialog_action_message_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_more_actions_dialog_action_message" uber:analyticsId="1e0eaac3-53ca" style="@style/Platform.Button.Primary" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__commute_more_actions_dialog_action_cancel_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_more_actions_dialog_action_cancel" uber:analyticsId="318e462b-2055" style="@style/Platform.Button.Primary" />
+</com.ubercab.ui.core.ULinearLayout>

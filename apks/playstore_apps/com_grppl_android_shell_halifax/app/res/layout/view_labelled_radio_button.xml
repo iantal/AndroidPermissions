@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:layout_gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginTop="@dimen/radio_field_vertical_padding" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_marginBottom="@dimen/radio_field_vertical_padding"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="2.0" n1:layout_marginEnd="@dimen/radio_field_child_margin">
+        <TextView n1:textAppearance="@style/TextAppearance.InputLabelLarge" n1:layout_gravity="center_vertical" n1:id="@id/radioOptionTitle" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="@dimen/radio_field_textview_height" />
+        <TextView n1:textAppearance="@style/TextAppearance.LabelledInputBody" n1:layout_gravity="center_vertical" n1:id="@id/radioOptionDescription" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="0.0" n1:layout_marginEnd="@dimen/radio_field_child_margin">
+        <TextView n1:textAppearance="@style/TextAppearance.InputLabelLarge" n1:layout_gravity="center_vertical" n1:id="@id/radioOptionSecondTitle" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="@dimen/radio_field_textview_height" />
+        <TextView n1:textAppearance="@style/TextAppearance.LabelledInputBody" n1:layout_gravity="center_vertical" n1:id="@id/radioOptionSecondDescription" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.mobile.ui.common.view.CheckableButton n1:layout_gravity="center_vertical" n1:id="@id/radioOptionButton" n1:background="@drawable/all_button_radio_background" n1:layout_width="@dimen/radio_field_radiobutton_width" n1:layout_height="@dimen/radio_field_radiobutton_height" n1:layout_weight="0.0" n1:importantForAccessibility="no" />
+</LinearLayout>

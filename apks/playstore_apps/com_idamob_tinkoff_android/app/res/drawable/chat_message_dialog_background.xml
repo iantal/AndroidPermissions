@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape n1:shape="rectangle"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <solid n1:color="@color/chat_message_dialog_background" />
+    <stroke n1:width="@dimen/chat_message_notification_warning_stroke" n1:color="@color/chat_message_dialog_stroke" />
+    <corners n1:topLeftRadius="@dimen/chat_message_outer_corner" n1:topRightRadius="@dimen/chat_message_outer_corner" n1:bottomLeftRadius="@dimen/chat_message_outer_corner" n1:bottomRightRadius="@dimen/chat_message_outer_corner" />
+</shape>

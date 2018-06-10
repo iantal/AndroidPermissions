@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/image_chooser" n1:background="@drawable/selector_item_bg" n1:minHeight="@dimen/tile_height_default_item" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:gravity="center" n1:id="@id/preview_wrapper" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" n1:layout_marginLeft="@dimen/screen_content_margin" n1:layout_centerVertical="true">
+        <ImageView n1:id="@id/preview" n1:scaleType="fitCenter" style="@style/ImageItem" />
+        <View n1:id="@id/chooser" n1:background="@null" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" />
+        <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/avatar_loader" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+    </FrameLayout>
+    <TextView n1:id="@id/profile_full_name" n1:layout_toRightOf="@id/preview_wrapper" n1:layout_centerVertical="true" n1:layout_toEndOf="@id/preview_wrapper" style="@style/TextView.Default" />
+</RelativeLayout>

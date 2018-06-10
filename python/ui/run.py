@@ -16,6 +16,7 @@ from vulns.obfuscation_detection import ObfuscationDetector
 from utils.smali_parser import SmaliParser
 from utils.smali_analyser import SmaliAnalyser
 from utils.directory_analyser import DirectoryAnalyser
+from radare.apk_crawler import *
 
 
 class ApplicationAnalyzer(object):
@@ -81,6 +82,11 @@ class ApplicationAnalyzer(object):
 
         ar = AccessLocalResources(self.smali_parser)
         ar.write_results(self.base_dir + "/report/vulns/access_local_resources.json")
+
+    def run_radare(self):
+        configfile = "/home/miki/Documents/GITHUB/AndroidPermissions/python/radare/radare_config.json"
+        r = RadareResults(self.base_dir, configfile)
+        r.print_findings()
 
 
 if __name__ == "__main__":

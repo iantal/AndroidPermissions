@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:background="@color/white" style="@style/BlockContent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.edit.card.EditCardView n1:id="@id/card" n1:layout_marginTop="@dimen/offset_from_edge_half" n2:enable_scan_button="true" n2:light_theme="false" style="@style/EditText.White" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

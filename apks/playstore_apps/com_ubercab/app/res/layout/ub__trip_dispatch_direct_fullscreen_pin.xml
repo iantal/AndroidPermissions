@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.dispatch.direct.fullscreen.FullscreenPinView android:theme="@style/Theme.Helix.Dark" android:orientation="vertical" android:background="?android:colorBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="fd4ef647-6d7b"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.dispatch.direct.fullscreen.SquareFrameLayout android:theme="@style/Theme.Helix.Light" android:background="?android:colorBackground" android:padding="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:layout_gravity="center" android:id="@id/ub__trip_dispatch_direct_fullscreen_pin" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.Mega.Book" />
+        </com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.dispatch.direct.fullscreen.SquareFrameLayout>
+        <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_4x" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_dispatch_direct_fullscreen_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dispatch_direct_fullscreen_heading" style="@style/Platform.TextAppearance.H2.Book" />
+        <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_4x" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_dispatch_direct_fullscreen_subheading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dispatch_direct_fullscreen_subheading" style="@style/Platform.TextAppearance.H5.News.Primary" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UButton android:gravity="center" android:layout_gravity="bottom" android:id="@id/ub__trip_dispatch_direct_fullscreen_close_hop_on" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dispatch_direct_fullscreen_close" uber:analyticsId="d57ae0f0-2af7" style="@style/Platform.Button.Secondary" />
+    <com.ubercab.ui.core.UButton android:gravity="center" android:layout_gravity="bottom" android:id="@id/ub__trip_dispatch_direct_fullscreen_close" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dispatch_direct_fullscreen_close" uber:analyticsId="40aa1c44-b7b9" style="@style/Platform.Button.Primary" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.dispatch.direct.fullscreen.FullscreenPinView>

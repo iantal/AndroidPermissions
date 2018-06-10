@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/content" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/deposit_pager" style="@style/AccountsCarouselPager" />
+            <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/from_carousel_arrow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/offset_from_edge_half" n1:src="@drawable/gray_arrow" />
+            <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/account_pager" style="@style/AccountsCarouselPager" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/smart_fields_group" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge">
+                <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:fieldKey="reason" n2:fieldType="simpleList" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:inputType="numberDecimal" n3:fieldClass="ru.tinkoff.core.smartfields.api.fields.MoneyInputSmartField" n3:fieldKey="partial_withdrawal" n3:fieldTitle="@string/cdpw_partial_withdrawal_amount" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+            <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:id="@id/smooth_progress" style="@style/SmoothProgress" />
+            <RelativeLayout n1:id="@id/withdrawal_content" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:id="@id/time_label" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/deposit_withdrawal_time_label" n1:layout_alignParentLeft="true" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center_vertical" n1:id="@id/time_withdrawal_value" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignBaseline="@id/time_label" n1:layout_alignParentRight="true" />
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:id="@id/balance_out_label" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/deposit_withdrawal_balance_out_label" n1:layout_below="@id/time_label" n1:layout_alignParentLeft="true" n1:layout_alignParentStart="true" />
+                <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/balance_out_value" n1:layout_width="wrap_content" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_alignBaseline="@id/balance_out_label" n1:layout_alignParentRight="true" n4:textColorAmount="@color/text_dark" n4:textColorCurrency="@color/text_light" n4:textColorFractional="@color/text_dark" n4:textSizeAmount="@dimen/text_medium" n4:textSizeCurrency="@dimen/text_medium" n4:textSizeFractional="@dimen/text_medium" style="@style/SmartMoneyView" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:id="@id/loose_benefit_label" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/deposit_withdrawal_loose_benefit_label" n1:layout_below="@id/balance_out_label" />
+                <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/loose_benefit_value" n1:layout_width="wrap_content" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_alignBaseline="@id/loose_benefit_label" n1:layout_alignParentRight="true" n5:textColorAmount="@color/text_dark" n5:textColorCurrency="@color/text_light" n5:textColorFractional="@color/text_dark" n5:textSizeAmount="@dimen/text_medium" n5:textSizeCurrency="@dimen/text_medium" n5:textSizeFractional="@dimen/text_medium" style="@style/SmartMoneyView" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:gravity="center_vertical" n1:id="@id/hint_label" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/deposit_withdrawal_hint" />
+            <Button n1:id="@id/partial_withdrawal_btn" n1:layout_marginTop="@dimen/offset_from_edge" n1:text="@string/cda_next_button" style="@style/Button.Yellow.Normal" />
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

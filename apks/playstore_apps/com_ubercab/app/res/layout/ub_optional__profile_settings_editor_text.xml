@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.ubercab.ui.core.UTextInputLayout android:layout_gravity="center_vertical" android:id="@id/text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintTextAppearance="@style/Platform.TextAppearance.H6.News.Secondary" app:hintEnabled="true">
+                <com.ubercab.ui.commons.widget.ClearableEditText android:id="@id/ub__profile_editor_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapWords" android:imeOptions="actionDone" style="@style/Platform.TextAppearance.H3.News" />
+            </com.ubercab.ui.core.UTextInputLayout>
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__profile_editor_text_subtext" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UButton android:id="@id/ub__profile_editor_text_save_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/save" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</merge>

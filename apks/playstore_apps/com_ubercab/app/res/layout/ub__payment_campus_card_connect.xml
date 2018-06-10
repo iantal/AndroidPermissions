@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.campuscard.operation.connect.CampusCardConnectView android:orientation="vertical" android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="07d22d82-9d2b"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/fixed_header" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.ubercab.ui.core.UImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" uber:srcCompat="@drawable/ub__campus_card_connect_image" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__campus_card_connect_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?gutterSize" android:layout_marginTop="?gutterSize" android:layout_marginRight="?gutterSize" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:text="@string/campus_card_connect_title" style="@style/Platform.TextAppearance.H3.Book" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__campus_card_connect_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?gutterSize" android:layout_marginRight="?gutterSize" android:text="@string/campus_card_connect_description" style="@style/Platform.TextAppearance.P" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UButton android:id="@id/ub__campus_card_connect_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?gutterSize" android:layout_marginTop="?gutterSize" android:layout_marginRight="?gutterSize" android:layout_marginBottom="?gutterSize" android:text="@string/campus_card_connect_continue" uber:analyticsId="d06c57ab-52b9" style="?platformButtonPrimary" />
+</com.ubercab.presidio.payment.campuscard.operation.connect.CampusCardConnectView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.URelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_7x">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/location_text_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/ui__spacing_unit_3x">
+            <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/primary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News.Primary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/secondary_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.URelativeLayout android:gravity="center_vertical" android:id="@id/accessory_container" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UPlainView android:id="@id/row_divider" android:background="?ruleColor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ub__confirmation_location_origin_destination_line_width" android:layout_below="@id/content_container" android:layout_marginStart="@dimen/ui__spacing_unit_3x" />
+</com.ubercab.ui.core.URelativeLayout>

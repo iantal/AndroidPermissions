@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.feed_composite_card.items.simple.SimpleCardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UImageView android:id="@id/ub__card_mobile_message_header_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?contentInset" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/ub__card_mobile_message_header_image_description" />
+        <com.ubercab.presidio.feed.views.CardHeaderView android:layout_gravity="start|center|top" android:orientation="horizontal" android:id="@id/ub__card_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" />
+        <com.ubercab.ui.CircleImageView android:layout_gravity="start|bottom|center" android:id="@id/ub__simple_card_cover_icon" android:visibility="gone" android:layout_width="?avatarSmall" android:layout_height="?avatarSmall" android:contentDescription="@string/ub__card_header_icon_description" android:layout_marginStart="?contentInset" />
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__card_mobile_message_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="?contentInset" android:layout_marginBottom="?contentInset" android:layout_marginStart="?contentInset" android:layout_marginEnd="?contentInset">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__card_mobile_message_title" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.Book" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__card_mobile_message_content" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.P.Book" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UFrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ubercab.ui.CircleImageView android:id="@id/ub__card_mobile_message_thumbnail_image_circle" android:visibility="gone" android:layout_width="?avatarLarge" android:layout_height="?avatarLarge" android:layout_marginStart="?contentInset" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__card_mobile_message_footer_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset" android:layout_marginBottom="?contentInset" android:layout_marginStart="?contentInset" android:layout_marginEnd="?contentInset" style="@style/Platform.TextAppearance.H5.Book" />
+    <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__card_mobile_message_cta_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UPlainView android:id="@id/ub__card_mobile_message_divider" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/ui__divider_width" />
+        <com.ubercab.ui.core.UTextView android:textColor="?accentCta" android:ellipsize="end" android:gravity="start|center" android:id="@id/ub__card_mobile_message_cta" android:background="?selectableItemBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News.Link" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.feed_composite_card.items.simple.SimpleCardView>

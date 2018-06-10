@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.rating.thumbnail_decoration.RatingThumbnailDecorationView android:theme="@style/Base.Theme.Helix.Dark" android:gravity="center" android:orientation="horizontal" android:background="@drawable/ub__rating_thumbnail_decoration_background" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_3x" uber:analyticsId="0519f300-c959"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__rating_thumbnail_decoration_text" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="5d92e44a-7838" style="@style/Platform.TextAppearance.H5.News.Primary" />
+    <com.ubercab.ui.core.UImageView android:layout_width="@dimen/ui__text_size_medium" android:layout_height="@dimen/ui__text_size_medium" android:tint="?android:textColorPrimary" android:contentDescription="@string/ub__rider_rating_star_content_description" uber:srcCompat="@drawable/ub__star_filled" />
+</com.ubercab.rating.thumbnail_decoration.RatingThumbnailDecorationView>

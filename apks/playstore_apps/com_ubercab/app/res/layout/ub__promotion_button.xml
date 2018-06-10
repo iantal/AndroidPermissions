@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.promotion.button.PromoButtonView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UButton android:id="@id/promo_button_add" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/promo_signup_button" app:analyticsId="308b1fd7-11dc" style="@style/Platform.Button.Secondary" />
+    <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/promo_button_text" android:paddingTop="@dimen/ui__spacing_unit_4x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary" />
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/bit_loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:bli_bitColor="?colorAccent" />
+</com.ubercab.presidio.promotion.button.PromoButtonView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item n1:left="@dimen/global_menu_border_hide_thickness" n1:top="@dimen/global_menu_border_hide_thickness" n1:right="@dimen/global_menu_border_hide_thickness" n1:bottom="0.0dip"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape n1:shape="rectangle">
+            <solid n1:color="@color/transparent" />
+            <stroke n1:width="@dimen/global_menu_border_thickness" n1:color="@color/global_menu_item_border_color" />
+        </shape>
+    </item>
+</layer-list>

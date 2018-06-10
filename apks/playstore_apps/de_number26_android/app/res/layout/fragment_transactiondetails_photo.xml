@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.number26.machete.android.ui.components.TransactionDetailsActionButton android:id="@id/button_upload_picture" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_picture" app:actionIcon="@drawable/icon_add" app:icon="@drawable/add_photo" />
+    <RelativeLayout android:id="@id/layout_uploaded_pic_section" android:layout_width="fill_parent" android:layout_height="240.0dip">
+        <ImageView android:id="@id/image_uploaded_pic" android:layout_width="fill_parent" android:layout_height="240.0dip" android:scaleType="centerCrop" />
+        <TextView android:textColor="@color/grey_bright" android:gravity="center" android:id="@id/button_change_photo" android:background="@color/grey_dark_50p" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/action_change" android:layout_alignBottom="@id/image_uploaded_pic" />
+    </RelativeLayout>
+</merge>

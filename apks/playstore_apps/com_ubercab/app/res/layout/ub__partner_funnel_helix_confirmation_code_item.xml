@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ub__partner_funnel_helix_grey_20" android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:gravity="bottom|center" android:id="@id/ub__partner_funnel_helix_title" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" style="@style/Funnel.Helix.TextAppearance.H6.News.Secondary" />
+    <com.ubercab.ui.core.UTextView android:textColor="?colorPositive" android:gravity="center" android:id="@id/ub__partner_funnel_helix_code" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" style="@style/Funnel.Helix.TextAppearance.Mega.Book" />
+    <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__partner_funnel_helix_description" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Funnel.Helix.TextAppearance.H5.News.Secondary" />
+</LinearLayout>

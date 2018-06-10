@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/tileArrangementActionMenu" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/paymentHubActionMenuHeader" n1:background="@color/arrangement_tile_menu_header_color" n1:padding="@dimen/tile_arrangement_menu_item_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/payment_hub_select_amount_to_pay_title" n1:importantForAccessibility="no" style="@style/TextAppearance.PopupMenuHeading" />
+    <com.mobile.ui.paymenthub.view.AmountToPayView n1:id="@id/paymentHubAmountToPayFirstAction" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <View n1:background="@color/light_gray" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <com.mobile.ui.paymenthub.view.AmountToPayView n1:id="@id/paymentHubAmountToPaySecondAction" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <Button n1:layout_gravity="center" n1:id="@id/paymentHubCancelDialogButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/payment_hub_select_amount_to_pay_cancel_text" style="@style/Widget.Button.Secondary" />
+</LinearLayout>

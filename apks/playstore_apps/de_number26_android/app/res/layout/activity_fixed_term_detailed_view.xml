@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar_fixed_term_detailed_view" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.mklimek.frameviedoview.FrameVideoView android:layout_gravity="center_horizontal" android:id="@id/video_fixed_term_detailed_view" android:layout_width="200.0dip" android:layout_height="124.0dip" android:layout_marginTop="36.0dip" android:layout_marginBottom="19.0dip" />
+            <TextView android:textSize="56.0sp" android:gravity="center" android:id="@id/text_fixed_term_detailed_view_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="@string/font_regular" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/grey_79" android:gravity="center" android:id="@id/text_fixed_term_detailed_view_transferred_back_in" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/fixed_term_plan_detail_transferred_back_in" fontPath="@string/font_regular" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="19.0dip" android:layout_marginRight="@dimen/default_margin" android:layout_marginBottom="24.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_initialdeposit" fontPath="@string/font_regular" style="@style/fixedTermGridCellTitle" />
+                    <TextView android:id="@id/text_fixed_term_detailed_view_initial_deposit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="3.000" fontPath="@string/font_regular" style="@style/fixedTermGridCellValue" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_term_duration" fontPath="@string/font_regular" style="@style/fixedTermGridCellTitle" />
+                    <TextView android:id="@id/text_fixed_term_detailed_view_duration" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="12 months" fontPath="@string/font_regular" style="@style/fixedTermGridCellValue" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" android:layout_marginBottom="24.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_expectedpayout" fontPath="@string/font_regular" style="@style/fixedTermGridCellTitle" />
+                    <TextView android:id="@id/text_fixed_term_detailed_view_expected_payout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="3.038" fontPath="@string/font_regular" style="@style/fixedTermGridCellValue" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_expectedprofit" fontPath="@string/font_regular" style="@style/fixedTermGridCellTitle" />
+                    <TextView android:id="@id/text_fixed_term_detailed_view_expected_profit" android:layout_width="fill_parent" android:layout_height="fill_parent" fontPath="@string/font_regular" style="@style/fixedTermGridCellValue" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" android:layout_marginBottom="28.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_dayofmaturity" fontPath="@string/font_regular" style="@style/fixedTermGridCellTitle" />
+                    <TextView android:id="@id/text_fixed_term_detailed_view_day_of_maturity" android:layout_width="fill_parent" android:layout_height="fill_parent" fontPath="@string/font_regular" style="@style/fixedTermGridCellValue" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_effectiverate" fontPath="@string/font_regular" style="@style/fixedTermGridCellTitle" />
+                    <TextView android:id="@id/text_fixed_term_detailed_effective_rate" android:layout_width="fill_parent" android:layout_height="fill_parent" fontPath="@string/font_regular" style="@style/fixedTermGridCellValue" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_banklocation" fontPath="@string/font_regular" style="@style/fixedTermGridCellTitle" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/image_fixed_term_detailed_view_bank_location" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="4.0dip" />
+                        <TextView android:id="@id/text_fixed_term_detailed_view_bank_location" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="@string/font_regular" style="@style/fixedTermGridCellValue" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginBottom="24.0dip" android:layout_weight="1.0">
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_partnerbank" fontPath="@string/font_regular" style="@style/fixedTermGridCellTitle" />
+                    <TextView android:id="@id/text_fixed_term_detailed_view_bank_name" android:layout_width="fill_parent" android:layout_height="fill_parent" fontPath="@string/font_regular" style="@style/fixedTermGridCellValue" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/HorizontalSeparatorThin" />
+            <RelativeLayout android:id="@id/layout_fixed_term_detailed_view_documents" android:background="?android:selectableItemBackground" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/image_fixed_term_detailed_view_documents" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="16.0dip" android:src="@drawable/img_fixed_term_detailed_view_documents" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_detailed_view_documents" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_documents" android:layout_toRightOf="@id/image_fixed_term_detailed_view_documents" fontPath="@string/font_regular" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_documents_subtitle" android:layout_toRightOf="@id/image_fixed_term_detailed_view_documents" android:layout_below="@id/text_fixed_term_detailed_view_documents" fontPath="@string/font_light" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_fixed_term_detailed_view_remove" android:background="?android:selectableItemBackground" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/image_fixed_term_detailed_view_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="16.0dip" android:src="@drawable/img_fixed_term_detailed_view_remove" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_detailed_view_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_remove" android:layout_toRightOf="@id/image_fixed_term_detailed_view_remove" fontPath="@string/font_regular" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_remove_subtitle" android:layout_toRightOf="@id/image_fixed_term_detailed_view_remove" android:layout_below="@id/text_fixed_term_detailed_view_remove" fontPath="@string/font_light" />
+            </RelativeLayout>
+            <View style="@style/HorizontalSeparatorThin" />
+            <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/default_margin" android:layout_marginBottom="8.0dip" android:text="@string/fixed_term_confirm_plan_notes" fontPath="@string/font_regular" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="16.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="8.0dip">
+                <ImageView android:id="@id/text_fixed_term_detailed_view_details_bullet" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bullet_mint" />
+                <TextView android:textSize="16.0sp" android:id="@id/text_fixed_term_detailed_view_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_notes_reachmaturity" android:layout_toRightOf="@id/text_fixed_term_detailed_view_details_bullet" android:lineSpacingExtra="8.0sp" fontPath="@string/font_light" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="16.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="8.0dip">
+                <ImageView android:id="@id/text_fixed_term_detailed_view_withholding_bullet" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bullet_mint" />
+                <TextView android:textSize="16.0sp" android:id="@id/text_fixed_term_detailed_view_withholding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_notes_witholding" android:layout_toRightOf="@id/text_fixed_term_detailed_view_withholding_bullet" android:lineSpacingExtra="8.0sp" fontPath="@string/font_light" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="16.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="27.0dip">
+                <ImageView android:id="@id/text_fixed_term_detailed_view_secured_deposit_bullet" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bullet_mint" />
+                <TextView android:textSize="16.0sp" android:id="@id/text_fixed_term_detailed_view_secured_deposit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_plan_detail_notes_nationaldeposit" android:layout_toRightOf="@id/text_fixed_term_detailed_view_secured_deposit_bullet" android:layout_alignParentRight="true" android:lineSpacingExtra="8.0sp" fontPath="@string/font_light" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/grey_light" android:gravity="center" android:layout_gravity="center" android:id="@id/text_fixed_term_detailed_powered_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/fixed_term_plan_detail_powered_by" android:drawableRight="@drawable/welt_sparen_logo" android:drawablePadding="3.0dip" fontPath="@string/font_regular" />
+            </LinearLayout>
+            <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="72.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/layout_fixed_term_detailed_view_letter" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="72.0dip">
+        <View style="@style/HorizontalSeparatorThin" />
+        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/fixed_term_plan_detail_readletter" android:drawableLeft="@drawable/ic_send_arrow" android:drawablePadding="10.0dip" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

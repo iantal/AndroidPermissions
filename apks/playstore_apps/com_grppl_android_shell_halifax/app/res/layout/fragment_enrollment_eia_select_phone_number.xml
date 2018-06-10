@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true" n1:layout_above="@id/eiaButtons">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ViewStub n1:id="@id/registrationProgressViewStub" n1:layout="@layout/layout_eia_select_phone_number_progress_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginTop="@dimen/activity_vertical_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_marginBottom="@dimen/fragment_eia_select_phone_number_spacing_small" />
+            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginTop="@dimen/activity_vertical_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_marginBottom="@dimen/fragment_eia_select_phone_number_spacing_small">
+                <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/fragment_eia_select_phone_number_spacing_small" n2:srcCompat="@drawable/enrollment_telephone_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <com.mobile.ui.common.view.HeadingTextView n1:textAppearance="@style/TextAppearance.Headline" n1:id="@id/eiaSelectPhoneTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/enrollment_select_phone_number_title" />
+            </LinearLayout>
+            <TextView n1:textAppearance="@style/TextAppearance.Body" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_marginBottom="@dimen/fragment_eia_select_phone_number_spacing_large" n1:text="@string/enrollment_select_phone_number_body" n1:contentDescription="@string/accessibility_enrollment_select_phone_number_body" />
+            <com.mobile.ui.common.view.LabelledRadioGroup n1:id="@id/eiaPhoneNumbers" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_eia_select_phone_number_spacing_small" />
+            <TextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/hearingImpairmentText" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:text="@string/enrollment_select_phone_number_footer" n1:drawablePadding="@dimen/activity_horizontal_margin" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout n1:id="@id/eiaButtons" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginTop="@dimen/fragment_eia_select_phone_number_spacing_small" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_marginBottom="@dimen/activity_vertical_margin" n1:layout_alignParentBottom="true">
+        <Button n1:id="@id/cancelEiaButton" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/fragment_eia_select_phone_number_spacing_small" n1:text="@string/enrollment_select_phone_number_cancel_button" n1:layout_weight="1.0" style="@style/Widget.Button.Secondary" />
+        <Button n1:id="@id/callMeNowButton" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/enrollment_select_phone_number_call_me_now_button" n1:layout_weight="1.0" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+</RelativeLayout>

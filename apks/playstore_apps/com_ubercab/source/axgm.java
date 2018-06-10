@@ -1,0 +1,3 @@
+class axgm
+  extends axgl
+{}

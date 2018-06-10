@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@layout/transactionactivitybackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/addAttachmentTopHeading" android:background="@drawable/titlebg" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/addAttachmentBackButton" android:background="@drawable/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/addAttachmentTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_attachment" android:maxLines="3" android:layout_centerInParent="true" />
+        <Button android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/addAttachmentDone" android:background="@drawable/closebutton" android:paddingLeft="15.0dip" android:paddingTop="2.0dip" android:paddingRight="15.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="4.0dip" android:text="@string/done" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/addAttachmentMainBody" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/addAttachmentTopHeading">
+        <TableLayout android:orientation="vertical" android:id="@id/addAttachmentList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+        <Button android:textColor="@color/white" android:id="@id/addAttachmentButton" android:background="@layout/btn_default" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/browse" android:layout_below="@id/addAttachmentList" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/addAttachmentLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_attachment_label" android:layout_below="@id/addAttachmentButton" />
+    </RelativeLayout>
+</RelativeLayout>

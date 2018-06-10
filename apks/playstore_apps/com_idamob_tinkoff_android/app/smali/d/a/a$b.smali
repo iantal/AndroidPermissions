@@ -1,0 +1,31 @@
+.class final Ld/a/a$b;
+.super Ljava/lang/RuntimeException;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ld/a/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "b"
+.end annotation
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x420f688e62e1dcdcL
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 1362
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    .line 1363
+    return-void
+.end method

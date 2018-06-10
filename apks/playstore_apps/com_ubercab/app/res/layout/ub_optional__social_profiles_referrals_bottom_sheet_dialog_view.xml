@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:paddingTop="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:id="@id/ub__social_profiles_referrals_invite_code_icon" android:background="@drawable/ub__social_profiles_ic_referrals_people_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="?contentInset" android:layout_marginEnd="@dimen/ui__spacing_unit_3x" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__social_profiles_referrals_invite_code_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__social_profiles_referrals_your_invite_code" android:textAllCaps="true" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__social_profiles_referrals_driver_invite_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" style="@style/Platform.TextAppearance.H3.Book" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__social_profiles_referrals_bottom_sheet_description" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.P" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__social_profiles_referrals_ok_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/ub__social_profiles_referrals_ok" style="@style/Platform.Button" />
+</com.ubercab.ui.core.ULinearLayout>

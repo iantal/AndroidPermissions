@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TableRow n1:gravity="center">
+        <TextView n1:gravity="center" n1:id="@id/miLabelOne" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/mi_input_field_label_first" n1:importantForAccessibility="no" style="@style/TextAppearance.Body" />
+        <TextView n1:gravity="center" n1:id="@id/miLabelTwo" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/mi_input_field_label_second" n1:importantForAccessibility="no" n1:layout_marginStart="@dimen/mi_input_field_margin" n1:layout_marginEnd="@dimen/mi_input_field_margin" style="@style/TextAppearance.Body" />
+        <TextView n1:gravity="center" n1:id="@id/miLabelThree" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/mi_input_field_label_third" n1:importantForAccessibility="no" style="@style/TextAppearance.Body" />
+    </TableRow>
+    <TableRow n1:gravity="center_horizontal" n1:layout_marginTop="@dimen/mi_input_field_label_value_margin">
+        <com.mobile.ui.login.view.EnterMiField n1:id="@id/miInputOne" style="@style/Widget.InputField.Password.MI" />
+        <com.mobile.ui.login.view.EnterMiField n1:id="@id/miInputTwo" n1:layout_marginStart="@dimen/mi_input_field_margin" n1:layout_marginEnd="@dimen/mi_input_field_margin" style="@style/Widget.InputField.Password.MI" />
+        <com.mobile.ui.login.view.EnterMiField n1:id="@id/miInputThree" style="@style/Widget.InputField.Password.MI" />
+    </TableRow>
+</TableLayout>

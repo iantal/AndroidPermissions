@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.advanced_settings.advanced_settings.AdvancedSettingsView android:orientation="vertical" android:background="?brandWhite" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="77da2d60-cde0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ubercab.ui.core.URecyclerView android:id="@id/advanced_settings_item_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_4x" android:layout_weight="0.0" />
+            <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News.Primary" android:textColor="?colorNegative" android:id="@id/delete_account_item" android:padding="?contentInset" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/advanced_settings_delete_your_account" android:layout_weight="0.0" uber:analyticsId="2ee18134-60db" />
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_4x" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.presidio.advanced_settings.advanced_settings.AdvancedSettingsView>

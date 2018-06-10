@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_selected="true" n1:color="@color/titled_picker_dialog_text_view_selected_text_color"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:color="@color/titled_picker_dialog_text_view_text_color"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+</selector>

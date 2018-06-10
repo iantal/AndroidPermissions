@@ -1,0 +1,224 @@
+package com.fasterxml.jackson.databind.util;
+
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonInclude.Value;
+import com.fasterxml.jackson.databind.AnnotationIntrospector;
+import com.fasterxml.jackson.databind.PropertyMetadata;
+import com.fasterxml.jackson.databind.PropertyName;
+import com.fasterxml.jackson.databind.cfg.MapperConfig;
+import com.fasterxml.jackson.databind.introspect.AnnotatedField;
+import com.fasterxml.jackson.databind.introspect.AnnotatedMember;
+import com.fasterxml.jackson.databind.introspect.AnnotatedMethod;
+import com.fasterxml.jackson.databind.introspect.AnnotatedParameter;
+import com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.Set;
+
+public class SimpleBeanPropertyDefinition
+  extends BeanPropertyDefinition
+{
+  protected final PropertyName _fullName;
+  protected final JsonInclude.Value _inclusion;
+  protected final AnnotationIntrospector _introspector;
+  protected final AnnotatedMember _member;
+  protected final PropertyMetadata _metadata;
+  @Deprecated
+  protected final String _name;
+  
+  protected SimpleBeanPropertyDefinition(AnnotatedMember paramAnnotatedMember, PropertyName paramPropertyName, AnnotationIntrospector paramAnnotationIntrospector, PropertyMetadata paramPropertyMetadata, JsonInclude.Include paramInclude)
+  {
+    this(paramAnnotatedMember, paramPropertyName, paramAnnotationIntrospector, paramPropertyMetadata, paramInclude);
+  }
+  
+  protected SimpleBeanPropertyDefinition(AnnotatedMember paramAnnotatedMember, PropertyName paramPropertyName, AnnotationIntrospector paramAnnotationIntrospector, PropertyMetadata paramPropertyMetadata, JsonInclude.Value paramValue)
+  {
+    this._introspector = paramAnnotationIntrospector;
+    this._member = paramAnnotatedMember;
+    this._fullName = paramPropertyName;
+    this._name = paramPropertyName.getSimpleName();
+    paramAnnotatedMember = paramPropertyMetadata;
+    if (paramPropertyMetadata == null) {
+      paramAnnotatedMember = PropertyMetadata.STD_OPTIONAL;
+    }
+    this._metadata = paramAnnotatedMember;
+    this._inclusion = paramValue;
+  }
+  
+  public static SimpleBeanPropertyDefinition construct(MapperConfig<?> paramMapperConfig, AnnotatedMember paramAnnotatedMember)
+  {
+    PropertyName localPropertyName = PropertyName.construct(paramAnnotatedMember.getName());
+    if (paramMapperConfig == null) {}
+    for (paramMapperConfig = null;; paramMapperConfig = paramMapperConfig.getAnnotationIntrospector()) {
+      break;
+    }
+    return new SimpleBeanPropertyDefinition(paramAnnotatedMember, localPropertyName, paramMapperConfig, null, EMPTY_INCLUDE);
+  }
+  
+  public static SimpleBeanPropertyDefinition construct(MapperConfig<?> paramMapperConfig, AnnotatedMember paramAnnotatedMember, PropertyName paramPropertyName)
+  {
+    return construct(paramMapperConfig, paramAnnotatedMember, paramPropertyName, null, EMPTY_INCLUDE);
+  }
+  
+  public static SimpleBeanPropertyDefinition construct(MapperConfig<?> paramMapperConfig, AnnotatedMember paramAnnotatedMember, PropertyName paramPropertyName, PropertyMetadata paramPropertyMetadata, JsonInclude.Include paramInclude)
+  {
+    if (paramMapperConfig == null) {}
+    for (paramMapperConfig = null;; paramMapperConfig = paramMapperConfig.getAnnotationIntrospector()) {
+      break;
+    }
+    return new SimpleBeanPropertyDefinition(paramAnnotatedMember, paramPropertyName, paramMapperConfig, paramPropertyMetadata, paramInclude);
+  }
+  
+  public static SimpleBeanPropertyDefinition construct(MapperConfig<?> paramMapperConfig, AnnotatedMember paramAnnotatedMember, PropertyName paramPropertyName, PropertyMetadata paramPropertyMetadata, JsonInclude.Value paramValue)
+  {
+    if (paramMapperConfig == null) {}
+    for (paramMapperConfig = null;; paramMapperConfig = paramMapperConfig.getAnnotationIntrospector()) {
+      break;
+    }
+    return new SimpleBeanPropertyDefinition(paramAnnotatedMember, paramPropertyName, paramMapperConfig, paramPropertyMetadata, paramValue);
+  }
+  
+  public JsonInclude.Value findInclusion()
+  {
+    return this._inclusion;
+  }
+  
+  public AnnotatedMember getAccessor()
+  {
+    AnnotatedMethod localAnnotatedMethod = getGetter();
+    Object localObject = localAnnotatedMethod;
+    if (localAnnotatedMethod == null) {
+      localObject = getField();
+    }
+    return localObject;
+  }
+  
+  public AnnotatedParameter getConstructorParameter()
+  {
+    if ((this._member instanceof AnnotatedParameter)) {
+      return (AnnotatedParameter)this._member;
+    }
+    return null;
+  }
+  
+  public Iterator<AnnotatedParameter> getConstructorParameters()
+  {
+    AnnotatedParameter localAnnotatedParameter = getConstructorParameter();
+    if (localAnnotatedParameter == null) {
+      return ClassUtil.emptyIterator();
+    }
+    return Collections.singleton(localAnnotatedParameter).iterator();
+  }
+  
+  public AnnotatedField getField()
+  {
+    if ((this._member instanceof AnnotatedField)) {
+      return (AnnotatedField)this._member;
+    }
+    return null;
+  }
+  
+  public PropertyName getFullName()
+  {
+    return this._fullName;
+  }
+  
+  public AnnotatedMethod getGetter()
+  {
+    if (((this._member instanceof AnnotatedMethod)) && (((AnnotatedMethod)this._member).getParameterCount() == 0)) {
+      return (AnnotatedMethod)this._member;
+    }
+    return null;
+  }
+  
+  public PropertyMetadata getMetadata()
+  {
+    return this._metadata;
+  }
+  
+  public AnnotatedMember getMutator()
+  {
+    Object localObject2 = getConstructorParameter();
+    Object localObject1 = localObject2;
+    if (localObject2 == null)
+    {
+      localObject2 = getSetter();
+      localObject1 = localObject2;
+      if (localObject2 == null) {
+        localObject1 = getField();
+      }
+    }
+    return localObject1;
+  }
+  
+  public String getName()
+  {
+    return this._fullName.getSimpleName();
+  }
+  
+  public AnnotatedMember getNonConstructorMutator()
+  {
+    AnnotatedMethod localAnnotatedMethod = getSetter();
+    Object localObject = localAnnotatedMethod;
+    if (localAnnotatedMethod == null) {
+      localObject = getField();
+    }
+    return localObject;
+  }
+  
+  public AnnotatedMember getPrimaryMember()
+  {
+    return this._member;
+  }
+  
+  public AnnotatedMethod getSetter()
+  {
+    if (((this._member instanceof AnnotatedMethod)) && (((AnnotatedMethod)this._member).getParameterCount() == 1)) {
+      return (AnnotatedMethod)this._member;
+    }
+    return null;
+  }
+  
+  public PropertyName getWrapperName()
+  {
+    if ((this._introspector == null) && (this._member != null)) {
+      return null;
+    }
+    return this._introspector.findWrapperName(this._member);
+  }
+  
+  public boolean hasConstructorParameter()
+  {
+    return this._member instanceof AnnotatedParameter;
+  }
+  
+  public boolean hasField()
+  {
+    return this._member instanceof AnnotatedField;
+  }
+  
+  public boolean hasGetter()
+  {
+    return getGetter() != null;
+  }
+  
+  public boolean hasName(PropertyName paramPropertyName)
+  {
+    return this._fullName.equals(paramPropertyName);
+  }
+  
+  public boolean hasSetter()
+  {
+    return getSetter() != null;
+  }
+  
+  public boolean isExplicitlyIncluded()
+  {
+    return false;
+  }
+  
+  public boolean isExplicitlyNamed()
+  {
+    return false;
+  }
+}

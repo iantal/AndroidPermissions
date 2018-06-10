@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.helix.fare_split.optional.participants.ParticipantView android:layout_gravity="center" android:orientation="vertical" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UFrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ubercab.ui.CircleImageView android:id="@id/ub__participant_photo" android:layout_width="?avatarLarge" android:layout_height="?avatarLarge" />
+        <com.ubercab.ui.CircleImageView android:layout_gravity="end|bottom|center" android:id="@id/ub__participant_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.UTextView android:ellipsize="start" android:layout_gravity="center" android:id="@id/ub__participant_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:maxWidth="?avatarLarge" android:maxLines="1" android:singleLine="true" style="@style/Platform.TextAppearance.H6.News.Primary" />
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:layout_gravity="center" android:id="@id/ub__participant_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="?avatarLarge" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Primary" />
+</com.ubercab.helix.fare_split.optional.participants.ParticipantView>

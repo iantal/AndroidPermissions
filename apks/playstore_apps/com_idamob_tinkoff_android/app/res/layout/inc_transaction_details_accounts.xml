@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_padding" n1:layout_marginRight="@dimen/screen_content_padding"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:id="@id/transaction_details_accounts_title" n1:layout_width="wrap_content" n1:layout_height="@dimen/tile_height_default_item" />
+    <RelativeLayout n1:id="@id/transaction_details_accounts_source_container" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/transaction_details_accounts_source_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/transaction_details_accounts_source_nfc" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_margin_half" n1:src="@drawable/ic_operation_nfc" n1:layout_toRightOf="@id/transaction_details_accounts_source_name" n1:layout_centerVertical="true" n1:layout_marginStart="@dimen/screen_content_margin_half" n1:layout_toEndOf="@id/transaction_details_accounts_source_name" />
+        <ImageView n1:id="@id/transaction_details_accounts_source_icon" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" />
+        <ru.tcsbank.mb.ui.widgets.account.AccountCardView n1:id="@id/transaction_details_accounts_source_card" n1:visibility="gone" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" style="@style/AccountCard" />
+    </RelativeLayout>
+    <RelativeLayout n1:id="@id/transaction_details_accounts_target_container" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/transaction_details_accounts_target_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/transaction_details_accounts_target_icon" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

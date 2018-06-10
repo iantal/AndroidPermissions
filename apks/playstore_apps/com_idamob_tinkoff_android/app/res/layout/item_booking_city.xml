@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout n1:background="?selectableItemBackground" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/tile_height_default_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Default" n1:textColor="@color/booking_city_text" n1:gravity="center_vertical" n1:id="@id/city" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_margin" n1:layout_marginRight="@dimen/screen_content_margin" n2:layout_constrainedWidth="true" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintHorizontal_bias="0.0" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintRight_toLeftOf="@id/selected_mark" n2:layout_constraintTop_toTopOf="parent" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n1:id="@id/selected_mark" n1:layout_width="24.0dip" n1:layout_height="24.0dip" n1:layout_marginRight="@dimen/screen_content_margin" n1:src="@drawable/ic_check_already_activated" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:tint="@color/n8" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</android.support.constraint.ConstraintLayout>

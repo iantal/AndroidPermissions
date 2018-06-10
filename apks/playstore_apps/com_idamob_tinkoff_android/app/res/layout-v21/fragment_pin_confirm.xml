@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small.White" n1:gravity="center" n1:id="@id/note" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/card_activation_padding_top" />
+    <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="@dimen/tile_height_medium_item" n1:layout_marginBottom="@dimen/screen_content_padding_plus">
+        <View n1:id="@id/circle_1" n1:background="@drawable/white_circle" n1:layout_width="@dimen/tile_height_medium_item" n1:layout_height="@dimen/tile_height_medium_item" />
+        <View n1:id="@id/circle_2" n1:background="@drawable/white_circle" n1:layout_width="@dimen/tile_height_medium_item" n1:layout_height="@dimen/tile_height_medium_item" n1:layout_marginLeft="@dimen/card_activation_circle_margin_left" n1:layout_toRightOf="@id/circle_1" />
+        <ImageView n1:id="@id/circle_3" n1:layout_width="@dimen/tile_height_medium_item" n1:layout_height="@dimen/tile_height_medium_item" n1:layout_marginLeft="@dimen/card_activation_circle_margin_left" n1:src="@drawable/pin_lock" n1:layout_toRightOf="@id/circle_2" />
+        <ImageView n1:id="@id/circle_4" n1:layout_width="@dimen/tile_height_medium_item" n1:layout_height="@dimen/tile_height_medium_item" n1:layout_marginLeft="@dimen/card_activation_circle_margin_left" n1:src="@drawable/pin_lock" n1:layout_toRightOf="@id/circle_3" />
+        <ImageView n1:id="@id/pin_confirmation" n1:layout_width="@dimen/card_activation_conf_capture_container_height" n1:layout_height="@dimen/card_activation_conf_capture_container_width" n1:layout_marginLeft="@dimen/card_activation_conf_capture_margin_left" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <Button n1:gravity="center" n1:id="@id/confirm_pin" n1:layout_marginBottom="@dimen/card_activation_btn_margin_bottom" style="@style/Button.Round.Yellow" />
+    <TextView n1:textAppearance="@style/Text.Default.Blue" n1:gravity="center" n1:id="@id/call" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/activate_card_view_pin_code_repeat_button" n1:textAllCaps="true" n1:stateListAnimator="@null" style="?borderlessButtonStyle" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.request_error_handler.cvv.CvvVerifyRequestErrorHandlerView android:orientation="vertical" android:background="?android:windowBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/verify_payment_information" android:layout_weight="1.0" android:textIsSelectable="true" style="@style/Platform.TextAppearance.H2" />
+    <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/verify_cvv" android:layout_weight="1.0" android:textIsSelectable="true" android:textAllCaps="true" style="@style/Platform.TextAppearance.H3" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__verify_card_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/verify" uber:analyticsId="8cd151a3-8d4e" style="?platformButtonPrimary" />
+</com.ubercab.presidio.app.optional.root.main.ride.request.request_error_handler.cvv.CvvVerifyRequestErrorHandlerView>

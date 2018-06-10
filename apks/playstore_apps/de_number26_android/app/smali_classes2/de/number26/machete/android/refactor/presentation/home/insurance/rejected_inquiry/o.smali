@@ -1,0 +1,74 @@
+.class public Lde/number26/machete/android/refactor/presentation/home/insurance/rejected_inquiry/o;
+.super Ljava/lang/Object;
+.source "RejectedInquiryModule.java"
+
+
+# instance fields
+.field private final a:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 16
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 17
+    iput-object p1, p0, Lde/number26/machete/android/refactor/presentation/home/insurance/rejected_inquiry/o;->a:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method a()Ljava/lang/String;
+    .locals 1
+
+    .line 22
+    iget-object v0, p0, Lde/number26/machete/android/refactor/presentation/home/insurance/rejected_inquiry/o;->a:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method a(Lde/number26/machete/android/refactor/presentation/home/insurance/rejected_inquiry/v;)Lrx/e;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lde/number26/machete/android/refactor/presentation/home/insurance/rejected_inquiry/v;",
+            ")",
+            "Lrx/e<",
+            "Lde/number26/machete/android/refactor/presentation/home/insurance/rejected_inquiry/u;",
+            ">;"
+        }
+    .end annotation
+
+    .line 27
+    invoke-virtual {p1}, Lde/number26/machete/android/refactor/presentation/home/insurance/rejected_inquiry/v;->a()Lrx/e;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method b(Lde/number26/machete/android/refactor/presentation/home/insurance/rejected_inquiry/v;)Lrx/e;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lde/number26/machete/android/refactor/presentation/home/insurance/rejected_inquiry/v;",
+            ")",
+            "Lrx/e<",
+            "Lde/number26/machete/android/refactor/presentation/common/k/a;",
+            ">;"
+        }
+    .end annotation
+
+    .line 32
+    invoke-virtual {p1}, Lde/number26/machete/android/refactor/presentation/home/insurance/rejected_inquiry/v;->b()Lrx/e;
+
+    move-result-object p1
+
+    return-object p1
+.end method

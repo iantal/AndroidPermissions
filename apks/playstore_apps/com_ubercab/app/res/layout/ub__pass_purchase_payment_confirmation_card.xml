@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingLeft="?gutterSize" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="?gutterSize" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_purchase_payment_confirmation_line1" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H2.Book" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_purchase_payment_confirmation_line2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H2.Book" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UTextView android:layout_gravity="end" android:id="@id/ub__pass_purchase_payment_confirmation_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H2.Book" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_purchase_payment_confirmation_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+</com.ubercab.ui.core.ULinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item>
+        <shape n1:shape="oval"
+          xmlns:n1="http://schemas.android.com/apk/res/android">
+            <solid n1:color="@color/croppingPointerExtra" />
+            <size n1:height="@dimen/cropping_selection_circle_extra_size" n1:width="@dimen/cropping_selection_circle_extra_size" />
+        </shape>
+    </item>
+    <item n2:left="@dimen/cropping_selection_circle_delta" n2:top="@dimen/cropping_selection_circle_delta" n2:right="@dimen/cropping_selection_circle_delta" n2:bottom="@dimen/cropping_selection_circle_delta"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape n2:shape="oval">
+            <solid n2:color="@color/croppingPointerFill" />
+            <size n2:height="@dimen/cropping_selection_circle_size" n2:width="@dimen/cropping_selection_circle_size" />
+            <stroke n2:width="1.0dip" n2:color="@color/croppingInvalidColor" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_helix_metadata_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" style="@style/Funnel.Helix.TextAppearance.H2.Book" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_helix_metadata_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" style="@style/Funnel.Helix.TextAppearance.P" />
+            <com.ubercab.android.partner.funnel.onboarding.view.HelixFloatingLabelEditText android:id="@id/ub__partner_funnel_helix_metadata_license_textinput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" app:floatingLabelEditTextAppearance="@style/Funnel.Helix.TextAppearance.H3.News" app:floatingLabelSubTextAppearance="@style/Funnel.Helix.TextAppearance.P" app:floatingLabelInfoTextColor="?android:textColorSecondary" app:floatingLabelErrorTextColor="?colorNegative" />
+            <com.ubercab.android.partner.funnel.onboarding.view.HelixFloatingLabelSpinner android:id="@id/ub__partner_funnel_helix_metadata_state_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:background="@color/ub__uber_white_20" android:padding="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.Button android:id="@id/ub__partner_funnel_helix_metadata_primary_button" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Funnel.Helix.Button" />
+    </LinearLayout>
+</LinearLayout>

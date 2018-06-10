@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.amex.manage.AmexManageView android:orientation="vertical" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="b8fb45ac-d7bc"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__payment_amex_manage_secondary_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="6bc9527c-31b8">
+        <include layout="@layout/ub__payment_amex_manage_divider" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_4x" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="de095ffe-eb7a">
+            <com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/payment_amex_manage_benefit_title" style="@style/Platform.TextAppearance.H5.Medium" />
+            <com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:text="@string/payment_amex_post_add_payment_amex_premium_secondary_body1" style="@style/Platform.TextAppearance.P.Book" />
+            <com.ubercab.ui.core.UTextView android:textColor="?accentLink" android:id="@id/ub__payment_amex_manage_secondary_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/payment_amex_post_add_payment_amex_premium_secondary_switch_link_text" uber:analyticsId="3157f7ae-e131" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__payment_amex_manage_benefit_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="cbc84505-be20">
+        <include layout="@layout/ub__payment_amex_manage_divider" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_4x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/payment_amex_manage_benefit_title" style="@style/Platform.TextAppearance.H5.Medium" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__payment_amex_manage_rewards_benefit_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:text="@string/payment_amex_manage_benefit_description" style="@style/Platform.TextAppearance.P.Book" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__payment_amex_manage_benefit_terms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/payment_amex_manage_benefit_terms" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UFrameLayout android:paddingTop="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/ub__payment_amex_manage_divider" />
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.presidio.payment.amex.manage.AmexManageView>

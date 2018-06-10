@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:baselineAligned="false" n1:includeFontPadding="false"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/mandatorySelectSwitchLeft" style="@style/Widget.Button.MandatorySelectLeft" />
+    <TextView n1:id="@id/mandatorySelectSwitchRight" style="@style/Widget.Button.MandatorySelectRight" />
+</LinearLayout>

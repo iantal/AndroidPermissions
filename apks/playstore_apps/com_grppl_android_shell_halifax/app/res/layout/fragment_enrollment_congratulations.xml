@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:paddingTop="@dimen/activity_vertical_margin" n1:paddingBottom="@dimen/activity_vertical_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:paddingStart="@dimen/activity_horizontal_margin" n1:paddingEnd="@dimen/activity_horizontal_margin">
+        <TextView n1:textAppearance="@style/TextAppearance.Headline" n1:id="@id/eiaSuccessTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/enrollment_congratulations_title" n1:contentDescription="@string/accessibility_enrollment_success_title" />
+        <TextView n1:textAppearance="@style/TextAppearance.Body" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/fragment_enrollment_congratulations_spacing" n1:text="@string/enrollment_congratulations_subtitle" />
+        <ImageView n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:contentDescription="@string/enrollment_congratulations_artwork_content_description" n2:srcCompat="@drawable/enrollment_congratulations" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <TextView n1:textAppearance="@style/TextAppearance.Body" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/fragment_enrollment_congratulations_spacing" n1:text="@string/enrollment_congratulations_text" />
+        <View n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0" />
+        <Button n1:id="@id/continueButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/enrollment_congratulations_continue_button" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+</ScrollView>

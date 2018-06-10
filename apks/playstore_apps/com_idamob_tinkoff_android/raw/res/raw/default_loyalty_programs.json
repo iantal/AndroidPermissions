@@ -1,0 +1,1830 @@
+{
+  "result": {
+    "type": "json",
+    "value": {
+      "loyaltyPrograms": [
+        {
+          "programId": "Cashback",
+          "steps": 0,
+          "units": "rubles",
+          "title": "Cashback",
+          "redeemDays": 0,
+          "redeemSumLimit": 0,
+          "textColor": "#333333",
+          "textColorAlt": "#333333",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#333333",
+          "cardBackgroundColor": "#212121",
+          "isContentWhite": true,
+          "showInMenu": false,
+          "isCoBrand": false,
+          "showBubble": false,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Cashback",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#333333",
+              "cardBackgroundColor": "#212121",
+              "isContentWhite": true
+            },
+            {
+              "design": "489f2d5b2fa340badd779b2fca236b9c",
+              "name": "AcademeG",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#333333",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            },
+            {
+              "design": "41c44ef138dba2834280d78a1ecbabff",
+              "name": "Vandrouki",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#0867a1",
+              "cardBackgroundColor": "#509fda",
+              "isContentWhite": true
+            },
+            {
+              "design": "9c6a8c3a122d66eeef4c504f07233c6e",
+              "name": "Wylsacom",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#39810e",
+              "cardBackgroundColor": "#72bf44",
+              "isContentWhite": true
+            },
+            {
+              "design": "1dcdedb1cef1f4c546ef16a4d4b5ffb8",
+              "name": "IamCoach",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#0e2336",
+              "accountBackgroundColor": "#0e2336",
+              "cardBackgroundColor": "#29c9c3",
+              "isContentWhite": true
+            },
+            {
+              "design": "13cb7d3d8f0b733edf3ba0f56071dfee",
+              "name": "Nashestvie",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#650405",
+              "accountBackgroundColor": "#650405",
+              "cardBackgroundColor": "#c53032",
+              "isContentWhite": true
+            },
+            {
+              "design": "6321ae3309d6545c8c5a5ffa4a2af026",
+              "name": "World Cup",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#333333",
+              "accountBackgroundColor": "#333333",
+              "cardBackgroundColor": "#212121",
+              "isContentWhite": true
+            },
+            {
+              "design": "6522340c37ee507b03e4c31b5fa7779b",
+              "name": "MariaWayBox",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#87384d",
+              "accountBackgroundColor": "#87384d",
+              "cardBackgroundColor": "#92c9c3",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "Bravo",
+          "steps": 3,
+          "units": "points",
+          "title": "Баллы Браво",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#556272",
+          "textColorAlt": "#556272",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#afb6c4",
+          "accountBackgroundColor": "#556272",
+          "cardBackgroundColor": "#afb6c4",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": false,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Bravo",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#afb6c4",
+              "accountBackgroundColor": "#556272",
+              "cardBackgroundColor": "#afb6c4",
+              "isContentWhite": true
+            },
+            {
+              "design": "489f2d5b2fa340badd779b2fca236b9c",
+              "name": "AcademeG",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#333333",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            },
+            {
+              "design": "bd7a80360010968eb19c2756998b6230",
+              "name": "DrugiePravila",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#ffffff",
+              "accountBackgroundColor": "#ffffff",
+              "cardBackgroundColor": "#ffffff",
+              "isContentWhite": true
+            },
+            {
+              "design": "9c6a8c3a122d66eeef4c504f07233c6e",
+              "name": "Wylsacom",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#39810e",
+              "cardBackgroundColor": "#72bf44",
+              "isContentWhite": true
+            },
+            {
+              "design": "1dcdedb1cef1f4c546ef16a4d4b5ffb8",
+              "name": "IamCoach",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#0e2336",
+              "accountBackgroundColor": "#0e2336",
+              "cardBackgroundColor": "#29c9c3",
+              "isContentWhite": true
+            },
+            {
+              "design": "6522340c37ee507b03e4c31b5fa7779b",
+              "name": "MariaWayBox",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#87384d",
+              "accountBackgroundColor": "#87384d",
+              "cardBackgroundColor": "#92c9c3",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "AllAirlines",
+          "steps": 2,
+          "units": "miles",
+          "title": "Мили ALL Airlines",
+          "redeemDays": 90,
+          "redeemSumLimit": 2000,
+          "textColor": "#0867a1",
+          "textColorAlt": "#0867a1",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#429edc",
+          "accountBackgroundColor": "#0867a1",
+          "cardBackgroundColor": "#509fda",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": false,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "ALLAirlines",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#429edc",
+              "accountBackgroundColor": "#0867a1",
+              "cardBackgroundColor": "#509fda",
+              "isContentWhite": true
+            },
+            {
+              "design": "67d93823c8acdbde37cf4d8c5fa3fdf0",
+              "name": "Vandrouki",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#0867a1",
+              "cardBackgroundColor": "#509fda",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "AllAirLinesDebit",
+          "steps": 2,
+          "units": "miles",
+          "title": "Мили ALL Airlines",
+          "redeemDays": 90,
+          "redeemSumLimit": 2000,
+          "textColor": "#2f4e80",
+          "textColorAlt": "#2f4e80",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#243C64",
+          "accountBackgroundColor": "#2f4e80",
+          "cardBackgroundColor": "#243c64",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": false,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "ALLAirlinesDebit",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#243C64",
+              "accountBackgroundColor": "#2f4e80",
+              "cardBackgroundColor": "#243c64",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "37",
+          "steps": 2,
+          "units": "miles",
+          "title": "Мили ALL Airlines",
+          "redeemDays": 90,
+          "redeemSumLimit": 2000,
+          "textColor": "#2f4e80",
+          "textColorAlt": "#2f4e80",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#243C64",
+          "accountBackgroundColor": "#2f4e80",
+          "cardBackgroundColor": "#243c64",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": false,
+          "showBubble": true,
+          "additionalCard": true,
+          "note": "TODO: remove after PF-8192",
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "ALLAirlinesDebit",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#243C64",
+              "accountBackgroundColor": "#2f4e80",
+              "cardBackgroundColor": "#243c64",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "Ulmart",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Ulmart",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#e70034",
+          "textColorAlt": "#e70034",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#e70034",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Ulmart",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#e70034",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "38",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Ulmart",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#e70034",
+          "textColorAlt": "#e70034",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#e70034",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "note": "TODO: remove after PF-8192",
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Ulmart",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#e70034",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "UlmartDebit",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Ulmart",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#e70034",
+          "textColorAlt": "#e70034",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#e70034",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "UlmartDebit",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#e70034",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "39",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Ulmart",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#e70034",
+          "textColorAlt": "#e70034",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#e70034",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "note": "TODO: remove after PF-8192",
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Ulmart",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#e70034",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "WWF",
+          "steps": 1,
+          "units": "rubles",
+          "title": "Рубли WWF",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#085053",
+          "textColorAlt": "#085053",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#085053",
+          "accountBackgroundColor": "#085053",
+          "cardBackgroundColor": "#ffffff",
+          "isContentWhite": false,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "WWF",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#085053",
+              "accountBackgroundColor": "#085053",
+              "cardBackgroundColor": "#ffffff",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "32",
+          "steps": 1,
+          "units": "rubles",
+          "title": "Рубли WWF",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#085053",
+          "textColorAlt": "#085053",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#085053",
+          "accountBackgroundColor": "#085053",
+          "cardBackgroundColor": "#ffffff",
+          "isContentWhite": false,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "note": "TODO: remove after PF-8192",
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "WWF",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#085053",
+              "accountBackgroundColor": "#085053",
+              "cardBackgroundColor": "#ffffff",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "WWFDebit",
+          "steps": 1,
+          "units": "rubles",
+          "title": "Рубли WWF",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#085053",
+          "textColorAlt": "#085053",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#085053",
+          "accountBackgroundColor": "#085053",
+          "cardBackgroundColor": "#ffffff",
+          "isContentWhite": false,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "WWF",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#085053",
+              "accountBackgroundColor": "#085053",
+              "cardBackgroundColor": "#ffffff",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "31",
+          "steps": 1,
+          "units": "rubles",
+          "title": "Рубли WWF",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#085053",
+          "textColorAlt": "#085053",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#085053",
+          "accountBackgroundColor": "#085053",
+          "cardBackgroundColor": "#ffffff",
+          "isContentWhite": false,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "note": "TODO: remove after PF-8192",
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "WWF",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#085053",
+              "accountBackgroundColor": "#085053",
+              "cardBackgroundColor": "#ffffff",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "OneTwoTrip",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы OneTwoTrip",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#333333",
+          "textColorAlt": "#333333",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#f5c400",
+          "accountBackgroundColor": "#333333",
+          "cardBackgroundColor": "#ffdd2d",
+          "isContentWhite": false,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": false,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "OneTwoTrip",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#f5c400",
+              "accountBackgroundColor": "#333333",
+              "cardBackgroundColor": "#ffdd2d",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "OTTDebit",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы OneTwoTrip",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#333333",
+          "textColorAlt": "#333333",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#f5c400",
+          "accountBackgroundColor": "#333333",
+          "cardBackgroundColor": "#ffdd2d",
+          "isContentWhite": false,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": false,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "OneTwoTrip",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#f5c400",
+              "accountBackgroundColor": "#333333",
+              "cardBackgroundColor": "#ffdd2d",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "eBay",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы eBay",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#5297e0",
+          "textColorAlt": "#5297e0",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#dde0e4",
+          "accountBackgroundColor": "#5297e0",
+          "cardBackgroundColor": "#ffffff",
+          "isContentWhite": false,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "eBay",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#dde0e4",
+              "accountBackgroundColor": "#5297e0",
+              "cardBackgroundColor": "#ffffff",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "eBayDebit",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы eBay",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#5297e0",
+          "textColorAlt": "#5297e0",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#dde0e4",
+          "accountBackgroundColor": "#5297e0",
+          "cardBackgroundColor": "#ffffff",
+          "isContentWhite": false,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "eBay",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#dde0e4",
+              "accountBackgroundColor": "#5297e0",
+              "cardBackgroundColor": "#ffffff",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "Kanobu",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы All Games",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#362134",
+          "textColorAlt": "#362134",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#161756",
+          "accountBackgroundColor": "#362134",
+          "cardBackgroundColor": "#2a0a2b",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "All Games",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#161756",
+              "accountBackgroundColor": "#362134",
+              "cardBackgroundColor": "#2a0a2b",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "KanobuDebit",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы All Games",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#362134",
+          "textColorAlt": "#362134",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#161756",
+          "accountBackgroundColor": "#362134",
+          "cardBackgroundColor": "#2a0a2b",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "All Games",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#161756",
+              "accountBackgroundColor": "#362134",
+              "cardBackgroundColor": "#2a0a2b",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "Afimall",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Afimall",
+          "redeemDays": 90,
+          "redeemSumLimit": 0,
+          "textColor": "#0867a1",
+          "textColorAlt": "#0867a1",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#3bace1",
+          "accountBackgroundColor": "#0867a1",
+          "cardBackgroundColor": "#3aabe1",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Afimall",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#3bace1",
+              "accountBackgroundColor": "#0867a1",
+              "cardBackgroundColor": "#3aabe1",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "Malina",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Malina",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#c50545",
+          "textColorAlt": "#c50545",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#ffdb00",
+          "accountBackgroundColor": "#c50545",
+          "cardBackgroundColor": "#fdda00",
+          "isContentWhite": false,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": false,
+          "additionalCard": false,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Malina",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#ffdb00",
+              "accountBackgroundColor": "#c50545",
+              "cardBackgroundColor": "#fdda00",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "AliExpress",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы AliExpress",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#cc3014",
+          "textColorAlt": "#cc3014",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#dde0e4",
+          "accountBackgroundColor": "#cc3014",
+          "cardBackgroundColor": "#ffffff",
+          "isContentWhite": false,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "AliExpress",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#dde0e4",
+              "accountBackgroundColor": "#cc3014",
+              "cardBackgroundColor": "#ffffff",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "AliExpressDebit",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы AliExpress",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#cc3014",
+          "textColorAlt": "#cc3014",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#dde0e4",
+          "accountBackgroundColor": "#cc3014",
+          "cardBackgroundColor": "#ffffff",
+          "isContentWhite": false,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "AliExpress",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#dde0e4",
+              "accountBackgroundColor": "#cc3014",
+              "cardBackgroundColor": "#ffffff",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "Lamoda",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Lamoda",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#175dd2",
+          "textColorAlt": "#175dd2",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#dde0e4",
+          "accountBackgroundColor": "#175dd2",
+          "cardBackgroundColor": "#ffffff",
+          "isContentWhite": false,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Lamoda",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#dde0e4",
+              "accountBackgroundColor": "#175dd2",
+              "cardBackgroundColor": "#ffffff",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "LamodaDebit",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Lamoda",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#175dd2",
+          "textColorAlt": "#175dd2",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#dde0e4",
+          "accountBackgroundColor": "#175dd2",
+          "cardBackgroundColor": "#ffffff",
+          "isContentWhite": false,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Lamoda",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#dde0e4",
+              "accountBackgroundColor": "#175dd2",
+              "cardBackgroundColor": "#ffffff",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "RendezVous",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы RendezVous",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#333333",
+          "textColorAlt": "#333333",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#333333",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "RendezVous",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#333333",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "Odnoklassniki",
+          "steps": 0,
+          "units": "points",
+          "title": "Баллы Одноклассники",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#556272",
+          "textColorAlt": "#556272",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#ff7e00",
+          "accountBackgroundColor": "#556272",
+          "cardBackgroundColor": "#afb6c4",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Odnoklassniki",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#ff7e00",
+              "accountBackgroundColor": "#556272",
+              "cardBackgroundColor": "#afb6c4",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "Tele2",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Tele2",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#333333",
+          "textColorAlt": "#333333",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#333333",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Tele2",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#333333",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "TNT",
+          "steps": 0,
+          "units": "points",
+          "title": "Баллы TNT",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#385a86",
+          "textColorAlt": "#385a86",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#385a86",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": false,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "TNT",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#385a86",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "TNTDebit",
+          "steps": 0,
+          "units": "points",
+          "title": "Баллы TNT",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#385a86",
+          "textColorAlt": "#385a86",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#385a86",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": false,
+          "isCoBrand": false,
+          "showBubble": false,
+          "additionalCard": false,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "TNT",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#385a86",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "Default",
+          "steps": 0,
+          "units": "points",
+          "title": "Баллы",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#556272",
+          "textColorAlt": "#556272",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#333333",
+          "accountBackgroundColor": "#556272",
+          "cardBackgroundColor": "#afb6c4",
+          "isContentWhite": true,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": false,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Nothing",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#333333",
+              "accountBackgroundColor": "#556272",
+              "cardBackgroundColor": "#afb6c4",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "SvyaznoyClub",
+          "steps": 0,
+          "units": "pluses",
+          "title": "Плюсы",
+          "redeemSumLimit": 0,
+          "redeemDays": 0,
+          "textColor": "#ce6600",
+          "textColorAlt": "#ce6600",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#ce6600",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": false,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "SvyaznoyClub",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#ce6600",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "41",
+          "steps": 0,
+          "units": "pluses",
+          "title": "Плюсы",
+          "redeemSumLimit": 0,
+          "redeemDays": 0,
+          "textColor": "#ce6600",
+          "textColorAlt": "#ce6600",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#ce6600",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": false,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "SvyaznoyClub",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#ce6600",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "Mitsubishi",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Mitsubishi",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#af041a",
+          "textColorAlt": "#af041a",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#af041a",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Mitsubishi",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#af041a",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "MitsubishiDebit",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Mitsubishi",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#af401a",
+          "textColorAlt": "#af401a",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#af401a",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Mitsubishi",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#af401a",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "GooglePlay",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Google Play",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#4f84aa",
+          "textColorAlt": "#4f84aa",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#4f84aa",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "GooglePlay",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#4f84aa",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "GooglePlayDebit",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Google Play",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#4f84aa",
+          "textColorAlt": "#4f84aa",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#4f84aa",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "GooglePlay",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#4f84aa",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "AuraCard",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы AURACARD",
+          "redeemSumLimit": 500,
+          "redeemDays": 90,
+          "textColor": "#e2231a",
+          "textColorAlt": "#e2231a",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#dde0e4",
+          "accountBackgroundColor": "#e2231a",
+          "cardBackgroundColor": "#ffffff",
+          "isContentWhite": false,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "AuraCard",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#dde0e4",
+              "accountBackgroundColor": "#e2231a",
+              "cardBackgroundColor": "#ffffff",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "40",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы PLANETACARD",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#f57c52",
+          "textColorAlt": "#f57c52",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#dde0e4",
+          "accountBackgroundColor": "#f57c52",
+          "cardBackgroundColor": "#f7c34b",
+          "isContentWhite": false,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Planeta",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#dde0e4",
+              "accountBackgroundColor": "#f57c52",
+              "cardBackgroundColor": "#f7c34b",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "30",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы АУРА",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#e2231a",
+          "textColorAlt": "#e2231a",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#dde0e4",
+          "accountBackgroundColor": "#e2231a",
+          "cardBackgroundColor": "#ffffff",
+          "isContentWhite": false,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "note": "TODO: remove after PF-8192",
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "AuraCard",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#dde0e4",
+              "accountBackgroundColor": "#e2231a",
+              "cardBackgroundColor": "#ffffff",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "42",
+          "steps": 0,
+          "units": "miles",
+          "title": "Мили S7",
+          "redeemSumLimit": 0,
+          "redeemDays": 0,
+          "textColor": "#99b33a",
+          "textColorAlt": "#99b33a",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#99b33a",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": false,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "S7",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#99b33a",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "43",
+          "steps": 0,
+          "units": "miles",
+          "title": "Мили S7",
+          "redeemSumLimit": 0,
+          "redeemDays": 0,
+          "textColor": "#99b33a",
+          "textColorAlt": "#99b33a",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#f6e44d",
+          "accountBackgroundColor": "#99b33a",
+          "cardBackgroundColor": "#fae133",
+          "isContentWhite": false,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": false,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "S7",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#f6e44d",
+              "accountBackgroundColor": "#99b33a",
+              "cardBackgroundColor": "#fae133",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "44",
+          "steps": 0,
+          "units": "miles",
+          "title": "Мили S7",
+          "redeemSumLimit": 0,
+          "redeemDays": 0,
+          "textColor": "#99b33a",
+          "textColorAlt": "#99b33a",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#99b33a",
+          "cardBackgroundColor": "#2a2b30",
+          "isContentWhite": true,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": false,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "S7",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#99b33a",
+              "cardBackgroundColor": "#2a2b30",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "45",
+          "steps": 0,
+          "units": "miles",
+          "title": "Мили S7",
+          "redeemSumLimit": 0,
+          "redeemDays": 0,
+          "textColor": "#99b33a",
+          "textColorAlt": "#99b33a",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#f6e44d",
+          "accountBackgroundColor": "#99b33a",
+          "cardBackgroundColor": "#fae133",
+          "isContentWhite": false,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": false,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "S7",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#f6e44d",
+              "accountBackgroundColor": "#99b33a",
+              "cardBackgroundColor": "#fae133",
+              "isContentWhite": false
+            }
+          ]
+        },
+        {
+          "programId": "47",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы ЛЕТО",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#117331",
+          "textColorAlt": "#117331",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#1c8e42",
+          "accountBackgroundColor": "#117331",
+          "cardBackgroundColor": "#2cb45e",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Leto",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#1c8e42",
+              "accountBackgroundColor": "#117331",
+              "cardBackgroundColor": "#2cb45e",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "52",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Domru",
+          "redeemSumLimit": 1000,
+          "redeemDays": 90,
+          "textColor": "#8b1c0e",
+          "textColorAlt": "#8b1c0e",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#333333",
+          "accountBackgroundColor": "#8b1c0e",
+          "cardBackgroundColor": "#ba3c2d",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Domru",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#333333",
+              "accountBackgroundColor": "#8b1c0e",
+              "cardBackgroundColor": "#ba3c2d",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "53",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Domru",
+          "redeemSumLimit": 1000,
+          "redeemDays": 90,
+          "textColor": "#8b1c0e",
+          "textColorAlt": "#8b1c0e",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#333333",
+          "accountBackgroundColor": "#8b1c0e",
+          "cardBackgroundColor": "#ba3c2d",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Domru",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#333333",
+              "accountBackgroundColor": "#8b1c0e",
+              "cardBackgroundColor": "#ba3c2d",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "54",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Avrora",
+          "redeemSumLimit": 0,
+          "redeemDays": 90,
+          "textColor": "#553b68",
+          "textColorAlt": "#553b68",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#553b68",
+          "accountBackgroundColor": "#553b68",
+          "cardBackgroundColor": "#8e6aa9",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": true,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Avrora",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#553b68",
+              "accountBackgroundColor": "#553b68",
+              "cardBackgroundColor": "#8e6aa9",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "55",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Perekrestok",
+          "redeemSumLimit": 0,
+          "redeemDays": 0,
+          "textColor": "#006323",
+          "textColorAlt": "#006323",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#006323",
+          "accountBackgroundColor": "#006323",
+          "cardBackgroundColor": "#004819",
+          "isContentWhite": true,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": false,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Perekrestok",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#006323",
+              "accountBackgroundColor": "#006323",
+              "cardBackgroundColor": "#004819",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "56",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы Perekrestok",
+          "redeemSumLimit": 0,
+          "redeemDays": 0,
+          "textColor": "#006323",
+          "textColorAlt": "#006323",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#006323",
+          "accountBackgroundColor": "#006323",
+          "cardBackgroundColor": "#004819",
+          "isContentWhite": true,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": false,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Perekrestok",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#006323",
+              "accountBackgroundColor": "#006323",
+              "cardBackgroundColor": "#004819",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "51",
+          "steps": 0,
+          "units": "points",
+          "title": "Потенциальные баллы Т-мобайл",
+          "redeemSumLimit": 0,
+          "redeemDays": 0,
+          "textColor": "#2e3359",
+          "textColorAlt": "#2e3359",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#2e3359",
+          "accountBackgroundColor": "#2e3359",
+          "cardBackgroundColor": "#2e3359",
+          "isContentWhite": true,
+          "showInMenu": false,
+          "isCoBrand": true,
+          "showBubble": false,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "T-mobile",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#2e3359",
+              "accountBackgroundColor": "#2e3359",
+              "cardBackgroundColor": "#2e3359",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "57",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы АВ",
+          "redeemDays": 0,
+          "redeemSumLimit": 0,
+          "textColor": "#556272",
+          "textColorAlt": "#556272",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#afb6c4",
+          "accountBackgroundColor": "#556272",
+          "cardBackgroundColor": "#afb6c4",
+          "isContentWhite": true,
+          "showInMenu": false,
+          "isCoBrand": false,
+          "showBubble": false,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Azbuka Vkusa",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#797979",
+              "cardBackgroundColor": "#d6d6d6",
+              "isContentWhite": true
+            },
+            {
+              "design": "b1db277230d0ca34bf5741cb15d34259",
+              "name": "Azbuka Vkusa",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#333333",
+              "cardBackgroundColor": "#212121",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "58",
+          "steps": 2,
+          "units": "points",
+          "title": "Баллы АВ",
+          "redeemDays": 0,
+          "redeemSumLimit": 0,
+          "textColor": "#556272",
+          "textColorAlt": "#556272",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#afb6c4",
+          "accountBackgroundColor": "#556272",
+          "cardBackgroundColor": "#afb6c4",
+          "isContentWhite": true,
+          "showInMenu": false,
+          "isCoBrand": false,
+          "showBubble": false,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "Azbuka Vkusa",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#797979",
+              "cardBackgroundColor": "#d6d6d6",
+              "isContentWhite": true
+            },
+            {
+              "design": "b1db277230d0ca34bf5741cb15d34259",
+              "name": "Azbuka Vkusa",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#333333",
+              "cardBackgroundColor": "#212121",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "48",
+          "steps": 0,
+          "units": "rubles",
+          "title": "Cashback",
+          "redeemDays": 0,
+          "redeemSumLimit": 0,
+          "textColor": "#333333",
+          "textColorAlt": "#333333",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#333333",
+          "cardBackgroundColor": "#212121",
+          "isContentWhite": true,
+          "showInMenu": false,
+          "isCoBrand": false,
+          "showBubble": false,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "48",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#333333",
+              "cardBackgroundColor": "#212121",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "49",
+          "steps": 2,
+          "units": "miles",
+          "title": "Мили ALL Airlines",
+          "redeemDays": 90,
+          "redeemSumLimit": 2000,
+          "textColor": "#333333",
+          "textColorAlt": "#333333",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#333333",
+          "cardBackgroundColor": "#212121",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": false,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "49",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#333333",
+              "cardBackgroundColor": "#212121",
+              "isContentWhite": true
+            }
+          ]
+        },
+        {
+          "programId": "50",
+          "steps": 2,
+          "units": "miles",
+          "title": "Мили ALL Airlines",
+          "redeemDays": 90,
+          "redeemSumLimit": 2000,
+          "textColor": "#333333",
+          "textColorAlt": "#333333",
+          "backgroundColorAlt": "#ffffff",
+          "receiptBackgroundColor": "#292a30",
+          "accountBackgroundColor": "#333333",
+          "cardBackgroundColor": "#212121",
+          "isContentWhite": true,
+          "showInMenu": true,
+          "isCoBrand": false,
+          "showBubble": true,
+          "additionalCard": true,
+          "cardDesign": [
+            {
+              "design": "default",
+              "name": "50",
+              "backgroundColorAlt": "#ffffff",
+              "receiptBackgroundColor": "#292a30",
+              "accountBackgroundColor": "#333333",
+              "cardBackgroundColor": "#212121",
+              "isContentWhite": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub_optional__family_list_profile_view" android:background="?android:selectableItemBackground" android:padding="?contentInset" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.profiles.view.BadgeView android:id="@id/ub__family_profile_item_badge" android:layout_width="?avatarSmall" android:layout_height="?avatarSmall" android:contentDescription="@string/family" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__family_profile_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News.Primary" />
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__family_profile_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

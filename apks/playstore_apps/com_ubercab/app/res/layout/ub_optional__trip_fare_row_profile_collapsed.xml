@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.trip_details.optional.fare.row.profiles.ProfileTripFareCollapsedRowView android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__profile_row_collapsed_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__profile_row_collapsed_bullet" android:paddingLeft="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_1x" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bullet" android:paddingStart="@dimen/ui__spacing_unit_1x" android:paddingEnd="@dimen/ui__spacing_unit_1x" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__profile_row_collapsed_payment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+</com.ubercab.presidio.trip_details.optional.fare.row.profiles.ProfileTripFareCollapsedRowView>

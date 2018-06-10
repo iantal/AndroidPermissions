@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:id="@id/section_warning" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingTop="@dimen/screen_content_padding_half" n1:paddingRight="@dimen/screen_content_padding" n1:paddingBottom="@dimen/screen_content_padding_half" n1:visibility="gone" style="@style/VerticalWrapping" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/content_container" style="@style/VerticalWrapping">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/foreign_currencies_view" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:id="@id/select_currency_title" n1:text="@string/ter_title" style="@style/SubtitleTextItem" />
+            <include layout="@layout/inc_divider" />
+            <RadioGroup n1:orientation="horizontal" n1:id="@id/foreign_currencies_radio_group" n1:layout_height="@dimen/tile_height_default_item" style="@style/VerticalWrapping">
+                <android.support.v7.widget.AppCompatRadioButton n1:id="@id/foreign_currency_rub_button" n1:checked="true" n1:text="@string/currency_title_rub" style="@style/CloseDepositWhen.RadioButton" />
+                <android.support.v7.widget.AppCompatRadioButton n1:id="@id/foreign_currency_usd_button" n1:text="@string/currency_title_usd" style="@style/CloseDepositWhen.RadioButton" />
+                <android.support.v7.widget.AppCompatRadioButton n1:id="@id/foreign_currency_eur_button" n1:text="@string/currency_title_eur" style="@style/CloseDepositWhen.RadioButton" />
+                <android.support.v7.widget.AppCompatRadioButton n1:id="@id/foreign_currency_gbp_button" n1:text="@string/currency_title_gbp" style="@style/CloseDepositWhen.RadioButton" />
+            </RadioGroup>
+            <include layout="@layout/inc_divider" />
+        </LinearLayout>
+        <FrameLayout n1:id="@id/money_total" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" />
+        <LinearLayout n1:gravity="center" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:minHeight="@dimen/tile_height_default_item" style="@style/ScreenContent.Padding">
+            <include layout="@layout/inc_pcf_commission" />
+        </LinearLayout>
+        <include layout="@layout/inc_pcf_pay_button" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Hint" n1:gravity="center" n1:id="@id/card_to_card_out_interval" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Hint" n1:textColorLink="@color/text_hint" n1:gravity="center" n1:id="@id/disclaimer_from_provider" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Hint" n1:textColorLink="@color/text_hint" n1:gravity="center" n1:id="@id/disclaimer_local" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Hint" n1:id="@id/txt_transfer_currency_disclaimer" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" n1:text="@string/transfer_currency_disclaimer" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.CardTopView n1:id="@id/payment_card_top" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" />
+    <android.support.v7.widget.RecyclerView n1:id="@id/payment_section_carousel" n1:layout_below="@id/payment_card_top" n2:layoutManager="android.support.v7.widget.LinearLayoutManager" style="@style/PayHub.TilesRecycler" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:id="@id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" n1:layout_centerInParent="true" />
+</RelativeLayout>

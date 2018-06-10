@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mobile.ui.registration.common.view.RegistrationScrollView n1:id="@id/registrationCreateMiScrollView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:paddingLeft="@dimen/fragment_content_padding" n1:paddingTop="@dimen/registration_personal_details_vertical_spacing" n1:paddingRight="@dimen/fragment_content_padding" n1:paddingBottom="@dimen/fragment_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.mobile.ui.registration.common.view.RegistrationProgressView n1:id="@id/registrationCreateMiProgressView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/registration_personal_details_vertical_spacing" n2:currentPage="createMiPage" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.mobile.ui.common.view.HeadingTextView n1:textAppearance="@style/TextAppearance.Headline" n1:id="@id/createMiTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/registration_title_margin_bottom" n1:text="@string/registration_create_mi_title" />
+        <TextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/createMiSubTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/registration_personal_details_vertical_spacing" n1:text="@string/registration_create_mi_subtitle" />
+        <TextView n1:textAppearance="@style/TextAppearance.InputLabel" n1:id="@id/createMiFieldLabel" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/input_field_label_margin" n1:text="@string/registration_create_mi_field_label" />
+        <com.mobile.ui.common.view.ActionInputField n1:id="@id/createMiInputField" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLength="@integer/registration_mi_max_length" n1:contentDescription="@string/accessibility_registration_create_mi_content_description" style="@style/Widget.InputField" />
+        <com.mobile.ui.common.view.InputFieldTipView n1:id="@id/createMiTipView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:lineSpacingExtra="@dimen/registration_tip_view_line_spacing_extra" style="@style/Widget.InputFieldTip" />
+        <com.mobile.ui.common.view.ActionInputField n1:id="@id/createMiConfirmInputField" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/input_field_label_margin" n1:hint="@string/registration_create_mi_confirm_field_hint" n1:maxLength="@integer/registration_mi_max_length" style="@style/Widget.InputField" />
+        <com.mobile.ui.common.view.InputFieldTipView n1:id="@id/createMiConfirmTipView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/Widget.InputFieldTip" />
+        <FrameLayout n1:gravity="bottom" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="@dimen/registration_field_vertical_spacing">
+            <include n1:layout_gravity="bottom" n1:layout_width="fill_parent" n1:layout_height="wrap_content" layout="@layout/layout_common_footer_buttons" />
+        </FrameLayout>
+    </LinearLayout>
+</com.mobile.ui.registration.common.view.RegistrationScrollView>

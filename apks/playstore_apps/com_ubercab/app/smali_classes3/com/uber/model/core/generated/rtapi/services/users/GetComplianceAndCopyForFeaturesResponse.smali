@@ -1,0 +1,492 @@
+.class public Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lcom/uber/model/core/adapter/gson/GsonSerializable;
+    value = Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse_GsonTypeAdapter;
+.end annotation
+
+.annotation runtime Lhfw;
+    a = Lcom/uber/model/core/generated/rtapi/services/users/UsersRaveValidationFactory;
+.end annotation
+
+
+# instance fields
+.field private volatile transient $hashCode:I
+
+.field private volatile transient $hashCodeMemoized:Z
+
+.field private volatile transient $toString:Ljava/lang/String;
+
+.field private final localeCopies:Lcom/ubercab/common/collect/ImmutableMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/ubercab/common/collect/ImmutableMap<",
+            "Lcom/uber/model/core/generated/rtapi/services/users/FeatureUuid;",
+            "Lcom/uber/model/core/generated/rtapi/services/users/LocaleCopy;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final userConsents:Lcom/ubercab/common/collect/ImmutableMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/ubercab/common/collect/ImmutableMap<",
+            "Lcom/uber/model/core/generated/rtapi/services/users/FeatureUuid;",
+            "Lcom/uber/model/core/generated/rtapi/services/users/UserConsent;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>(Lcom/ubercab/common/collect/ImmutableMap;Lcom/ubercab/common/collect/ImmutableMap;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/ubercab/common/collect/ImmutableMap<",
+            "Lcom/uber/model/core/generated/rtapi/services/users/FeatureUuid;",
+            "Lcom/uber/model/core/generated/rtapi/services/users/UserConsent;",
+            ">;",
+            "Lcom/ubercab/common/collect/ImmutableMap<",
+            "Lcom/uber/model/core/generated/rtapi/services/users/FeatureUuid;",
+            "Lcom/uber/model/core/generated/rtapi/services/users/LocaleCopy;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 43
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 44
+    iput-object p1, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->userConsents:Lcom/ubercab/common/collect/ImmutableMap;
+
+    .line 45
+    iput-object p2, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->localeCopies:Lcom/ubercab/common/collect/ImmutableMap;
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/ubercab/common/collect/ImmutableMap;Lcom/ubercab/common/collect/ImmutableMap;Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse$1;)V
+    .locals 0
+
+    .line 30
+    invoke-direct {p0, p1, p2}, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;-><init>(Lcom/ubercab/common/collect/ImmutableMap;Lcom/ubercab/common/collect/ImmutableMap;)V
+
+    return-void
+.end method
+
+.method public static builder()Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse$Builder;
+    .locals 2
+
+    .line 49
+    new-instance v0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse$Builder;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse$Builder;-><init>(Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse$1;)V
+
+    return-object v0
+.end method
+
+.method public static builderWithDefaults()Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse$Builder;
+    .locals 1
+
+    .line 74
+    invoke-static {}, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->builder()Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static stub()Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;
+    .locals 1
+
+    .line 79
+    invoke-static {}, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->builderWithDefaults()Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse$Builder;->build()Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final collectionElementTypesAreValid()Z
+    .locals 3
+
+    .line 142
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->userConsents()Lcom/ubercab/common/collect/ImmutableMap;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
+
+    .line 143
+    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
+
+    move-result v2
+
+    if-nez v2, :cond_1
+
+    .line 144
+    invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
+
+    move-result-object v2
+
+    .line 145
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    instance-of v2, v2, Lcom/uber/model/core/generated/rtapi/services/users/FeatureUuid;
+
+    if-nez v2, :cond_0
+
+    return v1
+
+    .line 148
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
+
+    move-result-object v0
+
+    .line 149
+    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    instance-of v0, v0, Lcom/uber/model/core/generated/rtapi/services/users/UserConsent;
+
+    if-nez v0, :cond_1
+
+    return v1
+
+    .line 153
+    :cond_1
+    invoke-virtual {p0}, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->localeCopies()Lcom/ubercab/common/collect/ImmutableMap;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    .line 154
+    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
+
+    move-result v2
+
+    if-nez v2, :cond_3
+
+    .line 155
+    invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
+
+    move-result-object v2
+
+    .line 156
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    instance-of v2, v2, Lcom/uber/model/core/generated/rtapi/services/users/FeatureUuid;
+
+    if-nez v2, :cond_2
+
+    return v1
+
+    .line 159
+    :cond_2
+    invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
+
+    move-result-object v0
+
+    .line 160
+    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    instance-of v0, v0, Lcom/uber/model/core/generated/rtapi/services/users/LocaleCopy;
+
+    if-nez v0, :cond_3
+
+    return v1
+
+    :cond_3
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x0
+
+    if-nez p1, :cond_0
+
+    return v0
+
+    :cond_0
+    const/4 v1, 0x1
+
+    if-ne p1, p0, :cond_1
+
+    return v1
+
+    .line 90
+    :cond_1
+    instance-of v2, p1, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;
+
+    if-eqz v2, :cond_5
+
+    .line 91
+    check-cast p1, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;
+
+    .line 92
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->userConsents:Lcom/ubercab/common/collect/ImmutableMap;
+
+    if-nez v2, :cond_2
+
+    iget-object v2, p1, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->userConsents:Lcom/ubercab/common/collect/ImmutableMap;
+
+    if-nez v2, :cond_4
+
+    goto :goto_0
+
+    :cond_2
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->userConsents:Lcom/ubercab/common/collect/ImmutableMap;
+
+    iget-object v3, p1, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->userConsents:Lcom/ubercab/common/collect/ImmutableMap;
+
+    .line 94
+    invoke-virtual {v2, v3}, Lcom/ubercab/common/collect/ImmutableMap;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    :goto_0
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->localeCopies:Lcom/ubercab/common/collect/ImmutableMap;
+
+    if-nez v2, :cond_3
+
+    iget-object p1, p1, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->localeCopies:Lcom/ubercab/common/collect/ImmutableMap;
+
+    if-nez p1, :cond_4
+
+    goto :goto_1
+
+    :cond_3
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->localeCopies:Lcom/ubercab/common/collect/ImmutableMap;
+
+    iget-object p1, p1, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->localeCopies:Lcom/ubercab/common/collect/ImmutableMap;
+
+    .line 97
+    invoke-virtual {v2, p1}, Lcom/ubercab/common/collect/ImmutableMap;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_4
+
+    :goto_1
+    const/4 v0, 0x1
+
+    :cond_4
+    return v0
+
+    :cond_5
+    return v0
+.end method
+
+.method public hashCode()I
+    .locals 3
+
+    .line 119
+    iget-boolean v0, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->$hashCodeMemoized:Z
+
+    if-nez v0, :cond_2
+
+    .line 122
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->userConsents:Lcom/ubercab/common/collect/ImmutableMap;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->userConsents:Lcom/ubercab/common/collect/ImmutableMap;
+
+    invoke-virtual {v0}, Lcom/ubercab/common/collect/ImmutableMap;->hashCode()I
+
+    move-result v0
+
+    :goto_0
+    const v2, 0xf4243
+
+    xor-int/2addr v0, v2
+
+    mul-int v0, v0, v2
+
+    .line 124
+    iget-object v2, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->localeCopies:Lcom/ubercab/common/collect/ImmutableMap;
+
+    if-nez v2, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    iget-object v1, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->localeCopies:Lcom/ubercab/common/collect/ImmutableMap;
+
+    invoke-virtual {v1}, Lcom/ubercab/common/collect/ImmutableMap;->hashCode()I
+
+    move-result v1
+
+    :goto_1
+    xor-int/2addr v0, v1
+
+    .line 125
+    iput v0, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->$hashCode:I
+
+    const/4 v0, 0x1
+
+    .line 126
+    iput-boolean v0, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->$hashCodeMemoized:Z
+
+    .line 128
+    :cond_2
+    iget v0, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->$hashCode:I
+
+    return v0
+.end method
+
+.method public localeCopies()Lcom/ubercab/common/collect/ImmutableMap;
+    .locals 1
+    .annotation build Lcom/uber/model/core/annotation/Property;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/ubercab/common/collect/ImmutableMap<",
+            "Lcom/uber/model/core/generated/rtapi/services/users/FeatureUuid;",
+            "Lcom/uber/model/core/generated/rtapi/services/users/LocaleCopy;",
+            ">;"
+        }
+    .end annotation
+
+    .line 63
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->localeCopies:Lcom/ubercab/common/collect/ImmutableMap;
+
+    return-object v0
+.end method
+
+.method public toBuilder()Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse$Builder;
+    .locals 2
+
+    .line 69
+    new-instance v0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse$Builder;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse$Builder;-><init>(Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse$1;)V
+
+    return-object v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    .line 104
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->$toString:Ljava/lang/String;
+
+    if-nez v0, :cond_0
+
+    .line 105
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "GetComplianceAndCopyForFeaturesResponse{userConsents="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->userConsents:Lcom/ubercab/common/collect/ImmutableMap;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", localeCopies="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->localeCopies:Lcom/ubercab/common/collect/ImmutableMap;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, "}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->$toString:Ljava/lang/String;
+
+    .line 114
+    :cond_0
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->$toString:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public userConsents()Lcom/ubercab/common/collect/ImmutableMap;
+    .locals 1
+    .annotation build Lcom/uber/model/core/annotation/Property;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/ubercab/common/collect/ImmutableMap<",
+            "Lcom/uber/model/core/generated/rtapi/services/users/FeatureUuid;",
+            "Lcom/uber/model/core/generated/rtapi/services/users/UserConsent;",
+            ">;"
+        }
+    .end annotation
+
+    .line 56
+    iget-object v0, p0, Lcom/uber/model/core/generated/rtapi/services/users/GetComplianceAndCopyForFeaturesResponse;->userConsents:Lcom/ubercab/common/collect/ImmutableMap;
+
+    return-object v0
+.end method

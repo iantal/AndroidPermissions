@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.home.map_layer.annotations.scheduled_rides.ScheduledRidesHomeAnnotationView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UImageView android:id="@id/ub__icon" android:layout_width="@dimen/ui__avatar_size_micro" android:layout_height="@dimen/ui__avatar_size_micro" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ui__spacing_unit_1x">
+            <com.ubercab.ui.core.UTextView android:id="@id/scheduled_rides_home_annotation_destination" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/scheduled_rides_home_annotation_time" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/scheduled_rides_home_annotation_vehicle_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.request.home.map_layer.annotations.scheduled_rides.ScheduledRidesHomeAnnotationView>

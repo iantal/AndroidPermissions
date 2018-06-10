@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:padding="@dimen/personal_details_screen_medium_spacing" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/personalDetailsEditPhoneConfirmButton">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:id="@id/personalDetailsEditPhoneScreenDescription" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/personal_details_change_phone_numbers_description" style="@style/TextAppearance.Body" />
+            <TextView n1:id="@id/personalDetailsP2pWarningMessage" n1:padding="@dimen/personal_details_screen_medium_spacing" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/personal_details_screen_medium_spacing" n1:text="@string/personal_details_change_phone_numbers_paym_message" style="@style/TextAppearance.Information" />
+            <ViewStub n1:id="@id/personalDetailsMobileViewStub" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/personal_details_screen_medium_spacing" />
+            <com.mobile.ui.common.view.InputField n1:id="@id/personalDetailsEditMobileNumberField" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/personal_details_screen_small_spacing" n1:hint="@string/personal_details_add_phone_number_hint_text" style="@style/EditPhoneNumber.PhoneInputField" />
+            <ViewStub n1:id="@id/personalDetailsHomeViewStub" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/personal_details_screen_medium_spacing" />
+            <com.mobile.ui.common.view.InputField n1:id="@id/personalDetailsEditHomeNumberField" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/personal_details_screen_small_spacing" n1:hint="@string/personal_details_add_phone_number_hint_text" style="@style/EditPhoneNumber.PhoneInputField" />
+            <ViewStub n1:id="@id/personalDetailsWorkViewStub" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/personal_details_screen_medium_spacing" />
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/personal_details_screen_small_spacing">
+                <com.mobile.ui.common.view.InputField n1:id="@id/personalDetailsEditWorkNumberField" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/personal_details_screen_small_spacing" n1:hint="@string/personal_details_add_phone_number_hint_text" n1:layout_weight="1.0" style="@style/EditPhoneNumber.PhoneInputField" />
+                <com.mobile.ui.common.view.InputField n1:id="@id/personalDetailsEditWorkNumberExtensionField" n1:layout_width="70.0dip" n1:layout_height="wrap_content" n1:hint="@string/personal_details_work_number_extension_hint_text" style="@style/EditPhoneNumber.ExtensionInputField" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button n1:enabled="false" n1:id="@id/personalDetailsEditPhoneConfirmButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/personal_details_screen_medium_spacing" n1:text="@string/personal_details_edit_phone_confirm_button_text" n1:layout_alignParentBottom="true" style="@style/Widget.Button.Primary" />
+</RelativeLayout>

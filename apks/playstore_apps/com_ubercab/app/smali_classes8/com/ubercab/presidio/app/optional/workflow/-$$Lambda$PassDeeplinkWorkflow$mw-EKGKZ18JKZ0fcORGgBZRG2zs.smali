@@ -1,0 +1,50 @@
+.class public final synthetic Lcom/ubercab/presidio/app/optional/workflow/-$$Lambda$PassDeeplinkWorkflow$mw-EKGKZ18JKZ0fcORGgBZRG2zs;
+.super Ljava/lang/Object;
+.source "lambda"
+
+# interfaces
+.implements Lhgy;
+
+
+# instance fields
+.field private final synthetic f$0:Lcom/ubercab/presidio/app/optional/workflow/PassDeeplinkWorkflow;
+
+.field private final synthetic f$1:Lpru;
+
+.field private final synthetic f$2:Lcom/ubercab/presidio/app/optional/workflow/PassDeeplinkWorkflow$PassDeepLink;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/ubercab/presidio/app/optional/workflow/PassDeeplinkWorkflow;Lpru;Lcom/ubercab/presidio/app/optional/workflow/PassDeeplinkWorkflow$PassDeepLink;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/ubercab/presidio/app/optional/workflow/-$$Lambda$PassDeeplinkWorkflow$mw-EKGKZ18JKZ0fcORGgBZRG2zs;->f$0:Lcom/ubercab/presidio/app/optional/workflow/PassDeeplinkWorkflow;
+
+    iput-object p2, p0, Lcom/ubercab/presidio/app/optional/workflow/-$$Lambda$PassDeeplinkWorkflow$mw-EKGKZ18JKZ0fcORGgBZRG2zs;->f$1:Lpru;
+
+    iput-object p3, p0, Lcom/ubercab/presidio/app/optional/workflow/-$$Lambda$PassDeeplinkWorkflow$mw-EKGKZ18JKZ0fcORGgBZRG2zs;->f$2:Lcom/ubercab/presidio/app/optional/workflow/PassDeeplinkWorkflow$PassDeepLink;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;)Lhja;
+    .locals 3
+
+    iget-object v0, p0, Lcom/ubercab/presidio/app/optional/workflow/-$$Lambda$PassDeeplinkWorkflow$mw-EKGKZ18JKZ0fcORGgBZRG2zs;->f$0:Lcom/ubercab/presidio/app/optional/workflow/PassDeeplinkWorkflow;
+
+    iget-object v1, p0, Lcom/ubercab/presidio/app/optional/workflow/-$$Lambda$PassDeeplinkWorkflow$mw-EKGKZ18JKZ0fcORGgBZRG2zs;->f$1:Lpru;
+
+    iget-object v2, p0, Lcom/ubercab/presidio/app/optional/workflow/-$$Lambda$PassDeeplinkWorkflow$mw-EKGKZ18JKZ0fcORGgBZRG2zs;->f$2:Lcom/ubercab/presidio/app/optional/workflow/PassDeeplinkWorkflow$PassDeepLink;
+
+    check-cast p1, Lhha;
+
+    invoke-static {v0, v1, v2, p1}, Lcom/ubercab/presidio/app/optional/workflow/PassDeeplinkWorkflow;->lambda$mw-EKGKZ18JKZ0fcORGgBZRG2zs(Lcom/ubercab/presidio/app/optional/workflow/PassDeeplinkWorkflow;Lpru;Lcom/ubercab/presidio/app/optional/workflow/PassDeeplinkWorkflow$PassDeepLink;Lhha;)Lhja;
+
+    move-result-object p1
+
+    return-object p1
+.end method

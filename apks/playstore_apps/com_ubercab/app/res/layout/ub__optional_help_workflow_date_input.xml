@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News.Secondary" android:id="@id/help_workflow_date_input_label" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_space_1x" android:showDividers="middle">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/help_workflow_date_input_date_picker" android:background="?android:editTextBackground" android:paddingBottom="@dimen/ui__text_size_medium" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ubercab.ui.core.UTextView android:id="@id/help_workflow_date_input_date_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H3.News" />
+            <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?android:textColorTertiary" android:paddingStart="@dimen/ui__spacing_unit_1x" android:paddingEnd="0.0dip" app:srcCompat="@drawable/ic_dropdown_arrow" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/help_workflow_date_input_time_of_day_picker" android:background="?android:editTextBackground" android:paddingBottom="@dimen/ui__text_size_medium" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ubercab.ui.core.UTextView android:id="@id/help_workflow_date_input_time_of_day_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H3.News" />
+            <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?android:textColorTertiary" android:paddingStart="@dimen/ui__spacing_unit_1x" android:paddingEnd="0.0dip" app:srcCompat="@drawable/ic_dropdown_arrow" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News" android:textColor="?textColorError" android:id="@id/help_workflow_date_input_error" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

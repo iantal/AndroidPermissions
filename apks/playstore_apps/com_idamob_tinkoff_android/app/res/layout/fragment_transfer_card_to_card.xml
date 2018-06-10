@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:background="@color/bg_dark" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/container" n1:background="@color/white" n1:focusable="true" n1:focusableInTouchMode="true" style="@style/MatchParent">
+        <LinearLayout n1:orientation="vertical" n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <android.support.design.widget.TabLayout n1:id="@id/from_card_tablayout" n1:background="@drawable/tablayout_ctc_dark_background" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" />
+            <fragment n1:id="@id/src_card_scan_fragment" n1:layout_width="fill_parent" n1:layout_height="wrap_content" class="ru.tcsbank.mb.ui.fragments.CardScanFragment" />
+            <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/from_card" style="@style/AccountsCarouselPager" />
+            <ru.tcsbank.mb.ui.widgets.ConfirmCardSecurityCodeView n1:id="@id/confirm_security_code" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/from_carousel_arrow" n1:layout_marginBottom="@dimen/screen_content_padding_plus" n1:src="@drawable/gray_arrow" style="@style/WrapContent" />
+        <include layout="@layout/inc_divider" />
+        <android.support.design.widget.TabLayout n1:id="@id/to_card_tablayout" n1:background="@drawable/bottom_line" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/to_card_wrapper" n1:background="@color/main_yellow" style="@style/VerticalWrapping">
+            <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/to_card" style="@style/AccountsCarouselPager" />
+            <include layout="@layout/inc_divider" />
+        </LinearLayout>
+        <fragment n1:id="@id/dst_card_scan_fragment" n1:layout_width="fill_parent" n1:layout_height="wrap_content" class="ru.tcsbank.mb.ui.fragments.CardScanFragment" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/card_to_card_fields_container" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <fragment n1:id="@id/commission_with_rate" n1:layout_width="fill_parent" n1:layout_height="wrap_content" class="ru.tcsbank.mb.ui.fragments.pay.CommissionFragment" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:textColor="?colorAccentInverse" android:gravity="center" android:id="@id/ub__slide_textview_base" android:background="@drawable/ub__slide_to_confirm_base_text_corners" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:textAllCaps="true" uber:autoShrink="true" style="@style/Platform.TextAppearance.Subtitle.Bold" />
+    <com.ubercab.ui.core.UFrameLayout android:layout_gravity="end|center" android:id="@id/ub__slide_viewgroup_overlay" android:background="@drawable/ub__slide_to_confirm_overlay_corners" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/ui__spacing_unit_3x" />
+    <com.ubercab.ui.core.UFrameLayout android:orientation="horizontal" android:id="@id/ub__slide_container_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UTextView android:gravity="center" android:layout_gravity="center" android:id="@id/ub__slide_textview_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:textAllCaps="true" uber:autoShrink="true" style="@style/Platform.TextAppearance.Subtitle.Bold" />
+        <com.ubercab.ui.core.UImageView android:layout_gravity="end|center" android:id="@id/ub__slide_caret_right_1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/ui__spacing_unit_3x" uber:srcCompat="@drawable/ic_caret_right_16" />
+        <com.ubercab.ui.core.UImageView android:layout_gravity="end|center" android:id="@id/ub__slide_caret_right_2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" uber:srcCompat="@drawable/ic_caret_right_16" />
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__slide_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UImageView android:gravity="center" android:layout_gravity="start|center" android:id="@id/ub__slide_icon" android:background="@drawable/ub__slide_to_confirm_base_corners" android:padding="@dimen/ub__sos_slide_icon_padding" android:layout_width="@dimen/ui__spacing_unit_5x" android:layout_height="@dimen/ui__spacing_unit_5x" android:scaleType="centerInside" android:tint="?colorAccentInverse" android:layout_marginStart="@dimen/ui__spacing_unit_1x" android:backgroundTint="?colorNegative" uber:srcCompat="@drawable/ub__ic_contact_call_24" />
+    </com.ubercab.ui.core.UFrameLayout>
+</merge>

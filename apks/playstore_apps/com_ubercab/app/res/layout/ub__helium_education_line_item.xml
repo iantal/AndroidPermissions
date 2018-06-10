@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.pool_helium.education.product_selection.HeliumEducationLineItemView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:textColor="?accentQuaternary" android:id="@id/education_line_item_button" android:background="@drawable/ub__education_details_line_item_button_background" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/education_line_item_button" style="@style/Platform.TextAppearance.H6.News" />
+</com.ubercab.presidio.pool_helium.education.product_selection.HeliumEducationLineItemView>

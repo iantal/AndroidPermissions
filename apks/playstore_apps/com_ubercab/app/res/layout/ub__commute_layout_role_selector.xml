@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.scheduled_commute.role.CommuteRoleSelectorTabView android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="b4f27b2e-9739"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UViewPager android:id="@id/ub__commute_role_selector_view_pager" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UTabLayout android:layout_gravity="top" android:id="@id/ub__commute_role_selector_tab" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" uber:tabMode="fixed" style="@style/Platform.TabLayout" />
+    </com.ubercab.ui.core.UViewPager>
+</com.ubercab.presidio.scheduled_commute.role.CommuteRoleSelectorTabView>

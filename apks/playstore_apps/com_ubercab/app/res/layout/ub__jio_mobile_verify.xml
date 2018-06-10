@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.jio.operation.mobileverify.JioMobileVerifyView android:orientation="vertical" android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="@string/ub__jio_mobile_verify_impression_analytics_key"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__mobile_verify_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:text="@string/ub__payment_jio_mobile_verify_description" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+            <com.ubercab.ui.commons.widget.OTPInput android:layout_gravity="start" android:id="@id/ub__mobile_verify_otp_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" uber:otp_count="@integer/ub__jio_otp_length" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__mobile_verify_error_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/ub__payment_jio_mobile_verify_error_text" style="@style/Platform.TextAppearance.H5.News.Link" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__mobile_verify_resend_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/ub__payment_jio_mobile_verify_send_code_again" uber:analyticsId="@string/ub__jio_mobile_verify_resend_code_button_analytics_key" style="@style/Platform.TextAppearance.H5.News.Link" />
+            <com.ubercab.ui.core.UTextView android:enabled="false" android:id="@id/ub__jio_mobile_verify_resend_code_disabled" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/ub__payment_jio_mobile_verify_send_code_again_disabled" style="@style/Platform.TextAppearance.H5.News.Tertiary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.presidio.payment.jio.operation.mobileverify.JioMobileVerifyView>

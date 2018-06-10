@@ -1,0 +1,142 @@
+.class public final Lpnw;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lawxs;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lawxs<",
+        "Lpfg;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Laxga;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Laxga<",
+            "Lpoa;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Laxga;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laxga<",
+            "Lpoa;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 16
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 17
+    iput-object p1, p0, Lpnw;->a:Laxga;
+
+    return-void
+.end method
+
+.method public static a(Laxga;)Lpfg;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laxga<",
+            "Lpoa;",
+            ">;)",
+            "Lpfg;"
+        }
+    .end annotation
+
+    .line 26
+    invoke-interface {p0}, Laxga;->get()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lpoa;
+
+    invoke-static {p0}, Lpnw;->a(Lpoa;)Lpfg;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static a(Lpoa;)Lpfg;
+    .locals 1
+
+    .line 34
+    invoke-static {p0}, Lpnu;->a(Lpoa;)Lpfg;
+
+    move-result-object p0
+
+    const-string v0, "Cannot return null from a non-@Nullable @Provides method"
+
+    invoke-static {p0, v0}, Lawxv;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lpfg;
+
+    return-object p0
+.end method
+
+.method public static b(Laxga;)Lpnw;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laxga<",
+            "Lpoa;",
+            ">;)",
+            "Lpnw;"
+        }
+    .end annotation
+
+    .line 30
+    new-instance v0, Lpnw;
+
+    invoke-direct {v0, p0}, Lpnw;-><init>(Laxga;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public a()Lpfg;
+    .locals 1
+
+    .line 22
+    iget-object v0, p0, Lpnw;->a:Laxga;
+
+    invoke-static {v0}, Lpnw;->a(Laxga;)Lpfg;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 9
+    invoke-virtual {p0}, Lpnw;->a()Lpfg;
+
+    move-result-object v0
+
+    return-object v0
+.end method

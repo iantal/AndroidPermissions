@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:background="@drawable/selector_item_bg" style="@style/MediumItem"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:gravity="center_vertical" n1:id="@id/logo" n1:scaleType="center" style="@style/ImageItem.Margin" />
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:ellipsize="end" n1:gravity="center_vertical" n1:id="@id/name" n1:layout_width="wrap_content" n1:layout_height="@dimen/tile_height_medium_item" n1:layout_marginRight="@dimen/offset_from_edge" n1:maxLines="1" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@android:id/content" style="@style/MatchParent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:id="@id/amount_hint" n1:paddingLeft="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:layout_marginTop="@dimen/screen_content_padding_half" n1:text="@string/overdraft_amount_hint" />
+    <android.support.v7.widget.RecyclerView n1:id="@id/levels" style="@style/VerticalWrapping" />
+    <Button n1:id="@id/send_request" n1:layout_marginTop="@dimen/screen_content_padding_half" n1:text="@string/overdraft_button_enable" style="@style/Button.Yellow.Normal" />
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Hint" n1:textColorLink="@color/text_hint" n1:gravity="center_horizontal" n1:id="@id/agreement_label" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_marginTop="@dimen/screen_content_padding" style="@style/VerticalWrapping" />
+</LinearLayout>

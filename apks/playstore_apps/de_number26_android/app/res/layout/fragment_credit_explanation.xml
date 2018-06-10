@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/creditScreenPaddingTopBottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/creditExplanationIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/creditExplanationViewMargin" />
+        <TextView android:id="@id/creditExplanationTitle" android:visibility="gone" android:layout_marginBottom="@dimen/creditExplanationViewMargin" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditTitle" />
+        <TextView android:id="@id/creditExplanationSubtitle" android:visibility="gone" android:layout_marginBottom="@dimen/creditExplanationViewMargin" style="@style/creditDescription" />
+        <TextView android:id="@id/creditExplanationText" android:background="@drawable/credit_mint_bg" android:padding="@dimen/creditExplanationTextPadding" android:visibility="gone" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditExplanationSectionText" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:layout_gravity="bottom" android:id="@id/creditExplanationOk" android:layout_marginTop="16.0dip" android:layout_marginBottom="@dimen/creditScreenPaddingTopBottom" android:text="@string/credit_kyc_education_ok" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditAccentButton" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

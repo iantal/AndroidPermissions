@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_pressed="true"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <layer-list>
+            <item n1:drawable="@color/account_list_action_dark" />
+            <item n1:drawable="@color/black_5" />
+        </layer-list>
+    </item>
+    <item n2:drawable="@color/account_list_action_dark"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+</selector>

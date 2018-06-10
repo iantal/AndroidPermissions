@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ub__partner_funnel_viewgroup_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_documents_header" android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" style="@style/Funnel.Helix.TextAppearance.H2.Book" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_step_description_textview" android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" style="@style/Funnel.Helix.TextAppearance.P" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ub__partner_funnel_step_document_subtitles_group" android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/ub__partner_funnel_doc_imageview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_7x" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginRight="@dimen/ui__spacing_unit_7x" android:scaleType="centerCrop" android:adjustViewBounds="true" app:srcCompat="@drawable/ub__partner_funnel_helix_step_fallback" />
+        <include layout="@layout/ub__partner_funnel_helix_doc_tap_icon" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_bullet_title" android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" style="@style/Funnel.Helix.TextAppearance.P" />
+        <com.ubercab.android.partner.funnel.onboarding.view.MultiLineBodyLayout android:id="@id/ub__partner_funnel_bullet_body" android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

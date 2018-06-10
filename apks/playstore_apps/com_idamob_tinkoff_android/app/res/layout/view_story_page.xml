@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.stories.widget.FrameLayoutOverlappingRender n1:id="@id/story_page_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:layout_gravity="center" n1:id="@id/story_page_loading_progress" n1:layout_width="70.0dip" n1:layout_height="70.0dip" n2:sp_progress_color="@color/white" n2:sp_progress_width="4.0dip" n2:sp_shape="circle" style="@style/SmoothProgress" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <ImageButton n1:layout_gravity="center" n1:id="@id/story_page_retry_button" n1:background="?selectableItemBackgroundBorderless" n1:visibility="invisible" n1:layout_width="80.0dip" n1:layout_height="80.0dip" n1:src="@drawable/ic_reload" />
+        <ru.tcsbank.mb.ui.stories.widget.background.FrameLayoutWithCustomBackground n1:id="@id/story_page_content" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <ru.tcsbank.mb.ui.stories.widget.StoryProgressView n1:id="@id/story_page_progress" n1:layout_width="fill_parent" n1:layout_height="2.0dip" n1:layout_marginLeft="@dimen/offset_from_edge_half" n1:layout_marginTop="9.0dip" n1:layout_marginRight="@dimen/offset_from_edge_half" />
+        <ImageButton n1:id="@id/story_page_close_button" n1:background="?selectableItemBackground" n1:layout_width="56.0dip" n1:layout_height="72.0dip" n1:layout_marginLeft="0.0dip" n1:layout_marginTop="0.0dip" n1:src="@drawable/ic_close_white" />
+    </ru.tcsbank.mb.ui.stories.widget.FrameLayoutOverlappingRender>
+</FrameLayout>

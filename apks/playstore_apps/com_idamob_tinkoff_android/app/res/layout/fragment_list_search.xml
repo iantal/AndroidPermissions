@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:background="@color/white" style="@style/ScreenContent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.StickySwipeRefreshLayout n1:orientation="vertical" n1:id="@id/swipe_refresh_container" style="@style/MatchParent">
+        <android.support.v7.widget.RecyclerView n1:id="@id/list" n1:clipToPadding="false" n1:headerDividersEnabled="false" n1:footerDividersEnabled="false" style="@style/ScreenContent.Padding" />
+    </ru.tcsbank.mb.ui.widgets.StickySwipeRefreshLayout>
+    <include layout="@layout/inc_no_search_items" />
+    <TextView n1:textAppearance="@style/Text.Small.Hint" n1:gravity="center" n1:id="@android:id/empty" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</FrameLayout>

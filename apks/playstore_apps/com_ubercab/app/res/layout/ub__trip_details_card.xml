@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.core.root.main.ride.trip.trip_home.trip_details.TripDetailsCardView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardCornerRadius="@dimen/ui__corner_radius" card_view:contentPadding="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__peeking_rows_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:showDividers="middle" />
+        <ViewStub android:id="@id/ub__container_divider_stub" android:layout="@layout/ub__horizontal_divider" android:inflatedId="@id/ub__container_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__preferred_non_peeking_rows_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:showDividers="middle" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.core.root.main.ride.trip.trip_home.trip_details.TripDetailsCardView>

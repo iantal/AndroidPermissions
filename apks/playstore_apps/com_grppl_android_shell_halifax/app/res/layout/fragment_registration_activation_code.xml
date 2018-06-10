@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true">
+        <LinearLayout n1:orientation="vertical" n1:paddingRight="@dimen/fragment_content_padding" n1:paddingBottom="@dimen/fragment_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:paddingStart="@dimen/fragment_content_padding">
+            <com.mobile.ui.common.view.HeadingTextView n1:id="@id/registrationActivationCodeTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/registration_activation_code_margin_top" n1:text="@string/message_mg_2094" style="@style/TextAppearance.Headline" />
+            <TextView n1:id="@id/registrationActivationCodeSubTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/fragment_content_padding" n1:text="@string/registration_activation_code_subtitle" style="@style/TextAppearance.Body" />
+            <TextView n1:id="@id/registrationActivationCodeFieldLabel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/registration_activation_code_margin_top" n1:text="@string/registration_activation_code_field_label" style="@style/TextAppearance.InputLabel" />
+            <com.mobile.ui.common.view.InputField n1:id="@id/registrationActivationCodeInputField" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/registration_activation_code_action_margin_top" n1:digits="@string/digits_alphanumeric" style="@style/Widget.InputField" />
+            <View n1:layout_width="wrap_content" n1:layout_height="0.0dip" n1:layout_weight="1.0" />
+            <Button n1:enabled="false" n1:id="@id/registrationActivationCodeContinueButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/registration_activation_code_action_margin_top" n1:text="@string/registration_activation_code_primary_action_title" style="@style/Widget.Button.Primary" />
+            <Button n1:id="@id/registrationActivationCodeResendButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/registration_activation_code_action_margin_top" n1:text="@string/registration_activation_code_secondary_action_title" style="@style/Widget.Button.Secondary" />
+        </LinearLayout>
+    </ScrollView>
+    <com.mobile.ui.common.view.NotificationView n1:id="@id/errorNotificationView" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</FrameLayout>

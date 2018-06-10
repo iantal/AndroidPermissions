@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:shareInterpolator="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:duration="0" android:startOffset="0" android:valueFrom="-300" android:valueTo="-300" android:propertyName="translateX" />
+    <objectAnimator android:interpolator="@android:anim/decelerate_interpolator" android:duration="240" android:startOffset="1280" android:valueFrom="-300" android:valueTo="151" android:propertyName="translateX" />
+    <objectAnimator android:interpolator="@android:anim/decelerate_interpolator" android:duration="400" android:startOffset="1520" android:valueFrom="151" android:valueTo="273" android:propertyName="translateX" />
+</set>

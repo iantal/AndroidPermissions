@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingLeft="@dimen/core_expanded_field_padding" n1:paddingTop="@dimen/core_expanded_field_padding" n1:paddingRight="@dimen/core_expanded_field_padding" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/core_boolean_filled_title_text_size" n1:textColor="@color/core_boolean_full_title" n1:gravity="center|top" n1:layout_gravity="center_horizontal" n1:id="@id/title" n1:scrollbars="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="@dimen/core_expanded_field_padding" n1:layout_marginBottom="@dimen/core_boolean_action_buttons_margin">
+        <ImageButton n1:gravity="center" n1:id="@id/decrement_button" n1:background="@drawable/core_stepper_button" n1:layout_width="@dimen/core_stepper_button_size" n1:layout_height="@dimen/core_stepper_button_size" n1:src="@drawable/core_btn_decrement" n1:tint="@color/core_stepper_button" />
+        <LinearLayout n1:orientation="vertical" n1:layout_width="112.0dip" n1:layout_height="56.0dip">
+            <TextView n1:textSize="@dimen/core_stepper_counter_title" n1:textColor="@color/core_stepper_counter_title" n1:gravity="center" n1:id="@id/stepper_title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/core_stepper_counter" />
+            <TextView n1:textSize="@dimen/core_stepper_counter_size" n1:textColor="@color/core_stepper_counter" n1:gravity="center" n1:id="@id/stepper_value" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageButton n1:gravity="center" n1:id="@id/increment_button" n1:background="@drawable/core_stepper_button" n1:layout_width="@dimen/core_stepper_button_size" n1:layout_height="@dimen/core_stepper_button_size" n1:src="@drawable/core_btn_increment" n1:tint="@color/core_stepper_button" />
+    </LinearLayout>
+</LinearLayout>

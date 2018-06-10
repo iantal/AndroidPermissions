@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.advanced_settings.connected_services.ConnectedServicesSettingsBottomSheetView android:orientation="vertical" android:background="?brandWhite" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="655d832f-a3a8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/connected_services_bottom_sheet_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H2.Book" />
+            <com.ubercab.ui.core.UTextView android:id="@id/connected_services_bottom_sheet_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.P" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+    <com.ubercab.ui.core.ULinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UButton android:id="@id/connected_services_bottom_sheet_secondary" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" uber:analyticsId="0b3b888f-6a16" style="?platformButtonSecondary" />
+        <Space android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+        <com.ubercab.ui.core.UButton android:id="@id/connected_services_bottom_sheet_primary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" uber:analyticsId="884733fd-47a9" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.advanced_settings.connected_services.ConnectedServicesSettingsBottomSheetView>

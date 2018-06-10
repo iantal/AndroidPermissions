@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        body, html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden
+        }
+    </style>
+    <script charset="utf-8" src="https://floors-widget.api.2gis.ru/loader.js"
+            id="dg-floors-widget-loader">
+    </script>
+</head>
+<body>
+<script charset="utf-8">
+    const mapStyle = {
+        // Цвет фона
+        backgroundColor: 0xf7f5e9,
+
+        defaultIndoor: {
+            // Дефолтный цвет для indoor
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+
+        defaultOutdoor: {
+            // Дефолтный цвет для outdoor
+            color: 0xf6f2de
+        },
+
+        0: {
+            // Коридоры
+            color: 0xededed,
+            highlightColor: 0xcdcdcd
+        },
+
+        /**
+         * Цвета комнат
+         * Островки - комнаты без стен, отображаемые в виде приподнятых над полом кубиков
+         * Якорные организации — наиболее крупные и важные магазины в ТЦ
+         */
+
+        110100: {
+            // Организации (аэропорт)
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+        1100006: {
+            // Организации-островки (аэропорт)
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+
+        1100004: {
+            // Общепиты (аэропорт)
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+        1100008: {
+            // Общепиты-островки (аэропорт)
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+
+        110200: {
+            // Организации неякорные (ТЦ)
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+        1100001: {
+            // Организации якорные (ТЦ)
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+        1100005: {
+            // Организации-островки (ТЦ)
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+
+        1100003: {
+            // Общепиты неякорные (ТЦ)
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+        1100002: {
+            // Общепиты якорные (ТЦ)
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+        1100007: {
+            // Общепиты-островки (ТЦ)
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+
+        /**
+         * Цвета различных зон в торговых центрах
+         */
+
+        150100: {
+            // Фудкорты
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+        150200: {
+            // Атриумы (отверстия в полу)
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+        150400: {
+            // Катки
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+        150500: {
+            // Прочие площади (подсобки)
+            color: 0xededed,
+            highlightColor: 0xdddddd
+        },
+
+        /**
+         * Цвета различных комнат и зон в аэропортах
+         */
+
+        150600: {
+            // Зона незарегистрированных пассажиров
+            color: 0xf7f9fa,
+            highlightColor: 0xf7f9fa
+        },
+        150700: {
+            // Зона для пассажиров, прошедших регистрацию
+            color: 0xededed,
+            highlightColor: 0xededed
+        },
+        150800: {
+            // Помещения для пассажиров
+            color: 0xededed,
+            highlightColor: 0xededed
+        },
+        150900: {
+            // Административные помещения
+            color: 0xf7fafb,
+            highlightColor: 0xf7fafb
+        },
+        151000: {
+            // Стойки регистрации
+            color: 0xe6cff1,
+            highlightColor: 0xe6cff1
+        },
+        151100: {
+            // Duty-free
+            color: 0xfbf9a3,
+            highlightColor: 0xebdd83
+        },
+        151200: {
+            // Прочие площади
+            color: 0xd9dbdd,
+            highlightColor: 0xd9dbdd
+        },
+        151300: {
+            // Административные помещения аэропортов
+            color: 0xf9eaea,
+            highlightColor: 0xf9eaea
+        },
+        151400: {
+            // Багажные ленты
+            color: 0xd9dbdd,
+            highlightColor: 0xd9dbdd
+        },
+        151500: {
+            // Зоны ожидания
+            color: 0xc7ebbc,
+            highlightColor: 0xc7ebbc
+        },
+
+        /**
+         * Цвета отображения парковок
+         */
+
+        200100: {
+            // Парковки
+            color: 0xededed,
+            highlightColor: 0xededed
+        },
+        200200: {
+            // Парковки
+            color: 0xededed,
+            highlightColor: 0xededed
+        },
+        200300: {
+            // Парковки
+            color: 0xededed,
+            highlightColor: 0xededed
+        },
+        200400: {
+            // Парковки
+            color: 0xededed,
+            highlightColor: 0xededed
+        },
+        200500: {
+            // Парковки
+            color: 0xededed,
+            highlightColor: 0xededed
+        },
+        200600: {
+            // Парковки - проезжая часть
+            color: 0xe0e0de,
+            highlightColor: 0xe0e0de
+        },
+        230000: {
+            // Разделители парковок
+            color: 0xe0e0de,
+            highlightColor: 0xe0e0de
+        },
+
+        /**
+         * Цвета уличных объектов
+         */
+
+        // Кварталы
+        11001: {
+            color: 0xf7f5e9
+        },
+        11002: {
+            color: 0xeaeaea
+        },
+        11003: {
+            color: 0xdae3a8
+        },
+        11004: {
+            color: 0xf1edda
+        },
+        11005: {
+            color: 0xc3e186
+        },
+        11006: {
+            color: 0xbad67e
+        },
+        11007: {
+            color: 0xeaeaea
+        },
+        11008: {
+            color: 0xf0e6cc
+        },
+        30000: {
+            color: 0xeff9db
+        },
+        36002: {
+            color: 0xe4e6e1
+        },
+
+        // Дороги
+        26002: {
+            color: 0xf9f9f9
+        },
+        26005: {
+            color: 0xf9f9f9
+        },
+        26006: {
+            color: 0xf9f9f9
+        },
+        26007: {
+            color: 0xf9f9f9
+        },
+        26008: {
+            color: 0xf5f5be
+        },
+        26009: {
+            color: 0xffdf99
+        },
+        26010: {
+            color: 0xffdf99
+        },
+
+        // Водоёмы
+        22001: {
+            color: 0x89cdf2
+        },
+        22002: {
+            color: 0x89cdf2
+        },
+        22003: {
+            color: 0x89cdf2
+        },
+
+        // Дома
+        8001: {
+            color: 0xDEDAC8
+        },
+        8002: {
+            color: 0xEDD6A4
+        },
+        8003: {
+            color: 0xCEDBEF
+        },
+        8004: {
+            color: 0xfcfae8
+        },
+        8005: {
+            color: 0xD4D4D4
+        },
+        8006: {
+            color: 0xEDF0F2
+        },
+        8008: {
+            color: 0xFFF4D9
+        },
+        8009: {
+            color: 0xCEDBEF
+        },
+
+        // Жирное начертание для подписей терминалов в аэропортах
+        190500: {
+            fontWeight: 'bold'
+        }
+    };
+    var widget;
+
+    function reload() {
+
+        <!-- Из приложения передаем список спец.фирм (фирмы со спецпредложениями), которые нужно выделить цветом -->
+        <!-- В одной строке перечислены id, разделенные запятой -->
+        <!-- Пример: "4504128908653737,4504128908777823,70000001025566126" -->
+        var selectedFirms = FloorsInterface.getSpecialFirms().split(',');
+
+        <!-- Пробегаемся по каждой спец. фирме, и добавляем по ключу 'firm' специальный стиль -->
+        selectedFirms.forEach(function (firm) {
+            mapStyle[firm] = {
+                color: 0x7EB0FB,
+                highlightColor: 0x428BF9,
+                fontWeight: 'bold'
+            }
+        });
+
+        <!-- Производим инициализацию виджета 2GIS -->
+        widget = DG.FloorsWidget.init({
+            width: '100%',
+            height: '100%',
+            initData: {
+                complexId: FloorsInterface.getComplexId(), //
+                options: {
+                    <!--initialFirm: FloorsInterface.getInitialFirm(),-->
+                    hideSearchPanel: true,
+                    hidePhotos: true,
+                    hideRating: true,
+                    hideReviews: true,
+                    hideDiscounts: true,
+                    hideRouteToHere: true,
+                    hide2gisLinks: true,
+                    hideDashboard: true,
+                    hideCopyright: true,
+                    hideZoomControl: FloorsInterface.areControlsHidden(),
+                    hideFloorsControl: FloorsInterface.areControlsHidden(),
+                    rotatable: false,
+                    showAdPins: false,
+                    initialZoom: FloorsInterface.getInitialZoom(),
+                    initialFloor: null,
+                    minZoom: FloorsInterface.getMinZoom(),
+                    maxZoom: FloorsInterface.getMaxZoom(),
+                    style: mapStyle,
+                    resetStyle: true
+                }
+            }
+        });
+
+        var coolFirmId = '4504128908653737';
+
+        widget.on('init', function (event) {
+            var firmJson = JSON.stringify(event.firmList);
+            FloorsInterface.onInit(event.floorList, firmJson);
+        });
+
+        widget.on('error', function (event) {
+            FloorsInterface.onError(event.message);
+        });
+
+        widget.on('click', function (event) {
+            FloorsInterface.onFirmClicked(event.firmIds);
+        });
+
+        widget.on('floorswitch', function (event) {
+            FloorsInterface.onFloorChange(event.state.floor);
+        });
+
+        widget.on('zoomend', function (event) {
+            FloorsInterface.print('zoom: ' + event.state.zoom);
+        });
+
+    }
+
+    function showFirm(firmId) {
+        widget.showFirm(firmId);
+    }
+
+    function focusOnFirm(firmId) {
+        widget.focusOnFirm(firmId);
+    }
+
+    function showFloor(floor) {
+        widget.showFloor(floor);
+    }
+
+    function zoomIn() {
+        widget.zoomIn();
+    }
+
+    function zoomOut() {
+        widget.zoomOut();
+    }
+
+    function showRubric(rubricId) {
+        widget.showRubric(rubricId);
+    }
+
+    function print(text) {
+        FloorsInterface.print(text)
+    }
+
+    reload();
+
+</script>
+</body>
+</html>

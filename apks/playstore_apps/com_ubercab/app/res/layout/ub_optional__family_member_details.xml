@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.family.members.member_detail.MemberDetailsView android:layout_width="fill_parent" android:layout_height="fill_parent" app:analyticsId="60e9457a-0dce"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UScrollView android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?dividerHorizontal" android:showDividers="middle">
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.CircleImageView android:id="@id/ub__family_member_photo" android:layout_width="?avatarLarge" android:layout_height="?avatarLarge" android:scaleType="centerCrop" android:layout_marginEnd="?contentInset" />
+                <com.ubercab.ui.core.UTextView android:ellipsize="none" android:id="@id/ub__family_member_name" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:requiresFadingEdge="horizontal" style="@style/Platform.TextAppearance.H4.Medium" />
+                <com.ubercab.ui.core.UTextView android:ellipsize="none" android:id="@id/ub__family_member_status" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:requiresFadingEdge="horizontal" style="@style/Platform.TextAppearance.H5.News.Tertiary" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UTextView android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_4x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/family_member_footer" android:paddingStart="?contentInset" android:paddingEnd="?contentInset" style="@style/Platform.TextAppearance.H6.News.Tertiary"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__family_resend_invite_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.ubercab.ui.core.UTextView android:textColor="?colorNegative" android:ellipsize="none" android:id="@id/ub__family_member_remove" android:background="?brandWhite" android:padding="?contentInset" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/remove_member" android:maxLines="1" android:requiresFadingEdge="horizontal" style="@style/Platform.TextAppearance.H5.News" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.presidio.family.members.member_detail.MemberDetailsView>

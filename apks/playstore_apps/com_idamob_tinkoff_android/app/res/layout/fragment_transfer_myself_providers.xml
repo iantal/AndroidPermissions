@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingTop="@dimen/screen_content_padding_half" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/other_bank_card_container" n1:background="@drawable/selector_item_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <ImageView n1:id="@id/other_bank_card" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" n1:layout_marginLeft="@dimen/screen_content_margin" n1:scaleType="center" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/transfers_groups_provider_c2c_out" style="@style/TextView.Default" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/other_bank_account_container" n1:background="@drawable/selector_item_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <ImageView n1:id="@id/other_bank_account" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" n1:layout_marginLeft="@dimen/screen_content_margin" n1:scaleType="center" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/transfers_groups_provider_transfer_bank" style="@style/TextView.Default" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/russian_post_container" n1:background="@drawable/selector_item_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <ImageView n1:id="@id/russian_post" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" n1:layout_marginLeft="@dimen/screen_content_margin" n1:scaleType="center" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/transfers_groups_provider_transfer_post" style="@style/TextView.Default" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/contact_container" n1:background="@drawable/selector_item_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <ImageView n1:id="@id/contact" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" n1:layout_marginLeft="@dimen/screen_content_margin" n1:scaleType="center" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/transfers_groups_provider_transfer_contact" style="@style/TextView.Default" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/unistream_container" n1:background="@drawable/selector_item_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <ImageView n1:id="@id/unistream" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" n1:layout_marginLeft="@dimen/screen_content_margin" n1:scaleType="center" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/transfers_groups_provider_transfer_unistream" style="@style/TextView.Default" />
+    </LinearLayout>
+</LinearLayout>

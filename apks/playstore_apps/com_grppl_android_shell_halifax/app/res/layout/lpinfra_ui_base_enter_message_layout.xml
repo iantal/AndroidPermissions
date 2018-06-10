@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:id="@id/lpui_layout" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageSwitcher n1:layout_gravity="bottom" n1:id="@id/lpui_attach_file" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:contentDescription="@string/lp_accessibility_attachment_menu_button_collapsed" />
+    <TextView n1:id="@id/lpui_id_for_enter_text" n1:layout_width="0.0px" n1:layout_height="0.0px" n1:text="@string/lp_accessibility_chat_message" n1:labelFor="@id/lpui_enter_message_text" />
+    <include n1:layout_gravity="center" n1:id="@id/lpui_enter_message_text" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" layout="@layout/lpinfra_ui_edit_text" />
+    <com.liveperson.infra.ui.view.ui.CustomButton n1:textSize="15.0sp" n1:textColor="@color/lp_send_button_text_disable" n1:gravity="center" n1:layout_gravity="bottom" n1:id="@id/lpui_enter_message_send" n1:background="@android:color/transparent" n1:padding="2.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/lp_send" n1:textAllCaps="false" n2:font_name="@string/custom_font_name_non_conversation_feed" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageButton n1:gravity="center" n1:layout_gravity="bottom" n1:id="@id/lpui_enter_message_send_button" n1:background="@android:color/transparent" n1:padding="10.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:contentDescription="Send" n3:srcCompat="@drawable/lpinfra_ui_ic_send_disabled" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

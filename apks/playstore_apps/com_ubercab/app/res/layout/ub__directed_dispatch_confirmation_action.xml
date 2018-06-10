@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.confirmation.directed_dispatch_action.DirectedDispatchConfirmationActionView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/directed_dispatch_confirmation_action_message_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/directed_dispatch_confirmation_action_message" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    <com.ubercab.ui.core.UTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/directed_dispatch_confirmation_action_pin_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ui__spacing_unit_2x" style="@style/Platform.TextAppearance.H1.News" />
+</com.ubercab.presidio.app.optional.root.main.ride.request.confirmation.directed_dispatch_action.DirectedDispatchConfirmationActionView>

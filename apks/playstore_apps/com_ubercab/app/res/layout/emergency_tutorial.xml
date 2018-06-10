@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.advanced_settings.emergency_assistance_settings.EmergencyAssistanceTutorialView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="603c61c4-7c01"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.ULinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:id="@id/ub__emergency_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.advanced_settings.emergency_assistance_settings.EmergencyAssistanceTutorialView>

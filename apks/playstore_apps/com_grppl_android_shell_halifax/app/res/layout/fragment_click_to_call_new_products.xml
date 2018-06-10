@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" style="@style/ClickToCall.Background"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mobile.ui.common.view.HeadingTextView n1:id="@id/clickToCallNewProductsTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/click_to_call_new_products_title_text" style="@style/ScreenHeadline.Background" />
+    <com.mobile.ui.common.view.DividerRecyclerView n1:id="@id/clickToCallNewProductsReasonForCallList" n1:background="@color/list_divider_color" n1:paddingTop="@dimen/click_to_call_list_top_bottom_divider_height" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/call_us_screen_medium_spacing" n1:layout_marginBottom="@dimen/call_us_screen_medium_spacing" n2:dividerDrawable="@drawable/click_to_call_horizontal_divider" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

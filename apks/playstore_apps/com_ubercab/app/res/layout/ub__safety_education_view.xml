@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.safety.education.SafetyEducationView android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="a68b4a1d-2cb0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.external_web_view.core.AutoAuthWebView android:id="@id/ub__safety_education_web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.ubercab.safety.education.SafetyEducationView>

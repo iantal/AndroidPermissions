@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_pressed="true"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape n1:shape="rectangle" n1:thickness="0.5dip">
+            <corners n1:radius="0.5dip" />
+            <solid n1:color="@color/n4" />
+            <stroke n1:width="0.5dip" n1:color="@color/offer_btn_border" />
+        </shape>
+    </item>
+    <item>
+        <shape n2:shape="rectangle" n2:thickness="0.5dip"
+          xmlns:n2="http://schemas.android.com/apk/res/android">
+            <corners n2:radius="0.5dip" />
+            <stroke n2:width="0.5dip" n2:color="@color/offer_btn_border" />
+            <solid n2:color="@color/white" />
+        </shape>
+    </item>
+</selector>

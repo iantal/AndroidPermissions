@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.pass.tracking.map_layer.detail.PassTrackingDetailMapContainerView android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="a31a9ef1-5758"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/pass_map_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ubercab.ui.core.UToolbar android:id="@id/pass_map_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" uber:contentInsetStartWithNavigation="0.0dip" uber:popupTheme="@style/ThemeOverlay.AppCompat.Light" uber:layout_collapseMode="pin" style="@style/Widget.Platform.Toolbar" />
+</com.ubercab.presidio.pass.tracking.map_layer.detail.PassTrackingDetailMapContainerView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ru.tcsbank.mb.ui.accounts.details.AccountLimitView n1:id="@id/account_details_free_cash_in_tinkoff_limit" n2:limit_icon="@drawable/ic_account_details_cash_in" n2:limit_tint="@color/main_blue" n2:limit_title="@string/free_cash_in" style="@style/AccountDetailsLimitView" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <ru.tcsbank.mb.ui.accounts.details.AccountLimitView n1:id="@id/account_details_free_cash_in_limit" style="@style/AccountDetailsLimitView" />
+        <include layout="@layout/inc_divider_margin" />
+        <ru.tcsbank.mb.ui.accounts.details.AccountLimitView n1:id="@id/account_details_free_cash_out_tinkoff_limit" n3:limit_icon="@drawable/ic_account_details_cash_out" n3:limit_tint="@color/main_blue" n3:limit_title="@string/free_cash_out" style="@style/AccountDetailsLimitView" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <ru.tcsbank.mb.ui.accounts.details.AccountLimitView n1:id="@id/account_details_free_cash_out_limit" style="@style/AccountDetailsLimitView" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/account_details_increase_cash_out_limit" n1:paddingLeft="@dimen/offset_from_edge_large" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="8.0dip" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <android.support.v7.widget.CardView n1:id="@id/increase_cash_out_btn" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:foreground="?selectableItemBackground" n4:cardCornerRadius="2.0dip" n4:cardElevation="2.0dip" xmlns:n4="http://schemas.android.com/apk/res-auto">
+                <TextView n1:textAppearance="@style/Text.Small.Blue.Medium" n1:layout_gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0dip" n1:layout_marginTop="8.5dip" n1:layout_marginRight="16.0dip" n1:layout_marginBottom="8.5dip" n1:text="@string/common_change" n1:textAllCaps="true" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/increase_cash_out_hint" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge_large" n1:layout_marginTop="12.0dip" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge_quarter" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/increase_cash_out_amount" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge_large" n1:layout_marginRight="@dimen/offset_from_edge" n5:textSize="@dimen/text_extra_large" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <include n1:id="@id/account_details_free_c2c_out_divider" n1:visibility="gone" layout="@layout/inc_divider_margin" />
+        <ru.tcsbank.mb.ui.accounts.details.AccountLimitView n1:id="@id/account_details_free_c2c_out_limit" n1:visibility="gone" n6:limit_icon="@drawable/ic_account_details_c2c_limit" n6:limit_tint="@color/main_blue" n6:limit_title="@string/free_c2c_out" style="@style/AccountDetailsLimitView" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</ScrollView>

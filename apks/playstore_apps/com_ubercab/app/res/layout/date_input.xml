@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.commons.widget.PresidioTextInputLayout android:id="@id/date_input_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" app:hintEnabled="false">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:background="?android:colorBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" app:analyticsId="d06161bf-38ec" style="@style/Platform.TextAppearance.H3.News">
+            <com.ubercab.ui.core.UEditText android:gravity="center_horizontal" android:id="@id/day_input" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/date_input_day_hint" android:cursorVisible="false" android:selectAllOnFocus="true" android:maxLength="2" android:inputType="number" />
+            <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date_input_separator" />
+            <com.ubercab.ui.core.UEditText android:gravity="center" android:id="@id/month_input" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/date_input_month_hint" android:cursorVisible="false" android:selectAllOnFocus="true" android:maxLength="2" android:inputType="number" />
+            <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date_input_separator" />
+            <com.ubercab.ui.core.UEditText android:gravity="center" android:id="@id/year_input" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/date_input_year_hint" android:cursorVisible="false" android:selectAllOnFocus="true" android:maxLength="4" android:inputType="number" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.commons.widget.PresidioTextInputLayout>
+</merge>

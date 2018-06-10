@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_referral_widget" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_referral_widget" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:id="@id/text_referral_widget_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_list_referral_widget_title" fontPath="@string/font_regular" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:id="@id/text_referral_widget_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_list_referral_widget_subtitle" fontPath="@string/font_light" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_referral_widget_invite" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@color/grey_f3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</FrameLayout>

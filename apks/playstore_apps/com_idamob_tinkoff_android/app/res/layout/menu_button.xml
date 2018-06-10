@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/menu_button_height"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/title" style="@style/MenuButton.Rect" />
+    <TextView n1:layout_gravity="center" n1:id="@id/badge_count" n1:visibility="gone" n1:layout_marginLeft="13.0dip" n1:layout_marginBottom="21.0dip" style="@style/BadgeStyle" />
+</FrameLayout>

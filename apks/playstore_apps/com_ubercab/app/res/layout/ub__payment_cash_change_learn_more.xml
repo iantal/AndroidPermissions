@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.cash.operation.add.CashChangeLearnMoreView android:background="?android:colorBackground" android:padding="?contentInset" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="e0ee3b3a-e3b2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/cash_change_learn_more_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cash_change_learn_more_title" style="@style/Platform.TextAppearance.H2.Book" />
+        <com.ubercab.ui.core.UTextView android:id="@id/cash_change_learn_more_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/cash_change_learn_more_message" style="@style/Platform.TextAppearance.P" />
+        <com.ubercab.ui.core.UButton android:id="@id/cash_change_learn_more_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:text="@string/cash_ok" uber:analyticsId="4c6c423e-6fa9" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.payment.cash.operation.add.CashChangeLearnMoreView>

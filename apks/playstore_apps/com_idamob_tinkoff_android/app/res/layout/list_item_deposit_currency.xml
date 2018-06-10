@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@drawable/selector_item_bg" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatCheckBox n1:id="@id/checkbox" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/name" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+    <TextView n1:textAppearance="@style/Text.Default.Light" n1:textColor="@color/text_light_half_transparent" n1:id="@id/rate" n1:paddingLeft="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge_half" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+</LinearLayout>

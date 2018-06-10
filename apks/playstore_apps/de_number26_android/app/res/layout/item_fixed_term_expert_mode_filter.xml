@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/text_fixed_term_mode_filter_selected" android:background="@drawable/rounded_corner_mint" android:layout_width="44.0dip" android:layout_height="28.0dip" android:layout_margin="5.0dip" />
+</LinearLayout>

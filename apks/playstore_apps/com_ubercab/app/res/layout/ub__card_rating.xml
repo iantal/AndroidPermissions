@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.feed.items.cards.rating.RatingCardView android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="eb9be5e6-30aa"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__card_rating_main" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset">
+            <com.ubercab.ui.core.ULinearLayout android:layout_gravity="start" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/ui__spacing_unit_2x">
+                <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__card_rating_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/Platform.TextAppearance.H5.News.Primary" />
+                <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__card_rating_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:singleLine="true" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.CircleImageView android:id="@id/ub__card_rating_driver_icon" android:layout_width="?avatarMedium" android:layout_height="?avatarMedium" android:contentDescription="@string/ub__card_driver_profile_picture_content_description" android:importantForAccessibility="no" uber:srcCompat="@drawable/avatar_blank" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.URatingBar android:layout_gravity="center_horizontal" android:id="@id/ub__card_rating_rating_bar" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:max="5" android:numStars="5" android:stepSize="1.0" android:contentDescription="@string/ub__card_rating_bar_content_description" uber:analyticsId="d0dc5865-2b57" style="@style/Style.Helix.RatingBar.RatingCard" />
+        <com.ubercab.ui.core.UPlainView android:layout_gravity="center" android:id="@id/ub__card_rating_banner_tip" android:background="@drawable/ub__celebration_green_triangle" android:visibility="invisible" android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="@dimen/ui__spacing_unit_2x" />
+        <com.ubercab.ui.core.UFrameLayout android:theme="@style/Base.Theme.Helix.Dark" android:id="@id/ub__card_rating_banner_wrapper" android:background="?celebrationGreen" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:ellipsize="end" android:gravity="center" android:id="@id/ub__card_rating_banner" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/Platform.TextAppearance.H5.Medium" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UFrameLayout android:theme="@style/Base.Theme.Helix.Dark" android:id="@id/ub__card_rating_tip" android:background="?celebrationGreen" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignTop="@id/ub__card_rating_main" android:layout_alignBottom="@id/ub__card_rating_main" uber:analyticsId="db63f9ea-d0c8">
+        <com.ubercab.ui.core.UImageView android:layout_gravity="end" android:id="@id/ub__card_rating_tip_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitXY" uber:srcCompat="@drawable/ub__tip_intro_pattern" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ubercab.ui.core.UPlainView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub__card_rating_tip_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Style.Helix.RatingCard.Tip.Title" />
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub__card_rating_tip_subtitle" android:paddingTop="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.Book" />
+                </com.ubercab.ui.core.ULinearLayout>
+                <com.ubercab.ui.CircleImageView android:layout_gravity="top" android:id="@id/ub__card_rating_tip_driver_icon" android:layout_width="?avatarLarge" android:layout_height="?avatarLarge" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset" android:contentDescription="@string/ub__card_driver_profile_picture_content_description" android:importantForAccessibility="no" android:layout_marginStart="?contentInset" android:layout_marginEnd="?contentInset" uber:srcCompat="@drawable/avatar_blank" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UPlainView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.presidio.feed.items.cards.rating.RatingCardView>

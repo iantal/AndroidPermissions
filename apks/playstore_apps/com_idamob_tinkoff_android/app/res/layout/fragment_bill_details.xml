@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:ellipsize="end" n1:id="@id/subtitle" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/invoices_amount" n1:lines="1" />
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:ellipsize="end" n1:gravity="right" n1:id="@id/provider_name" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:lines="1" n1:layout_toRightOf="@id/subtitle" n1:layout_alignParentRight="true" />
+    <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/amount" n1:paddingLeft="@dimen/offset_from_edge" n1:layout_below="@id/provider_name" n2:textColorAmount="@color/text_dark" n2:textColorCurrency="@color/text_dark" n2:textColorFractional="@color/text_dark" n2:textColorSign="@color/text_dark" n2:textSizeAmount="@dimen/text_large" n2:textSizeCurrency="@dimen/text_large" n2:textSizeFractional="@dimen/text_large" n2:textSizeSign="@dimen/text_medium" style="@style/SmartMoneyView" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/btn_block" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <Button n1:id="@id/pay" n1:text="@string/pay" style="@style/Button.Round.Yellow" />
+        <Button n1:textAppearance="@style/Text.Small.Blue" n1:id="@id/reject" n1:background="@drawable/selector_list_item_with_divider" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/button_height" n1:text="@string/invoices_details_reject" n1:textAllCaps="true" />
+    </LinearLayout>
+    <ScrollView n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/btn_block" n1:layout_below="@id/amount">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="vertical" n1:id="@id/main_requisite_fields" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <include layout="@layout/inc_divider" />
+            <FrameLayout n1:orientation="horizontal" n1:id="@id/full_requisite_switch_holder" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textSize="@dimen/text_medium" n1:textColor="@color/text_dark" n1:gravity="center|left" n1:background="@drawable/selector_item_bg" n1:paddingLeft="@dimen/screen_content_double_padding" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/invoices_details_full_requisites" />
+                <ImageView n1:layout_gravity="center_vertical" n1:id="@id/full_requisite_switch_arrow" n1:padding="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/arrow_down_dark" />
+            </FrameLayout>
+            <include layout="@layout/inc_divider" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/full_requisite_fields" n1:background="@color/bg_light" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

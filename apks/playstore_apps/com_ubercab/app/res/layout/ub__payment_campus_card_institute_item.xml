@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.campuscard.operation.selectinstitution.CampusCardInstitutionCellView android:gravity="center_vertical" android:orientation="vertical" android:background="?selectableItemBackground" android:paddingLeft="@dimen/ui__gutter_size" android:paddingRight="@dimen/ui__gutter_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/campus_card_institute_min_height" android:paddingStart="@dimen/ui__gutter_size" android:paddingEnd="@dimen/ui__gutter_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:gravity="start|center" android:id="@id/ub__payment_campus_card_institute_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary" />
+    <com.ubercab.ui.core.UTextView android:gravity="start|center" android:id="@id/ub__payment_campus_card_card_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+</com.ubercab.presidio.payment.campuscard.operation.selectinstitution.CampusCardInstitutionCellView>

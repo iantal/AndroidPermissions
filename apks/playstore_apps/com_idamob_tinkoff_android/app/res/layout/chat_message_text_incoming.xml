@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:id="@id/chat_user_name" layout="@layout/include_chat_message_user_name_incoming" />
+    <include layout="@layout/include_chat_message_user_avatar_incoming" />
+    <ru.tinkoff.chat.webim.ui.view.MaxChildSizeLayout n1:theme="@style/IncomingTextTheme" n1:orientation="vertical" n1:id="@id/chat_message_content" n1:background="@drawable/chat_message_text_incoming_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/chat_message_end_margin" n1:layout_toRightOf="@id/chat_user_avatar" n1:layout_below="@id/chat_user_name" style="@style/Chat.Message.Content">
+        <include layout="@layout/include_chat_message_quote" />
+        <ru.tinkoff.chat.webim.ui.view.WrapWidthTextView n1:id="@id/chat_message_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/chat_message_text_horizontal_margin" n1:layout_marginRight="@dimen/chat_message_text_horizontal_margin" />
+    </ru.tinkoff.chat.webim.ui.view.MaxChildSizeLayout>
+    <include layout="@layout/include_chat_message_time_incoming" />
+</RelativeLayout>

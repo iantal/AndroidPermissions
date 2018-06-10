@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/root_layout" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <android.support.design.widget.AppBarLayout n1:id="@id/appbar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:elevation="0.0dip" xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/accounts" n2:cp_pager_background="@android:color/transparent" style="@style/AccountsCarouselPager" />
+            <ru.tcsbank.mb.ui.widgets.ConfirmCardSecurityCodeView n1:id="@id/confirm_security_code" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <android.support.design.widget.TabLayout n1:id="@id/tabs" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:tabBackground="@drawable/transfer_people_tab_background" n2:tabPaddingEnd="0.0dip" n2:tabPaddingStart="0.0dip" />
+        </android.support.design.widget.AppBarLayout>
+        <ru.tcsbank.mb.ui.widgets.pager.WrapContentViewPager n1:id="@id/pages" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

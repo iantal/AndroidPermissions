@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@drawable/selector_item_bg" n1:paddingTop="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.BaselineImageView n1:id="@id/image" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_centerVertical="true" />
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge_large" />
+    <TextView n1:textAppearance="@style/Text.Small.Dark" n1:id="@id/content" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:drawablePadding="5.0dip" n1:layout_below="@id/title" n1:layout_alignLeft="@id/title" />
+</RelativeLayout>

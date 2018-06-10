@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.braintree.operation.manage.addon.ComboCardManageConfirmView android:background="?android:colorBackground" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="bb4364c8-f9a7"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/combocard_function_change_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/combocard_function_change_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__payment_combocard_manage_function_change_credit_confirm_title" style="@style/Platform.TextAppearance.H2.News.Primary" />
+        <com.ubercab.ui.core.UTextView android:id="@id/combocard_function_change_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/ub__payment_combocard_manage_function_change_credit_confirm_message" style="@style/Platform.TextAppearance.P" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x">
+            <com.ubercab.ui.core.UButton android:id="@id/combocard_function_change_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_weight="1.0" uber:analyticsId="961ed00d-2923" style="?platformButtonSecondary" />
+            <Space android:id="@id/confirmation_modal_button_space" android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+            <com.ubercab.ui.core.UButton android:id="@id/combocard_function_change_switch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ub__payment_combocard_manage_function_change_confirm_switch" android:layout_weight="1.0" uber:analyticsId="f3e3557f-26dd" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.payment.braintree.operation.manage.addon.ComboCardManageConfirmView>

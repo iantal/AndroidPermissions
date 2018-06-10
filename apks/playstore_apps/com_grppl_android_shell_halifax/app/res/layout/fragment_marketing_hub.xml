@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/marketingPreferencesPagePrimary" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mobile.ui.common.view.NotificationView n1:id="@id/incompleteMarketingPreferencesNotification" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <android.support.v4.widget.NestedScrollView n1:background="@color/marketing_hub_background_color" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:orientation="vertical" n1:id="@id/marketingHubIntroduction" n1:background="@color/marketing_hub_section_background_color" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <com.mobile.ui.common.view.ProgressView n1:id="@id/marketingHubProgressView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+                    <com.mobile.ui.common.view.HeadingTextView n1:id="@id/marketingHubHeadline" n1:background="@color/marketing_hub_section_background_color" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/marketing_hub_margin" n1:layout_marginTop="@dimen/marketing_hub_margin" n1:text="@string/marketing_hub_header" style="@style/TextAppearance.Headline" />
+                    <TextView n1:id="@id/marketingHubIntroductionText" n1:background="@color/marketing_hub_section_background_color" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/marketing_hub_margin" n1:text="@string/marketing_hub_introduction_paragraph" style="@style/TextAppearance.Body" />
+                </LinearLayout>
+                <com.mobile.ui.common.view.LabelledMandatorySelectGroup n1:id="@id/marketingPreferencesOptions" n1:background="@color/marketing_hub_section_background_color" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/marketing_hub_margin" />
+                <android.support.v7.widget.RecyclerView n1:id="@id/marketingHubAccordion" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="@dimen/marketing_hub_margin" />
+                <LinearLayout n1:background="@color/marketing_hub_section_background_color" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <Button n1:id="@id/marketingPreferencesSubmitButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/marketing_hub_margin" n1:text="@string/marketing_hub_submit_button" style="@style/Widget.Button.Primary" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <View n1:id="@id/marketingHubDisabledActivityMask" n1:background="@color/light_grey_50pc_transparent" n1:visibility="gone" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

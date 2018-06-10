@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/from_accounts_carousel" style="@style/AccountsCarouselPager" />
+        <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/from_carousel_arrow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/screen_content_padding_plus" n1:src="@drawable/gray_arrow" />
+        <ru.tcsbank.mb.ui.widgets.edit.text.MbEditText n1:id="@id/autopayment_name" n1:visibility="gone" n1:hint="@string/autopayment_name" n1:inputType="text" n2:enable_title="true" style="@style/EditText.Margin" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <TextView n1:id="@id/autopayment_threshold_group_title" n1:visibility="gone" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:text="@string/autopayment_threshold_label" style="@style/SubtitleTextItem" />
+        <RadioGroup n1:id="@id/autopayment_threshold_group" n1:visibility="gone" style="@style/CategoriesRadioGroup" />
+        <ru.tcsbank.mb.ui.widgets.money.EditMoney n1:id="@id/autopayment_payment_amount" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_large_item" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n3:currency="643" n3:em_enable_title="true" n3:em_hint="@string/autopayment_payment_amount_title" n3:em_textSize="@dimen/text_medium" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <ru.tcsbank.mb.ui.widgets.money.EditMoney n1:id="@id/autopayment_month_limit_amount" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_large_item" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n4:currency="643" n4:em_enable_title="true" n4:em_hint="@string/autopayment_month_limit_amount_title" n4:em_textSize="@dimen/text_medium" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_header.TripHeaderView android:theme="@style/Theme.Helix.Dark" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/ub__header_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <com.ubercab.ui.core.UPlainView android:id="@id/ub__header_background" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="@dimen/ub__header_height_expanded" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__header" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset">
+        <com.ubercab.ui.core.UTextView android:gravity="center_vertical" android:id="@id/ub__header_title_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H2.Book" />
+        <com.ubercab.ui.core.UTextView android:gravity="center_vertical" android:id="@id/ub__header_subtitle" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__header_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?contentInset" android:foreground="?selectableItemBackgroundBorderless" android:contentDescription="@string/back_button_description" android:paddingStart="?contentInset" android:paddingEnd="0.0dip" app:srcCompat="@drawable/navigation_icon_back" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__header_timeline" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_1x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:paddingStart="?contentInset" android:paddingEnd="?contentInset">
+        <com.ubercab.presidio.app.optional.root.main.ride.trip.trip_header.WalkingView android:id="@id/ub__header_timeline_walk_to_pickup" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="?lineIndicatorHeight" />
+        <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__trip_header_progress_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0">
+            <com.ubercab.ui.core.UFrameLayout android:layout_gravity="center_vertical" android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight">
+                <com.ubercab.ui.core.UPlainView android:id="@id/ub__trip_header_progress" android:background="?colorAccent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:transformPivotX="0.0dip" android:transformPivotY="0.0dip" android:scaleX="0.0" />
+            </com.ubercab.ui.core.UFrameLayout>
+            <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__trip_header_event_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.ubercab.ui.core.UFrameLayout>
+        <com.ubercab.presidio.app.optional.root.main.ride.trip.trip_header.WalkingView android:id="@id/ub__header_timeline_walk_from_dropoff" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="?lineIndicatorHeight" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_header.TripHeaderView>

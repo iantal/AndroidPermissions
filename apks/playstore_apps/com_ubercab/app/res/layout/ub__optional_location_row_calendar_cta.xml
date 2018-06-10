@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.location_edit.text_search.calendar_destination.CalendarDestinationCTAView android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsId="2d13829f-8f1e"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UPlainView android:background="?brandGrey40" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_1x" />
+    <com.ubercab.ui.core.URelativeLayout android:orientation="horizontal" android:id="@id/ub__calendar_cta_layout" android:background="?selectableItemBackground" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_9x" android:paddingStart="?contentInset" android:paddingEnd="?contentInset">
+        <com.ubercab.ui.core.UImageView android:id="@id/ub__calendar_cta_icon" android:layout_width="?avatarMicro" android:layout_height="?avatarMicro" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:srcCompat="@drawable/ub__ic_location_editor_calendar_16" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__calendar_cta_title_container" android:paddingTop="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/ui__spacing_unit_5x" android:paddingEnd="@dimen/ui__spacing_unit_1x" app:analyticsEnabled="false">
+            <com.ubercab.ui.core.UTextView android:textColor="?accentCta" android:id="@id/ub__calendar_cta_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/calendar_cta_connect_your_calendar" android:maxLines="2" style="@style/Platform.TextAppearance.H5.News" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__calendar_cta_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/calendar_cta_show_upcoming_events" app:analyticsEnabled="false" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.URelativeLayout>
+    <com.ubercab.ui.core.UPlainView android:background="?brandGrey40" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_1x" />
+</com.ubercab.presidio.app.optional.root.main.ride.location_edit.text_search.calendar_destination.CalendarDestinationCTAView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/view_holder" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:fieldKey="address" n2:fieldTitle="@string/rpa_address" n2:fieldType="simpleList" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

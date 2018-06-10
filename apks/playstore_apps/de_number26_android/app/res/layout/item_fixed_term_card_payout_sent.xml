@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView style="@style/HomeCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="14.5dip">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="11.5dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/grey_46" android:id="@id/text_fixed_term_card_payout_sent_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" fontPath="@string/font_regular" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:gravity="end" android:id="@id/text_fixed_term_card_payout_sent_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_weight="1.0" fontPath="@string/font_regular" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/fixed_term_dashboard_payoutsent" android:layout_weight="1.0" fontPath="@string/font_regular" />
+            <ImageView android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="100.0dip" android:src="@drawable/img_fixed_term_card_payout_sent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:layout_marginBottom="5.0dip" style="@style/HorizontalSeparatorThin" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/fixed_term_dashboard_step_termended" android:layout_weight="1.0" fontPath="@string/font_light" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tick_mint" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed_term_dashboard_step_preparation" android:layout_weight="1.0" fontPath="@string/font_light" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tick_mint" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed_term_dashboard_step_transferback" android:layout_weight="1.0" fontPath="@string/font_light" />
+                <ImageView android:id="@id/image_fixed_term_card_payout_sent_step" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/circle_mint_spin" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

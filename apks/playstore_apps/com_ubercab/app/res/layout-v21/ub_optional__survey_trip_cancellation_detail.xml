@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.trip_cancellation_survey_detail.SurveyTripCancellationDetailView android:orientation="vertical" android:background="?android:colorBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UAppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/header_elevation" uber:contentInsetStartWithNavigation="0.0dip">
+        <com.ubercab.ui.core.UToolbar android:id="@id/survey_trip_cancellation_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" uber:contentInsetStartWithNavigation="0.0dip" uber:popupTheme="@style/ThemeOverlay.AppCompat.Light" uber:titleTextAppearance="@style/Platform.TextAppearance.H3.Book" uber:layout_collapseMode="pin" style="@style/Widget.Platform.Toolbar" />
+    </com.ubercab.ui.core.UAppBarLayout>
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.ULinearLayout android:theme="@style/Theme.Helix.Dark" android:orientation="vertical" android:background="?android:colorBackground" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_4x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset">
+                <com.ubercab.ui.core.UTextView android:id="@id/survey_trip_cancellation_title" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Trip.Cancellation.Survey.Title" />
+                <com.ubercab.ui.core.UTextView android:id="@id/survey_trip_cancellation_details" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Trip.Cancellation.Survey.Details" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.URecyclerView android:id="@id/survey_trip_cancellation_reasons" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.presidio.trip_cancellation_survey_detail.SurveyTripCancellationDetailView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.helix.rental.feature_bubble.ModeSwitchBubbleView android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:layout_gravity="center" android:id="@id/feature_bubble_tooltip" android:background="@drawable/ub__feature_bubble_background" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textAllCaps="false" style="@style/Platform.TextAppearance.H6.News.Primary" />
+    <com.ubercab.ui.core.UFloatingActionButton android:id="@id/feature_bubble_button" android:layout_width="@dimen/ub__map_fab_size" android:layout_height="@dimen/ub__map_fab_size" android:layout_margin="@dimen/ui__spacing_unit_2x" android:scaleType="center" app:backgroundTint="?android:textColorPrimaryInverse" app:rippleColor="?android:textColorPrimaryInverse" app:borderWidth="0.0dip" />
+</com.ubercab.helix.rental.feature_bubble.ModeSwitchBubbleView>

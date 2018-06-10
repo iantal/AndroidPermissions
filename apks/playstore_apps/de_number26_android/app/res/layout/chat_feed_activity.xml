@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <android.support.design.widget.AppBarLayout android:theme="@style/SalesforceAppBarOverlay" android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar android:id="@id/toolbar" app:navigationIcon="@drawable/chat_ic_close" style="@style/ChatToolbar">
+                <com.salesforce.android.service.common.ui.views.SalesforceTextView android:id="@id/chat_feed_agent_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_feed_title" style="@style/ChatStyleTextToolbarTitle" />
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <include layout="@layout/chat_feed_view" />
+        </android.support.v4.widget.NestedScrollView>
+        <include layout="@layout/chat_resume_error" />
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

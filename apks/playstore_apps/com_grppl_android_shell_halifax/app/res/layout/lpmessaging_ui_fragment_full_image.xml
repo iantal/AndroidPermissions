@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:orientation="vertical" n1:background="@color/conversation_background" n1:focusable="true" n1:focusableInTouchMode="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ProgressBar n1:layout_gravity="center" n1:id="@id/lpui_full_image_progress_bar" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    <com.liveperson.infra.ui.view.ui.TouchImageView n1:id="@id/lpui_full_image_view" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:contentDescription="@string/lp_accessibility_full_image" />
+</FrameLayout>

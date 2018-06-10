@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="left" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mobile.ui.common.view.AccessibleLinkTextView n1:id="@id/mortgageDialogMainText" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/mortgage_dialog_margin" n1:text="@string/mortgage_dialog_current_mortgage_balance_message" n1:importantForAccessibility="no" style="@style/TextAppearance.MortgageDialog" />
+</LinearLayout>

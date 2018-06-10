@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lp_ttr_message_days">
+        <item quantity="other">" %1$s d."</item>
+        <item quantity="one">" %1$s d."</item>
+        <item quantity="few">" %1$d dienos"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_hours">
+        <item quantity="other">" %1$s val."</item>
+        <item quantity="one">" %1$s val."</item>
+        <item quantity="few">" %1$d valandos"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_minutes">
+        <item quantity="other">" %1$s min."</item>
+        <item quantity="one">" %1$s min."</item>
+        <item quantity="few">" %1$d minutės"</item>
+    </plurals>
+    <plurals name="lp_unread_message">
+        <item quantity="other">%1$d NEPERSKAITYTŲ PRANEŠIMŲ</item>
+        <item quantity="one">%1$d NEPERSKAITYTAS PRANEŠIMAS</item>
+        <item quantity="few">%1$d NEPERSKAITYTI PRANEŠIMAI</item>
+    </plurals>
+</resources>

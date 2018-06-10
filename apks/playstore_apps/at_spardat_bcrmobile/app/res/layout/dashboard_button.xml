@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dashboard_button_bg" android:paddingBottom="16.0dip" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_dashboard_button_title" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/DashboardButtonTitle" />
+    <ImageView android:id="@id/img_view_dashboard" android:paddingBottom="26.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:contentDescription="@string/dashboard_icon" style="@style/AllWrapContent" />
+</RelativeLayout>

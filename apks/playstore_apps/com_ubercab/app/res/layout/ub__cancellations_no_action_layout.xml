@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__cancellations_title_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?rdsTextAppearanceH2BookPrimary" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__cancellations_body_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?rdsTextAppearanceP" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__cancellations_need_help_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__rds__need_help" style="?rdsStyleButtonSecondary" />
+</merge>

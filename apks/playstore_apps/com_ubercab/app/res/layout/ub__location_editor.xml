@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.core.root.main.ride.location_edit.LocationEditorView android:fitsSystemWindows="@bool/use_transparent_status_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="e7d57e12-c412"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.commons.widget.HintView android:theme="@style/Theme.Helix.Dark" android:layout_gravity="bottom|center" android:id="@id/hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:cardElevation="@dimen/ub__pickup_refinement_hint_shadow" />
+</com.ubercab.presidio.app.core.root.main.ride.location_edit.LocationEditorView>

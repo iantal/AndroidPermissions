@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_error_code" android:padding="5.0dip" android:visibility="gone" style="@style/ErrorStrip" />
+    <RelativeLayout android:id="@id/view_authorization_footer" android:paddingTop="6.0dip" android:paddingBottom="3.0dip" style="@style/ScreenFooter">
+        <TextView android:textColor="@color/text_view_color" android:id="@id/tv_code" android:layout_width="92.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="7.0dip" android:text="@string/code" android:maxLines="1" android:layout_centerVertical="true" style="@style/TextBoldAllWrap" />
+        <EditText android:id="@id/et_code" android:layout_width="85.0dip" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:maxLength="6" android:layout_toRightOf="@id/tv_code" android:layout_alignBottom="@id/btn_submit" android:inputType="number" />
+        <Button android:gravity="center" android:id="@id/btn_submit" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="5.0dip" android:text="@string/sign" android:maxLines="1" android:layout_toRightOf="@id/et_code" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ButtonStyleNormal" />
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true" n1:layout_above="@id/saveButton">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <com.mobile.ui.common.view.HeadingTextView n1:textAppearance="@style/TextAppearance.Headline" n1:id="@id/settingsAutoLogOffTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginTop="@dimen/activity_vertical_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_marginBottom="@dimen/fragment_auto_log_off_spacing_small" n1:text="@string/settings_auto_log_off_title" />
+            <TextView n1:textAppearance="@style/TextAppearance.Body" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_marginBottom="@dimen/fragment_auto_log_off_spacing_large" n1:text="@string/settings_auto_log_off_body" n1:contentDescription="@string/accessibility_settings_auto_log_off_body" />
+            <TextView n1:textAppearance="@style/TextAppearance.InputLabelLarge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_marginBottom="@dimen/fragment_auto_log_off_spacing_small" n1:text="@string/settings_auto_log_off_radio_title" n1:contentDescription="@string/accessibility_settings_auto_log_off_radio_title" />
+            <com.mobile.ui.common.view.LabelledRadioGroup n1:id="@id/autoLogOffOptions" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_auto_log_off_spacing_small" />
+        </LinearLayout>
+    </ScrollView>
+    <Button n1:id="@id/saveButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginTop="@dimen/fragment_auto_log_off_spacing_small" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_marginBottom="@dimen/activity_vertical_margin" n1:text="@string/settings_auto_log_off_save_button" n1:layout_alignParentBottom="true" n1:contentDescription="@string/accessibility_settings_auto_log_off_save" style="@style/Widget.Button.Primary" />
+</RelativeLayout>

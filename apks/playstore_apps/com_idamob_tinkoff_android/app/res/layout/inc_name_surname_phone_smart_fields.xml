@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingBottom="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:fieldKey="surname" n2:fieldSuggestProviderName="popularLastNames" n2:fieldTitle="@string/smart_new_application_surname" n2:fieldType="text" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:fieldKey="name" n3:fieldSuggestProviderName="popularFirstNames" n3:fieldTitle="@string/smart_new_application_name" n3:fieldType="text" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:fieldFormatter="phoneByMask" n4:fieldFormatterMask="@string/default_phone_mask" n4:fieldFormatterMaskTerminated="non_terminated" n4:fieldKey="phone" n4:fieldTitle="@string/smart_new_application_phone" n4:fieldType="phoneNumber" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

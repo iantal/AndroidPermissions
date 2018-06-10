@@ -1,0 +1,34 @@
+.class public final Lhqw;
+.super Lhqg;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 3
+
+    const/4 v0, 0x3
+
+    .line 220
+    new-array v0, v0, [Ljava/lang/Object;
+
+    const-string v1, "588"
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    const-string v1, "1"
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    const/4 v1, 0x2
+
+    aput-object p1, v0, v1
+
+    invoke-direct {p0, v0}, Lhqg;-><init>([Ljava/lang/Object;)V
+
+    return-void
+.end method

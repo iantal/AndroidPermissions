@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Default.White" n1:gravity="center_horizontal" n1:id="@id/header" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginTop="44.0dip" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:text="@string/sync_contacts_offer_header" />
+    <ImageView n1:id="@id/image" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="56.0dip" n1:src="@drawable/sync_contacts_offer" n1:layout_below="@id/header" n1:layout_centerHorizontal="true" />
+    <TextView n1:textAppearance="@style/Text.Small.White" n1:gravity="center_horizontal" n1:id="@id/note" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginTop="@dimen/screen_content_margin" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:text="@string/sync_contacts_offer_note" n1:layout_below="@id/image" />
+    <Button n1:textAppearance="@style/Text.Small.Dark" n1:id="@id/button_enable_sync" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginTop="56.0dip" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:minHeight="@dimen/tile_height_medium_item" n1:text="@string/sync_contacts_offer_action_button" n1:layout_below="@id/note" style="@style/Button.Round.Yellow" />
+</RelativeLayout>

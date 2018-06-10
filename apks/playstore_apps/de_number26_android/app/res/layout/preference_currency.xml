@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:clickable="false" android:duplicateParentState="true" android:descendantFocusability="beforeDescendants" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textAppearance="@style/TextAppearance.Item.Title" android:id="@id/amount" android:background="@null" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:maxLength="6" android:inputType="number" android:imeOptions="actionDone" style="@style/amountTextView" />
+    <TextView android:textColor="@color/textColorPrimary" android:gravity="center_vertical" android:id="@id/symbol" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

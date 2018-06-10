@@ -1,0 +1,34 @@
+.class public final Ljlu;
+.super Lviv;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lviv<",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Lzgm;Lmta;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lzgm<",
+            "Ljava/lang/Boolean;",
+            ">;",
+            "Lmta;",
+            ")V"
+        }
+    .end annotation
+
+    .line 19
+    invoke-direct {p0, p1, p2}, Lviv;-><init>(Lzgm;Lmta;)V
+
+    return-void
+.end method

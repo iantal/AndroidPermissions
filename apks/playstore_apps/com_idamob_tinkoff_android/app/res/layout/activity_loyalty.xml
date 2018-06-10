@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout n1:id="@id/content" style="@style/MatchParent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView style="@style/MatchParent">
+        <RelativeLayout style="@style/MatchParent">
+            <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:id="@id/progress" n1:layout_marginBottom="@dimen/progress_bar_title_offset" n1:layout_below="@id/board" style="@style/SmoothProgress" />
+            <ru.tcsbank.mb.ui.widgets.CommonBoardView n1:id="@id/board" n1:layout_alignParentTop="true" style="@style/VerticalWrapping" />
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/available_title" n1:padding="@dimen/screen_content_padding" n1:visibility="gone" n1:layout_below="@id/progress" style="@style/WrapContent" />
+            <RelativeLayout n1:id="@id/available_la_credit_card_container" n1:padding="@dimen/screen_content_padding" n1:visibility="gone" n1:layout_below="@id/available_title" style="@style/VerticalWrapping">
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/available_la_credit_card_name" n1:layout_centerVertical="true" style="@style/WrapContent" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/available_la_credit_card_value" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" style="@style/WrapContent" />
+            </RelativeLayout>
+            <RelativeLayout n1:id="@id/available_la_debit_card_container" n1:padding="@dimen/screen_content_padding" n1:visibility="gone" n1:layout_below="@id/available_la_credit_card_container" style="@style/VerticalWrapping">
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/available_la_debit_card_name" n1:layout_centerVertical="true" style="@style/WrapContent" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/available_la_debit_card_value" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" style="@style/WrapContent" />
+            </RelativeLayout>
+            <include n1:id="@id/divider_top" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginTop="@dimen/screen_content_margin_half" n1:layout_marginBottom="@dimen/screen_content_margin_half" n1:layout_below="@id/available_la_debit_card_container" layout="@layout/inc_divider" />
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/forecast_title" n1:padding="@dimen/screen_content_padding" n1:visibility="gone" n1:text="@string/loyalty_info_forecast" n1:layout_below="@id/divider_top" style="@style/WrapContent" />
+            <RelativeLayout n1:id="@id/forecast_next_container" n1:padding="@dimen/screen_content_padding" n1:visibility="gone" n1:layout_below="@id/forecast_title" style="@style/VerticalWrapping">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/forecast_next_title" style="@style/WrapContent" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/forecast_next_date" n1:layout_below="@id/forecast_next_title" style="@style/WrapContent" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/forecast_next_value" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" style="@style/WrapContent" />
+            </RelativeLayout>
+            <RelativeLayout n1:id="@id/forecast_next_container2" n1:padding="@dimen/screen_content_padding" n1:visibility="gone" n1:layout_below="@id/forecast_next_container" style="@style/VerticalWrapping">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/forecast_next_title2" style="@style/WrapContent" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/forecast_next_date2" n1:layout_below="@id/forecast_next_title2" style="@style/WrapContent" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/forecast_next_value2" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" style="@style/WrapContent" />
+            </RelativeLayout>
+            <RelativeLayout n1:id="@id/forecast_after_next_container" n1:padding="@dimen/screen_content_padding" n1:visibility="gone" n1:layout_below="@id/forecast_next_container2" style="@style/VerticalWrapping">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/forecast_after_next_title" style="@style/WrapContent" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/forecast_after_next_date" n1:layout_below="@id/forecast_after_next_title" style="@style/WrapContent" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/forecast_after_next_value" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" style="@style/WrapContent" />
+            </RelativeLayout>
+            <RelativeLayout n1:id="@id/forecast_after_next_container2" n1:padding="@dimen/screen_content_padding" n1:visibility="gone" n1:layout_below="@id/forecast_after_next_container" style="@style/VerticalWrapping">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/forecast_after_next_title2" style="@style/WrapContent" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/forecast_after_next_date2" n1:layout_below="@id/forecast_after_next_title2" style="@style/WrapContent" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/forecast_after_next_value2" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" style="@style/WrapContent" />
+            </RelativeLayout>
+            <include n1:id="@id/divider_bottom" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginTop="@dimen/screen_content_margin_half" n1:layout_marginBottom="@dimen/screen_content_margin_half" n1:layout_below="@id/forecast_after_next_container2" layout="@layout/inc_divider" />
+            <RelativeLayout n1:id="@id/operations_container" n1:background="@drawable/selector_item_bg" n1:padding="@dimen/screen_content_padding" n1:layout_below="@id/divider_bottom" style="@style/VerticalWrapping">
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/loyalty_points_name" style="@style/WrapContent" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/operations_value" n1:layout_alignParentRight="true" n1:layout_alignParentEnd="true" style="@style/WrapContent" />
+            </RelativeLayout>
+            <RelativeLayout n1:id="@id/spent_for_year_container" n1:background="@drawable/selector_item_bg" n1:padding="@dimen/screen_content_padding" n1:layout_below="@id/operations_container" style="@style/VerticalWrapping">
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/compensations_history" style="@style/WrapContent" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/spent_for_year_value" n1:layout_alignParentRight="true" n1:layout_alignParentEnd="true" style="@style/WrapContent" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:theme="@style/Theme.Helix.Light" android:orientation="horizontal" android:id="@id/ub__venue_zone_list_row" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_7x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.ubercab.ui.core.UTextView android:gravity="center_vertical" android:id="@id/ub__venue_zone_header_name" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__venue_zone_pickup_hint" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ub__venue_zone_header_name" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UImageView android:layout_gravity="end|center" android:id="@id/ub__venue_zone_pickup_hint_image" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_2x" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+</com.ubercab.ui.core.ULinearLayout>

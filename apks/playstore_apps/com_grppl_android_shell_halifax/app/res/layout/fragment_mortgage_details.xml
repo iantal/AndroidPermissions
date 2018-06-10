@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:background="@color/statement_section_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mobile.ui.common.view.HeaderFooterRecyclerView n1:id="@id/transactionList" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:layoutManager="android.support.v7.widget.LinearLayoutManager" style="@style/StatementsScrollBar" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.mobile.ui.common.view.IconProgressBar n1:layout_gravity="center_horizontal" n1:id="@id/loadingProgress" n1:visibility="gone" n1:layout_height="fill_parent" style="@style/IconProgressBar.Padlock.Dialog" />
+    <TextView n1:gravity="center_horizontal" n1:id="@id/noTransactionsLabel" n1:paddingTop="@dimen/due_soon_message_margin_vertical" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/mortgage_no_transactions_message" n1:paddingStart="@dimen/due_soon_message_margin_horizontal" n1:paddingEnd="@dimen/due_soon_message_margin_horizontal" style="@style/TextAppearance.Body" />
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:focusableInTouchMode="true" n1:descendantFocusability="beforeDescendants" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/cards" style="@style/AccountsCarouselPager" />
+        <LinearLayout n1:orientation="vertical" n1:background="@drawable/shadow_bottom" n1:paddingTop="@dimen/screen_content_padding_plus" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ru.tcsbank.mb.ui.widgets.MbSpinner n1:id="@id/reason_value" n1:popupBackground="@color/white" style="@style/Spinner" />
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/main_instruction" n1:padding="@dimen/offset_from_edge" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <include layout="@layout/inc_divider_margin" />
+            <include layout="@layout/widget_instruction_view" />
+            <Button n1:id="@id/application_button" style="@style/Button.Yellow.Normal" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.cobrandcard.CobrandCardOfferView android:orientation="vertical" android:background="?brandGrey20" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="e0b5ba9e-3cf7"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UAppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/appbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/header_elevation" uber:contentInsetStartWithNavigation="0.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+        <com.ubercab.ui.core.UToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" uber:contentInsetStartWithNavigation="0.0dip" uber:popupTheme="@style/ThemeOverlay.AppCompat.Light" uber:titleTextAppearance="@style/Platform.TextAppearance.H3.Book" uber:layout_collapseMode="pin" style="@style/Widget.Platform.Toolbar" />
+    </com.ubercab.ui.core.UAppBarLayout>
+    <com.ubercab.ui.core.UCoordinatorLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.ubercab.ui.core.ULinearLayout android:background="@drawable/ub__cobrandcard_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__cobrandcard_offer_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:background="@drawable/ub__cobrandcard_gradient" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/ub__cobrandcard_divider" android:showDividers="middle">
+                            <com.ubercab.ui.core.UImageView android:id="@id/ub__cobrandcard_offer_image" android:layout_width="fill_parent" android:layout_height="@dimen/ui__avatar_size_extra_large" android:scaleType="fitCenter" />
+                            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/ub__cobrandcard_divider" android:showDividers="middle" android:paddingStart="@dimen/ui__spacing_unit_3x" android:paddingEnd="@dimen/ui__spacing_unit_3x">
+                                <com.ubercab.ui.core.UTextView android:id="@id/ub__cobrandcard_offer_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Cobrandcard.Offer.H2.Book" />
+                                <com.ubercab.ui.core.UTextView android:id="@id/ub__cobrandcard_offer_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Cobrandcard.Offer.H3.Book" />
+                                <com.ubercab.ui.core.UPlainView android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="?dividerWidth" android:layout_marginTop="@dimen/ub__cobrand_offer_divider_margin" android:layout_marginBottom="@dimen/ub__cobrand_offer_divider_margin" android:alpha="0.8" />
+                                <com.ubercab.ui.core.UTextView android:id="@id/ub__cobrandcard_offer_benefits_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Cobrandcard.Offer.H4" />
+                                <com.ubercab.ui.core.URecyclerView android:id="@id/ub__cobrandcard_offer_benefits_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" uber:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+                                <com.ubercab.ui.core.UTextView android:linksClickable="true" android:id="@id/ub__cobrandcard_offer_benefits_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Cobrandcard.Offer.H6.News.Secondary" />
+                                <com.ubercab.ui.core.UPlainView android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="?dividerWidth" android:layout_marginTop="@dimen/ub__cobrand_offer_divider_margin" android:layout_marginBottom="@dimen/ub__cobrand_offer_divider_margin" android:alpha="0.8" />
+                                <com.ubercab.ui.core.UTextView android:id="@id/ub__cobrandcard_offer_additional_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Cobrandcard.Offer.H4" />
+                                <com.ubercab.ui.core.URecyclerView android:id="@id/ub__cobrandcard_offer_additional_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" uber:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+                                <com.ubercab.ui.core.UTextView android:linksClickable="true" android:id="@id/ub__cobrandcard_offer_terms" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Cobrandcard.Offer.H6.Secondary" />
+                            </com.ubercab.ui.core.ULinearLayout>
+                        </com.ubercab.ui.core.ULinearLayout>
+                    </com.ubercab.ui.core.UScrollView>
+                    <com.ubercab.ui.core.UFrameLayout android:layout_gravity="bottom" android:id="@id/ub__cobrandcard_offer_apply_container" android:background="?brandGrey20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.ubercab.ui.core.UButton android:id="@id/ub__cobrandcard_offer_apply_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/cobrandcard_offer_apply_button" uber:analyticsId="ab4e2663-2b14" style="@style/Platform.Button" />
+                        <com.ubercab.ui.core.UPlainView android:layout_gravity="top" android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+                        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__cobrandcard_offer_button_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:bli_bitColor="?colorPrimary" />
+                    </com.ubercab.ui.core.UFrameLayout>
+                </com.ubercab.ui.core.ULinearLayout>
+            </com.ubercab.ui.core.UFrameLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__cobrandcard_offer_loading" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:layout_behavior="@string/appbar_scrolling_view_behavior" uber:bli_bitColor="?colorPrimary" />
+    </com.ubercab.ui.core.UCoordinatorLayout>
+</com.ubercab.presidio.cobrandcard.CobrandCardOfferView>

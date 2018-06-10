@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UScrollView android:orientation="vertical" android:paddingLeft="?gutterSize" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="?gutterSize" android:paddingEnd="?gutterSize" uber:analyticsId="4e8cc939-a842"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UTextView android:gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:text="@string/ub__commute_request_view_missing_route_title" style="@style/Platform.TextAppearance.H1.Book" />
+        <com.ubercab.ui.core.UTextView android:gravity="start" android:id="@id/ub__commute_route_missing_message_textview" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_request_view_missing_message" style="@style/Platform.TextAppearance.P.Book" />
+        <android.support.constraint.ConstraintLayout android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UImageView android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" uber:srcCompat="@drawable/ub__rider_first_time_commute" uber:layout_constraintDimensionRatio="H,327:113" uber:layout_constraintEnd_toEndOf="parent" uber:layout_constraintStart_toStartOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.UScrollView>

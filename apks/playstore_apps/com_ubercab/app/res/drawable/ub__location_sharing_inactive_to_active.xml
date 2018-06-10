@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/ic_location_sharing_toggle_inactive"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="path3" android:animation="@animator/ub__location_sharing_stroke_inactive_active" />
+    <target android:name="path4" android:animation="@animator/ub__location_sharing_stroke_inactive_active" />
+    <target android:name="path6" android:animation="@animator/ub__location_sharing_stroke_inactive_active" />
+    <target android:name="path7" android:animation="@animator/ub__location_sharing_stroke_inactive_active" />
+    <target android:name="path8" android:animation="@animator/ub__location_sharing_fill_inactive_active" />
+</animated-vector>

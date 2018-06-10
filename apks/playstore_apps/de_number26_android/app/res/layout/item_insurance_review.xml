@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/InsuranceReviewItemLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_insurance_review_item" android:src="@drawable/ic_insurance_review_item_default" style="@style/InsuranceReviewItemIcon" />
+    <TextView android:id="@id/text_insurance_review_item_category" android:layout_toStartOf="@id/button_insurance_review_item_delete" android:layout_toEndOf="@id/image_insurance_review_item" style="@style/InsuranceReviewItemCategory" />
+    <TextView android:id="@id/text_insurance_review_item_provider" android:layout_below="@id/text_insurance_review_item_category" android:layout_toStartOf="@id/button_insurance_review_item_delete" android:layout_toEndOf="@id/image_insurance_review_item" style="@style/InsuranceReviewItemProvider" />
+    <Button android:id="@id/button_insurance_review_item_delete" android:text="@string/insurance_review_delete" android:layout_alignParentEnd="true" style="@style/InsuranceReviewItemDeleteButton" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <FrameLayout android:background="@color/web_view_act_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loaderLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.mklimek.frameviedoview.FrameVideoView android:id="@id/loaderVideo" android:layout_width="160.0dip" android:layout_height="160.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/grey_dark" android:id="@id/ladeDaten" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ladeDaten" fontPath="@string/font_regular" />
+                <TextView android:textColor="@color/grey" android:id="@id/ausDemWelt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AusweltTraum" fontPath="@string/font_regular" />
+            </LinearLayout>
+        </LinearLayout>
+        <WebView android:id="@id/webView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

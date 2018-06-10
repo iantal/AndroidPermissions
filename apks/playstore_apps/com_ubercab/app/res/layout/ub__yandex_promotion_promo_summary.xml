@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.promotion.yandex_summary.YandexPromoSummaryView android:orientation="vertical" android:background="?android:colorBackground" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UPlainView android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/ui__divider_width" />
+    <com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/promotions" style="@style/Platform.TextAppearance.ListHeader" />
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/promo_summary_promotions" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/promo_summary_promotions_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorAccent" />
+        <com.ubercab.ui.core.UFrameLayout android:id="@id/promo_yandex_summary_promotions" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ui__min_list_multiline_item_height"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <com.ubercab.ui.core.UTextView android:gravity="center_vertical" android:id="@id/promo_yandex_summary_promotions_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/promotions" android:drawablePadding="@dimen/ui__spacing_unit_2x" android:drawableStart="@drawable/ic__promotions_wrapped" style="@style/Platform.TextAppearance.H5.News" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.presidio.promotion.yandex_summary.YandexPromoSummaryView>

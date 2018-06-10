@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.core.root.main.ride.request.home.dimmed.DimmedView android:fitsSystemWindows="@bool/use_transparent_status_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true" uber:analyticsId="a168f1cd-45c3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UPlainView android:theme="@style/Base.Theme.Helix.Dark" android:id="@id/ub__dimmable_background" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__dimmable_close_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_4x" android:layout_marginStart="?contentInset" uber:srcCompat="@drawable/ub__close" uber:analyticsId="d7d62a6c-a5a3" />
+    <com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimaryInverse" android:gravity="center" android:layout_gravity="center" android:id="@id/ub__dimmable_info_text" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H4" />
+</com.ubercab.presidio.app.core.root.main.ride.request.home.dimmed.DimmedView>

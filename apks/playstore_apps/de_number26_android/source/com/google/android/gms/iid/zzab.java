@@ -1,0 +1,20 @@
+package com.google.android.gms.iid;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
+
+final class zzab
+  extends BroadcastReceiver
+{
+  zzab(zzz paramZzz) {}
+  
+  public final void onReceive(Context paramContext, Intent paramIntent)
+  {
+    if (Log.isLoggable("InstanceID/Rpc", 3)) {
+      Log.d("InstanceID/Rpc", "Received GSF callback via dynamic receiver");
+    }
+    this.zza.zza(paramIntent);
+  }
+}

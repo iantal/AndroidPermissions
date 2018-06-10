@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingTop="@dimen/screen_content_padding_half" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/to_legal_container" n1:background="@drawable/selector_item_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <ImageView n1:id="@id/to_legal" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" n1:layout_marginLeft="@dimen/screen_content_margin" n1:scaleType="center" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/transfers_groups_provider_transfer_legal" style="@style/TextView.Default" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/state_organization_container" n1:background="@drawable/selector_item_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <ImageView n1:id="@id/state_organization" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" n1:layout_marginLeft="@dimen/screen_content_margin" n1:scaleType="center" />
+        <TextView n1:gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/transfers_groups_provider_transfer_nontaxes" style="@style/TextView.Default" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/taxes_fees_container" n1:background="@drawable/selector_item_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <ImageView n1:id="@id/taxes_fees" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" n1:layout_marginLeft="@dimen/screen_content_margin" n1:scaleType="center" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/transfers_groups_provider_transfer_taxes" style="@style/TextView.Default" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/to_inner_legal_container" n1:background="@drawable/selector_item_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <ImageView n1:id="@id/to_inner_legal" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" n1:layout_marginLeft="@dimen/screen_content_margin" n1:scaleType="center" />
+        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/transfers_groups_provider_transfer_inner_legal" style="@style/TextView.Default" />
+    </LinearLayout>
+</LinearLayout>

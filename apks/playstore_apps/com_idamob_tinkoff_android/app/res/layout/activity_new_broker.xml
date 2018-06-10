@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/content" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ImageView n1:id="@id/image_block" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="28.0dip" n1:src="@drawable/offer_investing" n1:scaleType="centerCrop" n1:layout_alignParentTop="true" />
+        <TextView n1:textAppearance="@style/Text.Default.White" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/note_1" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingRight="@dimen/screen_content_padding" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/broker_account_application_note_1" n1:layout_below="@id/image_block" n1:layout_centerHorizontal="true" />
+        <TextView n1:textAppearance="@style/Text.Small.Hint" n1:textSize="13.0sp" n1:textColorLink="@color/text_hint" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/note_2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/screen_content_margin" n1:text="@string/broker_account_application_note_2" n1:layout_below="@id/note_1" n1:layout_centerHorizontal="true" />
+        <Button n1:id="@id/button_next" n1:layout_width="200.0dip" n1:layout_height="wrap_content" n1:text="@string/broker_account_application_action_button" n1:layout_above="@id/disclaimer_text" n1:layout_centerHorizontal="true" style="@style/Button.Round.Yellow" />
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:textSize="13.0sp" n1:textColorLink="@color/text_light" n1:gravity="center" n1:id="@id/disclaimer_text" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/screen_content_padding_plus" n1:layout_marginBottom="36.0dip" n1:layout_alignParentLeft="true" n1:layout_alignParentBottom="true" n1:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+</FrameLayout>

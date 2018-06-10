@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/WrapContent">
+    <ru.tinkoff.core.money.view.MoneyAmountView n1:layout_gravity="center" n1:id="@id/balance_from" n1:padding="@dimen/offset_from_edge_quarter" n2:strikeThrough="true" n2:textColorAmount="@color/text_light" n2:textColorCurrency="@color/text_light" n2:textColorFractional="@color/text_light" n2:textColorSign="@color/text_light" n2:textSizeAmount="@dimen/text_small" n2:textSizeCurrency="@dimen/text_small" n2:textSizeFractional="@dimen/text_small" n2:textSizeSign="@dimen/text_small" style="@style/SmartMoneyView"
+      xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n3:id="@id/balance_arrow" n3:padding="@dimen/offset_from_edge_quarter" n3:src="@drawable/arrow_right_white" style="@style/WrapContent"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <ru.tinkoff.core.money.view.MoneyAmountView n4:layout_gravity="center" n4:id="@id/balance_to" n4:padding="@dimen/offset_from_edge_quarter" n5:textColorAmount="@color/white" n5:textColorCurrency="@color/white" n5:textColorFractional="@color/white" n5:textColorSign="@color/white" n5:textSizeAmount="@dimen/text_small" n5:textSizeCurrency="@dimen/text_small" n5:textSizeFractional="@dimen/text_small" n5:textSizeSign="@dimen/text_small" style="@style/SmartMoneyView"
+      xmlns:n4="http://schemas.android.com/apk/res/android" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

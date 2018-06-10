@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/AccountsCarouselPage">
+    <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:paddingLeft="@dimen/offset_account_page" n1:paddingRight="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/inc_page_account" />
+        <RelativeLayout n1:id="@id/content" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:id="@id/payment_block" n1:paddingLeft="8.0dip" n1:paddingTop="4.0dip" n1:paddingRight="8.0dip" n1:paddingBottom="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="4.0dip" n1:layout_alignParentTop="true">
+                <TextView n1:id="@id/payment_title" n1:text="@string/account_details_next_payment_amount_label" style="@style/AccountPage.Note" />
+                <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/payment" style="@style/AccountPage.Amount.Medium" />
+            </LinearLayout>
+            <TextView n1:id="@id/payment_date_title" n1:text="@string/account_details_next_payment_date_label" n1:layout_below="@id/payment_block" style="@style/AccountPage.Note" />
+            <TextView n1:id="@id/payment_date" n1:layout_toRightOf="@id/payment_date_title" n1:layout_alignBaseline="@id/payment_date_title" style="@style/AccountPage.Note.White" />
+            <TextView n1:id="@id/debt_title" n1:text="@string/account_details_debt_label" n1:layout_below="@id/payment_date_title" style="@style/AccountPage.Note" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/debt" n1:layout_toRightOf="@id/debt_title" n1:layout_alignBaseline="@id/debt_title" style="@style/AccountPage.Amount.Medium" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

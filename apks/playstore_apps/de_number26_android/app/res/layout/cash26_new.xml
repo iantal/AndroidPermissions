@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/new_cash26_layout" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_margin_large" android:paddingStart="@dimen/default_padding" android:paddingEnd="@dimen/default_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/grey_dark" android:gravity="center" android:layout_gravity="center" android:id="@id/non_certified" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:text="@string/cash26_intro_title" />
+    <TextView android:textSize="@dimen/textSizePrimary" android:textColor="@color/textColorSecondary" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:text="@string/cash26_intro" />
+    <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/grey" android:layout_gravity="center_horizontal" android:id="@id/cash26_learn_more_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="36.0dip" />
+</LinearLayout>

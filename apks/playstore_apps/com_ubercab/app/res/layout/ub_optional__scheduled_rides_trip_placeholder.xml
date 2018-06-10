@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UCardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="?gutterSize" uber:cardCornerRadius="@dimen/scheduled_rides_trip_card_radius" uber:cardElevation="@dimen/scheduled_rides_placeholder_card_evelvation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H4.News" android:layout_gravity="center" android:padding="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scheduled_rides_no_upcoming_rides" />
+</com.ubercab.ui.core.UCardView>

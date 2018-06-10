@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_money_transfer_no_contacts" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="200.0dip" android:src="@drawable/ic_moneybeam_contacts_empty" />
+    <TextView android:textSize="26.0sp" android:textColor="@color/black_1b" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip" android:text="@string/moneybeam_contact_list_no_contacts_title" fontPath="@string/font_medium" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="36.0dip" android:text="@string/moneybeam_contact_list_no_contacts_subtitle" fontPath="@string/font_regular" />
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+    <TextView android:id="@id/button_no_contacts_invite_friends" android:text="@string/moneybeam_contact_list_invite_friends" style="@style/mainbutton" />
+</LinearLayout>

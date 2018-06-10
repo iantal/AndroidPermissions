@@ -1,0 +1,103 @@
+.class Lngd$2;
+.super Lio/reactivex/observers/DisposableSingleObserver;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lngd;->b(Lhhs;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lio/reactivex/observers/DisposableSingleObserver<",
+        "Ljkq<",
+        "Laqf;",
+        ">;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lngd;
+
+
+# direct methods
+.method constructor <init>(Lngd;)V
+    .locals 0
+
+    .line 80
+    iput-object p1, p0, Lngd$2;->a:Lngd;
+
+    invoke-direct {p0}, Lio/reactivex/observers/DisposableSingleObserver;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljkq;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljkq<",
+            "Laqf;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 83
+    invoke-virtual {p1}, Ljkq;->b()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 84
+    iget-object v0, p0, Lngd$2;->a:Lngd;
+
+    invoke-virtual {p1}, Ljkq;->c()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Laqf;
+
+    invoke-static {v0, p1}, Lngd;->a(Lngd;Laqf;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public synthetic a_(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 80
+    check-cast p1, Ljkq;
+
+    invoke-virtual {p0, p1}, Lngd$2;->a(Ljkq;)V
+
+    return-void
+.end method
+
+.method public onError(Ljava/lang/Throwable;)V
+    .locals 3
+
+    .line 90
+    sget-object v0, Lngb;->b:Lngb;
+
+    invoke-static {v0}, Lnnd;->a(Lnnh;)Lnne;
+
+    move-result-object v0
+
+    const-string v1, "exception getting install referrer"
+
+    const/4 v2, 0x0
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 91
+    invoke-virtual {v0, p1, v1, v2}, Lnne;->a(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    return-void
+.end method

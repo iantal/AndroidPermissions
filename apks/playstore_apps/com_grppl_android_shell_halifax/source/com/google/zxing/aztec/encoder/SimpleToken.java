@@ -1,0 +1,30 @@
+package com.google.zxing.aztec.encoder;
+
+import com.google.zxing.common.BitArray;
+
+final class SimpleToken
+  extends Token
+{
+  private final short bitCount;
+  private final short value;
+  
+  SimpleToken(Token paramToken, int paramInt1, int paramInt2)
+  {
+    super(paramToken);
+    this.value = ((short)(short)paramInt1);
+    this.bitCount = ((short)(short)paramInt2);
+  }
+  
+  void appendTo(BitArray paramBitArray, byte[] paramArrayOfByte)
+  {
+    paramBitArray.appendBits(this.value, this.bitCount);
+  }
+  
+  public String toString()
+  {
+    int i = this.value;
+    int j = this.bitCount;
+    int k = this.bitCount;
+    return '<' + Integer.toBinaryString(i & (1 << j) - 1 | 1 << k | 1 << this.bitCount).substring(1) + '>';
+  }
+}

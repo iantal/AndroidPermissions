@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/payments_contacts_container" n1:background="@drawable/bg_contacts" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingRight="@dimen/screen_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="@dimen/text_extra_small" n1:textColor="@color/white" n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" n1:text="@string/anonymous_pay_showcase_title_contacts" />
+        <ViewFlipper n1:id="@id/contacts_view_flipper" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <GridView n1:id="@id/phone_contacts_grid_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/tile_height_default_item_half" n1:layout_marginBottom="26.0dip" n1:numColumns="5" n1:rowCount="1" />
+            <TextView n1:textSize="@dimen/text_small" n1:textColor="@color/text_white_transparent" n1:gravity="center_horizontal" n1:id="@id/permissions_text_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/screen_content_padding_medium" n1:layout_marginBottom="@dimen/screen_content_padding_medium" n1:text="@string/anonymous_pay_showcase_contacts_permissions_text" />
+        </ViewFlipper>
+        <Button n1:textAppearance="@style/Text.ExtraSmall.White" n1:textSize="@dimen/text_extra_small" n1:gravity="center_vertical" n1:layout_gravity="center_horizontal" n1:id="@id/payments_all_contacts" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/screen_content_padding" n1:text="@string/anonymous_pay_showcase_button_all_contacts" n1:drawableRight="@drawable/ic_arrow_circle_white" n1:drawablePadding="@dimen/screen_content_padding_half" n1:textAllCaps="true" style="?borderlessButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

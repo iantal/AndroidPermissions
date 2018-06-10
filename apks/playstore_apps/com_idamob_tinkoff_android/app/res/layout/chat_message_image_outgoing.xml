@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tinkoff.chat.webim.ui.view.BackgroundMaskedImageView n1:id="@id/chat_message_content" n1:background="@drawable/chat_message_text_outgoing_bg" n1:layout_width="@dimen/chat_message_image_size" n1:layout_height="@dimen/chat_message_image_size" n1:layout_marginRight="@dimen/chat_message_horizontal_margin" n1:foreground="?selectableItemBackground" n1:scaleType="centerCrop" n1:layout_alignParentRight="true" />
+    <include layout="@layout/include_chat_message_failed_icon_outgoing" />
+    <include layout="@layout/include_chat_message_time_outgoing" />
+</RelativeLayout>

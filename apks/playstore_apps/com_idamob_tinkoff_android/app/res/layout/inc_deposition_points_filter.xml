@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ScreenContent">
+    <ru.tcsbank.mb.ui.widgets.edit.text.TextViewWithClickableIcon n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:layout_gravity="center" n1:id="@id/currency_title" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/deposition_points_filter_currency_title"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <RadioGroup n2:id="@id/currency_group" style="@style/VerticalWrapping"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <android.support.v7.widget.AppCompatRadioButton n2:id="@id/usd_currency" n2:text="@string/common_currency_usd" style="@style/RadioButton" />
+        <android.support.v7.widget.AppCompatRadioButton n2:id="@id/rub_currency" n2:text="@string/common_currency_rub" style="@style/RadioButton" />
+        <android.support.v7.widget.AppCompatRadioButton n2:id="@id/eur_currency" n2:text="@string/common_currency_eur" style="@style/RadioButton" />
+    </RadioGroup>
+    <include layout="@layout/inc_divider_margin" />
+    <LinearLayout n3:orientation="vertical" n3:id="@id/df_amount_block" style="@style/VerticalWrapping"
+      xmlns:n3="http://schemas.android.com/apk/res/android">
+        <LinearLayout style="@style/DefaultItem.Margin">
+            <TextView n3:textAppearance="@style/Text.Small.Light" n3:layout_width="wrap_content" n3:layout_height="wrap_content" n3:text="@string/deposition_points_filter_amount_title" n3:layout_weight="1.0" />
+            <TextView n3:textAppearance="@style/Text.Default.Dark" n3:id="@id/df_great_sign" n3:visibility="gone" n3:layout_width="wrap_content" n3:layout_height="wrap_content" n3:layout_marginRight="@dimen/offset_from_edge_half" n3:text="@string/deposition_points_great_sign" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n3:id="@id/df_deposit_amount" style="@style/SmartMoneyView" />
+        </LinearLayout>
+        <FrameLayout n3:layout_width="fill_parent" n3:layout_height="@dimen/tile_height_default_item" n3:layout_marginLeft="@dimen/offset_from_edge" n3:layout_marginRight="@dimen/offset_from_edge">
+            <SeekBar n3:layout_gravity="center" n3:id="@id/df_amount_seekbar" style="@style/VerticalWrapping" />
+        </FrameLayout>
+        <include layout="@layout/inc_divider_margin" />
+    </LinearLayout>
+    <ru.tcsbank.mb.ui.widgets.CheckBoxRight n4:textAppearance="@style/Text.Small.Dark" n4:textSize="@dimen/text_small" n4:layout_gravity="center" n4:id="@id/df_verify_points_checkbox" n4:paddingLeft="@dimen/offset_from_edge" n4:paddingRight="@dimen/offset_from_edge" n4:layout_width="fill_parent" n4:layout_height="@dimen/tile_height_default_item" n4:text="@string/deposition_points_filter_validate_checkbox"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <TextView n5:textAppearance="@style/SubtitleTextItem" n5:gravity="left" n5:id="@id/df_verify_points_title" n5:paddingLeft="@dimen/offset_from_edge" n5:paddingRight="@dimen/offset_from_edge" n5:layout_width="wrap_content" n5:layout_height="@dimen/tile_height_default_item" n5:text="@string/deposition_points_filter_validate_hint"
+      xmlns:n5="http://schemas.android.com/apk/res/android" />
+    <include n6:id="@id/df_verify_points_divider" layout="@layout/inc_divider_margin"
+      xmlns:n6="http://schemas.android.com/apk/res/android" />
+    <ru.tcsbank.mb.ui.widgets.CheckBoxRight n7:textAppearance="@style/Text.Small.Dark" n7:textSize="@dimen/text_small" n7:layout_gravity="center" n7:id="@id/df_deposit_select_all" n7:paddingLeft="@dimen/offset_from_edge" n7:paddingRight="@dimen/offset_from_edge" n7:layout_width="fill_parent" n7:layout_height="@dimen/tile_height_default_item" n7:text="@string/deposition_points_filter_all_checkbox"
+      xmlns:n7="http://schemas.android.com/apk/res/android" />
+    <include layout="@layout/inc_divider_margin" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/BlockContent.Horizontal.BottomGreyLine">
+    <TextView n1:id="@id/rate_cell_caption" style="@style/RateCaption"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <ru.tinkoff.core.money.view.MoneyAmountView n2:id="@id/rate_cell_buy" style="@style/ExchangeMoneyView.Rate"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <ru.tinkoff.core.money.view.MoneyAmountView n3:id="@id/rate_cell_sell" style="@style/ExchangeMoneyView.Rate"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

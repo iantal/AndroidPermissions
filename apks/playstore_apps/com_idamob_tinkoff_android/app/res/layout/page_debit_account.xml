@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/AccountsCarouselPage">
+    <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:paddingLeft="@dimen/offset_account_page" n1:paddingRight="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/inc_page_account" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/content" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:id="@id/account_future_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textColor="@color/white_half_transparent" n1:id="@id/account_future_cashback_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/account_details_future_cashback_label" style="@style/Text.ExtraSmall.Light" />
+                <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:textColor="@color/white_half_transparent" n1:id="@id/account_details_future_cashback_label_start" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/account_details_future_cashback_label_start" n1:layout_below="@id/account_future_cashback_title" />
+                <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/account_future_cashback_money_view" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge_quarter" n1:layout_toRightOf="@id/account_details_future_cashback_label_start" n1:layout_below="@id/account_future_cashback_title" n2:fontPath="@string/roboto" n2:textColorAmount="@color/white" n2:textColorCurrency="@color/text_lighter" n2:textColorFractional="@color/white" n2:textColorSign="@color/white" n2:textSizeAmount="@dimen/text_extra_small" n2:textSizeCurrency="@dimen/text_extra_small" n2:textSizeFractional="@dimen/text_extra_small" n2:textSizeSign="@dimen/text_extra_small" style="@style/SmartMoneyView" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:textColor="@color/white_half_transparent" n1:id="@id/account_details_future_cashback_label_end" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge_quarter" n1:text="@string/account_details_future_cashback_label_end" n1:layout_toRightOf="@id/account_future_cashback_money_view" n1:layout_below="@id/account_future_cashback_title" />
+            </RelativeLayout>
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.White" n1:gravity="center" n1:id="@id/account_loyalty_label" n1:background="@drawable/bg_loyalty" n1:paddingLeft="@dimen/offset_loyalty_btn" n1:paddingRight="@dimen/offset_loyalty_btn" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="@dimen/tile_height_loyalty_btn" n1:layout_marginTop="@dimen/offset_from_edge_half" />
+        </LinearLayout>
+        <RelativeLayout n1:id="@id/overdraft_content" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:id="@id/overdraft_title" n1:text="@string/pba_balance_with_overdraft" style="@style/AccountPage.Note" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/overdraft_available_amount" n1:layout_toRightOf="@id/overdraft_title" style="@style/AccountPage.Amount.Medium" />
+            <TextView n1:id="@id/overdraft_payment_title" n1:visibility="gone" n1:layout_below="@id/overdraft_title" style="@style/AccountPage.Note" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/overdraft_payment" n1:layout_toRightOf="@id/overdraft_payment_title" n1:layout_below="@id/overdraft_title" style="@style/AccountPage.Amount.Medium" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/accountdisplayFilterLayout" android:background="@drawable/onealphalightgrey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/filterLayoutHeading" android:background="@drawable/onealphablue" android:paddingBottom="4.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/filterLayoutCloseButton" android:background="@drawable/whiteback" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/searchbartitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_filter" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <Button android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/filterLayoutSearchButton" android:background="@color/transparent" android:paddingLeft="15.0dip" android:paddingTop="2.0dip" android:paddingRight="15.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="4.0dip" android:text="@string/done" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <ImageView android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

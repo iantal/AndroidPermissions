@@ -1,0 +1,57 @@
+package com.fasterxml.jackson.databind.ser.impl;
+
+import com.fasterxml.jackson.annotation.ObjectIdGenerator;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.SerializableString;
+import com.fasterxml.jackson.databind.JsonSerializer;
+import com.fasterxml.jackson.databind.SerializerProvider;
+
+public final class WritableObjectId
+{
+  public final ObjectIdGenerator<?> generator;
+  public Object id;
+  protected boolean idWritten = false;
+  
+  public WritableObjectId(ObjectIdGenerator<?> paramObjectIdGenerator)
+  {
+    this.generator = paramObjectIdGenerator;
+  }
+  
+  public final Object generateId(Object paramObject)
+  {
+    if (this.id == null) {
+      this.id = this.generator.generateId(paramObject);
+    }
+    return this.id;
+  }
+  
+  public final void writeAsField(JsonGenerator paramJsonGenerator, SerializerProvider paramSerializerProvider, ObjectIdWriter paramObjectIdWriter)
+  {
+    this.idWritten = true;
+    if (paramJsonGenerator.canWriteObjectId())
+    {
+      paramJsonGenerator.writeObjectId(String.valueOf(this.id));
+      return;
+    }
+    SerializableString localSerializableString = paramObjectIdWriter.propertyName;
+    if (localSerializableString != null)
+    {
+      paramJsonGenerator.writeFieldName(localSerializableString);
+      paramObjectIdWriter.serializer.serialize(this.id, paramJsonGenerator, paramSerializerProvider);
+    }
+  }
+  
+  public final boolean writeAsId(JsonGenerator paramJsonGenerator, SerializerProvider paramSerializerProvider, ObjectIdWriter paramObjectIdWriter)
+  {
+    if ((this.id != null) && ((this.idWritten) || (paramObjectIdWriter.alwaysAsId)))
+    {
+      if (paramJsonGenerator.canWriteObjectId()) {
+        paramJsonGenerator.writeObjectRef(String.valueOf(this.id));
+      } else {
+        paramObjectIdWriter.serializer.serialize(this.id, paramJsonGenerator, paramSerializerProvider);
+      }
+      return true;
+    }
+    return false;
+  }
+}

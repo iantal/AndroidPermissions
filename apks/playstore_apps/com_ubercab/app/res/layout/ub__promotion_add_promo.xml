@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.promotion.add.halfscreen.HalfScreenPromoView android:orientation="vertical" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="70f11fac-cde0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/promotion_add_loading" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorAccent" />
+        <com.ubercab.ui.commons.widget.PresidioTextInputLayout android:id="@id/promotion_add_edit_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_3x" android:layout_marginTop="@dimen/ui__spacing_unit_5x" android:layout_marginRight="@dimen/ui__spacing_unit_3x" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:layout_marginStart="@dimen/ui__spacing_unit_3x" android:layout_marginEnd="@dimen/ui__spacing_unit_3x" uber:hintEnabled="false">
+            <com.ubercab.ui.commons.widget.ClearableEditText android:id="@id/promotion_add_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/promo_gift_add_hint" android:inputType="textNoSuggestions" style="@style/Platform.TextAppearance.H3" />
+        </com.ubercab.ui.commons.widget.PresidioTextInputLayout>
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_3x" android:layout_marginRight="@dimen/ui__spacing_unit_3x" android:layout_marginStart="@dimen/ui__spacing_unit_3x" android:layout_marginEnd="@dimen/ui__spacing_unit_3x">
+        <com.ubercab.ui.core.UButton android:id="@id/promotion_add_cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" uber:analyticsId="29cc82c4-86a5" style="?platformButtonSecondary" />
+        <com.ubercab.ui.core.UButton android:id="@id/promotion_add_apply_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/promo_apply" android:layout_weight="1.0" android:layout_marginStart="@dimen/ui__spacing_unit_1x" uber:analyticsId="3e92d347-4083" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.promotion.add.halfscreen.HalfScreenPromoView>

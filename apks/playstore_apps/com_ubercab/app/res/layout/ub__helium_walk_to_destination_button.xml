@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.post_trip.walk.button.helium.HeliumWalkToDestinationButtonView android:theme="@style/Theme.Helix.Light" android:orientation="vertical" android:background="@drawable/ub__container_normal" android:padding="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x">
+        <com.ubercab.presidio.ui.layout.circle_frame_layout.CircleFrameLayout android:layout_width="@dimen/ui__spacing_unit_6x" android:layout_height="@dimen/ui__spacing_unit_6x">
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/ub__icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" app:lottie_autoPlay="true" app:lottie_loop="true" />
+        </com.ubercab.presidio.ui.layout.circle_frame_layout.CircleFrameLayout>
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="?gutterSize">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H4.News" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UButton android:id="@id/ub__done_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?gutterSize" android:text="@string/done" style="?platformButtonPrimary" />
+</com.ubercab.presidio.app.optional.root.main.ride.post_trip.walk.button.helium.HeliumWalkToDestinationButtonView>

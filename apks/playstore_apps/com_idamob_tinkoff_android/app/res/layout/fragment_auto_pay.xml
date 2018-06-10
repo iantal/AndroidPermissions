@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:id="@id/smart_fields_group" style="@style/ScreenContent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:fieldKey="threshold_amount" n2:fieldTitle="@string/repeat_template_auto_prepaid_min_balance" n2:fieldType="simpleList" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:inputType="numberDecimal" n3:fieldClass="ru.tinkoff.core.smartfields.api.fields.MoneyInputSmartField" n3:fieldKey="month_limit_amount" n3:fieldTitle="@string/pcf_pay_amount_hint" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:inputType="numberDecimal" n4:fieldClass="ru.tinkoff.core.smartfields.api.fields.MoneyInputSmartField" n4:fieldKey="payment_amount" n4:fieldTitle="@string/pcf_pay_amount_hint" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n5:fieldKey="tinkoff_mobile_amount" n5:fieldTitle="@string/repeat_template_account_auto_sum" n5:fieldType="simpleList" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

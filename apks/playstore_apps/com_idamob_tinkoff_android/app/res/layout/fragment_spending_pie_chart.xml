@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/pie_chart_top_container" n1:paddingLeft="@dimen/screen_content_margin" n1:layout_width="fill_parent" n1:layout_height="48.0dip">
+        <TextView n1:textAppearance="@style/Text.Default.Light" n1:id="@id/pie_chart_period_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" />
+        <ImageView n1:id="@id/spending_chart_calendar_button" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/calendar_grey" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/pie_chart_operations_title_container" n1:layout_width="wrap_content" n1:layout_height="22.0dip" n1:layout_marginTop="10.0dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" n1:alpha="0.0">
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:paddingRight="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/pie_chart_operations_start_phrase" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.White" n1:id="@id/pie_chart_operations_size" n1:paddingRight="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/pie_chart_operations" n1:paddingRight="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/pie_chart_operations_amount" n2:fractionalMode="enabled" n2:textColorAmount="@color/white" n2:textColorCurrency="@color/text_light" n2:textColorFractional="@color/white" n2:textSizeAmount="@dimen/text_extra_small" n2:textSizeCurrency="@dimen/text_extra_small" n2:textSizeFractional="@dimen/text_extra_small" style="@style/SmartMoneyView" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <ru.tcsbank.mb.ui.widgets.chart.PieChartView n1:id="@id/pie_chart_view" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toLeftOf="@id/pie_chart_arrow_right" n1:layout_toRightOf="@id/pie_chart_arrow_left" n1:layout_above="@id/pie_chart_operations_title_container" n1:layout_below="@id/pie_chart_top_container" />
+    <ImageView n1:id="@id/pie_chart_arrow_left" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingRight="@dimen/screen_content_padding" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/arrow_white_left" n1:layout_above="@id/pie_chart_operations_title_container" n1:layout_below="@id/pie_chart_top_container" n1:layout_alignParentLeft="true" />
+    <ImageView n1:id="@id/pie_chart_arrow_right" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingRight="@dimen/screen_content_padding" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/arrow_white_right" n1:layout_above="@id/pie_chart_operations_title_container" n1:layout_below="@id/pie_chart_top_container" n1:layout_alignParentRight="true" />
+    <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:id="@id/pie_chart_progress" n1:layout_alignParentBottom="true" style="@style/SmoothProgress" />
+</RelativeLayout>

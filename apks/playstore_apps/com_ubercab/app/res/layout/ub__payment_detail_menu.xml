@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.provider.shared.menu.DetailMenuView android:orientation="vertical" android:background="@drawable/ub__payment_detail_menu_background" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/menu_edit_button" android:background="?selectableItemBackground" android:padding="@dimen/ui__spacing_unit_2x" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UImageView android:layout_width="@dimen/ub__payment_menu_icon_size" android:layout_height="@dimen/ub__payment_menu_icon_size" uber:srcCompat="@drawable/ic_edit_16" />
+        <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__payments_provider_menu_edit" android:layout_marginStart="@dimen/ui__spacing_unit_4x" style="@style/Platform.TextAppearance.H4.News" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/menu_delete_button" android:padding="@dimen/ui__spacing_unit_2x" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UImageView android:layout_width="@dimen/ub__payment_menu_icon_size" android:layout_height="@dimen/ub__payment_menu_icon_size" uber:srcCompat="@drawable/ub__payment_trash" />
+        <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__payments_provider_menu_delete" android:layout_marginStart="@dimen/ui__spacing_unit_4x" style="@style/Platform.TextAppearance.H4.News" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/menu_close_button" android:padding="@dimen/ui__spacing_unit_2x" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UImageView android:layout_width="@dimen/ub__payment_menu_icon_size" android:layout_height="@dimen/ub__payment_menu_icon_size" uber:srcCompat="@drawable/ic_close" />
+        <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__payments_provider_menu_close" android:layout_marginStart="@dimen/ui__spacing_unit_4x" style="@style/Platform.TextAppearance.H4.News" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.payment.provider.shared.menu.DetailMenuView>

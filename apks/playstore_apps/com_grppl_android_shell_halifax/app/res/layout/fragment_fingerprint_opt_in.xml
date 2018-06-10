@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/biometricInterstitialScreen" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:src="@drawable/fingerprint_setup_header" n1:scaleType="fitXY" n1:adjustViewBounds="true" n1:contentDescription="@string/fingerprint_opt_in_interstitial_artwork_content_description" />
+            <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fingerprint_opt_in_screen_spacing_medium" n1:layout_marginTop="@dimen/fingerprint_opt_in_screen_spacing_large" n1:layout_marginRight="@dimen/fingerprint_opt_in_screen_spacing_medium">
+                <TextView n1:id="@id/fingerprintInterstitialDescriptionText" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fingerprint_opt_in_screen_spacing_large" n1:text="@string/fingerprint_opt_in_interstitial_setup_info" style="@style/TextAppearance.Body" />
+                <TextView n1:id="@id/fingerprintInterstitialImportantText" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/fingerprint_opt_in_interstitial_information" style="@style/TextAppearance.Information" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fingerprint_opt_in_screen_spacing_medium" n1:layout_marginTop="@dimen/fingerprint_opt_in_screen_spacing_medium" n1:layout_marginRight="@dimen/fingerprint_opt_in_screen_spacing_medium" n1:layout_marginBottom="@dimen/fingerprint_opt_in_screen_spacing_medium">
+        <Button n1:id="@id/fingerprintInterstitialOptInButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fingerprint_opt_in_screen_spacing_small" n1:text="@string/fingerprint_opt_in_interstitial_opt_in_button" style="@style/Widget.Button.Primary" />
+        <Button n1:id="@id/fingerprintInterstitialOptOutButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/fingerprint_opt_in_interstitial_not_now_button" style="@style/Widget.Button.Secondary" />
+    </LinearLayout>
+</LinearLayout>

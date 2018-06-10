@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/input_layout" android:background="@android:color/white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:textSize="@dimen/transfer_set_amount_text" android:textColor="@color/grey_dark" android:gravity="center" android:id="@id/amount" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="0" android:maxLength="9" android:digits="0123456789.," android:inputType="numberDecimal" android:layout_marginEnd="@dimen/default_margin" />
+            <TextView android:textSize="@dimen/transfer_set_amount_text" android:textColor="@color/grey_dark" android:id="@id/symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/TextAppearance.Form.Text" android:gravity="center" android:id="@id/available" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+        <TextView android:textAppearance="@style/TextAppearance.Form.Text" android:textColor="@color/red" android:gravity="center" android:id="@id/error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        <TextView android:textAppearance="@style/TextAppearance.Form.Text" android:gravity="center" android:id="@id/transfers_fee_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="8.0dip" />
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/transfers_cash26_deposit_fee_layout" android:paddingBottom="@dimen/default_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_padding" android:paddingEnd="@dimen/default_padding">
+            <TextView android:textAppearance="@style/TextAppearance.Form.Text" android:textColor="@color/textColorSecondary" android:gravity="center" android:id="@id/transfers_fee_explanation" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textAppearance="@style/TextAppearance.Form.Text" android:textColor="@color/textColorSecondary" android:layout_gravity="center_vertical" android:id="@id/cash26_deposit_learn_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <TextView android:id="@id/nextButton" android:layout_marginTop="8.0dip" android:text="@string/action_next" style="@style/mainbutton" />
+    </LinearLayout>
+</merge>

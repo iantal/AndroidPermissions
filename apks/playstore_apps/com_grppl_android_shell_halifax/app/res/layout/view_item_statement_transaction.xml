@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:id="@id/transactionCreditIndicator" n1:background="@color/credit_indicator_color" n1:layout_width="@dimen/credit_indicator_width" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/credit_indicator_margin" n1:layout_alignParentRight="true" />
+    <TextView n1:textAppearance="@style/TransactionRowText" n1:id="@id/transactionDate" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/transaction_row_margin_medium" n1:layout_marginTop="@dimen/transaction_row_outer_margin" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" n1:importantForAccessibility="no" />
+    <TextView n1:textAppearance="@style/TransactionRowText.Strong" n1:ellipsize="end" n1:id="@id/transactionDescription" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/transaction_row_margin_medium" n1:layout_marginTop="@dimen/transaction_row_margin" n1:maxLines="2" n1:layout_below="@id/transactionDate" n1:layout_alignParentLeft="true" n1:importantForAccessibility="no" />
+    <TextView n1:textAppearance="@style/TransactionRowText" n1:id="@id/runningBalance" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toLeftOf="@id/transactionCreditIndicator" n1:layout_alignBaseline="@id/transactionDate" n1:importantForAccessibility="no" />
+    <TextView n1:textAppearance="@style/TransactionRowText.Strong.Balance" n1:id="@id/transactionAmount" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/transaction_row_margin" n1:layout_toLeftOf="@id/transactionCreditIndicator" n1:layout_alignBaseline="@id/transactionDescription" n1:importantForAccessibility="no" />
+</RelativeLayout>

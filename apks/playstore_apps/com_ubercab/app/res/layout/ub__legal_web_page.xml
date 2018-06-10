@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.legal.LegalWebPageView android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="38e089ac-740a"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorPrimary" />
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.presidio.app.optional.root.main.legal.LegalWebPageView>

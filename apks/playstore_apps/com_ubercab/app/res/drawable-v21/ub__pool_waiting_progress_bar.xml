@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="@dimen/ub__pool_waiting_progress_border_radius" />
+            <solid android:color="?brandGrey40" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/ub__pool_waiting_progress_border_radius" />
+                <solid android:color="?accentTertiary" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

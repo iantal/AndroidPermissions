@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" n2:popupTheme="@style/ThemeOverlay.AppCompat.Light" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Spinner n1:id="@id/spinner_nav" n1:background="?selectableItemBackground" n1:layout_width="wrap_content" n1:layout_height="?actionBarSize" n1:popupBackground="@color/bg_dark" n1:dropDownVerticalOffset="?actionBarSize" />
+    </android.support.v7.widget.Toolbar>
+    <ViewSwitcher n1:id="@id/exchange_switcher" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <fragment n1:name="ru.tcsbank.mb.ui.exchangerates.TinkoffExchangeRatesFragment" n1:id="@id/tcs_exchange_fragment" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <fragment n1:name="ru.tcsbank.mb.ui.exchangerates.CentralBankExchangeRatesFragment" n1:id="@id/central_bank_exchange_fragment" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </ViewSwitcher>
+</LinearLayout>

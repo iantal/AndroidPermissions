@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:inAnimation="@anim/fade_in" n1:outAnimation="@anim/fade_out"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="horizontal" style="@style/DefaultItem">
+            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:src="@drawable/ic_place_blue_24dp" />
+            <View n1:id="@id/placeholder_header" n1:background="@drawable/payment_square_tile_back_placeholder" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge" n1:layout_weight="1.0" />
+        </LinearLayout>
+        <View n1:id="@id/placeholder_map" n1:background="@drawable/payment_square_tile_back_placeholder" n1:layout_width="fill_parent" n1:layout_height="@dimen/offer_map_height" n1:layout_marginLeft="@dimen/offset_from_edge_large" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/loyalty_offer_detail_map_header" n1:background="?selectableItemBackground" style="@style/DefaultItem.Padding">
+            <ImageView n1:id="@id/icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:src="@drawable/ic_place_blue_24dp" />
+            <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:ellipsize="end" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:lines="1" />
+                <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:ellipsize="end" n1:id="@id/subtitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:lines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <fragment n1:name="com.google.android.gms.maps.SupportMapFragment" n1:id="@id/offer_map_fragment" n1:layout_width="fill_parent" n1:layout_height="@dimen/offer_map_height" n1:layout_marginLeft="@dimen/offset_from_edge_large" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" />
+    </LinearLayout>
+</ViewSwitcher>

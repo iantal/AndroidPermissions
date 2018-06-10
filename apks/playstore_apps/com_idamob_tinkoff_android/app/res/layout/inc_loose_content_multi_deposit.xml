@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/multi_deposit_loss" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/wrap_deposit_amount_multi" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:id="@id/amount_withdrawal_title" n1:text="@string/close_multi_deposit_withdrawal_label" style="@style/SubtitleTextItem" />
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/amount_withdrawal_block" n1:paddingLeft="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/wrap_deposit_loss_multi" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:id="@id/loose_benefit_title" n1:text="@string/close_multi_deposit_loose_benefit_label" style="@style/SubtitleTextItem" />
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/loose_benefit_block" n1:paddingLeft="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

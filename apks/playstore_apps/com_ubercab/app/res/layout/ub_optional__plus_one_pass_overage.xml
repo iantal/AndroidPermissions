@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.pass_overage.PlusOnePassOverageStepView android:theme="@style/Theme.Helix.Light" android:orientation="vertical" android:background="?android:colorBackground" android:padding="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="ce4e2e66-7db9"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:id="@id/pass_overage_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H2.Book" />
+    <com.ubercab.presidio.pricing.core.PricingTextView android:id="@id/pass_overage_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" uber:analyticsId="0d9295d5-6391" style="@style/Platform.TextAppearance.H5.Book" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/pass_overage_breakdown_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ui__spacing_unit_3x" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x">
+        <com.ubercab.ui.core.UButton android:id="@id/pass_overage_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/plus_one_overage_cancel" android:layout_weight="1.0" uber:analyticsId="3dc0c4c3-ec48" style="?platformButtonSecondary" />
+        <Space android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+        <com.ubercab.ui.core.UButton android:id="@id/pass_overage_confirm" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/plus_one_overage_confirm" android:layout_weight="1.0" uber:analyticsId="7e2ad88c-3d52" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.pass_overage.PlusOnePassOverageStepView>

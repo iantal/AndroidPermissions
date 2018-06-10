@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/button_category" android:background="@color/white" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_category_icon" android:background="@drawable/bg_category_icon" android:padding="4.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:scaleType="centerInside" android:contentDescription="@null" />
+    <FrameLayout android:background="@drawable/bg_category_dropdown" android:paddingLeft="8.0dip" android:paddingTop="6.0dip" android:paddingRight="20.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="12.0dip">
+        <TextView android:textSize="18.0sp" android:ellipsize="marquee" android:gravity="center" android:id="@id/text_transaction_category" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" fontPath="@string/font_regular" />
+        <ImageView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/caret_down" android:scaleType="centerInside" android:contentDescription="@null" />
+    </FrameLayout>
+</LinearLayout>

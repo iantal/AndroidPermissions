@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/AccountsCarouselPage">
+    <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:paddingLeft="@dimen/offset_account_page" n1:paddingRight="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/inc_page_account" />
+        <RelativeLayout n1:id="@id/content" n1:layout_below="@id/amount" style="@style/VerticalWrapping">
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/first_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentTop="true">
+                <TextView n1:id="@id/first_title" n1:text="@string/aa_payment_date" style="@style/AccountPage.Note" />
+                <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/first_amount" style="@style/AccountPage.Amount.Medium" />
+            </LinearLayout>
+            <TextView n1:id="@id/second_title" n1:paddingBottom="11.0dip" n1:layout_below="@id/first_container" style="@style/AccountPage.Note" />
+            <TextView n1:textColor="@color/white" n1:id="@id/second_value" n1:layout_marginLeft="@dimen/offset_from_edge_quarter" n1:layout_toRightOf="@id/second_title" n1:layout_below="@id/first_container" style="@style/AccountPage.Note" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

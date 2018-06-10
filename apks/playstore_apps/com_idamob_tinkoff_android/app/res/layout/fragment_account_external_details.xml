@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/account_details_attach_additional_card" n1:text="@string/account_additional_details_attach_card_button" n1:drawableLeft="@drawable/ic_account_details_add_card" style="@style/AccountDetailsActionItem.Padding" />
+    <TextView n1:id="@id/account_details_delete_additional_card" n1:text="@string/account_additional_details_detach_card_button" n1:drawableLeft="@drawable/ic_account_details_delete_card" style="@style/AccountDetailsActionItem.Padding" />
+    <TextView n1:id="@id/account_details_tariffs" n1:text="@string/account_additional_details_tariff_button" n1:drawableLeft="@drawable/ic_account_details_tariffs" style="@style/AccountDetailsActionItem.Padding" />
+</LinearLayout>

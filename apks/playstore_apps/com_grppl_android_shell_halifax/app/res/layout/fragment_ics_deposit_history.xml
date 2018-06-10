@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/ics_help_and_info_text_min_height">
+        <include layout="@layout/layout_ics_arrangement_tile" />
+        <View n1:layout_width="fill_parent" n1:layout_height="@dimen/ics_instruction_text_bottom_view_height" style="@style/DepositCheque.ViewSeparator" />
+    </LinearLayout>
+    <com.mobile.ui.common.view.PaginatedRecyclerView n1:id="@id/icsHistoryTransactionList" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:layoutManager="android.support.v7.widget.LinearLayoutManager" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:id="@id/icsDepositHistoryNotEligibleMessage" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/ics_deposit_cheque_head_text_margin_left" n1:layout_marginTop="@dimen/ics_deposit_cheque_head_text_margin_top" n1:layout_marginRight="@dimen/ics_deposit_cheque_head_text_margin_right" n1:layout_marginBottom="@dimen/pay_account_tile_spacing_bottom" n1:text="@string/ics_history_not_eligible_page_description" style="@style/DepositCheque.InstructionText" />
+</LinearLayout>

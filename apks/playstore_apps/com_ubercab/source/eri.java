@@ -1,0 +1,1 @@
+final class eri {}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:padding="@dimen/fragment_content_padding" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mobile.ui.common.view.HeadingTextView n1:id="@id/personalDetailsPhoneOutcomeTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/personal_details_viewholder_category_bottom_margin" n1:text="@string/dummy_body_text_small" style="@style/TextAppearance.Headline" />
+    <TextView n1:id="@id/personalDetailsPhoneOutcomeDescription" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/personal_details_viewholder_category_bottom_margin" n1:text="@string/dummy_body_text_medium" n1:layout_below="@id/personalDetailsPhoneOutcomeTitle" style="@style/TextAppearance.Body" />
+    <TextView n1:id="@id/personalDetailsPhoneOutcomePostScript" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/dummy_body_text_medium" n1:layout_below="@id/personalDetailsPhoneOutcomeDescription" style="@style/TextAppearance.Body" />
+    <Button n1:id="@id/personalDetailsPhoneOutcomeRegisterButton" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/personal_details_viewholder_category_bottom_margin" n1:text="@string/personal_details_phone_outcome_register_button_text" n1:layout_above="@id/personalDetailsPhoneOutcomeFinishButton" style="@style/Widget.Button.Primary" />
+    <Button n1:id="@id/personalDetailsPhoneOutcomeFinishButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/personal_details_phone_outcome_finish_button_text" n1:layout_alignParentBottom="true" style="@style/Widget.Button.Primary" />
+</RelativeLayout>

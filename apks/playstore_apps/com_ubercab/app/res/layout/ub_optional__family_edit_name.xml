@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.family.family_name.EditNameView android:gravity="center_vertical" android:orientation="horizontal" android:background="?selectableItemBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsId="145186d9-6982"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.CircleImageView android:layout_width="@dimen/ui__avatar_size_medium" android:layout_height="@dimen/ui__avatar_size_medium" app:srcCompat="@drawable/ic_family_icon" />
+    <com.ubercab.ui.core.UTextView android:ellipsize="none" android:id="@id/ub__family_group_name_textview" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:requiresFadingEdge="horizontal" style="@style/Platform.TextAppearance.H4.News" />
+    <com.ubercab.ui.core.UTextView android:textColor="?accentCta" android:id="@id/ub__family_group_name_edit_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/helix_family_name_edit" style="@style/Platform.TextAppearance.H5.News" />
+</com.ubercab.presidio.family.family_name.EditNameView>

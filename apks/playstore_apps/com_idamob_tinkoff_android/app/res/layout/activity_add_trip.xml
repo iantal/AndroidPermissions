@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <fragment n1:id="@id/fragment_trip_fields" n1:layout_width="fill_parent" n1:layout_height="wrap_content" class="ru.tcsbank.mb.ui.settings.abroad.TripFieldsFragment" />
+    <Button n1:id="@id/btn_add_trip" n1:text="@string/add_abroad_operations_button_add" style="@style/Button.Yellow" />
+</LinearLayout>

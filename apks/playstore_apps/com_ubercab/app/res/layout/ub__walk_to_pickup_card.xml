@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.pre_trip.WalkToPickupCardView android:orientation="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="?contentInset" android:layout_marginEnd="?contentInset"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__walk_to_pickup_text_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.CircleImageView android:id="@id/ub__walk_to_pickup_icon" android:layout_width="?avatarMedium" android:layout_height="?avatarMedium" android:layout_margin="?contentInset" app:srcCompat="?brandGrey60" />
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__walk_to_pickup_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News.Primary" />
+            <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__walk_to_pickup_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__walk_to_pickup_buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.pre_trip.WalkToPickupCardView>

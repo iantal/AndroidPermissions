@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.driver_vehicle.intercom.TripDriverVehicleIntercomView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" uber:analyticsId="7eb2c27e-0782"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:layout_gravity="start|bottom|center" android:layout_width="@dimen/ub__intercom_trip_details_arrow_width" android:layout_height="@dimen/ub__intercom_trip_details_arrow_height" android:layout_marginBottom="@dimen/ub__intercom_trip_details_arrow_margin_bottom" android:layout_marginStart="@dimen/ub__intercom_trip_details_arrow_margin_start" uber:srcCompat="@drawable/ub__trip_driver_intercom_caveat_top" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:background="@drawable/ub__trip_driver_intercom_message_bubble" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/text_area" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.ubercab.ui.core.UTextView android:textColor="?colorAccentInverse" android:ellipsize="end" android:gravity="start" android:layout_gravity="center" android:id="@id/ub__intercom_new_message_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="@dimen/ui__spacing_unit_2x" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" style="@style/Platform.TextAppearance.H5.News" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/touch_area" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.ubercab.ui.core.UImageView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" uber:srcCompat="@drawable/ub__trip_driver_intercom_caveat_right" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.driver_vehicle.intercom.TripDriverVehicleIntercomView>

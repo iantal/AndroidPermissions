@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:visibility="gone" android:baselineAligned="false" style="@style/ScreenFooter"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <Button android:textColor="@color/button_text_color" android:id="@id/btn_transaction" android:background="@drawable/transaction_button_selector" android:visibility="gone" android:text="@string/transactions" style="@style/FooterButton" />
+    </RelativeLayout>
+    <RelativeLayout android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <Button android:textColor="@color/button_text_color" android:id="@id/btn_blocked_amount" android:background="@drawable/transaction_button_selector" android:visibility="gone" android:text="@string/blocked_amounts" style="@style/FooterButton" />
+    </RelativeLayout>
+    <RelativeLayout android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <Button android:textColor="@color/button_text_color" android:id="@id/btn_order_status" android:background="@drawable/transaction_button_selector" android:visibility="gone" android:text="@string/title_order_status" style="@style/FooterButton" />
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Form.Text" android:id="@id/sourceRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/_1_eur" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/arrow_exchangerate" />
+    <TextView android:textAppearance="@style/TextAppearance.Form.Text" android:id="@id/targetRate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

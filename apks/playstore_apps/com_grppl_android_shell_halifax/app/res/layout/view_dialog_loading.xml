@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/dialog_content_background" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginStart="@dimen/dialog_alert_content_padding" n1:layout_marginEnd="@dimen/dialog_alert_content_padding"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/dialogLoadingTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/TextAppearance.Dialog.Title.Neutral" />
+    <TextView n1:id="@id/dialogLoadingBodyText" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/DialogLoadingBodyText" />
+    <com.mobile.ui.common.view.IconProgressBar n1:layout_gravity="center" n1:id="@id/dialogLoadingSpinner" n1:padding="@dimen/loading_dialog_spinner_padding" style="@style/IconProgressBar.Padlock.Dialog" />
+</LinearLayout>

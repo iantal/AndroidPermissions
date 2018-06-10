@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.profiles_feature.settings.sections.delete.ProfileSettingsSectionDeleteView android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ub_optional__profile_list_item" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?dividerHorizontal" android:showDividers="end" uber:analyticsId="c165f53f-6754"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_setting_section_delete" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News.Primary" />
+</com.ubercab.presidio.profiles_feature.settings.sections.delete.ProfileSettingsSectionDeleteView>

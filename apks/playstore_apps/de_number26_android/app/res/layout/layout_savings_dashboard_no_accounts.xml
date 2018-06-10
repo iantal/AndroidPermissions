@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/savings_no_accounts_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:paddingTop="84.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:src="@drawable/savings_dashboard_empty" style="@style/HomeEmptyIcon" />
+        <TextView android:text="@string/savings_dashboard_no_account_title" style="@style/HomeEmptyTitle" />
+        <TextView android:text="@string/savings_dashboard_no_account_subtitle" style="@style/HomeEmptySubtitle" />
+    </LinearLayout>
+</ScrollView>

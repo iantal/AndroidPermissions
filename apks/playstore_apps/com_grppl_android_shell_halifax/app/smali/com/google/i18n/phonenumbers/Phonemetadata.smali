@@ -1,0 +1,27 @@
+.class public final Lcom/google/i18n/phonenumbers/Phonemetadata;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/i18n/phonenumbers/Phonemetadata$NumberFormat;,
+        Lcom/google/i18n/phonenumbers/Phonemetadata$NumberFormat$Builder;,
+        Lcom/google/i18n/phonenumbers/Phonemetadata$PhoneMetadata;,
+        Lcom/google/i18n/phonenumbers/Phonemetadata$PhoneMetadata$Builder;,
+        Lcom/google/i18n/phonenumbers/Phonemetadata$PhoneMetadataCollection;,
+        Lcom/google/i18n/phonenumbers/Phonemetadata$PhoneMetadataCollection$Builder;,
+        Lcom/google/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;,
+        Lcom/google/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc$Builder;
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

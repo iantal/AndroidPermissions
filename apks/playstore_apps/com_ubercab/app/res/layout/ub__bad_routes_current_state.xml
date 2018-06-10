@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/bad_routes_current_state_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?rdsTextAppearanceH2BookPrimary" />
+    <com.ubercab.ui.core.UTextView android:id="@id/bad_routes_current_state_body" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?rdsTextAppearanceP" />
+    <com.ubercab.rds.feature.badroutes.BadRoutesReceiptView android:id="@id/bad_routes_current_state_receipt" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.UButton android:id="@id/bad_routes_current_state_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__rds__need_help" style="?rdsStyleButtonSecondary" />
+</merge>

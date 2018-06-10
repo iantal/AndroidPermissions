@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?gutterSize" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginRight="?gutterSize" android:text="@string/ub__partner_funnel_get_the_partner_app" style="@style/Funnel.Helix.TextAppearance.H2.Book" />
+    <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?gutterSize" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:layout_marginRight="?gutterSize" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:text="@string/ub__partner_funnel_install_the_partner_app" style="@style/Funnel.Helix.TextAppearance.H5.News.Secondary" />
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/ui__spacing_unit_8x" android:layout_marginRight="@dimen/ui__spacing_unit_8x" android:layout_marginBottom="@dimen/ui__spacing_unit_8x" android:layout_weight="1.0" android:contentDescription="@string/ub__partner_funnel_get_the_partner_app" app:srcCompat="@drawable/ub__partner_funnel_helix_finished_page" />
+    </com.ubercab.ui.core.UScrollView>
+    <com.ubercab.ui.core.ULinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_helix_finished_page_nfb_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?gutterSize" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginRight="?gutterSize" style="@style/Funnel.Helix.TextAppearance.H6.News.Secondary" />
+        <com.ubercab.ui.Button android:id="@id/ub__partner_funnel_helix_finished_page_primary_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?gutterSize" android:text="@string/ub__partner_funnel_get_the_partner_app" style="@style/Funnel.Helix.Button.Primary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</merge>

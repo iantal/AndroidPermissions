@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.destination.dynamic_dropoff.DynamicDropoffTripDestinationView android:orientation="horizontal" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:layout_width="?avatarMicro" android:layout_height="?avatarMicro" android:tint="?brandGrey60" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" app:srcCompat="@drawable/ub__ic_location_16" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__destination_click_area" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__dynamic_destination" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__divider_width" android:singleLine="true" style="@style/Platform.TextAppearance.H6.News.Primary" />
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__original_destination" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.destination.dynamic_dropoff.DynamicDropoffTripDestinationView>

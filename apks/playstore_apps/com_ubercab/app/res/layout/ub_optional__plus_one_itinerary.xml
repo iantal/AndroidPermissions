@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.common.itinerary.PlusOneItineraryView android:orientation="vertical" android:background="?android:colorBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__itinerary_loading_indicator" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorAccent" />
+        <include layout="@layout/ub_optional__plus_one_header" />
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="@dimen/ub__plus_one_itinerary_divider_height" />
+    <com.ubercab.ui.core.UScrollView android:id="@id/ub__itinerary_points_scroll_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:overScrollMode="never">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__itinerary_points_container" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.UScrollView>
+    <com.ubercab.ui.core.UButton android:id="@id/ub__confirm_itinerary_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset" android:layout_marginBottom="?contentInset" android:text="@string/confirm_itinerary" uber:analyticsId="877b7e43-8086" style="?platformButtonPrimary" />
+</com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.common.itinerary.PlusOneItineraryView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.family.contact_picker.FamilyContactPickerView android:background="?android:colorBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:analyticsId="f4f59b00-b201"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__family_contact_picker_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.ubercab.ui.core.UFrameLayout android:layout_gravity="bottom" android:id="@id/ub__family_contact_picker_button_container" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UButton android:enabled="false" android:id="@id/ub__family_contact_picker_invite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/send_invite" app:analyticsId="66cb6176-7379" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.presidio.family.contact_picker.FamilyContactPickerView>

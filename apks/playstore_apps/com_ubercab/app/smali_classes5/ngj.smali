@@ -1,0 +1,29 @@
+.class public Lngj;
+.super Lamsz;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lamsz<",
+        "Laqf;",
+        "Lngi;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Ljyi;Lamte;)V
+    .locals 1
+
+    .line 18
+    new-instance v0, Lngq;
+
+    invoke-direct {v0}, Lngq;-><init>()V
+
+    invoke-direct {p0, p1, p2, v0}, Lamsz;-><init>(Ljyi;Lamte;Lamtd;)V
+
+    return-void
+.end method

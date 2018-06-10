@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" style="@style/DashboardTheme">
+        <RelativeLayout android:id="@id/view_title" android:background="@drawable/header_footer" android:layout_alignParentLeft="true" style="@style/MatchParentWrapContent">
+            <TextView android:textColor="@color/text_on_dark" android:id="@id/tv_home_title" android:text="@string/home_header_title" android:layout_centerInParent="true" style="@style/TextSmallNormalAllWrap" />
+            <ImageButton android:id="@id/img_btn_info" android:background="@drawable/info" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/info_title" style="@style/AllWrapContent" />
+            <ImageButton android:id="@id/img_btn_language" android:background="@drawable/settings" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/no_description" style="@style/AllWrapContent" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/view_home_page_footer_bar" android:background="@drawable/header_footer" android:layout_alignParentBottom="true" style="@style/MatchParentWrapContent" />
+        <LinearLayout android:layout_above="@id/view_home_page_footer_bar" android:layout_below="@id/view_title" style="@style/AllMatchParent">
+            <include android:id="@id/view_home_page_options" layout="@layout/home_dashboard_page1" />
+        </LinearLayout>
+        <ImageView android:id="@id/btn_menu_option" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_option" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/no_description" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/view_progress" android:visibility="gone" style="@style/AllMatchParent">
+        <TextView android:id="@id/tv_title" style="@style/ScreenHeader" />
+        <include android:id="@id/view_progress_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/data_loading_progress_view" />
+    </LinearLayout>
+</merge>

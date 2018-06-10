@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/imageViewDocumentImage" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/idcard" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin">
+        <TextView android:textSize="18.0sp" android:textColor="@color/headline" android:id="@id/textViewDocumentName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/photo_document_selection_document_name_placeholder" />
+        <TextView android:id="@id/textViewDocumentExtra" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/photo_document_selection_document_extra_placeholder" />
+    </LinearLayout>
+</LinearLayout>

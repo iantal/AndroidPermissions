@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:theme="@style/Theme.Helix.Light"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:circleImageView="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:id="@id/ub__social_profile_referrals_value_prop_image" android:layout_width="?avatarMedium" android:layout_height="?avatarMedium" circleImageView:circleImageBorderWidth="@dimen/ub__social_profiles_circle_image_border_width" />
+    <com.ubercab.ui.core.UTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ub__social_profile_referrals_value_prop_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/ui__spacing_unit_2x" style="@style/Platform.TextAppearance.H6.News.Primary.Inverse" />
+</merge>

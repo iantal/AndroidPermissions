@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.profiles_feature.flagged_trips.details.FlaggedTripDetailsView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="be977c10-1ec5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UCoordinatorLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/collapsing_header" />
+        <com.ubercab.ui.core.UScrollView android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ui__spacing_unit_1x" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__flagged_trips_details_message" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Platform.TextAppearance.H4.News" />
+        </com.ubercab.ui.core.UScrollView>
+    </com.ubercab.ui.core.UCoordinatorLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UPlainView android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__flagged_trips_details_reply_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginTop="?contentInset" android:layout_marginRight="?contentInset" android:text="@string/flagged_trips_details_reply" uber:analyticsId="173b1c0a-cf72" style="?platformButtonPrimary" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__flagged_trips_details_expense_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset" android:text="@string/flagged_trips_details_expense_details" uber:analyticsId="f3cc4b0a-8f57" style="?platformButtonSecondary" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__flagged_trips_details_payment_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset" android:layout_marginBottom="?contentInset" android:text="@string/flagged_trips_details_change_payment" uber:analyticsId="471c375b-bf24" style="?platformButtonSecondary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.profiles_feature.flagged_trips.details.FlaggedTripDetailsView>

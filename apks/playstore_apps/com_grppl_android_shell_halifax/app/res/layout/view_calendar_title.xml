@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:baselineAligned="false"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/previousMonthButton" n1:background="@color/calendar_month_button_background_color" n1:padding="@dimen/fragment_content_padding" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n2:srcCompat="@drawable/calendar_previous_month_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/headerTitleLayout" n1:background="@color/calendar_title_background_color" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+        <TextView n1:gravity="center" n1:id="@id/headerTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textAllCaps="@bool/calendar_title_text_all_caps" style="@style/CalendarView.Title" />
+        <ImageView n1:gravity="center" n1:id="@id/headerIcon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n3:srcCompat="@drawable/calendar_select_month_year_icon" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <ImageView n1:id="@id/nextMonthButton" n1:background="@color/calendar_month_button_background_color" n1:padding="@dimen/fragment_content_padding" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n4:srcCompat="@drawable/calendar_next_month_icon" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</merge>

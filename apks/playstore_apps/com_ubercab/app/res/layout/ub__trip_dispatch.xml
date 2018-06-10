@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.dispatch.instant.TripDispatchView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__trip_dispatch_info_container" android:padding="?contentInset" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:id="@id/ub__trip_dispatch_image" android:layout_width="?avatarTiny" android:layout_height="?avatarTiny" app:srcCompat="@drawable/ub__ic_dispatching" />
+            <com.ubercab.ui.core.UTextSwitcher android:id="@id/ub__trip_dispatch_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inAnimation="@anim/ub__push_up_in" android:outAnimation="@anim/ub__push_up_out" android:layout_marginStart="?contentInset" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <include layout="@layout/ub__grey_horizontal_line" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__trip_dispatch_buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.dispatch.instant.TripDispatchView>

@@ -1,0 +1,136 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: de.number26.android.apk
+compressionType: false
+doNotCompress:
+- arsc
+- webp
+- res/raw/joda_atlantic_jan_mayen
+- res/raw/joda_est
+- res/raw/joda_etc_gmt
+- res/raw/joda_etc_gmt_1
+- res/raw/joda_etc_gmt_10
+- res/raw/joda_etc_gmt_11
+- res/raw/joda_etc_gmt_12
+- res/raw/joda_etc_gmt_13
+- res/raw/joda_etc_gmt_14
+- res/raw/joda_etc_gmt_2
+- res/raw/joda_etc_gmt_3
+- res/raw/joda_etc_gmt_4
+- res/raw/joda_etc_gmt_5
+- res/raw/joda_etc_gmt_6
+- res/raw/joda_etc_gmt_7
+- res/raw/joda_etc_gmt_8
+- res/raw/joda_etc_gmt_9
+- res/raw/joda_etc_gmtplus1
+- res/raw/joda_etc_gmtplus10
+- res/raw/joda_etc_gmtplus11
+- res/raw/joda_etc_gmtplus12
+- res/raw/joda_etc_gmtplus2
+- res/raw/joda_etc_gmtplus3
+- res/raw/joda_etc_gmtplus4
+- res/raw/joda_etc_gmtplus5
+- res/raw/joda_etc_gmtplus6
+- res/raw/joda_etc_gmtplus7
+- res/raw/joda_etc_gmtplus8
+- res/raw/joda_etc_gmtplus9
+- res/raw/joda_etc_uct
+- res/raw/joda_etc_utc
+- res/raw/joda_hst
+- res/raw/joda_mst
+- res/raw/joda_pacific_johnston
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '27'
+sharedLibrary: false
+unknownFiles:
+  BuildJNILibraries.bat: '8'
+  ChatAnalyticsmd: '8'
+  CreateJNIHeaders.bat: '8'
+  aaudioprocessing_AudioProcessingLibrary.c: '8'
+  aaudioprocessing_AudioProcessingLibrary.h: '8'
+  androidsupportmultidexversion.txt: '8'
+  aopus_OpusLibrary.c: '8'
+  aopus_OpusLibrary.h: '8'
+  build-data.properties: '8'
+  protobuf.meta: '8'
+  com/google/auto/value/AutoAnnotation.java: '8'
+  com/google/auto/value/AutoValue.java: '8'
+  com/google/auto/value/extension/AutoValueExtension.java: '8'
+  com/google/auto/value/processor/AbortProcessingException.java: '8'
+  com/google/auto/value/processor/AbstractMethodExtractor.java: '8'
+  com/google/auto/value/processor/AbstractMethodLister.java: '8'
+  com/google/auto/value/processor/AnnotationOutput.java: '8'
+  com/google/auto/value/processor/AutoAnnotationProcessor.java: '8'
+  com/google/auto/value/processor/AutoAnnotationTemplateVars.java: '8'
+  com/google/auto/value/processor/AutoValueBuilderProcessor.java: '8'
+  com/google/auto/value/processor/AutoValueProcessor.java: '8'
+  com/google/auto/value/processor/AutoValueTemplateVars.java: '8'
+  com/google/auto/value/processor/BuilderMethodClassifier.java: '8'
+  com/google/auto/value/processor/BuilderSpec.java: '8'
+  com/google/auto/value/processor/EclipseHack.java: '8'
+  com/google/auto/value/processor/EclipseHackTokenizer.java: '8'
+  com/google/auto/value/processor/ErrorReporter.java: '8'
+  com/google/auto/value/processor/ExtensionContext.java: '8'
+  com/google/auto/value/processor/GwtCompatibility.java: '8'
+  com/google/auto/value/processor/GwtSerialization.java: '8'
+  com/google/auto/value/processor/JavaScanner.java: '8'
+  com/google/auto/value/processor/MissingTypeException.java: '8'
+  com/google/auto/value/processor/Reformatter.java: '8'
+  com/google/auto/value/processor/SimpleNameFunction.java: '8'
+  com/google/auto/value/processor/TemplateVars.java: '8'
+  com/google/auto/value/processor/TypeMirrorSet.java: '8'
+  com/google/auto/value/processor/TypeSimplifier.java: '8'
+  com/google/auto/value/processor/autoannotation.vm: '8'
+  com/google/auto/value/processor/autovalue.vm: '8'
+  com/google/auto/value/processor/gwtserializer.vm: '8'
+  com/google/auto/value/processor/package-info.java: '8'
+  com/google/auto/value/processor/escapevelocity/ConstantExpressionNode.java: '8'
+  com/google/auto/value/processor/escapevelocity/DirectiveNode.java: '8'
+  com/google/auto/value/processor/escapevelocity/EvaluationContext.java: '8'
+  com/google/auto/value/processor/escapevelocity/EvaluationException.java: '8'
+  com/google/auto/value/processor/escapevelocity/ExpressionNode.java: '8'
+  com/google/auto/value/processor/escapevelocity/Macro.java: '8'
+  com/google/auto/value/processor/escapevelocity/NOTICE: '8'
+  com/google/auto/value/processor/escapevelocity/Node.java: '8'
+  com/google/auto/value/processor/escapevelocity/ParseException.java: '8'
+  com/google/auto/value/processor/escapevelocity/Parser.java: '8'
+  com/google/auto/value/processor/escapevelocity/ReferenceNode.java: '8'
+  com/google/auto/value/processor/escapevelocity/Reparser.java: '8'
+  com/google/auto/value/processor/escapevelocity/Template.java: '8'
+  com/google/auto/value/processor/escapevelocity/TokenNode.java: '8'
+  error_prone/Annotations.gwt.xml: '8'
+  fabric/com.crashlytics.sdk.android.answers.properties: '8'
+  fabric/com.crashlytics.sdk.android.beta.properties: '8'
+  fabric/com.crashlytics.sdk.android.crashlytics-core.properties: '8'
+  fabric/com.crashlytics.sdk.android.crashlytics.properties: '8'
+  fabric/io.fabric.sdk.android.fabric.properties: '8'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
+  org/joda/time/format/messages.properties: '8'
+  org/joda/time/format/messages_cs.properties: '8'
+  org/joda/time/format/messages_da.properties: '8'
+  org/joda/time/format/messages_de.properties: '8'
+  org/joda/time/format/messages_en.properties: '8'
+  org/joda/time/format/messages_es.properties: '8'
+  org/joda/time/format/messages_fr.properties: '8'
+  org/joda/time/format/messages_it.properties: '8'
+  org/joda/time/format/messages_ja.properties: '8'
+  org/joda/time/format/messages_nl.properties: '8'
+  org/joda/time/format/messages_no.properties: '8'
+  org/joda/time/format/messages_pl.properties: '8'
+  org/joda/time/format/messages_pt.properties: '8'
+  org/joda/time/format/messages_ru.properties: '8'
+  org/joda/time/format/messages_tr.properties: '8'
+  third_party/java_src/error_prone/project/annotations/Annotations.gwt.xml: '8'
+  third_party/java_src/error_prone/project/annotations/Google_internal.gwt.xml: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.0
+versionInfo:
+  versionCode: '134'
+  versionName: 3.12.1

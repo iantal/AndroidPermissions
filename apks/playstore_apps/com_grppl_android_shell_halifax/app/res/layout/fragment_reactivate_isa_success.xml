@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/reactivateIsaSuccessPage" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/reactivateIsaSuccessBody" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.mobile.ui.common.view.HeadingTextView n1:id="@id/reactivateIsaSuccessHeader" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/reactivate_isa_success_header_title" style="@style/ReactivateIsaView.ReactivateIsaTitle" />
+        <TextView n1:id="@id/reactivateIsaSupportingCopy" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/activity_margin" n1:text="@string/reactivate_isa_supporting_copy_text" />
+        <TableLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/activity_margin">
+            <TableRow n1:focusable="true" n1:layout_marginBottom="@dimen/activity_margin">
+                <TextView n1:id="@id/reactivateIsaAccountLabel" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_margin" n1:text="@string/reactivate_isa_account_text" n1:layout_weight="4.0" style="@style/TextAppearance.Body" />
+                <include n1:id="@id/accountPlaceHolder" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="6.0" layout="@layout/view_reactivate_isa_arrangement" />
+            </TableRow>
+            <TableRow n1:focusable="true" n1:layout_marginBottom="@dimen/activity_margin">
+                <TextView n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_margin" n1:text="@string/reactivate_isa_success_remaining_allowance" n1:layout_weight="4.0" style="@style/TextAppearance.Body" />
+                <TextView n1:id="@id/reactivateIsaRemainingAllowanceAmount" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="6.0" style="@style/TextAppearance.H2" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <TextView n1:id="@id/reactivateIsaNoRemittanceAccountMessage" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/activity_margin" n1:text="@string/reactivate_isa_no_remittance_account" n1:layout_below="@id/reactivateIsaSuccessBody" />
+    <TextView n1:id="@id/reactivateIsaSuccessInfo" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/activity_margin" n1:text="@string/dummy_body_text_small" n1:layout_below="@id/reactivateIsaNoRemittanceAccountMessage" />
+</RelativeLayout>

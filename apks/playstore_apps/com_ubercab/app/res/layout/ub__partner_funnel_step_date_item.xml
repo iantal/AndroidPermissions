@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/ub__partner_funnel_step_standard_input" />
+    <com.ubercab.ui.core.UPlainView android:id="@id/ub__touch_target" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.ubercab.ui.core.UFrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.scheduled_commute.onboarding.ScheduledCommuteOnboardingView android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="64f2b49c-7c5e"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/commute_onboarding_scene_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ubercab.ui.core.UImageView android:id="@id/commute_onboarding_back_button" android:padding="?contentInset" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" android:contentDescription="@string/back_button_description" android:layout_marginStart="@dimen/ui__spacing_unit_1x" uber:srcCompat="@drawable/navigation_icon_back" uber:analyticsId="ffa712bb-1257" />
+</com.ubercab.presidio.scheduled_commute.onboarding.ScheduledCommuteOnboardingView>

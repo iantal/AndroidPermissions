@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/main_content_frame_layout" android:background="?dsq_main_content_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/content_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/toolbar_background" android:background="?dsq_alt_main_content_background" android:layout_width="fill_parent" android:layout_height="@dimen/dsq_action_bar_height" android:scaleType="fitXY" android:layout_alignParentTop="true" android:contentDescription="@null" />
+            <include layout="@layout/include_toolbar" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar_background">
+                <include layout="@layout/loading" />
+                <FrameLayout android:id="@id/fragment_send_message_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="start" android:id="@id/fragment_below_container" android:layout_width="320.0dip" android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

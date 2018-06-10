@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:background="@color/n7" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:id="@id/content" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <android.support.v7.widget.CardView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge_half">
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/btn_open_history" n1:background="?selectableItemBackground" style="@style/MediumItem.Padding">
+                    <ImageView n1:id="@id/loyalty_offers_crown_icon" n1:background="@drawable/circle_placeholder_white" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:src="@drawable/ic_transaction_details_bonus_target" n1:scaleType="centerInside" n1:tint="@color/n2" n2:backgroundTint="@color/main_yellow" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:text="@string/ofa_history" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.RecyclerView n1:id="@id/recycler_category_tags" n1:paddingLeft="2.0dip" n1:paddingRight="2.0dip" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/container_fragment" n1:paddingTop="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+    <TextView n1:textAppearance="@style/Text.Small.Hint" n1:gravity="center_horizontal" n1:layout_gravity="center" n1:id="@id/empty" n1:padding="@dimen/offset_from_edge" n1:visibility="gone" n1:text="@string/ofha_empty" n1:drawableTop="@drawable/noitem" n1:drawablePadding="@dimen/screen_content_double_padding" style="@style/WrapContent" />
+</FrameLayout>

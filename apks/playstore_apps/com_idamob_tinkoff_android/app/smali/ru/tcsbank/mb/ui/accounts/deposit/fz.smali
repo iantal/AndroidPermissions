@@ -1,0 +1,133 @@
+.class public final Lru/tcsbank/mb/ui/accounts/deposit/fz;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements La/a/d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "La/a/d",
+        "<",
+        "Lru/tcsbank/mb/ui/accounts/deposit/fk;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Ljavax/a/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/a/a",
+            "<",
+            "Lru/tcsbank/mb/services/ak;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final b:Ljavax/a/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/a/a",
+            "<",
+            "Lru/tinkoff/mb/api/b/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final c:Ljavax/a/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/a/a",
+            "<",
+            "Lru/tcsbank/mb/model/a/e;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljavax/a/a;Ljavax/a/a;Ljavax/a/a;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljavax/a/a",
+            "<",
+            "Lru/tcsbank/mb/services/ak;",
+            ">;",
+            "Ljavax/a/a",
+            "<",
+            "Lru/tinkoff/mb/api/b/a;",
+            ">;",
+            "Ljavax/a/a",
+            "<",
+            "Lru/tcsbank/mb/model/a/e;",
+            ">;)V"
+        }
+    .end annotation
+
+    .prologue
+    .line 25
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 26
+    iput-object p1, p0, Lru/tcsbank/mb/ui/accounts/deposit/fz;->a:Ljavax/a/a;
+
+    .line 27
+    iput-object p2, p0, Lru/tcsbank/mb/ui/accounts/deposit/fz;->b:Ljavax/a/a;
+
+    .line 28
+    iput-object p3, p0, Lru/tcsbank/mb/ui/accounts/deposit/fz;->c:Ljavax/a/a;
+
+    .line 29
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic a()Ljava/lang/Object;
+    .locals 4
+
+    .prologue
+    .line 10
+    .line 1033
+    new-instance v3, Lru/tcsbank/mb/ui/accounts/deposit/fk;
+
+    iget-object v0, p0, Lru/tcsbank/mb/ui/accounts/deposit/fz;->a:Ljavax/a/a;
+
+    .line 1034
+    invoke-interface {v0}, Ljavax/a/a;->a()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lru/tcsbank/mb/services/ak;
+
+    iget-object v1, p0, Lru/tcsbank/mb/ui/accounts/deposit/fz;->b:Ljavax/a/a;
+
+    invoke-interface {v1}, Ljavax/a/a;->a()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lru/tinkoff/mb/api/b/a;
+
+    iget-object v2, p0, Lru/tcsbank/mb/ui/accounts/deposit/fz;->c:Ljavax/a/a;
+
+    invoke-interface {v2}, Ljavax/a/a;->a()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lru/tcsbank/mb/model/a/e;
+
+    invoke-direct {v3, v0, v1, v2}, Lru/tcsbank/mb/ui/accounts/deposit/fk;-><init>(Lru/tcsbank/mb/services/ak;Lru/tinkoff/mb/api/b/a;Lru/tcsbank/mb/model/a/e;)V
+
+    .line 10
+    return-object v3
+.end method

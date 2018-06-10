@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardCornerRadius="4.0dip" card_view:cardElevation="4.0dip" card_view:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" style="@style/creditDashboardCardFrame">
+        <LinearLayout android:orientation="horizontal" android:layout_marginBottom="16.0dip" style="@style/creditDashboardCardTitleFrame">
+            <TextView android:id="@id/text_before_esign_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/creditTextCardTitle" />
+            <TextView android:id="@id/text_before_esign_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/creditTextCardTitle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" style="@style/creditDashboardCardContentFrame">
+            <TextView android:id="@id/text_before_esign_content" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.6" style="@style/creditTextCardContent" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_before_esign" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/img_flying_paper_plane" android:layout_weight="0.4" />
+        </LinearLayout>
+        <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <View style="@style/creditDashboardCardSeparator" />
+        <LinearLayout android:orientation="horizontal" style="@style/creditDashboardCardStatusesFrame">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/credit_dashboard_before_esign_card_submitted" style="@style/creditTextCardContentLight" />
+                <ImageView android:layout_gravity="center" android:id="@id/image_before_esign_submitted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/ic_done_check" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/credit_dashboard_before_esign_card_received" style="@style/creditTextCardContentLight" />
+                <ImageView android:layout_gravity="center" android:id="@id/image_before_esign_received" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/ic_in_progress_circular" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/credit_dashboard_before_esign_card_review" style="@style/creditTextCardContentLight" />
+                <ImageView android:layout_gravity="center" android:id="@id/image_before_esign_review" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/ic_waiting_circular" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

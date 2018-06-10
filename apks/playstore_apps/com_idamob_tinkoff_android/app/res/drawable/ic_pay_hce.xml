@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item>
+        <shape n1:gravity="center" n1:shape="oval"
+          xmlns:n1="http://schemas.android.com/apk/res/android">
+            <solid n1:color="#1affffff" />
+            <size n1:height="56.0dip" n1:width="56.0dip" />
+        </shape>
+    </item>
+    <item>
+        <bitmap n2:gravity="center" n2:src="@drawable/nfc_button"
+          xmlns:n2="http://schemas.android.com/apk/res/android" />
+    </item>
+</layer-list>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.promotion.add.frommenu.MenuAddPromoView android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:analyticsId="64d5afc0-05d3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/fixed_header" />
+    <com.ubercab.ui.core.URelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/promotion_add_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:bli_bitColor="?colorAccent" />
+            <com.ubercab.ui.core.UTextInputLayout android:id="@id/promotion_add_edit_text_layout" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintTextAppearance="@style/Platform.TextAppearance.H6.News.Secondary" app:hintEnabled="true">
+                <com.ubercab.ui.commons.widget.ClearableEditText android:id="@id/promotion_add_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/code" android:inputType="textNoSuggestions" style="@style/Platform.TextAppearance.H3.News" />
+            </com.ubercab.ui.core.UTextInputLayout>
+        </com.ubercab.ui.core.UFrameLayout>
+        <com.ubercab.ui.core.UButton android:id="@id/promotion_add_apply_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/promo_apply" android:layout_alignParentBottom="true" app:analyticsId="128ad99f-0e18" style="@style/Platform.Button" />
+    </com.ubercab.ui.core.URelativeLayout>
+</com.ubercab.presidio.promotion.add.frommenu.MenuAddPromoView>

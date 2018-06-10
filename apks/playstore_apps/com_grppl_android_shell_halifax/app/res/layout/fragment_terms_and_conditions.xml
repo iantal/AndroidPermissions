@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mobile.ui.registration.common.view.RegistrationProgressView n1:id="@id/registrationTermsAndConditionsProgressView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_content_padding" n1:layout_marginTop="@dimen/registration_personal_details_vertical_spacing" n1:layout_marginRight="@dimen/fragment_content_padding" n2:currentPage="termsAndConditionsPage" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.mobile.ui.common.view.SecureCoreWebView n1:id="@id/commonTermsAndConditionsWebView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/fragment_content_padding" n1:layout_marginTop="@dimen/fragment_content_padding" n1:layout_marginRight="@dimen/fragment_content_padding" n1:layout_above="@id/commonTermsAndConditionsBottomContentView" n1:layout_below="@id/registrationTermsAndConditionsProgressView" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/commonTermsAndConditionsBottomContentView" n1:background="@color/terms_and_conditions_bottom_container_fill_color" n1:paddingLeft="@dimen/fragment_content_padding" n1:paddingTop="@dimen/fragment_content_padding" n1:paddingRight="@dimen/fragment_content_padding" n1:paddingBottom="@dimen/fragment_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <TextView n1:id="@id/commonTermsAndConditionsFooterLabel" n1:paddingBottom="@dimen/fragment_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/common_terms_and_conditions_agree_message" n1:contentDescription="@string/accessibility_common_terms_and_conditions_agree" style="@style/TextAppearance.Body" />
+        <include n1:layout_gravity="bottom" n1:layout_width="fill_parent" n1:layout_height="wrap_content" layout="@layout/layout_common_footer_buttons" />
+    </LinearLayout>
+</RelativeLayout>

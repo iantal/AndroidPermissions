@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/BlockContent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:id="@id/confirm_security_note" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/ctc_security_code_required" />
+    <ru.tcsbank.mb.ui.widgets.edit.card.EditCardView n1:id="@id/confirm_security_code_edit_card" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:disable_text_color="@color/white" n2:enable_secure_fields="true" n2:light_theme="false" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

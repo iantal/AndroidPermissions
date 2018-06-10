@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin">
+            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_vertical_margin" n1:layout_marginBottom="16.0dip">
+                <ImageView n1:layout_width="@dimen/fragment_otp_enter_image_size" n1:layout_height="@dimen/fragment_otp_enter_image_size" n1:layout_marginRight="@dimen/fragment_otp_enter_spacing_medium" n2:srcCompat="@drawable/enrollment_padlock_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textAppearance="@style/TextAppearance.Headline" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/enrollment_otp_enter_title" />
+            </LinearLayout>
+            <TextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/otpBodyText" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_otp_enter_spacing_medium" />
+            <com.mobile.ui.common.view.InputField n1:id="@id/otpInput" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_otp_enter_spacing_small" n1:hint="@string/enrollment_otp_enter_hint" style="@style/Widget.InputField.Password" />
+            <Button n1:enabled="false" n1:id="@id/otpContinueButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_otp_enter_spacing_large" n1:text="@string/enrollment_otp_enter_continue" style="@style/Widget.Button.Primary" />
+            <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_otp_enter_spacing_medium">
+                <ImageView n1:id="@id/contactIcon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" n3:srcCompat="@drawable/enrollment_question_icon" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                <com.mobile.ui.common.view.LinkTextView n1:textAppearance="@style/TextAppearance.Body.Small" n1:id="@id/contactButton" n1:focusable="true" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_otp_enter_spacing_small" n1:text="@string/enrollment_otp_enter_contact" n1:layout_toRightOf="@id/contactIcon" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.mobile.ui.common.view.NotificationView n1:id="@id/errorNotificationView" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</FrameLayout>

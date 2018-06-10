@@ -1,0 +1,66 @@
+.class public final synthetic Lpjr;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lgov;
+
+
+# static fields
+.field public static final a:Lgov;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lpjr;
+
+    invoke-direct {v0}, Lpjr;-><init>()V
+
+    sput-object v0, Lpjr;->a:Lgov;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    check-cast p1, Lpja;
+
+    const/4 v0, 0x1
+
+    .line 1097
+    new-array v0, v0, [Lpit;
+
+    .line 1498
+    iget-object p1, p1, Lpja;->a:Ljava/lang/String;
+
+    .line 1097
+    invoke-static {p1}, Lpit;->a(Ljava/lang/String;)Lpit;
+
+    move-result-object p1
+
+    const/4 v1, 0x0
+
+    aput-object p1, v0, v1
+
+    invoke-static {v0}, Lmzx;->a([Ljava/lang/Object;)Ljava/util/Set;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lnaq;->a(Ljava/util/Set;)Lnaq;
+
+    move-result-object p1
+
+    return-object p1
+.end method

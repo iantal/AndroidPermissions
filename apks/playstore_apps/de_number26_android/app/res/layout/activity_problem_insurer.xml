@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_problem_insurer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/screen_insurance_padding_start_end" android:layout_marginEnd="@dimen/screen_insurance_padding_start_end">
+            <ImageView android:layout_marginTop="48.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/ic_problem_insurer" style="@style/InsuranceSubpageIcon" />
+            <TextView android:id="@id/text_problem_insurer_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="32.0dip" android:text="@string/insurance_problem_insurer_title" style="@style/InsuranceSubpageTitle" />
+            <TextView android:textSize="18.0sp" android:id="@id/text_problem_insurer_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="136.0dip" style="@style/InsuranceSubpageSubtitle" />
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/toolbar_problem_insurer" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <include android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_below="@id/toolbar_problem_insurer" layout="@layout/progress" />
+    <Button android:textSize="20.0sp" android:id="@id/button_problem_insurer_delete" android:layout_marginBottom="8.0dip" android:foreground="?selectableItemBackground" android:text="@string/insurance_problem_insurer_delete" android:layout_above="@id/button_problem_insurer_upload" style="@style/AccentBorderButton" />
+    <Button android:id="@id/button_problem_insurer_upload" android:layout_marginBottom="@dimen/screen_insurance_padding_top_bottom" android:text="@string/insurance_problem_insurer_upload" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/screen_insurance_padding_start_end" android:layout_marginEnd="@dimen/screen_insurance_padding_start_end" style="@style/MintRaisedButton" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout n1:paddingLeft="@dimen/chat_message_end_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="right" n1:orientation="horizontal" n1:id="@id/chat_message_content_wrapper" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/chat_message_horizontal_margin" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintHorizontal_bias="1.0" n2:layout_constraintStart_toStartOf="parent" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <android.support.v7.widget.AppCompatImageView n1:layout_gravity="center_vertical" n1:id="@id/chat_message_fail_indicator" n1:background="?selectableItemBackgroundBorderless" n1:visibility="gone" n1:layout_width="@dimen/chat_message_fail_indicator_size" n1:layout_height="@dimen/chat_message_fail_indicator_size" n1:src="@drawable/ic_chat_fail_indicator" n1:scaleType="center" />
+        <ru.tinkoff.chat.webim.ui.view.MaxChildSizeLayout n1:theme="@style/OutgoingTextTheme" n1:orientation="vertical" n1:id="@id/chat_message_content" n1:background="@drawable/chat_message_text_outgoing_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/Chat.Message.Content">
+            <include layout="@layout/include_chat_message_quote" />
+            <ru.tinkoff.chat.webim.ui.view.WrapWidthTextView n1:id="@id/chat_message_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/chat_message_text_horizontal_margin" n1:layout_marginRight="@dimen/chat_message_text_horizontal_margin" />
+        </ru.tinkoff.chat.webim.ui.view.MaxChildSizeLayout>
+    </LinearLayout>
+    <TextView n1:id="@id/chat_message_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/chat_message_span" n1:layout_marginRight="@dimen/chat_message_time_horizontal_margin" n3:layout_constraintEnd_toEndOf="@id/chat_message_content_wrapper" n3:layout_constraintTop_toBottomOf="@id/chat_message_content_wrapper" style="@style/Chat.Message.Time" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.feed.items.cards.common.ui.MessageStuntCardView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__message_stunt_card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundInverseBorderless">
+        <com.ubercab.ui.core.UImageView android:id="@id/ub__message_stunt_card_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" android:adjustViewBounds="true" android:maxWidth="@dimen/ui__spacing_unit_8x" />
+        <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__message_stunt_card_title" android:layout_width="wrap_content" android:layout_height="0.0dip" android:maxLines="2" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H6.News.Primary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__message_stunt_card_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:maxLines="3" android:alpha="0.9" style="@style/Platform.TextAppearance.H6.News.Primary" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:id="@id/ub__message_stunt_card_dismiss" android:layout_width="wrap_content" android:layout_height="fill_parent" android:tint="?colorAccentInverse" android:layout_centerVertical="true" android:contentDescription="@string/ub__card_message_stunt_dismiss_description" android:paddingStart="0.0dip" android:paddingEnd="?contentInset" android:layout_marginStart="@dimen/ui__spacing_unit_2x" app:srcCompat="@drawable/ic_close" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.feed.items.cards.common.ui.MessageStuntCardView>

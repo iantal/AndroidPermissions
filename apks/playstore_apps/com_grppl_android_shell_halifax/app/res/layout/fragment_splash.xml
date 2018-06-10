@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="centerCrop" n1:importantForAccessibility="no" n2:srcCompat="@drawable/splash_image" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <FrameLayout n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+            <ImageView n1:layout_gravity="center|left|top" n1:id="@id/fscsBadge" n1:layout_width="@dimen/activity_splash_fscs_size" n1:layout_height="@dimen/activity_splash_fscs_size" n1:layout_marginLeft="@dimen/activity_splash_fscs_margin" n1:layout_marginTop="@dimen/activity_splash_fscs_margin" n3:srcCompat="@drawable/splash_image_fscs" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+        <FrameLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+            <ImageView n1:layout_gravity="center" n1:id="@id/splashScreenImageText" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:importantForAccessibility="no" n4:srcCompat="@drawable/splash_text" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            <LinearLayout n1:layout_gravity="center" n1:orientation="vertical" n1:id="@id/splashScreenSpinner" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.mobile.ui.common.view.IconProgressBar n1:layout_gravity="center" n1:id="@id/splashScreenSpinnerProgressBar" style="@style/IconProgressBar.Padlock.Splash" />
+                <TextView n1:layout_gravity="center" n1:id="@id/splashScreenSpinnerText" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_splash_spinner_text_margin_top" n1:text="@string/text_splash_progress" n1:shadowDy="2.0" n1:shadowRadius="1.0" style="@style/SpinnerText" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout n1:visibility="@integer/splash_logo_visibility" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+            <ImageView n1:id="@id/splashScreenImageLogo" n1:padding="@dimen/activity_splash_logo_padding" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:importantForAccessibility="no" n5:srcCompat="@drawable/splash_logo" style="@style/SplashLogoGravity" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

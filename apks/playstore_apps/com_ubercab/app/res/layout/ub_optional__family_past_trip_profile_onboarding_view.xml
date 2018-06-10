@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.family.trip_history.onboarding.FamilyProfileOnboardingView android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/family_onboarding_title" style="@style/Platform.TextAppearance.H2.Book" />
+        <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/family_onboarding_text" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__family_past_trip_create_profile_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/create_family_profile" uber:analyticsId="ceaf8ecc-f657" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.family.trip_history.onboarding.FamilyProfileOnboardingView>

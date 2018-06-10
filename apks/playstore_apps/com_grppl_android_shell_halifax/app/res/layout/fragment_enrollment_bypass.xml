@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true" n1:layout_above="@id/enrolmentEiaBypassContinueButton">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin">
+            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_vertical_margin" n1:layout_marginBottom="@dimen/fragment_enrollment_bypass_spacing">
+                <ImageView n1:layout_width="@dimen/fragment_enrollment_bypass_image_size" n1:layout_height="@dimen/fragment_enrollment_bypass_image_size" n1:layout_marginRight="@dimen/fragment_enrollment_bypass_spacing" n2:srcCompat="@drawable/enrollment_padlock_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textAppearance="@style/TextAppearance.Headline" n1:id="@id/enrolmentEiaBypassTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/enrollment_bypass_title" />
+            </LinearLayout>
+            <TextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/enrolmentEiaBypassMessage" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_enrollment_bypass_spacing" n1:text="@string/enrollment_bypass_text" />
+        </LinearLayout>
+    </ScrollView>
+    <Button n1:id="@id/enrolmentEiaBypassContinueButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginTop="@dimen/fragment_enrollment_bypass_spacing" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_marginBottom="@dimen/activity_vertical_margin" n1:text="@string/enrollment_bypass_continue_button" n1:layout_alignParentBottom="true" style="@style/Widget.Button.Primary" />
+</RelativeLayout>

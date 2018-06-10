@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/fingerprint_auth" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentTop="true" />
+    <LinearLayout n1:gravity="center_horizontal" n1:layout_marginTop="@dimen/offset_from_edge_large" style="@style/ScreenContent">
+        <ImageView n1:id="@id/user_avatar" n1:layout_width="@dimen/pin_avatar_size" n1:layout_height="@dimen/pin_avatar_size" />
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_gravity="center" n1:id="@id/user_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" />
+        <ru.tcsbank.mb.ui.auth.pin.EditPin n1:id="@id/pin" n1:padding="@dimen/offset_from_edge_half" n2:vibration_enabled="true" style="@style/EditPin" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <Button n1:id="@id/pin_hce_button" n1:background="@drawable/ic_pay_hce" n1:visibility="gone" n1:layout_width="56.0dip" n1:layout_height="56.0dip" />
+    </LinearLayout>
+    <include layout="@layout/inc_pin_numeric_keyboard" />
+</RelativeLayout>

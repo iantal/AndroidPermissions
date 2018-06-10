@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.guest_request.prompt.GuestRequestPromptView android:orientation="vertical" android:background="?android:windowBackground" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="b6c9ae14-d005"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__guest_request_prompt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/prompt_title" style="@style/Platform.TextAppearance.H3.Book" />
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_horizontal" android:id="@id/ub__guest_request_contacts_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x">
+        <com.ubercab.presidio.guest_request.prompt.ContactBubble android:id="@id/ub__guest_request_prompt_add_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" uber:analyticsId="f3cb397d-2c50" />
+        <com.ubercab.presidio.guest_request.prompt.ContactBubble android:id="@id/ub__guest_request_prompt_me" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" uber:analyticsId="351746cb-b2fb" />
+        <com.ubercab.presidio.guest_request.prompt.ContactBubble android:id="@id/ub__guest_request_prompt_selected_contact" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="53a70ba0-14f3" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.URecyclerView android:id="@id/ub__guest_request_repeat_guests_recycler_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__guest_request_prompt_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/prompt_description" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__guest_request_prompt_confirm_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/prompt_button" style="@style/Platform.Button.Primary" />
+</com.ubercab.presidio.guest_request.prompt.GuestRequestPromptView>

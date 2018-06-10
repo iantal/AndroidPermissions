@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MobileStudio.Plugin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Healthline" style="@style/MobileStudio.Plugin.Header" />
+    <Button android:id="@id/force_crash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ub__mobilestudio_padding_2x" android:text="Force Crash" />
+    <Button android:id="@id/force_native_crash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ub__mobilestudio_padding_2x" android:text="Force Native Crash" />
+</LinearLayout>

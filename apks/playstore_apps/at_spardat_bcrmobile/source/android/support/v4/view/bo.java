@@ -1,0 +1,7 @@
+package android.support.v4.view;
+
+class bo
+  extends bn
+{
+  bo() {}
+}

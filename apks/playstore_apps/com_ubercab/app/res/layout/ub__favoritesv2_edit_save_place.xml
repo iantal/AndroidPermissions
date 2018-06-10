@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.favoritesv2.save.FavoritesSavePlaceView android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="17425e65-e90b"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/social_favorites_fixed_header" />
+    <com.ubercab.ui.core.UScrollView android:id="@id/ub__favoritesv2_container_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__favoritesv2_loading_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorAccent" />
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/labelSaveContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?gutterSize" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginRight="?gutterSize">
+                <com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__favoritesv2_save_name_title" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+                <com.ubercab.ui.commons.widget.ClearableEditText android:textColor="?brandBlack" android:id="@id/ub__favoritesv2_label_edit_text" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:hint="@string/ub__favoritesv2_save_hint_text" android:maxLength="@integer/favorites_v2_save_max_char_limit" android:inputType="textCapWords" style="@style/Platform.TextAppearance.H5.News" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UPlainView android:background="@drawable/divider_horizontal_light" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/addressSaveContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?gutterSize" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginRight="?gutterSize" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:layout_marginStart="?gutterSize" android:layout_marginEnd="?gutterSize" uber:analyticsId="ef1fa7cf-b667">
+                <com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__favoritesv2_save_address_title" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__favoritesv2_address_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H5.News" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UPlainView android:background="@drawable/divider_horizontal_light" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:background="?brandGrey20" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_anchor="@id/ub__favoritesv2_container_layout" uber:layout_anchorGravity="bottom">
+        <include android:id="@id/ub__favoritesv2_social_entry_banner" android:visibility="gone" layout="@layout/ub__favoritesv2_social_entry_banner" />
+        <com.ubercab.ui.commons.widget.KeyboardButton android:layout_gravity="bottom|center" android:id="@id/ub__favoritesv2_address_save_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__favoritesv2_save_edit_button_text" uber:analyticsId="3b932c8a-d81c" uber:removeInsetTop="true" uber:softInputHiddenMarginTop="@dimen/ui__spacing_unit_2x" style="@style/Platform.Button.Primary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.favoritesv2.save.FavoritesSavePlaceView>

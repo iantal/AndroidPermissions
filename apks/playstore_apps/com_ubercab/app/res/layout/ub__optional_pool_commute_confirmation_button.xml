@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.confirmation.pool_commute_button.PoolCommuteConfirmationButtonView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__fetching_time_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.ubercab.ui.core.UTextView android:gravity="center_horizontal" android:id="@id/ub__fetching_time_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pool_commute_button_fetching_title_new" style="@style/Platform.TextAppearance.H6.News" />
+        <Space android:id="@id/ub__fetching_time_space" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_1x" />
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__fetching_time_loading_indicator" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorAccent" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ub__fetching_error_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__fetching_error_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pool_commute_button_fetching_error_message_new" style="@style/Platform.TextAppearance.H6.News" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__fetching_error_retry_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pool_commute_button_fetching_error_retry_message" style="@style/Platform.TextAppearance.H6.News.Link" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UButton android:id="@id/ub__request_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:singleLine="false" android:lineSpacingMultiplier="1.25" android:textAllCaps="false" uber:analyticsId="aebc1020-69f3" style="?platformButtonPrimary" />
+</com.ubercab.presidio.app.optional.root.main.ride.request.confirmation.pool_commute_button.PoolCommuteConfirmationButtonView>

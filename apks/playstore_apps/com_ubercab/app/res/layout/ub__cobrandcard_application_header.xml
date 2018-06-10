@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UAppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/appbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:contentInsetStartWithNavigation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" uber:contentInsetStartWithNavigation="0.0dip" uber:popupTheme="@style/ThemeOverlay.AppCompat.Light" uber:titleTextAppearance="@style/Platform.TextAppearance.H3.Book" uber:layout_collapseMode="pin" style="@style/Widget.Platform.Toolbar">
+        <com.ubercab.ui.core.UImageView android:layout_gravity="end|center" android:id="@id/ub__cobrandcard_application_lock" android:clickable="true" android:layout_width="@dimen/ub__cobrand_lock_icon_size" android:layout_height="@dimen/ub__cobrand_lock_icon_size" android:adjustViewBounds="true" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" uber:srcCompat="@drawable/ub__cobrandcard_application_lock_icon" uber:analyticsId="26cdf1b2-61fa" />
+    </com.ubercab.ui.core.UToolbar>
+</com.ubercab.ui.core.UAppBarLayout>

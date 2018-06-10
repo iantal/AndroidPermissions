@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.location_consent.LocationCollectionConsentView android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="e9f6ec5f-9561"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UPlainView android:id="@id/ub__loc_consent_main_view_scrim" android:background="@color/ub__ui_core_black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.5" uber:analyticsId="aeeff2ad-71e7" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:background="@color/ub__ui_core_white" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__loc_consent_main_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__loc_consent_main_title_text" android:maxLines="2" style="@style/Platform.TextAppearance.H2.Book" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__loc_consent_main_view_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:text="@string/ub__loc_consent_main_message_text" style="@style/Platform.TextAppearance.P" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.UScrollView>
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__loc_consent_main_view_learn_more_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__loc_consent_main_learn_more_text" android:textAllCaps="false" uber:analyticsId="ba6fad9c-e9e7" style="@style/Platform.Button.Borderless" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__loc_consent_main_view_button_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__loc_consent_main_view_button_primary_text" uber:analyticsId="21ce4582-a641" style="?platformButtonPrimary" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__loc_consent_main_view_button_secondary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__loc_consent_main_view_button_secondary_text" uber:analyticsId="da0ed9c3-2de2" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.location_consent.LocationCollectionConsentView>

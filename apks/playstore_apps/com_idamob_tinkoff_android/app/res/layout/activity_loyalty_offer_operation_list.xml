@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge style="@style/MatchParent">
+    <FrameLayout n1:id="@id/loyalty_offer_operation_transactions_container" style="@style/MatchParent"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n2:layout_gravity="center" n2:id="@id/progress_bar" n2:layout_width="@dimen/pd_width" n2:layout_height="@dimen/pd_height"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+</merge>

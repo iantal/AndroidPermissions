@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.gift.redeem.GiftRedeemView android:background="?android:colorBackground" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="9ba6d201-0460"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub_optional__gift_redeem_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UCoordinatorLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <include layout="@layout/collapsing_header" />
+            <com.ubercab.ui.core.UScrollView android:id="@id/ub_optional__gift_redeem_unwrap_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" uber:layout_behavior="@string/appbar_scrolling_view_behavior" uber:analyticsId="0477e0a5-3925">
+                <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.airbnb.lottie.LottieAnimationView android:gravity="center" android:id="@id/ub_optional__gift_redeem_unwrap_envelope" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:lottie_fileName="gift-redeem-unwrap.json" />
+                    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub_optional__gift_redeem_unwrap_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/redeem_from_label" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+                                <com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:id="@id/ub_optional__gift_redeem_unwrap_from" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H4.News" />
+                            </com.ubercab.ui.core.ULinearLayout>
+                            <com.ubercab.ui.core.UPlainView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                            <com.ubercab.ui.core.UTextView android:textColor="?android:textColorSecondary" android:id="@id/ub_optional__gift_redeem_unwrap_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H1.Book" />
+                        </com.ubercab.ui.core.ULinearLayout>
+                        <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" />
+                        <com.ubercab.ui.core.UTextView android:id="@id/ub_optional__gift_redeem_unwrap_message" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.P.Book" />
+                    </com.ubercab.ui.core.ULinearLayout>
+                </com.ubercab.ui.core.ULinearLayout>
+            </com.ubercab.ui.core.UScrollView>
+            <com.ubercab.ui.core.UFrameLayout android:orientation="vertical" android:id="@id/ub_optional__gift_redeem_confirm_view" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior" uber:analyticsId="94e0321d-4b77">
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="bottom|center" android:id="@id/ub_optional__gift_redeem_confirm_confetti" android:layout_width="wrap_content" android:layout_height="fill_parent" uber:lottie_fileName="confetti-gift.json" />
+                <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+                    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.airbnb.lottie.LottieAnimationView android:gravity="center" android:id="@id/ub_optional__gift_redeem_confirm_check" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:lottie_fileName="gift-redeem-confirm.json" />
+                        <com.ubercab.ui.core.UTextView android:id="@id/ub_optional__gift_redeem_confirm_amount" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.Book" />
+                        <com.ubercab.ui.core.UTextView android:id="@id/ub_optional__gift_redeem_confirm_message" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingRight="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.P.Book" />
+                    </com.ubercab.ui.core.ULinearLayout>
+                </com.ubercab.ui.core.UScrollView>
+            </com.ubercab.ui.core.UFrameLayout>
+        </com.ubercab.ui.core.UCoordinatorLayout>
+        <com.ubercab.ui.core.UFrameLayout android:layout_gravity="bottom" android:background="?brandGrey20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UButton android:id="@id/ub_optional__gift_redeem_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/redeem_redeem_button" android:layout_marginStart="@dimen/ui__spacing_unit_2x" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" uber:analyticsId="6d7c328d-c76d" style="@style/Platform.Button" />
+            <com.ubercab.ui.core.UButton android:id="@id/ub_optional__gift_redeem_next_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/redeem_next_button" android:layout_marginStart="@dimen/ui__spacing_unit_2x" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" uber:analyticsId="0924c49a-73d4" style="@style/Platform.Button" />
+            <com.ubercab.ui.core.UButton android:id="@id/ub_optional__gift_redeem_close_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/redeem_close_button" android:layout_marginStart="@dimen/ui__spacing_unit_2x" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" uber:analyticsId="eff6d9a1-12a5" style="@style/Platform.Button" />
+            <com.ubercab.ui.core.UPlainView android:layout_gravity="top" android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+            <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub_optional__gift_redeem_loading_bit" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorPrimary" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.gift.redeem.GiftRedeemView>

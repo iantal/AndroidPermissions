@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout n1:id="@id/baseGlobalMenuDrawerLayout" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/baseContent" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <include n1:id="@id/baseToolbar" n1:visibility="gone" layout="@layout/view_toolbar" />
+    </LinearLayout>
+    <FrameLayout n1:layout_gravity="right" n1:id="@id/baseGlobalMenuFrame" n1:layout_width="@dimen/global_menu_width" n1:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.ConstraintLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <ImageView n1:id="@id/img_icon" n1:background="@drawable/flag_background" n1:padding="@dimen/thin_image_border" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginTop="@dimen/offset_from_edge_half" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintTop_toTopOf="parent" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/txt_merchant_name" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="13.0dip" n3:layout_constraintBottom_toTopOf="@id/txt_offer_title" n3:layout_constraintLeft_toRightOf="@id/img_icon" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toTopOf="parent" n3:layout_constraintVertical_chainStyle="packed" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <TextView n1:textAppearance="@style/Text.Default.Dark.Medium" n1:id="@id/txt_offer_title" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="@id/txt_merchant_name" n4:layout_constraintRight_toRightOf="parent" n4:layout_constraintTop_toBottomOf="@id/txt_merchant_name" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    </android.support.constraint.ConstraintLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:paddingLeft="72.0dip" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:ellipsize="end" n1:id="@id/txt_address" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:lines="1" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/txt_city" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <include n1:layout_width="wrap_content" n1:layout_height="52.0dip" n1:layout_marginLeft="72.0dip" layout="@layout/inc_activate_view_switcher" />
+</LinearLayout>

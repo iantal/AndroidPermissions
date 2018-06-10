@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.advanced_settings.location_access_settings.LocationCollectionConsentDialogView android:orientation="vertical" android:background="?brandWhite" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="7aa1cd88-3184"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__loc_consent_main_view_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__loc_consent_main_title_text" style="@style/Platform.TextAppearance.H2.Book" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__loc_consent_main_view_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:text="@string/ub__loc_consent_main_message_text" style="@style/Platform.TextAppearance.P" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__loc_consent_main_view_learn_more_link" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__loc_consent_main_learn_more_text" android:textAllCaps="false" uber:analyticsId="d89578f1-d796" style="@style/Platform.Button.Borderless" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__loc_consent_main_view_button_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__loc_consent_main_view_button_primary_text" uber:analyticsId="afcbadff-b0f4" style="?platformButtonPrimary" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__loc_consent_main_view_button_secondary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__loc_consent_main_view_button_secondary_text" uber:analyticsId="dc20397d-4b3c" style="?platformButtonPrimary" />
+</com.ubercab.presidio.advanced_settings.location_access_settings.LocationCollectionConsentDialogView>

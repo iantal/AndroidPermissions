@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:paddingLeft="@dimen/base_search_bar_container_padding_left_right" n1:paddingTop="@dimen/base_search_bar_container_padding_top_bottom" n1:paddingRight="@dimen/base_search_bar_container_padding_left_right" n1:paddingBottom="@dimen/base_search_bar_container_padding_top_bottom" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:contentDescription="@string/base_search_bar_container_content_description" style="@style/BaseSearchBar.Container"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/base_search_bar_height" style="@style/BaseSearchBar.EditTextIconWrapper">
+        <EditText n1:textColorHint="@color/payment_hub_recipients_hint_text_color" n1:id="@id/baseSearchBarEditText" n1:paddingLeft="@dimen/base_search_bar_text_padding_left" n1:layout_width="fill_parent" n1:layout_height="@dimen/base_search_bar_height" n1:hint="@string/base_search_bar_container_hint" n1:layout_toLeftOf="@id/baseSearchBarIcon" n1:inputType="textNoSuggestions" style="@style/BaseSearchBar.EditText" />
+        <android.support.v7.widget.AppCompatImageView n1:id="@id/baseSearchBarIcon" n1:focusable="true" n1:layout_width="@dimen/base_search_bar_width" n1:layout_height="@dimen/base_search_bar_height" n1:layout_alignParentRight="true" n1:contentDescription="@string/accessibility_payment_hub_search_icon_description" n2:srcCompat="@drawable/base_search_bar_search_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+</FrameLayout>

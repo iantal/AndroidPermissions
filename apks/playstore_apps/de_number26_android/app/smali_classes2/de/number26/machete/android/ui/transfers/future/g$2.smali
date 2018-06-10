@@ -1,0 +1,82 @@
+.class Lde/number26/machete/android/ui/transfers/future/g$2;
+.super Lde/number26/machete/android/h/b;
+.source "FutureTransferDetailsPresenter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lde/number26/machete/android/ui/transfers/future/g;->m()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lde/number26/machete/android/h/b<",
+        "Ljava/lang/Void;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lde/number26/machete/android/ui/transfers/future/g;
+
+
+# direct methods
+.method constructor <init>(Lde/number26/machete/android/ui/transfers/future/g;Lde/number26/machete/core/network/e;)V
+    .locals 0
+
+    .line 272
+    iput-object p1, p0, Lde/number26/machete/android/ui/transfers/future/g$2;->a:Lde/number26/machete/android/ui/transfers/future/g;
+
+    invoke-direct {p0, p2}, Lde/number26/machete/android/h/b;-><init>(Lde/number26/machete/core/network/e;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic a(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 272
+    check-cast p1, Ljava/lang/Void;
+
+    invoke-virtual {p0, p1}, Lde/number26/machete/android/ui/transfers/future/g$2;->a(Ljava/lang/Void;)V
+
+    return-void
+.end method
+
+.method public a(Ljava/lang/Void;)V
+    .locals 1
+
+    .line 276
+    iget-object p1, p0, Lde/number26/machete/android/ui/transfers/future/g$2;->a:Lde/number26/machete/android/ui/transfers/future/g;
+
+    invoke-static {p1}, Lde/number26/machete/android/ui/transfers/future/g;->a(Lde/number26/machete/android/ui/transfers/future/g;)Lde/number26/machete/android/ui/mvp/d;
+
+    move-result-object p1
+
+    check-cast p1, Lde/number26/machete/android/ui/transfers/future/p;
+
+    const v0, 0x7f100383
+
+    invoke-interface {p1, v0}, Lde/number26/machete/android/ui/transfers/future/p;->b_(I)V
+
+    .line 277
+    iget-object p1, p0, Lde/number26/machete/android/ui/transfers/future/g$2;->a:Lde/number26/machete/android/ui/transfers/future/g;
+
+    invoke-static {p1}, Lde/number26/machete/android/ui/transfers/future/g;->b(Lde/number26/machete/android/ui/transfers/future/g;)Lde/number26/machete/android/ui/mvp/d;
+
+    move-result-object p1
+
+    check-cast p1, Lde/number26/machete/android/ui/transfers/future/p;
+
+    invoke-interface {p1}, Lde/number26/machete/android/ui/transfers/future/p;->e()V
+
+    return-void
+.end method

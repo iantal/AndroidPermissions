@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item n1:right="@dimen/statements_scroll_bar_indent"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape>
+            <solid n1:color="@color/statements_scroll_bar_color" />
+            <corners n1:radius="@dimen/statements_scroll_bar_radius" />
+            <size n1:width="@dimen/statements_scroll_bar_width" />
+        </shape>
+    </item>
+</layer-list>

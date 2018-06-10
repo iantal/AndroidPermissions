@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard n1:keyWidth="@fraction/custom_keyboard_key_width_size" n1:keyHeight="@dimen/custom_keyboard_key_height_size" n1:horizontalGap="@dimen/custom_keyboard_horizontal_gap_size" n1:verticalGap="@dimen/custom_keyboard_vertical_gap_size"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <Row n1:rowEdgeFlags="top">
+        <Key n1:codes="49" n1:keyEdgeFlags="left" n1:keyLabel="1" />
+        <Key n1:codes="50" n1:keyLabel="2" />
+        <Key n1:codes="51" n1:keyLabel="3" />
+        <Key n1:codes="52" n1:keyLabel="4" />
+        <Key n1:codes="53" n1:keyLabel="5" />
+        <Key n1:codes="54" n1:keyLabel="6" />
+        <Key n1:codes="55" n1:keyLabel="7" />
+        <Key n1:codes="56" n1:keyLabel="8" />
+        <Key n1:codes="57" n1:keyLabel="9" />
+        <Key n1:codes="48" n1:keyEdgeFlags="right" n1:keyLabel="0" />
+    </Row>
+    <Row>
+        <Key n1:codes="113" n1:keyEdgeFlags="left" n1:keyLabel="q" />
+        <Key n1:codes="119" n1:keyLabel="w" />
+        <Key n1:codes="101" n1:keyLabel="e" />
+        <Key n1:codes="114" n1:keyLabel="r" />
+        <Key n1:codes="116" n1:keyLabel="t" />
+        <Key n1:codes="121" n1:keyLabel="y" />
+        <Key n1:codes="117" n1:keyLabel="u" />
+        <Key n1:codes="105" n1:keyLabel="i" />
+        <Key n1:codes="111" n1:keyLabel="o" />
+        <Key n1:codes="112" n1:keyEdgeFlags="right" n1:keyLabel="p" />
+    </Row>
+    <Row>
+        <Key n1:horizontalGap="4.999995%p" n1:codes="97" n1:keyEdgeFlags="left" n1:keyLabel="a" />
+        <Key n1:codes="115" n1:keyLabel="s" />
+        <Key n1:codes="100" n1:keyLabel="d" />
+        <Key n1:codes="102" n1:keyLabel="f" />
+        <Key n1:codes="103" n1:keyLabel="g" />
+        <Key n1:codes="104" n1:keyLabel="h" />
+        <Key n1:codes="106" n1:keyLabel="j" />
+        <Key n1:codes="107" n1:keyLabel="k" />
+        <Key n1:codes="108" n1:keyEdgeFlags="right" n1:keyLabel="l" />
+    </Row>
+    <Row n1:rowEdgeFlags="bottom">
+        <Key n1:horizontalGap="14.999998%p" n1:codes="122" n1:keyLabel="z" />
+        <Key n1:codes="120" n1:keyLabel="x" />
+        <Key n1:codes="99" n1:keyLabel="c" />
+        <Key n1:codes="118" n1:keyLabel="v" />
+        <Key n1:codes="98" n1:keyLabel="b" />
+        <Key n1:codes="110" n1:keyLabel="n" />
+        <Key n1:codes="109" n1:keyLabel="m" />
+        <Key n1:keyWidth="14.999998%p" n1:codes="-5" n1:keyEdgeFlags="right" n1:isRepeatable="true" n1:keyIcon="@drawable/custom_keyboard_backspace" />
+    </Row>
+</Keyboard>

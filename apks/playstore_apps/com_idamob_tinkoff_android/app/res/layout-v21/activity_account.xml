@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:id="@id/root" style="@style/ScreenContent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.StickySwipeRefreshLayout n1:id="@id/refresh_view" style="@style/MatchParent">
+        <android.support.design.widget.CoordinatorLayout style="@style/MatchParent">
+            <android.support.design.widget.AppBarLayout n1:id="@id/account_app_bar_layout" n1:layout_width="fill_parent" n1:layout_height="@dimen/app_bar_height" n1:stateListAnimator="@animator/appbar_fixed_elevation" n2:layout_behavior="android.support.design.widget.AppBarLayout$Behavior" xmlns:n2="http://schemas.android.com/apk/res-auto">
+                <ru.tcsbank.mb.ui.activities.account.appbar.CollapsingAppBarLayout n1:id="@id/account_collapsing_appbar" n1:layout_width="fill_parent" n1:layout_height="@dimen/app_bar_height" n2:layout_scrollFlags="exitUntilCollapsed|scroll">
+                    <ru.tcsbank.mb.ui.activities.account.AccountHeaderView n1:id="@id/account_header" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/account_header_size_collapsed" />
+                    <ru.tcsbank.mb.ui.events.widget.TagsView n1:id="@id/account_tags_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+                    <ru.tcsbank.mb.ui.events.widget.SpendingChartHeaderView n1:id="@id/account_spending_header" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="16.0dip" />
+                    <ru.tcsbank.mb.ui.activities.account.SpendingsView n1:id="@id/account_spending_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="12.0dip" />
+                    <ru.tcsbank.mb.ui.activities.account.DepositAnalysisView n1:id="@id/account_deposit_balance_chart" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="12.0dip" />
+                    <ru.tcsbank.mb.ui.activities.account.AccountPenaltyNoticeView n1:id="@id/account_credit_overdue_notification" n1:layout_width="fill_parent" n1:layout_height="148.0dip" />
+                    <ru.tcsbank.mb.ui.ColorLineChart n1:id="@id/account_saving_line_chart" n1:layout_width="fill_parent" n1:layout_height="12.0dip" n1:minHeight="12.0dip" />
+                    <ru.tcsbank.mb.ui.widgets.SuspiciousTransactionsWarningPanel n1:id="@id/suspicious_warning" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/suspicious_panel_height" />
+                </ru.tcsbank.mb.ui.activities.account.appbar.CollapsingAppBarLayout>
+            </android.support.design.widget.AppBarLayout>
+            <FrameLayout n1:id="@id/accounts_transaction_list" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </android.support.design.widget.CoordinatorLayout>
+    </ru.tcsbank.mb.ui.widgets.StickySwipeRefreshLayout>
+</LinearLayout>

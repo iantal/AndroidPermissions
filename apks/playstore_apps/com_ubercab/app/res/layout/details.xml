@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.core.root.main.ride.request.confirmation.product_selection.view.subview.ProductDetailsView android:orientation="vertical" android:paddingTop="@dimen/ui__spacing_unit_4x" android:layout_width="fill_parent" android:layout_height="@dimen/ub__product_selection_details_height" android:layout_marginTop="@dimen/ui__spacing_unit_4x" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" android:importantForAccessibility="noHideDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_5x" android:layout_marginRight="@dimen/ui__spacing_unit_5x" android:layout_marginStart="@dimen/ui__spacing_unit_5x" android:layout_marginEnd="@dimen/ui__spacing_unit_5x">
+        <com.ubercab.ui.core.UFrameLayout android:id="@id/details_education_line_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include android:id="@id/capacity" layout="@layout/ub__product_selection_details_line_item" />
+        <include android:id="@id/arrival" android:visibility="gone" layout="@layout/ub__product_selection_details_line_item" />
+        <include android:id="@id/price" android:visibility="gone" layout="@layout/ub__product_selection_pricing_details_line_item" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/details_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_5x" android:layout_marginRight="@dimen/ui__spacing_unit_5x" android:layout_marginStart="@dimen/ui__spacing_unit_5x" android:layout_marginEnd="@dimen/ui__spacing_unit_5x" />
+</com.ubercab.presidio.app.core.root.main.ride.request.confirmation.product_selection.view.subview.ProductDetailsView>

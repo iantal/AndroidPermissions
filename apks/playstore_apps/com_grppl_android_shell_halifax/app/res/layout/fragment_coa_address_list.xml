@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mobile.ui.common.view.HeadingTextView n1:textAppearance="@style/TextAppearance.Headline" n1:id="@id/coaAddressListHeadingView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_content_padding" n1:layout_marginTop="@dimen/fragment_content_padding" n1:text="@string/coa_address_list_title" />
+    <TextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/coaAddressListSubTitleView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/fragment_content_padding" n1:layout_below="@id/coaAddressListHeadingView" />
+    <com.mobile.ui.common.view.DividerRecyclerView n1:id="@id/coaAddressRecyclerView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/coaAddressListSubTitleView" n2:dividerDrawable="@drawable/coa_address_list_divider" n2:layoutManager="android.support.v7.widget.LinearLayoutManager" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

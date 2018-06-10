@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.core.root.main.ride.request.confirmation.product_selection.view.ProductPanelView android:orientation="vertical" android:id="@id/product_selection" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/ub__top_drop_shadow" />
+    <com.ubercab.presidio.app.core.root.main.ride.request.confirmation.product_selection.view.subview.ProductPanelViewPager android:id="@id/view_pager" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.presidio.app.core.root.main.ride.request.confirmation.product_selection.view.subview.LinearDecorView android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:bli_bitColor="?colorPrimary" />
+            <com.ubercab.presidio.app.core.root.main.ride.request.confirmation.product_selection.view.subview.TitlesView android:id="@id/titles" android:paddingTop="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.ubercab.product_selection.core.ProductSelectionToastView android:id="@id/toast" android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/titles" android:layout_centerHorizontal="true" app:toastTextStyle="@style/Platform.TextAppearance.H6.News.Secondary" />
+            <com.ubercab.presidio.app.core.root.main.ride.request.confirmation.product_selection.view.subview.ProductItemCollectionView android:id="@id/categories" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.ubercab.ui.core.ULinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/details_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/categories">
+                <com.ubercab.presidio.app.core.root.main.ride.request.confirmation.product_selection.view.subview.DetailsCollectionView android:id="@id/details" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="@dimen/ui__divider_width" android:importantForAccessibility="no" />
+                <com.ubercab.ui.core.UTextView android:id="@id/done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/done" style="@style/Platform.Button.Borderless" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.presidio.app.core.root.main.ride.request.confirmation.product_selection.view.subview.LinearDecorView>
+    </com.ubercab.presidio.app.core.root.main.ride.request.confirmation.product_selection.view.subview.ProductPanelViewPager>
+</com.ubercab.presidio.app.core.root.main.ride.request.confirmation.product_selection.view.ProductPanelView>

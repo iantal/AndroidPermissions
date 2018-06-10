@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.dispatch.direct.TripDispatchDirectView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="0f65af8e-8fe8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__trip_dispatch_direct_info_container" android:padding="?contentInset" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextSwitcher android:layout_gravity="center" android:id="@id/ub__trip_dispatch_direct_message" android:layout_width="0.0dip" android:layout_height="wrap_content" android:inAnimation="@anim/ub__push_up_in" android:outAnimation="@anim/ub__push_up_out" android:layout_weight="1.0" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__trip_dispatch_direct_pin_container" android:background="?brandGrey80" android:padding="@dimen/ui__spacing_unit_1x" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="?contentInset">
+            <com.ubercab.ui.core.UTextView android:layout_gravity="center" android:id="@id/ub__trip_dispatch_direct_pin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H2.News.Primary.Inverse" />
+            <com.ubercab.ui.core.UImageView android:layout_gravity="center" android:id="@id/ub__trip_dispatch_direct_pin_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.ubercab.ui.core.UTextView android:layout_gravity="center" android:id="@id/ub__trip_dispatch_direct_pin_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dispatch_direct_card_pin" style="@style/Platform.TextAppearance.H6.News.Secondary.Inverse" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <include layout="@layout/ub__grey_horizontal_line" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__trip_dispatch_direct_buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.dispatch.direct.TripDispatchDirectView>

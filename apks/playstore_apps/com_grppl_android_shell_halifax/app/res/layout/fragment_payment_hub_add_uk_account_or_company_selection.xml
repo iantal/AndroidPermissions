@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/TextAppearance.AppCompat.Headline" n1:id="@id/paymentHubAddUkAccountSelectionTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/fragment_content_padding" n1:text="@string/payment_hub_add_uk_account_company_selection_title" />
+    <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_content_padding" n1:layout_marginRight="@dimen/fragment_content_padding" n1:layout_marginBottom="@dimen/fragment_content_padding">
+        <TextView n1:textAppearance="@style/TextAppearance.InputLabel" n1:id="@id/paymentHubAddUkAccountSelectionPayeeNameLabel" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/payment_hub_add_uk_account_payee_name" n1:layout_weight="1.0" />
+        <TextView n1:textAppearance="@style/Arrangement.Name" n1:id="@id/paymentHubAddUkAccountSelectionPayeeNameValue" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_content_padding" n1:layout_marginRight="@dimen/fragment_content_padding" n1:layout_marginBottom="@dimen/fragment_content_padding">
+        <TextView n1:textAppearance="@style/TextAppearance.InputLabel" n1:id="@id/paymentHubAddUkAccountSelectionAccountNumberLabel" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/registration_account_details_account_number_label" n1:layout_weight="1.0" />
+        <TextView n1:textAppearance="@style/Arrangement.Name" n1:id="@id/paymentHubAddUkAccountSelectionAccountNumberValue" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_content_padding" n1:layout_marginRight="@dimen/fragment_content_padding" n1:layout_marginBottom="@dimen/fragment_content_padding">
+        <TextView n1:textAppearance="@style/TextAppearance.InputLabel" n1:id="@id/paymentHubAddUkAccountSelectionSortCodeLabel" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/registration_account_details_sort_code_label" n1:layout_weight="1.0" />
+        <TextView n1:textAppearance="@style/Arrangement.Name" n1:id="@id/paymentHubAddUkAccountSelectionSortCodeValue" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+    </LinearLayout>
+    <com.mobile.ui.common.view.DividerRecyclerView n1:id="@id/paymentHubAddUkAccountSelectionCompanyList" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:splitMotionEvents="false" n1:importantForAccessibility="no" n2:dividerDrawable="@drawable/all_list_divider" n2:layoutManager="android.support.v7.widget.LinearLayoutManager" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

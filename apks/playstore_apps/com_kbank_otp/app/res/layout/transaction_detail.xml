@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/top_panel" android:background="@color/top_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/top_panel_height">
+        <ImageButton android:id="@id/menu" style="@style/MenuStyle" />
+        <TextView android:text="@string/title_trans_details" style="@style/CaptionStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/roundrect" android:background="@drawable/tr_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/top_panel">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/income" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="@string/trans_type_income" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/darker_gray" android:id="@id/day_of_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/darker_gray" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_below="@id/day_of_week" android:layout_alignParentRight="true" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/darker_gray" android:id="@id/nrText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="@string/trans_nr" android:layout_below="@id/income" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/darker_gray" android:id="@id/nr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_below="@id/nrText" />
+        <View android:id="@id/line" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/nr" />
+        <LinearLayout android:id="@id/from_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/nr">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/darker_gray" android:id="@id/from" android:layout_width="80.0dip" android:layout_height="40.0dip" android:text="@string/trans_from" />
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/darker_gray" android:id="@id/fromValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:id="@id/line1" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/from_container" />
+        <LinearLayout android:id="@id/answer_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/from_container">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/darker_gray" android:id="@id/answer" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/trans_answer" />
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/darker_gray" android:id="@id/answerValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:id="@id/line2" android:background="@drawable/line2x" android:layout_width="fill_parent" android:layout_height="4.0px" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/answer_container" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/line2" android:layout_alignParentRight="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/darker_gray" android:id="@id/currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_below="@id/amount" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

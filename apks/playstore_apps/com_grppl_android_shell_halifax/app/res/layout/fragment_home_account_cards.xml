@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView n1:id="@id/arrangementsCardList" n1:background="@color/home_account_cards_list_background" n1:paddingLeft="@dimen/tile_arrangement_peek_amount" n1:paddingTop="@dimen/tile_arrangement_list_padding" n1:paddingRight="@dimen/tile_arrangement_peek_amount" n1:paddingBottom="@dimen/tile_arrangement_list_padding" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:importantForAccessibility="no" />
+    <com.mobile.ui.common.view.NotificationView n1:id="@id/arrangementNotificationView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <com.mobile.ui.common.view.SecureCoreWebView n1:layout_gravity="bottom" n1:id="@id/stickyFooterLead" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/sticky_footer_height" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__survey_multiplechoice_title" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="?contentInset" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Platform.TextAppearance.H3.Book" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__survey_multiplechoice_prompt" android:paddingLeft="?contentInset" android:paddingTop="?contentInset" android:paddingRight="?contentInset" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    <com.ubercab.ui.core.URecyclerView android:id="@id/ub__survey_multiplechoice_recyclerview" android:background="?android:colorBackground" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:overScrollMode="never" />
+    <com.ubercab.ui.core.UPlainView android:id="@id/ub__survey_multiplechoice_submit_divider" android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ui__divider_width" />
+    <com.ubercab.ui.core.UFrameLayout android:layout_gravity="bottom" android:id="@id/ub__survey_multiplechoice_submit_container" android:background="?android:windowBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UButton android:id="@id/ub__survey_multiplechoice_submit_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/ub__card_survey_submit_label" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.ui.core.ULinearLayout>

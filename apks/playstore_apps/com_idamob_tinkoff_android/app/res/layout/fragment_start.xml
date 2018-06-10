@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tcsbank.mb.ui.widgets.BlockInterceptionScrollView n1:id="@id/start_scrollview" n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.White" n1:gravity="center" n1:id="@id/login" n1:background="@color/start_login_background" n1:paddingTop="@dimen/screen_content_padding" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/anonymous_main_button_login" n1:drawableBottom="@drawable/ic_arrow_down_24dp" n1:textAllCaps="true" />
+        <fragment n1:name="ru.tcsbank.mb.ui.products.cards.CardsFragment" n1:id="@id/fragment_cards" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <FrameLayout n1:background="@color/start_deposit_background" n1:padding="@dimen/screen_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ru.tcsbank.mb.ui.products.NewProductItemView n1:id="@id/deposit_item" n1:background="@drawable/start_large_button_background" n1:layout_width="fill_parent" n1:layout_height="@dimen/new_product_item_view_height" n2:npi_icon="@drawable/ic_deposit_white" n2:npi_title="@string/anonymous_main_title_deposit" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+        <FrameLayout n1:id="@id/broker_container" n1:background="@color/start_broker_background" n1:padding="@dimen/screen_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ru.tcsbank.mb.ui.products.NewProductItemView n1:id="@id/broker_item" n1:background="@drawable/start_large_button_background" n1:layout_width="fill_parent" n1:layout_height="@dimen/new_product_item_view_height" n3:npi_icon="@drawable/ic_invest_white" n3:npi_title="@string/anonymous_main_title_broker_account" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+        <FrameLayout n1:id="@id/telecom_container" n1:background="@color/start_telecom_background" n1:padding="@dimen/padding_normal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ru.tcsbank.mb.ui.products.NewProductItemView n1:id="@id/telecom_item" n1:background="@drawable/start_large_button_background" n1:layout_width="fill_parent" n1:layout_height="@dimen/new_product_item_view_height" n1:layout_margin="@dimen/screen_content_margin_half" n4:npi_icon="@drawable/ic_telecom_white" n4:npi_title="@string/new_products_telecom_title" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+        <FrameLayout n1:id="@id/insurance_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <FrameLayout n1:background="@color/start_mortgage_background" n1:padding="@dimen/screen_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ru.tcsbank.mb.ui.products.NewProductItemView n1:id="@id/mortgage_item" n1:background="@drawable/start_large_button_background" n1:layout_width="fill_parent" n1:layout_height="@dimen/new_product_item_view_height" n5:npi_icon="@drawable/ic_mortgage_white" n5:npi_title="@string/anonymous_main_title_mortgage" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+        <FrameLayout n1:id="@id/apps_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </LinearLayout>
+</ru.tcsbank.mb.ui.widgets.BlockInterceptionScrollView>

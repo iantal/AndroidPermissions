@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.profiles.features.create_profile_flow.toggle.BusinessTripToggleView android:orientation="vertical" android:background="?android:selectableItemBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ubercab.ui.core.UImageView android:id="@id/ub__profile_business_trip_toggle_profile_image_view" android:layout_width="?avatarSmall" android:layout_height="?avatarSmall" android:layout_marginRight="@dimen/ui__spacing_unit_2x" android:contentDescription="@string/profile_badge" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" uber:srcCompat="@drawable/ic_business_icon_v2_grey" />
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__profile_business_trip_toggle_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_trip_toggle_title" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News.Primary" />
+                <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__profile_business_trip_toggle_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_trip_toggle_subtitle" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.USwitchCompat android:layout_gravity="end|center" android:id="@id/ub__profile_business_trip_toggle_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="?avatarMedium" android:minHeight="?avatarMedium" uber:analyticsId="1eea2aa6-72ab" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__profile_business_trip_toggle_footer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/business_trip_toggle_footer" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+</com.ubercab.profiles.features.create_profile_flow.toggle.BusinessTripToggleView>

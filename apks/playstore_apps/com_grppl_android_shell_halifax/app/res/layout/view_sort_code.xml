@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <com.mobile.ui.registration.common.view.SortCodeInputField n1:id="@id/sortCodeBoxOne" n1:contentDescription="@string/accessibility_sort_code_view_first" style="@style/SortCodeBox"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <View style="@style/SortCodeBoxSeparator" />
+    <com.mobile.ui.registration.common.view.SortCodeInputField n2:id="@id/sortCodeBoxTwo" n2:contentDescription="@string/accessibility_sort_code_view_second" style="@style/SortCodeBox"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <View style="@style/SortCodeBoxSeparator" />
+    <com.mobile.ui.registration.common.view.SortCodeInputField n3:id="@id/sortCodeBoxThree" n3:contentDescription="@string/accessibility_sort_code_view_third" style="@style/SortCodeBox"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</merge>

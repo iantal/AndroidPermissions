@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/tourist_details_content" n1:paddingTop="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="@dimen/core_short_height" n2:fieldClass="ru.tcsbank.mb.ui.smartfields.NameSurnameSmartField" n2:fieldKey="name_surname" n2:fieldTitle="@string/tourist_name_hint" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="@dimen/core_short_height" n1:inputType="phone" n3:fieldKey="passport" n3:fieldTitle="@string/tourist_passport_number_hint" n3:fieldType="text" n3:fieldValidationRegex="[0-9]{3,}" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="@dimen/core_short_height" n4:fieldDescription="@string/tourist_email_note" n4:fieldKey="email" n4:fieldTitle="@string/tourist_email_hint" n4:fieldType="text" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="@dimen/core_short_height" n5:fieldKey="birthday" n5:fieldTitle="@string/tourist_birthday_hint" n5:fieldType="date" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <Button n1:id="@id/tourist_details_add_button" n1:layout_marginTop="40.0dip" n1:text="@string/tourist_add_button" style="@style/Button.Yellow.Medium" />
+    </LinearLayout>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+</FrameLayout>

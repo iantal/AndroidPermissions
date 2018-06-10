@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mobile.ui.paymenthub.view.PaymentReviewArrangementView n1:id="@id/paymentSummaryFromArrangementView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:headerText="@string/beneficiary_account_tile_header_from_text" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.mobile.ui.paymenthub.view.PaymentReviewArrangementView n1:id="@id/paymentSummaryToArrangementView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:headerText="@string/beneficiary_account_tile_header_to_text" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.mobile.ui.paymenthub.view.PaymentReviewMobileNumberView n1:id="@id/paymentSummaryToMobileNumberView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:headerText="@string/beneficiary_account_tile_header_to_text" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.mobile.ui.paymenthub.view.PaymentReviewBeneficiaryView n1:id="@id/paymentSummaryToBeneficiaryView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n5:headerText="@string/beneficiary_account_tile_header_to_text" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <com.mobile.ui.common.view.LabelledInfoTextTileView n1:id="@id/paymentSummaryAmountInfoTextTile" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <com.mobile.ui.common.view.LabelledInfoTextTileView n1:id="@id/paymentSummaryWhenInfoTextTile" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <com.mobile.ui.common.view.LabelledInfoTextTileView n1:id="@id/paymentSummaryFrequencyTextTile" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <com.mobile.ui.common.view.LabelledInfoTextTileView n1:id="@id/paymentSummaryReferenceInfoTextTile" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</LinearLayout>

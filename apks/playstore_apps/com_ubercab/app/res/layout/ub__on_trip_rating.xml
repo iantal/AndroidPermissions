@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.rating.on_trip.OnTripRatingView android:gravity="center_vertical" android:orientation="horizontal" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="4ee3de9b-97ae"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__on_trip_rating_icon" android:layout_width="?avatarMicro" android:layout_height="?avatarMicro" android:tint="?brandGrey60" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" uber:srcCompat="@drawable/ub__star_empty_on_trip" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__on_trip_rating_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__on_trip_rating_title" android:layout_weight="1.0" android:importantForAccessibility="no" uber:analyticsId="200ac547-b81b" style="@style/Platform.TextAppearance.H6.News.Primary" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__on_trip_rating_button" android:background="?selectableItemBackground" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__on_trip_rating_rate_button" uber:analyticsId="5c7e24e1-4986" style="@style/Platform.TextAppearance.H6.News.Link" />
+</com.ubercab.rating.on_trip.OnTripRatingView>

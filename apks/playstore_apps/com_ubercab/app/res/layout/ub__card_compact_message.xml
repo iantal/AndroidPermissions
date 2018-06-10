@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.feed.items.cards.compactmessage.CompactMessageCardView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__compact_message_card_background_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitStart" android:adjustViewBounds="true" />
+    <com.ubercab.ui.core.URelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__compact_message_card_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:layout_toStartOf="@id/ub__compact_message_card_cta" android:layout_alignParentStart="true" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__compact_message_card_headline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ub__compact_message_card_label" android:layout_toStartOf="@id/ub__compact_message_card_cta" android:layout_alignParentStart="true" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__compact_message_card_cta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textAllCaps="true" android:layout_marginStart="?contentInset" android:layout_alignParentEnd="true" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+    </com.ubercab.ui.core.URelativeLayout>
+</com.ubercab.presidio.feed.items.cards.compactmessage.CompactMessageCardView>

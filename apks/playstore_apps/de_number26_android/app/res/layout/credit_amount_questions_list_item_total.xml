@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/creditAmountQuestionsListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/creditAmountQuestionsListItemTotalImage" android:visibility="invisible" android:layout_alignParentStart="true" style="@style/creditAmountQuestionsListItemImage" />
+    <TextView android:id="@id/creditAmountQuestionsListItemTotalText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/creditAmountQuestionsListItemTotalAmount" fontPath="@string/font_medium" style="@style/creditAmountQuestionsListItemText" />
+    <TextView android:id="@id/creditAmountQuestionsListItemTotalAmount" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" android:layout_alignParentEnd="true" fontPath="@string/font_medium" style="@style/creditAmountQuestionsListItemAmountSymbol" />
+</RelativeLayout>

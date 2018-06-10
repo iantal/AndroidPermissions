@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.request_error_handler.profiles.ProfileOutOfPolicyErrorHandlerView android:orientation="vertical" android:background="?android:windowBackground" android:padding="?contentInset" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="740a891d-7897"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/out_of_policy" style="@style/Platform.TextAppearance.H1.News" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__profile_out_of_policy_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="?contentInset" style="@style/Platform.TextAppearance.H3" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__profile_out_of_policy_switch_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/switch_to_personal" uber:analyticsId="56ac8f97-28f3" style="?platformButtonPrimary" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__profile_out_of_policy_cancel_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel" uber:analyticsId="aec529a8-72ff" style="?platformButtonSecondary" />
+</com.ubercab.presidio.app.optional.root.main.ride.request.request_error_handler.profiles.ProfileOutOfPolicyErrorHandlerView>

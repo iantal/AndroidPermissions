@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.contact.edit_number.EditNumberView android:background="?android:colorBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="68695e4b-5c9f"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__edit_number_loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:bli_bitColor="?colorAccent" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:text="@string/edit_number_current_number" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+            <com.ubercab.ui.FloatingLabelEditText android:id="@id/ub__edit_number_floating_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" uber:floatingLabelSubTextAppearance="@style/Platform.TextAppearance.P" uber:floatingLabelInfoTextColor="?android:textColorSecondary" uber:floatingLabelErrorTextColor="?colorNegative" />
+            <com.ubercab.ui.core.UButton android:id="@id/ub__edit_number_save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/edit_number_cta" uber:analyticsId="185543f1-8a7d" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.contact.edit_number.EditNumberView>

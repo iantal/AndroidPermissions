@@ -1,0 +1,68 @@
+.class final Lcom/spotify/android/glue/patterns/toolbarmenu/ToolbarMenuHelper$9;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/spotify/android/glue/patterns/toolbarmenu/ToolbarMenuHelper;->a(Lglc;Luun;Ljava/lang/String;Ljava/lang/String;II)V
+.end annotation
+
+
+# instance fields
+.field private synthetic a:Lngn;
+
+.field private synthetic b:Ljava/lang/String;
+
+.field private synthetic c:Luun;
+
+.field private synthetic d:Ljava/lang/String;
+
+
+# direct methods
+.method constructor <init>(Lngn;Ljava/lang/String;Luun;Ljava/lang/String;)V
+    .locals 0
+
+    .line 158
+    iput-object p1, p0, Lcom/spotify/android/glue/patterns/toolbarmenu/ToolbarMenuHelper$9;->a:Lngn;
+
+    iput-object p2, p0, Lcom/spotify/android/glue/patterns/toolbarmenu/ToolbarMenuHelper$9;->b:Ljava/lang/String;
+
+    iput-object p3, p0, Lcom/spotify/android/glue/patterns/toolbarmenu/ToolbarMenuHelper$9;->c:Luun;
+
+    iput-object p4, p0, Lcom/spotify/android/glue/patterns/toolbarmenu/ToolbarMenuHelper$9;->d:Ljava/lang/String;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 4
+
+    .line 161
+    iget-object v0, p0, Lcom/spotify/android/glue/patterns/toolbarmenu/ToolbarMenuHelper$9;->a:Lngn;
+
+    iget-object v1, p0, Lcom/spotify/android/glue/patterns/toolbarmenu/ToolbarMenuHelper$9;->b:Ljava/lang/String;
+
+    invoke-interface {v0, v1}, Lngn;->a(Ljava/lang/String;)V
+
+    .line 162
+    iget-object v0, p0, Lcom/spotify/android/glue/patterns/toolbarmenu/ToolbarMenuHelper$9;->c:Luun;
+
+    iget-object v1, p0, Lcom/spotify/android/glue/patterns/toolbarmenu/ToolbarMenuHelper$9;->d:Ljava/lang/String;
+
+    sget-object v2, Lcom/spotify/music/spotlets/offline/util/OffliningLogger$SourceElement;->e:Lcom/spotify/music/spotlets/offline/util/OffliningLogger$SourceElement;
+
+    const/4 v3, 0x1
+
+    .line 1055
+    invoke-static {v0, v1, v2, v3}, Lcom/spotify/music/spotlets/offline/util/OffliningLogger;->a(Luun;Ljava/lang/String;Lcom/spotify/music/spotlets/offline/util/OffliningLogger$SourceElement;Z)V
+
+    return-void
+.end method

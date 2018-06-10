@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/lpui_fragmentConversationRootView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layoutDirection="ltr"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:orientation="vertical" n1:id="@id/lpui_list_enter_msg_container" n1:background="@color/conversation_background" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:animateLayoutChanges="true">
+        <android.support.design.widget.CoordinatorLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/lpmessaging_bottom_part">
+            <com.liveperson.infra.messaging_ui.uicomponents.list.ChatMessageListRecyclerView n1:id="@id/lpui_recycler_view" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layerType="software" n1:importantForAccessibility="yes" n2:layout_behavior="com.liveperson.infra.messaging_ui.uicomponents.ListBehavior" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <TextView n1:textSize="@dimen/xxlarge_text_size" n1:gravity="center" n1:id="@id/lpui_recycler_view_empty_view" n1:padding="16.0dip" n1:visibility="invisible" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/lp_history_control_api_empty_state" n1:importantForAccessibility="yes" n3:layout_behavior="com.liveperson.infra.messaging_ui.uicomponents.ListBehavior" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <com.liveperson.infra.messaging_ui.uicomponents.ScrollDownIndicator n1:layout_gravity="bottom|center|right" n1:id="@id/lpui_scroll_down_indicator" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:layout_behavior="com.liveperson.infra.messaging_ui.uicomponents.ListBehavior" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            <com.liveperson.infra.messaging_ui.fragment.ConnectionStatusController n1:textSize="@dimen/regular_text_size" n1:gravity="center" n1:id="@id/lpmessaging_ui_connection_status_view" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="36.0dip" n5:font_name="@string/custom_font_name_non_conversation_feed" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        </android.support.design.widget.CoordinatorLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/lpmessaging_bottom_part" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+            <com.liveperson.infra.ui.view.ui.CustomTextView n1:textSize="@dimen/regular_text_size" n1:textColor="@android:color/white" n1:id="@id/lpmessaging_ui_off_hours_view" n1:background="#ff323232" n1:paddingLeft="@dimen/icon_menu_buttons_size" n1:paddingTop="@dimen/margin_double" n1:paddingRight="@dimen/icon_menu_buttons_size" n1:paddingBottom="@dimen/margin_double" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_above="@id/attachment_menu" n6:font_name="@string/custom_font_name_non_conversation_feed" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+            <com.liveperson.infra.messaging_ui.uicomponents.AttachmentMenu n1:id="@id/attachment_menu" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_above="@id/lpui_enter" />
+            <com.liveperson.infra.messaging_ui.uicomponents.AmsEnterMessage n1:id="@id/lpui_enter" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout n1:id="@id/lpui_fragment_child_container" n1:focusableInTouchMode="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</RelativeLayout>

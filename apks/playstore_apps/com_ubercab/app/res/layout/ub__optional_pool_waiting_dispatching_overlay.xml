@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.dispatching.overlay.waiting.PoolWaitingDispatchingOverlayView android:fitsSystemWindows="@bool/use_transparent_status_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="773f23d5-774f"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UPlainView android:id="@id/ub__pool_waiting_dispatching_overlay_plane" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ubercab.presidio.app.optional.root.main.ride.trip.dispatching.overlay.bouncing_marker.TiltedBouncingMarkerView android:id="@id/ub__pool_waiting_dispatching_bouncing_marker" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.dispatching.overlay.waiting.PoolWaitingDispatchingOverlayView>

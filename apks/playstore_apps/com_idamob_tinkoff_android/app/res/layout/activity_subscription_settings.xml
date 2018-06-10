@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:id="@id/smooth_progress" style="@style/SmoothProgress" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/content_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/screen_content_margin_half">
+        <TextView n1:id="@id/my_subscriptions" n1:background="?selectableItemBackground" n1:text="@string/profile_subscriptions_notifications_my" style="@style/TextView.Default" />
+        <TextView n1:id="@id/add_subscription" n1:background="?selectableItemBackground" n1:text="@string/profile_subscriptions_notifications_add" style="@style/TextView.Default" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/settings_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <include n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginTop="@dimen/screen_content_margin_half" n1:layout_marginBottom="@dimen/screen_content_margin_half" layout="@layout/inc_divider" />
+            <TextView n1:text="@string/profile_subscriptions_notifications_settings" style="@style/Profile.Title" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/channels" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

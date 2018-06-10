@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n1:orientation="horizontal" n1:id="@id/mall_activate_all_container" n1:background="@drawable/selector_item_bg_n7" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ViewFlipper n1:id="@id/mall_activate_all_view_flipper" n1:layout_width="@dimen/tile_height_medium_item" n1:layout_height="wrap_content">
+        <ProgressBar n1:layout_gravity="center" n1:id="@id/mall_activate_progress" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="?android:progressBarStyleSmall" />
+        <ImageView n1:layout_gravity="center" n1:id="@id/mall_already_activated_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_check_already_activated" />
+        <ImageView n1:layout_gravity="center" n1:id="@id/mall_activate_icon" n1:padding="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/ic_check_activate" />
+    </ViewFlipper>
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Blue" n1:gravity="center_vertical" n1:id="@id/mall_activate_all_text" n1:paddingLeft="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:textAllCaps="true" fontPath="@string/roboto_medium" />
+</merge>

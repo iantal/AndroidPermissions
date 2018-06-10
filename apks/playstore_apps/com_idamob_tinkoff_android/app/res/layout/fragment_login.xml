@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tcsbank.mb.ui.widgets.BlockInterceptionScrollView n1:id="@id/scroll" n1:background="@color/bg_dark" n1:focusableInTouchMode="true" n1:fillViewport="true" style="@style/MatchParent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" style="@style/VerticalWrapping">
+        <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize">
+            <TextView n1:textAppearance="@style/Text.Header.White" n1:ellipsize="end" n1:layout_gravity="center" n1:id="@id/login_header" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/login_title" n1:maxLines="1" />
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:id="@id/login_container" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" n1:layout_weight="1.0">
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_horizontal" n1:id="@id/description" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/screen_content_margin" />
+            <FrameLayout n1:id="@id/login_form_fragment" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <TextView n1:textAppearance="@style/Text.Small.Blue" n1:layout_gravity="center_horizontal" n1:id="@id/activate_card" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:text="@string/login_activate_card_button" n1:textAllCaps="true" />
+            <TextView n1:textAppearance="@style/Text.Small.Blue" n1:layout_gravity="center_horizontal" n1:id="@id/get_login_and_psw" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:text="@string/login_registration_button" n1:textAllCaps="true" />
+        </LinearLayout>
+        <FrameLayout n1:layout_marginTop="@dimen/offset_from_edge" style="@style/VerticalWrapping">
+            <TextView n1:textAppearance="@style/Text.Default.White" n1:gravity="center" n1:layout_gravity="bottom" n1:id="@id/become_a_client_text" n1:padding="@dimen/screen_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/login_close_button" n1:drawableBottom="@drawable/ic_arrow_up_24dp" n1:drawablePadding="@dimen/offset_from_edge_quarter" />
+        </FrameLayout>
+    </LinearLayout>
+</ru.tcsbank.mb.ui.widgets.BlockInterceptionScrollView>

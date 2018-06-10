@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5" android:id="@id/help_workflow_selectable_list_input_row_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" android:labelFor="@id/help_workflow_selectable_list_input_row_check" />
+    <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:id="@id/help_workflow_selectable_list_input_row_check" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" app:srcCompat="@drawable/ic_check" />
+</merge>

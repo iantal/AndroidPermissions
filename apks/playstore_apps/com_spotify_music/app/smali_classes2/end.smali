@@ -1,0 +1,10 @@
+.class public interface abstract Lend;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/os/IInterface;
+
+
+# virtual methods
+.method public abstract a(Ldbu;Ljava/lang/String;Lewz;)Landroid/os/IBinder;
+.end method

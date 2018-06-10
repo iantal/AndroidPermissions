@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_card_dismiss" android:title="@string/ub__card_dismiss" app:showAsAction="never" />
+    <item android:id="@id/action_publisher_dismiss" android:title="@string/ub__publisher_dismiss" app:showAsAction="never" />
+    <item android:id="@id/action_publisher_category_dismiss" android:title="@string/ub__publisher_category_dismiss" app:showAsAction="never" />
+</menu>

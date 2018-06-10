@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.URelativeLayout android:background="?brandWhite" android:padding="?contentInset" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__rental_summary_title" android:paddingBottom="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__rental_summary_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ub__rental_summary_title" style="@style/Platform.TextAppearance.H5.Book" />
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:gravity="start" android:id="@id/ub__rental_summary_expand_collapse" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__rental_summary_read_more" android:layout_below="@id/ub__rental_summary_content" uber:analyticsId="b6ea7fc7-33cc" style="@style/Platform.TextAppearance.H5.News.Link" />
+</com.ubercab.ui.core.URelativeLayout>

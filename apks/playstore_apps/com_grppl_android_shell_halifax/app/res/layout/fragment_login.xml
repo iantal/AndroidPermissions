@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginTop="@dimen/activity_vertical_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_marginBottom="@dimen/activity_vertical_margin">
+                <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_login_field_spacing_large">
+                    <ImageView n1:layout_width="@dimen/fragment_login_lock_image_size" n1:layout_height="@dimen/fragment_login_lock_image_size" n1:layout_marginRight="@dimen/fragment_login_field_spacing_large" n1:importantForAccessibility="no" n2:srcCompat="@drawable/login_padlock_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                    <TextView n1:textAppearance="@style/TextAppearance.Headline" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/login_title" n1:contentDescription="@string/accessibility_login_registered_heading" />
+                </LinearLayout>
+                <TextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/loginTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_login_field_spacing_large" n1:text="@string/login_description" />
+                <com.mobile.ui.common.view.InputField n1:id="@id/loginUsernameInput" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_login_field_spacing_small" n1:hint="@string/login_input_hint_username" style="@style/Widget.InputField.Username" />
+                <com.mobile.ui.common.view.InputField n1:id="@id/loginPasswordInput" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_login_field_spacing_small" n1:hint="@string/login_input_hint_password" style="@style/Widget.InputField.Password" />
+                <Button n1:enabled="false" n1:id="@id/loginContinueButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_login_field_spacing_large" n1:text="@string/login_button_continue" style="@style/Widget.Button.Primary" />
+                <com.mobile.ui.common.view.LinkTextView n1:layout_gravity="center" n1:id="@id/loginForgotLogonDetails" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/login_button_forgot_details" style="@style/Widget.Link" />
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:id="@id/loginRegistrationContainer" n1:background="@color/login_footer_background" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingTop="@dimen/activity_vertical_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:paddingBottom="@dimen/activity_vertical_margin" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+                <TextView n1:textAppearance="@style/TextAppearance.Headline" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_login_field_spacing_large" n1:text="@string/login_not_registered_title" />
+                <TextView n1:textAppearance="@style/TextAppearance.Body" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_login_field_spacing_large" n1:text="@string/login_not_registered_description" />
+                <Button n1:id="@id/loginNotRegisteredButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_login_field_spacing_large" n1:text="@string/login_not_registered_button" style="@style/Widget.Button.Primary" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.mobile.ui.common.view.NotificationView n1:id="@id/errorNotificationView" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</FrameLayout>

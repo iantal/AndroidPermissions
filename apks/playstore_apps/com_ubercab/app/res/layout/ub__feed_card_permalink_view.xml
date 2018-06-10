@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.feed.permalink.FeedCardPermalinkView android:orientation="vertical" android:background="?brandBlack" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="e8cf5d64-f2cb"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:layout_gravity="center" android:id="@id/ub__feed_card_permalink_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.ubercab.ui.core.UScrollView android:id="@id/ub__feed_card_permalink_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__feed_permalink_card_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimaryInverse" android:gravity="center" android:id="@id/ub__feed_card_permalink_error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/unknown_server_error" uber:analyticsId="18c935bd-4f9e" style="@style/Platform.TextAppearance.H4.News" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.presidio.app.optional.root.main.ride.feed.permalink.FeedCardPermalinkView>

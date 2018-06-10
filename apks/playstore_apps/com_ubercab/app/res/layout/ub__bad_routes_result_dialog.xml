@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?rdsContentInset" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/bad_routes_result_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.UTextView android:id="@id/bad_routes_result_dialog_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" style="?rdsTextAppearanceP" />
+    <com.ubercab.rds.feature.badroutes.BadRoutesReceiptView android:id="@id/bad_routes_result_dialog_receipt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:divider="@drawable/ub__rds__spacing_1x" android:showDividers="middle">
+        <com.ubercab.ui.core.UButton android:id="@id/bad_routes_result_dialog_dismiss" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__rds__ok" android:layout_weight="1.0" style="?rdsStyleButtonPrimary" />
+        <com.ubercab.ui.core.UButton android:id="@id/bad_routes_result_dialog_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__rds__need_help" android:layout_weight="1.0" style="?rdsStyleButtonSecondary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

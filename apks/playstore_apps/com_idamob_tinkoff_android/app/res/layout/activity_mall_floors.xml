@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout n1:id="@id/mall_floors_coordinator" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <fragment n1:name="ru.tcsbank.mb.ui.offers.loyalty.malls.map.MallFloorsMapFragment" n1:id="@id/mall_floors_map_fragment" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <fragment n1:name="ru.tcsbank.mb.ui.fragments.map.MapFloorsControlsFragment" n1:id="@id/mall_floors_controls_fragment" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginBottom="@dimen/mall_floors_header_height" />
+    <android.support.v4.view.ViewPager n1:id="@id/mall_floors_sheet_pager" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:behavior_hideable="true" n2:behavior_peekHeight="@dimen/mall_floors_header_height" n2:layout_behavior="@string/bottom_sheet_behavior" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar n1:id="@id/mall_floors_toolbar" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" n3:navigationIcon="@drawable/ic_arrow_back_dark_24dp" n3:title="@string/empty" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

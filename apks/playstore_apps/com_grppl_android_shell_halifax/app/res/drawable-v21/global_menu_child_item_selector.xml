@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple n1:color="@color/global_menu_item_selected_color"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <item>
+        <color n1:color="@color/global_menu_child_item_color" />
+    </item>
+    <item n1:id="@android:id/mask">
+        <shape n1:shape="rectangle">
+            <solid n1:color="@color/global_menu_item_selected_color" />
+        </shape>
+    </item>
+</ripple>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/historyTransactionView" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:baselineAligned="false"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/transaction_row_outer_margin" n1:layout_marginTop="@dimen/transaction_row_outer_margin" n1:layout_marginBottom="@dimen/transaction_row_outer_margin" n1:layout_weight="1.0">
+            <TextView n1:textAppearance="@style/TransactionRowText" n1:id="@id/transactionDate" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:importantForAccessibility="no" />
+            <TextView n1:textAppearance="@style/TransactionRowText.Strong" n1:ellipsize="end" n1:id="@id/transactionDescription" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/transaction_row_margin" n1:maxLines="2" n1:importantForAccessibility="no" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="end" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/transaction_row_margin_medium" n1:layout_marginTop="@dimen/transaction_row_outer_margin" n1:layout_marginBottom="@dimen/transaction_row_outer_margin">
+            <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <TextView n1:textAppearance="@style/TransactionRowText" n1:id="@id/transactionStatus" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/ics_history_status_margin" n1:importantForAccessibility="no" />
+                <ImageView n1:id="@id/transactionStatusIcon" n1:layout_width="@dimen/ics_history_status_icon_width" n1:layout_height="@dimen/ics_history_status_icon_height" n1:layout_marginTop="@dimen/ics_history_status_margin" n1:layout_toRightOf="@id/transactionStatus" n1:contentDescription="@string/accessibility_ics_transaction_detail_page_status_image_description" />
+            </RelativeLayout>
+            <TextView n1:textAppearance="@style/TransactionRowText.Strong.Balance" n1:id="@id/transactionAmount" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/transaction_row_margin" n1:importantForAccessibility="no" />
+        </LinearLayout>
+        <View n1:id="@id/transactionCreditIndicator" n1:background="@color/credit_indicator_color" n1:layout_width="@dimen/credit_indicator_width" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/credit_indicator_margin" />
+    </LinearLayout>
+    <View n1:background="@color/list_divider_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/list_divider_drawable_height" />
+</LinearLayout>

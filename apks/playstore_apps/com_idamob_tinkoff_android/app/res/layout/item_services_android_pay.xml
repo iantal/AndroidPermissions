@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/button_add" n1:background="?selectableItemBackground" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingRight="@dimen/screen_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/tile_height_default_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/android_pay_add_card" />
+    <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_padding_half" n1:src="@drawable/ic_add_to_android_pay" />
+</LinearLayout>

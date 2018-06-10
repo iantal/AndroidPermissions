@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spotify.music.nowplaying.common.view.background.OverlayHidingGradientBackgroundView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.spotify.music.nowplaying.common.view.pager.TrackCarouselView android:id="@id/track_carousel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/new_npv_player_overlay" />
+</com.spotify.music.nowplaying.common.view.background.OverlayHidingGradientBackgroundView>

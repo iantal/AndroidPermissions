@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/settings_preference_header" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/one_line_item_height">
+            <TextView android:textColor="@color/textColorPrimary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_notifications_informe" android:layout_weight="1.0" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_phone" android:paddingEnd="4.0dip" android:layout_marginEnd="@dimen/default_margin" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_mail" android:contentDescription="@null" android:paddingEnd="4.0dip" android:layout_marginStart="@dimen/default_margin" />
+        </LinearLayout>
+        <de.number26.machete.android.ui.components.DualCheckboxPreferenceView android:id="@id/payment_successful" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_notifications_paymentsuccessful" android:summary="@string/settings_notifications_paymentsuccessful_subtitle" />
+        <de.number26.machete.android.ui.components.DualCheckboxPreferenceView android:id="@id/payment_failed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_notifications_paymentrejected" android:summary="@string/settings_notifications_paymentrejected_subtitle" />
+        <de.number26.machete.android.ui.components.DualCheckboxPreferenceView android:id="@id/incoming_transfer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_notifications_transactionpositive" android:summary="@string/settings_notifications_transactionpositive_subtitle" />
+        <de.number26.machete.android.ui.components.DualCheckboxPreferenceView android:id="@id/outgoing_transfer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_notifications_transactionnegative" android:summary="@string/settings_notifications_transactionnegative_subtitle" />
+        <de.number26.machete.android.ui.components.DualCheckboxPreferenceView android:id="@id/direct_debits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_notifications_transactiondebit" android:summary="@string/settings_notifications_transactiondebit_subtitle" />
+        <de.number26.machete.android.ui.components.DualCheckboxPreferenceView android:id="@id/atm_fairusage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_notifications_atm_fairusage" android:summary="@string/settings_notifications_atm_fairusage_subtitle" />
+        <de.number26.machete.android.ui.components.CurrencyPreferenceView android:id="@id/push_threshold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_notifications_pushlimit" android:summary="@string/settings_notifications_pushlimit_subtitle" />
+        <de.number26.machete.android.ui.components.CurrencyPreferenceView android:id="@id/email_threshold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_notifications_maillimit" android:summary="@string/settings_notifications_maillimit_subtitle" />
+    </LinearLayout>
+</ScrollView>

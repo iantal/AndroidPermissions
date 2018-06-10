@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/tick_icon_size" android:width="@dimen/tick_icon_size" android:viewportWidth="22.0" android:viewportHeight="22.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:translateX="1.0" android:translateY="1.0">
+        <path android:fillColor="?brandBlack" android:pathData="M 10 0 C 15.5228474983 0 20 4.47715250169 20 10 C 20 15.5228474983 15.5228474983 20 10 20 C 4.47715250169 20 0 15.5228474983 0 10 C 0 4.47715250169 4.47715250169 0 10 0 Z" android:strokeColor="?brandGrey20" android:strokeWidth="2.0" android:strokeLineCap="square" android:fillType="evenOdd" />
+        <path android:fillColor="?brandGrey20" android:pathData="M8.25 12.116l-2.69-2.102-1.127 1.442 3.824 2.987 .003 -.004 .212 .165 6.217-7.957-1.346-1.052-5.094 6.52z" android:fillType="evenOdd" />
+    </group>
+</vector>

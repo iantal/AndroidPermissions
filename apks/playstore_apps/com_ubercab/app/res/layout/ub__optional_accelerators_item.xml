@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.accelerators.optional.AcceleratorsItemView android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/accelerators_item_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFloatingActionButton android:gravity="center|top" android:layout_gravity="center|top" android:id="@id/ub__icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" app:elevation="@dimen/accelerators_elevation_high" app:backgroundTint="?android:colorBackground" app:rippleColor="?lightSelectorColor" app:borderWidth="0.0dip" />
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center|top" android:id="@id/ub__title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:maxLines="2" app:fontPath="@string/ub__font_medium" style="@style/Platform.TextAppearance.H6" />
+</com.ubercab.presidio.accelerators.optional.AcceleratorsItemView>

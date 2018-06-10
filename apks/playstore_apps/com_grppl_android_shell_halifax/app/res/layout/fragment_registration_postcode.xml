@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mobile.ui.registration.common.view.RegistrationScrollView n1:id="@id/postcodeScrollView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true">
+        <LinearLayout n1:orientation="vertical" n1:paddingLeft="@dimen/fragment_content_padding" n1:paddingTop="@dimen/registration_postcode_vertical_spacing" n1:paddingRight="@dimen/fragment_content_padding" n1:paddingBottom="@dimen/fragment_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <com.mobile.ui.common.view.HeadingTextView n1:textAppearance="@style/TextAppearance.Headline" n1:id="@id/postcodeTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/registration_postcode_vertical_spacing" n1:text="@string/registration_postcode_title" />
+            <TextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/postcodeSubtitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/registration_postcode_vertical_spacing" n1:text="@string/registration_postcode_subtitle" />
+            <TextView n1:textAppearance="@style/TextAppearance.InputLabel" n1:id="@id/postcodeLabel" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/input_field_label_margin" n1:text="@string/registration_personal_details_postcode_label" />
+            <com.mobile.ui.common.view.ErrorPersistingInputField n1:id="@id/postcodeInput" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLength="@integer/post_code_max_length" n1:digits="@string/digits_alphanumeric_space" n1:inputType="textCapCharacters|textNoSuggestions" n1:contentDescription="@string/accessibility_registration_personal_details_postcode" style="@style/Widget.InputField" />
+            <com.mobile.ui.common.view.InputFieldTipView n1:id="@id/postcodeInputTip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/registration_personal_details_vertical_spacing" n1:text="@string/registration_personal_details_postcode_tip" style="@style/Widget.InputFieldTip" />
+            <FrameLayout n1:gravity="bottom" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <Button n1:layout_gravity="bottom" n1:id="@id/postcodeNextButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/registration_next_button" style="@style/Widget.Button.Primary" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.mobile.ui.registration.common.view.RegistrationScrollView>
+    <com.mobile.ui.common.view.NotificationView n1:id="@id/errorNotificationView" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.scheduled_commute.trips.TripView android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:layout_marginStart="@dimen/ui__spacing_unit_2x">
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UImageView android:id="@id/ub__commute_trip_item_photo" android:visibility="gone" android:layout_width="@dimen/ui__avatar_size_medium" android:layout_height="@dimen/ui__avatar_size_medium" style="@style/Platform.TextAppearance.H3.News" />
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/ub__commute_trip_item_search_animation_view" android:layout_width="@dimen/ui__avatar_size_medium" android:layout_height="@dimen/ui__avatar_size_medium" uber:lottie_fileName="search-animation.json" uber:lottie_autoPlay="true" uber:lottie_loop="true" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__commute_trip_item_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ui__spacing_unit_2x" style="@style/Platform.TextAppearance.H5.News.Primary" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_2x">
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__commute_trip_item_date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.News" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__commute_trip_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.News" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.ULinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.ubercab.ui.core.UImageView android:layout_width="@dimen/small_icon_height_width" android:layout_height="@dimen/small_icon_height_width" uber:srcCompat="@drawable/ub__commute_icon_pickup" />
+                    <com.ubercab.ui.core.UImageView android:layout_gravity="center" android:background="@drawable/ub__commute_address_line" android:layout_width="?dividerWidth" android:layout_height="@dimen/ui__spacing_unit_2x" android:layout_marginTop="?dividerWidth" android:layout_marginBottom="?dividerWidth" android:adjustViewBounds="true" />
+                    <com.ubercab.ui.core.UImageView android:layout_width="@dimen/small_icon_height_width" android:layout_height="@dimen/small_icon_height_width" uber:srcCompat="@drawable/ub__commute_icon_dropoff" />
+                </com.ubercab.ui.core.ULinearLayout>
+                <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ui__spacing_unit_2x">
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub__commute_trip_item_pickup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.P" />
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub__commute_trip_item_dropoff" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.P" />
+                </com.ubercab.ui.core.ULinearLayout>
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__commute_link_section_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UPlainView android:background="@drawable/ub__border" android:layout_width="wrap_content" android:layout_height="?dividerWidth" />
+            <com.ubercab.ui.core.ULinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__commute_contact_link" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ub__commute_trip_list_trip_card_action_contact" android:layout_weight="1.0" uber:analyticsId="cbc5fa00-19c3" style="@style/Platform.TextAppearance.H6.News.Link" />
+                <com.ubercab.ui.core.UPlainView android:background="@drawable/ub__border" android:layout_width="?dividerWidth" android:layout_height="fill_parent" />
+                <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__commute_cancel_link" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ub__commute_trip_list_trip_card_action_matched_cancel" android:layout_weight="1.0" uber:analyticsId="48ef332f-a3b4" style="@style/Platform.TextAppearance.H6.News.Link" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UPlainView android:background="@drawable/ub__border" android:layout_width="wrap_content" android:layout_height="?dividerWidth" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.scheduled_commute.trips.TripView>

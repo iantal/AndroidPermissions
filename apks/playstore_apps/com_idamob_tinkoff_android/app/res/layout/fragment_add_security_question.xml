@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/smart_fields_group" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:fieldKey="questionList" n2:fieldTitle="@string/security_question_question_hint" n2:fieldType="simpleList" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:fieldKey="customQuestion" n3:fieldTitle="@string/security_question_custom_question_hint" n3:fieldType="text" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:fieldKey="answer" n4:fieldTitle="@string/security_question_answer_hint" n4:fieldType="text" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingTop="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:padding="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/alert_card" />
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/txt_increase_cash_limit_note" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:text="@string/increase_cash_limit_note" n1:layout_weight="1.0" />
+    </LinearLayout>
+    <Button n1:id="@id/btn_increase_cash_limit" n1:text="@string/increase_cash_limit_button" style="@style/Button.Yellow" />
+</LinearLayout>

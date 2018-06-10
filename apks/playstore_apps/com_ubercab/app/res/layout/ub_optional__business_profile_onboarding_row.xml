@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.profiles_feature.onboarding.entry_point.SettingsBusinessProfileOnboardingRowView android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="c126837b-9f60"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.widget.HelixListItem android:id="@id/ub__profile_add_business_profile_view" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:primaryText="@string/business_profile_onboarding_settings_entry_point" uber:primaryTextStyle="@style/Platform.TextAppearance.H5.News.Link" uber:secondaryText="@string/business_profile_onboarding_settings_entry_point_byline" uber:secondaryTextStyle="@style/Platform.TextAppearance.H6.News.Tertiary" />
+</com.ubercab.presidio.profiles_feature.onboarding.entry_point.SettingsBusinessProfileOnboardingRowView>

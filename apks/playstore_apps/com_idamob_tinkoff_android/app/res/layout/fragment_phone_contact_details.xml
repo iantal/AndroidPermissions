@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:divider="@drawable/divider_list" n1:showDividers="end|middle">
+            <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView n1:id="@id/contact_icon" n1:layout_width="60.0dip" n1:layout_height="60.0dip" n1:layout_margin="@dimen/offset_from_edge" n1:layout_alignParentRight="true" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/contact_name" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_toLeftOf="@id/contact_icon" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView n1:id="@id/phone_list" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" n1:overScrollMode="never" />
+            <ru.tcsbank.mb.ui.widgets.ButtonWithSubtitle n1:id="@id/transfer_by_phone" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" />
+            <ru.tcsbank.mb.ui.widgets.ButtonWithSubtitle n1:id="@id/invite_friend_button" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/linked_templates_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half">
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:id="@id/linked_templates_section" n1:paddingLeft="@dimen/screen_content_margin" n1:paddingRight="@dimen/screen_content_margin" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/pcdf_linked_template_section" />
+            <android.support.v7.widget.RecyclerView n1:id="@id/templates_cache_list" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:overScrollMode="never" n2:layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <ru.tcsbank.mb.ui.widgets.ButtonWithSubtitle n1:id="@id/link_template_btn" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

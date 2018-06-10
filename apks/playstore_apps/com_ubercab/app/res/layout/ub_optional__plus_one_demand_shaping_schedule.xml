@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.demand_shaping_schedule.PlusOneDemandShapingScheduleStepView android:layout_gravity="bottom" android:orientation="vertical" android:background="?android:colorBackground" android:padding="@dimen/ui__spacing_unit_3x" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__podss_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:lineSpacingMultiplier="1.0" style="@style/Platform.TextAppearance.H2.Book" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__podss_header_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    <include layout="@layout/ub__grey_horizontal_line" />
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__podss_fare_row_group" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.UScrollView>
+    <include layout="@layout/ub__grey_horizontal_line" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__podss_confirm_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:minHeight="@dimen/ui__spacing_unit_9x" android:maxLines="3" android:singleLine="false" android:lineSpacingMultiplier="1.25" android:textAllCaps="false" style="?platformButtonPrimary" />
+</com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.demand_shaping_schedule.PlusOneDemandShapingScheduleStepView>

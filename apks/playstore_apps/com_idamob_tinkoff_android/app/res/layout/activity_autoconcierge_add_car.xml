@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/autoconcierge_add_car_content" n1:paddingTop="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="@dimen/core_short_height" n2:fieldKey="car_number" n2:fieldTitle="@string/autoconcierge_add_auto_number_hint" n2:fieldType="text" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <Button n1:id="@id/autoconcierge_add_car_button" n1:layout_marginTop="40.0dip" n1:text="@string/autoconcierge_add_auto_number_button" style="@style/Button.Yellow.Medium" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.pass.purchase.flow.step.PaymentConfirmationView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="9d919408-bd1f"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/pass_purchase_payment_confirmation_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:layout_gravity="top" android:id="@id/loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorPrimary" />
+</com.ubercab.presidio.pass.purchase.flow.step.PaymentConfirmationView>

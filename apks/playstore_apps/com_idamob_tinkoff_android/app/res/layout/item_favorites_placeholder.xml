@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:id="@id/payment_container" style="@style/PayHub.FavItemContainer"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/payment_logo" n1:background="@drawable/circle_placeholder_transient" n1:layout_width="@dimen/tile_height_medium_item" n1:layout_height="@dimen/tile_height_medium_item" />
+    <View n1:background="@color/placeholder_item_transient" n1:layout_width="@dimen/tile_height_medium_item" n1:layout_height="14.0dip" style="@style/PayHub.FavItemText" />
+</LinearLayout>

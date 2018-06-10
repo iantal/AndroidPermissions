@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.edit.text.MbEditText n1:textSize="@dimen/text_extra_large" n1:gravity="center" n1:id="@id/wem_amount" n1:background="@drawable/selector_edit_money" n1:paddingRight="@dimen/screen_content_padding_medium" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:imeOptions="actionDone" />
+    <ImageView n1:id="@id/wem_help" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/offset_from_edge_quarter" n1:src="@drawable/ic_help" n1:layout_alignBaseline="@id/wem_amount" n1:layout_alignParentRight="true" n1:baseline="20.0dip" />
+    <TextView n1:textAppearance="@style/Text.Default.Light" n1:id="@id/wem_currency" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/offset_from_edge_quarter" n1:layout_toLeftOf="@id/wem_help" n1:layout_alignBaseline="@id/wem_amount" n1:layout_alignWithParentIfMissing="true" fontPath="@string/roboto_light" />
+</merge>

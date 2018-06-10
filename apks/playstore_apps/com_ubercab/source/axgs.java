@@ -1,0 +1,3 @@
+class axgs
+  extends axgr
+{}

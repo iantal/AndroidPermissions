@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout n1:id="@id/spending_chart_header_content" n1:layout_width="fill_parent" n1:layout_height="48.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/spending_chart_calendar_button" n1:background="@drawable/spendings_header_button_background" n1:clickable="true" n1:layout_width="32.0dip" n1:layout_height="0.0dip" n1:layout_marginLeft="@dimen/offset_from_edge_half" n1:src="@drawable/ic_calendar" n1:scaleType="center" n1:layout_marginStart="@dimen/offset_from_edge_half" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintLeft_toLeftOf="parent" n2:layout_constraintTop_toTopOf="parent" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TableLayout n1:gravity="center_vertical" n1:id="@id/header_table" n1:layout_width="0.0dip" n1:layout_height="48.0dip" n1:stretchColumns="2" n1:shrinkColumns="0" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintLeft_toRightOf="@id/spending_chart_calendar_button" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toTopOf="parent" xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <TableRow n1:gravity="center_vertical" n1:layout_height="48.0dip">
+            <TextView n1:textAppearance="@style/Text.Default.Light" n1:ellipsize="none" n1:gravity="center_vertical" n1:id="@id/spending_chart_period" n1:focusable="true" n1:fadingEdge="horizontal" n1:fadingEdgeLength="@dimen/offset_from_edge" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="48.0dip" n1:singleLine="true" n1:requiresFadingEdge="horizontal" />
+            <ImageButton n1:id="@id/spending_chart_clear_period_button" n1:background="?selectableItemBackground" n1:padding="@dimen/offset_from_edge_half" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:src="@drawable/ic_close_tag" />
+            <Space n1:layout_width="0.0dip" n1:layout_height="fill_parent" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:gravity="center_vertical" n1:id="@id/spending_chart_amount_view" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/offset_from_edge_half" n1:translationX="8.0dip" n1:layout_marginStart="@dimen/offset_from_edge_half" n3:textColorAmount="@color/white" n3:textColorCurrency="@color/white" n3:textColorFractional="@color/white" n3:textSize="@dimen/text_medium" />
+            <TextView n1:textAppearance="@style/Text.Default.Light" n1:id="@id/text_status_view" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:translationX="8.0dip" />
+            <ImageButton n1:id="@id/spending_chart_expand_button" n1:background="@drawable/spendings_header_button_background" n1:layout_width="48.0dip" n1:layout_height="fill_parent" n1:src="@drawable/ic_arrow" />
+        </TableRow>
+    </TableLayout>
+    <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:id="@id/spendings_chart_header_progress" n1:layout_width="0.0dip" n1:minHeight="2.0dip" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toRightOf="parent" style="@style/SmoothProgress" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</android.support.constraint.ConstraintLayout>

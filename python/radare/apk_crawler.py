@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 import r2pipe
 import json
+import os
 
 
 class RadareConfig(object):
@@ -49,18 +50,41 @@ class RadareCommands(object):
 
 
 class RadareResults(object):
-    def __init__(self, dex_file, config_file):
-        self.dex_file = dex_file
+    def __init__(self, base_dir, config_file):
+        self.dex_file = os.path.join(base_dir, 'raw', 'classes.dex')
+        self.base_dir = base_dir
         self.configs = RadareConfig().read_configs(config_file)
 
     def print_findings(self):
+        rl = []
         for c in self.configs:
-            print("[***] " + c)
-            print(StringsAnalyser(self.dex_file).analyse(self.configs[c]))
-            print(ImportsAnalyser(self.dex_file).analyse(self.configs[c]))
-            print(MethodsAnalyser(self.dex_file).analyse(self.configs[c]))
+            evidences = [StringsAnalyser(self.dex_file).analyse(self.configs[c]),ImportsAnalyser(self.dex_file).analyse(self.configs[c]), MethodsAnalyser(self.dex_file).analyse(self.configs[c])]
+
+            evidences_ll = [e.split("\n") for e in evidences]
+            evidences_final = []
+            for evidences in evidences_ll:
+                for e in evidences:
+                    evidences_final.append(e)
+
+            if evidences_final:
+                finding = {
+                    "title": "Radare check: " + c,
+                    "stat": "info",
+                    "description": "",
+                    "recommendation": "",
+                    "evidence": evidences_final
+                }
+
+            # print(StringsAnalyser(self.dex_file).analyse(self.configs[c]))
+            # print(ImportsAnalyser(self.dex_file).analyse(self.configs[c]))
+            # print(MethodsAnalyser(self.dex_file).analyse(self.configs[c]))
             # aas; needs to be enabled
             # print(SymbolsAnalyser(self.dex_file).analyse(self.configs[c]))
+                rl.append(finding)
+
+        r = {"findings": rl}
+        with open(os.path.join(self.base_dir, 'report', 'vulns', 'radare.json'), "w") as f:
+            f.write(json.dumps(r))
 
 
 class AbstractRadareAnalyser(ABC):

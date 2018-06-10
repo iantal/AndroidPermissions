@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/swipe_refresh_container" style="@style/MatchParent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView style="@style/MatchParent">
+        <LinearLayout n1:orientation="vertical" style="@style/MatchParent">
+            <RadioGroup n1:id="@id/payment_settings_group" n1:visibility="gone" style="@style/CategoriesRadioGroup">
+                <RadioButton n1:id="@id/regular_payment_button" n1:text="@string/repeat_template_switch_regular" style="@style/CategoryRadioButton" />
+                <RadioButton n1:id="@id/auto_payment_button" n1:text="@string/repeat_template_switch_auto" style="@style/CategoryRadioButton" />
+            </RadioGroup>
+            <FrameLayout n1:id="@id/regular_payment_settings_holder" style="@style/VerticalWrapping" />
+            <FrameLayout n1:id="@id/autopayment_settings_holder" n1:visibility="gone" style="@style/VerticalWrapping" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/fill_in_container" n1:paddingBottom="@dimen/offset_from_edge_half" n1:visibility="gone" n1:layout_alignParentBottom="true" style="@style/VerticalWrapping">
+                <include layout="@layout/inc_divider" />
+                <TextView n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" n1:text="@string/repeat_template_account" style="@style/SubtitleTextItem" />
+                <include layout="@layout/inc_divider" />
+                <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/trsa_carousel" style="@style/AccountsCarouselPager" />
+                <include layout="@layout/inc_divider" />
+                <ru.tcsbank.mb.ui.widgets.money.EditMoney n1:id="@id/amount" n2:currency="643" n2:em_enable_title="true" n2:em_hint="@string/pcf_pay_amount_hint" n2:em_textSize="@dimen/text_medium" style="@style/EditText.Margin" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:id="@id/progress" n1:layout_below="@id/board" style="@style/SmoothProgress" />
+</RelativeLayout>

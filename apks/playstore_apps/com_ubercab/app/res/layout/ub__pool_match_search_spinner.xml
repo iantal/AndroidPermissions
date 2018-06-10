@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="@dimen/ui__avatar_size_tiny" android:layout_height="@dimen/ui__avatar_size_tiny"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.CircleImageView android:id="@id/ub__match_spinner_circle_avatar1" android:layout_width="fill_parent" android:layout_height="fill_parent" app:circleImageBorderColor="@color/ub__ui_core_transparent" />
+    <com.ubercab.ui.CircleImageView android:id="@id/ub__match_spinner_circle_avatar2" android:layout_width="fill_parent" android:layout_height="fill_parent" app:circleImageBorderColor="@color/ub__ui_core_transparent" />
+    <com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.match.pool.InvertedCircleImageView android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

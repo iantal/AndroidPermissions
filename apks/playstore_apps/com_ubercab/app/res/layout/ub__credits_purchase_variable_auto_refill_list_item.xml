@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.URelativeLayout android:gravity="center_vertical" android:background="?selectableItemBackground" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset" app:analyticsEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimary" android:id="@id/ub__credits_purchase_variable_auto_refill_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.News" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__credits_purchase_variable_auto_refill_bonus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ub__credits_purchase_variable_auto_refill_amount" style="@style/Platform.TextAppearance.H4.News" />
+    <include layout="@layout/ub__credits_purchase_variable_auto_refill_checkmark" />
+</com.ubercab.ui.core.URelativeLayout>

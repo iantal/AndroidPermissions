@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.cobrandcard.application.cardadded.CobrandCardAddedView android:orientation="vertical" android:background="@drawable/ub__cobrandcard_gradient" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="d77c0cdd-30e2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/ub__cobrandcard_application_header" />
+    <com.ubercab.ui.core.ULinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.ubercab.ui.core.UImageView android:id="@id/ub__cobrand_card_add_header_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:background="@drawable/ub__cobrandcard_added_bottom_gradient" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingTop="@dimen/ui__spacing_unit_6x" android:paddingRight="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:textColor="?brandWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cobrandcard_added_title" style="@style/Platform.TextAppearance.H2.Book" />
+        <com.ubercab.ui.core.UTextView android:textColor="?brandWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:text="@string/cobrandcard_added_description" style="@style/Platform.TextAppearance.P" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__cobrand_card_add_ok_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:text="@string/cobrandcard_ok" uber:analyticsId="19679d10-8d24" style="@style/Platform.Button.Primary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.cobrandcard.application.cardadded.CobrandCardAddedView>

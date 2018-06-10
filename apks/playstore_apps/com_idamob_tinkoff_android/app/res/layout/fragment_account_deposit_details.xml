@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/account_details_effective_rate_panel" style="@style/DefaultItem.Margin">
+        <TextView n1:id="@id/account_details_effective_rate_title" n1:text="@string/account_additional_details_effective_rate" n1:drawableLeft="@drawable/ic_account_details_percent" n1:layout_weight="1.0" style="@style/AccountDetailsActionItem" />
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/account_details_effective_rate" n1:text="@string/ada_rate_value" style="@style/WrapContent" />
+        <ImageButton n1:id="@id/account_details_effective_rate_hint" style="@style/ActivityCardAccountSettings.WidgetEditServiceImageButton" />
+    </LinearLayout>
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/account_details_deposit_renewal_info" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge" />
+    <include n1:id="@id/account_details_effective_rate_divider" layout="@layout/inc_divider_margin" />
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/account_details_saving_percents_panel" n1:visibility="gone" style="@style/DefaultItem.Margin">
+        <TextView n1:id="@id/account_details_saving_percents_title" n1:text="@string/account_additional_details_saving_percents_label" n1:drawableLeft="@drawable/ic_account_details_percent" n1:layout_weight="1.0" style="@style/AccountDetailsActionItem" />
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/account_details_saving_percents" n1:text="@string/ada_rate_value" style="@style/WrapContent" />
+    </LinearLayout>
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/account_details_saving_percents_info" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge" n1:text="@string/account_additional_details_rate_for_new_deposit_hint" />
+    <include n1:id="@id/account_details_saving_percents_divider" n1:visibility="gone" layout="@layout/inc_divider_margin" />
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_marginLeft="@dimen/offset_from_edge_large" n1:text="@string/account_additional_details_percents_label" style="@style/DefaultItem" />
+    <RadioGroup n1:id="@id/account_details_percent_type_group" style="@style/VerticalWrapping">
+        <RadioButton n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/account_details_to_card" n1:text="@string/account_additional_details_accruals_to_card" style="@style/RadioButtonAccountDetails" />
+        <RadioButton n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/account_details_to_deposit" n1:text="@string/account_additional_details_accruals_to_deposit" style="@style/RadioButtonAccountDetails" />
+    </RadioGroup>
+    <include layout="@layout/inc_divider_margin" />
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/account_details_deposit_last_receipt_date_block" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_margin" n1:layout_marginTop="@dimen/screen_content_margin_half" n1:layout_marginRight="@dimen/screen_content_margin" n1:layout_marginBottom="@dimen/screen_content_margin_half" n1:minHeight="@dimen/tile_height_default_item">
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/screen_content_double_padding" n1:src="@drawable/ic_account_details_cash_in" n1:tint="@color/main_blue" />
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/account_additional_details_deposit_last_top_up" n1:layout_weight="1.0" />
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/account_details_deposit_last_receipt_date" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/account_details_deposit_last_bonus_date_block" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_margin" n1:layout_marginTop="@dimen/screen_content_margin_half" n1:layout_marginRight="@dimen/screen_content_margin" n1:layout_marginBottom="@dimen/screen_content_margin_half" n1:minHeight="@dimen/tile_height_default_item">
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/screen_content_double_padding" n1:src="@drawable/ic_account_details_percent" n1:tint="@color/main_blue" />
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/account_additional_details_deposit_last_bonus_date" n1:layout_weight="1.0" />
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/account_details_deposit_last_bonus_date" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <include n1:id="@id/account_details_deposit_dates_divider" layout="@layout/inc_divider_margin" />
+    <TextView n1:id="@id/account_details_document" n1:visibility="gone" n1:text="@string/account_additional_details_account_documents_button" n1:drawableLeft="@drawable/ic_account_details_documents" style="@style/AccountDetailsActionItem.Padding" />
+    <TextView n1:id="@id/account_details_tariffs" n1:text="@string/account_additional_details_tariff_button" n1:drawableLeft="@drawable/ic_account_details_tariffs" style="@style/AccountDetailsActionItem.Padding" />
+    <include layout="@layout/inc_divider_margin" />
+    <TextView n1:id="@id/account_details_add_currency" n1:visibility="gone" n1:text="@string/account_additional_details_add_currency_button" n1:drawableLeft="@drawable/ic_account_details_add_currency" style="@style/AccountDetailsActionItem.Padding" />
+    <TextView n1:id="@id/account_details_partial_withdrawal" n1:text="@string/account_additional_details_partial_withdrawal" n1:drawableLeft="@drawable/ic_account_details_partial" style="@style/AccountDetailsActionItem.Padding" />
+    <TextView n1:id="@id/account_details_close_deposit" n1:text="@string/account_additional_details_close_deposit_button" n1:drawableLeft="@drawable/ic_account_details_close" style="@style/AccountDetailsActionItem.Padding" />
+    <TextView n1:id="@id/account_details_prolongation" n1:visibility="gone" n1:text="@string/account_additional_details_prolongation" n1:drawableLeft="@drawable/ic_account_details_prolongation" style="@style/AccountDetailsActionItem.Padding" />
+</LinearLayout>

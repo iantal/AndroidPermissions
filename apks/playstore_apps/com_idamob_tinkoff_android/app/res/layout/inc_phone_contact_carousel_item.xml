@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout style="@style/PayHub.PhoneContactContainer">
+    <ImageView n1:id="@id/contact_icon" n1:layout_marginLeft="@dimen/offset_from_edge" n2:layout_constraintLeft_toLeftOf="parent" style="@style/ImageItem"
+      xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n3:id="@id/contact_status" n3:visibility="gone" n3:layout_width="@dimen/circle_size_small" n3:layout_height="@dimen/circle_size_small" n3:src="@drawable/ic_contact_status_tinkoff_small" n4:layout_constraintBottom_toBottomOf="@id/contact_icon" n4:layout_constraintRight_toRightOf="@id/contact_icon"
+      xmlns:n3="http://schemas.android.com/apk/res/android" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <TextView n5:textAppearance="@style/Text.Default.Dark" n5:ellipsize="end" n5:id="@id/contact_name" n5:paddingLeft="@dimen/offset_from_edge" n5:paddingRight="@dimen/offset_from_edge" n5:layout_width="0.0dip" n5:layout_height="wrap_content" n5:lines="1" n6:layout_constraintBottom_toBottomOf="parent" n6:layout_constraintLeft_toRightOf="@id/contact_icon" n6:layout_constraintRight_toLeftOf="@id/contact_connect" n6:layout_constraintTop_toTopOf="parent"
+      xmlns:n5="http://schemas.android.com/apk/res/android" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+    <ImageView n7:id="@id/contact_connect" n7:background="@drawable/circle_placeholder_white" n7:padding="@dimen/circle_icon_image_padding" n7:visibility="gone" n7:layout_width="wrap_content" n7:layout_height="wrap_content" n7:layout_marginRight="@dimen/offset_from_edge" n7:src="@drawable/ic_contact_status_connect_small" n8:backgroundTint="@color/n7" n8:layout_constraintBottom_toBottomOf="parent" n8:layout_constraintRight_toLeftOf="@id/select_contact" n8:layout_constraintTop_toTopOf="parent" n8:tint="@color/n3"
+      xmlns:n7="http://schemas.android.com/apk/res/android" xmlns:n8="http://schemas.android.com/apk/res-auto" />
+    <RadioButton n9:id="@id/select_contact" n9:background="@null" n9:visibility="gone" n9:clickable="false" n9:layout_width="wrap_content" n9:layout_height="wrap_content" n9:layout_marginRight="@dimen/offset_from_edge" n10:layout_constraintBottom_toBottomOf="parent" n10:layout_constraintRight_toRightOf="parent" n10:layout_constraintTop_toTopOf="parent"
+      xmlns:n9="http://schemas.android.com/apk/res/android" xmlns:n10="http://schemas.android.com/apk/res-auto" />
+</android.support.constraint.ConstraintLayout>

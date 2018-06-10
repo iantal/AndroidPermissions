@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.family.resend_invite.FamilyResendInviteView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:gravity="start" android:id="@id/ub__family_resend_invite_button" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/resend_invite" android:textAllCaps="false" style="@style/Platform.Button.Borderless" />
+</com.ubercab.presidio.family.resend_invite.FamilyResendInviteView>

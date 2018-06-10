@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/newContactCountryFlag" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    <TextView android:id="@id/newContactCountry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/eur" />
+    <ImageView android:layout_width="10.0dip" android:layout_height="5.0dip" android:layout_marginLeft="16.0dip" app:srcCompat="@drawable/arrow_filled_down" />
+</LinearLayout>

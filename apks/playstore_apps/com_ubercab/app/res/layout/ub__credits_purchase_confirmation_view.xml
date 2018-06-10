@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.credits.purchase.CreditsPurchaseConfirmationView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/collapsing_bitloader_header" />
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/credits_purchase_confirmation_content" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?dividerHorizontal" android:showDividers="middle">
+                <com.ubercab.ui.core.UPlainView android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="?contentInset" />
+                <com.ubercab.ui.core.URelativeLayout android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/credits_purchase_amount" android:layout_alignParentStart="true" style="@style/Platform.TextAppearance.H5.News.Primary" />
+                    <com.ubercab.ui.core.UTextView android:id="@id/credit_purchase_confirmation_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/Platform.TextAppearance.H5.News.Primary" />
+                    <com.ubercab.ui.core.UTextView android:id="@id/credit_purchase_confirmation_bonus_credits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/credit_purchase_confirmation_amount" android:layout_alignParentEnd="true" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+                </com.ubercab.ui.core.URelativeLayout>
+                <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/credits_purchase_confirmation_payment_method_layout" android:background="?selectableItemBackground" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset">
+                    <com.ubercab.ui.core.UTextView android:paddingTop="?contentInset" android:paddingBottom="?contentInset" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/credits_purchase_payment_method" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H5.News.Primary" />
+                    <com.ubercab.ui.core.UTextView android:gravity="center_vertical" android:id="@id/credits_purchase_confirmation_payment_method" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/ub__payment_bank_card_icon_padding" style="@style/Platform.TextAppearance.H5.News.Primary" />
+                </com.ubercab.ui.core.ULinearLayout>
+                <com.ubercab.ui.core.UPlainView android:id="@id/credits_purchase_auto_reload_spacer" android:background="?android:windowBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?contentInset" />
+                <com.ubercab.credits.purchase.AutoReloadView android:id="@id/credits_purchase_auto_reload" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.ubercab.ui.core.UTextView android:textColor="?android:textColorTertiary" android:id="@id/credits_purchase_confirm_purchase_terms" android:background="?android:windowBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.Meta.Normal" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.UScrollView>
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UPlainView android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+        <com.ubercab.ui.core.UButton android:enabled="false" android:id="@id/credits_purchase_confirm_purchase_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="?contentInset" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/credits_purchase_purchase" android:layout_marginStart="?contentInset" android:layout_marginEnd="?contentInset" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.credits.purchase.CreditsPurchaseConfirmationView>

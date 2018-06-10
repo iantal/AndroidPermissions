@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.feed.items.cards.stats.StatsCardView android:orientation="vertical" android:background="?accentCta" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="7b59151b-863c"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.presidio.feed.items.cards.stats.StatsCardParallaxView android:layout_gravity="end|center|top" android:id="@id/ub__card_stats_parallax_pattern" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__card_stats_detail_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.presidio.feed.items.cards.stats.StatsCardDetailView android:orientation="vertical" android:id="@id/ub__card_stats_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__card_stats_bottom_banner" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset" style="@style/Platform.TextAppearance.H3.Book.Primary.Inverse" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UImageView android:layout_gravity="end|bottom|center" android:id="@id/ub__card_stats_cta_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:tint="?colorAccentInverse" android:contentDescription="@string/ub__card_stats_cta_image_description" uber:srcCompat="@drawable/ub__ic_arrow_right" uber:analyticsId="b0e087b4-8fc2" />
+</com.ubercab.presidio.feed.items.cards.stats.StatsCardView>

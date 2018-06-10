@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple n1:color="@color/main_yellow_ripple"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <item n1:id="@android:id/mask">
+        <shape n1:shape="rectangle">
+            <corners n1:radius="@dimen/oval_button_radius" />
+            <solid n1:color="@color/white" />
+            <stroke n1:width="0.5dip" n1:color="@color/transparent" />
+        </shape>
+    </item>
+    <item>
+        <selector>
+            <item>
+                <shape n1:shape="rectangle">
+                    <corners n1:radius="@dimen/oval_button_radius" />
+                    <solid n1:color="@color/main_yellow" />
+                    <stroke n1:width="0.5dip" n1:color="@color/transparent" />
+                </shape>
+            </item>
+            <item n1:state_enabled="false">
+                <shape n1:shape="rectangle">
+                    <corners n1:radius="@dimen/oval_button_radius" />
+                    <solid n1:color="@color/gray" />
+                    <stroke n1:width="0.5dip" n1:color="@color/transparent" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

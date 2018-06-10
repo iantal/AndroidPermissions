@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:padding="@dimen/personal_details_screen_medium_spacing" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true" n1:layout_above="@id/personalDetailsEditEmailConfirmButton">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:id="@id/personalDetailsEditEmailScreenDescription" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/personal_details_change_email_description" style="@style/TextAppearance.Body" />
+            <TextView n1:id="@id/personalDetailsEditEmailEmailLabel" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/personal_details_screen_medium_spacing" n1:text="@string/personal_details_change_email_enter_email_label" style="@style/TextAppearance.InputLabel" />
+            <com.mobile.ui.common.view.ErrorPersistingInputField n1:id="@id/personalDetailsEditEmailEmailField" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/personal_details_screen_small_spacing" n1:hint="@string/personal_details_add_email_hint_text" n1:inputType="textEmailAddress" style="@style/Widget.InputField" />
+            <TextView n1:id="@id/personalDetailsEditEmailReenterEmailLabel" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/personal_details_screen_medium_spacing" n1:text="@string/personal_details_change_email_reenter_email_label" style="@style/TextAppearance.InputLabel" />
+            <com.mobile.ui.common.view.ErrorPersistingInputField n1:id="@id/personalDetailsEditEmailReenterEmailField" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/personal_details_screen_small_spacing" n1:hint="@string/personal_details_add_email_hint_text" n1:inputType="textEmailAddress" style="@style/Widget.InputField" />
+        </LinearLayout>
+    </ScrollView>
+    <Button n1:enabled="false" n1:id="@id/personalDetailsEditEmailConfirmButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/personal_details_screen_medium_spacing" n1:text="@string/personal_details_edit_phone_confirm_button_text" n1:layout_alignParentBottom="true" n1:layout_marginStart="@dimen/personal_details_screen_medium_spacing" n1:layout_marginEnd="@dimen/personal_details_screen_medium_spacing" style="@style/Widget.Button.Primary" />
+    <com.mobile.ui.common.view.NotificationView n1:id="@id/errorNotificationView" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</RelativeLayout>

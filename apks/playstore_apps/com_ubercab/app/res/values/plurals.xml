@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="rating_bar_stars_content_description">
+        <item quantity="other">@string/rating_bar_stars_content_description__other</item>
+        <item quantity="zero">@string/rating_bar_stars_content_description__zero</item>
+        <item quantity="one">@string/rating_bar_stars_content_description__one</item>
+        <item quantity="two">@string/rating_bar_stars_content_description__two</item>
+        <item quantity="few">@string/rating_bar_stars_content_description__few</item>
+        <item quantity="many">@string/rating_bar_stars_content_description__many</item>
+    </plurals>
+    <plurals name="ub__trip_info_title">
+        <item quantity="other">@string/ub__trip_info_title_many_mins</item>
+        <item quantity="one">@string/ub__trip_info_title_one_min</item>
+    </plurals>
+    <plurals name="plus_one_capacity_step_selected_capacity_talkback">
+        <item quantity="other">@string/plus_one_capacity_step_selected_capacity_talkback__other</item>
+        <item quantity="zero">@string/plus_one_capacity_step_selected_capacity_talkback__zero</item>
+        <item quantity="one">@string/plus_one_capacity_step_selected_capacity_talkback__one</item>
+        <item quantity="two">@string/plus_one_capacity_step_selected_capacity_talkback__two</item>
+        <item quantity="few">@string/plus_one_capacity_step_selected_capacity_talkback__few</item>
+        <item quantity="many">@string/plus_one_capacity_step_selected_capacity_talkback__many</item>
+    </plurals>
+    <plurals name="plus_one_capacity_step_unselected_capacity_talkback">
+        <item quantity="other">@string/plus_one_capacity_step_unselected_capacity_talkback__other</item>
+        <item quantity="zero">@string/plus_one_capacity_step_unselected_capacity_talkback__zero</item>
+        <item quantity="one">@string/plus_one_capacity_step_unselected_capacity_talkback__one</item>
+        <item quantity="two">@string/plus_one_capacity_step_unselected_capacity_talkback__two</item>
+        <item quantity="few">@string/plus_one_capacity_step_unselected_capacity_talkback__few</item>
+        <item quantity="many">@string/plus_one_capacity_step_unselected_capacity_talkback__many</item>
+    </plurals>
+    <plurals name="product_selection_details_capacity">
+        <item quantity="other">@string/product_selection_details_capacity__other</item>
+        <item quantity="zero">@string/product_selection_details_capacity__zero</item>
+        <item quantity="one">@string/product_selection_details_capacity__one</item>
+        <item quantity="two">@string/product_selection_details_capacity__two</item>
+        <item quantity="few">@string/product_selection_details_capacity__few</item>
+        <item quantity="many">@string/product_selection_details_capacity__many</item>
+    </plurals>
+    <plurals name="ub__new_items">
+        <item quantity="other">@string/new_items__plural</item>
+        <item quantity="zero">@string/new_items__plural</item>
+        <item quantity="one">@string/new_items__one</item>
+        <item quantity="two">@string/new_items__plural</item>
+        <item quantity="few">@string/new_items__plural</item>
+        <item quantity="many">@string/new_items__plural</item>
+    </plurals>
+    <plurals name="help_util_time_format_minutes_ago">
+        <item quantity="other">@string/help_util_time_format_minutes_ago_plural</item>
+        <item quantity="one">@string/help_util_time_format_minutes_ago_singular</item>
+    </plurals>
+    <plurals name="help_util_time_format_hours_ago">
+        <item quantity="other">@string/help_util_time_format_hours_ago_plural</item>
+        <item quantity="one">@string/help_util_time_format_hours_ago_singular</item>
+    </plurals>
+    <plurals name="help_util_time_format_days_ago">
+        <item quantity="other">@string/help_util_time_format_days_ago_plural</item>
+        <item quantity="one">@string/help_util_time_format_days_ago_singular</item>
+    </plurals>
+    <plurals name="help_util_time_format_weeks_ago">
+        <item quantity="other">@string/help_util_time_format_weeks_ago_plural</item>
+        <item quantity="one">@string/help_util_time_format_weeks_ago_singular</item>
+    </plurals>
+    <plurals name="help_util_time_format_months_ago">
+        <item quantity="other">@string/help_util_time_format_months_ago_plural</item>
+        <item quantity="one">@string/help_util_time_format_months_ago_singular</item>
+    </plurals>
+    <plurals name="help_util_time_format_years_ago">
+        <item quantity="other">@string/help_util_time_format_years_ago_plural</item>
+        <item quantity="one">@string/help_util_time_format_years_ago_singular</item>
+    </plurals>
+    <plurals name="ub__rental_list_header_vehicle_available">
+        <item quantity="other">@string/ub__rental_list_header_vehicle_available__other</item>
+        <item quantity="one">@string/ub__rental_list_header_vehicle_available__one</item>
+    </plurals>
+    <plurals name="ub__rental_list_header_vehicle_available_pin_selected">
+        <item quantity="other">@string/ub__rental_list_header_vehicle_available_pin_selected__other</item>
+        <item quantity="one">@string/ub__rental_list_header_vehicle_available_pin_selected__one</item>
+    </plurals>
+    <plurals name="product_option_capacity_single_talkback">
+        <item quantity="other">@string/product_option_capacity_single_talkback__other</item>
+        <item quantity="zero">@string/product_option_capacity_single_talkback__zero</item>
+        <item quantity="one">@string/product_option_capacity_single_talkback__one</item>
+        <item quantity="two">@string/product_option_capacity_single_talkback__two</item>
+        <item quantity="few">@string/product_option_capacity_single_talkback__few</item>
+        <item quantity="many">@string/product_option_capacity_single_talkback__many</item>
+    </plurals>
+    <plurals name="product_capacity_toast">
+        <item quantity="other">@string/product_selection_toast_capacity__many</item>
+        <item quantity="one">@string/product_selection_toast_capacity__one</item>
+        <item quantity="many">@string/product_selection_toast_capacity__many</item>
+    </plurals>
+    <plurals name="product_capacity_selection">
+        <item quantity="other">@string/product_option_capacity_selection__other</item>
+        <item quantity="zero">@string/product_option_capacity_selection__zero</item>
+        <item quantity="one">@string/product_option_capacity_selection__one</item>
+        <item quantity="two">@string/product_option_capacity_selection__two</item>
+        <item quantity="few">@string/product_option_capacity_selection__few</item>
+        <item quantity="many">@string/product_option_capacity_selection__many</item>
+    </plurals>
+    <plurals name="visa_reward_list_item_rating">
+        <item quantity="other">@string/visa_reward_list_item_rating_plural</item>
+        <item quantity="one">@string/visa_reward_list_item_rating_singular</item>
+    </plurals>
+</resources>

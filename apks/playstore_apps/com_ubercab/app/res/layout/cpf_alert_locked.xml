@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.user_identity_flow.cpf_flow.CpfAlertLockedView android:orientation="vertical" android:id="@id/cpf_identity_flow_error_locked_view" android:background="?android:colorBackground" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="018863bd-970e"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/cpf_alert_content" />
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.UButton android:layout_gravity="bottom" android:id="@id/cpf_identity_flow_error_cancel_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" android:text="@string/cpf_idenity_flow_error_button_cancel" style="?platformButtonPrimary" />
+</com.ubercab.user_identity_flow.cpf_flow.CpfAlertLockedView>

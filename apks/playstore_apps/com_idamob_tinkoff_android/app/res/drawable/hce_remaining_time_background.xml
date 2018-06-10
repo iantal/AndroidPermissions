@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item n1:id="@android:id/background"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape>
+            <solid n1:color="@color/hce_remaining_time_background" />
+            <corners n1:radius="8.0dip" />
+        </shape>
+    </item>
+    <item n2:id="@android:id/progress"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <scale n2:scaleWidth="100%">
+            <inset n2:insetLeft="3.0dip" n2:insetRight="3.0dip" n2:insetTop="2.0dip" n2:insetBottom="2.0dip">
+                <shape>
+                    <solid n2:color="@color/hce_remaining_time_start" />
+                    <corners n2:radius="8.0dip" />
+                </shape>
+            </inset>
+        </scale>
+    </item>
+</layer-list>

@@ -1,0 +1,41 @@
+.class public interface abstract Lavjg;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a()Lio/reactivex/Observable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lio/reactivex/Observable<",
+            "Laumy;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract a(Lcom/ubercab/common/collect/ImmutableList;Lavjk;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/ubercab/common/collect/ImmutableList<",
+            "Lcom/uber/model/core/generated/growth/socialprofiles/SocialProfilesReportOption;",
+            ">;",
+            "Lavjk;",
+            ")V"
+        }
+    .end annotation
+.end method
+
+.method public abstract a(Ljava/lang/String;)V
+.end method
+
+.method public abstract b()V
+.end method
+
+.method public abstract c()V
+.end method
+
+.method public abstract d()V
+.end method

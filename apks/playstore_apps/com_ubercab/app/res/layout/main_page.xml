@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.core.root.main.MainView android:id="@id/ub__content_id" android:fitsSystemWindows="@bool/use_transparent_status_bar" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.DrawerLayout android:id="@id/drawer" android:fitsSystemWindows="@bool/use_transparent_status_bar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UCoordinatorLayout android:id="@id/content_frame" android:fitsSystemWindows="@bool/use_transparent_status_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.ubercab.ui.core.UCoordinatorLayout android:layout_gravity="start" android:id="@id/drawer_frame" android:background="?android:colorBackground" android:fitsSystemWindows="@bool/use_transparent_status_bar" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" app:statusBarBackground="@color/ub__themeless_status_bar_color_drawer" />
+    </android.support.v4.widget.DrawerLayout>
+</com.ubercab.presidio.app.core.root.main.MainView>

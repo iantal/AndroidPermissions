@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.family.invite_wizard.send_invite.FamilyWizardSendInviteView android:theme="@style/Theme.Helix.Light" android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UScrollView android:paddingTop="@dimen/ui__spacing_unit_6x" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__family_wizard_send_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="?contentInset" android:layout_marginBottom="@dimen/ui__spacing_unit_4x" style="@style/Platform.TextAppearance.H3.Book" />
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:id="@id/ub__family_wizard_send_email" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="?contentInset" app:srcCompat="@drawable/ub_optional__family_email_icon" />
+                <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/email_invite" style="@style/Platform.TextAppearance.H5.News.Primary" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:id="@id/ub__family_wizard_send_message" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="?contentInset" app:srcCompat="@drawable/ub_optional__family_text_icon" />
+                <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_invite" style="@style/Platform.TextAppearance.H5.News.Primary" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:id="@id/ub__family_wizard_more" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UImageView android:layout_width="@dimen/ui__avatar_size_extra_tiny" android:layout_height="@dimen/ui__avatar_size_extra_tiny" android:layout_margin="?contentInset" app:srcCompat="@drawable/ub_optional__family_more_icon" />
+                <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__more" style="@style/Platform.TextAppearance.H5.News.Primary" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+    <com.ubercab.ui.core.UAppBarLayout android:background="?brandTransparent" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetStartWithNavigation="0.0dip" app:elevation="0.0dip">
+        <com.ubercab.ui.core.UToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:titleTextAppearance="@style/Platform.TextAppearance.H3.Book" app:layout_collapseMode="pin" style="@style/Widget.Platform.Toolbar" />
+    </com.ubercab.ui.core.UAppBarLayout>
+</com.ubercab.presidio.family.invite_wizard.send_invite.FamilyWizardSendInviteView>

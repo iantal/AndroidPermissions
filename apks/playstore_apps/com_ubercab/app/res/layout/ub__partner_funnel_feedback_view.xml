@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__partner_funnel_loading_viewgroup" android:background="@color/ub__white" android:padding="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UTextView android:layout_gravity="center" android:id="@id/ub__bottom_sheet_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Funnel.Helix.TextAppearance.H2.Book" />
+        <com.ubercab.ui.core.UImageView android:layout_gravity="center_horizontal" android:id="@id/ub__bottom_sheet_iconview" android:layout_width="@dimen/ub__partner_funnel_idf_warning_icon_size" android:layout_height="@dimen/ub__partner_funnel_idf_warning_icon_size" android:src="@drawable/ub__ic_camera" android:layout_marginStart="@dimen/ui__spacing_unit_1x" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__bottom_sheet_description" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" style="@style/Uber.TextAppearance.P" />
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UButton android:id="@id/ub__bottom_sheet_use_anyway_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ub__partner_funnel_photo_upload_reuse" android:layout_weight="0.5" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" style="@style/Uber.Widget.Button.Secondary" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__bottom_sheet_retake_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ub__partner_funnel_photo_retake" android:layout_weight="0.5" android:layout_marginStart="@dimen/ui__spacing_unit_1x" style="@style/Uber.Widget.Button.Primary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

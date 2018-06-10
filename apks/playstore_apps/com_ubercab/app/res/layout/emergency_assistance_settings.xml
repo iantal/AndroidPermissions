@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.advanced_settings.emergency_assistance_settings.EmergencyAssistanceSettingsView android:orientation="vertical" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="c0732954-02ac"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_4x">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__emergency_assistance_switch_text" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/emergency_switch_text" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H5.News.Primary" />
+            <com.ubercab.ui.core.USwitchCompat android:id="@id/ub__emergency_assistance_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="?contentInset" android:layout_alignParentEnd="true" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__emergency_assistance_integration_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginRight="?contentInset" android:text="@string/emergency_switch_description" android:layout_marginStart="?contentInset" android:layout_marginEnd="?contentInset" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.advanced_settings.emergency_assistance_settings.EmergencyAssistanceSettingsView>

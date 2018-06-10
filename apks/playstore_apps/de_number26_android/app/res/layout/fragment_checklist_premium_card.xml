@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/grey_bright" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/black_information_background" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="@color/textColorPrimary" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:textAllCaps="true" />
+            <TextView android:textSize="@dimen/textSizePrimary" android:textColor="@color/textColorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/premium_card_checklist_summary" />
+            <TextView android:textSize="@dimen/textSizePrimary" android:textColor="@color/textColorPrimary" android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/premium_card_checklist_additional" />
+            <TextView android:textSize="@dimen/textSizePrimary" android:textColor="@color/textColorPrimary" android:id="@id/summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin_large" />
+            <TextView android:textSize="@dimen/textSizePrimary" android:textColor="@color/colorAccent" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/premium_card_checklist_footer" />
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/default_margin_large" android:layout_margin="30.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:background="@drawable/gradient_trans_white" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/premium_card_checklist_download" style="@style/Widget.AppCompat.Button.Colored" />
+    </LinearLayout>
+</FrameLayout>

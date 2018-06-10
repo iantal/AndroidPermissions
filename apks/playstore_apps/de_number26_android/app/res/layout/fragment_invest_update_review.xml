@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/divider" android:showDividers="end|middle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.number26.machete.android.ui.transfers.future.FutureTransferDetailItemView android:icon="@drawable/ic_detail_amount" android:id="@id/amount" android:layout_width="fill_parent" android:layout_height="wrap_content" app:label="@string/savings_update_review_monthly_amount" />
+    <de.number26.machete.android.ui.transfers.future.FutureTransferDetailItemView android:icon="@drawable/ic_detail_start" android:id="@id/nextDate" android:layout_width="fill_parent" android:layout_height="wrap_content" app:caption="@string/savings_update_review_next_date_caption" app:label="@string/savings_update_review_next_date" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:id="@id/continueButton" android:text="@string/action_continue" style="@style/mainbutton" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:background="@color/bg_dark" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:id="@id/get_new_card_pin_progress_view" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" layout="@layout/inc_loader" />
+    <FrameLayout n1:id="@id/get_new_card_pin_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</FrameLayout>

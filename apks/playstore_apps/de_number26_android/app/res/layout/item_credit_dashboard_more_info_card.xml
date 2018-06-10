@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="4.0dip" app:cardElevation="4.0dip" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" style="@style/creditDashboardCardFrame">
+        <LinearLayout android:orientation="horizontal" android:layout_marginBottom="16.0dip" style="@style/creditDashboardCardTitleFrame">
+            <TextView android:id="@id/text_more_info_card_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/creditTextCardTitle" />
+            <TextView android:id="@id/text_more_info_card_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/creditTextCardTitle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" style="@style/creditDashboardCardContentFrame">
+            <TextView android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/credit_dashboard_more_info_card_content" android:layout_weight="0.6" style="@style/creditTextCardContent" />
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.4" app:lottie_autoPlay="true" app:lottie_fileName="animations/anim_more_info_required.json" app:lottie_loop="true" />
+        </LinearLayout>
+        <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/text_more_info_card_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/credit_dashboard_more_info_card_action" style="@style/creditTextLink" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

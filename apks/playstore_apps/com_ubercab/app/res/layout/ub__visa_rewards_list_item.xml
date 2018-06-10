@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.URelativeLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__visa_rewards_img" android:background="?brandGrey20" android:layout_width="@dimen/ui__visa_rewards_list_item_img_size" android:layout_height="@dimen/ui__visa_rewards_list_item_img_size" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <com.ubercab.ui.core.URelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ui__spacing_unit_1x" android:layout_toEndOf="@id/ub__visa_rewards_img">
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__visa_rewards_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toStartOf="@id/ub__visa_rewards_list_item_reward" android:layout_alignParentStart="true" style="@style/Platform.TextAppearance.H5" />
+        <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__visa_rewards_ratings_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_below="@id/ub__visa_rewards_item_title">
+            <include layout="@layout/ub__visa_rewards_item_ratings" />
+        </com.ubercab.ui.core.UFrameLayout>
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__visa_rewards_categories_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_below="@id/ub__visa_rewards_ratings_container" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__visa_rewards_list_item_reward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignBaseline="@id/ub__visa_rewards_item_title" android:layout_alignParentEnd="true" style="@style/Platform.TextAppearance.H5.News.VisaReward" />
+    </com.ubercab.ui.core.URelativeLayout>
+</com.ubercab.ui.core.URelativeLayout>

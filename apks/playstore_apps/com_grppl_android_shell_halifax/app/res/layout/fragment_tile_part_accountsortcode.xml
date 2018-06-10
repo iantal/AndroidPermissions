@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/accountTileAccountSortCode" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/tile_arrangement_medium_margin" style="@style/Tile.ArrangementReference" />
+    <View n1:orientation="vertical" n1:id="@id/accountTileSortCodeAccountNumberDivider" n1:background="@color/arrangement_tile_account_number_sort_code_divider_color" n1:layout_width="1.0dip" n1:layout_height="fill_parent" n1:layout_marginTop="3.0dip" n1:layout_marginRight="@dimen/tile_arrangement_medium_margin" n1:layout_marginBottom="2.0dip" />
+    <TextView n1:id="@id/accountTileAccountNumber" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/Tile.ArrangementReference" />
+</LinearLayout>

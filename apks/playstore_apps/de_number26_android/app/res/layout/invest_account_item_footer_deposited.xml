@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/depositedView" android:paddingBottom="@dimen/contentSpacing" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/deposited" style="@style/SavingsFooterText" />
+    <TextView android:textSize="14.0dip" android:id="@id/deposited" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/halfContentSpacing" style="@style/TextAppearance.Item.Title" />
+</LinearLayout>

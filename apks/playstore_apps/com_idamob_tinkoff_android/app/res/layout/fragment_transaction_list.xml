@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.StickySwipeRefreshLayout n1:enabled="false" n1:id="@id/transaction_list_swipe_refresh_layout" style="@style/MatchParent">
+        <android.support.v7.widget.RecyclerView n1:id="@id/list" n1:scrollbars="vertical" style="@style/MatchParent" />
+    </ru.tcsbank.mb.ui.widgets.StickySwipeRefreshLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/transaction_list_placeholder" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:divider="@drawable/divider_account_list_thin" n1:showDividers="middle">
+        <View n1:id="@id/transaction_placeholder_date" n1:background="@color/placeholder_item_dark" n1:layout_width="@dimen/screen_content_double_margin" n1:layout_height="14.0dip" n1:layout_marginLeft="@dimen/offset_from_edge_large" n1:layout_marginTop="@dimen/timeline_item_padding_vertical" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/timeline_item_padding_vertical" />
+        <include n1:id="@id/transaction_placeholder_0" layout="@layout/view_transaction_item_placeholder" />
+        <include n1:id="@id/transaction_placeholder_1" layout="@layout/view_transaction_item_placeholder" />
+        <include n1:id="@id/transaction_placeholder_2" layout="@layout/view_transaction_item_placeholder" />
+    </LinearLayout>
+</FrameLayout>

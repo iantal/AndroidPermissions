@@ -1,0 +1,113 @@
+.class final Lru/tcsbank/core/base/ui/widget/pager/CarouselPager$2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lru/tinkoff/lib/recyclerviewpager/RecyclerViewPager$b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lru/tcsbank/core/base/ui/widget/pager/CarouselPager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lru/tcsbank/core/base/ui/widget/pager/CarouselPager;
+
+
+# direct methods
+.method constructor <init>(Lru/tcsbank/core/base/ui/widget/pager/CarouselPager;)V
+    .locals 0
+
+    .prologue
+    .line 289
+    iput-object p1, p0, Lru/tcsbank/core/base/ui/widget/pager/CarouselPager$2;->a:Lru/tcsbank/core/base/ui/widget/pager/CarouselPager;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(IF)V
+    .locals 2
+
+    .prologue
+    .line 299
+    iget-object v0, p0, Lru/tcsbank/core/base/ui/widget/pager/CarouselPager$2;->a:Lru/tcsbank/core/base/ui/widget/pager/CarouselPager;
+
+    invoke-static {v0}, Lru/tcsbank/core/base/ui/widget/pager/CarouselPager;->c(Lru/tcsbank/core/base/ui/widget/pager/CarouselPager;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lru/tinkoff/lib/recyclerviewpager/RecyclerViewPager$b;
+
+    .line 300
+    invoke-interface {v0, p1, p2}, Lru/tinkoff/lib/recyclerviewpager/RecyclerViewPager$b;->a(IF)V
+
+    goto :goto_0
+
+    .line 302
+    :cond_0
+    return-void
+.end method
+
+.method public final d_(I)V
+    .locals 2
+
+    .prologue
+    .line 292
+    iget-object v0, p0, Lru/tcsbank/core/base/ui/widget/pager/CarouselPager$2;->a:Lru/tcsbank/core/base/ui/widget/pager/CarouselPager;
+
+    invoke-static {v0}, Lru/tcsbank/core/base/ui/widget/pager/CarouselPager;->c(Lru/tcsbank/core/base/ui/widget/pager/CarouselPager;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lru/tinkoff/lib/recyclerviewpager/RecyclerViewPager$b;
+
+    .line 293
+    invoke-interface {v0, p1}, Lru/tinkoff/lib/recyclerviewpager/RecyclerViewPager$b;->d_(I)V
+
+    goto :goto_0
+
+    .line 295
+    :cond_0
+    return-void
+.end method

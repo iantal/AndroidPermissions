@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/core_expanded_container" n1:background="@color/core_expanded_activity_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/sfv_title_bar" n1:layout_width="fill_parent" n1:layout_height="@dimen/core_toolbar_height">
+        <ImageButton n1:gravity="center" n1:id="@id/btn_cancel" n1:background="@null" n1:paddingLeft="@dimen/core_expanded_field_padding" n1:paddingRight="@dimen/core_expanded_field_padding" n1:layout_width="wrap_content" n1:layout_height="@dimen/core_toolbar_height" n1:src="@drawable/core_btn_close" />
+        <FrameLayout n1:id="@id/title_container" n1:layout_width="fill_parent" n1:layout_height="@dimen/core_toolbar_height" n1:layout_toLeftOf="@id/btn_done" n1:layout_toRightOf="@id/btn_cancel" />
+        <ImageButton n1:gravity="center" n1:id="@id/btn_done" n1:background="@null" n1:paddingLeft="@dimen/core_expanded_field_padding" n1:paddingRight="@dimen/core_expanded_field_padding" n1:layout_width="wrap_content" n1:layout_height="@dimen/core_toolbar_height" n1:src="@drawable/core_btn_apply" n1:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <FrameLayout n1:id="@id/container" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0" />
+    <View n1:background="@color/core_expanded_activity_divider" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@color/core_expanded_controller_bg" n1:padding="@dimen/core_expanded_field_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ru.tinkoff.core.smartfields.view.ProgressView n1:id="@id/progress" n1:layout_width="0.0dip" n1:layout_height="36.0dip" n1:layout_marginRight="20.0dip" n1:layout_weight="2.0" />
+        <ImageButton n1:gravity="center" n1:id="@id/btn_previous" n1:background="@drawable/core_previous_button_bg" n1:layout_width="36.0dip" n1:layout_height="36.0dip" n1:layout_marginRight="8.0dip" n1:src="@drawable/core_previous_button_arrow" />
+        <Button n1:textSize="14.0sp" n1:textColor="@color/core_next_btn_text_color" n1:gravity="center" n1:id="@id/btn_next" n1:background="@drawable/core_next_button_bg" n1:paddingLeft="8.0dip" n1:paddingRight="5.0dip" n1:layout_width="96.0dip" n1:layout_height="36.0dip" n1:text="@string/core_action_next" n1:drawableRight="@drawable/core_arrow_down" n1:drawableEnd="@drawable/core_arrow_down" n1:fontFamily="sans-serif" />
+    </LinearLayout>
+</LinearLayout>

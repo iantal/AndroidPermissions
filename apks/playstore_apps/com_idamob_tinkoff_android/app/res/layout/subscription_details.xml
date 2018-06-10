@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout n1:id="@id/appbar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:elevation="0.0dip" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView n1:id="@id/content" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/appbar">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/main_container" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:animateLayoutChanges="true">
+            <ru.tcsbank.mb.ui.widgets.subscriptions.SubscriptionHeaderView n1:id="@id/subscription_header_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/group_photos" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="7.0dip">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_gravity="center_vertical" n1:id="@id/photo_title" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:text="@string/fine_details_title_photo" style="@style/DefaultItem" />
+                <ViewFlipper n1:id="@id/photo_request_number_flipper" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <android.support.v7.widget.RecyclerView n1:orientation="horizontal" n1:id="@id/photos" n1:layout_width="fill_parent" n1:layout_height="100.0dip" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" />
+                    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <TextView n1:gravity="center_vertical" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="12.0dip" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="12.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/fine_details_photo_need_captcha_note" style="@style/Text.Small.Light" />
+                        <android.support.v7.widget.CardView n1:id="@id/captcha_next" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" n1:foreground="?selectableItemBackground" n3:cardCornerRadius="2.0dip" n3:cardElevation="2.0dip" xmlns:n3="http://schemas.android.com/apk/res-auto">
+                            <TextView n1:textAppearance="@style/Text.Small.Blue.Medium" n1:gravity="center" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="wrap_content" n1:layout_height="36.0dip" n1:text="@string/fine_details_photo_need_captcha_button" n1:textAllCaps="true" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <FrameLayout n1:id="@id/photos_error" n1:background="@drawable/selector_item_photo_penalty_bg_n7" n1:layout_width="100.0dip" n1:layout_height="100.0dip" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge">
+                        <TextView n1:gravity="center" n1:layout_gravity="center" n1:id="@id/photos_error_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/fine_details_photo_need_photos_error" style="@style/Text.ExtraSmall.Hint" />
+                    </FrameLayout>
+                </ViewFlipper>
+                <include n1:id="@id/divider_photos" layout="@layout/inc_divider_margin" />
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:id="@id/container_additional_info" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:id="@id/title_additional_info" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:text="@string/fine_details_title_info" style="@style/DefaultItem" />
+            </LinearLayout>
+            <include n1:id="@id/divider_requisites" n1:visibility="gone" layout="@layout/inc_divider_margin" />
+            <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center_vertical" n1:id="@id/requisites" n1:background="?selectableItemBackground" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="56.0dip" n1:text="@string/invoices_details_view" n1:drawablePadding="36.0dip" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:id="@id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" n1:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__composite_card_short_list_row_icon" android:layout_width="?avatarSmall" android:layout_height="?avatarSmall" android:scaleType="centerCrop" android:layout_marginEnd="?contentInset" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__composite_card_short_list_row_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toEndOf="@id/ub__composite_card_short_list_row_icon" style="@style/Platform.TextAppearance.H5.News.Primary" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__composite_card_short_list_row_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ub__composite_card_short_list_row_title" android:layout_toEndOf="@id/ub__composite_card_short_list_row_icon" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+</merge>

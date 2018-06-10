@@ -1,0 +1,62 @@
+package com.google.android.gms.maps;
+
+import android.content.Context;
+import android.os.RemoteException;
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.common.internal.zzac;
+import com.google.android.gms.maps.internal.zzai;
+import com.google.android.gms.maps.internal.zzc;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.RuntimeRemoteException;
+
+public final class MapsInitializer
+{
+  private static boolean zzpW = false;
+  
+  private MapsInitializer() {}
+  
+  public static int initialize(Context paramContext)
+  {
+    int i = 0;
+    for (;;)
+    {
+      try
+      {
+        zzac.zzb(paramContext, "Context is null");
+        boolean bool = zzpW;
+        if (!bool) {
+          continue;
+        }
+      }
+      finally
+      {
+        try
+        {
+          paramContext = zzai.zzbq(paramContext);
+          zza(paramContext);
+          zzpW = true;
+        }
+        catch (GooglePlayServicesNotAvailableException paramContext)
+        {
+          i = paramContext.errorCode;
+        }
+        paramContext = finally;
+      }
+      return i;
+    }
+  }
+  
+  public static void zza(zzc paramZzc)
+  {
+    try
+    {
+      CameraUpdateFactory.zza(paramZzc.zzIQ());
+      BitmapDescriptorFactory.zza(paramZzc.zzIR());
+      return;
+    }
+    catch (RemoteException paramZzc)
+    {
+      throw new RuntimeRemoteException(paramZzc);
+    }
+  }
+}

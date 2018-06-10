@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_default_selector" android:padding="5.0dip" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_view_atm_branch" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/branch_detail_title" style="@style/AllWrapContent" />
+    <ImageView android:id="@id/img_view_right_arrow" android:src="@drawable/right_arrow_blue" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/branch_detail_title" style="@style/AllWrapContent" />
+    <LinearLayout android:orientation="vertical" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/img_view_right_arrow" android:layout_toRightOf="@id/img_view_atm_branch" android:layout_centerVertical="true" style="@style/AllWrapContent">
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_atm_branch_name" style="@style/TextBoldAllWrap" />
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_atm_branch_distance" android:visibility="gone" android:layout_marginTop="2.0dip" style="@style/AllWrapContent" />
+    </LinearLayout>
+</RelativeLayout>

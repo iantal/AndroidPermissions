@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/help_home_card_issue_list_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.Small.Normal" android:textColor="?android:textColorSecondary" android:id="@id/help_home_card_issue_list_content_title" android:paddingLeft="?gutterSize" android:paddingTop="?contentInset" android:paddingRight="?gutterSize" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.ubercab.ui.core.UFrameLayout android:id="@id/help_home_card_issue_list_content_rib" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/help_home_card_issue_list_error" android:paddingLeft="?gutterSize" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="?gutterSize" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.Paragraph.Normal" android:textColor="?android:textColorPrimary" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help_home_card_issue_list_error_title" />
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.Small.Normal" android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help_home_card_issue_list_error_subtitle" />
+        <com.ubercab.ui.core.UButton android:id="@id/help_home_card_issue_list_error_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:text="@string/help_home_error_retry" style="?platformButtonSecondary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</merge>

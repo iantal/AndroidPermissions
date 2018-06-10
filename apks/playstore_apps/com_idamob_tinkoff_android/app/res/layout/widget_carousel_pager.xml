@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher n1:id="@id/widget_root" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ru.tinkoff.lib.recyclerviewpager.RecyclerViewPager n1:id="@id/carousel_pager_recycler" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <ImageButton n1:id="@id/left" n1:background="@drawable/carousel_button_background" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" style="@style/CarouselPager.Button.Left" />
+        <ImageButton n1:id="@id/right" n1:background="@drawable/carousel_button_background" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" style="@style/CarouselPager.Button.Right" />
+        <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator n1:id="@id/carousel_pager_indicator" n1:layout_width="wrap_content" n1:layout_height="48.0dip" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" n2:spi_looped="true" style="@style/PagerIndicator" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <TextView n1:textAppearance="@style/Text.Small" n1:textColor="@color/white_half_transparent" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/empty_stub" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0dip" n1:layout_marginRight="32.0dip" />
+</ViewSwitcher>

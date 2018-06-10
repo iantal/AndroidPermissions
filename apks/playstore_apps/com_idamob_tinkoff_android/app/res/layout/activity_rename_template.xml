@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout n1:id="@id/swipe_refresh_container" style="@style/MatchParent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:id="@id/info_group" style="@style/ScreenContent.Padding">
+        <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item" n1:layout_marginBottom="@dimen/offset_from_edge_half" n2:fieldKey="templateName" n2:fieldTitle="@string/tra_template_name" n2:fieldType="text" n2:fieldUseLayoutParams="true" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <TextView n1:id="@id/edit_requisites" n1:visibility="gone" n1:text="@string/tra_edit_requisites" style="@style/DarkTextItem.Selector" />
+        <TextView n1:id="@id/make_automatically" n1:visibility="gone" style="@style/DarkTextItem.Selector" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:id="@id/link_to_contact_container" n1:background="@drawable/selector_item_bg" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:minHeight="@dimen/tile_height_default_item" style="@style/VerticalWrapping">
+            <TextView n1:textAppearance="@style/Text.Small.Hint" n1:id="@id/link_to_contact_hint" n1:visibility="gone" n1:text="@string/tra_linked_to_contact" style="@style/VerticalWrapping" />
+            <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/link_to_contact" n1:visibility="gone" n1:text="@string/tra_link_to_contact" style="@style/VerticalWrapping" />
+        </LinearLayout>
+        <TextView n1:textColor="@color/dark_red" n1:id="@id/remove_template" n1:visibility="gone" n1:text="@string/tra_remove_template" style="@style/DarkTextItem.Selector" />
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

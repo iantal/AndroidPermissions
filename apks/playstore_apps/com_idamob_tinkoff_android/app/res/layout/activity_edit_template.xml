@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <fragment n1:name="ru.tcsbank.mb.ui.providers.ProviderHeaderFragment" n1:id="@id/fragment_header" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <fragment n1:name="ru.tcsbank.mb.ui.fragments.operation.PaymentFieldsFragment" n1:id="@id/fragment_fields" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

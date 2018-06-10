@@ -1,0 +1,53 @@
+.class Lcom/ubercab/presidio/cobrandcard/application/address/CobrandCardAddressView$1;
+.super Lacxf;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/ubercab/presidio/cobrandcard/application/address/CobrandCardAddressView;->onFinishInflate()V
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/ubercab/presidio/cobrandcard/application/address/CobrandCardAddressView;
+
+
+# direct methods
+.method constructor <init>(Lcom/ubercab/presidio/cobrandcard/application/address/CobrandCardAddressView;)V
+    .locals 0
+
+    .line 70
+    iput-object p1, p0, Lcom/ubercab/presidio/cobrandcard/application/address/CobrandCardAddressView$1;->a:Lcom/ubercab/presidio/cobrandcard/application/address/CobrandCardAddressView;
+
+    invoke-direct {p0}, Lacxf;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected a()V
+    .locals 1
+
+    .line 73
+    iget-object v0, p0, Lcom/ubercab/presidio/cobrandcard/application/address/CobrandCardAddressView$1;->a:Lcom/ubercab/presidio/cobrandcard/application/address/CobrandCardAddressView;
+
+    invoke-static {v0}, Lcom/ubercab/presidio/cobrandcard/application/address/CobrandCardAddressView;->a(Lcom/ubercab/presidio/cobrandcard/application/address/CobrandCardAddressView;)Lacsi;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 74
+    iget-object v0, p0, Lcom/ubercab/presidio/cobrandcard/application/address/CobrandCardAddressView$1;->a:Lcom/ubercab/presidio/cobrandcard/application/address/CobrandCardAddressView;
+
+    invoke-static {v0}, Lcom/ubercab/presidio/cobrandcard/application/address/CobrandCardAddressView;->a(Lcom/ubercab/presidio/cobrandcard/application/address/CobrandCardAddressView;)Lacsi;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lacsi;->a()V
+
+    :cond_0
+    return-void
+.end method

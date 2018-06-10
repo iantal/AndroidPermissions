@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.top_item.profiles.ProfilesMenuItemView android:orientation="vertical" android:id="@id/top_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="0c803716-2397"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:id="@id/top_item_title" android:paddingTop="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/do_you_uber_for_business" android:paddingStart="@dimen/ui__spacing_unit_3x" style="@style/Platform.TextAppearance.H5.News.Primary.Inverse" />
+    <com.ubercab.ui.core.UTextView android:id="@id/top_item_byline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create_your_business_profile" android:paddingStart="@dimen/ui__spacing_unit_3x" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+</com.ubercab.top_item.profiles.ProfilesMenuItemView>

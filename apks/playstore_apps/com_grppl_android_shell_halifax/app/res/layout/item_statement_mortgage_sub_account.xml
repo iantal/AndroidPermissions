@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:importantForAccessibility="no"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/headerRelativeLayout" n1:paddingTop="@dimen/activity_margin" n1:paddingBottom="@dimen/activity_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:importantForAccessibility="yes" style="@style/Mortgage.HeaderBackground">
+        <TextView n1:id="@id/mortgageTitle" n1:layout_marginLeft="@dimen/activity_margin" style="@style/Mortgage.Title" />
+        <TextView n1:id="@id/mortgageSubTitle" n1:layout_below="@id/mortgageTitle" style="@style/Mortgage.SubTitle" />
+        <TextView n1:id="@id/mortgageBalance" n1:layout_marginRight="@dimen/activity_margin" n1:layout_alignParentRight="true" style="@style/Mortgage.Balance" />
+    </RelativeLayout>
+    <RelativeLayout n1:id="@id/detailsPanel" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/headerRelativeLayout">
+        <TableLayout n1:paddingTop="@dimen/activity_margin" n1:paddingBottom="@dimen/activity_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/Mortgage.DetailsBackground">
+            <TableRow n1:id="@id/mortgageSubAccountTypeTableRow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_margin">
+                <TextView n1:id="@id/mortgageTypeLabel" n1:text="@string/mortgage_sub_account_mortgage_type_text" style="@style/Mortgage.Label" />
+            </TableRow>
+            <TextView n1:id="@id/mortgageType" style="@style/Mortgage.Info" />
+            <TableRow n1:id="@id/mortgageSubAccountInterestRateTableRow" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_margin" n1:layout_marginTop="@dimen/information_text_view_margin_small">
+                <TextView n1:id="@id/subAccountMortgageAsAt" n1:layout_width="wrap_content" style="@style/Mortgage.Label" />
+                <TextView n1:id="@id/subaccountInterestRate" style="@style/Mortgage.Info" />
+            </TableRow>
+            <TableRow n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_margin" n1:layout_marginTop="@dimen/information_text_view_margin_small">
+                <TextView n1:text="@string/mortgage_sub_account_current_monthly_payments_text" style="@style/Mortgage.Label" />
+                <TextView n1:id="@id/currentMonthlyPayment" style="@style/Mortgage.Info" />
+            </TableRow>
+            <TableRow n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_margin" n1:layout_marginTop="@dimen/information_text_view_margin_small">
+                <TextView n1:text="@string/mortgage_sub_account_next_payment_due_on_text" style="@style/Mortgage.Label" />
+                <TextView n1:id="@id/nextPaymentDate" style="@style/Mortgage.Info" />
+            </TableRow>
+            <TableRow n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_margin">
+                <TextView n1:id="@id/disclaimer" style="@style/Mortgage.Disclaimer" />
+            </TableRow>
+        </TableLayout>
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/mortgage_sub_account_chevron_margin_right" n1:layout_alignParentRight="true" n1:layout_centerInParent="true" n1:contentDescription="@string/mortgage_sub_account_content_description_chevron_text" n2:srcCompat="@drawable/mortgage_sub_account_ic_chevron" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+</RelativeLayout>

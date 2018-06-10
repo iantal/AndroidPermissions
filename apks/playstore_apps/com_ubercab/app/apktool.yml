@@ -1,0 +1,51 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com.ubercab.apk
+compressionType: false
+doNotCompress:
+- arsc
+- bc
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '19'
+  targetSdkVersion: '27'
+sharedLibrary: false
+unknownFiles:
+  build-data.properties: '8'
+  protobuf.meta: '8'
+  basic_filter_coefficients.ser: '8'
+  default_filter_coefficients.ser: '8'
+  signer.crt: '8'
+  fabric/com.crashlytics.sdk.android.answers.properties: '8'
+  fabric/com.crashlytics.sdk.android.beta.properties: '8'
+  fabric/com.crashlytics.sdk.android.crashlytics.properties: '8'
+  fabric/com.crashlytics.sdk.android.crashlytics-core.properties: '8'
+  fabric/com.crashlytics.sdk.android.crashlytics-ndk.properties: '8'
+  fabric/io.fabric.sdk.android.fabric.properties: '8'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
+  error_prone/Annotations.gwt.xml: '8'
+  third_party/java_src/error_prone/project/annotations/Annotations.gwt.xml: '8'
+  third_party/java_src/error_prone/project/annotations/Google_internal.gwt.xml: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
+  org/threeten/bp/format/ChronologyText.properties: '8'
+  org/apache/xml/security/resource/config.dtd: '8'
+  org/apache/xml/security/resource/config.xml: '8'
+  org/apache/xml/security/resource/log4j.properties: '8'
+  org/apache/xml/security/resource/xmlsecurity_de.properties: '8'
+  org/apache/xml/security/resource/xmlsecurity_en.properties: '8'
+  org/apache/xml/security/resource/schema/etsi.xsd: '8'
+  org/apache/xml/security/resource/schema/xenc-schema.rng: '8'
+  org/apache/xml/security/resource/schema/xenc-schema.xsd: '8'
+  org/apache/xml/security/resource/schema/xmldsig-core-schema.dtd: '8'
+  org/apache/xml/security/resource/schema/xmldsig-core-schema.rng: '8'
+  org/apache/xml/security/resource/schema/xmldsig-core-schema.xsd: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.0
+versionInfo:
+  versionCode: '35421'
+  versionName: 4.213.10001

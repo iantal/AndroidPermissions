@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.advanced_settings.advanced_settings.AdvancedSettingsItemView android:orientation="horizontal" android:background="?selectableItemBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:id="@id/advanced_settings_item_view_radio" android:focusable="false" android:layout_width="@dimen/ui__spacing_unit_3x" android:layout_height="@dimen/ui__spacing_unit_3x" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" uber:srcCompat="@drawable/ub__radio" />
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News.Primary" android:id="@id/advanced_settings_item_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@id/advanced_settings_item_view_radio" uber:analyticsId="da773901-2fdc" />
+</com.ubercab.presidio.advanced_settings.advanced_settings.AdvancedSettingsItemView>

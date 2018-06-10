@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relativeLayout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/parent" android:background="@color/raiffeisen_black_30_opacity" android:paddingLeft="50.0dip" android:paddingTop="35.0dip" android:paddingRight="50.0dip" android:paddingBottom="35.0dip" android:layout_width="@dimen/login_container_overlay_width" android:layout_height="500.0dip" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/relative_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_view_demo">
+            <ScrollView android:id="@id/scroll_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <LinearLayout android:orientation="vertical" android:id="@id/container" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textColor="@color/rzb_primary_text_color" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_to" />
+                        <ImageView android:layout_gravity="center_horizontal" android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:src="@drawable/rzb_login_logo_with_slogan" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/choose_username_row" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:minHeight="72.0dip">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+                            <android.support.v7.widget.AppCompatEditText android:textColor="@color/fwr_white_color" android:textColorHint="@color/fwr_white_color" android:layout_gravity="left" android:id="@id/usernameEditText" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/username" android:maxLines="1" android:singleLine="true" android:drawablePadding="5.0dip" android:inputType="textNoSuggestions" style="@style/DSQWidget.Holo.AllCharactersAllowedEditText" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/choose_password_row" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:minHeight="72.0dip">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+                            <EditText android:textColor="@color/fwr_white_color" android:textColorHint="@color/fwr_white_color" android:layout_gravity="center_vertical" android:id="@id/passwordEditText" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/password" android:maxLines="1" android:singleLine="true" android:drawablePadding="5.0dip" android:inputType="textPassword" android:imeOptions="actionDone|flagNoExtractUi" style="@style/DSQWidget.Holo.AllCharactersAllowedEditText" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:minHeight="72.0dip">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+                            <Button android:textSize="18.0sp" android:textColor="@color/abc_secondary_text_material_light" android:gravity="center" android:id="@id/login_button" android:background="@drawable/rounded_corners_login" android:layout_width="fill_parent" android:layout_height="48.0dip" android:src="@color/raiffeisen_yellow" android:text="@string/title_login" android:textAllCaps="false" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+                            <TextView android:textColor="@color/raiffeisen_yellow" android:gravity="center" android:id="@id/forgot_pass_textview" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/forgot_your_password" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+        <FrameLayout android:id="@id/bottom_view_demo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textColor="@color/rzb_primary_text_color" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/view_demo_version" android:background="@drawable/rounded_corners_demo" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="15.0dip" android:text="@string/start_demo" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

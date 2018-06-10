@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tcsbank.mb.ui.widgets.StickySwipeRefreshLayout n1:id="@id/swipe_refresh_layout" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.CoordinatorLayout n1:theme="@style/MbActionBarTheme" n1:id="@id/account_list_coordinator" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <android.support.v4.widget.NestedScrollView n1:id="@id/limits_scroll_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <android.support.v7.widget.RecyclerView n1:id="@id/limits_list" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                <LinearLayout n1:gravity="center" n1:layout_gravity="center" n1:orientation="vertical" n1:id="@android:id/empty" n2:layout_behavior="@string/appbar_scrolling_view_behavior" style="@style/VerticalWrapping">
+                    <ImageView n1:id="@id/image" n1:src="@drawable/noitem" style="@style/EmptyViewImage" />
+                    <TextView n1:text="@string/limits_no_items" style="@style/EmptyViewText" />
+                </LinearLayout>
+                <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center_horizontal" n1:id="@android:id/progress" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" n1:layout_marginTop="24.0dip" n2:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </FrameLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <android.support.design.widget.AppBarLayout n1:id="@id/appbar" n1:background="@color/bg_dark" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="@dimen/app_bar_height" n3:layout_behavior="ru.tcsbank.mb.ui.widgets.SnapAppBarBehavior" xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <ru.tcsbank.mb.ui.activities.account.appbar.CollapsingAppBarLayout n1:id="@id/cards_collapsing_appbar" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="@dimen/app_bar_height" n3:layout_scrollFlags="exitUntilCollapsed|scroll">
+                <ru.tcsbank.mb.ui.limits.CardsCarouselView n1:id="@id/card_limits_carousel" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="56.0dip" />
+            </ru.tcsbank.mb.ui.activities.account.appbar.CollapsingAppBarLayout>
+        </android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</ru.tcsbank.mb.ui.widgets.StickySwipeRefreshLayout>

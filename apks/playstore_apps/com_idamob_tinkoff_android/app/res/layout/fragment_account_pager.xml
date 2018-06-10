@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="396.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/account_pager_container" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="224.0dip" n1:layout_below="@id/toolbar">
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/accounts" n1:clipChildren="false" n1:descendantFocusability="blocksDescendants" n1:layout_width="fill_parent" n1:layout_height="120.0dip" n2:cp_arrows_visible="false" n2:cp_pager_background="@android:color/transparent" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator n1:id="@id/account_pager_indicator" n1:layout_width="wrap_content" n1:layout_height="24.0dip" n3:spi_looped="true" style="@style/PagerIndicator" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <FrameLayout n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ru.tcsbank.mb.ui.activities.account.appbar.RecyclerViewOverlappingRender n1:id="@id/account_pager_sub_items_small_recycler" n1:paddingLeft="60.0dip" n1:paddingRight="0.0dip" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="@dimen/account_header_small_sub_items_height" />
+                <Button n1:id="@id/action_button" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0dip" n1:layout_marginTop="32.0dip" n1:layout_marginRight="32.0dip" n1:text="@string/account_details_cashloan_button_activate" style="@style/Button.Round.Yellow" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ru.tcsbank.mb.ui.activities.account.BigCardsRecyclerViewPager n1:id="@id/account_pager_sub_items_big_recycler" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="184.0dip" />
+            <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator n1:id="@id/account_sub_items_pager_indicator" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="24.0dip" style="@style/PagerIndicator" />
+        </LinearLayout>
+    </FrameLayout>
+    <ru.tcsbank.mb.ui.widgets.account.IconPageIndicator n1:id="@id/account_pager_currency_indicator" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="72.0dip" n1:layout_below="@id/toolbar" n4:ipi_iconPadding="@dimen/offset_from_edge_half" n4:ipi_iconSize="@dimen/account_currency_icon" n4:ipi_strokeColor="@color/white" n4:ipi_strokeSpace="2.0dip" n4:ipi_strokeWidth="1.0dip" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ru.tcsbank.mb.ui.activities.account.OptionsView n1:id="@id/account_pager_options_view" n1:layout_width="fill_parent" n1:layout_height="116.0dip" n1:layout_alignParentBottom="true" />
+    <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" />
+</RelativeLayout>

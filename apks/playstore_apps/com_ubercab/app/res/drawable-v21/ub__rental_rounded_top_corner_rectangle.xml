@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="?brandWhite" />
+    <corners android:radius="@dimen/ub__rental_dummy_dimen" android:topLeftRadius="@dimen/ub__rental_list_header_background_top_radius" android:topRightRadius="@dimen/ub__rental_list_header_background_top_radius" android:bottomLeftRadius="0.0dip" android:bottomRightRadius="0.0dip" />
+</shape>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/upsell_dialog_container" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="f6b5f536-240a"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:layout_gravity="center" android:id="@id/image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.UTextView android:layout_gravity="center" android:id="@id/header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" style="@style/Platform.TextAppearance.H1" />
+    <com.ubercab.ui.core.UTextView android:layout_gravity="start" android:id="@id/description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/feed_item_dismiss_dialog_message" style="@style/Platform.TextAppearance.H4" />
+    <com.ubercab.ui.core.UTextView android:layout_gravity="start" android:id="@id/learn_more_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" style="@style/Platform.TextAppearance.H4.News" />
+    <com.ubercab.ui.core.UButton android:id="@id/ok_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/confirmation_confirm" android:contentDescription="@string/capacity_upcharge_accept_button_title" uber:analyticsId="5e5dc220-76d6" style="?platformButtonPrimary" />
+</com.ubercab.ui.core.ULinearLayout>

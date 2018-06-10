@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbarOverdraftTerms" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/overdraft_terms_header" style="@style/Text.Toolbar" />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_terms" />
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/overdraft_terms_title" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" style="@style/Text.Screen.Title.Big" />
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/overdraft_terms_body" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" style="@style/Text.Screen.Body.Small" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/overdraft_terms_list_header" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" style="@style/Text.Screen.Title.Medium" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutOverdraftTerms" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+            <TextView android:gravity="center" android:autoLink="email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/overdraft_terms_footer" android:lineSpacingExtra="8.0sp" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" style="@style/Text.Screen.Body.XSmall" />
+            <de.number26.machete.android.adl.atoms.MainButton android:id="@id/mainButtonOverdraftAgree" android:layout_width="fill_parent" android:layout_height="wrap_content" app:enabled="false" app:text="@string/overdraft_terms_action" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

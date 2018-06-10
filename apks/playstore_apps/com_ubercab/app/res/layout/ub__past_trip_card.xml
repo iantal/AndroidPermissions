@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.commons.image.AspectRatioImageView android:id="@id/past_trips_card_map" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:background="?android:colorBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:divider="@drawable/divider_space_1x" android:showDividers="middle">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__past_trip_details_date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H5.News.Primary" />
+            <com.ubercab.ui.core.UImageView android:id="@id/ub__past_trip_details_surge_image" android:visibility="gone" android:layout_width="?avatarMicro" android:layout_height="?avatarMicro" app:srcCompat="@drawable/ub__icon_surge" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__past_trip_details_fare" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_space_1x" android:showDividers="middle">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__past_trip_details_vehicle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__past_trip_details_cash" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cash" android:textAllCaps="true" style="@style/Platform.TextAppearance.H5.News.Tertiary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__past_trip_details_trip_status" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+            <com.ubercab.rating.common.RatingIndicatorView android:id="@id/ub__past_trip_details_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</merge>

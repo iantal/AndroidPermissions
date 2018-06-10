@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="?selectableItemBackground" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small.Dark.Medium" n1:layout_gravity="center_vertical" n1:id="@id/card_top_header" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:text="@string/favorites_title" n1:maxLines="2" n1:layout_weight="1.0" />
+    <TextView n1:textAppearance="@style/Text.Small.Blue.Medium" n1:layout_gravity="center_vertical" n1:id="@id/card_top_button" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="0.0dip" n1:text="@string/pha_view_all_btn" n1:textAllCaps="true" />
+</merge>

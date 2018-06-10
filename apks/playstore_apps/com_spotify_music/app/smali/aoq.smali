@@ -1,0 +1,6 @@
+.class public interface abstract Laoq;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Laoe;

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.accounts.details.AccountLimitView n1:id="@id/account_details_limit_view" n1:layout_marginTop="@dimen/offset_from_edge" n2:limit_icon="@drawable/ic_account_details_cash_out" n2:limit_tint="@color/main_blue" style="@style/AccountDetailsLimitView" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <include n1:id="@id/account_details_limit_divider" layout="@layout/inc_divider_margin" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/account_details_wallet_ident_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_marginLeft="@dimen/offset_from_edge_large" n1:text="@string/account_additional_details_identify_label" style="@style/DefaultItem.Margin" />
+        <TextView n1:id="@id/account_details_identify" n1:text="@string/account_additional_details_identify_button" n1:drawableLeft="@drawable/ic_account_details_identification" style="@style/AccountDetailsActionItem.Padding" />
+        <include layout="@layout/inc_divider_margin" />
+    </LinearLayout>
+    <TextView n1:id="@id/account_details_tariffs" n1:text="@string/account_additional_details_tariff_button" n1:drawableLeft="@drawable/ic_account_details_tariffs" style="@style/AccountDetailsActionItem.Padding" />
+</LinearLayout>

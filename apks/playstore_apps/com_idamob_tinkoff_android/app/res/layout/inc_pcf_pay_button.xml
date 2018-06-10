@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/pay_button" n1:background="@drawable/selector_button_yellow" n1:padding="@dimen/screen_content_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/offset_from_edge"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small" n1:textColor="@drawable/selector_button_text" n1:id="@id/pay_button_text" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textAllCaps="true" />
+    <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/pay_button_money" n1:layout_marginLeft="3.0dip" n2:textColorAmount="@color/text_dark" n2:textColorCurrency="@color/text_dark" n2:textColorFractional="@color/text_dark" n2:textSizeAmount="@dimen/text_small" n2:textSizeCurrency="@dimen/text_small" n2:textSizeFractional="@dimen/text_small" style="@style/SmartMoneyView" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

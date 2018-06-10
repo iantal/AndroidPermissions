@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout n1:theme="@style/MbActionBarTheme" n1:id="@id/events_coordinator_layout" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView n1:id="@id/events_bottom_container" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true" n2:layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <android.support.design.widget.AppBarLayout n1:id="@id/appbar" n1:background="@drawable/main_appbar_background" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="@dimen/app_bar_height" n1:stateListAnimator="@animator/appbar_fixed_elevation">
+        <ru.tcsbank.mb.ui.activities.account.appbar.CollapsingAppBarLayout n1:id="@id/events_collapsing_appbar" n1:layout_width="fill_parent" n1:layout_height="@dimen/app_bar_height" n3:layout_scrollFlags="exitUntilCollapsed|scroll" xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <ru.tcsbank.mb.ui.events.widget.ToolbarSearchView n1:id="@id/events_toolbar_search_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="?actionBarSize" />
+            <ru.tcsbank.mb.ui.events.widget.TagsView n1:id="@id/events_tags_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <ru.tcsbank.mb.ui.events.widget.SpendingChartHeaderView n1:id="@id/events_spending_chart_header" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="48.0dip" />
+            <ru.tcsbank.mb.ui.activities.account.SpendingsView n1:id="@id/events_spendings_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="12.0dip" />
+            <ru.tcsbank.mb.ui.widgets.SuspiciousTransactionsWarningPanel n1:id="@id/suspicious_warning" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/suspicious_panel_height" />
+        </ru.tcsbank.mb.ui.activities.account.appbar.CollapsingAppBarLayout>
+    </android.support.design.widget.AppBarLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lp_ttr_message_days">
+        <item quantity="other">" %1$s jours"</item>
+        <item quantity="one">" %1$s jour"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_hours">
+        <item quantity="other">" %1$s heures"</item>
+        <item quantity="one">%1$s heure</item>
+    </plurals>
+    <plurals name="lp_ttr_message_minutes">
+        <item quantity="other">" %1$s minutes"</item>
+        <item quantity="one">" %1$s minute"</item>
+    </plurals>
+    <plurals name="lp_unread_message">
+        <item quantity="other">%1$d MESSAGES NON LUS</item>
+        <item quantity="one">%1$d MESSAGE NON LU</item>
+    </plurals>
+</resources>

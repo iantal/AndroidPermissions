@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.user_identity_flow.cpf_flow.CpfIntroView android:orientation="vertical" android:id="@id/cpf_identity_flow_error_cpf_intro_view" android:background="?android:colorBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:analyticsId="55e2826b-33f5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" style="@style/Widget.Platform.Toolbar" />
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:layout_gravity="top" android:orientation="vertical" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.ULinearLayout android:layout_gravity="top" android:orientation="vertical" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <com.ubercab.ui.commons.widget.GravityImageView android:id="@id/cpf_intro_illustration" android:layout_width="fill_parent" android:layout_height="wrap_content" app:srcCompat="@drawable/ub__cpf_intro_illustration" app:imageGravity="top|center_horizontal" app:imageScaleMode="none" />
+                <com.ubercab.ui.core.UTextView android:paddingTop="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cpf_intro_title" style="@style/Platform.TextAppearance.H3.Book" />
+                <com.ubercab.ui.core.UTextView android:paddingTop="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cpf_intro_subtitle" style="@style/Platform.TextAppearance.H5.News.Tertiary" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.commons.progress.FabProgressCircle android:layout_gravity="end|bottom|center" android:id="@id/cpf_intro_progress_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ui__spacing_unit_2x">
+                <com.ubercab.ui.core.UFloatingActionButton android:id="@id/cpf_intro_next" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?colorAccentInverse" android:rotation="180.0" app:srcCompat="@drawable/navigation_icon_back" app:analyticsId="4384df6c-496f" style="?platformButtonPrimary" />
+            </com.ubercab.ui.commons.progress.FabProgressCircle>
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.user_identity_flow.cpf_flow.CpfIntroView>

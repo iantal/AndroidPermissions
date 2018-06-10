@@ -1,0 +1,4 @@
+ enum bio
+{
+  private bio() {}
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.mobile.ui.common.view.HeadingTextView n1:id="@id/legalInformationTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/ScreenHeadline.Background" />
+        <com.mobile.ui.common.view.SecureCoreWebView n1:id="@id/legalInformationWebView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="16.0dip" n1:layout_marginRight="16.0dip" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

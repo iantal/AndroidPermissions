@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard n1:keyHeight="10.000002%p" n1:keyWidth="25.333%p" xmlns:n1="http://schemas.android.com/apk/res-auto">
+    <Row n1:horizontalGap="5.9999943%p">
+        <Key n1:codes="49" n1:keyLabel="1" n1:labelOffset="0.2" />
+        <Key n1:codes="50" n1:keyLabel="2 ABC" n1:labelOffset="0.2" />
+        <Key n1:codes="51" n1:keyLabel="3 DEF" n1:labelOffset="0.2" />
+    </Row>
+    <Row n1:horizontalGap="5.9999943%p">
+        <Key n1:codes="52" n1:keyLabel="4 GHI" n1:labelOffset="0.2" />
+        <Key n1:codes="53" n1:keyLabel="5 JKL" n1:labelOffset="0.2" />
+        <Key n1:codes="54" n1:keyLabel="6 MNO" n1:labelOffset="0.2" />
+    </Row>
+    <Row n1:horizontalGap="5.9999943%p">
+        <Key n1:codes="55" n1:keyLabel="7 PQRS" n1:labelOffset="0.2" />
+        <Key n1:codes="56" n1:keyLabel="8 TUV" n1:labelOffset="0.2" />
+        <Key n1:codes="57" n1:keyLabel="9 WXYZ" n1:labelOffset="0.2" />
+    </Row>
+    <Row n1:horizontalGap="5.9999943%p" n1:verticalGap="3.9999962%p">
+        <Key n1:codes="48" n1:enable="false" n1:keyLabel="" n1:labelOffset="0.2" n1:visible="false" />
+        <Key n1:codes="48" n1:keyLabel="0 +" n1:labelOffset="0.2" />
+        <Key n1:codes="-5" n1:keyIcon="@drawable/core_btn_keyboard_back_arrow" />
+    </Row>
+</Keyboard>

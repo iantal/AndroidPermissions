@@ -1,0 +1,43 @@
+public class blo
+{
+  public static final int abc_action_bar_home_description = 2131427357;
+  public static final int abc_action_bar_up_description = 2131427358;
+  public static final int abc_action_menu_overflow_description = 2131427359;
+  public static final int abc_action_mode_done = 2131427360;
+  public static final int abc_activity_chooser_view_see_all = 2131427361;
+  public static final int abc_activitychooserview_choose_application = 2131427362;
+  public static final int abc_search_hint = 2131427365;
+  public static final int abc_searchview_description_clear = 2131427366;
+  public static final int abc_searchview_description_query = 2131427367;
+  public static final int abc_searchview_description_search = 2131427368;
+  public static final int abc_searchview_description_submit = 2131427369;
+  public static final int abc_searchview_description_voice = 2131427370;
+  public static final int abc_shareactionprovider_share_with = 2131427371;
+  public static final int abc_shareactionprovider_share_with_application = 2131427372;
+  public static final int abc_toolbar_collapse_description = 2131427373;
+  public static final int catalyst_copy_button = 2131427396;
+  public static final int catalyst_debugjs = 2131427397;
+  public static final int catalyst_debugjs_nuclide = 2131427398;
+  public static final int catalyst_debugjs_nuclide_failure = 2131427399;
+  public static final int catalyst_debugjs_off = 2131427400;
+  public static final int catalyst_dismiss_button = 2131427401;
+  public static final int catalyst_element_inspector = 2131427402;
+  public static final int catalyst_heap_capture = 2131427403;
+  public static final int catalyst_hot_module_replacement = 2131427404;
+  public static final int catalyst_hot_module_replacement_off = 2131427405;
+  public static final int catalyst_jsload_error = 2131427406;
+  public static final int catalyst_live_reload = 2131427407;
+  public static final int catalyst_live_reload_off = 2131427408;
+  public static final int catalyst_loading_from_url = 2131427409;
+  public static final int catalyst_perf_monitor = 2131427410;
+  public static final int catalyst_perf_monitor_off = 2131427411;
+  public static final int catalyst_poke_sampling_profiler = 2131427412;
+  public static final int catalyst_reload_button = 2131427413;
+  public static final int catalyst_reloadjs = 2131427414;
+  public static final int catalyst_remotedbg_error = 2131427415;
+  public static final int catalyst_remotedbg_message = 2131427416;
+  public static final int catalyst_report_button = 2131427417;
+  public static final int catalyst_settings = 2131427418;
+  public static final int catalyst_settings_title = 2131427419;
+  public static final int status_bar_notification_info_overflow = 2131427395;
+}

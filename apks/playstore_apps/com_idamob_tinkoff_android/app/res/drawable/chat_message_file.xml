@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item n1:id="@id/bottom" n1:top="@dimen/chat_message_file_top_height"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape>
+            <corners n1:bottomLeftRadius="@dimen/chat_message_outer_corner" n1:bottomRightRadius="@dimen/chat_message_inner_corner" />
+            <solid n1:color="@color/chat_message_file_bottom" />
+            <stroke n1:width="@dimen/chat_divider_thickness" n1:color="@color/chat_message_file_bottom_border" />
+        </shape>
+    </item>
+    <item n2:id="@id/top" n2:bottom="@dimen/chat_message_file_bottom_height"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape>
+            <corners n2:topLeftRadius="@dimen/chat_message_outer_corner" n2:topRightRadius="@dimen/chat_message_outer_corner" />
+            <solid n2:color="@color/chat_message_file_top" />
+        </shape>
+    </item>
+</layer-list>

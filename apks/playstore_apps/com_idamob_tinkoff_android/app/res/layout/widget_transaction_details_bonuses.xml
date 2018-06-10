@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/transaction_details_bonuses_title" />
+    <ru.tcsbank.mb.ui.widgets.BonusItemView n1:id="@id/cashback_view" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_large_item" style="@style/BonusItemView" />
+    <ru.tcsbank.mb.ui.widgets.BonusItemView n1:id="@id/target_view" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_large_item" style="@style/BonusItemView" />
+</merge>

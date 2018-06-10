@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/grey_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contentSpacing" android:layout_marginBottom="@dimen/contentSpacing" android:text="@string/name_your_account" fontPath="@string/font_regular" style="@style/TextAppearance.Item.Title" />
+    <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/contentSpacing" style="@style/Theme.Number26.Widget.TextInputLayout">
+        <EditText android:id="@id/name" android:nextFocusDown="@id/loginButton" android:layout_width="fill_parent" android:layout_height="@dimen/default_item_height" android:hint="@string/name_your_account_desc" android:maxLength="100" android:inputType="textNoSuggestions" android:imeOptions="actionGo" android:imeActionLabel="@string/action_change" />
+    </android.support.design.widget.TextInputLayout>
+    <include layout="@layout/dialog_common_action" />
+</LinearLayout>

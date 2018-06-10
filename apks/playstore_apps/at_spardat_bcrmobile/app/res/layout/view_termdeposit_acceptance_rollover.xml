@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/roundrect_shape" android:layout_marginTop="2.5dip" android:layout_marginBottom="2.5dip" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_rollover" android:padding="10.0dip" style="@style/MatchParentWrapContent">
+        <TextView android:textColor="@color/text_default" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/rollover" android:layout_weight="0.33" style="@style/PaymentItemTextSmallBold" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.67">
+            <ToggleButton android:id="@id/tb_rollover" android:background="@drawable/toggling" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="@string/no_description" android:textOff="@string/no_description" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/view_separator_account_for_principal" android:background="@color/separator_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_account_for_principal" android:paddingLeft="10.0dip" android:paddingTop="16.0dip" android:paddingRight="10.0dip" android:paddingBottom="16.0dip" style="@style/MatchParentWrapContent">
+        <TextView android:textColor="@color/text_default" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/account_for_principal_payment" android:layout_weight="0.33" style="@style/PaymentItemTextSmallBold" />
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_account_for_principal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.67" style="@style/PaymentItemTextSmallNormal" />
+    </LinearLayout>
+    <View android:background="@color/separator_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_interest_capitalization" android:padding="10.0dip" style="@style/MatchParentWrapContent">
+        <TextView android:textColor="@color/text_default" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/interest_capitalization" android:layout_weight="0.33" style="@style/PaymentItemTextSmallBold" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.67">
+            <ToggleButton android:id="@id/tb_interest_capitalization" android:background="@drawable/toggling" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="@string/no_description" android:textOff="@string/no_description" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/view_separator_account_for_interest" android:background="@color/separator_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_account_for_interest" android:paddingLeft="10.0dip" android:paddingTop="16.0dip" android:paddingRight="10.0dip" android:paddingBottom="16.0dip" style="@style/MatchParentWrapContent">
+        <TextView android:textColor="@color/text_default" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/account_for_interest_payment" android:layout_weight="0.33" style="@style/PaymentItemTextSmallBold" />
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_account_for_interest" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.67" style="@style/PaymentItemTextSmallNormal" />
+    </LinearLayout>
+</LinearLayout>

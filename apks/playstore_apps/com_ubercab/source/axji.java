@@ -1,0 +1,3 @@
+class axji
+  extends axjh
+{}

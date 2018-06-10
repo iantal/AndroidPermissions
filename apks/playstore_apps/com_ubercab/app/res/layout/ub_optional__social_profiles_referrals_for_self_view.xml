@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:theme="@style/Theme.Helix.Light" android:background="?accentPrimary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:layout_gravity="center_vertical" android:id="@id/ub__social_profile_referrals_for_self_title" android:padding="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.Book.Primary.Inverse" />
+</merge>

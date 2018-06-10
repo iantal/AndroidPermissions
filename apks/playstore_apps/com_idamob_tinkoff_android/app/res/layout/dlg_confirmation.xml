@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:layout_gravity="center_horizontal" n1:orientation="vertical" n1:background="@drawable/transcluent_shape_bg" n1:padding="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0dip" n1:layout_marginRight="32.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/dlg_icon" n1:background="@drawable/transcluent_shape_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    <TextView n1:textAppearance="@style/Text.Default.White" n1:gravity="center_horizontal" n1:id="@id/dlg_message" n1:background="@drawable/transcluent_shape_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" />
+</LinearLayout>

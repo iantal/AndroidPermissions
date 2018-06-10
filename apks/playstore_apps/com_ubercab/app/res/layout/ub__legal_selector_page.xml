@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.legal.LegalSelectorView android:background="?android:colorBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="38e089ac-740a"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/legal_selector_linear_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.widget.HelixListItem android:id="@id/copyright" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:primaryText="@string/legal_copyright" />
+        <com.ubercab.ui.core.widget.HelixListItem android:id="@id/terms_and_conditions" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:primaryText="@string/legal_terms_and_conditions" />
+        <com.ubercab.ui.core.widget.HelixListItem android:id="@id/privacy_policy" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:primaryText="@string/legal_privacy_policy" />
+        <com.ubercab.ui.core.widget.HelixListItem android:id="@id/data_providers" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:primaryText="@string/legal_data_provicers" />
+        <com.ubercab.ui.core.widget.HelixListItem android:id="@id/software_license" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:primaryText="@string/legal_software_license" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.legal.LegalSelectorView>

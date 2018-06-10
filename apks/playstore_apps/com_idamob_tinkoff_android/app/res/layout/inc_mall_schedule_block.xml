@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:background="?selectableItemBackground" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginTop="12.0dip" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="12.0dip" n1:src="@drawable/ic_access_time_blue_24dp" />
+    <ViewSwitcher n1:id="@id/mall_schedule_switcher" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:measureAllChildren="false">
+        <LinearLayout n1:gravity="center_vertical" n1:layout_gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/mall_schedule_short" n1:paddingLeft="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item">
+            <TextView n1:textAppearance="@style/Text.Small.Dark" n1:id="@id/mall_schedule_short_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <ImageView n1:layout_width="16.0dip" n1:layout_height="16.0dip" n1:layout_marginLeft="@dimen/offset_from_edge_half" n1:src="@drawable/ic_arrow" n1:scaleType="centerInside" n1:tint="@color/n3" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/mall_schedule_full" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="10.0dip" n1:paddingRight="48.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </ViewSwitcher>
+</LinearLayout>

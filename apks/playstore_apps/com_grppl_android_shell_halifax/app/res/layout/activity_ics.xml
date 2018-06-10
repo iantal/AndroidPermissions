@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <com.mobile.ui.common.view.TypefaceTabLayout n1:id="@id/icsTabs" n1:layout_width="fill_parent" n2:tabGravity="fill" n2:tabMode="fixed" style="@style/TabBar" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <FrameLayout n1:id="@id/icsJourneyFragmentContainer" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <FrameLayout n1:id="@id/icsErrorFragmentContainer" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </LinearLayout>
+    <FrameLayout n1:id="@id/icsArrangementListContainer" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <com.mobile.ui.common.view.NotificationView n1:id="@id/errorNotificationView" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</FrameLayout>

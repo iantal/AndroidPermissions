@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout n1:id="@id/app_bar" n1:background="@drawable/main_appbar_background" n1:paddingBottom="@dimen/screen_content_padding_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ru.tcsbank.mb.ui.search.widget.SearchView n1:id="@id/search_view" n1:paddingLeft="@dimen/screen_content_padding_half" n1:paddingTop="@dimen/screen_content_padding_half" n1:paddingRight="@dimen/screen_content_padding_half" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" n2:sv_mode="light" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </android.support.design.widget.AppBarLayout>
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:id="@id/no_items" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/search_empty_results" n1:layout_below="@id/app_bar" />
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:id="@id/empty_request_placeholder" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/search_placeholder" n1:layout_below="@id/app_bar" />
+    <android.support.v7.widget.RecyclerView n1:id="@id/list" n1:paddingTop="@dimen/offset_from_edge_quarter" n1:paddingBottom="@dimen/offset_from_edge_quarter" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/app_bar" />
+    <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:id="@id/progress" n1:layout_below="@id/app_bar" style="@style/SmoothProgress" />
+</RelativeLayout>

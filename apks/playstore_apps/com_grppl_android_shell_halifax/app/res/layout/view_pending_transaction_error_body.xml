@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/pending_transaction_row_background_color" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/TransactionRowText.Strong" n1:id="@id/pendingTransactionError" n1:background="@color/information_text_view_background_color" n1:padding="@dimen/transaction_row_outer_margin" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <View n1:background="@color/accordion_list_divider_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/list_divider_drawable_height" />
+</LinearLayout>

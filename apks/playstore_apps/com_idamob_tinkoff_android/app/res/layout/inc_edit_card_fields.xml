@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:addStatesFromChildren="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:baselineAligned="false" n1:layout_weight="1.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/edit_card_number_container" n1:addStatesFromChildren="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <EditText n1:id="@id/edit_card_number" n1:background="@null" n1:hint="@string/ecvw_card_hint" style="@style/CardEditText" />
+        <EditText n1:id="@id/edit_card_number_short" n1:background="@null" n1:focusable="false" n1:visibility="gone" n1:layout_width="wrap_content" style="@style/CardEditText" />
+    </FrameLayout>
+    <LinearLayout n1:id="@id/edit_card_addition_container" n1:visibility="gone" n1:addStatesFromChildren="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip">
+        <Space n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0" />
+        <view n1:id="@id/expiry_date" n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:hint="@string/ec_expiry_placeholder" n1:maxLength="@integer/expiry_date_field_max_length" class="ru.tcsbank.mb.ui.widgets.edit.card.EditCardView$InternalEditText" style="@style/CardEditText" />
+        <Space n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0" />
+        <view n1:ellipsize="end" n1:id="@id/cvc_cvv" n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" n1:password="true" n1:maxLength="3" class="ru.tcsbank.mb.ui.widgets.edit.card.EditCardView$InternalEditText" style="@style/CardEditText" />
+    </LinearLayout>
+</LinearLayout>

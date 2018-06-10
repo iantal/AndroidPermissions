@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.scheduled_commute.onboarding.locked.LockedRouteView android:orientation="vertical" android:background="?brandGrey20" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="fb9700fa-e707"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__commute_locked_loading_indicator" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.UPercentRelativeLayout android:id="@id/ub__commute_locked_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:layout_marginStart="@dimen/ui__spacing_unit_2x">
+        <include layout="@layout/ub__commute_layout_route_locked_internal" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub_commute_route_locked_try_driving" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__commute_locked_view_secondary_action" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" uber:analyticsId="5c0dd03e-0e5f" style="@style/Platform.TextAppearance.H5.News.Link" />
+    </com.ubercab.ui.core.UPercentRelativeLayout>
+</com.ubercab.presidio.scheduled_commute.onboarding.locked.LockedRouteView>

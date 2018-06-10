@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.core.root.main.ride.request.DestinationSearchPromptView android:id="@id/ub__destination_search_prompt_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__destination_search_prompt_container" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_7x">
+        <com.ubercab.ui.core.UTextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ub__destination_search_prompt" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingTop="@dimen/ub__home_where_to_text_offset" android:paddingRight="@dimen/ui__spacing_unit_2x" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/destination_search_prompt" android:maxLines="1" android:drawablePadding="@dimen/ui__spacing_unit_2x" android:layout_weight="1.0" android:textIsSelectable="false" uber:analyticsId="13d76b5a-9e17" style="@style/Platform.TextAppearance.H3.Book.Secondary" />
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ub__destination_search_right_plugin_container" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.core.root.main.ride.request.DestinationSearchPromptView>

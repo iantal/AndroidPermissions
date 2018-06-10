@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:background="@drawable/payment_square_tile_back" n1:layout_width="@dimen/payments_tile_width" n1:layout_height="@dimen/payments_tile_height" n1:layout_marginLeft="@dimen/offset_from_edge_quarter" n1:layout_marginRight="@dimen/offset_from_edge_quarter" n1:layout_marginBottom="@dimen/offset_from_edge" n1:foreground="?selectableItemBackground"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ImageView n1:id="@id/payment_logo" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" n1:layout_marginLeft="@dimen/payments_tile_inner_padding" n1:layout_marginTop="@dimen/payments_tile_inner_padding" n1:layout_marginBottom="@dimen/payments_tile_icon_margin" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.White.Medium" n1:id="@id/payment_name" n1:layout_width="fill_parent" n1:layout_height="@dimen/payments_tile_text_height" n1:layout_marginLeft="@dimen/payments_tile_inner_padding" n1:layout_marginRight="@dimen/payments_tile_inner_padding_right" n1:maxLines="2" n1:lines="2" />
+    </LinearLayout>
+</FrameLayout>

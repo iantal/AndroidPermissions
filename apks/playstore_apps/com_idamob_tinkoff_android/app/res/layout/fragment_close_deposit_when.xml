@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/destinition_header" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/screen_content_margin">
+        <TextView n1:text="@string/cdwf_title" style="@style/SubtitleTextItem" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/when_group_wrapper" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/destinition_header">
+        <include layout="@layout/inc_divider" />
+        <RadioGroup n1:orientation="horizontal" n1:id="@id/when_group" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item">
+            <RadioButton n1:id="@id/now_radio_button" n1:checked="true" n1:text="@string/cdwf_now" style="@style/CloseDepositWhen.RadioButton" />
+            <RadioButton n1:id="@id/later_radio_button" n1:text="@string/cdwf_leter" style="@style/CloseDepositWhen.RadioButton" />
+        </RadioGroup>
+        <include layout="@layout/inc_divider" />
+    </LinearLayout>
+    <LinearLayout n1:id="@id/container" n1:layout_below="@id/when_group_wrapper" style="@style/ScreenContent">
+        <android.support.v7.widget.SwitchCompat n1:textAppearance="@style/Text.Small.Light" n1:id="@id/close_switcher" n1:visibility="gone" n1:checked="false" n1:text="@string/cdwf_end_date" style="@style/SwitchRipple" />
+        <ru.tinkoff.core.smartfields.view.SmartFieldView n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge_half" n2:fieldKey="issueDate" n2:fieldTitle="@string/cdwf_date" n2:fieldType="date" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <FrameLayout n1:orientation="vertical" n1:id="@id/loose_content_block" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/tv_close_deposit_loss_hint" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge" n1:text="@string/close_deposit_message" />
+    </LinearLayout>
+</RelativeLayout>

@@ -11,6 +11,9 @@ from tkinter import ttk
 
 from ui.run import ApplicationAnalyzer
 from recon.extractor import Extractor
+from visualize.screenshot import ScreenshotTaker
+from visualize.webserver import SimpleHttpServer
+
 
 
 libs_apktool = '/home/miki/Documents/GITHUB/AndroidPermissions/libs/apktool/apktool_2.3.0.jar'
@@ -22,19 +25,17 @@ class MainApplication(object):
     def __init__(self, master):
         self.filename = ""
 
-        self.frame_header = ttk.Frame(master)
-        self.frame_header.pack()
+        self.frame_header = Frame(master, bg="ghostwhite")
+        self.frame_header.pack(fill=BOTH, expand=YES)
+
 
         self.logo = PhotoImage(file="logo2.png")
-        ttk.Label(self.frame_header, image=self.logo).grid(row=0, column=0, rowspan=2, padx=15)
-        ttk.Label(self.frame_header, text="AndroART").grid(row=0, column=1, padx=15)
-        ttk.Label(self.frame_header, text="Android Reversing and Static Analysis Tool").grid(row=1, column=1, padx=15)
+        ttk.Label(self.frame_header, image=self.logo, background="ghostwhite", width=900).pack()
 
         self.frame_content = ttk.Frame(master)
         self.frame_content.pack()
-        self.browse_btn = ttk.Button(self.frame_content, text="Browse", command=self.browse).grid(row=0, column=1, padx=5)
-
-        Label(master, text='Select vulnerability types to check:').pack()
+        self.browse_btn = Button(self.frame_content, text="Browse", command=self.browse, fg="#a1dbcd", bg="#383a39").grid(row=0, column=1)
+        Label(master, text='Select vulnerability types to check:', fg="#383a39", bg="#a1dbcd", pady=10).pack()
 
         self.v1_1 = StringVar()
         self.v2_1 = StringVar()
@@ -43,36 +44,41 @@ class MainApplication(object):
         self.v5_1 = StringVar()
         self.v6_1 = StringVar()
         self.v7_1 = StringVar()
+        self.v8_1 = StringVar()
 
-        v1 = ttk.Checkbutton(master, text="Crypto")
-        v1.pack()
+        v1 = Checkbutton(master, text="Crypto", fg="#383a39", bg="#a1dbcd", activebackground="#a1dbcd", padx=400)
+        v1.pack(anchor="w")
         v1.config(variable=self.v1_1, onvalue="ok", offvalue="nok")
 
-        v2 = ttk.Checkbutton(master, text="Manifest")
-        v2.pack()
+        v2 = Checkbutton(master, text="Manifest", fg="#383a39", bg="#a1dbcd", activebackground="#a1dbcd", padx=400)
+        v2.pack(anchor="w")
         v2.config(variable=self.v2_1, onvalue="ok", offvalue="nok")
 
-        v3 = ttk.Checkbutton(master, text="Webview")
-        v3.pack()
+        v3 = Checkbutton(master, text="Webview", fg="#383a39", bg="#a1dbcd", activebackground="#a1dbcd", padx=400)
+        v3.pack(anchor="w")
         v3.config(variable=self.v3_1, onvalue="ok", offvalue="nok")
 
-        v4 = ttk.Checkbutton(master, text="Logging")
-        v4.pack()
+        v4 = Checkbutton(master, text="Logging", fg="#383a39", bg="#a1dbcd", activebackground="#a1dbcd", padx=400)
+        v4.pack(anchor="w")
         v4.config(variable=self.v4_1, onvalue="ok", offvalue="nok")
 
-        v5 = ttk.Checkbutton(master, text="Obfuscation")
-        v5.pack()
+        v5 = Checkbutton(master, text="Obfuscation", fg="#383a39", bg="#a1dbcd", activebackground="#a1dbcd", padx=400)
+        v5.pack(anchor="w")
         v5.config(variable=self.v5_1, onvalue="ok", offvalue="nok")
 
-        v6 = ttk.Checkbutton(master, text="Reflection")
-        v6.pack()
+        v6 = Checkbutton(master, text="Reflection", fg="#383a39", bg="#a1dbcd", activebackground="#a1dbcd", padx=400)
+        v6.pack(anchor="w")
         v6.config(variable=self.v6_1, onvalue="ok", offvalue="nok")
 
-        v7 = ttk.Checkbutton(master, text="Signature")
-        v7.pack()
+        v7 = Checkbutton(master, text="Signature", fg="#383a39", bg="#a1dbcd", activebackground="#a1dbcd", padx=400)
+        v7.pack(anchor="w")
         v7.config(variable=self.v7_1, onvalue="ok", offvalue="nok")
 
-        testbutton = Button(master, text="Check", command=self.analyse)
+        v8 = Checkbutton(master, text="Run radare2", fg="#383a39", bg="#a1dbcd", activebackground="#a1dbcd", padx=400)
+        v8.pack(anchor="w")
+        v8.config(variable=self.v8_1, onvalue="ok", offvalue="nok")
+
+        testbutton = Button(master, text="Check", command=self.analyse, fg="#a1dbcd", bg="#383a39")
         testbutton.pack()
 
     def browse(self):
@@ -86,42 +92,79 @@ class MainApplication(object):
         base_dir = "/".join(l[:len(l) - 1])
         print("## " + base_dir)
 
-        self.__extract(apk_file)
+        # TODO: uncomment after testin
+        # self.__extract(apk_file)
 
         ap = ApplicationAnalyzer(base_dir)
         if self.v1_1.get() == "ok":
             print("[*] Crypto")
             ap.find_crypto_vulns()
+            print("[+] Done")
         if self.v2_1.get() == "ok":
             print("[*] Manifest")
             ap.find_manifest_vulns()
+            print("[+] Done")
         if self.v3_1.get() == "ok":
             print("[*] Webview")
             ap.find_webview_vulns()
+            print("[+] Done")
         if self.v4_1.get() == "ok":
             print("[*] Logs")
             ap.find_logs()
+            print("[+] Done")
         if self.v5_1.get() == "ok":
             print("[*] Obfuscation")
             ap.find_obfuscation()
+            print("[+] Done")
         if self.v6_1.get() == "ok":
             print("[*] Reflection")
             ap.find_reflection()
+            print("[+] Done")
         if self.v7_1.get() == "ok":
             print("[*] Signature")
             ap.find_signature()
+            print("[+] Done")
+        if self.v8_1.get() == "ok":
+            print("[*] Running radare2")
+            ap.run_radare()
+            print("[+] Done")
+
+        self.__take_screenshot(base_dir)
 
     def __extract(self, apk):
-        e = Extractor(apk)
-        e.unzip()
-        e.extract_readable_data(libs_apktool)
-        e.extract_jar(libs_d2j)
-        e.extract_java_source_code(jd_core)
+        if apk:
+            e = Extractor(apk)
+            e.unzip()
+            e.extract_readable_data(libs_apktool)
+            e.extract_jar(libs_d2j)
+            e.extract_java_source_code(jd_core)
+        else:
+            print("Please specify the apk file")
+
+    def __take_screenshot(self, base_dir):
+        port = 8002
+        skt = ScreenshotTaker()
+
+        webserver_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "web")
+        print("%%%%%%   " + webserver_dir)
+        server = SimpleHttpServer(path=webserver_dir, port=port)
+
+        server.start()
+        skt.screenshot_webpage("http://127.0.0.1:" + str(port) + "/pie/pie_chart.html",
+                               base_dir + "/report/pie_chart.png")
+        skt.screenshot_webpage("http://127.0.0.1:" + str(port) + "/chord/index.html?file=rm.csv",
+                               base_dir + "/report/chord_diagram.png")
+        skt.screenshot_webpage("http://127.0.0.1:" + str(port) + "/hotspot/hibzoomable.html",
+                               base_dir + "/report/hotspot.png")
+        server.stop()
+        skt.crop_image(
+            base_dir + "/report/chord_diagram.png")
 
 
 def main():
     root = Tk()
-    root.geometry("800x400")
+    root.geometry("910x600")
+    root.configure(background="#a1dbcd")
     app = MainApplication(root)
     root.mainloop()
 

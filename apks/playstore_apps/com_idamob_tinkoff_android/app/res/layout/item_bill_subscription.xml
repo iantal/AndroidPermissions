@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="?selectableItemBackground" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingRight="@dimen/screen_content_padding" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/provider_header_logo" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" style="@style/ImageItem" />
+    <TextView n1:id="@id/new_bill_count" n1:visibility="gone" n1:layout_marginLeft="@dimen/screen_content_margin_half" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" style="@style/BadgeStyle" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_toLeftOf="@id/new_bill_count" n1:layout_toRightOf="@id/provider_header_logo" n1:layout_centerVertical="true" n1:layout_alignWithParentIfMissing="true">
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:ellipsize="end" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" />
+        <TextView n1:textAppearance="@style/Text.Small.Hint" n1:id="@id/bill_count" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

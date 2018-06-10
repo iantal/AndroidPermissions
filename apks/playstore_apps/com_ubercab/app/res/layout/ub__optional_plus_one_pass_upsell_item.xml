@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="0cd3a0ed-9b00"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:paddingTop="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.presidio.pricing.core.PricingTextView android:textStyle="bold" android:layout_gravity="start" android:id="@id/pass_upsell_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ui__spacing_unit_3x" uber:analyticsId="e9d61157-5ded" style="@style/Platform.TextAppearance.H6.News" />
+        <com.ubercab.ui.core.UFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.ubercab.ui.core.UTextView android:layout_gravity="start" android:id="@id/pass_upsell_item_label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News" />
+            <com.ubercab.ui.core.UImageView android:layout_gravity="end" android:id="@id/pass_upsell_item_check" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:srcCompat="@drawable/ic_checkmark" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+</com.ubercab.ui.core.ULinearLayout>

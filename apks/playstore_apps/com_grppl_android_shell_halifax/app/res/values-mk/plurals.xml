@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lp_ttr_message_days">
+        <item quantity="other">" %1$s дена"</item>
+        <item quantity="one">" %1$s ден"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_hours">
+        <item quantity="other">" %1$s часа"</item>
+        <item quantity="one">" %1$s час"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_minutes">
+        <item quantity="other">" %1$s минути"</item>
+        <item quantity="one">" %1$s минута"</item>
+    </plurals>
+    <plurals name="lp_unread_message">
+        <item quantity="other">%1$d НЕПРОЧИТАНИ ПОРАКИ</item>
+        <item quantity="one">%1$d НЕПРОЧИТАНА ПОРАКА</item>
+    </plurals>
+</resources>

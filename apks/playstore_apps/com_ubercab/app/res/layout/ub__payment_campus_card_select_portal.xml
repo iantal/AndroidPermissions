@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.campuscard.operation.selectportal.CampusCardSelectPortalView android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="5e92f3af-1bc4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/fixed_header" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.URecyclerView android:id="@id/ub__campus_card_select_portal_list" android:paddingTop="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.payment.campuscard.operation.selectportal.CampusCardSelectPortalView>

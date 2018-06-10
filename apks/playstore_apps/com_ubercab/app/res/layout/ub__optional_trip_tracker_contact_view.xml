@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.triptracker.primary.contact.TripTrackerContactView android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__driver_contact_container" android:background="?brandWhite" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?dividerVertical" android:showDividers="middle" uber:analyticsId="733dfafc-fe9a"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_tracker_contact_driver" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/helix_trip_contact_driver" android:layout_weight="1.0" android:textAllCaps="false" uber:analyticsId="944b6b53-009e" style="@style/Platform.Button.Borderless" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_tracker_contact_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/helix_trip_need_help" android:layout_weight="1.0" android:textAllCaps="false" uber:analyticsId="f5bac3bf-e84e" style="@style/Platform.Button.Borderless" />
+</com.ubercab.triptracker.primary.contact.TripTrackerContactView>

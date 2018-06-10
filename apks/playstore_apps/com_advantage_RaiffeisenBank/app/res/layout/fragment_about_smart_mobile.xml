@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?dsq_main_content_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/loading" />
+    <include layout="@layout/include_rpb_yellow_line_logo" />
+    <include layout="@layout/include_footer_logo" />
+    <ListView android:id="@id/list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="?dsq_background_lists" />
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/white_card_left_margin" android:layout_marginRight="@dimen/white_card_right_margin" style="@style/CardContentAboveActionBarStyle" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:baselineAligned="false" n1:minHeight="@dimen/core_short_height" style="@style/SmartFieldsShortView"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <TextView n1:id="@id/title" style="@style/SmartFieldShortFilledTitle" />
+        <TextView n1:id="@id/value" style="@style/SmartFieldShortFilledValue" />
+    </LinearLayout>
+    <include layout="@layout/core_snippet_smart_field_button" />
+</LinearLayout>

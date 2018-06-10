@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/search_container" n1:background="@color/bg_dark_material" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <EditText n1:textAppearance="@style/Text.Default.White" n1:layout_gravity="center_vertical" n1:id="@id/search_text" n1:background="@android:color/transparent" n1:paddingLeft="@dimen/offset_from_edge_half" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:maxLines="1" n1:maxLength="@integer/search_query_max_length" n1:layout_toLeftOf="@id/clear_search" n1:inputType="text" n1:textCursorDrawable="@drawable/white_cursor" />
+    <ImageView n1:id="@id/clear_search" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/offset_from_edge_quarter" n1:src="@drawable/ic_close_white" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    <View n1:id="@id/search_close_touch_area" n1:layout_width="@dimen/touch_area" n1:layout_height="fill_parent" n1:layout_alignParentRight="true" />
+</RelativeLayout>

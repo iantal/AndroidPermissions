@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/main_content_frame_layout" android:background="?dsq_main_content_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/include_rpb_yellow_line_logo" />
+        <RelativeLayout android:id="@id/content_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/toolbar_background" android:background="?dsq_alt_main_content_background" android:layout_width="fill_parent" android:layout_height="@dimen/dsq_action_bar_height" android:scaleType="fitXY" android:layout_alignParentTop="true" android:contentDescription="@null" />
+            <android.support.v7.widget.Toolbar android:theme="@style/DSQStyled.Toolbar.Transparent" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_marginTop="@dimen/dsq_toolbar_top_margin">
+                <ImageView android:layout_gravity="center|right" android:id="@id/delete_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/actionBar_horizontal_margin" android:src="@drawable/delete_button" />
+                <ImageView android:layout_gravity="center|right" android:id="@id/reject_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/actionBar_horizontal_margin" android:src="@drawable/reject_next_pay" />
+                <ImageView android:layout_gravity="center|right" android:id="@id/edit_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/actionBar_horizontal_margin" android:src="@drawable/edit" />
+            </android.support.v7.widget.Toolbar>
+            <include layout="@layout/include_footer_logo" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar_background">
+                <include layout="@layout/loading" />
+                <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="start" android:id="@id/fragment_below_container" android:layout_width="320.0dip" android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

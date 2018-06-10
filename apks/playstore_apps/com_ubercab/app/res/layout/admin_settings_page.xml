@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.admin_settings.AdminSettingsView android:background="?android:windowBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UButton android:id="@id/experiments" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/experiments" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/force_alternate_launch_sequence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_settings_force_alternate_launch_sequence" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/force_crash_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_settings_force_crash_app" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/force_native_crash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_settings_force_native_crash" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/disable_plugins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plugins_disable" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/reset_feed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_settings_reset_feed" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/push_test_feed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_settings_push_test_feed" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/toggle_uicheck_ui_warnings" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uichecks_toggle" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/toggle_xray" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xray_toggle" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/network_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_settings_network" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/commute_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scheduled_commute_settings" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/generate_pending_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/generate_pending_rating" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/reset_profile_name_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reset_profile_label" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/reset_directed_dispatch_hop_on_tooltip_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/directed_dispatch_reset_hop_on_tooltip_count" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/install_referrer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/install_referrer_label" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.presidio.app.optional.root.main.admin_settings.AdminSettingsView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UFrameLayout android:id="@id/ub__partner_funnel_step_upgrade_carousel_root" android:background="@color/ub__white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/ub__upgrade_step_active_referrals_top_linear_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_4x">
+                <com.ubercab.ui.CircleImageView android:layout_gravity="center_vertical" android:id="@id/ub__upgrade_step_active_referrals_avatar" android:layout_width="@dimen/ui__avatar_size_small" android:layout_height="@dimen/ui__avatar_size_small" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" />
+                <com.ubercab.ui.core.UTextView android:textColor="@color/ub__partner_funnel_helix_positive" android:layout_gravity="center_vertical" android:id="@id/ub__upgrade_step_active_referrals_credit_confirmation" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Funnel.Helix.TextAppearance.H5.Medium" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__upgrade_step_active_referrals_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_4x" style="@style/Funnel.Helix.TextAppearance.H1.Book" />
+            <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" uber:srcCompat="@drawable/ub__partner_funnel_upgrade_step_address_pin" />
+                <com.ubercab.ui.core.UTextView android:textColor="@color/ub__partner_funnel_helix_accent_cta" android:ellipsize="end" android:id="@id/ub__upgrade_step_active_referrals_selected_city" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ub__partner_funnel_upgrade_select_city" android:maxLines="1" android:layout_weight="1.0" style="@style/Funnel.Helix.TextAppearance.H5.Medium" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/ub__partner_funnel_helix_grey_20" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__upgrade_step_active_referrals_legal_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" style="@style/Funnel.Helix.TextAppearance.H6.News.Tertiary" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__upgrade_step_active_referrals_cta" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Funnel.Helix.Button.Primary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.UFrameLayout>

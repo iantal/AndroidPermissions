@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.confirmation.directed_dispatch.DirectedDispatchHopOnConfirmationView android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="a81e74ee-7714"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UButton android:id="@id/directed_dispatch_confirmation_hop_on" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/directed_dispatch_hop_on_confirmation_hop_on" android:layout_weight="1.0" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" uber:analyticsId="8497bf8b-c6d1" style="?platformButtonSecondary" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Space android:id="@id/directed_dispatch_confirmation_request_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.ubercab.ui.core.UButton android:id="@id/directed_dispatch_confirmation_request" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/directed_dispatch_hop_on_confirmation_request" android:layout_weight="1.0" android:layout_marginStart="@dimen/ui__spacing_unit_1x" uber:analyticsId="d0bddfbc-d8d8" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.request.confirmation.directed_dispatch.DirectedDispatchHopOnConfirmationView>

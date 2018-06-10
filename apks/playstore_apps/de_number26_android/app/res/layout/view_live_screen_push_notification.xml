@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.idnow.sdk.views.AnimationAverseLinearLayout android:orientation="vertical" android:background="#80d3d3d3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/notifyViaPushUpperPanel" android:layout_width="fill_parent" android:layout_height="150.0dip" android:minHeight="150.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/notifyTextContainerLayout" android:layout_width="280.0dip" android:layout_height="fill_parent">
+            <TextView android:textSize="20.0sp" android:textColor="@color/headline" android:gravity="left" android:id="@id/notifyViaPushTitle" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sms_stage1_title" android:maxLines="3" />
+            <TextView android:textSize="14.0sp" android:gravity="left" android:id="@id/notifyViaPushContent" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sms_stage1_details" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="80.0dip" android:layout_height="fill_parent" android:minWidth="80.0dip" android:layout_toRightOf="@id/notifyTextContainerLayout">
+            <Button android:textColor="@android:color/white" android:id="@id/notifyViaPushOKButton" android:background="@color/headline" android:padding="8.0dip" android:visibility="visible" android:layout_width="80.0dip" android:layout_height="fill_parent" android:text="OK" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/notifyViaPushLowerPanel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="150.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@color/headline" android:id="@id/notifyViaPushLowerPanelTitle" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="32.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sms_stage2_title" />
+        <TextView android:id="@id/notifyViaPushDetails" android:padding="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sms_stage2_details" android:layout_below="@id/notifyViaPushLowerPanelTitle" />
+        <Button android:textColor="@android:color/white" android:id="@id/notifyViaPushSend" android:background="@color/headline" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/sms_requestpushbutton_title" android:layout_below="@id/notifyViaPushDetails" />
+    </RelativeLayout>
+</de.idnow.sdk.views.AnimationAverseLinearLayout>

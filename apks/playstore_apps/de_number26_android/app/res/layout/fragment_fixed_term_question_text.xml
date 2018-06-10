@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="24.0sp" android:id="@id/text_fixed_term_question_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="16.0dip" fontPath="@string/font_regular" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:id="@id/text_fixed_term_question_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="24.0sp" fontPath="@string/font_regular" />
+        <EditText android:textSize="24.0sp" android:id="@id/edit_fixed_term_question_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:inputType="text" fontPath="@string/font_regular" />
+        <TextView android:textAppearance="@style/TextAppearance.Form.Text" android:textColor="@color/red" android:gravity="center" android:id="@id/text_fixed_term_question_text_error" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple n1:color="@color/main_blue_pressed"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <item n1:id="@android:id/mask">
+        <shape n1:shape="rectangle">
+            <solid n1:color="@color/white" />
+            <corners n1:radius="@dimen/loa_category_tag_corner" />
+        </shape>
+    </item>
+    <item>
+        <shape n1:shape="rectangle">
+            <corners n1:radius="@dimen/loa_category_tag_corner" />
+            <solid n1:color="@color/main_blue" />
+        </shape>
+    </item>
+</ripple>

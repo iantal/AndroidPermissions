@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_ordereditem_index" android:layout_width="@dimen/ub__partner_funnel_ordereditem_index_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ub__partner_funnel_padding_list_cell_small" android:layout_marginStart="@dimen/ub__partner_funnel_padding_list_cell" style="@style/Uber.Partner.Funnel.TextAppearance.Step.Description"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_ordereditem_index_textview" android:paddingLeft="@dimen/ub__partner_funnel_padding_list_cell" android:paddingRight="@dimen/ub__partner_funnel_padding_list_cell" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ub__partner_funnel_padding_list_cell_small" android:drawablePadding="@dimen/ub__partner_funnel_checklist_drawable_padding" android:layout_weight="1.0" style="@style/Uber.Partner.Funnel.TextAppearance.Step.Description"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

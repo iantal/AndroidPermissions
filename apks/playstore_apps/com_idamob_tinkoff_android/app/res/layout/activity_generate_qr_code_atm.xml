@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/accounts" style="@style/AccountsCarouselPager" />
+            <include layout="@layout/inc_carousel_bottom_arrow" />
+            <fragment n1:name="ru.tcsbank.mb.ui.providers.ProviderHeaderFragment" n1:id="@id/fragment_provider_header" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <FrameLayout n1:id="@id/fields_fragment_content" style="@style/VerticalWrapping" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/currencies_select_wrapper" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_marginTop="@dimen/offset_from_edge" style="@style/VerticalWrapping">
+                <RadioGroup n1:orientation="horizontal" n1:id="@id/currencies_radio_group" n1:layout_height="@dimen/tile_height_default_item" style="@style/VerticalWrapping">
+                    <RadioButton n1:checked="true" n1:text="@string/currency_title_rub" style="@style/CloseDepositWhen.RadioButton" />
+                    <RadioButton n1:text="@string/currency_title_usd" style="@style/CloseDepositWhen.RadioButton" />
+                    <RadioButton n1:text="@string/currency_title_eur" style="@style/CloseDepositWhen.RadioButton" />
+                </RadioGroup>
+                <include layout="@layout/inc_divider" />
+            </LinearLayout>
+            <include layout="@layout/inc_pcf_amount" />
+            <fragment n1:name="ru.tcsbank.mb.ui.fragments.qrcode.MoneyPickerFragment" n1:id="@id/fragment_money_picker" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge_half" />
+            <TextView n1:textColor="@color/n4" n1:gravity="center_horizontal" n1:id="@id/txt_divisor" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:text="@string/atm_qr_divisible_label" />
+            <Button n1:id="@id/btn_generate_qr" n1:background="@drawable/selector_button_yellow" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" n1:text="@string/atm_qr_generate_qr_button" style="@style/Button.Yellow.Normal" />
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Hint" n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" n1:text="@string/atm_qr_parameters_comission_note" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

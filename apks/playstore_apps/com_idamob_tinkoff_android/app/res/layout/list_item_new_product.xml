@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/offset_from_edge"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small.White" n1:gravity="center|right" n1:id="@id/label" n1:paddingBottom="@dimen/fab_shadow_offset" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+    <ru.tcsbank.mb.ui.widgets.FloatingActionButton n1:id="@id/icon" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:fab_colorNormal="@color/main_blue" n2:fab_colorPressed="@color/dark_blue" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

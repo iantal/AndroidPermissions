@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lp_ttr_message_days">
+        <item quantity="other">" %1$s일"</item>
+        <item quantity="one">" %1$s일"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_hours">
+        <item quantity="other">" %1$s시간"</item>
+        <item quantity="one">" %1$s시간"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_minutes">
+        <item quantity="other">" %1$s분"</item>
+        <item quantity="one">" %1$s분"</item>
+    </plurals>
+    <plurals name="lp_unread_message">
+        <item quantity="other">%1$d 읽지 않은 메시지</item>
+        <item quantity="one">%1$d 읽지 않은 메시지</item>
+    </plurals>
+</resources>

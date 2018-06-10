@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_add_new_recipient" />
+    <com.mobile.ui.common.view.BaseSearchBarView n1:id="@id/paymentHubSearchBarView" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:contentDescription="@string/accessibility_payment_hub_recipient_search_bar_description" />
+    <com.mobile.ui.common.view.HeaderFooterRecyclerView n1:id="@id/paymentHubRecipientsList" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:splitMotionEvents="false" n2:dividerDrawable="@drawable/all_list_divider" n2:layoutManager="android.support.v7.widget.LinearLayoutManager" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.mobile.ui.common.view.NotificationView n1:id="@id/errorNotificationView" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</LinearLayout>

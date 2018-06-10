@@ -1,0 +1,155 @@
+.class public final Lru/tcsbank/mb/model/av/g;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:Lru/tinkoff/mb/api/entities/v/a;
+
+.field private final b:Ljava/lang/Boolean;
+
+
+# direct methods
+.method public constructor <init>(Lru/tinkoff/mb/api/entities/v/a;Ljava/lang/Boolean;)V
+    .locals 0
+
+    .prologue
+    .line 17
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 18
+    iput-object p1, p0, Lru/tcsbank/mb/model/av/g;->a:Lru/tinkoff/mb/api/entities/v/a;
+
+    .line 19
+    iput-object p2, p0, Lru/tcsbank/mb/model/av/g;->b:Ljava/lang/Boolean;
+
+    .line 20
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Z
+    .locals 1
+
+    .prologue
+    .line 27
+    iget-object v0, p0, Lru/tcsbank/mb/model/av/g;->b:Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lru/tcsbank/mb/model/av/g;->b:Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    :goto_0
+    return v0
+
+    :cond_0
+    iget-object v0, p0, Lru/tcsbank/mb/model/av/g;->a:Lru/tinkoff/mb/api/entities/v/a;
+
+    .line 1070
+    iget-boolean v0, v0, Lru/tinkoff/mb/api/entities/v/a;->f:Z
+
+    goto :goto_0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .prologue
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    .line 32
+    if-ne p0, p1, :cond_1
+
+    .line 36
+    :cond_0
+    :goto_0
+    return v0
+
+    .line 33
+    :cond_1
+    if-eqz p1, :cond_2
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v3
+
+    if-eq v2, v3, :cond_3
+
+    :cond_2
+    move v0, v1
+
+    goto :goto_0
+
+    .line 34
+    :cond_3
+    check-cast p1, Lru/tcsbank/mb/model/av/g;
+
+    .line 35
+    iget-object v2, p0, Lru/tcsbank/mb/model/av/g;->a:Lru/tinkoff/mb/api/entities/v/a;
+
+    iget-object v3, p1, Lru/tcsbank/mb/model/av/g;->a:Lru/tinkoff/mb/api/entities/v/a;
+
+    invoke-static {v2, v3}, Lcom/google/common/a/j;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    iget-object v2, p0, Lru/tcsbank/mb/model/av/g;->b:Ljava/lang/Boolean;
+
+    iget-object v3, p1, Lru/tcsbank/mb/model/av/g;->b:Ljava/lang/Boolean;
+
+    .line 36
+    invoke-static {v2, v3}, Lcom/google/common/a/j;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    :cond_4
+    move v0, v1
+
+    .line 35
+    goto :goto_0
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .prologue
+    .line 41
+    const/4 v0, 0x2
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    const/4 v1, 0x0
+
+    iget-object v2, p0, Lru/tcsbank/mb/model/av/g;->a:Lru/tinkoff/mb/api/entities/v/a;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    iget-object v2, p0, Lru/tcsbank/mb/model/av/g;->b:Ljava/lang/Boolean;
+
+    aput-object v2, v0, v1
+
+    .line 1079
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result v0
+
+    .line 41
+    return v0
+.end method

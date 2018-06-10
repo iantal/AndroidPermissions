@@ -1,0 +1,110 @@
+.class public final Lqxy;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private final a:Lyto;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lyto<",
+            "Lqyc;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final b:Lyto;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lyto<",
+            "Lqxl;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lyto;Lyto;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lyto<",
+            "Lqyc;",
+            ">;",
+            "Lyto<",
+            "Lqxl;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 18
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 19
+    invoke-static {p1, v0}, Lfid;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lyto;
+
+    iput-object p1, p0, Lqxy;->a:Lyto;
+
+    const/4 p1, 0x2
+
+    .line 20
+    invoke-static {p2, p1}, Lfid;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lyto;
+
+    iput-object p1, p0, Lqxy;->b:Lyto;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lqxt;
+    .locals 4
+
+    .line 24
+    new-instance v0, Lqxt;
+
+    iget-object v1, p0, Lqxy;->a:Lyto;
+
+    invoke-interface {v1}, Lyto;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-static {v1, v2}, Lfid;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lqyc;
+
+    iget-object v2, p0, Lqxy;->b:Lyto;
+
+    invoke-interface {v2}, Lyto;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    const/4 v3, 0x2
+
+    invoke-static {v2, v3}, Lfid;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lqxl;
+
+    invoke-direct {v0, v1, v2}, Lqxt;-><init>(Lqyc;Lqxl;)V
+
+    return-object v0
+.end method

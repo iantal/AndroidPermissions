@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/issue_additional_limits_form" n1:background="@color/white" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge_half" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <Switch n1:id="@id/issue_additional_switch_sms_bank" n1:text="@string/issue_additional_card_sms_bank_switch" style="@style/DefaultItem.Padding" />
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/issue_additional_sms_hint" n1:padding="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/issue_additional_card_sms_bank_hint" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:fieldClass="@string/mb_money_amount_smart_field" n2:fieldKey="monthLimit" n2:fieldTitle="@string/issue_additional_card_monthly_limit" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:fieldClass="@string/mb_money_amount_smart_field" n3:fieldKey="dayLimit" n3:fieldTitle="@string/issue_additional_card_daily_limit" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <Button n1:id="@id/issue_additional_btn_issue" n1:layout_marginTop="@dimen/offset_from_edge" n1:text="@string/issue_additional_card_issue_card_button" style="@style/Button.Yellow.Normal" />
+</LinearLayout>

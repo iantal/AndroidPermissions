@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UConstraintLayout android:theme="@style/Theme.Helix.Light" android:background="?android:colorBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:id="@id/disable_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rider_location_sharing_disable_title" style="@style/Platform.TextAppearance.H2.News.Primary" />
+    <com.ubercab.ui.core.UTextView android:id="@id/disable_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:text="@string/rider_location_sharing_disable_message" app:layout_constraintTop_toBottomOf="@id/disable_title" style="@style/Platform.TextAppearance.P" />
+    <com.ubercab.ui.core.UButton android:id="@id/disable_accept_button" android:layout_width="fill_parent" android:layout_height="@dimen/ui__min_button_height_helix" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/rider_location_sharing_disable_accept" app:layout_constraintTop_toBottomOf="@id/disable_message" app:analyticsId="a2a2e9d3-52ec" style="@style/Platform.Button.Primary" />
+</com.ubercab.ui.core.UConstraintLayout>

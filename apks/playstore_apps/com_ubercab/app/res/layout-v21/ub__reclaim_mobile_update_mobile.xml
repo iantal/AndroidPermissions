@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.reclaim_mobile.mobile.UpdateMobileView android:background="?android:windowBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="b10f9034-9ec1"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UAppBarLayout android:id="@id/appbar" android:background="@color/ub__ui_core_transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/header_elevation" uber:contentInsetStartWithNavigation="0.0dip">
+        <com.ubercab.ui.core.UToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" uber:contentInsetStartWithNavigation="0.0dip" uber:popupTheme="@style/ThemeOverlay.AppCompat.Light" uber:titleTextAppearance="@style/Platform.TextAppearance.H3.Book" uber:layout_collapseMode="pin" style="@style/Widget.Platform.Toolbar" />
+    </com.ubercab.ui.core.UAppBarLayout>
+    <com.ubercab.ui.core.UScrollView android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/mobile_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/reclaim_update_mobile" style="@style/Platform.TextAppearance.H3.Book" />
+            <com.ubercab.ui.core.UFrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mobile_input_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+    <com.ubercab.ui.core.UButton android:layout_gravity="bottom" android:id="@id/ub__mobile_reclaim_continue" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset" android:text="@string/reclaim_mobile_continue" uber:analyticsId="66334bf6-9c99" style="?platformButtonPrimary" />
+</com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.reclaim_mobile.mobile.UpdateMobileView>

@@ -1,0 +1,24 @@
+import java.util.concurrent.Callable;
+
+final class bju
+  implements Callable<Void>
+{
+  private final int[] a;
+  private final int b;
+  private final int c;
+  private final int d;
+  private final int e;
+  private final int f;
+  private final int g;
+  
+  public bju(int[] paramArrayOfInt, int paramInt1, int paramInt2, int paramInt3, int paramInt4, int paramInt5, int paramInt6)
+  {
+    this.a = paramArrayOfInt;
+    this.b = paramInt1;
+    this.c = paramInt2;
+    this.d = paramInt3;
+    this.e = paramInt4;
+    this.f = paramInt5;
+    this.g = paramInt6;
+  }
+}

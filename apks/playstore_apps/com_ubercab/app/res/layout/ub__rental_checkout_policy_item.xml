@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.URelativeLayout android:background="?brandWhite" android:padding="?contentInset" android:layout_width="@dimen/ui__rental_carousel_img_width" android:layout_height="wrap_content" android:layout_marginTop="?contentInset" android:layout_marginBottom="?contentInset" android:foreground="?selectableItemBackgroundBorderless"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__policy_next_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?colorNotice" android:layout_centerVertical="true" android:layout_alignParentEnd="true" uber:srcCompat="@drawable/ic_caret_right_16" />
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ub__checkout_policy_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_toStartOf="@id/ub__policy_next_icon">
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__checkout_policy_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/Platform.TextAppearance.H5.News" />
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__checkout_policy_description" android:paddingTop="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" android:paddingStart="@dimen/ub__rental_dummy_dimen" android:paddingEnd="@dimen/ui__spacing_unit_2x" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.URelativeLayout>

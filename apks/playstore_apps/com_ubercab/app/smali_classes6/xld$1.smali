@@ -1,0 +1,109 @@
+.class Lxld$1;
+.super Lcom/ubercab/rx2/java/CrashOnErrorConsumer;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lxld;->a()Lio/reactivex/observers/DisposableObserver;
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/ubercab/rx2/java/CrashOnErrorConsumer<",
+        "Lhdm<",
+        "Lcom/uber/model/core/generated/rtapi/services/ump/PostThreadActivityRequest;",
+        ">;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lxld;
+
+
+# direct methods
+.method constructor <init>(Lxld;)V
+    .locals 0
+
+    .line 41
+    iput-object p1, p0, Lxld$1;->a:Lxld;
+
+    invoke-direct {p0}, Lcom/ubercab/rx2/java/CrashOnErrorConsumer;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lhdm;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lhdm<",
+            "Lcom/uber/model/core/generated/rtapi/services/ump/PostThreadActivityRequest;",
+            ">;)V"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 44
+    iget-object v0, p0, Lxld$1;->a:Lxld;
+
+    invoke-static {v0}, Lxld;->a(Lxld;)Lhmu;
+
+    move-result-object v0
+
+    const-string v1, "879a4f32-29a0"
+
+    invoke-virtual {v0, v1}, Lhmu;->a(Ljava/lang/String;)V
+
+    if-eqz p1, :cond_0
+
+    .line 45
+    invoke-virtual {p1}, Lhdm;->a()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 46
+    iget-object v0, p0, Lxld$1;->a:Lxld;
+
+    invoke-static {v0}, Lxld;->b(Lxld;)Ljgr;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Lhdm;->a()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/uber/model/core/generated/rtapi/services/ump/PostThreadActivityRequest;
+
+    invoke-interface {v0, p1}, Ljgr;->a(Lcom/uber/model/core/generated/rtapi/services/ump/PostThreadActivityRequest;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public bridge synthetic a(Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 41
+    check-cast p1, Lhdm;
+
+    invoke-virtual {p0, p1}, Lxld$1;->a(Lhdm;)V
+
+    return-void
+.end method

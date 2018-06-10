@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/roundrect_shape" android:paddingTop="2.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:layout_marginBottom="2.5dip" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/view_deposit_name" style="@style/MatchParentWrapContent">
+        <TextView android:id="@id/tv_error_deposit_name" android:background="@drawable/roundrect_shape_text_view" android:visibility="gone" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" style="@style/ErrorStrip" />
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_deposit_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/deposit_name" style="@style/PaymentItemTextSmallBold" />
+        <Spinner android:gravity="center_vertical" android:id="@id/spinner_deposit_name" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="5.0dip" style="@style/MatchParentWrapContent" />
+    </LinearLayout>
+    <View android:background="@color/separator_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/view_type_of_deposit" style="@style/MatchParentWrapContent">
+        <TextView android:id="@id/tv_error_type_of_deposit" android:background="@color/error_warning_bar" android:visibility="gone" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" style="@style/ErrorStrip" />
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_type_of_deposit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/type_of_deposit" style="@style/PaymentItemTextSmallBold" />
+        <Spinner android:gravity="center_vertical" android:id="@id/spinner_type_of_deposit" android:layout_height="60.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="5.0dip" style="@style/MatchParentWrapContent" />
+    </LinearLayout>
+</LinearLayout>

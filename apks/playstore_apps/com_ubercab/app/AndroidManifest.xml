@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ubercab" platformBuildVersionCode="27" platformBuildVersionName="8.1.0">
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.ubercab.permission.C2D_MESSAGE"/>
+    <permission android:name="com.ubercab.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="com.ubercab.permission.RECEIVE_BROADCAST" android:protectionLevel="signature"/>
+    <meta-data android:name="com.uber.rosetta.namespace" android:value="mobile-android_apps_presidio_helix_accelerators-main"/>
+    <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission-sdk-23 android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.barometer" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.stepcounter" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.stepdetector" android:required="false"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH"/>
+    <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <application android:allowBackup="false" android:debuggable="false" android:hardwareAccelerated="true" android:icon="@mipmap/ub__ic_launcher" android:label="@string/ub__rider_app_name" android:largeHeap="@bool/ub__use_large_heap" android:name="com.ubercab.presidio.PresidioApplication" android:resizeableActivity="false" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/Theme.Helix.App">
+        <activity android:launchMode="singleTask" android:name="com.ubercab.presidio.app.core.root.RootActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Helix.Splash" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="uber"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="uberm.bttn.io" android:pathPattern=".*" android:scheme="http"/>
+                <data android:host="uberm.bttn.io" android:pathPattern=".*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="plus.uber.com" android:pathPattern="/v2/.*/buy" android:scheme="http"/>
+                <data android:host="plus.uber.com" android:pathPattern="/v2/.*/buy" android:scheme="https"/>
+                <data android:host="plus.uber.com" android:pathPattern="/.*/buy" android:scheme="http"/>
+                <data android:host="plus.uber.com" android:pathPattern="/.*/buy" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m.uber.com" android:pathPrefix="/ul/" android:scheme="http"/>
+                <data android:host="m.uber.com" android:pathPrefix="/ul/" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="auth.uber.com" android:pathPattern="/login/stage/.*/.*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="biz.uber.com" android:pathPrefix="/public/redeem-employee-invite" android:scheme="http"/>
+                <data android:host="biz.uber.com" android:pathPrefix="/public/redeem-employee-invite" android:scheme="https"/>
+                <data android:host="biz.uber.com" android:pathPrefix="/public/push-inapp-invite" android:scheme="http"/>
+                <data android:host="biz.uber.com" android:pathPrefix="/public/push-inapp-invite" android:scheme="https"/>
+                <data android:host="biz.uber.com" android:pathPrefix="/public/redeem-inapp-invite" android:scheme="http"/>
+                <data android:host="biz.uber.com" android:pathPrefix="/public/redeem-inapp-invite" android:scheme="https"/>
+                <data android:host="biz.uber.com" android:pathPrefix="/public/push-flagged-trips" android:scheme="https"/>
+                <data android:host="biz.uber.com" android:pathPrefix="/public/push-flagged-trips" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="uber_performance_debug"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/line_auth_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="p.uber.com"/>
+                <data android:host="partners.uber.com"/>
+                <data android:path="/open-mobile-app/any/none"/>
+                <data android:path="/open-mobile-app/rider/none"/>
+                <data android:path="/open-mobile-app/any/partner_onboarding"/>
+                <data android:path="/open-mobile-app/rider/partner_onboarding"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:path="/"/>
+                <data android:pathPrefix="/maps"/>
+                <data android:host="local.google.com"/>
+                <data android:host="maps.google.ad"/>
+                <data android:host="maps.google.ae"/>
+                <data android:host="maps.google.as"/>
+                <data android:host="maps.google.at"/>
+                <data android:host="maps.google.ba"/>
+                <data android:host="maps.google.be"/>
+                <data android:host="maps.google.bf"/>
+                <data android:host="maps.google.bg"/>
+                <data android:host="maps.google.bi"/>
+                <data android:host="maps.google.bj"/>
+                <data android:host="maps.google.bs"/>
+                <data android:host="maps.google.bt"/>
+                <data android:host="maps.google.ca"/>
+                <data android:host="maps.google.cd"/>
+                <data android:host="maps.google.cf"/>
+                <data android:host="maps.google.cg"/>
+                <data android:host="maps.google.ch"/>
+                <data android:host="maps.google.ci"/>
+                <data android:host="maps.google.cl"/>
+                <data android:host="maps.google.cm"/>
+                <data android:host="maps.google.cn"/>
+                <data android:host="maps.google.co.ao"/>
+                <data android:host="maps.google.co.bw"/>
+                <data android:host="maps.google.co.ck"/>
+                <data android:host="maps.google.co.cr"/>
+                <data android:host="maps.google.co.id"/>
+                <data android:host="maps.google.co.il"/>
+                <data android:host="maps.google.co.in"/>
+                <data android:host="maps.google.co.jp"/>
+                <data android:host="maps.google.co.ke"/>
+                <data android:host="maps.google.co.kr"/>
+                <data android:host="maps.google.co.ls"/>
+                <data android:host="maps.google.co.mz"/>
+                <data android:host="maps.google.co.nz"/>
+                <data android:host="maps.google.co.th"/>
+                <data android:host="maps.google.co.tz"/>
+                <data android:host="maps.google.co.ug"/>
+                <data android:host="maps.google.co.uk"/>
+                <data android:host="maps.google.co.ve"/>
+                <data android:host="maps.google.co.vi"/>
+                <data android:host="maps.google.co.za"/>
+                <data android:host="maps.google.co.zm"/>
+                <data android:host="maps.google.co.zw"/>
+                <data android:host="maps.google.com"/>
+                <data android:host="maps.google.com.ag"/>
+                <data android:host="maps.google.com.ai"/>
+                <data android:host="maps.google.com.ar"/>
+                <data android:host="maps.google.com.au"/>
+                <data android:host="maps.google.com.bd"/>
+                <data android:host="maps.google.com.bh"/>
+                <data android:host="maps.google.com.bn"/>
+                <data android:host="maps.google.com.bo"/>
+                <data android:host="maps.google.com.br"/>
+                <data android:host="maps.google.com.bz"/>
+                <data android:host="maps.google.com.cu"/>
+                <data android:host="maps.google.com.do"/>
+                <data android:host="maps.google.com.ec"/>
+                <data android:host="maps.google.com.eg"/>
+                <data android:host="maps.google.com.et"/>
+                <data android:host="maps.google.com.fj"/>
+                <data android:host="maps.google.com.gh"/>
+                <data android:host="maps.google.com.gi"/>
+                <data android:host="maps.google.com.gt"/>
+                <data android:host="maps.google.com.hk"/>
+                <data android:host="maps.google.com.jm"/>
+                <data android:host="maps.google.com.kh"/>
+                <data android:host="maps.google.com.kw"/>
+                <data android:host="maps.google.com.lb"/>
+                <data android:host="maps.google.com.lv"/>
+                <data android:host="maps.google.com.ly"/>
+                <data android:host="maps.google.com.mt"/>
+                <data android:host="maps.google.com.mx"/>
+                <data android:host="maps.google.com.my"/>
+                <data android:host="maps.google.com.na"/>
+                <data android:host="maps.google.com.ng"/>
+                <data android:host="maps.google.com.ni"/>
+                <data android:host="maps.google.com.np"/>
+                <data android:host="maps.google.com.om"/>
+                <data android:host="maps.google.com.pa"/>
+                <data android:host="maps.google.com.pe"/>
+                <data android:host="maps.google.com.pg"/>
+                <data android:host="maps.google.com.ph"/>
+                <data android:host="maps.google.com.pr"/>
+                <data android:host="maps.google.com.py"/>
+                <data android:host="maps.google.com.qa"/>
+                <data android:host="maps.google.com.sa"/>
+                <data android:host="maps.google.com.sb"/>
+                <data android:host="maps.google.com.sg"/>
+                <data android:host="maps.google.com.sl"/>
+                <data android:host="maps.google.com.sv"/>
+                <data android:host="maps.google.com.tw"/>
+                <data android:host="maps.google.com.ua"/>
+                <data android:host="maps.google.com.uy"/>
+                <data android:host="maps.google.com.vc"/>
+                <data android:host="maps.google.cv"/>
+                <data android:host="maps.google.cz"/>
+                <data android:host="maps.google.de"/>
+                <data android:host="maps.google.dj"/>
+                <data android:host="maps.google.dk"/>
+                <data android:host="maps.google.dm"/>
+                <data android:host="maps.google.dz"/>
+                <data android:host="maps.google.ee"/>
+                <data android:host="maps.google.es"/>
+                <data android:host="maps.google.fi"/>
+                <data android:host="maps.google.fm"/>
+                <data android:host="maps.google.fr"/>
+                <data android:host="maps.google.ga"/>
+                <data android:host="maps.google.ge"/>
+                <data android:host="maps.google.gg"/>
+                <data android:host="maps.google.gl"/>
+                <data android:host="maps.google.gm"/>
+                <data android:host="maps.google.gp"/>
+                <data android:host="maps.google.gr"/>
+                <data android:host="maps.google.gy"/>
+                <data android:host="maps.google.hn"/>
+                <data android:host="maps.google.hr"/>
+                <data android:host="maps.google.ht"/>
+                <data android:host="maps.google.hu"/>
+                <data android:host="maps.google.ie"/>
+                <data android:host="maps.google.im"/>
+                <data android:host="maps.google.iq"/>
+                <data android:host="maps.google.is"/>
+                <data android:host="maps.google.it"/>
+                <data android:host="maps.google.je"/>
+                <data android:host="maps.google.jo"/>
+                <data android:host="maps.google.ki"/>
+                <data android:host="maps.google.la"/>
+                <data android:host="maps.google.li"/>
+                <data android:host="maps.google.lk"/>
+                <data android:host="maps.google.lt"/>
+                <data android:host="maps.google.lu"/>
+                <data android:host="maps.google.lv"/>
+                <data android:host="maps.google.md"/>
+                <data android:host="maps.google.mg"/>
+                <data android:host="maps.google.mk"/>
+                <data android:host="maps.google.ml"/>
+                <data android:host="maps.google.mn"/>
+                <data android:host="maps.google.ms"/>
+                <data android:host="maps.google.mt"/>
+                <data android:host="maps.google.mu"/>
+                <data android:host="maps.google.mv"/>
+                <data android:host="maps.google.mw"/>
+                <data android:host="maps.google.ne"/>
+                <data android:host="maps.google.nf"/>
+                <data android:host="maps.google.nl"/>
+                <data android:host="maps.google.no"/>
+                <data android:host="maps.google.nr"/>
+                <data android:host="maps.google.nu"/>
+                <data android:host="maps.google.pl"/>
+                <data android:host="maps.google.pn"/>
+                <data android:host="maps.google.pt"/>
+                <data android:host="maps.google.ro"/>
+                <data android:host="maps.google.rs"/>
+                <data android:host="maps.google.ru"/>
+                <data android:host="maps.google.rw"/>
+                <data android:host="maps.google.sc"/>
+                <data android:host="maps.google.se"/>
+                <data android:host="maps.google.sh"/>
+                <data android:host="maps.google.si"/>
+                <data android:host="maps.google.sk"/>
+                <data android:host="maps.google.sm"/>
+                <data android:host="maps.google.sn"/>
+                <data android:host="maps.google.so"/>
+                <data android:host="maps.google.st"/>
+                <data android:host="maps.google.td"/>
+                <data android:host="maps.google.tg"/>
+                <data android:host="maps.google.tk"/>
+                <data android:host="maps.google.tl"/>
+                <data android:host="maps.google.tn"/>
+                <data android:host="maps.google.to"/>
+                <data android:host="maps.google.tt"/>
+                <data android:host="maps.google.vg"/>
+                <data android:host="maps.google.vu"/>
+                <data android:host="maps.google.ws"/>
+                <data android:host="mapy.google.pl"/>
+                <data android:host="maps.google.pl"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="goo.gl"/>
+                <data android:pathPrefix="/maps/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="geo"/>
+                <data android:scheme="google.navigation"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.ubercab.install_referrer.core.InstallReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="AdjustAppToken" android:value="5b27ezjsfqvw"/>
+        <meta-data android:name="AdjustLogLevel" android:value="info"/>
+        <meta-data android:name="AdjustEnvironment" android:value="production"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="c539e979e5ca22fe420a5e6c91687d3b22b04e50"/>
+        <meta-data android:name="com.facebook.API_KEY" android:value="@string/ub__facebook_app_id"/>
+        <meta-data android:name="com.google.CLIENT_ID" android:value="@string/default_web_client_id"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/ub__config_google_mapsv2key"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="jp.line.sdk.ChannelId" android:value="@string/line_channel_id"/>
+        <meta-data android:name="jp.line.sdk.AuthScheme" android:value="@string/line_auth_scheme"/>
+        <service android:enabled="false" android:name="com.ubercab.presidio.arrival_notification.geofence.GeofenceTransitionsIntentService"/>
+        <receiver android:name="com.ubercab.presidio.app.optional.notification.pool_commute.reminder.ReminderNotificationAlarmHandler"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.helix.help.feature.home.HelixHelpHomeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Helix.App"/>
+        <activity android:label="@string/uber_pass" android:name="com.ubercab.presidio.pass.refund.PassRefundActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.presidio.past_trip_details.PastTripDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Helix.App"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.presidio.past_trips.PastTripsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Helix.App"/>
+        <activity android:name="com.ubercab.socialprofiles_extensions.activity.SocialProfilesActivity"/>
+        <activity android:name="com.ubercab.socialprofiles_extensions.activity.SocialProfilesQuestionActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.presidio.third_party_help.yandex.YandexHelpActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/ub_optional__upgrade" android:name="com.ubercab.presidio.upgrade.force.optional.ForceUpgradeActivity" android:theme="@style/Theme.Helix.Light"/>
+        <activity android:label="@string/ub_optional__upgrade" android:name="com.ubercab.presidio.upgrade.employee.optional.EmployeeUpgradeActivity" android:theme="@style/Theme.Helix.Light"/>
+        <receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.ubercab"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.ubercab.push.GoogleListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.ubercab.presidio.pushnotifier.core.PushReceiver">
+            <intent-filter>
+                <action android:name="com.ubercab.push.UBER_MESSAGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.ubercab.presidio.pushnotifier.core.PushHandlerService"/>
+        <service android:exported="false" android:name="com.ubercab.presidio.pushnotifier.core.PushHandlerServiceV2">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.ubercab.persistent.place_cache.top_dest_scheduler.PlaceCacheUpdateService">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.ubercab.external_api.v1.UberApiService"/>
+        <activity android:name="com.ubercab.external_web_view.core.WebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="true" android:name="com.ubercab.login.AuthenticationService"/>
+        <receiver android:exported="false" android:name="com.ubercab.notification.optional.PushNotificationActionReceiver">
+            <intent-filter>
+                <action android:name="com.ubercab.presidio.PUSH_NOTIFICATION_ACTION_CLICK"/>
+                <action android:name="com.ubercab.presidio.PUSH_NOTIFICATION_ACTION_DELETE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/presidio_appfeedback_app_name" android:name="com.ubercab.feedback.optional.phabs.activity.ScreenshotNotificationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Helix.Light"/>
+        <activity android:label="@string/presidio_appfeedback_app_name" android:name="com.ubercab.feedback.optional.phabs.activity.FeedbackActivity" android:parentActivityName="com.ubercab.feedback.optional.phabs.activity.ScreenshotNotificationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Helix.Light">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ubercab.feedback.optional.phabs.activity.ScreenshotNotificationActivity"/>
+        </activity>
+        <service android:exported="false" android:label="" android:name="com.ubercab.presidio.non_sticky_service.core.NonStickyService" android:stopWithTask="false"/>
+        <service android:exported="false" android:label="" android:name="com.ubercab.presidio.sticky_service.core.StickyService"/>
+        <service android:exported="false" android:name="com.ubercab.signup_funnel_conversion.SignupFunnelConversionService">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.ubercab.presidio.storage.metrics.StorageMetricService">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.ubercab.presidio.uninstall.HeartBeatService">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.datami.smi.SmiIntentService"/>
+        <provider android:authorities="com.ubercab.apk_download.FileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.ubercab.apk_download.AppDownloadFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.help.feature.conversation_details.HelpConversationDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.help.feature.issue_list.HelpIssueListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.help.feature.workflow.HelpWorkflowActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.nfb.NFBActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.steps.bgc.BgcStepLegalActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.steps.bgc.BgcStepSsnActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.steps.documentslist.DocumentsListStepDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.incentives.IncentivesDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.steps.legalagreement.LegalAgreementStepActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.steps.legalagreement.LegalAgreementStepDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.steps.document.metadata.MetadataActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.steps.upgrade.UpgradeStepCityPickerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.SimpleTextActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.vehicleinspection.OfficeHoursSelectionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.chat.ZendeskChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.OnboardingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.steps.BasicFunnelStepActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.vehicleinspection.VehicleInspectionSelectionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.OnboardingPhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.android.partner.funnel.onboarding.metadata.DocumentMetadataActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.ubercab.android.partner.funnel.onboarding.supportmenu.SupportMenuActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.ubercab.android.partner.funnel.onboarding.HelixFinishedActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.ubercab.android.partner.funnel.onboarding.locations.HelixLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.ubercab.android.partner.funnel.onboarding.locations.HelixLocationSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.ubercab.android.partner.funnel.onboarding.locations.HelixOwnInspectionActivity" android:screenOrientation="portrait"/>
+        <receiver android:enabled="@bool/ub__connectivity_receiver_enabled" android:exported="false" android:name="com.ubercab.android.partner.funnel.onboarding.documents.ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:label="@string/ub__partner_funnel_empty" android:name="com.ubercab.android.partner.funnel.onboarding.documents.DocumentsUploadService"/>
+        <service android:name="com.ubercab.android.partner.funnel.onboarding.documents.DocumentUploadService2"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="io.card.payment.CardIOActivity"/>
+        <activity android:name="io.card.payment.DataEntryActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.ubercab.braintree"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.paypal.android.sdk.payments.PaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.paypal.android.sdk.payments.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.paypal.android.sdk.payments.PayPalService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ub__rds__empty" android:name="com.ubercab.rds.feature.badroutes.BadRoutesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ub__rds__empty" android:name="com.ubercab.rds.feature.cancellations.CancellationsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ub__rds__empty" android:name="com.ubercab.rds.feature.help.HelpActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ub__rds__empty" android:name="com.ubercab.rds.feature.help.HelpSupportActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ub__rds__empty" android:name="com.ubercab.rds.feature.messages.MessagesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ub__rds__empty" android:name="com.ubercab.rds.feature.support.SupportFormActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ub__rds__empty" android:name="com.ubercab.rds.feature.support.SupportPhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ub__rds__empty" android:name="com.ubercab.rds.feature.trip.TripProblemActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ub__rds__empty" android:name="com.ubercab.rds.feature.trip.TripReceiptOnlyActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ubercab.voip.VoipCallActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:label="" android:name="com.ubercab.voip.service.VoipKeepAliveService"/>
+        <activity android:label="@string/ub__analytics_events" android:name="com.ubercab.analytics.app.AnalyticsEventListActivity"/>
+        <activity android:label="@string/title_experiments" android:name="com.ubercab.experiment.ui.ExperimentsActivity" android:theme="@android:style/Theme.DeviceDefault.Light"/>
+        <activity android:name="com.ubercab.healthline.alternate.launch.core.AlternateLaunchWebActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <service android:exported="false" android:name="com.ubercab.healthline.crash.reporting.core.uploader.CrashUploadServiceV2" android:process=":processor"/>
+        <service android:exported="false" android:name="com.ubercab.healthline.crash.reporting.core.uploader.CrashUploadJobService">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.ubercab.healthline.direct_command.push.core.receiver.DirectCommandWakefulReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="com.ubercab.push.UBER_MESSAGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.ubercab.healthline.direct_command.push.core.service.DirectCommandNotificationService"/>
+        <service android:exported="false" android:name="com.ubercab.healthline.direct_command.push.core.service.DirectCommandNotificationJobService">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.ubercab.healthline.core.actions.ShowWebViewAction$WebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="true" android:icon="@mipmap/ic_launcher_style_guide" android:label="@string/presidio_style_guide_app_name" android:launchMode="singleTop" android:name="com.ubercab.presidio.styleguide.MainActivity">
+            <intent-filter>
+                <action android:name="com.ubercab.presidio.STYLE_GUIDE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="Activity Transition" android:name="com.ubercab.presidio.styleguide.sections.ActivityTransitionActivity" android:parentActivityName="com.ubercab.presidio.styleguide.AnimationActivity"/>
+        <activity android:exported="false" android:label="Animation" android:name="com.ubercab.presidio.styleguide.sections.AnimationActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity"/>
+        <activity android:exported="false" android:label="AttrResolver" android:name="com.ubercab.presidio.styleguide.sections.AttrResolverActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity"/>
+        <activity android:exported="false" android:label="Buttons" android:name="com.ubercab.presidio.styleguide.sections.ButtonsActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity"/>
+        <activity android:exported="false" android:label="Cards" android:name="com.ubercab.presidio.styleguide.sections.CardsActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity"/>
+        <activity android:exported="false" android:label="Colors" android:name="com.ubercab.presidio.styleguide.sections.ColorsActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity"/>
+        <activity android:exported="false" android:label="Forms" android:name="com.ubercab.presidio.styleguide.sections.EditTextActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="Elevation" android:name="com.ubercab.presidio.styleguide.sections.ElevationActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="Font Metrics" android:name="com.ubercab.presidio.styleguide.sections.FontMetricsActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity"/>
+        <activity android:exported="false" android:label="Forms" android:name="com.ubercab.presidio.styleguide.sections.FormsActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="Gravity Image View" android:name="com.ubercab.presidio.styleguide.sections.GravityImageActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="Icons" android:name="com.ubercab.presidio.styleguide.sections.IconsActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity"/>
+        <activity android:exported="false" android:label="Lists" android:name="com.ubercab.presidio.styleguide.sections.ListItemActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="Loading Indicators" android:name="com.ubercab.presidio.styleguide.sections.LoadingActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity"/>
+        <activity android:exported="false" android:label="OTP Input" android:name="com.ubercab.presidio.styleguide.sections.OTPActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity"/>
+        <activity android:exported="false" android:label="Screen Stack" android:name="com.ubercab.presidio.styleguide.sections.ScreenStackActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="Search Bar" android:name="com.ubercab.presidio.styleguide.sections.SearchActivity" android:parentActivityName="com.ubercab.presidio.styleguide.sections.SearchActivity"/>
+        <activity android:exported="false" android:label="Snackbars" android:name="com.ubercab.presidio.styleguide.sections.SnackbarsActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="Tabs" android:name="com.ubercab.presidio.styleguide.sections.TabsActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="Text Styles" android:name="com.ubercab.presidio.styleguide.sections.TextStylesActivity" android:parentActivityName="com.ubercab.presidio.styleguide.sections.TypographyActivity"/>
+        <activity android:exported="false" android:label="Third Party" android:name="com.ubercab.presidio.styleguide.sections.ThirdPartyActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="Typography" android:name="com.ubercab.presidio.styleguide.sections.TypographyActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity"/>
+        <activity android:exported="false" android:label="Vertical Picker view" android:name="com.ubercab.presidio.styleguide.sections.VerticalPickerActivity" android:parentActivityName="com.ubercab.presidio.styleguide.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.axis.axismerchantsdk.activity.PayActivity" android:screenOrientation="portrait" android:theme="@style/UpiSDKTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.braintreepayments.api.AndroidPayActivity" android:theme="@style/bt_transparent_activity"/>
+        <activity android:name="com.braintreepayments.api.GooglePaymentActivity" android:theme="@style/bt_transparent_activity"/>
+        <activity android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity"/>
+        <service android:name="com.braintreepayments.api.internal.AnalyticsIntentService"/>
+        <service android:exported="true" android:name="com.firebase.jobdispatcher.GooglePlayReceiver" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:label="@string/app_name" android:name="org.npci.upi.security.pinactivitycomponent.GetCredential" android:screenOrientation="portrait" android:theme="@style/ActivityTheme">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.pinactivitycomponent.GetCredential"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.CLRemoteServiceImpl">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.services.CLRemoteService"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/relativeLayout" android:layout_width="fill_parent" android:layout_height="?dsq_popular_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.viewpagerindicator.UnderlinePageIndicator android:id="@id/popularUnderlinePagerIndicator" android:layout_width="fill_parent" android:layout_height="@dimen/popular_indicator_height" app:selectedColor="@color/raiffeisen_yellow" app:fades="false" />
+    <LinearLayout android:gravity="center" android:id="@id/leftLinearLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/leftImageView" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/up_arrow" />
+    </LinearLayout>
+    <com.thinkdesquared.banking.helpers.ui.widgets.popularRelativeLayout.PopularViewPager android:id="@id/popularViewPager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/rightLinearLayout" android:layout_toRightOf="@id/leftLinearLayout" />
+    <LinearLayout android:gravity="center" android:id="@id/rightLinearLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/rightImageView" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/up_arrow" />
+    </LinearLayout>
+</merge>

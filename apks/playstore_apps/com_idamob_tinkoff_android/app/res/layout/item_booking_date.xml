@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:background="@drawable/booking_date_background" n1:layout_width="48.0dip" n1:layout_height="48.0dip" n1:layout_marginLeft="6.0dip" n1:layout_marginRight="6.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Default" n1:textColor="@color/booking_date_time_primary" n1:id="@id/day_of_month" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:includeFontPadding="false" />
+    <TextView n1:textAppearance="@style/Text.ExtraSmall" n1:textColor="@color/booking_date_time_secondary" n1:id="@id/day_of_week" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="-2.0dip" n1:includeFontPadding="false" />
+</LinearLayout>

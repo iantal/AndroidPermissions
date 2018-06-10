@@ -1,0 +1,138 @@
+package com.fasterxml.jackson.databind.ser;
+
+import com.fasterxml.jackson.databind.JavaType;
+import com.fasterxml.jackson.databind.JsonSerializer;
+import com.fasterxml.jackson.databind.SerializerProvider;
+import com.fasterxml.jackson.databind.ser.impl.ReadOnlyClassToSerializerMap;
+import com.fasterxml.jackson.databind.util.TypeKey;
+import java.util.HashMap;
+import java.util.concurrent.atomic.AtomicReference;
+
+public final class SerializerCache
+{
+  private final AtomicReference<ReadOnlyClassToSerializerMap> _readOnlyMap = new AtomicReference();
+  private final HashMap<TypeKey, JsonSerializer<Object>> _sharedMap = new HashMap(64);
+  
+  public SerializerCache() {}
+  
+  private final ReadOnlyClassToSerializerMap _makeReadOnlyLookupMap()
+  {
+    try
+    {
+      ReadOnlyClassToSerializerMap localReadOnlyClassToSerializerMap2 = (ReadOnlyClassToSerializerMap)this._readOnlyMap.get();
+      ReadOnlyClassToSerializerMap localReadOnlyClassToSerializerMap1 = localReadOnlyClassToSerializerMap2;
+      if (localReadOnlyClassToSerializerMap2 == null)
+      {
+        localReadOnlyClassToSerializerMap1 = ReadOnlyClassToSerializerMap.from(this._sharedMap);
+        this._readOnlyMap.set(localReadOnlyClassToSerializerMap1);
+      }
+      return localReadOnlyClassToSerializerMap1;
+    }
+    finally {}
+  }
+  
+  public final void addAndResolveNonTypedSerializer(JavaType paramJavaType, JsonSerializer<Object> paramJsonSerializer, SerializerProvider paramSerializerProvider)
+  {
+    try
+    {
+      if (this._sharedMap.put(new TypeKey(paramJavaType, false), paramJsonSerializer) == null) {
+        this._readOnlyMap.set(null);
+      }
+      if ((paramJsonSerializer instanceof ResolvableSerializer)) {
+        ((ResolvableSerializer)paramJsonSerializer).resolve(paramSerializerProvider);
+      }
+      return;
+    }
+    finally {}
+  }
+  
+  public final void addAndResolveNonTypedSerializer(Class<?> paramClass, JavaType paramJavaType, JsonSerializer<Object> paramJsonSerializer, SerializerProvider paramSerializerProvider)
+  {
+    try
+    {
+      paramClass = this._sharedMap.put(new TypeKey(paramClass, false), paramJsonSerializer);
+      paramJavaType = this._sharedMap.put(new TypeKey(paramJavaType, false), paramJsonSerializer);
+      if ((paramClass == null) || (paramJavaType == null)) {
+        this._readOnlyMap.set(null);
+      }
+      if ((paramJsonSerializer instanceof ResolvableSerializer)) {
+        ((ResolvableSerializer)paramJsonSerializer).resolve(paramSerializerProvider);
+      }
+      return;
+    }
+    finally {}
+  }
+  
+  public final void addTypedSerializer(JavaType paramJavaType, JsonSerializer<Object> paramJsonSerializer)
+  {
+    try
+    {
+      if (this._sharedMap.put(new TypeKey(paramJavaType, true), paramJsonSerializer) == null) {
+        this._readOnlyMap.set(null);
+      }
+      return;
+    }
+    finally {}
+  }
+  
+  public final void addTypedSerializer(Class<?> paramClass, JsonSerializer<Object> paramJsonSerializer)
+  {
+    try
+    {
+      if (this._sharedMap.put(new TypeKey(paramClass, true), paramJsonSerializer) == null) {
+        this._readOnlyMap.set(null);
+      }
+      return;
+    }
+    finally {}
+  }
+  
+  public final ReadOnlyClassToSerializerMap getReadOnlyLookupMap()
+  {
+    ReadOnlyClassToSerializerMap localReadOnlyClassToSerializerMap = (ReadOnlyClassToSerializerMap)this._readOnlyMap.get();
+    if (localReadOnlyClassToSerializerMap != null) {
+      return localReadOnlyClassToSerializerMap;
+    }
+    return _makeReadOnlyLookupMap();
+  }
+  
+  public final JsonSerializer<Object> typedValueSerializer(JavaType paramJavaType)
+  {
+    try
+    {
+      paramJavaType = (JsonSerializer)this._sharedMap.get(new TypeKey(paramJavaType, true));
+      return paramJavaType;
+    }
+    finally {}
+  }
+  
+  public final JsonSerializer<Object> typedValueSerializer(Class<?> paramClass)
+  {
+    try
+    {
+      paramClass = (JsonSerializer)this._sharedMap.get(new TypeKey(paramClass, true));
+      return paramClass;
+    }
+    finally {}
+  }
+  
+  public final JsonSerializer<Object> untypedValueSerializer(JavaType paramJavaType)
+  {
+    try
+    {
+      paramJavaType = (JsonSerializer)this._sharedMap.get(new TypeKey(paramJavaType, false));
+      return paramJavaType;
+    }
+    finally {}
+  }
+  
+  public final JsonSerializer<Object> untypedValueSerializer(Class<?> paramClass)
+  {
+    try
+    {
+      paramClass = (JsonSerializer)this._sharedMap.get(new TypeKey(paramClass, false));
+      return paramClass;
+    }
+    finally {}
+  }
+}

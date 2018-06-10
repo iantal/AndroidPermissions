@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.family.invite_wizard.post_invite.FamilyWizardPostInviteView android:theme="@style/Theme.Helix.Light" android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.ubercab.ui.core.UImageView android:paddingTop="@dimen/ui__spacing_unit_6x" android:paddingBottom="@dimen/ui__spacing_unit_6x" android:layout_width="fill_parent" android:layout_height="wrap_content" app:srcCompat="@drawable/ub_optional__family_wizard_confirmation_icon" />
+                <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset">
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub__family_wizard_confirmation_title" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/teen_wizard_confirmation_title" style="@style/Platform.TextAppearance.H3.Book" />
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub__family_wizard_confirmation_see_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?contentInset" android:text="@string/how_to_manage_family" />
+                    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?contentInset">
+                        <com.ubercab.ui.core.UImageView android:layout_width="@dimen/ui__avatar_size_micro" android:layout_height="@dimen/ui__avatar_size_micro" app:srcCompat="@drawable/ub_optional__family_location_icon" />
+                        <android.support.v4.widget.Space android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+                        <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/teen_wizard_confirmation_location_benefit" />
+                    </com.ubercab.ui.core.ULinearLayout>
+                    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?contentInset">
+                        <com.ubercab.ui.core.UImageView android:layout_width="@dimen/ui__avatar_size_micro" android:layout_height="@dimen/ui__avatar_size_micro" app:srcCompat="@drawable/ub_optional__family_driver_icon" />
+                        <android.support.v4.widget.Space android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+                        <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/teen_wizard_confirmation_driver_benefit" />
+                    </com.ubercab.ui.core.ULinearLayout>
+                    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:id="@id/ub__family_wizard_confirmation_contact_driver" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?contentInset">
+                        <com.ubercab.ui.core.UImageView android:layout_width="@dimen/ui__avatar_size_micro" android:layout_height="@dimen/ui__avatar_size_micro" app:srcCompat="@drawable/ub_optional__family_contact_icon" />
+                        <android.support.v4.widget.Space android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+                        <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/teen_wizard_confirmation_contact" />
+                    </com.ubercab.ui.core.ULinearLayout>
+                    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.ubercab.ui.core.UImageView android:layout_width="@dimen/ui__avatar_size_micro" android:layout_height="@dimen/ui__avatar_size_micro" app:srcCompat="@drawable/ub_optional__family_payment_icon" />
+                        <android.support.v4.widget.Space android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+                        <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/teen_wizard_confirmation_receipt_benefit" />
+                    </com.ubercab.ui.core.ULinearLayout>
+                </com.ubercab.ui.core.ULinearLayout>
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.UScrollView>
+        <com.ubercab.ui.core.UButton android:id="@id/ub__family_wizard_confirmation_next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:text="@string/done" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UAppBarLayout android:background="?brandTransparent" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetStartWithNavigation="0.0dip" app:elevation="0.0dip">
+        <com.ubercab.ui.core.UToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:titleTextAppearance="@style/Platform.TextAppearance.H3.Book" app:layout_collapseMode="pin" style="@style/Widget.Platform.Toolbar" />
+    </com.ubercab.ui.core.UAppBarLayout>
+</com.ubercab.presidio.family.invite_wizard.post_invite.FamilyWizardPostInviteView>

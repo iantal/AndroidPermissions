@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H2.Book" android:id="@id/help_conversation_details_header_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/help_conversation_details_header_trip_row" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="88f147aa-ab31">
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News.Primary" android:id="@id/help_conversation_details_header_trip_summary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News" android:textColor="?accentCta" android:id="@id/help_conversation_details_header_trip_details_cta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help_conversation_details_header_trip_details" android:layout_weight="0.0" />
+    </com.ubercab.ui.core.ULinearLayout>
+</merge>

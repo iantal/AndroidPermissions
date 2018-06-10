@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/ub__add_destination_entry_point" android:layout_width="wrap_content" android:layout_height="@dimen/ui__spacing_unit_6x" android:paddingStart="@dimen/ui__spacing_unit_2x" android:paddingEnd="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/multiple_destination_add_icon_description" app:srcCompat="@drawable/ub__ic_add" app:analyticsId="087003c5-cf9c-4b54-b176-2940ce9562ba" />
+</com.ubercab.ui.core.ULinearLayout>

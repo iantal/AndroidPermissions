@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:background="?selectableItemBackground" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/tile_height_medium_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_gravity="center" n1:id="@id/image" n1:layout_width="56.0dip" n1:layout_height="36.0dip" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="9.0dip" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="9.0dip">
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/name" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/description" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

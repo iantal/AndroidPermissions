@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.pickup_refinement.pin.PinViewV2 android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="bottom" android:layout_gravity="center" android:orientation="vertical" android:id="@id/expanding_ls" android:layout_width="wrap_content" android:layout_height="@dimen/ub__location_pin_height" android:layout_marginTop="@dimen/ub__location_pin_margin" android:layout_marginBottom="0.0dip" android:animateLayoutChanges="true">
+        <com.ubercab.ui.core.UTextView android:textColor="?android:textColorPrimaryInverse" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/address_text" android:background="@drawable/ub__pin_rounded_corner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:drawableStart="@drawable/ub__animated_square" app:backgroundTint="?android:textColorPrimary" />
+        <com.ubercab.ui.core.UPlainView android:layout_gravity="center" android:background="?android:textColorPrimary" android:layout_width="@dimen/ub__location_pin_stem_width" android:layout_height="@dimen/ub__location_pin_margin" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UImageView android:layout_gravity="center" android:id="@id/location_circle" android:layout_width="@dimen/ub__location_pin_circle_size" android:layout_height="@dimen/ub__location_pin_circle_size" app:srcCompat="@drawable/ub__pin_circle" />
+</com.ubercab.presidio.app.optional.root.main.ride.request.pickup_refinement.pin.PinViewV2>

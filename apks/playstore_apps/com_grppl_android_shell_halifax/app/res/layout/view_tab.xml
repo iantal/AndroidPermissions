@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mobile.ui.statementsections.view.TabView n1:orientation="horizontal" n1:background="@drawable/all_tab_background" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="@dimen/tab_bar_height"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:background="@color/tab_separator_color" n1:layout_width="@dimen/tab_bar_divider_width" n1:layout_height="fill_parent" />
+    <TextView n1:textSize="@dimen/tab_text_size" n1:textColor="@color/tab_text_color" n1:gravity="center" n1:id="@id/textTitle" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:fontPath="@string/tab_font" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n1:background="@color/tab_separator_color" n1:layout_width="@dimen/tab_bar_divider_width" n1:layout_height="fill_parent" />
+</com.mobile.ui.statementsections.view.TabView>

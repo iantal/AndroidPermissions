@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Style.Helix.RatingBar.RatingDetail" parent="@style/Style.Helix.RatingBar">
+        <item name="android:maxHeight">24.0dip</item>
+        <item name="android:minHeight">24.0dip</item>
+    </style>
+    <style name="Style.Helix.Rating.Description" parent="@style/Platform.TextAppearance.H5.Medium" />
+    <style name="Style.Helix.Rating.Cta" parent="@style/Platform.TextAppearance.H3.News" />
+    <style name="Style.Helix.Rating.Link" parent="@style/Platform.TextAppearance.H5.News.Link" />
+</resources>

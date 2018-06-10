@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UScrollView android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.presidio.past_trip_details.PastTripDetailsMapView android:id="@id/ub__past_trip_details_map" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.ubercab.presidio.past_trip_details.PastTripDetailsContextView android:id="@id/ub__past_trip_details_context" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="9ef13ca0-8f5f" />
+            <com.ubercab.presidio.past_trip_details.PastTripDetailsRiderNameView android:id="@id/ub__past_trip_details_rider_name_view" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingRight="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.ubercab.presidio.past_trip_details.PastTripDetailsAddressesView android:id="@id/ub__past_trip_details_addresses" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:paddingRight="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.ubercab.ui.core.UPlainView android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="?dividerWidth"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+            <com.ubercab.presidio.past_trip_details.PastTripDetailsDriverView android:id="@id/ub__past_trip_details_driver" android:background="?selectableItemBackground" android:padding="@dimen/ui__spacing_unit_2x" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:background="?ruleColor" android:paddingTop="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.presidio.past_trip_details.PastTripDetailsTabButton android:id="@id/ub__past_trip_details_issues_button" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="b47e3fa8-33c2" />
+                <com.ubercab.presidio.past_trip_details.PastTripDetailsTabButton android:id="@id/ub__past_trip_details_receipt_button" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="98a99e94-b3ae" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__past_trip_details_receipt_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__past_trip_details_issues_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__past_trip_details_error" android:background="?android:colorBackground" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H4.News" android:gravity="center_horizontal" android:layout_gravity="center" android:padding="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/past_trip_details_error" />
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.presidio.past_trip_details.PastTripDetailsLoadingView android:id="@id/ub__past_trip_details_loading" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior" uber:analyticsId="d1135eb5-0dcf" />
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="@dimen/ui__gutter_size" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="0cec52ae-0bb6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UPlainView android:id="@id/ub__pass_renew_card_divider" android:background="?dividerHorizontal" android:layout_width="fill_parent" android:layout_height="@dimen/buy_card_divider_height" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/renew_plain_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+        <com.ubercab.ui.core.UTextView android:textColor="?accentCta" android:id="@id/renew_plain_text_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" uber:analyticsId="94ee739c-7dcb" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.USwitchCompat android:textAppearance="@style/Platform.TextAppearance.H5.News.Secondary" android:gravity="center_vertical" android:id="@id/renew_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" uber:analyticsId="12f0be03-5c21" />
+</com.ubercab.ui.core.ULinearLayout>

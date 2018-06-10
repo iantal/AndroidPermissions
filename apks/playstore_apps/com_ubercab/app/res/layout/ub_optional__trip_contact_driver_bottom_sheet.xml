@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="64d3c736-d25f"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__trip_contact_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:bli_bitColor="?colorAccent" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__trip_contact_dialog" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_contact_loading_text" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_4x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_driver_loading" uber:analyticsId="86202849-762b" style="@style/Platform.TextAppearance.H5.News.Tertiary" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__trip_contact_actions_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__trip_contact_edit_number_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__trip_contact_driver_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="?contentInset" android:text="@string/contact_driver" android:maxLines="1" style="@style/Platform.TextAppearance.H2.Book" />
+                        <com.ubercab.ui.core.UTextView android:id="@id/ub__contact_edit_current_number_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_number_current_number" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+                    </com.ubercab.ui.core.ULinearLayout>
+                    <com.ubercab.ui.core.UImageView android:id="@id/ub__phone_anonymization_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:srcCompat="@drawable/ub__ic_phone_anonymization" uber:analyticsId="68631e98-dc51" />
+                </com.ubercab.ui.core.ULinearLayout>
+                <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__edit_number_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_contact_edit_number_rider_number" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H4.News" />
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_contact_driver_edit" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="?contentInset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_number_change_prompt" android:contentDescription="@string/edit_number_content_description" uber:analyticsId="7728f667-f876" style="@style/Platform.TextAppearance.H5.News.Link" />
+                </com.ubercab.ui.core.ULinearLayout>
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UButton android:id="@id/ub__trip_contact_driver_call" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/call" uber:analyticsId="5b9a9879-b2e6" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/ub__trip_contact_driver_voip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/voip_option_title" uber:analyticsId="a3afe64c-0966" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/ub__trip_contact_driver_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/message" uber:analyticsId="e9369905-65e9" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:id="@id/ub__trip_contact_driver_chat" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chat" uber:analyticsId="992465e3-9816" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.UFrameLayout>

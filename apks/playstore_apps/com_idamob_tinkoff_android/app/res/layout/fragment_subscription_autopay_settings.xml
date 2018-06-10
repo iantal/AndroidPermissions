@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/inc_divider_margin" />
+    <android.support.v7.widget.SwitchCompat n1:id="@id/autopay_settings_toggle" n1:visibility="visible" n1:checked="false" n1:text="@string/autopay_title" style="@style/SwitchRipple" />
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/autopay_settings_hint" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:text="@string/autopay_hint" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/autopay_settings_container" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <include layout="@layout/inc_divider_margin" />
+        <TextView n1:text="@string/repeat_template_account" style="@style/SubtitleTextItem" />
+        <include layout="@layout/inc_divider" />
+        <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/autopay_settings_accounts_pager" style="@style/AccountsCarouselPager" />
+        <include layout="@layout/inc_divider" />
+        <FrameLayout n1:id="@id/autopay_settings_smart_fields_group" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:inputType="numberDecimal" n2:fieldClass="ru.tinkoff.core.smartfields.api.fields.MoneyAmountSmartField" n2:fieldKey="max_amount" n2:fieldTitle="@string/autopay_max_amount" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

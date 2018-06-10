@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ui__gutter_size" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="@dimen/ui__gutter_size" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_title_card_header" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_title_card_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H1.Book" />
+</com.ubercab.ui.core.ULinearLayout>

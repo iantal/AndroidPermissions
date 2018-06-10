@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/template_repeat_progress" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+    <ScrollView n1:id="@id/template_repeat_content" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RadioGroup n1:id="@id/repeat_payment_type" n1:visibility="gone" style="@style/CategoriesRadioGroup">
+                <RadioButton n1:id="@id/regular_payment_button" n1:checked="true" n1:text="@string/repeat_template_switch_regular" style="@style/CategoryRadioButton" />
+                <RadioButton n1:id="@id/auto_payment_button" n1:text="@string/repeat_template_switch_auto" style="@style/CategoryRadioButton" />
+            </RadioGroup>
+            <FrameLayout n1:id="@id/regular_payment_holder" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <FrameLayout n1:id="@id/auto_payment_holder" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

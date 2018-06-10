@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.helix.venues.zone.VenueZoneView android:fitsSystemWindows="@bool/use_transparent_status_bar" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:theme="@style/Theme.Helix.Light" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ub__venue_zone_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__venue_zone_main_header" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/venue_zone_header" style="@style/Platform.TextAppearance.H3.Book" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+        <com.ubercab.ui.core.URecyclerView android:theme="@style/Theme.Helix.Light" android:layout_gravity="bottom" android:id="@id/ub__venue_zone_list" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/venue_zone_list_description" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.helix.venues.zone.VenueZoneView>

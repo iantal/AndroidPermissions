@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lp_ttr_message_days">
+        <item quantity="other">" %1$s dagar"</item>
+        <item quantity="one">" %1$s dag"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_hours">
+        <item quantity="other">" %1$s timmar"</item>
+        <item quantity="one">" %1$s timme"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_minutes">
+        <item quantity="other">" %1$s minuter"</item>
+        <item quantity="one">" %1$s minut"</item>
+    </plurals>
+    <plurals name="lp_unread_message">
+        <item quantity="other">%1$d OLÄSTA MEDDELANDEN</item>
+        <item quantity="one">%1$d OLÄST MEDDELANDE</item>
+    </plurals>
+</resources>

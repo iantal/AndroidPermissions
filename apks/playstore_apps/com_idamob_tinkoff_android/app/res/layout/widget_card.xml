@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n1:layout_width="56.0dip" n1:layout_height="36.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/account_card_view_card_image" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <TextView n1:textSize="@dimen/text_xxs_small" n1:layout_gravity="end|center|top" n1:id="@id/account_card_view_card_number" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip" n1:layout_marginRight="4.0dip" n1:layout_marginEnd="4.0dip" />
+    <ImageView n1:layout_gravity="end|bottom|center" n1:id="@id/account_card_view_payment_system" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="4.0dip" n1:layout_marginBottom="5.0dip" n1:layout_marginEnd="4.0dip" />
+</merge>

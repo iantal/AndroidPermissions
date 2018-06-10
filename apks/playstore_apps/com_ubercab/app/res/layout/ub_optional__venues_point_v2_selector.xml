@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.helix.venues.point.VenuePointView android:fitsSystemWindows="@bool/use_transparent_status_bar" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:theme="@style/Theme.Helix.Light" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ub__venue_point_layout" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorPrimary" />
+        <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__venue_zone_edit_button_linearspace" android:padding="@dimen/ui__spacing_unit_2x" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_7x" uber:analyticsId="c691e488-fa54">
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__venue_zone_header" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__venue_zone_sub_header" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UTextView android:layout_gravity="end|center" android:id="@id/ub__venue_zone_edit_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/venue_point_change_zone_button_name" android:contentDescription="@string/venue_change_button_content_description" uber:analyticsId="f8665ad8-c5bf" style="@style/Platform.TextAppearance.H6.News.Link" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+        <com.ubercab.ui.core.UViewPager android:id="@id/ub__venue_point_pager" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/ub__plus_one_venue_viewpager_height" />
+        <com.ubercab.ui.core.URecyclerView android:id="@id/ub__venue_point_recyclerView" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/venue_point_description" />
+        <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__venue_point_name" android:padding="@dimen/ui__spacing_unit_2x" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/ub__plus_one_venue_viewpager_height" style="@style/Platform.TextAppearance.H2.News" />
+        <com.ubercab.ui.core.UPlainView android:id="@id/ub__venue_point_linear_bar" android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+        <com.ubercab.ui.core.ULinearLayout android:layout_gravity="fill_horizontal|bottom|center" android:orientation="vertical" android:id="@id/ub__venue_point_finish_button_layout" android:padding="@dimen/ui__spacing_unit_2x" android:clickable="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UButton android:gravity="center" android:id="@id/ub__venue_point_finish_selection_button" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/venue_point_selected_point_button" uber:analyticsId="ec0a58e7-5c62" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.helix.venues.point.VenuePointView>

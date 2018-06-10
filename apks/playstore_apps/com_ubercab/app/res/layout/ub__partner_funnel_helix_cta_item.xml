@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="?gutterSize" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingRight="?gutterSize" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_cta_title_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:textAllCaps="true" style="@style/Funnel.Helix.TextAppearance.H5.News" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_cta_description_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Funnel.Helix.TextAppearance.H6.News.Secondary" />
+</LinearLayout>

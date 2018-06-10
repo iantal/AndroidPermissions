@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ui__gutter_size" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="@dimen/ui__gutter_size" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsId="dfaaa656-2a4a"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/refund_card_wallet_image_width" android:layout_height="@dimen/refund_card_wallet_image_height" android:layout_marginTop="@dimen/ui__spacing_unit_10x" app:srcCompat="@drawable/ub__pass_wallet" />
+    <com.ubercab.ui.core.UTextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ub__pass_refund_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_5x" android:lineSpacingMultiplier="1.5" style="@style/Platform.TextAppearance.H2.News" />
+    <com.ubercab.ui.core.UTextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ub__pass_refund_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_4x" android:lineSpacingMultiplier="1.5" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+</com.ubercab.ui.core.ULinearLayout>

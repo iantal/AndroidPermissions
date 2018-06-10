@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="88a0acf9-928c"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H2.Book" android:id="@id/ub__commute_legal_disclaimer_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?gutterSize" android:text="@string/ub__commute_request_view_dialog_legal_title" />
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.P.Book" android:id="@id/ub__commute_legal_disclaimer_dialog_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?gutterSize" android:text="@string/ub__commute_request_view_dialog_legal_description" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UButton android:id="@id/ub__commute_legal_disclaimer_dialog_positive_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_request_view_dialog_legal_positive" uber:analyticsId="17d8b76f-154f" style="@style/Platform.Button.Primary" />
+            <com.ubercab.ui.core.UButton android:id="@id/ub__commute_legal_disclaimer_dialog_negative_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_request_view_dialog_legal_negative" android:layout_weight="1.0" uber:analyticsId="d1215ba9-03ad" style="@style/Platform.Button.Secondary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_gravity="center" n1:id="@id/balance_from" n1:padding="@dimen/offset_from_edge_quarter" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    <ImageView n1:padding="@dimen/offset_from_edge_quarter" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/arrow_right_white" />
+    <TextView n1:textAppearance="@style/Text.Small.White" n1:layout_gravity="center" n1:id="@id/balance_to" n1:padding="@dimen/offset_from_edge_quarter" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+</LinearLayout>

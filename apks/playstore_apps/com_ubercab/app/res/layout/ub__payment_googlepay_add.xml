@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.payment.googlepay.operation.add.GooglePayAddView android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="378c639c-52e9"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/fixed_header" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" uber:srcCompat="@drawable/interstitial_bg_googlepay" />
+                <com.ubercab.ui.core.UTextView android:paddingLeft="?gutterSize" android:paddingTop="@dimen/ui__spacing_unit_5x" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__payment_googlepay_add_header" style="@style/Platform.TextAppearance.H3.Book" />
+                <com.ubercab.ui.core.UTextView android:paddingLeft="?gutterSize" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__payment_googlepay_add_text" style="@style/Platform.TextAppearance.P" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.UScrollView>
+        <com.ubercab.ui.core.UButton android:id="@id/next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?gutterSize" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginRight="?gutterSize" android:layout_marginBottom="?gutterSize" android:text="@string/ub__payment_googlepay_add_button_continue" uber:analyticsId="1bbe2bab-8cea" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.payment.googlepay.operation.add.GooglePayAddView>

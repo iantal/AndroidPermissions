@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ScreenContent.Padding">
+    <ru.tinkoff.core.smartfields.view.BrickLayout n1:id="@id/smart_fields_group" n1:paddingBottom="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="@dimen/core_short_height" n2:fieldClass="ru.tinkoff.core.smartfields.api.fields.ApiFullNameSmartField" n2:fieldKey="fullName" n2:fieldTitle="@string/wallet_identity_fio_hint" n2:fieldUseLayoutParams="true" n2:layout_offset="paragraph" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="@dimen/core_short_height" n1:inputType="phone" n3:fieldFormatterName="passportRussian" n3:fieldKey="passport" n3:fieldTitle="@string/identify_simple_passport_number_hint" n3:fieldType="text" n3:fieldUseLayoutParams="true" n3:fieldValidationRegex="^\\d{4} \\d{6}$" n3:layout_offset="paragraph" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="@dimen/core_short_height" n4:fieldKey="issueDate" n4:fieldTitle="@string/identify_simple_passport_issue_date_hint" n4:fieldType="date" n4:fieldUseLayoutParams="true" n4:layout_offset="paragraph" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="@dimen/core_short_height" n5:fieldKey="birthday" n5:fieldTitle="@string/identify_simple_birthday_hint" n5:fieldType="date" n5:fieldUseLayoutParams="true" n5:layout_offset="none" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    </ru.tinkoff.core.smartfields.view.BrickLayout>
+    <fragment n6:name="ru.tcsbank.mb.ui.fragments.captcha.CaptchaFragment" n6:id="@id/captcha_fragment" n6:layout_width="fill_parent" n6:layout_height="wrap_content" n6:layout_marginBottom="@dimen/offset_from_edge"
+      xmlns:n6="http://schemas.android.com/apk/res/android" />
+    <TextView n7:textAppearance="@style/Text.Default.Blue" n7:gravity="center" n7:id="@id/scan_passport" n7:background="@drawable/core_short_field_bg" n7:layout_width="fill_parent" n7:layout_height="@dimen/tile_height_medium_item" n7:layout_marginBottom="@dimen/screen_content_margin" n7:text="@string/scan_passport"
+      xmlns:n7="http://schemas.android.com/apk/res/android" />
+    <Button n8:id="@id/get_inn" n8:text="@string/get_inn" style="@style/Button.Yellow.Normal"
+      xmlns:n8="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

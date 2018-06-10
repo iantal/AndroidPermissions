@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/transactionsAccordionLayout" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/pendingTransactionAboutIcon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0dip" n1:layout_centerVertical="true" n2:srcCompat="@drawable/transaction_about_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:id="@id/pendingTransactionAboutTitle" n1:paddingLeft="@dimen/pending_transaction_about_icon_padding" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/credit_card_about_pending_transactions_header" n1:layout_toRightOf="@id/pendingTransactionAboutIcon" style="@style/CreditCardStatement.TransactionHeader.About" />
+    <View n1:background="@color/list_divider_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/list_divider_drawable_height" n1:layout_below="@id/pendingTransactionAboutTitle" />
+</RelativeLayout>

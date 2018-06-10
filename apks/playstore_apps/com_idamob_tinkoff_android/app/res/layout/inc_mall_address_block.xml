@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/mall_address_header" n1:background="?selectableItemBackground" style="@style/DefaultItem.Padding">
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:src="@drawable/ic_place_blue_24dp" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <TextView n1:textAppearance="@style/Text.Default.Dark" n1:ellipsize="end" n1:id="@id/mall_address" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:lines="1" />
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:ellipsize="end" n1:id="@id/mall_address_city" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:lines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <fragment n1:name="com.google.android.gms.maps.SupportMapFragment" n1:id="@id/mall_address_map" n1:layout_width="fill_parent" n1:layout_height="@dimen/offer_map_height" n1:layout_marginLeft="@dimen/offset_from_edge_large" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge_half" />
+    <Button n1:textAppearance="@style/Text.Small.Blue.Medium" n1:id="@id/mall_address_btn_navigate" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge_large" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" n1:text="@string/info_mall_navigate_button" n1:drawableLeft="@drawable/ic_directions" n1:drawablePadding="12.0dip" n1:textAllCaps="true" n2:backgroundTint="@color/white" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

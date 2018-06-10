@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge_quarter"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <RelativeLayout n1:id="@id/loyalty_offer_top_container" n1:background="?selectableItemBackground" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textAppearance="@style/Text.Small.Dark.Medium" n1:id="@id/loyalty_offer_title" n1:padding="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/loyalty_offers_high_cashback_additional_title" />
+            <TextView n1:textAppearance="@style/Text.Small.Blue.Medium" n1:id="@id/loyalty_offer_more_btn" n1:padding="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/pha_view_all_btn" n1:layout_alignParentRight="true" n1:textAllCaps="true" />
+            <TextView n1:id="@id/loyalty_offer_badge" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/loyalty_offer_title" n1:layout_alignBaseline="@id/loyalty_offer_title" style="@style/BadgeStyle" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView n1:id="@id/high_cashback_recycler_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

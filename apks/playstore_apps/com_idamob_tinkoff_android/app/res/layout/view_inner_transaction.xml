@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n1:id="@id/inner_root" n1:background="@drawable/selector_item_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/tile_height_large_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/inner_logo" n1:layout_marginTop="@dimen/offset_from_edge" style="@style/ImageItem.Margin" />
+    <TableLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/transaction_message_incoming_margin_left" n1:stretchColumns="3" n1:shrinkColumns="2">
+        <TableRow n1:baselineAligned="false">
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:ellipsize="end" n1:id="@id/inner_caption_from" n1:layout_width="wrap_content" n1:layout_marginLeft="@dimen/margin_left_from_incoming_message" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge_quarter" n1:singleLine="true" n1:drawablePadding="@dimen/offset_from_edge_quarter" />
+            <ImageView n1:layout_width="@dimen/transaction_details_header_bonus_size" n1:layout_height="@dimen/transaction_details_header_bonus_size" n1:layout_marginTop="@dimen/offset_from_edge" n1:src="@drawable/arrow_inner" />
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:ellipsize="end" n1:id="@id/inner_caption_to" n1:layout_width="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge_quarter" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:singleLine="true" n1:drawablePadding="@dimen/offset_from_edge_quarter" />
+            <LinearLayout n1:gravity="center|right" n1:layout_marginTop="10.0dip" n1:layout_marginRight="@dimen/offset_from_edge">
+                <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/inner_amount" n2:fractionalMode="enabled" n2:textColorAmount="@color/black" n2:textColorCurrency="@color/n4" n2:textColorFractional="@color/n4" n2:textSize="@dimen/text_large" n2:textSizeAmount="@dimen/text_large" n2:textSizeCurrency="@dimen/text_small" n2:textSizeFractional="@dimen/text_small" style="@style/SmartMoneyView" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <ImageView n1:id="@id/inner_authorization" n1:visibility="gone" n1:layout_width="@dimen/transaction_details_header_bonus_size" n1:layout_height="@dimen/transaction_details_header_bonus_size" n1:layout_marginLeft="@dimen/offset_from_edge_quarter" />
+            </LinearLayout>
+        </TableRow>
+        <LinearLayout n1:orientation="horizontal" n1:layout_marginLeft="@dimen/margin_left_from_incoming_message" n1:layout_marginRight="@dimen/offset_from_edge" n1:baselineAligned="false">
+            <TextView n1:textAppearance="@style/Text.Small" n1:textColor="@color/transaction_description_color" n1:ellipsize="end" n1:id="@id/inner_description" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="-1.5dip" n1:layout_marginRight="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge" n1:maxLines="1" n1:layout_weight="1.0" />
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:ellipsize="end" n1:id="@id/inner_category" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxWidth="@dimen/text_max_width" n1:maxLines="1" n1:drawablePadding="@dimen/offset_from_edge_half" />
+        </LinearLayout>
+    </TableLayout>
+</merge>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item>
+        <shape n1:shape="oval"
+          xmlns:n1="http://schemas.android.com/apk/res/android">
+            <solid n1:color="@color/white" />
+        </shape>
+    </item>
+    <item n2:left="2.0dip" n2:top="2.0dip" n2:right="2.0dip" n2:bottom="2.0dip"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape n2:shape="oval">
+            <solid n2:color="@color/n7" />
+        </shape>
+    </item>
+    <item n3:drawable="@drawable/ic_cross_delete" n3:left="2.0dip" n3:top="2.0dip" n3:right="2.0dip" n3:bottom="2.0dip"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</layer-list>

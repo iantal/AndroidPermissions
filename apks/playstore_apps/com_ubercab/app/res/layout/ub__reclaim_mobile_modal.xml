@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.reclaim_mobile.modal.ReclaimMobileModalView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__reclaim_mobile_modal_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reclaim_mobile_modal_title" style="@style/Platform.TextAppearance.H2.News.Primary" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__reclaim_mobile_modal_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/reclaim_mobile_modal_message" style="@style/Platform.TextAppearance.P" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UImageView android:focusable="false" android:layout_width="?avatarExtraLarge" android:layout_height="?avatarExtraLarge" android:layout_marginStart="@dimen/ui__spacing_unit_3x" uber:srcCompat="@drawable/ub__ic_caution" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__reclaim_mobile_modal_verification_buttons" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x">
+            <com.ubercab.ui.core.UButton android:id="@id/ub__reclaim_mobile_modal_edit_number" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/reclaim_mobile_edit_number" android:layout_weight="1.0" uber:analyticsId="47c73978-3ba8" style="?platformButtonSecondary" />
+            <Space android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+            <com.ubercab.ui.core.UButton android:id="@id/ub__reclaim_mobile_modal_verify" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/reclaim_mobile_continue" android:layout_weight="1.0" uber:analyticsId="e80d51f1-c945" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UButton android:id="@id/ub__reclaim_mobile_modal_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/reclaim_mobile_continue" uber:analyticsId="05935f0a-f0ae" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.reclaim_mobile.modal.ReclaimMobileModalView>

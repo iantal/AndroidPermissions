@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/tile_height_default_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:background="@color/dividers" n1:layout_width="fill_parent" n1:layout_height="@dimen/divider_height" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginBottom="7.0dip" />
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center_vertical" n1:id="@id/visa_alias_button" n1:background="?selectableItemBackground" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/tile_height_medium_item" n1:text="@string/card_services_visa_alias_button" />
+    <TextView n1:textAppearance="@style/Text.Small.Light.GreyLine" n1:gravity="center_vertical" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/card_services_visa_alias_description" />
+</LinearLayout>

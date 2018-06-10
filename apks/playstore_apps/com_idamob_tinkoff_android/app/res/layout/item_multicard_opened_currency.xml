@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingTop="@dimen/screen_content_padding_half" n1:paddingRight="@dimen/screen_content_padding" n1:paddingBottom="@dimen/screen_content_padding_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/multicard_opened_currency_icon" n1:layout_width="40.0dip" n1:layout_height="40.0dip" />
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center_vertical" n1:id="@id/multicard_opened_currency_title" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/screen_content_margin" />
+</LinearLayout>

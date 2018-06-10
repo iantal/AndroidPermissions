@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="account_details_cashloan_overdue">
+        <item quantity="other">Просрочено %d платежей:</item>
+        <item quantity="one">Просрочен %d платеж:</item>
+        <item quantity="few">Просрочено %d платежа:</item>
+        <item quantity="many">Просрочено %d платежей:</item>
+    </plurals>
+    <plurals name="account_details_cashloan_remaining_payments_count">
+        <item quantity="other">%d платежей</item>
+        <item quantity="one">%d платеж</item>
+        <item quantity="few">%d платежа</item>
+        <item quantity="many">%d платежей</item>
+    </plurals>
+    <plurals name="account_details_overdue_payments">
+        <item quantity="other">Просрочено %s платежей</item>
+        <item quantity="one">Просрочен %s платеж</item>
+        <item quantity="few">Просрочено %s платежа</item>
+    </plurals>
+    <plurals name="accounts_hidden_account">
+        <item quantity="other">%s скрытых счетов</item>
+        <item quantity="one">%s скрытый счет</item>
+        <item quantity="few">%s скрытых счета</item>
+    </plurals>
+    <plurals name="accounts_hidden_additional_cards">
+        <item quantity="other">%s скрытых карт</item>
+        <item quantity="one">%s скрытая карта</item>
+        <item quantity="few">%s скрытые карты</item>
+    </plurals>
+    <plurals name="accounts_hidden_cards">
+        <item quantity="other">%s скрытых карт</item>
+        <item quantity="one">%s скрытая карта</item>
+        <item quantity="few">%s скрытые карты</item>
+    </plurals>
+    <plurals name="accounts_hidden_credit_account">
+        <item quantity="other">%s скрытых кредитов</item>
+        <item quantity="one">%s скрытый кредит</item>
+        <item quantity="few">%s скрытых кредита</item>
+    </plurals>
+    <plurals name="accounts_hidden_deposit">
+        <item quantity="other">%s скрытых вкладов</item>
+        <item quantity="one">%s скрытый вклад</item>
+        <item quantity="few">%s скрытых вклада</item>
+    </plurals>
+    <plurals name="accounts_hidden_external">
+        <item quantity="other">%s скрытых карт другого банка</item>
+        <item quantity="one">%s скрытая карта другого банка</item>
+        <item quantity="few">%s скрытые карты другого банка</item>
+    </plurals>
+    <plurals name="accounts_hidden_mobile">
+        <item quantity="other">%s скрытых счетов Тинькофф Мобайл</item>
+        <item quantity="one">%s скрытый счет Тинькофф Мобайл</item>
+        <item quantity="few">%s скрытых счета Тинькофф Мобайл</item>
+    </plurals>
+    <plurals name="accounts_hidden_multideposit">
+        <item quantity="other">%s скрытых мультивалютных вкладов</item>
+        <item quantity="one">%s скрытый мультивалютный вклад</item>
+        <item quantity="few">%s скрытых мультивалютных вклада</item>
+    </plurals>
+    <plurals name="accounts_hidden_saving">
+        <item quantity="other">%s скрытых накопительных счетов</item>
+        <item quantity="one">%s скрытый накопительный счет</item>
+        <item quantity="few">%s скрытых накопительных счета</item>
+    </plurals>
+    <plurals name="activate_cashloan_period_months">
+        <item quantity="other">%d месяцев</item>
+        <item quantity="one">%d месяц</item>
+        <item quantity="few">%d месяца</item>
+        <item quantity="many">%d месяцев</item>
+    </plurals>
+    <plurals name="activate_cashloan_period_years">
+        <item quantity="other">%d лет</item>
+        <item quantity="one">%d год</item>
+        <item quantity="few">%d года</item>
+        <item quantity="many">%d лет</item>
+    </plurals>
+    <plurals name="activate_cashloan_remaining_payments_count">
+        <item quantity="other">%d платежей</item>
+        <item quantity="one">%d платеж</item>
+        <item quantity="few">%d платежа</item>
+        <item quantity="many">%d платежей</item>
+    </plurals>
+    <plurals name="bring_a_friend_add_friends_button">
+        <item quantity="other">Добавить %d друзей</item>
+        <item quantity="one">Добавить %d друга</item>
+    </plurals>
+    <plurals name="bring_a_friend_invite_few_friends_button">
+        <item quantity="other">Пригласить %d друзей</item>
+        <item quantity="one">Пригласить %d друга</item>
+    </plurals>
+    <plurals name="business_lounge_amount_text">
+        <item quantity="other">%d бесплатных проходов</item>
+        <item quantity="one">%d бесплатный проход</item>
+        <item quantity="few">%d бесплатных прохода</item>
+    </plurals>
+    <plurals name="common_seconds">
+        <item quantity="other">секунд</item>
+        <item quantity="one">секунду</item>
+        <item quantity="few">секунды</item>
+    </plurals>
+    <plurals name="deposit_product_duration">
+        <item quantity="other">%s месяцев</item>
+        <item quantity="one">%s месяц</item>
+        <item quantity="few">%s месяца</item>
+    </plurals>
+    <plurals name="expiration_days">
+        <item quantity="other">%d дней</item>
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+    </plurals>
+    <plurals name="fine_details_penalty_info_discount">
+        <item quantity="other">%d дней</item>
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+    </plurals>
+    <plurals name="fine_details_penalty_info_expiration">
+        <item quantity="other">Осталось %d дней</item>
+        <item quantity="one">Остался %d день</item>
+        <item quantity="few">Осталось %d дня</item>
+    </plurals>
+    <plurals name="fines_check_already_found">
+        <item quantity="other">Найдено %1$s штрафов</item>
+        <item quantity="one">Найден %1$s штраф</item>
+        <item quantity="few">Найдено %1$s штрафа</item>
+    </plurals>
+    <plurals name="high_cashback_header_title_category">
+        <item quantity="other">категории</item>
+        <item quantity="one">категорию</item>
+        <item quantity="few">категории</item>
+        <item quantity="many">категорий</item>
+    </plurals>
+    <plurals name="invoices_check_already_found">
+        <item quantity="other">Найдено %1$s счетов</item>
+        <item quantity="one">Найден %1$s счет</item>
+        <item quantity="few">Найдено %1$s счета</item>
+    </plurals>
+    <plurals name="invoices_list_button_pay">
+        <item quantity="other">Оплатить все %1$d счетов</item>
+        <item quantity="one">Оплатить %1$d счет</item>
+        <item quantity="few">Оплатить все %1$d счета</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="other">in %d days</item>
+        <item quantity="one">tomorrow</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="other">in %d hours</item>
+        <item quantity="one">in 1 hour</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="other">in %d mins</item>
+        <item quantity="one">in 1 min</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="other">in %d secs</item>
+        <item quantity="one">in 1 sec</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="other">%d days ago</item>
+        <item quantity="one">yesterday</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="other">%d hours ago</item>
+        <item quantity="one">1 hour ago</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="other">%d mins ago</item>
+        <item quantity="one">1 min ago</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="other">%d secs ago</item>
+        <item quantity="one">1 sec ago</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="other">%d hours</item>
+        <item quantity="one">1 hour</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="other">%d minutes</item>
+        <item quantity="one">1 minute</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="other">%d seconds</item>
+        <item quantity="one">1 second</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="other">in %d days</item>
+        <item quantity="one">tomorrow</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="other">in %d hours</item>
+        <item quantity="one">in 1 hour</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="other">in %d minutes</item>
+        <item quantity="one">in 1 minute</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="other">in %d seconds</item>
+        <item quantity="one">in 1 second</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="other">%d days ago</item>
+        <item quantity="one">yesterday</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="other">%d hours ago</item>
+        <item quantity="one">1 hour ago</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="other">%d minutes ago</item>
+        <item quantity="one">1 minute ago</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="other">%d seconds ago</item>
+        <item quantity="one">1 second ago</item>
+    </plurals>
+    <plurals name="loyalty_offers_high_cashback_category_quantity">
+        <item quantity="other">категории</item>
+        <item quantity="one">категорию</item>
+        <item quantity="few">категории</item>
+        <item quantity="many">категорий</item>
+    </plurals>
+    <plurals name="malls_offers_count">
+        <item quantity="other">%d спецпредложений</item>
+        <item quantity="one">%d спецпредложение</item>
+        <item quantity="few">%d спецпредложения</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="other">месяцев</item>
+        <item quantity="one">месяц</item>
+        <item quantity="few">месяца</item>
+    </plurals>
+    <plurals name="multipayment_pay_button">
+        <item quantity="other">Оплатить %d счетов</item>
+        <item quantity="one">Оплатить %d счёт</item>
+        <item quantity="few">Оплатить %d счёта</item>
+    </plurals>
+    <plurals name="offer_detail_address">
+        <item quantity="other">%1$s адресов</item>
+        <item quantity="one">%1$s адрес</item>
+        <item quantity="few">%1$s адреса</item>
+    </plurals>
+    <plurals name="offer_detail_days_left">
+        <item quantity="other">Осталось %d дней</item>
+        <item quantity="one">Остался %d день</item>
+        <item quantity="few">Осталось %d дня</item>
+    </plurals>
+    <plurals name="offer_detail_restriction_number_realised">
+        <item quantity="other">На первые %d покупок</item>
+        <item quantity="one">На первые %d покупку</item>
+        <item quantity="few">На первые %d покупки</item>
+    </plurals>
+    <plurals name="payments">
+        <item quantity="other">платежей</item>
+        <item quantity="one">платеж</item>
+        <item quantity="few">платежа</item>
+    </plurals>
+    <plurals name="premium_convert_card_all_block_note">
+        <item quantity="other">Карты %1$s будут заблокированы</item>
+        <item quantity="one">Карта %1$s будет заблокирована</item>
+    </plurals>
+    <plurals name="premium_convert_card_choose_title">
+        <item quantity="other">Выберите карту, которые вы хотите перевыпустить с новым тарифом</item>
+        <item quantity="one">Ваша карта будет заблокирована и перевыпущена с новым тарифом</item>
+    </plurals>
+    <plurals name="premium_services_business_lounge_text">
+        <item quantity="other">%d бесплатных проходов</item>
+        <item quantity="one">%d бесплатный проход</item>
+        <item quantity="few">%d бесплатных прохода</item>
+    </plurals>
+    <plurals name="redeem_unit_mile">
+        <item quantity="other">миль</item>
+        <item quantity="one">миля</item>
+        <item quantity="few">мили</item>
+    </plurals>
+    <plurals name="redeem_unit_plus">
+        <item quantity="other">плюсов</item>
+        <item quantity="one">плюс</item>
+        <item quantity="few">плюса</item>
+    </plurals>
+    <plurals name="redeem_unit_point">
+        <item quantity="other">баллов</item>
+        <item quantity="one">балл</item>
+        <item quantity="few">балла</item>
+    </plurals>
+    <plurals name="redeem_unit_ruble">
+        <item quantity="other">₽</item>
+    </plurals>
+    <plurals name="similar_operations_count">
+        <item quantity="other">%d операций</item>
+        <item quantity="one">%d операция</item>
+        <item quantity="few">%d операции</item>
+    </plurals>
+    <plurals name="subscriptions_list_invoices_count">
+        <item quantity="other">%1$d счетов</item>
+        <item quantity="one">%1$d счет</item>
+        <item quantity="few">%1$d счета</item>
+    </plurals>
+    <plurals name="suspicious_operations_warning">
+        <item quantity="other">Есть %1$s подозрительных операций, требующих вашего внимания</item>
+        <item quantity="one">Есть %1$s подозрительная операция, требующая вашего внимания</item>
+        <item quantity="few">Есть %1$s подозрительные операции, требующие вашего внимания</item>
+    </plurals>
+    <plurals name="transaction_details_header_similar_operations_count">
+        <item quantity="other">%d операций на сумму</item>
+        <item quantity="one">%d операция на сумму</item>
+        <item quantity="few">%d операции на сумму</item>
+    </plurals>
+    <plurals name="transaction_details_installment_info">
+        <item quantity="other">Рассрочка на %1$s дней под %2$s%%</item>
+        <item quantity="one">Рассрочка на %1$s день под %2$s%%</item>
+        <item quantity="few">Рассрочка на %1$s дня под %2$s%%</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="other">лет</item>
+        <item quantity="one">год</item>
+        <item quantity="few">года</item>
+    </plurals>
+</resources>

@@ -1,0 +1,55 @@
+.class final synthetic Lru/tcsbank/mb/ui/accounts/details/bv;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field private final a:Lru/tcsbank/mb/ui/accounts/details/bq;
+
+.field private final b:Lru/tinkoff/mb/api/entities/accounts/DebitBankAccount;
+
+
+# direct methods
+.method constructor <init>(Lru/tcsbank/mb/ui/accounts/details/bq;Lru/tinkoff/mb/api/entities/accounts/DebitBankAccount;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lru/tcsbank/mb/ui/accounts/details/bv;->a:Lru/tcsbank/mb/ui/accounts/details/bq;
+
+    iput-object p2, p0, Lru/tcsbank/mb/ui/accounts/details/bv;->b:Lru/tinkoff/mb/api/entities/accounts/DebitBankAccount;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 3
+
+    .prologue
+    .line 0
+    iget-object v0, p0, Lru/tcsbank/mb/ui/accounts/details/bv;->a:Lru/tcsbank/mb/ui/accounts/details/bq;
+
+    iget-object v1, p0, Lru/tcsbank/mb/ui/accounts/details/bv;->b:Lru/tinkoff/mb/api/entities/accounts/DebitBankAccount;
+
+    .line 1175
+    invoke-virtual {v0}, Lru/tcsbank/mb/ui/accounts/details/bq;->X_()Landroid/content/Context;
+
+    move-result-object v2
+
+    .line 2106
+    iget-object v1, v1, Lru/tinkoff/mb/api/entities/accounts/DebitBankAccount;->id:Ljava/lang/String;
+
+    .line 1175
+    invoke-static {v2, v1}, Lru/tcsbank/mb/ui/activities/accountdocument/AccountDocumentListActivity;->a(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lru/tcsbank/mb/ui/accounts/details/bq;->a(Landroid/content/Intent;)V
+
+    .line 0
+    return-void
+.end method

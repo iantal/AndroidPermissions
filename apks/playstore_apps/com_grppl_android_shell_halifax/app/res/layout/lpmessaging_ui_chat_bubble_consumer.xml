@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="right" n1:orientation="vertical" n1:background="@drawable/lpmessaging_ui_background_color_selector" n1:padding="@dimen/margin_half" n1:clickable="true" n1:descendantFocusability="blocksDescendants" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.percent.PercentRelativeLayout n1:padding="@dimen/margin_regular" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="end|bottom|center" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:layout_widthPercent="75.0%" xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <include layout="@layout/lpmessaging_ui_status_image" />
+            <com.liveperson.infra.ui.view.ui.CustomTextView n1:textSize="@dimen/regular_text_size" n1:textColor="@color/consumer_bubble_message_text_color" n1:textColorLink="@color/consumer_bubble_message_link_text_color" n1:id="@id/lpui_message_text" n1:background="@drawable/lpmessaging_ui_consumer_bubble_background" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Hello Agent how can I help you?\nHow are you?" n1:layout_alignParentRight="true" n1:layerType="software" n1:importantForAccessibility="no" n2:font_name="@string/custom_font_name_conversation_feed" style="@style/LpConsumerMessageStyle" />
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+    <include layout="@layout/lpmessaging_ui_status_text" />
+</LinearLayout>

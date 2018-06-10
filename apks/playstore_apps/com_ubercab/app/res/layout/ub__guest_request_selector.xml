@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.guest_request.prompt.GuestRequestSelectorView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="d1171dcf-e392"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:layout_gravity="top" android:id="@id/ub__guest_request_selector_overlay" android:background="?colorPrimary" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" uber:analyticsId="e281f519-f1f5" />
+    <com.ubercab.ui.core.URecyclerView android:id="@id/ub__guest_request_selector_recycler_view" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.presidio.guest_request.prompt.GuestRequestSelectorView>

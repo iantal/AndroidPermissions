@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ub__support_image_picker_preview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+    <ImageView android:layout_gravity="center" android:id="@id/ub__support_image_picker_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ub__support_form_camera" />
+</merge>

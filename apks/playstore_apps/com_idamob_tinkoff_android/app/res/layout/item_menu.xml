@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:background="@drawable/selector_item_bg" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="21.0dip" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="21.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/image" n1:background="@drawable/circle_background_blue" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginRight="16.0dip" n1:scaleType="center" />
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/offset_from_edge_half" n1:layout_toRightOf="@id/image" />
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/badge_count" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/title" n1:layout_alignBaseline="@id/title" style="@style/BadgeStyle" />
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/sub_title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="2.0dip" n1:layout_toRightOf="@id/image" n1:layout_below="@id/title" />
+</RelativeLayout>

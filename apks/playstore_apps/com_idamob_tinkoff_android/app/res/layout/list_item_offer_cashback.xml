@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="?selectableItemBackground" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingRight="@dimen/screen_content_padding" n1:layout_width="wrap_content" n1:layout_height="@dimen/tile_height_default_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/offer_card" n1:layout_centerVertical="true" style="@style/WrapContent" />
+    <ru.tcsbank.mb.ui.widgets.ReturnPointsView n1:id="@id/offer_cashback" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n2:suffix_color="@color/text_light_grey" n2:suffix_size="@dimen/text_medium" n2:value_size="@dimen/text_medium" style="@style/WrapContent" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

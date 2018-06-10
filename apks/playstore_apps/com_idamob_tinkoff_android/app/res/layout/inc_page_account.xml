@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/amount" n1:layout_marginTop="@dimen/offset_account_top_page_default" n1:layout_marginBottom="@dimen/offset_from_edge_quarter" n2:fractionalMode="enabled_if_non_empty_total" n2:space="@dimen/offset_from_edge_half" n2:textColorCurrency="@color/white_half_transparent" n2:textColorFractional="@color/white_half_transparent" style="@style/AccountPage.Amount.Large"
+      xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</merge>

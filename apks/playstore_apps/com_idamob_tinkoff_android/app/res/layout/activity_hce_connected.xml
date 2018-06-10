@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/hce_ready">
+        <TextView n1:textAppearance="@style/Text.Default.Blue" n1:gravity="center_horizontal" n1:id="@id/hce_connected_view" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/hce_connected_congratulations" />
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="32.0dip" n1:src="@drawable/hce_limit_edit" />
+        <TextView n1:textAppearance="@style/Text.Small.Dark" n1:textSize="13.0sp" n1:gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:text="@string/hce_limits_tutorial" />
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="32.0dip" n1:src="@drawable/mc_text_black_logo" />
+    </LinearLayout>
+    <Button n1:id="@id/hce_ready" n1:layout_marginLeft="56.0dip" n1:layout_marginRight="56.0dip" n1:layout_marginBottom="56.0dip" n1:text="@string/ready" n1:layout_alignParentBottom="true" style="@style/Button.Round.Yellow" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher n1:id="@id/activate_view_switcher" n1:layout_width="fill_parent" n1:layout_height="52.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <Button n1:layout_gravity="center_vertical" n1:id="@id/btn_activate_offer" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="36.0dip" n1:text="@string/offer_detail_activate" n1:drawableLeft="@drawable/ic_done_white_24dp" n1:drawablePadding="12.0dip" style="@style/Button.Blue" />
+    <TextView n1:textAppearance="@style/Text.Small.WhiteHalfTransparent.Medium" n1:gravity="center_vertical" n1:layout_gravity="center_vertical" n1:id="@id/txt_offer_activated" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/offer_detail_activated" n1:drawableLeft="@drawable/ic_done_white_half_transparent_24dp" n1:drawablePadding="5.0dip" n1:textAllCaps="true" />
+</ViewSwitcher>

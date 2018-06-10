@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.favoritesv2.placelist.FavoritesPlacesView android:orientation="vertical" android:background="?android:windowBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:analyticsId="cd93ef33-b543"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/social_favorites_fixed_header" />
+    <com.ubercab.ui.core.URecyclerView android:id="@id/recycler_view" android:paddingBottom="@dimen/ui__spacing_unit_8x" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__favoritesv2_loading_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:layout_anchor="@id/recycler_view" app:layout_anchorGravity="top" app:bli_bitColor="?colorAccent" />
+    <com.ubercab.ui.core.UTextView android:id="@id/no_places_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__favoritesv2_no_saved_places" app:layout_anchor="@id/recycler_view" app:layout_anchorGravity="center" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+    <com.ubercab.ui.core.UFloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/add_favorite_places" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="?gutterSize" android:tint="?colorAccentInverse" android:contentDescription="@string/ub__favoritesv2_add_content_description" app:srcCompat="@drawable/ub__ic_plus" app:rippleColor="?lightSelectorColor" />
+</com.ubercab.presidio.favoritesv2.placelist.FavoritesPlacesView>

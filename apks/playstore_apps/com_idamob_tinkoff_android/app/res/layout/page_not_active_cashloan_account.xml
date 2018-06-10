@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/AccountsCarouselPage">
+    <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:paddingLeft="@dimen/offset_account_page" n1:paddingRight="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/inc_page_account" />
+        <RelativeLayout n1:id="@id/content" n1:layout_below="@id/amount" style="@style/VerticalWrapping">
+            <TextView n1:id="@id/payment_period_and_payments_title" n1:text="@string/account_details_cashloan_period" n1:layout_alignParentTop="true" style="@style/AccountPage.Note" />
+            <TextView n1:id="@id/payment_period_and_payments" n1:layout_toRightOf="@id/payment_period_and_payments_title" n1:layout_alignParentTop="true" style="@style/AccountPage.Note.White" />
+            <TextView n1:id="@id/regular_payment_title" n1:paddingBottom="11.0dip" n1:text="@string/account_details_cashloan_regular_payment" n1:layout_below="@id/payment_period_and_payments_title" style="@style/AccountPage.Note" />
+            <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/regular_payment" n1:layout_toRightOf="@id/regular_payment_title" n1:layout_below="@id/payment_period_and_payments" style="@style/AccountPage.Amount.Medium" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

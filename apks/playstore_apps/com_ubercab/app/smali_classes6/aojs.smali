@@ -1,0 +1,142 @@
+.class public final Laojs;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lawxs;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lawxs<",
+        "Landroid/content/Context;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Laxga;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Laxga<",
+            "Landroid/view/ViewGroup;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Laxga;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laxga<",
+            "Landroid/view/ViewGroup;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 17
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 18
+    iput-object p1, p0, Laojs;->a:Laxga;
+
+    return-void
+.end method
+
+.method public static a(Landroid/view/ViewGroup;)Landroid/content/Context;
+    .locals 1
+
+    .line 35
+    invoke-static {p0}, Laojm;->a(Landroid/view/ViewGroup;)Landroid/content/Context;
+
+    move-result-object p0
+
+    const-string v0, "Cannot return null from a non-@Nullable @Provides method"
+
+    invoke-static {p0, v0}, Lawxv;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroid/content/Context;
+
+    return-object p0
+.end method
+
+.method public static a(Laxga;)Landroid/content/Context;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laxga<",
+            "Landroid/view/ViewGroup;",
+            ">;)",
+            "Landroid/content/Context;"
+        }
+    .end annotation
+
+    .line 27
+    invoke-interface {p0}, Laxga;->get()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroid/view/ViewGroup;
+
+    invoke-static {p0}, Laojs;->a(Landroid/view/ViewGroup;)Landroid/content/Context;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static b(Laxga;)Laojs;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laxga<",
+            "Landroid/view/ViewGroup;",
+            ">;)",
+            "Laojs;"
+        }
+    .end annotation
+
+    .line 31
+    new-instance v0, Laojs;
+
+    invoke-direct {v0, p0}, Laojs;-><init>(Laxga;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public a()Landroid/content/Context;
+    .locals 1
+
+    .line 23
+    iget-object v0, p0, Laojs;->a:Laxga;
+
+    invoke-static {v0}, Laojs;->a(Laxga;)Landroid/content/Context;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 10
+    invoke-virtual {p0}, Laojs;->a()Landroid/content/Context;
+
+    move-result-object v0
+
+    return-object v0
+.end method

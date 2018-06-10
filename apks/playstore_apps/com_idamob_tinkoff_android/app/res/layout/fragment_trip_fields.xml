@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tinkoff.core.smartfields.view.BrickLayout n1:orientation="vertical" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="@dimen/core_short_height" n2:fieldClass="ru.tcsbank.mb.ui.smartfields.country.CountrySmartField" n2:fieldKey="country" n2:fieldRequired="true" n2:fieldTitle="@string/add_abroad_operations_hint_country" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="@dimen/core_short_height" n3:fieldKey="startDate" n3:fieldRequired="true" n3:fieldTitle="@string/add_abroad_operations_hint_start_trip" n3:fieldType="date" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="@dimen/core_short_height" n4:fieldKey="endDate" n4:fieldRequired="true" n4:fieldTitle="@string/add_abroad_operations_hint_end_trip" n4:fieldType="date" n4:fieldUseLayoutParams="true" n4:layout_offset="none" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</ru.tinkoff.core.smartfields.view.BrickLayout>

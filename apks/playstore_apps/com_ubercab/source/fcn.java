@@ -1,0 +1,46 @@
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+@fug
+public abstract class fcn
+{
+  private static MessageDigest b;
+  protected Object a = new Object();
+  
+  public fcn() {}
+  
+  protected final MessageDigest a()
+  {
+    for (;;)
+    {
+      MessageDigest localMessageDigest;
+      int i;
+      synchronized (this.a)
+      {
+        if (b != null)
+        {
+          localMessageDigest = b;
+          return localMessageDigest;
+        }
+        i = 0;
+        if (i >= 2) {}
+      }
+      try
+      {
+        b = MessageDigest.getInstance("MD5");
+        i += 1;
+        continue;
+        localMessageDigest = b;
+        return localMessageDigest;
+        localObject2 = finally;
+        throw localObject2;
+      }
+      catch (NoSuchAlgorithmException localNoSuchAlgorithmException)
+      {
+        for (;;) {}
+      }
+    }
+  }
+  
+  abstract byte[] a(String paramString);
+}

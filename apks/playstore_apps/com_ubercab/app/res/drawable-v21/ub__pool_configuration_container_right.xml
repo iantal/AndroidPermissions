@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="?dividerWidth" android:color="@color/ub__pool_configuration_container_border_color" />
+    <solid android:color="@color/ub__pool_configuration_toggle_solid_color" />
+    <corners android:topRightRadius="@dimen/ui__corner_radius" android:bottomRightRadius="@dimen/ui__corner_radius" />
+</shape>

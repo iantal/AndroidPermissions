@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/DashboardTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/view_account_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/click24_header_view" />
+    <ScrollView android:id="@id/view_login_scroll" android:fadingEdge="none" android:layout_marginTop="2.0dip" android:fillViewport="true" style="@style/ApplicationTheme">
+        <LinearLayout android:orientation="vertical" style="@style/MatchParentWrapContent">
+            <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/AllMatchParent">
+                <TextView android:textColor="@color/text_title" android:layout_marginBottom="5.0dip" android:text="@string/template_name_input_msg" style="@style/TextBoldMatchWrap" />
+                <TextView android:id="@id/tv_error" android:visibility="gone" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" style="@style/ErrorStrip" />
+                <EditText android:id="@id/et_personal_template_name" android:layout_marginBottom="10.0dip" android:maxLines="1" android:inputType="text" style="@style/MatchParentWrapContent" />
+                <TextView android:textColor="@color/text_title" android:text="@string/templaet_name_warning_msg" style="@style/FxRateTextSmallNormal" />
+            </LinearLayout>
+            <TextView android:textColor="@color/text_title" android:padding="10.0dip" android:text="@string/template_save_msg" style="@style/TextNormalMatchWrap" />
+            <LinearLayout android:gravity="center" android:id="@id/view_bottom" android:paddingTop="6.0dip" android:paddingBottom="3.0dip" style="@style/ScreenFooter">
+                <Button android:id="@id/btn_skip" android:background="@drawable/button_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/skip" android:layout_weight="1.0" />
+                <Button android:id="@id/btn_ok" android:background="@drawable/button_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:text="@string/ok" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

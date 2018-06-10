@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_pressed="true"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape n1:shape="rectangle">
+            <corners n1:radius="@dimen/core_stepper_button_radius" />
+            <solid n1:color="@color/core_stepper_button" />
+            <stroke n1:width="@dimen/core_stepper_button_stroke" n1:color="@color/core_stepper_button" />
+        </shape>
+    </item>
+    <item>
+        <shape n2:shape="rectangle"
+          xmlns:n2="http://schemas.android.com/apk/res/android">
+            <corners n2:radius="@dimen/core_stepper_button_radius" />
+            <solid n2:color="@color/core_transparent" />
+            <stroke n2:width="@dimen/core_stepper_button_stroke" n2:color="@color/core_stepper_button" />
+        </shape>
+    </item>
+</selector>

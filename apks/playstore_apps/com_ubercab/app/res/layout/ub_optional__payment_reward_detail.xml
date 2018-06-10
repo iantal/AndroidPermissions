@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.paymentrewards.detail.PaymentRewardDetailView android:orientation="vertical" android:background="?android:colorBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="e9c96af6-6148"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UCoordinatorLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/collapsing_header" />
+        <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UImageView android:id="@id/ub_optional__payment_reward_detail_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:contentDescription="@string/payment_reward_offer_image_description" />
+                <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub_optional__payment_reward_detail_headline" android:paddingTop="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.Book" />
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub_optional__payment_reward_detail_description" android:paddingTop="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.P.Book" />
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub_optional__payment_reward_detail_instruction" android:paddingTop="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/apply_now_description" style="@style/Platform.TextAppearance.P.Book" />
+                    <com.ubercab.ui.core.UTextView android:textColor="?accentCta" android:id="@id/ub_optional__payment_reward_detail_terms" android:paddingTop="@dimen/ui__spacing_unit_3x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/terms_and_conditions_description" uber:analyticsId="430410d7-1ba2" style="@style/Platform.TextAppearance.H5.Book" />
+                </com.ubercab.ui.core.ULinearLayout>
+                <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+                <com.ubercab.ui.core.UFrameLayout android:background="?android:colorBackground" android:paddingLeft="@dimen/ui__spacing_unit_3x" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="@dimen/ui__spacing_unit_3x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ubercab.ui.core.UButton android:textSize="@dimen/ui__text_size_smallmedium" android:id="@id/ub_optional__payment_reward_detail_add_payment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_payment" uber:analyticsId="8aae73b3-d3e0" style="@style/Platform.Button" />
+                    <com.ubercab.ui.core.UButton android:textSize="@dimen/ui__text_size_smallmedium" android:id="@id/ub_optional__payment_reward_detail_request_a_ride" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/request_a_ride" uber:analyticsId="988222bf-6f0d" style="@style/Platform.Button" />
+                </com.ubercab.ui.core.UFrameLayout>
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.UScrollView>
+    </com.ubercab.ui.core.UCoordinatorLayout>
+</com.ubercab.presidio.paymentrewards.detail.PaymentRewardDetailView>

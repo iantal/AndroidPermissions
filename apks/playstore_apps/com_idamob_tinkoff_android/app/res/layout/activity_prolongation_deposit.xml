@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <android.support.v7.widget.SwitchCompat n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/prolongation_switch" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:checked="true" n1:text="@string/deposit_prolongation_label" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/prolongation_label" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/deposit_prolongation_on" />
+        <FrameLayout n1:id="@id/prolongation_date" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item">
+            <TextView n1:textAppearance="@style/Text.Default.Light" n1:layout_gravity="center_vertical" n1:id="@id/period_value" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <TextView n1:textAppearance="@style/Text.Small.Dark" n1:layout_gravity="center|right" n1:id="@id/close_date_value" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        </FrameLayout>
+        <include layout="@layout/inc_divider_margin" />
+        <FrameLayout n1:id="@id/close_deposit_holder" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/increase_rate_content" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView n1:id="@id/currencies" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <ru.tcsbank.mb.ui.widgets.SwitchWithHint n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/increase_rate_switch" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n2:switch_title="@string/deposit_increase_rate_switch" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/deposit_increase_rate_label" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.eats_tutorial.EatsTutorialView android:id="@id/ub__eats_tutorial_coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="com.ubercab.eats_tutorial.MoveUpDownBehavior">
+        <include layout="@layout/collapsing_header" />
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__eats_tutorial_loading_indicator" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/eats__tutorial_content_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UViewPager android:id="@id/ub__eats_tutorial_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.ubercab.ui.PagerIndicator android:layout_gravity="center_horizontal" android:id="@id/ub__eats_tutorial_view_pager_indicator" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleX="@integer/ub__eats_tutorial_pager_indicator_scale" android:scaleY="@integer/ub__eats_tutorial_pager_indicator_scale" uber:selectedIndicatorColor="@color/ub__ui_core_black" uber:unselectedIndicatorColor="@color/ub__ui_core_grey_60" />
+            <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+            <com.ubercab.ui.core.UButton android:id="@id/ub__eats_deeplink_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?gutterSize" style="@style/Platform.Button" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.eats_tutorial.EatsTutorialView>

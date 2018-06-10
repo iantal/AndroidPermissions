@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="?gutterSize" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:paddingTop="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ub__partner_funnel_helix_network_error" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_helix_error_title" android:paddingTop="@dimen/ui__spacing_unit_4x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Funnel.Helix.TextAppearance.H2.Book" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_helix_error_description" android:paddingTop="@dimen/ui__spacing_unit_4x" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/Funnel.Helix.TextAppearance.P" />
+    <com.ubercab.ui.Button android:id="@id/ub__partner_funnel_helix_error_button" android:paddingTop="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__partner_funnel_retry" style="@style/Funnel.Helix.Button.Secondary" />
+</LinearLayout>

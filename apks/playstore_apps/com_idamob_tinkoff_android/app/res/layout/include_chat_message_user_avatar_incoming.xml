@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <android.support.v7.widget.AppCompatImageView n1:id="@id/chat_user_avatar" n1:layout_width="@dimen/chat_message_avatar_size" n1:layout_height="@dimen/chat_message_avatar_size" n1:layout_marginLeft="@dimen/chat_message_horizontal_margin" n1:layout_marginRight="@dimen/chat_message_avatar_margin" n1:layout_alignBottom="@id/chat_message_content"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <ViewSwitcher n2:id="@id/chat_operator_rating" n2:visibility="gone" n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:layout_marginRight="-4.0dip" n2:layout_marginBottom="-4.0dip" n2:measureAllChildren="false" n2:layout_alignRight="@id/chat_user_avatar" n2:layout_alignBottom="@id/chat_user_avatar"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <android.support.v7.widget.AppCompatImageView n2:background="@drawable/chat_operator_rating_plus_background" n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:src="@drawable/ic_chat_plus_white_16dp" n2:scaleType="center" n3:tint="@color/chat_message_operator_rating_plus" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n2:gravity="center_horizontal" n2:orientation="horizontal" n2:background="@drawable/chat_operator_rating_star_background" n2:layout_width="wrap_content" n2:layout_height="wrap_content">
+            <TextView n2:textSize="11.0dip" n2:textColor="@color/chat_message_operator_rating_star" n2:gravity="right" n2:id="@id/chat_operator_rating_value" n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:layout_marginRight="1.0dip" n2:minWidth="8.0dip" />
+            <android.support.v7.widget.AppCompatImageView n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:src="@drawable/ic_chat_star_white_10dp" n2:baseline="9.0dip" n4:tint="@color/chat_message_operator_rating_star" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </ViewSwitcher>
+</merge>

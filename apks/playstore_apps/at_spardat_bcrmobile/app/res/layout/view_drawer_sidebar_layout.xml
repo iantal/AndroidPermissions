@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/view_sidebar_drawer" android:background="@color/drawer_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_drawer_header" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/operations" style="@style/drawer_list_section" />
+            <include android:id="@id/row_payment_to_iban" layout="@layout/view_drawer_row" />
+            <View style="@style/DrawerRowSeparator" />
+            <include android:id="@id/row_payment_to_personal_templates" layout="@layout/view_drawer_row" />
+            <View style="@style/DrawerRowSeparator" />
+            <include android:id="@id/row_bill_payments" layout="@layout/view_drawer_row" />
+            <View style="@style/DrawerRowSeparator" />
+            <include android:id="@id/row_own_account_transfer" layout="@layout/view_drawer_row" />
+            <View style="@style/DrawerRowSeparator" />
+            <include android:id="@id/row_foreign_exchange" layout="@layout/view_drawer_row" />
+            <View style="@style/DrawerRowSeparator" />
+            <TextView android:text="@string/products" style="@style/drawer_list_section" />
+            <include android:id="@id/row_term_deposit_opening" layout="@layout/view_drawer_row" />
+            <View style="@style/DrawerRowSeparator" />
+            <include android:id="@id/row_ask_for_loan" layout="@layout/view_drawer_row" />
+            <View style="@style/DrawerRowSeparator" />
+            <include android:id="@id/row_ask_for_credit_card" layout="@layout/view_drawer_row" />
+            <View style="@style/DrawerRowSeparator" />
+            <TextView android:text="@string/my_account" style="@style/drawer_list_section" />
+            <include android:id="@id/row_order_payments" layout="@layout/view_drawer_row" />
+            <View style="@style/DrawerRowSeparator" />
+            <FrameLayout android:id="@id/view_mailbox" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/row_mailbox" layout="@layout/view_drawer_row" />
+                <TextView android:textColor="@color/text_on_dark" android:gravity="center" android:layout_gravity="center|right" android:id="@id/tv_message_count" android:background="@drawable/message_count_background" android:visibility="visible" android:layout_marginRight="@dimen/margin_10" style="@style/AllWrapContent.TextVerySmallBold" />
+            </FrameLayout>
+            <View style="@style/DrawerRowSeparator" />
+            <include android:id="@id/row_settings" layout="@layout/view_drawer_row" />
+            <View style="@style/DrawerRowSeparator" />
+            <include android:id="@id/row_logout" layout="@layout/view_drawer_row" />
+            <View style="@style/DrawerRowSeparator" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="@dimen/margin_10" android:src="@drawable/drawer_bottom_logo" android:contentDescription="@string/bcr_logo" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

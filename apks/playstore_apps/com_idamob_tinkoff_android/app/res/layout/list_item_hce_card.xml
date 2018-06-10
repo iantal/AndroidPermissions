@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tcsbank.mb.ui.widgets.round.RoundCornersFrameLayout n1:layout_width="@dimen/hce_card_size" n1:layout_height="wrap_content" n2:rcvg_cornerRadius="2.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto">
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ru.tcsbank.mb.ui.widgets.round.RoundCornersFrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:rcvg_cornerRadius="2.0dip">
+            <ImageView n1:id="@id/hce_card_image" n1:layout_width="fill_parent" n1:layout_height="@dimen/hce_card_size" n1:scaleType="centerInside" />
+        </ru.tcsbank.mb.ui.widgets.round.RoundCornersFrameLayout>
+        <TextView n1:textAppearance="@style/Text.XXSSmall.White.Thin" n1:gravity="center_horizontal" n1:id="@id/hce_card_name" n1:paddingTop="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="3" n1:lines="3" />
+    </LinearLayout>
+    <View n1:background="?selectableItemBackground" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</ru.tcsbank.mb.ui.widgets.round.RoundCornersFrameLayout>

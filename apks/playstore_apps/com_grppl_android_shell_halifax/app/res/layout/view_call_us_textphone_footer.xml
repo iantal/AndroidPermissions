@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:background="@color/list_divider_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/call_us_section_borders_height" />
+    <TextView n1:id="@id/callUsTextphoneContent" n1:padding="@dimen/call_us_screen_medium_spacing" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/dummy_body_text_small" n1:drawableLeft="@drawable/accessibility_hearing_icon" n1:drawablePadding="@dimen/call_us_screen_medium_spacing" style="@style/TextAppearance.Body" />
+</LinearLayout>

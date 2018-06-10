@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_panel" android:background="@color/top_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/top_panel_height">
+        <ImageButton android:id="@id/menu" style="@style/MenuStyle" />
+        <TextView android:text="@string/title_preferences" style="@style/CaptionStyle" />
+    </RelativeLayout>
+    <View android:id="@id/amountRect" android:background="@drawable/roundrect" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/top_panel" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/language" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="@string/title_language" android:layout_below="@id/top_panel" />
+    <TextView android:textSize="18.0sp" android:textColor="@drawable/lang_selector" android:gravity="right" android:id="@id/languageSelector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:text="@string/lang_en" android:drawableRight="@drawable/ar_item_list" android:drawablePadding="10.0dip" android:layout_toRightOf="@id/language" android:layout_alignBaseline="@id/language" />
+</RelativeLayout>

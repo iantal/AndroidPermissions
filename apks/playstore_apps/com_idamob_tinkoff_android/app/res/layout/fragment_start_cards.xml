@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/fragment_start_cards_container" n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Default.White" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" n1:text="@string/anonymous_main_title_tinkoff_cards" />
+    <ru.tcsbank.mb.ui.widgets.product.carousel.DoubleViewsPagerView n1:id="@id/cards_pager" n1:layout_width="wrap_content" n1:layout_height="80.0dip" n1:layout_marginTop="@dimen/offset_from_edge" />
+    <ru.tcsbank.mb.ui.widgets.pageindicator.PageIndicator n1:layout_gravity="center_horizontal" n1:id="@id/products_indicator" n1:layout_width="fill_parent" n1:layout_height="6.0dip" n1:layout_marginTop="16.0dip" style="@style/CirclePagerIndicatorWhite" />
+    <Button n1:textAppearance="@style/Text.ExtraSmall.White" n1:id="@id/all_cards" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:text="@string/anonymous_main_button_all_cards" n1:drawableRight="@drawable/ic_arrow_circle_white" n1:drawablePadding="@dimen/screen_content_padding_half" n1:textAllCaps="true" style="?borderlessButtonStyle" />
+</LinearLayout>

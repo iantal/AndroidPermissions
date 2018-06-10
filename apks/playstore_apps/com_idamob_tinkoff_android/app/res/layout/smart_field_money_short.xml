@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/src_view" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/core_short_height" n1:layout_weight="1.0" style="@style/SmartFieldsShortView">
+        <TextView n1:id="@id/money_title_src" n1:layout_width="wrap_content" style="@style/SmartFieldShortFilledTitle" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/money_value_src" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:textColorAmount="@color/black" n2:textColorCurrency="@color/light_gray" n2:textColorFractional="@color/black" n2:textSizeAmount="@dimen/text_large" n2:textSizeCurrency="@dimen/text_large" n2:textSizeFractional="@dimen/text_large" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/dst_view" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/core_short_height" n1:layout_weight="1.0" style="@style/SmartFieldsShortView">
+        <TextView n1:id="@id/money_title_dst" n1:layout_width="wrap_content" style="@style/SmartFieldShortFilledTitle" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/money_value_dst" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n3:textColorAmount="@color/black" n3:textColorCurrency="@color/light_gray" n3:textColorFractional="@color/black" n3:textSizeAmount="@dimen/text_large" n3:textSizeCurrency="@dimen/text_large" n3:textSizeFractional="@dimen/text_large" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <FrameLayout n1:id="@id/empty_view" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/core_short_height" style="?coreShortSmartFieldViewsStyle">
+        <TextView n1:textSize="@dimen/core_empty_title_text_size" n1:textColor="@color/core_short_title_text_color" n1:ellipsize="end" n1:gravity="center_vertical" n1:layout_gravity="center" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/money_title" n1:maxLines="1" />
+    </FrameLayout>
+</LinearLayout>

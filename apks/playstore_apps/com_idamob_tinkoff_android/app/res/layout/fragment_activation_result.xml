@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:background="@color/bg_dark_transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/tile_height_medium_item" n1:layout_marginBottom="@dimen/screen_content_padding_plus" n1:src="@drawable/ic_activation_ok" />
+    <TextView n1:textAppearance="@style/Text.Default.White" n1:gravity="center" n1:id="@id/status" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/offset_from_edge_half" />
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:id="@id/note" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" />
+    <LinearLayout n1:orientation="vertical" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <Button n1:gravity="center" n1:id="@id/get_login_and_psw" n1:layout_marginBottom="@dimen/offset_from_edge_half" style="@style/Button.Round.Yellow" />
+        <Button n1:gravity="center" n1:id="@id/login_btn" n1:layout_marginBottom="@dimen/offset_from_edge_half" style="@style/Button.Round.Yellow" />
+        <Button n1:gravity="center" n1:id="@id/continue_btn" n1:layout_marginBottom="@dimen/offset_from_edge_half" style="@style/Button.Round.Yellow" />
+        <Button n1:gravity="center" n1:id="@id/repeat" n1:visibility="gone" n1:layout_marginBottom="@dimen/offset_from_edge" style="@style/Button.Round.Yellow" />
+        <Button n1:textColor="@color/text_light" n1:gravity="center" n1:id="@id/call" n1:background="@drawable/selector_btn_bordered" n1:visibility="gone" style="@style/Button" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" card_view:cardCornerRadius="4.0dip" card_view:cardElevation="2.0dip">
+                <RelativeLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/imageMetalMembershipDetailsCard" android:layout_width="260.0dip" android:layout_height="160.0dip" android:layout_marginBottom="24.0dip" android:src="@drawable/img_card_metal" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:id="@id/textMembershipDetailsName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imageMetalMembershipDetailsCard" fontPath="@string/font_regular" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:id="@id/textMembershipDetailsIban" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textMembershipDetailsName" fontPath="@string/font_regular" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:id="@id/textMembershipDetailsBic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textMembershipDetailsIban" fontPath="@string/font_regular" />
+                    <ImageView android:id="@id/imageMetalMembershipDetailsShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_share_black" android:layout_alignTop="@id/textMembershipDetailsName" android:layout_centerVertical="true" android:layout_alignParentEnd="true" fontPath="@string/font_light" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <TextView android:textSize="16.0sp" android:textColor="@color/black_1b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/metal_membership_details_insurance_coverage" fontPath="@string/font_regular" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:id="@id/textMembershipDetailsValidFrom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" fontPath="@string/font_regular" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:id="@id/textMembershipDetailsValidUntil" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" fontPath="@string/font_regular" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:id="@id/textMembershipDetailsPolicyNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" fontPath="@string/font_regular" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black_1b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/metal_membership_details_customer_support" fontPath="@string/font_regular" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:autoLink="phone" android:id="@id/textMembershipDetailsSupportPhone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" fontPath="@string/font_regular" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:autoLink="email" android:id="@id/textMembershipDetailsSupportEmail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" fontPath="@string/font_regular" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

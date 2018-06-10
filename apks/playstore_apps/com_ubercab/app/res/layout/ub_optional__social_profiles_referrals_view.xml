@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:theme="@style/Theme.Helix.Light" android:orientation="vertical" android:background="?accentPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:circleImageView="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingLeft="?gutterSize" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="?gutterSize" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.CircleImageView android:id="@id/ub__social_profile_referrals_circle_profile_photo" android:visibility="gone" android:layout_width="?avatarMedium" android:layout_height="?avatarMedium" circleImageView:circleImageBorderWidth="@dimen/ub__social_profiles_circle_image_border_width" />
+            <com.ubercab.ui.core.UTextView android:layout_gravity="center_vertical" android:id="@id/ub__social_profile_referrals_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/ui__spacing_unit_2x" android:paddingEnd="0.0dip" style="@style/Platform.TextAppearance.H3.Book.Primary.Inverse" />
+            <com.ubercab.ui.core.UImageView android:layout_gravity="end" android:id="@id/ub__social_profile_referrals_illustration_photo" android:visibility="gone" android:layout_width="?avatarMedium" android:layout_height="?avatarMedium" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__social_profile_referrals_description_view" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.P" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__social_profile_referrals_button" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.Button" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.directed_dispatch.PlusOneDirectedDispatchStepView android:orientation="vertical" android:background="?android:colorBackground" android:padding="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="8b700b37-f011"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.URelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/ub__directed_dispatch_image" android:layout_alignParentStart="true">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__directed_dispatch_plus_one_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/directed_dispatch_plus_one_title" style="@style/Platform.TextAppearance.H2.Book" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__directed_dispatch_plus_one_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:text="@string/directed_dispatch_plus_one_message_a" style="@style/Platform.TextAppearance.P" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UImageView android:id="@id/ub__directed_dispatch_image" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/ui__spacing_unit_1x" android:layout_alignParentEnd="true" uber:srcCompat="@drawable/ub__directed_dispatch" />
+    </com.ubercab.ui.core.URelativeLayout>
+    <com.ubercab.ui.core.UButton android:id="@id/ub__get_trip_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/directed_dispatch_plus_button_get_trip_code_a" uber:analyticsId="424da450-0324" style="?platformButtonPrimary" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__no_vehicle_near_me" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/directed_dispatch_plus_button_no_vehicle_near_me_a" uber:analyticsId="115e955d-86da" style="?platformButtonSecondary" />
+</com.ubercab.presidio.app.optional.root.main.ride.request.plus_one.steps.directed_dispatch.PlusOneDirectedDispatchStepView>

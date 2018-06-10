@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/fixed_header" />
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__social_profiles_question_loading" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:bli_bitColor="?colorAccent" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__social_profiles_question_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UImageView android:id="@id/ub__social_profiles_question_icon" android:layout_width="@dimen/ub__social_profiles_question_icon_size" android:layout_height="@dimen/ub__social_profiles_question_icon_size" android:layout_marginTop="@dimen/ui__spacing_unit_2x" />
+                <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__social_profiles_question_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_4x" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_4x" style="@style/Platform.TextAppearance.H2.News" />
+                <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__social_profiles_question_detail_copy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_4x" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_4x" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+                <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__social_profiles_question_ugc_copy" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_4x" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_4x" style="@style/Platform.TextAppearance.H6.News.Link" />
+                <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__social_profiles_question_answer_container_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_weight="1.0" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.UScrollView>
+        <com.ubercab.ui.core.UButton android:id="@id/ub__social_profiles_question_confirm_button" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" style="@style/Platform.Button.Primary" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <include android:id="@id/ub__social_profiles_error_view" android:visibility="gone" layout="@layout/ub_optional__social_profiles_error_view" />
+</merge>

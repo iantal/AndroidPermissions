@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.trip_details.optional.fare.v2.TripFareV2View android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="9958d32e-ce2a"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:paddingLeft="?contentInset" android:paddingTop="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="?contentInset" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset">
+        <com.ubercab.ui.core.UImageView android:layout_gravity="top" android:id="@id/ub__trip_fare_icon" android:layout_width="?avatarMicro" android:layout_height="?avatarMicro" android:tint="?brandGrey60" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" uber:srcCompat="@drawable/ub__personal_icon" />
+        <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ub__trip_fare_sub_rows" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.ubercab.ui.core.UTextView android:layout_gravity="center_vertical" android:id="@id/ub__trip_fare_button" android:background="?selectableItemBackground" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Link" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__rows_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/divider_width_margin" uber:srcCompat="@drawable/divider_horizontal_light" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__trip_fare_rows" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.presidio.trip_details.optional.fare.v2.TripFareV2View>

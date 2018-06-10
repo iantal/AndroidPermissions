@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="2f8b3921-8cdc"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__commute_upgrade_confirm_dialog_loading_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H2.Book" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?gutterSize" android:text="@string/ub__commute_dialog_r2d_upgrade_title" />
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.P.Book" android:id="@id/ub__commute_upgrade_confirm_dialog_text_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?gutterSize" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UButton android:id="@id/ub__commute_upgrade_confirm_dialog_positive_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_dialog_r2d_upgrade_positive" uber:analyticsId="b60e90d9-97c7" style="@style/Platform.Button.Primary" />
+            <com.ubercab.ui.core.UButton android:id="@id/ub__commute_upgrade_confirm_dialog_negative_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_dialog_r2d_upgrade_negative" android:layout_weight="1.0" uber:analyticsId="b41c45b7-4f67" style="@style/Platform.Button.Secondary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

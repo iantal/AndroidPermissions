@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginBottom="@dimen/ui__spacing_unit_2x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x">
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Uber.Partner.Funnel.TextAppearance.Incentives.P" android:textColor="@color/ub__grey_18" android:gravity="bottom|center|left" android:layout_gravity="bottom" android:id="@id/ub__partner_funnel_incentives_detail_item_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Uber.Partner.Funnel.TextAppearance.Incentives.H2" android:gravity="bottom|center|right" android:id="@id/ub__partner_funnel_incentives_detail_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/ub__grey_4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" />
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Uber.Partner.Funnel.TextAppearance.Incentives.Subtext" android:textColor="@color/ub__grey_18" android:layout_gravity="right" android:id="@id/ub__partner_funnel_incentives_detail_item_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

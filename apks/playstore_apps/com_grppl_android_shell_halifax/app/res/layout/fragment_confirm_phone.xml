@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/ConfirmPhoneNumber.Container">
+    <LinearLayout n1:layout_gravity="bottom" n1:orientation="horizontal" n1:paddingLeft="@dimen/confirm_phone_number_screen_padding" n1:paddingRight="@dimen/confirm_phone_number_screen_padding" n1:paddingBottom="@dimen/confirm_phone_number_screen_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <Button n1:id="@id/confirmPhoneEditButton" n1:layout_width="0.0dip" n1:layout_height="@dimen/confirm_phone_number_button_height" n1:layout_marginRight="@dimen/confirm_phone_number_button_middle_margin" n1:text="@string/personal_details_confirm_phone_button_edit_text" n1:layout_weight="0.5" style="@style/Widget.Button.Secondary" />
+        <Button n1:id="@id/confirmPhoneConfirmButton" n1:layout_width="0.0dip" n1:layout_height="@dimen/confirm_phone_number_button_height" n1:layout_marginLeft="@dimen/confirm_phone_number_button_middle_margin" n1:text="@string/personal_details_confirm_phone_button_confirm_text" n1:layout_weight="0.5" style="@style/Widget.Button.Primary" />
+    </LinearLayout>
+    <LinearLayout n2:layout_gravity="top" n2:orientation="vertical" n2:layout_width="fill_parent" n2:layout_height="wrap_content"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <TextView n2:id="@id/confirmPhoneTitle" n2:layout_width="fill_parent" n2:layout_height="wrap_content" n2:text="@string/personal_details_confirm_phone_number_title" style="@style/ConfirmPhoneNumber.Title" />
+        <include layout="@layout/view_settings_personal_details_phone_numbers" />
+    </LinearLayout>
+</FrameLayout>

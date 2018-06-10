@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.CircleImageView android:id="@id/edit_account_preview_photo" android:layout_width="?avatarLarge" android:layout_height="?avatarLarge" android:scaleType="centerCrop" android:layout_marginEnd="?contentInset" app:srcCompat="?iconColor" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/edit_account_preview_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News" />
+        <com.ubercab.ui.core.UTextView android:id="@id/edit_account_preview_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News" />
+        <com.ubercab.ui.core.UTextView android:id="@id/edit_account_preview_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News" />
+    </com.ubercab.ui.core.ULinearLayout>
+</merge>

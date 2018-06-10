@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.family.invitation.date_picker.tos_dialog.TeenTosModalView android:id="@id/ub_family_teen_tos_bottom_sheet_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:background="?android:colorBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__family_teen_tos_sheet_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/teen_tos_title" style="@style/Platform.TextAppearance.H2.News.Primary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__family_teen_tos_sheet_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?contentInset" android:text="@string/teen_tos_message" uber:analyticsId="c75cc2b1-45dc" style="@style/Platform.TextAppearance.P" />
+            <com.ubercab.ui.core.UTextView android:gravity="start" android:id="@id/ub__family_teen_tos_sheet_tos" android:paddingTop="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/teen_terms_of_use" uber:analyticsId="c1ceea1f-40c6" style="@style/Platform.TextAppearance.H6.News.Link" />
+            <com.ubercab.ui.core.UTextView android:gravity="start" android:id="@id/ub__family_teen_tos_sheet_privacy" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/teen_user_privacy_statement" uber:analyticsId="162b9504-7ce6" style="@style/Platform.TextAppearance.H6.News.Link" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x">
+            <com.ubercab.ui.core.UButton android:id="@id/ub__family_teen_tos_secondary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/teen_tos_decline" android:layout_weight="1.0" uber:analyticsId="74a7fb7b-c20f" style="?platformButtonSecondary" />
+            <Space android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="wrap_content" />
+            <com.ubercab.ui.core.UButton android:id="@id/ub__family_teen_tos_primary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/teen_tos_accept" android:layout_weight="1.0" uber:analyticsId="1ecd17af-7a93" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.family.invitation.date_picker.tos_dialog.TeenTosModalView>

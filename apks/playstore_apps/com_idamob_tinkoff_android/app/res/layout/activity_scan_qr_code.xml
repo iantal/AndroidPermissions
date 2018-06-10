@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <SurfaceView n1:id="@id/qr_preview_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <ru.tcsbank.mb.business.qr.inappscanner.ViewfinderView n1:id="@id/qr_viewfinder_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <TextView n1:textAppearance="@style/Text.Default.White" n1:layout_gravity="center_horizontal" n1:id="@id/qr_status_view" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:text="@string/qr_capture_status_message" />
+    <LinearLayout n1:layout_gravity="bottom|center" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/offset_from_edge">
+        <Button n1:textAppearance="@style/Text.Small.White" n1:id="@id/button_open_from_gallery" n1:background="@drawable/button_qr_scan_background" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/screen_content_margin_half" n1:minWidth="@dimen/qr_capture_button_min_width" n1:text="@string/qr_capture_load_from_gallery_button" n1:textAllCaps="true" />
+        <Button n1:textAppearance="@style/Text.Small.White" n1:id="@id/button_cancel" n1:background="@drawable/button_qr_scan_background" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_margin_half" n1:minWidth="@dimen/qr_capture_button_min_width" n1:text="@string/qr_capture_cancel_button" n1:textAllCaps="true" />
+    </LinearLayout>
+</FrameLayout>

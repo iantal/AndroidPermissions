@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.scheduled_rides.upsell_confirm.UpsellConfirmationView android:theme="@style/Theme.Helix.Light" android:layout_gravity="bottom" android:orientation="vertical" android:background="?colorOutline" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:theme="@style/Theme.Helix.Light" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ub__upsell_confirmation_layout" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="e5fdea14-b1cb">
+        <com.ubercab.ui.core.UImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitStart" android:adjustViewBounds="true" uber:srcCompat="@drawable/ub__optional_upsell_confirmation_header" />
+        <com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/upsell_confirmation_header_container" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H2.Book" android:layout_gravity="center_horizontal" android:id="@id/upsell_confirmation_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/upsell_confirmation_header_text" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.P.Book" android:id="@id/upsell_confirmation_message" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/upsell_confirmation_message_text" />
+            <com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H4.News" android:id="@id/upsell_confirmation_product" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ui__spacing_unit_3x" />
+                <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H4.News" android:id="@id/upsell_confirmation_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upsell_confirmation_fare_text" />
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.presidio.app.core.root.main.ride.location_edit.icon_view.UberSourceToDestinationView android:id="@id/ub__source_destination_view" android:layout_width="@dimen/ub__location_editor_source_to_destination_view_width" android:layout_height="fill_parent" />
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.ubercab.ui.core.UFrameLayout style="@style/Helix.Appearance.LocationEditor.Container">
+                    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News.Primary" android:id="@id/upsell_trip_source" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Helix.Appearance.LocationEditor.TextViewV2" />
+                </com.ubercab.ui.core.UFrameLayout>
+                <com.ubercab.ui.core.UFrameLayout style="@style/Helix.Appearance.LocationEditor.Container">
+                    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News.Primary" android:id="@id/upsell_trip_destination" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Helix.Appearance.LocationEditor.TextViewV2" />
+                </com.ubercab.ui.core.UFrameLayout>
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" android:layout_marginLeft="?contentInset" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:layout_marginRight="?contentInset" />
+        <com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UButton android:id="@id/upsell_confirmation_cancel_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel_ride" android:layout_weight="1.0" android:textAllCaps="true" android:layout_marginEnd="?contentInset" uber:analyticsId="38708e53-b52c" style="@style/Platform.Button.Secondary" />
+            <com.ubercab.ui.core.UButton android:id="@id/upsell_confirmation_ok_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/upsell_confirmation_continue_button" android:layout_weight="1.0" android:textAllCaps="true" uber:analyticsId="58abf0fe-0750" style="@style/Platform.Button.Primary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.scheduled_rides.upsell_confirm.UpsellConfirmationView>

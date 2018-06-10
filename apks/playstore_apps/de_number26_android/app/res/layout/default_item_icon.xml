@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/iconHolder" android:layout_width="72.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@android:id/icon" android:layout_width="@dimen/recycle_icon_size" android:layout_height="@dimen/recycle_icon_size" android:scaleType="centerInside" android:layout_centerInParent="true" android:contentDescription="@null" />
+    <ImageView android:id="@id/highlight" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="7.0dip" android:src="@drawable/icon_highlight_dark" android:layout_alignTop="@android:id/icon" android:layout_alignRight="@android:id/icon" android:contentDescription="@null" />
+</RelativeLayout>

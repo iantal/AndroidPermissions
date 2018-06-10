@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.URelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextInputLayout android:id="@id/edit_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextInputEditText android:id="@id/edit_text" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </com.ubercab.ui.core.UTextInputLayout>
+    <com.ubercab.ui.core.UPlainView android:id="@id/text_covering_view" android:background="@android:color/transparent" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.ubercab.ui.core.URelativeLayout>

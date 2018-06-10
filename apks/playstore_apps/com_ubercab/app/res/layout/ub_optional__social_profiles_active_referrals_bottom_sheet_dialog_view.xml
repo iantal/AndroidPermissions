@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:paddingTop="?contentInset" android:paddingBottom="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.CircleImageView android:id="@id/ub__social_profiles_active_referrals_driver_photo" android:layout_width="?avatarMedium" android:layout_height="?avatarMedium" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__social_profiles_active_referrals_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H2.Book" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__social_profiles_active_referrals_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__social_profiles_active_referrals_top_button" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.Button.Secondary" />
+    <com.ubercab.ui.core.UButton android:id="@id/ub__social_profiles_active_referrals_bottom_button" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.Button.Secondary" />
+</com.ubercab.ui.core.ULinearLayout>

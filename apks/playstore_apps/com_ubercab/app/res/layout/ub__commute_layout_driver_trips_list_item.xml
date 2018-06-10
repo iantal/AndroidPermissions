@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.scheduled_commute.trips.driver.CommuteDriverTripView android:orientation="vertical" android:background="?brandGrey20" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="f4e203c5-1e5e"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__commute_driver_trip_card" android:background="?android:colorBackground" android:padding="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__commute_driver_trip_card_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0" android:layout_alignParentTop="true" android:layout_toEndOf="@id/ub__commute_driver_trip_card_photo_section" android:layout_alignParentStart="true">
+            <com.ubercab.ui.core.UTextView android:gravity="start" android:id="@id/ub__commute_driver_trip_card_name_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.Book" />
+            <com.ubercab.ui.core.UTextView android:gravity="start" android:id="@id/ub__commute_driver_trip_card_inconvenience" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.P.Book" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.URelativeLayout android:gravity="end|center|top" android:layout_gravity="end|center|top" android:id="@id/ub__commute_driver_trip_card_photo_section" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+            <com.ubercab.ui.core.UImageView android:id="@id/ub__commute_driver_trip_card_photo" android:layout_width="@dimen/ui__avatar_size_medium" android:layout_height="@dimen/ui__avatar_size_medium" />
+        </com.ubercab.ui.core.URelativeLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__commute_driver_trip_card_cta" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="16741b1c-c832">
+        <com.ubercab.ui.core.UPlainView android:background="@drawable/ub__border" android:layout_width="wrap_content" android:layout_height="?dividerWidth" />
+        <com.ubercab.ui.core.UTextView android:gravity="start" android:id="@id/ub__commute_driver_trip_card_cta_text" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ui__spacing_unit_2x" uber:analyticsId="ee44f548-4972" style="@style/Platform.TextAppearance.H6.News.Link" />
+        <com.ubercab.ui.core.UPlainView android:background="@drawable/ub__border" android:layout_width="wrap_content" android:layout_height="?dividerWidth" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.scheduled_commute.trips.driver.CommuteDriverTripView>

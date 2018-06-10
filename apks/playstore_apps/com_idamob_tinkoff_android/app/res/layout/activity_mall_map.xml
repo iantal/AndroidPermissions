@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout n1:id="@id/mall_map_coordinator" n1:background="@color/n7" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <fragment n1:name="com.google.android.gms.maps.SupportMapFragment" n1:id="@id/mall_map" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <fragment n1:name="ru.tcsbank.mb.ui.fragments.map.MapGoogleControlsFragment" n1:id="@id/mall_map_controls_fragment" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginBottom="@dimen/mall_map_header_height" />
+    <android.support.design.widget.AppBarLayout n1:id="@id/mall_map_appbar" n1:background="@color/transparent" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:elevation="0.0dip" n2:layout_behavior="@string/scrolling_appbar_behavior" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar n1:id="@id/mall_map_toolbar" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" n2:navigationIcon="@drawable/ic_arrow_back_dark_24dp" n2:title="@string/empty" />
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView n1:id="@id/mall_map_bottom_sheet" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n3:anchorPoint="@dimen/map_anchor_point" n3:behavior_hideable="true" n3:behavior_peekHeight="@dimen/mall_map_header_height" n3:layout_behavior="@string/anchor_bottom_sheet_behavior" xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:paddingTop="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <LinearLayout n1:orientation="vertical" n1:id="@id/mall_map_page_header" n1:background="?selectableItemBackground" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:text="@string/loyalty_offers_malls_title" />
+                <TextView n1:textAppearance="@style/Text.Header.Dark" n1:textSize="@dimen/text_extra_large" n1:id="@id/mall_map_page_title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="2.0dip" n1:layout_marginBottom="@dimen/offset_from_edge" fontPath="@string/roboto_medium" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/mall_map_page_address" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="9.0dip" />
+                <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/mall_map_page_city" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="9.0dip" />
+            </LinearLayout>
+            <FrameLayout n1:id="@id/mall_map_page_details_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton n1:id="@id/mall_map_fab_navigation" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/activity_vertical_margin" n1:src="@drawable/ic_directions" n4:layout_anchor="@id/mall_map_bottom_sheet" n4:layout_anchorGravity="end|center|top" n4:layout_behavior="@string/scroll_aware_fab_behavior" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ru.tcsbank.mb.ui.widgets.bottomsheet.FillableAppBarLayout n1:id="@id/mall_map_fillable_appbar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n5:layout_behavior="@string/fillable_appbar_behavior" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</android.support.design.widget.CoordinatorLayout>

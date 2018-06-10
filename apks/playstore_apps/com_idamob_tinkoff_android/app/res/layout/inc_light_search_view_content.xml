@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/search_container" n1:background="@drawable/bg_search_view_light" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatImageView n1:id="@id/back_btn" n1:layout_width="24.0dip" n1:layout_height="24.0dip" n1:layout_marginLeft="@dimen/screen_content_margin" n1:layout_marginRight="@dimen/screen_content_padding_plus" n1:src="@drawable/ic_back_white" n1:scaleType="center" n1:layout_centerVertical="true" n2:tint="@color/n4" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <EditText n1:textAppearance="@style/Text.Default.Dark" n1:layout_gravity="center_vertical" n1:id="@id/search_text" n1:background="@android:color/transparent" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="@dimen/screen_content_margin" n1:maxLines="1" n1:maxLength="@integer/search_query_max_length" n1:layout_toLeftOf="@id/clear_search" n1:layout_toRightOf="@id/back_btn" n1:inputType="text" />
+    <android.support.v7.widget.AppCompatImageView n1:id="@id/clear_search" n1:visibility="invisible" n1:layout_width="24.0dip" n1:layout_height="24.0dip" n1:layout_marginRight="12.0dip" n1:src="@drawable/ic_close_white" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n3:tint="@color/n4" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <View n1:id="@id/back_btn_area" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_toLeftOf="@id/search_text" />
+    <View n1:id="@id/clear_search_area" n1:visibility="invisible" n1:layout_width="48.0dip" n1:layout_height="fill_parent" n1:layout_alignParentRight="true" />
+</RelativeLayout>

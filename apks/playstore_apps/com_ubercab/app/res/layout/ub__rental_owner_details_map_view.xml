@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.URelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__rental_owner_details_map_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.ubercab.ui.core.UPlainView android:id="@id/ub__rental_owner_details_map_interface_layer" android:background="?brandTransparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.URelativeLayout>
+    <com.ubercab.ui.core.URelativeLayout android:gravity="center_vertical" android:background="?brandWhite" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset">
+        <com.ubercab.ui.CircleImageView android:id="@id/ub__rental_owner_details_map_owner_image" android:layout_width="@dimen/ui__spacing_unit_7x" android:layout_height="@dimen/ui__spacing_unit_7x" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" android:layout_alignParentStart="true" uber:srcCompat="@drawable/ub__ic_default_user" uber:circleImageBorderColor="?brandGrey40" uber:circleImageBorderWidth="@dimen/ub__rental_dummy_dimen" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/ub__rental_owner_details_map_owner_image">
+            <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__rental_owner_details_map_owner_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/Platform.TextAppearance.H5.News" />
+            <com.ubercab.ui.core.UTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ub__rental_owner_details_map_owner_vehicle_name_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" style="@style/Platform.TextAppearance.H3.News" />
+            <com.ubercab.ui.core.UTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ub__rental_owner_details_map_owner_provider_name_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.URelativeLayout>
+</com.ubercab.ui.core.ULinearLayout>

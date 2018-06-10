@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:id="@id/chat_messages_container" n1:background="@color/chat_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView n1:id="@id/chat_messages" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:scrollbars="vertical" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <ProgressBar n1:layout_gravity="center" n1:id="@id/chat_loading_spinner" n1:visibility="gone" n1:layout_width="@dimen/chat_progress_size" n1:layout_height="@dimen/chat_progress_size" style="?android:progressBarStyleLarge" />
+    <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:id="@id/chat_error_view" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0dip" n1:layout_marginRight="16.0dip">
+        <TextView n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/chat_message_load_failed" />
+        <Button n1:textColor="?colorAccent" n1:layout_gravity="center_horizontal" n1:id="@id/chat_button_retry" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/chat_button_retry" style="?borderlessButtonStyle" />
+    </LinearLayout>
+</FrameLayout>

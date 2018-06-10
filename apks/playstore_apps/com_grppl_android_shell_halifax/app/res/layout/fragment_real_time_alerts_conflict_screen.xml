@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/realTimeAlertsConflictScreen" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/realTimeAlertsConflictScreenHeaderLayout" n1:background="@drawable/real_time_alerts_conflict_screen_gradient_header_background" n1:layout_width="fill_parent" n1:layout_height="@dimen/real_time_alerts_conflict_screen_header_layout_height">
+        <TextView n1:id="@id/realTimeAlertsConflictScreenHeaderText" n1:text="@string/real_time_alerts_conflict_screen_title" n1:layout_toLeftOf="@id/realTimeAlertsConflictScreenPhoneImage" n1:contentDescription="@string/accessibility_title_real_time_alerts_conflict_screen_header" style="@style/RealTimeAlertsConflictScreen.Header" />
+        <ImageView n1:id="@id/realTimeAlertsConflictScreenPhoneImage" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/real_time_alerts_conflict_screen_phone_image_margin_right" n1:src="@drawable/real_time_alerts_phone_image" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView n1:id="@id/realTimeAlertsConflictScreenPrimaryContent" n1:text="@string/real_time_alerts_conflict_screen_primary_content" n1:layout_below="@id/realTimeAlertsConflictScreenHeaderLayout" style="@style/RealTimeAlertsConflictScreen.PrimaryBodytext" />
+    <TextView n1:id="@id/realTimeAlertsConflictScreenSecondaryContent" n1:text="@string/real_time_alerts_conflict_screen_secondary_content" n1:layout_below="@id/realTimeAlertsConflictScreenPrimaryContent" style="@style/RealTimeAlertsConflictScreen.SecondaryBodytext" />
+    <Button n1:id="@id/realTimeAlertsConflictScreenActivateButton" n1:text="@string/real_time_alerts_conflict_screen_activate_button" n1:layout_above="@id/realTimeAlertsConflictScreenNotNowButton" style="@style/RealTimeAlertsConflictScreen.ActivateButton" />
+    <TextView n1:id="@id/realTimeAlertsConflictScreenNotNowButton" n1:text="@string/real_time_alerts_conflict_screen_not_now_button" n1:layout_alignParentBottom="true" n1:contentDescription="@string/accessibility_title_real_time_alerts_conflict_screen_not_now_button" style="@style/RealTimeAlertsConflictScreen.NotNowButton" />
+</RelativeLayout>

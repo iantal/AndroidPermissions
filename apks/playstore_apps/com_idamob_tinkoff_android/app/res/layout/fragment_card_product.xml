@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:id="@id/content_container" n1:paddingTop="24.0dip" style="@style/ScreenContent">
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/top_note" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_margin" n1:layout_marginRight="@dimen/screen_content_margin" />
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/currencies_title" n1:paddingLeft="16.0dip" n1:paddingTop="24.0dip" n1:paddingBottom="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/card_application_currency_chooser_title" />
+            <android.support.v7.widget.RecyclerView n1:id="@id/rv_currencies" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <include n1:id="@id/divider" n1:layout_width="fill_parent" n1:layout_height="2.0px" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="@dimen/screen_content_margin_half" layout="@layout/inc_divider" />
+            <include n1:id="@id/smart_fields_group" layout="@layout/inc_name_surname_phone_smart_fields" />
+            <LinearLayout n1:id="@id/income_smart_field_layout" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ru.tinkoff.core.smartfields.view.SmartFieldView n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/screen_content_margin" n2:fieldClass="ru.tinkoff.core.smartfields.api.fields.MoneyInputSmartField" n2:fieldKey="income" n2:fieldType="text" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+            <ViewSwitcher n1:id="@id/view_switcher" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:inAnimation="@anim/fade_in" n1:outAnimation="@anim/fade_out">
+                <Button n1:enabled="false" n1:id="@id/apply" n1:layout_marginTop="@dimen/screen_content_margin" n1:text="@string/card_product_apply" style="@style/Button.Yellow.Normal" />
+                <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:padding="16.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/new_products_currency_not_available" />
+            </ViewSwitcher>
+            <TextView n1:textAppearance="@style/Text.Default.Blue" n1:textSize="@dimen/text_small" n1:gravity="center" n1:id="@id/card_details_view" n1:background="@color/white" n1:visibility="gone" n1:text="@string/identify_add_application_tariff" n1:textAllCaps="true" style="@style/DefaultItem" />
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:id="@id/note" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/screen_content_margin" />
+        </LinearLayout>
+    </ScrollView>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/progress_view" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" n1:layout_centerInParent="true" />
+</RelativeLayout>

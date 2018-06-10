@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ub__payment_hamburger_menu" android:id="@id/action_modal_menu" android:title="@string/ub__payments_provider_menu_edit" app:showAsAction="ifRoom" />
+</menu>

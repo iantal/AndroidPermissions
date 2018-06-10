@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true" n1:layout_above="@id/otpButtons">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin">
+            <TextView n1:textAppearance="@style/TextAppearance.Headline" n1:id="@id/otpTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_vertical_margin" n1:layout_marginBottom="@dimen/fragment_otp_request_spacing_medium" n1:text="@string/enrollment_otp_request_title" />
+            <TextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/otpMessage" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_otp_request_spacing_medium" />
+            <TextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/otpAddress" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_otp_request_spacing_medium" />
+            <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_otp_request_spacing_medium">
+                <ImageView n1:layout_gravity="center_vertical" n1:id="@id/updateAddressIcon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:srcCompat="@drawable/enrollment_question_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <com.mobile.ui.common.view.LinkTextView n1:textAppearance="@style/TextAppearance.Body.Small" n1:layout_gravity="center_vertical" n1:id="@id/updateAddressButton" n1:focusable="true" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/fragment_otp_request_spacing_small" n1:text="@string/enrollment_otp_request_update_address" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/otpButtons" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginTop="@dimen/fragment_otp_request_spacing_medium" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_marginBottom="@dimen/activity_vertical_margin" n1:layout_alignParentBottom="true">
+        <Button n1:id="@id/confirmButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/enrollment_otp_request_confirm" style="@style/Widget.Button.Primary" />
+        <Button n1:id="@id/cancelButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/fragment_otp_request_spacing_medium" n1:text="@string/enrollment_otp_request_cancel" style="@style/Widget.Button.Secondary" />
+    </LinearLayout>
+</RelativeLayout>

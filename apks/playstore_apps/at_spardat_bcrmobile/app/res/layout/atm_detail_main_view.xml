@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/ListTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/branch_detail_bankomat_title" style="@style/ScreenHeader" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/view_atm_info" android:background="@drawable/logo_header_background" android:paddingLeft="5.0dip" style="@style/MatchParentWrapContent">
+        <TextView android:textColor="@color/text_title" android:id="@id/tv_atm_header" style="@style/TextSmallBoldMatchWrap" />
+        <TextView android:textColor="@color/text_title" android:id="@id/tv_atm_address" style="@style/TextSmallNormalMatchWrap" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/view_atm_options" android:baselineAligned="false" android:weightSum="1.0" style="@style/MatchParentWrapContent">
+        <LinearLayout android:gravity="center" android:id="@id/view_map" android:background="@drawable/transaction_button_selector" android:padding="3.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <ImageView android:layout_marginRight="10.0dip" android:src="@drawable/map_icn" android:contentDescription="@string/map" style="@style/AllWrapContent" />
+            <TextView android:textColor="@color/button_text_color" android:text="@string/branch_detail_action_map_title" android:maxLines="1" style="@style/TextSmallNormalAllWrap" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/view_route" android:background="@drawable/transaction_button_selector" android:padding="3.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <ImageView android:layout_marginRight="10.0dip" android:src="@drawable/route_icn" android:contentDescription="@string/route" style="@style/AllWrapContent" />
+            <TextView android:textColor="@color/button_text_color" android:text="@string/branch_detail_action_route_title" android:maxLines="1" style="@style/TextSmallNormalAllWrap" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/text_view_color" android:id="@id/tv_other_atms" android:background="@drawable/gradient_separator" android:padding="3.0dip" android:text="@string/other_atms" style="@style/TextSmallNormalMatchWrap" />
+    <ListView android:id="@id/list_view" android:fadingEdge="none" android:drawSelectorOnTop="false" android:divider="@color/separator_bg" android:dividerHeight="1.0dip" android:fadeScrollbars="true" style="@style/ListTheme" />
+</LinearLayout>

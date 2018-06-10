@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingTop="24.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_kyc_required_documents" android:layout_width="fill_parent" android:layout_height="195.0dip" />
+            <TextView android:textSize="26.0sp" android:textColor="@color/grey_dark" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/text_kyc_required_documents" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="16.0dip" fontPath="@string/font_medium" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/grey_dark" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/text_kyc_required_documents_subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" fontPath="@string/font_regular" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/text_kyc_required_documents_next" android:layout_margin="16.0dip" android:text="@string/kyc_required_documents_next" style="@style/MintRaisedButton" />
+</LinearLayout>

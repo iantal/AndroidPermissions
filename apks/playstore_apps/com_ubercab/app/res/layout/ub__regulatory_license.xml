@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.regulatory_license.v2.TripRegulatoryLicenseView android:orientation="horizontal" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="64b3c5e4-e8db"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingEnd="?contentInset">
+        <com.ubercab.ui.core.UTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__regulatory_information" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__regulatory_string" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.P.Book" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UImageView android:layout_width="@dimen/ub__regulatory_image_size" android:layout_height="@dimen/ub__regulatory_image_size" uber:srcCompat="@drawable/ub__insurance_icon" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.regulatory_license.v2.TripRegulatoryLicenseView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingTop="@dimen/progress_bar_title_offset" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.widgets.SwitchWithHint n1:id="@id/sync_contacts" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:switch_hint="@string/security_sync_contacts_hint" n2:switch_title="@string/security_sync_contacts_title" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ru.tcsbank.mb.ui.widgets.SwitchWithHint n1:id="@id/sync_contacts_hide_me" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:switch_hint="@string/security_sync_contacts_hide_me_hint" n3:switch_title="@string/security_sync_contacts_hide_me_title" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

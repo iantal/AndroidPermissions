@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/title" style="@style/SubtitleTextItem" />
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/message" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingTop="@dimen/dialog_bottom_sheet_title_top_bottom_padding" n1:paddingRight="@dimen/screen_content_padding" n1:paddingBottom="@dimen/dialog_bottom_sheet_title_top_bottom_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView n1:id="@id/list" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+</LinearLayout>

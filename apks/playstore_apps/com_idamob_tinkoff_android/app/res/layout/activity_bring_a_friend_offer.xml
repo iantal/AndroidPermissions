@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <android.support.v4.view.ViewPager n1:id="@id/step_list" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator n1:layout_gravity="bottom|center" n1:id="@id/pager_indicator" n1:layout_width="wrap_content" n1:layout_height="24.0dip" n1:layout_marginBottom="132.0dip" n2:spi_dotColor="@color/n3" n2:spi_dotSelectedColor="@color/n3" style="@style/PagerIndicator" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <Button n1:id="@id/next_button" n1:layout_width="fill_parent" n1:layout_height="56.0dip" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:layout_marginBottom="@dimen/screen_content_double_margin" n1:text="@string/common_next" fontPath="@string/roboto_medium" style="@style/Button.Round.Yellow" />
+</LinearLayout>

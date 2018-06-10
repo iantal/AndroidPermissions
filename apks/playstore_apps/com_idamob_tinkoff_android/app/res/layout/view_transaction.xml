@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n1:id="@id/root" n1:background="@drawable/selector_item_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/tile_height_large_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="44.0dip" n1:layout_height="44.0dip" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge">
+        <ImageView n1:id="@id/logo" style="@style/ImageItem" />
+        <TextView n1:textSize="@dimen/text_xxs_small" n1:textColor="@color/white" n1:id="@id/similar_operations" n1:background="@drawable/transaction_similar_count_bg" n1:paddingLeft="6.0dip" n1:paddingTop="1.0dip" n1:paddingRight="6.0dip" n1:paddingBottom="2.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" n1:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TableLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/transaction_message_incoming_margin_left" n1:stretchColumns="3" n1:shrinkColumns="0">
+        <TableRow n1:baselineAligned="false">
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:ellipsize="end" n1:id="@id/caption" n1:layout_width="wrap_content" n1:layout_marginLeft="@dimen/margin_left_from_incoming_message" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginRight="2.0dip" n1:singleLine="true" n1:drawablePadding="@dimen/offset_from_edge_quarter" />
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Dark" n1:id="@id/loyalty" n1:layout_width="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge_quarter" n1:maxLines="1" />
+            <ImageView n1:id="@id/hce" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge_quarter" n1:src="@drawable/ic_operation_nfc" />
+            <LinearLayout n1:gravity="center|right" n1:layout_marginTop="10.0dip" n1:layout_marginRight="@dimen/offset_from_edge">
+                <ru.tinkoff.core.money.view.MoneyAmountView n1:id="@id/amount" n2:fractionalMode="enabled" n2:textColorAmount="@color/black" n2:textColorCurrency="@color/n4" n2:textColorFractional="@color/n4" n2:textSize="@dimen/text_large" n2:textSizeAmount="@dimen/text_large" n2:textSizeCurrency="@dimen/text_small" n2:textSizeFractional="@dimen/text_small" style="@style/SmartMoneyView" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <ImageView n1:id="@id/authorization" n1:visibility="gone" n1:layout_width="@dimen/transaction_details_header_bonus_size" n1:layout_height="@dimen/transaction_details_header_bonus_size" n1:layout_marginLeft="@dimen/offset_from_edge_quarter" />
+                <ImageView n1:id="@id/suspicious_icon" n1:visibility="gone" n1:layout_width="@dimen/transaction_details_header_bonus_size" n1:layout_height="@dimen/transaction_details_header_bonus_size" n1:layout_marginLeft="@dimen/offset_from_edge_quarter" n1:src="@drawable/operation_status_suspicious" />
+            </LinearLayout>
+        </TableRow>
+        <LinearLayout n1:orientation="horizontal" n1:layout_marginLeft="@dimen/margin_left_from_incoming_message" n1:layout_marginRight="@dimen/offset_from_edge" n1:baselineAligned="true">
+            <TextView n1:textAppearance="@style/Text.Small" n1:textColor="@color/transaction_description_color" n1:ellipsize="end" n1:id="@id/description" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="-1.5dip" n1:layout_marginRight="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge" n1:maxLines="1" n1:layout_weight="1.0" />
+            <ImageView n1:id="@id/tranche" n1:background="@drawable/circle_placeholder" n1:layout_width="@dimen/transaction_details_header_bonus_size" n1:layout_height="@dimen/transaction_details_header_bonus_size" n1:layout_marginLeft="@dimen/offset_from_edge_quarter" n1:src="@drawable/ic_operation_has_tranche_list" />
+            <ImageView n1:id="@id/target_cashback" n1:background="@drawable/circle_placeholder" n1:layout_width="@dimen/transaction_details_header_bonus_size" n1:layout_height="@dimen/transaction_details_header_bonus_size" n1:layout_marginLeft="@dimen/offset_from_edge_quarter" n1:src="@drawable/operation_target_cashback" />
+            <ImageView n1:id="@id/highcashback" n1:background="@drawable/circle_placeholder" n1:layout_width="@dimen/transaction_details_header_bonus_size" n1:layout_height="@dimen/transaction_details_header_bonus_size" n1:layout_marginLeft="@dimen/offset_from_edge_quarter" n1:src="@drawable/operation_high_cashback" />
+            <ImageView n1:id="@id/compensation" n1:background="@drawable/circle_placeholder" n1:layout_width="@dimen/transaction_details_header_bonus_size" n1:layout_height="@dimen/transaction_details_header_bonus_size" n1:layout_marginLeft="@dimen/offset_from_edge_quarter" n1:src="@drawable/operation_compensation" />
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:ellipsize="end" n1:id="@id/category" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge_quarter" n1:layout_marginTop="-1.5dip" n1:maxWidth="@dimen/text_max_width" n1:maxLines="1" n1:drawablePadding="@dimen/offset_from_edge_half" />
+        </LinearLayout>
+        <FrameLayout n1:id="@id/message_container">
+            <ru.tcsbank.mb.ui.widgets.WrapWidthTextView n1:textAppearance="@style/Text.ExtraSmall.White" n1:gravity="center_vertical" n1:id="@id/transaction_message" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" />
+        </FrameLayout>
+    </TableLayout>
+</merge>

@@ -1,0 +1,6 @@
+package com.fasterxml.jackson.databind;
+
+public abstract class InjectableValues
+{
+  public abstract Object findInjectableValue(Object paramObject1, DeserializationContext paramDeserializationContext, BeanProperty paramBeanProperty, Object paramObject2);
+}

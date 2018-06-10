@@ -1,0 +1,19 @@
+.class public interface abstract Lpng;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a()Lio/reactivex/Observable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lio/reactivex/Observable<",
+            "Laumy;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract a(Lpfg;)V
+.end method

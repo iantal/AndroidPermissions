@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple n1:color="@color/core_list_item_ripple"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <item n1:id="@android:id/mask">
+        <shape n1:shape="rectangle">
+            <corners n1:radius="@dimen/core_new_list_item_radius" />
+            <solid n1:color="@color/core_white" />
+        </shape>
+    </item>
+    <item>
+        <selector>
+            <item n1:state_selected="false">
+                <shape n1:shape="rectangle">
+                    <corners n1:radius="@dimen/core_new_list_item_radius" />
+                    <solid n1:color="@color/core_list_item_not_selected" />
+                </shape>
+            </item>
+            <item n1:state_selected="true">
+                <shape n1:shape="rectangle">
+                    <corners n1:radius="@dimen/core_new_list_item_radius" />
+                    <solid n1:color="@color/core_list_item_selected" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

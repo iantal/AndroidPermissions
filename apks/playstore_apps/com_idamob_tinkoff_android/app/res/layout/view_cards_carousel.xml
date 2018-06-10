@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n1:orientation="vertical" n1:clipChildren="false" n1:clipToPadding="false" n2:elevation="4.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="?actionBarSize">
+        <TextView n1:textAppearance="@style/Text.Small" n1:textColor="@color/white_half_transparent" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/limits_empty_cards_label" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0dip" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginRight="32.0dip" n1:text="@string/limit_empty_list" />
+        <ru.tcsbank.mb.ui.activities.account.BigCardsRecyclerViewPager n1:id="@id/limits_cards_carousel_pager" n1:visibility="invisible" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="184.0dip" />
+    </FrameLayout>
+    <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator n1:layout_gravity="center_horizontal" n1:id="@id/limits_cards_pager_indicator" n1:layout_width="wrap_content" n1:layout_height="24.0dip" n1:layout_marginTop="240.0dip" n1:layout_marginBottom="12.0dip" n2:spi_looped="true" style="@style/PagerIndicator" />
+    <android.support.v7.widget.Toolbar n1:id="@id/card_limits_toolbar" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" />
+</merge>

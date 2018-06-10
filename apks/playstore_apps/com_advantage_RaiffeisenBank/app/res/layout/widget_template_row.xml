@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/rzb_white" android:paddingTop="@dimen/widget_item_padding_top" android:paddingBottom="@dimen/widget_item_padding_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/widget_item_list_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/transaction_image" android:layout_width="@dimen/widget_item_list_height" android:layout_height="@dimen/widget_item_list_height" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/widget_text_size" android:textStyle="bold" android:textColor="@color/rpb_black_color" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Rent Payment" android:singleLine="true" android:layout_toLeftOf="@id/open_button" android:layout_toRightOf="@id/transaction_image" android:layout_centerVertical="true" />
+    <Button android:textSize="@dimen/widget_text_size" android:textColor="@color/raiffeisen_black_80_opacity" android:id="@id/open_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="@string/open" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ButtonWhiteWidgetButton" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.map_ui.optional.centerme.CenterMeView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFloatingActionButton android:id="@id/center_me" android:layout_width="@dimen/ub__map_fab_size" android:layout_height="@dimen/ub__map_fab_size" android:layout_margin="@dimen/ui__spacing_unit_2x" android:scaleType="center" android:contentDescription="@string/map_center_me" app:srcCompat="@drawable/ub__ic_center_me_white" app:backgroundTint="?android:textColorPrimaryInverse" app:rippleColor="?android:textColorPrimaryInverse" app:borderWidth="0.0dip" app:analyticsId="48684b0c-b689" />
+</com.ubercab.map_ui.optional.centerme.CenterMeView>

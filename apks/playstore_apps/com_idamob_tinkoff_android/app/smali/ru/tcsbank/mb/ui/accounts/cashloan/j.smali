@@ -1,0 +1,14 @@
+.class interface abstract Lru/tcsbank/mb/ui/accounts/cashloan/j;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a()V
+.end method
+
+.method public abstract a(Ljava/lang/Throwable;)V
+.end method
+
+.method public abstract a(Lru/tinkoff/mb/api/entities/accounts/CashLoanBankAccount;Lru/tinkoff/mb/api/entities/accounts/DebitBankAccount;)V
+.end method

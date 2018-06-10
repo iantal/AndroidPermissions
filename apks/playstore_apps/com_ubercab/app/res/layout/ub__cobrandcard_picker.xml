@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.cobrandcard.picker.PickerModalView android:orientation="vertical" android:background="?android:colorBackground" android:padding="?contentInset" android:clipChildren="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__cobrandcard_picker_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H2.News.Primary" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__cobrandcard_picker_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" style="@style/Platform.TextAppearance.P" />
+    <com.ubercab.ui.core.URecyclerView android:id="@id/ub__cobrandcard_picker_items" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+    <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" android:alpha="0.5" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?contentInset">
+        <com.ubercab.ui.core.UButton android:id="@id/ub__cobrandcard_picker_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" uber:analyticsEnabled="false" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.cobrandcard.picker.PickerModalView>

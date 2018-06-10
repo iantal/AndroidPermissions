@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UFrameLayout android:id="@id/ub__tooltip_container" android:padding="@dimen/ui__spacing_unit_2x" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.commons.tooltip.AnchorView android:id="@id/ub__tooltip_anchor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__tooltip_content_container" android:background="@drawable/ub__tooltip_contentbox" android:padding="@dimen/ub__tooltip_content_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UImageButton android:layout_gravity="start" android:id="@id/ub__tooltip_button_close" android:background="?tooltipBackground" android:padding="@dimen/ui__spacing_unit_1x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:srcCompat="@drawable/ic_close" uber:analyticsId="0c0fc54d-d84e" />
+            <com.ubercab.ui.commons.image.IllustrationView android:layout_gravity="center_horizontal" android:id="@id/ub__tooltip_illustration" android:visibility="gone" android:layout_width="@dimen/ui__spacing_unit_9x" android:layout_height="@dimen/ui__spacing_unit_9x" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" />
+        </com.ubercab.ui.core.UFrameLayout>
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__tooltip_text_container" android:background="@drawable/ub__tooltip_contentbox" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <com.ubercab.ui.core.UTextView android:gravity="start" android:layout_gravity="start" android:id="@id/ub__tooltip_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="f38f6c77-1586" style="@style/TextAppearance.Tooltip.Title" />
+            <com.ubercab.ui.core.UTextView android:gravity="start" android:layout_gravity="start" android:id="@id/ub__tooltip_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.1" uber:analyticsId="8d79a992-0e6b" style="@style/TextAppearance.Tooltip.Text" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:id="@id/ub__tooltip_annotation" android:padding="@dimen/ui__spacing_unit_1x" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="35e72c25-47fb" style="@style/TextAppearance.Tooltip.Annotation" />
+            <com.ubercab.ui.core.UButton android:layout_gravity="end" android:id="@id/ub__tooltip_button_primary" android:background="?selectableItemBackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="317e1327-21ff" style="@style/TextAppearance.Tooltip.Button" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.UFrameLayout>

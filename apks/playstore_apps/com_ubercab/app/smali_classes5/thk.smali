@@ -1,0 +1,135 @@
+.class public final Lthk;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lawxs;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lawxs<",
+        "Lgmk<",
+        "Ljkq<",
+        "Lcom/ubercab/presidio/app/core/root/main/ride/location_edit/text_search/model/LocationRowViewModelCollection;",
+        ">;>;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Lthg;
+
+
+# direct methods
+.method public constructor <init>(Lthg;)V
+    .locals 0
+
+    .line 17
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 18
+    iput-object p1, p0, Lthk;->a:Lthg;
+
+    return-void
+.end method
+
+.method public static a(Lthg;)Lgmk;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lthg;",
+            ")",
+            "Lgmk<",
+            "Ljkq<",
+            "Lcom/ubercab/presidio/app/core/root/main/ride/location_edit/text_search/model/LocationRowViewModelCollection;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 27
+    invoke-static {p0}, Lthk;->c(Lthg;)Lgmk;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static b(Lthg;)Lthk;
+    .locals 1
+
+    .line 31
+    new-instance v0, Lthk;
+
+    invoke-direct {v0, p0}, Lthk;-><init>(Lthg;)V
+
+    return-object v0
+.end method
+
+.method public static c(Lthg;)Lgmk;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lthg;",
+            ")",
+            "Lgmk<",
+            "Ljkq<",
+            "Lcom/ubercab/presidio/app/core/root/main/ride/location_edit/text_search/model/LocationRowViewModelCollection;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 35
+    invoke-virtual {p0}, Lthg;->b()Lgmk;
+
+    move-result-object p0
+
+    const-string v0, "Cannot return null from a non-@Nullable @Provides method"
+
+    invoke-static {p0, v0}, Lawxv;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lgmk;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public a()Lgmk;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lgmk<",
+            "Ljkq<",
+            "Lcom/ubercab/presidio/app/core/root/main/ride/location_edit/text_search/model/LocationRowViewModelCollection;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 23
+    iget-object v0, p0, Lthk;->a:Lthg;
+
+    invoke-static {v0}, Lthk;->a(Lthg;)Lgmk;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 10
+    invoke-virtual {p0}, Lthk;->a()Lgmk;
+
+    move-result-object v0
+
+    return-object v0
+.end method

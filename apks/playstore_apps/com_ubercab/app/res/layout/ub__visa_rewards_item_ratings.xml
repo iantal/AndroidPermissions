@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UFrameLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__visa_rewards_no_item_ratings" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visa_reward_list_no_rating" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__visa_rewards_item_ratings_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__visa_rewards_item_rating" android:background="@drawable/ub__visa_rewards_item_rating_bg" android:paddingLeft="@dimen/ui__visa_rewards_rating_padding_lr" android:paddingRight="@dimen/ui__visa_rewards_rating_padding_lr" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Primary.Inverse" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__visa_rewards_item_ratings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__visa_rewards_item_price_rating_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_1x" android:text="@string/visa_reward_bullet_point" android:layout_marginStart="@dimen/ui__spacing_unit_1x" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H6.Book.Tertiary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__visa_rewards_item_price_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Platform.TextAppearance.H6.Book.Tertiary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.UFrameLayout>

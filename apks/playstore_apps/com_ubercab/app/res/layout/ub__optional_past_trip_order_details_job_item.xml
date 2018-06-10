@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H4.News" android:ellipsize="end" android:id="@id/ub__past_trip_job_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:drawablePadding="@dimen/ui__spacing_unit_2x" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" android:layout_toStartOf="@id/ub__past_trip_job_item_value" android:layout_alignParentStart="true" />
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H4.News" android:id="@id/ub__past_trip_job_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News.Tertiary" android:id="@id/ub__past_trip_job_item_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ub__past_trip_job_item_title" />
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News.Link" android:id="@id/ub__past_trip_job_item_details_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/past_trip_order_details_job_view_details" android:layout_below="@id/ub__past_trip_job_item_subtitle" />
+</merge>

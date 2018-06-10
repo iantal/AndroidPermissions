@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:background="@color/bg_slightly_transparent" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:scrollbarStyle="insideOverlay" n1:layout_gravity="center" n1:id="@id/scroll_layout" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="@dimen/padding_normal" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="@dimen/padding_normal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <RelativeLayout n1:id="@id/call_online" style="@style/ContactButtonContainer">
+                    <ImageView n1:id="@id/image" n1:src="@drawable/internet_call" style="@style/ContactButton" />
+                    <TextView n1:textAppearance="@style/Text.ExtraSmall.White" n1:gravity="center_horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/contacts_voip_button" n1:layout_below="@id/image" />
+                </RelativeLayout>
+                <RelativeLayout n1:id="@id/ca_feedback_form_action" style="@style/ContactButtonContainer">
+                    <ImageView n1:id="@id/image" n1:src="@drawable/email" style="@style/ContactButton" />
+                    <TextView n1:textAppearance="@style/Text.ExtraSmall.White" n1:gravity="center_horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/contacts_feedback_button" n1:layout_below="@id/image" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout n1:id="@id/feedback_phone_groups_container" n1:visibility="gone" n1:layout_marginBottom="@dimen/offset_from_edge" style="@style/ScreenContent" />
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/socialLinks" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge_half" />
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:background="@color/transparent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="?actionBarSize" n1:alpha="0.0" n2:theme="@style/Theme.AppCompat.Light.DarkActionBar" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.White" n1:layout_gravity="bottom|center" n1:id="@id/other_contacts_button" n1:background="@drawable/selector_btn_bordered" n1:padding="@dimen/nine_padding" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="48.0dip" n1:text="@string/contacts_other_contacts_button" n1:alpha="0.0" n1:translationY="-32.0dip" />
+    <ImageView n1:layout_gravity="bottom|center" n1:id="@id/other_contacts_arrow" n1:paddingTop="25.0dip" n1:paddingBottom="16.0dip" n1:layout_width="48.0dip" n1:layout_height="48.0dip" n1:src="@drawable/arrow_down" n1:scaleType="center" n1:alpha="0.0" />
+</FrameLayout>

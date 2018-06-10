@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView n1:background="@color/background" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:splitMotionEvents="false">
+        <com.mobile.ui.common.view.HeadingTextView n1:id="@id/clickToCallHubTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/click_to_call_hub_title" style="@style/ScreenHeadline.Background" />
+        <LinearLayout n1:orientation="vertical" n1:padding="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:splitMotionEvents="false">
+            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/click_to_call_hub_tile_margin" n1:layout_marginBottom="@dimen/click_to_call_hub_tile_margin" n1:splitMotionEvents="false">
+                <Button n1:id="@id/clickToCallHubArrangementsTile" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/click_to_call_arrangements_tile_text" n1:drawableTop="@drawable/click_to_call_arrangements_icon" n1:layout_weight="1.0" n1:layout_marginStart="@dimen/click_to_call_hub_tile_margin" n1:layout_marginEnd="@dimen/click_to_call_hub_tile_margin" style="@style/Widget.Button.Tile" />
+                <Button n1:id="@id/clickToCallHubNewProductTile" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/click_to_call_new_product_tile_text" n1:drawableTop="@drawable/click_to_call_new_product_icon" n1:layout_weight="1.0" n1:layout_marginStart="@dimen/click_to_call_hub_tile_margin" n1:layout_marginEnd="@dimen/click_to_call_hub_tile_margin" style="@style/Widget.Button.Tile" />
+            </LinearLayout>
+            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/click_to_call_hub_tile_margin" n1:splitMotionEvents="false">
+                <Button n1:id="@id/clickToCallHubInternetBankingTile" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/click_to_call_internet_banking_tile_text" n1:drawableTop="@drawable/click_to_call_internet_banking_icon" n1:layout_weight="1.0" n1:layout_marginStart="@dimen/click_to_call_hub_tile_margin" n1:layout_marginEnd="@dimen/click_to_call_hub_tile_margin" style="@style/Widget.Button.Tile" />
+                <Button n1:id="@id/clickToCallHubOtherQueryTile" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/click_to_call_other_query_tile_text" n1:drawableTop="@drawable/click_to_call_other_query_icon" n1:layout_weight="1.0" n1:layout_marginStart="@dimen/click_to_call_hub_tile_margin" n1:layout_marginEnd="@dimen/click_to_call_hub_tile_margin" style="@style/Widget.Button.Tile" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.mobile.ui.common.view.HeadingTextView n1:id="@id/clickToCallHubSecurityAndTravelEmergenciesLabel" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/click_to_call_reason_for_call_title_text" n1:drawableLeft="@drawable/security_lock_icon" style="@style/ClickToCall.ReasonForCallListTitle" />
+        <com.mobile.ui.common.view.DividerRecyclerView n1:id="@id/clickToCallHubReasonForCallList" n1:background="@color/list_divider_color" n1:paddingTop="@dimen/click_to_call_list_top_bottom_divider_height" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/call_us_screen_medium_spacing" n1:importantForAccessibility="no" n2:dividerDrawable="@drawable/click_to_call_horizontal_divider" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

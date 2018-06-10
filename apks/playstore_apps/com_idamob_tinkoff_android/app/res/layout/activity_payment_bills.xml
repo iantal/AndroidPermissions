@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:focusableInTouchMode="true" style="@style/MatchParent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:id="@id/payment_scroll_view" n1:background="@color/bg_dark" n1:visibility="visible" style="@style/KeyboardContainer.NumberCurrency">
+        <LinearLayout n1:orientation="vertical" n1:background="@color/bg_for_payments" style="@style/VerticalWrapping">
+            <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/accounts" style="@style/AccountsCarouselPager" />
+            <ru.tcsbank.mb.ui.widgets.ConfirmCardSecurityCodeView n1:id="@id/confirm_security_code" n1:background="@color/bg_dark" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <include layout="@layout/inc_carousel_bottom_arrow" />
+            <fragment n1:name="ru.tcsbank.mb.ui.providers.ProviderHeaderFragment" n1:id="@id/fragment_provider_header" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <fragment n1:name="ru.tcsbank.mb.ui.fragments.operation.PaymentFieldsFragment" n1:id="@id/fragment_fields" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <fragment n1:name="ru.tcsbank.mb.ui.fragments.pay.CommissionFragment" n1:id="@id/fragment_bills_commission" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

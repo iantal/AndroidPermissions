@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n1:layout_width="@dimen/tile_height_default_item" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/main_image" style="@style/ImageItem" />
+    <ImageView n1:layout_gravity="bottom|center|right" n1:id="@id/second_down" n1:background="@drawable/circle_placeholder_white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:backgroundTint="@color/n7" n2:tint="@color/n3" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</merge>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.URelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ub__commute_trips_list_request_commute_bottom">
+        <com.ubercab.ui.core.URecyclerView android:id="@id/ub__commute_trips_list_view" android:background="?brandGrey20" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+        <com.ubercab.ui.core.UPercentRelativeLayout android:id="@id/ub_commute_trips_list_locked_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:layout_marginStart="@dimen/ui__spacing_unit_2x">
+            <include layout="@layout/ub__commute_layout_route_locked_internal" />
+        </com.ubercab.ui.core.UPercentRelativeLayout>
+        <include android:id="@id/ub_commute_trips_list_empty_view" android:background="?android:colorBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ub__commute_empty_trips_view" />
+        <include android:id="@id/ub_commute_trips_list_unlocked_view" android:background="?android:colorBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ub__commute_unlocked_internal" />
+        <include android:id="@id/ub_commute_trips_list_missing_route_view" android:background="?android:colorBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ub__commute_rider_missing_route_view" />
+        <com.ubercab.ui.core.UImageView android:layout_gravity="end|bottom|center" android:id="@id/ub__commute_trips_list_request_refresh_list" android:background="@drawable/ub__trip_list_refresh" android:visibility="gone" android:layout_width="@dimen/ui__avatar_size_small" android:layout_height="@dimen/ui__avatar_size_small" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" uber:analyticsId="ad7bee02-533a" />
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ub__commute_trips_list_request_commute_bottom" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.ubercab.ui.core.UPlainView android:background="@drawable/ub__border" android:layout_width="wrap_content" android:layout_height="?dividerWidth" />
+        <com.ubercab.ui.core.UButton android:id="@id/ub__commute_trips_list_request_commute_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?gutterSize" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginRight="?gutterSize" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:text="@string/ub__commute_trip_list_primary_action" android:layout_marginStart="?gutterSize" android:layout_marginEnd="?gutterSize" uber:analyticsId="686821b3-16d2" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.URelativeLayout>

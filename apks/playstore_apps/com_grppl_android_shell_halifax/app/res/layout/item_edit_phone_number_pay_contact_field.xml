@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/personalDetailsNumberTypeLabel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:textAlignment="textStart" n1:layout_alignParentStart="true" style="@style/TextAppearance.InputLabel" />
+    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/personal_details_registered_for_pay_a_contact" n1:layout_alignParentEnd="true" style="@style/TextAppearance.Body" />
+</RelativeLayout>

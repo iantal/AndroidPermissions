@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:gravity="center_vertical" android:id="@id/ub__location_edit_search_container_date" style="@style/Helix.Appearance.LocationEditor.Container">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__location_edit_search_date_view" android:text="@string/scheduled_date_time_plugin_ask" uber:analyticsId="f426111e-0b81" style="@style/Helix.Appearance.LocationEditor.TextView" />
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.ui.core.ULinearLayout>

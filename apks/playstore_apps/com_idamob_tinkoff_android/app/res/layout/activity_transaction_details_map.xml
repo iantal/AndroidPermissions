@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <fragment n1:name="com.google.android.gms.maps.SupportMapFragment" n1:id="@id/transaction_details_map" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <FrameLayout n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageView n1:id="@id/close_btn" n1:background="?selectableItemBackgroundBorderless" n1:padding="@dimen/screen_content_margin" n1:layout_width="wrap_content" n1:layout_height="@dimen/tile_height_medium_item" n1:src="@drawable/ic_close_white" />
+    </FrameLayout>
+</FrameLayout>

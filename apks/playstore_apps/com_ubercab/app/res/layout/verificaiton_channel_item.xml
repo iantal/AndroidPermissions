@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.user_identity_flow.identity_verification.channel_selector.channels.IdentityVerificationChannelView android:orientation="vertical" android:background="?selectableItemBackground" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ui__spacing_unit_2x" android:paddingEnd="@dimen/ui__spacing_unit_3x"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.URadioButton android:layout_gravity="center_vertical" android:id="@id/verification_channel_button" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="0.0dip" android:paddingEnd="@dimen/ui__spacing_unit_1x" />
+        <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:id="@id/verification_channel_item_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:gravity="center_vertical" android:id="@id/verification_channel_item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ui__spacing_unit_2x" android:paddingEnd="@dimen/ui__spacing_unit_2x" style="@style/Platform.TextAppearance.H5.News" />
+            <com.ubercab.ui.core.UTextView android:id="@id/verification_channel_item_subheader" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ui__spacing_unit_2x" android:paddingEnd="@dimen/ui__spacing_unit_2x" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UTextView android:textColor="?colorNegative" android:id="@id/verification_channel_item_error" android:paddingTop="@dimen/ui__spacing_unit_1x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Link" />
+</com.ubercab.user_identity_flow.identity_verification.channel_selector.channels.IdentityVerificationChannelView>

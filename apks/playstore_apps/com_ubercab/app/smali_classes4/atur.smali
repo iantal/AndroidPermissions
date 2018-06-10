@@ -1,0 +1,142 @@
+.class public final Latur;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lawxs;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lawxs<",
+        "Latxx;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final a:Laxga;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Laxga<",
+            "Latqz;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Laxga;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laxga<",
+            "Latqz;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 17
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 18
+    iput-object p1, p0, Latur;->a:Laxga;
+
+    return-void
+.end method
+
+.method public static a(Latqz;)Latxx;
+    .locals 1
+
+    .line 35
+    invoke-static {p0}, Latui;->a(Latqz;)Latxx;
+
+    move-result-object p0
+
+    const-string v0, "Cannot return null from a non-@Nullable @Provides method"
+
+    invoke-static {p0, v0}, Lawxv;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Latxx;
+
+    return-object p0
+.end method
+
+.method public static a(Laxga;)Latxx;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laxga<",
+            "Latqz;",
+            ">;)",
+            "Latxx;"
+        }
+    .end annotation
+
+    .line 27
+    invoke-interface {p0}, Laxga;->get()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Latqz;
+
+    invoke-static {p0}, Latur;->a(Latqz;)Latxx;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static b(Laxga;)Latur;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Laxga<",
+            "Latqz;",
+            ">;)",
+            "Latur;"
+        }
+    .end annotation
+
+    .line 31
+    new-instance v0, Latur;
+
+    invoke-direct {v0, p0}, Latur;-><init>(Laxga;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public a()Latxx;
+    .locals 1
+
+    .line 23
+    iget-object v0, p0, Latur;->a:Laxga;
+
+    invoke-static {v0}, Latur;->a(Laxga;)Latxx;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 10
+    invoke-virtual {p0}, Latur;->a()Latxx;
+
+    move-result-object v0
+
+    return-object v0
+.end method

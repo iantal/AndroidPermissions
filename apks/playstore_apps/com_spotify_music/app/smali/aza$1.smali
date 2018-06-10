@@ -1,0 +1,50 @@
+.class final Laza$1;
+.super Lazd;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Laza;
+.end annotation
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 153
+    invoke-direct {p0, p1}, Lazd;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/io/File;Ljava/lang/String;)Z
+    .locals 0
+
+    .line 156
+    invoke-super {p0, p1, p2}, Lazd;->accept(Ljava/io/File;Ljava/lang/String;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const-string p1, ".cls"
+
+    invoke-virtual {p2, p1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+.end method

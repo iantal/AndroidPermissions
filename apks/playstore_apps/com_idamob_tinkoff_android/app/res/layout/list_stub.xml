@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/empty" n1:visibility="gone" style="@style/MatchParent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/holder" n1:layout_centerInParent="true" style="@style/VerticalWrapping">
+        <ImageView n1:id="@id/image" n1:src="@drawable/noitem" style="@style/EmptyViewImage" />
+        <TextView n1:id="@id/text" style="@style/EmptyViewText" />
+    </LinearLayout>
+    <include n1:id="@id/stub_progress" layout="@layout/inc_loader" />
+</RelativeLayout>

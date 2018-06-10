@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge n1:background="@drawable/start_large_button_background"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/screen_content_padding" n2:layout_constraintBottom_toBottomOf="parent" n2:layout_constraintRight_toRightOf="parent" n2:layout_constraintTop_toTopOf="parent" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textAppearance="@style/Text.Default.White" n1:id="@id/title" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_padding" n1:maxLines="2" n3:layout_constraintBottom_toTopOf="@id/subtitle" n3:layout_constraintLeft_toLeftOf="parent" n3:layout_constraintRight_toLeftOf="@id/icon" n3:layout_constraintTop_toTopOf="parent" n3:layout_constraintVertical_chainStyle="packed" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Hint" n1:id="@id/subtitle" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_padding" n1:maxLines="1" n4:layout_constraintBottom_toBottomOf="parent" n4:layout_constraintHorizontal_bias="0.0" n4:layout_constraintLeft_toLeftOf="parent" n4:layout_constraintRight_toLeftOf="@id/icon" n4:layout_constraintTop_toBottomOf="@id/title" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.trip_details.optional.fare.row.profiles.ProfileTripFareExpandedRowView android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:paddingLeft="?contentInset" android:paddingTop="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="?contentInset" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="?contentInset" android:paddingEnd="?contentInset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/ub__profile_button_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/ub_optional__profile_button_view" />
+    <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/switch_profile" style="@style/Platform.TextAppearance.H6.News.Link" />
+</com.ubercab.presidio.trip_details.optional.fare.row.profiles.ProfileTripFareExpandedRowView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Default.White" n1:gravity="center" n1:id="@id/title" n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item" />
+    <ru.tcsbank.mb.ui.widgets.CommonBoardView n1:id="@id/board" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <ru.tcsbank.mb.ui.operations.details.widget.RedeemOperationsGroupView n1:id="@id/redeem_group" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/screen_content_margin_half" />
+    <include n1:id="@id/redeem_group_divider" n1:visibility="gone" layout="@layout/inc_divider_margin" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/src_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_margin" n1:layout_marginTop="24.0dip" />
+        <TextView n1:textAppearance="@style/Text.Header.Dark" n1:id="@id/src_value" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_margin" n1:layout_below="@id/src_title" />
+        <ImageView n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginTop="30.0dip" n1:src="@drawable/ic_transaction_details_redeem_arrow" n1:layout_centerHorizontal="true" />
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/dest_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="24.0dip" n1:layout_marginRight="@dimen/screen_content_margin" n1:layout_alignParentRight="true" />
+        <TextView n1:textAppearance="@style/Text.Header.Dark" n1:id="@id/dest_value" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/screen_content_margin" n1:layout_below="@id/dest_title" n1:layout_alignParentRight="true" />
+        <Button n1:id="@id/btn_compensation" n1:layout_height="56.0dip" n1:layout_marginTop="91.0dip" style="@style/Button.Yellow" />
+    </RelativeLayout>
+</LinearLayout>

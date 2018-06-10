@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/offers_main_layout" android:background="@drawable/phonebg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/offersTopHeading" android:background="@drawable/onealphadarkgrey" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageButton android:id="@id/offersH1BackButton" android:background="@drawable/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:background="@drawable/oraclelogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/offersH2Layout" android:background="@layout/transactionactivitybackground" android:paddingRight="10.0sp" android:paddingBottom="5.0sp" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/offersTopHeading">
+        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/offersHeaderLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/K_OFFERS" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/graph_container" android:background="@color/beige" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/offersH2Layout">
+        <WebView android:id="@id/offersWebview" android:background="@layout/transactionactivitybackground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/deposit_loss" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item">
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/cdwf_withdrawal_title" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:layout_gravity="center|right" n1:id="@id/amount_withdrawal" n1:layout_width="wrap_content" n2:textColorAmount="@color/text_dark" n2:textColorCurrency="@color/text_light" n2:textColorFractional="@color/text_dark" n2:textSizeAmount="@dimen/text_medium" n2:textSizeCurrency="@dimen/text_medium" n2:textSizeFractional="@dimen/text_medium" style="@style/SmartMoneyView" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item">
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/cdwf_loose_benefit_title" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:layout_gravity="center|right" n1:id="@id/amount_loss" n1:layout_width="wrap_content" n3:textColorAmount="@color/text_dark" n3:textColorCurrency="@color/text_light" n3:textColorFractional="@color/text_dark" n3:textSizeAmount="@dimen/text_medium" n3:textSizeCurrency="@dimen/text_medium" n3:textSizeFractional="@dimen/text_medium" style="@style/SmartMoneyView" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+</LinearLayout>

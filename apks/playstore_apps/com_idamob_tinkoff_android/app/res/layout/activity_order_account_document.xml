@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/smart_fields_group" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.SwitchCompat n1:id="@id/send_by_email" n1:layout_marginTop="@dimen/screen_content_margin_half" n1:checked="true" n1:text="@string/order_account_document_email_switch" style="@style/SwitchRipple" />
+    <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:inputType="textEmailAddress" n2:fieldKey="email" n2:fieldTitle="@string/order_account_document_email_hint" n2:fieldType="text" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <android.support.v7.widget.SwitchCompat n1:id="@id/send_by_post" n1:layout_marginTop="@dimen/screen_content_margin" n1:checked="false" n1:text="@string/order_account_document_post_switch" style="@style/SwitchRipple" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/address_block" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingTop="@dimen/screen_content_padding_half" n1:paddingRight="@dimen/screen_content_padding" n1:visibility="gone" style="@style/MediumItem">
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Hint" n1:id="@id/post_address_hint" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/post_address" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/screen_content_margin_half" />
+        <View n1:id="@id/post_address_divider" n1:background="@color/n4" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    </LinearLayout>
+    <Button n1:id="@id/order_document" n1:layout_marginTop="@dimen/screen_content_margin" n1:text="@string/order_account_document_order_document_button" style="@style/Button.Yellow.Normal" />
+</LinearLayout>

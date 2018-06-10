@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UPercentFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UImageView android:id="@id/ub__eats_restaurant_card_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:layout_heightPercent="45.000004%" />
+        <com.ubercab.presidio.feed.views.CardHeaderView android:id="@id/ub__card_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" />
+    </com.ubercab.ui.core.UPercentFrameLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__eats_restaurant_card_headline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginTop="?contentInset" android:layout_marginRight="?contentInset" android:maxLines="2" style="@style/Platform.TextAppearance.H3.Book" />
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__eats_restaurant_card_subhead" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="?contentInset" android:maxLines="@integer/ub__carousel_card_subhead_max_lines" style="@style/Platform.TextAppearance.P" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/ub__eats_restaurant_card_cta" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset">
+            <com.ubercab.ui.core.UTextView android:textColor="?colorPositive" android:ellipsize="end" android:id="@id/ub__eats_restaurant_card_cta_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H4" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__eats_restaurant_card_eta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

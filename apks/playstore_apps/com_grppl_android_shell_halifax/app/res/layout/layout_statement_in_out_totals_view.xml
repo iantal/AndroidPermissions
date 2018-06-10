@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/rootView" n1:background="@color/in_out_totals_background" n1:paddingLeft="@dimen/in_out_margin_medium" n1:paddingTop="@dimen/in_out_margin_large" n1:paddingRight="@dimen/in_out_margin_medium" n1:paddingBottom="@dimen/in_out_margin_large" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:baselineAligned="false"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:id="@id/noTransactionsMessage" n1:paddingBottom="@dimen/in_out_margin_medium" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/message_hc_018" n1:importantForAccessibility="no" style="@style/TextAppearance.Body" />
+    <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:baselineAligned="false">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <TextView n1:textAppearance="@style/InOutTextAppearance" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/in_text" n1:importantForAccessibility="no" />
+            <TextView n1:textAppearance="@style/InOutTextAppearance" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/in_out_margin_tiny" n1:text="@string/out_text" n1:importantForAccessibility="no" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/barsLayout" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/in_out_margin_medium" n1:layout_marginTop="@dimen/in_out_progress_bar_layout_margin_top" n1:layout_weight="1.0">
+            <ProgressBar n1:id="@id/barIn" n1:layout_width="fill_parent" n1:layout_height="@dimen/in_out_progress_bar_height" n1:progressDrawable="@drawable/statement_in_out_totals_progress_bar_in" style="?android:progressBarStyleHorizontal" />
+            <ProgressBar n1:id="@id/barOut" n1:layout_width="fill_parent" n1:layout_height="@dimen/in_out_progress_bar_height" n1:layout_marginTop="@dimen/in_out_progress_bar_spacing" n1:progressDrawable="@drawable/statement_in_out_totals_progress_bar_out" style="?android:progressBarStyleHorizontal" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="right" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/in_out_margin_medium">
+            <TextView n1:textAppearance="@style/InOutTextAppearance.Strong.InAmount" n1:id="@id/totalAmountIn" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:importantForAccessibility="no" />
+            <TextView n1:textAppearance="@style/InOutTextAppearance.Strong.OutAmount" n1:id="@id/totalAmountOut" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/in_out_margin_tiny" n1:importantForAccessibility="no" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

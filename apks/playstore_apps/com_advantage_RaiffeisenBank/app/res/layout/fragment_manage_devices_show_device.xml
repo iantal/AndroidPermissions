@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/container_layout" android:background="@color/rzb_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/existing_device_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.thinkdesquared.banking.helpers.ui.widgets.CircleImageView android:id="@id/profile_image" android:layout_width="@dimen/avatar_width" android:layout_height="@dimen/avatar_width" android:src="@drawable/ic_add_padding" android:scaleType="centerCrop" app:border_width="2.0dip" app:border_color="@color/raiffeisen_black_10_opacity" xmlns:app="http://schemas.android.com/apk/res-auto" />
+                            <com.thinkdesquared.banking.helpers.ui.widgets.CircleImageView android:id="@id/profile_image_on_top" android:visibility="gone" android:layout_width="@dimen/avatar_width" android:layout_height="@dimen/avatar_width" android:src="@color/raiffeisen_black" android:scaleType="centerCrop" app:border_width="2.0dip" app:border_color="@color/raiffeisen_black_10_opacity" xmlns:app="http://schemas.android.com/apk/res-auto" />
+                            <ImageView android:layout_gravity="center" android:id="@id/cameraImageView" android:visibility="gone" android:layout_width="26.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                    </FrameLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/user_name_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textColor="?dsq_portfolio_text_color_secondary" android:layout_gravity="center" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                    <TextView android:textColor="?dsq_portfolio_text_color_secondary" android:layout_gravity="center" android:id="@id/user_name2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/user_name" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip">
+                    <com.thinkdesquared.banking.helpers.ui.widgets.AutoResizeTextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/device_name" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+                    <android.support.v7.widget.AppCompatEditText android:id="@id/device_name_text" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/twenty_chars_max" android:singleLine="true" android:maxLength="20" android:imeOptions="actionDone|flagNoExtractUi" style="@style/DSQWidget.Holo.AlphanumericWithSomeSpecialCharactersAllowedEditText.value" />
+                    <include android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_marginTop="25.0dip" android:layout_marginBottom="15.0dip" layout="@layout/include_separator" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/change_pin_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                    <com.thinkdesquared.banking.helpers.ui.widgets.AutoResizeTextView android:id="@id/changePin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/change_pin" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/add_pin_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                    <com.thinkdesquared.banking.helpers.ui.widgets.AutoResizeTextView android:id="@id/addPin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/device_pin" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/pin_container" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip">
+                    <android.support.v7.widget.AppCompatEditText android:id="@id/pin_text" android:paddingLeft="4.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="48.0dip" android:singleLine="true" android:maxLength="20" android:inputType="textPassword" android:imeOptions="actionDone|flagNoExtractUi" style="@style/DSQWidget.Holo.AllCharactersAllowedEditText" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/fingerprint_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_marginTop="25.0dip" android:layout_marginBottom="15.0dip" layout="@layout/include_separator" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip">
+                        <com.thinkdesquared.banking.helpers.ui.widgets.AutoResizeTextView android:id="@id/fingerprint_textView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fingerprint_authentication" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+                        <LinearLayout android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="18.0dip">
+                            <android.support.v7.widget.SwitchCompat android:theme="@style/DSQSwitchStyle" android:gravity="center" android:id="@id/fingerprint_checkbox" android:background="@color/transparent" android:layout_width="60.0dip" android:layout_height="fill_parent" />
+                            <ImageView android:id="@id/fingerprint_inactive_imageview" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/switch_inactive" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/authorizationLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <include android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_marginTop="25.0dip" android:layout_marginBottom="15.0dip" layout="@layout/include_separator" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip">
+                            <com.thinkdesquared.banking.helpers.ui.widgets.AutoResizeTextView android:id="@id/fingerprint_authorization_textView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fingerprint_authorization" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+                            <LinearLayout android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="18.0dip">
+                                <android.support.v7.widget.SwitchCompat android:theme="@style/DSQSwitchStyle" android:gravity="center" android:id="@id/fingerprint_authorization_checkbox" android:background="@color/transparent" android:layout_width="60.0dip" android:layout_height="fill_parent" />
+                                <ImageView android:id="@id/fingerprint_inactive_authorization_imageview" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/switch_inactive" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <com.thinkdesquared.banking.helpers.ui.widgets.AutoResizeTextView android:id="@id/fingerprint_info_textView" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:text="@string/fingerprint_exists" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/unregister_container" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip">
+                <include android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_marginTop="15.0dip" layout="@layout/include_separator" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/raiffeisen_red" android:gravity="center_vertical" android:id="@id/alt_submit_button" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/manage_device_unregister" style="@style/DSQTextAppearance.value" />
+            </LinearLayout>
+        </LinearLayout>
+        <include android:id="@id/submit_layout" layout="@layout/submit_button_layout" />
+    </LinearLayout>
+</ScrollView>

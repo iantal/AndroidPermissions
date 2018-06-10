@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.advanced_settings.delete_account.reason.DeleteAccountReasonView android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UTextView android:id="@id/delete_account_reason_title" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:text="@string/delete_account_reason_title" android:layout_weight="0.0" style="@style/Platform.TextAppearance.H3" />
+    <com.ubercab.ui.core.URecyclerView android:id="@id/delete_account_reason_list" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="0.0dip" android:foreground="?selectableItemBackground" android:layout_weight="1.0" android:contentDescription="@string/delete_account_reason_caret_description" uber:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.ubercab.ui.core.ULinearLayout android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:layout_weight="0.0">
+        <com.ubercab.ui.core.UButton android:id="@id/delete_account_reason_button_secondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delete_account_confirmation_cancel" uber:analyticsId="12f7d7ac-82f4" style="?platformButtonSecondary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.advanced_settings.delete_account.reason.DeleteAccountReasonView>

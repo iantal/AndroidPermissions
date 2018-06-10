@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.scheduled_rides.selector.ScheduledRidesSelectorView android:theme="@style/Theme.Helix.Default" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ub_optional__error_toast" android:padding="@dimen/ui__spacing_unit_3x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="e9def3a5-1413">
+        <com.ubercab.ui.core.UTextView android:theme="@style/Theme.Helix.Dark" android:id="@id/ub_optional_error_toast_text" android:background="@drawable/toast_shape" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scheduled_rides_date_time_error_generic" android:paddingStart="?contentInset" android:paddingEnd="?contentInset" style="@style/Platform.TextAppearance.H5.News" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub_optional__date_picker_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scheduled_rides_datepicker_title" style="@style/Platform.TextAppearance.H2.Book" />
+            <com.ubercab.ui.core.UTextView android:id="@id/ub_optional__date_time_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H3.News" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub_optional__select_date" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" uber:analyticsId="9c303247-edaa" style="@style/Platform.TextAppearance.H3.News" />
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ui__spacing_unit_3x" android:paddingRight="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub_optional__select_time" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" uber:analyticsId="3f7a712c-c9d2" style="@style/Platform.TextAppearance.H3.News" />
+        </com.ubercab.ui.core.ULinearLayout>
+        <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="@dimen/ui__spacing_unit_3x" android:paddingTop="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UButton android:gravity="center" android:layout_gravity="center" android:id="@id/ub_optional__confirm_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scheduled_rides_datepicker_confirm_button_label" uber:analyticsId="c52216af-c2da" style="?platformButtonPrimary" />
+            <com.ubercab.ui.core.UButton android:gravity="center" android:layout_gravity="center" android:id="@id/ub_optional__confirm_disabled" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scheduled_rides_datepicker_confirm_button_label" android:alpha="0.3" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.scheduled_rides.selector.ScheduledRidesSelectorView>

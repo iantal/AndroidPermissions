@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/tileArrangementActionMenu" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/accountTileActionMenuHeader" n1:background="@color/arrangement_tile_menu_header_color" n1:padding="@dimen/tile_arrangement_menu_item_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/TextAppearance.PopupMenuHeading" />
+    <ListView n1:id="@id/tileArrangementMenuItems" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:divider="@color/arrangement_tile_menu_divider" n1:dividerHeight="@dimen/tile_arrangement_menu_item_bottom_margin" />
+</LinearLayout>

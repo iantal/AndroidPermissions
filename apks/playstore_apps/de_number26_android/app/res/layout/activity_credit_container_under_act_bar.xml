@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout style="@style/LayoutTabletCompatible">
+        <FrameLayout android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/toolbar" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:elevation="@dimen/toolbar_elevation" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <de.number26.machete.android.ui.components.SteppedProgressView android:id="@id/creditContainerActProgress" android:layout_width="fill_parent" android:layout_height="@dimen/creditProgressHeight" android:layout_below="@id/toolbar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar">
+        <include layout="@layout/progress" />
+    </FrameLayout>
+</RelativeLayout>

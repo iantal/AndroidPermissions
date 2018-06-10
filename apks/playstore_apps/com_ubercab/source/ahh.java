@@ -1,0 +1,228 @@
+import android.content.res.Configuration;
+import android.support.v7.widget.AppCompatSpinner;
+import android.support.v7.widget.LinearLayoutCompat;
+import android.support.v7.widget.LinearLayoutCompat.LayoutParams;
+import android.view.View;
+import android.view.View.MeasureSpec;
+import android.view.ViewGroup.LayoutParams;
+import android.view.animation.DecelerateInterpolator;
+import android.view.animation.Interpolator;
+import android.widget.AbsListView.LayoutParams;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.HorizontalScrollView;
+import android.widget.Spinner;
+
+public class ahh
+  extends HorizontalScrollView
+  implements AdapterView.OnItemSelectedListener
+{
+  private static final Interpolator j = new DecelerateInterpolator();
+  Runnable a;
+  LinearLayoutCompat b;
+  int c;
+  int d;
+  private ahj e;
+  private Spinner f;
+  private boolean g;
+  private int h;
+  private int i;
+  
+  private boolean a()
+  {
+    return (this.f != null) && (this.f.getParent() == this);
+  }
+  
+  private void b()
+  {
+    if (a()) {
+      return;
+    }
+    if (this.f == null) {
+      this.f = d();
+    }
+    removeView(this.b);
+    addView(this.f, new ViewGroup.LayoutParams(-2, -1));
+    if (this.f.getAdapter() == null) {
+      this.f.setAdapter(new ahi(this));
+    }
+    if (this.a != null)
+    {
+      removeCallbacks(this.a);
+      this.a = null;
+    }
+    this.f.setSelection(this.i);
+  }
+  
+  private boolean c()
+  {
+    if (!a()) {
+      return false;
+    }
+    removeView(this.f);
+    addView(this.b, new ViewGroup.LayoutParams(-2, -1));
+    a(this.f.getSelectedItemPosition());
+    return false;
+  }
+  
+  private Spinner d()
+  {
+    AppCompatSpinner localAppCompatSpinner = new AppCompatSpinner(getContext(), null, zb.actionDropDownStyle);
+    localAppCompatSpinner.setLayoutParams(new LinearLayoutCompat.LayoutParams(-2, -1));
+    localAppCompatSpinner.setOnItemSelectedListener(this);
+    return localAppCompatSpinner;
+  }
+  
+  ahk a(xn paramXn, boolean paramBoolean)
+  {
+    paramXn = new ahk(this, getContext(), paramXn, paramBoolean);
+    if (paramBoolean)
+    {
+      paramXn.setBackgroundDrawable(null);
+      paramXn.setLayoutParams(new AbsListView.LayoutParams(-1, this.h));
+      return paramXn;
+    }
+    paramXn.setFocusable(true);
+    if (this.e == null) {
+      this.e = new ahj(this);
+    }
+    paramXn.setOnClickListener(this.e);
+    return paramXn;
+  }
+  
+  public void a(int paramInt)
+  {
+    this.i = paramInt;
+    int m = this.b.getChildCount();
+    int k = 0;
+    while (k < m)
+    {
+      View localView = this.b.getChildAt(k);
+      boolean bool;
+      if (k == paramInt) {
+        bool = true;
+      } else {
+        bool = false;
+      }
+      localView.setSelected(bool);
+      if (bool) {
+        c(paramInt);
+      }
+      k += 1;
+    }
+    if ((this.f != null) && (paramInt >= 0)) {
+      this.f.setSelection(paramInt);
+    }
+  }
+  
+  public void a(boolean paramBoolean)
+  {
+    this.g = paramBoolean;
+  }
+  
+  public void b(int paramInt)
+  {
+    this.h = paramInt;
+    requestLayout();
+  }
+  
+  public void c(int paramInt)
+  {
+    final View localView = this.b.getChildAt(paramInt);
+    if (this.a != null) {
+      removeCallbacks(this.a);
+    }
+    this.a = new Runnable()
+    {
+      public void run()
+      {
+        int i = localView.getLeft();
+        int j = (ahh.this.getWidth() - localView.getWidth()) / 2;
+        ahh.this.smoothScrollTo(i - j, 0);
+        ahh.this.a = null;
+      }
+    };
+    post(this.a);
+  }
+  
+  public void onAttachedToWindow()
+  {
+    super.onAttachedToWindow();
+    if (this.a != null) {
+      post(this.a);
+    }
+  }
+  
+  protected void onConfigurationChanged(Configuration paramConfiguration)
+  {
+    super.onConfigurationChanged(paramConfiguration);
+    paramConfiguration = aai.a(getContext());
+    b(paramConfiguration.e());
+    this.d = paramConfiguration.g();
+  }
+  
+  public void onDetachedFromWindow()
+  {
+    super.onDetachedFromWindow();
+    if (this.a != null) {
+      removeCallbacks(this.a);
+    }
+  }
+  
+  public void onItemSelected(AdapterView<?> paramAdapterView, View paramView, int paramInt, long paramLong)
+  {
+    ((ahk)paramView).b().d();
+  }
+  
+  public void onMeasure(int paramInt1, int paramInt2)
+  {
+    int k = View.MeasureSpec.getMode(paramInt1);
+    paramInt2 = 1;
+    boolean bool;
+    if (k == 1073741824) {
+      bool = true;
+    } else {
+      bool = false;
+    }
+    setFillViewport(bool);
+    int m = this.b.getChildCount();
+    if ((m > 1) && ((k == 1073741824) || (k == Integer.MIN_VALUE)))
+    {
+      if (m > 2) {
+        this.c = ((int)(View.MeasureSpec.getSize(paramInt1) * 0.4F));
+      } else {
+        this.c = (View.MeasureSpec.getSize(paramInt1) / 2);
+      }
+      this.c = Math.min(this.c, this.d);
+    }
+    else
+    {
+      this.c = -1;
+    }
+    k = View.MeasureSpec.makeMeasureSpec(this.h, 1073741824);
+    if ((bool) || (!this.g)) {
+      paramInt2 = 0;
+    }
+    if (paramInt2 != 0)
+    {
+      this.b.measure(0, k);
+      if (this.b.getMeasuredWidth() > View.MeasureSpec.getSize(paramInt1)) {
+        b();
+      } else {
+        c();
+      }
+    }
+    else
+    {
+      c();
+    }
+    paramInt2 = getMeasuredWidth();
+    super.onMeasure(paramInt1, k);
+    paramInt1 = getMeasuredWidth();
+    if ((bool) && (paramInt2 != paramInt1)) {
+      a(this.i);
+    }
+  }
+  
+  public void onNothingSelected(AdapterView<?> paramAdapterView) {}
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cash26_bottom_sheet" android:background="@android:color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_sheet_expanded_height" app:layout_behavior="de.number26.machete.android.ui.cash26.Cash26BottomSheetBehaviour"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/cash26_spending_alert" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/cash26_bottom_sheet_expanded" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/cash26_transaction" />
+            <include layout="@layout/cash26_new" />
+        </RelativeLayout>
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/bottom_sheet_peek_height" layout="@layout/cash26_bottom_sheet_collapsed" />
+        <include android:id="@id/deposit_withdraw_buttons" layout="@layout/cash26_deposit_withdraw" />
+    </FrameLayout>
+</LinearLayout>

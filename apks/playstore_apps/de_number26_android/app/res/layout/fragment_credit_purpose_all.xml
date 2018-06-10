@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/creditScreenPaddingTopBottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/creditPurposeQuestion" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditTitle" />
+    <android.support.v7.widget.RecyclerView android:id="@id/creditPurposeList" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/creditPurposeContinue" android:layout_below="@id/creditPurposeQuestion" />
+    <View android:layout_alignTop="@id/creditPurposeList" style="@style/creditListShadowTop" />
+    <View android:layout_alignBottom="@id/creditPurposeList" style="@style/creditListShadowBottom" />
+    <Button android:enabled="false" android:id="@id/creditPurposeContinue" android:layout_marginTop="8.0dip" android:layout_marginBottom="@dimen/creditScreenPaddingTopBottom" android:layout_alignParentBottom="true" style="@style/creditAccentButton" />
+</RelativeLayout>

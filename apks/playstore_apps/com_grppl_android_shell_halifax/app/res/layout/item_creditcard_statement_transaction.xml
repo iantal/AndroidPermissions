@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:baselineAligned="false"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/transaction_row_outer_margin" n1:layout_marginTop="@dimen/transaction_row_outer_margin" n1:layout_marginBottom="@dimen/transaction_row_outer_margin" n1:layout_weight="1.0">
+            <TextView n1:textAppearance="@style/TransactionRowText.Light" n1:id="@id/transactionDate" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:importantForAccessibility="no" />
+            <TextView n1:textAppearance="@style/TransactionRowText.Strong" n1:ellipsize="end" n1:id="@id/transactionDescription" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/transaction_row_margin" n1:maxLines="2" />
+        </LinearLayout>
+        <TextView n1:textAppearance="@style/TransactionRowText.Strong.Balance" n1:id="@id/transactionAmount" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/transaction_row_margin_medium" n1:layout_marginTop="@dimen/transaction_row_margin_bottom" n1:layout_marginBottom="@dimen/transaction_row_outer_margin" />
+        <View n1:id="@id/transactionCreditIndicator" n1:background="@color/credit_indicator_color" n1:layout_width="@dimen/credit_indicator_width" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/credit_indicator_margin" />
+    </LinearLayout>
+    <View n1:background="@color/list_divider_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/list_divider_drawable_height" />
+</LinearLayout>

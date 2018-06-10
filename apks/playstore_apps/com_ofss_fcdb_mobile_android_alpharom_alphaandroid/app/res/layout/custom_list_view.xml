@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center|left" android:background="@drawable/transparent_background" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/TextViewbg" android:background="@drawable/transparent_background" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/relative" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/black" android:gravity="left" android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="15.0dip" android:textStyle="normal" android:textColor="@color/black" android:gravity="left" android:id="@id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/TextView01" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/textbox" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/solid_green" android:gravity="center|right" android:id="@id/TextView03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/iconbox2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:gravity="center_vertical" android:id="@id/disclosure" android:background="@drawable/discloser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </LinearLayout>
+</RelativeLayout>

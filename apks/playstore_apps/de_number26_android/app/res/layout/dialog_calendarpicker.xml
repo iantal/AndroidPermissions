@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_bright_25p" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CalendarView android:layout_gravity="bottom" android:id="@id/calendar" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_margin="@dimen/default_margin" />
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/colorAccent" android:id="@id/additional" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/action_cancel" style="@style/Widget.AppCompat.Button.Borderless" />
+        <Button android:textColor="@color/colorAccent" android:id="@id/done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/action_done" style="@style/Widget.AppCompat.Button.Borderless" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="bottom">
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/ub__mobilestudio_plugin_header_height" />
+            <solid android:color="@color/ub__ui_core_accent_tertiary" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:id="@id/content" style="@style/MatchParent">
+        <LinearLayout n1:id="@id/animate_wrapper" style="@style/ScreenContent">
+            <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/deposit_pager" style="@style/AccountsCarouselPager" />
+            <ImageView n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/gray_arrow" />
+            <FrameLayout n1:id="@id/close_deposit_destination" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <LinearLayout n1:id="@id/smart_fields_group" n1:layout_marginTop="@dimen/offset_from_edge" style="@style/ScreenContent">
+                <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:fieldKey="reason" n2:fieldType="simpleList" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            </LinearLayout>
+            <fragment n1:name="ru.tcsbank.mb.ui.accounts.deposit.IncreaseDepositRateFragment" n1:id="@id/fragment_increase_deposit_rate" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <FrameLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item">
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_gravity="center_vertical" n1:id="@id/time_label" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/close_multi_deposit_time_label" />
+                <TextView n1:textAppearance="@style/Text.Default.Dark" n1:layout_gravity="center|right" n1:id="@id/time_close_value" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            </FrameLayout>
+            <include layout="@layout/inc_loose_content_deposit" />
+            <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:id="@id/smooth_progress" style="@style/SmoothProgress" />
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/loose_hint" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:text="@string/close_deposit_message" />
+            <Button n1:enabled="false" n1:id="@id/close_deposit_btn" n1:layout_marginTop="@dimen/offset_from_edge" n1:text="@string/cda_next_button" style="@style/Button.Yellow.Normal" />
+        </LinearLayout>
+    </ScrollView>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+</FrameLayout>

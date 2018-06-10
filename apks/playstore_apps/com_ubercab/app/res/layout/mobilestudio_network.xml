@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.uber.mobilestudio.network.NetworkView android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnCount="2" style="@style/MobileStudio.Plugin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:layout_gravity="end|start|fill_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ub__mobilestudio_network" android:layout_columnSpan="2" style="@style/MobileStudio.Plugin.Header" />
+    <com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:text="@string/ub__mobilestudio_condition" style="@style/MobileStudio.Plugin.RowTitle" />
+    <com.ubercab.ui.core.USpinner android:layout_gravity="end|start|fill_horizontal|center" android:id="@id/mobilestudio_network_condition" android:layout_width="0.0dip" />
+    <com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:id="@id/mobilestudio_network_failure_simple_label" android:text="@string/ub__mobilestudio_failure" style="@style/MobileStudio.Plugin.RowTitle" />
+    <com.ubercab.ui.core.USwitchCompat android:layout_gravity="start|center" android:id="@id/mobilestudio_network_failure_simple" style="@style/MobileStudio.Plugin.RowWidget" />
+    <com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:id="@id/mobilestudio_network_error_simple_label" android:text="@string/ub__mobilestudio_error" style="@style/MobileStudio.Plugin.RowTitle" />
+    <com.ubercab.ui.core.USwitchCompat android:layout_gravity="start|center" android:id="@id/mobilestudio_network_error_simple" style="@style/MobileStudio.Plugin.RowWidget" />
+    <com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:id="@id/mobilestudio_network_delay_label" android:text="@string/ub__mobilestudio_delay" style="@style/MobileStudio.Plugin.RowTitle" />
+    <com.ubercab.ui.core.USpinner android:layout_gravity="end|start|fill_horizontal|center" android:id="@id/mobilestudio_network_delay" android:layout_width="0.0dip" />
+    <com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:id="@id/mobilestudio_network_variance_label" android:text="@string/ub__mobilestudio_variance" style="@style/MobileStudio.Plugin.RowTitle" />
+    <com.ubercab.ui.core.USpinner android:layout_gravity="end|start|fill_horizontal|center" android:id="@id/mobilestudio_network_variance" android:layout_width="0.0dip" />
+    <com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:id="@id/mobilestudio_network_failure_label" android:text="@string/ub__mobilestudio_failure" style="@style/MobileStudio.Plugin.RowTitle" />
+    <com.ubercab.ui.core.USpinner android:layout_gravity="end|start|fill_horizontal|center" android:id="@id/mobilestudio_network_failure" android:layout_width="0.0dip" />
+    <com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:id="@id/mobilestudio_network_error_label" android:text="@string/ub__mobilestudio_error" style="@style/MobileStudio.Plugin.RowTitle" />
+    <com.ubercab.ui.core.USpinner android:layout_gravity="end|start|fill_horizontal|center" android:id="@id/mobilestudio_network_error" android:layout_width="0.0dip" />
+</com.uber.mobilestudio.network.NetworkView>

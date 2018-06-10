@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:id="@id/resend_text_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/resend_number_header" style="@style/Platform.TextAppearance.H3.Book" />
+    <com.ubercab.ui.core.UTextView android:id="@id/resend_text_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:text="@string/resend_number_footer" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+    <com.ubercab.ui.core.UButton android:id="@id/resend_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/resend_sms_code" style="?platformButtonSecondary" />
+    <com.ubercab.ui.core.UButton android:id="@id/sms_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/send_sms_code" style="?platformButtonSecondary" />
+    <com.ubercab.ui.core.UButton android:id="@id/call_me_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/call_me" style="?platformButtonSecondary" />
+    <com.ubercab.ui.core.UButton android:id="@id/pwd_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/signin_with_pwd" style="?platformButtonSecondary" />
+    <com.ubercab.ui.core.UButton android:id="@id/backup_code_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/backup_code_text" style="?platformButtonSecondary" />
+    <com.ubercab.ui.core.UButton android:id="@id/web_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/signup_on_web" style="?platformButtonSecondary" />
+    <com.ubercab.ui.core.UButton android:id="@id/skip_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/verify_later" style="?platformButtonSecondary" />
+    <com.ubercab.ui.core.UButton android:id="@id/cancel_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/cancel" uber:analyticsId="ab6d0a47-bcef" style="?platformButtonPrimary" />
+</com.ubercab.ui.core.ULinearLayout>

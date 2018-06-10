@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.helix.rental.view.RentalSearchLoadingView android:orientation="vertical" android:background="@drawable/ub__rental_rounded_top_corner_rectangle" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__rental_bit_loading_indicator" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:bli_bitColor="?brandBlack" />
+    <com.ubercab.ui.core.UTextView android:gravity="center" android:layout_gravity="center" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__rental_search_loading_text" android:paddingStart="@dimen/ui__spacing_unit_1x" android:paddingEnd="@dimen/ui__spacing_unit_1x" style="@style/Platform.TextAppearance.H4.News" />
+</com.ubercab.helix.rental.view.RentalSearchLoadingView>

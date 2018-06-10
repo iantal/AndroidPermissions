@@ -1,0 +1,9 @@
+.class synthetic Lszt$1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lszt;
+.end annotation

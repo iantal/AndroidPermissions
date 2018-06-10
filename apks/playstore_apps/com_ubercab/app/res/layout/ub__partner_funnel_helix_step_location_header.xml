@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_helix_location_detail_header" android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Funnel.Helix.TextAppearance.H2.Book" />
+    <LinearLayout android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_helix_location_detail_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Funnel.Helix.TextAppearance.H5.News" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_helix_location_detail_distance" android:paddingLeft="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Funnel.Helix.TextAppearance.H5.News.Grey" />
+    </LinearLayout>
+    <com.ubercab.ui.core.UTextView android:textColor="?accentLink" android:id="@id/ub__partner_funnel_helix_location_detail_link" android:background="@drawable/ub__partner_funnel_helix_white_ripple" android:paddingLeft="?gutterSize" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingRight="?gutterSize" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Funnel.Helix.TextAppearance.H5.News" />
+</LinearLayout>

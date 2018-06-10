@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_transfers_contact_list_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/partial_referral_widget" />
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab_add_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/action_margin" android:src="@drawable/ic_person_add_white_24dp" android:contentDescription="@string/existing_contacts_add_new" android:transitionName="action" app:pressedTranslationZ="12.0dip" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="@dimen/ui__spacing_unit_2x" android:width="@dimen/ui__spacing_unit_2x" android:left="@dimen/ui__spacing_unit_3x">
+        <rotate android:fromDegrees="45.0" android:toDegrees="45.0" android:pivotX="0.0%" android:pivotY="0.0%">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/ub__ui_core_brand_grey_40" />
+            </shape>
+        </rotate>
+    </item>
+    <item android:top="@dimen/ui__spacing_unit_1x" android:bottom="@dimen/ui__spacing_unit_1x">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/ub__ui_core_brand_grey_40" />
+            <corners android:radius="@dimen/ui__spacing_unit_1x" />
+        </shape>
+    </item>
+</layer-list>

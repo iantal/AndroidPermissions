@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.helix.fare_split.optional.picker.FareSplitContactPickerView android:background="?android:colorBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="19fb348b-71c6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__fare_split_contact_picker_container" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ub__fare_split_contact_picker_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_behavior="com.ubercab.helix.fare_split.optional.picker.FareSplitSendButtonBehavior">
+        <include android:id="@id/ub__fare_split_contact_picker_fee_top_divider" layout="@layout/ub__grey_horizontal_line" />
+        <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__fare_split_contact_picker_fee" android:background="?android:windowBackground" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H5.News.Primary" />
+        <include android:id="@id/ub__fare_split_contact_picker_fee_bottom_divider" layout="@layout/ub__grey_horizontal_line" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__fare_split_contact_picker_send_button_container" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UButton android:id="@id/ub__fare_split_contact_picker_send_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fare_split_contact_picker_button" uber:analyticsId="64579abe-bbdc" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.helix.fare_split.optional.picker.FareSplitContactPickerView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ub__partner_funnel_step_upgrade_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <com.ubercab.android.partner.funnel.onboarding.steps.upgrade.PeekLegalTextFrameLayout android:background="@color/ub__white" android:paddingLeft="?gutterSize" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/ub__partner_funnel_territory_select_step_top_section" android:paddingTop="@dimen/ui__spacing_unit_8x" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_territory_select_step_main_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" style="@style/Funnel.Helix.TextAppearance.Mega.Book" />
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_territory_select_step_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" style="@style/Funnel.Helix.TextAppearance.H3.News" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ub__partner_funnel_territory_select_step_bottom_section" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__partner_funnel_territory_select_textview_selected_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Funnel.Helix.TextAppearance.H4.Medium" />
+                    <com.ubercab.ui.core.UTextView android:id="@id/ub__partner_funnel_territory_select_textview_change_city" android:paddingLeft="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__partner_funnel_upgrade_change_city" android:singleLine="true" style="@style/Funnel.Helix.TextAppearance.H4.Medium.Link" />
+                </LinearLayout>
+                <com.ubercab.ui.Button android:id="@id/ub__partner_funnel_territory_select_button_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/ub__partner_funnel_continue_str" style="@style/Funnel.Helix.Button.Primary" />
+                <com.ubercab.ui.core.UTextView android:textSize="@dimen/ub__text_size_small" android:id="@id/ub__partner_funnel_signup_textview_legal_disclaimer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" style="@style/Funnel.Helix.TextAppearance.H6.News" />
+            </LinearLayout>
+        </com.ubercab.android.partner.funnel.onboarding.steps.upgrade.PeekLegalTextFrameLayout>
+    </ScrollView>
+    <View android:layout_gravity="bottom" android:background="@drawable/ub__partner_funnel_legal_text_gradient_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/ub__partner_funnel_legal_text_gradient_height" />
+    <include layout="@layout/ub__toolbar" />
+</FrameLayout>

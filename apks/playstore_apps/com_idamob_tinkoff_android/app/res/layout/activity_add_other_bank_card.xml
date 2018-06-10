@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:id="@id/ext_card_content_layout" style="@style/ScreenContent.Padding">
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/ext_card_info" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView n1:layout_gravity="center_vertical" n1:id="@id/lock" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:src="@drawable/lock" />
+                <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/ext_card_about" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/offset_from_edge" />
+            </LinearLayout>
+            <fragment n1:id="@id/card_scan_fragment" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/attach_hint" class="ru.tcsbank.mb.ui.fragments.CardScanFragment" />
+            <Button n1:id="@id/attach" n1:layout_marginTop="@dimen/screen_content_margin" n1:text="@string/aea_attach" style="@style/Button.Yellow.Normal" />
+            <include n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" layout="@layout/inc_transfer_conditions" />
+            <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/visa" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge" n1:src="@drawable/add_external_security" />
+            <TextView n1:textAppearance="@style/Text.ExtraSmall.Hint" n1:gravity="center" n1:id="@id/ext_card_note" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" />
+        </LinearLayout>
+    </ScrollView>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/progress_view" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+</FrameLayout>

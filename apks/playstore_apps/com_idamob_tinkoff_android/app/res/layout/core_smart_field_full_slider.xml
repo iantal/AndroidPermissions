@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingLeft="@dimen/core_expanded_field_padding" n1:paddingTop="@dimen/core_expanded_field_padding" n1:paddingRight="@dimen/core_expanded_field_padding" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/core_value_text_size" n1:textColor="@color/core_slider_full_title" n1:layout_gravity="center_horizontal" n1:id="@id/title" n1:layout_width="wrap_content" style="@style/SmartFieldFullTitle" />
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="@dimen/core_expanded_field_padding" n1:layout_marginBottom="@dimen/core_boolean_action_buttons_margin">
+        <TextView n1:textColor="@color/core_value_text_color" n1:gravity="center" n1:id="@id/seek_bar_value" n1:background="@drawable/core_slider_value_bg" n1:layout_width="wrap_content" n1:layout_height="@dimen/core_slider_value_container_height" n1:layout_marginBottom="32.0dip" n1:width="@dimen/core_slider_value_container_width" />
+        <SeekBar n1:id="@id/seek_bar" n1:paddingTop="@dimen/core_slider_seek_bar_padding" n1:paddingBottom="@dimen/core_slider_seek_bar_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

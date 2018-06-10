@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UCoordinatorLayout android:background="?android:colorBackground" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_horizontal" android:id="@id/ub__card_survey_question_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.ubercab.ui.core.UFrameLayout android:layout_gravity="bottom" android:id="@id/ub__survey_details_view_submit_container" android:background="?android:windowBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UButton android:id="@id/ub__survey_details_view_submit_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__card_survey_submit_label" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.UFrameLayout>
+</com.ubercab.ui.core.UCoordinatorLayout>

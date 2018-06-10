@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/navigationToolbar" n1:padding="@dimen/activity_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/navigationToolbarText" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/mobile_chat_chat_with_us_text" n1:layout_centerInParent="true" style="@style/Widget.Toolbar.ModalTitle" />
+    <ImageView n1:id="@id/navigationToolbarBackButton" n1:padding="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true" />
+</RelativeLayout>

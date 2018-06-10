@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Fingerprint.SetupText" parent="@style/Offer.Title">
+        <item name="android:layout_marginTop">@dimen/offer_icon_margin_top</item>
+        <item name="android:drawableTop">@drawable/fingerprint_offer_image</item>
+        <item name="android:drawablePadding">@dimen/offer_title_margin_top</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.calendar.shortcut_item.CalendarShortcutItemView android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_7x" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UImageView android:layout_gravity="center" android:id="@id/ub__icon" android:layout_width="@dimen/ub__shortcut_icon_size" android:layout_height="@dimen/ub__shortcut_icon_size" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" />
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/ui__spacing_unit_3x">
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="@dimen/ub__shortcut_text_max_width" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/shortcuts_description" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ub__shortcut_description_margin_top" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.calendar.shortcut_item.CalendarShortcutItemView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.driver_accessibility.DriverAccessibilityView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:layout_gravity="center" android:id="@id/ub__driver_accessibility_text" android:paddingLeft="@dimen/ui__spacing_unit_1x" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deaf_driver_context" style="@style/Platform.TextAppearance.H6.News.Primary" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.driver_accessibility.DriverAccessibilityView>

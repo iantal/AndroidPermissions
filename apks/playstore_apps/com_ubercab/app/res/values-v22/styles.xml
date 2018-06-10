@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V22.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V22.Theme.AppCompat.Light" />
+    <style name="Platform.TextAppearance.EditText" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:theme">@style/Platform.EditText.ThemeOverlay</item>
+        <item name="android:textSize">@dimen/ui__text_size_medium</item>
+        <item name="android:textColor">@color/csl_text_color_primary</item>
+        <item name="android:textColorHighlight">?accentSecondary</item>
+        <item name="android:textColorHint">?android:textColorTertiary</item>
+        <item name="android:paddingBottom">@dimen/ui__text_size_medium</item>
+        <item name="android:textCursorDrawable">@drawable/edittext_cursor</item>
+        <item name="fontPath">@string/ub__font_news</item>
+        <item name="lineHeightHint">24.0sp</item>
+    </style>
+    <style name="Base.Theme.Funnel.Helix" parent="@style/Theme.UberFoundation.Light">
+        <item name="android:textAppearance">@style/Funnel.Helix.TextAppearance</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:datePickerDialogTheme">@style/Funnel.Helix.Dialog</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="actionBarStyle">@style/Widget.Funnel.Helix.ActionBar</item>
+        <item name="dialogTheme">@style/Funnel.Helix.Dialog</item>
+        <item name="borderlessButtonStyle">@style/Funnel.Helix.Button.Borderless</item>
+        <item name="textAppearanceListItem">@style/Funnel.Helix.TextAppearance.H4.News</item>
+        <item name="colorPrimary">@color/ub__partner_funnel_helix_black</item>
+        <item name="colorPrimaryDark">@color/ub__partner_funnel_helix_black</item>
+        <item name="colorAccent">@color/ub__partner_funnel_helix_black</item>
+        <item name="alertDialogTheme">@style/Funnel.Helix.Dialog</item>
+        <item name="buttonStyle">@style/Funnel.Helix.Button.Primary</item>
+        <item name="checkboxStyle">@style/Theme.Funnel.Helix.Checkbox</item>
+        <item name="accentPrimary">@color/ub__partner_funnel_helix_accent_primary</item>
+        <item name="accentSecondary">@color/ub__partner_funnel_helix_accent_secondary</item>
+        <item name="accentTertiary">@color/ub__partner_funnel_helix_accent_tertiary</item>
+        <item name="accentCta">@color/ub__partner_funnel_helix_accent_cta</item>
+        <item name="accentLink">@color/ub__partner_funnel_helix_accent_tertiary</item>
+        <item name="avatarTiny">@dimen/ui__avatar_size_tiny</item>
+        <item name="avatarSmall">@dimen/ui__avatar_size_small</item>
+        <item name="avatarMedium">@dimen/ui__avatar_size_medium</item>
+        <item name="avatarLarge">@dimen/ui__avatar_size_large</item>
+        <item name="avatarExtraLarge">@dimen/ui__avatar_size_extra_large</item>
+        <item name="buttonPrimaryTextColor">?android:textColorPrimaryInverse</item>
+        <item name="buttonSecondaryTextColor">@color/button_secondary_text_color</item>
+        <item name="buttonBorderlessTextColor">@color/button_borderless_text_color</item>
+        <item name="colorAccentInverse">@color/ub__partner_funnel_helix_white</item>
+        <item name="colorPositive">@color/ub__partner_funnel_helix_positive</item>
+        <item name="colorNegative">@color/ub__partner_funnel_helix_negative</item>
+        <item name="colorWarning">@color/ub__partner_funnel_helix_warning</item>
+        <item name="contentInset">@dimen/ui__spacing_unit_2x</item>
+        <item name="darkSelectorColor">@color/ub__partner_funnel_helix_grey_80</item>
+        <item name="dividerWidth">@dimen/ui__divider_width</item>
+        <item name="gutterSize">@dimen/ui__spacing_unit_2x</item>
+        <item name="platformButtonPrimary">@style/Funnel.Helix.Button.Primary</item>
+        <item name="platformButtonSecondary">@style/Funnel.Helix.Button.Secondary</item>
+        <item name="lightSelectorColor">@color/ub__partner_funnel_helix_grey_40</item>
+        <item name="lineIndicatorHeight">@dimen/ui__line_indicator_height</item>
+        <item name="anchoredFooterLayout">@layout/ub__partner_funnel_helix_step_standard_footer</item>
+        <item name="descriptionStyle">@style/Funnel.Helix.TextAppearance.H5.News.Grey</item>
+        <item name="headerStyle">@style/Funnel.Helix.TextAppearance.H2.Book</item>
+        <item name="titleItemMarginBottom">@dimen/ui__spacing_unit_3x</item>
+        <item name="partnerFunnelItemUTextViewLayout">@layout/ub__partner_funnel_helix_bullet_item</item>
+        <item name="funnelLoadingColor">@color/ub__white</item>
+        <item name="funnelLoadingCompletedColor">@color/ub__white</item>
+    </style>
+    <style name="Base.V22.Theme.AppCompat" parent="@style/Base.V21.Theme.AppCompat">
+        <item name="actionModeShareDrawable">?android:actionModeShareDrawable</item>
+        <item name="editTextBackground">?android:editTextBackground</item>
+    </style>
+    <style name="Base.V22.Theme.AppCompat.Light" parent="@style/Base.V21.Theme.AppCompat.Light">
+        <item name="actionModeShareDrawable">?android:actionModeShareDrawable</item>
+        <item name="editTextBackground">?android:editTextBackground</item>
+    </style>
+</resources>

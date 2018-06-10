@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/closeButton" android:background="@null" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_weight="0.0" android:filterTouchesWhenObscured="false" />
+        <me.grantland.widget.AutofitTextView android:textSize="24.0sp" android:gravity="center" android:id="@id/contextText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:textAlignment="center" app:autoSizeMinTextSize="20.0sp" style="@style/TextAppearance.Solar.HeroSmall" />
+        <ImageButton android:id="@id/topRightButton" android:background="@null" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_weight="0.0" android:filterTouchesWhenObscured="false" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <me.grantland.widget.AutofitTextView android:textSize="36.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/titleText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" app:autoSizeMinTextSize="24.0sp" style="@style/TextAppearance.Solar.HeroMedium" />
+        <me.grantland.widget.AutofitTextView android:textSize="24.0sp" android:textColor="@color/glue_gray_70" android:gravity="center" android:id="@id/artistsText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" app:autoSizeMinTextSize="20.0sp" style="@style/TextAppearance.Solar.HeroSmall" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="64.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/driving_play_controls_height">
+            <ImageButton android:id="@id/prevButton" android:background="@null" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/driving_back_button_text" android:layout_weight="1.0" android:filterTouchesWhenObscured="false" />
+            <com.spotify.paste.widgets.CheckableImageButton android:id="@id/playPauseButton" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/driving_play_pause_button_test" android:layout_weight="1.0" android:filterTouchesWhenObscured="false" />
+            <ImageButton android:id="@id/nextButton" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/driving_next_button_text" android:layout_weight="1.0" android:filterTouchesWhenObscured="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.spotify.paste.widgets.CheckableImageButton android:id="@id/heartButton" android:background="@null" android:layout_width="fill_parent" android:layout_height="96.0dip" android:layout_margin="4.0dip" android:text="@string/driving_heart_button_text" android:layout_weight="1.0" android:filterTouchesWhenObscured="false" />
+            <com.spotify.paste.widgets.CheckableImageButton android:id="@id/shuffleButton" android:background="@null" android:layout_width="fill_parent" android:layout_height="96.0dip" android:layout_margin="4.0dip" android:text="@string/driving_shuffle_button_text" android:layout_weight="1.0" android:filterTouchesWhenObscured="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

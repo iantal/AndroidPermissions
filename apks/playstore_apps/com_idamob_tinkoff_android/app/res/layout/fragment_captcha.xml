@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item" n1:layout_toLeftOf="@id/btn_refresh" n1:layout_centerVertical="true">
+        <ProgressBar n1:layout_gravity="center" n1:id="@id/captcha_progress" n1:visibility="visible" n1:layout_width="30.0dip" n1:layout_height="30.0dip" />
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:layout_gravity="center" n1:id="@id/captcha_info" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/identify_simple_captcha_not_loaded" />
+        <ImageView n1:id="@id/image_captcha" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageView n1:id="@id/btn_refresh" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/refresh" n1:layout_centerInParent="true" />
+    <EditText n1:textSize="@dimen/text_small" n1:textColorHint="@color/text_hint" n1:id="@id/captcha_input" n1:background="@null" n1:visibility="visible" n1:hint="@string/identify_simple_captcha_hint" n1:layout_toRightOf="@id/btn_refresh" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:imeOptions="actionDone" style="@style/TextView.Default" />
+</RelativeLayout>

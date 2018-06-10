@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:focusableInTouchMode="true" n1:clickable="true" n1:descendantFocusability="beforeDescendants" style="@style/ScreenContent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.SwitchCompat n1:id="@id/toggle_button" n1:checked="false" style="@style/SwitchRipple" />
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/repeat_hint" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" />
+    <LinearLayout n1:id="@id/payment_fields_container" n1:visibility="invisible" n1:layout_height="wrap_content" style="@style/ScreenContent">
+        <include n1:id="@id/name_divider" layout="@layout/inc_divider_margin" />
+        <FrameLayout n1:id="@id/name_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ru.tinkoff.core.smartfields.view.SmartFieldView n1:id="@id/name" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:fieldKey="template_name" n2:fieldTitle="@string/tra_template_name" n2:fieldType="text" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+        <include layout="@layout/inc_divider_margin" />
+        <TextView n1:text="@string/repeat_template_account" style="@style/SubtitleTextItem" />
+        <include layout="@layout/inc_divider" />
+        <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/accounts_carousel" style="@style/AccountsCarouselPager" />
+        <include layout="@layout/inc_divider" />
+        <LinearLayout n1:id="@id/payment_fields_holder" style="@style/ScreenContent.Padding" />
+        <Button n1:id="@id/btn_modify" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" n1:text="@string/repeat_template_auto_and_regular_connect" style="@style/Button.Yellow.Normal" />
+    </LinearLayout>
+</LinearLayout>

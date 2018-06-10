@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/contact_layout_icon" android:layout_width="@dimen/ui__spacing_unit_2x" android:layout_height="@dimen/ui__spacing_unit_2x" android:layout_marginRight="?rdsContentInset" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.TextView android:ellipsize="end" android:id="@id/contact_layout_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            <com.ubercab.ui.TextView android:ellipsize="end" android:id="@id/contact_layout_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?rdsContentInset" android:maxLines="1" android:layout_weight="0.0" />
+        </LinearLayout>
+        <com.ubercab.ui.TextView android:id="@id/contact_layout_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?rdsTextAppearanceH6NewsTertiary" />
+    </LinearLayout>
+</merge>

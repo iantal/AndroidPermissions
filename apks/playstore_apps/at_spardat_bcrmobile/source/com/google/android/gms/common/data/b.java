@@ -1,0 +1,20 @@
+package com.google.android.gms.common.data;
+
+import android.os.Parcel;
+import android.os.Parcelable.Creator;
+import com.google.android.gms.common.internal.safeparcel.c;
+
+public final class b
+  implements Parcelable.Creator<BitmapTeleporter>
+{
+  public b() {}
+  
+  static void a(BitmapTeleporter paramBitmapTeleporter, Parcel paramParcel, int paramInt)
+  {
+    int i = c.a(paramParcel);
+    c.a(paramParcel, 1, paramBitmapTeleporter.a);
+    c.a(paramParcel, 2, paramBitmapTeleporter.b, paramInt, false);
+    c.a(paramParcel, 3, paramBitmapTeleporter.c);
+    c.a(paramParcel, i);
+  }
+}

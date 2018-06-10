@@ -1,0 +1,19 @@
+.class public interface abstract Lhgh;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/Class;)Landroid/content/Intent;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "*>;)",
+            "Landroid/content/Intent;"
+        }
+    .end annotation
+.end method
+
+.method public abstract a(Ljava/lang/String;)Landroid/content/Intent;
+.end method

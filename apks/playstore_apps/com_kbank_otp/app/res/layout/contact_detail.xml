@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_panel" android:background="@color/top_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/top_panel_height">
+        <ImageButton android:id="@id/menu" style="@style/MenuStyle" />
+        <TextView android:id="@id/title" style="@style/CaptionStyle" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="15.0dip" android:text="@string/lost_card_title" />
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/lost_card_title" />
+    <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/call" android:background="@drawable/login_selector" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="6.0dip" android:text="@string/cmd_call_us" />
+    <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/email" android:background="@drawable/gradient_button_selector" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="6.0dip" android:text="@string/cmd_email_us" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/black" android:gravity="center_horizontal" android:id="@id/text3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/lost_card_title" />
+</LinearLayout>

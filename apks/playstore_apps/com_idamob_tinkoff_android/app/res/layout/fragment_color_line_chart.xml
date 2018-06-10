@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ru.tcsbank.mb.ui.ColorLineChart n1:id="@id/clf_color_line_chart" n1:background="@color/empty_color_line" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <TextView n1:textSize="11.0sp" n1:textColor="@color/text_lighter" n1:layout_gravity="center|left" n1:id="@id/clf_tv_no_operations" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="72.0dip" n1:text="@string/clf_no_operations_label" />
+</FrameLayout>

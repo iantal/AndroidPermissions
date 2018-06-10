@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/inputFieldContainer" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ViewStub n1:id="@id/inputFieldEditText" n1:inflatedId="@id/inputFieldEditText" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_toStartOf="@id/inputFieldActionContainer" n1:layout_alignParentStart="true" />
+    <LinearLayout n1:gravity="center_vertical" n1:id="@id/inputFieldActionContainer" n1:padding="@dimen/action_input_field_controller_padding" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" n1:layout_alignParentEnd="true">
+        <TextView n1:id="@id/inputFieldControllerButton" n1:visibility="gone" style="@style/Widget.ActionInputField.Controller" />
+        <ImageView n1:id="@id/inputFieldStatusIcon" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:srcCompat="@drawable/all_input_field_clear_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</RelativeLayout>

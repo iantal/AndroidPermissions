@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout n1:id="@id/swipe_refresh_layout" style="@style/MatchParent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:scrollbars="none" style="@style/MatchParent">
+        <RelativeLayout style="@style/VerticalWrapping">
+            <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/statements" n1:visibility="invisible" n1:descendantFocusability="blocksDescendants" n1:layout_height="@dimen/carousel_height_statements" n1:layout_marginBottom="@dimen/screen_content_padding_half" n2:cp_looped="false" style="@style/VerticalWrapping" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <android.support.v7.widget.RecyclerView n1:id="@id/list" n1:layout_below="@id/statements" style="@style/VerticalWrapping" />
+            <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:id="@id/progress" n1:layout_alignTop="@id/web_view" style="@style/SmoothProgress" />
+        </RelativeLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

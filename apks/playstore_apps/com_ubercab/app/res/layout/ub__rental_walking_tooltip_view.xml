@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.helix.rental.util.map_layer.RentalWalkingTooltipView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/ui__spacing_unit_1x" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingRight="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/ui__spacing_unit_1x" android:paddingEnd="@dimen/ui__spacing_unit_1x">
+        <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:id="@id/ub__icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?android:textColorPrimaryInverse" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/ui__spacing_unit_1x" android:paddingEnd="@dimen/ui__spacing_unit_1x">
+            <com.ubercab.ui.core.UTextView android:textColor="?brandWhite" android:ellipsize="end" android:gravity="start" android:layout_gravity="start" android:id="@id/rental_walking_tooltip_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textAllCaps="false" style="@style/Platform.TextAppearance.H6.News.Primary" />
+            <com.ubercab.ui.core.UTextView android:textColor="?brandGrey60" android:ellipsize="end" android:gravity="start" android:layout_gravity="start" android:id="@id/rental_walking_tooltip_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textAllCaps="false" style="@style/Platform.TextAppearance.H6.News.Primary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.helix.rental.util.map_layer.RentalWalkingTooltipView>

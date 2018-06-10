@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:layout_gravity="right" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/margin_divider" n1:layout_marginRight="@dimen/margin_regular"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.liveperson.infra.ui.view.ui.CustomTextView n1:textSize="@dimen/small_text_size" n1:textStyle="bold" n1:textColor="@color/consumer_bubble_state_text_color" n1:id="@id/lpui_message_state_text" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/margin_half" n1:text="sending" n1:contentDescription="" n2:font_name="@string/custom_font_name_conversation_feed" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.liveperson.infra.ui.view.ui.CustomTextView n1:textSize="@dimen/small_text_size" n1:textColor="@color/consumer_bubble_timestamp_text_color" n1:id="@id/lpui_message_timestamp" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="10:10" n3:font_name="@string/custom_font_name_conversation_feed" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

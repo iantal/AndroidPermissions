@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.uber.mobilestudio.deprecated.MobileStudioView android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UCoordinatorLayout android:id="@id/mobilestudio_host_content_container" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ubercab.ui.core.UScrollView android:theme="@style/Theme.Platform.Dark" android:layout_gravity="end" android:id="@id/mobilestudio_menu_content_scroll_container" android:background="@color/ub__mobilestudio_drawer_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="@dimen/ub__mobilestudio_drawer_elevation">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/mobilestudio_menu_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/ub__mobilestudio_menu_content_header" android:layout="@layout/mobilestudio_drawer_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.uber.mobilestudio.deprecated.MobileStudioView>

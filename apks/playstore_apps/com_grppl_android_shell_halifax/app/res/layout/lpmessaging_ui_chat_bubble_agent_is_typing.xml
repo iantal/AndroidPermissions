@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout n1:background="@drawable/lpmessaging_ui_background_color_selector" n1:padding="@dimen/margin_half" n1:clickable="true" n1:descendantFocusability="blocksDescendants" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/lpui_agent_bubbleAvatar" n1:background="@drawable/lpinfra_ui_avatar_bubble_shape" n1:layout_width="@dimen/avatar_size" n1:layout_height="@dimen/avatar_size" n1:layout_marginLeft="@dimen/avatar_margin_leading" n1:layout_marginRight="@dimen/avatar_margin_trailing" n1:layout_alignParentLeft="true" n1:contentDescription="@string/lp_accessibility_agent_icon" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="@dimen/avatar_size" n1:layout_toRightOf="@id/lpui_agent_bubbleAvatar" n1:layout_alignTop="@id/lpui_agent_bubbleAvatar" n2:layout_widthPercent="75.0%" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <com.liveperson.infra.ui.view.ui.CustomTextView n1:textSize="@dimen/regular_text_size" n1:textColor="@color/lp_transparent" n1:textColorLink="@color/agent_bubble_message_link_text_color" n1:id="@id/lpui_message_text" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="" n1:layerType="software" n1:importantForAccessibility="no" n2:font_name="@string/custom_font_name_conversation_feed" />
+        <FrameLayout n1:background="@drawable/lpinfra_ui_chat_bubble_start" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+            <ImageView n1:layout_gravity="center" n1:id="@id/lpui_agent_is_typing_animated_indicator" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/lp_messaging_ui_typing_animation_frames" />
+        </FrameLayout>
+        <com.liveperson.infra.ui.view.ui.CustomTextView n1:textSize="@dimen/small_text_size" n1:textColor="@color/agent_bubble_timestamp_text_color" n1:id="@id/lpui_message_timestamp" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/margin_half" n1:text="" n2:font_name="@string/custom_font_name_conversation_feed" />
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>

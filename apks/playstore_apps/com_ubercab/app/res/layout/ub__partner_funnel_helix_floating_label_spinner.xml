@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Uber.TextAppearance.FloatingLabel.Label" android:id="@id/ub__component_textview_title" android:paddingLeft="@dimen/ub__partner_funnel_spacing_half" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Spinner android:id="@id/ub__component_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" app:popupTheme="@style/Theme.Funnel.Helix.Spinner" />
+    <View android:background="@drawable/ub__partner_funnel_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/ui__divider_width" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__component_textview_description" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ub__padding_small" style="@style/Funnel.Helix.TextAppearance.H5.News.Secondary" />
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__component_textview_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ub__padding_small" style="@style/Funnel.Helix.TextAppearance.H5.News.Negative" />
+</LinearLayout>

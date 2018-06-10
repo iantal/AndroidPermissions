@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_gravity="center_vertical" n1:id="@id/pie_chart_arrow_left" n1:background="@drawable/carousel_button_background" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingRight="@dimen/screen_content_padding" n1:layout_width="wrap_content" n1:layout_height="40.0dip" n1:src="@drawable/ic_arrow" n1:rotation="90.0" />
+    <ru.tcsbank.mb.ui.widgets.chart.PieChartView n1:id="@id/pie_chart_view" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+    <ImageView n1:layout_gravity="center_vertical" n1:id="@id/pie_chart_arrow_right" n1:background="@drawable/carousel_button_background" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingRight="@dimen/screen_content_padding" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="40.0dip" n1:src="@drawable/ic_arrow" n1:rotation="270.0" />
+</LinearLayout>

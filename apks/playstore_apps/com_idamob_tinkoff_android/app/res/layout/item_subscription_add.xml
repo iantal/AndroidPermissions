@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/screen_content_margin_half"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/inc_divider" />
+    <TextView n1:textAppearance="@style/Text.Default.Blue" n1:id="@id/add_subscription" n1:background="?selectableItemBackground" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingRight="@dimen/screen_content_padding" n1:layout_marginTop="@dimen/screen_content_margin_half" n1:text="@string/profile_subscriptions_list_add" style="@style/DefaultItem" />
+</LinearLayout>

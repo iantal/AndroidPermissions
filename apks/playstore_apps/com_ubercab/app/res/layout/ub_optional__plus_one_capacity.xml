@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.product_options.capacity.selection.selector.CapacitySelectorView android:theme="@style/Theme.Helix.Light" android:layout_gravity="bottom" android:orientation="vertical" android:background="?android:colorBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/ub_optional__plus_one_header" />
+    <com.ubercab.ui.core.UPlainView android:background="?ruleColor" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+    <com.ubercab.ui.core.UTextView android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_2x" android:text="@string/how_many_people" style="@style/Platform.TextAppearance.H3" />
+    <com.ubercab.ui.core.UFrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UImageView android:layout_gravity="center" android:id="@id/ub__ring_image_view" android:layout_width="@dimen/ui__spacing_unit_6x" android:layout_height="@dimen/ui__spacing_unit_6x" android:contentDescription="@string/selected_capacity_ring_description" android:importantForAccessibility="no" />
+        <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/ub__capacity_view_pager" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/ui__spacing_unit_6x" android:overScrollMode="never" />
+    </com.ubercab.ui.core.UFrameLayout>
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ub__luggage_policy_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x">
+        <com.ubercab.ui.core.UImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" app:srcCompat="@drawable/ub__ic_location_work_16" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__luggage_policy" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UButton android:id="@id/ub__confirm_capacity_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ui__spacing_unit_2x" android:text="@string/confirm_capacity" style="?platformButtonPrimary" />
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ub__legal_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_2x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x">
+        <com.ubercab.ui.core.UButton android:id="@id/ub__legal_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/confirm_capacity" style="?platformButtonPrimary" />
+        <com.ubercab.ui.core.UTextView android:textSize="@dimen/ub__plus_one_capacity_legal_disclaimer_textsize" android:textColor="@color/ub__ui_core_brand_grey_60" android:id="@id/ub__legal_disclaimer" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.product_options.capacity.selection.selector.CapacitySelectorView>

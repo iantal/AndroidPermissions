@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/login_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/start_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ru.tcsbank.mb.ui.widgets.pager.SwipeChangeableViewPager n1:id="@id/pager" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0" />
+        <com.aurelhubert.ahbottomnavigation.AHBottomNavigation n1:id="@id/bottom_navigation" n1:layout_width="fill_parent" n1:layout_height="@dimen/bottom_navigation_height" />
+    </LinearLayout>
+</FrameLayout>

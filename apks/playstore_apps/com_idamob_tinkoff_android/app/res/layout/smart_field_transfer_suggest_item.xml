@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@drawable/core_selector_item_bg" n1:paddingLeft="@dimen/core_simple_item_horizontal_padding" n1:paddingRight="@dimen/core_simple_item_horizontal_padding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/core_suggest_item_height"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/icon" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginTop="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_weight="1.0">
+        <TextView n1:textSize="@dimen/core_value_text_size" n1:textColor="@color/core_value_text_color" n1:ellipsize="end" n1:id="@id/title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLines="1" />
+        <TextView n1:textSize="@dimen/core_contact_phone" n1:textColor="@color/core_default_text_color" n1:ellipsize="end" n1:id="@id/value" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLines="1" />
+    </LinearLayout>
+    <ImageView n1:id="@id/img_checkmark" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/core_expanded_field_padding" n1:src="@drawable/core_ic_apply" />
+</LinearLayout>

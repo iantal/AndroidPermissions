@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lp_ttr_message_days">
+        <item quantity="other">" %1$s dnů"</item>
+        <item quantity="one">" %1$s day"</item>
+        <item quantity="few">" %1$s dny"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_hours">
+        <item quantity="other">" %1$s hodin"</item>
+        <item quantity="one">" %1$s hour"</item>
+        <item quantity="few">" %1$s hodiny"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_minutes">
+        <item quantity="other">" %1$s minut"</item>
+        <item quantity="one">" %1$s minute"</item>
+        <item quantity="few">" %1$s minuty"</item>
+    </plurals>
+    <plurals name="lp_unread_message">
+        <item quantity="other">%1$d NEPŘEČTENÝCH ZPRÁV: %1$d</item>
+        <item quantity="one">%1$d NEPŘEČTENÁ ZPRÁVA</item>
+        <item quantity="few">%1$d NEPŘEČTENÉ ZPRÁVY</item>
+    </plurals>
+</resources>

@@ -1,0 +1,3 @@
+class axjo
+  extends axjn
+{}

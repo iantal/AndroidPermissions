@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/alpha_95_dark" style="@style/ScreenContent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="20.0sp" n1:textColor="@color/ab_title" n1:gravity="center" n1:id="@id/receipt_title" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item" />
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/receipt_src_block" n1:padding="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_above="@id/receipt_dst_block" n1:alpha="0.0">
+        <TextView n1:textAppearance="@style/Text.Default.White" n1:id="@id/receipt_source_from" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <FrameLayout n1:layout_gravity="center_horizontal" n1:id="@id/receipt_source_balance" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <ru.tinkoff.core.money.view.MoneyAmountView n1:layout_gravity="center_horizontal" n1:id="@id/receipt_amount" n1:paddingTop="@dimen/offset_from_edge_half" n2:space="@dimen/offset_from_edge_half" n2:textColorAmount="@color/white" n2:textColorCurrency="@color/white" n2:textColorFractional="@color/white" n2:textColorSign="@color/white" n2:textSizeAmount="@dimen/text_money_extra_large" n2:textSizeCurrency="@dimen/text_money_large" n2:textSizeFractional="@dimen/text_money_large" n2:textSizeSign="@dimen/text_money_extra_large" style="@style/SmartMoneyView" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <RelativeLayout n1:id="@id/receipt_dst_block" n1:background="@drawable/item_receipt_card_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_centerInParent="true" n1:alpha="0.0">
+        <View n1:id="@id/receipt_card_color_view" n1:layout_width="fill_parent" n1:layout_height="@dimen/receipt_card_color_bg_height" />
+        <TextView n1:textAppearance="@style/Text.Default" n1:ellipsize="end" n1:id="@id/receipt_destination_title" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" n1:layout_centerHorizontal="true" />
+        <FrameLayout n1:id="@id/receipt_card_logo_bg" n1:background="@drawable/item_receipt_card_logo_bg" n1:padding="@dimen/offset_from_edge_quarter" n1:layout_width="@dimen/receipt_card_logo_bg_size" n1:layout_height="@dimen/receipt_card_logo_bg_size" n1:layout_marginBottom="-30.0dip" n1:layout_alignBottom="@id/receipt_card_color_view" n1:layout_centerHorizontal="true">
+            <ImageView n1:layout_gravity="center" n1:id="@id/receipt_card_logo" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        </FrameLayout>
+        <FrameLayout n1:id="@id/receipt_destination" n1:padding="@dimen/offset_from_edge" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="30.0dip" n1:layout_below="@id/receipt_card_logo_bg" n1:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout n1:id="@id/receipt_actions_block" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge" n1:layout_below="@id/receipt_dst_block" n1:layout_centerHorizontal="true">
+        <Button n1:id="@id/action_send_receipt" n1:visibility="gone" n1:text="@string/receipt_send_receipt_button" n1:drawableTop="@drawable/ic_receipt" n1:alpha="0.0" style="@style/ReceiptActionItem" />
+        <Button n1:id="@id/action_template" n1:visibility="gone" n1:text="@string/receipt_create_template_button" n1:drawableTop="@drawable/ic_star_empty" n1:alpha="0.0" style="@style/ReceiptActionItem" />
+        <Button n1:id="@id/action_repeat_pay" n1:visibility="gone" n1:text="@string/receipt_create_autopayment_button" n1:drawableTop="@drawable/ic_receipt_autopay" n1:alpha="0.0" style="@style/ReceiptActionItem" />
+    </LinearLayout>
+    <ImageView n1:id="@id/receipt_apply" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/offset_from_edge" n1:src="@drawable/btn_apply" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" n1:alpha="0.0" n1:translationY="@dimen/receipt_apply_translation_y" />
+    <ru.tcsbank.mb.ui.widgets.SwipeDismissableFrameLayout n1:id="@id/receipt_overdraft_offer_banner_container" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/overdraft_banner_height">
+        <TextView n1:textAppearance="@style/Text.Small.White" n1:gravity="center|left" n1:id="@id/receipt_overdraft_offer_banner" n1:background="@drawable/overdraft_offer_banner_background" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="@dimen/offset_from_edge" n1:paddingRight="@dimen/tile_height_image" n1:paddingBottom="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:drawableLeft="@drawable/ic_overdraft_offer" n1:drawablePadding="@dimen/offset_from_edge_half" />
+        <ImageButton n1:layout_gravity="center|right" n1:id="@id/receipt_overdraft_offer_close_button" n1:background="@drawable/overdraft_offer_banner_close_background" n1:layout_width="@dimen/tile_height_image" n1:layout_height="@dimen/tile_height_image" n1:layout_marginRight="@dimen/offset_from_edge_half" n1:src="@drawable/ic_close_overdraft_banner" />
+    </ru.tcsbank.mb.ui.widgets.SwipeDismissableFrameLayout>
+</RelativeLayout>

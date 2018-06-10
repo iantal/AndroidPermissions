@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UAppBarLayout android:theme="?toolbarTheme" android:id="@id/appbar" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="@dimen/ui__header_height" app:contentInsetStartWithNavigation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.widget.HeaderLayout android:id="@id/collapsing_toolbar" android:background="?colorPrimary" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentInsetStartWithNavigation="0.0dip" app:layout_scrollFlags="exitUntilCollapsed|scroll|snap" app:expandedTitleMarginStart="?contentInset" app:expandedTitleMarginTop="0.0dip" app:expandedTitleMarginEnd="@dimen/ui__spacing_unit_8x" app:expandedTitleMarginBottom="@dimen/ui__spacing_unit_3x" app:expandedTitleTextAppearance="@style/Platform.TextAppearance.H2.Book" app:collapsedTitleTextAppearance="@style/Platform.TextAppearance.H3.Book">
+        <com.ubercab.ui.core.UToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:layout_collapseMode="pin" style="@style/Widget.Platform.Toolbar" />
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:layout_gravity="bottom" android:id="@id/collapsing_header_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:bli_bitColor="?colorAccentInverse" />
+    </com.ubercab.ui.core.widget.HeaderLayout>
+</com.ubercab.ui.core.UAppBarLayout>

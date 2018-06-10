@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.URelativeLayout android:paddingBottom="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:gravity="bottom" android:id="@id/ub__breakdown_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_alignParentStart="true" style="@style/Platform.TextAppearance.H6.News" />
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:gravity="bottom" android:id="@id/ub__breakdown_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_alignParentEnd="true" style="@style/Platform.TextAppearance.H6.News" />
+    <com.ubercab.ui.core.UPlainView android:background="@drawable/ub__border" android:layout_width="fill_parent" android:layout_height="?dividerWidth" android:layout_marginLeft="@dimen/ui__spacing_unit_1x" android:layout_marginRight="@dimen/ui__spacing_unit_1x" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/ui__spacing_unit_1x" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" android:layout_toStartOf="@id/ub__breakdown_item_value" android:layout_toEndOf="@id/ub__breakdown_item_name" />
+</com.ubercab.ui.core.URelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.URecyclerView android:id="@id/ub__past_trip_issues_recyclerview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="dd482aad-7b13" />
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H4.News" android:layout_gravity="center_horizontal" android:id="@id/ub__past_trip_issues_error" android:padding="?contentInset" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:text="@string/past_trip_issues_error" uber:analyticsId="40e68b87-02d5" />
+    <com.ubercab.presidio.past_trip_details.PastTripDetailsLoadingView android:id="@id/ub__past_trip_issues_loading" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="98f550e0-0522" />
+</merge>

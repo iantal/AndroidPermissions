@@ -1,0 +1,24 @@
+.class public abstract Loee;
+.super Lxsv;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lxsv<",
+        "Lcom/spotify/music/features/freetierallsongsdialog/FreeTierAllSongsDialogActivity;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 55
+    invoke-direct {p0}, Lxsv;-><init>()V
+
+    return-void
+.end method

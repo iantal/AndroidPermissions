@@ -1,0 +1,9 @@
+.class synthetic Luoa$1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Luoa;
+.end annotation

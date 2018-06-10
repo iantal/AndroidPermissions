@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Style.Helix.RatingBar.BlockingRating" parent="@style/Style.Helix.RatingBar">
+        <item name="android:maxHeight">40.0dip</item>
+        <item name="android:minHeight">40.0dip</item>
+    </style>
+    <style name="Style.Helix.RatingBar.RatingCard" parent="@style/Style.Helix.RatingBar">
+        <item name="android:maxHeight">36.0dip</item>
+        <item name="android:minHeight">36.0dip</item>
+    </style>
+    <style name="Style.Helix.RatingCard.Tip.Title" parent="@style/Platform.TextAppearance.H2.News.Primary">
+        <item name="lineHeightHint">@dimen/ub__rating_tip_title_line_height</item>
+    </style>
+</resources>

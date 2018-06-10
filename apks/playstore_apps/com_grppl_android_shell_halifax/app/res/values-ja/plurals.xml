@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lp_ttr_message_days">
+        <item quantity="other">" %1$s 日"</item>
+        <item quantity="one">" %1$s 日"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_hours">
+        <item quantity="other">" %1$s 時間"</item>
+        <item quantity="one">" %1$s 時間"</item>
+    </plurals>
+    <plurals name="lp_ttr_message_minutes">
+        <item quantity="other">" %1$s 分"</item>
+        <item quantity="one">" %1$s 分"</item>
+    </plurals>
+    <plurals name="lp_unread_message">
+        <item quantity="other">未読メッセージ %1$d 件</item>
+        <item quantity="one">未読メッセージ %1$d 件</item>
+    </plurals>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/acd_status" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/offset_from_edge" />
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:gravity="center_horizontal" n1:id="@id/acd_msg_base" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0dip" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginRight="30.0dip" n1:layout_marginBottom="@dimen/offset_from_edge" />
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_horizontal" n1:id="@id/acd_msg_optional" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0dip" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginRight="30.0dip" />
+    <Button n1:id="@id/income" n1:visibility="gone" n1:layout_marginTop="@dimen/offset_from_edge" n1:text="@string/aa_top_up_external" style="@style/Button.OvalBlue" />
+    <FrameLayout n1:id="@id/success_details_fragment_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge" />
+</LinearLayout>

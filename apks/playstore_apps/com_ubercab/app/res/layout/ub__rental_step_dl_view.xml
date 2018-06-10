@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.URelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__rental_dl_back_button" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_1x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_1x" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:foreground="?selectableItemBackgroundBorderless" android:minWidth="@dimen/ui__spacing_unit_3x" android:minHeight="@dimen/ui__spacing_unit_3x" android:layout_alignParentTop="true" android:contentDescription="@string/back_button_desc" android:paddingStart="?contentInset" android:paddingEnd="?contentInset" android:layout_alignParentStart="true" app:srcCompat="@drawable/navigation_icon_back" />
+    <com.ubercab.ui.core.UScrollView android:id="@id/ub__rental_dl_layout_scroll_container" android:padding="?contentInset" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/ub__rental_dl_back_button" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__rental_dl_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" style="@style/Platform.TextAppearance.H3.Book" />
+            <com.ubercab.ui.core.UTextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_3x" android:hint="@string/ub__rental_step_dl_number_label">
+                <com.ubercab.ui.core.UTextInputEditText android:id="@id/ub__rental_dl_edittext" android:nextFocusDown="@id/ub__rental_dl_dob_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="false" android:inputType="text" style="@style/Platform.TextAppearance.EditText" />
+            </com.ubercab.ui.core.UTextInputLayout>
+            <com.ubercab.ui.core.UTextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:hint="@string/ub__rental_step_dl_dob_label">
+                <com.ubercab.ui.core.UTextInputEditText android:id="@id/ub__rental_dl_dob_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:maxLength="10" android:inputType="date" style="@style/Platform.TextAppearance.EditText" />
+            </com.ubercab.ui.core.UTextInputLayout>
+            <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_2x">
+                <com.ubercab.ui.core.UTextView android:id="@id/ub__rental_dl_footnote" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <com.ubercab.ui.commons.progress.FabProgressCircle android:id="@id/fab_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ui__spacing_unit_2x">
+                    <com.ubercab.ui.core.UFloatingActionButton android:id="@id/ub__rental_dl_button_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?colorAccentInverse" android:contentDescription="@string/next_button_description" app:srcCompat="@drawable/ub__next_arrow" style="?platformButtonPrimary" />
+                </com.ubercab.ui.commons.progress.FabProgressCircle>
+            </com.ubercab.ui.core.ULinearLayout>
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.ui.core.URelativeLayout>

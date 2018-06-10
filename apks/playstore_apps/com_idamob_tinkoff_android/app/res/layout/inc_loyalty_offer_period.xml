@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout n1:paddingLeft="@dimen/offset_from_edge" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingRight="@dimen/offset_from_edge" n1:paddingBottom="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" n1:src="@drawable/ic_info_blue_24dp" />
+    <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/title" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0dip" n1:layout_marginBottom="0.0dip" n1:text="@string/offer_detail_period_title" n2:layout_constraintBottom_toTopOf="@id/txt_period" n2:layout_constraintLeft_toRightOf="@id/icon" n2:layout_constraintTop_toTopOf="parent" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/txt_period" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n3:layout_constraintBottom_toBottomOf="parent" n3:layout_constraintLeft_toLeftOf="@id/title" n3:layout_constraintRight_toRightOf="parent" n3:layout_constraintTop_toBottomOf="@id/title" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</android.support.constraint.ConstraintLayout>

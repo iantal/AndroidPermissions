@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/range" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" style="@style/WrapContent" />
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/fee" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" style="@style/WrapContent" />
+</RelativeLayout>

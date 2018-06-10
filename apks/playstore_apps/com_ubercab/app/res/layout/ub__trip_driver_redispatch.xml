@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.redispatch.TripRedispatchView android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="d1033172-3d8e"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__trip_driver_redispatch_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:srcCompat="@drawable/divider_horizontal_light" />
+    <com.ubercab.ui.core.UTextView android:gravity="center" android:id="@id/ub__trip_driver_redispatch_text" android:background="?selectableItemBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H6.News.Link" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.redispatch.TripRedispatchView>

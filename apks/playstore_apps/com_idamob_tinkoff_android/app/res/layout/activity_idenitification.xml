@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/MatchParent">
+    <LinearLayout style="@style/ScreenContent.Padding">
+        <android.support.v7.widget.SwitchCompat n1:id="@id/switch_nation_rf" n1:checked="true" n1:text="@string/identify_simple_nonresident_switch" style="@style/SwitchRipple"
+          xmlns:n1="http://schemas.android.com/apk/res/android" />
+        <include layout="@layout/inc_divider_margin" />
+        <LinearLayout n2:orientation="vertical" n2:id="@id/smart_fields_group" n2:paddingBottom="@dimen/offset_from_edge" n2:layout_width="fill_parent" n2:layout_height="wrap_content"
+          xmlns:n2="http://schemas.android.com/apk/res/android">
+            <ru.tinkoff.core.smartfields.view.SmartFieldView n2:layout_width="fill_parent" n2:layout_height="wrap_content" n3:fieldClass="ru.tinkoff.core.smartfields.api.fields.ApiFullNameSmartField" n3:fieldKey="fullName" n3:fieldTitle="@string/wallet_identity_fio_hint" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <ru.tinkoff.core.smartfields.view.SmartFieldView n2:layout_width="fill_parent" n2:layout_height="wrap_content" n4:fieldKey="birthday" n4:fieldTitle="@string/identify_simple_birthday_hint" n4:fieldType="date" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            <ru.tinkoff.core.smartfields.view.SmartFieldView n2:layout_width="fill_parent" n2:layout_height="wrap_content" n2:inputType="phone" n5:fieldFormatterName="passportRussian" n5:fieldKey="passport" n5:fieldTitle="@string/identify_simple_passport_number_hint" n5:fieldType="text" n5:fieldValidationRegex="^\\d{4} \\d{6}$" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+            <ru.tinkoff.core.smartfields.view.SmartFieldView n2:layout_width="fill_parent" n2:layout_height="wrap_content" n2:inputType="phone" n6:fieldFormatterName="@string/divisionCodeFormatter" n6:fieldKey="passportAuthority" n6:fieldTitle="@string/identify_simple_passport_subdivision_code_hint" n6:fieldType="text" n6:fieldValidationRegex="^\\d{3}-\\d{3}$" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+            <ru.tinkoff.core.smartfields.view.SmartFieldView n2:layout_width="fill_parent" n2:layout_height="wrap_content" n7:fieldKey="issueDate" n7:fieldTitle="@string/identify_simple_passport_issue_date_hint" n7:fieldType="date" xmlns:n7="http://schemas.android.com/apk/res-auto" />
+            <ru.tinkoff.core.smartfields.view.SmartFieldView n2:layout_width="fill_parent" n2:layout_height="wrap_content" n2:inputType="number" n8:fieldKey="inn" n8:fieldTitle="@string/identify_simple_tin_hint" n8:fieldType="text" n8:fieldValidationRegex="^\\d{12}$" xmlns:n8="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <fragment n9:name="ru.tcsbank.mb.ui.fragments.captcha.CaptchaFragment" n9:id="@id/captcha_fragment" n9:layout_width="fill_parent" n9:layout_height="wrap_content"
+          xmlns:n9="http://schemas.android.com/apk/res/android" />
+        <Button n10:id="@id/light_identify" n10:text="@string/identify_simple_identify_button" style="@style/Button.Yellow.Normal"
+          xmlns:n10="http://schemas.android.com/apk/res/android" />
+        <TextView n11:textAppearance="@style/Text.Small.Blue" n11:gravity="center" n11:id="@id/full_identify" n11:background="@drawable/selector_item_bg" n11:layout_marginTop="@dimen/offset_from_edge_half" n11:text="@string/identify_simple_full_identify_button" n11:textAllCaps="true" style="@style/DefaultItem"
+          xmlns:n11="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+</ScrollView>

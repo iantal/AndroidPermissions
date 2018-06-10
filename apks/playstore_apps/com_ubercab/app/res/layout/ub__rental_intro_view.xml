@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UViewPager android:id="@id/ub__rental_intro_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.ubercab.ui.PagerIndicator android:layout_gravity="center_horizontal" android:id="@id/ub__rental_intro_indicator" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleX="@integer/ub__rental_intro_pager_indicator_scale_x" android:scaleY="@integer/ub__rental_intro_pager_indicator_scale_y" uber:selectedIndicatorColor="@color/ub__ui_core_black" uber:unselectedIndicatorColor="@color/ub__ui_core_grey_60" />
+    <com.ubercab.ui.core.UPlainView android:background="@drawable/ub__border" android:layout_width="fill_parent" android:layout_height="?dividerWidth" />
+    <com.ubercab.ui.core.UTextView android:gravity="center" android:layout_gravity="center" android:id="@id/ub__rental_intro_button" android:padding="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" android:text="@string/ub__rental_button_done" android:textAllCaps="true" style="@style/Platform.TextAppearance.H4.Medium" />
+</com.ubercab.ui.core.ULinearLayout>

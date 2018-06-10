@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/reactivateIsaDeclarationPage" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <com.mobile.ui.common.view.HeadingTextView n1:id="@id/reactivateIsaHeader" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/reactivate_isa_view_title" style="@style/ReactivateIsaView.ReactivateIsaTitle" />
+        <TextView n1:id="@id/reactivateIsaInformation" n1:padding="@dimen/activity_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_margin" n1:layout_marginRight="@dimen/activity_margin" n1:layout_marginBottom="@dimen/activity_margin" n1:text="@string/reactivate_isa_you_have_not_funded_isa" style="@style/TextAppearance.Information" />
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_margin" n1:layout_marginRight="@dimen/activity_margin">
+            <TextView n1:id="@id/reactivateIsaAccountTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_margin" n1:text="@string/reactivate_isa_account_text" n1:importantForAccessibility="no" style="@style/TextAppearance.Body" />
+            <include n1:id="@id/accountPlaceHolder" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/reactivateIsaAccountTitle" layout="@layout/view_reactivate_isa_arrangement" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button n1:id="@id/reactivateIsaDeclarationButton" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="@dimen/fragment_content_padding" n1:text="@string/reactivate_isa_button" n1:layout_alignParentBottom="true" n1:contentDescription="@string/reactivate_isa_accessibility_button" style="@style/Widget.Button.Primary" />
+</RelativeLayout>

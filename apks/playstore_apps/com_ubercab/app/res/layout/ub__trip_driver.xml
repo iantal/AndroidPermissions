@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.driver.TripDriverView android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__trip_driver_header_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ub__trip_controls_header_offset" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__trip_driver_peekable_rows_container" android:background="@drawable/ub__trip_driver_peekable_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:showDividers="middle" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__trip_driver_dynamically_peekable_rows_container" android:background="@drawable/ub__trip_driver_peekable_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:showDividers="middle" />
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__rows_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:srcCompat="@drawable/divider_horizontal_light" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__trip_driver_rows_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:showDividers="middle" />
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__buttons_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:srcCompat="@drawable/divider_horizontal_light" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__trip_driver_buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?dividerVertical" android:showDividers="middle" />
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_details.driver.TripDriverView>

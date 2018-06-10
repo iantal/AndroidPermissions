@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?avatarMedium" android:layout_weight="1.0" uber:analyticsId="17edf110-edc2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UImageView android:layout_gravity="center" android:id="@id/ub__calendar_connect_v2_calendar_list_item_icon" android:layout_width="@dimen/ui__icon_large" android:layout_height="@dimen/ui__icon_large" />
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="?contentInset" android:paddingRight="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?avatarMedium" android:layout_weight="1.0">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__calendar_connect_v2_calendar_list_item_title" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H5.News.Primary" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__calendar_connect_v2_calendar_list_item_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

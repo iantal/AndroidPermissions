@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" style="@style/VerticalWrapping"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:id="@id/divider" layout="@layout/inc_divider_margin" />
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:id="@id/card_name" n1:paddingLeft="@dimen/screen_content_padding" n1:paddingRight="@dimen/screen_content_padding" n1:layout_width="wrap_content" n1:layout_height="@dimen/tile_height_default_item" n1:drawablePadding="@dimen/padding_small" />
+</LinearLayout>

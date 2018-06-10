@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.social_connections.settings.SocialConnectionsSettingsView android:background="?brandWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.URecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/ub__social_connections_loading_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" app:layout_anchor="@id/recycler_view" app:layout_anchorGravity="top" app:bli_bitColor="?colorAccent" />
+    <com.ubercab.ui.core.UFloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/ub__add_social_connections_fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="?gutterSize" android:tint="?colorAccentInverse" android:contentDescription="@string/ub__social_connections_settings_add_fab_content_description" app:srcCompat="@drawable/ub__ic_plus" app:rippleColor="?lightSelectorColor" />
+</com.ubercab.social_connections.settings.SocialConnectionsSettingsView>

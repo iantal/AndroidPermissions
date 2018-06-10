@@ -1,0 +1,33 @@
+.class public final Lytt;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# direct methods
+.method public static a(Lytq;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 34
+    check-cast p1, Lytr;
+
+    iput-object p1, p0, Lytq;->a:Lytr;
+
+    return-void
+.end method
+
+.method public static a(Lytq;Lyts;)V
+    .locals 0
+
+    .line 38
+    iput-object p1, p0, Lytq;->b:Lyts;
+
+    return-void
+.end method

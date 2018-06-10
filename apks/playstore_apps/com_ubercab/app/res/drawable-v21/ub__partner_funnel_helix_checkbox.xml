@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="?android:selectableItemBackground" />
+    <item>
+        <selector>
+            <item android:state_checked="true" android:drawable="@drawable/ub__partner_funnel_helix_checkbox_checked" />
+            <item android:drawable="@drawable/ub__partner_funnel_helix_checkbox_empty" />
+        </selector>
+    </item>
+</layer-list>

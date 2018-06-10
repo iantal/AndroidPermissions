@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="c729bd28-e681"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:text="@string/ub__payment_paytm_enter_amount_details" style="@style/Platform.TextAppearance.H3.News" />
+        <com.ubercab.ui.core.URelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x">
+            <com.ubercab.ui.core.UTextView android:id="@id/outstanding_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__payment_paytm_outstanding_amount" android:layout_alignParentStart="true" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/outstanding_amount_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+        </com.ubercab.ui.core.URelativeLayout>
+        <com.ubercab.ui.core.URelativeLayout android:id="@id/ub__contact_actions_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_1x" android:layout_alignParentStart="true">
+            <com.ubercab.ui.core.UTextView android:id="@id/funds_next_trip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__payment_paytm_funds_next_transaction" android:layout_alignParentStart="true" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+            <com.ubercab.ui.core.UTextView android:id="@id/funds_next_trip_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/Platform.TextAppearance.H5.News.Secondary" />
+        </com.ubercab.ui.core.URelativeLayout>
+        <com.ubercab.ui.core.UTextView android:layout_gravity="end" android:id="@id/total_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ui__spacing_unit_3x" style="@style/Platform.TextAppearance.H5.News" />
+        <com.ubercab.ui.core.UButton android:id="@id/close" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__payment_paytm_close" uber:analyticsId="6f3773e0-c0b0" style="?platformButtonPrimary" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.UFrameLayout>

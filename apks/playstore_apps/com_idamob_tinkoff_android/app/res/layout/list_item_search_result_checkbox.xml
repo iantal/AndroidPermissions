@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:background="?selectableItemBackground" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:orientation="horizontal" n1:id="@id/view_template" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item">
+        <ru.tcsbank.mb.ui.widgets.templateicon.TemplateIconCircleView n1:id="@id/template_logo" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" style="@style/ImageItem.Margin" />
+        <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_toLeftOf="@id/select_template" n1:layout_toRightOf="@id/template_logo" n1:layout_centerVertical="true" style="@style/ScreenContent">
+            <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/template_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" />
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/template_description" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" />
+        </LinearLayout>
+        <CheckBox n1:id="@id/select_template" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/offset_from_edge" n1:checked="true" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.cobrandcard.verify.CobrandCardVerifyView android:orientation="vertical" android:background="?android:colorBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="18d87dc4-f630"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UTextView android:id="@id/ub__cobrandcard_verify_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cobrandcard_verify_description" style="@style/Platform.TextAppearance.H3.Book" />
+            <com.ubercab.ui.commons.widget.OTPInput android:id="@id/ub__cobrandcard_verify_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?contentInset" android:layout_marginBottom="?contentInset" uber:otp_count="@integer/ub__cobrandcard_verify_input_length" />
+            <com.ubercab.ui.core.UTextView android:textColor="?colorNegative" android:id="@id/ub__cobrandcard_verify_error" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.P" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.presidio.cobrandcard.verify.CobrandCardVerifyView>

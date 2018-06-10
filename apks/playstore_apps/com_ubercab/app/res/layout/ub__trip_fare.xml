@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.trip_details.optional.fare.TripFareView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:analyticsId="af80e015-a8c7"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__trip_fare_header_container" android:paddingLeft="?contentInset" android:paddingTop="?contentInset" android:paddingRight="?contentInset" android:paddingBottom="?contentInset" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?contentInset" android:paddingEnd="?contentInset">
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__trip_fare_header" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/payment" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+        <com.ubercab.ui.core.UFrameLayout android:id="@id/ub__trip_fare_collapsed_icon_container" android:visibility="gone" android:layout_width="?avatarExtraTiny" android:layout_height="?avatarExtraTiny" android:layout_marginEnd="@dimen/trip_fare_icon_margin" />
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__trip_fare_collapsed_container_rows" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.ubercab.ui.core.UImageView android:id="@id/ub__trip_fare_expand_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/expand_trip_fare_card" app:srcCompat="@drawable/ic_caret_down_16" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:id="@id/ub__trip_fare_expanded_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ubercab.presidio.trip_details.optional.fare.TripFareView>

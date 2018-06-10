@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/MatchParent">
+    <LinearLayout style="@style/ScreenContent">
+        <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/cards_pager" style="@style/AccountsCarouselPager"
+          xmlns:n1="http://schemas.android.com/apk/res/android" />
+        <FrameLayout n2:orientation="vertical" n2:layout_width="fill_parent" n2:layout_height="fill_parent"
+          xmlns:n2="http://schemas.android.com/apk/res/android">
+            <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n2:layout_gravity="center_horizontal" n2:id="@android:id/progress" n2:visibility="visible" n2:layout_width="@dimen/pd_width" n2:layout_height="@dimen/pd_height" n2:layout_marginTop="@dimen/offset_from_edge_large" />
+            <LinearLayout n2:orientation="vertical" n2:id="@id/manage_pin_layout" n2:paddingTop="@dimen/offset_from_edge_half" n2:paddingBottom="@dimen/offset_from_edge_half" n2:visibility="gone" n2:layout_width="fill_parent" n2:layout_height="wrap_content">
+                <android.support.v7.widget.SwitchCompat n2:id="@id/manage_pin_use_pin_for_purchase" n2:text="@string/security_pin_codes_confirm_purchase_checkbox" style="@style/SwitchRipple" />
+                <TextView n2:textAppearance="@style/Text.ExtraSmall.Light" n2:id="@id/manage_pin_use_pin_for_purchase_note" n2:padding="@dimen/offset_from_edge" n2:text="@string/security_pin_codes_confirm_purchase_note" style="@style/WrapContent" />
+                <RelativeLayout n2:id="@id/manage_pin_warning_note" n2:layout_width="fill_parent" n2:layout_height="wrap_content">
+                    <ImageView n2:layout_width="wrap_content" n2:layout_height="wrap_content" n2:layout_marginLeft="@dimen/offset_from_edge" n2:layout_marginTop="@dimen/offset_from_edge" n2:src="@drawable/ic_error_black_24dp" n2:tint="@color/main_yellow" n2:layout_alignParentLeft="true" n2:layout_alignParentStart="true" />
+                    <TextView n2:textAppearance="@style/Text.ExtraSmall.Light" n2:id="@id/manage_pin_warning_note_text" n2:layout_marginLeft="@dimen/offset_from_edge_large" n2:layout_marginTop="@dimen/offset_from_edge" n2:layout_marginRight="@dimen/offset_from_edge" n2:layout_marginBottom="@dimen/offset_from_edge" n2:text="@string/security_pin_codes_confirm_purchase_warning_note" n2:layout_alignParentLeft="true" n2:layout_alignParentTop="true" n2:layout_alignParentRight="true" n2:layout_alignParentStart="true" n2:layout_alignParentEnd="true" style="@style/WrapContent" />
+                </RelativeLayout>
+                <include n2:id="@id/manage_pin_use_pin_for_purchase_divider" n2:layout_width="fill_parent" n2:layout_height="wrap_content" n2:layout_marginTop="@dimen/offset_from_edge_half" n2:layout_marginBottom="@dimen/offset_from_edge_half" layout="@layout/inc_limits_divider" />
+                <Button n2:textSize="@dimen/text_medium" n2:gravity="center|left" n2:id="@id/manage_pin_get_pin_button" n2:background="?selectableItemBackground" n2:paddingLeft="@dimen/offset_from_edge" n2:text="@string/security_pin_codes_get_pin_code_get" n2:textAllCaps="false" style="@style/DefaultItem" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

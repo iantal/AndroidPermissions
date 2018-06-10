@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.commute.settings.CommuteSettingsView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/test" layout="@layout/collapsing_header" />
+    <com.ubercab.ui.core.UScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/test" uber:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.ULinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ride_with_commuting_driver" />
+                <com.ubercab.ui.core.USwitchCompat android:layout_gravity="end" android:id="@id/switch_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="b6cfb339-eac2" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/commute_settings_view_secondary_text" />
+            <com.ubercab.ui.core.UButton android:id="@id/btn_learn_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/commute_settings_learn_more" uber:analyticsId="112bfad8-2ab7" style="?platformButtonPrimary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.UScrollView>
+</com.ubercab.presidio.commute.settings.CommuteSettingsView>

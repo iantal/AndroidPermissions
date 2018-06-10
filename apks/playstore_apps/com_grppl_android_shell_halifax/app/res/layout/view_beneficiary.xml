@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/viewRecipientTransferCell" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:importantForAccessibility="no" style="@style/Beneficiary.MainContainer"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/beneficiaryGroupHeader" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/Beneficiary.GroupHeader" />
+    <View n1:id="@id/beneficiaryPendingPaymentTopSeparator" n1:background="@color/primary_container_background_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/beneficiary_account_separator_height" />
+    <RelativeLayout n1:id="@id/beneficiaryAccountContainer" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/Beneficiary.AccountContainer">
+        <ImageView n1:id="@id/beneficiaryIcon" n2:srcCompat="@drawable/beneficiary_uk_bank_account_icon" style="@style/Beneficiary.Icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <TextView n1:ellipsize="end" n1:id="@id/beneficiaryTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/arrangement_list_large_margin" n1:layout_marginRight="@dimen/arrangement_list_medium_margin" n1:maxLines="1" n1:layout_toLeftOf="@id/beneficiaryManageButton" n1:layout_toRightOf="@id/beneficiaryIcon" style="@style/Beneficiary.Name" />
+        <RelativeLayout n1:id="@id/beneficiaryDetailsWrapper" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_below="@id/beneficiaryTitle" n1:layout_alignStart="@id/beneficiaryTitle">
+            <LinearLayout n1:id="@id/beneficiaryAccountDetail" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/arrangement_list_small_margin">
+                <TextView n1:id="@id/beneficiarySortCode" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/tile_arrangement_medium_margin" style="@style/Beneficiary.Body" />
+                <View n1:background="@color/arrangement_sort_code_account_number_separator_color" n1:layout_width="1.0dip" n1:layout_height="fill_parent" n1:layout_marginTop="3.0sp" n1:layout_marginRight="@dimen/tile_arrangement_medium_margin" n1:layout_marginBottom="2.0sp" />
+                <TextView n1:id="@id/beneficiaryAccountNumber" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/Beneficiary.Body" />
+            </LinearLayout>
+            <TextView n1:id="@id/beneficiaryPhoneNumber" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/arrangement_list_small_margin" n1:layout_below="@id/beneficiaryAccountDetail" style="@style/Beneficiary.Body" />
+            <TextView n1:id="@id/beneficiaryIbanField" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/arrangement_list_small_margin" n1:layout_below="@id/beneficiaryPhoneNumber" style="@style/Beneficiary.Body" />
+            <TextView n1:id="@id/beneficiaryPendingPayment" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/arrangement_list_small_margin" n1:text="@string/beneficiary_pending_payment" n1:layout_below="@id/beneficiaryIbanField" n1:importantForAccessibility="no" style="@style/Beneficiary.Status" />
+        </RelativeLayout>
+        <TextView n1:gravity="center" n1:id="@id/beneficiaryManageButton" n1:paddingLeft="@dimen/beneficiary_manage_button_padding_left_right" n1:paddingTop="@dimen/beneficiary_manage_button_padding_bottom_top" n1:paddingRight="@dimen/beneficiary_manage_button_padding_left_right" n1:paddingBottom="@dimen/beneficiary_manage_button_padding_bottom_top" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/beneficiary_manage" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" style="@style/Beneficiary.ManageButton" />
+    </RelativeLayout>
+    <View n1:id="@id/beneficiaryPendingPaymentBottomSeparator" n1:background="@color/primary_container_background_color" n1:layout_width="fill_parent" n1:layout_height="@dimen/beneficiary_account_separator_height" />
+</LinearLayout>

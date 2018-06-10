@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/tourist_list_content" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:paddingLeft="@dimen/screen_content_margin" n1:paddingRight="@dimen/screen_content_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:layout_marginTop="@dimen/screen_content_margin_half" n1:text="@string/tourist_list_list_title" />
+            <android.support.v7.widget.RecyclerView n1:id="@id/tourist_list_list" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <include layout="@layout/inc_divider_margin" />
+            <TextView n1:textAppearance="@style/Text.Default.Blue" n1:gravity="center_vertical" n1:id="@id/tourist_list_add_tourist" n1:background="?selectableItemBackground" n1:paddingLeft="@dimen/screen_content_margin" n1:paddingRight="@dimen/screen_content_margin" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/tourist_list_add_button" />
+            <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center_vertical" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n1:text="@string/tourist_list_restrictions_title" />
+            <Button n1:id="@id/tourist_list_apply_button" n1:layout_marginTop="40.0dip" n1:text="@string/tourist_list_action_button" style="@style/Button.Yellow.Medium" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+    <ru.tcsbank.mb.ui.widgets.EmptyView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:id="@android:id/empty" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="30.0dip" n1:text="@string/travel_insurance_data_loading_error" />
+</FrameLayout>

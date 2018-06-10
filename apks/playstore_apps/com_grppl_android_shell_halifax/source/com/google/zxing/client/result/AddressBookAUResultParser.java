@@ -1,0 +1,63 @@
+package com.google.zxing.client.result;
+
+import com.google.zxing.Result;
+import java.util.ArrayList;
+import java.util.List;
+
+public final class AddressBookAUResultParser
+  extends ResultParser
+{
+  public AddressBookAUResultParser() {}
+  
+  private static String[] matchMultipleValuePrefix(String paramString1, int paramInt, String paramString2, boolean paramBoolean)
+  {
+    int i = 1;
+    Object localObject2;
+    for (Object localObject1 = null;; localObject1 = localObject2)
+    {
+      String str;
+      if (i <= paramInt)
+      {
+        str = matchSinglePrefixedField(paramString1 + i + ':', paramString2, '\r', paramBoolean);
+        if (str != null) {}
+      }
+      else
+      {
+        if (localObject1 != null) {
+          break;
+        }
+        return null;
+      }
+      localObject2 = localObject1;
+      if (localObject1 == null) {
+        localObject2 = new ArrayList(paramInt);
+      }
+      ((List)localObject2).add(str);
+      i += 1;
+    }
+    return (String[])localObject1.toArray(new String[localObject1.size()]);
+  }
+  
+  public AddressBookParsedResult parse(Result paramResult)
+  {
+    paramResult = getMassagedText(paramResult);
+    if ((!paramResult.contains("MEMORY")) || (!paramResult.contains("\r\n"))) {
+      return null;
+    }
+    String str1 = matchSinglePrefixedField("NAME1:", paramResult, '\r', true);
+    String str2 = matchSinglePrefixedField("NAME2:", paramResult, '\r', true);
+    String[] arrayOfString1 = matchMultipleValuePrefix("TEL", 3, paramResult, true);
+    String[] arrayOfString2 = matchMultipleValuePrefix("MAIL", 3, paramResult, true);
+    String str3 = matchSinglePrefixedField("MEMORY:", paramResult, '\r', false);
+    String str4 = matchSinglePrefixedField("ADD:", paramResult, '\r', true);
+    if (str4 == null) {
+      paramResult = null;
+    }
+    for (;;)
+    {
+      return new AddressBookParsedResult(maybeWrap(str1), null, str2, arrayOfString1, null, arrayOfString2, null, null, str3, paramResult, null, null, null, null, null, null);
+      paramResult = new String[1];
+      paramResult[0] = str4;
+    }
+  }
+}

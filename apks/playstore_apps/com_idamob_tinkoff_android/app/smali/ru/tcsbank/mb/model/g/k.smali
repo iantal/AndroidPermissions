@@ -1,0 +1,43 @@
+.class public final synthetic Lru/tcsbank/mb/model/g/k;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/util/concurrent/Callable;
+
+
+# instance fields
+.field private final a:Lru/tcsbank/mb/model/g/f;
+
+
+# direct methods
+.method public constructor <init>(Lru/tcsbank/mb/model/g/f;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lru/tcsbank/mb/model/g/k;->a:Lru/tcsbank/mb/model/g/f;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final call()Ljava/lang/Object;
+    .locals 2
+
+    .prologue
+    .line 0
+    iget-object v0, p0, Lru/tcsbank/mb/model/g/k;->a:Lru/tcsbank/mb/model/g/f;
+
+    .line 1069
+    iget-object v0, v0, Lru/tcsbank/mb/model/g/f;->g:Lru/tcsbank/mb/model/aq/a;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lru/tcsbank/mb/model/aq/a;->a(Z)Ljava/util/List;
+
+    move-result-object v0
+
+    .line 0
+    return-object v0
+.end method

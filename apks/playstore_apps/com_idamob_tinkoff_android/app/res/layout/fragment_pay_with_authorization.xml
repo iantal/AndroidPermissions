@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="-56.0dip">
+        <android.support.design.widget.TabLayout n1:id="@id/from_card_tablayout" n1:background="@drawable/tablayout_ctc_dark_background" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" />
+        <fragment n1:id="@id/card_scan_fragment" n1:paddingLeft="@dimen/screen_content_margin" n1:paddingRight="@dimen/screen_content_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" class="ru.tcsbank.mb.ui.fragments.CardScanFragment" />
+        <ru.tcsbank.core.base.ui.widget.pager.CarouselPager n1:id="@id/from_card" style="@style/AccountsCarouselPager" />
+        <ru.tcsbank.mb.ui.widgets.ConfirmCardSecurityCodeView n1:id="@id/confirm_security_code" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <Button n1:id="@id/pay_button" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginTop="@dimen/screen_content_margin" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:text="@string/common_tab_payments_amonymous" style="@style/Button.Round.Yellow" />
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:textColorLink="@color/text_light" n1:gravity="center" n1:id="@id/eula_text" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:minHeight="@dimen/screen_content_double_margin" />
+    </LinearLayout>
+</ScrollView>

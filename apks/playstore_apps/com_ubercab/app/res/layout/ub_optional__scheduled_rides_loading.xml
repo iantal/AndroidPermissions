@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UPlainView android:id="@id/scrim" android:background="?brandBlack" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.6" />
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/scheduled_rides_disclosure_loading_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.commons.widget.BitLoadingIndicator android:id="@id/scheduled_rides_disclosure_loading_state" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bli_bitColor="?colorAccentInverse" />
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H3.Book.Primary.Inverse" android:gravity="center" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scheduled_rides_creating_message" />
+    </com.ubercab.ui.core.ULinearLayout>
+</merge>

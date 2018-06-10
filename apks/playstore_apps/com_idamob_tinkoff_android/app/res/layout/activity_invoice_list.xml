@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar n1:id="@id/invoice_list_toolbar" n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" />
+    <android.support.v7.widget.RecyclerView n1:id="@id/invoice_list_recycler" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/invoice_list_pay" n1:layout_below="@id/invoice_list_toolbar" />
+    <TextView n1:textAppearance="@style/Text.Small.Hint" n1:gravity="center" n1:id="@id/invoice_list_empty_view" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/invoices_list_empty" n1:layout_centerInParent="true" />
+    <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:id="@id/invoice_list_progress" n1:visibility="gone" n1:layout_below="@id/invoice_list_toolbar" style="@style/SmoothProgress" />
+    <Button n1:gravity="center" n1:layout_gravity="bottom" n1:id="@id/invoice_list_pay" n1:visibility="gone" n1:text="@string/pay" n1:layout_alignParentBottom="true" style="@style/Button.Yellow.Normal" />
+</RelativeLayout>

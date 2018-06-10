@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:theme="@style/Theme.Helix.Dark" android:orientation="horizontal" android:background="?android:windowBackground" android:paddingLeft="?contentInset" android:paddingTop="@dimen/ui__spacing_unit_3x" android:paddingRight="?contentInset" android:paddingBottom="@dimen/ui__spacing_unit_3x" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="a614ab7a-0a79"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.CircleImageView android:id="@id/picture" android:background="?selectableItemBackgroundBorderless" android:layout_width="?avatarLarge" android:layout_height="?avatarLarge" android:contentDescription="@string/account_edit_picture" />
+    <com.ubercab.ui.core.ULinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ui__spacing_unit_2x" android:layout_marginStart="@dimen/ui__spacing_unit_2x">
+        <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ui__spacing_unit_1x" android:maxLines="1" android:textIsSelectable="false" style="@style/Platform.TextAppearance.H3.News" />
+        <com.ubercab.ui.core.UPlainView android:id="@id/rider_info_placeholder" android:layout_width="?avatarLarge" android:layout_height="@dimen/ui__spacing_unit_1x" />
+        <com.ubercab.ui.core.UFrameLayout android:id="@id/rider_info_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

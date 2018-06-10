@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:background="@drawable/global_menu_parent_item_selector" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/globalMenuPrimaryActionTitle" n1:paddingTop="@dimen/global_menu_spacing_medium" n1:paddingBottom="@dimen/global_menu_spacing_medium" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" n1:paddingStart="@dimen/global_menu_spacing_large" n1:paddingEnd="@dimen/global_menu_spacing_small" style="@style/GlobalMenu.Item.PrimaryText" />
+    <FrameLayout n1:id="@id/globalMenuSecondaryItemView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginEnd="@dimen/global_menu_spacing_large">
+        <TextView n1:id="@id/globalMenuSecondaryActionTitleAndIcon" n1:background="@drawable/global_menu_secondary_action_background" n1:paddingTop="@dimen/global_menu_double_action_spacing_small" n1:paddingBottom="@dimen/global_menu_double_action_spacing_small" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:drawablePadding="@dimen/global_menu_double_action_spacing_large" n1:paddingStart="@dimen/global_menu_double_action_text_spacing_left" n1:paddingEnd="@dimen/global_menu_double_action_spacing_large" style="@style/GlobalMenu.Item.SecondaryText" />
+    </FrameLayout>
+</LinearLayout>

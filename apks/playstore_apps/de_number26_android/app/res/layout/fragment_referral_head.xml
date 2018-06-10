@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="196.0dip">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_referral_invite" android:adjustViewBounds="true" android:maxHeight="300.0dip" android:contentDescription="@null" />
+            <com.airbnb.lottie.LottieAnimationView android:layout_width="fill_parent" android:layout_height="fill_parent" app:lottie_autoPlay="true" app:lottie_fileName="animations/anim_referral_invite.json" app:lottie_loop="true" />
+        </FrameLayout>
+        <TextView android:textSize="26.0sp" android:textColor="@color/black_1b" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/invite_friends_get_amount" fontPath="@string/font_medium" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="36.0dip" android:text="@string/invite_friends_get_amount_description" fontPath="@string/font_regular" />
+        <include layout="@layout/fragment_referral_incentive_layout" />
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton android:layout_gravity="end" android:id="@id/action" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="156.0dip" android:tint="@color/white" android:layout_marginEnd="8.0dip" app:srcCompat="@drawable/ic_add_black_24dp" />
+</FrameLayout>

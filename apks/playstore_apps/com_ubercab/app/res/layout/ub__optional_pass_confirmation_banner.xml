@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.confirmation.map_layer.pass.PassConfirmationMapBannerView android:background="@drawable/ub__pass_confirmation_banner_background" android:paddingLeft="@dimen/ui__spacing_unit_1x" android:paddingTop="@dimen/ub__pass_confirmation_banner_vertical_padding" android:paddingRight="@dimen/ui__spacing_unit_1x" android:paddingBottom="@dimen/ub__pass_confirmation_banner_vertical_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:textSize="@dimen/ui__text_size_micro" android:id="@id/ub__pass_confirmation_banner_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flat_fare_zone_shown" style="@style/Platform.TextAppearance.H6.News.Primary.Inverse" />
+</com.ubercab.presidio.app.optional.root.main.ride.request.confirmation.map_layer.pass.PassConfirmationMapBannerView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.account_settings.settings_section.trusted_contacts.TrustedContactsSettingsSectionView android:orientation="vertical" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingBottom="@dimen/ui__spacing_unit_2x" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="a39d3de8-17c5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News.Secondary" android:id="@id/ub_profile_settings_header" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_settings_safety_title" />
+    <com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:padding="@dimen/ui__spacing_unit_1x" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" uber:srcCompat="@drawable/ub__trusted_contacts" />
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H5.News.Primary" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_settings_trusted_contacts_menu_item" uber:analyticsId="681d5e5c-197f" />
+    </com.ubercab.ui.core.ULinearLayout>
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News.Tertiary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_settings_trusted_contacts_menu_description" android:paddingStart="?contentInset" android:paddingEnd="?contentInset" />
+</com.ubercab.presidio.app.optional.root.main.account_settings.settings_section.trusted_contacts.TrustedContactsSettingsSectionView>

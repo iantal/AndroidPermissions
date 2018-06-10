@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape>
+    <solid n1:color="@color/transparent"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <stroke n2:width="1.0dip" n2:color="@color/dividers"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <corners n3:topLeftRadius="@dimen/tile_height_default_item_half" n3:topRightRadius="@dimen/tile_height_default_item_half" n3:bottomLeftRadius="@dimen/tile_height_default_item_half" n3:bottomRightRadius="@dimen/tile_height_default_item_half"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</shape>

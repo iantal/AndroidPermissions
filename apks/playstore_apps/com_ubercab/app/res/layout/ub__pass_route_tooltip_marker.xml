@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.pass.tracking.map_layer.tooltip.PassRoutePointTooltipView android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="1bef821d-d8eb"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/route_point_tooltip_title" android:paddingLeft="@dimen/ub__tooltip_padding_extra" android:paddingRight="@dimen/ub__tooltip_padding_extra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="true" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+</com.ubercab.presidio.pass.tracking.map_layer.tooltip.PassRoutePointTooltipView>

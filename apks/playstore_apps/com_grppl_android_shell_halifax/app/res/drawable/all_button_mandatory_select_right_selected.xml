@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape n1:shape="rectangle"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <corners n1:topRightRadius="@dimen/mandatory_select_button_radius" n1:bottomRightRadius="@dimen/mandatory_select_button_radius" />
+    <stroke n1:width="@dimen/mandatory_select_button_border_width" n1:color="@color/mandatory_select_button_border_color" />
+    <solid n1:color="@color/mandatory_select_button_selected_color" />
+</shape>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UPlainView android:id="@id/ub__past_trip_receipt_item_description_line" android:background="?colorPositive" android:layout_width="@dimen/past_trip_details_receipt_item_description_line_width" android:layout_height="fill_parent" />
+    <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H6.News.Tertiary" android:id="@id/ub__past_trip_receipt_note_item" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/ui__spacing_unit_1x" />
+</merge>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.UFrameLayout android:paddingLeft="?gutterSize" android:paddingTop="@dimen/ui__spacing_unit_2x" android:paddingRight="?gutterSize" android:layout_width="fill_parent" android:layout_height="wrap_content" uber:analyticsId="bc672b10-070b"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:id="@id/ub__pass_purchase_payment_disclaimer" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News.Tertiary" />
+</com.ubercab.ui.core.UFrameLayout>

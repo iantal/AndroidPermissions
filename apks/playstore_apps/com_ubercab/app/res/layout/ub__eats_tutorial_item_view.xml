@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__eats_tutorial_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?gutterSize" android:layout_marginTop="@dimen/ui__spacing_unit_2x" android:layout_marginRight="?gutterSize" android:layout_marginBottom="@dimen/ui__spacing_unit_2x" android:maxLines="2" style="@style/Platform.TextAppearance.H2.Book" />
+    <com.ubercab.ui.core.UTextView android:ellipsize="end" android:id="@id/ub__eats_tutorial_subTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?gutterSize" android:layout_marginRight="?gutterSize" android:maxLines="3" style="@style/Platform.TextAppearance.P" />
+    <com.ubercab.ui.core.UImageView android:id="@id/ub__eats_tutorial_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?gutterSize" android:scaleType="centerCrop" android:layout_weight="1.0" />
+</com.ubercab.ui.core.ULinearLayout>

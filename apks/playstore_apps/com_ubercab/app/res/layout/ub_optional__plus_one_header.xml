@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="horizontal" android:id="@id/ub__plus_one_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="?contentInset" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UTextView android:layout_gravity="start|center" android:id="@id/ub__header_product_package_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Platform.TextAppearance.H2.Book" />
+    <com.ubercab.ui.core.ULinearLayout android:gravity="end" android:layout_gravity="end|center" android:orientation="vertical" android:id="@id/ub__plus_one_header_price_time_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.ubercab.presidio.pricing.core.PricingTextView android:id="@id/ub__header_price" android:layout_width="wrap_content" android:layout_height="wrap_content" uber:analyticsId="25137ad6-7b76" style="@style/Platform.TextAppearance.H4.News" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__header_arrival_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H6.News" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

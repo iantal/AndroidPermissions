@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ub__partner_funnel_signup_viewgroup_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.Button android:id="@id/ub__partner_funnel_signup_button_polymorphism" android:padding="@dimen/ub__padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ub__padding_medium" android:layout_marginBottom="@dimen/ub__padding_small" android:text="@string/ub__partner_funnel_sign_up_polymorphism" android:drawablePadding="@dimen/ub__padding_medium" style="@style/Uber.Widget.Button.Primary" />
+        <com.ubercab.ui.DividerWithText android:id="@id/ub__partner_funnel_signup_divider_polymorphism" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ub__padding_medium" android:layout_marginRight="@dimen/ub__padding_medium" android:text="@string/ub__partner_funnel_or" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ub__partner_funnel_signup_form_viewgroup_content" android:paddingBottom="@dimen/ub__padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ub__padding_medium" />
+        <com.ubercab.ui.Button android:id="@id/ub__partner_funnel_signup_button_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ub__padding_medium" android:text="@string/ub__partner_funnel_continue_str" style="@style/Uber.Partner.Funnel.Widget.Button.Accent" />
+        <com.ubercab.ui.core.UTextView android:textSize="@dimen/ub__text_size_small" android:id="@id/ub__partner_funnel_signup_textview_legal_disclaimer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ub__padding_medium" android:layout_marginTop="@dimen/ub__padding_small" style="@style/Uber.TextAppearance.P" />
+    </LinearLayout>
+</ScrollView>

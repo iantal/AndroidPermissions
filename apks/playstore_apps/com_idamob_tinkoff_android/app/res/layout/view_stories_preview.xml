@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/account_list_story_previews" n1:clipChildren="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small.White.Medium" n1:gravity="center_vertical" n1:id="@id/account_list_story_previews_title" n1:layout_width="wrap_content" n1:layout_height="48.0dip" n1:layout_marginLeft="@dimen/offset_from_edge" n1:text="@string/stories_title" n1:layout_alignParentTop="true" n1:layout_alignParentStart="true" />
+    <TextView n1:textAppearance="@style/Text.Small.White.Medium" n1:gravity="center_vertical" n1:id="@id/account_list_story_previews_see_all" n1:background="?selectableItemBackground" n1:layout_width="wrap_content" n1:layout_height="36.0dip" n1:layout_marginTop="6.0dip" n1:layout_marginRight="@dimen/offset_from_edge" n1:drawablePadding="6.5dip" n1:layout_alignParentTop="true" n1:layout_alignParentRight="true" />
+    <android.support.v7.widget.RecyclerView n1:id="@id/account_list_story_previews_recycler" n1:paddingLeft="12.0dip" n1:paddingRight="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge" n1:clipChildren="false" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="-4.0dip" n1:layout_below="@id/account_list_story_previews_title" />
+</RelativeLayout>

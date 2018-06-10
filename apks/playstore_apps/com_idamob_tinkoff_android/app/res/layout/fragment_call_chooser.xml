@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:id="@id/call_online_panel" n1:background="@drawable/selector_list_view" n1:paddingLeft="16.0dip" n1:layout_width="fill_parent" n1:layout_height="48.0dip">
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:ellipsize="end" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/ca_call_online" n1:maxLines="1" />
+    </LinearLayout>
+    <View n1:background="@drawable/light_grey_line" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:id="@id/call_rus_panel" n1:background="@drawable/selector_list_view" n1:paddingLeft="16.0dip" n1:layout_width="fill_parent" n1:layout_height="48.0dip">
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:ellipsize="end" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/ca_call_rus" n1:maxLines="1" />
+    </LinearLayout>
+    <View n1:background="@drawable/light_grey_line" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:id="@id/call_foreign_panel" n1:background="@drawable/selector_list_view" n1:paddingLeft="16.0dip" n1:layout_width="fill_parent" n1:layout_height="48.0dip">
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:ellipsize="end" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/ca_call_foreign" n1:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

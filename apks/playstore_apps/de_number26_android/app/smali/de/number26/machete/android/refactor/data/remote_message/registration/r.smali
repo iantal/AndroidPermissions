@@ -1,0 +1,62 @@
+.class public abstract Lde/number26/machete/android/refactor/data/remote_message/registration/r;
+.super Ljava/lang/Object;
+.source "UnregisterFromRemoteMessagesBody.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lde/number26/machete/android/refactor/data/remote_message/registration/r$a;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 14
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a(Lcom/google/gson/Gson;)Lcom/google/gson/TypeAdapter;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/gson/Gson;",
+            ")",
+            "Lcom/google/gson/TypeAdapter<",
+            "Lde/number26/machete/android/refactor/data/remote_message/registration/r;",
+            ">;"
+        }
+    .end annotation
+
+    .line 24
+    new-instance v0, Lde/number26/machete/android/refactor/data/remote_message/registration/d$a;
+
+    invoke-direct {v0, p0}, Lde/number26/machete/android/refactor/data/remote_message/registration/d$a;-><init>(Lcom/google/gson/Gson;)V
+
+    return-object v0
+.end method
+
+.method public static c()Lde/number26/machete/android/refactor/data/remote_message/registration/r$a;
+    .locals 1
+
+    .line 28
+    new-instance v0, Lde/number26/machete/android/refactor/data/remote_message/registration/b$a;
+
+    invoke-direct {v0}, Lde/number26/machete/android/refactor/data/remote_message/registration/b$a;-><init>()V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method abstract a()Ljava/lang/String;
+.end method
+
+.method abstract b()Ljava/lang/String;
+.end method

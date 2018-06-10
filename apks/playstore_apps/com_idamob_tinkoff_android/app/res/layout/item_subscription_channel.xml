@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/parent_view" n1:background="?android:selectableItemBackground" n1:paddingLeft="@dimen/offset_from_edge" n1:paddingRight="@dimen/offset_from_edge" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_medium_item"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ViewSwitcher n1:id="@id/channel_progress_switcher" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true">
+        <android.support.v7.widget.SwitchCompat n1:id="@id/channel_enable" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_margin_half" />
+        <include n1:layout_gravity="center" n1:id="@id/channel_enable_progress" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" layout="@layout/inc_loader_progress" />
+    </ViewSwitcher>
+    <ImageButton n1:id="@id/help_btn" n1:visibility="gone" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/screen_content_margin_half" n1:layout_toLeftOf="@id/channel_progress_switcher" n1:layout_centerVertical="true" style="@style/ActivityCardAccountSettings.WidgetEditServiceImageButton" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerVertical="true">
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:id="@id/channel_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/channel_subtitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

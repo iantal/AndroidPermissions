@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.trip.trip_instructions.modular.ModularTripInstructionsView android:theme="@style/Theme.Helix.Dark" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.UCardView android:id="@id/ub__modular_instructions_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?contentInset" android:layout_marginRight="?contentInset" uber:cardCornerRadius="@dimen/ui__corner_radius" uber:cardElevation="@dimen/ub__home_where_to_card_elevation">
+        <com.ubercab.ui.core.UFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.ULinearLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/ub__modular_instructions_container" android:background="@drawable/ub__trip_instructions_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/ub__trip_instructions_min_height">
+                <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:id="@id/ub__modular_instructions_left_accessory_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                <com.ubercab.ui.core.UPlainView android:id="@id/ub__modular_instructions_left_divider" android:background="?ruleColor" android:visibility="gone" android:layout_width="@dimen/ui__divider_width" android:layout_height="fill_parent" />
+                <com.ubercab.ui.core.ULinearLayout android:gravity="start" android:id="@id/ub__modular_instructions_center_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                <com.ubercab.ui.core.UPlainView android:id="@id/ub__modular_instructions_right_divider" android:background="?ruleColor" android:visibility="gone" android:layout_width="@dimen/ui__divider_width" android:layout_height="fill_parent" />
+                <com.ubercab.ui.core.ULinearLayout android:gravity="center" android:id="@id/ub__modular_instructions_right_accessory_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.commons.widget.BitLoadingIndicator android:layout_gravity="bottom" android:id="@id/loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?lineIndicatorHeight" uber:bli_bitColor="?colorAccent" />
+        </com.ubercab.ui.core.UFrameLayout>
+    </com.ubercab.ui.core.UCardView>
+</com.ubercab.presidio.app.optional.root.main.ride.trip.trip_instructions.modular.ModularTripInstructionsView>

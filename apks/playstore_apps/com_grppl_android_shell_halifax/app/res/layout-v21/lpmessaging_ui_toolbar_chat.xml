@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.liveperson.infra.messaging_ui.toolbar.ConversationToolBar n1:background="@color/lp_colorPrimary" n1:layout_width="fill_parent" n1:layout_height="?android:actionBarSize" n1:elevation="@dimen/margin_half"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:layout_gravity="right" n1:orientation="horizontal" n1:id="@id/lpui_menu_container" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_alignParentRight="true" n1:layout_alignParentEnd="true">
+        <com.liveperson.infra.ui.view.ui.CustomButton n1:textSize="@dimen/regular_text_size" n1:textColor="#ff000000" n1:layout_gravity="center|right" n1:id="@id/lpui_toolbar_feedback_action" n1:background="@null" n1:paddingLeft="@dimen/margin_regular" n1:paddingTop="@dimen/margin_regular" n1:paddingBottom="@dimen/margin_regular" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:scaleType="fitCenter" n1:text="Skip" n1:layout_alignParentRight="true" n1:layout_alignParentEnd="true" n2:font_name="@string/custom_font_name_non_conversation_feed" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <RelativeLayout n1:layout_gravity="center_horizontal" n1:id="@id/lpmessaging_ui_toolbar_avatar_title_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toLeftOf="@id/lpui_menu_container" n1:layout_toRightOf="@android:id/home" />
+</com.liveperson.infra.messaging_ui.toolbar.ConversationToolBar>

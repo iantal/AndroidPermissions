@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.app.optional.root.main.ride.request.cancellation_survey.CancellationSurveyModalView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ubercab.ui.core.UTextView android:layout_gravity="center_horizontal" android:id="@id/cancellation_survey_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Platform.TextAppearance.H2.News.Primary" />
+    <com.ubercab.ui.core.UButton android:id="@id/cancellation_survey_submit_button" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?platformButtonPrimary" />
+</com.ubercab.presidio.app.optional.root.main.ride.request.cancellation_survey.CancellationSurveyModalView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout n1:id="@id/appbar" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <android.support.design.widget.CollapsingToolbarLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="?actionBarSize" n2:layout_scrollFlags="exitUntilCollapsed|scroll" n2:titleEnabled="false" xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <LinearLayout n1:orientation="vertical" n1:id="@id/bill_list_header_container" n1:paddingTop="?actionBarSize" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:layout_collapseMode="pin">
+                <fragment n1:name="ru.tcsbank.mb.ui.providers.ProviderHeaderFragment" n1:id="@id/provider_header" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+                <fragment n1:name="ru.tcsbank.mb.ui.fragments.operation.PaymentFieldsFragment" n1:id="@id/payment_fields_fragment" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            </LinearLayout>
+            <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" n2:layout_collapseMode="pin" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView n1:id="@id/bill_list_recycler" n1:paddingTop="@dimen/offset_from_edge_half" n1:paddingBottom="@dimen/offset_from_edge_half" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginBottom="@dimen/tile_height_default_item" n3:layout_behavior="@string/appbar_scrolling_view_behavior" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:textAppearance="@style/Text.Small.Hint" n1:gravity="center" n1:id="@id/empty" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/invoices_list_empty" n1:layout_centerInParent="true" n4:layout_behavior="@string/view_centering_behavior" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:id="@id/progress" n1:visibility="gone" n5:layout_anchor="@id/appbar" n5:layout_anchorGravity="bottom" style="@style/SmoothProgress" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <Button n1:gravity="center" n1:layout_gravity="bottom" n1:id="@id/pay" n1:visibility="gone" n1:text="@string/pay" style="@style/Button.Yellow.Normal" />
+</android.support.design.widget.CoordinatorLayout>

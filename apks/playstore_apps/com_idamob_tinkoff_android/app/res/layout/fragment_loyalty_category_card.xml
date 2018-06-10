@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/offset_from_edge_half" n1:layout_marginRight="@dimen/offset_from_edge_half" n1:layout_marginBottom="@dimen/offset_from_edge_half"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ru.tcsbank.mb.ui.widgets.CardTopView n1:id="@id/loyalty_category_card_top_view" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" n2:ctv_buttonText="@string/loyalty_offers_all_default" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <android.support.v7.widget.RecyclerView n1:id="@id/flcc_recycler_categories" n1:paddingLeft="12.0dip" n1:paddingRight="12.0dip" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <ru.tcsbank.mb.ui.widgets.offers.loyalty.ActivateAllOffersView n1:id="@id/loyalty_category_card_activate_all_view" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_default_item" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

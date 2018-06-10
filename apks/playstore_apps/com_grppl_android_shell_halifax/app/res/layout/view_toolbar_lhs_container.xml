@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@drawable/toolbar_action_background" n1:paddingLeft="@dimen/toolbar_lhs_container_padding" n1:paddingTop="@dimen/toolbar_lhs_container_padding" n1:paddingRight="@dimen/toolbar_lhs_container_padding_end" n1:paddingBottom="@dimen/toolbar_lhs_container_padding" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:contentDescription="@string/accessibility_toolbar_action_back" n1:importantForAccessibility="yes"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/navigationToolbarBackButton" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:srcCompat="@drawable/toolbar_back_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageView n1:id="@id/navigationToolbarLogoView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginStart="@dimen/toolbar_action_logo_margin_start" n3:srcCompat="@drawable/toolbar_logo" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

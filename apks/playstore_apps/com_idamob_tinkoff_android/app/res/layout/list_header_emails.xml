@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:animateLayoutChanges="true"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/profile_contacts_head_info" n1:padding="@dimen/screen_content_margin" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/profile_contacts_head_info" />
+    <TextView n1:text="@string/profile_contacts_title" style="@style/Profile.Title" />
+    <TextView n1:id="@id/profile_contacts_mobile_value" n1:background="@drawable/selector_item_bg" style="@style/TextView.Default" />
+</LinearLayout>

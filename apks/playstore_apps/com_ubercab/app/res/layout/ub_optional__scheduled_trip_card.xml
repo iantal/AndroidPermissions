@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.scheduled_rides.upcoming.trip.card.ScheduledTripCardView android:orientation="vertical" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/ub_optional__scheduled_trip_card_header" />
+    <include layout="@layout/ub_optional__scheduled_trip_card_info" />
+    <include layout="@layout/ub_optional__scheduled_trip_card_buttons" />
+</com.ubercab.presidio.scheduled_rides.upcoming.trip.card.ScheduledTripCardView>

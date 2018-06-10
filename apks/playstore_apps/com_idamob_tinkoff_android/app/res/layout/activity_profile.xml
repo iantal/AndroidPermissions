@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:id="@id/profile_content" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:layout_height="wrap_content" style="@style/ScreenContent.Padding">
+            <fragment n1:id="@id/image_chooser" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge_half" class="ru.tcsbank.mb.ui.fragments.avatar.ImageUploadFragment" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/personal_info_content" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <include layout="@layout/inc_divider_margin" />
+                <TextView n1:id="@id/profile_contacts_tv" n1:background="@drawable/selector_item_bg" n1:clickable="true" n1:text="@string/profile_contacts" style="@style/TextView.Default" />
+                <TextView n1:id="@id/profile_addresses_tv" n1:background="@drawable/selector_item_bg" n1:clickable="true" n1:text="@string/profile_addresses_button" style="@style/TextView.Default" />
+                <TextView n1:id="@id/profile_employer_tv" n1:background="@drawable/selector_item_bg" n1:clickable="true" n1:text="@string/profile_employer" style="@style/TextView.Default" />
+            </LinearLayout>
+            <TextView n1:id="@id/btn_profile_identify" n1:background="@drawable/selector_item_bg" n1:visibility="gone" n1:clickable="true" n1:text="@string/profile_identify_button" style="@style/TextView.Default" />
+            <include layout="@layout/inc_divider_margin" />
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/profile_regions_ll" n1:background="@drawable/selector_item_bg" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:layout_width="wrap_content" n1:text="@string/profile_regions" style="@style/TextView.Default" />
+                <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:gravity="center|right" n1:id="@id/profile_regions_tv" n1:paddingRight="@dimen/screen_content_margin" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0" />
+            </LinearLayout>
+            <include layout="@layout/inc_divider_margin" />
+            <TextView n1:id="@id/profile_change_user" n1:background="@drawable/selector_item_bg" n1:clickable="true" n1:text="@string/profile_menu_change_user_button" style="@style/TextView.Default" />
+            <TextView n1:id="@id/profile_exit" n1:background="@drawable/selector_item_bg" n1:clickable="true" n1:text="@string/profile_menu_exit_button" style="@style/TextView.Default" />
+        </LinearLayout>
+    </ScrollView>
+    <ru.tcsbank.mb.ui.widgets.SmoothProgress n1:id="@id/personal_info_progress" style="@style/SmoothProgress" />
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/progress_bar" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+</FrameLayout>

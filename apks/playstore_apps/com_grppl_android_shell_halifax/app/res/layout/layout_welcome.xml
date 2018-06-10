@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mobile.ui.common.view.HeadingTextView n1:textAppearance="@style/TextAppearance.Headline" n1:id="@id/welcomeTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/welcome_page_title" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/fragment_welcome_section_spacing">
+        <ImageView n1:id="@id/welcomeSectionOneIcon" n1:layout_width="@dimen/fragment_welcome_icon_width" n1:layout_height="@dimen/fragment_welcome_icon_height" n1:layout_marginTop="@dimen/fragment_welcome_icon_margin_top" n1:layout_marginRight="@dimen/fragment_welcome_icon_margin_right" n2:srcCompat="@drawable/welcome_padlock_icon" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/welcomeSectionOneIcon">
+            <com.mobile.ui.common.view.HeadingTextView n1:textAppearance="@style/TextAppearance.H2" n1:id="@id/welcomeSectionOneTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_welcome_item_spacing" n1:text="@string/welcome_section_one_title" n1:contentDescription="@string/accessibility_welcome_section_one_title" />
+            <TextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/welcomeSectionOneBody" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/welcome_section_one_body" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/fragment_welcome_section_spacing">
+        <ImageView n1:id="@id/welcomeSectionTwoIcon" n1:layout_width="@dimen/fragment_welcome_icon_width" n1:layout_height="@dimen/fragment_welcome_icon_height" n1:layout_marginTop="@dimen/fragment_welcome_icon_margin_top" n1:layout_marginRight="@dimen/fragment_welcome_icon_margin_right" n3:srcCompat="@drawable/welcome_shield_icon" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/welcomeSectionTwoIcon">
+            <com.mobile.ui.common.view.HeadingTextView n1:textAppearance="@style/TextAppearance.H2" n1:id="@id/welcomeSectionTwoTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_welcome_item_spacing" n1:text="@string/welcome_section_two_title" />
+            <com.mobile.ui.common.view.AccessibleLinkTextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/welcomeSectionTwoBody" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/welcome_section_two_body" n1:contentDescription="@string/accessibility_welcome_section_two_body" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/fragment_welcome_section_spacing">
+        <ImageView n1:id="@id/welcomeSectionThreeIcon" n1:layout_width="@dimen/fragment_welcome_icon_width" n1:layout_height="@dimen/fragment_welcome_icon_height" n1:layout_marginTop="@dimen/fragment_welcome_icon_margin_top" n1:layout_marginRight="@dimen/fragment_welcome_icon_margin_right" n4:srcCompat="@drawable/welcome_phone_icon" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/welcomeSectionThreeIcon">
+            <com.mobile.ui.common.view.HeadingTextView n1:textAppearance="@style/TextAppearance.H2" n1:id="@id/welcomeSectionThreeTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_welcome_item_spacing" n1:text="@string/welcome_section_three_title" />
+            <com.mobile.ui.common.view.AccessibleLinkTextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/welcomeSectionThreeBody" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/welcome_section_three_body" n1:contentDescription="@string/accessibility_welcome_section_three_body" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/fragment_welcome_section_spacing">
+        <ImageView n1:id="@id/welcomeSectionFourIcon" n1:layout_width="@dimen/fragment_welcome_icon_width" n1:layout_height="@dimen/fragment_welcome_icon_height" n1:layout_marginTop="@dimen/fragment_welcome_icon_margin_top" n1:layout_marginRight="@dimen/fragment_welcome_icon_margin_right" n5:srcCompat="@drawable/welcome_customer_icon" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/welcomeSectionFourIcon">
+            <com.mobile.ui.common.view.HeadingTextView n1:textAppearance="@style/TextAppearance.H2" n1:id="@id/welcomeSectionFourTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/fragment_welcome_item_spacing" n1:text="@string/welcome_section_four_title" />
+            <com.mobile.ui.common.view.AccessibleLinkTextView n1:textAppearance="@style/TextAppearance.Body" n1:id="@id/welcomeSectionFourBody" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/welcome_section_four_body" n1:contentDescription="@string/accessibility_welcome_section_four_body" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

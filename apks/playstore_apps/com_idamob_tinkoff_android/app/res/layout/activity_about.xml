@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" />
+    <ru.tcsbank.mb.ui.widgets.progressbar.ProgressBarCircularIndeterminate n1:layout_gravity="center" n1:id="@id/progress" n1:visibility="gone" n1:layout_width="@dimen/pd_width" n1:layout_height="@dimen/pd_height" />
+    <RelativeLayout n1:id="@id/about_content" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/toolbar">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/about_bottom_container" n1:background="@color/placeholder_item_dark" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+            <android.support.v7.widget.CardView n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="@dimen/offset_from_edge" n1:layout_weight="1.0" n2:cardBackgroundColor="@color/white" n2:cardCornerRadius="2.0dip" n2:cardElevation="1.0dip" xmlns:n2="http://schemas.android.com/apk/res-auto">
+                <LinearLayout n1:orientation="vertical" n1:id="@id/about_privacy_button" n1:background="?selectableItemBackground" n1:padding="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <ImageView n1:id="@id/about_privacy_policy_image" n1:background="@drawable/circle_background_blue" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/offset_from_edge_half" n1:src="@drawable/about_privacy_icon" n1:tint="@color/white" />
+                    <TextView n1:textAppearance="@style/Text.ExtraSmall.Dark.Medium" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/about_privacy_policy_url" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/offset_from_edge" n1:layout_marginBottom="@dimen/offset_from_edge" n1:layout_weight="1.0" n3:cardBackgroundColor="@color/white" n3:cardCornerRadius="2.0dip" n3:cardElevation="1.0dip" xmlns:n3="http://schemas.android.com/apk/res-auto">
+                <LinearLayout n1:orientation="vertical" n1:id="@id/about_eula_button" n1:background="?selectableItemBackground" n1:padding="@dimen/offset_from_edge_half" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <ImageView n1:id="@id/about_eula_image" n1:background="@drawable/circle_background_blue" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/offset_from_edge_half" n1:src="@drawable/about_eula_icon" n1:tint="@color/white" />
+                    <TextView n1:textAppearance="@style/Text.ExtraSmall.Dark.Medium" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/about_eula_url" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/about_bottom_container">
+            <ImageView n1:id="@id/about_logo" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/screen_content_padding_plus" n1:src="@drawable/tinkoff_logo_large" n1:adjustViewBounds="true" />
+            <TextView n1:textAppearance="@style/Text.Small.Dark" n1:id="@id/server_url" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/offset_from_edge_half" />
+            <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/about_version_number" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/offset_from_edge_half" />
+            <TextView n1:textAppearance="@style/Text.Default.Dark" n1:id="@id/about_gps_support" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

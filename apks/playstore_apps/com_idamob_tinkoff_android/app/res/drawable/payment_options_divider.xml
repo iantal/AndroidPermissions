@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset n1:insetLeft="@dimen/payment_options_item_padding" n1:insetRight="@dimen/payment_options_item_padding"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <shape>
+        <solid n1:color="@color/payment_options_divider" />
+    </shape>
+</inset>

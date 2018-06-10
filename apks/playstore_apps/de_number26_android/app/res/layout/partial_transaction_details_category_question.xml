@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_transaction_details_category_question" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:minHeight="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="bottom" style="@style/transactionDetailsHorizontalSeparator" />
+    <TextView android:gravity="center" android:id="@id/text_transaction_details_category_question_thank_you" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/transaction_details_category_question_thank_you" style="@style/transactionDetailsCategoryQuestionThankYou" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_transaction_details_category_question_answers" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/transaction_details_category_question" android:layout_weight="1.0" android:layout_marginStart="@dimen/transaction_details_screen_padding_start_end" android:layout_marginEnd="5.0dip" style="@style/transactionDetailsCategoryQuestionText" />
+        <Button android:id="@id/button_transaction_details_category_question_yes" android:text="@string/transaction_details_category_question_yes" android:layout_marginEnd="10.0dip" style="@style/transactionDetailsCategoryQuestionButton" />
+        <Button android:id="@id/button_transaction_details_category_question_no" android:text="@string/transaction_details_category_question_change" android:layout_marginEnd="@dimen/transaction_details_screen_padding_start_end" style="@style/transactionDetailsCategoryQuestionButton" />
+    </LinearLayout>
+</FrameLayout>

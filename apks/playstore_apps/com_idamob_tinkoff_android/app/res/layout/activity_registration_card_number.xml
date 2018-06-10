@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/bg_dark" n1:paddingBottom="@dimen/offset_from_edge" style="@style/MatchParent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <fragment n1:id="@id/card_scan_fragment" n1:layout_width="fill_parent" n1:layout_height="@dimen/tile_height_large_item" n1:layout_marginLeft="@dimen/screen_content_margin" n1:layout_marginRight="@dimen/screen_content_margin" class="ru.tcsbank.mb.ui.fragments.CardScanFragment" />
+    <ViewSwitcher n1:id="@id/registration_card_number_switcher" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginTop="@dimen/screen_content_margin_half" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:inAnimation="@anim/fade_in_400" style="@style/VerticalWrapping">
+        <TextView n1:textAppearance="@style/Text.ExtraSmall.Light" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/registration_card_number_hint" n1:text="@string/get_login_and_password_edit_card_note" style="@style/WrapContent" />
+        <Button n1:enabled="false" n1:id="@id/continue_registration_btn" n1:text="@string/get_login_and_password_next_button" style="@style/Button.Round.Yellow" />
+    </ViewSwitcher>
+</LinearLayout>

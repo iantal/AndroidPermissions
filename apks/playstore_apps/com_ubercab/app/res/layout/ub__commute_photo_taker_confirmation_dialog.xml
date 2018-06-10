@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" uber:analyticsId="007b2557-3679"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ubercab.ui.core.UPercentRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ui__spacing_unit_2x" android:layout_toStartOf="@id/photo" uber:layout_widthPercent="70.00001%">
+                <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H2.Book" android:id="@id/ub__commute_add_photo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="?gutterSize" android:text="@string/ub__commute_request_view_dialog_photo_title" />
+                <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.P.Book" android:id="@id/ub__commute_add_photo_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="?gutterSize" android:text="@string/ub__commute_request_view_dialog_photo_description" />
+            </com.ubercab.ui.core.ULinearLayout>
+            <com.ubercab.ui.core.UImageView android:id="@id/photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitEnd" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:foregroundGravity="right" android:layout_alignParentEnd="true" uber:srcCompat="@drawable/ic_ub__commute_photo_upload" uber:layout_widthPercent="29.999996%" />
+        </com.ubercab.ui.core.UPercentRelativeLayout>
+        <com.ubercab.ui.core.ULinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UButton android:id="@id/ub__commute_add_photo_positive_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_request_view_dialog_photo_positive" uber:analyticsId="303b2e29-4c05" style="@style/Platform.Button.Primary" />
+            <com.ubercab.ui.core.UButton android:id="@id/ub__commute_add_photo_negative_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ub__commute_request_view_dialog_photo_negative" uber:analyticsId="9e28bb35-00b8" style="@style/Platform.Button.Secondary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.ui.core.ULinearLayout>

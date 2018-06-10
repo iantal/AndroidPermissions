@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ScreenContent">
+    <LinearLayout n1:id="@id/destination_selector" style="@style/ScreenContent"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <ru.tinkoff.core.smartfields.view.SmartFieldView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:fieldKey="destination" n2:fieldTitle="@string/close_deposit_destination" n2:fieldType="simpleList" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <FrameLayout n3:id="@id/destination_details_fragment_container" n3:layout_width="fill_parent" n3:layout_height="wrap_content"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout n1:id="@id/appbar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:elevation="0.0dip" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <android.support.v7.widget.Toolbar n1:id="@id/toolbar" n1:layout_width="fill_parent" n1:layout_height="?actionBarSize" />
+        <fragment n1:name="ru.tcsbank.mb.ui.providers.ProviderHeaderFragment" n1:id="@id/fragment_header" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <fragment n1:name="ru.tcsbank.mb.ui.fragments.operation.PaymentFieldsFragment" n1:id="@id/fragment_fields" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <FrameLayout n1:id="@id/money_total" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" />
+            <Button n1:enabled="false" n1:id="@id/pay" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/screen_content_margin" n1:text="@string/anonymous_pay_pay_button" style="@style/Button.Round.Yellow" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

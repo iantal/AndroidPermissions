@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_light" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/view_offer_detail_above" style="@style/MatchParentWrapContent">
+        <WebView android:id="@id/webview_offer_above" style="@style/MatchParentWrapContent" />
+    </ScrollView>
+    <RelativeLayout android:background="@drawable/background_gradient" android:layout_marginTop="15.0dip" style="@style/AllMatchParent">
+        <RelativeLayout android:id="@id/view_offer_button_parent" android:layout_alignParentBottom="true" style="@style/ScreenFooter">
+            <TextView android:id="@id/tv_offer_save_error" android:visibility="gone" style="@style/ErrorStrip" />
+            <LinearLayout android:id="@id/view_offer_button_container" android:padding="3.0dip" android:layout_below="@id/tv_offer_save_error" style="@style/MatchParentWrapContent">
+                <Button android:id="@id/btn_offer_mail" style="@style/OfferButton" />
+                <Button android:id="@id/btn_offer_call" style="@style/OfferButton" />
+                <Button android:id="@id/btn_offer_other" style="@style/OfferButton" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/view_save_choice_progress_container" android:visibility="gone" style="@style/MatchParentWrapContent">
+                <ProgressBar android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmall" />
+                <TextView android:textColor="@color/text_on_dark" android:id="@id/tv_progress" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/progress_bar" android:layout_centerVertical="true" style="@style/TextBoldAllWrap" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ScrollView android:id="@id/view_offer_detail_below" android:fillViewport="true" android:layout_above="@id/view_offer_button_parent" android:layout_alignParentTop="true" style="@style/AllMatchParent">
+            <LinearLayout android:orientation="vertical" style="@style/AllMatchParent">
+                <WebView android:id="@id/webview_offer_below" style="@style/MatchParentWrapContent" />
+                <TextView android:textColor="@color/currency_positive" android:id="@id/tv_choice_text" android:padding="8.0dip" android:visibility="gone" style="@style/TextBoldMatchWrap" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

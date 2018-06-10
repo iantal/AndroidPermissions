@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/InsuranceListSearchDivider" />
+    <EditText android:id="@id/edit_insurance_category_invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <FrameLayout style="@style/InsuranceListSearchLayout">
+        <EditText android:id="@id/search_insurance_category" android:hint="@string/insurance_category_selection_search_placeholder" style="@style/InsuranceListSearch" />
+        <ImageView android:id="@id/button_insurance_category_close_search" android:visibility="gone" style="@style/InsuranceListSearchClose" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.l4digital.fastscroll.FastScrollRecyclerView android:id="@id/recycler_insurance_category" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

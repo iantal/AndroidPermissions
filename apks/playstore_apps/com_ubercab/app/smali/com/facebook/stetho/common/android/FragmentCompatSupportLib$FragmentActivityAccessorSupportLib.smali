@@ -1,0 +1,64 @@
+.class Lcom/facebook/stetho/common/android/FragmentCompatSupportLib$FragmentActivityAccessorSupportLib;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/facebook/stetho/common/android/FragmentActivityAccessor;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/facebook/stetho/common/android/FragmentActivityAccessor<",
+        "Landroid/support/v4/app/FragmentActivity;",
+        "Lkl;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 114
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/facebook/stetho/common/android/FragmentCompatSupportLib$1;)V
+    .locals 0
+
+    .line 114
+    invoke-direct {p0}, Lcom/facebook/stetho/common/android/FragmentCompatSupportLib$FragmentActivityAccessorSupportLib;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic getFragmentManager(Landroid/app/Activity;)Ljava/lang/Object;
+    .locals 0
+
+    .line 114
+    check-cast p1, Landroid/support/v4/app/FragmentActivity;
+
+    invoke-virtual {p0, p1}, Lcom/facebook/stetho/common/android/FragmentCompatSupportLib$FragmentActivityAccessorSupportLib;->getFragmentManager(Landroid/support/v4/app/FragmentActivity;)Lkl;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getFragmentManager(Landroid/support/v4/app/FragmentActivity;)Lkl;
+    .locals 0
+
+    .line 119
+    invoke-virtual {p1}, Landroid/support/v4/app/FragmentActivity;->getSupportFragmentManager()Lkl;
+
+    move-result-object p1
+
+    return-object p1
+.end method

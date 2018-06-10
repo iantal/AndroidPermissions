@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/Fingerprint.SetupPane">
+    <Space style="@style/Fingerprint.SpaceTop" />
+    <TextView n1:id="@id/note" style="@style/Fingerprint.SetupText"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <Space style="@style/Fingerprint.SpaceBottom" />
+    <Button n2:id="@id/settings" style="@style/Fingerprint.ButtonSettings"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <Button n3:id="@id/skip" style="@style/Fingerprint.ButtonSkip"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

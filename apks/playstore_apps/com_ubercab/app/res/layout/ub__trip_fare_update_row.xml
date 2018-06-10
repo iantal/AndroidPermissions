@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.trip_details.optional.fare.row.fare_update.TripFareUpdateRowView android:orientation="vertical" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ub__fare_breakdown_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UImageView android:id="@id/ub__fare_update_icon" android:layout_width="?avatarMicro" android:layout_height="?avatarMicro" android:tint="?brandGrey60" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/ui__spacing_unit_1x" app:srcCompat="@drawable/ub__fare_update_icon" />
+        <com.ubercab.ui.core.UTextView android:id="@id/ub__fare_breakdown_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:importantForAccessibility="no" style="@style/Platform.TextAppearance.H6.News.Secondary" />
+        <com.ubercab.ui.core.UTextView android:layout_gravity="center_vertical" android:id="@id/ub__fare_breakdown_details_button" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ub__trip_fare_update_row_view_details" style="@style/Platform.TextAppearance.H6.News.Link" />
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.trip_details.optional.fare.row.fare_update.TripFareUpdateRowView>

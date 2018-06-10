@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/bg_dark" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/pins_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="@dimen/offset_from_edge_large">
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/enter_pin" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/pin_setup_enter_pin" n1:layout_centerHorizontal="true" />
+        <ru.tcsbank.mb.ui.auth.pin.EditPin n1:id="@id/pin" n1:padding="@dimen/offset_from_edge_half" n1:layout_below="@id/enter_pin" n1:layout_centerHorizontal="true" n2:vibration_enabled="true" style="@style/EditPin" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:gravity="center" n1:id="@id/weak_pin_error" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/screen_content_double_margin" n1:layout_marginTop="@dimen/offset_from_edge" n1:layout_marginRight="@dimen/screen_content_double_margin" n1:text="@string/set_access_code_alert_inappropriate_code" n1:layout_below="@id/pin" n1:layout_centerHorizontal="true" />
+        <TextView n1:textAppearance="@style/Text.Small.Light" n1:id="@id/confirm_pin" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/offset_from_edge" n1:text="@string/pin_setup_confirm_pin" n1:layout_below="@id/pin" n1:layout_centerHorizontal="true" />
+        <ru.tcsbank.mb.ui.auth.pin.EditPin n1:id="@id/pin_confirmation" n1:padding="@dimen/offset_from_edge_half" n1:visibility="invisible" n1:layout_below="@id/confirm_pin" n1:layout_centerHorizontal="true" n3:vibration_enabled="true" style="@style/EditPin" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <include layout="@layout/inc_pin_numeric_keyboard" />
+</RelativeLayout>

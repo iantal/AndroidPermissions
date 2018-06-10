@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ubercab.presidio.scheduled_rides.upsell_confirm.UpsellCancelView android:theme="@style/Theme.Helix.Light" android:layout_gravity="bottom" android:orientation="vertical" android:background="?colorOutline" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uber="http://schemas.android.com/apk/res-auto">
+    <com.ubercab.ui.core.ULinearLayout android:theme="@style/Theme.Helix.Light" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ub__upsell_confirmation_layout" android:background="?android:colorBackground" android:padding="?contentInset" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.H2.Book" android:layout_gravity="center_horizontal" android:id="@id/upsell_confirmation_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/confirm_scheduled_pickup_line_spacing" android:text="@string/upsell_cancel_header_text" />
+        <com.ubercab.ui.core.UTextView android:textAppearance="@style/Platform.TextAppearance.P.Book" android:id="@id/upsell_confirmation_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="?gutterSize" android:text="@string/upsell_cancel_message_text" />
+        <com.ubercab.ui.core.ULinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ubercab.ui.core.UButton android:id="@id/upsell_cancel_cancel_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/upsell_never_mind_button_text" android:layout_weight="1.0" android:textAllCaps="true" android:layout_marginEnd="?contentInset" uber:analyticsId="ecf89aac-3cf1" style="@style/Platform.Button.Secondary" />
+            <com.ubercab.ui.core.UButton android:id="@id/upsell_cancel_ok_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/upsell_cancel_ride_button_text" android:layout_weight="1.0" android:textAllCaps="true" uber:analyticsId="f397bd35-1092" style="@style/Platform.Button.Primary" />
+        </com.ubercab.ui.core.ULinearLayout>
+    </com.ubercab.ui.core.ULinearLayout>
+</com.ubercab.presidio.scheduled_rides.upsell_confirm.UpsellCancelView>
