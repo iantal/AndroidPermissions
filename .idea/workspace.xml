@@ -2,16 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bb13603-be0e-45bf-888f-a0ab45ef8049" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/python/ui/stats_script.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/logs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/nonranom.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/obfuscation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/radare.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/reflection.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/signature.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/test_apks/insecurebank/raw/InsecureBankv2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/apks/test_apks/insecurebank/raw/InsecureBankv2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/test_apks/insecurebank/report/chord_diagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/radare/apk_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/radare/apk_crawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/ui/androart.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ui/androart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/ui/logo2.png" beforeDir="false" afterPath="$PROJECT_DIR$/python/ui/logo2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/ui/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ui/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/visualize/vulns.json" beforeDir="false" afterPath="$PROJECT_DIR$/python/visualize/vulns.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/ui/stats_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ui/stats_script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/visualize/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/visualize/visualize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/visualize/vulns.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/crypto_vulns.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/crypto_vulns.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/log_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/log_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/reflection_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/reflection_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/signature_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/signature_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/tests/test_signature_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/tests/test_signature_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/vulns/webview_vulns.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/webview_vulns.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/chord/rm.csv" beforeDir="false" afterPath="$PROJECT_DIR$/web/chord/rm.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hotspot/a.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/hotspot/a.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,82 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="androart.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/ui/androart.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="139" column="47" selection-start-line="135" selection-start-column="12" selection-end-line="139" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="radare.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/radare.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3613">
-              <caret line="1942" selection-start-line="1942" selection-end-line="1942" />
-              <folding>
-                <element signature="e#22#208#0" />
-                <element signature="e#214#6430#0" />
-                <element signature="e#6436#6706#0" />
-                <element signature="e#6712#21077#0" />
-                <element signature="e#21083#135770#0" />
-                <element signature="e#135776#135958#0" />
-                <element signature="e#135964#150722#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logo2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/ui/logo2.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/ui/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="screenshot.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/visualize/screenshot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="visualize.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/visualize/visualize.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-480">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stats_script.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stats_script.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/ui/stats_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="212">
+              <caret line="139" column="19" selection-start-line="139" selection-start-column="19" selection-end-line="139" selection-end-column="19" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -105,24 +44,88 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extractor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/recon/extractor.py">
+      <file leaf-file-name="obfuscation_detection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/vulns/obfuscation_detection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="31" column="50" selection-start-line="27" selection-start-column="8" selection-end-line="31" selection-end-column="50" />
+            <state relative-caret-position="-450">
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/recon/test.py">
+      <file leaf-file-name="crypto_vulns.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/vulns/crypto_vulns.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="265">
+              <caret line="538" column="14" selection-start-line="538" selection-start-column="14" selection-end-line="538" selection-end-column="14" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/ui/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/manifest.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="5" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="7" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signature.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/signature.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="logs.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/logs.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reflection.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/reflection.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="log_detection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/vulns/log_detection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webview_vulns.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/vulns/webview_vulns.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,6 +145,9 @@
       <find>/krep/itmtd/ywtjexf/R.smali'</find>
       <find>/krep/itmtd/ywtjexf</find>
       <find>apki</find>
+      <find>1</find>
+      <find>2</find>
+      <find>: 1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,16 +170,13 @@
         <option value="$PROJECT_DIR$/python/visualize/tests/chord.csv" />
         <option value="$PROJECT_DIR$/python/utils/tests/test_smali_analyser.py" />
         <option value="$PROJECT_DIR$/python/visualize/chord.json" />
-        <option value="$PROJECT_DIR$/python/visualize/visualize.py" />
         <option value="$PROJECT_DIR$/python/visualize/tests/test_visualization.py" />
-        <option value="$PROJECT_DIR$/python/vulns/log_detection.py" />
         <option value="$PROJECT_DIR$/python/vulns/tests/test_logging.py" />
         <option value="$PROJECT_DIR$/python/visualize/vulns.json" />
         <option value="$PROJECT_DIR$/web/chord/rm.csv" />
         <option value="$PROJECT_DIR$/python/vulns/tests/test_crypto_vulns.py" />
         <option value="$PROJECT_DIR$/python/vulns/tests/test_reflection_check.py" />
         <option value="$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/reflection.json" />
-        <option value="$PROJECT_DIR$/python/vulns/tests/test_signature_check.py" />
         <option value="$PROJECT_DIR$/python/vulns/tests/test_webview.py" />
         <option value="$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/jsenabled.json" />
         <option value="$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/mixedcontent.json" />
@@ -184,12 +187,30 @@
         <option value="$PROJECT_DIR$/python/apkid/apkid.py" />
         <option value="$PROJECT_DIR$/python/vulns/tests/test_obfuscation.py" />
         <option value="$PROJECT_DIR$/python/vulns/obfuscation_detection.py" />
-        <option value="$PROJECT_DIR$/python/ui/run.py" />
         <option value="$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/logs.json" />
         <option value="$PROJECT_DIR$/python/ui/androart.py" />
         <option value="$PROJECT_DIR$/python/radare/apk_crawler.py" />
         <option value="$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/radare.json" />
+        <option value="$PROJECT_DIR$/python/vulns/tests/test_signature_check.py" />
+        <option value="$PROJECT_DIR$/python/vulns/signature_check.py" />
+        <option value="$PROJECT_DIR$/apks/playstore_apps/com_spotify_music/report/vulns/obfuscation.json" />
+        <option value="$PROJECT_DIR$/apks/playstore_apps/com_spotify_music/report/vulns/signature.json" />
+        <option value="$PROJECT_DIR$/apks/playstore_apps/com_spotify_music/report/vulns/load_clear_text_content.json" />
+        <option value="$PROJECT_DIR$/apks/playstore_apps/com_spotify_music/report/vulns/ecb.json" />
+        <option value="$PROJECT_DIR$/apks/playstore_apps/com_spotify_music/report/vulns/manifest.json" />
+        <option value="$PROJECT_DIR$/apks/playstore_apps/com_spotify_music/report/vulns/mixedcontent.json" />
+        <option value="$PROJECT_DIR$/apks/playstore_apps/com_ubercab/report/chord.json" />
+        <option value="$PROJECT_DIR$/apks/playstore_apps/com_ubercab/report/vulns.json" />
+        <option value="$PROJECT_DIR$/web/hotspot/a.json" />
+        <option value="$PROJECT_DIR$/python/vulns/log_detection.py" />
+        <option value="$PROJECT_DIR$/python/vulns/reflection_check.py" />
+        <option value="$PROJECT_DIR$/python/visualize/visualize.py" />
+        <option value="$PROJECT_DIR$/python/vulns/webview_vulns.py" />
         <option value="$PROJECT_DIR$/python/ui/stats_script.py" />
+        <option value="$PROJECT_DIR$/python/vulns/crypto_vulns.py" />
+        <option value="$PROJECT_DIR$/python/ui/run.py" />
+        <option value="$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/logs.json" />
+        <option value="$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/manifest.json" />
       </list>
     </option>
   </component>
@@ -228,12 +249,43 @@
               <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
               <item name="apks" type="462c0819:PsiDirectoryNode" />
-              <item name="test_apks" type="462c0819:PsiDirectoryNode" />
+              <item name="playstore_apps" type="462c0819:PsiDirectoryNode" />
+              <item name="com_termux" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="playstore_apps" type="462c0819:PsiDirectoryNode" />
+              <item name="com_termux" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="playstore_apps" type="462c0819:PsiDirectoryNode" />
+              <item name="com_termux" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+              <item name="vulns" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="analyse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="analyse" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
@@ -246,6 +298,62 @@
               <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="visualize" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="visualize" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="vulns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="vulns" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="chord" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="hotspot" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -315,14 +423,15 @@
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="762" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22450331" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29403973" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289183" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29411766" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.29411766" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -331,7 +440,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -342,237 +450,184 @@
     <option name="LAST_COMMIT_MESSAGE" value="ubuntu vm" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_idamob_tinkoff_android/report/hotspot.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_termux/report/hotspot.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret column="10729" selection-start-column="10729" selection-end-column="10729" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/chord/rm.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/vulns/crypto_vulns.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/nonranom.json">
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_ubercab/report/hotspot.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/ecb.json">
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_ubercab/report/chord.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_ubercab/report/vulns.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_advantage_RaiffeisenBank/report/chord_diagram.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_grppl_android_shell_halifax/report/chord_diagram.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_grppl_android_shell_halifax/report/chord.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_logging.py">
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_idamob_tinkoff_android/report/chord_diagram.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_idamob_tinkoff_android/report/chord.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_kbank_otp/report/chord_diagram.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/de_number26_android/report/chord_diagram.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/de_number26_android/report/chord.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/at_spardat_bcrmobile/report/chord.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_spotify_music/report/vulns/logs.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_spotify_music/report/hotspot.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="110">
+          <caret column="198385" selection-start-column="198382" selection-end-column="198385" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_crypto_vulns.py">
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_spotify_music/report/chord.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_spotify_music/report/chord_diagram.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/report/chord_diagram.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/ro_ing_mobile_banking_android_activity/report/chord_diagram.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_termux/report/chord_diagram.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/visualize/tests/take_screenshot.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/visualize/tests/test_crop_image.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/visualize/screenshot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="59" column="55" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="55" />
+        <state relative-caret-position="-492">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_webview.py">
+    <entry file="file://$PROJECT_DIR$/python/visualize/tests/test_visualization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="38" column="125" selection-start-line="38" selection-start-column="125" selection-end-line="38" selection-end-column="125" />
+        <state relative-caret-position="167">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/mixedcontent.json">
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/at_spardat_bcrmobile/report/chord_diagram.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/at_spardat_bcrmobile/report/hotspot.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="257">
+          <caret column="112215" selection-start-column="112215" selection-end-column="112215" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_manifest_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/at_spardat_bcrmobile/report/hotspot.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/manifest.json">
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_advantage_RaiffeisenBank/report/hotspot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_grppl_android_shell_halifax/report/hotspot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_idamob_tinkoff_android/report/hotspot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/hotspot/a.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state>
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/vulns/manifest_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="729" column="131" selection-start-line="729" selection-start-column="131" selection-end-line="729" selection-end-column="131" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/utils/tests/test_smali_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/utils/tests/test_smali_analyser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="38" column="100" selection-start-line="38" selection-start-column="100" selection-end-line="38" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/pie_chart.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_reflection_check.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_signature_check.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state>
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/visualize/vulns.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        <state relative-caret-position="137">
+          <caret column="4183" selection-start-column="4182" selection-end-column="4183" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/apkid/rules/apk/common.yar" />
-    <entry file="file://$PROJECT_DIR$/python/Pipfile.lock">
+    <entry file="file://$PROJECT_DIR$/python/visualize/visualize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2916" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/apkid/rules/dex/abnormal.yar" />
-    <entry file="file://$PROJECT_DIR$/python/apkid/rules/dex/abnorma.yar" />
-    <entry file="file://$PROJECT_DIR$/python/apkid/rules/apk/packers.yar" />
-    <entry file="file://$PROJECT_DIR$/python/apkid/rule_compiler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/share/virtualenvs/python-wbiElawc/lib/python3.6/site-packages/pkg_resources/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6645">
-          <caret line="467" selection-start-line="467" selection-end-line="467" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/apkid/apkid.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="153" column="29" selection-start-line="153" selection-start-column="29" selection-end-line="153" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_report.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/vulns/tests/test_obfuscation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/vulns/obfuscation_detection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="121" column="22" selection-start-line="121" selection-start-column="22" selection-end-line="121" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/analyse/xml_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.6/tkinter/ttk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="730" column="8" selection-start-line="730" selection-start-column="8" selection-end-line="730" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/visualize/webserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="352">
+          <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/chord_diagram.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/radare/radare_config.json">
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_ubercab/app/smali/-$$Lambda$adya$aUKR1tjhBs73aYyMxqKqZBzXfes.smali">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/logs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6285">
-          <caret line="16" column="157" selection-start-line="16" selection-start-column="157" selection-end-line="16" selection-end-column="157" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_ubercab/report/chord_diagram.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/reflection.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="14" selection-start-line="2" selection-start-column="4" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/vulns/report.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_ubercab/report/hotspot.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/python/vulns/reflection_check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        <state relative-caret-position="152">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/jsenabled.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" selection-start-line="4" selection-start-column="6" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -587,115 +642,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python/vulns/webview_vulns.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630">
+        <state relative-caret-position="15">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/radare/apk_crawler.py">
+    <entry file="file://$PROJECT_DIR$/python/vulns/obfuscation_detection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apks/test_apks/insecurebank/report/vulns/radare.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3613">
-          <caret line="1942" selection-start-line="1942" selection-end-line="1942" />
-          <folding>
-            <element signature="e#22#208#0" />
-            <element signature="e#214#6430#0" />
-            <element signature="e#6436#6706#0" />
-            <element signature="e#6712#21077#0" />
-            <element signature="e#21083#135770#0" />
-            <element signature="e#135776#135958#0" />
-            <element signature="e#135964#150722#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/visualize/screenshot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="-450">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/visualize/visualize.py">
+    <entry file="file://$PROJECT_DIR$/python/vulns/log_detection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="240">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/recon/extractor.py">
+    <entry file="file://$PROJECT_DIR$/python/vulns/crypto_vulns.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="31" column="50" selection-start-line="27" selection-start-column="8" selection-end-line="31" selection-end-column="50" />
+        <state relative-caret-position="265">
+          <caret line="538" column="14" selection-start-line="538" selection-start-column="14" selection-end-line="538" selection-end-column="14" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/recon/test.py">
+    <entry file="file://$PROJECT_DIR$/python/ui/stats_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="212">
+          <caret line="139" column="19" selection-start-line="139" selection-start-column="19" selection-end-line="139" selection-end-column="19" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/ui/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="62">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/ui/logo2.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/signature.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/ui/androart.py">
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/reflection.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/logs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="139" column="47" selection-start-line="135" selection-start-column="12" selection-end-line="139" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apks/apk_list.txt">
+    <entry file="file://$PROJECT_DIR$/apks/playstore_apps/com_termux/report/vulns/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1938">
-          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/ui/stats_script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>

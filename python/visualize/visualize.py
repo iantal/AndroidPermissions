@@ -36,10 +36,12 @@ class HotspotVisualizer(DirectoryAnalyser):
             d["children"] = []
         return d
 
-    def get_directory_tree(self, weights_dictionary):
+    def get_directory_tree(self, weights_dictionary, output_json_file):
         smali_dir = os.path.join(self.base_dir, self.APP.split("/")[1], 'smali')
         d = self.__path_to_dict(smali_dir, weights_dictionary)
-        return json.dumps(d)
+        with open(output_json_file, "w") as f:
+            f.write(json.dumps(d))
+        # return json.dumps(d)
 
 
 class ChordVisualizer(DirectoryAnalyser):
@@ -49,9 +51,12 @@ class ChordVisualizer(DirectoryAnalyser):
         self.pack_name = package_name
 
     def compute_lines_of_code(self, file):
-        with open(self.base_dir + "/app/smali/" + file + ".smali", "r") as f:
-            r = f.readlines()
-            return len(r)
+        try:
+            with open(self.base_dir + "/app/smali/" + file + ".smali", "r") as f:
+                r = f.readlines()
+                return len(r)
+        except FileNotFoundError:
+            pass
 
     def __path_to_dict(self, nodes_dictionary):
         dependency_list = []
@@ -73,6 +78,7 @@ class ChordVisualizer(DirectoryAnalyser):
                 for v in d["imports"]:
                     if self.pack_name in v:
                         try:
-                            f.write(d["name"] + "," + v + "," + str(d["size"]) + "," + str(20*weights[os.path.join(self.base_dir, 'app', 'smali', v + ".smali")]) + "\n")
-                        except KeyError:
+                            w = weights[os.path.join(self.base_dir, 'app', 'smali', v + ".smali")]
+                            f.write(d["name"] + "," + v + "," + str(d["size"]) + "," + str(20*w/w) + "\n")
+                        except:
                             f.write(d["name"] + "," + v + "," + str(d["size"]) + "," + "10\n")

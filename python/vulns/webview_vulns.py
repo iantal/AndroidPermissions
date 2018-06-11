@@ -1,12 +1,14 @@
 import pprint
 import json
+import os
 from abc import ABC, abstractmethod
 
 
 # TODO: title, desc, recommendation for each vuln
 class AbstractWebViewAnalyser(ABC):
-    def __init__(self, smali_parser):
+    def __init__(self, smali_parser, base_dir):
         self.sp = smali_parser
+        self.base_dir = base_dir
         self.title = ""
         self.description = ""
         self.recommendation = ""
@@ -66,6 +68,11 @@ class JavascriptInterfaceAnalyser(AbstractWebViewAnalyser):
         return False
 
     def hook(self, method, cl):
+        file = os.path.join(self.base_dir, 'report', 'hotspot.json')
+        with open(file, 'r') as f:
+            d = json.load(f)
+            f.close()
+
         if self.check_javascript_interface(method, cl):
             self.title = "JavascriptInterfaceAnalyser"
             self.description = ""
@@ -76,6 +83,10 @@ class JavascriptInterfaceAnalyser(AbstractWebViewAnalyser):
             self.description = ""
             self.recommendation = ""
             self.stat = "low"
+
+        d[cl["path"]] += 1
+        with open(file, 'w') as ff:
+            ff.write(json.dumps(d))
 
 
 class MixedContentAnalyser(AbstractWebViewAnalyser):
@@ -92,6 +103,11 @@ class MixedContentAnalyser(AbstractWebViewAnalyser):
         return False
 
     def hook(self, method, cl):
+        file = os.path.join(self.base_dir, 'report', 'hotspot.json')
+        with open(file, 'r') as f:
+            d = json.load(f)
+            f.close()
+
         if self.check_mixed_content(method, cl):
             self.title = "MixedContentAnalyser"
             self.description = ""
@@ -103,10 +119,15 @@ class MixedContentAnalyser(AbstractWebViewAnalyser):
             self.recommendation = ""
             self.stat = "low"
 
+        d[cl["path"]] += 1
+        with open(file, 'w') as ff:
+            ff.write(json.dumps(d))
+
 
 class LoadClearTextContent(object):
-    def __init__(self, smali_parser):
+    def __init__(self, smali_parser, base_dir):
         self.sp = smali_parser
+        self.base_dir = base_dir
 
     def check_const_strings(self, cl):
         for cs in cl['const-strings']:
@@ -121,6 +142,12 @@ class LoadClearTextContent(object):
         stat = "high"
         evidence = []
         ret_list = []
+
+        file = os.path.join(self.base_dir, 'report', 'hotspot.json')
+        with open(file, 'r') as f:
+            d = json.load(f)
+            f.close()
+
         for cl in self.sp.get_results():
             try:
                 for method in cl['methods']:
@@ -128,6 +155,7 @@ class LoadClearTextContent(object):
                         if 'loadUrl' in call['to_method']:
                             if self.check_const_strings(cl):
                                 print("FIRM : loadUrl found")
+                                d[cl["path"]] += 1
                                 evidence.append(cl['path'] + " " + call['to_method'])
 
             except TypeError:
@@ -143,6 +171,9 @@ class LoadClearTextContent(object):
                 "evidence": evidence
             })
 
+        with open(file, 'w') as ff:
+            ff.write(json.dumps(d))
+
         return ret_list
 
     def write_results(self, out_file):
@@ -154,8 +185,9 @@ class LoadClearTextContent(object):
 
 
 class AccessLocalResources(object):
-    def __init__(self, smali_parser):
+    def __init__(self, smali_parser, base_dir):
         self.sp = smali_parser
+        self.base_dir = base_dir
 
     def check_file_access(self, method):
         for call in method['calls']:
@@ -178,11 +210,18 @@ class AccessLocalResources(object):
         stat = "high"
         evidence = []
         ret_list = []
+
+        file = os.path.join(self.base_dir, 'report', 'hotspot.json')
+        with open(file, 'r') as f:
+            d = json.load(f)
+            f.close()
+
         for cl in self.sp.get_results():
             try:
                 for method in cl['methods']:
                     if self.check_file_access(method):
                         evidence.append(cl['path'])
+                        d[cl["path"]] += 1
                         print("FOUND setAllowFileAccess " + cl['name'])
             except KeyError:
                 continue
@@ -194,6 +233,9 @@ class AccessLocalResources(object):
                 "recommendation": recommendation,
                 "evidence": evidence
             })
+
+        with open(file, 'w') as ff:
+            ff.write(json.dumps(d))
 
         return ret_list
 

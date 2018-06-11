@@ -1,0 +1,184 @@
+{
+  "findings": [
+    {
+      "title": "Launch Mode of Activity (com.spotify.music.MainActivity) is not standard.",
+      "stat": "high",
+      "description": "An Activity should not be having the launch mode attribute set to \"singleTask/singleInstance\" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.",
+      "recommendation": "It is required to use the \"standard\" launch mode attribute when sensitive information is included in an Intent."
+    },
+    {
+      "title": "Launch Mode of Activity (com.spotify.mobile.android.service.LoginActivity) is not standard.",
+      "stat": "high",
+      "description": "An Activity should not be having the launch mode attribute set to \"singleTask/singleInstance\" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.",
+      "recommendation": "It is required to use the \"standard\" launch mode attribute when sensitive information is included in an Intent."
+    },
+    {
+      "title": "Launch Mode of Activity (com.spotify.mobile.android.arsenal.ArsenalActivity) is not standard.",
+      "stat": "high",
+      "description": "An Activity should not be having the launch mode attribute set to \"singleTask/singleInstance\" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.",
+      "recommendation": "It is required to use the \"standard\" launch mode attribute when sensitive information is included in an Intent."
+    },
+    {
+      "title": "Launch Mode of Activity (com.spotify.mobile.android.ui.activity.DevicePickerActivity) is not standard.",
+      "stat": "high",
+      "description": "An Activity should not be having the launch mode attribute set to \"singleTask/singleInstance\" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.",
+      "recommendation": "It is required to use the \"standard\" launch mode attribute when sensitive information is included in an Intent."
+    },
+    {
+      "title": "Launch Mode of Activity (com.spotify.mobile.android.ui.activity.DeviceContextMenuActivity) is not standard.",
+      "stat": "high",
+      "description": "An Activity should not be having the launch mode attribute set to \"singleTask/singleInstance\" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.",
+      "recommendation": "It is required to use the \"standard\" launch mode attribute when sensitive information is included in an Intent."
+    },
+    {
+      "title": "Activity (com.spotify.mobile.android.spotlets.waze.WazeReturnActivity) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Launch Mode of Activity (com.spotify.mobile.android.ui.activity.VolumeWidgetActivity) is not standard.",
+      "stat": "high",
+      "description": "An Activity should not be having the launch mode attribute set to \"singleTask/singleInstance\" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.",
+      "recommendation": "It is required to use the \"standard\" launch mode attribute when sensitive information is included in an Intent."
+    },
+    {
+      "title": "Launch Mode of Activity (com.spotify.mobile.android.service.ResetPasswordActivity) is not standard.",
+      "stat": "high",
+      "description": "An Activity should not be having the launch mode attribute set to \"singleTask/singleInstance\" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.",
+      "recommendation": "It is required to use the \"standard\" launch mode attribute when sensitive information is included in an Intent."
+    },
+    {
+      "title": "Activity (com.sony.snei.np.android.account.oauth.BrowserRedirectReceiverActivity) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Activity (com.spotify.mobile.android.spotlets.share.messenger.MessengerShareActivity) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Launch Mode of Activity (com.spotify.mobile.android.spotlets.myspin.MySpinActivity) is not standard.",
+      "stat": "high",
+      "description": "An Activity should not be having the launch mode attribute set to \"singleTask/singleInstance\" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.",
+      "recommendation": "It is required to use the \"standard\" launch mode attribute when sensitive information is included in an Intent."
+    },
+    {
+      "title": "Activity (com.spotify.mobile.android.spotlets.myspin.MySpinBootstrapActivity) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Activity (com.spotify.music.spotlets.magiclink.MagicLinkActivity) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Service (com.spotify.mobile.android.spotlets.androidauto.SpotifyMediaBrowserService) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Broadcast Receiver (com.spotify.music.internal.receiver.MediaButtonReceiver) is not Protected. An intent-filter exists.",
+      "stat": "high",
+      "description": "A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Broadcast Receiver is explicitly exported.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Service (com.spotify.mobile.android.wear.WearableCommunicationService) is not Protected. An intent-filter exists.",
+      "stat": "high",
+      "description": "A Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Service is explicitly exported.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Service (com.spotify.mobile.android.spotlets.appprotocol.service.AppProtocolRemoteService) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Broadcast Receiver (com.spotify.mobile.android.spotlets.bmw.registration.BmwConnectedReceiver) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Broadcast Receiver (com.spotify.mobile.android.spotlets.bmw.registration.DisconnectedReceiver) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Broadcast Receiver (com.spotify.mobile.android.spotlets.bmw.registration.BmwConnectInstallReceiver) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Broadcast Receiver (com.spotify.music.spotlets.widget.SpotifyWidget) is not Protected. An intent-filter exists.",
+      "stat": "high",
+      "description": "A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Broadcast Receiver is explicitly exported.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Broadcast Receiver (com.spotify.music.spotlets.tracker.InstallReferrerReceiver) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Broadcast Receiver (com.spotify.mobile.android.service.bluetooth.BluetoothBroadcastReceiver) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Content Provider (com.spotify.mobile.android.service.media.provider.MediaProvider) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Content Provider is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Content Provider (com.bmwgroup.connected.car.contentprovider.AssetsProvider) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Content Provider is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Activity (com.spotify.music.features.friendsweekly.findfriends.ui.FindFriendsActivity) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Activity (com.spotify.music.features.friendsweekly.search.ui.SearchFriendsActivity) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Activity (com.spotify.music.features.friendsactivity.friendslist.ui.AvatarListContainerActivity) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Activity (com.spotify.music.features.friendsactivity.storydetails.ui.StoryDetailsActivity) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Activity (com.spotify.mobile.android.sso.AuthorizationActivity) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    }
+  ]
+}

@@ -77,11 +77,12 @@ class SignatureChecker(DirectoryAnalyser):
     def __run_keytool(self):
         meta_inf_dir = os.path.normpath(os.path.join(self.b_dir, 'raw', 'META-INF'))
         for root, dirs, files in os.walk(meta_inf_dir):
-            for file in fnmatch.filter(files, "*.RSA"):
-                cmdl = ['keytool', '-printcert', '-file', os.path.join(meta_inf_dir, file)]
-                p = subprocess.Popen(cmdl, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-                for line in iter(p.stdout.readline, b''):
-                    self.__parse_line(line.rstrip().decode(encoding='UTF-8'))
+            for filename in files:
+                if filename.endswith(('.RSA', '.DSA')):
+                    cmdl = ['keytool', '-printcert', '-file', os.path.join(meta_inf_dir, filename)]
+                    p = subprocess.Popen(cmdl, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+                    for line in iter(p.stdout.readline, b''):
+                        self.__parse_line(line.rstrip().decode(encoding='UTF-8'))
 
     def __check_certificate_validity(self):
         month_dictionary = {
@@ -90,15 +91,14 @@ class SignatureChecker(DirectoryAnalyser):
             "Mar": 3,
             "Apr": 4,
             "May": 5,
-            "June": 6,
-            "July": 7,
+            "Jun": 6,
+            "Jul": 7,
             "Aug": 8,
-            "Sept": 9,
+            "Sep": 9,
             "Oct": 10,
             "Nov": 11,
             "Dec": 12
         }
-
         pdate = self.validity.split("Valid from: ")[1].split("until:")
         from_date = pdate[0].strip().split(" ")
         to_date = pdate[1].strip().split(" ")

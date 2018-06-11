@@ -1,0 +1,49 @@
+{
+  "findings": [
+    {
+      "title": "",
+      "stat": "low",
+      "description": "",
+      "recommendation": "",
+      "evidence": [
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/android/support/v4/b/a/a.smali\nLandroid/util/Log -> i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/android/support/v4/b/a/a.smali\nLandroid/util/Log -> i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/android/support/v4/widget/a.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/android/support/v4/view/ViewPager.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/android/support/v4/view/ViewPager.smali\nLandroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/terminal/i.smali\nLandroid/util/Log -> wtf(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/terminal/i.smali\nLandroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/terminal/f.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/terminal/f.smali\nLandroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/terminal/f.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/terminal/f.smali\nLandroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/terminal/f.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/terminal/f.smali\nLandroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/terminal/f.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/filepicker/TermuxFileReceiverActivity.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/filepicker/TermuxFileReceiverActivity.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/a$1.smali\nLandroid/util/Log -> i(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/a$1.smali\nLandroid/util/Log -> i(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/a$1.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/a$1.smali\nLandroid/util/Log -> i(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/a$1.smali\nLandroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/d.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/d.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/d.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxService.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/c$2.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxOpenReceiver.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxOpenReceiver.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxOpenReceiver.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxOpenReceiver.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxOpenReceiver.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/a$2.smali\nLandroid/util/Log -> i(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/c$3.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/c$3.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/c$3.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/a.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity.smali\nLandroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)"
+      ]
+    }
+  ]
+}

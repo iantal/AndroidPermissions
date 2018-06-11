@@ -1,11 +1,13 @@
 import pprint
 import json
+import os
 
 
 # TODO: title, desc, recommendation
 class ReflectionChecker(object):
-    def __init__(self, smali_parser):
+    def __init__(self, smali_parser, base_dir):
         self.sp = smali_parser
+        self.base_dir = base_dir
 
     def __is_valid_to_method_call(self, mcl, mc):
         """
@@ -62,6 +64,11 @@ class ReflectionChecker(object):
             'getSuperclass'
         ]
 
+        file = os.path.join(self.base_dir, 'report', 'hotspot.json')
+        with open(file, 'r') as f:
+            d = json.load(f)
+            f.close()
+
         for cl in self.sp.get_results():
             try:
                 for method in cl['methods']:
@@ -69,14 +76,17 @@ class ReflectionChecker(object):
                         if self.__is_class_name_found("Method", call['to_class'], m_methods, call['to_method']):
                                 # pprint.pprint(call)
                                 evidence.append(cl['path'] + " " + call['to_method'])
+                                d[cl['path']] += 1
                                 break
                         if self.__is_class_name_found("Class", call['to_class'], c_methods, call['to_method']):
                                 # pprint.pprint(call)
                                 evidence.append(cl['path'] + " " + call['to_method'])
+                                d[cl['path']] += 1
                                 break
                         if self.__is_class_name_found("Field", call['to_class'], f_methods, call['to_method']):
                                 # pprint.pprint(call)
                                 evidence.append(cl['path'] + " " + call['to_method'])
+                                d[cl['path']] += 1
                                 break
             except KeyError:
                 continue
@@ -89,6 +99,9 @@ class ReflectionChecker(object):
                 "recommendation": recommendation,
                 "evidence": evidence
             })
+
+        with open(file, 'w') as ff:
+            ff.write(json.dumps(d))
 
         return ret_list
 

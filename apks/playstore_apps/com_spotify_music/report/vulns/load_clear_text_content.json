@@ -1,0 +1,15 @@
+{
+  "findings": [
+    {
+      "title": "Load cleartext content",
+      "stat": "high",
+      "description": "",
+      "recommendation": "",
+      "evidence": [
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/bdv.smali loadUrl",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/com/spotify/music/podcast/transcripts/TranscriptActivity.smali loadUrl",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/com/spotify/music/podcast/transcripts/TranscriptActivity.smali loadUrl"
+      ]
+    }
+  ]
+}

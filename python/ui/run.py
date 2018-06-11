@@ -1,6 +1,7 @@
 import pprint
 import sys
 import os
+import json
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, BASE_DIR)
@@ -25,30 +26,38 @@ class ApplicationAnalyzer(object):
         self.smali_analyser = SmaliAnalyser(base_dir, "", "")
         self.smali_parser = SmaliParser(os.path.join(base_dir, 'app', 'smali'), 'smali')
         self.smali_parser.run()
+        self.__init_vulns_file()
+
+    def __init_vulns_file(self):
+        d = {}
+        for cl in self.smali_parser.get_results():
+            d[cl['path']] = 0
+        with open(os.path.join(self.base_dir, 'report', 'hotspot.json'), "w") as f:
+            f.write(json.dumps(d))
 
     def find_crypto_vulns(self):
-        print("Non-random")
-        cx = CryptoNonRandomXor(self.smali_analyser)
-        cx.write_results(self.base_dir + "/report/vulns/nonranom.json")
+        # print("Non-random")
+        # cx = CryptoNonRandomXor(self.smali_analyser, self.base_dir)
+        # cx.write_results(self.base_dir + "/report/vulns/nonranom.json")
 
         print("ecb")
-        cv = CryptoEcbDetector(self.smali_parser)
+        cv = CryptoEcbDetector(self.smali_parser, self.base_dir)
         cv.write_results(self.base_dir + "/report/vulns/ecb.json")
 
         print("ivforcbc")
-        cc = CryptoNonRandomIVForCBC(self.smali_parser)
+        cc = CryptoNonRandomIVForCBC(self.smali_parser, self.base_dir)
         cc.write_results(self.base_dir + "/report/vulns/nonrandomiv.json")
 
         print("enckeys")
-        cnk = CryptoConstantEncryptionKeys(self.smali_parser)
+        cnk = CryptoConstantEncryptionKeys(self.smali_parser, self.base_dir)
         cnk.write_results(self.base_dir + "/report/vulns/constantenckeys.json")
 
         print("saltspbe")
-        cp = CryptoConstantPasswordsOrSaltsPBE(self.smali_parser)
+        cp = CryptoConstantPasswordsOrSaltsPBE(self.smali_parser, self.base_dir)
         cp.write_results(self.base_dir + "/report/vulns/constpass.json")
 
     def find_logs(self):
-        log = LogDetector(self.smali_parser)
+        log = LogDetector(self.smali_parser, self.base_dir)
         log.write_results(self.base_dir + "/report/vulns/logs.json")
 
     def find_manifest_vulns(self):
@@ -63,7 +72,7 @@ class ApplicationAnalyzer(object):
         od.write_results(self.base_dir + "/report/vulns/obfuscation.json")
 
     def find_reflection(self):
-        rc = ReflectionChecker(self.smali_parser)
+        rc = ReflectionChecker(self.smali_parser, self.base_dir)
         rc.write_results(self.base_dir + "/report/vulns/reflection.json")
 
     def find_signature(self):
@@ -71,16 +80,16 @@ class ApplicationAnalyzer(object):
         sc.write_results(self.base_dir + "/report/vulns/signature.json")
 
     def find_webview_vulns(self):
-        enabled_js = JavascriptInterfaceAnalyser(self.smali_parser)
+        enabled_js = JavascriptInterfaceAnalyser(self.smali_parser, self.base_dir)
         enabled_js.write_results(self.base_dir + "/report/vulns/enabledjs.json")
 
-        mixed_content = MixedContentAnalyser(self.smali_parser)
+        mixed_content = MixedContentAnalyser(self.smali_parser, self.base_dir)
         mixed_content.write_results(self.base_dir + "/report/vulns/mixedcontent.json")
 
-        lc = LoadClearTextContent(self.smali_parser)
+        lc = LoadClearTextContent(self.smali_parser, self.base_dir)
         lc.write_results(self.base_dir + "/report/vulns/load_clear_text_content.json")
 
-        ar = AccessLocalResources(self.smali_parser)
+        ar = AccessLocalResources(self.smali_parser, self.base_dir)
         ar.write_results(self.base_dir + "/report/vulns/access_local_resources.json")
 
     def run_radare(self):

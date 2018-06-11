@@ -1,9 +1,11 @@
 import json
+import os
 
 
 class CryptoEcbDetector(object):
-    def __init__(self, smali_parser):
+    def __init__(self, smali_parser, base_dir):
         self.sp = smali_parser
+        self.base_dir = base_dir
 
     def detect(self):
         title = "Electronic Codebook (ECB) used for encryption"
@@ -32,6 +34,12 @@ class CryptoEcbDetector(object):
         recommendation = "It is recommended not to use ECB for encryption. Use an asymmetric encryption algorithm instead"
         ret_list = []
         evidence = []
+
+        file = os.path.join(self.base_dir, 'report', 'hotspot.json')
+        with open(file, 'r') as f:
+            d = json.load(f)
+            f.close()
+
         for cl in self.sp.get_results():
             try:
                 for method in cl['methods']:
@@ -44,6 +52,7 @@ class CryptoEcbDetector(object):
                                             call['params'][arg]['value']) for arg in
                                            call['local_args'].strip('{}').split(", ")):
                                         evidence.append(cl["path"])
+                                        d[cl['path']] += 1
                                         print(call)
                                 except KeyError:
                                     pass
@@ -57,6 +66,10 @@ class CryptoEcbDetector(object):
                 "recommendation": recommendation,
                 "evidence": evidence
             })
+
+        with open(file, 'w') as ff:
+            ff.write(json.dumps(d))
+
         return ret_list
 
     def write_results(self, out_file):
@@ -68,8 +81,9 @@ class CryptoEcbDetector(object):
 
 
 class CryptoNonRandomIVForCBC(object):
-    def __init__(self, smali_parser):
+    def __init__(self, smali_parser, base_dir):
         self.sp = smali_parser
+        self.base_dir = base_dir
 
     def get_iv_local_param(self, method):
         for i in method['local_method_params']:
@@ -119,6 +133,10 @@ class CryptoNonRandomIVForCBC(object):
 
         ret_list = []
         evidence = []
+        file = os.path.join(self.base_dir, 'report', 'hotspot.json')
+        with open(file, 'r') as f:
+            d = json.load(f)
+            f.close()
         for cl in self.sp.get_results():
             try:
                 for method in cl['methods']:
@@ -130,10 +148,12 @@ class CryptoNonRandomIVForCBC(object):
                                     for c in method['calls']:
                                         if p.split(",")[0] in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
                                             evidence.append(cl["path"])
+                                            d[cl["path"]] += 1
                                             # print("issue")
                                         if p.split(",")[0] in str(c['local_args']) and 'java/util/Random' in c['to_class']:
                                             evidence.append(cl["path"])
                                             # print("issue")
+                                            d[cl["path"]] += 1
             except KeyError:
                 continue
         if evidence:
@@ -144,6 +164,9 @@ class CryptoNonRandomIVForCBC(object):
                 "recommendation": recommendation,
                 "evidence": evidence
             })
+        with open(file, 'w') as ff:
+            ff.write(json.dumps(d))
+
         return ret_list
 
     def write_results(self, out_file):
@@ -155,8 +178,9 @@ class CryptoNonRandomIVForCBC(object):
 
 
 class CryptoConstantEncryptionKeys(object):
-    def __init__(self, smali_parser):
+    def __init__(self, smali_parser, base_dir):
         self.sp = smali_parser
+        self.base_dir = base_dir
 
     def get_key_local_param(self, method):
         for i in method['local_method_params']:
@@ -192,6 +216,12 @@ class CryptoConstantEncryptionKeys(object):
         ret_list = []
         evidence = []
         asymetric_encryption_schemes = ['DHIES', 'ECIES', 'ElGamal', 'RSA']
+
+        file = os.path.join(self.base_dir, 'report', 'hotspot.json')
+        with open(file, 'r') as f:
+            d = json.load(f)
+            f.close()
+
         for cl in self.sp.get_results():
             try:
                 for method in cl['methods']:
@@ -215,9 +245,11 @@ class CryptoConstantEncryptionKeys(object):
                                 for m in method['local_method_params']:
                                     if last_p in m['name'] and m['value'] not in asymetric_encryption_schemes:
                                         evidence.append(cl["path"])
+                                        d[cl["path"]] += 1
                                 try:
                                     if call['params'][last_p]['value'] not in asymetric_encryption_schemes:
                                         evidence.append(cl["path"])
+                                        d[cl["path"]] += 1
                                 except KeyError:
                                     pass
             except KeyError:
@@ -230,6 +262,8 @@ class CryptoConstantEncryptionKeys(object):
                 "recommendation": recommendation,
                 "evidence": evidence
             })
+        with open(file, 'w') as ff:
+            ff.write(json.dumps(d))
         return ret_list
 
     def write_results(self, out_file):
@@ -241,8 +275,9 @@ class CryptoConstantEncryptionKeys(object):
 
 
 class CryptoConstantPasswordsOrSaltsPBE(object):
-    def __init__(self, smali_parser):
+    def __init__(self, smali_parser, base_dir):
         self.sp = smali_parser
+        self.base_dir = base_dir
 
     def check_static_key_initialisation(self, call, p):
         try:
@@ -272,6 +307,11 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
         ret_list = []
         evidence = []
 
+        file = os.path.join(self.base_dir, 'report', 'hotspot.json')
+        with open(file, 'r') as f:
+            d = json.load(f)
+            f.close()
+
         for cl in self.sp.get_results():
             try:
                 for method in cl['methods']:
@@ -283,9 +323,11 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
 
                                 if call['params'][password]['type'] == 'const-string':
                                     evidence.append(cl["path"])
+                                    d[cl["path"]] += 1
 
                                 if call['params'][salt]['type'] == 'const-string':
                                     evidence.append(cl["path"])
+                                    d[cl["path"]] += 1
 
                                 if self.check_static_key_initialisation(call, password) or self.check_static_key_initialisation(call, salt):
                                     for lp in method['local_method_params']:
@@ -295,12 +337,15 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
                                             for c in method['calls']:
                                                 if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
                                                     evidence.append(cl["path"])
+                                                    d[cl["path"]] += 1
                                                     break
                                                 if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'toCharArray' in c['to_method']:
                                                     evidence.append(cl["path"])
+                                                    d[cl["path"]] += 1
                                                     break
                                                 if p_name in str(c['local_args']) and 'javax/util/Random' in c['to_class']:
                                                     evidence.append(cl["path"])
+                                                    d[cl["path"]] += 1
                                                     break
 
                                         if salt in p_name:
@@ -308,12 +353,15 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
                                             for c in method['calls']:
                                                 if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
                                                     evidence.append(cl["path"])
+                                                    d[cl["path"]] += 1
                                                     break
                                                 if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'toCharArray' in c['to_method']:
                                                     evidence.append(cl["path"])
+                                                    d[cl["path"]] += 1
                                                     break
                                                 if p_name in str(c['local_args']) and 'javax/util/Random' in c['to_class']:
                                                     evidence.append(cl["path"])
+                                                    d[cl["path"]] += 1
                                                     break
                             except IndexError:
                                 pass
@@ -325,18 +373,22 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
 
                                     if call['params'][salt]['type'] == 'const-string':
                                         evidence.append(cl["path"])
+                                        d[cl["path"]] += 1
 
                                     if self.check_static_key_initialisation(call, password):
                                         if password in lp['name']:
                                             for c in method['calls']:
                                                 if salt in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
                                                     evidence.append(cl["path"])
+                                                    d[cl["path"]] += 1
                                                     break
                                                 if salt in str(c['local_args']) and 'String' in c['to_class'] and 'toCharArray' in c['to_method']:
                                                     evidence.append(cl["path"])
+                                                    d[cl["path"]] += 1
                                                     break
                                                 if salt in str(c['local_args']) and 'javax/util/Random' in c['to_class']:
                                                     evidence.append(cl["path"])
+                                                    d[cl["path"]] += 1
                                                     break
                                 except IndexError:
                                     continue
@@ -351,6 +403,10 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
                 "recommendation": recommendation,
                 "evidence": evidence
             })
+
+        with open(file, 'w') as ff:
+            ff.write(json.dumps(d))
+
         return ret_list
 
     def write_results(self, out_file):
@@ -362,8 +418,9 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
 
 
 class CryptoSecureRandom(object):
-    def __init__(self, smali_parser):
+    def __init__(self, smali_parser, base_dir):
         self.sp = smali_parser
+        self.base_dir = base_dir
 
     def get_param(self, call, index):
         return call['local_args'].strip('{}').split(", ")[index]
@@ -384,6 +441,12 @@ class CryptoSecureRandom(object):
 
         ret_list = []
         evidence = []
+
+        file = os.path.join(self.base_dir, 'report', 'hotspot.json')
+        with open(file, 'r') as f:
+            d = json.load(f)
+            f.close()
+
         for cl in self.sp.get_results():
             try:
                 for method in cl['methods']:
@@ -394,6 +457,7 @@ class CryptoSecureRandom(object):
 
                                 if 'const-' in call['params'][seed]['type']:
                                     evidence.append(cl["path"])
+                                    d[cl["path"]] += 1
                                     print("issue const param seed init ")
 
                                 if self.check_static_key_initialisation(call, seed):
@@ -404,6 +468,7 @@ class CryptoSecureRandom(object):
                                             for c in method['calls']:
                                                 if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
                                                     evidence.append(cl["path"])
+                                                    d[cl["path"]] += 1
                                                     break
                             except IndexError:
                                 continue
@@ -414,6 +479,7 @@ class CryptoSecureRandom(object):
 
                                 if 'const-' in call['params'][seed]['type']:
                                     evidence.append(cl["path"])
+                                    d[cl["path"]] += 1
 
                                 if self.check_static_key_initialisation(call, seed):
                                     print("issue setSeed " + call['params'][seed])
@@ -423,6 +489,7 @@ class CryptoSecureRandom(object):
                                             for c in method['calls']:
                                                 if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
                                                     evidence.append(cl["path"])
+                                                    d[cl["path"]] += 1
                                                     break
                             except IndexError:
                                 continue
@@ -437,6 +504,9 @@ class CryptoSecureRandom(object):
                 "recommendation": recommendation,
                 "evidence": evidence
             })
+
+        with open(file, 'w') as ff:
+            ff.write(json.dumps(d))
         return ret_list
 
     def write_results(self, out_file):
@@ -448,8 +518,9 @@ class CryptoSecureRandom(object):
 
 
 class CryptoNonRandomXor(object):
-    def __init__(self, smali_analyser):
+    def __init__(self, smali_analyser, base_dir):
         self.sa = smali_analyser
+        self.base_dir = base_dir
 
     def detect(self):
         # TODO: title, desc, recommendation, etc for reporting
@@ -461,6 +532,12 @@ class CryptoNonRandomXor(object):
         # results = set()
         ret_list = []
         evidence = set()
+        #
+        # file = os.path.join(self.base_dir, 'report', 'hotspot.json')
+        # with open(file, 'r') as f:
+        #     d = json.load(f)
+        #     f.close()
+
         for f in self.sa.get_smali_files():
             with open(f, 'r') as file:
                 for line in file.readlines():
@@ -468,6 +545,7 @@ class CryptoNonRandomXor(object):
                         lst = line.strip().split(" ")
                         if lst[1].split(',')[0] == lst[2].split(',')[0]:
                             evidence.add(f.split(self.sa.base_apk_dir)[1] + " " + line.strip())
+                            # d[cl["path"]] += 1
         ret_list.append({
             "title": title,
             "stat": "high",
@@ -475,6 +553,8 @@ class CryptoNonRandomXor(object):
             "recommendation": recommendation,
             "evidence": list(evidence)
         })
+        # with open(file, 'w') as ff:
+        #     ff.write(json.dumps(d))
         return ret_list
 
     def write_results(self, out_file):
