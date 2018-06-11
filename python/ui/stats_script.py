@@ -3,7 +3,10 @@ import os
 import errno
 import pprint
 import time
+import gc
 import json
+import numpy as np
+from plotly import tools
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, BASE_DIR)
@@ -15,6 +18,9 @@ from recon.extractor import Extractor
 from visualize.screenshot import ScreenshotTaker
 from visualize.webserver import SimpleHttpServer
 from visualize.visualize import *
+
+import plotly.offline as offline
+import plotly.graph_objs as go
 
 
 libs_apktool = '/home/miki/Documents/GITHUB/AndroidPermissions/libs/apktool/apktool_2.3.0.jar'
@@ -135,6 +141,7 @@ def analyse_files(directory):
                 apk_analyser.find_webview_vulns()
                 print('\033[92m' + "[+] " + '\033[0m' + "WebView")
 
+                gc.collect()
                 print('\033[92m' + "[*] " + '\033[0m' + "Running radare2")
                 apk_analyser.run_radare()
                 print('\033[92m' + "[+] " + '\033[0m' + "Done")
@@ -152,15 +159,100 @@ def analyse_files(directory):
 
                 take_screenshot(dirpath)
 
-    #             t1 = time.time()
-    #             total = t1 - t0
-    #             analysed_apks[apk] = total
-    #             s += total
-    #
-    # pprint.pprint(analysed_apks)
-    # print("TOTAL: " + str(s))
+                t1 = time.time()
+                total = t1 - t0
+                analysed_apks[apk] = total
+                s += total
+
+    pprint.pprint(analysed_apks)
+    print("TOTAL: " + str(s))
+
+
+def plot_stats():
+    y = [1.3586, 2.2623000000000002, 4.9821999999999997, 6.5096999999999996,
+                7.4812000000000003, 7.5133000000000001, 15.2148, 17.520499999999998
+                ]
+    y_ = [1,2,3,4,5,6,7,8]
+    x = ['Japan', 'United Kingdom', 'Canada', 'Netherlands',
+                'United States', 'Belgium', 'Sweden', 'Switzerland']
+
+    trace0 = go.Bar(
+        x=y,
+        y=x,
+        marker=dict(
+            color='rgba(50, 171, 96, 0.6)',
+            line=dict(
+                color='rgba(50, 171, 96, 1.0)',
+                width=1),
+        ),
+        name='',
+        orientation='h',
+    )
+
+    layout = dict(
+        title='',
+        yaxis1=dict(
+            showgrid=False,
+            showline=False,
+            showticklabels=True,
+            domain=[0, 0.85],
+        ),
+
+        xaxis1=dict(
+            zeroline=False,
+            showline=False,
+            showticklabels=True,
+            showgrid=True,
+            domain=[0, 0.42],
+        ),
+
+        legend=dict(
+            x=0.029,
+            y=1.038,
+            font=dict(
+                size=10,
+            ),
+        ),
+        margin=dict(
+            l=100,
+            r=0,
+            t=10,
+            b=70,
+        ),
+        paper_bgcolor='rgb(248, 248, 255)',
+        plot_bgcolor='rgb(248, 248, 255)',
+    )
+
+    annotations = []
+
+    y_s = np.round(y, decimals=2)
+    y_nw = np.rint(y_)
+
+    for ydn, yd, xd in zip(y_nw, y_s, x):
+        annotations.append(dict(xref='x1', yref='y1',
+                                y=xd, x=yd + 3,
+                                text=str(yd) + '%',
+                                font=dict(family='Arial', size=12,
+                                          color='rgb(50, 171, 96)'),
+                                showarrow=False))
+
+    annotations.append(dict(xref='paper', yref='paper',
+                            x=-0.2, y=-0.109,
+                            text='',
+                            font=dict(family='Arial', size=10,
+                                      color='rgb(150,150,150)'),
+                            showarrow=False))
+
+    layout['annotations'] = annotations
+
+    fig = tools.make_subplots(rows=1, cols=1)
+
+    fig.append_trace(trace0, 1, 1)
+    fig['layout'].update(layout)
+    offline.plot(fig, filename='plot.html')
 
 
 if __name__ == "__main__":
     # organize_files(APK_DIR)
     analyse_files(APK_DIR)
+    # plot_stats()

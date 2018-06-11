@@ -2,6 +2,8 @@ from abc import ABC, abstractmethod
 import r2pipe
 import json
 import os
+from signal import signal, SIGPIPE, SIG_DFL
+signal(SIGPIPE,SIG_DFL)
 
 
 class RadareConfig(object):
@@ -132,6 +134,7 @@ class SymbolsAnalyser(AbstractRadareAnalyser):
 
 if __name__ == "__main__":
     configfile = "/home/miki/Documents/GITHUB/AndroidPermissions/python/radare/radare_config.json"
-    dexfile = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/raw/classes.dex"
-    r = RadareResults(dexfile, configfile)
+    dexfile = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank"
+    dex = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank"
+    r = RadareResults(dex, configfile)
     r.print_findings()
