@@ -21,7 +21,7 @@ class CryptoEcbDetector(object):
             an application has to invoke the method getInstance, passing a suitable transformation string as
             parameter. Typically, this value is composed of the desired algorithm name, a mode of operation,
             and the padding scheme to apply. For example, to request an object instance that provides AES in
-            ECB mode with PKCS#5 padding, the transformation AES/ECB/PKCS5Padding has to be specified.
+            ECB mode with PKCS5 padding, the transformation AES/ECB/PKCS5Padding has to be specified.
             
             While it is indispensable to declare the algorithm to use, explicitly setting the mode and
             padding may be omitted. To fill the gap, the underlying Cryptographic Service Provider (CSP)

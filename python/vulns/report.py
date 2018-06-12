@@ -13,8 +13,10 @@ TODO:
 
 
 class Report(object):
-    def __init__(self, report_dir, pie_chart_generator):
+    def __init__(self, report_dir, pie_chart_generator, app_name, package):
         self.report_dir = report_dir
+        self.app_name = app_name
+        self.package = package
         self.pie_chart_generator = pie_chart_generator
         self.report_file = os.path.join(report_dir)
         self.out_file = os.path.join(self.report_dir, 'report.tex')
@@ -25,43 +27,69 @@ class Report(object):
             f.write(results)
 
     def convert_tex_to_pdf(self):
-        os.system("pdflatex " + self.out_file)
+        os.system("pdflatex " + self.out_file + " -output-directory=" + self.report_dir)
 
     def get_imports(self):
-        r = ""
-        r += "\\documentclass[12pt]{article}\n"
-        r += "\\usepackage[margin=1in, left=1.5in, includefoot]{geometry}\n"
-        r += "\\usepackage{longtable, tabu}\n"
-        r += "\\usepackage[table, dvipsnames]{xcolor}\n"
-        r += "\\usepackage{array,booktabs}\n"
-        r += "\\usepackage{color}\n"
-        r += "\\usepackage{indentfirst}\n"
-        r += "\\usepackage{graphicx}\n"
-        r += "\\usepackage{float}\n"
-        r += "\\usepackage{lipsum}\n"
-        r += "\\usepackage{fancyhdr}\n"
-        r += "\\pagestyle{fancy}\n"
-        r += "\\fancyhead{}\n"
-        r += "\\fancyfoot{}\n"
-        r += "\\fancyfoot[R]{ \\thepage\\ }\n"
-        r += "\\renewcommand{\\headrulewidth}{0pt}\n"
-        r += "\\renewcommand{\\footrulewidth}{1pt}\n"
-        r += "\\usepackage[explicit]{titlesec}\n"
-        r += "\\usepackage{tikz}\n"
-        r += "\\usepackage[utf8]{inputenc}\n"
-        r += "\\usepackage{pgf-pie}\n"
+        # r = ""
+        # r += "\\documentclass[12pt]{article}\n"
+        # r += "\\usepackage[margin=1in, left=1.5in, includefoot]{geometry}\n"
+        # r += "\\usepackage{longtable, tabu}\n"
+        # r += "\\usepackage[table, dvipsnames]{xcolor}\n"
+        # r += "\\usepackage{array,booktabs}\n"
+        # r += "\\usepackage{color}\n"
+        # r += "\\usepackage{indentfirst}\n"
+        # r += "\\usepackage{graphicx}\n"
+        # r += "\\usepackage{float}\n"
+        # r += "\\usepackage{lipsum}\n"
+        # r += "\\usepackage{fancyhdr}\n"
+        # r += "\\pagestyle{fancy}\n"
+        # r += "\\fancyhead{}\n"
+        # r += "\\fancyfoot{}\n"
+        # r += "\\fancyfoot[R]{ \\thepage\\ }\n"
+        # r += "\\renewcommand{\\headrulewidth}{0pt}\n"
+        # r += "\\renewcommand{\\footrulewidth}{1pt}\n"
+        # r += "\\usepackage[explicit]{titlesec}\n"
+        # r += "\\usepackage{tikz}\n"
+        # r += "\\usepackage[utf8]{inputenc}\n"
+        # r += "\\setlength{\\arrayrulewidth}{0.3mm}\n"
+        # r += "\\setlength{\\tabcolsep}{18pt}\n"
+        # r += "\\renewcommand{\\arraystretch}{1.5}\n"
+        # r += "\\setlength{\\parindent}{1em}\n"
+        # r += "\\definecolor{amber}{rgb}{1.0, 0.75, 0.0}\n"
+        # r += "\\definecolor{ferrarired}{rgb}{1.0, 0.11, 0.0}\n"
+        # r += "\\definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}\n"
+        # r += "\\definecolor{deepskyblue}{rgb}{0.0, 0.75, 1.0}\n"
+        # r += "\\definecolor{caribbeangreen}{rgb}{0.0, 0.8, 0.6}\n"
+        # r += "\\definecolor{gray(x11gray)}{rgb}{0.75, 0.75, 0.75}\n"
+        # r += "\\definecolor{grannysmithapple}{rgb}{0.66, 0.89, 0.63}\n"
+        # r += "\\newcommand{\\icon}[1]{\\includegraphics[height=12pt]{#1}}\n"
+        r = """
+        \\documentclass[12p]{article}
+        \\usepackage[margin=1in, left=1.5in, includefoot]{geometry}
+        \\usepackage{longtable, tabu}
+        \\usepackage[table, dvipsnames]{xcolor}
+        \\usepackage{array,booktabs}
+        \\usepackage{color}
+        \\usepackage{indentfirst}
+        \\usepackage{graphicx}
+        \\usepackage{float}
+        \\usepackage[utf8]{inputenc}
+        \\usepackage{listings}
+        \\usepackage{url}
+        
+        \\definecolor{ferrarired}{rgb}{1.0, 0.11, 0.0}
+        \\definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}
+        \\definecolor{deepskyblue}{rgb}{0.0, 0.75, 1.0}
+        \\definecolor{grannysmithapple}{rgb}{0.66, 0.89, 0.63}
+        \\definecolor{gray(x11gray)}{rgb}{0.75, 0.75, 0.75}
+        \\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+        
+        \\newcommand{\\icon}[1]{\\includegraphics[height=12pt]{#1}}
+        """
         r += "\\setlength{\\arrayrulewidth}{0.3mm}\n"
         r += "\\setlength{\\tabcolsep}{18pt}\n"
         r += "\\renewcommand{\\arraystretch}{1.5}\n"
         r += "\\setlength{\\parindent}{1em}\n"
-        r += "\\definecolor{amber}{rgb}{1.0, 0.75, 0.0}\n"
-        r += "\\definecolor{ferrarired}{rgb}{1.0, 0.11, 0.0}\n"
-        r += "\\definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}\n"
-        r += "\\definecolor{deepskyblue}{rgb}{0.0, 0.75, 1.0}\n"
-        r += "\\definecolor{caribbeangreen}{rgb}{0.0, 0.8, 0.6}\n"
-        r += "\\definecolor{gray(x11gray)}{rgb}{0.75, 0.75, 0.75}\n"
-        r += "\\definecolor{grannysmithapple}{rgb}{0.66, 0.89, 0.63}\n"
-        r += "\\newcommand{\\icon}[1]{\\includegraphics[height=12pt]{#1}}\n"
         return r
 
     def get_title_page(self):
@@ -77,11 +105,11 @@ class Report(object):
 
         r += "\\begin{figure}[H]\n"
         r += "\t\\centering\n"
-        r += "\t\\includegraphics[scale=0.5]{/root/Pictures/anroid_report.png}\n"
+        r += "\t\\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/logo.png}\n"
         r += "\\end{figure}\n"
 
-        r += "\\textsl{\\LARGE ApplicationName}\\\\\n"
-        r += "\\textsf{\\LARGE package.com}\\\\\n"
+        r += "\\textsl{\\LARGE " + self.app_name + "}\\\\\n"
+        r += "\\textsf{\\LARGE " + self.package + "}\\\\\n"
         r += "[2.5in]\n"
         r += "\\end{center}\n"
         r += "\\begin{flushright}\n"
@@ -138,16 +166,17 @@ class Report(object):
 
                     if 'info' in entry['stat']:
                         finding["color"] = "color{deepskyblue}"
-                        r += "\t\\rowcolor{gray(x11gray)!10}A" + str(i) + "&" + title + "& \\color{deepskyblue}\\textbf{Info} \\\\\n"
+                        r += "\tA" + str(i) + "&" + title + "& \\color{deepskyblue}\\textbf{Info} \\\\\n"
                     elif 'medium' in entry['stat']:
                         finding["color"] = "color{orange(colorwheel)}"
-                        r += "\t\\rowcolor{gray(x11gray)!10}A" + str(i) + "&" + title + "& \\color{orange(colorwheel)}\\textbf{Medium} \\\\\n"
+                        r += "\tA" + str(i) + "&" + title + "& \\color{orange(colorwheel)}\\textbf{Medium} \\\\\n"
                     elif 'high' in entry['stat']:
                         finding["color"] = "color{ferrarired}"
-                        r += "\t\\rowcolor{gray(x11gray)!10}A" + str(i) + "&" + title + "& \\color{ferrarired}\\textbf{High} \\\\\n"
+                        r += "\tA" + str(i) + "&" + title + "& \\color{ferrarired}\\textbf{High} \\\\\n"
                     elif 'low' in entry['stat']:
                         finding["color"] = "color{amber}"
-                        r += "\t\\rowcolor{gray(x11gray)!10}A" + str(i) + "&" + title + "& \\color{amber}\\textbf{Low} \\\\\n"
+                        r += "\tA" + str(i) + "&" + title + "& \\color{amber}\\textbf{Low} \\\\\n"
+                    r += "\\hline\\\\"
                     self.all_findings[str(i)] = finding
         r += "\t\\end{longtable}\n"
         return r
@@ -155,13 +184,13 @@ class Report(object):
     def create_detailed_findings(self):
         r = ""
         for entry in self.all_findings:
-            print(entry)
-            print(self.all_findings[entry]["color"])
+            # print(entry)
+            # print(self.all_findings[entry]["color"])
 
             r += "\\subsection{A" + entry + ": " + self.all_findings[entry]["entry"]["title"] + "}\n"
 
             try:
-                description = "\\subsubsection*{\\protect\\icon{/root/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}\n"
+                description = "\\subsubsection*{\\protect\\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}\n"
                 description += self.all_findings[entry]["entry"]["description"] + "\n"
             except KeyError:
                 description = ""
@@ -169,18 +198,26 @@ class Report(object):
                 r += description
 
             try:
-                evidence = "\\subsubsection*{\\protect\\icon{/root/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}\n"
+                evidence = ""
+                i = 0
                 for e in self.all_findings[entry]["entry"]["evidence"]:
-
-                    evidence += e + "\n"
-
+                    if i < 10:
+                        evidence += "\\path{" + e + "}\n\n"
+                        i += 1
+                    else:
+                        evidence += "\n\\textit{snip}\n\\newline \\textsl{For the full list view \\path{" + self.report_dir + "}}\n"
+                        break
             except KeyError:
                 evidence = ""
             if evidence:
+                r += "\\subsubsection*{\\protect\\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}\n"
+
+                # r += "\\begin{lstlisting}\n"
                 r += evidence
+                # r += "\\end{lstlisting}\n"
 
             try:
-                recommendation = "\\subsubsection*{\\protect\\icon{/root/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}\n"
+                recommendation = "\\subsubsection*{\\protect\\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}\n"
                 recommendation += self.all_findings[entry]["entry"]["recommendation"] + "\n"
             except KeyError:
                 recommendation = ""
@@ -210,12 +247,21 @@ class Report(object):
                     elif 'low' in entry['stat']:
                         low += 1
         # print("info: " +str(info) + " medium: " + str(medium) + " high : " + str(high) + " low: " + str(low))
-        return {
-            "info": "{0:.2f}".format(info/total * 100),
-            "medium": "{0:.2f}".format(medium/total * 100),
-            "high": "{0:.2f}".format(high/total * 100),
-            "low": "{0:.2f}".format(low/total * 100)
-        }
+        try:
+            return {
+                "info": "{0:.2f}".format(info/total * 100),
+                "medium": "{0:.2f}".format(medium/total * 100),
+                "high": "{0:.2f}".format(high/total * 100),
+                "low": "{0:.2f}".format(low/total * 100)
+            }
+        except ZeroDivisionError:
+            return{
+                "info": "{0:.2f}".format(0),
+                "medium": "{0:.2f}".format(0),
+                "high": "{0:.2f}".format(0),
+                "low": "{0:.2f}".format(0)
+
+            }
 
     def generate_report(self):
         pie_rezults = self.compute_findings_distribution()
@@ -229,7 +275,7 @@ class Report(object):
         content += "\\cleardoublepage\n"
         content += "\\setcounter{page}{1}\n"
         content += "\\section{FINDINGS SUMMARY}\label{sec:summary}\n"
-        content += self.create_pie_chart(pie_rezults["info"], pie_rezults["medium"], pie_rezults["high"], pie_rezults["low"])
+        # content += self.create_pie_chart(pie_rezults["info"], pie_rezults["medium"], pie_rezults["high"], pie_rezults["low"])
         content += self.create_findings_table()
         content += "\\cleardoublepage\n"
         # content += "\\newpage\n"

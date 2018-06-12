@@ -141,10 +141,11 @@ def analyse_files(directory):
                 apk_analyser.find_webview_vulns()
                 print('\033[92m' + "[+] " + '\033[0m' + "WebView")
 
-                gc.collect()
-                print('\033[92m' + "[*] " + '\033[0m' + "Running radare2")
-                apk_analyser.run_radare()
-                print('\033[92m' + "[+] " + '\033[0m' + "Done")
+
+                # gc.collect()
+                # print('\033[92m' + "[*] " + '\033[0m' + "Running radare2")
+                # apk_analyser.run_radare()
+                # print('\033[92m' + "[+] " + '\033[0m' + "Done")
 
                 ch = ChordVisualizer(dirpath, "/".join(package_name.split(".")))
                 data = json.load(open(os.path.join(dirpath, 'report', 'chord.json')))

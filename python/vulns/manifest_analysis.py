@@ -672,22 +672,22 @@ class ManifestAnalyser(object):
         exported = []
         if prot_level_exist:
             if protlevel == 'normal':
-                self.findings.append((lst[0], (tag_full_name, item, perm + prot,), ('', tag_full_name,),))
+                self.findings.append((lst[0], (tag_full_name, ". ".join(item.split(".")), perm + prot,), ('', tag_full_name,),))
                 if tag_full_name in ['Activity', 'Activity-Alias']:
                     exported.append(item)
 
             elif protlevel == 'dangerous':
-                self.findings.append((lst[1], (tag_full_name, item, perm + prot,), ('', tag_full_name,),))
+                self.findings.append((lst[1], (tag_full_name, ". ".join(item.split(".")), perm + prot,), ('', tag_full_name,),))
                 if tag_full_name in ['Activity', 'Activity-Alias']:
                     exported.append(item)
 
             elif protlevel == 'signature':
-                self.findings.append((lst[2], (tag_full_name, item, perm + prot,), ('', tag_full_name,),))
+                self.findings.append((lst[2], (tag_full_name, ". ".join(item.split(".")), perm + prot,), ('', tag_full_name,),))
 
             elif protlevel == 'signatureOrSystem':
-                self.findings.append((lst[3], (tag_full_name, item, perm + prot,), ('', tag_full_name,),))
+                self.findings.append((lst[3], (tag_full_name, ". ".join(item.split(".")), perm + prot,), ('', tag_full_name,),))
         else:
-            self.findings.append((lst[4], (tag_full_name, item, perm), ('', tag_full_name,),))
+            self.findings.append((lst[4], (tag_full_name, ". ".join(item.split(".")), perm), ('', tag_full_name,),))
             if tag_full_name in ['Activity', 'Activity-Alias']:
                 exported.append(item)
         return exported
@@ -695,18 +695,18 @@ class ManifestAnalyser(object):
     def __check_content_provider_protection(self, prot_level_exist, protlevel, tag_full_name, item, perm, prot, lst):
         if prot_level_exist:
             if protlevel == 'normal':
-                self.findings.append((lst[0], (tag_full_name, item, perm + prot,), ('', tag_full_name,),))
+                self.findings.append((lst[0], (tag_full_name, ". ".join(item.split(".")), perm + prot,), ('', tag_full_name,),))
 
             elif protlevel == 'dangerous':
-                self.findings.append((lst[1], (tag_full_name, item, perm + prot,), ('', tag_full_name,),))
+                self.findings.append((lst[1], (tag_full_name, ". ".join(item.split(".")), perm + prot,), ('', tag_full_name,),))
 
             elif protlevel == 'signature':
-                self.findings.append((lst[2], (tag_full_name, item, perm + prot,), ('', tag_full_name,),))
+                self.findings.append((lst[2], (tag_full_name, ". ".join(item.split(".")), perm + prot,), ('', tag_full_name,),))
 
             elif protlevel == 'signatureOrSystem':
-                self.findings.append((lst[3], (tag_full_name, item, perm + prot,), ('', tag_full_name,),))
+                self.findings.append((lst[3], (tag_full_name, ". ".join(item.split(".")), perm + prot,), ('', tag_full_name,),))
         else:
-            self.findings.append((lst[4], (tag_full_name, item, perm), ('', tag_full_name,),))
+            self.findings.append((lst[4], (tag_full_name, ". ".join(item.split(".")), perm), ('', tag_full_name,),))
 
     def __check_app_level_permission(self, application):
         if application.getAttribute("android:permission"):
@@ -796,7 +796,7 @@ class ManifestAnalyser(object):
                                     self.findings.append(
                                         (
                                             "a_not_protected",
-                                            (tag_full_name, item),
+                                            (tag_full_name, ". ".join(item.split("."))),
                                             ('', tag_full_name,),
                                         )
                                     )
@@ -862,7 +862,7 @@ class ManifestAnalyser(object):
                                         self.findings.append(
                                             (
                                                 "a_not_protected_filter",
-                                                (tag_full_name, item,),
+                                                (tag_full_name, ". ".join(item.split(".")),),
                                                 ('', tag_full_name, tag_full_name,),
                                             )
                                         )
@@ -926,7 +926,7 @@ class ManifestAnalyser(object):
                                             self.findings.append(
                                                 (
                                                     "c_not_protected",
-                                                    (tag_full_name, item),
+                                                    (tag_full_name, ". ".join(item.split("."))),
                                                     ('', tag_full_name,),
                                                 )
                                             )
@@ -985,7 +985,7 @@ class ManifestAnalyser(object):
                                                 self.findings.append(
                                                     (
                                                         "c_not_protected2",
-                                                        (tag_full_name, item),
+                                                        (tag_full_name, ". ".join(item.split("."))),
                                                         ('', tag_full_name,),
                                                     )
                                                 )
