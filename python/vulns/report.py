@@ -211,10 +211,7 @@ class Report(object):
                 evidence = ""
             if evidence:
                 r += "\\subsubsection*{\\protect\\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}\n"
-
-                # r += "\\begin{lstlisting}\n"
                 r += evidence
-                # r += "\\end{lstlisting}\n"
 
             try:
                 recommendation = "\\subsubsection*{\\protect\\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}\n"
@@ -263,6 +260,31 @@ class Report(object):
 
             }
 
+    def get_chord_visualiation(self):
+        r = ""
+        r += "\\begin{figure}[H]\n"
+        r += "\t\\includegraphics[scale=0.4]{" + self.report_dir + "/chord_diagram.png}"
+        r += "\\end{figure}"
+        return r
+
+    def get_hot_spot_visualization(self):
+        r = ""
+        r += "\\begin{figure}[H]\n"
+        r+="\\centering\n"
+        r += "\t\\includegraphics[scale=0.5]{" + self.report_dir + "/hotspot.png}"
+        r += "\\end{figure}"
+        r += "\\begin{longtable}{p{0.5cm} p{10cm}}\n"
+        r += "\\rowcolor{red} Index & Class \\\\\n"
+        r += "1 & \\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity$1.smali} \\\\\n"
+        r += "2 & \\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity$1.smali} \\\\\n"
+        r += "3 & \\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity$1.smali} \\\\\n"
+        r += "4 & \\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity$1.smali} \\\\\n"
+        r += "5 & \\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity$1.smali} \\\\\n"
+        r += "6 & \\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity$1.smali} \\\\\n"
+        r += "7 & \\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity$1.smali} \\\\\n"
+        r += "\t\\end{longtable}\n"
+        return r
+
     def generate_report(self):
         pie_rezults = self.compute_findings_distribution()
 
@@ -283,6 +305,8 @@ class Report(object):
 
         # pprint.pprint(self.all_findings)
         content += self.create_detailed_findings()
+        content += self.get_chord_visualiation()
+        content += self.get_hot_spot_visualization()
         content += "\\end{document}\n"
 
         self.write_results(content)

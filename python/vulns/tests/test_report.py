@@ -10,8 +10,8 @@ from vulns.report import Report
 from visualize.pie_chart import PieChartGenerator
 
 if __name__ == "__main__":
-    report_dir = '/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report'
-    # report_dir = '/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/report'
+    # report_dir = '/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report'
+    report_dir = '/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/report'
     pcg = PieChartGenerator()
 
     report = Report(report_dir, pcg, "Insecure Bank", "com.insecurebnk")

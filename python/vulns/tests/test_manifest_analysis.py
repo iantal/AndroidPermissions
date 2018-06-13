@@ -14,11 +14,14 @@ def test_analyse_application_tags(ma):
 
 
 if __name__ == "__main__":
-    xml_file = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/AndroidManifest.xml"
-    yml_file = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/apktool.yml"
+    # xml_file = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/AndroidManifest.xml"
+    # yml_file = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/apktool.yml"
+
+    xml_file = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/AndroidManifest.xml"
+    yml_file = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/apktool.yml"
 
     xml_file2 = "/root/Documents/GITHUB/AndroidPermissions/apks/test_apks/firefox/app/AndroidManifest.xml"
     parser = XMLParser(xml_file)
     ma = ManifestAnalyser(parser, yml_file)
     # test_analyse_application_tags(ma)
-    ma.write_results("/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/report/vulns/manifest.json")
+    ma.write_results("/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/report/vulns/manifest.json")
