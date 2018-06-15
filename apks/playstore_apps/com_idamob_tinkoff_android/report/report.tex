@@ -1,0 +1,372 @@
+
+        \documentclass[12p]{article}
+        \usepackage[margin=1in, left=1.5in, includefoot]{geometry}
+        \usepackage{longtable, tabu}
+        \usepackage[table, dvipsnames]{xcolor}
+        \usepackage{array,booktabs}
+        \usepackage{color}
+        \usepackage{indentfirst}
+        \usepackage{graphicx}
+        \usepackage{float}
+        \usepackage[utf8]{inputenc}
+        \usepackage{listings}
+        \usepackage{url}
+        \usepackage{multirow}
+        \usepackage{seqsplit}
+        
+        \definecolor{ferrarired}{rgb}{1.0, 0.11, 0.0}
+        \definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}
+        \definecolor{deepskyblue}{rgb}{0.0, 0.75, 1.0}
+        \definecolor{grannysmithapple}{rgb}{0.66, 0.89, 0.63}
+        \definecolor{gray(x11gray)}{rgb}{0.75, 0.75, 0.75}
+        \definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+        
+        \newcommand{\icon}[1]{\includegraphics[height=12pt]{#1}}
+        \newcommand{\hash}[1]{{\ttfamily\seqsplit{#1}}}
+
+        \setlength{\arrayrulewidth}{0.3mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+\setlength{\parindent}{1em}
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\line(1,0){320}\\
+[0.25in]
+\huge{\bfseries Android Analysis Report}
+\line(1,0){320}\\
+[0.5in]
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/logo.png}
+\end{figure}
+\textsl{\LARGE Demo app}\\
+\textsf{\LARGE com.idamob.tinkoff.android}\\
+[2.5in]
+\end{center}
+\begin{flushright}
+\textbf{\large Date 2018-06-14}
+\end{flushright}
+\end{titlepage}
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+\setcounter{page}{1}
+\section{PERMISSIONS}
+	\begin{longtable}{p{3cm} p{10cm} }
+	\rowcolor{grannysmithapple!70} Type & List \\
+Normal &  ACCESS\_NETWORK\_STATE \\ 
+ &  INTERNET \\ 
+ &  WAKE\_LOCK \\ 
+\hline
+Dangerous &  CAMERA \\ 
+ &  READ\_CONTACTS \\ 
+ &  ACCESS\_COARSE\_LOCATION \\ 
+ &  ACCESS\_FINE\_LOCATION \\ 
+ &  RECORD\_AUDIO \\ 
+ &  USE\_SIP \\ 
+ &  READ\_CALL\_LOG \\ 
+ &  ADD\_VOICEMAIL \\ 
+ &  WRITE\_CALL\_LOG \\ 
+ &  READ\_PHONE\_STATE \\ 
+ &  BODY\_SENSORS \\ 
+ &  RECEIVE\_SMS \\ 
+ &  READ\_EXTERNAL\_STORAGE \\ 
+ &  WRITE\_EXTERNAL\_STORAGE \\ 
+\hline
+Overprivileged &  USE\_FINGERPRINT \\ 
+ &  C \\ 
+ &  NFC \\ 
+ &  DOWNLOAD\_WITHOUT\_NOTIFICATION \\ 
+ &  VIBRATE \\ 
+ &  BLUETOOTH \\ 
+ &  MODIFY\_AUDIO\_SETTINGS \\ 
+ &  ACCESS\_WIFI\_STATE \\ 
+ &  RECEIVE \\ 
+\hline
+Underprivileged &  SYSTEM\_ALERT\_WINDOW \\ 
+ &  BODY\_SENSORS \\ 
+ &  READ\_CALL\_LOG \\ 
+ &  ADD\_VOICEMAIL \\ 
+ &  USE\_SIP \\ 
+ &  WRITE\_SETTINGS \\ 
+ &  WRITE\_CALL\_LOG \\ 
+\hline
+Automatically granted dangerous permissions &  WRITE\_CONTACTS \\ 
+ &  GET\_ACCOUNTS \\ 
+ &  ANSWER\_PHONE\_CALLSREAD\_PHONE\_NUMBERS \\ 
+ &  CALL\_PHONE \\ 
+ &  PROCESS\_OUTGOING\_CALLS \\ 
+ &  SEND\_SMS \\ 
+ &  READ\_SMS \\ 
+ &  RECEIVE\_WAP\_PUSH \\ 
+ &  RECEIVE\_MMS \\ 
+\hline
+	\end{longtable}
+\section{FINDINGS SUMMARY}\label{sec:summary}
+\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/report/pie_chart.png}
+\end{figure}
+	\begin{longtable}{p{0.5cm} p{10cm} p{1.5cm}}
+	\rowcolor{grannysmithapple!70} Index & Title & Impact \\
+	A1&& \color{amber}\textbf{Low} \\
+\hline\\	A2&Electronic Codebook \newline (ECB) used for encryption& \color{ferrarired}\textbf{High} \\
+\hline\\	A3&Broadcast Receiver \newline (com. appsflyer. MultipleInstallBroadcastReceiver) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A4&Broadcast Receiver \newline (ru. tcsbank. mb. ui. deeplink. DeferredDeeplinkingBroadcastReceiver) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A5&Broadcast Receiver \newline (ru. tcsbank. mb. push. PushClickedBroadcastReceiver) is not Protected. An intent-filter exists.& \color{ferrarired}\textbf{High} \\
+\hline\\	A6&Launch Mode of Activity \newline (ru. tcsbank. mb. ui. start. StartActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A7&Launch Mode of Activity \newline (ru. tcsbank. mb. ui. activities. SuccessFullScreenActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A8&Launch Mode of Activity \newline (ru. tcsbank. mb. ui. activities. UnauthorizedSuccessFullScreenActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A9&Launch Mode of Activity \newline (ru. tcsbank. mb. ui. main. MainActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A10&Launch Mode of Activity \newline (ru. tcsbank. mb. ui. activities. account. AccountActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A11&Launch Mode of Activity \newline (ru. tcsbank. mb. ui. exchangerates. ExchangeRatesActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A12&Launch Mode of Activity \newline (ru. tcsbank. mb. ui. activities. account. CardServicesActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A13&Launch Mode of Activity \newline (ru. tcsbank. mb. ui. settings. SettingItemActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A14&Launch Mode of Activity \newline (ru. tcsbank. mb. ui. payments. PayHubActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A15&Activity \newline (ru. tcsbank. mb. ui. payments. PayHubActivity) is not Protected. An intent-filter exists.& \color{ferrarired}\textbf{High} \\
+\hline\\	A16&Launch Mode of Activity \newline (ru. tcsbank. mb. ui. activities. map. AtmMapActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A17&Launch Mode of Activity \newline (ru. tcsbank. mb. ui. activities. map. DepositionPointsMapActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A18&Launch Mode of Activity \newline (ru. tcsbank. mb. ui. activities. LoyaltyOffersMapActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A19&Launch Mode of Activity \newline (ru. tcsbank. mb. ui. deeplink. DeeplinkingActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A20&Activity \newline (ru. tcsbank. mb. ui. deeplink. DeeplinkingActivity) is not Protected. An intent-filter exists.& \color{ferrarired}\textbf{High} \\
+\hline\\	A21&Service \newline (com. pushserver. android. PushFcmIntentService) is not Protected. An intent-filter exists.& \color{ferrarired}\textbf{High} \\
+\hline\\	A22&Service \newline (com. pushserver. android. PushInstanceIDListenerService) is not Protected. An intent-filter exists.& \color{ferrarired}\textbf{High} \\
+\hline\\	A23&Service \newline (com. google. firebase. messaging. FirebaseMessagingService) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A24&Service \newline (com. google. firebase. iid. FirebaseInstanceIdService) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A25&& \color{amber}\textbf{Low} \\
+\hline\\	\end{longtable}
+\cleardoublepage
+\newpage
+\section{DETAILED FINDINGS}
+\subsection{A1: }
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/arch/lifecycle/f.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/a/e.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/a/e.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/a/b$b.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/a/b$b.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/a/h.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/a/f.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/a/f.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/a/a/e.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/e/a.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/Throwable;)}
+
+
+\textit{snip}
+\newline \textsl{For the full list view \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/report}}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+
+\subsection{A2: Electronic Codebook (ECB) used for encryption}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+            Using the same encryption key, in ECB mode data blocks are enciphered individually 
+            from each other and cause identical message blocks to be transformed to identical ciphertext 
+            blocks. The independency of encrypted blocks also implies that the malicious substitution of a 
+            block has no impact on adjacent blocks. As a consequence, data patterns are not well hidden and 
+            message confidentiality may be compromised.
+            
+            On Android, the Cipher API provides access to implementations of cryptographic schemes
+            for the encryption and decryption of arbitrary data. To request an instance of a particular cipher,
+            an application has to invoke the method getInstance, passing a suitable transformation string as
+            parameter. Typically, this value is composed of the desired algorithm name, a mode of operation,
+            and the padding scheme to apply. For example, to request an object instance that provides AES in
+            ECB mode with PKCS5 padding, the transformation AES/ECB/PKCS5Padding has to be specified.
+            
+            While it is indispensable to declare the algorithm to use, explicitly setting the mode and
+            padding may be omitted. To fill the gap, the underlying Cryptographic Service Provider (CSP)
+            relies on predefined values that do not necessarily reflect the recommended practice. Precisely, if
+            the transformation indicates no operation mode, ECB mode is put in place. Moreover, the initially
+            described problem with ECB is not limited to a specific cipher, such as AES but affects all symmetric
+            block ciphers. Stream ciphers and asymmetric cryptosystems are not concerned since they
+            do not involve an operation mode to repeatedly encipher blocks of contiguous data.
+        
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/com/mastercard/mcbp/utils/crypto/CryptoServiceImpl.smali}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/com/mastercard/mcbp/utils/crypto/CryptoServiceImpl.smali}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended not to use ECB for encryption. Use an asymmetric encryption algorithm instead
+\subsection{A3: Broadcast Receiver (com. appsflyer. MultipleInstallBroadcastReceiver) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A4: Broadcast Receiver (ru. tcsbank. mb. ui. deeplink. DeferredDeeplinkingBroadcastReceiver) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A5: Broadcast Receiver (ru. tcsbank. mb. push. PushClickedBroadcastReceiver) is not Protected. An intent-filter exists.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A  Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Broadcast Receiver is explicitly exported.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A6: Launch Mode of Activity (ru. tcsbank. mb. ui. start. StartActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A7: Launch Mode of Activity (ru. tcsbank. mb. ui. activities. SuccessFullScreenActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A8: Launch Mode of Activity (ru. tcsbank. mb. ui. activities. UnauthorizedSuccessFullScreenActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A9: Launch Mode of Activity (ru. tcsbank. mb. ui. main. MainActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A10: Launch Mode of Activity (ru. tcsbank. mb. ui. activities. account. AccountActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A11: Launch Mode of Activity (ru. tcsbank. mb. ui. exchangerates. ExchangeRatesActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A12: Launch Mode of Activity (ru. tcsbank. mb. ui. activities. account. CardServicesActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A13: Launch Mode of Activity (ru. tcsbank. mb. ui. settings. SettingItemActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A14: Launch Mode of Activity (ru. tcsbank. mb. ui. payments. PayHubActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A15: Activity (ru. tcsbank. mb. ui. payments. PayHubActivity) is not Protected. An intent-filter exists.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A  Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Activity is explicitly exported.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A16: Launch Mode of Activity (ru. tcsbank. mb. ui. activities. map. AtmMapActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A17: Launch Mode of Activity (ru. tcsbank. mb. ui. activities. map. DepositionPointsMapActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A18: Launch Mode of Activity (ru. tcsbank. mb. ui. activities. LoyaltyOffersMapActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A19: Launch Mode of Activity (ru. tcsbank. mb. ui. deeplink. DeeplinkingActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A20: Activity (ru. tcsbank. mb. ui. deeplink. DeeplinkingActivity) is not Protected. An intent-filter exists.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A  Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Activity is explicitly exported.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A21: Service (com. pushserver. android. PushFcmIntentService) is not Protected. An intent-filter exists.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A  Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Service is explicitly exported.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A22: Service (com. pushserver. android. PushInstanceIDListenerService) is not Protected. An intent-filter exists.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A  Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Service is explicitly exported.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A23: Service (com. google. firebase. messaging. FirebaseMessagingService) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A24: Service (com. google. firebase. iid. FirebaseInstanceIdService) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A25: }
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/arch/lifecycle/h.smali forName}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/arch/lifecycle/h.smali getSuperclass}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/arch/lifecycle/a.smali getSuperclass}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/arch/lifecycle/a$a.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/f/b.smali getComponentType}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/f/h.smali getComponentType}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/a/e.smali forName}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/a/e.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/a/e.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v4/a/f.smali forName}
+
+
+\textit{snip}
+\newline \textsl{For the full list view \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/report}}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+
+\cleardoublepage
+\newpage
+\section{VISUALIZATIONS}
+\subsection{Chord Diagram - Class Relations}
+\begin{figure}[H]
+	\includegraphics[scale=0.45]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/report/chord_diagram.png}\end{figure}\subsection{Hot Spot - System Overview}
+\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/report/hotspot.png}\end{figure}\begin{longtable}{p{0.3cm} p{12cm}}
+\rowcolor{orange} Index & Class \\
+1 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/com/mastercard/mcbp/remotemanagement/mdes/CmsDServiceImpl.smali} \\
+2 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/com/google/firebase/messaging/b.smali} \\
+3 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/com/mastercard/mcbp/remotemanagement/mdes/a.smali} \\
+4 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/com/zingaya/PhoneAPI.smali} \\
+5 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/com/crashlytics/android/c/l.smali} \\
+6 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/com/mastercard/mcbp/remotemanagement/mcbpV1/CmsServiceImpl.smali} \\
+7 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/com/j256/ormlite/stmt/StatementExecutor.smali} \\
+8 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/e/a.smali} \\
+9 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/d/a$b.smali} \\
+10 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_idamob_tinkoff_android/app/smali/android/support/v7/widget/RecyclerView.smali} \\
+	\end{longtable}
+\end{document}

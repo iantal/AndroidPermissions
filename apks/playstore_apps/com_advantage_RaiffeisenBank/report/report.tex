@@ -1,0 +1,259 @@
+
+        \documentclass[12p]{article}
+        \usepackage[margin=1in, left=1.5in, includefoot]{geometry}
+        \usepackage{longtable, tabu}
+        \usepackage[table, dvipsnames]{xcolor}
+        \usepackage{array,booktabs}
+        \usepackage{color}
+        \usepackage{indentfirst}
+        \usepackage{graphicx}
+        \usepackage{float}
+        \usepackage[utf8]{inputenc}
+        \usepackage{listings}
+        \usepackage{url}
+        \usepackage{multirow}
+        \usepackage{seqsplit}
+        
+        \definecolor{ferrarired}{rgb}{1.0, 0.11, 0.0}
+        \definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}
+        \definecolor{deepskyblue}{rgb}{0.0, 0.75, 1.0}
+        \definecolor{grannysmithapple}{rgb}{0.66, 0.89, 0.63}
+        \definecolor{gray(x11gray)}{rgb}{0.75, 0.75, 0.75}
+        \definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+        
+        \newcommand{\icon}[1]{\includegraphics[height=12pt]{#1}}
+        \newcommand{\hash}[1]{{\ttfamily\seqsplit{#1}}}
+
+        \setlength{\arrayrulewidth}{0.3mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+\setlength{\parindent}{1em}
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\line(1,0){320}\\
+[0.25in]
+\huge{\bfseries Android Analysis Report}
+\line(1,0){320}\\
+[0.5in]
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/logo.png}
+\end{figure}
+\textsl{\LARGE Demo app}\\
+\textsf{\LARGE com.advantage.RaiffeisenBank}\\
+[2.5in]
+\end{center}
+\begin{flushright}
+\textbf{\large Date 2018-06-14}
+\end{flushright}
+\end{titlepage}
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+\setcounter{page}{1}
+\section{PERMISSIONS}
+	\begin{longtable}{p{3cm} p{10cm} }
+	\rowcolor{grannysmithapple!70} Type & List \\
+Normal &  ACCESS\_NETWORK\_STATE \\ 
+ &  INTERNET \\ 
+ &  USE\_FINGERPRINT \\ 
+ &  VIBRATE \\ 
+\hline
+Dangerous &  CAMERA \\ 
+ &  READ\_CONTACTS \\ 
+ &  ACCESS\_COARSE\_LOCATION \\ 
+ &  ACCESS\_FINE\_LOCATION \\ 
+ &  CALL\_PHONE \\ 
+ &  READ\_EXTERNAL\_STORAGE \\ 
+ &  WRITE\_EXTERNAL\_STORAGE \\ 
+\hline
+Overprivileged &  CHANGE\_NETWORK\_STATE \\ 
+ &  ACCESS\_LOCATION\_EXTRA\_COMMANDS \\ 
+ &  R \\ 
+ &  WRITE\_USE\_APP\_FEATURE\_SURVEY \\ 
+ &  BLUETOOTH \\ 
+ &  ACCESS\_WIFI\_STATE \\ 
+ &  READ\_GSERVICES \\ 
+ &  READ\_PHONE\_STATE \\ 
+\hline
+Underprivileged &  "android.permission.ACCESS\_COARSE\_LOCATION" \\ 
+ &  UPDATE\_DEVICE\_STATS \\ 
+ &  "android.permission.ACCESS\_FINE\_LOCATION" \\ 
+\hline
+Automatically granted dangerous permissions &  WRITE\_CONTACTS \\ 
+ &  GET\_ACCOUNTS \\ 
+ &  ANSWER\_PHONE\_CALLSREAD\_PHONE\_NUMBERS \\ 
+ &  READ\_CALL\_LOG \\ 
+ &  WRITE\_CALL\_LOG \\ 
+ &  ADD\_VOICEMAIL \\ 
+ &  USE\_SIP \\ 
+ &  PROCESS\_OUTGOING\_CALLS \\ 
+\hline
+	\end{longtable}
+\section{FINDINGS SUMMARY}\label{sec:summary}
+\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/report/pie_chart.png}
+\end{figure}
+	\begin{longtable}{p{0.5cm} p{10cm} p{1.5cm}}
+	\rowcolor{grannysmithapple!70} Index & Title & Impact \\
+	A1&Load cleartext content& \color{ferrarired}\textbf{High} \\
+\hline\\	A2&& \color{amber}\textbf{Low} \\
+\hline\\	A3&Electronic Codebook \newline (ECB) used for encryption& \color{ferrarired}\textbf{High} \\
+\hline\\	A4&Activity \newline (com. thinkdesquared. banking. widget. ManageWidgetsActivity) is not Protected. An intent-filter exists.& \color{ferrarired}\textbf{High} \\
+\hline\\	A5&Broadcast Receiver \newline (com. thinkdesquared. banking. widget. content. RZBAppWidgetProvider) is not Protected. An intent-filter exists.& \color{ferrarired}\textbf{High} \\
+\hline\\	A6&Service \newline (com. thinkdesquared. banking. widget. services. WidgetGetDataService) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A7&& \color{amber}\textbf{Low} \\
+\hline\\	\end{longtable}
+\cleardoublepage
+\newpage
+\section{DETAILED FINDINGS}
+\subsection{A1: Load cleartext content}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/com/thinkdesquared/banking/WebViewActivity.smali loadUrl}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/com/thinkdesquared/banking/WebViewActivity.smali loadUrl}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/com/thinkdesquared/banking/WebViewActivity.smali loadUrl}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+
+\subsection{A2: }
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/text/ICUCompatIcs.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/text/ICUCompatIcs.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/text/ICUCompatIcs.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/text/ICUCompatIcs.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/text/ICUCompatIcs.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/text/ICUCompatApi23.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/text/ICUCompatApi23.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/print/PrintHelperKitkat.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/print/PrintHelperKitkat.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/print/PrintHelperKitkat.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+
+\textit{snip}
+\newline \textsl{For the full list view \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/report}}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+
+\subsection{A3: Electronic Codebook (ECB) used for encryption}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+            Using the same encryption key, in ECB mode data blocks are enciphered individually 
+            from each other and cause identical message blocks to be transformed to identical ciphertext 
+            blocks. The independency of encrypted blocks also implies that the malicious substitution of a 
+            block has no impact on adjacent blocks. As a consequence, data patterns are not well hidden and 
+            message confidentiality may be compromised.
+            
+            On Android, the Cipher API provides access to implementations of cryptographic schemes
+            for the encryption and decryption of arbitrary data. To request an instance of a particular cipher,
+            an application has to invoke the method getInstance, passing a suitable transformation string as
+            parameter. Typically, this value is composed of the desired algorithm name, a mode of operation,
+            and the padding scheme to apply. For example, to request an object instance that provides AES in
+            ECB mode with PKCS5 padding, the transformation AES/ECB/PKCS5Padding has to be specified.
+            
+            While it is indispensable to declare the algorithm to use, explicitly setting the mode and
+            padding may be omitted. To fill the gap, the underlying Cryptographic Service Provider (CSP)
+            relies on predefined values that do not necessarily reflect the recommended practice. Precisely, if
+            the transformation indicates no operation mode, ECB mode is put in place. Moreover, the initially
+            described problem with ECB is not limited to a specific cipher, such as AES but affects all symmetric
+            block ciphers. Stream ciphers and asymmetric cryptosystems are not concerned since they
+            do not involve an operation mode to repeatedly encipher blocks of contiguous data.
+        
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/com/thinkdesquared/banking/utilities/CryptoUtils.smali}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/com/thinkdesquared/banking/utilities/CryptoUtils.smali}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended not to use ECB for encryption. Use an asymmetric encryption algorithm instead
+\subsection{A4: Activity (com. thinkdesquared. banking. widget. ManageWidgetsActivity) is not Protected. An intent-filter exists.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A  Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Activity is explicitly exported.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A5: Broadcast Receiver (com. thinkdesquared. banking. widget. content. RZBAppWidgetProvider) is not Protected. An intent-filter exists.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A  Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Broadcast Receiver is explicitly exported.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A6: Service (com. thinkdesquared. banking. widget. services. WidgetGetDataService) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A7: }
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/text/ICUCompatIcs.smali forName}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/text/ICUCompatIcs.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/text/ICUCompatIcs.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/text/ICUCompatApi23.smali forName}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/text/ICUCompatApi23.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/util/MapCollections.smali getComponentType}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/graphics/drawable/DrawableCompatJellybeanMr1.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/graphics/drawable/DrawableCompatJellybeanMr1.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/app/BundleCompatDonut.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/app/BundleCompatDonut.smali invoke}
+
+
+\textit{snip}
+\newline \textsl{For the full list view \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/report}}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+
+\cleardoublepage
+\newpage
+\section{VISUALIZATIONS}
+\subsection{Chord Diagram - Class Relations}
+\begin{figure}[H]
+	\includegraphics[scale=0.45]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/report/chord_diagram.png}\end{figure}\subsection{Hot Spot - System Overview}
+\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/report/hotspot.png}\end{figure}\begin{longtable}{p{0.3cm} p{12cm}}
+\rowcolor{orange} Index & Class \\
+1 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/org/acra/collector/CrashReportDataFactory.smali} \\
+2 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/com/thinkdesquared/banking/requests/SOAPRequests.smali} \\
+3 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase.smali} \\
+4 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/com/thinkdesquared/banking/transfers/payments/presenter/InternationalPaymentPresenter.smali} \\
+5 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/multidex/MultiDexExtractor.smali} \\
+6 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/org/acra/ErrorReporter.smali} \\
+7 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/multidex/MultiDex.smali} \\
+8 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/media/session/MediaControllerCompat$TransportControlsBase.smali} \\
+9 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/com/thinkdesquared/banking/investments/TransferToTimeFragment.smali} \\
+10 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_advantage_RaiffeisenBank/app/smali/android/support/v4/media/session/MediaControllerCompat$MediaControllerImplBase.smali} \\
+	\end{longtable}
+\end{document}

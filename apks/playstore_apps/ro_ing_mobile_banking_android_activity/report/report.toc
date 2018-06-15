@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}PERMISSIONS}{1}
+\contentsline {section}{\numberline {2}FINDINGS SUMMARY}{2}
+\contentsline {section}{\numberline {3}DETAILED FINDINGS}{4}
+\contentsline {subsection}{\numberline {3.1}A1: Access local ressources}{4}
+\contentsline {subsection}{\numberline {3.2}A2: Load cleartext content}{4}
+\contentsline {subsection}{\numberline {3.3}A3: }{4}
+\contentsline {subsection}{\numberline {3.4}A4: JavascriptInterfaceAnalyser}{5}
+\contentsline {subsection}{\numberline {3.5}A5: Application Data can be Backed up android:allowBackup flag is missing.}{5}
+\contentsline {subsection}{\numberline {3.6}A6: Service (ro. ing. android. notification. InstanceIDListenerService) is not Protected. An intent-filter exists.}{6}
+\contentsline {subsection}{\numberline {3.7}A7: Service (ro. ing. android. notification. FcmListenerService) is not Protected. An intent-filter exists.}{6}
+\contentsline {subsection}{\numberline {3.8}A8: Service (com. google. firebase. messaging. FirebaseMessagingService) is not Protected. [android:exported=true]}{6}
+\contentsline {subsection}{\numberline {3.9}A9: Service (com. google. firebase. iid. FirebaseInstanceIdService) is not Protected. [android:exported=true]}{6}
+\contentsline {subsection}{\numberline {3.10}A10: }{7}
+\contentsline {section}{\numberline {4}VISUALIZATIONS}{8}
+\contentsline {subsection}{\numberline {4.1}Chord Diagram - Class Relations}{8}
+\contentsline {subsection}{\numberline {4.2}Hot Spot - System Overview}{9}

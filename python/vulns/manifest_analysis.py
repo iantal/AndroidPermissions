@@ -178,7 +178,7 @@ class ManifestAnalyser(object):
             'a_not_protected_filter': (
                 '%s (%s) is not Protected. An intent-filter exists.',
                 'high',
-                'A%s %s is found to be shared with other apps on the device therefore leaving it accessible'
+                'A %s %s is found to be shared with other apps on the device therefore leaving it accessible'
                 ' to any other application on the device. The presence of intent-filter indicates that the '
                 '%s is explicitly exported.',
                 'It is recommended to set the protection level to signature, so'
@@ -563,7 +563,7 @@ class ManifestAnalyser(object):
             browsable_dict = self.get_browsable_activities(node)
             return {
                 "tag": "activity-alias",
-                "tag_full_name": "Activity-Alias",
+                "tag_full_name": "Activity\\-Alias",
                 "activity_name": node.getAttribute("android:name"),
                 "browsable_dict": browsable_dict
             }
@@ -593,22 +593,22 @@ class ManifestAnalyser(object):
 
     def __check_task_afinity(self, tag_full_name, node):
         if (
-            tag_full_name in ['Activity', 'Activity-Alias'] and
+            tag_full_name in ['Activity', 'Activity\\-Alias'] and
             node.getAttribute("android:taskAffinity")
         ):
             finding = node.getAttribute("android:name")
-            self.findings.append(("a_taskaffinity", ("\\$".join(". ".join(finding.split(".")).split("$")),), tuple(),))
+            self.findings.append(("a_taskaffinity", (self.__escape_characters(finding),), tuple(),))
 
     def __check_launch_mode(self, tag_full_name, node):
         if (
-            tag_full_name in ['Activity', 'Activity-Alias'] and
+            tag_full_name in ['Activity', 'Activity\\-Alias'] and
             (
                 node.getAttribute("android:launchMode") == 'singleInstance' or
                 node.getAttribute("android:launchMode") == 'singleTask'
             )
         ):
             finding = node.getAttribute("android:name")
-            self.findings.append(("a_launchmode", (finding,), tuple(),))
+            self.findings.append(("a_launchmode", (self.__escape_characters(finding),), tuple(),))
 
     def __extract_permission_protection_levels(self):
         res = {}
@@ -672,41 +672,41 @@ class ManifestAnalyser(object):
         exported = []
         if prot_level_exist:
             if protlevel == 'normal':
-                self.findings.append((lst[0], (tag_full_name, "\\$".join(". ".join(item.split(".")).split("$")), perm + prot,), ('', tag_full_name,),))
-                if tag_full_name in ['Activity', 'Activity-Alias']:
+                self.findings.append((lst[0], (tag_full_name, self.__escape_characters(item), perm + prot,), ('', tag_full_name,),))
+                if tag_full_name in ['Activity', 'Activity\\-Alias']:
                     exported.append(item)
 
             elif protlevel == 'dangerous':
-                self.findings.append((lst[1], (tag_full_name, "\\$".join(". ".join(item.split(".")).split("$")), perm + prot,), ('', tag_full_name,),))
-                if tag_full_name in ['Activity', 'Activity-Alias']:
+                self.findings.append((lst[1], (tag_full_name, self.__escape_characters(item), perm + prot,), ('', tag_full_name,),))
+                if tag_full_name in ['Activity', 'Activity\\-Alias']:
                     exported.append(item)
 
             elif protlevel == 'signature':
-                self.findings.append((lst[2], (tag_full_name, "\\$".join(". ".join(item.split(".")).split("$")), perm + prot,), ('', tag_full_name,),))
+                self.findings.append((lst[2], (tag_full_name, self.__escape_characters(item), perm + prot,), ('', tag_full_name,),))
 
             elif protlevel == 'signatureOrSystem':
-                self.findings.append((lst[3], (tag_full_name, "\\$".join(". ".join(item.split(".")).split("$")), perm + prot,), ('', tag_full_name,),))
+                self.findings.append((lst[3], (tag_full_name, self.__escape_characters(item), perm + prot,), ('', tag_full_name,),))
         else:
-            self.findings.append((lst[4], (tag_full_name, "\\$".join(". ".join(item.split(".")).split("$")), perm), ('', tag_full_name,),))
-            if tag_full_name in ['Activity', 'Activity-Alias']:
+            self.findings.append((lst[4], (tag_full_name, self.__escape_characters(item), perm), ('', tag_full_name,),))
+            if tag_full_name in ['Activity', 'Activity\\-Alias']:
                 exported.append(item)
         return exported
 
     def __check_content_provider_protection(self, prot_level_exist, protlevel, tag_full_name, item, perm, prot, lst):
         if prot_level_exist:
             if protlevel == 'normal':
-                self.findings.append((lst[0], (tag_full_name, "\\$".join(". ".join(item.split(".")).split("$")), perm + prot,), ('', tag_full_name,),))
+                self.findings.append((lst[0], (tag_full_name, self.__escape_characters(item), perm + prot,), ('', tag_full_name,),))
 
             elif protlevel == 'dangerous':
-                self.findings.append((lst[1], (tag_full_name, "\\$".join(". ".join(item.split(".")).split("$")), perm + prot,), ('', tag_full_name,),))
+                self.findings.append((lst[1], (tag_full_name, self.__escape_characters(item), perm + prot,), ('', tag_full_name,),))
 
             elif protlevel == 'signature':
-                self.findings.append((lst[2], (tag_full_name, "\\$".join(". ".join(item.split(".")).split("$")), perm + prot,), ('', tag_full_name,),))
+                self.findings.append((lst[2], (tag_full_name, self.__escape_characters(item), perm + prot,), ('', tag_full_name,),))
 
             elif protlevel == 'signatureOrSystem':
-                self.findings.append((lst[3], (tag_full_name, "\\$".join(". ".join(item.split(".")).split("$")), perm + prot,), ('', tag_full_name,),))
+                self.findings.append((lst[3], (tag_full_name, self.__escape_characters(item), perm + prot,), ('', tag_full_name,),))
         else:
-            self.findings.append((lst[4], (tag_full_name, "\\$".join(". ".join(item.split(".")).split("$")), perm), ('', tag_full_name,),))
+            self.findings.append((lst[4], (tag_full_name, self.__escape_characters(item), perm), ('', tag_full_name,),))
 
     def __check_app_level_permission(self, application):
         if application.getAttribute("android:permission"):
@@ -796,11 +796,11 @@ class ManifestAnalyser(object):
                                     self.findings.append(
                                         (
                                             "a_not_protected",
-                                            (tag_full_name, "\\$".join(". ".join(item.split(".")).split("$"))),
+                                            (tag_full_name, self.__escape_characters(item)),
                                             ('', tag_full_name,),
                                         )
                                     )
-                                    if tag_full_name in ['Activity', 'Activity-Alias']:
+                                    if tag_full_name in ['Activity', 'Activity\\-Alias']:
                                         exported.append(item)
 
                                 else:
@@ -831,10 +831,6 @@ class ManifestAnalyser(object):
 
                             if item != self.extracted_manifest_data['mainactivity']:
                                 if is_perm_exist:
-                                    # - the permission might not be defined in the application being analysed, if so, the protection level is not known;
-                                    # - activities (or activity-alias) that are exported and have an unknown or normal or dangerous protection level are
-                                    #  included in the EXPORTED data structure for further treatment; components in this situation are also
-                                    #  counted as exported.
                                     perm_appl_level = node.getAttribute("android:permission")
                                     possible_findings = [
                                         "a_prot_normal",
@@ -855,26 +851,16 @@ class ManifestAnalyser(object):
                                         )
 
                                 else:
-                                    # Esteve 24.07.2016 - begin - At this point, we are dealing with components that do not have a permission neither at the component level nor at the
-                                    # application level. As they are exported,
-                                    # they are not protected.
                                     if perm_appl_level_exists is False:
                                         self.findings.append(
                                             (
                                                 "a_not_protected_filter",
-                                                (tag_full_name,"\\$".join(". ".join(item.split(".")).split("$")),),
+                                                (tag_full_name,self.__escape_characters(item),),
                                                 ('', tag_full_name, tag_full_name,),
                                             )
                                         )
-                                        if tag_full_name in ['Activity', 'Activity-Alias']:
+                                        if tag_full_name in ['Activity', 'Activity\\-Alias']:
                                             exported.append(item)
-
-                                    # Esteve 24.07.2016 - begin - At this point, we are dealing with components that have a permission at the application level, but not at the component
-                                    # level. Two options are possible:
-                                    # 1) The permission is defined at the manifest level, which allows us to differentiate the level of protection as
-                                    #  we did just above for permissions specified at the component level.
-                                    # 2) The permission is not defined at the manifest level, which means the protection level is unknown, as it is not
-                                    #  defined in the analysed application.
                                     else:
                                         perm = 'Permission: ' + perm_appl_level
                                         possible_findings = [
@@ -894,14 +880,6 @@ class ManifestAnalyser(object):
                                                 possible_findings,
                                                 appl=True
                                             )
-
-                        # Esteve 29.07.2016 - begin The component is not explicitly exported (android:exported is not "true"). It is not implicitly exported either (it does not
-                        # make use of an intent filter). Despite that, it could still be exported by default, if it is a content provider and the android:targetSdkVersion
-                        # is older than 17 (Jelly Bean, Android versionn 4.2). This is true regardless of the system's API level.
-                        # Finally, it must also be taken into account that, if the minSdkVersion is greater or equal than 17, this check is unnecessary, because the
-                        # app will not be run on a system where the
-                        # system's API level is below 17.
-
                         else:
                             if self.extracted_manifest_data['minsdk'] and self.extracted_manifest_data['targetsdk'] and int(self.extracted_manifest_data['minsdk']) < 17:
                                 if tag_full_name == 'Content Provider' and int(self.extracted_manifest_data['targetsdk']) < 17:
@@ -926,7 +904,7 @@ class ManifestAnalyser(object):
                                             self.findings.append(
                                                 (
                                                     "c_not_protected",
-                                                    (tag_full_name, "\\$".join(". ".join(item.split(".")).split("$"))),
+                                                    (tag_full_name, self.__escape_characters(item)),
                                                     ('', tag_full_name,),
                                                 )
                                             )
@@ -950,11 +928,6 @@ class ManifestAnalyser(object):
                                                     possible_findings,
                                                     appl=False
                                                 )
-
-                                    # Esteve 29.07.2016 - end
-                                    # Esteve 08.08.2016 - begin - If the content provider does not target an API version lower than 17, it could still be exported by default, depending
-                                    # on the API version of the platform. If it was below 17, the content
-                                    # provider would be exported by default.
                                 else:
                                     if 'Content Provider' in tag_full_name and int(self.extracted_manifest_data['targetsdk']) >= 17:
                                         item = node.getAttribute("android:name")
@@ -985,7 +958,7 @@ class ManifestAnalyser(object):
                                                 self.findings.append(
                                                     (
                                                         "c_not_protected2",
-                                                        (tag_full_name, "\\$".join(". ".join(item.split(".")).split("$"))),
+                                                        (tag_full_name, self.__escape_characters(item)),
                                                         ('', tag_full_name,),
                                                     )
                                                 )
@@ -1035,11 +1008,11 @@ class ManifestAnalyser(object):
         for data in datas:
             if data.getAttribute("android:scheme") == "android_secret_code":
                 xmlhost = data.getAttribute("android:host")
-                ret_list.append(("a_dailer_code", (xmlhost,), tuple(),))
+                ret_list.append(("a_dailer_code", (self.__escape_characters(xmlhost),), tuple(),))
 
             elif data.getAttribute("android:port"):
                 dataport = data.getAttribute("android:port")
-                ret_list.append(("a_sms_receiver_port", (dataport,), tuple(),))
+                ret_list.append(("a_sms_receiver_port", (self.__escape_characters(dataport),), tuple(),))
         return ret_list
 
     def get_intents(self):
@@ -1050,7 +1023,7 @@ class ManifestAnalyser(object):
                 value = intent.getAttribute("android:priority")
                 if int(value) > 100:
                     ret_list.append(
-                        ("a_high_intent_priority", (value,), tuple(),))
+                        ("a_high_intent_priority", (self.__escape_characters(value),), tuple(),))
         return ret_list
 
     def get_actions(self):
@@ -1061,15 +1034,18 @@ class ManifestAnalyser(object):
                 value = action.getAttribute("android:priority")
                 if int(value) > 100:
                     ret_list.append(
-                        ("a_high_action_priority", (value,), tuple(),))
+                        ("a_high_action_priority", (self.__escape_characters(value),), tuple(),))
+
         return ret_list
 
     def get_results(self):
         ret_list = []
-        ret_list += self.get_actions()
-        ret_list += self.get_data()
-        ret_list += self.get_intents()
-        ret_list += self.get_grant_uri_permissions()
+
+        res_list = []
+        res_list += self.get_actions()
+        res_list += self.get_data()
+        res_list += self.get_intents()
+        res_list += self.get_grant_uri_permissions()
         self.analyse_application_tags()
 
         for a_key, t_name, t_desc in self.findings:
@@ -1084,8 +1060,31 @@ class ManifestAnalyser(object):
                     "recommendation": a_template[3]
                 })
 
-        # pprint.pprint(ret_list)
+        for a_key, t_name, t_desc in res_list:
+            a_template = self.manifest_desc.get(a_key)
+            if a_template:
+                a_title = a_template[0] % t_name
+                a_desc = a_template[2] % t_desc
+                ret_list.append({
+                    "title": a_title,
+                    "stat": a_template[1],
+                    "description": a_desc,
+                    "recommendation": a_template[3]
+                })
+
         return ret_list
+
+    def __escape_characters(self, text):
+        e_list = ["$", "_", "-"]
+        s = ". ".join(text.split("."))
+
+        for ch in e_list:
+            escaped = "\\" + ch + " "
+            s = escaped.join(s.split(ch))
+
+        print("[DEBUG] " + s)
+
+        return s
 
     def write_results(self, out_file):
         r = {"findings": self.get_results()}

@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}PERMISSIONS}{1}
+\contentsline {section}{\numberline {2}FINDINGS SUMMARY}{2}
+\contentsline {section}{\numberline {3}DETAILED FINDINGS}{4}
+\contentsline {subsection}{\numberline {3.1}A1: }{4}
+\contentsline {subsection}{\numberline {3.2}A2: Electronic Codebook (ECB) used for encryption}{4}
+\contentsline {subsection}{\numberline {3.3}A3: Launch Mode of Activity (com. ubercab. presidio. app. core. root. RootActivity) is not standard.}{5}
+\contentsline {subsection}{\numberline {3.4}A4: Broadcast Receiver (com. ubercab. install\_ referrer. core. InstallReferrerReceiver) is not Protected. [android:exported=true]}{6}
+\contentsline {subsection}{\numberline {3.5}A5: Service (com. ubercab. external\_ api. v1. UberApiService) is not Protected. [android:exported=true]}{6}
+\contentsline {subsection}{\numberline {3.6}A6: Service (com. ubercab. login. AuthenticationService) is not Protected. [android:exported=true]}{6}
+\contentsline {subsection}{\numberline {3.7}A7: Launch Mode of Activity (com. braintreepayments. api. BraintreeBrowserSwitchActivity) is not standard.}{6}
+\contentsline {subsection}{\numberline {3.8}A8: Activity (com. braintreepayments. api. BraintreeBrowserSwitchActivity) is not Protected. An intent-filter exists.}{7}
+\contentsline {subsection}{\numberline {3.9}A9: Activity (com. ubercab. presidio. styleguide. MainActivity) is not Protected. [android:exported=true]}{7}
+\contentsline {subsection}{\numberline {3.10}A10: High Intent Priority (999) [android:priority]}{7}
+\contentsline {subsection}{\numberline {3.11}A11: }{7}
+\contentsline {section}{\numberline {4}VISUALIZATIONS}{9}
+\contentsline {subsection}{\numberline {4.1}Chord Diagram - Class Relations}{9}
+\contentsline {subsection}{\numberline {4.2}Hot Spot - System Overview}{10}

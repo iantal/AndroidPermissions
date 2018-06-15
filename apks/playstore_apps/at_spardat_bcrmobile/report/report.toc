@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}PERMISSIONS}{1}
+\contentsline {section}{\numberline {2}FINDINGS SUMMARY}{1}
+\contentsline {section}{\numberline {3}DETAILED FINDINGS}{3}
+\contentsline {subsection}{\numberline {3.1}A1: Load cleartext content}{3}
+\contentsline {subsection}{\numberline {3.2}A2: }{3}
+\contentsline {subsection}{\numberline {3.3}A3: Electronic Codebook (ECB) used for encryption}{4}
+\contentsline {subsection}{\numberline {3.4}A4: Application Data can be Backed up}{4}
+\contentsline {subsection}{\numberline {3.5}A5: Launch Mode of Activity (at. spardat. bcrmobile. activity. SplashActivity) is not standard.}{4}
+\contentsline {subsection}{\numberline {3.6}A6: Broadcast Receiver (com. google. android. gms. analytics. CampaignTrackingReceiver) is not Protected. [android:exported=true]}{5}
+\contentsline {subsection}{\numberline {3.7}A7: Activity (com. google. zxing. client. android. encode. EncodeActivity) is not Protected. An intent-filter exists.}{5}
+\contentsline {subsection}{\numberline {3.8}A8: Activity (com. google. zxing. client. android. book. SearchBookContentsActivity) is not Protected. An intent-filter exists.}{5}
+\contentsline {subsection}{\numberline {3.9}A9: Activity (com. google. zxing. client. android. share. ShareActivity) is not Protected. An intent-filter exists.}{6}
+\contentsline {subsection}{\numberline {3.10}A10: }{6}
+\contentsline {section}{\numberline {4}VISUALIZATIONS}{7}
+\contentsline {subsection}{\numberline {4.1}Chord Diagram - Class Relations}{7}
+\contentsline {subsection}{\numberline {4.2}Hot Spot - System Overview}{8}

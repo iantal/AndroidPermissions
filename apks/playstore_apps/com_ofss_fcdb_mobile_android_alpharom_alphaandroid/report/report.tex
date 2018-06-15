@@ -1,0 +1,202 @@
+
+        \documentclass[12p]{article}
+        \usepackage[margin=1in, left=1.5in, includefoot]{geometry}
+        \usepackage{longtable, tabu}
+        \usepackage[table, dvipsnames]{xcolor}
+        \usepackage{array,booktabs}
+        \usepackage{color}
+        \usepackage{indentfirst}
+        \usepackage{graphicx}
+        \usepackage{float}
+        \usepackage[utf8]{inputenc}
+        \usepackage{listings}
+        \usepackage{url}
+        \usepackage{multirow}
+        \usepackage{seqsplit}
+        
+        \definecolor{ferrarired}{rgb}{1.0, 0.11, 0.0}
+        \definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}
+        \definecolor{deepskyblue}{rgb}{0.0, 0.75, 1.0}
+        \definecolor{grannysmithapple}{rgb}{0.66, 0.89, 0.63}
+        \definecolor{gray(x11gray)}{rgb}{0.75, 0.75, 0.75}
+        \definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+        
+        \newcommand{\icon}[1]{\includegraphics[height=12pt]{#1}}
+        \newcommand{\hash}[1]{{\ttfamily\seqsplit{#1}}}
+
+        \setlength{\arrayrulewidth}{0.3mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+\setlength{\parindent}{1em}
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\line(1,0){320}\\
+[0.25in]
+\huge{\bfseries Android Analysis Report}
+\line(1,0){320}\\
+[0.5in]
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/logo.png}
+\end{figure}
+\textsl{\LARGE Demo app}\\
+\textsf{\LARGE com.ofss.fcdb.mobile.android.alpharom.alphaandroid}\\
+[2.5in]
+\end{center}
+\begin{flushright}
+\textbf{\large Date 2018-06-14}
+\end{flushright}
+\end{titlepage}
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+\setcounter{page}{1}
+\section{PERMISSIONS}
+	\begin{longtable}{p{3cm} p{10cm} }
+	\rowcolor{grannysmithapple!70} Type & List \\
+\hline
+\hline
+Overprivileged &  ACCESS\_NETWORK\_STATE \\ 
+ &  INTERNET \\ 
+ &  VIBRATE \\ 
+ &  WRITE\_EXTERNAL\_STORAGE \\ 
+ &  ACCESS\_COARSE\_LOCATION \\ 
+ &  ACCESS\_FINE\_LOCATION \\ 
+ &  CALL\_PHONE \\ 
+\hline
+\hline
+Automatically granted dangerous permissions &  ANSWER\_PHONE\_CALLSREAD\_PHONE\_NUMBERS \\ 
+ &  READ\_PHONE\_STATE \\ 
+ &  READ\_CALL\_LOG \\ 
+ &  WRITE\_CALL\_LOG \\ 
+ &  ADD\_VOICEMAIL \\ 
+ &  USE\_SIP \\ 
+ &  PROCESS\_OUTGOING\_CALLS \\ 
+ &  READ\_EXTERNAL\_STORAGE \\ 
+\hline
+	\end{longtable}
+\section{FINDINGS SUMMARY}\label{sec:summary}
+\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/report/pie_chart.png}
+\end{figure}
+	\begin{longtable}{p{0.5cm} p{10cm} p{1.5cm}}
+	\rowcolor{grannysmithapple!70} Index & Title & Impact \\
+	A1&Access local ressources& \color{ferrarired}\textbf{High} \\
+\hline\\	A2&& \color{amber}\textbf{Low} \\
+\hline\\	A3&Launch Mode of Activity \newline (com. iflex. fcat. mobile. android. infra. LoginActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A4&& \color{amber}\textbf{Low} \\
+\hline\\	\end{longtable}
+\cleardoublepage
+\newpage
+\section{DETAILED FINDINGS}
+\subsection{A1: Access local ressources}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/OffersActivity.smali}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/HelpUrlActivity.smali}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/ATGWebViewActivity.smali}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/PreLoginOffers.smali}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+
+\subsection{A2: }
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/text/ICUCompatIcs.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/text/ICUCompatIcs.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/text/ICUCompatIcs.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/text/ICUCompatIcs.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/text/ICUCompatIcs.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/util/AtomicFile.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/util/AtomicFile.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/util/AtomicFile.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/util/LogWriter.smali
+Landroid/util/Log -> d(Ljava/lang/String;Ljava/lang/String;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/app/ShareCompat$IntentReader.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+
+\textit{snip}
+\newline \textsl{For the full list view \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/report}}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+
+\subsection{A3: Launch Mode of Activity (com. iflex. fcat. mobile. android. infra. LoginActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A4: }
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/text/ICUCompatIcs.smali forName}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/text/ICUCompatIcs.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/text/ICUCompatIcs.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/app/ActionBarDrawerToggleHoneycomb.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/app/ActionBarDrawerToggleHoneycomb.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/view/ViewPager.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/TemplateOne.smali forName}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/LogoffActivity$1.smali forName}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/TemplateOne$14.smali forName}
+
+
+\textit{snip}
+\newline \textsl{For the full list view \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/report}}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+
+\cleardoublepage
+\newpage
+\section{VISUALIZATIONS}
+\subsection{Chord Diagram - Class Relations}
+\begin{figure}[H]
+	\includegraphics[scale=0.45]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/report/chord_diagram.png}\end{figure}\subsection{Hot Spot - System Overview}
+\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/report/hotspot.png}\end{figure}\begin{longtable}{p{0.3cm} p{12cm}}
+\rowcolor{orange} Index & Class \\
+1 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/text/ICUCompatIcs.smali} \\
+2 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/app/FragmentManagerImpl.smali} \\
+3 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/app/ActionBarDrawerToggleHoneycomb.smali} \\
+4 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/view/ViewPager.smali} \\
+5 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/Flog.smali} \\
+6 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB.smali} \\
+7 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/util/AtomicFile.smali} \\
+8 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/app/ShareCompat$IntentReader.smali} \\
+9 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/android/support/v4/app/LoaderManagerImpl.smali} \\
+10 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ofss_fcdb_mobile_android_alpharom_alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/ATGWebViewActivity.smali} \\
+	\end{longtable}
+\end{document}

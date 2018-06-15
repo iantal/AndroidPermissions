@@ -1,6 +1,7 @@
 import pprint
 import sys
 import os
+import json
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, BASE_DIR)
@@ -13,7 +14,14 @@ from ui.run import ApplicationAnalyzer
 from recon.extractor import Extractor
 from visualize.screenshot import ScreenshotTaker
 from visualize.webserver import SimpleHttpServer
+from vulns.report import Report
+from visualize.pie_chart import PieChartGenerator
+from visualize.visualize import *
+from analyse.xml_parser import XMLParser
+from utils.smali_analyser import SmaliAnalyser
 
+from utils.directory_analyser import DirectoryAnalyser
+from analyse.permissions_classifier import PermissionsClassifier
 
 
 libs_apktool = '/home/miki/Documents/GITHUB/AndroidPermissions/libs/apktool/apktool_2.3.0.jar'
@@ -85,51 +93,78 @@ class MainApplication(object):
         self.filename = filedialog.askopenfilename(filetypes=(("File Type", "*.apk"), ("All Files", "*.*")))
         Label(self.frame_content, text=self.filename).grid(row=0, column=0, padx=5)
 
+
     def analyse(self):
-        apk_file = self.filename
+        # apk_file = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_grppl_android_shell_halifax/com.grppl.android.shell.halifax.apk"
+        #apk_file = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/InsecureBankv2.apk"
+        apk_file = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/de_number26_android/de.number26.android.apk"
+        # apk_file = self.filename
+
         print("## " + apk_file)
         l = apk_file.split("/")
         base_dir = "/".join(l[:len(l) - 1])
         print("## " + base_dir)
 
-        # TODO: uncomment after testin
+        # TODO: uncomment after testing
         # self.__extract(apk_file)
 
+        xml_file = os.path.join(base_dir, 'app', 'AndroidManifest.xml')
+        parser = XMLParser(xml_file)
+        d = DirectoryAnalyser(base_dir)
+        perm_classifier = PermissionsClassifier(d, parser)
+        perm_classifier.write_results(os.path.join(base_dir, 'report', 'permissions.json'))
+
+        package_name = parser.get_package_name()
+        self.setup_visualizations(base_dir, package_name)
+
         ap = ApplicationAnalyzer(base_dir)
-        if self.v1_1.get() == "ok":
-            print("[*] Crypto")
-            ap.find_crypto_vulns()
-            print("[+] Done")
-        if self.v2_1.get() == "ok":
+        if True:
+        # if self.v1_1.get() == "ok":
+        #     print("[*] Crypto")
+        #     ap.find_crypto_vulns()
+        #     print("[+] Done")
+        # if self.v2_1.get() == "ok":
             print("[*] Manifest")
             ap.find_manifest_vulns()
             print("[+] Done")
-        if self.v3_1.get() == "ok":
-            print("[*] Webview")
-            ap.find_webview_vulns()
-            print("[+] Done")
-        if self.v4_1.get() == "ok":
-            print("[*] Logs")
-            ap.find_logs()
-            print("[+] Done")
-        if self.v5_1.get() == "ok":
+        # if self.v3_1.get() == "ok":
+        #     print("[*] Webview")
+        #     ap.find_webview_vulns()
+        #     print("[+] Done")
+        # if self.v4_1.get() == "ok":
+        #     print("[*] Logs")
+        #     ap.find_logs()
+        #     print("[+] Done")
+        # if self.v5_1.get() == "ok":
             print("[*] Obfuscation")
             ap.find_obfuscation()
             print("[+] Done")
-        if self.v6_1.get() == "ok":
-            print("[*] Reflection")
-            ap.find_reflection()
-            print("[+] Done")
-        if self.v7_1.get() == "ok":
+        # if self.v6_1.get() == "ok":
+        #     print("[*] Reflection")
+        #     ap.find_reflection()
+        #     print("[+] Done")
+        # if self.v7_1.get() == "ok":
             print("[*] Signature")
             ap.find_signature()
             print("[+] Done")
-        if self.v8_1.get() == "ok":
-            print("[*] Running radare2")
-            ap.run_radare()
-            print("[+] Done")
+        # if self.v8_1.get() == "ok":
+        #     print("[*] Running radare2")
+        #     ap.run_radare()
+        #     print("[+] Done")
 
-        self.__take_screenshot(base_dir)
+        ch = ChordVisualizer(base_dir, "/".join(package_name.split(".")))
+        data = json.load(open(os.path.join(base_dir, 'report', 'chord.json')))
+        weights_file = os.path.join(base_dir, 'report', 'hotspot.json')
+        ch.get_chord_diagram_data(weights_file, data,
+                                  '/home/miki/Documents/GITHUB/AndroidPermissions/web/chord/rm.csv')
+
+        ha = HotspotVisualizer(base_dir)
+        dataa = json.load(open(os.path.join(base_dir, 'report', 'hotspot.json')))
+
+        ha.get_directory_tree(dataa, "/home/miki/Documents/GITHUB/AndroidPermissions/web/hotspot/a.json")
+
+        self.create_report(base_dir, package_name, "Demo app")
+        print("[+] Done")
 
     def __extract(self, apk):
         if apk:
@@ -141,7 +176,26 @@ class MainApplication(object):
         else:
             print("Please specify the apk file")
 
-    def __take_screenshot(self, base_dir):
+    def write_json_to_file(self, output_file, jo):
+        with open(output_file, "w") as f:
+            f.write(json.dumps(jo))
+
+    def setup_visualizations(self, base_dir, package_name):
+
+        regex = "\/".join(package_name.split(".")) + "[\w\/]*"
+        package = "/" + "/".join(package_name.split("."))
+
+        # chord
+        s = SmaliAnalyser(base_dir, package, r"" + regex)
+        s.parse_smali_files()
+        d = s.get_filtered_dependencies_full_path()
+        out_file = os.path.join(base_dir, 'report', 'chord.json')
+        self.write_json_to_file(out_file, d)
+
+        # hot spots
+
+    def __take_screenshot(self, base_dir, package_name):
+
         port = 8002
         skt = ScreenshotTaker()
 
@@ -160,14 +214,27 @@ class MainApplication(object):
         skt.crop_image(
             base_dir + "/report/chord_diagram.png")
 
+    def create_report(self, base_dir, package, app_name):
+        report_dir = os.path.join(base_dir, 'report')
+        pcg = PieChartGenerator()
+
+        report = Report(report_dir, pcg, app_name, package)
+        report.generate_report()
+
+        self.__take_screenshot(base_dir, package)
+
+        report.convert_tex_to_pdf()
+
+
+
 
 def main():
     root = Tk()
     root.geometry("910x600")
     root.configure(background="#a1dbcd")
     app = MainApplication(root)
-    root.mainloop()
-
+    # root.mainloop()
+    app.analyse()
 
 if __name__ == "__main__":
     main()

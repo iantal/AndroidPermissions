@@ -1,8 +1,17 @@
-import os
 import json
 import fnmatch
 import datetime
+import operator
 import pprint
+import sys
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, BASE_DIR)
+
+from utils.directory_analyser import DirectoryAnalyser
+from analyse.xml_parser import XMLParser
+from analyse.permissions_classifier import PermissionsClassifier
 
 '''
 TODO:
@@ -27,7 +36,13 @@ class Report(object):
             f.write(results)
 
     def convert_tex_to_pdf(self):
-        os.system("pdflatex " + self.out_file + " -output-directory=" + self.report_dir)
+        cwd = os.getcwd()
+        os.chdir(self.report_dir)
+        print("**************  " + os.getcwd())
+        os.system("pdflatex " + self.out_file + " -output-directory=" + self.report_dir + " -output-format=pdf")
+        os.chdir(cwd)
+        print("**************  " + os.getcwd())
+
 
     def get_imports(self):
         # r = ""
@@ -76,6 +91,8 @@ class Report(object):
         \\usepackage[utf8]{inputenc}
         \\usepackage{listings}
         \\usepackage{url}
+        \\usepackage{multirow}
+        \\usepackage{seqsplit}
         
         \\definecolor{ferrarired}{rgb}{1.0, 0.11, 0.0}
         \\definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}
@@ -85,6 +102,8 @@ class Report(object):
         \\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
         
         \\newcommand{\\icon}[1]{\\includegraphics[height=12pt]{#1}}
+        \\newcommand{\\hash}[1]{{\\ttfamily\\seqsplit{#1}}}
+
         """
         r += "\\setlength{\\arrayrulewidth}{0.3mm}\n"
         r += "\\setlength{\\tabcolsep}{18pt}\n"
@@ -119,36 +138,12 @@ class Report(object):
         return r
 
     def create_pie_chart(self, info, medium, high, low):
-        r = ""
-        r += "\\begin{table}[H]\n"
-        r += "\\centering\n"
-        r += "\\begin{tikzpicture}\n"
+        file = "/home/miki/Documents/GITHUB/AndroidPermissions/web/pie/pie_chart.html"
+        self.pie_chart_generator.write_results_to_html_file(file, info=info,
+                                                            medium=medium,
+                                                            high=high,
+                                                            low=low)
 
-        r += "\\pie[ color ={ cyan!70 , orange!70 , red!70 , yellow!70}, pos ={8 ,0} , explode =0.1, text=pin, rotate=0, after number=\,\%]{"
-        if str(info) == '0.00':
-            r += str(info) + "/,"
-        else:
-            r += str(info) + "/INFO,"
-
-        if str(medium) == '0.00':
-            r += str(medium) + "/,"
-        else:
-            r += str(medium) + "/MEDIUM,"
-
-        if str(high) == '0.00':
-            r += str(high) + "/,"
-        else:
-            r += str(high) + "/HIGH,"
-
-        if str(low) == '0.00':
-            r += str(low) + "/}\n"
-        else:
-            r += str(low) + "/LOW}\n"
-
-        r += "\\end{tikzpicture}\n"
-        r += "\\caption{Findings Distribution}\label{statistics}\n"
-        r += "\\end{table}\n"
-        return r
 
     def create_findings_table(self):
         r = ""
@@ -158,26 +153,29 @@ class Report(object):
         for root, dirs, files in os.walk(os.path.join(self.report_dir, 'vulns')):
             i = 0
             for file in fnmatch.filter(files, "*.json"):
-                jf = json.load(open(os.path.join(root, file)))
-                for entry in jf['findings']:
-                    i += 1
-                    finding = {"entry": entry}
-                    title = "\\newline (".join(entry['title'].split("("))
+                if "obfuscation" in file or "signature" in file:
+                    pass
+                else:
+                    jf = json.load(open(os.path.join(root, file)))
+                    for entry in jf['findings']:
+                        i += 1
+                        finding = {"entry": entry}
+                        title = "\\newline (".join(entry['title'].split("("))
 
-                    if 'info' in entry['stat']:
-                        finding["color"] = "color{deepskyblue}"
-                        r += "\tA" + str(i) + "&" + title + "& \\color{deepskyblue}\\textbf{Info} \\\\\n"
-                    elif 'medium' in entry['stat']:
-                        finding["color"] = "color{orange(colorwheel)}"
-                        r += "\tA" + str(i) + "&" + title + "& \\color{orange(colorwheel)}\\textbf{Medium} \\\\\n"
-                    elif 'high' in entry['stat']:
-                        finding["color"] = "color{ferrarired}"
-                        r += "\tA" + str(i) + "&" + title + "& \\color{ferrarired}\\textbf{High} \\\\\n"
-                    elif 'low' in entry['stat']:
-                        finding["color"] = "color{amber}"
-                        r += "\tA" + str(i) + "&" + title + "& \\color{amber}\\textbf{Low} \\\\\n"
-                    r += "\\hline\\\\"
-                    self.all_findings[str(i)] = finding
+                        if 'info' in entry['stat']:
+                            finding["color"] = "color{deepskyblue}"
+                            r += "\tA" + str(i) + "&" + title + "& \\color{deepskyblue}\\textbf{Info} \\\\\n"
+                        elif 'medium' in entry['stat']:
+                            finding["color"] = "color{orange(colorwheel)}"
+                            r += "\tA" + str(i) + "&" + title + "& \\color{orange(colorwheel)}\\textbf{Medium} \\\\\n"
+                        elif 'high' in entry['stat']:
+                            finding["color"] = "color{ferrarired}"
+                            r += "\tA" + str(i) + "&" + title + "& \\color{ferrarired}\\textbf{High} \\\\\n"
+                        elif 'low' in entry['stat']:
+                            finding["color"] = "color{amber}"
+                            r += "\tA" + str(i) + "&" + title + "& \\color{amber}\\textbf{Low} \\\\\n"
+                        r += "\\hline\\\\"
+                        self.all_findings[str(i)] = finding
         r += "\t\\end{longtable}\n"
         return r
 
@@ -232,17 +230,21 @@ class Report(object):
         total = 0
         for root, dirs, files in os.walk(os.path.join(self.report_dir, 'vulns')):
             for file in fnmatch.filter(files, "*.json"):
-                jf = json.load(open(os.path.join(root, file)))
-                for entry in jf['findings']:
-                    total += 1
-                    if 'info' in entry['stat']:
-                        info += 1
-                    elif 'medium' in entry['stat']:
-                        medium += 1
-                    elif 'high' in entry['stat']:
-                        high += 1
-                    elif 'low' in entry['stat']:
-                        low += 1
+                if "obfuscation" in file or "signature" in file:
+                    pass
+                else:
+                    jf = json.load(open(os.path.join(root, file)))
+
+                    for entry in jf['findings']:
+                        total += 1
+                        if 'medium' in entry['stat']:
+                            medium += 1
+                        elif 'info' in entry['stat']:
+                            info += 1
+                        elif 'high' in entry['stat']:
+                            high += 1
+                        elif 'low' in entry['stat']:
+                            low += 1
         # print("info: " +str(info) + " medium: " + str(medium) + " high : " + str(high) + " low: " + str(low))
         try:
             return {
@@ -260,30 +262,114 @@ class Report(object):
 
             }
 
+    def get_pie_chart(self):
+        r = ""
+        r += "\\begin{figure}[H]\n"
+        r += "\\centering\n"
+        r += "\t\\includegraphics[scale=0.5]{" + self.report_dir + "/pie_chart.png}\n"
+        r += "\\end{figure}\n"
+        return r
+
     def get_chord_visualiation(self):
         r = ""
         r += "\\begin{figure}[H]\n"
-        r += "\t\\includegraphics[scale=0.4]{" + self.report_dir + "/chord_diagram.png}"
+        r += "\t\\includegraphics[scale=0.45]{" + self.report_dir + "/chord_diagram.png}"
         r += "\\end{figure}"
         return r
 
     def get_hot_spot_visualization(self):
         r = ""
         r += "\\begin{figure}[H]\n"
-        r+="\\centering\n"
+        r += "\\centering\n"
         r += "\t\\includegraphics[scale=0.5]{" + self.report_dir + "/hotspot.png}"
         r += "\\end{figure}"
-        r += "\\begin{longtable}{p{0.5cm} p{10cm}}\n"
-        r += "\\rowcolor{red} Index & Class \\\\\n"
-        r += "1 & \\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity$1.smali} \\\\\n"
-        r += "2 & \\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity$1.smali} \\\\\n"
-        r += "3 & \\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity$1.smali} \\\\\n"
-        r += "4 & \\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity$1.smali} \\\\\n"
-        r += "5 & \\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity$1.smali} \\\\\n"
-        r += "6 & \\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity$1.smali} \\\\\n"
-        r += "7 & \\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_termux/app/smali/com/termux/app/TermuxActivity$1.smali} \\\\\n"
+        r += "\\begin{longtable}{p{0.3cm} p{12cm}}\n"
+        r += "\\rowcolor{orange} Index & Class \\\\\n"
+
+        with open(os.path.join(self.report_dir, 'hotspot.json'), 'r') as f:
+            d = json.load(f)
+
+        sorted_d = sorted(d.items(), key=operator.itemgetter(1), reverse=True)
+
+        i = 0
+        for finding in sorted_d:
+            if i < 10:
+                r += str(i+1) + " & \\path{" + finding[0] + "} \\\\\n"
+                i += 1
+            else:
+                break
         r += "\t\\end{longtable}\n"
         return r
+
+    def __escape_characters(self, text):
+        s = "\\_".join(text.split("_"))
+        return s
+
+    def get_signature(self):
+        try:
+            file = os.path.join(self.report_dir, 'vulns', 'signature.json')
+            with open(file, 'r') as f:
+                d = json.load(f)
+                f.close()
+
+            dictionary = {
+                "owner": "Owner",
+                "issuer": "Issuer",
+                "serial_number": "Serial Number",
+                "md5": "MD5",
+                "sha1": "SHA1",
+                "sha256": "SHA256",
+                "algorithm": "Algorithm"
+            }
+            r = "\\section{Signature}\n"
+            r += "\t\\begin{longtable}{p{1.5cm} p{12.5cm} }\n"
+
+            for k in d['findings']:
+                if "sha" or "md5" in k:
+                    r += "\\textbf{" + dictionary[k] + "} & \\hash{" + d['findings'][k] + "}\\\\ \n"
+                else:
+                    r += "\\textbf{" + dictionary[k] + "} & " + str(d['findings'][k]) + "\\\\ \n"
+            r += "\t\\end{longtable}\n"
+            return r
+        except:
+            return ""
+
+    def get_permissions(self):
+        try:
+            with open(os.path.join(self.report_dir, 'permissions.json'), 'r') as f:
+                d = json.load(f)
+                f.close()
+
+            dictionary = {
+                "normal": "Normal",
+                "dangerous": "Dangerous",
+                "over": "Overprivileged",
+                "under": "Underprivileged",
+                "auto_granted_dangerous_permissions": "Automatically granted dangerous permissions"
+            }
+
+            r = "\\section{PERMISSIONS}\n"
+            r += "\t\\begin{longtable}{p{3cm} p{10cm} }\n"
+            r += "\t\\rowcolor{grannysmithapple!70} Type & List \\\\\n"
+
+            for permission in d:
+                # print(permission)
+
+                i = 0
+                for p in d[permission]:
+                    # print("\t" + self.__escape_characters(p))
+                    if i == 0:
+                        r += dictionary[permission] + " &  " + self.__escape_characters(p) + " \\\\ \n"
+                        i = 1
+                    else:
+                        r += " &  " + self.__escape_characters(p) + " \\\\ \n"
+                r += "\\hline\n"
+
+            r += "\t\\end{longtable}\n"
+            return r
+        except:
+            return ""
+        # pprint.pprint(d)
 
     def generate_report(self):
         pie_rezults = self.compute_findings_distribution()
@@ -296,16 +382,28 @@ class Report(object):
         content += "\\thispagestyle{empty}\n"
         content += "\\cleardoublepage\n"
         content += "\\setcounter{page}{1}\n"
+
+        content += self.get_signature()
+        content += self.get_permissions()
+        content += "\\cleardoublepage\n"
+        content += "\\newpage\n"
+
         content += "\\section{FINDINGS SUMMARY}\label{sec:summary}\n"
-        # content += self.create_pie_chart(pie_rezults["info"], pie_rezults["medium"], pie_rezults["high"], pie_rezults["low"])
+        content += self.get_pie_chart()
+        self.create_pie_chart(pie_rezults["info"], pie_rezults["medium"], pie_rezults["high"], pie_rezults["low"])
         content += self.create_findings_table()
         content += "\\cleardoublepage\n"
-        # content += "\\newpage\n"
+        content += "\\newpage\n"
         content += "\\section{DETAILED FINDINGS}\n"
 
         # pprint.pprint(self.all_findings)
         content += self.create_detailed_findings()
+        content += "\\cleardoublepage\n"
+        content += "\\newpage\n"
+        content += "\\section{VISUALIZATIONS}\n"
+        content += "\\subsection{Chord Diagram - Class Relations}\n"
         content += self.get_chord_visualiation()
+        content += "\\subsection{Hot Spot - System Overview}\n"
         content += self.get_hot_spot_visualization()
         content += "\\end{document}\n"
 

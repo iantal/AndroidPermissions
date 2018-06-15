@@ -1,0 +1,439 @@
+
+        \documentclass[12p]{article}
+        \usepackage[margin=1in, left=1.5in, includefoot]{geometry}
+        \usepackage{longtable, tabu}
+        \usepackage[table, dvipsnames]{xcolor}
+        \usepackage{array,booktabs}
+        \usepackage{color}
+        \usepackage{indentfirst}
+        \usepackage{graphicx}
+        \usepackage{float}
+        \usepackage[utf8]{inputenc}
+        \usepackage{listings}
+        \usepackage{url}
+        \usepackage{multirow}
+        \usepackage{seqsplit}
+        
+        \definecolor{ferrarired}{rgb}{1.0, 0.11, 0.0}
+        \definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}
+        \definecolor{deepskyblue}{rgb}{0.0, 0.75, 1.0}
+        \definecolor{grannysmithapple}{rgb}{0.66, 0.89, 0.63}
+        \definecolor{gray(x11gray)}{rgb}{0.75, 0.75, 0.75}
+        \definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+        
+        \newcommand{\icon}[1]{\includegraphics[height=12pt]{#1}}
+        \newcommand{\hash}[1]{{\ttfamily\seqsplit{#1}}}
+
+        \setlength{\arrayrulewidth}{0.3mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+\setlength{\parindent}{1em}
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\line(1,0){320}\\
+[0.25in]
+\huge{\bfseries Android Analysis Report}
+\line(1,0){320}\\
+[0.5in]
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/logo.png}
+\end{figure}
+\textsl{\LARGE Demo app}\\
+\textsf{\LARGE com.spotify.music}\\
+[2.5in]
+\end{center}
+\begin{flushright}
+\textbf{\large Date 2018-06-14}
+\end{flushright}
+\end{titlepage}
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+\setcounter{page}{1}
+\section{PERMISSIONS}
+	\begin{longtable}{p{3cm} p{10cm} }
+	\rowcolor{grannysmithapple!70} Type & List \\
+Normal &  ACCESS\_NETWORK\_STATE \\ 
+ &  ACCESS\_WIFI\_STATE \\ 
+ &  INTERNET \\ 
+ &  VIBRATE \\ 
+\hline
+Dangerous &  ACCESS\_COARSE\_LOCATION \\ 
+ &  ACCESS\_FINE\_LOCATION \\ 
+ &  RECORD\_AUDIO \\ 
+ &  READ\_EXTERNAL\_STORAGE \\ 
+\hline
+Overprivileged &  C \\ 
+ &  MANAGE\_ACCOUNTS \\ 
+ &  WAKE\_LOCK \\ 
+ &  CHANGE\_WIFI\_MULTICAST\_STATE \\ 
+ &  RECEIVE\_BOOT\_COMPLETED \\ 
+ &  BILLING \\ 
+ &  NFC \\ 
+ &  BLUETOOTH \\ 
+ &  USE\_CREDENTIALS \\ 
+ &  WRITE\_EXTERNAL\_STORAGE \\ 
+ &  DUID\_READ\_PROVIDER \\ 
+ &  SECURED\_BROADCAST \\ 
+ &  BROADCAST\_STICKY \\ 
+ &  MODIFY\_AUDIO\_SETTINGS \\ 
+ &  BLUETOOTH\_ADMIN \\ 
+ &  GET\_ACCOUNTS \\ 
+ &  RECEIVE \\ 
+ &  INTERNAL\_BROADCAST \\ 
+ &  INSTALL\_SHORTCUT \\ 
+ &  READ\_PHONE\_STATE \\ 
+\hline
+Underprivileged &  ACCESS\_FINE\_LOCATION \\ 
+ &  RECORD\_AUDIO \\ 
+ &  ACCESS\_COARSE\_LOCATION \\ 
+ &  VIBRATE \\ 
+\hline
+Automatically granted dangerous permissions &  READ\_CONTACTS \\ 
+ &  WRITE\_CONTACTS \\ 
+ &  ANSWER\_PHONE\_CALLSREAD\_PHONE\_NUMBERS \\ 
+ &  CALL\_PHONE \\ 
+ &  READ\_CALL\_LOG \\ 
+ &  WRITE\_CALL\_LOG \\ 
+ &  ADD\_VOICEMAIL \\ 
+ &  USE\_SIP \\ 
+ &  PROCESS\_OUTGOING\_CALLS \\ 
+\hline
+	\end{longtable}
+\section{FINDINGS SUMMARY}\label{sec:summary}
+\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/report/pie_chart.png}
+\end{figure}
+	\begin{longtable}{p{0.5cm} p{10cm} p{1.5cm}}
+	\rowcolor{grannysmithapple!70} Index & Title & Impact \\
+	A1&MixedContentAnalyser& \color{ferrarired}\textbf{High} \\
+\hline\\	A2&Load cleartext content& \color{ferrarired}\textbf{High} \\
+\hline\\	A3&& \color{amber}\textbf{Low} \\
+\hline\\	A4&Electronic Codebook \newline (ECB) used for encryption& \color{ferrarired}\textbf{High} \\
+\hline\\	A5&Launch Mode of Activity \newline (com. spotify. music. MainActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A6&Launch Mode of Activity \newline (com. spotify. mobile. android. service. LoginActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A7&Launch Mode of Activity \newline (com. spotify. mobile. android. arsenal. ArsenalActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A8&Launch Mode of Activity \newline (com. spotify. mobile. android. ui. activity. DevicePickerActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A9&Launch Mode of Activity \newline (com. spotify. mobile. android. ui. activity. DeviceContextMenuActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A10&Activity \newline (com. spotify. mobile. android. spotlets. waze. WazeReturnActivity) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A11&Launch Mode of Activity \newline (com. spotify. mobile. android. ui. activity. VolumeWidgetActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A12&Launch Mode of Activity \newline (com. spotify. mobile. android. service. ResetPasswordActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A13&Activity \newline (com. sony. snei. np. android. account. oauth. BrowserRedirectReceiverActivity) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A14&Activity \newline (com. spotify. mobile. android. spotlets. share. messenger. MessengerShareActivity) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A15&Launch Mode of Activity \newline (com. spotify. mobile. android. spotlets. myspin. MySpinActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A16&Activity \newline (com. spotify. mobile. android. spotlets. myspin. MySpinBootstrapActivity) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A17&Activity \newline (com. spotify. music. spotlets. magiclink. MagicLinkActivity) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A18&Service \newline (com. spotify. mobile. android. spotlets. androidauto. SpotifyMediaBrowserService) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A19&Broadcast Receiver \newline (com. spotify. music. internal. receiver. MediaButtonReceiver) is not Protected. An intent-filter exists.& \color{ferrarired}\textbf{High} \\
+\hline\\	A20&Service \newline (com. spotify. mobile. android. wear. WearableCommunicationService) is not Protected. An intent-filter exists.& \color{ferrarired}\textbf{High} \\
+\hline\\	A21&Service \newline (com. spotify. mobile. android. spotlets. appprotocol. service. AppProtocolRemoteService) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A22&Broadcast Receiver \newline (com. spotify. mobile. android. spotlets. bmw. registration. BmwConnectedReceiver) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A23&Broadcast Receiver \newline (com. spotify. mobile. android. spotlets. bmw. registration. DisconnectedReceiver) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A24&Broadcast Receiver \newline (com. spotify. mobile. android. spotlets. bmw. registration. BmwConnectInstallReceiver) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A25&Broadcast Receiver \newline (com. spotify. music. spotlets. widget. SpotifyWidget) is not Protected. An intent-filter exists.& \color{ferrarired}\textbf{High} \\
+\hline\\	A26&Broadcast Receiver \newline (com. spotify. music. spotlets. tracker. InstallReferrerReceiver) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A27&Broadcast Receiver \newline (com. spotify. mobile. android. service. bluetooth. BluetoothBroadcastReceiver) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A28&Content Provider \newline (com. spotify. mobile. android. service. media. provider. MediaProvider) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A29&Content Provider \newline (com. bmwgroup. connected. car. contentprovider. AssetsProvider) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A30&Activity \newline (com. spotify. music. features. friendsweekly. findfriends. ui. FindFriendsActivity) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A31&Activity \newline (com. spotify. music. features. friendsweekly. search. ui. SearchFriendsActivity) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A32&Activity \newline (com. spotify. music. features. friendsactivity. friendslist. ui. AvatarListContainerActivity) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A33&Activity \newline (com. spotify. music. features. friendsactivity. storydetails. ui. StoryDetailsActivity) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A34&Activity \newline (com. spotify. mobile. android. sso. AuthorizationActivity) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A35&& \color{amber}\textbf{Low} \\
+\hline\\	\end{longtable}
+\cleardoublepage
+\newpage
+\section{DETAILED FINDINGS}
+\subsection{A1: MixedContentAnalyser}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/bkd.smali}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+
+\subsection{A2: Load cleartext content}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/bdv.smali loadUrl}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/com/spotify/music/podcast/transcripts/TranscriptActivity.smali loadUrl}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/com/spotify/music/podcast/transcripts/TranscriptActivity.smali loadUrl}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+
+\subsection{A3: }
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/bdv$5.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/bwb.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/blv$1.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/blw.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/blw.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/blw.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/blw.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/blw.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/blw.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/blw.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+
+\textit{snip}
+\newline \textsl{For the full list view \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/report}}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+
+\subsection{A4: Electronic Codebook (ECB) used for encryption}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+            Using the same encryption key, in ECB mode data blocks are enciphered individually 
+            from each other and cause identical message blocks to be transformed to identical ciphertext 
+            blocks. The independency of encrypted blocks also implies that the malicious substitution of a 
+            block has no impact on adjacent blocks. As a consequence, data patterns are not well hidden and 
+            message confidentiality may be compromised.
+            
+            On Android, the Cipher API provides access to implementations of cryptographic schemes
+            for the encryption and decryption of arbitrary data. To request an instance of a particular cipher,
+            an application has to invoke the method getInstance, passing a suitable transformation string as
+            parameter. Typically, this value is composed of the desired algorithm name, a mode of operation,
+            and the padding scheme to apply. For example, to request an object instance that provides AES in
+            ECB mode with PKCS5 padding, the transformation AES/ECB/PKCS5Padding has to be specified.
+            
+            While it is indispensable to declare the algorithm to use, explicitly setting the mode and
+            padding may be omitted. To fill the gap, the underlying Cryptographic Service Provider (CSP)
+            relies on predefined values that do not necessarily reflect the recommended practice. Precisely, if
+            the transformation indicates no operation mode, ECB mode is put in place. Moreover, the initially
+            described problem with ECB is not limited to a specific cipher, such as AES but affects all symmetric
+            block ciphers. Stream ciphers and asymmetric cryptosystems are not concerned since they
+            do not involve an operation mode to repeatedly encipher blocks of contiguous data.
+        
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/com/nielsen/app/sdk/c.smali}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended not to use ECB for encryption. Use an asymmetric encryption algorithm instead
+\subsection{A5: Launch Mode of Activity (com. spotify. music. MainActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A6: Launch Mode of Activity (com. spotify. mobile. android. service. LoginActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A7: Launch Mode of Activity (com. spotify. mobile. android. arsenal. ArsenalActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A8: Launch Mode of Activity (com. spotify. mobile. android. ui. activity. DevicePickerActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A9: Launch Mode of Activity (com. spotify. mobile. android. ui. activity. DeviceContextMenuActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A10: Activity (com. spotify. mobile. android. spotlets. waze. WazeReturnActivity) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A11: Launch Mode of Activity (com. spotify. mobile. android. ui. activity. VolumeWidgetActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A12: Launch Mode of Activity (com. spotify. mobile. android. service. ResetPasswordActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A13: Activity (com. sony. snei. np. android. account. oauth. BrowserRedirectReceiverActivity) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A14: Activity (com. spotify. mobile. android. spotlets. share. messenger. MessengerShareActivity) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A15: Launch Mode of Activity (com. spotify. mobile. android. spotlets. myspin. MySpinActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A16: Activity (com. spotify. mobile. android. spotlets. myspin. MySpinBootstrapActivity) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A17: Activity (com. spotify. music. spotlets. magiclink. MagicLinkActivity) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A18: Service (com. spotify. mobile. android. spotlets. androidauto. SpotifyMediaBrowserService) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A19: Broadcast Receiver (com. spotify. music. internal. receiver. MediaButtonReceiver) is not Protected. An intent-filter exists.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A  Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Broadcast Receiver is explicitly exported.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A20: Service (com. spotify. mobile. android. wear. WearableCommunicationService) is not Protected. An intent-filter exists.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A  Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Service is explicitly exported.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A21: Service (com. spotify. mobile. android. spotlets. appprotocol. service. AppProtocolRemoteService) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A22: Broadcast Receiver (com. spotify. mobile. android. spotlets. bmw. registration. BmwConnectedReceiver) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A23: Broadcast Receiver (com. spotify. mobile. android. spotlets. bmw. registration. DisconnectedReceiver) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A24: Broadcast Receiver (com. spotify. mobile. android. spotlets. bmw. registration. BmwConnectInstallReceiver) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A25: Broadcast Receiver (com. spotify. music. spotlets. widget. SpotifyWidget) is not Protected. An intent-filter exists.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A  Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Broadcast Receiver is explicitly exported.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A26: Broadcast Receiver (com. spotify. music. spotlets. tracker. InstallReferrerReceiver) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A27: Broadcast Receiver (com. spotify. mobile. android. service. bluetooth. BluetoothBroadcastReceiver) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A28: Content Provider (com. spotify. mobile. android. service. media. provider. MediaProvider) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Content Provider is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A29: Content Provider (com. bmwgroup. connected. car. contentprovider. AssetsProvider) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Content Provider is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A30: Activity (com. spotify. music. features. friendsweekly. findfriends. ui. FindFriendsActivity) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A31: Activity (com. spotify. music. features. friendsweekly. search. ui. SearchFriendsActivity) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A32: Activity (com. spotify. music. features. friendsactivity. friendslist. ui. AvatarListContainerActivity) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A33: Activity (com. spotify. music. features. friendsactivity. storydetails. ui. StoryDetailsActivity) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A34: Activity (com. spotify. mobile. android. sso. AuthorizationActivity) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A35: }
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/aco.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/aeg.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/bti.smali forName}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/avj.smali forName}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/avj.smali forName}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/avj.smali forName}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/avj.smali getSuperclass}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/avj.smali getSuperclass}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/aza.smali forName}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/acr.smali invoke}
+
+
+\textit{snip}
+\newline \textsl{For the full list view \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/report}}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+
+\cleardoublepage
+\newpage
+\section{VISUALIZATIONS}
+\subsection{Chord Diagram - Class Relations}
+\begin{figure}[H]
+	\includegraphics[scale=0.45]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/report/chord_diagram.png}\end{figure}\subsection{Hot Spot - System Overview}
+\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/report/hotspot.png}\end{figure}\begin{longtable}{p{0.3cm} p{12cm}}
+\rowcolor{orange} Index & Class \\
+1 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/com/nielsen/app/sdk/AppSdk.smali} \\
+2 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/com/nielsen/app/sdk/AppLaunchMeasurementManager.smali} \\
+3 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/azm.smali} \\
+4 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/com/spotify/android/slf4j/SpotifyLoggerAdapter.smali} \\
+5 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/com/nielsen/app/sdk/j.smali} \\
+6 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/aaf.smali} \\
+7 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/android/support/v7/widget/RecyclerView.smali} \\
+8 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/blw.smali} \\
+9 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/com/nielsen/app/sdk/f.smali} \\
+10 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_spotify_music/app/smali/com/fasterxml/jackson/databind/util/ClassUtil.smali} \\
+	\end{longtable}
+\end{document}

@@ -1,6 +1,7 @@
 import pprint
 import sys
 import os
+import json
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, BASE_DIR)
@@ -64,3 +65,6 @@ class PermissionsClassifier(object):
                 **self.get_under_and_over_privileges(),
                 **self.get_auto_granted_dangerous_permissions()}
 
+    def write_results(self, out_file):
+        with open(out_file, "w") as f:
+            f.write(json.dumps(self.get_classification()))

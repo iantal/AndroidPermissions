@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}PERMISSIONS}{1}
+\contentsline {section}{\numberline {2}FINDINGS SUMMARY}{1}
+\contentsline {section}{\numberline {3}DETAILED FINDINGS}{3}
+\contentsline {subsection}{\numberline {3.1}A1: }{3}
+\contentsline {subsection}{\numberline {3.2}A2: Application Data can be Backed up}{3}
+\contentsline {subsection}{\numberline {3.3}A3: Launch Mode of Activity (com. termux. app. TermuxActivity) is not standard.}{4}
+\contentsline {subsection}{\numberline {3.4}A4: Activity (com. termux. HomeActivity) is not Protected. An intent-filter exists.}{4}
+\contentsline {subsection}{\numberline {3.5}A5: TaskAffinity is set for Activity (com. termux. filepicker. TermuxFileReceiverActivity)}{4}
+\contentsline {subsection}{\numberline {3.6}A6: Activity (com. termux. filepicker. TermuxFileReceiverActivity) is not Protected. An intent-filter exists.}{4}
+\contentsline {subsection}{\numberline {3.7}A7: Content Provider (com. termux. app. TermuxOpenReceiver\$ ContentProvider) is not Protected. [android:exported=true]}{5}
+\contentsline {subsection}{\numberline {3.8}A8: }{5}
+\contentsline {section}{\numberline {4}VISUALIZATIONS}{6}
+\contentsline {subsection}{\numberline {4.1}Chord Diagram - Class Relations}{6}
+\contentsline {subsection}{\numberline {4.2}Hot Spot - System Overview}{7}

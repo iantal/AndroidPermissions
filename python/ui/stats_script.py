@@ -18,6 +18,12 @@ from recon.extractor import Extractor
 from visualize.screenshot import ScreenshotTaker
 from visualize.webserver import SimpleHttpServer
 from visualize.visualize import *
+from visualize.pie_chart import PieChartGenerator
+from vulns.report import Report
+
+
+from utils.directory_analyser import DirectoryAnalyser
+from analyse.permissions_classifier import PermissionsClassifier
 
 import plotly.offline as offline
 import plotly.graph_objs as go
@@ -60,10 +66,6 @@ def extract_apk(apk):
     e.extract_java_source_code(jd_core)
 
 
-def get_package_name(base_dir):
-    xml_file = os.path.join(base_dir, 'app', 'AndroidManifest.xml')
-    parser = XMLParser(xml_file)
-    return parser.get_package_name()
 
 
 def take_screenshot(base_dir):
@@ -120,10 +122,17 @@ def analyse_files(directory):
                 t0 = time.time()
                 # print(get_package_name(dirpath))
 
-                package_name = get_package_name(dirpath)
-                setup_visualizations(dirpath, package_name)
                 # TODO: uncomment after testing
                 # extract_apk(apk)
+
+                xml_file = os.path.join(dirpath, 'app', 'AndroidManifest.xml')
+                parser = XMLParser(xml_file)
+                d = DirectoryAnalyser(dirpath)
+                perm_classifier = PermissionsClassifier(d, parser)
+                perm_classifier.write_results(os.path.join(dirpath, 'report', 'permissions.json'))
+
+                package_name = parser.get_package_name()
+                setup_visualizations(dirpath, package_name)
 
                 apk_analyser = ApplicationAnalyzer(dirpath)
                 apk_analyser.find_crypto_vulns()
@@ -132,12 +141,12 @@ def analyse_files(directory):
                 print('\033[92m' + "[+] " + '\033[0m' + "Logs")
                 apk_analyser.find_manifest_vulns()
                 print('\033[92m' + "[+] " + '\033[0m' + "Manifest")
-                apk_analyser.find_obfuscation()
-                print('\033[92m' + "[+] " + '\033[0m' + "Obfuscation")
+                # apk_analyser.find_obfuscation()
+                # print('\033[92m' + "[+] " + '\033[0m' + "Obfuscation")
                 apk_analyser.find_reflection()
                 print('\033[92m' + "[+] " + '\033[0m' + "Reflection")
-                apk_analyser.find_signature()
-                print('\033[92m' + "[+] " + '\033[0m' + "Signature")
+                # apk_analyser.find_signature()
+                # print('\033[92m' + "[+] " + '\033[0m' + "Signature")
                 apk_analyser.find_webview_vulns()
                 print('\033[92m' + "[+] " + '\033[0m' + "WebView")
 
@@ -155,10 +164,14 @@ def analyse_files(directory):
 
                 ha = HotspotVisualizer(dirpath)
                 dataa = json.load(open(os.path.join(dirpath, 'report', 'hotspot.json')))
-
                 ha.get_directory_tree(dataa, "/home/miki/Documents/GITHUB/AndroidPermissions/web/hotspot/a.json")
 
+                report_dir = os.path.join(dirpath, 'report')
+                pcg = PieChartGenerator()
+                report = Report(report_dir, pcg, "Demo app", package_name)
+                report.generate_report()
                 take_screenshot(dirpath)
+                report.convert_tex_to_pdf()
 
                 t1 = time.time()
                 total = t1 - t0

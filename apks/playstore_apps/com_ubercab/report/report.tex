@@ -1,0 +1,297 @@
+
+        \documentclass[12p]{article}
+        \usepackage[margin=1in, left=1.5in, includefoot]{geometry}
+        \usepackage{longtable, tabu}
+        \usepackage[table, dvipsnames]{xcolor}
+        \usepackage{array,booktabs}
+        \usepackage{color}
+        \usepackage{indentfirst}
+        \usepackage{graphicx}
+        \usepackage{float}
+        \usepackage[utf8]{inputenc}
+        \usepackage{listings}
+        \usepackage{url}
+        \usepackage{multirow}
+        \usepackage{seqsplit}
+        
+        \definecolor{ferrarired}{rgb}{1.0, 0.11, 0.0}
+        \definecolor{orange(colorwheel)}{rgb}{1.0, 0.5, 0.0}
+        \definecolor{deepskyblue}{rgb}{0.0, 0.75, 1.0}
+        \definecolor{grannysmithapple}{rgb}{0.66, 0.89, 0.63}
+        \definecolor{gray(x11gray)}{rgb}{0.75, 0.75, 0.75}
+        \definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+        
+        \newcommand{\icon}[1]{\includegraphics[height=12pt]{#1}}
+        \newcommand{\hash}[1]{{\ttfamily\seqsplit{#1}}}
+
+        \setlength{\arrayrulewidth}{0.3mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+\setlength{\parindent}{1em}
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\line(1,0){320}\\
+[0.25in]
+\huge{\bfseries Android Analysis Report}
+\line(1,0){320}\\
+[0.5in]
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/logo.png}
+\end{figure}
+\textsl{\LARGE Demo app}\\
+\textsf{\LARGE com.ubercab}\\
+[2.5in]
+\end{center}
+\begin{flushright}
+\textbf{\large Date 2018-06-14}
+\end{flushright}
+\end{titlepage}
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+\setcounter{page}{1}
+\section{PERMISSIONS}
+	\begin{longtable}{p{3cm} p{10cm} }
+	\rowcolor{grannysmithapple!70} Type & List \\
+Normal &  ACCESS\_NETWORK\_STATE \\ 
+ &  ACCESS\_WIFI\_STATE \\ 
+ &  INTERNET \\ 
+ &  WAKE\_LOCK \\ 
+\hline
+Dangerous &  ACCESS\_COARSE\_LOCATION \\ 
+ &  ACCESS\_FINE\_LOCATION \\ 
+ &  RECORD\_AUDIO \\ 
+ &  READ\_PHONE\_STATE \\ 
+ &  SEND\_SMS \\ 
+ &  WRITE\_EXTERNAL\_STORAGE \\ 
+\hline
+Overprivileged &  READ\_SMS \\ 
+ &  C \\ 
+ &  MANAGE\_ACCOUNTS \\ 
+ &  READ\_CONTACTS \\ 
+ &  READ\_EXTERNAL\_STORAGE \\ 
+ &  BIND\_GET\_INSTALL\_REFERRER\_SERVICE \\ 
+ &  VIBRATE \\ 
+ &  RECEIVE\_SMS \\ 
+ &  CHANGE\_WIFI\_STATE \\ 
+ &  BLUETOOTH \\ 
+ &  USE\_CREDENTIALS \\ 
+ &  CAMERA \\ 
+ &  MODIFY\_AUDIO\_SETTINGS \\ 
+ &  GET\_ACCOUNTS \\ 
+ &  READ\_PROFILE \\ 
+ &  RECEIVE \\ 
+ &  CALL\_PHONE \\ 
+ &  READ\_GSERVICES \\ 
+\hline
+Underprivileged &  RECORD\_AUDIO \\ 
+ &  DUMP \\ 
+\hline
+Automatically granted dangerous permissions &  WRITE\_CONTACTS \\ 
+ &  ANSWER\_PHONE\_CALLSREAD\_PHONE\_NUMBERS \\ 
+ &  READ\_CALL\_LOG \\ 
+ &  WRITE\_CALL\_LOG \\ 
+ &  ADD\_VOICEMAIL \\ 
+ &  USE\_SIP \\ 
+ &  PROCESS\_OUTGOING\_CALLS \\ 
+ &  RECEIVE\_WAP\_PUSH \\ 
+ &  RECEIVE\_MMS \\ 
+\hline
+	\end{longtable}
+\section{FINDINGS SUMMARY}\label{sec:summary}
+\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/report/pie_chart.png}
+\end{figure}
+	\begin{longtable}{p{0.5cm} p{10cm} p{1.5cm}}
+	\rowcolor{grannysmithapple!70} Index & Title & Impact \\
+	A1&& \color{amber}\textbf{Low} \\
+\hline\\	A2&Electronic Codebook \newline (ECB) used for encryption& \color{ferrarired}\textbf{High} \\
+\hline\\	A3&Launch Mode of Activity \newline (com. ubercab. presidio. app. core. root. RootActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A4&Broadcast Receiver \newline (com. ubercab. install\_ referrer. core. InstallReferrerReceiver) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A5&Service \newline (com. ubercab. external\_ api. v1. UberApiService) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A6&Service \newline (com. ubercab. login. AuthenticationService) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A7&Launch Mode of Activity \newline (com. braintreepayments. api. BraintreeBrowserSwitchActivity) is not standard.& \color{ferrarired}\textbf{High} \\
+\hline\\	A8&Activity \newline (com. braintreepayments. api. BraintreeBrowserSwitchActivity) is not Protected. An intent-filter exists.& \color{ferrarired}\textbf{High} \\
+\hline\\	A9&Activity \newline (com. ubercab. presidio. styleguide. MainActivity) is not Protected. [android:exported=true]& \color{ferrarired}\textbf{High} \\
+\hline\\	A10&High Intent Priority \newline (999) [android:priority]& \color{orange(colorwheel)}\textbf{Medium} \\
+\hline\\	A11&& \color{amber}\textbf{Low} \\
+\hline\\	\end{longtable}
+\cleardoublepage
+\newpage
+\section{DETAILED FINDINGS}
+\subsection{A1: }
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/gv.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/sg.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/sg.smali
+Landroid/util/Log -> e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/dmd.smali
+Landroid/util/Log -> d(Ljava/lang/String;Ljava/lang/String;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/np.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/np.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/czi.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/adu.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/adu.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/adu.smali
+Landroid/util/Log -> w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)}
+
+
+\textit{snip}
+\newline \textsl{For the full list view \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/report}}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+
+\subsection{A2: Electronic Codebook (ECB) used for encryption}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+            Using the same encryption key, in ECB mode data blocks are enciphered individually 
+            from each other and cause identical message blocks to be transformed to identical ciphertext 
+            blocks. The independency of encrypted blocks also implies that the malicious substitution of a 
+            block has no impact on adjacent blocks. As a consequence, data patterns are not well hidden and 
+            message confidentiality may be compromised.
+            
+            On Android, the Cipher API provides access to implementations of cryptographic schemes
+            for the encryption and decryption of arbitrary data. To request an instance of a particular cipher,
+            an application has to invoke the method getInstance, passing a suitable transformation string as
+            parameter. Typically, this value is composed of the desired algorithm name, a mode of operation,
+            and the padding scheme to apply. For example, to request an object instance that provides AES in
+            ECB mode with PKCS5 padding, the transformation AES/ECB/PKCS5Padding has to be specified.
+            
+            While it is indispensable to declare the algorithm to use, explicitly setting the mode and
+            padding may be omitted. To fill the gap, the underlying Cryptographic Service Provider (CSP)
+            relies on predefined values that do not necessarily reflect the recommended practice. Precisely, if
+            the transformation indicates no operation mode, ECB mode is put in place. Moreover, the initially
+            described problem with ECB is not limited to a specific cipher, such as AES but affects all symmetric
+            block ciphers. Stream ciphers and asymmetric cryptosystems are not concerned since they
+            do not involve an operation mode to repeatedly encipher blocks of contiguous data.
+        
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/erp.smali}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/erp.smali}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/com/paypal/android/sdk/eg.smali}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/com/paypal/android/sdk/eg.smali}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/com/paypal/android/sdk/onetouch/core/encryption/OtcCrypto.smali}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/com/axis/axismerchantsdk/util/CryptLib.smali}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/com/axis/axismerchantsdk/util/UPIJSInterface.smali}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/com/axis/axismerchantsdk/util/UPIJSInterface.smali}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended not to use ECB for encryption. Use an asymmetric encryption algorithm instead
+\subsection{A3: Launch Mode of Activity (com. ubercab. presidio. app. core. root. RootActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A4: Broadcast Receiver (com. ubercab. install\_ referrer. core. InstallReferrerReceiver) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Broadcast Receiver is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A5: Service (com. ubercab. external\_ api. v1. UberApiService) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A6: Service (com. ubercab. login. AuthenticationService) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A7: Launch Mode of Activity (com. braintreepayments. api. BraintreeBrowserSwitchActivity) is not standard.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+An Activity should not be having the launch mode attribute set to "singleTask/singleInstance" as it becomes root Activity and it is possible for other applications to read the contents of the calling Intent.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is required to use the "standard" launch mode attribute when sensitive information is included in an Intent.
+\subsection{A8: Activity (com. braintreepayments. api. BraintreeBrowserSwitchActivity) is not Protected. An intent-filter exists.}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A  Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Activity is explicitly exported.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A9: Activity (com. ubercab. presidio. styleguide. MainActivity) is not Protected. [android:exported=true]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+A Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission.
+\subsection{A10: High Intent Priority (999) [android:priority]}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+By setting an intent priority higher than another intent, the app effectively overrides other requests.
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+If possible, do not set higher priorities for specific intents in the manifest file.
+\subsection{A11: }
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_sheet.png} Description}
+
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_magnifier.png} Evidence}
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/car.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/car.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/etl.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/gv.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/bli.smali forName}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/adu.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/adu.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/eug.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/jg.smali invoke}
+
+\path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/jg.smali invoke}
+
+
+\textit{snip}
+\newline \textsl{For the full list view \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/report}}
+\subsubsection*{\protect\icon{/home/miki/Documents/GITHUB/AndroidPermissions/python/vulns/report_icons/basic_todo.png} Recommendation}
+
+\cleardoublepage
+\newpage
+\section{VISUALIZATIONS}
+\subsection{Chord Diagram - Class Relations}
+\begin{figure}[H]
+	\includegraphics[scale=0.45]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/report/chord_diagram.png}\end{figure}\subsection{Hot Spot - System Overview}
+\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.5]{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/report/hotspot.png}\end{figure}\begin{longtable}{p{0.3cm} p{12cm}}
+\rowcolor{orange} Index & Class \\
+1 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/gx.smali} \\
+2 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/dmi.smali} \\
+3 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/gt.smali} \\
+4 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/com/crashlytics/android/core/CrashlyticsCore.smali} \\
+5 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/com/datami/smi/b/m.smali} \\
+6 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/elg.smali} \\
+7 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/com/facebook/stetho/common/LogUtil.smali} \\
+8 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/go.smali} \\
+9 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/gq.smali} \\
+10 & \path{/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_ubercab/app/smali/com/google/android/gms/dynamite/DynamiteModule.smali} \\
+	\end{longtable}
+\end{document}

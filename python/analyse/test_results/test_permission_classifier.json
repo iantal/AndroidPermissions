@@ -1,0 +1,38 @@
+{
+  "normal": [
+    "ACCESS_NETWORK_STATE",
+    "INTERNET"
+  ],
+  "dangerous": [
+    "ACCESS_COARSE_LOCATION",
+    "ACCESS_FINE_LOCATION",
+    "WRITE_EXTERNAL_STORAGE"
+  ],
+  "over": [
+    "",
+    "READ_PHONE_STATE",
+    "READ_CALL_LOG",
+    "SEND_SMS",
+    "READ_CONTACTS",
+    "USE_CREDENTIALS",
+    "GET_ACCOUNTS",
+    "READ_PROFILE",
+    "READ_EXTERNAL_STORAGE"
+  ],
+  "under": [
+    "ACCESS_FINE_LOCATION"
+  ],
+  "auto_granted_dangerous_permissions": [
+    "WRITE_CONTACTS",
+    "ANSWER_PHONE_CALLSREAD_PHONE_NUMBERS",
+    "CALL_PHONE",
+    "WRITE_CALL_LOG",
+    "ADD_VOICEMAIL",
+    "USE_SIP",
+    "PROCESS_OUTGOING_CALLS",
+    "RECEIVE_SMS",
+    "READ_SMS",
+    "RECEIVE_WAP_PUSH",
+    "RECEIVE_MMS"
+  ]
+}

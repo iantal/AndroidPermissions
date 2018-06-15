@@ -66,10 +66,12 @@ if __name__ == "__main__":
 
     p = XMLParser(xml_file)
     base_dir = '/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank'
+
     d = DirectoryAnalyser(base_dir)
     perm_classifier = PermissionsClassifier(d, p)
-    result = perm_classifier.get_classification()
-    pprint.pprint(result)
+    # result = perm_classifier.get_classification()
+    # pprint.pprint(result)
+    perm_classifier.write_results("/home/miki/Documents/GITHUB/AndroidPermissions/python/analyse/test_results/test_permission_classifier.json")
 
     # print("Applications")
     # test_get_application(p)

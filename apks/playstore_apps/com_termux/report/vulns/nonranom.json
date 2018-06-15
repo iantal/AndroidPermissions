@@ -1,1 +1,0 @@
-{"findings": [{"title": "Non-random XOR", "stat": "high", "description": "Test description", "recommendation": "Test recommendation", "evidence": ["/app/smali/com/termux/view/TerminalView.smali xor-int/lit8 v0, v0, -0x1", "/app/smali/android/support/v4/widget/a.smali xor-int/lit8 v1, v1, -0x1", "/app/smali/com/termux/terminal/c.smali xor-int/lit8 v3, v3, -0x1"]}]}

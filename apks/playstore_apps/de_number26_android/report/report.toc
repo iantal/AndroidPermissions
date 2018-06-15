@@ -1,0 +1,23 @@
+\contentsline {section}{\numberline {1}Signature}{1}
+\contentsline {section}{\numberline {2}PERMISSIONS}{1}
+\contentsline {section}{\numberline {3}FINDINGS SUMMARY}{2}
+\contentsline {section}{\numberline {4}DETAILED FINDINGS}{5}
+\contentsline {subsection}{\numberline {4.1}A1: Access local ressources}{5}
+\contentsline {subsection}{\numberline {4.2}A2: }{5}
+\contentsline {subsection}{\numberline {4.3}A3: Launch Mode of Activity (de. number26. machete. android. ui. landing. SplashActivity) is not standard.}{6}
+\contentsline {subsection}{\numberline {4.4}A4: Activity (de. number26. machete. android. deeplink. DeepLinkActivity) is not Protected. An intent-filter exists.}{6}
+\contentsline {subsection}{\numberline {4.5}A5: Activity (de. number26. machete. android. ui. HomeActivity) is not Protected. An intent-filter exists.}{6}
+\contentsline {subsection}{\numberline {4.6}A6: Broadcast Receiver (com. adjust. sdk. AdjustReferrerReceiver) is not Protected. [android:exported=true]}{6}
+\contentsline {subsection}{\numberline {4.7}A7: Service (de. number26. machete. android. refactor. data. remote\_ message. reception. FirebaseMessageCapturerService) is not Protected. An intent-filter exists.}{7}
+\contentsline {subsection}{\numberline {4.8}A8: Service (de. number26. machete. android. refactor. data. remote\_ message. registration. FirebaseDeviceTokenService) is not Protected. An intent-filter exists.}{7}
+\contentsline {subsection}{\numberline {4.9}A9: Launch Mode of Activity (com. salesforce. android. chat. ui. internal. chatfeed. ChatFeedActivity) is not standard.}{7}
+\contentsline {subsection}{\numberline {4.10}A10: Launch Mode of Activity (com. salesforce. android. chat. ui. internal. prechat. PreChatActivity) is not standard.}{8}
+\contentsline {subsection}{\numberline {4.11}A11: Service (com. google. firebase. messaging. FirebaseMessagingService) is not Protected. [android:exported=true]}{8}
+\contentsline {subsection}{\numberline {4.12}A12: Service (com. google. firebase. iid. FirebaseInstanceIdService) is not Protected. [android:exported=true]}{8}
+\contentsline {subsection}{\numberline {4.13}A13: Activity (de. idnow. sdk. Activities\_ VideoLiveStreamActivity\_ IceLink) is not Protected. [android:exported=true]}{8}
+\contentsline {subsection}{\numberline {4.14}A14: High Intent Priority (900) [android:priority]}{9}
+\contentsline {subsection}{\numberline {4.15}A15: High Intent Priority (900) [android:priority]}{9}
+\contentsline {subsection}{\numberline {4.16}A16: }{9}
+\contentsline {section}{\numberline {5}VISUALIZATIONS}{10}
+\contentsline {subsection}{\numberline {5.1}Chord Diagram - Class Relations}{10}
+\contentsline {subsection}{\numberline {5.2}Hot Spot - System Overview}{11}
