@@ -241,16 +241,16 @@ class CryptoConstantEncryptionKeys(object):
                     for call in method['calls']:
                         if 'Ljavax/crypto/spec/SecretKeySpec' in call['to_class'] and 'init' in call['to_method']:
                             # print(method)
-                            print("Before: " + cl['path'])
-                            print("After: " + cl['path'])
+                            # print("Before: " + cl['path'])
+                            # print("After: " + cl['path'])
                             found = False
                             if self.check_call_params(call):
                                 last_p = self.get_last_param(call)
-                                print("Last param: " + last_p + "  " + str(call['params'][last_p]['value']))
+                                # print("Last param: " + last_p + "  " + str(call['params'][last_p]['value']))
 
                                 try:
                                     if call['params'][last_p]['value'] not in asymetric_encryption_schemes:
-                                        print("Param " + last_p + " val:  " + str(call['params'][last_p]['value']))
+                                        # print("Param " + last_p + " val:  " + str(call['params'][last_p]['value']))
                                         evidence.append(cl["path"])
                                         d[cl["path"]] += 1
                                 except KeyError:
@@ -271,16 +271,16 @@ class CryptoConstantEncryptionKeys(object):
                                         found = True
 
                             if found:
-                                print(cl['path'])
+                                # print(cl['path'])
                                 last_p = self.get_last_param(call)
-                                print("Last param: " + last_p)
+                                # print("Last param: " + last_p)
                                 for m in method['local_method_params']:
                                     if last_p in m['name'] and m['value'] not in asymetric_encryption_schemes:
                                         evidence.append(cl["path"])
                                         d[cl["path"]] += 1
                                 try:
                                     if call['params'][last_p]['value'] not in asymetric_encryption_schemes:
-                                        print("Param " + last_p + " val:  " + str(call['params'][last_p]['value']))
+                                        # print("Param " + last_p + " val:  " + str(call['params'][last_p]['value']))
                                         evidence.append(cl["path"])
                                         d[cl["path"]] += 1
                                 except KeyError:

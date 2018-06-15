@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bb13603-be0e-45bf-888f-a0ab45ef8049" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/python/ui/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ui/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/ui/stats_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ui/stats_script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/utils/smali_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/utils/smali_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apks/crypto/ConstantKey_ForgeryAttack_Lean_benign/report/hotspot.json" beforeDir="false" afterPath="$PROJECT_DIR$/apks/crypto/ConstantKey_ForgeryAttack_Lean_benign/report/hotspot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apks/crypto/ConstantKey_ForgeryAttack_Lean_benign/report/vulns/constantenckeys.json" beforeDir="false" afterPath="$PROJECT_DIR$/apks/crypto/ConstantKey_ForgeryAttack_Lean_benign/report/vulns/constantenckeys.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/vulns/crypto_vulns.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/crypto_vulns.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/vulns/tests/test_crypto_vulns.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/tests/test_crypto_vulns.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/chord/rm.csv" beforeDir="false" afterPath="$PROJECT_DIR$/web/chord/rm.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/hotspot/a.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/hotspot/a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pie/pie_chart.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/pie/pie_chart.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -95,8 +90,8 @@
       <file leaf-file-name="crypto_vulns.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python/vulns/crypto_vulns.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="261" column="58" selection-start-line="261" selection-start-column="58" selection-end-line="261" selection-end-column="58" />
+            <state relative-caret-position="172">
+              <caret line="283" column="47" selection-start-line="283" selection-start-column="47" selection-end-line="283" selection-end-column="47" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
                 <element signature="e#61#4107#0" />
@@ -108,8 +103,8 @@
       <file leaf-file-name="constantenckeys.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apks/crypto/ConstantKey_ForgeryAttack_Lean_benign/report/vulns/constantenckeys.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state>
+              <caret column="1336" lean-forward="true" selection-start-column="1336" selection-end-column="1336" />
             </state>
           </provider>
         </entry>
@@ -217,8 +212,8 @@
         <option value="$PROJECT_DIR$/python/vulns/tests/non.json" />
         <option value="$PROJECT_DIR$/python/vulns/tests/test_crypto_vulns.py" />
         <option value="$PROJECT_DIR$/python/utils/smali_parser.py" />
-        <option value="$PROJECT_DIR$/python/vulns/crypto_vulns.py" />
         <option value="$PROJECT_DIR$/apks/crypto/ConstantKey_ForgeryAttack_Lean_benign/report/vulns/constantenckeys.json" />
+        <option value="$PROJECT_DIR$/python/vulns/crypto_vulns.py" />
       </list>
     </option>
   </component>
@@ -259,23 +254,6 @@
               <item name="apks" type="462c0819:PsiDirectoryNode" />
               <item name="crypto" type="462c0819:PsiDirectoryNode" />
               <item name="ConstantKey_ForgeryAttack_Lean_benign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
-              <item name="apks" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
-              <item name="ConstantKey_ForgeryAttack_Lean_benign" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
-              <item name="apks" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
-              <item name="ConstantKey_ForgeryAttack_Lean_benign" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-              <item name="vulns" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
@@ -410,7 +388,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="762" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28013244" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -746,15 +723,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apks/crypto/ConstantKey_ForgeryAttack_Lean_benign/report/vulns/constantenckeys.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state>
+          <caret column="1336" lean-forward="true" selection-start-column="1336" selection-end-column="1336" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/vulns/crypto_vulns.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="261" column="58" selection-start-line="261" selection-start-column="58" selection-end-line="261" selection-end-column="58" />
+        <state relative-caret-position="172">
+          <caret line="283" column="47" selection-start-line="283" selection-start-column="47" selection-end-line="283" selection-end-column="47" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#61#4107#0" />
