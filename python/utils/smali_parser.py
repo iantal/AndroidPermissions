@@ -28,6 +28,10 @@ class SmaliParser(object):
                     yield i.rstrip('\r\n')
                 elif "new-array" in i and a in i:
                     yield i.rstrip('\r\n')
+                #  Added this line for cst-key detection
+                elif "sget-object" in i and a in i:
+                    yield i.rstrip('\r\n')
+
 
     def parse_file_for_local_param(self, buf):
         rev_buf = []

@@ -36,6 +36,8 @@ jd_core = '/home/miki/Documents/GITHUB/AndroidPermissions/libs/jd-core-java/buil
 
 APK_DIR = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/"
 
+BENCHMARK_CRYPTO = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/"
+
 
 def create_dir(dir_name):
     try:
@@ -51,11 +53,11 @@ def organize_files(directory):
     for (dirpath, dirnames, filenames) in os.walk(directory):
         for filename in filenames:
             if filename.endswith('.apk'):
-                apk_name = filename.split(" - ")[1]
-                apk = filename.split(" - ")[1].split(".apk")[0]
-                dir_name = '_'.join(apk.split("."))
+                # apk_name = filename.split(" - ")[1]
+                apk = filename.split(".apk")[0]
+                dir_name = '_'.join(apk.split("-"))
                 create_dir(dir_name)
-                os.rename(os.path.join(directory, filename), os.path.join(directory, dir_name, apk_name))
+                os.rename(os.path.join(directory, filename), os.path.join(directory, dir_name, filename))
 
 
 def extract_apk(apk):
@@ -64,8 +66,6 @@ def extract_apk(apk):
     e.extract_readable_data(libs_apktool)
     e.extract_jar(libs_d2j)
     e.extract_java_source_code(jd_core)
-
-
 
 
 def take_screenshot(base_dir):
@@ -94,7 +94,6 @@ def write_json_to_file(output_file, jo):
 
 
 def setup_visualizations(base_dir, package_name):
-
     regex = "\/".join(package_name.split(".")) + "[\w\/]*"
     package = "/" + "/".join(package_name.split("."))
 
@@ -123,7 +122,8 @@ def analyse_files(directory):
                 # print(get_package_name(dirpath))
 
                 # TODO: uncomment after testing
-                # extract_apk(apk)
+                print("########### " + apk)
+                extract_apk(apk)
 
                 xml_file = os.path.join(dirpath, 'app', 'AndroidManifest.xml')
                 parser = XMLParser(xml_file)
@@ -137,18 +137,18 @@ def analyse_files(directory):
                 apk_analyser = ApplicationAnalyzer(dirpath)
                 apk_analyser.find_crypto_vulns()
                 print('\033[92m' + "[+] " + '\033[0m' + "Crypto")
-                apk_analyser.find_logs()
-                print('\033[92m' + "[+] " + '\033[0m' + "Logs")
-                apk_analyser.find_manifest_vulns()
-                print('\033[92m' + "[+] " + '\033[0m' + "Manifest")
+                # apk_analyser.find_logs()
+                # print('\033[92m' + "[+] " + '\033[0m' + "Logs")
+                # apk_analyser.find_manifest_vulns()
+                # print('\033[92m' + "[+] " + '\033[0m' + "Manifest")
                 # apk_analyser.find_obfuscation()
                 # print('\033[92m' + "[+] " + '\033[0m' + "Obfuscation")
-                apk_analyser.find_reflection()
-                print('\033[92m' + "[+] " + '\033[0m' + "Reflection")
+                # apk_analyser.find_reflection()
+                # print('\033[92m' + "[+] " + '\033[0m' + "Reflection")
                 # apk_analyser.find_signature()
                 # print('\033[92m' + "[+] " + '\033[0m' + "Signature")
-                apk_analyser.find_webview_vulns()
-                print('\033[92m' + "[+] " + '\033[0m' + "WebView")
+                # apk_analyser.find_webview_vulns()
+                # print('\033[92m' + "[+] " + '\033[0m' + "WebView")
 
 
                 # gc.collect()
@@ -156,22 +156,22 @@ def analyse_files(directory):
                 # apk_analyser.run_radare()
                 # print('\033[92m' + "[+] " + '\033[0m' + "Done")
 
-                ch = ChordVisualizer(dirpath, "/".join(package_name.split(".")))
-                data = json.load(open(os.path.join(dirpath, 'report', 'chord.json')))
-                weights_file = os.path.join(dirpath, 'report', 'hotspot.json')
-                ch.get_chord_diagram_data(weights_file, data,
-                                          '/home/miki/Documents/GITHUB/AndroidPermissions/web/chord/rm.csv')
-
-                ha = HotspotVisualizer(dirpath)
-                dataa = json.load(open(os.path.join(dirpath, 'report', 'hotspot.json')))
-                ha.get_directory_tree(dataa, "/home/miki/Documents/GITHUB/AndroidPermissions/web/hotspot/a.json")
-
-                report_dir = os.path.join(dirpath, 'report')
-                pcg = PieChartGenerator()
-                report = Report(report_dir, pcg, "Demo app", package_name)
-                report.generate_report()
-                take_screenshot(dirpath)
-                report.convert_tex_to_pdf()
+                # ch = ChordVisualizer(dirpath, "/".join(package_name.split(".")))
+                # data = json.load(open(os.path.join(dirpath, 'report', 'chord.json')))
+                # weights_file = os.path.join(dirpath, 'report', 'hotspot.json')
+                # ch.get_chord_diagram_data(weights_file, data,
+                #                           '/home/miki/Documents/GITHUB/AndroidPermissions/web/chord/rm.csv')
+                #
+                # ha = HotspotVisualizer(dirpath)
+                # dataa = json.load(open(os.path.join(dirpath, 'report', 'hotspot.json')))
+                # ha.get_directory_tree(dataa, "/home/miki/Documents/GITHUB/AndroidPermissions/web/hotspot/a.json")
+                #
+                # report_dir = os.path.join(dirpath, 'report')
+                # pcg = PieChartGenerator()
+                # report = Report(report_dir, pcg, "Demo app", package_name)
+                # report.generate_report()
+                # take_screenshot(dirpath)
+                # report.convert_tex_to_pdf()
 
                 t1 = time.time()
                 total = t1 - t0
@@ -267,6 +267,6 @@ def plot_stats():
 
 
 if __name__ == "__main__":
-    # organize_files(APK_DIR)
-    analyse_files(APK_DIR)
+    # organize_files(BENCHMARK_CRYPTO)
+    analyse_files(BENCHMARK_CRYPTO)
     # plot_stats()

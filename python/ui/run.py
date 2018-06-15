@@ -40,19 +40,19 @@ class ApplicationAnalyzer(object):
         # cx = CryptoNonRandomXor(self.smali_analyser, self.base_dir)
         # cx.write_results(self.base_dir + "/report/vulns/nonranom.json")
 
-        print("ecb")
+        print("*** ecb")
         cv = CryptoEcbDetector(self.smali_parser, self.base_dir)
         cv.write_results(self.base_dir + "/report/vulns/ecb.json")
 
-        print("ivforcbc")
+        print("*** ivforcbc")
         cc = CryptoNonRandomIVForCBC(self.smali_parser, self.base_dir)
         cc.write_results(self.base_dir + "/report/vulns/nonrandomiv.json")
 
-        print("enckeys")
+        print("*** enckeys")
         cnk = CryptoConstantEncryptionKeys(self.smali_parser, self.base_dir)
         cnk.write_results(self.base_dir + "/report/vulns/constantenckeys.json")
 
-        print("saltspbe")
+        print("*** saltspbe")
         cp = CryptoConstantPasswordsOrSaltsPBE(self.smali_parser, self.base_dir)
         cp.write_results(self.base_dir + "/report/vulns/constpass.json")
 

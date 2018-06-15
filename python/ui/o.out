@@ -1,0 +1,234 @@
+/home/miki/Documents/GITHUB/AndroidPermissions/python
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ConstantKey_ForgeryAttack_Lean_secure
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ConstantKey_ForgeryAttack_Lean_secure/ConstantKey-ForgeryAttack-Lean-secure.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+{'to_class': 'Ljavax/crypto/Cipher', 'to_method': 'getInstance', 'local_args': '{v3}', 'dst_args': 'Ljava/lang/String;', 'return': 'Ljavax/crypto/Cipher;', 'params': {'v3': {'type': 'const-string', 'value': '""'}}, 'src': 'onClick', 'index': 4}
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_NonRandomIV_InformationExposure_Lean_benign
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_NonRandomIV_InformationExposure_Lean_benign/BlockCipher-NonRandomIV-InformationExposure-Lean-benign.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ConstantKey_ForgeryAttack_Lean_malicious
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ConstantKey_ForgeryAttack_Lean_malicious/ConstantKey-ForgeryAttack-Lean-malicious.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ExposedCredentials_InformationExposure_Lean_secure
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ExposedCredentials_InformationExposure_Lean_secure/ExposedCredentials-InformationExposure-Lean-secure.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ExposedCredentials_InformationExposure_Lean_benign
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ExposedCredentials_InformationExposure_Lean_benign/ExposedCredentials-InformationExposure-Lean-benign.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/PBE_ConstantSalt_InformationExposure_Lean_malicious
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/PBE_ConstantSalt_InformationExposure_Lean_malicious/PBE-ConstantSalt-InformationExposure-Lean-malicious.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_NonRandomIV_InformationExposure_Lean_malicious
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_NonRandomIV_InformationExposure_Lean_malicious/BlockCipher-NonRandomIV-InformationExposure-Lean-malicious.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_NonRandomIV_InformationExposure_Lean_secure
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_NonRandomIV_InformationExposure_Lean_secure/BlockCipher-NonRandomIV-InformationExposure-Lean-secure.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ConstantKey_ForgeryAttack_Lean_benign
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ConstantKey_ForgeryAttack_Lean_benign/ConstantKey-ForgeryAttack-Lean-benign.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+{'to_class': 'Ljavax/crypto/Cipher', 'to_method': 'getInstance', 'local_args': '{v3}', 'dst_args': 'Ljava/lang/String;', 'return': 'Ljavax/crypto/Cipher;', 'params': {'v3': {'type': 'const-string', 'value': '""'}}, 'src': 'onClick', 'index': 4}
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ExposedCredentials_InformationExposure_Lean_malicious
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ExposedCredentials_InformationExposure_Lean_malicious/ExposedCredentials-InformationExposure-Lean-malicious.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/PBE_ConstantSalt_InformationExposure_Lean_secure
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/PBE_ConstantSalt_InformationExposure_Lean_secure/PBE-ConstantSalt-InformationExposure-Lean-secure.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+{'to_class': 'Ljavax/crypto/Cipher', 'to_method': 'getInstance', 'local_args': '{v6}', 'dst_args': 'Ljava/lang/String;', 'return': 'Ljavax/crypto/Cipher;', 'params': {'v6': {'type': 'const-string', 'value': '"AES"'}}, 'src': 'encryptGrade', 'index': 9}
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_ECB_InformationExposure_Lean_secure
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_ECB_InformationExposure_Lean_secure/BlockCipher-ECB-InformationExposure-Lean-secure.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+{'to_class': 'Ljavax/crypto/Cipher', 'to_method': 'getInstance', 'local_args': '{v3}', 'dst_args': 'Ljava/lang/String;', 'return': 'Ljavax/crypto/Cipher;', 'params': {'v3': {'type': 'const-string', 'value': '""'}}, 'src': 'onClick', 'index': 4}
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/PBE_ConstantSalt_InformationExposure_Lean_benign
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/PBE_ConstantSalt_InformationExposure_Lean_benign/PBE-ConstantSalt-InformationExposure-Lean-benign.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+{'to_class': 'Ljavax/crypto/Cipher', 'to_method': 'getInstance', 'local_args': '{v5}', 'dst_args': 'Ljava/lang/String;', 'return': 'Ljavax/crypto/Cipher;', 'params': {'v5': {'type': 'const/16', 'value': '0x100'}}, 'src': 'encryptGrade', 'index': 8}
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_ECB_InformationExposure_Lean_benign
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_ECB_InformationExposure_Lean_benign/BlockCipher-ECB-InformationExposure-Lean-benign.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+{'to_class': 'Ljavax/crypto/Cipher', 'to_method': 'getInstance', 'local_args': '{v5}', 'dst_args': 'Ljava/lang/String;', 'return': 'Ljavax/crypto/Cipher;', 'params': {'v5': {'type': 'const-string', 'value': '"AES"'}}, 'src': 'onResume', 'index': 4}
+{'to_class': 'Ljavax/crypto/Cipher', 'to_method': 'getInstance', 'local_args': '{v2}', 'dst_args': 'Ljava/lang/String;', 'return': 'Ljavax/crypto/Cipher;', 'params': {'v2': {'type': 'const-string', 'value': '""'}}, 'src': 'getToken', 'index': 1}
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_ECB_InformationExposure_Lean_malicious
+########### /home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_ECB_InformationExposure_Lean_malicious/BlockCipher-ECB-InformationExposure-Lean-malicious.apk
+[*] Unzipping the apk ...
+[*] Running apktool ...
+[+] Done apktool
+[*] Running d2j-dex2jar.sh ...
+[+] Done dex2jar
+[*] Running jd-core-java ...
+[+] Done java source code
+*** ecb
+*** ivforcbc
+*** enckeys
+*** saltspbe
+[92m[+] [0mCrypto
+{'/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_ECB_InformationExposure_Lean_benign/BlockCipher-ECB-InformationExposure-Lean-benign.apk': 13.160215377807617,
+ '/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_ECB_InformationExposure_Lean_malicious/BlockCipher-ECB-InformationExposure-Lean-malicious.apk': 12.78052830696106,
+ '/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_ECB_InformationExposure_Lean_secure/BlockCipher-ECB-InformationExposure-Lean-secure.apk': 12.849925756454468,
+ '/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_NonRandomIV_InformationExposure_Lean_benign/BlockCipher-NonRandomIV-InformationExposure-Lean-benign.apk': 17.792038917541504,
+ '/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_NonRandomIV_InformationExposure_Lean_malicious/BlockCipher-NonRandomIV-InformationExposure-Lean-malicious.apk': 13.090824604034424,
+ '/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/BlockCipher_NonRandomIV_InformationExposure_Lean_secure/BlockCipher-NonRandomIV-InformationExposure-Lean-secure.apk': 12.759504795074463,
+ '/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ConstantKey_ForgeryAttack_Lean_benign/ConstantKey-ForgeryAttack-Lean-benign.apk': 12.760545015335083,
+ '/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ConstantKey_ForgeryAttack_Lean_malicious/ConstantKey-ForgeryAttack-Lean-malicious.apk': 12.405224800109863,
+ '/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ConstantKey_ForgeryAttack_Lean_secure/ConstantKey-ForgeryAttack-Lean-secure.apk': 22.821932315826416,
+ '/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ExposedCredentials_InformationExposure_Lean_benign/ExposedCredentials-InformationExposure-Lean-benign.apk': 12.462037563323975,
+ '/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ExposedCredentials_InformationExposure_Lean_malicious/ExposedCredentials-InformationExposure-Lean-malicious.apk': 12.811599016189575,
+ '/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ExposedCredentials_InformationExposure_Lean_secure/ExposedCredentials-InformationExposure-Lean-secure.apk': 12.536595344543457,
+ '/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/PBE_ConstantSalt_InformationExposure_Lean_benign/PBE-ConstantSalt-InformationExposure-Lean-benign.apk': 12.88850998878479,
+ '/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/PBE_ConstantSalt_InformationExposure_Lean_malicious/PBE-ConstantSalt-InformationExposure-Lean-malicious.apk': 12.762533187866211,
+ '/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/PBE_ConstantSalt_InformationExposure_Lean_secure/PBE-ConstantSalt-InformationExposure-Lean-secure.apk': 13.08725357055664}
+TOTAL: 206.96926856040955

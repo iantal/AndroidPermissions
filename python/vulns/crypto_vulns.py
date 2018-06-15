@@ -1,5 +1,6 @@
 import json
 import os
+import pprint
 
 
 class CryptoEcbDetector(object):
@@ -87,15 +88,15 @@ class CryptoNonRandomIVForCBC(object):
 
     def get_iv_local_param(self, method):
         for i in method['local_method_params']:
-            if 'iv' in i['value']:
+            if 'iv' or 'IV' or 'iV' or 'Iv' in i['value']:
                 return i['name']
         return None
 
     def check_call_params(self, call):
         dargs = call['dst_args'].strip('{}').split(";")[::-1][1:]
-        params = call['local_args'].strip('{}').split(", ")[::-1]
+        param = call['local_args'].strip('{}').split(", ")[::-1]
         for i in range(len(dargs)):
-            if 'AlgorithmParameterSpec' in dargs[i] and 'IvParameterSpec' in call['params'][params[i]]['value']:
+            if 'AlgorithmParameterSpec' in dargs[i] and 'IvParameterSpec' in call['params'][param[i]]['value']:
                 return True
         return False
 
@@ -137,7 +138,9 @@ class CryptoNonRandomIVForCBC(object):
         with open(file, 'r') as f:
             d = json.load(f)
             f.close()
+
         for cl in self.sp.get_results():
+            # pprint.pprint(cl)
             try:
                 for method in cl['methods']:
                     for call in method['calls']:
@@ -183,14 +186,23 @@ class CryptoConstantEncryptionKeys(object):
         self.base_dir = base_dir
 
     def get_key_local_param(self, method):
-        for i in method['local_method_params']:
+        m_method = method
+        for i in m_method['local_method_params']:
             if 'key' in i['value']:
                 return i['name']
         return None
 
+    def check_call_params(self, call):
+        param = call['local_args'].strip('{}').split(", ")[::-1]
+        for p in param:
+            if ':[B' in call['params'][p]['value']:
+                return True
+        return False
+
     def check_static_key_initialisation(self, call, p):
+        print("Test " + str(call))
         try:
-            if '[B' in call['params'][p]['array_type']:
+            if '[B' in call['params'][p]['array_type'] or ":[B" in call['params'][p]['value']:
                 return True
         except KeyError:
             return False
@@ -223,35 +235,56 @@ class CryptoConstantEncryptionKeys(object):
             f.close()
 
         for cl in self.sp.get_results():
+            # pprint.pprint(cl)
             try:
                 for method in cl['methods']:
                     for call in method['calls']:
                         if 'Ljavax/crypto/spec/SecretKeySpec' in call['to_class'] and 'init' in call['to_method']:
                             # print(method)
-                            p = self.get_key_local_param(method)
-
+                            print("Before: " + cl['path'])
+                            print("After: " + cl['path'])
                             found = False
-                            if p:
+                            if self.check_call_params(call):
+                                last_p = self.get_last_param(call)
+                                print("Last param: " + last_p + "  " + str(call['params'][last_p]['value']))
 
-                                if p.split(",")[0] in str(call['local_args']):
-                                    for c in method['calls']:
-                                        if p.split(",")[0] in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
-                                            found = True
-                                if self.check_static_key_initialisation(call, p.split(",")[0]):
-                                    found = True
+                                try:
+                                    if call['params'][last_p]['value'] not in asymetric_encryption_schemes:
+                                        print("Param " + last_p + " val:  " + str(call['params'][last_p]['value']))
+                                        evidence.append(cl["path"])
+                                        d[cl["path"]] += 1
+                                except KeyError:
+                                    continue
+
+                                for m in method['local_method_params']:
+                                    if last_p in m['name'] and m['value'] not in asymetric_encryption_schemes:
+                                        evidence.append(cl["path"])
+                                        d[cl["path"]] += 1
+                            else:
+                                p = self.get_key_local_param(method)
+                                if p:
+                                    if p.split(",")[0] in str(call['local_args']):
+                                        for c in method['calls']:
+                                            if p.split(",")[0] in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
+                                                found = True
+                                    if self.check_static_key_initialisation(call, p.split(",")[0]):
+                                        found = True
+
                             if found:
                                 print(cl['path'])
                                 last_p = self.get_last_param(call)
+                                print("Last param: " + last_p)
                                 for m in method['local_method_params']:
                                     if last_p in m['name'] and m['value'] not in asymetric_encryption_schemes:
                                         evidence.append(cl["path"])
                                         d[cl["path"]] += 1
                                 try:
                                     if call['params'][last_p]['value'] not in asymetric_encryption_schemes:
+                                        print("Param " + last_p + " val:  " + str(call['params'][last_p]['value']))
                                         evidence.append(cl["path"])
                                         d[cl["path"]] += 1
                                 except KeyError:
-                                    pass
+                                    continue
             except KeyError:
                 continue
         if evidence:
