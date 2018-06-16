@@ -186,29 +186,35 @@ class CryptoConstantEncryptionKeys(object):
         self.base_dir = base_dir
 
     def get_key_local_param(self, method):
-        m_method = method
+        m_method = method.copy()
         for i in m_method['local_method_params']:
             if 'key' in i['value']:
                 return i['name']
         return None
 
     def check_call_params(self, call):
-        param = call['local_args'].strip('{}').split(", ")[::-1]
+        m_call = call.copy()
+        param = m_call['local_args'].strip('{}').split(", ")[::-1]
         for p in param:
-            if ':[B' in call['params'][p]['value']:
+            if ':[B' or ':Ljava/lang/String' in m_call['params'][p]['value']:
                 return True
         return False
 
     def check_static_key_initialisation(self, call, p):
+        m_call = call.copy()
         print("Test " + str(call))
         try:
-            if '[B' in call['params'][p]['array_type'] or ":[B" in call['params'][p]['value']:
+            if '[B' in m_call['params'][p]['array_type'] or ":[B" in m_call['params'][p]['value']:
                 return True
         except KeyError:
             return False
 
     def get_last_param(self, call):
-        return call['local_args'].strip('{}').split(", ")[::-1][0]
+        m_call = call.copy()
+        try:
+            return call['local_args'].strip('{}').split(", ")[::-1][0]
+        except KeyError:
+            return None
 
     def detect(self):
         title = """
@@ -274,10 +280,11 @@ class CryptoConstantEncryptionKeys(object):
                                 # print(cl['path'])
                                 last_p = self.get_last_param(call)
                                 # print("Last param: " + last_p)
-                                for m in method['local_method_params']:
-                                    if last_p in m['name'] and m['value'] not in asymetric_encryption_schemes:
-                                        evidence.append(cl["path"])
-                                        d[cl["path"]] += 1
+                                if last_p:
+                                    for m in method['local_method_params']:
+                                        if last_p in m['name'] and m['value'] not in asymetric_encryption_schemes:
+                                            evidence.append(cl["path"])
+                                            d[cl["path"]] += 1
                                 try:
                                     if call['params'][last_p]['value'] not in asymetric_encryption_schemes:
                                         # print("Param " + last_p + " val:  " + str(call['params'][last_p]['value']))
@@ -313,14 +320,41 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
         self.base_dir = base_dir
 
     def check_static_key_initialisation(self, call, p):
+        m_call = call.copy()
         try:
-            if '[B' in call['params'][p]['array_type']:
+            if '[B' in m_call['params'][p]['array_type']:
+                return True
+        except KeyError:
+            return False
+
+    def check_call_params(self, call, p):
+        m_call = call.copy()
+        print(p)
+        try:
+            if ':[B' or ':Ljava/lang/String' in m_call['params'][p]['value']:
                 return True
         except KeyError:
             return False
 
     def get_param(self, call, index):
-        return call['local_args'].strip('{}').split(", ")[index]
+        m_call = call.copy()
+        try:
+            return m_call['local_args'].strip('{}').split(", ")[index]
+        except KeyError:
+            return None
+
+    def check_static_init(self, param, call, evidence, cl, d):
+        m_call = call.copy()
+        m_cl = cl.copy()
+        if param:
+            print("here 1")
+            if m_call['params'][param]['type'] == 'const-string':
+                evidence.append(m_cl["path"])
+                d[m_cl["path"]] += 1
+            elif self.check_call_params(m_call, param):
+                print("Here I am..")
+                evidence.append(m_cl["path"])
+                d[m_cl["path"]] += 1
 
     def detect(self):
         title = """
@@ -346,6 +380,7 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
             f.close()
 
         for cl in self.sp.get_results():
+            # pprint.pprint(cl)
             try:
                 for method in cl['methods']:
                     for call in method['calls']:
@@ -354,18 +389,39 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
                                 password = self.get_param(call, 1)  # password
                                 salt = self.get_param(call, 2)  # salt
 
-                                if call['params'][password]['type'] == 'const-string':
-                                    evidence.append(cl["path"])
-                                    d[cl["path"]] += 1
+                                y = self.get_param(call, 2)
 
-                                if call['params'][salt]['type'] == 'const-string':
-                                    evidence.append(cl["path"])
-                                    d[cl["path"]] += 1
+                                print("Class: " + cl["path"])
+                                print("Method: " + call["src"])
+                                print("pass: " + password + " val: " + call['params'][password]['value'])
+                                # print("salt: " + salt + " val: " + call['params'][salt]['value'])
 
-                                if self.check_static_key_initialisation(call, password) or self.check_static_key_initialisation(call, salt):
+                                self.check_static_init(password, call, evidence, cl, d)
+                                self.check_static_init(salt, call, evidence, cl, d)
+
+                                # if password:
+                                #     print("here 1")
+                                #     if call['params'][password]['type'] == 'const-string':
+                                #         evidence.append(cl["path"])
+                                #         d[cl["path"]] += 1
+                                #     elif self.check_call_params(call, password):
+                                #         print("Here I am..")
+                                #         evidence.append(cl["path"])
+                                #         d[cl["path"]] += 1
+                                # if salt:
+                                #     print("here 2")
+                                #     if call['params'][salt]['type'] == 'const-string':
+                                #         evidence.append(cl["path"])
+                                #         d[cl["path"]] += 1
+                                #     elif self.check_call_params(call, salt):
+                                #         print("Here I am 2..")
+                                #         evidence.append(cl["path"])
+                                #         d[cl["path"]] += 1
+
+                                if password and self.check_static_key_initialisation(call, password) or salt and self.check_static_key_initialisation(call, salt):
                                     for lp in method['local_method_params']:
                                         p_name = lp['name'].split(',')[0]
-                                        if password in p_name:
+                                        if password and password in p_name:
                                             print("pass " + p_name + " " + lp['value'])
                                             for c in method['calls']:
                                                 if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
@@ -381,7 +437,7 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
                                                     d[cl["path"]] += 1
                                                     break
 
-                                        if salt in p_name:
+                                        if salt and salt in p_name:
                                             print("salt " + p_name + " " + lp['value'])
                                             for c in method['calls']:
                                                 if p_name in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
@@ -404,12 +460,10 @@ class CryptoConstantPasswordsOrSaltsPBE(object):
                                 try:
                                     salt = self.get_param(call, 1)
 
-                                    if call['params'][salt]['type'] == 'const-string':
-                                        evidence.append(cl["path"])
-                                        d[cl["path"]] += 1
+                                    self.check_static_init(salt, call, evidence, cl, d)
 
-                                    if self.check_static_key_initialisation(call, password):
-                                        if password in lp['name']:
+                                    if salt and self.check_static_key_initialisation(call, salt):
+                                        if salt in lp['name']:
                                             for c in method['calls']:
                                                 if salt in str(c['local_args']) and 'String' in c['to_class'] and 'getBytes' in c['to_method']:
                                                     evidence.append(cl["path"])
@@ -456,11 +510,13 @@ class CryptoSecureRandom(object):
         self.base_dir = base_dir
 
     def get_param(self, call, index):
-        return call['local_args'].strip('{}').split(", ")[index]
+        m_call = call.copy()
+        return m_call['local_args'].strip('{}').split(", ")[index]
 
     def check_static_key_initialisation(self, call, p):
+        m_call = call.copy()
         try:
-            if '[B' in call['params'][p]['array_type']:
+            if '[B' in m_call['params'][p]['array_type']:
                 return True
         except KeyError:
             return False

@@ -1,0 +1,45 @@
+package android.support.constraint;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.view.View;
+
+public class Guideline
+  extends View
+{
+  public Guideline(Context paramContext)
+  {
+    super(paramContext);
+    super.setVisibility(8);
+  }
+  
+  public void draw(Canvas paramCanvas) {}
+  
+  protected void onMeasure(int paramInt1, int paramInt2)
+  {
+    setMeasuredDimension(0, 0);
+  }
+  
+  public void setGuidelineBegin(int paramInt)
+  {
+    ConstraintLayout.LayoutParams localLayoutParams = (ConstraintLayout.LayoutParams)getLayoutParams();
+    localLayoutParams.guideBegin = paramInt;
+    setLayoutParams(localLayoutParams);
+  }
+  
+  public void setGuidelineEnd(int paramInt)
+  {
+    ConstraintLayout.LayoutParams localLayoutParams = (ConstraintLayout.LayoutParams)getLayoutParams();
+    localLayoutParams.guideEnd = paramInt;
+    setLayoutParams(localLayoutParams);
+  }
+  
+  public void setGuidelinePercent(float paramFloat)
+  {
+    ConstraintLayout.LayoutParams localLayoutParams = (ConstraintLayout.LayoutParams)getLayoutParams();
+    localLayoutParams.guidePercent = paramFloat;
+    setLayoutParams(localLayoutParams);
+  }
+  
+  public void setVisibility(int paramInt) {}
+}

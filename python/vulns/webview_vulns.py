@@ -19,23 +19,33 @@ class AbstractWebViewAnalyser(ABC):
         super().__init__()
 
     def check_javascript_enabled(self, method):
-        for call in method['calls']:
+        m_method = method.copy()
+        for call in m_method['calls']:
             if 'setJavaScriptEnabled' in call['to_method']:
                 for arg in call['local_args'].strip('{}').split(", "):
                     try:
                         if call['params'][arg]['value'] == '0x1':
                             return True
                     except KeyError:
-                        pass
+                        continue
         return False
 
     def detect(self):
+        file = os.path.join(self.base_dir, 'report', 'hotspot.json')
+        with open(file, 'r') as f:
+            d = json.load(f)
+            f.close()
+
         for target in self.targets:
             for cl in self.sp.get_results():
                 if target in cl['name'] or target in cl['parent']:
                     for method in cl['methods']:
                         if self.check_javascript_enabled(method):
-                            self.hook(method, cl)
+                            self.hook(method, cl, d)
+
+        with open(file, 'w') as ff:
+            ff.write(json.dumps(d))
+
         if self.evidence:
             self.ret_list.append({
                 "title": self.title,
@@ -48,7 +58,7 @@ class AbstractWebViewAnalyser(ABC):
         return self.ret_list
 
     @abstractmethod
-    def hook(self, method, cl):
+    def hook(self, method, cl, d):
         pass
 
     def write_results(self, out_file):
@@ -67,12 +77,7 @@ class JavascriptInterfaceAnalyser(AbstractWebViewAnalyser):
                 return True
         return False
 
-    def hook(self, method, cl):
-        file = os.path.join(self.base_dir, 'report', 'hotspot.json')
-        with open(file, 'r') as f:
-            d = json.load(f)
-            f.close()
-
+    def hook(self, method, cl, d):
         if self.check_javascript_interface(method, cl):
             self.title = "JavascriptInterfaceAnalyser"
             self.description = ""
@@ -80,13 +85,11 @@ class JavascriptInterfaceAnalyser(AbstractWebViewAnalyser):
             self.stat = "high"
         else:
             self.title = "WebView vuln"
-            self.description = ""
+            self.description = "JavascriptInterfaceAnalyser"
             self.recommendation = ""
             self.stat = "low"
-
+            self.evidence.append(cl['path'])
         d[cl["path"]] += 1
-        with open(file, 'w') as ff:
-            ff.write(json.dumps(d))
 
 
 class MixedContentAnalyser(AbstractWebViewAnalyser):
@@ -102,26 +105,13 @@ class MixedContentAnalyser(AbstractWebViewAnalyser):
                         pass
         return False
 
-    def hook(self, method, cl):
-        file = os.path.join(self.base_dir, 'report', 'hotspot.json')
-        with open(file, 'r') as f:
-            d = json.load(f)
-            f.close()
-
+    def hook(self, method, cl, d):
         if self.check_mixed_content(method, cl):
             self.title = "MixedContentAnalyser"
             self.description = ""
             self.recommendation = ""
             self.stat = "high"
-        else:
-            self.title = "WebView vuln"
-            self.description = ""
-            self.recommendation = ""
-            self.stat = "low"
-
         d[cl["path"]] += 1
-        with open(file, 'w') as ff:
-            ff.write(json.dumps(d))
 
 
 class LoadClearTextContent(object):
@@ -189,10 +179,27 @@ class AccessLocalResources(object):
         self.sp = smali_parser
         self.base_dir = base_dir
 
-    def check_file_access(self, method):
-        for call in method['calls']:
+    def check_javascript_enabled(self, method):
+        m_method = method.copy()
+        for call in m_method['calls']:
             try:
-                if 'setAllowFileAccess' in call['to_method']:
+                if 'setJavaScriptEnabled' in call['to_method']:
+                    for arg in call['local_args'].strip('{}').split(", "):
+                        try:
+                            if call['params'][arg]['value'] == '0x1':
+                                return True
+                        except KeyError:
+                            continue
+            except Exception:
+                continue
+        return False
+
+    def check_file_access(self, method):
+        _method = method.copy()
+
+        for call in _method['calls']:
+            try:
+                if 'setAllowFileAccess' or 'setAllowFileAccessFromFileURLs' in call['to_method']:
                     for arg in call['local_args'].strip('{}').split(", "):
                         try:
                             if call['params'][arg]['value'] == '0x1':
@@ -200,6 +207,8 @@ class AccessLocalResources(object):
                         except KeyError:
                             pass
             except TypeError:
+                continue
+            except Exception:
                 continue
         return False
 
@@ -219,10 +228,11 @@ class AccessLocalResources(object):
         for cl in self.sp.get_results():
             try:
                 for method in cl['methods']:
-                    if self.check_file_access(method):
-                        evidence.append(cl['path'])
-                        d[cl["path"]] += 1
-                        print("FOUND setAllowFileAccess " + cl['name'])
+
+                    if self.check_javascript_enabled(method):
+                        if self.check_file_access(method):
+                            evidence.append(cl['path'])
+                            d[cl["path"]] += 1
             except KeyError:
                 continue
         if evidence:

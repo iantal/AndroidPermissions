@@ -22,15 +22,23 @@ class SmaliParser(object):
                 break
         for a in args:
             for i in rev_buf:
-                if "const" in i and a in i:
+
+                if "const/4" in i and a in i:
                     yield i.rstrip('\r\n')
+                    break
+                elif "const" in i and a in i:
+                    yield i.rstrip('\r\n')
+                    break
                 elif "new-instance" in i and a in i:
                     yield i.rstrip('\r\n')
+                    break
                 elif "new-array" in i and a in i:
                     yield i.rstrip('\r\n')
+                    break
                 #  Added this line for cst-key detection
                 elif "sget-object" in i and a in i:
                     yield i.rstrip('\r\n')
+                    break
 
 
     def parse_file_for_local_param(self, buf):

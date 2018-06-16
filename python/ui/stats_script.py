@@ -37,6 +37,7 @@ jd_core = '/home/miki/Documents/GITHUB/AndroidPermissions/libs/jd-core-java/buil
 APK_DIR = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/"
 
 BENCHMARK_CRYPTO = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/"
+BENCHMARK_WEB = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/web/"
 
 
 def create_dir(dir_name):
@@ -135,8 +136,8 @@ def analyse_files(directory):
                 setup_visualizations(dirpath, package_name)
 
                 apk_analyser = ApplicationAnalyzer(dirpath)
-                apk_analyser.find_crypto_vulns()
-                print('\033[92m' + "[+] " + '\033[0m' + "Crypto")
+                # apk_analyser.find_crypto_vulns()
+                # print('\033[92m' + "[+] " + '\033[0m' + "Crypto")
                 # apk_analyser.find_logs()
                 # print('\033[92m' + "[+] " + '\033[0m' + "Logs")
                 # apk_analyser.find_manifest_vulns()
@@ -147,8 +148,8 @@ def analyse_files(directory):
                 # print('\033[92m' + "[+] " + '\033[0m' + "Reflection")
                 # apk_analyser.find_signature()
                 # print('\033[92m' + "[+] " + '\033[0m' + "Signature")
-                # apk_analyser.find_webview_vulns()
-                # print('\033[92m' + "[+] " + '\033[0m' + "WebView")
+                apk_analyser.find_webview_vulns()
+                print('\033[92m' + "[+] " + '\033[0m' + "WebView")
 
 
                 # gc.collect()
@@ -267,6 +268,6 @@ def plot_stats():
 
 
 if __name__ == "__main__":
-    # organize_files(BENCHMARK_CRYPTO)
-    analyse_files(BENCHMARK_CRYPTO)
+    # organize_files(BENCHMARK_WEB)
+    analyse_files(BENCHMARK_WEB)
     # plot_stats()

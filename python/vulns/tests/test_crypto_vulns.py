@@ -36,11 +36,11 @@ from utils.smali_analyser import SmaliAnalyser
 
 # base_dir = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank"
 
-base_dir = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ConstantKey_ForgeryAttack_Lean_benign"
+base_dir = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ExposedCredentials_InformationExposure_Lean_benign"
 sa = SmaliAnalyser(base_dir, "", "")
 
 
-ss = SmaliParser('/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ConstantKey_ForgeryAttack_Lean_benign/app/smali', 'smali')
+ss = SmaliParser('/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/ExposedCredentials_InformationExposure_Lean_benign/app/smali', 'smali')
 # ss = SmaliParser('/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/app/smali', 'smali')
 ss.run()
 # print("Non-random")
@@ -59,15 +59,17 @@ ss.run()
 # cv = CryptoEcbDetector(ss)
 # cv.write_results(base_dir+"/report/vulns/ecb.json")
 
+
+# print("enckeys")
+# cnk = CryptoConstantEncryptionKeys(ss, base_dir)
+# cnk.write_results(base_dir+"/report/vulns/constantenckeys.json")
+
 ##########################
 #   End                  #
 ##########################
 
 
-# print("enckeys")
-cnk = CryptoConstantEncryptionKeys(ss, base_dir)
-cnk.write_results(base_dir+"/report/vulns/constantenckeys.json")
-#
+
 # print("saltspbe")
-# cp = CryptoConstantPasswordsOrSaltsPBE(ss)
-# cp.write_results(base_dir+"/report/vulns/constpass.json")
+cp = CryptoConstantPasswordsOrSaltsPBE(ss, base_dir)
+cp.write_results(base_dir+"/report/vulns/constpass.json")
