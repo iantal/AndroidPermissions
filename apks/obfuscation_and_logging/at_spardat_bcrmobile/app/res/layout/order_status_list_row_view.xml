@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_view_order_status" android:paddingLeft="5.0dip" android:paddingRight="@dimen/screen_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/status" style="@style/AllWrapContent" />
+    <TextView android:textColor="@color/text_default" android:gravity="left" android:id="@id/tv_payee_name" android:paddingLeft="@dimen/screen_padding" android:paddingTop="5.0dip" android:layout_toLeftOf="@id/img_view_order_status" android:layout_alignParentLeft="true" style="@style/TextSmallNormalAllWrap" />
+    <TextView android:textColor="@color/currency_negative" android:gravity="left" android:id="@id/tv_payment_amount" android:paddingLeft="@dimen/screen_padding" android:paddingBottom="5.0dip" android:layout_toLeftOf="@id/img_view_order_status" android:layout_below="@id/tv_payee_name" android:layout_alignParentLeft="true" style="@style/TextSmallNormalAllWrap" />
+    <View android:id="@id/view_separator" android:layout_marginBottom="3.0dip" android:layout_below="@id/tv_payment_amount" style="@style/ListSeparator" />
+</RelativeLayout>

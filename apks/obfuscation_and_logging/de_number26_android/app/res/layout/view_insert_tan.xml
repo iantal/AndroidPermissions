@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background_white_trans" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/insertTanBottomLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <EditText android:id="@id/editTextInsertTan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:hint="@string/insert_tan_hint_enter_code" android:singleLine="true" android:inputType="number" />
+        <Button android:textColor="@color/proceed_button_text" android:id="@id/buttonAccept" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/insert_tan_accept" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/insertTanBottomLayout" android:layout_alignParentTop="true">
+        <TextView android:textSize="18.0sp" android:textColor="@color/headline" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/insert_tan_title" />
+        <TextView android:textSize="18.0sp" android:id="@id/textViewRetrieveTanInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/insert_tan_text_sms" />
+        <TextView android:textSize="14.0sp" android:id="@id/textViewForgotTan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" android:text="@string/insert_tan_forgot_tan" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/link" android:id="@id/textViewInsertTan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/insert_tan_button_send_again" />
+    </LinearLayout>
+</RelativeLayout>

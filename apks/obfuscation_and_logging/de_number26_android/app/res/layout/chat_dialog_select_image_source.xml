@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/ServiceChatTheme" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chat_select_camera_source" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip">
+        <ImageView android:layout_width="36.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:tint="@color/salesforce_contrast_secondary" android:contentDescription="@string/chat_dialog_select_image_source_camera" android:layout_marginStart="24.0dip" android:layout_marginEnd="20.0dip" app:srcCompat="@drawable/salesforce_ic_camera" />
+        <com.salesforce.android.service.common.ui.views.SalesforceTextView android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chat_dialog_select_image_source_camera" android:layout_marginEnd="24.0dip" style="@style/ServiceChatText.DialogMessage" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chat_select_last_photo_source" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip">
+        <ImageView android:layout_width="36.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:tint="@color/salesforce_contrast_secondary" android:contentDescription="@string/chat_dialog_select_image_source_last_photo" android:layout_marginStart="24.0dip" android:layout_marginEnd="20.0dip" app:srcCompat="@drawable/chat_ic_last_photo" />
+        <com.salesforce.android.service.common.ui.views.SalesforceTextView android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chat_dialog_select_image_source_last_photo" android:layout_marginEnd="24.0dip" style="@style/ServiceChatText.DialogMessage" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chat_select_gallery_source" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip">
+        <ImageView android:layout_width="36.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:tint="@color/salesforce_contrast_secondary" android:contentDescription="@string/chat_dialog_select_image_source_choose" android:layout_marginStart="24.0dip" android:layout_marginEnd="20.0dip" app:srcCompat="@drawable/chat_ic_photo_gallery" />
+        <com.salesforce.android.service.common.ui.views.SalesforceTextView android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chat_dialog_select_image_source_choose" android:layout_marginEnd="24.0dip" style="@style/ServiceChatText.DialogMessage" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill_horizontal" android:drawable="@color/grey_f3" />
+    <item android:top="144.0dip">
+        <bitmap android:gravity="top" android:src="@drawable/logo_grey" />
+    </item>
+</layer-list>

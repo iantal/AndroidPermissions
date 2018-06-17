@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_fixed_term_bank" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_fixed_term_bank_close" android:background="@drawable/ic_close" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="16.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_fixed_term_bankinfo_logo" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/grey_79" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_bankinfo_bankname" fontPath="@string/font_regular" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_bankinfo_bankname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip" fontPath="@string/font_regular" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/grey_79" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_bankinfo_location" fontPath="@string/font_regular" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_bankinfo_location" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip" fontPath="@string/font_regular" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/grey_79" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_bankinfo_currency" fontPath="@string/font_regular" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_bankinfo_currency" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip" fontPath="@string/font_regular" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_bankinfo_about_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_bankinfo_about" fontPath="@string/font_regular" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_bankinfo_about" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip" fontPath="@string/font_light" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_bankinfo_securityofdeposit_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_bankinfo_securityofdeposit" fontPath="@string/font_regular" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_bankinfo_securityofdeposit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip" fontPath="@string/font_light" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_bankinfo_taxanddocuments" fontPath="@string/font_regular" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_bankinfo_taxanddocuments" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" fontPath="@string/font_light" />
+            <View style="@style/HorizontalSeparatorThin" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/grey_c9" android:gravity="center_horizontal" android:id="@id/text_fixed_term_bankinfo_allinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/fixed_term_bankinfo_allinfo" fontPath="@string/font_light" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

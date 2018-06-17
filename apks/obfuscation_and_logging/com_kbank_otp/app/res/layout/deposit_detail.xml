@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:id="@id/top_panel" android:background="@color/top_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/top_panel_height">
+            <ImageButton android:id="@id/menu" style="@style/MenuStyle" />
+            <TextView android:text="@string/title_deposit_detail" style="@style/CaptionStyle" />
+            <Button android:id="@id/liquidate" android:text="@string/cmd_liquidate" style="@style/LogoutStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/roundrect" android:background="@drawable/tr_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/top_panel">
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/deposit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/deposit_deposit" />
+            <View android:id="@id/line" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/deposit" />
+            <LinearLayout android:id="@id/deposit_type_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/deposit">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/darker_gray" android:id="@id/deposit_type" android:layout_width="100.0dip" android:layout_height="wrap_content" android:minHeight="40.0dip" android:text="@string/deposit_detail_type" />
+                <TextView android:textSize="18.0sp" android:textColor="@android:color/darker_gray" android:id="@id/deposit_typeValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:id="@id/line1" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/deposit_type_container" />
+            <LinearLayout android:id="@id/from_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/deposit_type_container">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/darker_gray" android:id="@id/from" android:layout_width="100.0dip" android:layout_height="wrap_content" android:minHeight="40.0dip" android:text="@string/deposit_detail_account" />
+                <TextView android:textSize="18.0sp" android:textColor="@android:color/darker_gray" android:id="@id/fromValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:id="@id/line2" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/from_container" />
+            <LinearLayout android:id="@id/maturity_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/from_container">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/darker_gray" android:id="@id/maturity" android:layout_width="100.0dip" android:layout_height="wrap_content" android:minHeight="40.0dip" android:text="@string/deposit_detail_maturity" />
+                <TextView android:textSize="18.0sp" android:textColor="@android:color/darker_gray" android:id="@id/maturityValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:id="@id/line3" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/maturity_container" />
+            <LinearLayout android:id="@id/status_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/maturity_container">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/darker_gray" android:id="@id/status_maturity" android:layout_width="100.0dip" android:layout_height="wrap_content" android:minHeight="40.0dip" android:text="@string/deposit_detail_status" />
+                <TextView android:textSize="18.0sp" android:textColor="@android:color/darker_gray" android:id="@id/statusValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:id="@id/line4" android:background="@drawable/line2x" android:layout_width="fill_parent" android:layout_height="4.0px" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/status_container" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/amountValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/line4" android:layout_alignParentRight="true" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/darker_gray" android:id="@id/currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_below="@id/amountValue" android:layout_alignParentRight="true" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deposit_detail_sum" android:layout_alignLeft="@id/status_container" android:layout_alignTop="@id/amountValue" />
+        </RelativeLayout>
+        <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@drawable/login_text_selector" android:id="@id/btn_liquidate" android:background="@drawable/login_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="@string/cmd_liquidate" android:layout_below="@id/roundrect" android:layout_centerHorizontal="true" />
+        <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</ScrollView>

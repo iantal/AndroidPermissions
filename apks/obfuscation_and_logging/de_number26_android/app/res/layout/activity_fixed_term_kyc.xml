@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_toolbar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar">
+        <ImageView android:layout_gravity="center" android:id="@id/image_fixed_term_blocker" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_marginBottom="59.0dip" android:src="@drawable/savings_generic_block" />
+        <TextView android:textSize="25.0sp" android:textColor="@color/black_1b" android:paddingLeft="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/fixed_term_outdated_kyc_title" fontPath="@string/font_medium" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black_1b" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="17.0dip" android:text="@string/fixed_term_outdated_kyc_subtitle" fontPath="@string/font_regular" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/mint" android:gravity="center" android:id="@id/text_fixed_term_kyc_different_offer" android:paddingLeft="25.0dip" android:paddingTop="2.0dip" android:paddingRight="25.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/fixed_term_outdated_kyc_choose_other_offer" android:layout_above="@id/main_button_fixed_term_kyc_call_cs" fontPath="@string/font_regular" />
+    <de.number26.machete.android.adl.atoms.MainButton android:id="@id/main_button_fixed_term_kyc_call_cs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:textAllCaps="false" app:text="@string/fixed_term_outdated_kyc_confirm" />
+</RelativeLayout>

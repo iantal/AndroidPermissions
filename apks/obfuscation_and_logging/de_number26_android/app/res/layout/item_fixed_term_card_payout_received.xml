@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_height="230.0dip" style="@style/HomeCard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="14.5dip" android:layout_marginTop="14.5dip" android:layout_marginRight="14.5dip">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="18.0sp" android:textColor="@color/grey_46" android:id="@id/text_fixed_term_card_payout_received_name" android:layout_width="wrap_content" android:layout_height="wrap_content" fontPath="@string/font_regular" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:id="@id/text_fixed_term_card_payout_received_arrived" android:layout_width="wrap_content" android:layout_height="wrap_content" fontPath="@string/font_light" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="18.0sp" android:textColor="@color/mint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:text="@string/fixed_term_dashboard_paid_out" fontPath="@string/font_regular" />
+                <ImageView android:id="@id/image_fixed_term_plan_card_tick" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/tick_mint" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.mklimek.frameviedoview.FrameVideoView android:layout_gravity="center" android:id="@id/video_fixed_term_payout_received" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="90.0dip" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_fixed_term_card" android:layout_width="72.0dip" android:layout_height="50.0dip" android:layout_marginTop="38.799988dip" android:layout_marginBottom="8.0dip" android:src="@drawable/img_fixed_term_card_received" />
+        </FrameLayout>
+        <View android:layout_marginBottom="5.0dip" style="@style/HorizontalSeparatorThin" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed_term_dashboard_planopened_deposit" fontPath="@string/font_light" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_card_payout_received_deposit" android:layout_width="wrap_content" android:layout_height="wrap_content" fontPath="@string/font_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed_term_dashboard_planopened_interestrate" fontPath="@string/font_light" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_card_payout_received_interest" android:layout_width="wrap_content" android:layout_height="wrap_content" fontPath="@string/font_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed_term_dashboard_planopened_profit" fontPath="@string/font_light" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_card_payout_received_profit" android:layout_width="wrap_content" android:layout_height="wrap_content" fontPath="@string/font_regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

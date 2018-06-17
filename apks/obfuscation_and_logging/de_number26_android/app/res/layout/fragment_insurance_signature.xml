@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_insurance_signature_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/text_insurance_signature_info" android:paddingTop="16.0dip" android:layout_marginTop="?actionBarSize" android:layout_marginBottom="16.0dip" android:text="@string/insurance_signature_information" style="@style/InsuranceSignatureDescription" />
+    <FrameLayout android:id="@id/layout_insurance_signature_webview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/InsuranceSignatureWebViewLayout">
+        <WebView android:id="@id/webview_insurance_signature" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:layout_gravity="center" android:id="@id/text_insurance_signature_flip_to_sign" style="@style/InsuranceSignatureFlipToSign" />
+        <TextView android:layout_gravity="bottom|center" android:id="@id/text_insurance_signature_flip_to_edit" android:visibility="gone" style="@style/InsuranceSignatureFlipToEdit" />
+        <TextView android:layout_gravity="center" android:id="@id/text_insurance_signature_sign_here" android:visibility="gone" style="@style/InsuranceSignatureSignHere" />
+        <View android:id="@id/button_insurance_signature_rotate" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/InsuranceSignatureWebViewClickableView" />
+    </FrameLayout>
+    <TextView android:gravity="center_horizontal" android:id="@id/text_insurance_signature_sign_instructions" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/insurance_signature_accurate" fontPath="@string/font_regular" style="@style/InsuranceSignatureDescription" />
+    <de.number26.machete.android.adl.atoms.MainButton android:id="@id/button_insurance_signature_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" app:enabled="false" app:text="@string/insurance_signature_confirm" />
+</LinearLayout>

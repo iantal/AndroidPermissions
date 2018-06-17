@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView android:id="@id/recyclerView_cards_pager" android:background="@color/grey_bright" android:layout_width="fill_parent" android:layout_height="320.0dip" android:overScrollMode="never" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/settings_cards_tableview_header_title" style="@style/ListHeader" />
+            <de.number26.machete.android.ui.components.PreferenceView android:id="@id/button_add_card_to_wallet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_add_card_to_google_pay_title" android:summary="@string/settings_add_card_to_google_pay_subtitle">
+                <android.support.v7.widget.CardView android:id="@id/cardViewGooglePay" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" card_view:cardCornerRadius="3.0dip" card_view:cardElevation="4.0dip" card_view:cardUseCompatPadding="true" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+                    <ImageView android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" card_view:srcCompat="@drawable/ic_add_to_google_pay_button_light_english" />
+                </android.support.v7.widget.CardView>
+                <ProgressBar android:id="@id/progressBarGooglePay" android:layout_width="@dimen/google_pay_loading_spinner_size" android:layout_height="@dimen/google_pay_loading_spinner_size" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Base.Widget.AppCompat.ProgressBar" />
+            </de.number26.machete.android.ui.components.PreferenceView>
+            <de.number26.machete.android.ui.components.PreferenceView android:id="@id/button_manage_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_manage_card_in_google_pay_title" android:summary="@string/settings_manage_card_in_google_pay_subtitle" />
+            <de.number26.machete.android.ui.components.SwitchPreferenceView android:id="@id/switch_cards_pay_abroad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_cards_payingabroad_title" android:summary="@string/settings_cards_payingabroad_subtitle" />
+            <de.number26.machete.android.ui.components.SwitchPreferenceView android:id="@id/switch_cards_online_payments" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_cards_onlinepayments_title" android:summary="@string/settings_cards_onlinepayments_subtitle" />
+            <de.number26.machete.android.ui.components.SwitchPreferenceView android:id="@id/switch_cards_withdraw_money" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_cards_withdrawymoney_title" android:summary="@string/settings_cards_withdrawymoney_subtitle" />
+            <de.number26.machete.android.ui.components.PreferenceView android:id="@id/limits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_cards_limits_title" android:summary="@string/settings_cards_limits_subtitle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

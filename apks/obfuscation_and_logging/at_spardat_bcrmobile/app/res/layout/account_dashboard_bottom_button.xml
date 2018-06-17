@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/account_bottom_button_bg" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="80.0dip" android:layout_margin="1.0dip" style="@style/AllWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_dashboard_button_title" android:text="@string/asset_mgmt_account_title" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/DashboardBottomButtonTitle" />
+    <ImageView android:id="@id/img_view_dashboard" android:paddingTop="3.0dip" android:src="@drawable/assets_mgmt_acct" android:layout_centerHorizontal="true" android:contentDescription="@string/dashboard_icon" style="@style/AllWrapContent" />
+</RelativeLayout>

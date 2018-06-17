@@ -1,0 +1,44 @@
+public final class ﮅ
+{
+  private static ﮃ<Boolean> zzizv = ﮃ.ˎ("measurement.service_enabled", true, true);
+  private static ﮃ<Boolean> zzizw = ﮃ.ˎ("measurement.service_client_enabled", true, true);
+  private static ﮃ<Boolean> zzizx = ﮃ.ˎ("measurement.log_third_party_store_events_enabled", false, false);
+  private static ﮃ<Boolean> zzizy = ﮃ.ˎ("measurement.log_installs_enabled", false, false);
+  private static ﮃ<Boolean> zzizz = ﮃ.ˎ("measurement.log_upgrades_enabled", false, false);
+  private static ﮃ<Boolean> zzjaa = ﮃ.ˎ("measurement.log_androidId_enabled", false, false);
+  public static ﮃ<Boolean> zzjab = ﮃ.ˎ("measurement.upload_dsid_enabled", false, false);
+  public static ﮃ<Boolean> zzjac = ﮃ.ˎ("measurement.event_sampling_enabled", false, false);
+  public static ﮃ<String> zzjad = ﮃ.ˎ("measurement.log_tag", "FA", "FA-SVC");
+  public static ﮃ<Long> zzjae = ﮃ.ˎ("measurement.ad_id_cache_time", 10000L, 10000L);
+  public static ﮃ<Long> zzjaf = ﮃ.ˎ("measurement.monitoring.sample_period_millis", 86400000L, 86400000L);
+  public static ﮃ<Long> zzjag = ﮃ.ˎ("measurement.config.cache_time", 86400000L, 3600000L);
+  public static ﮃ<String> zzjah = ﮃ.ˎ("measurement.config.url_scheme", "https", "https");
+  public static ﮃ<String> zzjai = ﮃ.ˎ("measurement.config.url_authority", "app-measurement.com", "app-measurement.com");
+  public static ﮃ<Integer> zzjaj = ﮃ.ˏ("measurement.upload.max_bundles", 100, 100);
+  public static ﮃ<Integer> zzjak = ﮃ.ˏ("measurement.upload.max_batch_size", 65536, 65536);
+  public static ﮃ<Integer> zzjal = ﮃ.ˏ("measurement.upload.max_bundle_size", 65536, 65536);
+  public static ﮃ<Integer> zzjam = ﮃ.ˏ("measurement.upload.max_events_per_bundle", 1000, 1000);
+  public static ﮃ<Integer> zzjan = ﮃ.ˏ("measurement.upload.max_events_per_day", 100000, 100000);
+  public static ﮃ<Integer> zzjao = ﮃ.ˏ("measurement.upload.max_error_events_per_day", 1000, 1000);
+  public static ﮃ<Integer> zzjap = ﮃ.ˏ("measurement.upload.max_public_events_per_day", 50000, 50000);
+  public static ﮃ<Integer> zzjaq = ﮃ.ˏ("measurement.upload.max_conversions_per_day", 500, 500);
+  public static ﮃ<Integer> zzjar = ﮃ.ˏ("measurement.upload.max_realtime_events_per_day", 10, 10);
+  public static ﮃ<Integer> zzjas = ﮃ.ˏ("measurement.store.max_stored_events_per_app", 100000, 100000);
+  public static ﮃ<String> zzjat = ﮃ.ˎ("measurement.upload.url", "https://app-measurement.com/a", "https://app-measurement.com/a");
+  public static ﮃ<Long> zzjau = ﮃ.ˎ("measurement.upload.backoff_period", 43200000L, 43200000L);
+  public static ﮃ<Long> zzjav = ﮃ.ˎ("measurement.upload.window_interval", 3600000L, 3600000L);
+  public static ﮃ<Long> zzjaw = ﮃ.ˎ("measurement.upload.interval", 3600000L, 3600000L);
+  public static ﮃ<Long> zzjax = ﮃ.ˎ("measurement.upload.realtime_upload_interval", 10000L, 10000L);
+  public static ﮃ<Long> zzjay = ﮃ.ˎ("measurement.upload.debug_upload_interval", 1000L, 1000L);
+  public static ﮃ<Long> zzjaz = ﮃ.ˎ("measurement.upload.minimum_delay", 500L, 500L);
+  public static ﮃ<Long> zzjba = ﮃ.ˎ("measurement.alarm_manager.minimum_interval", 60000L, 60000L);
+  public static ﮃ<Long> zzjbb = ﮃ.ˎ("measurement.upload.stale_data_deletion_interval", 86400000L, 86400000L);
+  public static ﮃ<Long> zzjbc = ﮃ.ˎ("measurement.upload.refresh_blacklisted_config_interval", 604800000L, 604800000L);
+  public static ﮃ<Long> zzjbd = ﮃ.ˎ("measurement.upload.initial_upload_delay_time", 15000L, 15000L);
+  public static ﮃ<Long> zzjbe = ﮃ.ˎ("measurement.upload.retry_time", 1800000L, 1800000L);
+  public static ﮃ<Integer> zzjbf = ﮃ.ˏ("measurement.upload.retry_count", 6, 6);
+  public static ﮃ<Long> zzjbg = ﮃ.ˎ("measurement.upload.max_queue_time", 2419200000L, 2419200000L);
+  public static ﮃ<Integer> zzjbh = ﮃ.ˏ("measurement.lifetimevalue.max_currency_tracked", 4, 4);
+  public static ﮃ<Integer> zzjbi = ﮃ.ˏ("measurement.audience.filter_result_max_count", 200, 200);
+  public static ﮃ<Long> zzjbj = ﮃ.ˎ("measurement.service_client.idle_disconnect_millis", 5000L, 5000L);
+}

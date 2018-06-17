@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="de.number26.android">
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="de.number26.android.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <permission android:name="de.number26.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="de.number26.android.permission.PUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="de.number26.android.permission.PUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <application android:allowBackup="false" android:allowTaskReparenting="true" android:icon="@mipmap/ic_launcher" android:label="@string/application" android:largeHeap="true" android:name="de.number26.machete.android.Application" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.Number26">
+        <provider android:authorities="de.number26.android" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/paths"/>
+        </provider>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <uses-library android:name="com.google.android.maps"/>
+        <activity android:label="@string/application" android:launchMode="singleInstance" android:name="de.number26.machete.android.ui.landing.SplashActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/application" android:name="de.number26.machete.android.ui.landing.LandingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26.Splash" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="de.number26.machete.android.deeplink.DeepLinkActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="main" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="transfer" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="moneybeam" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="invite_friends" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="statements" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="accountswitching" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="cash26" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="taxinfo" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="overdraft" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="statistics" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="controlcenter" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="transferwise" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="moneyrequest" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="consumercredit" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="savings" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="insurance" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="supportcenter" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="cashmap" android:pathPattern=".*" android:scheme="number26"/>
+                <data android:host="metal" android:pathPattern=".*" android:scheme="number26"/>
+            </intent-filter>
+            <intent-filter android:label="@string/moneybeam_intent_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tel"/>
+            </intent-filter>
+            <intent-filter android:label="@string/moneybeam_intent_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="mailto"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="de.number26.android.NOTIFICATIONPRESSED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.TagsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transactions.details.TransactionDetailsPagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transactions.search.SearchTransactionsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.my_account.MyAccountLaunchActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.spaces.SpacesLaunchActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.spaces.creation.SpacesPersonalizationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.spaces.money_movement.SpacesMoneyMovementActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.spaces.creation.image.SpacesImageSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.FragmentDisplayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.ForgotPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.promotions.Cash26PromotionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.premium.PremiumCardInformationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.premium.PremiumCardCancellationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.premium.PremiumCardPolicyActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.promotions.PremiumCardPromotionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transfers.moneybeam.MoneyBeamActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transfers.TransferContactListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.promotions.ForeignTransferPromotionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="de.number26.machete.android.ui.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.CreateAccountWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.migration.MigrationWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transactions.FiltersActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transfers.foreign.TransferwiseInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.activation.ActivationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.kyc.routing.KycRoutingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.kyc.routing.unsupported.KycUnsupportedActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.activation.kyc.PostIdentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.activation.kyc.KycActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_activation" android:name="de.number26.machete.android.ui.activation.ActivationProcessActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.activation.ProductSelectionWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.activation.ActivationProcessCompletedActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.MyFriendsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_account_personalinfo_title" android:name="de.number26.machete.android.ui.settings.personal_information.PersonalInformationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_account_authentication_methods_title" android:name="de.number26.machete.android.ui.settings.AuthenticationMethodsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transactions.PhotoViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transfers.foreign.ForeignTransferActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.ContactsExtraActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/set_pin" android:name="de.number26.machete.android.ui.settings.SetTransactionPinActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_change_password_title" android:name="de.number26.machete.android.ui.settings.changepassword.ChangePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_controlcenter_customerservice_title" android:name="de.number26.machete.android.ui.help.CustomerServiceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_account_title" android:name="de.number26.machete.android.ui.settings.AccountSettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_cards_title" android:name="de.number26.machete.android.ui.settings.card.CardSettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_cards_title" android:name="de.number26.machete.android.refactor.presentation.cards.CardsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_cards_title" android:name="de.number26.machete.android.ui.settings.card.order.CardOrderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_cards_title" android:name="de.number26.machete.android.ui.settings.card.SetCardPinActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transactions.FilteredTransactionsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.dialogs.FullScreenDialogActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.WebViewFullScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.activation.PairPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.statements.StatementsListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transfers.standingorders.StandingOrdersActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transactions.details.SingleTransactionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/overdraft" android:name="de.number26.machete.android.ui.overdraft.OverdraftSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/overdraft" android:name="de.number26.machete.android.refactor.presentation.settings.overdraft.OverdraftSettingsNewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/premium_card_insurance_title" android:name="de.number26.machete.android.ui.premium.PremiumCardActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.smartcards.CardFragmentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/overdraft" android:name="de.number26.machete.android.refactor.presentation.signup.overdraft.OverdraftAfterSignupActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.savings.invest.InvestmentContainerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/cash_map" android:name="de.number26.machete.android.ui.map.CashMapActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.referral.ReferralContactsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.referral.ReferralMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.cash26.Cash26Activity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.savings.intro.SavingsIntroActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.savings.fixedterm.FixedTermActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.savings.fixedterm.marketing.FixedTermMarketingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.savings.fixedterm.detailedview.FixedTermDetailedViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.savings.fixedterm.documents.FixedTermDocumentsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.savings.fixedterm.pin.FixedTermPinActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.savings.fixedterm.expert.FixedTermExpertActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.savings.fixedterm.blocker.FixedTermBlockerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.savings.fixedterm.education.FixedTermEducationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.savings.fixedterm.bank.FixedTermBankActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/fixed_term_letter_write_title" android:name="de.number26.machete.android.ui.savings.fixedterm.letter.compose.FixedTermLetterComposeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/fixed_term_letter_intro_title" android:name="de.number26.machete.android.ui.savings.fixedterm.letter.intro.FixedTermLetterIntroActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.savings.fixedterm.liftoff.FixedTermLiftOffActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.savings.fixedterm.kyc.FixedTermKYCActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_shipping_address_toolbar" android:name="de.number26.machete.android.ui.settings.ShippingAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transfers.request.send.SendRequestActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26.Request" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transfers.request.received.ReceivedRequestActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26.Request"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transfers.request.send.SentRequestDisplayActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26.Request"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transfers.request.RequestTutorialActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.savings.invest.fragments.update.InvestUpdateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.transfers.future.FutureTransferDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.credit.CreditContainerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26.Credit"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.credit.offer.CreditOfferActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26.Credit"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.credit.kyc_intro.CreditContractActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26.Credit"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.credit.marketing.CreditMarketingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26.Credit"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.credit.fts.FintecSystemsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26.Credit"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.pin.PinInputActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.credit.fts.FintecSystemsWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26.Credit"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.ui.credit.kyc_intro.virtual_sign.CreditVirtualSignWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26.Credit"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.credit.rejected.CreditRejectedActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26.Credit"/>
+        <activity android:name="de.number26.machete.android.ui.activation.YoutubeVideoActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.insurance.selection.InsuranceSelectionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.insurance.rejected_inquiry.RejectedInquiryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.insurance.problem_insurer.ProblemInsurerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.insurance.policy_upload.InsurancePolicyUploadActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.insurance.product_details.InsuranceProductDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.insurance.coverage.InsuranceCoverageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.insurance.tour.InsuranceTourActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.insurance.support.InsuranceSupportActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.insurance.black_information.InsuranceBlackInformationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.insurance.advice.InsuranceAdviceActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.insurance.claim.InsuranceClaimActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.insurance.cancellation.InsuranceCancellationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.home.insurance.cancellation.success.InsuranceCancellationSuccessActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.transfers.consent.VisibilityAsN26ContactConsentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.kyc_reliance.main_flow.KycRelianceMainFlowActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.kyc_reliance.terms.KycRelianceTermsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.kyc_reliance.document_in_review.KycRelianceDocumentInReviewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.kyc_reliance.status.KycRelianceStatusActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.cards.metal.MetalMembershipDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.premium_content.article.PremiumContentArticleDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.cards.metal.MetalUpgradeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.cards.metal.benefits.MetalBenefitsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:configChanges="orientation|screenSize" android:name="de.number26.machete.android.refactor.presentation.cards.metal.claims.MetalClaimsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <activity android:name="de.number26.machete.android.refactor.presentation.home.credit.questionnaire.CreditQuestionnaireActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="de.number26.machete.android.refactor.presentation.premium_content.voucher.PremiumContentVoucherDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="de.number26.machete.android.refactor.presentation.home.credit.offers.CreditOffersActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Number26"/>
+        <receiver android:exported="false" android:name="de.number26.machete.android.broadcastReceiver.NotificationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="de.number26.android.N26PUSH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="de.number26.machete.android.broadcastReceiver.MasterBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="de.number26.android.GENERIC_REMOTE_MESSAGE"/>
+                <category android:name="de.number26.android"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="de.number26.machete.android.refactor.presentation.home.insurance.broadcast.InsuranceEventBroadcastReceiver">
+            <intent-filter android:priority="900">
+                <action android:name="de.number26.android.N26PUSH"/>
+                <category android:name="de.number26.android"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="de.number26.machete.android.refactor.presentation.home.credit.broadcast.CreditEventBroadcastReceiver">
+            <intent-filter android:priority="900">
+                <action android:name="de.number26.android.N26PUSH"/>
+                <category android:name="de.number26.android"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.adjust.sdk.AdjustReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="de.number26.machete.android.refactor.data.remote_message.reception.FirebaseMessageCapturerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="de.number26.machete.android.refactor.data.remote_message.registration.FirebaseDeviceTokenService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="io.fabric.ApiKey" android:value="9b9291c96f8521228d9331431ceec355f4da19c8"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_maps_api_key"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTask" android:name="com.salesforce.android.chat.ui.internal.chatfeed.ChatFeedActivity" android:theme="@style/SalesforceTheme"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTask" android:name="com.salesforce.android.chat.ui.internal.prechat.PreChatActivity" android:theme="@style/SalesforceTheme.Floating"/>
+        <service android:name="com.salesforce.android.chat.core.internal.service.ChatService"/>
+        <service android:name="com.salesforce.android.service.common.liveagentlogging.internal.service.LiveAgentLoggingService"/>
+        <provider android:authorities="de.number26.android.lifecycle-trojan" android:exported="false" android:multiprocess="true" android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="de.number26.android"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="de.number26.android.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:launchMode="singleTop" android:name="com.tbruyelle.rxpermissions.ShadowActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:label="@string/title_live_stream_screen" android:name="de.idnow.sdk.Activities_VideoLiveStreamActivity_IceLink" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/title_activity_result" android:name="de.idnow.sdk.Activities_ResultActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_second" android:name="de.idnow.sdk.Activities_VideoOverviewCheckActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/title_activity_help_data" android:name="de.idnow.sdk.Activities_HelpDataActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_id_help" android:name="de.idnow.sdk.Activities_HelpIDActivity" android:screenOrientation="portrait"/>
+        <service android:name="de.idnow.sdk.Util_KillNotificationService"/>
+        <activity android:label="@string/title_activity_photo_country_selection" android:name="de.idnow.sdk.Activities_PhotoCountrySelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_photo_document_selection" android:name="de.idnow.sdk.Activities_PhotoDocumentSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_photo_process_overview" android:name="de.idnow.sdk.Activities_PhotoProcessOverviewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_photo_live" android:name="de.idnow.sdk.Activities_PhotoLiveActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_photo_check" android:name="de.idnow.sdk.Activities_PhotoCheckActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_photo_upload" android:name="de.idnow.sdk.Activities_PhotoUploadActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_legal_notices" android:name="de.idnow.sdk.Activities_LegalNoticesActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/idnow_sdk_name" android:name="de.idnow.sdk.Activities_EntryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/idnow_sdk_name" android:name="de.idnow.sdk.BaseActivities_BaseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="de.idnow.sdk.Activities_VideoOverviewCheckActivity_Super">android:label=@string/idnow_sdk_name android:screenOrientation=portrait</activity>
+        <activity android:name="de.idnow.sdk.Activities_VideoLiveStreamActivity_Super">android:label=@string/idnow_sdk_name android:screenOrientation=portrait</activity>
+        <meta-data android:name="ignore" android:value="ignore"/>
+        <activity android:name="pl.brightinventions.slf4android.NotifyDeveloperDialogDisplayActivity" android:theme="@android:style/Theme.NoDisplay"/>
+    </application>
+</manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mklimek.frameviedoview.FrameVideoView android:layout_gravity="center_horizontal" android:id="@id/video_idnow_waiting_clock" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginTop="16.0dip" />
+    <TextView android:textSize="24.0sp" android:textColor="@color/grey_dark" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/text_waiting_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" android:text="@string/video_verification_queue_text" fontPath="@string/font_medium" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/grey_4a" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/video_verification_queue_subtext" fontPath="@string/font_regular" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/grey_79" android:layout_gravity="center_horizontal" android:id="@id/button_continue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/action_continue_anyway" fontPath="@string/font_medium" />
+    <Button android:id="@id/button_notify_me" android:layout_margin="16.0dip" android:text="@string/action_notify_me" style="@style/MintRaisedButton" />
+</LinearLayout>

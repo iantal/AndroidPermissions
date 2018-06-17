@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:gravity="top" android:orientation="vertical" android:id="@id/container" style="@style/LayoutTabletCompatible"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/context_container" android:background="@android:color/transparent" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/filters_layout" android:background="@color/active_background" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+            <TextView android:textSize="@dimen/textSizeSecondary" android:id="@id/filters_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/default_padding" android:layout_weight="1.0" />
+            <ImageView android:id="@id/clear_filters" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_margin="@dimen/default_padding" android:src="@drawable/icon_cancel" android:contentDescription="@null" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/transactions" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/noSearchResultsView" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/animation" android:layout_width="250.0dip" android:layout_height="150.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/fragment_logout_dialog_text" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_marginBottom="30.0dip" android:text="@string/no_transactions_filter" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

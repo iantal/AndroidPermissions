@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="end" android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/background_support" android:adjustViewBounds="true" android:contentDescription="@null" />
+        <de.number26.machete.android.ui.components.PreferenceView android:icon="@drawable/icon_magnifying" android:id="@id/support_center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_service_main_title" android:summary="@string/settings_service_main_subtitle" />
+        <de.number26.machete.android.ui.components.PreferenceView android:icon="@drawable/ic_emergencies_and_claims" android:id="@id/claims" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_service_claims_title" android:summary="@string/settings_service_claims_subtitle" />
+        <de.number26.machete.android.ui.components.PreferenceView android:icon="@drawable/customer_service_icon" android:id="@id/contact" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_service_contact_title" android:summary="@string/settings_service_contact_subtitle" />
+        <de.number26.machete.android.ui.components.PreferenceView android:icon="@drawable/icon_bulb" android:id="@id/product_ideas" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/settings_service_ideas_title" android:summary="@string/settings_service_ideas_subtitle" />
+        <de.number26.machete.android.ui.components.PreferenceView android:icon="@drawable/livechat_icon" android:id="@id/live_chat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/salesforce_live_chat_title" android:summary="@string/salesforce_live_chat_subtitle" />
+        <de.number26.machete.android.ui.components.PreferenceView android:icon="@drawable/icon_blog" android:id="@id/blog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/blog" android:summary="@string/blog_desc" />
+        <de.number26.machete.android.ui.components.PreferenceView android:icon="@drawable/icon_legal" android:id="@id/tac" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/terms_and_conditions" android:summary="@string/terms_and_conditions_desc" />
+    </LinearLayout>
+</ScrollView>

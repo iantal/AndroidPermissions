@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <de.number26.machete.android.ui.savings.invest.components.InvestProjectionGraphView android:id="@id/savings_projection_graph" android:padding="50.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:savingsBackgroundColor="@color/grey" app:savingsProgress="50" />
+        <include android:id="@id/progressBar" android:layout_height="fill_parent" layout="@layout/progress_indicator" />
+    </FrameLayout>
+    <include layout="@layout/invest_projection_graph_group_overlay" />
+</FrameLayout>

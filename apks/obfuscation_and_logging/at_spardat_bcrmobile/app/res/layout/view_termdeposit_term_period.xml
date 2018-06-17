@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/roundrect_shape" android:paddingTop="2.0dip" android:layout_marginTop="2.5dip" android:layout_marginBottom="2.5dip" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_msg_for_call_deposit" android:background="@drawable/round_semi_rect_auth_level2_drawable" android:visibility="gone" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" style="@style/ErrorStrip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_term_period" android:paddingLeft="10.0dip" android:paddingTop="16.0dip" android:paddingRight="10.0dip" android:paddingBottom="16.0dip" style="@style/MatchParentWrapContent">
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_term_period_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/term_period" android:layout_weight="0.33" style="@style/PaymentItemTextSmallBold" />
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_term_period" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.67" style="@style/PaymentItemTextSmallNormal" />
+    </LinearLayout>
+    <View android:background="@color/separator_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_deposit_feeding" android:paddingLeft="10.0dip" android:paddingTop="16.0dip" android:paddingRight="10.0dip" android:paddingBottom="16.0dip" style="@style/MatchParentWrapContent">
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_deposit_feeding_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/deposit_feeding" android:layout_weight="0.33" style="@style/PaymentItemTextSmallBold" />
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_deposit_feeding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.67" style="@style/PaymentItemTextSmallNormal" />
+    </LinearLayout>
+    <View android:id="@id/view_type_of_deposit_separator" android:background="@color/separator_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_type_of_interest" android:paddingLeft="10.0dip" android:paddingTop="16.0dip" android:paddingRight="10.0dip" android:paddingBottom="16.0dip" style="@style/MatchParentWrapContent">
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_type_of_interest_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/type_of_interest" android:layout_weight="0.33" style="@style/PaymentItemTextSmallBold" />
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_type_of_interest" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.67" style="@style/PaymentItemTextSmallNormal" />
+    </LinearLayout>
+</LinearLayout>

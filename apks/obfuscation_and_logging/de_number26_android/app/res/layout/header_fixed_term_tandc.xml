@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:paddingTop="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/savings_tandc" />
+    <TextView android:textSize="24.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/fixed_term_tnc_title" fontPath="@string/font_regular" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/grey" android:gravity="center" android:id="@id/text_fixed_term_tandc_header" android:paddingLeft="@dimen/default_margin" android:paddingRight="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/fixed_term_tnc_description" android:lineSpacingExtra="8.0sp" fontPath="@string/font_regular" />
+</LinearLayout>

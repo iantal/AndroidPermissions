@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@drawable/roundrect_shape" android:padding="10.0dip" android:layout_marginTop="2.5dip" android:layout_marginBottom="2.5dip" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ToggleButton android:id="@id/tb_term_deposit_term_condition" android:background="@drawable/toggling" android:textOn="@string/no_description" android:textOff="@string/no_description" android:layout_alignParentRight="true" style="@style/AllWrapContent" />
+    <TextView android:textColor="@color/text_default" android:id="@id/tv_term_deposit_term_condition" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_toLeftOf="@id/tb_term_deposit_term_condition" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/PaymentItemTextSmallNormal" />
+</RelativeLayout>

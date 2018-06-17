@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/progress_indicator" />
+        <ScrollView android:id="@id/details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@android:color/white" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="23.0sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/push_certify_header" fontPath="@string/font_regular" />
+                <include layout="@layout/powered_by_transferwise" />
+                <TextView android:textSize="20.0sp" android:id="@id/recipientName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+                <TextView android:textAppearance="@style/TextAppearance.Item.Sub" android:id="@id/accountDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+                    <TextView android:id="@id/sourceAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/arrow_right" />
+                    <TextView android:id="@id/targetAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textColor="?android:textColorSecondary" android:id="@id/feeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="24.0dip" />
+                <include layout="@layout/exchange_rate" />
+                <TextView android:textColor="?android:textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/push_certify_exchange_rate" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <include layout="@layout/dialog_positive_negative_buttons" />
+</LinearLayout>

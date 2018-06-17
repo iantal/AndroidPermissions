@@ -1,0 +1,413 @@
+.class Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;
+.super Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsBaseImpl;
+.source ""
+
+
+# annotations
+.annotation build Landroid/support/annotation/RequiresApi;
+    value = 0x18
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/FrameMetricsAggregator;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "FrameMetricsApi24Impl"
+.end annotation
+
+
+# static fields
+.field private static final NANOS_PER_MS:I = 0xf4240
+
+.field private static final NANOS_ROUNDING_VALUE:I = 0x7a120
+
+.field private static sHandler:Landroid/os/Handler; = null
+
+.field private static sHandlerThread:Landroid/os/HandlerThread; = null
+
+
+# instance fields
+.field private mActivities:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<Ljava/lang/ref/WeakReference<Landroid/app/Activity;>;>;"
+        }
+    .end annotation
+.end field
+
+.field mListener:Landroid/view/Window$OnFrameMetricsAvailableListener;
+
+.field private mMetrics:[Landroid/util/SparseIntArray;
+
+.field private mTrackingFlags:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 340
+    const/4 v0, 0x0
+
+    sput-object v0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->sHandlerThread:Landroid/os/HandlerThread;
+
+    .line 341
+    const/4 v0, 0x0
+
+    sput-object v0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->sHandler:Landroid/os/Handler;
+
+    return-void
+.end method
+
+.method constructor <init>(I)V
+    .locals 1
+
+    .line 343
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsBaseImpl;-><init>(Landroid/support/v4/app/FrameMetricsAggregator$1;)V
+
+    .line 338
+    const/16 v0, 0x9
+
+    new-array v0, v0, [Landroid/util/SparseIntArray;
+
+    iput-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mMetrics:[Landroid/util/SparseIntArray;
+
+    .line 339
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mActivities:Ljava/util/ArrayList;
+
+    .line 347
+    new-instance v0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl$1;
+
+    invoke-direct {v0, p0}, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl$1;-><init>(Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;)V
+
+    iput-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mListener:Landroid/view/Window$OnFrameMetricsAvailableListener;
+
+    .line 344
+    iput p1, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mTrackingFlags:I
+
+    .line 345
+    return-void
+.end method
+
+.method static synthetic access$100(Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;)I
+    .locals 1
+
+    .line 332
+    iget v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mTrackingFlags:I
+
+    return v0
+.end method
+
+.method static synthetic access$200(Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;)[Landroid/util/SparseIntArray;
+    .locals 1
+
+    .line 332
+    iget-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mMetrics:[Landroid/util/SparseIntArray;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public add(Landroid/app/Activity;)V
+    .locals 4
+
+    .line 410
+    sget-object v0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->sHandlerThread:Landroid/os/HandlerThread;
+
+    if-nez v0, :cond_0
+
+    .line 411
+    new-instance v0, Landroid/os/HandlerThread;
+
+    const-string v1, "FrameMetricsAggregator"
+
+    invoke-direct {v0, v1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
+
+    .line 412
+    sput-object v0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->sHandlerThread:Landroid/os/HandlerThread;
+
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+
+    .line 413
+    new-instance v0, Landroid/os/Handler;
+
+    sget-object v1, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->sHandlerThread:Landroid/os/HandlerThread;
+
+    invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    sput-object v0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->sHandler:Landroid/os/Handler;
+
+    .line 415
+    :cond_0
+    const/4 v3, 0x0
+
+    :goto_0
+    const/16 v0, 0x8
+
+    if-gt v3, v0, :cond_2
+
+    .line 416
+    iget-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mMetrics:[Landroid/util/SparseIntArray;
+
+    aget-object v0, v0, v3
+
+    if-nez v0, :cond_1
+
+    iget v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mTrackingFlags:I
+
+    const/4 v1, 0x1
+
+    shl-int/2addr v1, v3
+
+    and-int/2addr v0, v1
+
+    if-eqz v0, :cond_1
+
+    .line 417
+    iget-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mMetrics:[Landroid/util/SparseIntArray;
+
+    new-instance v1, Landroid/util/SparseIntArray;
+
+    invoke-direct {v1}, Landroid/util/SparseIntArray;-><init>()V
+
+    aput-object v1, v0, v3
+
+    .line 415
+    :cond_1
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    .line 420
+    :cond_2
+    invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    iget-object v1, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mListener:Landroid/view/Window$OnFrameMetricsAvailableListener;
+
+    sget-object v2, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->sHandler:Landroid/os/Handler;
+
+    invoke-virtual {v0, v1, v2}, Landroid/view/Window;->addOnFrameMetricsAvailableListener(Landroid/view/Window$OnFrameMetricsAvailableListener;Landroid/os/Handler;)V
+
+    .line 421
+    iget-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mActivities:Ljava/util/ArrayList;
+
+    new-instance v1, Ljava/lang/ref/WeakReference;
+
+    invoke-direct {v1, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    invoke-virtual {v0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+
+    .line 422
+    return-void
+.end method
+
+.method addDurationItem(Landroid/util/SparseIntArray;J)V
+    .locals 5
+
+    .line 398
+    if-eqz p1, :cond_0
+
+    .line 399
+    const-wide/32 v0, 0x7a120
+
+    add-long/2addr v0, p2
+
+    const-wide/32 v2, 0xf4240
+
+    div-long/2addr v0, v2
+
+    long-to-int v4, v0
+
+    .line 400
+    const-wide/16 v0, 0x0
+
+    cmp-long v0, p2, v0
+
+    if-ltz v0, :cond_0
+
+    .line 402
+    invoke-virtual {p1, v4}, Landroid/util/SparseIntArray;->get(I)I
+
+    move-result p2
+
+    .line 403
+    add-int/lit8 v0, p2, 0x1
+
+    invoke-virtual {p1, v4, v0}, Landroid/util/SparseIntArray;->put(II)V
+
+    .line 406
+    :cond_0
+    return-void
+.end method
+
+.method public getMetrics()[Landroid/util/SparseIntArray;
+    .locals 1
+
+    .line 452
+    iget-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mMetrics:[Landroid/util/SparseIntArray;
+
+    return-object v0
+.end method
+
+.method public remove(Landroid/app/Activity;)[Landroid/util/SparseIntArray;
+    .locals 4
+
+    .line 426
+    iget-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mActivities:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v3, v0
+
+    check-cast v3, Ljava/lang/ref/WeakReference;
+
+    .line 427
+    invoke-virtual {v3}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-ne v0, p1, :cond_0
+
+    .line 428
+    iget-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mActivities:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v3}, Ljava/util/AbstractCollection;->remove(Ljava/lang/Object;)Z
+
+    .line 429
+    goto :goto_1
+
+    .line 431
+    :cond_0
+    goto :goto_0
+
+    .line 432
+    :cond_1
+    :goto_1
+    invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    iget-object v1, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mListener:Landroid/view/Window$OnFrameMetricsAvailableListener;
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->removeOnFrameMetricsAvailableListener(Landroid/view/Window$OnFrameMetricsAvailableListener;)V
+
+    .line 433
+    iget-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mMetrics:[Landroid/util/SparseIntArray;
+
+    return-object v0
+.end method
+
+.method public reset()[Landroid/util/SparseIntArray;
+    .locals 2
+
+    .line 457
+    iget-object v1, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mMetrics:[Landroid/util/SparseIntArray;
+
+    .line 458
+    const/16 v0, 0x9
+
+    new-array v0, v0, [Landroid/util/SparseIntArray;
+
+    iput-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mMetrics:[Landroid/util/SparseIntArray;
+
+    .line 459
+    return-object v1
+.end method
+
+.method public stop()[Landroid/util/SparseIntArray;
+    .locals 5
+
+    .line 438
+    iget-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mActivities:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/AbstractCollection;->size()I
+
+    move-result v0
+
+    .line 439
+    add-int/lit8 v2, v0, -0x1
+
+    :goto_0
+    if-ltz v2, :cond_1
+
+    .line 440
+    iget-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mActivities:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v2}, Ljava/util/AbstractList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v3, v0
+
+    check-cast v3, Ljava/lang/ref/WeakReference;
+
+    .line 441
+    invoke-virtual {v3}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v4, v0
+
+    check-cast v4, Landroid/app/Activity;
+
+    .line 442
+    invoke-virtual {v3}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 443
+    invoke-virtual {v4}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    iget-object v1, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mListener:Landroid/view/Window$OnFrameMetricsAvailableListener;
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->removeOnFrameMetricsAvailableListener(Landroid/view/Window$OnFrameMetricsAvailableListener;)V
+
+    .line 444
+    iget-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mActivities:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v2}, Ljava/util/AbstractList;->remove(I)Ljava/lang/Object;
+
+    .line 439
+    :cond_0
+    add-int/lit8 v2, v2, -0x1
+
+    goto :goto_0
+
+    .line 447
+    :cond_1
+    iget-object v0, p0, Landroid/support/v4/app/FrameMetricsAggregator$FrameMetricsApi24Impl;->mMetrics:[Landroid/util/SparseIntArray;
+
+    return-object v0
+.end method

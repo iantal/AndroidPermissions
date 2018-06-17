@@ -1,0 +1,1745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AusweltTraum">... aus dem Weltraum</string>
+    <string name="_1_eur">1 EUR</string>
+    <string name="abc_action_bar_home_description">Zur Startseite</string>
+    <string name="abc_action_bar_up_description">Nach oben</string>
+    <string name="abc_action_menu_overflow_description">Weitere Optionen</string>
+    <string name="abc_action_mode_done">Fertig</string>
+    <string name="abc_activity_chooser_view_see_all">Alle ansehen</string>
+    <string name="abc_activitychooserview_choose_application">App auswählen</string>
+    <string name="abc_capital_off">Aus</string>
+    <string name="abc_capital_on">An</string>
+    <string name="abc_search_hint">Suchen…</string>
+    <string name="abc_searchview_description_clear">Suchanfrage löschen</string>
+    <string name="abc_searchview_description_query">Suchanfrage</string>
+    <string name="abc_searchview_description_search">Suchen</string>
+    <string name="abc_searchview_description_submit">Suchanfrage senden</string>
+    <string name="abc_searchview_description_voice">Sprachsuche</string>
+    <string name="abc_shareactionprovider_share_with">Freigeben für</string>
+    <string name="abc_shareactionprovider_share_with_application">Mit %s teilen</string>
+    <string name="abc_toolbar_collapse_description">Minimieren</string>
+    <string name="account_details">Bankdaten</string>
+    <string name="account_switching_alreadystarted">Dein Kontowechsel ist noch nicht abgeschlossen.</string>
+    <string name="account_switching_restart">Du hast bereits einen Kontowechsel gemacht.</string>
+    <string name="account_switching_share_promo">Das war der schnellste Bankkontowechsel meines Lebens! Wow! #n26</string>
+    <string name="account_switching_stillprocessing">"Dein Kontowechsel wird gerade von uns durchgeführt.
+
+Du kannst einen weiteren Kontowechsel starten,
+wenn dieser abgeschlossen ist."</string>
+    <string name="action_activity_photo_live_close_help">Starten</string>
+    <string name="action_activity_photo_live_show_help">Hilfe</string>
+    <string name="action_call">Anrufen</string>
+    <string name="action_cancel">Abbrechen</string>
+    <string name="action_cancel_overdraft">Dispo kündigen</string>
+    <string name="action_certify">Freigeben</string>
+    <string name="action_change">Ändern</string>
+    <string name="action_confirm">Bestätigen</string>
+    <string name="action_continue">Weiter</string>
+    <string name="action_done">Fertig</string>
+    <string name="action_keep_overdraft">Dispo Behalten</string>
+    <string name="action_learn_more">Mehr Erfahren</string>
+    <string name="action_lets_go">Jetzt Loslegen</string>
+    <string name="action_login">Login</string>
+    <string name="action_next">Weiter</string>
+    <string name="action_ok">Ok</string>
+    <string name="action_push_notifications">Überziehungs-Alarm</string>
+    <string name="action_push_notifications_information">Wenn der Kontostand unter Null fällt.</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_remove">Löschen</string>
+    <string name="action_request_limit_increase">Limiterhöhung anfragen</string>
+    <string name="action_reset">Zurücksetzen</string>
+    <string name="action_save">Speichern</string>
+    <string name="action_send">Absenden</string>
+    <string name="action_send_password">Zurücksetzen</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_loading">Laden</string>
+    <string name="action_undo">Ändern?</string>
+    <string name="action_update_standing">Dauerauftrag Ändern</string>
+    <string name="action_upgrade">Jetzt erhöhen</string>
+    <string name="activate">Klar, gerne!</string>
+    <string name="activation_message_new_new">"Führe folgende Schritte aus, um ein Konto zu eröffnen und von
+     deinem Smartphone aus zu verwalten:"</string>
+    <string name="activity_details_message_label">Verwendungszweck</string>
+    <string name="activity_id_data_text">"Für IDnow Online-Ident benötigen Sie einen gültigen Personalausweis oder Reisepass.
+
+Dabei werden eine Vielzahl moderner Ausweisdokumente mit holographischen Sicherheitsmerkmalen unterstützt.
+
+Insbesondere Personalausweise und Reisepässe aus der Europäischen Union, Türkei, Norwegen, Schweiz, Island und USA."</string>
+    <string name="activity_id_help_text">"Für IDnow Online-Ident benötigen Sie einen gültigen Personalausweis oder Reisepass.
+
+Dabei werden eine Vielzahl moderner Ausweisdokumente mit holographischen Sicherheitsmerkmalen unterstützt.
+
+Insbesondere Personalausweise und Reisepässe aus der Europäischen Union, Türkei, Norwegen, Schweiz, Island und USA."</string>
+    <string name="add_picture">Foto hochladen</string>
+    <string name="add_prefix_telephoneNumber">"Die Ländervorwahl deines Freundes fehlt. Bitte wähle
+        die richtige Vorwahl aus:"</string>
+    <string name="address_additional">Mehr</string>
+    <string name="already_earned">Bereits Erhalten</string>
+    <string name="amount">Betrag</string>
+    <string name="amount_action">Weiter</string>
+    <string name="amount_action_calculating">Berechne...</string>
+    <string name="amount_available_funds">Verfügbarer Betrag: %1$s: %2$s</string>
+    <string name="amount_error_maximum">Maximum ist %s</string>
+    <string name="amount_error_maximum_balance">Unzureichende Deckung</string>
+    <string name="amount_error_minimum">Minimum ist %s</string>
+    <string name="amount_fee_partner">%s TransferWise Gebühr bereits enthalten</string>
+    <string name="amount_fee_partner_explained">6x weniger als andere Banken</string>
+    <string name="amount_fee_partner_explained_more">Verstehe wie</string>
+    <string name="amount_fixed_source">Du überweist</string>
+    <string name="amount_fixed_target">%s erhält genau</string>
+    <string name="amount_for_receiver">%1$s für %2$s</string>
+    <string name="amount_non_fixed_source">Du überweist</string>
+    <string name="amount_non_fixed_target">%s erhält</string>
+    <string name="amount_w_overdraft">inkl. Dispo</string>
+    <string name="android_version">Android version:␣</string>
+    <string name="app_rating_playstore">Playstore öffnen</string>
+    <string name="app_rating_subtitle">"Dann nimm dir
+einen Moment um
+uns zu bewerten"</string>
+    <string name="app_rating_title">"Bist du zufrieden
+mit N26?"</string>
+    <string name="app_version">"App Version: "</string>
+    <string name="append_month">pro Monat</string>
+    <string name="archivingOff">Archiving off</string>
+    <string name="archivingOn">Archiving on</string>
+    <string name="audioOnly">Audio only</string>
+    <string name="austria">Österreich</string>
+    <string name="authorizing_popup_header">Autorisierungen</string>
+    <string name="authorizing_popup_text">N26 zeigt dir deine Kreditkartentransaktionen in Echtzeit an, dadurch werden Kreditkartenbewegungen sichtbar, die du vor dem Wechsel zu N26 nicht gesehen hast. Dies betrifft zum Beispiel Probebuchungen welche aus veschiedenen Gründen vorgenommen werden (Kaution bei Tankstellen oder Autovermietungen, Kartenverifizierung bei Onlinezahlungen).</string>
+    <string name="available_for_transfer">Verfügbarer Betrag: %s</string>
+    <string name="available_for_transfer_overdraft">Verfügbarer Betrag inkl. Dispo: %s</string>
+    <string name="available_for_withdrawal">Verfügbarer Betrag: %s</string>
+    <string name="available_for_withdrawal_overdraft">Verfügbarer Betrag inkl. Dispo: %s</string>
+    <string name="balance_statement_of_the_month">Vorläufiger Auszug</string>
+    <string name="barcode_is">"Barcode
+%s"</string>
+    <string name="barzahlen_more_details">Details anzeigen</string>
+    <string name="barzahlen_terms">Wir bieten Cash26 in Kooperation mit der Greensill Bank AG, Bremen, an. Die Partnerfilialen handeln im Namen und auf Rechnung der Greensill Bank AG.</string>
+    <string name="beam_permission_rationale">Mit Zugriff auf deinen Kontakte kannst du schneller Kontakte Geld beamen.</string>
+    <string name="bic_">BIC:</string>
+    <string name="birth_date">Geburtsdatum</string>
+    <string name="blog">Blog</string>
+    <string name="blog_desc">Neuigkeiten rund um N26</string>
+    <string name="button_calendar_filter">Datum Filtern</string>
+    <string name="button_change">Bestätigen</string>
+    <string name="button_start_pairing">Neuverknüpfung</string>
+    <string name="camera_permissions_rationale">Um Bilder und Belege zu speichern brauchen wir Zugang auf deine Kamera und Gerätspeicher.</string>
+    <string name="cancel_overdraft_confirm_message">Dein Dispo wurde erfolgreich deaktiviert. Du bekommst eine E-Mail zur Bestätigung.</string>
+    <string name="cancel_overdraft_confirm_title">Kündigung Erfolgreich</string>
+    <string name="cancel_overdraft_message">Du kannst den Dispo jederzeit wieder anfragen.</string>
+    <string name="cancel_overdraft_title">Möchtest du den Dispo kundigen?</string>
+    <string name="cancel_standing_order">Dauerauftrag Löschen?</string>
+    <string name="card_not_active">Deine Karte ist nicht aktiviert</string>
+    <string name="card_order_terms_migrated">https://n26.com/legal-documents/maestro-agb/?lang=de</string>
+    <string name="card_reported_as_stolen">Die Karte wurde als gestohlen gemeldet.</string>
+    <string name="card_upgrade_button_basic">AUSGEWÄHLT</string>
+    <string name="card_upgrade_button_black">N26 BLACK UPGRADE</string>
+    <string name="card_upgrade_description_basic">N26 Girokonto für deine Bankgeschäfte</string>
+    <string name="card_upgrade_description_black">Alle Vorteile von N26, plus Versicherungen, die dich absichern.</string>
+    <string name="card_upgrade_info_basic">"Kostenlose Kontoführung
+Weltweite Abhebungen am Geldautomaten
+Kontobenachrichtigungen in Echtzeit"</string>
+    <string name="card_upgrade_info_black">"Alle Kernfunktionen von N26
+Weltweiter Versicherungsschutz
+Reise-, Einkaufs- &amp;amp; Diebstahlschutz"</string>
+    <string name="card_upgrade_subtitle_black">%1$s IM VORAUS / %2$s MONATLICH</string>
+    <string name="card_upgrade_title_basic">N26</string>
+    <string name="card_upgrade_title_black">N26 Black</string>
+    <string name="cash26">CASH26</string>
+    <string name="cash26_delete_code">Möchtest du den CASH26 Code löschen?</string>
+    <string name="cash26_deposit">Einzahlen</string>
+    <string name="cash26_deposit_amount_limit">Einzahlungen sind von 50 € bis 999 € möglich</string>
+    <string name="cash26_deposit_fee_msg">%s Gebühren werden abgezogen.</string>
+    <string name="cash26_deposit_fee_msg2">%1$s über %2$s pro Monat.</string>
+    <string name="cash26_description">Scanne den Barcode oder gebe die Nummer ein. Für Einzahlungen, die 100 € im Monat übersteigen, wird eine Gebühr von 1,5 % erhoben.</string>
+    <string name="cash26_education_know_about">"Wissenswertes  CASH26 Einzahlungen"</string>
+    <string name="cash26_education_msg1">Für Kartenzahlungen ist das Geld direkt verfügbar. Bei Überweisungen und MoneyBeams werden 2 weitere Werktage benötigt.</string>
+    <string name="cash26_intro">Barcode generieren, an einer Partnerkasse vorzeigen und der Rubel rollt.</string>
+    <string name="cash26_intro_title">Bargeld kartenlos einzahlen und abheben</string>
+    <string name="cash26_item_opening_hours">Öffnungszeiten</string>
+    <string name="cash26_learn_more">Mehr Erfahren</string>
+    <string name="cash26_learn_more_message">Erstelle ein Barcode, gehe zu einem von über 6000 Geschäften in Deutschland und hebe Geld ohne Stress ab.</string>
+    <string name="cash26_learn_more_title">Abhebungen und Einzahlungen in Geschäften</string>
+    <string name="cash26_legend_atm">Geldautomat - nur Abhebungen</string>
+    <string name="cash26_legend_partners_closed">Partner (gerade geschlossen)</string>
+    <string name="cash26_legend_partners_open">Partner</string>
+    <string name="cash26_max_deposit_24h_limit">Maximum für Einzahlungen in 24 Stunden: € 999</string>
+    <string name="cash26_max_withdraw_24h_limit">Maximum für Abhebungen in 24 Stunden: € 999</string>
+    <string name="cash26_new_transaction_message_title">Einzahlen und Abheben</string>
+    <string name="cash26_no_gps_text">Gehe bitte in die Einstellungen und aktiviere die Standortbestimmung</string>
+    <string name="cash26_no_gps_title">Standortabfrage ist nicht freigegeben</string>
+    <string name="cash26_permission_rationale">Mit Zugang auf deinen Standort können wir dir leichter den nächsten CASH26 Partner zeigen</string>
+    <string name="cash26_spending_alert_title">Smart Spending Alert</string>
+    <string name="cash26_spending_message">"Du hast diesen Monat %s abgehoben. Erhalte bessere Statistiken, indem du weniger Bargeld benutzt. "</string>
+    <string name="cash26_title_deposit">Einzahlen</string>
+    <string name="cash26_title_withdrawal">Abheben</string>
+    <string name="cash26_verify_text">"Um den Code zu verwenden
+ musst du ihn verifizieren"</string>
+    <string name="cash26_withdraw">Abheben</string>
+    <string name="cash26_withdraw_amount_limit">"Auszahlungen sind bis max.  300 € möglich"</string>
+    <string name="cash_map">Cash Map</string>
+    <string name="cash_map_fair_usage_atm_cost">Deine nächste Bargeldabhebung an einem Geldautomaten in Deutschland wird %s kosten.</string>
+    <string name="cash_map_fair_usage_atm_left">%1$s kostenlose Abhebungen an Geldautomaten in Deutschland bis zum %2$s.</string>
+    <string name="cash_map_fair_usage_cash26_free">Unbegrenzt kostenlos abheben mit CASH26</string>
+    <string name="category_changed_correct">Kategorie wurde erfolgreich gespeichert.</string>
+    <string name="certification_canceled">Die Überweisung wurde abgebrochen</string>
+    <string name="certification_keys_not_found">"Dieses Smartphone ist nicht mit deinem Account verknüpft.
+ 
+
+        Wenn du ein anderes Smartphone mit deinem Account verknüpfen möchtest, kontaktiere bitte unseren Kundensupport."</string>
+    <string name="certification_keystore_not_available">Einige Samsung Smartphones werden automatisch als unverknüpft angezeigt. Das Problem kann ganz einfach gelöst werden: Gib jedesmal dein Passwort (nicht den Fingerabdruck) ein, wenn du das Smartphone neu startest. Das Problem liegt an dem neuesten Systemupdate und wird derzeit von Samsung behoben.</string>
+    <string name="certify_transaction_amount">Betrag: &lt;b>%s&lt;/b></string>
+    <string name="certify_transaction_button_cancel">Abbrechen</string>
+    <string name="certify_transaction_button_confirm">Bestätigen</string>
+    <string name="certify_transaction_iban">"IBAN:
+&lt;b>%s&lt;/b>"</string>
+    <string name="certify_transaction_to">An: &lt;b>%s&lt;/b></string>
+    <string name="change_language">Sprache wählen</string>
+    <string name="change_phone_number_completed">Telefonnummer wurde erfolgreich geändert.</string>
+    <string name="chargeback">Rücklastschrift</string>
+    <string name="chargeback_confirmation">Der Prozess wurde gestartet, deine Rückerstattung sollte in 3 Tagen fertig sein.</string>
+    <string name="chat_dialog_end_session_message">Möchten Sie die Chat-Sitzung wirklich beenden?</string>
+    <string name="chat_dialog_end_session_positive">Sitzung beenden</string>
+    <string name="chat_dialog_end_session_title">Sie verabschieden sich?</string>
+    <string name="chat_dialog_negative">Abbrechen</string>
+    <string name="chat_dialog_select_image_source_camera">Foto aufnehmen</string>
+    <string name="chat_dialog_select_image_source_choose">Aus Galerie auswählen</string>
+    <string name="chat_dialog_select_image_source_last_photo">Zuletzt aufgenommenes Foto verwenden</string>
+    <string name="chat_end_session_content_description">Chat-Sitzung beenden</string>
+    <string name="chat_feed_content_description">Hier werden Chat-Nachrichten angezeigt</string>
+    <string name="chat_feed_title">@string/pre_chat_toolbar_title</string>
+    <string name="chat_file_transfer_canceled">Dateiübertragung abgebrochen</string>
+    <string name="chat_file_transfer_failed">Dateiübertragung fehlgeschlagen</string>
+    <string name="chat_file_transfer_requested">Dateiübertragung angefordert</string>
+    <string name="chat_image_selection_failed">Foto konnte nicht geladen werden</string>
+    <string name="chat_message_delivery_failed">Nachricht nicht gesendet</string>
+    <string name="chat_message_modified">Sensible Daten wurden aus der Nachricht entfernt</string>
+    <string name="chat_message_not_sent_privacy">Nachricht wurde nicht gesendet, da sie sensible Daten enthält</string>
+    <string name="chat_message_notification_channel_name">Chat-Nachrichten</string>
+    <string name="chat_minimize_content_description">Chat minimieren</string>
+    <string name="chat_minimized_connecting">Verbindung mit Chat wird hergestellt…</string>
+    <string name="chat_minimized_post_session">Sitzung beendet</string>
+    <string name="chat_minimized_queued">Ihr Platz in der Warteschlange</string>
+    <string name="chat_permission_not_granted">Berechtigung nicht gewährt</string>
+    <string name="chat_resume_error_string">Etwas ist falsch gelaufen…</string>
+    <string name="chat_resume_error_string_subtext">Versuchen Sie es erneut oder wenden Sie sich an den Administrator</string>
+    <string name="chat_service_description">Sie chatten jetzt mit einem Agenten</string>
+    <string name="chat_service_notification_channel_name">Live-Chat-Service</string>
+    <string name="chat_service_title">Service Cloud-Chat</string>
+    <string name="chat_session_button_transfer_initiated">Sie werden an einen Agenten weitergeleitet.</string>
+    <string name="chat_session_ended_by_agent">Agent hat die Sitzung beendet</string>
+    <string name="chat_session_transferred_to_agent">%1$s ist dem Chat beigetreten.</string>
+    <string name="check_your_email">Email versendet, Bitte überprüfe dein Postfach</string>
+    <string name="choose">wählen</string>
+    <string name="city">Stadt</string>
+    <string name="close">Schließen</string>
+    <string name="closed">Geschlossen</string>
+    <string name="code_deleted">Code wurde erfolgreich gelöscht</string>
+    <string name="code_incorrect">Die vierstellige Nummer ist falsch. Bitte überprüfe deine Eingabe.</string>
+    <string name="common_google_play_services_enable_button">Aktivieren</string>
+    <string name="common_google_play_services_enable_text">%1$s funktioniert erst nach der Aktivierung der Google Play-Dienste.</string>
+    <string name="common_google_play_services_enable_title">Google Play-Dienste aktivieren</string>
+    <string name="common_google_play_services_install_button">Installieren</string>
+    <string name="common_google_play_services_install_text">Zur Nutzung von %1$s sind die Google Play-Dienste erforderlich, die auf deinem Gerät nicht installiert sind.</string>
+    <string name="common_google_play_services_install_title">Google Play-Dienste installieren</string>
+    <string name="common_google_play_services_notification_channel_name">Verfügbarkeit von Google Play-Diensten</string>
+    <string name="common_google_play_services_notification_ticker">Fehler bei Zugriff auf Google Play-Dienste</string>
+    <string name="common_google_play_services_unknown_issue">%1$s hat Probleme mit Google Play-Diensten. Bitte versuche es noch einmal.</string>
+    <string name="common_google_play_services_unsupported_text">Zur Nutzung von %1$s sind Google Play-Dienste erforderlich, die auf deinem Gerät nicht unterstützt werden.</string>
+    <string name="common_google_play_services_update_button">Aktualisieren</string>
+    <string name="common_google_play_services_update_text">%1$s wird nur ausgeführt, wenn du die Google Play-Dienste aktualisierst.</string>
+    <string name="common_google_play_services_update_title">Google Play-Dienste aktualisieren</string>
+    <string name="common_google_play_services_updating_text">Zur Nutzung von %1$s sind Google Play-Dienste erforderlich, die gerade aktualisiert werden.</string>
+    <string name="common_google_play_services_wear_update_text">Eine neue Version der Google Play-Dienste wird benötigt. Diese wird in Kürze automatisch aktualisiert.</string>
+    <string name="common_open_on_phone">Auf Smartphone öffnen</string>
+    <string name="common_signin_button_text">Anmelden</string>
+    <string name="common_signin_button_text_long">Über Google anmelden</string>
+    <string name="complete_identification_text">Bitte haben Sie einen Moment Geduld, während unser Mitarbeiter Ihre Daten abgleicht.</string>
+    <string name="complete_identification_title">Identifizierung wird abgeschlossen …</string>
+    <string name="country">Land</string>
+    <string name="coupon_sent">"Der PostIdent Coupon (PDF) wurde dir per E-Mail gesendet.
+        (Bitte überprüfe auch deinen SPAM Ordner)"</string>
+    <string name="credit_amount_installments_range">Rückzahlungen von {{low}} bis {{high}} pro Monat</string>
+    <string name="credit_amount_limits">Wähle einen Betrag zwischen {{low}} und {{high}}</string>
+    <string name="credit_amount_title">Hey {{name}}, wie viel Geld brauchst du?</string>
+    <string name="credit_amount_too_big">Maximum ist {{amount}}</string>
+    <string name="credit_amount_too_big_funny">Wow, so tief sind unsere Taschen nicht!</string>
+    <string name="credit_amount_too_small">Minimum ist {{amount}}</string>
+    <string name="credit_continue">Fortfahren</string>
+    <string name="credit_contract_review_broker">Kreditvermittler</string>
+    <string name="credit_contract_review_broker_value">Auxmoney</string>
+    <string name="credit_contract_review_cancel_plan">Anfrage abbrechen</string>
+    <string name="credit_contract_review_confirm">Plan bestätigen</string>
+    <string name="credit_contract_review_delete_confirm_cancel_android">Löschen</string>
+    <string name="credit_contract_review_delete_confirm_go_back_android">Abbrechen</string>
+    <string name="credit_contract_review_delete_confirm_message">Diese Anfrage wird von deinem Dashboard entfernt, du kannst jedoch künftig einen anderen Betrag anfragen.</string>
+    <string name="credit_contract_review_delete_confirm_title">Bist du sicher, dass du diese Anfrage abbrechen willst?</string>
+    <string name="credit_contract_review_duration">Kreditdauer</string>
+    <string name="credit_contract_review_duration_months">{{number}} Monate</string>
+    <string name="credit_contract_review_effective_rate">Effektiver Zinssatz</string>
+    <string name="credit_contract_review_effective_rate_per_year">{{amount}} % p.a.</string>
+    <string name="credit_contract_review_fees_note">Bitte beachte:</string>
+    <string name="credit_contract_review_fees_service">Auxmoney berechnet eine einmalige Gebühr von 2,95 % (124 €), der Gesamtbetrag deines Kredits ist dementsprechend 5.150 € (aufgerundet auf die nächsten 50 €). Diese Gebühr wird bei Eröffnung deines Kredits automatisch abgezogen, sodass dir der übrige Betrag von 5.026 € auf deinem Konto gutgeschrieben wird. Zinsen zahlst du allerdings auf den Betrag von 5.150 €.</string>
+    <string name="credit_contract_review_for_purpose">für {{purpose}}</string>
+    <string name="credit_contract_review_insurance">Versicherungsdienstleister</string>
+    <string name="credit_contract_review_insurance_value">AXA France</string>
+    <string name="credit_contract_review_monthly_payment">Monatliche Zahlung</string>
+    <string name="credit_contract_review_nominal_rate">Nominale Rate</string>
+    <string name="credit_contract_review_nominal_rate_per_year">{{amount}} % p.a.</string>
+    <string name="credit_contract_review_partners_subtitle">Für die Erstellung deines Plans arbeitet N26 Credit mit folgenden zuverlässigen Partnern</string>
+    <string name="credit_contract_review_partners_title">Partner</string>
+    <string name="credit_contract_review_payment_day">Zahlungstag</string>
+    <string name="credit_contract_review_payment_day_15th">15. des Monats</string>
+    <string name="credit_contract_review_payment_day_first">1. des Monats</string>
+    <string name="credit_contract_review_provider">Kreditgeber</string>
+    <string name="credit_contract_review_provider_value">SWK Bank</string>
+    <string name="credit_contract_review_requesting">{{amount}} anfragen</string>
+    <string name="credit_contract_review_title">Super, überprüfe deinen Plan</string>
+    <string name="credit_contract_review_total_repayable">Rückzahlungsbetrag</string>
+    <string name="credit_counter_offer_button">Zum alternativen Angebot</string>
+    <string name="credit_counter_offer_subtitle">"Wir können auf Grundlage deiner genauen Vorgaben keinen Plan erstellen.
+
+Wir haben einen alternativen Plan vorbereitet, der den meisten deiner Kriterien entspricht."</string>
+    <string name="credit_counter_offer_title">Wir haben eine Alternative</string>
+    <string name="credit_dashboard_drafts_continue">Zurück zum Angebot</string>
+    <string name="credit_dashboard_drafts_for">für {{purpose}}</string>
+    <string name="credit_dashboard_drafts_new_request">Neue Anfrage stellen</string>
+    <string name="credit_dashboard_drafts_requesting">Kreditanfrage über {{amount}}</string>
+    <string name="credit_dashboard_drafts_revisit_searches">Schau dir deine alten Suchen an:</string>
+    <string name="credit_dashboard_drafts_title">Am letzten Punkt fortfahren</string>
+    <string name="credit_dashboard_empty_title">Für deinen nächsten Schritt</string>
+    <string name="credit_dashboard_repayment_paid_out">Ausbezahlt am {{date}}</string>
+    <string name="credit_dashboard_repayment_payment_first">Erste Rückzahlung</string>
+    <string name="credit_dashboard_repayment_payment_next">Nächste Rückzahlung</string>
+    <string name="credit_dashboard_repayment_text">{{amount}} am {{date}}</string>
+    <string name="credit_dashboard_repayment_total_repaid">Rückzahlungen gesamt</string>
+    <string name="credit_expense_description">Wir haben Beträge aus deiner N26 Statistik hinzugefügt</string>
+    <string name="credit_expense_question">Wie viel gibst du dafür pro Monat aus?</string>
+    <string name="credit_expense_total">Gesamte Ausgaben</string>
+    <string name="credit_finance_review_continue">Weiter</string>
+    <string name="credit_finance_review_expenses">Ausgaben</string>
+    <string name="credit_finance_review_income">Einkommen</string>
+    <string name="credit_finance_review_note">Bitte überprüfe deine Angaben auf Korrektheit, da auf dieser Grundlage dein Kreditangebot erstellt wird.</string>
+    <string name="credit_finance_review_remaining">Verfügbar</string>
+    <string name="credit_finance_review_title">Ausgaben und Einkommen überprüfen</string>
+    <string name="credit_income_description">Wir haben Beträge aus deiner N26 Statistik hinzugefügt</string>
+    <string name="credit_income_question">Wie viel erhältst du pro Monat?</string>
+    <string name="credit_income_total">Gesamtes Einkommen</string>
+    <string name="credit_insurance_education_description">"Schütze deinen N26 Credit Plan mit einer Versicherung, falls etwas schiefgeht und du deine Rückzahlungen nicht leisten kannst.
+
+Falls du aufgrund einer Erkrankung oder einer Verletzung nicht mehr arbeiten kannst, oder du ohne Schuld deinen Job verlierst, kann deine Persönliche Kreditversicherung deine Rate entsprechend deiner Umstände für bis zu 12 Monate übernehmen.
+
+
+Zusätzlich kann die Persönliche Kreditversicherung den ausstehenden Restbetrag deines Kredits übernehmen, falls dir ein medizinisches Trauma widerfährt du sterben solltest.
+
+Weitere Details findest du in den Allgemeinen Geschäftsbedingungen."</string>
+    <string name="credit_insurance_education_description_link">https://n26.com</string>
+    <string name="credit_insurance_education_description_link_text">Allgemeine Geschäftsbedingungen</string>
+    <string name="credit_insurance_education_ok">Okay</string>
+    <string name="credit_insurance_education_subtitle">Schütze deinen N26 Credit Plan mit einer Versicherung, falls etwas schiefläuft und du deine Rückzahlungen nicht leisten kannst.</string>
+    <string name="credit_insurance_education_title">Sicher Geld leihen mit der Kreditversicherung</string>
+    <string name="credit_insurance_offer_no">Ohne Versicherung fortfahren</string>
+    <string name="credit_insurance_offer_text">"Sichere dich mit dem Schutz gegen unerwartete Umstände wie Jobverlust, bleibende Behinderung und Ähnliches ab.
+
+Im nächsten Schritt kannst du deine Auswahl noch ändern und deinen Kredit bearbeiten."</string>
+    <string name="credit_insurance_offer_text_link">Jobverlust, bleibende Behinderung und weitere</string>
+    <string name="credit_insurance_offer_title">Möchtest du deinen Kredit mit einer Kreditversicherung absichern?</string>
+    <string name="credit_insurance_offer_yes">Ja, Versicherung hinzufügen</string>
+    <string name="credit_kyc_education_ok">Okay</string>
+    <string name="credit_kyc_education_text">"Wir verbinden dich zur Überprüfung deiner Identität mit einem Mitarbeiter, der ein Foto von dir sowie von der Vorder- und Rückseite deines Ausweisdokuments machen wird.
+
+ Der Mitarbeiter kennt keine Details zu deinem Plan, und wir teilen deine persönlichen Daten nicht mit ihm.
+
+ Du kannst dann deinen Vertrag prüfen und direkt auf dem Bildschirm unterschreiben."</string>
+    <string name="credit_kyc_education_title">Wie wird dieser Prozess aussehen?</string>
+    <string name="credit_kyc_failed_to_initialize_text">Etwas ist schiefgelaufen. Bitte versuche es erneut</string>
+    <string name="credit_kyc_intro_confirm_before_start">Bevor wir loslegen, bestätige bitte:</string>
+    <string name="credit_kyc_intro_data_transfer">Ich stimme zu, dass N26 Daten, die im Rahmen des e-Signatur-Prozesses erhoben werden, speichert und an SWK Bank übermittelt, um den Kreditvertrag abzuschließen.</string>
+    <string name="credit_kyc_intro_identity_document">Du hast dein Ausweisdokument (Personalausweis oder Reisepass)</string>
+    <string name="credit_kyc_intro_internet_connection">Du hast eine stabile Internetverbindung</string>
+    <string name="credit_kyc_intro_office_closed">Unsere Mitarbeiter schlafen zur Zeit, aber sie sind morgen wieder erreichbar in der Zeit von 8 Uhr bis Mitternacht.</string>
+    <string name="credit_kyc_intro_phone_number">Deine Mobilfunknummer lautet {{phoneNumber}}</string>
+    <string name="credit_kyc_intro_return_later">Später fortsetzen</string>
+    <string name="credit_kyc_intro_start_verification">Verifikation starten</string>
+    <string name="credit_kyc_intro_terms">Ich stimme den Allgemeinen Geschäftsbedingungen und der Datenschutzbestimmung von IDnow zu.</string>
+    <string name="credit_kyc_intro_terms_link">https://go.idnow.de/privacy/de</string>
+    <string name="credit_kyc_intro_terms_link_text">Datenschutzbestimmung</string>
+    <string name="credit_kyc_intro_terms_link_text_two">Allgemeinen Geschäftsbedingungen</string>
+    <string name="credit_kyc_intro_terms_link_two">https://go.idnow.de/agb</string>
+    <string name="credit_kyc_intro_time">Du hast 5 Minuten für ein Videogespräch</string>
+    <string name="credit_kyc_intro_title">Sag deinem Vertrag Hallo</string>
+    <string name="credit_kyc_intro_what_will_it_look_like">Wie wird dieser Vorgang aussehen?</string>
+    <string name="credit_kyc_popup_cancel">Warte, geh zurück</string>
+    <string name="credit_kyc_popup_start_call">Anruf starten</string>
+    <string name="credit_kyc_popup_subtitle">Dein Vertrag kommt erst dann final zustande, nachdem du die Bestätigungsnummer eingibst, die du während des Gesprächs erhältst. Du kannst vorher jederzeit abbrechen, solltest du deine Meinung ändern.</string>
+    <string name="credit_kyc_popup_title">Vergiss nicht zu lächeln!</string>
+    <string name="credit_link_account_bank_account_data_terms">Ich erlaube N26 und FinTecSystems GmbH die Informationen aus meinem Kontoauszug zu erhalten, zu speichern und auszuwerten.</string>
+    <string name="credit_link_account_blocking_dialog_message" />
+    <string name="credit_link_account_blocking_dialog_ok" />
+    <string name="credit_link_account_blocking_dialog_title" />
+    <string name="credit_link_account_continue">Fortfahren</string>
+    <string name="credit_link_account_description">Bitte gib dein Gehaltskonto bei einer anderen Bank an, sodass wir dein Gesamteinkommen, deine Ausgaben und generelle Kreditwürdigkeit prüfen können. Dies musst du nur ein Mal machen, und wir speichern deine Anmeldedaten nicht.</string>
+    <string name="credit_link_account_fintech_systems_privacy_policy">Datenschutzvereinbarung</string>
+    <string name="credit_link_account_fintech_systems_privacy_policy_link">https://staging-n26.com/legal-documents/n26-kredit/datenschutzhinweis-fintecsystems/?lang=de</string>
+    <string name="credit_link_account_fintech_systems_terms">FinTechSystems GmbH Datenschutzvereinbarung für elektronische Übertragung persönlicher Daten.</string>
+    <string name="credit_link_account_read_and_agree">Ich habe folgendes gelesen und zugestimmt:</string>
+    <string name="credit_link_account_success_title">Konto sicher hinzugefügt!</string>
+    <string name="credit_link_account_title">Wir brauchen weitere Informationen für deinen Antrag</string>
+    <string name="credit_loading_description">"Einen Moment …
+ Zahlungspläne werden berechnet"</string>
+    <string name="credit_loading_title">{{amount}} anfordern</string>
+    <string name="credit_missed_payment_ok">Okay</string>
+    <string name="credit_missed_payment_subtitle">"Bevor du einen Kredit aufnimmst ist es wichtig, dass du dir sicher bist, dass du die monatlichen Kreditraten auch bezahlen kannst.
+Für den Fall, dass sich deine Zahlungsfähigkeit verändert hat (z.B. du wirst arbeitslos) und du deine monatliche Zahlungen nicht mehr leisten kannst, prüfe bitte deine vorvertraglichen Dokumente für mehr Informationen und kontaktiere deinen Kreditgeber umgehend.
+Ob es sich um eine Zahlung oder alle folgenden Zahlungen handelt, gibt es die Möglichkeit eine Änderung deines Zahlungsplan zu besprechen. Bitte beachte, dass das zu Mehrkosten führen kann. Andauernder Zahlungsverzug kann zur Gesamtfälligstellung des Kredits und Einleitung eines Inkassoprozesses führen."</string>
+    <string name="credit_missed_payment_title">Wie verwalte ich verpasste Zahlungen?</string>
+    <string name="credit_offer_edit_loan_duration">Kreditlaufzeit</string>
+    <string name="credit_offer_edit_monthly_payment">Monatliche Zahlung</string>
+    <string name="credit_offer_edit_months">{{number}} Monate</string>
+    <string name="credit_offer_edit_months_per_month">{{amount}}</string>
+    <string name="credit_offers_installment">für {{number}} Monate</string>
+    <string name="credit_offers_insurance_text">Sichere dich mit diesem Schutz vor unvorhergesehenen Umständen ab</string>
+    <string name="credit_offers_insurance_text_link">unvorhergesehene Umstände</string>
+    <string name="credit_offers_insurance_title_active">Versicherung: Aktiv</string>
+    <string name="credit_offers_insurance_title_inactive">Versicherung: Inaktiv</string>
+    <string name="credit_offers_interest_rate_effective">Effektiv</string>
+    <string name="credit_offers_interest_rate_nominal">Nominal</string>
+    <string name="credit_offers_interest_rate_per_year">{{amount}} % pro Jahr</string>
+    <string name="credit_offers_modify_plan">Plan anpassen</string>
+    <string name="credit_offers_per_month">Monat</string>
+    <string name="credit_offers_subtitle_generic">Wir empfehlen einen Plan, den du dir leisten kannst</string>
+    <string name="credit_offers_title">{{amount}} leihen</string>
+    <string name="credit_offers_total_to_repay">Rückzahlungsbetrag</string>
+    <string name="credit_offers_what_are_these">Was ist das?</string>
+    <string name="credit_payment_day_1_of_month">Erster des Monats</string>
+    <string name="credit_payment_day_middle_of_month">15. des Monats</string>
+    <string name="credit_payment_day_missed_payments">Wie verwalte ich verpasste Zahlungen?</string>
+    <string name="credit_payment_day_subtitle">Zahlungen werden automatisch von deinem N26 Girokonto abgebucht.</string>
+    <string name="credit_payment_day_title">Wann möchtest du deine Zahlungen leisten?</string>
+    <string name="credit_pin_text_esign">"Gib deinen Überweisungscode ein, um deine Auswahl zu bestätigen "</string>
+    <string name="credit_popup_title">Hey {{name}},</string>
+    <string name="credit_privacy_terms_agree">Zustimmen und weiter</string>
+    <string name="credit_privacy_terms_subtitle">Wir berechnen einen Plan genau nach deinen Bedürfnissen</string>
+    <string name="credit_privacy_terms_title">Lass uns schauen, welche Optionen wir für dich finden können</string>
+    <string name="credit_purpose_title">Wofür brauchst du die {{amount}}?</string>
+    <string name="credit_purpose_view_all">Alle anzeigen</string>
+    <string name="credit_rates_explanation_effective">Effektiver Zinssatz</string>
+    <string name="credit_rates_explanation_effective_text">"Dies ist der etwas komplexere Zinssatz, der den sog. Zinseszinseffekt über die Zinsperioden hinweg und die mit dem Kredit verbundenen Gebühren berücksichtigt. Durch diese beiden Faktoren ist der effektive Jahreszins höher als der nominale Jahreszins und drückt die Gesamtkosten des Kredits relativ zu dem ausgezahlten Kreditbetrag aus.
+Weitere Informationen findest du auf unserer Webseite."</string>
+    <string name="credit_rates_explanation_nominal">Nominaler Zinssatz</string>
+    <string name="credit_rates_explanation_nominal_text">Hierbei handelt es sich einfach um den Zinssatz, der verwendet wird, um deine Zinszahlungen zu errechnen. Wenn der nominale Zinssatz auf deinen Kredit über 100 € 5 % ist, kannst du erwarten, 5 € an Zinsen zu zahlen.</string>
+    <string name="credit_rates_explanation_okay">Okay</string>
+    <string name="credit_rates_explanation_subtitle">Unsere Business-Leute hatten viel Freude daran, den Unterschied dem Team zu erklären, und wir möchten diese Information mit dir teilen, um alle Fragen vor deiner Kreditentscheidung zu klären.</string>
+    <string name="credit_rates_explanation_title">Ähm, nominal und effektiv?</string>
+    <string name="credit_rejected_description">Wir haben deine Anfrage sorgfältig geprüft. Leider können wir dir auf der Basis der uns zur Verfügung stehenden Informationen leider kein Kreditangebot machen. Wir arbeiten daran unser Kreditangebot auszuweiten und informieren dich entsprechend.</string>
+    <string name="credit_rejected_okay">Okay</string>
+    <string name="credit_rejected_title">Oh-oh!</string>
+    <string name="current_overdraft">in Verwendung</string>
+    <string name="current_to_savings">Vom Girokonto zum Investment-Konto</string>
+    <string name="customer_service">Service</string>
+    <string name="dateFiltering">Nach Datum filtern</string>
+    <string name="dein_konto_new_new">N26 Konto erstellen</string>
+    <string name="deine_email_new_new">E-Mail Adresse bestätigen</string>
+    <string name="deposit_amount">%s einzahlen</string>
+    <string name="deposited">Eingezahlt</string>
+    <string name="device_model">"Gerätemodell: "</string>
+    <string name="dialog_cancel_identification">Wollen Sie den Identifizierungsvorgang wirklich abbrechen?</string>
+    <string name="dialog_cancel_identification_title">Identifizierung abbrechen</string>
+    <string name="dialog_contact_details_delete">Kontakt löschen</string>
+    <string name="dialog_contact_details_delete_confirm">Bist du dir sicher, dass du diesen Kontakt löschen möchtest?</string>
+    <string name="dialog_contact_details_history">Verlauf ansehen</string>
+    <string name="dialog_contact_details_history_title">Verlauf</string>
+    <string name="dialog_error">Die Identifikation ist leider fehlgeschlagen. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.</string>
+    <string name="dialog_error_bluetooth">Bitte trennen Sie Ihr Bluetooth Headset und und verwenden Sie entweder ein kabelgebundenes Headset oder die Lautsprecher Ihres Mobiltelefons.</string>
+    <string name="dialog_error_camera_content">Beim Versuch die Kamera anzusprechen ist leider ein Fehler aufgetreten. Versuchen Sie es zu einem späteren Zeitpunkt noch einmal.</string>
+    <string name="dialog_error_camera_title">Kamerafehler</string>
+    <string name="dialog_error_content">Ein unerwarteter Fehler ist aufgetreten. Die Verbindung wird geschlossen.</string>
+    <string name="dialog_error_email">Die Zustellung des Ident-Code an Ihre E-Mail ist fehlgeschlagen. Bitte versuchen Sie es erneut.</string>
+    <string name="dialog_error_mobile_no">Beim Versuch einen Ident-Code an Ihre Handynummer zu senden ist leider ein Fehler aufgetreten. Bitte versuchen Sie es erneut.</string>
+    <string name="dialog_error_tan">Der Ident-Code ist nicht korrekt. Bitte geben Sie den Ident-Code erneut ein.</string>
+    <string name="dialog_error_title">Verbindungsfehler</string>
+    <string name="dialog_error_video">Die Identifikation ist leider fehlgeschlagen. Ein Problem mit der Videoverbindung ist aufgetreten. Bitte versuchen Sie es erneut.</string>
+    <string name="dialog_no">Nein</string>
+    <string name="dialog_no_wifi_cancel">Abbrechen</string>
+    <string name="dialog_no_wifi_content">Für den Identifizierungsprozess wird eine WIFI Verbindung empfohlen.</string>
+    <string name="dialog_no_wifi_continue">Fortfahren</string>
+    <string name="dialog_office_hours_content_1">"Aktuell befinden Sie sich außerhalb unserer Service-Zeiten für den Online-Ident Service.
+
+Sie können Ihre Online-Identifizierung zu den folgenden Zeiten durchführen. Eine vorherige Terminvereinbarung ist nicht nötig.
+
+Unsere Service-Zeiten:
+
+"</string>
+    <string name="dialog_office_hours_content_2">"
+Bitte starten Sie die Identifizierung während unserer Service-Zeiten erneut."</string>
+    <string name="dialog_office_hours_title">Service-Zeiten</string>
+    <string name="dialog_play_store">Zum Play Store</string>
+    <string name="dialog_retry">Erneut versuchen</string>
+    <string name="dialog_yes">Ja</string>
+    <string name="documents">Dokumente</string>
+    <string name="documents_permission_rationale">Um Dokumente zu öffnen, benötigen wir Zugriff auf den Telefonspeicher.</string>
+    <string name="dont_show_again">Nicht mehr anzeigen</string>
+    <string name="e_signature_accept_contract_button">Vertrag unterschreiben</string>
+    <string name="e_signature_back_to_signing">Prozess fortsetzen</string>
+    <string name="e_signature_check_contract">Vertrag überprüfen</string>
+    <string name="e_signature_decline_contract">Vertrag ablehnen</string>
+    <string name="e_signature_hash">Vertragskennung</string>
+    <string name="e_signature_resign_contract">Erneut unterschreiben</string>
+    <string name="e_signature_sign_contract_description">Unterschreiben Sie bitte im Feld oben und klicken Sie den Button um Ihre Unterschrift zu übermitteln.</string>
+    <string name="e_signature_sign_contract_header">Hier unterschreiben</string>
+    <string name="e_signature_warning_content">Die Android-Version Ihres Geräts scheint inkompatibel mit unserer PDF Ansicht zu sein. Dies hat möglicherweise die Auswirkung, dass im Laufe der Identifizierung anstelle Ihrer PDF eine leere Seite angezeigt wird.</string>
+    <string name="e_signature_warning_title">Hinweis</string>
+    <string name="email">E-Mail</string>
+    <string name="email_confirmation">E-Mail Bestätigen</string>
+    <string name="email_confirmation_text">"Bitte bestätige deine E-Mail Adresse, dafür hast du eine
+        E-mail an "</string>
+    <string name="email_not_validated">"Deine E-Mail Adresse wurde noch nicht bestätigt.
+        Bitte überprüfe deinen Posteingang."</string>
+    <string name="endCall1">End call</string>
+    <string name="endCall2">End</string>
+    <string name="end_date">Enddatum</string>
+    <string name="enter_email_or_phone">Bitte gib eine Email Adresse oder Telefonnummer ein</string>
+    <string name="enter_name">Bitte gib einen Empfängernamen ein</string>
+    <string name="erhalten">erhalten.</string>
+    <string name="error_credentials">Fehler! E-Mail Adresse oder Passwort ist falsch</string>
+    <string name="error_empty_email">Bitte gib eine Email Adresse ein</string>
+    <string name="error_empty_password">Bitte gib ein Passwort ein</string>
+    <string name="error_field_required">Dieses Feld ist erforderlich</string>
+    <string name="error_flash">Der Blitzmodus konnte leider nicht aktiviert werden.</string>
+    <string name="error_invalid_email">Diese E-Mail-Adresse ist ungültig</string>
+    <string name="error_invalid_password">Dieses Passwort ist zu kurz</string>
+    <string name="error_invalid_phone">Die Telefonnummer ist nicht valide. Bitte füge eine Ländervowahl hinzu.</string>
+    <string name="error_network">Verbindung zum Server konnte leider nicht hergestellt werden</string>
+    <string name="error_pattern_login">Fehler! Login war leider nicht erfolgreich</string>
+    <string name="estimated_delivery_for">Erwartetes Lieferdatum: %s</string>
+    <string name="exchange_rate">Wechselkurs</string>
+    <string name="exchange_rate_estimated">(Geschätzter) Wechselkurs</string>
+    <string name="exchange_rate_fluctuation">Wechselkurs Schwankungen</string>
+    <string name="exchange_rate_popup_text">Wenn du eine Bezahlung in Fremdwährung machst, wird für die Anzeige vorläufig der aktuelle Wechselkurs herangezogen. Dieser Kurs kann sich bis zum Tag der Buchung aufgrund von Wechelkursschwankungen noch ändern (dies kann bis zu 4 Tage dauern).</string>
+    <string name="execution_date">Ausführungsdatum</string>
+    <string name="existing_contacts_add_new">Kontakt hinzufügen</string>
+    <string name="existing_contacts_choose_contact">Kontakt auswählen</string>
+    <string name="expenses">Ausgaben</string>
+    <string name="fatca_change_info">Wenn du deine persönlichen Informationen ändern möchtest, bitte informiere dich in unserem %s.</string>
+    <string name="fatca_confirm_header">Danke! Unten findest du deine Angaben</string>
+    <string name="fatca_confirm_tax_number">Deine Steuer-ID</string>
+    <string name="fatca_confirm_where">Wo du Steuern zahlst</string>
+    <string name="fatca_country_hint">In diesem Land bist du steuerpflichtig</string>
+    <string name="fatca_tax_country_question">Bist du in Deutschland steuerpflichtig?</string>
+    <string name="fatca_tax_id_number">Steuer-ID</string>
+    <string name="fatca_toolbar">Steuerheimat</string>
+    <string name="fcm_fallback_notification_channel_label">Sonstiges</string>
+    <string name="filter">Filter</string>
+    <string name="fingerprint_30days_description">"Mit Fingerabdruck bestätigen
+
+ (30 Tage gültig)"</string>
+    <string name="fingerprint_error">Login fehlgeschlagen</string>
+    <string name="fingerprint_non_enrolled_fingerprint">Fingerabdruck nicht hinterlegt</string>
+    <string name="fingerprint_set">Fingerabdruck ist aktiviert</string>
+    <string name="fingerprint_title">Möchtest du deinen Fingerabruck zum Login verwenden?</string>
+    <string name="first_step_1_text">Bitte halten Sie Ihr Ausweisdokument bereit.</string>
+    <string name="first_step_2_text">Geben Sie Ihre Ident-ID oben ein und starten Sie die Identifizierung.</string>
+    <string name="first_step_3_text">Folgen Sie den Anweisungen, die Sie durch die Identifizierung leiten.</string>
+    <string name="first_step_4_text">Nach wenigen Minuten ist die Identifizierung abgeschlossen.</string>
+    <string name="first_step_ident_text">Bitte geben Sie Ihre Ident-ID ein und starten Sie die Identifizierung.</string>
+    <string name="first_step_intro_text">So funktioniert die Identifizierung:</string>
+    <string name="first_step_next">Weiter</string>
+    <string name="forget_pattern_lock">Vergisst du dein Muster, kannst du dich mit Passwort und E-Mail anmelden</string>
+    <string name="forgot_email_sent">"Eine Anleitung, um dein Passwort zurückzusetzen wurde dir per
+        E-Mail gesendet"</string>
+    <string name="forgot_password_text">"Bitte trage deine E-Mail Adresse ein und wir senden dir
+        umgehend eine E-Mail mit den Anweisungen für das Zurücksetzen deines Passwortes zu."</string>
+    <string name="four_points_minimum">Dein Muster muss mindestens vier Punkte enthalten</string>
+    <string name="france">Frankreich</string>
+    <string name="friend_invited">Danke, dass du als Pionier die Banking Revolution verbreitest!\u0009</string>
+    <string name="friends_invited">Eingeladen</string>
+    <string name="friends_joined">Angenommen</string>
+    <string name="future_transfer_details_amount">Betrag</string>
+    <string name="future_transfer_details_button_save">ÜBERWEISUNG SPEICHERN</string>
+    <string name="future_transfer_details_deleted">Künftige Überweisung gelöscht.</string>
+    <string name="future_transfer_details_end_date">End-Datum</string>
+    <string name="future_transfer_details_frequency">Rhythmus</string>
+    <string name="future_transfer_details_message">Nachricht</string>
+    <string name="future_transfer_details_occurrences">Anzahl</string>
+    <string name="future_transfer_details_recipient">Empfänger</string>
+    <string name="future_transfer_details_start_date">Start-Datum</string>
+    <string name="future_transfer_details_titile">Künftige Transaktionen bearbeiten</string>
+    <string name="gcm_fallback_notification_channel_label">Sonstiges</string>
+    <string name="generic_error_message">Leider gab es einen Fehler</string>
+    <string name="germany">Deutschland</string>
+    <string name="get_your_free_account">Kostenloses Konto eröffnen</string>
+    <string name="gotit">Verstanden!</string>
+    <string name="greece">Griechenland</string>
+    <string name="halfyearly">Halbjährlich</string>
+    <string name="handy_aktivieren_new_new">Smartphone verknüpfen</string>
+    <string name="hey">Hey!</string>
+    <string name="how_partnership_intro">"N26 und TransferWise helfen dir 6x weniger bei Überweisungen in Ausländische Währungen zu zahlen.
+So schaffen wir es:"</string>
+    <string name="how_partnership_intro_action">Ok, verstanden!</string>
+    <string name="how_partnership_intro_reason_1">Andere Banken profitieren indem sie unfaire Wechselkurse verstecken</string>
+    <string name="how_partnership_intro_reason_2">TransferWise setzt den echten Wechselkurs ein</string>
+    <string name="how_partnership_intro_reason_3">N26 basis Service ist umsonst. Transferwise erhebt dazu eine kleine Gebühr, die du schon im Voraus erfährst.</string>
+    <string name="iban">IBAN</string>
+    <string name="icelink_network_connection_error">Der Videochat wurde unterbrochen. Bitte überprüfen Sie Ihre Internetanbindung. Wir versuchen automatisch neu zu verbinden.</string>
+    <string name="icelink_network_connection_error_abort">Identifizierung abbrechen</string>
+    <string name="ident_done_failed">Identifizierung fehlgeschlagen</string>
+    <string name="ident_done_successful">Identifizierung abgeschlossen</string>
+    <string name="identification_wait">Die durchschnittliche Wartezeit beträgt</string>
+    <string name="identification_wait_longer">Da es derzeit viele Anfragen gibt, ist die Wartezeit länger als gewöhnlich.</string>
+    <string name="identification_wait_minute">Die durchschnittliche Wartezeit beträgt %1$d Minute.</string>
+    <string name="identification_wait_minutes">Die durchschnittliche Wartezeit beträgt %1$d Minuten.</string>
+    <string name="identification_wait_next_in_line">Sie sind die nächste Person in der Warteschleife.</string>
+    <string name="identification_wait_not_first">Derzeit befinden sich %1$d Personen vor Ihnen in der Warteschleife.</string>
+    <string name="identification_wait_second_in_line">Es befindet sich nur eine Person vor Ihnen in der Warteschleife.</string>
+    <string name="identification_wait_seconds">Die durchschnittliche Wartezeit beträgt %1$d Sekunden.</string>
+    <string name="identitat_verifizieren_new_new">Identität verifizieren</string>
+    <string name="idnow_chat_enter_message">Nachricht hier eingeben</string>
+    <string name="idnow_chat_send_message_failure">Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.</string>
+    <string name="idnow_chat_sender_agent_at">um</string>
+    <string name="idnow_chat_sender_user_at">Sie um</string>
+    <string name="idnow_sdk_dialog_jailbreak_message">Identifizierung kann nicht auf einem Gerät mit Jailbreak durchgeführt werden.</string>
+    <string name="idnow_sdk_dialog_jailbreak_title">Gerät mit Jailbreak</string>
+    <string name="idnow_sdk_name">IDnow Online-Ident</string>
+    <string name="image_description">image description</string>
+    <string name="income">Einnahmen</string>
+    <string name="input_fields_error">Bitte vervollständige deine Angaben.</string>
+    <string name="insert_tan_accept">Bestätigen</string>
+    <string name="insert_tan_button_send_again">Fordern Sie den Ident-Code erneut an.</string>
+    <string name="insert_tan_forgot_tan">Ident-Code nicht erhalten oder falsche Nummer angegeben?</string>
+    <string name="insert_tan_forgot_tan_email">Sie haben keinen Ident-Code erhalten oder die falsche E-Mail Adresse angegeben?</string>
+    <string name="insert_tan_hint_enter_code">Ident-Code eingeben</string>
+    <string name="insert_tan_text">Bitte geben Sie Ihren Ident-Code ein. Dieser wurde Ihnen als SMS-Nachricht an die Nummer xxx gesendet.</string>
+    <string name="insert_tan_text_email">Der Ident-Code wurde an die E-Mail Adresse xxx gesendet. Bitte geben Sie den Ident-Code zum fortfahren ein.</string>
+    <string name="insert_tan_text_sms">Der Ident-Code wurde an die Telefonnummer xxx mittels SMS gesendet. Bitte geben Sie den Ident-Code zum fortfahren ein.</string>
+    <string name="insert_tan_title">Ident-Code eingeben</string>
+    <string name="insert_tan_wrong_tan">Ungültiger Ident-Code</string>
+    <string name="insurance_about_benefits_path">en-de/insurance-benefits</string>
+    <string name="insurance_about_benefits_title">Mehr zu den Leistungen</string>
+    <string name="insurance_about_broker_path">de-de/insurance-broker-mandate-explanation</string>
+    <string name="insurance_about_broker_title">Was ist ein Versicherungsmaklermandat?</string>
+    <string name="insurance_about_clark_path">de-de/about-clark</string>
+    <string name="insurance_about_clark_title">Über Clark</string>
+    <string name="insurance_about_insign_path">en-de/insurance-about-e-signature</string>
+    <string name="insurance_about_insign_title">Elektronische Unterschrift</string>
+    <string name="insurance_about_pricing_path">en-de/why-is-insurance-free</string>
+    <string name="insurance_about_pricing_title">Warum ist dieser Service kostenlos?</string>
+    <string name="insurance_android_version_not_supported_button">OKAY, VERSTANDEN</string>
+    <string name="insurance_android_version_not_supported_text">Damit du N26 Insurance nutzen kannst, benötigst du Android 5 oder eine neuere Version.</string>
+    <string name="insurance_android_version_not_supported_title">Dieses Feature ist nicht mit deiner aktuellen Version von Android kompatibel</string>
+    <string name="insurance_black_popup_category">N26 Black</string>
+    <string name="insurance_black_popup_got_it">Okay, verstanden</string>
+    <string name="insurance_black_popup_logo_url">https://s3.eu-central-1.amazonaws.com/n26-insurance-assets-staging/icons/black-card.png</string>
+    <string name="insurance_black_popup_privacy_text">In der Versicherungsübersicht hast du direkten Zugang zu N26 Black</string>
+    <string name="insurance_black_popup_provider">Allianz</string>
+    <string name="insurance_black_popup_title">Deine N26 Black Versicherung wird automatisch in das Wallet geladen, sobald du dich für N26 Insurance angemeldet hast</string>
+    <string name="insurance_category_selection_other">Andere Kategorien</string>
+    <string name="insurance_category_selection_popular">Am beliebtesten</string>
+    <string name="insurance_category_selection_search_placeholder">Suche</string>
+    <string name="insurance_category_selection_title">Versicherungen hinzufügen</string>
+    <string name="insurance_clark_information_broker_more">Was ist ein Versicherungsmakler?</string>
+    <string name="insurance_clark_information_button">Jetzt loslegen</string>
+    <string name="insurance_clark_information_clark_more">Erfahre mehr über Clark</string>
+    <string name="insurance_clark_information_text">Clark ist ein verlässlicher Versicherungsmakler, der uns hilft deine Versicherunsverträge zu digitalisieren und zu verwalten</string>
+    <string name="insurance_clark_information_title">N26 Insurance powered by Clark</string>
+    <string name="insurance_contact_clark_button">Kontaktiere Clark</string>
+    <string name="insurance_contact_clark_email">service@clark.de</string>
+    <string name="insurance_contact_clark_email_body">Mailtext</string>
+    <string name="insurance_contact_clark_email_subject">Mail-Betreff</string>
+    <string name="insurance_contact_clark_phone">+4969153229339</string>
+    <string name="insurance_contact_clark_popup_call">ANRUF</string>
+    <string name="insurance_contact_clark_popup_email">E-MAIL</string>
+    <string name="insurance_contact_clark_popup_text">Fragen zu deinen Versicherungen, Versicherungsschutz, Schadensfällen, Registrierungsbestätigung oder dem Maklermandat.</string>
+    <string name="insurance_contact_clark_popup_title">Kontaktiere Clark</string>
+    <string name="insurance_contact_clark_subtitle">Fragen zu deinen Versicherungen, Versicherungsschutz, Schadensfällen oder dem Maklermandat.</string>
+    <string name="insurance_contact_clark_title">Kontaktiere Clark in diesen Fällen:</string>
+    <string name="insurance_contact_n26_button">Kontaktiere N26</string>
+    <string name="insurance_contact_n26_link">https://support.n26.com/read/000001415?locale=de</string>
+    <string name="insurance_contact_n26_link_title">Kundenservice</string>
+    <string name="insurance_contact_n26_subtitle">Fragen zur App, Registrierungsbestätigung oder Informationen zu unserem Verhältnis mit Clark.</string>
+    <string name="insurance_contact_n26_title">Kontaktiere N26 in diesen Fällen:</string>
+    <string name="insurance_contact_title">Kontaktiere den Kundenservice</string>
+    <string name="insurance_dashboard_empty_beta">BETA-Version</string>
+    <string name="insurance_dashboard_empty_text">All deine Versicherungen, immer zugänglich an einem Platz.</string>
+    <string name="insurance_dashboard_empty_title">"N26 Insurance "</string>
+    <string name="insurance_dashboard_loading">"Jetzt geht's los. Wir verarbeiten gerade deine Versicherungsverträge. Dies kann bis zu zwei Minuten dauern."</string>
+    <string name="insurance_dashboard_optimise_subtitle">Kommt später in diesem Jahr</string>
+    <string name="insurance_dashboard_optimise_title">Optimiere und kaufe Versicherungen</string>
+    <string name="insurance_dashboard_pending_inquiry_description">Clark wird {{provider}} kontaktieren. Das kann bis zu 4 Wochen dauern.</string>
+    <string name="insurance_dashboard_pending_inquiry_digitising">Digitalisierung</string>
+    <string name="insurance_dashboard_pending_inquiry_pending">Ausstehend</string>
+    <string name="insurance_dashboard_pending_inquiry_preparing">Vorbereitung</string>
+    <string name="insurance_dashboard_pending_inquiry_request_sent">Anfrage gesendet</string>
+    <string name="insurance_dashboard_product_included">Inklusive</string>
+    <string name="insurance_dashboard_product_interval_half_yearly">2 pro Jahr</string>
+    <string name="insurance_dashboard_product_interval_monthly">Monatlich</string>
+    <string name="insurance_dashboard_product_interval_never">" "</string>
+    <string name="insurance_dashboard_product_interval_once">Einmal</string>
+    <string name="insurance_dashboard_product_interval_quarterly">Quartalsweise</string>
+    <string name="insurance_dashboard_product_interval_salary">Gehalt</string>
+    <string name="insurance_dashboard_product_interval_yearly">Jährlich</string>
+    <string name="insurance_dashboard_resign_button">Unterschreibe noch einmal</string>
+    <string name="insurance_dashboard_resign_description">Leider konnte der Versicherer deine Unterschrift nicht erkennen. Bitte unterschreibe noch einmal und versuche, dass sie so aussieht wie das Original.</string>
+    <string name="insurance_dashboard_resign_title">Unterschreibe das Mandat erneut</string>
+    <string name="insurance_dashboard_support_button">Nimm hier Kontakt auf</string>
+    <string name="insurance_dashboard_support_title">Benötigst du Hilfe?</string>
+    <string name="insurance_problem_insurer_delete">Lösche diese Anfrage</string>
+    <string name="insurance_problem_insurer_email_body">"Hi Clark,
+
+Ich habe meine {{category}} von {{provider}} an diese E-Mail angehängt. Bitte scanne und speichere die wichtigen Informationen meiner Versicherungen in meinem Wallet.
+
+Meine E-Mailadresse ist {{email}}.
+
+Freundliche Grüße
+{{firstName}} {{lastName}}"</string>
+    <string name="insurance_problem_insurer_email_subject">Hochladen der Versicherung</string>
+    <string name="insurance_problem_insurer_email_to">service@clark.de</string>
+    <string name="insurance_problem_insurer_no_email_title">Deine Mail App ist nicht eingerichtet</string>
+    <string name="insurance_problem_insurer_subtitle">Hey, leider kooperiert {{provider}} nicht mit Clark. Um deine Versicherung in der N26 App sichtbar zu machen, füge bitte deine Versicherungsdetails zu der folgenden E-Mail hinzu.</string>
+    <string name="insurance_problem_insurer_title">Lade deine Versicherungsdetails hoch</string>
+    <string name="insurance_problem_insurer_upload">Lade die Versicherung per E-Mail hoch.</string>
+    <string name="insurance_provider_selection_popular">Beliebte Versicherer</string>
+    <string name="insurance_provider_selection_search_not_found">Hmm, wir konnten nicht finden was du suchst. Bitte überprüfe die Rechtschreibung oder probiere eine andere Suche.</string>
+    <string name="insurance_provider_selection_title">Versicherer hinzufügen</string>
+    <string name="insurance_rejected_delete">Lösche die Anfrage jetzt</string>
+    <string name="insurance_rejected_point_1">Der Versicherer akzeptiert keine digitalen Unterschriften und verlangt eine analoge Unterschrift.</string>
+    <string name="insurance_rejected_point_2">Die Versicherung ist nicht in deinem Namen angemeldet, obwohl du darunter versichert bist.</string>
+    <string name="insurance_rejected_point_3">Die Versicherung wurde bereits gekündigt.</string>
+    <string name="insurance_rejected_point_4">Der Versicherer hat nicht geantwortet.</string>
+    <string name="insurance_rejected_subtitle">Hey, wir konnten deine {{category}} Anfrage an {{provider}} aus einem der folgenden Gründe nicht durchführen:</string>
+    <string name="insurance_rejected_title">Hochladen der Versicherung war nicht erfolgreich</string>
+    <string name="insurance_review_add_more_subtitle">Digitalisiere bis zu 10 Versicherungen</string>
+    <string name="insurance_review_add_more_title">Weitere hinzufügen</string>
+    <string name="insurance_review_delete">Löschen</string>
+    <string name="insurance_review_limit_text">Du kannst nur bis zu 10 Versicherungen auf einmal hinzufügen, mit maximal 50 Ausstehenden</string>
+    <string name="insurance_review_next">Weiter</string>
+    <string name="insurance_review_privacy_details">Um deine Versicherungen hinzuzufügen, übertragen wir deine persönlichen Daten wie Name, E-Mail, Geburtstag und Adresse an Clark, jedoch niemals finanzielle Daten.</string>
+    <string name="insurance_review_privacy_details_bold">aber keine finanziellen Informationen</string>
+    <string name="insurance_review_subtitle_multiple">So können wir dir den einfachen Zugang zu deinen Versicherungsdetails ermöglichen.</string>
+    <string name="insurance_review_subtitle_single">So können wir dir den einfachen Zugang zu den Versicherungsdetails deiner {{category}} geben.</string>
+    <string name="insurance_review_title_multiple">Clark nimmt Kontakt zu deinen Versicherern auf.</string>
+    <string name="insurance_review_title_navigation">Angabe überprüfen</string>
+    <string name="insurance_review_title_single">Clark nimmt Kontakt zu {{provider}} auf</string>
+    <string name="insurance_signature_accurate">Bitte vergewissere dich, dass deine Unterschrift so aussieht wie das Original, sonst wird sie eventuell nicht akzeptiert</string>
+    <string name="insurance_signature_confirm">Bestätigung</string>
+    <string name="insurance_signature_flip_to_edit">Drehe das Smartphone oder tippe hier zum bearbeiten</string>
+    <string name="insurance_signature_flip_to_sign">"Drehe dein Smartphone oder
+tippe hier, um zu unterschreiben"</string>
+    <string name="insurance_signature_information">Mit meiner elektronischen Unterschrift autorisiere ich N26 und Clark als Versicherungsmakler in all meinen Versicherungsangelegenheiten wie per Maklermandat und den vereinbarten AGB.</string>
+    <string name="insurance_signature_information_esignature">elektronischen Unterschrift</string>
+    <string name="insurance_signature_information_mandate">Maklermandat</string>
+    <string name="insurance_signature_title">Ganz offiziell</string>
+    <string name="insurance_terms_continue">Einverstanden und fortfahren</string>
+    <string name="insurance_terms_initial_link">https://n26.com/legal-documents/n26-insurance/insurance-vorvertragliche-informationen/?lang=de&amp;header=no_header</string>
+    <string name="insurance_terms_initial_text">Erstinformationen</string>
+    <string name="insurance_terms_mandate_info">Indem du die AGB akzeptierst sowie Clark mit deiner Unterschrift autorisierst, werden wir zu deinen Versicherungsmaklern und können Details zu deinen Versicherungen anfragen.</string>
+    <string name="insurance_terms_privacy_link">https://n26.com/legal-documents/insurance-datenschutz/?lang=de&amp;header=no_header</string>
+    <string name="insurance_terms_privacy_text">Datenschutzerklärung</string>
+    <string name="insurance_terms_read_and_agreed">Ich habe folgende Dokumente gelesen und stimme zu:</string>
+    <string name="insurance_terms_terms">die N26 Insurance AGB von Clark und N26, die Datenschutzerklärung und die Erstinformationen. Zusätzlich erlaube ich die Nutzung und Weitergabe personenbezogener Daten, sowie Beratungs- und Versicherungsdetails an Maklerpools zum Zwecke der Einholung weiterer Versicherungsangebote.</string>
+    <string name="insurance_terms_terms_link">https://n26.com/legal-documents/n26-insurance/?lang=de&amp;header=no_header</string>
+    <string name="insurance_terms_terms_text">N26 Insurance AGB von Clark und N26</string>
+    <string name="insurance_terms_title">Ganz offiziell</string>
+    <string name="insurance_tour_next_button_android">Weiter</string>
+    <string name="insurance_tour_page_1_subtitle">Verwalte deine bestehenden Versicherungen kostenlos in der App</string>
+    <string name="insurance_tour_page_1_title">Digitalisiere deine Versicherungen</string>
+    <string name="insurance_tour_page_2_subtitle">Wähle einfach deinen Versicherer und die Kategorie, du brauchst weder deine Versicherungsnummer noch eine Vertragskopie.</string>
+    <string name="insurance_tour_page_2_title">Ganz ohne Dokumente</string>
+    <string name="insurance_tour_page_3_subtitle">Wir machen Kosten und Leistungen deiner Versicherungen transparent zugänglich, ohne etwas zu ändern.</string>
+    <string name="insurance_tour_page_3_title">Versicherungen nahtlos übertragen</string>
+    <string name="insurance_tour_page_4_subtitle">Melde Schäden oder kündige deine Versicherung direkt in der App, inklusive automatischer Benachrichtigungen zu Vertragslaufzeiten.</string>
+    <string name="insurance_tour_page_4_title">Einfache Meldung von Schadensfällen</string>
+    <string name="insurance_tour_policy_1_amount">€ 39</string>
+    <string name="insurance_tour_policy_1_name">Hausratsversicherung</string>
+    <string name="insurance_tour_policy_2_amount">€ 120</string>
+    <string name="insurance_tour_policy_2_name">Krankenversicherung</string>
+    <string name="interest_apr">Effektiver Jahreszins 8,9%</string>
+    <string name="interval">Intervall</string>
+    <string name="intro_text_2">Erhalte Push-Benachrichtigungen bei jeder Kontobewegung</string>
+    <string name="intro_text_3">Mit wenigen Klicks überall Überweisungen tätigen, Geld abheben und Bargeld einzahlen</string>
+    <string name="intro_text_4">Eröffne dein Konto mit deutscher Einlagensicherung in unter 8 Minuten überall, wo du Internet hast</string>
+    <string name="intro_text_5">3 Tage später erhältst du deine MasterCard, mit der du weltweit kostenlos abheben und bezahlen kannst</string>
+    <string name="introduce_pattern">Bitte zeichne dein gewünschtes Login-Muster auf</string>
+    <string name="introduce_pin">Bitte gib deine PIN ein</string>
+    <string name="introduce_pin_text">Damit bestätigst du deine Identität</string>
+    <string name="invalid_character_input">Folgende Zeichen sind möglich a-z 0-9</string>
+    <string name="invalid_date">Datum muss zwischen %1$s und %2$s fallen.</string>
+    <string name="invite_message">"Hey %s,
+komm doch auch zu N26. Melde dich an und erlebe, wie einfach Banking sein kann!"</string>
+    <string name="invite_more_friends">Weitere Freunde Einladen</string>
+    <string name="invites_pending">%1$s ausstehend</string>
+    <string name="ireland">Irland</string>
+    <string name="is_this_your_number">Ist das deine Nummer?</string>
+    <string name="italy">Italien</string>
+    <string name="ja">Ja</string>
+    <string name="joda_time_android_date_time">%1$s, %2$s</string>
+    <string name="joda_time_android_preposition_for_date">am %s</string>
+    <string name="joda_time_android_preposition_for_time">um %s</string>
+    <string name="joda_time_android_relative_time">%1$s, %2$s</string>
+    <string name="konto_aktivierung_text">"Um fortzufahren, musst du dein Smartphone neu verknüpfen.
+        Dafür erhältst du eine SMS mit deinem Verknüpfungcode"</string>
+    <string name="konto_verknüpfen">Konto Verknüpfen</string>
+    <string name="ladeDaten">Lade Daten</string>
+    <string name="language_deutsch">Deutsch</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_spanish">Español</string>
+    <string name="limits_updated">Die Einstellung wurde angepasst.</string>
+    <string name="lock_pattern">Login-Muster verwalten</string>
+    <string name="login_greeting_afternoon">Guten Tag, %s</string>
+    <string name="login_greeting_evening">Guten Abend, %s</string>
+    <string name="login_greeting_morning">Guten Morgen, %s</string>
+    <string name="login_with_pattern">Anmeldung per Login-Muster</string>
+    <string name="los_gehts">"LOS GEHT'S!"</string>
+    <string name="make_pattern_visible">Muster sichtbar machen</string>
+    <string name="menu_beam">MoneyBeam</string>
+    <string name="menu_cash26">CASH26</string>
+    <string name="menu_how_it_works">"Und so funktioniert's"</string>
+    <string name="menu_legalnotices">Rechtliche Hinweise</string>
+    <string name="menu_load">Überweisungen</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_request">Anfrage</string>
+    <string name="menu_settings">Einstellungen</string>
+    <string name="message_id_failed">Identifizierung fehlgeschlagen.</string>
+    <string name="message_id_failed_no_connection">Identifizierung fehlgeschlagen, keine Internetverbindung.</string>
+    <string name="message_user_canceled">Nutzer hat den Vorgang abgebrochen.</string>
+    <string name="missedmigration_cs_link">https://support.n26.com/read/000001365?locale=de</string>
+    <string name="money_beam_amount_limit">MoneyBeams an nicht N26 Kunde sind mit 100 € beschränkt.</string>
+    <string name="money_beam_n26_customer_amount_limit">MoneyBeams an andere N26 Kunde sind mit 1000 € beschränkt.</string>
+    <string name="money_beam_to_receiver">MoneyBeam für %s</string>
+    <string name="moneybeam_intent_label">MoneyBeam mit N26</string>
+    <string name="month">Monat</string>
+    <string name="monthly">Monatlich</string>
+    <string name="name">Name</string>
+    <string name="name_your_account">Gib deinem Plan einen Namen</string>
+    <string name="name_your_account_desc">Gebe den neuen Namen für den Plan ein.</string>
+    <string name="navigation_iban">IBAN:</string>
+    <string name="navigation_invite_friends">Freunde einladen</string>
+    <string name="navigation_manage_black">N26 Black</string>
+    <string name="navigation_my_cards">Meine Karten</string>
+    <string name="navigation_settings">Einstellungen</string>
+    <string name="navigation_stats">Statistiken</string>
+    <string name="navigation_support">Support</string>
+    <string name="nein">Nein</string>
+    <string name="network_connection_failure">Für den Identifizierungsprozess wird eine Internetverbindung benötigt. Bitte stellen Sie eine Internetverbindung her und versuchen Sie es erneut.</string>
+    <string name="network_dialog_title">Netzwerkfehler</string>
+    <string name="new_address">Neue Adresse?</string>
+    <string name="new_contact_action">Weiter</string>
+    <string name="new_contact_details_international_headline">Bankdaten des Empfängers:</string>
+    <string name="new_contact_error_entry">Eingabe ungültig</string>
+    <string name="new_contact_title">Neuer Kontakt</string>
+    <string name="new_number">Bitte trage deine neue Nummer ein:</string>
+    <string name="new_telephone_number_incorrect">Die neue Nummer is nicht korrekt</string>
+    <string name="new_transfer">Überweisen</string>
+    <string name="nice">Cool!</string>
+    <string name="no_balance_statements">Deine Kontoauszüge werden hier erscheinen sobald du dein N26 Konto benutzt.</string>
+    <string name="no_documents_yet">Bisher keine Dokumente.</string>
+    <string name="no_documents_yet_desc">Hier werden Dokumente ankommen, die deinen Investment-Plan betreffen.</string>
+    <string name="no_end_date">Bis auf Widerruf</string>
+    <string name="no_executions">In diesem Zeitraum können keine Überweisungen durchgeführt werden</string>
+    <string name="no_network_connection">Keine Internetverbindung</string>
+    <string name="no_results">"Die von dir eingeladenen Freunde erscheinen hier,
+        sobald sie ihr Konto eröffnet haben."</string>
+    <string name="no_results_monetary">"Eingeladene Freunde erscheinen hier, sobald du ihre
+        Einladungen verschickt hast."</string>
+    <string name="no_savings_plan_available">Es ist kein Sparplan verfügbar</string>
+    <string name="no_special_chars">Folgende Zeichen sind möglich a-z 0-9 - () : , . /</string>
+    <string name="no_standing_orders">"Du hast noch keine
+Daueraufträge eingestellt"</string>
+    <string name="no_thanks">Nein, danke</string>
+    <string name="no_transactions_filter">"Für diese Kategorie oder diesen Zeitraum sind noch keine
+        Transaktionen vorhanden. 
+Bitte wähle einen anderen Filter"</string>
+    <string name="no_transactions_yet">Bisher keine Transaktionen</string>
+    <string name="no_transactions_yet_desc">Hier erscheinen Transaktionen, die mit deinem Sparplan in Verbindung stehen.</string>
+    <string name="non_">keines</string>
+    <string name="non_valid_description">"Verwendungszweck enthält ungültige Zeichen oder die erlaubte Länge wurde überschritten.
+        Erlaubte Zeichen sind a-z A-Z 0-9 -  () : , ."</string>
+    <string name="not_active">Dein Smartphone ist nicht mit deinem Konto verknüpft.</string>
+    <string name="not_enough_funds">Nicht genügen Guthaben.</string>
+    <string name="not_now">Nicht jetzt</string>
+    <string name="notification">Ongoing call</string>
+    <string name="notification_content">Aktiver Anruf</string>
+    <string name="notify_email">Benachrichte %s via E-Mail</string>
+    <string name="notify_via_push_content">Sie werden benachrichtigt sobald ein Ident Spezialist für Sie bereit steht.</string>
+    <string name="notify_via_push_details">Unser Service wird gerade ungewöhnlich stark in Anspruch genommen. Wir können Sie per Push Nachricht informieren wenn ein Ident Spezialist für sie bereit steht.</string>
+    <string name="notify_via_push_register">Warteliste</string>
+    <string name="notify_via_push_success_button">Zurück zum Hauptmenü</string>
+    <string name="notify_via_push_success_message">Vielen Dank, wir haben Sie in die Warteliste eingetragen. Wir werden Sie sofort benachrichtigen sobald ein Ident Spezialist zur Verfügung steht. Wenn Sie Ihren Identifizierungsprozess fortsetzen werden Sie an den Anfang der Warteschlange gesetzt.</string>
+    <string name="notify_via_push_title">per Push benachrichtigen</string>
+    <string name="number">Nr.</string>
+    <string name="number26">N26</string>
+    <string name="number_occurrences">Anzahl</string>
+    <string name="ok">Ja</string>
+    <string name="ok_gotit">Okay</string>
+    <string name="onboarding_text">"Geld senden, einzahlen oder auszahlen
+mit einem Klick"</string>
+    <string name="once">Einmalig</string>
+    <string name="one_of_your_friends">Einer deiner Freunde</string>
+    <string name="one_time_amount">Einmaliger Betrag</string>
+    <string name="only_one_login_method">Du kannst nur eine Login-Methode wählen</string>
+    <string name="open">Geöffnet</string>
+    <string name="operation_failed">Allgemeiner Fehler! Bitte versuche es erneut.</string>
+    <string name="or">oder</string>
+    <string name="original_amount">Ursprungsbetrag</string>
+    <string name="overdraft">Dispo</string>
+    <string name="overdraft_feature_dialog_message">Innerhalb von 2 Minuten bis zu 2.000€ freischalten und sofort verwenden.</string>
+    <string name="overdraft_feature_dialog_title">Mehr Flexibilität Mit Einem Disporahmen Bis 2.000€</string>
+    <string name="overdraft_upgrade_dialog_message">Alle Bedingungen sind erfüllt. Du kannst mehr Spielraum für deinen Dispo bekommen.</string>
+    <string name="pair_code_already_requested">Verknüpfungs Code wurde bereits angefordert. Bitte überprüfe deine SMS oder warte 5 Minuten.</string>
+    <string name="password">Passwort</string>
+    <string name="pattern_expiration">Nach 30 Tagen bitten wir dich einmalig wieder mit Passwort anzumelden</string>
+    <string name="pattern_not_correct">Muster ist nicht korrekt</string>
+    <string name="pattern_promotion">Login-Muster</string>
+    <string name="pattern_promotion_desc">Möchtest du ein Muster zum Login verwenden? (30 Tage gültig)</string>
+    <string name="performance">Performance</string>
+    <string name="permission_audio">Audioaufnahmen anfertigen</string>
+    <string name="permission_camera">Kamera benutzen</string>
+    <string name="permission_failed_break">Um den Vorgang fortzusetzen müssen sie alle benötigen Berechtigungen akzeptieren. Der Vorgang wurde abgebrochen.</string>
+    <string name="permission_failed_continue">Bitte erteilen Sie die nötigen Berechtigungen, um mit der Identifizierung fortfahren zu können.</string>
+    <string name="permission_storage">Fotos auf dem Gerät zwischenspeichern</string>
+    <string name="permissions_intro_end">".
+Bitte bestätigen Sie die Berechtigungen, um diese Funktion nutzen zu können."</string>
+    <string name="permissions_intro_photo">"Um mit der Photoidentifizierung fortfahren zu können, werden die nachfolgenden Berechtigungen benötigt: 
+"</string>
+    <string name="permissions_intro_video">"Um mit der Videoidentifizierung fortfahren zu können, werden die nachfolgenden Berechtigungen benötigt: 
+"</string>
+    <string name="phone_not_pair_unable_set_fingerprint">Fingerabdruck-Login kann nur an deinem verknüpften Smartphone verwendet werden.</string>
+    <string name="phone_not_pair_unable_set_pattern">"Das Login-Muster kann nur auf deinem verknüpften
+        Smartphone gesetzt werden."</string>
+    <string name="phone_number">Telefonnummer</string>
+    <string name="photo_check_action_help">Hilfe</string>
+    <string name="photo_check_action_hide_help">Hilfe ausblenden</string>
+    <string name="photo_check_image_description">Userfoto</string>
+    <string name="photo_check_retake_photo">Wiederholen</string>
+    <string name="photo_check_save_photo">Speichern</string>
+    <string name="photo_confirm_restart_dialog_continue">Identifizierung fortsetzen</string>
+    <string name="photo_confirm_restart_dialog_message">Möchten Sie diese Identifizierung wirklich neu starten?</string>
+    <string name="photo_confirm_restart_dialog_restart">Neu starten</string>
+    <string name="photo_country_selection_image_description">Landesflagge</string>
+    <string name="photo_country_selection_info">Wählen Sie das Land, das Ihr Ausweisdokument ausstellt.</string>
+    <string name="photo_country_selection_title">Land</string>
+    <string name="photo_dialog_content">Die Daten wurden verschlüsselt und werden nun an unseren Server übertragen.</string>
+    <string name="photo_dialog_title">Daten übertragen.</string>
+    <string name="photo_document_selection_document_extra_placeholder">ab 2006</string>
+    <string name="photo_document_selection_document_name_placeholder">Personalausweis</string>
+    <string name="photo_document_selection_info">Wählen Sie die Art Ihres Dokuments.</string>
+    <string name="photo_document_selection_title">Dokument</string>
+    <string name="photo_help_overlay_button_start">Foto aufnehmen</string>
+    <string name="photo_help_overlay_content_drivers_license_back">Legen Sie Ihren Führerschein auf eine neutrale Unterlage. Positionieren Sie ihn im grünen Rahmen. Erstellen Sie ein Foto der Rückseite.</string>
+    <string name="photo_help_overlay_content_drivers_license_back_details">Das muss auf dem Foto sichtbar sein:&lt;br />&lt;br />• Rückseite vollständig sichtbar&lt;br />• Nicht durch Finger oder Gegenstände verdeckt&lt;br />• Bild scharf und Schrift gut lesbar</string>
+    <string name="photo_help_overlay_content_drivers_license_front">Legen Sie Ihren Führerschein auf eine neutrale Unterlage. Positionieren Sie ihn im grünen Rahmen. Erstellen Sie ein Foto der Vorderseite.</string>
+    <string name="photo_help_overlay_content_drivers_license_front_details">Das muss auf dem Foto sichtbar sein:&lt;br />&lt;br />• Vorderseite vollständig sichtbar&lt;br />• Nicht durch Finger oder Gegenstände verdeckt&lt;br />• Bild scharf und Schrift gut lesbar</string>
+    <string name="photo_help_overlay_content_drivers_license_holograms">Nehmen Sie Ihren Führerschein in die Hand. Kippen Sie ihn im Licht, so dass die Hologramme sichtbar sind. Sie können hierzu den Blitz einschalten. Erstellen Sie ein Foto der Hologramme.</string>
+    <string name="photo_help_overlay_content_drivers_license_holograms_details">Das muss auf dem Foto sichtbar sein:&lt;br />&lt;br />• Führerschein vollständig sichtbar&lt;br />• Hologramme deutlich erkennbar</string>
+    <string name="photo_help_overlay_content_face">Positionieren Sie Ihr Gesicht im grünen Rahmen und erstellen Sie ein Foto (Selfie).</string>
+    <string name="photo_help_overlay_content_face_details">Das muss auf Ihrem Bild sichtbar sein:&lt;br />&lt;br />• Gesicht gut erkennbar&lt;br />• Nicht durch Finger oder Gegenstände verdeckt</string>
+    <string name="photo_help_overlay_content_id_back">Legen Sie Ihren Ausweis auf eine neutrale Unterlage. Positionieren Sie den Ausweis im grünen Rahmen. Erstellen Sie ein Foto der Rückseite.</string>
+    <string name="photo_help_overlay_content_id_back_details">Das muss auf dem Foto sichtbar sein:&lt;br />&lt;br />• Rückseite vollständig sichtbar&lt;br />• Nicht durch Finger oder Gegenstände verdeckt&lt;br />• Bild scharf und Schrift gut lesbar</string>
+    <string name="photo_help_overlay_content_id_front">Legen Sie Ihren Ausweis auf eine neutrale Unterlage. Positionieren Sie den Ausweis im grünen Rahmen. Erstellen Sie ein Foto der Vorderseite.</string>
+    <string name="photo_help_overlay_content_id_front_details">Das muss auf dem Foto sichtbar sein:&lt;br />&lt;br />• Vorderseite vollständig sichtbar&lt;br />• Nicht durch Finger oder Gegenstände verdeckt&lt;br />• Bild scharf und Schrift gut lesbar</string>
+    <string name="photo_help_overlay_content_id_holograms">Nehmen Sie Ihren Ausweis in die Hand. Kippen Sie den Ausweis im Licht, so dass die Hologramme sichtbar sind. Sie können hierzu den Blitz einschalten. Erstellen Sie ein Foto der Hologramme.</string>
+    <string name="photo_help_overlay_content_id_holograms_details">Das muss auf dem Foto sichtbar sein:&lt;br />&lt;br />• Ausweis vollständig sichtbar&lt;br />• Hologramme deutlich erkennbar</string>
+    <string name="photo_help_overlay_content_passport_back">Legen Sie Ihren Pass auf eine neutrale Unterlage. Positionieren Sie ihn im grünen Rahmen. Erstellen Sie ein Foto der zweiten Datenseite.</string>
+    <string name="photo_help_overlay_content_passport_back_details">Das muss auf dem Foto sichtbar sein:&lt;br />&lt;br />• Zweite Datenseite vollständig sichtbar&lt;br />• Nicht durch Finger oder Gegenstände verdeckt&lt;br />• Bild scharf und Schrift gut lesbar</string>
+    <string name="photo_help_overlay_content_passport_front">Legen Sie Ihren Pass auf eine neutrale Unterlage. Positionieren Sie ihn im grünen Rahmen. Erstellen Sie ein Foto der Datenseite.</string>
+    <string name="photo_help_overlay_content_passport_front_details">Das muss auf dem Foto sichtbar sein:&lt;br />&lt;br />• Datenseite vollständig sichtbar&lt;br />• Nicht durch Finger oder Gegenstände verdeckt&lt;br />• Bild scharf und Schrift gut lesbar</string>
+    <string name="photo_help_overlay_content_passport_holograms">Nehmen Sie Ihren Pass in die Hand. Kippen Sie die Datenseite im Licht, so dass die Hologramme sichtbar sind. Sie können hierzu den Blitz einschalten. Erstellen Sie ein Foto der Hologramme.</string>
+    <string name="photo_help_overlay_content_passport_holograms_details">Das muss auf dem Foto sichtbar sein:&lt;br />&lt;br />• Pass vollständig sichtbar&lt;br />• Hologramme deutlich erkennbar</string>
+    <string name="photo_help_overlay_content_residence_back">Legen Sie Ihren Aufenthaltstitel auf eine neutrale Unterlage. Positionieren Sie ihn im grünen Rahmen. Erstellen Sie ein Foto der Rückseite.</string>
+    <string name="photo_help_overlay_content_residence_back_details">Das muss auf dem Foto sichtbar sein:&lt;br />&lt;br />• Rückseite vollständig sichtbar&lt;br />• Nicht durch Finger oder Gegenstände verdeckt&lt;br />• Bild scharf und Schrift gut lesbar</string>
+    <string name="photo_help_overlay_content_residence_front">Legen Sie Ihren Aufenthaltstitel auf eine neutrale Unterlage. Positionieren Sie ihn im grünen Rahmen. Erstellen Sie ein Foto der Vorderseite.</string>
+    <string name="photo_help_overlay_content_residence_front_details">Das muss auf dem Foto sichtbar sein:&lt;br />&lt;br />• Vorderseite vollständig sichtbar&lt;br />• Nicht durch Finger oder Gegenstände verdeckt&lt;br />• Bild scharf und Schrift gut lesbar</string>
+    <string name="photo_help_overlay_content_residence_holograms">Nehmen Sie Ihren Aufenthaltstitel in die Hand. Kippen Sie ihn im Licht, so dass die Hologramme sichtbar sind. Sie können hierzu den Blitz einschalten. Erstellen Sie ein Foto der Hologramme.</string>
+    <string name="photo_help_overlay_content_residence_holograms_details">Das muss auf dem Foto sichtbar sein:&lt;br />&lt;br />• Aufenthaltstitel vollständig sichtbar&lt;br />• Hologramme deutlich erkennbar</string>
+    <string name="photo_help_overlay_example">Beispiel:</string>
+    <string name="photo_help_overlay_title_drivers_license_back">Rückseite</string>
+    <string name="photo_help_overlay_title_drivers_license_front">Vorderseite</string>
+    <string name="photo_help_overlay_title_drivers_license_holograms">Hologramme</string>
+    <string name="photo_help_overlay_title_face">Gesicht</string>
+    <string name="photo_help_overlay_title_id_back">Rückseite</string>
+    <string name="photo_help_overlay_title_id_front">Vorderseite</string>
+    <string name="photo_help_overlay_title_id_holograms">Hologramme</string>
+    <string name="photo_help_overlay_title_passport_back">Zweite Datenseite</string>
+    <string name="photo_help_overlay_title_passport_front">Datenseite</string>
+    <string name="photo_help_overlay_title_passport_holograms">Hologramme</string>
+    <string name="photo_help_overlay_title_residence_back">Rückseite</string>
+    <string name="photo_help_overlay_title_residence_front">Vorderseite</string>
+    <string name="photo_help_overlay_title_residence_holograms">Hologramme</string>
+    <string name="photo_live_take_picture_button">Foto aufnehmen</string>
+    <string name="photo_process_overview_send_data_button">Daten übertragen</string>
+    <string name="photo_process_overview_send_data_text">Mit Klick auf den Button willigen Sie ein, dass die Aufnahmen übertragen und gespeichert werden.</string>
+    <string name="photo_process_overview_text">Erstellen Sie alle Aufnahmen aus der folgenden Liste. Danach können Sie die Daten übertragen.</string>
+    <string name="pin_festlegen_new_new">Überweisungscode festlegen</string>
+    <string name="pin_incorrect">Fehler! Die eingegebene PIN ist falsch</string>
+    <string name="pin_set_properly">Deine persönliche PIN wurde erfolgreich gespeichert</string>
+    <string name="pins_not_equal">Die eingegebenen PINs stimmen nicht überein</string>
+    <string name="plan_projection">Plan-Prognose</string>
+    <string name="plan_recap">Zusammenfassung</string>
+    <string name="please_wait">Bitte warten …</string>
+    <string name="powered_by">Powered by</string>
+    <string name="powered_by_idnow">powered by</string>
+    <string name="pre_chat_banner_text">Damit wir Sie mit einem Experten verbinden können, benötigen wir einige Informationen</string>
+    <string name="pre_chat_button_start">Mit einem Agenten chatten</string>
+    <string name="pre_chat_field_list_description">Hier wird eine Liste mit auszufüllenden Feldern angezeigt.</string>
+    <string name="pre_chat_picklist_select_hint">Wert auswählen...</string>
+    <string name="pre_chat_toolbar_title">Live-Chat</string>
+    <string name="premium_card_cancellation_cancel">N26 Black kündigen</string>
+    <string name="premium_card_cancellation_description">"&lt;p>Deine N26 Black Mitgliedschaft ist bis zum %s gültig, und du kannst sie bis zu einem Monat vor diesem Datum kündigen. &lt;/p>&lt;br>
+&lt;p>Alle Käufe, die vor dem Kündigungsdatum getätigt werden, sind für deine Versicherungspolice qualifiziert, sofern du deinen Anspruch vor diesem Datum anmeldest. &lt;/p>&lt;br>
+&lt;p>Diese Aktion kündigt lediglich deine N26 Black Mitgliedschaft, und dein bestehendes N26 Konto bleibt bestehen. &lt;/p>&lt;br>
+&lt;p>Für die genauen Bedingungen zur Kündigung lies bitte die Allgemeinen Geschäftsbedingungen für N26 Black und Versicherung unter &lt;a href=\"https://n26.com/black\">N26.com/black&lt;/a>&lt;/p>&lt;br>"</string>
+    <string name="premium_card_cancellation_dialog_confirm">N26 Black kündigen</string>
+    <string name="premium_card_cancellation_dialog_dismiss">Verwerfen</string>
+    <string name="premium_card_cancellation_dialog_message">Dein N26 Black Konto ist gültig bis %s. Du kannst die Migliedschaft jederzeit erneuern</string>
+    <string name="premium_card_cancellation_dialog_title">Bist du sicher, dass du deine N26 Black Mitgliedschaft kündigen möchtest?</string>
+    <string name="premium_card_cancellation_subtitle">Vor Bestätigung bitte lesen:</string>
+    <string name="premium_card_cancellation_title">Kündigung N26 Black</string>
+    <string name="premium_card_checklist_additional">Bitte begründe den Grund deiner Reklamation und füge folgende Infos hinzu, wenn du eine E-Mail an den Versicherungsgeber sendest:</string>
+    <string name="premium_card_checklist_download">Reklamations-Kontrollliste herunterladen</string>
+    <string name="premium_card_checklist_extended_warranty_link">https://docs.n26.com/legal/n26-black/product_de/n26-5-erweitertegarantie-claims-allianz-de.pdf</string>
+    <string name="premium_card_checklist_extended_warranty_summary">"&lt;ul>
+&lt;li>&lt;b>Die originalen Garantieunterlagen&lt;/b>&lt;br>
+Inklusive der originalen Allgemeinen Geschäftsbedingungen.
+&lt;li>&lt;b>Geschätzte Reparaturkosten&lt;/b>&lt;br>
+Dies kann eine Schätzung des ursprünglichen Herstellers sein.
+&lt;li>&lt;b>Nachweis der Anschaffung über N26 Black Konto&lt;/b>&lt;br>
+Du kannst die entsprechende Transaktion in deinem monatlichen Kontoauszug finden und diese als PDF zur Verfügung stellen.
+&lt;li>&lt;b>Deine N26 Black Kontoinformationen&lt;/b>&lt;br>
+Du kannst deine IBAN und BIC im Control Center finden, damit deine Gutschrift dich erreicht.
+&lt;li>&lt;b>Deine N26 Black ID&lt;/b>&lt;br>
+Du findest diese Nummer in deiner Willkommens-E-Mail und in der N26 Black Übersicht im Control Center.
+&lt;/ul>"</string>
+    <string name="premium_card_checklist_extended_warranty_title">Erweiterte Garantie</string>
+    <string name="premium_card_checklist_flight_delay_link">https://docs.n26.com/legal/n26-black/product_de/n26-1-flugverzogerung-claims-allianz-de.pdf</string>
+    <string name="premium_card_checklist_flight_delay_summary">"&lt;ul>
+&lt;li>&lt;b>Reiseunterlagen mit Buchungsbestätigung&lt;/b>&lt;br>
+Zum Beispiel deine Bordkarte, e-ticket oder jedes Reisedokument der Fluggesellschaft, das deine Buchungsnummer und die geplante Abflugzeit angibt.
+&lt;li>&lt;b>Einen Nachweis der Fluggesellschaft, dass dein Flug verspätet war&lt;/b>&lt;br>
+Setze dich mit der Fluggesellschaft in Verbindung, um eine schriftliche Bestätigung über die Verzögerung dieses bestimmten Flugs sowie der Länge der Verzögerung zu erhalten.
+&lt;li>&lt;b>Nachweis der Zahlung mit deinem N26 Black Konto&lt;/b>&lt;br>
+Du kannst die entsprechende Transaktion in deinem monatlichen Kontoauszug finden und diese als PDF zur Verfügung stellen.
+&lt;li>&lt;b>Deine N26 Black Kontoinformationen&lt;/b>&lt;br>
+Du kannst deine IBAN und BIC im Control Center finden, damit deine Gutschrift dich erreicht.
+&lt;li>&lt;b>Deine N26 Black ID&lt;/b>&lt;br>
+Du findest diese Nummer in deiner Willkommens-E-Mail und in der N26 Black Übersicht im Control Center.
+&lt;/ul>"</string>
+    <string name="premium_card_checklist_flight_delay_title">Flugverspätung</string>
+    <string name="premium_card_checklist_footer">Der Versicherungsgeber kontaktiert dich nach Erhalt der Dokumente</string>
+    <string name="premium_card_checklist_luggage_delay_link">https://docs.n26.com/legal/n26-black/product_de/n26-2-gepackverzogerung-claims-allianz-de.pdf</string>
+    <string name="premium_card_checklist_luggage_delay_summary">"&lt;ul>
+&lt;li>&lt;b>Reiseunterlagen mit Buchungsbestätigung&lt;/b>&lt;br>
+Zum Beispiel deine Bordkarte, e-ticket oder jedes Reisedokument der Fluggesellschaft, das deine Buchungsnummer und die geplante Abflugzeit angibt.
+&lt;li>&lt;b>Einen Nachweis der Fluggesellschaft, dass dein Gepäck verspätet war&lt;/b>&lt;br>
+Setze dich mit der Fluggesellschaft in Verbindung, um eine schriftliche Bestätigung über die Verzögerung deines Gepäcks zu erhalten.
+&lt;li>&lt;b>Nachweis der Zahlung mit deinem N26 Black Konto&lt;/b>&lt;br>
+Du kannst die entsprechende Transaktion in deinem monatlichen Kontoauszug finden und diese als PDF zur Verfügung stellen.
+&lt;li>&lt;b>Deine N26 Black Kontoinformationen&lt;/b>&lt;br>
+Du kannst deine IBAN und BIC im Control Center finden, damit deine Gutschrift dich erreicht.
+&lt;li>&lt;b>Deine N26 Black ID&lt;/b>&lt;br>
+Du findest diese Nummer in deiner Willkommens-E-Mail und in der N26 Black Übersicht im Control Center.
+&lt;/ul>"</string>
+    <string name="premium_card_checklist_luggage_delay_title">Gepäckverspätung</string>
+    <string name="premium_card_checklist_stolen_cash_link">https://docs.n26.com/legal/n26-black/product_de/n26-4-bargeldschutz-fur-geldautomaten-claims-allianz-de.pdf</string>
+    <string name="premium_card_checklist_stolen_cash_summary">"&lt;ul>
+&lt;li>&lt;b>Schriftliche Beschreibung des Vorfalls&lt;/b>&lt;br>
+Gib eine genaue Beschreibung des Überfalls und Diebstahls an, inklusive des genauen Tags, der Uhrzeit und dem Ort.
+&lt;li>&lt;b>Eine Kopie der Polizeianzeige&lt;/b>&lt;br>
+Erstatte vor Ort eine Anzeige bei der Polizei und füge eine Kopie bei.
+&lt;li>&lt;b>Nachweis der Abhebung mit deiner N26 Black Karte&lt;/b>&lt;br>
+Du kannst die entsprechende Transaktion mit dem genauen Betrag der Abhebung in deinem monatlichen Kontoauszug finden und diese als PDF zur Verfügung stellen.
+&lt;li>&lt;b>Deine N26 Black Kontoinformationen&lt;/b>&lt;br>
+Du kannst deine IBAN und BIC im Control Center finden, damit deine Gutschrift dich erreicht.
+&lt;li>&lt;b>Deine N26 Black ID&lt;/b>&lt;br>
+Du findest diese Nummer in deiner Willkommens-E-Mail und in der N26 Black Übersicht im Control Center.
+&lt;/ul>"</string>
+    <string name="premium_card_checklist_stolen_cash_title">Bargeldschutz für Geldautomaten</string>
+    <string name="premium_card_checklist_stolen_mobile_link">https://docs.n26.com/legal/n26-black/product_de/n26-3-diebstahlmobiltelefon-claims-allianz-de.pdf</string>
+    <string name="premium_card_checklist_stolen_mobile_summary">"&lt;ul>
+&lt;li>&lt;b>Schriftliche Beschreibung des Vorfalls&lt;/b>&lt;br>
+Gib eine genaue Beschreibung des Diebstahls an, inklusive des genauen Tags, der Uhrzeit und dem Ort.
+&lt;li>&lt;b>Eine Kopie der Polizeianzeige&lt;/b>&lt;br>
+Erstatte vor Ort eine Anzeige bei der Polizei und füge eine Kopie bei.
+&lt;li>&lt;b>Nachweis über den Besitz&lt;/b>&lt;br>
+Dies kann ein Kaufbeleg oder der Mobilfunkvertrag sein. Nachweis der Zahlung mit deinem N26 Black Konto
+&lt;li>&lt;b>Nachweis der Zahlung mit deinem N26 Black Konto&lt;/b>&lt;br>
+Du kannst die entsprechende Transaktion in deinem monatlichen Kontoauszug finden und diese als PDF zur Verfügung stellen.
+&lt;li>&lt;b>Deine N26 Black Kontoinformationen&lt;/b>&lt;br>
+Du kannst deine IBAN und BIC im Control Center finden, damit deine Gutschrift dich erreicht.
+&lt;li>&lt;b>Deine N26 Black ID&lt;/b>&lt;br>
+Du findest diese Nummer in deiner Willkommens-E-Mail und in der N26 Black Übersicht im Control Center.
+&lt;/ul>"</string>
+    <string name="premium_card_checklist_stolen_mobile_title">Diebstahl Mobiltelefon</string>
+    <string name="premium_card_checklist_summary">Im Folgenden findest du eine Liste von Dokumenten, die du Allianz Global Assistance Europe zur Verfügung stellen musst, um einen Anspruch zu erheben</string>
+    <string name="premium_card_checklist_travel_cancellation_link">https://docs.n26.com/legal/n26-black/product_de/n26-6-reisestornierung-claims-allianz-de.pdf</string>
+    <string name="premium_card_checklist_travel_cancellation_summary">"&lt;ul>
+&lt;li>&lt;b>Nachweis über die spezifischen Umstände, die zur Reisestornierung geführt haben&lt;/b>&lt;br>
+Dies kann ein medizinisches Gutachten mit deiner Diagnose, ein Kündigungsschreiben deines Arbeitgebers oder andere für die Umstände relevante Dokumente sein.
+&lt;li>&lt;b>Reiseunterlagen mit Buchungsbestätigung&lt;/b>&lt;br>
+Zum Beispiel deine Bordkarte, e-ticket oder jedes Reisedokument der Fluggesellschaft, das deine Buchungsnummer und die geplante Abflugzeit angibt.
+&lt;li>&lt;b>Nachweis der Zahlung mit deinem N26 Black Konto&lt;/b>&lt;br>
+Du kannst die entsprechende Transaktion in deinem monatlichen Kontoauszug finden und diese als PDF zur Verfügung stellen.
+&lt;li>&lt;b>Deine N26 Black Kontoinformationen&lt;/b>&lt;br>
+Du kannst deine IBAN und BIC im Control Center finden, damit deine Gutschrift dich erreicht.
+&lt;li>&lt;b>Deine N26 Black ID&lt;/b>&lt;br>
+Du findest diese Nummer in deiner Willkommens-E-Mail und in der N26 Black Übersicht im Control Center.
+&lt;/ul>
+Bitte fülle dieses Formular aus
+https://www.allianz-reiseversicherung.de/files/documents/claimsforms/schadenmeldung_reiseruecktritt_abbruch.pdf "</string>
+    <string name="premium_card_checklist_travel_cancellation_title">Reiserücktritt</string>
+    <string name="premium_card_claim_extended_warranty_summary">Zusätzliche Garantie auf elektronische Geräte</string>
+    <string name="premium_card_claim_extended_warranty_title">Erweiterte Garantie</string>
+    <string name="premium_card_claim_flight_delay_summary">Verspätungen länger als 4 Stunden</string>
+    <string name="premium_card_claim_flight_delay_title">Flugverspätung</string>
+    <string name="premium_card_claim_luggage_delay_summary">Verspätungen länger als 6 Stunden</string>
+    <string name="premium_card_claim_luggage_delay_title">Gepäckverspätung</string>
+    <string name="premium_card_claim_stolen_cash_summary">Diebstahl nach bis zu 4 Stunden</string>
+    <string name="premium_card_claim_stolen_cash_title">Gestohlenes Bargeld bei Bargeldabhebung</string>
+    <string name="premium_card_claim_stolen_mobile_summary">In den letzten 90 Tagen gestohlen</string>
+    <string name="premium_card_claim_stolen_mobile_title">Gestohlenes Mobiltelefon</string>
+    <string name="premium_card_claim_title">Anspruch erheben</string>
+    <string name="premium_card_claim_travel_cancellation_summary">Deine Reise wurde storniert.</string>
+    <string name="premium_card_claim_travel_cancellation_title">Reisestornierung</string>
+    <string name="premium_card_contact_call_summary">Kontaktiere Allianz Global Assistance Europe für geführte Unterstützung in deinem Notfall, du bist in guten Händen!</string>
+    <string name="premium_card_contact_call_title">Medizinischer Notfall?</string>
+    <string name="premium_card_contact_claim_summary">"&lt;ul>
+&lt;li> Flug- oder Gepäckverspätung
+&lt;li> Diebstahl des Mobiltelefons
+&lt;li> Diebstahl von Bargeld nach Abhebung
+&lt;/ul>"</string>
+    <string name="premium_card_contact_claim_title">Du musst eine Reklamation einreichen?</string>
+    <string name="premium_card_contact_screen_call_now">Anruf tätigen</string>
+    <string name="premium_card_contact_screen_emergency_call_summary">Du startest jetzt einen Anruf mit Allianz Global Assistance Europe.</string>
+    <string name="premium_card_contact_screen_emergency_call_title">Notruf</string>
+    <string name="premium_card_contact_screen_title">Kontaktiere Versicherung</string>
+    <string name="premium_card_contact_summary">Kläre einen Notfall oder erhebe Anspruch</string>
+    <string name="premium_card_contact_title">Kontaktiere Allianz Global Assistance</string>
+    <string name="premium_card_details_cancel_premium_summary">"Membership valid until %s "</string>
+    <string name="premium_card_details_cancel_premium_title">Cancel N26 Black Membership</string>
+    <string name="premium_card_details_policy_information_summary">Everything about your coverage</string>
+    <string name="premium_card_details_policy_information_title">Policy Information</string>
+    <string name="premium_card_details_screen_dob">Geburtsdatum</string>
+    <string name="premium_card_details_screen_membership_details">Coverage Period</string>
+    <string name="premium_card_details_screen_n26_black_id">N26 Black ID</string>
+    <string name="premium_card_details_screen_n26_black_id_summary">The N26 Black ID needs to be used whenever you contact Allianz Global Assistance Europe.</string>
+    <string name="premium_card_details_screen_name">Name</string>
+    <string name="premium_card_details_screen_title">Insurance Details</string>
+    <string name="premium_card_details_screen_valid_from">Startdatum: %s</string>
+    <string name="premium_card_details_screen_valid_to">Enddatum: %s</string>
+    <string name="premium_card_information">N26 Black auswählen</string>
+    <string name="premium_card_insurance_claim_call">Kontaktiere den Versicherungsgeber</string>
+    <string name="premium_card_insurance_claim_claim">Reklamations-Anleitung</string>
+    <string name="premium_card_insurance_title">N26 Black</string>
+    <string name="premium_card_membership_details_summary">N26 Black</string>
+    <string name="premium_card_membership_details_title">N26 Black</string>
+    <string name="premium_card_order_confirm">Kauf von N26 Black bestätigen</string>
+    <string name="premium_card_order_policy_1">"Ich habe gelesen und zugestimmt: "</string>
+    <string name="premium_card_order_policy_2">Allianz Global Assistance Europe Versicherungsbedingungen (einschließlich der Datenschutzbestimmungen)</string>
+    <string name="premium_card_order_subtitle">Mindestvertragsdauer von einem Jahr</string>
+    <string name="premium_card_order_summary">Deine aktuelle Mastercard gilt weiterhin, bis du deine neue N26 Black Karte aktiviert hast.</string>
+    <string name="premium_card_order_terms_1">"Ich habe gelesen und zugestimmt: "</string>
+    <string name="premium_card_order_terms_2">N26 Black Allgemeine Geschäftsbedingungen</string>
+    <string name="premium_card_order_title">N26 Black für %1$s pro %2$s</string>
+    <string name="premium_card_policy_covered_by">Versichert durch AWP P&amp;C S.A. - Niederlassung für die Niederlande</string>
+    <string name="premium_card_policy_dialog_dismiss">Abbrechen</string>
+    <string name="premium_card_policy_dialog_download">Herunterladen</string>
+    <string name="premium_card_policy_dialog_message">Die Allgemeinen Geschäftsbedingungen für die Versicherung wird in deinen lokalen Ordner heruntergeladen</string>
+    <string name="premium_card_policy_dialog_title">Richtlinien herunterladen</string>
+    <string name="premium_card_policy_download_policy">Richtlinien herunterladen</string>
+    <string name="premium_card_policy_extended_warranty_summary">"&lt;ul>
+&lt;li>Verlängert eine bestehende Herstellergarantie um bis zu ein Jahr für versicherte Geräte.
+&lt;/ul>"</string>
+    <string name="premium_card_policy_extended_warranty_title">Erweiterte Garantie</string>
+    <string name="premium_card_policy_mobile_phone_theft_summary">"&lt;ul>
+&lt;li>Entschädigt dich im Falle eines Überfalls für bis zu vier Stunden nach Abhebung mit deiner N26 Black Karte an einem Geldautomaten 
+&lt;li>Entschädigt dich im Falle eines Diebstahls deines Smartphones im In- oder Ausland
+&lt;/ul>"</string>
+    <string name="premium_card_policy_mobile_phone_theft_title">Bargeldschutz &amp; Handydiebstahl-Versicherung</string>
+    <string name="premium_card_policy_redesigned_card_summary">Die N26 Black MasterCard behält unser Markenzeichen, den transparenten Teil der Karte, bei und zeigt zudem unser neues Logo</string>
+    <string name="premium_card_policy_redesigned_card_title">A Reimagined Card</string>
+    <string name="premium_card_policy_subtitle">Mindestvertragsdauer von einem Jahr</string>
+    <string name="premium_card_policy_terms">Eine detaillierte Übersicht der Versicherungsbedingungen findest du auf &lt;a href=\"https://n26.com/black\">N26.com/black&lt;/a></string>
+    <string name="premium_card_policy_title">N26 Black</string>
+    <string name="premium_card_policy_travel_protection_summary">"&lt;ul>
+&lt;li>Erstattet u.a. Arzt- und Krankenhauskosten bei akuten Krankheiten und Unfallverletzungen auf Auslandsreisen.
+&lt;li>Erstattet Stornokosten, wenn eine Reise z.B. wegen einer unerwarteten schweren Erkrankung abgesagt werden muss.
+&lt;li>Erstattet Aufwendungen bei Flugverspätungen von mehr als 4 Stunden.
+&lt;li>Erstattet Aufwendungen bei Gepäckverspätung von mehr als 6 Stunden nach deiner Ankunft im Ausland.
+&lt;li>Erstattet Kosten für den Krankenrücktransport aus dem Ausland.
+&lt;/ul>"</string>
+    <string name="premium_card_policy_travel_protection_title">Reiseversicherungen</string>
+    <string name="premium_card_promotion_explore">Entdecke weitere Details</string>
+    <string name="premium_card_promotion_not_now">Nicht jetzt</string>
+    <string name="premium_card_promotion_offer">5,90 €/Monat</string>
+    <string name="premium_card_promotion_subtitle">Black kommt niemals aus der Mode</string>
+    <string name="premium_card_promotion_summary">"&lt;ul>
+&lt;li>Alle Kernfunktionen von N26
+&lt;li>Weltweiter Versicherungsschutz
+&lt;li>Reise
+&lt;/ul>"</string>
+    <string name="premium_card_promotion_title">N26 Black</string>
+    <string name="premium_card_settings_order_title_cost">N26 Black für %s pro Monat</string>
+    <string name="pricelist_link">https://n26.com/legal-documents/n26-invest/pricing/?header=no_header&amp;lang=de</string>
+    <string name="processing">In Bearbeitung…</string>
+    <string name="product_selection_new_new">Konto wählen</string>
+    <string name="profits">Gewinne</string>
+    <string name="promo_transferwise_action">Ok, verstanden.</string>
+    <string name="promo_transferwise_description">"N26 und TransferWise ermöglichen dir Überweisungen in ausländischen Währungen.
+Um Geld ins Ausland zu senden, wähle einfach deine Währung, wenn du eine Überweisung tätigst. Es war noch nie so einfach!"</string>
+    <string name="promo_transferwise_title">Überweise Geld in anderen Währungen</string>
+    <string name="prompt_close_text">"
+        Ein automatischer Logout oder das Verlassen der App und deine Push-Nachrichten auf diesem Gerät bleiben aktiviert.
+    "</string>
+    <string name="prompt_close_title">App verlassen, Push erhalten</string>
+    <string name="prompt_leaveProcess">Möchtest du den Prozess wirklich beenden?</string>
+    <string name="prompt_logout_header">Ausloggen</string>
+    <string name="prompt_logout_or">oder</string>
+    <string name="prompt_logout_text">"
+        Klickst du auf Ausloggen, werden Push-Nachrichten auf diesem Smartphone bis zum nächsten Login deaktiviert.
+    "</string>
+    <string name="prompt_logout_title">Ausloggen, Push deaktivieren</string>
+    <string name="prompt_standing_order">Dauerauftrag Freigeben?</string>
+    <string name="prompt_your_email">Deine E-Mail Adresse</string>
+    <string name="push_cash26_deposit">CASH26 Einzahlen</string>
+    <string name="push_cash26_deposit_text">Willst du %1$s einzahlen?</string>
+    <string name="push_cash26_withdrawal">CASH26 Abhebung</string>
+    <string name="push_cash26_withdrawal_text">Willst du %1$s abheben?</string>
+    <string name="push_certify_exchange_rate">Endgültiger Wechselkurs</string>
+    <string name="push_certify_header">Willst du diese Überweisung freigeben?</string>
+    <string name="push_confirm_acknowledgement">Okay</string>
+    <string name="push_confirm_new_balance">"Dein neuer Kontostand: "</string>
+    <string name="push_confirm_success">Deine Überweisung wurde ausgeführt.</string>
+    <string name="push_requestpushbutton_title">per Push benachrichtigen</string>
+    <string name="push_retrypushbutton_tile">per Push benachrichtigen</string>
+    <string name="push_stage1_details">Möchten Sie benachrichtigt werden wenn ein Ident Spezialist für Sie bereit steht?</string>
+    <string name="push_stage1_title">Warteliste</string>
+    <string name="push_stage2_details">Aktuell wird unser Dienst von ungewöhnlich vielen Kunden in Anspruch genommen. Wir können Sie per Push Nachricht informieren wenn ein Ident Spezialist für Sie bereit steht.</string>
+    <string name="push_stage2_title">Warteliste</string>
+    <string name="push_stage3_details">Um Push Nachrichten zu empfangen müssen Sie dies in den Einstellungen Ihres Telefons erlauben.</string>
+    <string name="push_stage3_title">Warteliste (deaktiviert)</string>
+    <string name="quarterly">Quartalsweise</string>
+    <string name="quarterly_interest">Bisherige Quartalszinskosten</string>
+    <string name="received_request_tutorial_1_head">Jemand hat Geld angefordert</string>
+    <string name="received_request_tutorial_1_sub">Eine Anfrage nach Geld wird als offene&lt;br/> Transaktion dargestellt.&lt;b>Tippe sie an, um zu antworten.&lt;/b></string>
+    <string name="received_request_tutorial_2_head">Schritt 2</string>
+    <string name="received_request_tutorial_2_sub">"&lt;b>Ablehnen oder annehmen&lt;b> um deinem
+&lt;br/>Freund den angefragten Betrag zu senden. Anfragen
+&lt;br/>laufen nach 7 Tagen ab."</string>
+    <string name="receiver">Empfänger</string>
+    <string name="recipient_gets">%s erhält</string>
+    <string name="recurring_savings">Monatlicher Betrag</string>
+    <string name="referral_invite_success">%1$s wurde erfolgreich eingeladen</string>
+    <string name="referral_permission_rationale">Klicke hier und lass dir Freunde vorschlagen</string>
+    <string name="rename">Neu benennen</string>
+    <string name="request_chargeback">Bist du sicher dass du deine Rücklastrschrift beantragen möchtest?</string>
+    <string name="request_email_validation_sent">"Bitte überprüfe deinen Posteingang.
+        Die Bestätigungs-E-Mail wurde dir soeben gesendet."</string>
+    <string name="request_received_accept_button_negative">Anfrage abweisen</string>
+    <string name="request_received_accept_button_positive">Anfrage annehmen</string>
+    <string name="request_received_accept_title">Anfrage annehmen</string>
+    <string name="request_received_accept_view_contact_details">&lt;u>Kontaktdetails anzeigen&lt;/u></string>
+    <string name="request_retry_dialog_cancel" />
+    <string name="request_retry_dialog_default_message" />
+    <string name="request_retry_dialog_default_title" />
+    <string name="request_retry_dialog_retry" />
+    <string name="request_send_amount_title">Wie viel?</string>
+    <string name="request_send_contact_limit_content">%s muss erst antworten, bevor du eine weitere Anfrage senden kannst.</string>
+    <string name="request_send_contact_limit_title">Du hast %1$d offene Anfragen für %2$s.</string>
+    <string name="request_send_network_error_content">Bitte versuche es erneut, wenn eine Netzwerkverbindung besteht</string>
+    <string name="request_send_network_error_title">Server nicht erreichbar</string>
+    <string name="request_send_review_amount_header">Frag %s an</string>
+    <string name="request_send_review_description_hint">z. B. für Lunch</string>
+    <string name="request_send_review_label_from">von</string>
+    <string name="request_send_review_send_button_label">Frag %s an</string>
+    <string name="request_send_review_title">Überprüfen</string>
+    <string name="request_send_total_limit_content">Du kannst morgen wieder Anfragen senden. Wir müssen das aus Sicherheitsgründen machen.</string>
+    <string name="request_send_total_limit_title">Wow! Du hast heute bereits %d Anfragen gesendet.</string>
+    <string name="required_field">Ungültige Telefonnummer</string>
+    <string name="resend_confirmation">Erneut senden?</string>
+    <string name="rest_dialog_error_content_400">Der eingegebene Ident-Code war leider nicht korrekt.</string>
+    <string name="rest_dialog_error_content_404">Bitte überprüfen Sie Ihre Ident-ID und versuchen Sie es erneut.</string>
+    <string name="rest_dialog_error_content_410">Ihre Version von IDnow Online-Ident ist leider veraltet. Bitte laden Sie die neueste Version aus dem Play Store und probieren sie es nochmals.</string>
+    <string name="rest_dialog_error_content_412">Die Identifizierung mit dieser Ident-ID wurde bereits abgeschlossen und kann nicht erneut durchgeführt werden.</string>
+    <string name="rest_dialog_error_content_500">Leider ist ein interner Fehler aufgetreten. Bitte wenden Sie sich an unseren Support support@mail.idnow.de und geben Sie die nachfolgende Fehlernummer an: #exceptionID</string>
+    <string name="rest_dialog_error_content_503">IDnow wird momentan gewartet und ist bald wieder verfügbar. Bitte haben Sie einen Moment Geduld und probieren Sie es später nochmals.</string>
+    <string name="rest_dialog_error_title">Fehler</string>
+    <string name="result_screen_button_done">Identifizierung beenden</string>
+    <string name="result_screen_button_retry">Erneut versuchen</string>
+    <string name="result_screen_info_failure">"Ihre Identifizierung konnte leider nicht abgeschlossen werden.
+
+Bitte versuchen Sie es erneut oder mit einer alternativen Methode."</string>
+    <string name="result_screen_info_success_default">Vielen Dank, dass Sie sich für die Online-Identifizierung entschieden haben! Sie können die App nun schließen und werden über die nächsten Schritte informiert.</string>
+    <string name="result_screen_info_success_photo_ident">@string/result_screen_info_success_default</string>
+    <string name="result_screen_info_success_video_ident">@string/result_screen_info_success_default</string>
+    <string name="result_screen_status_failed">Identifizierung fehlgeschlagen</string>
+    <string name="result_screen_status_success">Identifizierung abgeschlossen</string>
+    <string name="result_screen_transaction_name_content">Max Mustermann</string>
+    <string name="result_screen_transaction_name_title">Name</string>
+    <string name="result_screen_transaction_nr_content">270 303 123</string>
+    <string name="result_screen_transaction_nr_title">Ident-ID</string>
+    <string name="result_success_detail_pushnotification">Vielen Dank, wir haben Sie in die Warteliste eingetragen. Wir werden Sie sofort benachrichtigen sobald ein Ident Spezialist zur Verfügung steht. Wenn Sie Ihren Identifizierungsprozess fortsetzen werden Sie an den Anfang der Warteschlange gesetzt.</string>
+    <string name="result_success_detail_smsnotification">Vielen Dank, wir haben Sie in die Warteliste eingetragen. Wir werden Sie sofort benachrichtigen sobald ein Ident Spezialist zur Verfügung steht. Wenn Sie Ihren Identifizierungsprozess fortsetzen werden Sie an den Anfang der Warteschlange gesetzt.</string>
+    <string name="result_success_home_button">Zurück zum Start</string>
+    <string name="result_success_title_pushnotification">Warteliste</string>
+    <string name="result_success_title_smsnotification">Warteliste</string>
+    <string name="retrieve_tan_button">Ident-Code anfordern</string>
+    <string name="retrieve_tan_content">Bitte prüfen Sie die Angaben und fordern Sie den Ident-Code an.</string>
+    <string name="retrieve_tan_email_title">Ident-Code via E-Mail an</string>
+    <string name="retrieve_tan_mobile_nr_title">Ident-Code via SMS an</string>
+    <string name="retrieve_tan_title">Ident-Code anfordern</string>
+    <string name="review_action">Absenden</string>
+    <string name="review_exchange_rate">Geschätzter Wechselkurs</string>
+    <string name="review_fee">TransferWise Gebühr</string>
+    <string name="review_fee_in_total">Im Betrag schon enthalten</string>
+    <string name="review_time_arrival">Voraussichtlicher Zahlungseingang</string>
+    <string name="review_title">Überweisung Übersicht</string>
+    <string name="risk_disclaimer">Risikohinweis</string>
+    <string name="salesforce_close_minimize_view_content_description">@string/chat_end_session_content_description</string>
+    <string name="salesforce_message_input_hint">Geben Sie eine Nachricht ein</string>
+    <string name="salesforce_select_photo_content_description">Foto auswählen</string>
+    <string name="salesforce_send_message_content_description">Nachricht senden</string>
+    <string name="salesforce_sent_photo_content_description">Angehängtes Foto</string>
+    <string name="savings_how_much_monthly">Wie viel könntest du jeden Monat investieren?</string>
+    <string name="savings_intro_btn">Entdecke die Möglichkeiten</string>
+    <string name="savings_intro_message">N26 Invest</string>
+    <string name="savings_max_deposit">Maximale Einzahlung ist: %s</string>
+    <string name="savings_once_off_amount">Einmaliger Betrag</string>
+    <string name="savings_promotion">Neu in dieser Version</string>
+    <string name="savings_promotion_desc">Jetzt kannst du mit N26 investieren</string>
+    <string name="savings_recurrent_amount">Monatlicher Betrag</string>
+    <string name="savings_see_projection">Prognose ansehen</string>
+    <string name="savings_successfully_account_desposit">Die Einzahlung auf dein Investment-Konto wurde bestätigt</string>
+    <string name="savings_successfully_account_desposit_title">Einzahlung bestätigen</string>
+    <string name="savings_successfully_account_withdrawl_title">Kontoabhebung bestätigen</string>
+    <string name="savings_successfully_created">Dein Plan wurde erfolgreich angelegt</string>
+    <string name="savings_successfully_created_title">Möchtest du deinen Plan bestätigen?</string>
+    <string name="savings_successfully_delete_description">Bist du sicher, dass du deinen Investment-Plan schließen möchtest?</string>
+    <string name="savings_successfully_delete_title">Bist du sicher, dass du dein Investment-Konto schließen möchtest?</string>
+    <string name="savings_successfully_deleted">Dein Plan wurde erfolgreich geschlossen</string>
+    <string name="savings_successfully_monthly_payment">Dein monatliches Investment ist eingerichtet.</string>
+    <string name="savings_successfully_monthly_payment_cancel">Wir haben deinen monatlichen Betrag gestoppt.</string>
+    <string name="savings_successfully_monthly_payment_cancel_title">Monatlichen Betrag stoppen?</string>
+    <string name="savings_successfully_monthly_payment_title">Monatlichen Betrag einstellen</string>
+    <string name="savings_successfully_monthly_payment_update">Dein monatlicher Betrag wurde erfolgreich aktualisiert.</string>
+    <string name="savings_successfully_monthly_payment_update_title">Monatlichen Betrag aktualisieren</string>
+    <string name="savings_successfully_withdrawl">Die Überweisung auf dein Girokonto wurde bestätigt</string>
+    <string name="savings_to_current">Von Investment zum Girokonto</string>
+    <string name="savings_transaction_type_fee">Gebühr</string>
+    <string name="savings_transaction_type_fee_sub">Für das Quartal</string>
+    <string name="savings_transaction_type_monthly">Monatliche Investments</string>
+    <string name="savings_transaction_type_monthly_sub">Wiederkehrende Überweisung</string>
+    <string name="savings_transaction_type_once_off">Einmaliges Investment</string>
+    <string name="savings_transaction_type_once_off_sub">Investment</string>
+    <string name="savings_transaction_type_outgoing">N26 Girokonto</string>
+    <string name="savings_transaction_type_outgoing_sub">Ausgehende Transaktion</string>
+    <string name="search_for_updates">UPDATES SUCHEN</string>
+    <string name="search_hint">Umsätze suchen</string>
+    <string name="search_menu_title">Suchen</string>
+    <string name="second_step_approval_help">Was geschieht mit meinen Daten?</string>
+    <string name="second_step_approval_text">Ich stimme den Nutzungsbedingungen der IDnow GmbH zu und habe die Datenschutzerklärung gelesen.</string>
+    <string name="second_step_approval_title">Einwilligung</string>
+    <string name="second_step_email_hint">bspw. abc@idnow.de</string>
+    <string name="second_step_email_text">Alternativ können wir Ihnen den Ident-Code per E-Mail an folgende Adresse zusenden.</string>
+    <string name="second_step_email_title">Ihre E-Mail Adresse</string>
+    <string name="second_step_id_help">Welche Ausweisdokumente können verwendet werden?</string>
+    <string name="second_step_id_text">Für die Identifizierung wird Ihr Ausweisdokument kontrolliert.</string>
+    <string name="second_step_id_title">Personalausweis oder Reisepass</string>
+    <string name="second_step_intro_text">Folgende Angaben werden benötigt bevor Sie sich identifizieren können:</string>
+    <string name="second_step_mobile_nr_hint">z.B. 01761234 ...</string>
+    <string name="second_step_mobile_nr_text">An diese Nummer senden wir Ihnen während der Identifizierung einen Ident-Code per SMS zu.</string>
+    <string name="second_step_mobile_nr_title">Mobilfunknummer</string>
+    <string name="second_step_privacy_policy"><a href="https://www.idnow.de/datenschutz">Datenschutzerklärung</a></string>
+    <string name="second_step_privacy_policy_url">https://www.idnow.de/datenschutz</string>
+    <string name="second_step_recording_text">Ich bin einverstanden, dass zum Zwecke der Identifizierung Foto-Aufnahmen meiner Person und meines Ausweisdokuments vorgenommen werden sowie eine Ton-Aufnahme des Gesprächs angefertigt wird.</string>
+    <string name="second_step_recording_title">Einwilligung</string>
+    <string name="second_step_start_ident">Identifizierung starten</string>
+    <string name="second_step_terms_of_use"><a href="https://www.idnow.de/nutzungsbedingungen">Nutzungsbedingungen</a></string>
+    <string name="second_step_terms_of_use_url">https://www.idnow.de/nutzungsbedingungen</string>
+    <string name="security_check">Sicherheitsverifizierung</string>
+    <string name="security_forced_login">"Um das Login-Muster erneut zu verwenden, logge dich bitte einmalig
+        mittels Passwort ein"</string>
+    <string name="see_more">Weitere Vorschläge ...</string>
+    <string name="send">Send</string>
+    <string name="send_coupon">Coupon Senden</string>
+    <string name="send_request">Antrag senden</string>
+    <string name="send_request_tutorial_1_head">Erhalte Geld von Freunden</string>
+    <string name="send_request_tutorial_1_sub">&lt;b>N26 Kontakt auswählen&lt;/b> aus&lt;br/>deiner Kontaktliste.</string>
+    <string name="send_request_tutorial_2_head">Schritt 2</string>
+    <string name="send_request_tutorial_2_sub">&lt;b>Frage bis zu 1.000 €&lt;/b> von deinen Freunden an.</string>
+    <string name="send_request_tutorial_3_head">Schritt 3</string>
+    <string name="send_request_tutorial_3_sub">&lt;b>Füge eine optionale Nachricht ein&lt;/b> damit deine&lt;br/>Freunde wissen, wofür das Geld ist.</string>
+    <string name="send_request_tutorial_4_head">Schritt 4</string>
+    <string name="send_request_tutorial_4_sub">&lt;b>Wir informieren dich&lt;br/>sobald dein Freund annimmt oder ablehnt.&lt;/b></string>
+    <string name="send_to">Senden an:</string>
+    <string name="sending_date">Überweisungsdatum</string>
+    <string name="set_lock_pattern_action">Login-Muster setzen</string>
+    <string name="set_maximum">gewähltes Limit</string>
+    <string name="set_pin">PIN Festlegen</string>
+    <string name="set_pin_step2_text2">Bitte bestätige deinen Überweisungscode um diesen zu speichern</string>
+    <string name="set_pin_text">Bitte lege deine persönliche PIN fest. Diese wird für Überweisungen abgefragt.</string>
+    <string name="set_secuence">Lege dein Login-Muster fest</string>
+    <string name="set_secuence2">Bitte gib dein Login-Muster noch mal ein, um es zu bestätigen</string>
+    <string name="settings_account_accountswitching_subtitle">Altes Konto ganz einfach umziehen</string>
+    <string name="settings_account_accountswitching_title">Kontowechselservice</string>
+    <string name="settings_account_accounttype_business">Business</string>
+    <string name="settings_account_accounttype_default">N26</string>
+    <string name="settings_account_accounttype_subtitle">Dein aktiver Kontotyp</string>
+    <string name="settings_account_accounttype_title">Kontotyp</string>
+    <string name="settings_account_atm_fairusage_subtitle">Diesen Monat verfügbar</string>
+    <string name="settings_account_atm_fairusage_title">Kostenlose Abhebungen am Geldautomaten</string>
+    <string name="settings_account_authentication_methods_subtitle">Fingerabdruck oder Login-Muster</string>
+    <string name="settings_account_authentication_methods_title">Smart Login</string>
+    <string name="settings_account_overdraft_subtitle">Dispo beantragen und anpassen</string>
+    <string name="settings_account_overdraft_title">Dispo</string>
+    <string name="settings_account_personalinfo_subtitle">"Name, Geburtsdatum, E-Mail und co. "</string>
+    <string name="settings_account_personalinfo_title">Persönliche Daten</string>
+    <string name="settings_account_resetpin_subtitle">PIN für MoneyBeam, Cash26 und co. ändern</string>
+    <string name="settings_account_resetpin_title">Überweisungs-PIN ändern</string>
+    <string name="settings_account_title">Dein Konto</string>
+    <string name="settings_accountlimits_bottomtext">Das Zahlungslimit umfasst Zahlungen in Geschäften und in Onlineshops.</string>
+    <string name="settings_accountlimits_dailypayments_subtitle">Fixes monatliches Zahlungslimit: 20.000,00</string>
+    <string name="settings_accountlimits_dailypayments_title">Tägliches Zahlungslimit</string>
+    <string name="settings_accountlimits_dailywithdraw_subtitle">Fixes monatliches Abhebelimit: 20.000,00</string>
+    <string name="settings_accountlimits_dailywithdraw_title">Tägliches Abhebelimit</string>
+    <string name="settings_accountlimits_header">Passe die Limits deinen Bedürfnissen an</string>
+    <string name="settings_card_order_check_address">Bitte prüfe deine Adresse</string>
+    <string name="settings_card_order_confirm_order_express">Bestätige deine Bestellung. Dafür werden 25€ Gebühren berechnet.</string>
+    <string name="settings_card_order_delivery_expected">Erwartet am %s</string>
+    <string name="settings_card_order_dialog_description">Die N26 Bank erhebt für den Versand deiner Karte mit UPS Express eine Gebühr von 25€.</string>
+    <string name="settings_card_order_dialog_heading">Du hast Expressversand gewählt.</string>
+    <string name="settings_card_order_dialog_title">"Bitte sei zu diesem Zeitpunkt zuhause: "</string>
+    <string name="settings_card_order_edit_address">Adresse bearbeiten</string>
+    <string name="settings_card_order_express_delivery">UPS Express-Lieferung (%s)</string>
+    <string name="settings_card_order_need_express">Brauchst du deine Karte früher?</string>
+    <string name="settings_card_order_premium_subtitle">Mehr Infos</string>
+    <string name="settings_card_order_premium_title">N26 Black</string>
+    <string name="settings_card_order_regular_delivery">Normale Lieferung dauert bis zu 5 Werktage.</string>
+    <string name="settings_cards_activate">Aktivieren</string>
+    <string name="settings_cards_limits_subtitle">Abhebungs- und Zahlungslimit festlegen</string>
+    <string name="settings_cards_limits_title">Kartenlimits</string>
+    <string name="settings_cards_lockcard">Sperren</string>
+    <string name="settings_cards_onlinepayments_subtitle">Ermöglicht online Kartenzahlungen</string>
+    <string name="settings_cards_onlinepayments_title">Online-Zahlungen</string>
+    <string name="settings_cards_ordermaestro">Bestellen</string>
+    <string name="settings_cards_payingabroad_subtitle">"Ermöglicht Kartenzahlungen im Ausland "</string>
+    <string name="settings_cards_payingabroad_title">Auslandszahlungen</string>
+    <string name="settings_cards_reissue_upgrade">Anderer Grund</string>
+    <string name="settings_cards_reissue_upgrade_summary">Ich möchte eine neue Karte</string>
+    <string name="settings_cards_reoder_info">Durch die Neubestellung wird deine alte Karte ab sofort permanent gesperrt.</string>
+    <string name="settings_cards_reorder">Neu bestellen</string>
+    <string name="settings_cards_resetpin">PIN ändern</string>
+    <string name="settings_cards_tableview_header_title">Allgemeine Karteneinstellungen</string>
+    <string name="settings_cards_title">Karteneinstellungen</string>
+    <string name="settings_cards_unlock">Entsperren</string>
+    <string name="settings_cards_withdrawymoney_subtitle">Betrifft Geldautomaten &amp; NFC Zahlungen</string>
+    <string name="settings_cards_withdrawymoney_title">Bargeldabhebung</string>
+    <string name="settings_cardwillarrivealert_description">Deine Karte sollte nun in wenigen Tagen ankommen. Nachdem du sie aktiviert hast, kannst du sie on- und offline benutzen.</string>
+    <string name="settings_cardwillarrivealert_title">Die Karte ist jetzt auf dem Weg</string>
+    <string name="settings_change_password_subtitle">Für deine App und das Online-Banking</string>
+    <string name="settings_change_password_title">Passwort ändern</string>
+    <string name="settings_changetransferpin_confirm">und noch einmal zur Bestätigung</string>
+    <string name="settings_confirmshippingaddress_header">Bitte überprüfe die Lieferadresse nochmals</string>
+    <string name="settings_controlcenter_customerservice_title">Service</string>
+    <string name="settings_controlcenter_logout_subtitle">Push werden dadurch deaktiviert</string>
+    <string name="settings_controlcenter_logout_title">Ausloggen</string>
+    <string name="settings_device_changelanguage_subtitle">Wähle deine Sprache aus</string>
+    <string name="settings_device_changelanguage_title">Sprache</string>
+    <string name="settings_device_fingerprint_subtitle">Einloggen mit Fingerabdruck</string>
+    <string name="settings_device_fingerprint_title">Fingerabdruck</string>
+    <string name="settings_device_login_pattern_subtitle">Muster festlegen und einfach einloggen</string>
+    <string name="settings_device_login_pattern_title">Login Muster</string>
+    <string name="settings_device_notifications_subtitle">Push und E-Mail-Einstellungen</string>
+    <string name="settings_device_notifications_title">Nachrichten</string>
+    <string name="settings_device_title">App Einstellungen</string>
+    <string name="settings_device_unpair_subtitle">"Aktuelle Verknüpfung aufheben "</string>
+    <string name="settings_device_unpair_title">Smartphone Entknüpfen</string>
+    <string name="settings_notifications_atm_fairusage">Fair-Use Benachrichtigungen</string>
+    <string name="settings_notifications_atm_fairusage_subtitle">Änderung des Konto-Status &amp; Limit erreicht</string>
+    <string name="settings_notifications_informe">Push oder E-Mail?</string>
+    <string name="settings_notifications_maillimit">E-Mail Schwelle</string>
+    <string name="settings_notifications_maillimit_subtitle">für Transaktionen höher als:</string>
+    <string name="settings_notifications_paymentrejected">Fehlerhafte Zahlung</string>
+    <string name="settings_notifications_paymentrejected_subtitle">Alle fehlgeschlagenen Kartentransaktionen</string>
+    <string name="settings_notifications_paymentsuccessful">Erfolgreiche Zahlung</string>
+    <string name="settings_notifications_paymentsuccessful_subtitle">Alle erfolgreichen Kartentransaktion</string>
+    <string name="settings_notifications_pushlimit">Push Schwelle</string>
+    <string name="settings_notifications_pushlimit_subtitle">für Transaktionen höher als:</string>
+    <string name="settings_notifications_transactiondebit">Lastschriften</string>
+    <string name="settings_notifications_transactiondebit_subtitle">Automatische Abbuchungen</string>
+    <string name="settings_notifications_transactionnegative">Abbuchungen</string>
+    <string name="settings_notifications_transactionnegative_subtitle">Überweisungen &amp; MoneyBeams</string>
+    <string name="settings_notifications_transactionpositive">Gutschriften</string>
+    <string name="settings_notifications_transactionpositive_subtitle">Eingehende Überweisungen</string>
+    <string name="settings_ordermaestro_continue">Weiter</string>
+    <string name="settings_ordermaestro_first">Bezahle mit der Maestro-Karte bei mehr Händlern bargeldlos.</string>
+    <string name="settings_ordermaestro_header">Deine Maestro Karte kostenlos bestellen</string>
+    <string name="settings_ordermaestro_second">Mit der Bestellung stimmst du den Maestro AGB zu.</string>
+    <string name="settings_personal_info_opt_in_learn_more">Erfahre mehr</string>
+    <string name="settings_personalinformations_nationality">Nationalität</string>
+    <string name="settings_resettransactionpin_black_entertoken_description">Bitte gib die 10-stellige Token-Nummer auf der Rückseite deiner Karte ein.</string>
+    <string name="settings_resettransactionpin_entertoken_description">Bitte gib die 10-stellige Token-Nummer unter deinem Namen ein.</string>
+    <string name="settings_service_contact_subtitle">Schreibe uns eine Nachricht!</string>
+    <string name="settings_service_contact_title">Noch Fragen?</string>
+    <string name="settings_service_ideas_dialog_description">Danke für deine Unterstützung mit guten Ideen! Wenn du Probleme, allgemeine Fragen oder Fehlerberichte hast, kontaktieren bitte unseren Kundenservice.</string>
+    <string name="settings_service_ideas_dialog_title">Feature vorschlagen</string>
+    <string name="settings_service_ideas_subtitle">Erzähl uns, was dir noch fehlt</string>
+    <string name="settings_service_ideas_title">Feature vorschlagen</string>
+    <string name="settings_service_main_subtitle">Wie können wir dir helfen?</string>
+    <string name="settings_service_main_title">Support Center</string>
+    <string name="settings_setcardpin_description">Diesen PIN benötigst du um Kartenzahlungen freizugeben.</string>
+    <string name="settings_setcardpin_title">Karten-PIN setzen</string>
+    <string name="settings_shipping_address">Deine Adresse</string>
+    <string name="settings_shipping_address_subtitle">Versandadresse ändern</string>
+    <string name="settings_shipping_address_toolbar">Versandadresse ändern</string>
+    <string name="settings_shipping_message">Wir benötigen diese Information ausschließlich zum Versand neuer Karten, falls dir eine Karte abhanden kommt</string>
+    <string name="settings_tax_info_subtitle">Steuerheimat, Steuer-ID</string>
+    <string name="settings_tax_info_title">Steuerinformationen</string>
+    <string name="settings_verifytransactionpin_description_title">Ein kurzer Sicherheitscheck</string>
+    <string name="sharing_text">Name: %1$s, IBAN: %2$s, BIC: %3$s</string>
+    <string name="slovakia">Slowakei</string>
+    <string name="smartcards_like_feedback">Vielen Dank für dein Feedback.</string>
+    <string name="sms_received">Du hast eine SMS bekommen. Trage bitte den Code hier ein:</string>
+    <string name="sms_requestpushbutton_title">per SMS benachrichtigen</string>
+    <string name="sms_result_success_detail_notification">Vielen Dank, wir haben Sie in die Warteliste eingetragen. Wir werden Sie sofort benachrichtigen sobald ein Ident Spezialist zur Verfügung steht. Wenn Sie Ihren Identifizierungsprozess fortsetzen werden Sie an den Anfang der Warteschlange gesetzt.</string>
+    <string name="sms_retrypushbutton_tile">benachrichtigen Sie mich per SMS</string>
+    <string name="sms_stage1_details">Möchten Sie benachrichtigt werden wenn ein Ident Spezialist für Sie bereit steht?</string>
+    <string name="sms_stage1_title">Warteliste</string>
+    <string name="sms_stage2_details">Aktuell wird unser Dienst von ungewöhnlich vielen Kunden in Anspruch genommen. Wir können Sie per SMS Nachricht informieren wenn ein Ident Spezialist für Sie bereit steht.</string>
+    <string name="sms_stage2_title">Warteliste</string>
+    <string name="spain">Spanien</string>
+    <string name="splash_action">Weiter</string>
+    <string name="splash_existing_action">BEI TRANSFERWISE EINLOGGEN</string>
+    <string name="splash_existing_error">Dieses TransferWise Konto kann nicht mit deinem N26 Konto verknüpft werden.</string>
+    <string name="splash_existing_error_used_different_email">"Deine persönlichen Daten stimmen nicht über ein. Aus Sicherheitsgründen kannst du dich nur in einen TransferWise Account mit deinem eigenen Namen einloggen.
+
+Bitte versuche noch einmal dich mit deinem eigenen Namen einzuloggen."</string>
+    <string name="splash_existing_help_cs">Wenn du keinen TransferWise Account hast oder dies nicht deine e-mail Adresse hast, bitte wende dich an den N26 Kundenservice.</string>
+    <string name="splash_existing_login">"Deine Daten sind bereits mit einem TransferWise Konto verknüpft.
+
+Logge dich in deinen TransferWise Account ein um zu bestätigen, dass er zu dir gehört. Wir verlinken dann deine TransferWise und N26 Konten"</string>
+    <string name="splash_existing_success">DEINE N26 UND TRANSFERWISE ACCOUNTS SIND JETZT VERKNÜPFT.</string>
+    <string name="splash_existing_success_action">Überprüfe deine Überweisung</string>
+    <string name="splash_how_1">6x günstiger als durchschnittliche Banken</string>
+    <string name="splash_how_2">Immer der echte Wechselkurs</string>
+    <string name="splash_how_3">Komplette Transparenz</string>
+    <string name="splash_intro">Willkommen zu schnellen und fairen Überweisungen ins Ausland, powered by TransferWise</string>
+    <string name="splash_partner_terms_1">Mit weiter akzeptierst du die</string>
+    <string name="splash_partner_terms_2">AGB</string>
+    <string name="splash_partner_terms_2_link">https://transferwise.com/partners-terms-of-use</string>
+    <string name="splash_partner_terms_3">" und "</string>
+    <string name="splash_partner_terms_4">Datenschutzerklärung</string>
+    <string name="splash_partner_terms_4_link">https://transferwise.com/de/privacy-policy</string>
+    <string name="splash_partner_terms_5">"von TransferWise und die zusätzlichen "</string>
+    <string name="splash_partner_terms_6">AGB</string>
+    <string name="splash_partner_terms_6_link_new">"https://n26.com/legal-documents/terms-of-use-number26-for-the-service-transferwise/?header=no_header "</string>
+    <string name="splash_partner_terms_7_new">von N26 Bank und stimmst zu, dass wir</string>
+    <string name="splash_partner_terms_8">persönliche Daten</string>
+    <string name="splash_partner_terms_8_personal_info">N26 teilt Daten von dir mit TransferWise einschließlich: Daten deines Ausweisdokuments (z.B. Name, Geburtsdatum…), Adresse, Telefonnummer, E-Mail Adresse und auf entsprechende regulatorisch bedingte Anfrage eine Kopie deines Ausweisdokuments.</string>
+    <string name="splash_partner_terms_9">mit TransferWise teilen.</string>
+    <string name="splash_title">ÜBER TRANSFERWISE</string>
+    <string name="spread_the_word">"Sag's weiter!"</string>
+    <string name="standing_order">Als Dauerauftrag merken?</string>
+    <string name="standing_order_canceled">Der Dauerauftrag wurde gelöscht</string>
+    <string name="standing_order_done">Der Dauerauftrag wurde erstellt</string>
+    <string name="standing_order_updated">Der Dauerauftrag wurde geändert</string>
+    <string name="start_screen_accept">Bestätigen</string>
+    <string name="start_screen_ident_explanation">Wie funktioniert die Identifizierung?</string>
+    <string name="start_screen_placeholder">Ident-ID eingeben</string>
+    <string name="statements_permission_error">Fehler. Bitte Berechtigungen überprüfen.</string>
+    <string name="statements_permission_rationale">Um die Kontoauszüge zu öffnen, brauchen wir Zugriff zu deinem Handyspeicher.</string>
+    <string name="statistics_section1">Heute</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_dismissed">Verworfen.</string>
+    <string name="step_esigning_wait">Wir gleichen nun Ihre Daten ab. Dies kann einen Moment dauern.</string>
+    <string name="step_finished">Vielen Dank, dass Sie sich für die Online-Identifizierung entschieden haben!</string>
+    <string name="step_id_back">Halten Sie nun bitte die Rückseite Ihres Ausweises in die Kamera, so dass wir die Angaben lesen können.</string>
+    <string name="step_id_empty_string" />
+    <string name="step_id_front">Halten Sie nun bitte die Vorderseite Ihres Ausweises in die Kamera, so dass wir die Angaben lesen können.</string>
+    <string name="step_id_read_no">Bitte lesen Sie Ihre Ausweisnummer vor. Diese befindet sich auf der Vorderseite in der rechten oberen Ecke.</string>
+    <string name="step_id_wiggle">Kippen Sie nun den Ausweis von oben nach unten, damit wir die Sicherheitsmerkmale sehen können.</string>
+    <string name="step_say_name">Bitte nennen Sie Ihren kompletten Vor- und Nachnamen und sehen Sie dabei bitte in die Kamera.</string>
+    <string name="step_start">Sie werden mit dem nächsten freien Mitarbeiter verbunden. Dies kann bis zu zwei Minuten dauern.</string>
+    <string name="step_start_waiting_info">Bitte warten Sie, bis Sie mit einem unserer Identifizierungsexperten verbunden sind. Derzeit befinden sich %1$d Personen vor Ihnen in der Warteschleife. Die durchschnittliche Wartezeit beträgt %2$d Sekunden.</string>
+    <string name="step_title_finished">Identifizierung beendet</string>
+    <string name="step_title_id_back">Ausweis Rückseite</string>
+    <string name="step_title_id_front">Ausweis Vorderseite</string>
+    <string name="step_title_ident_code">Ident-Code eingeben</string>
+    <string name="step_title_please_wait">Bitte warten…</string>
+    <string name="step_title_say_name">Name und Foto</string>
+    <string name="step_title_start">Warten auf freien Mitarbeiter</string>
+    <string name="step_wait_long">Aktuell ist aufgrund von hohem Anrufvolumen mit längeren Wartezeiten zu rechnen. Der Identifizierungsservice steht Ihnen täglich zwischen 8 und 24 Uhr zur Verfügung.</string>
+    <string name="stores_count">6000 Geschäften</string>
+    <string name="street">Straße</string>
+    <string name="support_center">Support Center</string>
+    <string name="swapStr">Swap camera</string>
+    <string name="switch_to_fingerprint">Login mit deinem Fingerabdruck</string>
+    <string name="switch_to_password">Mit Passwort einloggen</string>
+    <string name="switch_to_pattern">Mit Login-Muster anmelden</string>
+    <string name="swoosh">Schwupps!</string>
+    <string name="tab_account">Konto</string>
+    <string name="tab_credit">Kredit</string>
+    <string name="tab_earned">%1$s € erhalten</string>
+    <string name="tab_insurance">Versicherung</string>
+    <string name="tab_invest">Invest</string>
+    <string name="tab_invited">%1$s Eingeladen</string>
+    <string name="tab_joined">%1$s Angenommen</string>
+    <string name="tab_pending">%1$s € ausstehend</string>
+    <string name="ten_minimum">10€ MINIMUM</string>
+    <string name="ten_minimum_desc">Um die Prognose zu sehen musst du mindestens 10€ investieren. Verändere deinen Betrag unten.</string>
+    <string name="terms_and_conditions">Rechtliches</string>
+    <string name="terms_and_conditions_desc">Allgemeine Geschäftsbedingungen</string>
+    <string name="title_activity_activation">Mein Status</string>
+    <string name="title_activity_activities__video_live_stream_activity__ice_link">Activities_VideoLiveStreamActivity_IceLink</string>
+    <string name="title_activity_balance_statements">Kontoauszüge</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_create_account">Registrierung</string>
+    <string name="title_activity_filters">Umsätze Filtern</string>
+    <string name="title_activity_first_step">IDnow</string>
+    <string name="title_activity_forgot_password">Passwort Vergessen?</string>
+    <string name="title_activity_help_data">IDnow</string>
+    <string name="title_activity_id_help">IDnow</string>
+    <string name="title_activity_legal_notices">Open Source Lizenzen</string>
+    <string name="title_activity_photo_check">IDnow</string>
+    <string name="title_activity_photo_country_selection">IDnow</string>
+    <string name="title_activity_photo_document_selection">IDnow</string>
+    <string name="title_activity_photo_live">IDnow</string>
+    <string name="title_activity_photo_process_overview">IDnow</string>
+    <string name="title_activity_photo_upload">IDnow</string>
+    <string name="title_activity_result">IDnow</string>
+    <string name="title_activity_second">IDnow</string>
+    <string name="title_fragment_confirm_identity">Identitäts-Check</string>
+    <string name="title_fragment_referral">Freunde Einladen</string>
+    <string name="title_fragment_select_contact">Kontakt Auswählen</string>
+    <string name="title_fragment_standing_orders">Daueraufträge</string>
+    <string name="title_live_stream_screen">Verbinden …</string>
+    <string name="title_upgrade_now">Erhöhung anfragen</string>
+    <string name="to_recipient">An: %s</string>
+    <string name="to_settings">Standortbestimmung aktivieren</string>
+    <string name="total_earned">Gesamteinnahmen</string>
+    <string name="total_spent">Gesamtausgaben</string>
+    <string name="transaction_details_button_send_moneybeam">MoneyBeam senden</string>
+    <string name="transaction_details_cash26_heading">CASH26</string>
+    <string name="transaction_details_contact_heading">Kontakt-Informationen</string>
+    <string name="transaction_details_fees_deposit">Du zahlst ein:</string>
+    <string name="transaction_details_fees_receive">Du erhältst:</string>
+    <string name="transaction_details_fees_subtitle">%s Gebühr enthalten</string>
+    <string name="transaction_details_foreign_heading">Überweisung in Fremdwährung</string>
+    <string name="transaction_details_heading_details">Details</string>
+    <string name="transaction_details_information_heading">Informationen zur Transaktion</string>
+    <string name="transaction_details_tag_hint">Tags mit Leerzeichen trennen</string>
+    <string name="transaction_details_tags_duplicate_tag">Doppelte Tags</string>
+    <string name="transaction_details_tags_edit">Tags bearbeiten</string>
+    <string name="transaction_details_tags_empty">Tags hinzufügen</string>
+    <string name="transaction_details_tags_invalid_character">Ungültiges Zeichen</string>
+    <string name="transaction_details_tags_title">Tags</string>
+    <string name="transaction_details_tags_too_many">Zu viele Tags</string>
+    <string name="transaction_details_tags_too_many_characters">Zu viele Zeichen</string>
+    <string name="transaction_details_type_card">Kartenzahlung</string>
+    <string name="transaction_details_type_cash26_deposit">Einzahlung mit CASH26</string>
+    <string name="transaction_details_type_cash26_withdrawal">Abhebung mit CASH26</string>
+    <string name="transaction_details_type_direct_debit">Lastschrift</string>
+    <string name="transaction_details_type_direct_debit_reversal">Lastschriftrückgabe</string>
+    <string name="transaction_details_type_income">Einkommen</string>
+    <string name="transaction_details_type_maestro">Zahlung mit Maestro</string>
+    <string name="transaction_details_type_mastercard">Zahlung mit Mastercard</string>
+    <string name="transaction_details_type_money_beam">MoneyBeam</string>
+    <string name="transaction_details_type_outgoing_transfer">Ausgehende Überweisung</string>
+    <string name="transaction_details_type_referral">N26 Freundschaftswerbung</string>
+    <string name="transaction_done">Die Überweisung wurde ausgeführt</string>
+    <string name="transaction_future_type_standing_order">Dauerauftrag</string>
+    <string name="transaction_history">Buchungsverlauf</string>
+    <string name="transaction_list_future_transfer_schedule">ÜBERWEISUNG VORMERKEN</string>
+    <string name="transaction_list_request_item_pending_received">Anfrage offen</string>
+    <string name="transaction_list_request_item_pending_sent">Anfrage gesendet</string>
+    <string name="transaction_not_certified">Transaktion freigeben</string>
+    <string name="transaction_notification_authorizing">Der Buchungsverlauf deutet auf eine Authorisierungsanfrage hin.</string>
+    <string name="transaction_notification_exchangerate">Deine Zahlung ist noch nicht abschließend gebucht, daher kann sich der Wechselkurs noch ändern.</string>
+    <string name="transaction_view_request_details_label">Details</string>
+    <string name="transaction_view_request_expiry_info">Anfrage gesendet. Läuft ab in 6 Tagen, falls sie nicht angenommen wird.</string>
+    <string name="transaction_view_request_message_label">Nachricht</string>
+    <string name="transactionlist.balanceheader.titlefuture">Voraussichtlicher Kontostand im %s</string>
+    <string name="transactionlist.balanceheader.titlehistoric">Kontostand am %1$s</string>
+    <string name="transactionlist.balanceheader.titletoday">Aktueller Kontostand</string>
+    <string name="transactionlist.dayheader.titletoday">Heute</string>
+    <string name="transactionlist.dayheader.titleyesterday">Gestern</string>
+    <string name="transactions_history">Transaktionsverlauf</string>
+    <string name="transfer_chargeback_requested">Die Rücklastschrift wurde angefragt</string>
+    <string name="transfer_code">Bitte gib deine PIN ein</string>
+    <string name="transfer_exchangerate">Wechselkurs:</string>
+    <string name="transfer_message">Verwendungszweck</string>
+    <string name="transfer_not_ready">Geld für Kartenzahlungen sofort verfügbar und für Überweisungen in 1-2 Werktagen.</string>
+    <string name="transfer_to_receiver">Überweisung an %s</string>
+    <string name="transfers_search_hint">Suchen</string>
+    <string name="transferwise_fee_already_included">%s TransferWise Gebühr bereits enthalten</string>
+    <string name="transferwise_fee_included">%s TransferWise Gebühr enthalten</string>
+    <string name="unending">Unendlich</string>
+    <string name="update_app">Update N26</string>
+    <string name="update_private_keys_1">Möchtest du deine Smartphoneverknüpfung zurücksetzen?</string>
+    <string name="update_private_keys_2">"Eine Neuverknüpfung kannst du mit dem Knopf unten starten.
+ 
+
+        Anweisungen werden dir dann per E-Mail zugeschickt."</string>
+    <string name="update_private_keys_title">Smartphone Entknüpfen</string>
+    <string name="upload_correct">Foto wurde erfolgreich hochgeladen.</string>
+    <string name="verification_condition4">"Ich akzeptiere die "</string>
+    <string name="verification_condition4_2">AGB</string>
+    <string name="verification_condition4_3">sowie die</string>
+    <string name="verification_condition4_4">Datenschutzerklärung</string>
+    <string name="verification_condition4_5">der IDnow Gmbh</string>
+    <string name="verify_code">Code Verifizieren</string>
+    <string name="verify_identity">Identität Verifizieren</string>
+    <string name="verify_through_mail_text1">"Bringe den PostIdent Coupon zusammen mit deinem gültigen
+        Reisepass oder Personalausweis zur nächsten Postfiliale."</string>
+    <string name="verify_through_mail_text2">"Vor Ort wird deine Identität von einem Postmitarbeiter
+        kostenlos überprüft."</string>
+    <string name="verify_through_mail_text3">"Nach erfolgreicher Überprüfung erhältst du binnen
+        1-2 Werktagen eine Push-Benachrichtigung über die Aktivierung des Kontos auf deinem Smartphone."</string>
+    <string name="versand_der_karte_new_new">MasterCard trifft in 2-4 Tagen ein</string>
+    <string name="was_this_the_fastest">War das der schnellste Kontowechsel deines Lebens?</string>
+    <string name="webView_fac_title">Häufige Fragen</string>
+    <string name="webView_tac_title">AGB</string>
+    <string name="weekly">Wöchentlich</string>
+    <string name="welcome_subtitle">Jetzt Geld überweisen und Konto verwenden</string>
+    <string name="welcome_subtitle2">"Deine N26 MasterCard wurde bereits versandt und trifft 2-4 Tage
+        nach Verifizierung deiner Identität."</string>
+    <string name="welcome_title">Willkommen bei N26</string>
+    <string name="wirecard_closing">Abschlussauszug</string>
+    <string name="withdraw_amount">%s abheben</string>
+    <string name="would_you_like_to_continue">Möchtest du fortfahren?</string>
+    <string name="would_you_like_to_start_new">"Möchtest du einen
+weiteren Kontowechsel starten?"</string>
+    <string name="wrong_entry">Ungültige Eingabe</string>
+    <string name="wrong_token">Ungültige Eingabe</string>
+    <string name="x_month_average">"%1$d -Monatsdurchschnitt:
+%2$s"</string>
+    <string name="yearly">Jährlich</string>
+    <string name="yes">Ja</string>
+    <string name="you_send">Du überweist</string>
+    <string name="your_balance">Dein Kontostand: %s</string>
+    <string name="your_friends_email">E-Mail deines Freundes</string>
+    <string name="your_friends_name">Name deines Freundes</string>
+    <string name="your_friends_phone">Telefonnummer deines Freundes</string>
+    <string name="zip_code">PLZ</string>
+    <string name="employment_salary_hint">Dein monatliches Nettogehalt</string>
+    <string name="employment_tenure_hint">Startdatum des aktuellen Jobs</string>
+    <string name="overdraft_signup_intro_button_check">Dispo überprüfen</string>
+    <string name="overdraft_signup_intro_heading">Dispo</string>
+    <string name="overdraft_signup_intro_point_1">Von 50 € bis 2.000 € zum fairen Zinssatz von 8,9 % jährlich</string>
+    <string name="overdraft_signup_intro_point_2">Volle Kontrolle: Setze dein eigenes Dispo-Limit</string>
+    <string name="overdraft_signup_intro_point_3">Zahle nur, wenn du im Dispo bist. Du hast die Kosten jederzeit im Blick</string>
+    <string name="overdraft_signup_intro_point_4">In 2 Minuten aktiviert</string>
+    <string name="overdraft_signup_intro_subheading">Ein bisschen finanzielle Hilfe</string>
+    <string name="overdraft_signup_refused_button_ok">Verstanden!</string>
+    <string name="overdraft_signup_refused_info">"Aufgrund der uns derzeit vorliegenden Informationen, können wir dir aktuell leider keinen Dispo anbieten.
+
+Du kannst am %s den nächsten Antrag stellen."</string>
+    <string name="overdraft_signup_review_button_activate">Dispo aktivieren</string>
+    <string name="overdraft_signup_review_heading">Überprüfung und aktivieren</string>
+    <string name="overdraft_signup_review_instruction">Aktiviere dein Dispokredit mit dem Knop unten um das das Angebot anzunehmen und genieße sofort mehr Flexibilität.</string>
+    <string name="overdraft_signup_review_subheading">Wir haben dir ein &lt;b>%s&lt;/b> Dispokredit-Angebot per Email gesendet.</string>
+    <string name="overdraft_signup_terms_credit">Ich stimme den Bedingungen der Bonitätsprüfung zu</string>
+    <string name="overdraft_signup_terms_heading">Bitte mache folgende Angaben, damit wir dir ein Angebot unterbreiten können.</string>
+    <string name="overdraft_signup_terms_tcs">Ich stimme den &lt;a href=\"%2$s\">Bedingungen des Dispokredits&lt;/a> und den &lt;a href=\"%1$s\">Vorvertraglicheinformationen&lt;/a> zu</string>
+</resources>

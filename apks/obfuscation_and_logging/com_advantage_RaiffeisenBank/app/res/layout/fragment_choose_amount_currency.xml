@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListView android:id="@id/ccy_list" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/maxFixedAmountLayout" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+        <android.support.v7.widget.AppCompatTextView android:textSize="13.0sp" android:textColor="?dsq_amount_ccy_text_color" android:gravity="center" android:id="@id/maxAmountTextView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/max_amount" android:layout_weight="1.0" app:textAllCaps="true" style="@style/DSQTextAppearance.AmountChooser" />
+        <android.support.v7.widget.AppCompatTextView android:textSize="13.0sp" android:textColor="?dsq_amount_ccy_text_color" android:gravity="center" android:id="@id/fixedAmountTextView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/fixed_amount" android:layout_weight="1.0" app:textAllCaps="true" style="@style/DSQTextAppearance.AmountChooser" />
+    </LinearLayout>
+</LinearLayout>

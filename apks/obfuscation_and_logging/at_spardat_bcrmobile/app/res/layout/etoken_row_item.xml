@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dip" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/round_corner_drawable" android:padding="1.0dip" android:clickable="true" style="@style/MatchParentWrapContent">
+        <RelativeLayout android:id="@id/view_etoken" android:background="@drawable/list_single_item_selector" android:padding="10.0dip" android:clickable="true" style="@style/MatchParentWrapContent">
+            <ImageView android:id="@id/img_info_etoken" android:src="@drawable/ic_etoken" android:layout_centerVertical="true" android:contentDescription="@string/info_title" style="@style/AllWrapContent" />
+            <ImageView android:id="@id/img_etoken_arrow" android:src="@drawable/right_arrow_blue" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/right_arrow" style="@style/AllWrapContent" />
+            <TextView android:textColor="@color/text_title" android:paddingLeft="6.0dip" android:text="@string/etoken_sign" android:layout_toLeftOf="@id/img_etoken_arrow" android:layout_toRightOf="@id/img_info_etoken" android:layout_centerVertical="true" style="@style/TextBigBoldMatchWrap" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/round_corner_drawable" android:padding="10.0dip" android:layout_marginTop="10.0dip" style="@style/MatchParentWrapContent">
+        <ImageView android:id="@id/img_info_etoken_msg" android:src="@drawable/info" android:layout_centerVertical="true" android:contentDescription="@string/info_title" style="@style/AllWrapContent" />
+        <ImageView android:id="@id/img_etoken_arrow_msg" android:visibility="invisible" android:src="@drawable/right_arrow_blue" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/right_arrow" style="@style/AllWrapContent" />
+        <TextView android:textColor="@color/text_title" android:paddingLeft="10.0dip" android:text="@string/etoken_info_msg" android:layout_toLeftOf="@id/img_etoken_arrow_msg" android:layout_toRightOf="@id/img_info_etoken_msg" style="@style/TextSmallBoldMatchWrap" />
+    </RelativeLayout>
+</LinearLayout>

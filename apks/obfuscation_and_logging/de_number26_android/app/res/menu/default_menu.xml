@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/icon_cancel_white" android:id="@id/cancel" android:visible="false" android:title="Add" app:showAsAction="always" />
+    <item android:icon="@drawable/icon_info" android:id="@id/text" android:visible="false" android:title="Info" app:showAsAction="always" />
+    <item android:icon="@drawable/icon_bin" android:id="@id/delete" android:visible="false" android:title="Delete" app:showAsAction="always" />
+    <item android:icon="@drawable/icon_standing_order" android:id="@id/standing" android:visible="false" android:title="@string/title_fragment_standing_orders" app:showAsAction="always" />
+    <item android:icon="@drawable/icon_search" android:id="@id/search" android:visible="false" android:title="@string/transfers_search_hint" app:showAsAction="always" />
+    <item android:icon="@drawable/question_icon" android:id="@id/question" android:visible="false" android:title="@string/menu_how_it_works" app:showAsAction="always" />
+</menu>

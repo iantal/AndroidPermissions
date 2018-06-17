@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin">
+                <TextView android:textAppearance="@style/TextAppearance.Form.Title" android:id="@id/recipient_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/receiver" android:labelFor="@id/recipient" />
+                <TextView android:textAppearance="@style/TextAppearance.Form.Text" android:id="@id/recipient" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textAppearance="@style/TextAppearance.Form.Text" android:id="@id/recipient_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <include layout="@layout/horizontal_separator" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin">
+                <TextView android:textAppearance="@style/TextAppearance.Form.Title" android:id="@id/amount_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/amount" android:labelFor="@id/amount" />
+                <TextView android:textAppearance="@style/TextAppearance.Form.Text" android:id="@id/amount" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <include layout="@layout/horizontal_separator" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin">
+                <TextView android:textAppearance="@style/TextAppearance.Form.Title" android:id="@id/description_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/transfer_message" android:labelFor="@id/description" />
+                <TextView android:textAppearance="@style/TextAppearance.Form.Text" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <include layout="@layout/horizontal_separator" />
+            <LinearLayout android:orientation="vertical" android:id="@id/transfer_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/standing_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/standing_order" android:paddingEnd="@dimen/default_padding" style="@android:style/TextAppearance.Material.Medium" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="end" android:id="@id/sending_date_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/sending_date" android:layout_weight="1.0" android:labelFor="@id/sending_date" style="@android:style/TextAppearance.Material.Medium" />
+                    <Button android:id="@id/sending_date" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:layout_weight="1.0" style="@android:style/Widget.Material.Button" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/end_date_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="end" android:id="@id/end_date_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/end_date" android:layout_weight="1.0" android:labelFor="@id/sending_date" style="@android:style/TextAppearance.Material.Medium" />
+                    <Button android:id="@id/end_date" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/no_end_date" android:layout_weight="1.0" style="@android:style/Widget.Material.Button" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/frequency_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="end" android:id="@id/frequency_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/interval" android:layout_weight="1.0" android:labelFor="@id/frequency" style="@android:style/TextAppearance.Material.Medium" />
+                    <Spinner android:id="@id/frequency" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:popupBackground="@android:color/white" android:layout_weight="1.0" android:spinnerMode="dialog" style="@android:style/Widget.Material.Button" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/occurrences_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="end" android:id="@id/occurrences_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/number_occurrences" android:layout_weight="1.0" android:labelFor="@id/occurrences" style="@android:style/TextAppearance.Material.Medium" />
+                    <TextView android:id="@id/occurrences" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:layout_weight="1.0" style="@android:style/TextAppearance.Material.Medium" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:id="@id/action" style="@style/mainbutton" />
+</LinearLayout>

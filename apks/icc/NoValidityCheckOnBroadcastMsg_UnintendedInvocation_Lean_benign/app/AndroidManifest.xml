@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="edu.ksu.cs.benign">
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <application android:allowBackup="false" android:debuggable="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:name="edu.ksu.cs.benign.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:name="edu.ksu.cs.benign.LowMemoryReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="edu.ksu.cs.benign.DeleteStatusActivity"/>
+        <service android:exported="false" android:name="edu.ksu.cs.benign.DeleteFilesIntentService"/>
+    </application>
+</manifest>

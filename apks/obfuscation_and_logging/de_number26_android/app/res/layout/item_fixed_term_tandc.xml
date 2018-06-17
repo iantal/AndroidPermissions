@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="24.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <CheckBox android:textColor="@color/grey_46" android:gravity="center|left|top" android:layout_gravity="left" android:id="@id/check_item_fixed_term_tandc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:button="@drawable/checkbox_selector_mint" fontPath="@string/font_regular" />
+        <TextView android:textSize="16.0sp" android:id="@id/text_item_fixed_term_tandc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="8.0sp" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:paddingLeft="24.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/image_item_fixed_term_tandc_group_tick" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/tick_mint" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/mint" android:gravity="center_vertical" android:id="@id/text_item_fixed_term_tandc_group" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="die AGB der Raisin GmbH und der MHB-Bank AG." android:layout_toRightOf="@id/image_item_fixed_term_tandc_group_tick" android:layout_centerVertical="true" fontPath="@string/font_regular" />
+        <ImageView android:id="@id/image_item_fixed_term_tandc_group_arrow" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/arrow_down_mint" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

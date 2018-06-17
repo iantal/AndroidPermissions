@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/view_data_container" android:background="@drawable/background_gradient" android:focusable="true" android:clickable="true" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_marginBottom="20.0dip" android:src="@drawable/coins" android:contentDescription="@string/coins" style="@style/AllWrapContent" />
+    <at.spardat.bcrmobile.view.widget.AnimatedProgressBar android:id="@id/progress_bar" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" style="@style/AllWrapContent" />
+    <TextView android:textColor="@color/text_title" android:gravity="center" android:layout_marginBottom="10.0dip" android:text="@string/payment_processing" style="@style/TextBoldAllWrap" />
+</LinearLayout>

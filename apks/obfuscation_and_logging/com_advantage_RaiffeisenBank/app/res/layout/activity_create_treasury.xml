@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/main_content_frame_layout" android:background="?dsq_main_content_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/include_rpb_yellow_line_logo" />
+        <RelativeLayout android:id="@id/content_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/toolbar_background" android:background="?dsq_actionbar_background" android:layout_width="fill_parent" android:layout_height="@dimen/dsq_action_bar_expanded_height" android:scaleType="fitXY" android:layout_alignParentTop="true" android:contentDescription="@null" />
+            <android.support.v7.widget.Toolbar android:theme="@style/DSQStyled.Toolbar.Transparent" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_marginTop="@dimen/dsq_toolbar_top_margin" />
+            <include layout="@layout/include_footer_logo" />
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar_background" style="@style/CardContentAboveActionBarStyle">
+                <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loading" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/headerLinearLayout" android:background="@drawable/rounded_top_corners_white" android:paddingBottom="12.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/white_card_left_margin" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/white_card_right_margin">
+                    <ImageButton android:layout_gravity="center_vertical" android:id="@id/back" android:background="@color/transparent" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/ic_action_close" android:contentDescription="@null" />
+                    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                        <TextView android:ellipsize="end" android:id="@id/header" android:paddingLeft="4.0dip" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:text="@string/title_create_treasury" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/DSQTextAppearance.Header.material" />
+                        <ImageButton android:id="@id/header_image_back" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dropdown_arrow" android:layout_alignRight="@id/header" android:layout_centerVertical="true" android:contentDescription="@null" />
+                    </RelativeLayout>
+                    <ImageView android:id="@id/templates_button" android:background="@color/transparent" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="invisible" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/payment_selector" android:contentDescription="@null" />
+                </LinearLayout>
+                <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/white_card_left_margin" android:layout_marginTop="-1.0dip" android:layout_marginRight="@dimen/white_card_right_margin" android:fillViewport="true">
+                    <FrameLayout android:id="@id/fragment_create_treasury" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </ScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="start" android:id="@id/fragment_below_container" android:layout_width="320.0dip" android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

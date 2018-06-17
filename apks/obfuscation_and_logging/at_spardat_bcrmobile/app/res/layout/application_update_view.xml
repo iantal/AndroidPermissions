@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" style="@style/ApplicationTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_centerInParent="true" style="@style/MatchParentWrapContent">
+        <TextView android:textColor="@color/text_title" android:gravity="center" android:id="@id/tv_update_msg" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/version_update_mandatory_message" android:drawableTop="@drawable/forwarded_for_processing" android:drawablePadding="15.0dip" style="@style/AllWrapContent" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:paddingTop="3.0dip" android:layout_alignParentBottom="true" style="@style/ScreenFooter">
+        <Button android:id="@id/btn_cancel" android:background="@drawable/button_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/cancel_action_title" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_play_store" android:background="@drawable/button_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:text="@string/google_play" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

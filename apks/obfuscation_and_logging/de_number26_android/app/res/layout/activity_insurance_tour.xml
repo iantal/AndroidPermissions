@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager android:id="@id/pager_insurance_tour" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/layout_insurance_tour_moving_phone" android:translationX="@dimen/insurance_tour_page1_phone_translation_x" android:translationY="@dimen/insurance_tour_page1_phone_translation_x" android:scaleX="@integer/insurance_tour_page1_phone_scale" android:scaleY="@integer/insurance_tour_page1_phone_scale" style="@style/InsuranceTourPhoneLayout">
+        <ImageView android:id="@id/image_insurance_tour_phone_frame" android:src="@drawable/ic_ins_tour_phone" style="@style/InsuranceTourPhoneFrameView" />
+        <ImageView android:id="@id/image_insurance_tour_phone_frame_half_visible" android:src="@drawable/ic_ins_tour_phone_half_visible" style="@style/InsuranceTourPhoneFrameView" />
+        <ImageView android:id="@id/image_insurance_tour_phone_content_page1" android:src="@drawable/ic_ins_tour_screen_1_phone_content" style="@style/InsuranceTourPhoneContentView" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/animation_insurance_tour_phone_content_page2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="false" app:lottie_fileName="animations/anim_insurance_tour.json" app:lottie_loop="false" style="@style/InsuranceTourPhoneContentView" />
+        <ImageView android:id="@id/image_insurance_tour_phone_content_page4" android:src="@drawable/ic_ins_tour_screen_4_phone_content" android:scaleType="fitXY" android:alpha="0.0" style="@style/InsuranceTourPhoneContentView" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_insurance_tour_products" android:background="@drawable/bg_insurance_tour_products" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginBottom="84.0dip" android:alpha="0.0" android:scaleX="@integer/insurance_tour_page2_products_scale" android:scaleY="@integer/insurance_tour_page2_products_scale">
+        <LinearLayout style="@style/InsuranceTourProductItem">
+            <View style="@style/InsuranceTourProductItemIcon" />
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/insurance_tour_policy_1_name" android:layout_weight="1.0" style="@style/InsuranceTourProductItemText" />
+            <TextView android:text="@string/insurance_tour_policy_1_amount" style="@style/InsuranceTourProductItemText" />
+        </LinearLayout>
+        <View android:background="@color/grey_light" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="1.5dip" android:layout_marginEnd="1.5dip" />
+        <LinearLayout style="@style/InsuranceTourProductItem">
+            <View style="@style/InsuranceTourProductItemIcon" />
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/insurance_tour_policy_2_name" android:layout_weight="1.0" style="@style/InsuranceTourProductItemText" />
+            <TextView android:text="@string/insurance_tour_policy_2_amount" style="@style/InsuranceTourProductItemText" />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/toolbar_insurance_tour" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" />
+    <com.rd.PageIndicatorView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/insurance_tour_page_indicator_margin_bottom" app:piv_animationType="worm" app:piv_dynamicCount="true" app:piv_interactiveAnimation="true" app:piv_padding="14.0dip" app:piv_radius="4.0dip" app:piv_selectedColor="@color/colorAccent" app:piv_unselectedColor="@color/grey_bright" app:piv_viewPager="@id/pager_insurance_tour" />
+    <Button android:layout_gravity="end|bottom|center" android:id="@id/button_insurance_tour_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/insurance_tour_next_margin_bottom" android:text="@string/insurance_tour_next_button_android" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="@style/BorderlessButton" />
+</FrameLayout>

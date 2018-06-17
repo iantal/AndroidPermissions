@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout android:id="@id/refresh_credit_dashboard" android:background="@color/creditDashboardBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:paddingTop="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_marginBottom="5.0dip" android:text="@string/credit_dashboard_balance" style="@style/homeDashboardBalanceLabel" />
+            <TextView android:id="@id/text_credit_dashboard_credit_balance" style="@style/homeDashboardBalanceValue" />
+        </LinearLayout>
+        <include android:id="@id/layout_credit_dashboard_empty" android:visibility="gone" layout="@layout/partial_credit_dashboard_empty" />
+        <android.support.v7.widget.RecyclerView android:id="@id/list_credit_dashboard_draft_summary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="12.0dip" />
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

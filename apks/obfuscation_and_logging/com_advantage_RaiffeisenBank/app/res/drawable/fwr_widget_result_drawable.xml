@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/fwr_rounded_widget_result_confirmation_corners" />
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/widget_rzb_logo" />
+    </item>
+</layer-list>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <de.number26.machete.android.ui.components.ItemView android:id="@id/emergency_contact" android:layout_width="fill_parent" android:layout_height="wrap_content" app:subtitle="@string/premium_card_contact_title" app:title="@string/premium_card_contact_summary" />
+        <de.number26.machete.android.ui.components.ItemView android:id="@id/policy_information" android:layout_width="fill_parent" android:layout_height="wrap_content" app:subtitle="@string/premium_card_details_policy_information_summary" app:title="@string/premium_card_details_policy_information_title" />
+        <de.number26.machete.android.ui.components.ItemView android:id="@id/membership_details" android:layout_width="fill_parent" android:layout_height="wrap_content" app:subtitle="@string/premium_card_membership_details_summary" app:title="@string/premium_card_membership_details_title" />
+        <de.number26.machete.android.ui.components.ItemView android:id="@id/cancel_premium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:subtitle="@string/premium_card_details_cancel_premium_summary" app:title="@string/premium_card_details_cancel_premium_title" />
+        <de.number26.machete.android.ui.components.ItemView android:id="@id/revert_premium_cancellation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:subtitle="@string/premium_card_details_revert_premium_cancellation_summary" app:title="@string/premium_card_details_revert_premium_cancellation_title" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

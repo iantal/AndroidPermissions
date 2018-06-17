@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/ApplicationTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_header_reset_screen" android:text="@string/app_name" android:maxLines="1" style="@style/ScreenHeader" />
+    <at.spardat.bcrmobile.view.widget.NonFocusingScrollView android:id="@id/view_scroll_parent" android:fadingEdge="none" android:fillViewport="true" android:layout_below="@id/tv_header_reset_screen" style="@style/AllMatchParent">
+        <LinearLayout android:orientation="vertical" android:id="@id/view_parent" style="@style/AllMatchParent">
+            <TextView android:id="@id/tv_error" android:visibility="gone" style="@style/ErrorStrip" />
+            <TextView android:textColor="@color/text_title" android:background="@drawable/background_gradient" android:padding="10.0dip" android:text="@string/custom_security_msg_alias" style="@style/TextSmallNormalMatchWrap" />
+            <EditText android:id="@id/et_alias_name" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="@string/alias_hint" android:maxLength="30" style="@style/MatchParentWrapContent" />
+            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" style="@style/MatchParentWrapContent">
+                <Button android:id="@id/btn_save_alias" android:layout_width="0.0dip" android:layout_margin="5.0dip" android:text="@string/save_alias" android:layout_weight="0.5" style="@style/ButtonStyleSubmit" />
+                <Button android:id="@id/btn_skip_alias" android:layout_width="0.0dip" android:layout_margin="5.0dip" android:text="@string/skip_alias" android:layout_weight="0.5" style="@style/ButtonStyleSkipAlias" />
+            </LinearLayout>
+            <ImageView android:background="@color/info_background" android:src="@drawable/info" android:contentDescription="@string/no_description" style="@style/MatchParentWrapContent" />
+            <LinearLayout android:orientation="vertical" android:layout_margin="10.0dip" style="@style/MatchParentWrapContent">
+                <TextView android:text="@string/err_alias_too_long" style="@style/PasswordPolicyStyle" />
+                <TextView android:text="@string/err_alias_first_letter" style="@style/PasswordPolicyStyle" />
+                <TextView android:text="@string/err_alias_more_than_one_dot" style="@style/PasswordPolicyStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </at.spardat.bcrmobile.view.widget.NonFocusingScrollView>
+    <include android:id="@id/view_progress_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_header_reset_screen" layout="@layout/data_loading_progress_view" />
+</RelativeLayout>

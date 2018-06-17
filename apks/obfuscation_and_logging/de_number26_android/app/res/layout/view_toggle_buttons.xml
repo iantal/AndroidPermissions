@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/button1" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+        <ImageView android:id="@id/button1_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:gravity="center_horizontal" android:id="@id/button1_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contentSpacing" android:layout_marginBottom="@dimen/contentSpacing" android:textAllCaps="true" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/button1_status" android:background="@color/colorAccent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    </LinearLayout>
+    <include layout="@layout/vertical_separator" />
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/button2" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+        <ImageView android:id="@id/button2_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:gravity="center_horizontal" android:id="@id/button2_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contentSpacing" android:layout_marginBottom="@dimen/contentSpacing" android:textAllCaps="true" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/button2_status" android:background="@color/colorAccent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

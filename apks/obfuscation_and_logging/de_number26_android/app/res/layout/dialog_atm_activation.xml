@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/atm_activation_dialog_title" fontPath="@string/font_medium" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/textColorSecondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/dialog_description_atm_activation" />
+        <Button android:textColor="@color/colorAccent" android:layout_gravity="end" android:id="@id/button_atm_activation_got_it" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gotit" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+    </LinearLayout>
+</LinearLayout>

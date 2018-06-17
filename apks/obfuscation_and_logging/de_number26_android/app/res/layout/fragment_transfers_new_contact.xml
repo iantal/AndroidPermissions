@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/newContactCurrencyContainer" android:padding="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="72.0dip">
+                <TextView android:id="@id/newContactCurrencyLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/currency" android:layout_weight="1.0" style="@style/TextAppearance.AppCompat.Medium" />
+                <include layout="@layout/item_currency_selected" />
+            </LinearLayout>
+            <View android:background="@color/grey_bright" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <android.support.design.widget.TextInputLayout android:id="@id/newContactNameContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/newContactCurrencyContainer">
+                <AutoCompleteTextView android:id="@id/newContactName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/name" android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:id="@id/newContactIbanContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/newContactNameContainer">
+                <AutoCompleteTextView android:id="@id/newContactIban" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/iban" android:inputType="textCapCharacters" android:imeOptions="actionDone" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:id="@id/newContactBicContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/newContactIbanContainer">
+                <AutoCompleteTextView android:id="@id/newContactBic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/bic_" android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:id="@id/continueButton" android:text="@string/new_contact_action" style="@style/mainbutton" />
+</LinearLayout>

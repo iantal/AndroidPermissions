@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/refreshSpacesOverview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <de.number26.machete.android.ui.components.LockableScrollView android:id="@id/overviewContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:orientation="vertical" android:clipToPadding="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:orientation="vertical" android:id="@id/recyclerViewContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <android.support.constraint.ConstraintLayout android:id="@id/balanceContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip">
+                            <TextView android:id="@id/balanceLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/spaces_universal_balance" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/balanceValue" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Text.Screen.Body.Small" />
+                            <TextView android:textColor="@color/grey_79" android:id="@id/balanceValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/balanceLabel" app:layout_constraintTop_toTopOf="parent" style="@style/Text.Screen.Body.XSmall" />
+                        </android.support.constraint.ConstraintLayout>
+                        <de.number26.machete.android.refactor.presentation.spaces.SpacesRecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </de.number26.machete.android.ui.components.LockableScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <de.number26.machete.android.adl.atoms.SimpleLoading android:id="@id/spacesOverviewLoader" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="56.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <de.number26.machete.android.adl.atoms.OverlayLoading android:id="@id/loaderSpacesOverviewDelete" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</android.support.constraint.ConstraintLayout>

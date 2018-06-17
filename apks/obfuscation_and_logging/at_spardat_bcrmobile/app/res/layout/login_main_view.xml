@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_login_root" android:background="@drawable/splash_background_gradient" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/login_header" style="@style/MatchParentWrapContent">
+        <TextView android:id="@id/tv_header" android:text="@string/login_title" style="@style/ScreenHeader" />
+        <ImageView android:id="@id/img_login_info" android:padding="5.0dip" android:clickable="true" android:layout_marginRight="5.0dip" android:src="@drawable/login_info_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/no_description" style="@style/AllWrapContent" />
+    </RelativeLayout>
+    <at.spardat.bcrmobile.view.widget.NonFocusingScrollView android:id="@id/view_login_scroll" android:fadingEdge="none" android:fillViewport="true" android:layout_below="@id/login_header" style="@style/AllMatchParent">
+        <LinearLayout android:orientation="vertical" android:id="@id/view_login_parent" style="@style/AllMatchParent">
+            <TextView android:id="@id/tv_error" android:visibility="gone" style="@style/ErrorStrip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/view_login_main" android:padding="10.0dip" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0" style="@style/AllMatchParent">
+                <TextView android:textSize="24.0sp" android:textColor="@color/text_on_dark" android:gravity="center" android:text="@string/choose_authentication_method" style="@style/TextBigBoldMatchWrap" />
+                <LinearLayout android:id="@id/view_login_options" android:layout_marginTop="10.0dip" style="@style/MatchParentWrapContent">
+                    <TextView android:id="@id/tv_etoken" android:padding="5.0dip" android:text="@string/etoken" android:drawableTop="@drawable/etoken_btn_selector" style="@style/LoginOptionStyle" />
+                    <TextView android:id="@id/tv_password" android:padding="5.0dip" android:text="@string/password_field_label" android:drawableTop="@drawable/password_btn_selector" style="@style/LoginOptionStyle" />
+                    <TextView android:id="@id/tv_token" android:padding="5.0dip" android:text="@string/token" android:drawableTop="@drawable/token_btn_selector" style="@style/LoginOptionStyle" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/view_credential" android:layout_margin="5.0dip" style="@style/MatchParentWrapContent">
+                    <TextView android:textColor="@color/text_title" android:gravity="center" android:id="@id/tv_first_time_login" android:background="@drawable/login_roundrect_shape" android:padding="10.0dip" android:visibility="gone" android:text="@string/first_time_login" style="@style/TextNormalMatchWrap" />
+                    <RelativeLayout android:id="@id/view_credential_input" android:background="@drawable/login_semi_roundrect_shape" style="@style/MatchParentWrapContent">
+                        <EditText android:id="@id/et_user_id" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:hint="@string/user_name_hint" android:maxLines="1" android:maxLength="30" android:drawableRight="@drawable/toggle_off" android:drawablePadding="5.0dip" android:inputType="textVisiblePassword" style="@style/MatchParentWrapContent" />
+                        <EditText android:id="@id/et_password" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:hint="@string/password_hint" android:maxLines="1" android:maxLength="16" android:layout_below="@id/et_user_id" android:inputType="textNoSuggestions|textPassword" style="@style/MatchParentWrapContent" />
+                    </RelativeLayout>
+                    <Button android:id="@id/btn_login" android:paddingTop="-3.0dip" android:text="@string/login_title" android:layout_below="@id/view_credential_input" style="@style/ButtonStyleLogin" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_horizontal" android:id="@id/view_register_now" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" style="@style/MatchParentWrapContent">
+                    <TextView android:textColor="@color/text_title" android:id="@id/tv_dont_have_account" android:layout_marginRight="3.0dip" android:text="@string/dont_have_account" android:maxLines="1" android:layout_alignParentBottom="true" style="@style/TextNormalAllWrap" />
+                    <TextView android:textColor="@color/hyperlink_text_color" android:id="@id/tv_register_now" android:paddingBottom="2.0dip" android:clickable="true" android:text="@string/register_now" android:maxLines="1" android:layout_toRightOf="@id/tv_dont_have_account" android:layout_alignParentBottom="true" style="@style/TextBoldAllWrap" />
+                </RelativeLayout>
+                <TextView android:textColor="@color/hyperlink_text_color" android:layout_gravity="center_horizontal" android:id="@id/tv_reset_password" android:visibility="gone" android:clickable="true" android:text="@string/forgot_password" android:maxLines="1" style="@style/TextBoldAllWrap" />
+            </LinearLayout>
+            <ImageView android:gravity="center" android:padding="10.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/bcr_logo" android:contentDescription="@string/header" style="@style/MatchParentWrapContent" />
+        </LinearLayout>
+    </at.spardat.bcrmobile.view.widget.NonFocusingScrollView>
+    <include android:id="@id/view_progress_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/login_header" layout="@layout/data_loading_progress_view" />
+</RelativeLayout>

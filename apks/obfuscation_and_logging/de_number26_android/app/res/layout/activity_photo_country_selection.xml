@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/photo_country_selection_title" />
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/photo_country_selection_info" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageViewCountryFlag" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginRight="@dimen/activity_horizontal_margin" android:src="@drawable/flag_missing" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/photo_country_selection_image_description" />
+                <Spinner android:gravity="center_vertical" android:id="@id/spinnerCountrySelection" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/imageViewCountryFlag" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textColor="@color/proceed_button_text" android:id="@id/buttonNext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/first_step_next" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

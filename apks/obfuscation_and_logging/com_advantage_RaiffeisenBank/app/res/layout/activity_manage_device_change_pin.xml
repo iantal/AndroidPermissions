@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:background="?dsq_main_content_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/actionBar" layout="@layout/include_toolbar" />
+            <android.support.v7.widget.Toolbar android:theme="@style/DSQStyled.Toolbar.Transparent" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_marginTop="@dimen/dsq_toolbar_top_margin" />
+            <ScrollView android:id="@id/keyboardScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/toolbar">
+                <FrameLayout android:gravity="center" android:id="@id/fragment_change_pin_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="center" />
+            </ScrollView>
+        </RelativeLayout>
+    </FrameLayout>
+</android.support.v4.widget.DrawerLayout>

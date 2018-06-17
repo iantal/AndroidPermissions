@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView style="@style/HomeCard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="14.5dip">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="11.5dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/grey_46" android:id="@id/text_fixed_term_card_active_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" fontPath="@string/font_regular" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:gravity="end" android:id="@id/text_fixed_term_card_active_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_weight="1.0" fontPath="@string/font_regular" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <de.number26.machete.android.ui.savings.fixedterm.dashboard.ActiveView android:id="@id/view_fixed_term_card_active_animation" android:layout_width="327.0dip" android:layout_height="100.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="21.0dip" android:layout_toLeftOf="@id/image_fixed_term_flag" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="20.0sp" android:layout_gravity="center" android:id="@id/text_fixed_term_card_active_days_until" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" fontPath="@string/font_regular" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed_term_dashboard_planopened_remainingtime" fontPath="@string/font_light" />
+            </LinearLayout>
+            <ImageView android:id="@id/image_fixed_term_card_active_flag" android:layout_width="22.0dip" android:layout_height="35.0dip" android:layout_marginLeft="-2.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/img_fixed_term_active_end" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-3.0dip" android:src="@drawable/img_fixed_term_active_start" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:layout_marginBottom="5.0dip" style="@style/HorizontalSeparatorThin" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed_term_dashboard_planopened_deposit" fontPath="@string/font_light" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_card_active_deposit" android:layout_width="wrap_content" android:layout_height="wrap_content" fontPath="@string/font_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed_term_dashboard_planopened_interestrate" fontPath="@string/font_light" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_card_active_interest" android:layout_width="wrap_content" android:layout_height="wrap_content" fontPath="@string/font_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed_term_dashboard_planopened_profit" fontPath="@string/font_light" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_card_active_profit" android:layout_width="wrap_content" android:layout_height="wrap_content" fontPath="@string/font_regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

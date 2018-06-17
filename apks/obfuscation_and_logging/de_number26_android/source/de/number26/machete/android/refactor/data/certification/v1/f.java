@@ -1,0 +1,19 @@
+package de.number26.machete.android.refactor.data.certification.v1;
+
+import c.a.d;
+
+public enum f
+  implements d<e>
+{
+  private f() {}
+  
+  public static d<e> b()
+  {
+    return a;
+  }
+  
+  public e a()
+  {
+    return new e();
+  }
+}

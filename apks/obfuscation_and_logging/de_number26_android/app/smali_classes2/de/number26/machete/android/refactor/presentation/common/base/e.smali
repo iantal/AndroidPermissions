@@ -1,0 +1,131 @@
+.class public abstract Lde/number26/machete/android/refactor/presentation/common/base/e;
+.super Lcom/trello/rxlifecycle/components/support/a;
+.source "BaseDialogFragment.java"
+
+
+# instance fields
+.field private final a:Lrx/i/b;
+
+.field private b:Lbutterknife/Unbinder;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 25
+    invoke-direct {p0}, Lcom/trello/rxlifecycle/components/support/a;-><init>()V
+
+    .line 27
+    new-instance v0, Lrx/i/b;
+
+    invoke-direct {v0}, Lrx/i/b;-><init>()V
+
+    iput-object v0, p0, Lde/number26/machete/android/refactor/presentation/common/base/e;->a:Lrx/i/b;
+
+    return-void
+.end method
+
+.method private d()V
+    .locals 1
+
+    .line 66
+    iget-object v0, p0, Lde/number26/machete/android/refactor/presentation/common/base/e;->a:Lrx/i/b;
+
+    invoke-virtual {v0}, Lrx/i/b;->c()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract a(Landroid/content/Context;)V
+.end method
+
+.method public abstract a(Lrx/i/b;)V
+.end method
+
+.method protected abstract c()I
+.end method
+
+.method public onAttach(Landroid/app/Activity;)V
+    .locals 0
+
+    .line 35
+    invoke-virtual {p0, p1}, Lde/number26/machete/android/refactor/presentation/common/base/e;->a(Landroid/content/Context;)V
+
+    .line 36
+    invoke-super {p0, p1}, Lcom/trello/rxlifecycle/components/support/a;->onAttach(Landroid/app/Activity;)V
+
+    return-void
+.end method
+
+.method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 1
+
+    .line 42
+    invoke-virtual {p0}, Lde/number26/machete/android/refactor/presentation/common/base/e;->c()I
+
+    move-result p3
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p1
+
+    .line 43
+    invoke-static {p0, p1}, Lbutterknife/ButterKnife;->a(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lde/number26/machete/android/refactor/presentation/common/base/e;->b:Lbutterknife/Unbinder;
+
+    return-object p1
+.end method
+
+.method public onDestroyView()V
+    .locals 2
+
+    .line 61
+    invoke-super {p0}, Lcom/trello/rxlifecycle/components/support/a;->onDestroyView()V
+
+    .line 62
+    iget-object v0, p0, Lde/number26/machete/android/refactor/presentation/common/base/e;->b:Lbutterknife/Unbinder;
+
+    invoke-static {v0}, Lh/a/b;->a(Ljava/lang/Object;)Lh/a/b;
+
+    move-result-object v0
+
+    sget-object v1, Lde/number26/machete/android/refactor/presentation/common/base/f;->a:Lh/a/a/b;
+
+    invoke-virtual {v0, v1}, Lh/a/b;->a(Lh/a/a/b;)Lh/a/b;
+
+    return-void
+.end method
+
+.method public onPause()V
+    .locals 0
+
+    .line 55
+    invoke-direct {p0}, Lde/number26/machete/android/refactor/presentation/common/base/e;->d()V
+
+    .line 56
+    invoke-super {p0}, Lcom/trello/rxlifecycle/components/support/a;->onPause()V
+
+    return-void
+.end method
+
+.method public onResume()V
+    .locals 1
+
+    .line 49
+    invoke-super {p0}, Lcom/trello/rxlifecycle/components/support/a;->onResume()V
+
+    .line 50
+    iget-object v0, p0, Lde/number26/machete/android/refactor/presentation/common/base/e;->a:Lrx/i/b;
+
+    invoke-virtual {p0, v0}, Lde/number26/machete/android/refactor/presentation/common/base/e;->a(Lrx/i/b;)V
+
+    return-void
+.end method

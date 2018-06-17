@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="24.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/fixed_term_education_parnternetwork_title" android:lineSpacingExtra="4.0sp" fontPath="@string/font_regular" />
+        <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/fixed_term_education_parnternetwork_description_1" android:lineSpacingExtra="6.0sp" fontPath="@string/font_regular" />
+        <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/fixed_term_education_parnternetwork_description_2" android:lineSpacingExtra="6.0sp" fontPath="@string/font_light" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_fixed_term_partners_1" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/grey_79" android:layout_gravity="bottom|center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginBottom="24.0dip" android:text="@string/fixed_term_education_parnternetwork_partnercontact" fontPath="@string/font_regular" />
+        </FrameLayout>
+        <TextView android:textSize="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/fixed_term_education_parnternetwork_who_weltsparen_title" android:lineSpacingExtra="4.0sp" fontPath="@string/font_regular" />
+        <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/fixed_term_education_parnternetwork_who_weltsparen_description" android:lineSpacingExtra="6.0sp" fontPath="@string/font_light" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_fixed_term_partners_2" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/grey_79" android:layout_gravity="bottom|center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginBottom="24.0dip" android:text="@string/fixed_term_education_parnternetwork_partnercontact" fontPath="@string/font_regular" />
+        </FrameLayout>
+        <TextView android:textSize="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/fixed_term_education_parnternetwork_what_products_title" android:lineSpacingExtra="4.0sp" fontPath="@string/font_regular" />
+        <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/fixed_term_education_parnternetwork_what_products_description" android:lineSpacingExtra="6.0sp" fontPath="@string/font_light" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_fixed_term_partners_3" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/grey_79" android:layout_gravity="bottom|center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginBottom="24.0dip" android:text="@string/fixed_term_education_parnternetwork_partnercontact" fontPath="@string/font_regular" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/grey_79" android:layout_gravity="bottom|center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginBottom="6.0dip" android:text="@string/fixed_term_education_parnternetwork_moneydata" fontPath="@string/font_regular" />
+        </FrameLayout>
+        <TextView android:textSize="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/fixed_term_education_parnternetwork_who_mhb_title" android:lineSpacingExtra="4.0sp" fontPath="@string/font_regular" />
+        <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/fixed_term_education_parnternetwork_who_mhb_description" android:lineSpacingExtra="6.0sp" fontPath="@string/font_light" />
+    </LinearLayout>
+</LinearLayout>

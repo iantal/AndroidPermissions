@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AccountHeaderTextSmallNormal" parent="@style/AllWrapContent">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="AllMatchParent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="AllWrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="AllWrapContent.TextVerySmallBold" parent="@style/AllWrapContent">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ApplicationTheme" parent="@style/AllMatchParent">
+        <item name="android:background">@drawable/background_gradient</item>
+    </style>
+    <style name="ButtonStyleConfiguration" parent="@android:style/Widget.Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:background">@drawable/button_small_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5.0dip</item>
+    </style>
+    <style name="ButtonStyleLogin" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_on_dark</item>
+        <item name="android:background">@drawable/login_button_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ButtonStyleNormal" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ButtonStyleOffers" parent="@android:style/Widget.Button.Small">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:background">@drawable/button_small_selector</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_weight">0.5</item>
+    </style>
+    <style name="ButtonStylePasswordSetting" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_on_dark</item>
+        <item name="android:background">@drawable/setting_password_button_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ButtonStyleSkipAlias" parent="@android:style/Widget.Button">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:background">@drawable/alias_skip_button_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ButtonStyleSmall" parent="@android:style/Widget.Button.Small">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:background">@drawable/button_small_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ButtonStyleSubmit" parent="@android:style/Widget.Button">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_on_dark</item>
+        <item name="android:background">@drawable/submit_button_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="CaptureTheme" parent="@android:style/Theme.Holo">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    <style name="DashboardBottomButtonTitle">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">33.0dip</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="DashboardButtonTitle" parent="@style/TextSmallBold">
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">150.0dip</item>
+        <item name="android:layout_height">37.0dip</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="DashboardTheme" parent="@style/AllMatchParent">
+        <item name="android:background">@color/dashboard_theme</item>
+    </style>
+    <style name="DrawerRowSeparator">
+        <item name="android:background">@color/drawer_row_saperator_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="DrawerRowSeparatorLight" parent="@style/DrawerRowSeparator">
+        <item name="android:background">@color/drawer_row_saperator_color_light</item>
+    </style>
+    <style name="ErrorStrip" parent="@style/TextSmallNormalMatchWrap">
+        <item name="android:textColor">@color/text_on_dark</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/error_warning_bar</item>
+        <item name="android:paddingLeft">4.0dip</item>
+    </style>
+    <style name="FooterButton">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">1.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="FxRateTextSmallNormal" parent="@style/AllWrapContent">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="GroupSeparator" parent="@style/TextSmallBoldMatchWrap">
+        <item name="android:textColor">@color/text_on_dark</item>
+        <item name="android:background">@drawable/gradient_separator</item>
+        <item name="android:paddingLeft">@dimen/screen_padding</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">@dimen/screen_padding</item>
+        <item name="android:paddingBottom">5.0dip</item>
+    </style>
+    <style name="ListSelector" parent="@style/MatchParentWrapContent">
+        <item name="android:background">@drawable/list_default_selector</item>
+    </style>
+    <style name="ListSeparator">
+        <item name="android:background">@drawable/gradient_separator</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="ListTextItemStyle" parent="@style/TextBoldMatchWrap">
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+        <item name="android:drawableRight">@drawable/right_arrow_blue</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="ListTheme" parent="@style/AllMatchParent">
+        <item name="android:background">@color/list_background</item>
+    </style>
+    <style name="LoginOptionStyle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/text_on_dark</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.33</item>
+    </style>
+    <style name="MailAttachment" parent="@style/TextNormalMatchWrap">
+        <item name="android:textColor">@color/attachment_text_color</item>
+        <item name="android:padding">5.0dip</item>
+    </style>
+    <style name="MatchParentWrapContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="NoActiveAccountRow" parent="@style/TextBoldAllWrap">
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:drawableLeft">@drawable/arrow_icon</item>
+        <item name="android:drawablePadding">10.0dip</item>
+    </style>
+    <style name="OfferButton">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_on_dark</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/transaction_button_selector</item>
+        <item name="android:padding">1.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_margin">0.5dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="OperationBar" parent="@style/TextBoldMatchWrap">
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:background">@drawable/header_footer</item>
+    </style>
+    <style name="OrderStatusHomeScreenPullToRefreshAppearance">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_title</item>
+    </style>
+    <style name="PasswordPolicyStyle" parent="@style/TextSmallNormalAllWrap">
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="PaymentItemTextSmallBold">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="PaymentItemTextSmallNormal">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="ResetPasswordLink" parent="@style/TextSmallNormalMatchWrap">
+        <item name="android:textColor">@color/hyperlink_text_color</item>
+        <item name="android:padding">3.0dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="ResultButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="ScreenFooter" parent="@style/MatchParentWrapContent">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/header_footer</item>
+    </style>
+    <style name="ScreenHeader" parent="@style/MatchParentWrapContent">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_view_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/header_footer</item>
+        <item name="android:paddingLeft">23.0dip</item>
+        <item name="android:paddingRight">23.0dip</item>
+        <item name="android:layout_height">@dimen/header_height</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="SettingRowStyle" parent="@style/TextSmallBoldMatchWrap">
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">15.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">15.0dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:drawableRight">@drawable/right_arrow_blue</item>
+        <item name="android:drawablePadding">10.0dip</item>
+    </style>
+    <style name="ShareButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextBigBold">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextBigBoldAllMatch" parent="@style/AllMatchParent">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextBigBoldAllWrap" parent="@style/AllWrapContent">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextBigBoldMatchWrap" parent="@style/MatchParentWrapContent">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextBigBoldWrapMatch" parent="@style/WrapContentMatchParent">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextBigNormal">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextBigNormalAllMatch" parent="@style/AllMatchParent">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextBigNormalAllWrap" parent="@style/AllWrapContent">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextBigNormalMatchWrap" parent="@style/MatchParentWrapContent">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextBigNormalWrapMatch" parent="@style/WrapContentMatchParent">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextBold">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextBoldAllMatch" parent="@style/AllMatchParent">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextBoldAllWrap" parent="@style/AllWrapContent">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextBoldMatchWrap" parent="@style/MatchParentWrapContent">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextBoldWrapMatch" parent="@style/WrapContentMatchParent">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextNormal">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextNormalAllMatch" parent="@style/AllMatchParent">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextNormalAllWrap" parent="@style/AllWrapContent">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextNormalMatchWrap" parent="@style/MatchParentWrapContent">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextNormalWrapMatch" parent="@style/WrapContentMatchParent">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextSmallBold">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextSmallBoldAllMatch" parent="@style/AllMatchParent">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextSmallBoldAllWrap" parent="@style/AllWrapContent">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextSmallBoldMatchWrap" parent="@style/MatchParentWrapContent">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextSmallBoldWrapMatch" parent="@style/WrapContentMatchParent">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextSmallNormal">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextSmallNormalAllMatch" parent="@style/AllMatchParent">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextSmallNormalAllWrap" parent="@style/AllWrapContent">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextSmallNormalMatchWrap" parent="@style/MatchParentWrapContent">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextSmallNormalWrapMatch" parent="@style/WrapContentMatchParent">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextStylePasswordSetting" parent="@style/TextNormalMatchWrap">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/password_setting_row_text_color</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">15.0dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:drawableRight">@drawable/selector_text_right_arrow</item>
+        <item name="android:drawablePadding">10.0dip</item>
+    </style>
+    <style name="Theme.NoTitleBar.BackgroundNull" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="Theme.NoTitleBar.BackgroundNull.Animated" parent="@style/Theme.NoTitleBar.BackgroundNull">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right</item>
+    </style>
+    <style name="WrapContentMatchParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="drawer_list_section" parent="@style/TextNormalMatchWrap">
+        <item name="android:textColor">@color/drawer_row_text_color</item>
+        <item name="android:background">@color/drawer_row_section_bg_color</item>
+        <item name="android:padding">@dimen/standard_padding</item>
+    </style>
+</resources>

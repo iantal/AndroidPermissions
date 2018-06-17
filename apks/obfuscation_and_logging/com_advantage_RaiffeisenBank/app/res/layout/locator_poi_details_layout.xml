@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?dsq_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/actionbar_done_cancel_layout" />
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:paddingLeft="@dimen/dsq_bordered_layout_padding_sides" android:paddingRight="@dimen/dsq_bordered_layout_padding_sides" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout" android:paddingTop="@dimen/dsq_bordered_layout_padding_top" android:paddingBottom="@dimen/dsq_bordered_layout_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</LinearLayout>

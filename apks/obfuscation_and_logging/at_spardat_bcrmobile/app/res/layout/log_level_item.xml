@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:enabled="false" android:id="@id/radio_btn_log_level" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/AllWrapContent" />
+    <TextView android:textColor="@color/text_default" android:id="@id/tv_log_type" android:maxLines="1" android:layout_toLeftOf="@id/radio_btn_log_level" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/MatchParentWrapContent" />
+</RelativeLayout>

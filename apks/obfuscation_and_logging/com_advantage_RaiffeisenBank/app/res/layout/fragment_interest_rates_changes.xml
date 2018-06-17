@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/loading" />
+    <ListView android:id="@id/list" android:background="@drawable/rounded_corners_white" android:paddingLeft="@dimen/dsq_bordered_layout_padding_sides" android:paddingRight="@dimen/dsq_bordered_layout_padding_sides" android:paddingBottom="@dimen/dsq_bordered_layout_padding_sides" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

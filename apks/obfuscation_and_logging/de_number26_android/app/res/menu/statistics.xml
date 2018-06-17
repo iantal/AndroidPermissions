@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_income" android:title="@string/income" app:showAsAction="never" />
+    <item android:id="@id/action_expenses" android:title="@string/expenses" app:showAsAction="never" />
+    <item android:id="@id/action_statements" android:title="@string/title_activity_balance_statements" app:showAsAction="never" />
+</menu>

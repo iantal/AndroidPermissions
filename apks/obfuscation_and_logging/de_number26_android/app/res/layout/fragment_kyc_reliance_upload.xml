@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/layoutKycRelianceUpload" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.Guideline android:orientation="horizontal" android:id="@id/guidelineKycRelianceUpload" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+    <de.number26.machete.android.adl.atoms.SimpleLoading android:id="@id/loadingKycRelianceUpload" android:layout_width="fill_parent" android:layout_height="198.0dip" app:layout_constraintBottom_toTopOf="@id/guidelineKycRelianceUpload" />
+    <de.number26.machete.android.adl.atoms.CenterHeadline android:id="@id/textKycRelianceUploadTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kyc_reliance_document_uploading_title" app:layout_constraintTop_toBottomOf="@id/guidelineKycRelianceUpload" />
+    <de.number26.machete.android.adl.atoms.CenterBodyText android:id="@id/textKycRelianceUploadMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kyc_reliance_document_uploading_message" app:layout_constraintTop_toBottomOf="@id/textKycRelianceUploadTitle" />
+    <android.support.constraint.ConstraintLayout android:id="@id/layoutKycRelianceUploadRetry" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <de.number26.machete.android.adl.CenterContentPage android:layout_width="0.0dip" android:layout_height="0.0dip" app:image="@drawable/img_volcano_lamp" app:layout_constraintBottom_toTopOf="@id/buttonKycRelianceUploadRetry" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:text="@string/kyc_reliance_document_retry_upload_message" app:title="@string/kyc_reliance_document_retry_upload_title" />
+        <de.number26.machete.android.adl.atoms.MainButton android:id="@id/buttonKycRelianceUploadRetry" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:text="@string/kyc_reliance_document_upload_retry" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

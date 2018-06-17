@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/creditPaymentDayMainLayout" android:paddingTop="@dimen/creditScreenPaddingTopBottom" android:paddingBottom="@dimen/creditScreenPaddingTopBottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:text="@string/credit_payment_day_title" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditTitle" />
+        <TextView style="@style/creditPaymentDaySubtitle" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="8.0dip">
+                <Button android:id="@id/creditPaymentDayFirstDay" android:text="@string/credit_payment_day_1_of_month" android:drawableTop="@drawable/credit_payment_day_first" style="@style/creditPaymentDayButton" />
+                <Button android:id="@id/creditPaymentDayMiddleDay" android:text="@string/credit_payment_day_middle_of_month" android:drawableTop="@drawable/credit_payment_day_middle" style="@style/creditPaymentDayButton" />
+            </LinearLayout>
+        </FrameLayout>
+        <Button android:id="@id/creditPaymentDayEducationButton" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditPaymentDayEducationButton" />
+    </LinearLayout>
+    <ScrollView android:id="@id/creditPaymentDayYounitedMainLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/creditScreenPaddingTopBottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/creditExplanationViewMargin" android:src="@drawable/credit_missed_payment_icon" />
+            <TextView android:layout_marginBottom="@dimen/creditExplanationViewMargin" android:text="@string/credit_payment_day_information_title" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditTitle" />
+            <TextView android:gravity="start" android:id="@id/creditPaymentDayYounitedDescription" android:layout_marginBottom="@dimen/creditExplanationViewMargin" android:text="@string/credit_payment_day_information_description" style="@style/creditDescription" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:layout_gravity="bottom" android:id="@id/creditPaymentDayYounitedContinue" android:layout_marginTop="16.0dip" android:layout_marginBottom="@dimen/creditScreenPaddingTopBottom" android:text="@string/credit_kyc_education_ok" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditAccentButton" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/creditPaymentDayLoading" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="80.0dip" android:layout_height="80.0dip" style="@style/Base.Widget.AppCompat.ProgressBar" />
+    </FrameLayout>
+</FrameLayout>

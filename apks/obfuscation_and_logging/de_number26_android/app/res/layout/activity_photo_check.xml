@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relativeLayoutScreen" android:background="@color/background_white_trans" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageViewPhoto" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:contentDescription="@string/photo_check_image_description" />
+    <LinearLayout android:id="@id/linearLayoutHideHelp" android:background="@color/background_white_trans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:animateLayoutChanges="true">
+        <Button android:textColor="@color/proceed_button_text" android:id="@id/buttonCloseHelp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin" android:text="@string/photo_help_overlay_button_start" />
+    </LinearLayout>
+    <ScrollView android:id="@id/linearLayoutHelpParent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/linearLayoutHideHelp">
+        <LinearLayout android:orientation="vertical" android:id="@id/completeHelpLayout" android:background="@color/white" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/relativeLayoutTitleExpander" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_vertical_margin">
+                <ImageView android:id="@id/imageViewExpander" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/action_expand" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/headline" android:id="@id/textViewHelpTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/imageViewExpander" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:id="@id/textViewHelpContent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutHelp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin">
+                <TextView android:textSize="16.0sp" android:id="@id/textViewHelpDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/activity_vertical_margin" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/photo_help_overlay_example" />
+                <ImageView android:layout_gravity="left" android:id="@id/imageViewDocumentImage" android:layout_width="fill_parent" android:layout_height="200.0dip" android:src="@drawable/idcard" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linearLayoutButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin" android:layout_above="@id/linearLayoutHelpParent">
+        <Button android:enabled="false" android:textColor="@color/photo_ident_retake_button_text" android:id="@id/buttonRetakePhoto" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/photo_check_retake_photo" android:layout_weight="1.0" />
+        <Button android:textColor="@color/proceed_button_text" android:id="@id/buttonSavePhoto" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/photo_check_save_photo" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

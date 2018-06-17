@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_insurance_support" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/toolbar_insurance_support" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:elevation="2.0dip" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:src="@drawable/ic_insurance_support_clark" style="@style/InsuranceSupportIcon" />
+            <TextView android:text="@string/insurance_contact_clark_title" style="@style/InsuranceSupportTitle" />
+            <TextView android:text="@string/insurance_contact_clark_subtitle" style="@style/InsuranceSupportSubtitle" />
+            <android.support.v4.widget.Space android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="0.3" />
+            <Button android:textSize="20.0sp" android:layout_gravity="center_horizontal" android:id="@id/button_insurance_support_contact_clark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:minWidth="164.0dip" android:text="@string/insurance_contact_clark_button" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="@style/MintRaisedButton" />
+            <android.support.v4.widget.Space android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="0.2" />
+            <View android:background="@color/grey_bright" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <ImageView android:src="@drawable/ic_insurance_support_n26" style="@style/InsuranceSupportIcon" />
+            <TextView android:text="@string/insurance_contact_n26_title" style="@style/InsuranceSupportTitle" />
+            <TextView android:text="@string/insurance_contact_n26_subtitle" style="@style/InsuranceSupportSubtitle" />
+            <android.support.v4.widget.Space android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="0.3" />
+            <Button android:textSize="20.0sp" android:layout_gravity="center_horizontal" android:id="@id/button_insurance_support_contact_n26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:minWidth="164.0dip" android:text="@string/insurance_contact_n26_button" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="@style/AccentBorderButton" />
+            <android.support.v4.widget.Space android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="0.2" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

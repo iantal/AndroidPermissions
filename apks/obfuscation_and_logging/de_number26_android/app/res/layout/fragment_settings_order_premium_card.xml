@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/black_information_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSizePrimary" android:textStyle="bold" android:textColor="@color/textColorPrimary" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="@string/font_regular" />
+            <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/grey_dark" android:gravity="center_horizontal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/premium_card_order_subtitle" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="260.0dip" android:layout_height="160.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/default_margin_large" android:layout_marginBottom="16.0dip" android:src="@drawable/img_card_black" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/textColorPrimary" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/premium_card_order_summary" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <CheckBox android:gravity="center_vertical" android:id="@id/termsBox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/textColorPrimary" android:gravity="center_vertical" android:id="@id/termsText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <CheckBox android:gravity="center_vertical" android:id="@id/policyBox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/textColorPrimary" android:gravity="center_vertical" android:id="@id/policyText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/layoutLimitedSupportLanguage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <CheckBox android:gravity="center_vertical" android:id="@id/checkboxLimitedSupportLanguage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/textColorPrimary" android:gravity="center_vertical" android:id="@id/textLimitedSupportLanguage" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/black_card_order_terms_limited_support_languages" android:layout_weight="1.0" android:layout_marginStart="8.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:enabled="false" android:id="@id/action" android:text="@string/premium_card_order_confirm" style="@style/mainbutton" />
+</LinearLayout>

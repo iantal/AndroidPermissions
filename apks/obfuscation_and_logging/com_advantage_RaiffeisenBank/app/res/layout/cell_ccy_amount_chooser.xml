@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <TextView android:textSize="24.0sp" android:textColor="?dsq_amount_ccy_text_color" android:gravity="center" android:id="@id/signTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.AmountChooser" />
+    <TextView android:textSize="12.0sp" android:textColor="?dsq_amount_ccy_text_color" android:gravity="center" android:id="@id/nameTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.AmountChooser" />
+    <View android:layout_width="fill_parent" android:layout_height="12.0dip" />
+</LinearLayout>

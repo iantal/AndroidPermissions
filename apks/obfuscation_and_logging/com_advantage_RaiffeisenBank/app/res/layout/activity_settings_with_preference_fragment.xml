@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content_wrapper" android:background="@drawable/bg_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_marginTop="@dimen/dsq_toolbar_top_margin" app:theme="@style/DSQStyled.Toolbar.Transparent.Dark" />
+    <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="@color/rzb_white" android:layout_gravity="bottom" android:id="@id/tv_build_version" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

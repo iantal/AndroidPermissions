@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_light" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/view_app_description" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" style="@style/MatchParentWrapContent">
+        <Button android:textColor="@color/app_demo_ok_color" android:layout_gravity="right" android:background="@color/transparent" android:visibility="invisible" android:layout_marginTop="20.0dip" android:text="@string/ok_got_it" style="@style/TextBigNormalAllWrap" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" style="@style/AllMatchParent">
+            <TextView android:textSize="24.0sp" android:textColor="@color/text_view_color" android:gravity="center" android:id="@id/tv_sample_title" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_marginBottom="15.0dip" style="@style/MatchParentWrapContent" />
+            <TextView android:textColor="@color/text_view_color" android:gravity="center" android:id="@id/tv_sample_description" style="@style/TextNormalMatchWrap" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/view_empty" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    <ImageView android:id="@id/img_sample" android:contentDescription="@string/no_description" style="@style/AllMatchParent" />
+</LinearLayout>

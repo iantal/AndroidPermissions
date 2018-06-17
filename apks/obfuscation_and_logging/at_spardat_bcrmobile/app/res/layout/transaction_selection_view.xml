@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/roundrect_shape" android:padding="2.0dip" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/open_term_deposit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/transaction_selection_row" />
+    <include android:id="@id/bill_payment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/transaction_selection_row" />
+    <include android:id="@id/foreign_exchange" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/transaction_selection_row" />
+    <include android:id="@id/rapid_transfer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/transaction_selection_row" />
+    <include android:id="@id/iban_payment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/transaction_selection_row" />
+    <include android:id="@id/personal_templates" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/transaction_selection_row" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="24.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contact_insurance" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/textSizePrimary" android:textStyle="bold" android:textColor="@color/textColorPrimary" android:gravity="center_horizontal" android:id="@id/claim_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/premium_card_contact_claim_title" />
+            <TextView android:textSize="@dimen/textSizePrimary" android:textColor="@color/textColorSecondary" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/premium_card_contact_claim_summary" android:lineSpacingExtra="@dimen/halfContentSpacing" />
+            <Button android:textSize="@dimen/textSizePrimary" android:textColor="@color/textColorPrimary" android:layout_gravity="center_horizontal" android:id="@id/online_claim" android:background="@android:color/white" android:padding="@dimen/default_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/premium_card_insurance_claim_claim" style="@style/Widget.AppCompat.Button.Colored" />
+        </LinearLayout>
+        <View android:background="@color/grey_bright" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:padding="24.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_emergency" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/textSizePrimary" android:textStyle="bold" android:textColor="@color/textColorPrimary" android:gravity="center_horizontal" android:id="@id/call_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/premium_card_contact_call_title" />
+            <TextView android:textSize="@dimen/textSizePrimary" android:textColor="@color/textColorSecondary" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/premium_card_contact_call_summary" android:lineSpacingExtra="@dimen/halfContentSpacing" />
+            <Button android:textSize="@dimen/textSizePrimary" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/emergency_call" android:background="@color/red" android:padding="@dimen/default_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/premium_card_insurance_claim_call" style="@style/Widget.AppCompat.Button.Colored" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

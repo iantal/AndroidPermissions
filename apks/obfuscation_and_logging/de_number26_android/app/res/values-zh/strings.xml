@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="chat_dialog_end_session_message">是否确定要终止聊天会话？</string>
+    <string name="chat_dialog_end_session_positive">终止会话</string>
+    <string name="chat_dialog_end_session_title">再见？</string>
+    <string name="chat_dialog_negative">取消</string>
+    <string name="chat_dialog_select_image_source_camera">拍摄照片</string>
+    <string name="chat_dialog_select_image_source_choose">从图库中选择</string>
+    <string name="chat_dialog_select_image_source_last_photo">使用上次拍摄的照片</string>
+    <string name="chat_end_session_content_description">终止聊天会话</string>
+    <string name="chat_feed_content_description">聊天消息已显示在此处</string>
+    <string name="chat_feed_title">@string/pre_chat_toolbar_title</string>
+    <string name="chat_file_transfer_canceled">文件转移已取消</string>
+    <string name="chat_file_transfer_failed">文件转移已失败</string>
+    <string name="chat_file_transfer_requested">文件转移已请求</string>
+    <string name="chat_image_selection_failed">无法加载照片</string>
+    <string name="chat_message_delivery_failed">消息取消发送</string>
+    <string name="chat_message_modified">已经删除消息中的敏感信息</string>
+    <string name="chat_message_not_sent_privacy">消息未发送（包含敏感信息）</string>
+    <string name="chat_message_notification_channel_name">聊天消息</string>
+    <string name="chat_minimize_content_description">将聊天最小化</string>
+    <string name="chat_minimized_connecting">正在连接聊天…</string>
+    <string name="chat_minimized_post_session">会话已终止</string>
+    <string name="chat_minimized_queued">您正在队列</string>
+    <string name="chat_permission_not_granted">权限未授予</string>
+    <string name="chat_resume_error_string">哦，出错了…</string>
+    <string name="chat_resume_error_string_subtext">请重试或联系管理员</string>
+    <string name="chat_service_description">您现在正在与客服人员聊天</string>
+    <string name="chat_service_notification_channel_name">Live Chat 服务</string>
+    <string name="chat_service_title">Service Cloud 聊天</string>
+    <string name="chat_session_button_transfer_initiated">将您转移到客服人员</string>
+    <string name="chat_session_ended_by_agent">客服人员已终止会话</string>
+    <string name="chat_session_transferred_to_agent">%1$s 已加入聊天</string>
+    <string name="pre_chat_banner_text">在我们通过专家联系您前，需要注意一些事项</string>
+    <string name="pre_chat_button_start">与客服人员聊天</string>
+    <string name="pre_chat_field_list_description">要填写的字段列表已显示在此处。</string>
+    <string name="pre_chat_picklist_select_hint">选择值…</string>
+    <string name="pre_chat_toolbar_title">Live Chat</string>
+    <string name="salesforce_close_minimize_view_content_description">@string/chat_end_session_content_description</string>
+    <string name="salesforce_message_input_hint">键入消息</string>
+    <string name="salesforce_select_photo_content_description">选择照片</string>
+    <string name="salesforce_send_message_content_description">发送消息</string>
+    <string name="salesforce_sent_photo_content_description">已附加照片</string>
+</resources>

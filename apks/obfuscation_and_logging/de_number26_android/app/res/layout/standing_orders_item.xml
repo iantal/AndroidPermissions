@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+        <LinearLayout android:layout_gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:weightSum="1.0">
+            <TextView android:textSize="18.0dip" android:gravity="center|left" android:id="@id/text_partner_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.8" fontPath="@string/font_regular" />
+            <TextView android:textSize="18.0dip" android:gravity="center|right" android:id="@id/amount" android:layout_width="150.0dip" android:layout_height="fill_parent" android:layout_weight="0.2" style="@style/amountTextView" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center|top" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/icon_size_small" android:layout_height="@dimen/icon_size_small" android:src="@drawable/icon_bookmark" android:scaleType="centerInside" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dip" android:textColor="@color/grey" android:layout_gravity="center|left" android:id="@id/text_transaction_reference" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" style="@style/transactions_textview" />
+        </LinearLayout>
+        <include layout="@layout/standing_orders_item_iban" />
+        <include layout="@layout/standing_orders_item_bic" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <include layout="@layout/standing_orders_item_execution_date" />
+            <include layout="@layout/standing_orders_item_interval" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <include layout="@layout/standing_orders_item_end_date" />
+            <include layout="@layout/standing_orders_item_occurrences" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

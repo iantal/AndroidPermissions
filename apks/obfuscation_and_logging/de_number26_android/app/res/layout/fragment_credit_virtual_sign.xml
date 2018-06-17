@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/bg_waves" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/img_terms" android:scaleType="centerInside" />
+        <de.number26.machete.android.adl.atoms.CenterHeadline android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/credit_signature_intro_title" />
+        <de.number26.machete.android.adl.atoms.CenterBodyText android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/credit_signature_intro_subtitle" />
+        <TextView android:id="@id/creditVirtualSignIntro" android:layout_marginBottom="5.0dip" style="@style/creditKycIntroBeforeStart" />
+        <de.number26.machete.android.adl.atoms.LeftBodyText android:textColor="@color/grey_79" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/credit_signature_intro_legal" />
+        <LinearLayout android:id="@id/creditKycIntroStoreDataTermLayout" android:layout_marginStart="6.0dip" style="@style/creditTermsItem">
+            <CheckBox android:id="@id/creditVirtualSignFirstCheckbox" style="@style/creditTermsItemCheckBox" />
+            <TextView android:text="@string/credit_signature_intro_data_transfer" android:layout_marginStart="8.0dip" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditTermsItemText" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/creditKycIntroIdNowTermLayout" android:layout_marginStart="6.0dip" style="@style/creditTermsItem">
+            <CheckBox android:id="@id/creditVirtualSignSecondCheckbox" style="@style/creditTermsItemCheckBox" />
+            <TextView android:text="@string/credit_signature_intro_terms" android:layout_marginStart="8.0dip" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditTermsItemText" />
+        </LinearLayout>
+        <de.number26.machete.android.adl.atoms.MainButton android:id="@id/continueButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:enabled="false" app:text="@string/action_continue" />
+    </LinearLayout>
+</ScrollView>

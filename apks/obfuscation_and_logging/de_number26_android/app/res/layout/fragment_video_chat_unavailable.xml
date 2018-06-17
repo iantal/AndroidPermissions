@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_video_chat_unavailable" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="195.0dip" android:layout_marginTop="32.0dip" android:src="@drawable/ic_kyc_unavailable" />
+    <TextView android:textSize="24.0sp" android:gravity="center" android:id="@id/textview_video_chat_closed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="16.0dip" fontPath="@string/font_medium" />
+</LinearLayout>

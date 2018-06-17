@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu" />
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="@android:style/TextAppearance.Material.Widget.Button.Inverse" />
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light" />
+    <style name="Base.Widget.AppCompat.Button.Borderless.Colored" parent="@android:style/Widget.Material.Button.Borderless.Colored" />
+    <style name="Base.Widget.AppCompat.Button.Colored" parent="@android:style/Widget.Material.Button.Colored" />
+    <style name="Base.Widget.AppCompat.RatingBar.Indicator" parent="@android:style/Widget.Material.RatingBar.Indicator" />
+    <style name="Base.Widget.AppCompat.RatingBar.Small" parent="@android:style/Widget.Material.RatingBar.Small" />
+    <style name="Base.Widget.AppCompat.Spinner.Underlined" parent="@android:style/Widget.Material.Spinner.Underlined" />
+    <style name="CardView" parent="@style/Base.CardView">
+        <item name="cardBackgroundColor">?android:colorBackgroundFloating</item>
+    </style>
+    <style name="Theme.Number26" parent="@style/Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/grey_dark</item>
+        <item name="android:textColorSecondary">@color/grey</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:editTextStyle">?editTextStyle</item>
+        <item name="android:textViewStyle">@style/Theme.Number26.Widget.TextView</item>
+        <item name="android:textColorHint">?android:textColorSecondary</item>
+        <item name="android:textColorTertiary">?android:textColorPrimary</item>
+        <item name="android:listDivider">@drawable/divider</item>
+        <item name="android:actionBarStyle">?actionBarStyle</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:activatedBackgroundIndicator">?android:selectableItemBackground</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="actionBarStyle">@style/Theme.Number26.ActionBar</item>
+        <item name="actionBarWidgetTheme">@null</item>
+        <item name="actionButtonStyle">@style/MyActionButtonStyle</item>
+        <item name="actionMenuTextAppearance">@style/Theme.Number26.ActionBar.MenuItem</item>
+        <item name="alertDialogTheme">@style/Theme.Number26.Dialog.Alert</item>
+        <item name="buttonBarButtonStyle">@style/Widget.Button.ButtonBar.AlertDialog</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.Button.ButtonBar.AlertDialog.Negative</item>
+        <item name="buttonBarNeutralButtonStyle">?buttonBarNegativeButtonStyle</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/grey_e2</item>
+        <item name="drawerArrowStyle">@style/Theme.Number26.Drawer</item>
+        <item name="editTextStyle">@style/Theme.Number26.Widget.EditText</item>
+        <item name="hintTextAppearance">@style/TextAppearance.Form.Title</item>
+        <item name="spbStyle">@style/indeterminateProgressBar</item>
+        <item name="statsDropdown">@style/stats_toggle</item>
+        <item name="textColorError">@color/red</item>
+        <item name="textInputLayoutStyle">@style/Theme.Number26.Widget.TextInputLayout</item>
+        <item name="toolbarStyle">@style/Theme.Number26.Toolbar</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Number26.Splash" parent="@style/Theme.Number26">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat" parent="@style/Base.V22.Theme.AppCompat">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat.Light" parent="@style/Base.V22.Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="240.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/backgroundImage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/card_info_bg" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxHeight="300.0dip" />
+    <VideoView android:id="@id/backgroundVideo" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="300.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/mastercard" android:layout_width="395.0dip" android:layout_height="230.0dip" android:src="@drawable/img_card_mastercard_mpts" android:layout_centerHorizontal="true" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="130.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/card_numbers" android:textColor="@android:color/white" android:layout_gravity="left" android:id="@id/cardNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0000  XXXX  XXXX 0000" fontPath="@string/font_regular" />
+        <TextView android:textSize="15.0dip" android:textColor="@android:color/white" android:layout_gravity="left" android:id="@id/cardValidityDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="32.0dip" android:text="00/00" fontPath="@string/font_regular" />
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:layout_gravity="left" android:id="@id/cardOwnerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="54.0dip" android:text="Test Name Surname" fontPath="@string/font_regular" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/InsuranceListRow"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_vertical" android:id="@id/text_insurance_list_item_name" style="@style/InsuranceListRowText" />
+    <ImageView android:layout_gravity="end|center" android:id="@id/image_insurance_list_item_check" android:visibility="gone" style="@style/InsuranceListRowCheck" />
+</FrameLayout>

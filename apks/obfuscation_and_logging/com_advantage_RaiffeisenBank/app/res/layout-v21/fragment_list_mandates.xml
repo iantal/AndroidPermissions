@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/frame_parent" android:background="@drawable/rounded_corners_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:slh="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+        <LinearLayout android:gravity="right" android:id="@id/headerLinearLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/filterImageButton" android:background="@color/transparent" android:paddingLeft="10.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/filters" />
+        </LinearLayout>
+        <com.thinkdesquared.banking.helpers.ui.widgets.PagingStickyListHeadersListView android:scrollbarStyle="insideOverlay" android:id="@id/list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" slh:areHeadersSticky="false" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/empty_view" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/mandate_list_empty_messsage" style="@style/DSQTextAppearance.listLeft3" />
+    </LinearLayout>
+    <ImageButton android:id="@id/add_imagebutton" android:background="@drawable/bg_yellow_circle" android:paddingBottom="0.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/add" android:scaleType="center" android:layout_above="@id/bottom_margin_space" android:layout_alignParentRight="true" android:elevation="4.0dip" />
+    <Space android:id="@id/bottom_margin_space" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

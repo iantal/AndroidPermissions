@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.number26.machete.android.ui.components.TransactionDetailsSection android:id="@id/layout_account_details" android:layout_width="fill_parent" android:layout_height="wrap_content" app:icon="@drawable/icon_transferdetails_account">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_account_details_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" />
+    </de.number26.machete.android.ui.components.TransactionDetailsSection>
+</merge>

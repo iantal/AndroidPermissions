@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/black_information_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/partial_premium_card_policy" />
+    </ScrollView>
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/gradient_trans_white" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/monthly" android:background="@color/colorAccent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/premium_card_information" android:layout_weight="1.0" style="@style/Widget.AppCompat.Button.Colored" />
+    </LinearLayout>
+</FrameLayout>

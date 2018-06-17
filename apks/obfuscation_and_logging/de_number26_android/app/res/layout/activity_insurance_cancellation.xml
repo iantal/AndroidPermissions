@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_ins_cancellation_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/toolbar_ins_cancellation" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <de.number26.machete.android.adl.atoms.SectionBlack android:id="@id/section_black_ins_cancellation_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/insurance_cancel_title" />
+            <TextView android:id="@id/text_ins_cancellation_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/insurance_cancel_subtitle" android:paddingStart="@dimen/screen_insurance_padding_start_end" android:paddingEnd="@dimen/screen_insurance_padding_start_end" fontPath="@string/font_light" style="@style/InsuranceText" />
+            <EditText android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/screen_insurance_padding_start_end" android:paddingEnd="@dimen/screen_insurance_padding_start_end">
+                <EditText android:textSize="18.0sp" android:id="@id/edit_ins_cancellation_reason" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/insurance_cancel_placeholder" android:inputType="textCapSentences|textMultiLine|textNoSuggestions" fontPath="@string/font_regular" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <de.number26.machete.android.adl.atoms.MainButton android:id="@id/button_ins_cancellation_send" android:layout_width="fill_parent" android:layout_height="wrap_content" app:text="@string/insurance_cancel_send" />
+</LinearLayout>

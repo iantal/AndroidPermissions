@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layoutInsurancePolicyUpload" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/screen_insurance_padding_start_end" android:layout_marginEnd="@dimen/screen_insurance_padding_start_end">
+            <ImageView android:id="@id/imageInsurancePolicyUpload" android:layout_marginTop="48.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/ic_problem_insurer" style="@style/InsuranceSubpageIcon" />
+            <TextView android:id="@id/textInsurancePolicyUploadTitle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="32.0dip" android:text="@string/insurance_policy_upload_title" style="@style/InsuranceSubpageTitle" />
+            <TextView android:textSize="18.0sp" android:id="@id/textInsurancePolicyUploadSubtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="76.0dip" android:text="@string/insurance_policy_upload_subtitle" style="@style/InsuranceSubpageSubtitle" />
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/toolbarInsurancePolicyUpload" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <de.number26.machete.android.adl.atoms.MainButton android:layout_gravity="bottom" android:id="@id/buttonInsurancePolicyUpload" android:layout_width="fill_parent" android:layout_height="wrap_content" app:text="@string/insurance_policy_upload_upload" />
+</FrameLayout>

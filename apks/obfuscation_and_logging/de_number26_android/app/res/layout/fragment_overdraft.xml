@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/grey_bright" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@null" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/overdraft_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textAppearance="@style/TextAppearance.Item.Sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_maximum" />
+                <TextView android:textAppearance="@style/TextAppearance.Item.Title" android:id="@id/user_overdraft" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:background="@color/grey_dark" android:layout_width="115.0dip" android:layout_height="1.0dip" android:layout_margin="@dimen/default_margin" />
+                <TextView android:textAppearance="@style/TextAppearance.Item.Sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/current_overdraft" />
+                <TextView android:textAppearance="@style/TextAppearance.Item.Title" android:id="@id/current_overdraft" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="34.0dip" android:layout_alignBottom="@id/limit" android:layout_centerHorizontal="true">
+                <TextView android:textSize="12.0dip" android:textColor="@color/grey" android:gravity="start" android:id="@id/minimum_overdraft" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/grey" android:gravity="end" android:id="@id/maximum_overdraft" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <de.number26.machete.android.ui.overdraft.BalanceGraph android:layout_gravity="center" android:id="@id/limit" android:padding="50.0dip" android:layout_width="@dimen/chart_height" android:layout_height="@dimen/chart_height" android:layout_marginTop="24.0dip" android:layout_centerHorizontal="true" app:backgroundColor="@color/grey" app:balanceColor="@color/colorAccent" app:overdraftColor="@android:color/white" app:width="45.0dip" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <de.number26.machete.android.ui.components.ItemView android:id="@id/interestView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:subtitle="@string/interest_apr" app:title="@string/quarterly_interest" />
+            <View android:background="@color/grey_bright" android:layout_width="fill_parent" android:layout_height="24.0dip" />
+            <de.number26.machete.android.ui.components.SwitchPreferenceView android:id="@id/toggle_push" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/action_push_notifications" android:summary="@string/action_push_notifications_information" />
+            <de.number26.machete.android.ui.components.PreferenceView android:id="@id/request_limit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/action_request_limit_increase" />
+            <de.number26.machete.android.ui.components.PreferenceView android:id="@id/cancel_overdraft" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/action_cancel_overdraft" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

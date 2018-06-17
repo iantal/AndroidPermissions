@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/view_account_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/click24_header_view" />
+    <FrameLayout android:id="@id/view_payment_parent" style="@style/AllMatchParent">
+        <RelativeLayout style="@style/AllMatchParent">
+            <LinearLayout android:orientation="vertical" android:id="@id/view_payment_authorization_footer" android:layout_alignParentBottom="true" style="@style/MatchParentWrapContent" />
+            <at.spardat.bcrmobile.view.widget.NonFocusingScrollView android:id="@id/view_payment_option_container" android:focusable="false" android:fadingEdge="none" android:fillViewport="true" android:layout_above="@id/view_payment_authorization_footer" style="@style/AllMatchParent">
+                <LinearLayout android:orientation="vertical" style="@style/ApplicationTheme">
+                    <LinearLayout android:orientation="vertical" android:id="@id/view_account_payment_header" style="@style/MatchParentWrapContent" />
+                    <TextView android:gravity="center|left" android:id="@id/tv_operation_strip" android:paddingLeft="@dimen/screen_padding" android:drawablePadding="15.0dip" style="@style/OperationBar" />
+                    <RelativeLayout android:id="@id/view_bottom_container" style="@style/AllMatchParent" />
+                    <View android:id="@id/view_empty" android:focusable="true" android:focusableInTouchMode="true" style="@style/AllWrapContent" />
+                </LinearLayout>
+            </at.spardat.bcrmobile.view.widget.NonFocusingScrollView>
+        </RelativeLayout>
+        <include android:id="@id/view_progress_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/data_loading_progress_view" />
+        <include android:id="@id/view_transparent_progress_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/transparent_data_loading_progress_view" />
+        <include android:id="@id/view_touch_blocker" layout="@layout/disable_touch_view" />
+    </FrameLayout>
+</LinearLayout>

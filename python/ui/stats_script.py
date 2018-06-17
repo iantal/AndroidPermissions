@@ -38,6 +38,11 @@ APK_DIR = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/"
 
 BENCHMARK_CRYPTO = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/crypto/"
 BENCHMARK_WEB = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/web/"
+BENCHMARK_EMULATOR = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/emulator/"
+BENCHMARK_MANIFEST = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/icc/"
+BENCHMARK_REFLECTION = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/reflection/"
+BENCHMARK_PERMISSION = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/permission/"
+BENCHMARK_OBFS_LOG = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/obfuscation_and_logging/"
 
 
 def create_dir(dir_name):
@@ -126,33 +131,33 @@ def analyse_files(directory):
                 print("########### " + apk)
                 extract_apk(apk)
 
-                xml_file = os.path.join(dirpath, 'app', 'AndroidManifest.xml')
-                parser = XMLParser(xml_file)
-                d = DirectoryAnalyser(dirpath)
-                perm_classifier = PermissionsClassifier(d, parser)
-                perm_classifier.write_results(os.path.join(dirpath, 'report', 'permissions.json'))
+                # xml_file = os.path.join(dirpath, 'app', 'AndroidManifest.xml')
+                # parser = XMLParser(xml_file)
+                # d = DirectoryAnalyser(dirpath)
+                # perm_classifier = PermissionsClassifier(d, parser)
+                # perm_classifier.write_results(os.path.join(dirpath, 'report', 'permissions.json'))
 
-                package_name = parser.get_package_name()
-                setup_visualizations(dirpath, package_name)
+                # package_name = parser.get_package_name()
+                # setup_visualizations(dirpath, package_name)
 
                 apk_analyser = ApplicationAnalyzer(dirpath)
                 # apk_analyser.find_crypto_vulns()
                 # print('\033[92m' + "[+] " + '\033[0m' + "Crypto")
-                # apk_analyser.find_logs()
-                # print('\033[92m' + "[+] " + '\033[0m' + "Logs")
+                apk_analyser.find_logs()
+                print('\033[92m' + "[+] " + '\033[0m' + "Logs")
                 # apk_analyser.find_manifest_vulns()
                 # print('\033[92m' + "[+] " + '\033[0m' + "Manifest")
-                # apk_analyser.find_obfuscation()
-                # print('\033[92m' + "[+] " + '\033[0m' + "Obfuscation")
+                apk_analyser.find_obfuscation()
+                print('\033[92m' + "[+] " + '\033[0m' + "Obfuscation")
                 # apk_analyser.find_reflection()
                 # print('\033[92m' + "[+] " + '\033[0m' + "Reflection")
                 # apk_analyser.find_signature()
                 # print('\033[92m' + "[+] " + '\033[0m' + "Signature")
-                apk_analyser.find_webview_vulns()
-                print('\033[92m' + "[+] " + '\033[0m' + "WebView")
+                # apk_analyser.find_webview_vulns()
+                # print('\033[92m' + "[+] " + '\033[0m' + "WebView")
 
 
-                # gc.collect()
+                # # gc.collect()
                 # print('\033[92m' + "[*] " + '\033[0m' + "Running radare2")
                 # apk_analyser.run_radare()
                 # print('\033[92m' + "[+] " + '\033[0m' + "Done")
@@ -184,12 +189,10 @@ def analyse_files(directory):
 
 
 def plot_stats():
-    y = [1.3586, 2.2623000000000002, 4.9821999999999997, 6.5096999999999996,
-                7.4812000000000003, 7.5133000000000001, 15.2148, 17.520499999999998
-                ]
+    y = [100.0, 100.0, 70.0, 100.0, 100.0, 100.0, 100.0]
     y_ = [1,2,3,4,5,6,7,8]
-    x = ['Japan', 'United Kingdom', 'Canada', 'Netherlands',
-                'United States', 'Belgium', 'Sweden', 'Switzerland']
+    x = ['Criptografie', 'Web', 'Componente', 'Permisiuni',
+                'Reflection', 'Obfuscare', 'Logging']
 
     trace0 = go.Bar(
         x=y,
@@ -268,6 +271,6 @@ def plot_stats():
 
 
 if __name__ == "__main__":
-    # organize_files(BENCHMARK_WEB)
-    analyse_files(BENCHMARK_WEB)
+    # organize_files(BENCHMARK_OBFS_LOG)
+    analyse_files(BENCHMARK_OBFS_LOG)
     # plot_stats()

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/top_panel" android:background="@color/top_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/top_panel_height">
+            <ImageButton android:id="@id/menu" style="@style/MenuStyle" />
+            <TextView android:textSize="17.0sp" android:text="@string/title_foreign_payment" style="@style/CaptionStyle" />
+        </RelativeLayout>
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/card_limits_receipt_title" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:text="@string/card_atm_channel" android:maxLines="1" android:singleLine="true" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="12.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/currency_atm" android:layout_width="36.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:ellipsize="start" android:gravity="right" android:id="@id/limit_atm" android:paddingRight="5.0dip" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="4.0dip" android:lines="1" android:layout_toLeftOf="@id/currency_atm" android:layout_alignBaseline="@id/currency_atm" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:ellipsize="marquee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_atm_channel_detail" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@id/limit_atm" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <View android:background="@color/dark_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:text="@string/card_pos_channel" android:maxLines="1" android:singleLine="true" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="12.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/currency_pos" android:layout_width="36.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:ellipsize="start" android:gravity="right" android:id="@id/limit_pos" android:paddingRight="5.0dip" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="4.0dip" android:lines="1" android:layout_toLeftOf="@id/currency_pos" android:layout_alignBaseline="@id/currency_pos" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:ellipsize="marquee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_pos_channel_detail" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@id/limit_pos" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

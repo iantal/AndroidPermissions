@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:ellipsize="marquee" android:gravity="left" android:id="@id/date" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_padding_large" android:singleLine="true" style="@style/TextAppearance.Item.Sub" />
+    <TextView android:ellipsize="end" android:gravity="left" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_padding" android:layout_marginRight="@dimen/default_padding_large" android:singleLine="true" style="@style/TextAppearance.Item.Title" />
+</LinearLayout>

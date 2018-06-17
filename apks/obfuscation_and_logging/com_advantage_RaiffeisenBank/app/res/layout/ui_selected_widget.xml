@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/image_view" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_add_symbol" android:layout_weight="1.0" android:layout_centerVertical="true" />
+    <TextView android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-5.0dip" android:text="Upcoming Payments" android:layout_weight="8.0" android:layout_toRightOf="@id/image_view" android:layout_centerVertical="true" style="@style/DSQTextAppearance.Header.ListItem" />
+    <LinearLayout android:gravity="center" android:id="@id/editButtonLinearLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <android.support.v7.widget.AppCompatButton android:id="@id/editButton" android:clickable="true" android:layout_marginRight="6.0dip" android:text="@string/edit_widget" app:textAllCaps="true" style="@style/ButtonWhiteWidgetButton.manageWidget" />
+    </LinearLayout>
+</RelativeLayout>

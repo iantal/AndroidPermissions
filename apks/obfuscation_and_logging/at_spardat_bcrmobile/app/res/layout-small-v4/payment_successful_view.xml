@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/view_data_container" android:background="@drawable/background_gradient" android:padding="15.0dip" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/view_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" layout="@layout/data_loading_progress_view" />
+    <ImageView android:id="@id/img_receipt" android:src="@drawable/coins" android:contentDescription="@string/coins" style="@style/AllWrapContent" />
+    <ImageView android:id="@id/img_progress_bar" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/progess_bar_success" android:contentDescription="@string/forward_for_processing" style="@style/AllWrapContent" />
+    <TextView android:textColor="@color/text_title" android:gravity="center" android:id="@id/tv_payment_message" android:layout_marginBottom="10.0dip" android:text="@string/payment_successful" style="@style/TextBoldAllWrap" />
+    <ImageView android:id="@id/img_payment_status" android:src="@drawable/transfer_successful" android:contentDescription="@string/success" style="@style/AllWrapContent" />
+</LinearLayout>

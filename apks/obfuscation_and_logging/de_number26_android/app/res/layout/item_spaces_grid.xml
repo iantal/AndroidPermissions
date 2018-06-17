@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/spaceGridItemContainer" android:background="?selectableItemBackground" android:paddingLeft="8.0dip" android:paddingTop="12.0dip" android:paddingRight="8.0dip" android:paddingBottom="12.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:id="@id/imageCardSpacesGridItem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/ripple_space_grid_image" app:cardCornerRadius="8.0dip" app:cardUseCompatPadding="true">
+        <de.number26.machete.android.adl.atoms.RoundedImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/iconSpaceGridItemCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:layout_marginStart="2.0dip" app:srcCompat="@drawable/ic_spaces_overview_card" />
+    </android.support.v7.widget.CardView>
+    <TextView android:ellipsize="end" android:gravity="center" android:id="@id/gridItemTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="1" style="@style/Text.Screen.Body.Small" />
+    <TextView android:textColor="@color/grey_79" android:gravity="center_horizontal" android:id="@id/gridItemDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/Text.Screen.Body.XSmall" />
+</LinearLayout>

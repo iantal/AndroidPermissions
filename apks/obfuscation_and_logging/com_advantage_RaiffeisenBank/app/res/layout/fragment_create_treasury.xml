@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/mainLinearLayout" android:background="@drawable/rounded_bottom_corners_white" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/requestFocusLinearLayout" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/popularLinearLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/most_used_treasury_payments" app:textAllCaps="true" style="@style/DSQTextAppearance.Label.material" />
+            <com.thinkdesquared.banking.helpers.ui.widgets.popularRelativeLayout.PopularRelativeLayout android:id="@id/popularRelativeLayout" android:layout_width="fill_parent" android:layout_height="?dsq_popular_layout_height" style="@style/RzbPopularStyle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/treasuryLinearLayout" android:paddingTop="8.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tax_payment_label" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0" android:animateLayoutChanges="false">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <android.support.v7.widget.AppCompatButton android:id="@id/chooseTreasuryPaymentButton" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/tax_payment_hint" style="@style/editTextButtonWithSearch" />
+                    <android.support.v7.widget.AppCompatEditText android:id="@id/focusFixEditText" android:layout_width="fill_parent" android:layout_height="0.0dip" android:inputType="text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/restLinearLayout" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip">
+                <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/beneficiary" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <android.support.v7.widget.AppCompatButton android:id="@id/chooseTreasuryPaymentBeneficiaryButton" android:layout_width="fill_parent" android:layout_height="48.0dip" style="@style/editTextButtonWithSearch" />
+                </LinearLayout>
+            </LinearLayout>
+            <include android:id="@id/separator1" layout="@layout/include_separator" />
+            <LinearLayout android:orientation="vertical" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip">
+                <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/from_account" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fromAccountSpinnerLinearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0" android:animateLayoutChanges="false">
+                    <com.thinkdesquared.banking.helpers.ui.widgets.DSQAppCompatSpinner android:layout_gravity="center_vertical" android:id="@id/fromAccountSpinner" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" style="@style/rzb_Spinner.DropDown" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/thirdPartySwitchRelativeLayout" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="52.0dip" android:animateLayoutChanges="false">
+                <LinearLayout android:id="@id/thirdPartySwitchLinearLayout" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+                    <android.support.v7.widget.SwitchCompat android:theme="@style/DSQSwitchStyle" android:gravity="center" android:id="@id/thirdPartySwitch" android:background="@color/transparent" android:layout_width="60.0dip" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <TextView android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/third_party_purchase_treasury" android:maxLines="3" android:layout_toLeftOf="@id/thirdPartySwitchLinearLayout" style="@style/DSQTextAppearance.Label.material" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/thirdPartyLinearLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/third_party_purchase_cnp_treasury" style="@style/DSQTextAppearance.Label.material" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatEditText android:id="@id/thirdPartyCNPEditText" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:singleLine="true" android:maxLength="13" android:digits="@string/set_4" android:imeOptions="actionDone|flagNoExtractUi" style="@style/DSQWidget.Holo.NumericCharactersOnlyAllowedEditText.value" />
+                    <android.support.v7.widget.AppCompatEditText android:id="@id/dummyThirdPartyCNPEditText" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:singleLine="true" android:maxLength="13" android:digits="@string/set_4" android:imeOptions="actionDone|flagNoExtractUi" style="@style/DSQWidget.Holo.NumericCharactersOnlyAllowedEditText.value" />
+                    <FrameLayout android:layout_gravity="center" android:padding="5.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true">
+                        <com.thinkdesquared.banking.helpers.ui.widgets.ProgressWheel android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:matProg_progressIndeterminate="true" app:matProg_barColor="@color/raiffeisen_yellow" />
+                        <ImageView android:id="@id/thirdPartyCNPValidationImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/errorImageView" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/info" />
+                    <TextView android:textSize="12.0sp" android:textColor="?dsq_debit_color" android:id="@id/errorTextView" android:background="@null" android:paddingLeft="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:minHeight="20.0dip" android:text="@string/thirdPartyCnpIsInvalid" style="?attr/dsq_edittext_button_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/payments_layout_amount" />
+            <include layout="@layout/payments_layout_dates" />
+            <include android:id="@id/separator1" layout="@layout/include_separator" />
+            <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/paymentEvidenceNumberLinearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_evidence_number" style="@style/DSQTextAppearance.Label.material" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatEditText android:id="@id/paymentEvidenceNumberEditText" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:singleLine="true" android:maxLength="23" android:digits="@string/set_4" android:imeOptions="actionNext|flagNoExtractUi" style="@style/DSQWidget.Holo.NumericCharactersOnlyAllowedEditText.value" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/paymentDetailsLinearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_details" style="@style/DSQTextAppearance.Label.material" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatEditText android:id="@id/paymentDetailsEditText" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:singleLine="true" android:maxLength="35" android:imeOptions="actionDone|flagNoExtractUi" style="@style/DSQWidget.Holo.AlphanumericWithSomeSpecialCharactersAllowedEditText.value" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/submit_button_layout" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/grey_bright" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/LayoutTabletCompatible"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/elevatedlayoutTabledCompatible">
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <include layout="@layout/fragment_invest_transactions_empty" />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

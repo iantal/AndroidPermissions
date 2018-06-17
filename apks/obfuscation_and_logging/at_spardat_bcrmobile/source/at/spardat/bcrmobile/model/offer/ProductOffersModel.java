@@ -1,0 +1,57 @@
+package at.spardat.bcrmobile.model.offer;
+
+import at.spardat.bcrmobile.model.BaseModel;
+import com.google.a.a.c;
+import java.util.Collections;
+import java.util.List;
+
+public class ProductOffersModel
+  extends BaseModel
+{
+  @c(a="invest_category")
+  private String mInvestCategory = null;
+  @c(a="offer_buttons")
+  private List<OfferButton> mOfferButtonList = null;
+  @c(a="offers")
+  private List<OffersModel> mOffersList = null;
+  
+  public ProductOffersModel() {}
+  
+  public String getInvestCategory()
+  {
+    return this.mInvestCategory;
+  }
+  
+  public List<OfferButton> getOfferButtonList()
+  {
+    List localList = null;
+    if (this.mOfferButtonList != null) {
+      localList = Collections.unmodifiableList(this.mOfferButtonList);
+    }
+    return localList;
+  }
+  
+  public List<OffersModel> getOffersList()
+  {
+    List localList = null;
+    if (this.mOffersList != null) {
+      localList = Collections.unmodifiableList(this.mOffersList);
+    }
+    return localList;
+  }
+  
+  public void setInvestCategory(String paramString)
+  {
+    this.mInvestCategory = paramString;
+  }
+  
+  public void setOfferButtonList(List<OfferButton> paramList)
+  {
+    this.mOfferButtonList = paramList;
+  }
+  
+  public void setOffersList(List<OffersModel> paramList)
+  {
+    this.mOffersList = paramList;
+  }
+}

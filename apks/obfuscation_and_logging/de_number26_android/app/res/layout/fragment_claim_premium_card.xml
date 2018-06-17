@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/grey_bright" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <de.number26.machete.android.ui.components.PreferenceView android:id="@id/flight_delay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/premium_card_claim_flight_delay_title" android:summary="@string/premium_card_claim_flight_delay_summary" />
+        <de.number26.machete.android.ui.components.PreferenceView android:id="@id/luggage_delay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/premium_card_claim_luggage_delay_title" android:summary="@string/premium_card_claim_luggage_delay_summary" />
+        <de.number26.machete.android.ui.components.PreferenceView android:id="@id/stolen_mobile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/premium_card_claim_stolen_mobile_title" android:summary="@string/premium_card_claim_stolen_mobile_summary" />
+        <de.number26.machete.android.ui.components.PreferenceView android:id="@id/stolen_cash" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/premium_card_claim_stolen_cash_title" android:summary="@string/premium_card_claim_stolen_cash_summary" />
+        <de.number26.machete.android.ui.components.PreferenceView android:id="@id/extended_warranty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/premium_card_claim_extended_warranty_title" android:summary="@string/premium_card_claim_extended_warranty_summary" />
+        <de.number26.machete.android.ui.components.PreferenceView android:id="@id/travel_cancellation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/premium_card_claim_travel_cancellation_title" android:summary="@string/premium_card_claim_travel_cancellation_summary" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/inner_switches" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/save_credentials" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <org.jraf.android.backport.switchwidget.Switch android:id="@id/switch_save_credentials" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" app:asb_textOn="@string/cmd_yes" app:asb_textOff="@string/cmd_no" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff7b6666" android:id="@id/save_credentials_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:text="@string/login_save" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/switch_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <org.jraf.android.backport.switchwidget.Switch android:id="@id/switch_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" app:asb_textOn="@string/cmd_yes" app:asb_textOff="@string/cmd_no" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff7b6666" android:id="@id/terms" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:id="@id/btn_hide" android:background="@null" android:layout_width="110.0dip" android:layout_height="wrap_content" android:text="@string/hide" android:drawableRight="@drawable/arrow_up" android:onClick="onHideButtonClick" />
+</LinearLayout>

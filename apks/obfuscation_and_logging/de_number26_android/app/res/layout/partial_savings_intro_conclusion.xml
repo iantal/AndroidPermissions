@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_savings_intro_conclusion" android:background="@drawable/bg_savings_intro" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/view_savings_intro_cancel" android:background="@drawable/ic_close" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" />
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="30.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip" android:layout_marginBottom="16.0dip" android:text="@string/fixed_term_marketing_title" fontPath="@string/font_medium" />
+    <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/text_fixed_term_marketing_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip" android:layout_marginBottom="56.0dip" android:text="@string/fixed_term_marketing_subtitle_deu" fontPath="@string/font_light" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip" android:layout_marginBottom="8.0dip">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_fixed_term_marketing_pig" android:layout_weight="1.0" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_fixed_term_marketing_graph" android:layout_weight="1.0" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_fixed_term_marketing_shield" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip" android:layout_marginBottom="12.0dip">
+        <TextView android:textSize="31.0sp" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/fixed_term_marketing_minimumdeposit_value_deu" android:layout_weight="1.0" fontPath="@string/font_regular" />
+        <TextView android:textSize="31.0sp" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/fixed_term_marketing_bestrate_value_deu" android:layout_weight="1.0" fontPath="@string/font_regular" />
+        <TextView android:textSize="31.0sp" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/fixed_term_marketing_depositguarantee_value" android:layout_weight="1.0" fontPath="@string/font_regular" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip">
+        <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/fixed_term_marketing_minimumdeposit" android:layout_weight="1.0" fontPath="@string/font_regular" />
+        <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/fixed_term_marketing_bestrate" android:layout_weight="1.0" fontPath="@string/font_regular" />
+        <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/fixed_term_marketing_depositguarantee" android:layout_weight="1.0" fontPath="@string/font_regular" />
+    </LinearLayout>
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <de.number26.machete.android.adl.atoms.MainButton android:id="@id/main_button_savings_intro_start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="false" app:text="@string/fixed_term_marketing_continue_button" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_rejected_inquiry" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/screen_insurance_padding_start_end" android:layout_marginEnd="@dimen/screen_insurance_padding_start_end">
+            <ImageView android:layout_marginTop="48.0dip" android:layout_marginBottom="24.0dip" android:src="@drawable/ic_inquiry_rejected" style="@style/InsuranceSubpageIcon" />
+            <TextView android:id="@id/text_rejected_inquiry_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="16.0dip" android:text="@string/insurance_rejected_title" style="@style/InsuranceSubpageTitle" />
+            <TextView android:id="@id/text_rejected_inquiry_subtitle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="16.0dip" style="@style/InsuranceSubpageSubtitle" />
+            <LinearLayout style="@style/InsuranceSubpageBulletLayout">
+                <ImageView style="@style/InsuranceSubpageBulletIcon" />
+                <TextView android:id="@id/text_rejected_inquiry_reasons_1" android:text="@string/insurance_rejected_point_1" style="@style/InsuranceSubpageBulletText" />
+            </LinearLayout>
+            <LinearLayout style="@style/InsuranceSubpageBulletLayout">
+                <ImageView style="@style/InsuranceSubpageBulletIcon" />
+                <TextView android:id="@id/text_rejected_inquiry_reasons_2" android:text="@string/insurance_rejected_point_2" style="@style/InsuranceSubpageBulletText" />
+            </LinearLayout>
+            <LinearLayout style="@style/InsuranceSubpageBulletLayout">
+                <ImageView style="@style/InsuranceSubpageBulletIcon" />
+                <TextView android:id="@id/text_rejected_inquiry_reasons_3" android:text="@string/insurance_rejected_point_3" style="@style/InsuranceSubpageBulletText" />
+            </LinearLayout>
+            <LinearLayout android:layout_marginBottom="108.0dip" style="@style/InsuranceSubpageBulletLayout">
+                <ImageView style="@style/InsuranceSubpageBulletIcon" />
+                <TextView android:id="@id/text_rejected_inquiry_reasons_4" android:text="@string/insurance_rejected_point_4" style="@style/InsuranceSubpageBulletText" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/toolbar_rejected_inquiry" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <include android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_below="@id/toolbar_rejected_inquiry" layout="@layout/progress" />
+    <Button android:textColor="@color/red" android:id="@id/button_rejected_inquiry_delete" android:background="@drawable/accent_border_button_red" android:layout_marginBottom="@dimen/screen_insurance_padding_top_bottom" android:foreground="?selectableItemBackground" android:text="@string/insurance_rejected_delete" android:layout_alignParentBottom="true" style="@style/AccentBorderButton" />
+</RelativeLayout>

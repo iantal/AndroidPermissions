@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/main_content_frame_layout" android:background="?dsq_main_content_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/include_rpb_yellow_line_logo" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/content_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/dummy" android:background="@drawable/bg_yellow" android:layout_width="fill_parent" android:layout_height="@dimen/dsq_action_bar_expanded_height" android:layout_alignParentTop="true">
+                <include layout="@layout/include_toolbar" />
+            </FrameLayout>
+            <include layout="@layout/include_footer_logo" />
+            <FrameLayout android:id="@id/fragment_inbox_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/CardContentAboveActionBarStyle" />
+            <FrameLayout android:id="@id/fragment_inbox_message_container" android:background="?dsq_background_lists" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/white_card_left_margin" android:layout_marginRight="@dimen/white_card_right_margin" style="@style/CardContentAboveActionBarStyle" />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="start" android:id="@id/fragment_below_container" android:layout_width="320.0dip" android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

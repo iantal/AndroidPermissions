@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="chat_dialog_end_session_message">Er du sikker på at du vil avslutte chatteøkten?</string>
+    <string name="chat_dialog_end_session_positive">Avslutt økt</string>
+    <string name="chat_dialog_end_session_title">Sier du adjø?</string>
+    <string name="chat_dialog_negative">Avbryt</string>
+    <string name="chat_dialog_select_image_source_camera">Ta bilde</string>
+    <string name="chat_dialog_select_image_source_choose">Velg fra galleri</string>
+    <string name="chat_dialog_select_image_source_last_photo">Bruk det siste bildet som ble tatt</string>
+    <string name="chat_end_session_content_description">Avslutt chatteøkt</string>
+    <string name="chat_feed_content_description">Chattemeldinger vises her</string>
+    <string name="chat_feed_title">@string/pre_chat_toolbar_title</string>
+    <string name="chat_file_transfer_canceled">Filoverføring avbrutt</string>
+    <string name="chat_file_transfer_failed">Filoverføring mislyktes</string>
+    <string name="chat_file_transfer_requested">Filoverføring forespurt</string>
+    <string name="chat_image_selection_failed">Kan ikke laste inn bilde</string>
+    <string name="chat_message_delivery_failed">Melding ble ikke sendt</string>
+    <string name="chat_message_modified">Sensitive data ble fjernet fra meldingen</string>
+    <string name="chat_message_not_sent_privacy">Melding ble ikke sendt fordi den inneholder sensitive data</string>
+    <string name="chat_message_notification_channel_name">Chat-meldinger</string>
+    <string name="chat_minimize_content_description">Minimer chat</string>
+    <string name="chat_minimized_connecting">Kobler til chat…</string>
+    <string name="chat_minimized_post_session">Økten er avsluttet</string>
+    <string name="chat_minimized_queued">Din plass i køen</string>
+    <string name="chat_permission_not_granted">Ingen tillatelse gitt</string>
+    <string name="chat_resume_error_string">Noe gikk galt…</string>
+    <string name="chat_resume_error_string_subtext">Prøv igjen eller kontakt administratoren</string>
+    <string name="chat_service_description">Du chatter nå med en agent</string>
+    <string name="chat_service_notification_channel_name">Live Chat-tjeneste</string>
+    <string name="chat_service_title">Service Cloud-chat</string>
+    <string name="chat_session_button_transfer_initiated">Overfører deg til en agent</string>
+    <string name="chat_session_ended_by_agent">Agenten har avsluttet økten</string>
+    <string name="chat_session_transferred_to_agent">%1$s har blitt med i chatten</string>
+    <string name="pre_chat_banner_text">Bare noen få ting før vi kobler deg til en ekspert</string>
+    <string name="pre_chat_button_start">Chat med en agent</string>
+    <string name="pre_chat_field_list_description">En liste over felt som skal fylles ut, vises her.</string>
+    <string name="pre_chat_picklist_select_hint">Velg en verdi...</string>
+    <string name="pre_chat_toolbar_title">Live Chat</string>
+    <string name="salesforce_close_minimize_view_content_description">@string/chat_end_session_content_description</string>
+    <string name="salesforce_message_input_hint">Skriv en melding</string>
+    <string name="salesforce_select_photo_content_description">Velg et bilde</string>
+    <string name="salesforce_send_message_content_description">Send melding</string>
+    <string name="salesforce_sent_photo_content_description">Vedlagt bilde</string>
+</resources>

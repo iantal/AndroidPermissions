@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/view_account_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/click24_header_view" />
+    <include android:id="@id/view_progress_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/view_account_header_container" layout="@layout/data_loading_progress_view" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/view_account_pager_container" android:visibility="gone" android:layout_below="@id/view_account_header_container" style="@style/ApplicationTheme" />
+    <ScrollView android:id="@id/view_no_account_container" android:visibility="gone" android:layout_below="@id/view_account_header_container" style="@style/ApplicationTheme">
+        <LinearLayout android:orientation="vertical" android:id="@id/view_no_account" style="@style/AllMatchParent">
+            <TextView android:textColor="@color/text_title" android:id="@id/tv_no_active_account_msg" android:padding="@dimen/screen_padding" style="@style/TextNormalAllWrap" />
+            <TextView android:id="@id/tv_contact_no" style="@style/NoActiveAccountRow" />
+            <TextView android:id="@id/tv_form_link" style="@style/NoActiveAccountRow" />
+            <TextView android:id="@id/tv_detail_link" style="@style/NoActiveAccountRow" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

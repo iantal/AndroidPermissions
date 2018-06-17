@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/layout_ins_coverage_contract_number" style="@style/InsuranceProductDetailsItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/text_ins_coverage_item_name" android:text="@string/insurance_product_details_contract_number" style="@style/InsuranceProductDetailsItemName" />
+    <TextView android:id="@id/text_ins_coverage_item_value" android:visibility="gone" style="@style/InsuranceProductDetailsItemValue" />
+    <ImageView android:id="@id/image_ins_coverage_item_value" android:visibility="gone" style="@style/InsuranceProductDetailsItemImageValue" />
+</LinearLayout>

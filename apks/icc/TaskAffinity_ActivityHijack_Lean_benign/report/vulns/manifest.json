@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "title": "Debug Enabled For Application",
+      "stat": "high",
+      "description": "Debugging was enabled on the app which makes it easier for reverse engineers to hook a debugger to it. This allows dumping a stack trace and accessing debugging helper classes.",
+      "recommendation": "android:debuggable = False"
+    },
+    {
+      "title": "TaskAffinity is set for Activity (edu. ksu. cs. benign. ImageEditor)",
+      "stat": "high",
+      "description": "If taskAffinity is set, then other application could read the Intents sent to Activities belonging to another task.",
+      "recommendation": "Always use the default setting keeping the affinity as the package name in order to prevent sensitive information inside sent or received Intents  from being read by another application."
+    }
+  ]
+}

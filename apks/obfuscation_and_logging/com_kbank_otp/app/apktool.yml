@@ -1,0 +1,27 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com.kbank.otp.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '9'
+  targetSdkVersion: '23'
+sharedLibrary: false
+unknownFiles:
+  build-data.properties: '8'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
+  org/achartengine/image/zoom-1.png: '8'
+  org/achartengine/image/zoom_in.png: '8'
+  org/achartengine/image/zoom_out.png: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.0
+versionInfo:
+  versionCode: '24'
+  versionName: 4.2.1

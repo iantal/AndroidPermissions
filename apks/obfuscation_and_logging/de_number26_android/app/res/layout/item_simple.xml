@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:minHeight="@dimen/one_line_item_height" style="@style/default_item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/default_item_icon" />
+    <include layout="@layout/default_item_content" />
+</LinearLayout>

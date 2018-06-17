@@ -1,0 +1,15 @@
+{
+  "normal": [],
+  "dangerous": [
+    "ACCESS_FINE_LOCATION",
+    "ACCESS_COARSE_LOCATION"
+  ],
+  "over": [
+    "WAKE_LOCK"
+  ],
+  "under": [
+    "ACCESS_FINE_LOCATION",
+    "ACCESS_COARSE_LOCATION"
+  ],
+  "auto_granted_dangerous_permissions": []
+}

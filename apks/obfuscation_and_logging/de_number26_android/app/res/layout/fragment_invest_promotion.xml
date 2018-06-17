@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/contentHolder" android:background="@color/colorAccent" android:paddingTop="?actionBarSize" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" style="@style/LayoutTabletCompatible"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@android:color/white" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/savings_promotion" android:textAllCaps="true" style="@style/TextAppearance.Item.Title" />
+    <TextView android:textSize="22.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/savings_promotion_desc" fontPath="@string/font_regular" style="@style/TextAppearance.Item.Title" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip">
+        <RelativeLayout android:layout_width="219.5dip" android:layout_height="382.5dip" android:layout_marginLeft="12.5dip" android:layout_marginTop="38.5dip">
+            <VideoView android:id="@id/backgroundVideo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_investment_device" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/got_it" android:visibility="gone" android:text="@string/savings_intro_btn" style="@style/mainbutton" />
+</LinearLayout>

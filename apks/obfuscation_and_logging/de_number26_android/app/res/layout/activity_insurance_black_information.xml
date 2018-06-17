@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="80.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_insurance_black_info_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:src="@drawable/img_black_information" />
+        <TextView android:textSize="22.0sp" android:id="@id/text_insurance_black_info_description" android:text="@string/insurance_black_popup_title" android:paddingStart="@dimen/screen_insurance_padding_start_end" android:paddingEnd="@dimen/screen_insurance_padding_start_end" style="@style/InsuranceSubpageTitle" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip" app:paddingEnd="8.0dip" style="@style/InsuranceWalletCard">
+            <ImageView android:id="@id/image_insurance_black_info_icon" style="@style/InsuranceWalletItemIcon" />
+            <TextView android:ellipsize="none" android:id="@id/text_insurance_black_info_category" android:text="@string/insurance_black_popup_category" android:maxLines="5" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/image_insurance_black_info_icon" style="@style/InsuranceWalletItemCategory" />
+            <TextView android:ellipsize="none" android:id="@id/text_insurance_black_info_provider" android:text="@string/insurance_black_popup_provider" android:maxLines="5" android:layout_below="@id/text_insurance_black_info_category" android:layout_marginEnd="12.0dip" android:layout_toEndOf="@id/image_insurance_black_info_icon" style="@style/InsuranceWalletItemProvider" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:textColor="@color/grey" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/insurance_black_popup_privacy_text" android:paddingStart="@dimen/screen_insurance_padding_start_end" android:paddingEnd="@dimen/screen_insurance_padding_start_end" fontPath="@string/font_light" />
+            <de.number26.machete.android.adl.atoms.MainButton android:layout_gravity="bottom" android:id="@id/button_black_information_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" app:text="@string/insurance_black_popup_got_it" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

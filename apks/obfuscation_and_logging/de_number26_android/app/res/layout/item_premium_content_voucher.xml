@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_gravity="center" android:focusable="true" android:clickable="true" android:layout_width="270.0dip" android:layout_height="210.0dip" android:layout_margin="8.0dip" android:foreground="?android:selectableItemBackground" card_view:cardCornerRadius="2.0dip" card_view:cardElevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imagePremiumContentVoucherItemHeader" android:layout_width="fill_parent" android:layout_height="135.0dip" android:layout_marginBottom="16.0dip" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/imagePremiumContentVoucherItemPartner" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/imagePremiumContentVoucherItemHeader" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black_1b" android:id="@id/textPremiumContentVoucherItemTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/imagePremiumContentVoucherItemHeader" android:lineSpacingExtra="20.0sp" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/imagePremiumContentVoucherItemPartner" fontPath="@string/font_regular" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/premium_dashboard_see_partner_deal" android:singleLine="true" android:layout_below="@id/textPremiumContentVoucherItemTitle" android:lineSpacingExtra="20.0sp" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/imagePremiumContentVoucherItemPartner" fontPath="@string/font_regular" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

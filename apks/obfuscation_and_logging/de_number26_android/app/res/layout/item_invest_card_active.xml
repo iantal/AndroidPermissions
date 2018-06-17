@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/groupView" style="@style/HomeCard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140.0dip" android:singleLine="true" style="@style/TextAppearance.Item.Title" />
+                <TextView android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/halfContentSpacing" style="@style/TextAppearance.Item.Sub" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center|left" android:id="@id/edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/halfContentSpacing" android:src="@drawable/icon_edit" android:layout_weight="0.3" />
+            <TextView android:textSize="16.0dip" android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.7" style="@style/TextAppearance.Item.Title" />
+        </LinearLayout>
+        <de.number26.machete.android.ui.savings.invest.components.InvestDashboardGroupView android:id="@id/savings_dashboard" android:layout_width="fill_parent" android:layout_height="@dimen/savings_dashboard_history_graph_height" />
+        <ImageView android:id="@id/dotted" android:layout_width="fill_parent" android:layout_height="3.0dip" android:src="@drawable/dotted" />
+        <include layout="@layout/invest_account_item_footer" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

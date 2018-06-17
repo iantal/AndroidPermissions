@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/default_padding" android:paddingEnd="@dimen/default_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_padding">
+        <TextView android:textSize="@dimen/text_item_title" android:gravity="center" android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:text="@string/fatca_confirm_header" android:paddingStart="@dimen/default_padding" android:paddingEnd="@dimen/default_padding" />
+        <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fatca_confirm_where" />
+        <TextView android:id="@id/fatca_confirm_country" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin" />
+        <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fatca_confirm_tax_number" />
+        <TextView android:id="@id/fatca_confirm_tax" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/textColorSecondary" android:layout_gravity="bottom" android:id="@id/fatca_confirm_support" android:paddingBottom="@dimen/default_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin" android:text="@string/fatca_change_info" />
+</FrameLayout>

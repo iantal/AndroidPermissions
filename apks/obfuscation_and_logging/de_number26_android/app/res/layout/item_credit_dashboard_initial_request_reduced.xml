@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/text_initial_request_reduced_title" android:layout_marginTop="@dimen/creditDashboardDraftItemPaddingTopBottom" android:layout_marginBottom="5.0dip" android:layout_marginStart="@dimen/creditCardPaddingStartEnd" android:layout_marginEnd="@dimen/creditCardPaddingStartEnd" style="@style/creditDashboardLabel" />
+    <TextView android:id="@id/text_initial_request_reduced_content" android:layout_marginStart="@dimen/creditCardPaddingStartEnd" android:layout_marginEnd="@dimen/creditCardPaddingStartEnd" style="@style/creditDashboardValue" />
+    <View android:layout_marginTop="@dimen/creditDashboardDraftItemPaddingTopBottom" android:layout_marginStart="@dimen/creditCardPaddingStartEnd" style="@style/creditDashboardDivider" />
+</LinearLayout>

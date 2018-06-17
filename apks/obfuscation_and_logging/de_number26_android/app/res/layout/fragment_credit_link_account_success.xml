@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true" android:paddingStart="@dimen/creditScreenPaddingStartEnd" android:paddingEnd="@dimen/creditScreenPaddingStartEnd"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/creditLinkAccountSuccessTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/credit_link_account_success_title" android:layout_centerInParent="true" style="@style/creditTitle" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="88.0dip" android:minHeight="88.0dip" android:layout_above="@id/creditLinkAccountSuccessTitle" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@id/creditLinkAccountSuccessIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/credit_link_account_success_icon" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/creditLinkAccountSuccessLoading" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="80.0dip" android:layout_height="80.0dip" style="@style/Base.Widget.AppCompat.ProgressBar" />
+    </FrameLayout>
+</RelativeLayout>

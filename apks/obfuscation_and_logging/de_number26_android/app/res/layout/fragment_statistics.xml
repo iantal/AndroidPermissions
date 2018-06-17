@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/grey_bright" style="@style/LayoutTabletCompatible"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    <FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        <android.support.v7.widget.CardView android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" app:cardBackgroundColor="@android:color/white">
+            <LinearLayout android:orientation="vertical" android:id="@id/topBit" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.viewpagerindicator.TitlePageIndicator android:textSize="17.0sp" android:textColor="@color/grey" android:id="@id/monthIndicator" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" app:clipPadding="20.0dip" app:footerColor="@android:color/transparent" app:footerIndicatorStyle="none" app:footerLineHeight="0.0dip" app:selectedColor="@color/grey_dark" app:titlePadding="20.0dip" />
+                <FrameLayout android:id="@id/chartHolder" android:layout_width="fill_parent" android:layout_height="@dimen/chart_height">
+                    <android.support.v4.view.StatisticsPieChartViewPager android:layout_gravity="center_vertical" android:id="@id/pager" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/chart_height" />
+                </FrameLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+</RelativeLayout>

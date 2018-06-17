@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "title": "Debug Enabled For Application",
+      "stat": "high",
+      "description": "Debugging was enabled on the app which makes it easier for reverse engineers to hook a debugger to it. This allows dumping a stack trace and accessing debugging helper classes.",
+      "recommendation": "android:debuggable = False"
+    },
+    {
+      "title": "Content Provider (edu. ksu. cs. benign. FIleContentProvider) is not Protected. [android:exported=true]",
+      "stat": "high",
+      "description": "A Content Provider is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    }
+  ]
+}

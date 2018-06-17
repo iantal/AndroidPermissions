@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.number26.machete.android.adl.CenterContentPage android:id="@id/investDocumentsSavingContent" android:layout_width="0.0dip" android:layout_height="0.0dip" app:image="@drawable/img_liquidate_plan" app:layout_constraintBottom_toTopOf="@id/documentsSavedButton" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:text="@string/invest_save_documents_body" app:title="@string/invest_save_documents_title" />
+    <de.number26.machete.android.adl.atoms.MainButton android:id="@id/documentsSavedButton" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/investDocumentsSavingContent" app:text="@string/invest_save_documents_action" />
+</android.support.constraint.ConstraintLayout>

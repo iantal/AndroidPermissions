@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/second_step_intro_text" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageViewMobileNr" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/oval_icon" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/second_step_mobile_nr_title" />
+                        <EditText android:id="@id/editTextPhoneNr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:hint="@string/second_step_mobile_nr_hint" android:singleLine="true" android:inputType="phone" />
+                        <TextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/second_step_mobile_nr_text" />
+                        <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="8.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/emailContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageViewEmail" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/oval_icon" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/second_step_email_title" />
+                        <EditText android:id="@id/editTextEmail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:hint="@string/second_step_email_hint" android:singleLine="true" android:inputType="textEmailAddress" />
+                        <TextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/second_step_email_text" />
+                        <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="8.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linLayoutIdExplanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageViewId" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/oval_icon" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/second_step_id_title" />
+                        <TextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:text="@string/second_step_id_text" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/link" android:id="@id/textViewIdHelp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:text="@string/second_step_id_help" />
+                        <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="8.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linLayoutApprovalExplanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageViewApproval" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/oval_icon" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/second_step_approval_title" />
+                        <TextView android:textSize="14.0sp" android:id="@id/textViewTerms" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:text="@string/second_step_approval_text" />
+                        <TextView android:textSize="14.0sp" android:id="@id/textViewTermsOfUse" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/second_step_terms_of_use" />
+                        <TextView android:textSize="14.0sp" android:id="@id/textViewPrivacyPolicy" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/second_step_privacy_policy" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/link" android:id="@id/textViewApprovalHelp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:text="@string/second_step_approval_help" />
+                        <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="8.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linLayoutRecordingAgreement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageViewRecording" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/oval_icon" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/second_step_recording_title" />
+                        <TextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:text="@string/second_step_recording_text" />
+                        <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="8.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:textColor="@color/proceed_button_text" android:layout_gravity="bottom" android:id="@id/buttonNext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/second_step_start_ident" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

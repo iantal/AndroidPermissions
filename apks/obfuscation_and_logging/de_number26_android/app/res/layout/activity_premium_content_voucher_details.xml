@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/appBarLayoutPremiumContentVoucherDetails" android:layout_width="0.0dip" android:layout_height="wrap_content" app:elevation="0.0dip" app:layout_constraintBottom_toTopOf="@id/scrollViewPremiumContentVoucherDetails" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbarPremiumContentVoucherDetails" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView android:id="@id/scrollViewPremiumContentVoucherDetails" android:layout_width="0.0dip" android:layout_height="0.0dip" android:fillViewport="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/appBarLayoutPremiumContentVoucherDetails">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/imagePremiumContentVoucherDetailsHeader" android:layout_width="fill_parent" android:layout_height="210.0dip" android:layout_marginBottom="32.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+            <TextView android:textSize="26.0sp" android:textColor="@color/black_1b" android:id="@id/textPremiumContentVoucherDetailsTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="36.0dip" fontPath="@string/font_medium" />
+            <de.number26.machete.android.refactor.presentation.premium_content.PremiumContentBodyLayout android:orientation="vertical" android:id="@id/layoutPremiumContentVoucherDetailsBodyElements" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="48.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
+            <include android:id="@id/layoutPremiumContentVoucherDetailsVoucher" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/partial_premium_content_details_voucher" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

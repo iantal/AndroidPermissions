@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="36.0dip" android:src="@drawable/img_fixed_term_education" />
+    <TextView android:textSize="18.0sp" android:id="@id/text_fixed_term_education_no_bullet_paragraph0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/fixed_term_education_taxid_description" android:lineSpacingExtra="6.0sp" fontPath="@string/font_light" />
+    <TextView android:textSize="20.0sp" android:id="@id/text_fixed_term_education_no_bullet_question1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_education_taxid_wheretofind" android:lineSpacingExtra="4.0sp" fontPath="@string/font_regular" />
+    <TextView android:textSize="18.0sp" android:id="@id/text_fixed_term_education_no_bullet_paragraph1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/fixed_term_education_taxid_wheretofind_text" android:lineSpacingExtra="6.0sp" fontPath="@string/font_light" />
+    <TextView android:textSize="20.0sp" android:id="@id/text_fixed_term_education_no_bullet_question2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_education_taxid_why" android:lineSpacingExtra="4.0sp" fontPath="@string/font_regular" />
+    <TextView android:textSize="18.0sp" android:id="@id/text_fixed_term_education_no_bullet_paragraph2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/fixed_term_education_taxid_why_text" android:lineSpacingExtra="6.0sp" fontPath="@string/font_light" />
+</LinearLayout>

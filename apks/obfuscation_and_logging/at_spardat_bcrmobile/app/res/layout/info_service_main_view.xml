@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/ApplicationTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/info_service_header" style="@style/ScreenHeader" />
+    <FrameLayout style="@style/AllMatchParent">
+        <include android:id="@id/view_progress_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/data_loading_progress_view" />
+        <LinearLayout android:orientation="vertical" android:id="@id/info_list_container" style="@style/AllMatchParent">
+            <TextView android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@id/tv_news_info" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:text="@string/info_services_news_header_title" style="@style/TextBoldMatchWrap" />
+            <ListView android:id="@id/lv_info_service_list" android:fadingEdge="none" android:cacheColorHint="@color/transparent" android:divider="@color/separator_bg" android:dividerHeight="1.0dip" android:fadeScrollbars="true" style="@style/AllMatchParent" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

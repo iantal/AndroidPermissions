@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:id="@id/prefix_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/add_prefix_telephoneNumber" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+        <Spinner android:id="@id/countriesSpinner" android:background="@android:color/white" android:layout_width="60.0dip" android:layout_height="65.0dip" />
+        <EditText android:gravity="center" android:id="@id/new_phone" android:background="@android:color/white" android:layout_width="180.0dip" android:layout_height="65.0dip" android:hint="(###) ### - ####" android:inputType="phone" />
+    </LinearLayout>
+    <TextView android:id="@id/button_text" style="@style/mainbutton" />
+</LinearLayout>

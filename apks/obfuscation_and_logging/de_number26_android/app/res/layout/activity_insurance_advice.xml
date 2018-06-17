@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_ins_coverage_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/toolbar_ins_advice" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:elevation="2.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="48.0dip" android:src="@drawable/img_insurance_advice" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/insurance_advice_subtitle" android:layout_marginStart="28.0dip" android:layout_marginEnd="28.0dip" style="@style/InsuranceText" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/insurance_advice_did_you_know" android:layout_marginStart="28.0dip" android:layout_marginEnd="28.0dip" style="@style/InsuranceText" />
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler_ins_advice_items" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="bottom|center" android:id="@id/image_ins_advice_powered_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:layout_marginBottom="24.0dip" android:src="@drawable/img_powered_by_clark" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

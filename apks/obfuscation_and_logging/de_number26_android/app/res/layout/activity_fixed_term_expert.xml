@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar_fixed_term_expert" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+        <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:text="@string/fixed_term_expert_mode_month_filter" fontPath="@string/font_regular" />
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_fixed_term_expert_filters" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:minHeight="44.0dip" />
+    </android.support.design.widget.AppBarLayout>
+    <View style="@style/HorizontalSeparatorThin" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_fixed_term_expert_offers" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

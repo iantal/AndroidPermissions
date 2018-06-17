@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/ApplicationTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/view_offer_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/offer_header_view" />
+    <RelativeLayout android:id="@id/view_bottom_container" android:background="@drawable/header_footer" android:layout_alignParentBottom="true" style="@style/MatchParentWrapContent">
+        <Button android:id="@id/btn_confirm" android:paddingLeft="50.0dip" android:paddingRight="50.0dip" android:text="@string/overview" android:layout_centerInParent="true" style="@style/ButtonStyleNormal" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_above="@id/view_bottom_container" android:layout_below="@id/view_offer_header_container" android:layout_centerInParent="true" style="@style/MatchParentWrapContent">
+        <ImageView android:id="@id/img_offer_status" android:layout_margin="20.0dip" android:src="@drawable/transfer_successful" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/success" style="@style/AllWrapContent" />
+        <TextView android:textColor="@color/text_title" android:gravity="center" android:id="@id/tv_confirmation_msg" android:padding="20.0dip" android:layout_above="@id/img_offer_status" style="@style/TextBoldMatchWrap" />
+    </RelativeLayout>
+</RelativeLayout>

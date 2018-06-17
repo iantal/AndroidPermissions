@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:paddingBottom="@dimen/default_padding" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/cash26_legend_content" android:background="@android:color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="80.0dip" android:layout_alignBottom="@id/cash26_legend_fab" android:layout_alignEnd="@id/cash26_legend_fab" android:elevation="2.0dip">
+        <TextView android:gravity="center_vertical" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/cash26_legend_partners_open" android:drawablePadding="8.0dip" android:drawableStart="@drawable/cash26_open" android:paddingEnd="@dimen/default_padding" />
+        <LinearLayout android:background="@color/grey_bright" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:gravity="center_vertical" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/cash26_legend_partners_closed" android:drawablePadding="8.0dip" android:drawableStart="@drawable/cash26_closed" android:paddingEnd="@dimen/default_padding" />
+        <LinearLayout android:background="@color/grey_bright" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:gravity="center_vertical" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/cash26_legend_atm" android:drawablePadding="8.0dip" android:drawableStart="@drawable/atm_icon" android:paddingEnd="@dimen/default_padding" />
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton android:id="@id/cash26_legend_fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cash26_legend" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/default_margin" android:layout_alignParentEnd="true" app:backgroundTint="@android:color/white" />
+</RelativeLayout>
