@@ -1,0 +1,116 @@
+.class public final Lde/number26/machete/android/refactor/presentation/spaces/creation/image/j;
+.super Ljava/lang/Object;
+.source "SpacesImageSelectionModule_ProvideSpacesImageSelectionItemViewHolderFactoryFactory.java"
+
+# interfaces
+.implements Lc/a/d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lc/a/d<",
+        "Lde/number26/machete/android/refactor/presentation/common/adapter/l;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field static final synthetic a:Z = true
+
+
+# instance fields
+.field private final b:Lde/number26/machete/android/refactor/presentation/spaces/creation/image/g;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>(Lde/number26/machete/android/refactor/presentation/spaces/creation/image/g;)V
+    .locals 1
+
+    .line 14
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 15
+    sget-boolean v0, Lde/number26/machete/android/refactor/presentation/spaces/creation/image/j;->a:Z
+
+    if-nez v0, :cond_0
+
+    if-nez p1, :cond_0
+
+    new-instance p1, Ljava/lang/AssertionError;
+
+    invoke-direct {p1}, Ljava/lang/AssertionError;-><init>()V
+
+    throw p1
+
+    .line 16
+    :cond_0
+    iput-object p1, p0, Lde/number26/machete/android/refactor/presentation/spaces/creation/image/j;->b:Lde/number26/machete/android/refactor/presentation/spaces/creation/image/g;
+
+    return-void
+.end method
+
+.method public static a(Lde/number26/machete/android/refactor/presentation/spaces/creation/image/g;)Lc/a/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lde/number26/machete/android/refactor/presentation/spaces/creation/image/g;",
+            ")",
+            "Lc/a/d<",
+            "Lde/number26/machete/android/refactor/presentation/common/adapter/l;",
+            ">;"
+        }
+    .end annotation
+
+    .line 27
+    new-instance v0, Lde/number26/machete/android/refactor/presentation/spaces/creation/image/j;
+
+    invoke-direct {v0, p0}, Lde/number26/machete/android/refactor/presentation/spaces/creation/image/j;-><init>(Lde/number26/machete/android/refactor/presentation/spaces/creation/image/g;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public a()Lde/number26/machete/android/refactor/presentation/common/adapter/l;
+    .locals 2
+
+    .line 21
+    iget-object v0, p0, Lde/number26/machete/android/refactor/presentation/spaces/creation/image/j;->b:Lde/number26/machete/android/refactor/presentation/spaces/creation/image/g;
+
+    .line 22
+    invoke-virtual {v0}, Lde/number26/machete/android/refactor/presentation/spaces/creation/image/g;->b()Lde/number26/machete/android/refactor/presentation/common/adapter/l;
+
+    move-result-object v0
+
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+
+    .line 21
+    invoke-static {v0, v1}, Lc/a/h;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lde/number26/machete/android/refactor/presentation/common/adapter/l;
+
+    return-object v0
+.end method
+
+.method public synthetic get()Ljava/lang/Object;
+    .locals 1
+
+    .line 8
+    invoke-virtual {p0}, Lde/number26/machete/android/refactor/presentation/spaces/creation/image/j;->a()Lde/number26/machete/android/refactor/presentation/common/adapter/l;
+
+    move-result-object v0
+
+    return-object v0
+.end method

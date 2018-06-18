@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/header" android:layout_width="fill_parent" android:layout_height="@dimen/header_hero_height" android:src="@drawable/background_card_settings" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <de.number26.machete.android.ui.components.ItemView android:id="@id/withdrawal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:subtitle="@string/settings_accountlimits_dailywithdraw_subtitle" app:title="@string/settings_accountlimits_dailywithdraw_title" />
+            <android.support.v7.widget.AppCompatSeekBar android:id="@id/withdraw_limit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" />
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin" layout="@layout/horizontal_separator" />
+            <de.number26.machete.android.ui.components.ItemView android:id="@id/payments" android:layout_width="fill_parent" android:layout_height="wrap_content" app:subtitle="@string/settings_accountlimits_dailypayments_subtitle" app:title="@string/settings_accountlimits_dailypayments_title" />
+            <android.support.v7.widget.AppCompatSeekBar android:id="@id/payment_limit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" />
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin" layout="@layout/horizontal_separator" />
+            <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/textColorSecondary" android:gravity="center_horizontal" android:paddingBottom="@dimen/default_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_accountlimits_bottomtext" android:paddingStart="@dimen/default_padding" android:paddingEnd="@dimen/default_padding" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

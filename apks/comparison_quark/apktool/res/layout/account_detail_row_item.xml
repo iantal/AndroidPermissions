@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/text_title" android:gravity="right" android:id="@id/tv_row_value" android:paddingLeft="10.0dip" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/AccountHeaderTextSmallNormal" />
+    <TextView android:textColor="@color/text_title" android:id="@id/tv_row_key" android:maxLines="1" android:layout_toLeftOf="@id/tv_row_value" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/AccountHeaderTextSmallNormal" />
+</RelativeLayout>

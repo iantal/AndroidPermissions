@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/background1" android:background="@color/grey_bright" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/background2" android:background="@color/grey_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:paddingTop="?actionBarSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v4.view.ViewPager android:id="@id/cardPager" android:layout_width="fill_parent" android:layout_height="175.0dip" />
+            <com.viewpagerindicator.CirclePageIndicator android:id="@id/indicator" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fillColor="@color/grey" app:radius="3.0dip" app:strokeColor="@color/grey" app:strokeWidth="1.0dip" />
+            <de.number26.machete.android.ui.components.WrapContentHeightViewPager android:id="@id/infoPager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

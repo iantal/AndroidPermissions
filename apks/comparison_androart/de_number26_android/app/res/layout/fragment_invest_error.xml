@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/contentHolder" android:background="@color/white" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/LayoutTabletCompatible"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_marginTop="29.0dip" android:src="@drawable/savings_generic_block" />
+    <TextView android:textSize="25.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="4.0dip" android:text="@string/savings_intro_message" fontPath="@string/font_medium" />
+    <TextView android:textSize="16.0sp" android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:lineSpacingExtra="4.0sp" fontPath="@string/font_regular" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

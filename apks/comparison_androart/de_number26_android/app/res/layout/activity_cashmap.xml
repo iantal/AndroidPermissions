@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="?colorPrimary" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="0.0dip" />
+        <com.miguelcatalan.materialsearchview.MaterialSearchView android:id="@id/searchView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:clipToPadding="false" style="@style/LayoutTabletCompatible">
+        <FrameLayout android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/progress" />
+    </FrameLayout>
+</LinearLayout>

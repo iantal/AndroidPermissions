@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/show_case_root_view" android:background="@color/showcase_screen_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/frame" android:layout_width="300.0dip" android:layout_height="300.0dip" android:layout_marginLeft="-126.0dip" android:layout_marginTop="-126.0dip">
+            <at.spardat.bcrmobile.view.widget.PulseEffectLayout android:id="@id/pulse_effect" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TextView android:textColor="@color/text_on_dark" android:id="@id/show_case_menu_text" android:paddingLeft="@dimen/margin_15" android:paddingRight="@dimen/margin_15" android:layout_margin="@dimen/margin_10" android:text="@string/show_case_menu_text" android:layout_below="@id/frame" style="@style/TextBigNormalWrapMatch" />
+    </RelativeLayout>
+    <ImageView android:id="@id/btn_pulse_menu" android:background="@drawable/hamburger_menu_bg" android:padding="@dimen/margin_10" android:layout_width="@dimen/header_height" android:layout_height="@dimen/header_height" android:src="@drawable/ic_hamburger_alb" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <Button android:textColor="#ffffffff" android:id="@id/btn_got_it" android:background="@drawable/btn_show_case_bg" android:padding="@dimen/padding_10" android:layout_margin="20.0dip" android:text="@string/i_got_it" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/TextBigBoldAllWrap" />
+</RelativeLayout>

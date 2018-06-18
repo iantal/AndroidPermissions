@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/payer_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fx_quotation_detail_item" />
+    <include android:id="@id/transaction_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fx_quotation_detail_item" />
+    <include android:id="@id/payee_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fx_quotation_detail_item" />
+    <include android:id="@id/details_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fx_quotation_detail_item" />
+    <include android:id="@id/fx_rate_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fx_quotation_detail_item" />
+    <include android:id="@id/equivalent_amount_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fx_quotation_detail_item" />
+    <include android:id="@id/no_auth_required_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" layout="@layout/fx_quotation_detail_item" />
+    <View style="@style/AllWrapContent" />
+</LinearLayout>

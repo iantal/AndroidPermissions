@@ -1,0 +1,242 @@
+package com.bumptech.glide.gifencoder;
+
+import java.io.IOException;
+import java.io.OutputStream;
+
+class LZWEncoder
+{
+  static final int BITS = 12;
+  private static final int EOF = -1;
+  static final int HSIZE = 5003;
+  int ClearCode;
+  int EOFCode;
+  int a_count;
+  byte[] accum = new byte['Ā'];
+  boolean clear_flg = false;
+  int[] codetab = new int['ᎋ'];
+  private int curPixel;
+  int cur_accum = 0;
+  int cur_bits = 0;
+  int free_ent = 0;
+  int g_init_bits;
+  int hsize = 5003;
+  int[] htab = new int['ᎋ'];
+  private int imgH;
+  private int imgW;
+  private int initCodeSize;
+  int[] masks = { 0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383, 32767, 65535 };
+  int maxbits = 12;
+  int maxcode;
+  int maxmaxcode = 4096;
+  int n_bits;
+  private byte[] pixAry;
+  private int remaining;
+  
+  LZWEncoder(int paramInt1, int paramInt2, byte[] paramArrayOfByte, int paramInt3)
+  {
+    this.imgW = paramInt1;
+    this.imgH = paramInt2;
+    this.pixAry = paramArrayOfByte;
+    this.initCodeSize = Math.max(2, paramInt3);
+  }
+  
+  private int nextPixel()
+  {
+    if (this.remaining == 0) {
+      return -1;
+    }
+    this.remaining -= 1;
+    byte[] arrayOfByte = this.pixAry;
+    int i = this.curPixel;
+    this.curPixel = (i + 1);
+    return arrayOfByte[i] & 0xFF;
+  }
+  
+  final int MAXCODE(int paramInt)
+  {
+    return (1 << paramInt) - 1;
+  }
+  
+  void char_out(byte paramByte, OutputStream paramOutputStream)
+    throws IOException
+  {
+    byte[] arrayOfByte = this.accum;
+    int i = this.a_count;
+    this.a_count = (i + 1);
+    arrayOfByte[i] = ((byte)paramByte);
+    if (this.a_count >= 254) {
+      flush_char(paramOutputStream);
+    }
+  }
+  
+  void cl_block(OutputStream paramOutputStream)
+    throws IOException
+  {
+    cl_hash(this.hsize);
+    this.free_ent = (this.ClearCode + 2);
+    this.clear_flg = true;
+    output(this.ClearCode, paramOutputStream);
+  }
+  
+  void cl_hash(int paramInt)
+  {
+    int i = 0;
+    while (i < paramInt)
+    {
+      this.htab[i] = -1;
+      i += 1;
+    }
+  }
+  
+  void compress(int paramInt, OutputStream paramOutputStream)
+    throws IOException
+  {
+    this.g_init_bits = paramInt;
+    this.clear_flg = false;
+    this.n_bits = this.g_init_bits;
+    this.maxcode = MAXCODE(this.n_bits);
+    this.ClearCode = (1 << paramInt - 1);
+    this.EOFCode = (this.ClearCode + 1);
+    this.free_ent = (this.ClearCode + 2);
+    this.a_count = 0;
+    int i = nextPixel();
+    paramInt = this.hsize;
+    int j = 0;
+    while (paramInt < 65536)
+    {
+      paramInt *= 2;
+      j += 1;
+    }
+    int i1 = this.hsize;
+    cl_hash(i1);
+    output(this.ClearCode, paramOutputStream);
+    paramInt = i;
+    for (;;)
+    {
+      int k = nextPixel();
+      if (k == -1) {
+        break;
+      }
+      int i2 = (k << this.maxbits) + paramInt;
+      i = k << 8 - j ^ paramInt;
+      if (this.htab[i] == i2)
+      {
+        paramInt = this.codetab[i];
+      }
+      else
+      {
+        int m = i;
+        if (this.htab[i] >= 0)
+        {
+          m = i1 - i;
+          int n = i;
+          if (i == 0)
+          {
+            m = 1;
+            n = i;
+          }
+          do
+          {
+            n -= m;
+            i = n;
+            if (n < 0) {
+              i = n + i1;
+            }
+            if (this.htab[i] == i2)
+            {
+              paramInt = this.codetab[i];
+              break;
+            }
+            n = i;
+          } while (this.htab[i] >= 0);
+          m = i;
+        }
+        output(paramInt, paramOutputStream);
+        if (this.free_ent < this.maxmaxcode)
+        {
+          int[] arrayOfInt = this.codetab;
+          paramInt = this.free_ent;
+          this.free_ent = (paramInt + 1);
+          arrayOfInt[m] = paramInt;
+          this.htab[m] = i2;
+          paramInt = k;
+        }
+        else
+        {
+          cl_block(paramOutputStream);
+          paramInt = k;
+        }
+      }
+    }
+    output(paramInt, paramOutputStream);
+    output(this.EOFCode, paramOutputStream);
+  }
+  
+  void encode(OutputStream paramOutputStream)
+    throws IOException
+  {
+    paramOutputStream.write(this.initCodeSize);
+    this.remaining = (this.imgW * this.imgH);
+    this.curPixel = 0;
+    compress(this.initCodeSize + 1, paramOutputStream);
+    paramOutputStream.write(0);
+  }
+  
+  void flush_char(OutputStream paramOutputStream)
+    throws IOException
+  {
+    if (this.a_count > 0)
+    {
+      paramOutputStream.write(this.a_count);
+      paramOutputStream.write(this.accum, 0, this.a_count);
+      this.a_count = 0;
+    }
+  }
+  
+  void output(int paramInt, OutputStream paramOutputStream)
+    throws IOException
+  {
+    this.cur_accum &= this.masks[this.cur_bits];
+    if (this.cur_bits > 0) {}
+    for (this.cur_accum |= paramInt << this.cur_bits;; this.cur_accum = paramInt) {
+      for (this.cur_bits += this.n_bits; this.cur_bits >= 8; this.cur_bits -= 8)
+      {
+        char_out((byte)(this.cur_accum & 0xFF), paramOutputStream);
+        this.cur_accum >>= 8;
+      }
+    }
+    if ((this.free_ent > this.maxcode) || (this.clear_flg))
+    {
+      if (!this.clear_flg) {
+        break label212;
+      }
+      int i = this.g_init_bits;
+      this.n_bits = i;
+      this.maxcode = MAXCODE(i);
+      this.clear_flg = false;
+    }
+    while (paramInt == this.EOFCode)
+    {
+      for (;;)
+      {
+        if (this.cur_bits > 0)
+        {
+          char_out((byte)(this.cur_accum & 0xFF), paramOutputStream);
+          this.cur_accum >>= 8;
+          this.cur_bits -= 8;
+          continue;
+          label212:
+          this.n_bits += 1;
+          if (this.n_bits == this.maxbits)
+          {
+            this.maxcode = this.maxmaxcode;
+            break;
+          }
+          this.maxcode = MAXCODE(this.n_bits);
+          break;
+        }
+      }
+      flush_char(paramOutputStream);
+    }
+  }
+}

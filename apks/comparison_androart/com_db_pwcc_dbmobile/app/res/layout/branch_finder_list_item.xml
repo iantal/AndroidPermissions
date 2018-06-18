@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_margin" android:layout_marginBottom="@dimen/list_item_vertical_margin" android:layout_marginEnd="@dimen/activity_horizontal_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/branch_finder_item_avatar" android:layout_width="@dimen/branch_finder_icon_size" android:layout_height="@dimen/branch_finder_icon_size" android:layout_marginEnd="@dimen/branch_finder_item_icon_marginend" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/branch_finder_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BranchfinderText.Title" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/branch_finder_item_role" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BranchfinderText.Normal" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/branch_finder_item_address" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BranchfinderText.Normal" />
+    </LinearLayout>
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/branch_finder_item_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BranchfinderText.Normal" />
+</LinearLayout>

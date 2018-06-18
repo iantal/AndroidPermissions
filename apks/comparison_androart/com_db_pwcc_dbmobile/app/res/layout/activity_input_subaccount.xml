@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/input_subaccount_container" android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/db_toolbar" />
+    <com.db.pwcc.dbmobile.transfer.views.DbScrollview android:id="@id/input_subaccount_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/input_subaccount_container_principal" android:paddingLeft="@dimen/activity_lateral_padding" android:paddingTop="10.0dip" android:paddingRight="@dimen/activity_lateral_padding" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.dbPicker.DbPicker android:id="@id/input_subaccount_account_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacer_input_default" />
+            <com.db.pwcc.dbmobile.foundation.widgets.dbPicker.DbPicker android:id="@id/input_subaccount_subaccount_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginTop="@dimen/spacer_input_subaccount_amount_top" android:layout_marginBottom="@dimen/spacer_input_subaccount_amount_bottom">
+                <com.db.pwcc.dbmobile.foundation.widgets.CustomTextInputLayout android:theme="@style/FloatingInput" android:id="@id/input_subaccount_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200.0dip" android:layout_centerHorizontal="true">
+                    <com.db.pwcc.dbmobile.transfer.widgets.inputFields.AmountField android:theme="@style/DbEditTextPadding" android:textSize="@dimen/fs_input_hint" android:gravity="center" android:id="@id/input_subaccount_amount_field" android:tag="extraSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/sepatransfer_amountTextField_label" android:maxLines="1" android:digits="0123456789,." android:inputType="numberDecimal" android:imeOptions="actionNext" android:nextFocusForward="@id/input_subaccount_description" />
+                </com.db.pwcc.dbmobile.foundation.widgets.CustomTextInputLayout>
+                <TextView android:textSize="@dimen/fs_input_amount" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/euro_sign" android:layout_centerVertical="true" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" android:layout_toEndOf="@id/input_subaccount_amount" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_input_hint" android:textColor="@color/negativeOrError" android:id="@id/input_subaccount_amount_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/sepatransfer_error_onlineLimitExceeded" android:layout_below="@id/input_subaccount_amount" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="75.0dip">
+                <android.support.design.widget.TextInputLayout android:theme="@style/FloatingInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/sepatransfer_usageTextField_label">
+                    <com.db.pwcc.dbmobile.transfer.widgets.inputFields.InputField android:theme="@style/DbEditTextPadding" android:textSize="@dimen/fs_input_hint" android:id="@id/input_subaccount_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="108" android:inputType="text" android:imeOptions="actionDone" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <com.db.pwcc.dbmobile.foundation.views.button.Button android:id="@id/input_subaccount_done_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacer_input_subaccount_button_top" android:layout_marginBottom="@dimen/spacer_input_default" button:buttonType="primary" button:buttonText="@string/sepatransfer_verify_button_next" xmlns:button="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </com.db.pwcc.dbmobile.transfer.views.DbScrollview>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b0028" android:insetRight="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b0028" android:insetTop="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b0029" android:insetBottom="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b0029"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ripple android:color="?android:colorControlHighlight">
+        <item>
+            <selector>
+                <item android:state_enabled="false">
+                    <shape android:shape="rectangle">
+                        <corners android:radius="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b002d" />
+                        <solid android:color="?android:colorButtonNormal" />
+                        <padding android:left="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b002a" android:top="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b002b" android:right="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b002a" android:bottom="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b002b" />
+                    </shape>
+                </item>
+                <item>
+                    <shape android:shape="rectangle">
+                        <corners android:radius="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b002d" />
+                        <solid android:color="?android:colorAccent" />
+                        <padding android:left="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b002a" android:top="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b002b" android:right="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b002a" android:bottom="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b002b" />
+                    </shape>
+                </item>
+            </selector>
+        </item>
+    </ripple>
+</inset>

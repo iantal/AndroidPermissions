@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:id="@id/double_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:weightSum="1.0" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:id="@id/button_double_layout" android:background="@drawable/main_button_dark" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_weight="0.5" android:layout_alignParentBottom="true" style="@style/mainButtonLayout">
+        <TextView android:textSize="@dimen/main_composed_button" android:textColor="@android:color/white" android:gravity="center" android:id="@id/button_double_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/action_change" android:layout_weight="0.5" fontPath="@string/font_regular" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:id="@id/button1_double_layout" android:background="@drawable/main_button_red" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_weight="0.5" android:layout_alignParentBottom="true" style="@style/mainButtonLayout">
+        <TextView android:textSize="@dimen/main_composed_button" android:textColor="@android:color/white" android:gravity="center" android:id="@id/button1_double_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/action_remove" android:layout_weight="0.5" fontPath="@string/font_regular" />
+    </LinearLayout>
+</LinearLayout>

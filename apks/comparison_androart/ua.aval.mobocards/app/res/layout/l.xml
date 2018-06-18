@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/RtlOverlay.Widget.AppCompat.ActionBar.TitleItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f120060" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:ellipsize="end" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f120061" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b0024" android:singleLine="true" />
+</LinearLayout>

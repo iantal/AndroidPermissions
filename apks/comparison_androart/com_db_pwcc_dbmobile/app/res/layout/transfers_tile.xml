@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.db.pwcc.dbmobile.transfer.views.TransferTileView android:orientation="vertical" android:id="@id/transfer_layout" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:button="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/tile_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/friends_group" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+            <RelativeLayout android:id="@id/add_friends_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="10.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/title_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textAppearance="?android:textAppearanceLarge" android:textSize="22.0sp" android:layout_gravity="center_horizontal" android:id="@id/title" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quick_easy_transfer" />
+                    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0sp" android:textColor="@color/headerSubtitle" android:layout_gravity="center_horizontal" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/add_first_contact" />
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:layout_below="@id/title_group">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/no_friends_placeholer" android:contentDescription="@string/none" />
+                    <ImageButton android:id="@id/add_friend" android:background="@drawable/add_button_selector" android:layout_width="@dimen/add_friend" android:layout_height="@dimen/add_friend" android:layout_centerInParent="true" android:contentDescription="@string/none" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/carousel_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/friend_name_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="20.0sp" android:ellipsize="end" android:gravity="center" android:layout_gravity="center|top" android:id="@id/friend_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:lines="2" android:layout_marginStart="35.0dip" android:layout_marginEnd="35.0dip" />
+                    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="13.0sp" android:textColor="@color/invalidTextColor" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/foreign_transfer_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/foreign_transfer_message" android:lines="2" />
+                </LinearLayout>
+                <com.db.pwcc.dbmobile.transfer.friends.widgets.PagerContainer android:gravity="center" android:id="@id/carousel_container" android:layout_width="fill_parent" android:layout_height="@dimen/carousel_container_height" android:layout_below="@id/friend_name_view_container">
+                    <com.db.pwcc.dbmobile.transfer.friends.widgets.OrderedViewPager android:layout_gravity="center" android:id="@id/overlap_pager" android:layout_width="@dimen/carousel_pager" android:layout_height="@dimen/carousel_pager" android:overScrollMode="never" />
+                </com.db.pwcc.dbmobile.transfer.friends.widgets.PagerContainer>
+                <com.db.pwcc.dbmobile.transfer.friends.widgets.AlphabetView android:layout_gravity="bottom" android:id="@id/alphabet_view" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/carousel_container" />
+                <ImageButton android:id="@id/add_friend_top_right" android:background="@drawable/add_btn_small_selector" android:layout_width="34.0dip" android:layout_height="34.0dip" android:contentDescription="@string/none" android:layout_alignParentEnd="true" />
+                <LinearLayout android:gravity="center" android:id="@id/amount_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/alphabet_view">
+                    <com.db.pwcc.dbmobile.foundation.widgets.CustomTextInputLayout android:theme="@style/FloatingInput" android:id="@id/text_input_amount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.db.pwcc.dbmobile.transfer.widgets.inputFields.AmountField android:theme="@style/DbEditTextPadding" android:textSize="@dimen/fs_input_hint" android:gravity="center" android:id="@id/amount_input" android:tag="extraSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/sepatransfer_amountTextField_label" android:maxLines="1" android:digits="0123456789,." android:inputType="numberDecimal" android:imeOptions="actionNext" android:nextFocusForward="@id/name_person" />
+                    </com.db.pwcc.dbmobile.foundation.widgets.CustomTextInputLayout>
+                    <TextView android:textSize="22.0sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/euro_sign" android:paddingStart="6.0dip" android:paddingEnd="0.0dip" />
+                    <com.db.pwcc.dbmobile.foundation.views.button.Button android:id="@id/next_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/button_margin_lateral" button:buttonType="primary" button:buttonText="@string/next" />
+                </LinearLayout>
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_input_hint" android:textColor="@color/invalidTextColor" android:id="@id/amount_error" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/sepatransfer_error_onlineLimitExceeded" android:maxLines="2" android:layout_below="@id/amount_group" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/description_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:baselineAligned="false" android:layout_below="@id/amount_group">
+                    <com.db.pwcc.dbmobile.foundation.widgets.CustomTextInputLayout android:theme="@style/FloatingInput" android:id="@id/description_floating_hint" android:layout_width="0.0dip" android:layout_height="55.0dip" android:hint="@string/sepatransfer_usageTextField_label" android:layout_weight="2.0">
+                        <com.db.pwcc.dbmobile.transfer.widgets.inputFields.InputField android:theme="@style/DbEditTextPadding" android:textSize="@dimen/fs_input_hint" android:ellipsize="end" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:inputType="text" android:imeOptions="actionDone" android:nextFocusForward="@id/customer_reference" />
+                    </com.db.pwcc.dbmobile.foundation.widgets.CustomTextInputLayout>
+                </LinearLayout>
+                <View android:id="@id/separator" android:background="@color/tile_separator" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="5.0dip" android:layout_marginBottom="17.0dip" android:layout_below="@id/description_group" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@id/transfer_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.db.pwcc.dbmobile.transfer.views.TransferTileView>

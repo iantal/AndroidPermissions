@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/layout_ins_coverage_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Light" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapsing_toolbar_ins_coverage" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="exitUntilCollapsed|scroll|snap">
+            <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/toolbar_ins_coverage" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="144.0dip" app:layout_collapseMode="none">
+                <View android:layout_gravity="bottom" android:id="@id/divider_ins_coverage_provider_image_layout" android:background="@color/grey_ea" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </FrameLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler_ins_coverage_items" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="bottom|center" android:id="@id/image_ins_coverage_powered_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:layout_marginBottom="24.0dip" android:src="@drawable/img_powered_by_clark" />
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <View android:layout_gravity="top" android:id="@id/toolbar_ins_coverage_placeholder" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_anchor="@id/divider_ins_coverage_provider_image_layout" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_ins_coverage_provider" android:layout_width="160.0dip" android:layout_height="64.0dip" android:layout_marginStart="@dimen/screen_insurance_padding_start_end" android:layout_marginEnd="@dimen/screen_insurance_padding_start_end" android:elevation="4.0dip" app:dependencyViewId="@id/toolbar_ins_coverage_placeholder" app:finalHeight="32.0dip" app:layout_behavior="de.number26.machete.android.refactor.presentation.common.widget.TitleImageBehavior" app:startOffset="64.0dip" />
+</android.support.design.widget.CoordinatorLayout>

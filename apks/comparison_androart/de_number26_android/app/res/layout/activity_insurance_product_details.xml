@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/layout_ins_product_details_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Light" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapsing_toolbar_ins_product_details" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="exitUntilCollapsed|scroll|snap">
+            <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:id="@id/toolbar_ins_product_details" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="144.0dip" app:layout_collapseMode="none">
+                <View android:layout_gravity="bottom" android:id="@id/divider_ins_product_details_provider_image_layout" android:background="@color/grey_ea" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </FrameLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView android:id="@id/scroll_ins_product_details" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="72.0dip">
+                <ImageView android:id="@id/image_ins_product_details_category" android:layout_marginStart="20.0dip" style="@style/InsuranceWalletItemIcon" />
+                <TextView android:ellipsize="none" android:id="@id/text_ins_product_details_category" android:maxLines="5" android:layout_marginEnd="16.0dip" android:layout_toStartOf="@id/text_ins_product_details_amount" android:layout_toEndOf="@id/image_ins_product_details_category" style="@style/InsuranceWalletItemCategory" />
+                <TextView android:ellipsize="none" android:id="@id/text_ins_product_details_provider" android:maxLines="5" android:layout_below="@id/text_ins_product_details_category" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/text_ins_product_details_amount" android:layout_toEndOf="@id/image_ins_product_details_category" style="@style/InsuranceWalletItemProvider" />
+                <TextView android:id="@id/text_ins_product_details_amount" android:layout_alignParentEnd="true" style="@style/InsuranceWalletProductItemAmount" />
+                <TextView android:id="@id/text_ins_product_details_amount_interval" android:layout_below="@id/text_ins_product_details_amount" android:layout_alignParentEnd="true" style="@style/InsuranceWalletProductItemInterval" />
+            </RelativeLayout>
+            <LinearLayout android:id="@id/layout_ins_product_details_contract_number" android:visibility="gone" android:paddingStart="20.0dip" style="@style/InsuranceProductDetailsItem">
+                <TextView android:textSize="18.0sp" android:text="@string/insurance_product_details_contract_number" style="@style/InsuranceProductDetailsItemName" />
+                <TextView android:textSize="18.0sp" android:id="@id/text_ins_product_details_contract_number" style="@style/InsuranceProductDetailsItemValue" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/layout_ins_product_details_contract_end_date" android:visibility="gone" android:paddingStart="20.0dip" style="@style/InsuranceProductDetailsItem">
+                <TextView android:text="@string/insurance_product_details_contract_end" style="@style/InsuranceProductDetailsItemName" />
+                <TextView android:id="@id/text_ins_product_details_insurance_contract_end_date" style="@style/InsuranceProductDetailsItemValue" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/layout_ins_product_details_status" android:visibility="gone" android:paddingStart="20.0dip" style="@style/InsuranceProductDetailsItem">
+                <TextView android:text="@string/insurance_product_details_status" style="@style/InsuranceProductDetailsItemName" />
+                <TextView android:textColor="@color/mint_dark" android:id="@id/text_ins_product_details_status" style="@style/InsuranceProductDetailsItemValue" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/layout_ins_product_details_reminder" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="@dimen/screen_insurance_padding_start_end">
+                <TextView android:id="@id/text_ins_product_details_reminder_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/insurance_product_details_reminder_title" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/switch_ins_product_details_reminder" android:layout_alignParentStart="true" />
+                <TextView android:textColor="@color/grey" android:id="@id/text_ins_product_details_reminder_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/insurance_product_details_reminder_subtitle" android:layout_below="@id/text_ins_product_details_reminder_title" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/switch_ins_product_details_reminder" android:layout_alignParentStart="true" />
+                <Switch android:id="@id/switch_ins_product_details_reminder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View android:background="@color/grey_ea" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="12.0dip" />
+            <de.number26.machete.android.adl.DoubleLineIcon android:id="@id/double_line_icon_ins_product_details_coverage" android:layout_width="fill_parent" android:layout_height="wrap_content" app:icon="@drawable/ic_insurance_coverage" app:subtitle="@string/insurance_product_details_coverage_subtitle" app:title="@string/insurance_product_details_coverage_title" />
+            <de.number26.machete.android.adl.DoubleLineIcon android:id="@id/double_line_icon_ins_product_details_contact" android:layout_width="fill_parent" android:layout_height="wrap_content" app:icon="@drawable/ic_insurance_contact" app:subtitle="@string/insurance_product_details_contact_subtitle" app:title="@string/insurance_product_details_contact_title" />
+            <de.number26.machete.android.adl.DoubleLineIcon android:id="@id/double_line_icon_ins_product_details_claim" android:layout_width="fill_parent" android:layout_height="wrap_content" app:icon="@drawable/ic_insurance_claim" app:subtitle="@string/insurance_product_details_claim_subtitle" app:title="@string/insurance_product_details_claim_title" />
+            <de.number26.machete.android.adl.DoubleLineIcon android:id="@id/double_line_icon_ins_product_details_documents" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:icon="@drawable/ic_insurance_documents" app:subtitle="@string/insurance_product_details_documents_subtitle" app:title="@string/insurance_product_details_documents_title" />
+            <de.number26.machete.android.adl.DoubleLineIcon android:id="@id/double_line_icon_ins_product_details_cancellation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:icon="@drawable/ic_insurance_cancellation" app:subtitle="@string/insurance_product_details_cancellation_subtitle" app:title="@string/insurance_product_details_cancellation_title" />
+            <de.number26.machete.android.adl.DoubleLineIcon android:id="@id/double_line_icon_ins_product_details_advice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:icon="@drawable/ic_insurance_advice" app:subtitle="@string/insurance_product_details_advice_subtitle" app:title="@string/insurance_product_details_advice_title" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:layout_marginBottom="24.0dip" android:src="@drawable/img_powered_by_clark" />
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <View android:layout_gravity="top" android:id="@id/toolbar_ins_product_details_placeholder" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_anchor="@id/divider_ins_product_details_provider_image_layout" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_ins_product_details_provider" android:layout_width="160.0dip" android:layout_height="64.0dip" android:layout_marginStart="@dimen/screen_insurance_padding_start_end" android:layout_marginEnd="@dimen/screen_insurance_padding_start_end" android:elevation="4.0dip" app:dependencyViewId="@id/toolbar_ins_product_details_placeholder" app:finalHeight="32.0dip" app:layout_behavior="de.number26.machete.android.refactor.presentation.common.widget.TitleImageBehavior" app:startOffset="64.0dip" />
+</android.support.design.widget.CoordinatorLayout>

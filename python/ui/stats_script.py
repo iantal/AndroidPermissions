@@ -27,6 +27,7 @@ from analyse.permissions_classifier import PermissionsClassifier
 
 import plotly.offline as offline
 import plotly.graph_objs as go
+import plotly.plotly as py
 
 
 libs_apktool = '/home/miki/Documents/GITHUB/AndroidPermissions/libs/apktool/apktool_2.3.0.jar'
@@ -43,6 +44,7 @@ BENCHMARK_MANIFEST = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/icc/"
 BENCHMARK_REFLECTION = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/reflection/"
 BENCHMARK_PERMISSION = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/permission/"
 BENCHMARK_OBFS_LOG = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/obfuscation_and_logging/"
+BENCHMARK_COMP_ANDROART = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/"
 
 
 def create_dir(dir_name):
@@ -131,36 +133,40 @@ def analyse_files(directory):
                 print("########### " + apk)
                 extract_apk(apk)
 
-                # xml_file = os.path.join(dirpath, 'app', 'AndroidManifest.xml')
-                # parser = XMLParser(xml_file)
-                # d = DirectoryAnalyser(dirpath)
-                # perm_classifier = PermissionsClassifier(d, parser)
-                # perm_classifier.write_results(os.path.join(dirpath, 'report', 'permissions.json'))
+                xml_file = os.path.join(dirpath, 'app', 'AndroidManifest.xml')
+                parser = XMLParser(xml_file)
+                d = DirectoryAnalyser(dirpath)
+                perm_classifier = PermissionsClassifier(d, parser)
+                perm_classifier.write_results(os.path.join(dirpath, 'report', 'permissions.json'))
 
                 # package_name = parser.get_package_name()
                 # setup_visualizations(dirpath, package_name)
 
                 apk_analyser = ApplicationAnalyzer(dirpath)
-                # apk_analyser.find_crypto_vulns()
-                # print('\033[92m' + "[+] " + '\033[0m' + "Crypto")
+                apk_analyser.find_crypto_vulns()
+                print('\033[92m' + "[+] " + '\033[0m' + "Crypto")
                 apk_analyser.find_logs()
                 print('\033[92m' + "[+] " + '\033[0m' + "Logs")
-                # apk_analyser.find_manifest_vulns()
-                # print('\033[92m' + "[+] " + '\033[0m' + "Manifest")
+                apk_analyser.find_manifest_vulns()
+                print('\033[92m' + "[+] " + '\033[0m' + "Manifest")
                 apk_analyser.find_obfuscation()
                 print('\033[92m' + "[+] " + '\033[0m' + "Obfuscation")
-                # apk_analyser.find_reflection()
-                # print('\033[92m' + "[+] " + '\033[0m' + "Reflection")
-                # apk_analyser.find_signature()
-                # print('\033[92m' + "[+] " + '\033[0m' + "Signature")
-                # apk_analyser.find_webview_vulns()
-                # print('\033[92m' + "[+] " + '\033[0m' + "WebView")
+                apk_analyser.find_reflection()
+                print('\033[92m' + "[+] " + '\033[0m' + "Reflection")
+                apk_analyser.find_signature()
+                print('\033[92m' + "[+] " + '\033[0m' + "Signature")
+                apk_analyser.find_webview_vulns()
+                print('\033[92m' + "[+] " + '\033[0m' + "WebView")
 
+                os.system("pkill r2")
+                try:
+                    print('\033[92m' + "[*] " + '\033[0m' + "Running radare2")
+                    apk_analyser.run_radare()
+                    print('\033[92m' + "[+] " + '\033[0m' + "Done")
+                except OSError:
+                    print("{*****}  " + apk)
+                os.system("pkill -INT r2")
 
-                # # gc.collect()
-                # print('\033[92m' + "[*] " + '\033[0m' + "Running radare2")
-                # apk_analyser.run_radare()
-                # print('\033[92m' + "[+] " + '\033[0m' + "Done")
 
                 # ch = ChordVisualizer(dirpath, "/".join(package_name.split(".")))
                 # data = json.load(open(os.path.join(dirpath, 'report', 'chord.json')))
@@ -270,7 +276,127 @@ def plot_stats():
     offline.plot(fig, filename='plot.html')
 
 
+def compute_findings_distribution(directory):
+    os.chdir(directory)
+    list_of_dirs = []
+
+    high = 0
+    medium = 0
+    info = 0
+    low = 0
+
+    for (dirpath, dirnames, filenames) in os.walk(directory):
+        if "report/vulns" in dirpath:
+            for filename in filenames:
+                if filename.endswith('.json'):
+                    file = os.path.join(dirpath, filename)
+                    # print(file)
+                    with open(file, 'r') as f:
+                        d = json.load(f)
+
+                    for finding in d["findings"]:
+                        try:
+                            # print(finding["stat"])
+                            if "high" in finding["stat"]:
+                                high += 1
+                            elif "medium" in finding["stat"]:
+                                medium += 1
+                            elif "low" in finding["stat"]:
+                                low += 1
+                            elif "info" in finding["stat"]:
+                                info += 1
+
+                        except Exception:
+                            continue
+    print("[########  STATS  ##########]")
+    print("High: " + str(high))
+    print("Medium: " + str(medium))
+    print("Low: " + str(low))
+    print("Info: " + str(info))
+
+
+def plot_comparison_by_findings():
+    x = ['High', 'Warning', 'Info']
+    y = [62, 23, 12]
+    y2 = [10, 16, 19]
+
+    trace1 = go.Bar(
+        x=x,
+        y=y,
+        text=y,
+        name="AndroART",
+        textposition='auto',
+        marker=dict(
+            color='rgb(158,202,225)',
+            line=dict(
+                color='rgb(8,48,107)',
+                width=1.5),
+        ),
+        opacity=0.6
+    )
+
+    trace2 = go.Bar(
+        x=x,
+        y=y2,
+        text=y2,
+        name="QUARK",
+        textposition='auto',
+        marker=dict(
+            color='rgb(58,200,225)',
+            line=dict(
+                color='rgb(8,48,107)',
+                width=1.5),
+        ),
+        opacity=0.6
+    )
+
+    data = [trace1, trace2]
+    offline.plot(data, filename='plot.html')
+
+
+def plot_comparison_by_app():
+    x = ['App1', 'App2', 'App3', 'App4', 'App5', 'App6']
+    y = [54.97, 304.11, 412.55, 308.32, 191.64, 36.05]
+    y2 = [908.74, 1690.10, 935.94, 1.62, 1.49, 0.84]
+
+    trace1 = go.Bar(
+        x=x,
+        y=y,
+        text=y,
+        name="AndroART",
+        textposition='auto',
+        marker=dict(
+            color='rgb(0, 204, 153)',
+            line=dict(
+                color='rgb(0, 204, 153)',
+                width=1.5),
+        ),
+        opacity=0.6
+    )
+
+    trace2 = go.Bar(
+        x=x,
+        y=y2,
+        text=y2,
+        name="QUARK",
+        textposition='auto',
+        marker=dict(
+            color='rgb(255, 153, 51)',
+            line=dict(
+                color='rgb(255, 153, 51)',
+                width=1.5),
+        ),
+        opacity=0.6
+    )
+
+    data = [trace1, trace2]
+    offline.plot(data, filename='plot.html')
+
+
 if __name__ == "__main__":
     # organize_files(BENCHMARK_OBFS_LOG)
-    analyse_files(BENCHMARK_OBFS_LOG)
+    # analyse_files(BENCHMARK_COMP_ANDROART)
     # plot_stats()
+    # compute_findings_distribution(BENCHMARK_COMP_ANDROART)
+    # plot_comparison_by_findings()
+    plot_comparison_by_app()

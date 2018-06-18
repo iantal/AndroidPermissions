@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/branch_finder_divider" />
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/branch_finder_opening_hours_header_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/branch_finder_detail_small_margin" android:text="@string/branch_finder_detail_opening_hours" android:layout_marginStart="@dimen/activity_horizontal_margin" android:layout_marginEnd="@dimen/activity_horizontal_margin" style="@style/BranchfinderText.Normal" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/branch_finder_opening_hours_always_open_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/branch_finder_detail_text_height" android:text="@string/branch_finder_detail_always_open" android:layout_marginStart="@dimen/activity_horizontal_margin" android:layout_marginEnd="@dimen/activity_horizontal_margin" style="@style/BranchfinderText.Normal" />
+        <TableLayout android:id="@id/branch_finder_weekly_opening_hours_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:stretchColumns="1" android:layout_marginStart="@dimen/opening_hours_horizontal_margin" android:layout_marginEnd="@dimen/opening_hours_horizontal_margin" />
+    </RelativeLayout>
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/branch_finder_detail_small_margin" />
+</merge>

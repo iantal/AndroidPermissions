@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_transaction_history" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/transaction_history" fontPath="@string/font_regular" style="@style/transactionDetailsSectionHeading" />
+        <de.number26.machete.android.ui.components.TransactionDetailsSection android:layout_width="fill_parent" android:layout_height="wrap_content" app:icon="@drawable/linked_tranx">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_linked_transactions_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+            </LinearLayout>
+        </de.number26.machete.android.ui.components.TransactionDetailsSection>
+    </LinearLayout>
+</merge>

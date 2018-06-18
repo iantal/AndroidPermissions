@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.number26.machete.android.ui.cash26.Cash26MapWrapper android:id="@id/mapView_wrapper" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.gms.maps.MapView android:id="@id/mapView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:apiKey="@string/google_maps_api_key" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/overlayingMessage" android:background="@color/blue" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="44.0dip" />
+    </de.number26.machete.android.ui.cash26.Cash26MapWrapper>
+    <include android:id="@id/cash26_legend_layout" app:layout_anchor="@id/mapView_wrapper" app:layout_anchorGravity="end|bottom|center" layout="@layout/cash26_legend" />
+</merge>

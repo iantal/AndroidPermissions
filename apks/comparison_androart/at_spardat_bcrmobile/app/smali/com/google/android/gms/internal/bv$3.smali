@@ -1,0 +1,49 @@
+.class final Lcom/google/android/gms/internal/bv$3;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/google/android/gms/internal/bv;->a(Lcom/google/android/gms/internal/da;)V
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/google/android/gms/internal/da;
+
+.field final synthetic b:Lcom/google/android/gms/internal/bv;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/internal/bv;Lcom/google/android/gms/internal/da;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/bv$3;->b:Lcom/google/android/gms/internal/bv;
+
+    iput-object p2, p0, Lcom/google/android/gms/internal/bv$3;->a:Lcom/google/android/gms/internal/da;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/bv$3;->b:Lcom/google/android/gms/internal/bv;
+
+    invoke-static {v0}, Lcom/google/android/gms/internal/bv;->a(Lcom/google/android/gms/internal/bv;)Lcom/google/android/gms/internal/ch;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/google/android/gms/internal/bv$3;->a:Lcom/google/android/gms/internal/da;
+
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/ch;->a(Lcom/google/android/gms/internal/da;)V
+
+    return-void
+.end method

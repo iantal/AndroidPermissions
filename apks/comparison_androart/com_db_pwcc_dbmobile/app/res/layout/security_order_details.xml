@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/order_details" android:background="@color/screen_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/order_data_section" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:paddingRight="@dimen/padding" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/wkn" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/wkn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:paddingRight="@dimen/padding" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/isin" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/isin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:paddingRight="@dimen/padding" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/short_name" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/short_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:paddingRight="@dimen/padding" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/category" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/category" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:paddingRight="@dimen/padding" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/risk_class" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/risk_class" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:paddingRight="@dimen/padding" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/is_fund" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/is_fund" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:paddingRight="@dimen/padding" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/is_oif" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/is_oif" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:paddingRight="@dimen/padding" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/notation_unit_code" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/notation_unit_code" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:paddingRight="@dimen/padding" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/security_rate_currency" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/security_rate_currency" android:paddingRight="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/security_rate_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/details_error_section" android:paddingLeft="@dimen/padding" android:paddingTop="@dimen/padding" android:paddingRight="@dimen/padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/error" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/control_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding" android:layout_alignParentBottom="true" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.db.pwcc.dbmobile.foundation.views.button.Button android:textSize="@dimen/button_text_size" android:textColor="@color/btn_default_text_selector" android:layout_gravity="center_horizontal" android:id="@id/button_buy" android:background="@drawable/btn_selector_primary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAllCaps="false" app:buttonType="primary" app:buttonText="@string/security_details_buy_button" />
+        <View android:id="@id/buttons_separator" android:layout_width="@dimen/padding" android:layout_height="1.0dip" />
+        <com.db.pwcc.dbmobile.foundation.views.button.Button android:textSize="@dimen/button_text_size" android:textColor="@color/btn_default_text_selector" android:layout_gravity="center_horizontal" android:id="@id/button_sell" android:background="@drawable/btn_selector_primary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAllCaps="false" app:buttonType="primary" app:buttonText="@string/security_details_sell_button" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:color="?l_APKTOOL_DUPLICATENAME_0x7f01008e" android:alpha="?android:disabledAlpha" />
+    <item android:state_focused="true" android:color="?l_APKTOOL_DUPLICATENAME_0x7f01008f" />
+    <item android:state_pressed="true" android:color="?l_APKTOOL_DUPLICATENAME_0x7f01008f" />
+    <item android:color="?l_APKTOOL_DUPLICATENAME_0x7f01008f" android:state_activated="true" />
+    <item android:state_selected="true" android:color="?l_APKTOOL_DUPLICATENAME_0x7f01008f" />
+    <item android:state_checked="true" android:color="?l_APKTOOL_DUPLICATENAME_0x7f01008f" />
+    <item android:color="?l_APKTOOL_DUPLICATENAME_0x7f01008e" />
+</selector>

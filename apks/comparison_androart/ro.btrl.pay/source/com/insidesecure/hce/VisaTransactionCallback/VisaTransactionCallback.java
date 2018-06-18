@@ -1,0 +1,6 @@
+package com.insidesecure.hce.VisaTransactionCallback;
+
+public abstract interface VisaTransactionCallback
+{
+  public abstract CdCvmNotificationVelocityCheck cdcvmNotificationVelocityChecks(VisaTransactionInformation paramVisaTransactionInformation);
+}

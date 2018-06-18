@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingBottom="10.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/iban_check_progress" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="2.0dip" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    <com.db.pwcc.dbmobile.foundation.widgets.CustomTextInputLayout android:theme="@style/FloatingInput" android:id="@id/text_input_iban" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginStart="5.0dip">
+        <com.db.pwcc.dbmobile.transfer.widgets.inputFields.iban.IbanField android:theme="@style/DbEditTextPadding" android:textSize="@dimen/fs_input_hint" android:id="@id/iban" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:hint="@string/sepatransfer_iban_label" android:inputType="textVisiblePassword|textCapCharacters" android:imeOptions="actionDone" android:nextFocusForward="@id/description" />
+    </com.db.pwcc.dbmobile.foundation.widgets.CustomTextInputLayout>
+</RelativeLayout>

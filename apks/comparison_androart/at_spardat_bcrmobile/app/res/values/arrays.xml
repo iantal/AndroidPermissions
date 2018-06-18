@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hockey_app_available_type">
+        <item>Disable</item>
+        <item>Enable</item>
+    </string-array>
+    <string-array name="language">
+        <item>English</item>
+        <item>Romanian</item>
+    </string-array>
+    <string-array name="logging_available_type">
+        <item>Disable</item>
+        <item>Enable</item>
+    </string-array>
+    <string-array name="supported_envt">
+        <item>FAT</item>
+        <item>PROD</item>
+    </string-array>
+    <string-array name="RO">
+        <item>RO</item>
+        <item>Romania</item>
+    </string-array>
+    <string-array name="call_deposit_payment_options">
+        <item>@string/dashboard_title_open_term_deposit</item>
+        <item>@string/transfer</item>
+    </string-array>
+    <string-array name="country_codes">
+        <item>-</item>
+        <item>AR</item>
+        <item>AU</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>CA</item>
+        <item>CH</item>
+        <item>CN</item>
+        <item>CZ</item>
+        <item>DE</item>
+        <item>DK</item>
+        <item>ES</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GB</item>
+        <item>GR</item>
+        <item>HU</item>
+        <item>ID</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>KR</item>
+        <item>NL</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>RO</item>
+        <item>RU</item>
+        <item>SE</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>TR</item>
+        <item>TW</item>
+        <item>US</item>
+    </string-array>
+    <string-array name="credit_card_payment_options">
+        <item>@string/pay_minimum_amount</item>
+        <item>@string/pay_total_debts</item>
+    </string-array>
+    <string-array name="first_cert_issuer_attribs_fat">
+        <item>O</item>
+    </string-array>
+    <string-array name="first_cert_issuer_attribs_prod">
+        <item>O</item>
+    </string-array>
+    <string-array name="first_cert_issuer_values_fat">
+        <item>Symantec Corporation</item>
+    </string-array>
+    <string-array name="first_cert_issuer_values_prod">
+        <item>Symantec Corporation</item>
+    </string-array>
+    <string-array name="first_cert_subject_attribs_fat">
+        <item>CN</item>
+        <item>O</item>
+        <item>L</item>
+        <item>ST</item>
+        <item>C</item>
+    </string-array>
+    <string-array name="first_cert_subject_attribs_prod">
+        <item>CN</item>
+        <item>O</item>
+        <item>L</item>
+        <item>ST</item>
+        <item>C</item>
+    </string-array>
+    <string-array name="first_cert_subject_values_fat">
+        <item>bcrmobileapp.fat.24banking.ro</item>
+        <item>Banca Comerciala Romana SA</item>
+        <item>Bucharest</item>
+        <item>Bucharest</item>
+        <item>RO</item>
+    </string-array>
+    <string-array name="first_cert_subject_values_prod">
+        <item>bcrmobileapp.24banking.ro</item>
+        <item>Banca Comerciala Romana SA</item>
+        <item>Bucharest</item>
+        <item>Bucharest</item>
+        <item>RO</item>
+    </string-array>
+    <string-array name="google_doc_supported_file_type">
+        <item>.pdf</item>
+        <item>.doc</item>
+        <item>.ppt</item>
+        <item>.xls</item>
+        <item>.docx</item>
+        <item>.pptx</item>
+        <item>.xlsx</item>
+        <item>.txt</item>
+    </string-array>
+    <string-array name="preferences_front_light_options">
+        <item>@string/preferences_front_light_on</item>
+        <item>@string/preferences_front_light_auto</item>
+        <item>@string/preferences_front_light_off</item>
+    </string-array>
+    <string-array name="preferences_front_light_values">
+        <item>ON</item>
+        <item>AUTO</item>
+        <item>OFF</item>
+    </string-array>
+    <string-array name="second_cert_issuer_attribs_fat">
+        <item>O</item>
+    </string-array>
+    <string-array name="second_cert_issuer_attribs_prod">
+        <item>O</item>
+    </string-array>
+    <string-array name="second_cert_issuer_values_fat">
+        <item>DigiCert Inc</item>
+    </string-array>
+    <string-array name="second_cert_issuer_values_prod">
+        <item>DigiCert Inc</item>
+    </string-array>
+    <string-array name="second_cert_subject_attribs_fat">
+        <item>CN</item>
+        <item>O</item>
+        <item>L</item>
+        <item>C</item>
+    </string-array>
+    <string-array name="second_cert_subject_attribs_prod">
+        <item>CN</item>
+        <item>O</item>
+        <item>L</item>
+        <item>C</item>
+    </string-array>
+    <string-array name="second_cert_subject_values_fat">
+        <item>bcrmobileapp.fat.24banking.ro</item>
+        <item>Banca Comerciala Romana SA</item>
+        <item>Bucharest</item>
+        <item>RO</item>
+    </string-array>
+    <string-array name="second_cert_subject_values_prod">
+        <item>bcrmobileapp.24banking.ro</item>
+        <item>Banca Comerciala Romana SA</item>
+        <item>Bucharest</item>
+        <item>RO</item>
+    </string-array>
+    <string-array name="third_cert_issuer_attribs_prod">
+        <item>O</item>
+    </string-array>
+    <string-array name="third_cert_issuer_values_prod">
+        <item>Symantec Corporation</item>
+    </string-array>
+    <string-array name="third_cert_subject_attribs_prod">
+        <item>CN</item>
+        <item>O</item>
+        <item>L</item>
+        <item>ST</item>
+        <item>C</item>
+    </string-array>
+    <string-array name="third_cert_subject_values_prod">
+        <item>bcrmobileapp.24banking.ro</item>
+        <item>Banca Comerciala Romana SA</item>
+        <item>Bucuresti</item>
+        <item>Bucuresti</item>
+        <item>RO</item>
+    </string-array>
+</resources>

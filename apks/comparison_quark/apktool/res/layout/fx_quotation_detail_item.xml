@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" style="@style/MatchParentWrapContent">
+        <TextView android:textColor="@color/text_on_dark" android:gravity="right" android:id="@id/quotation_value" android:maxLines="1" android:layout_alignParentRight="true" style="@style/AccountHeaderTextSmallNormal" />
+        <TextView android:textColor="@color/text_on_dark" android:ellipsize="end" android:id="@id/quotation_key" android:paddingRight="10.0dip" android:maxLines="1" android:layout_toLeftOf="@id/quotation_value" android:layout_alignParentLeft="true" style="@style/AccountHeaderTextSmallNormal" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/text_on_dark" android:gravity="right" android:id="@id/fx_quotation_amount" android:visibility="gone" android:layout_width="fill_parent" style="@style/AccountHeaderTextSmallNormal" />
+</LinearLayout>

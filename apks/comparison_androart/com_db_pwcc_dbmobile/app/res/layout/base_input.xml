@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacer_input_amount_top" android:layout_marginBottom="@dimen/spacer_input_amount_bottom">
+        <com.db.pwcc.dbmobile.foundation.widgets.CustomTextInputLayout android:theme="@style/FloatingInput" android:id="@id/text_input_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200.0dip" android:hint="@string/sepatransfer_amountTextField_label" android:layout_centerInParent="true">
+            <com.db.pwcc.dbmobile.transfer.widgets.inputFields.AmountField android:theme="@style/DbEditTextPadding" android:textSize="@dimen/fs_input_hint" android:gravity="center" android:id="@id/sum" android:tag="extraSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:digits="0123456789,." android:inputType="numberDecimal" android:imeOptions="actionNext" android:nextFocusForward="@id/name_person" />
+        </com.db.pwcc.dbmobile.foundation.widgets.CustomTextInputLayout>
+        <TextView android:textSize="@dimen/fs_input_amount" android:paddingTop="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/euro_sign" android:layout_centerVertical="true" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" android:layout_toEndOf="@id/text_input_amount" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_input_hint" android:textColor="@color/invalidTextColor" android:gravity="center" android:id="@id/amount_error" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/sepatransfer_error_onlineLimitExceeded" android:layout_below="@id/text_input_amount" />
+    </RelativeLayout>
+    <RelativeLayout android:paddingBottom="@dimen/spacer_input_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout android:theme="@style/FloatingInput" android:layout_width="fill_parent" android:layout_height="@dimen/input_field_height_default" android:hint="@string/sepatransfer_name_label">
+            <com.db.pwcc.dbmobile.transfer.widgets.inputFields.InputField android:theme="@style/DbEditTextPadding" android:textSize="@dimen/fs_input_hint" android:id="@id/name_person" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPersonName|textCapWords" android:imeOptions="actionNext" android:nextFocusForward="@id/iban" android:paddingStart="5.0dip" android:paddingEnd="30.0dip" />
+        </android.support.design.widget.TextInputLayout>
+        <ImageView android:id="@id/sepa_templates_button" android:padding="@dimen/picker_edittext_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacer_input_small" android:src="@drawable/templates_button_background" android:contentDescription="@string/sepatransfer_accessibility_templates" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.db.pwcc.dbmobile.transfer.widgets.inputFields.iban.IbanGroup android:id="@id/iban_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="-5.0dip" />
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/spacer_input_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <android.support.design.widget.TextInputLayout android:theme="@style/FloatingInput" android:layout_width="0.0dip" android:layout_height="@dimen/input_field_height_default" android:hint="@string/sepatransfer_usageTextField_label" android:layout_weight="2.0">
+            <com.db.pwcc.dbmobile.transfer.widgets.inputFields.InputField android:theme="@style/DbEditTextPadding" android:textSize="@dimen/fs_input_hint" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:inputType="text" android:imeOptions="actionNext" android:nextFocusForward="@id/customer_reference" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <com.db.pwcc.dbmobile.transfer.widgets.inputFields.customer_reference.CustomerReferenceGroup android:theme="@style/FloatingInput" android:id="@id/customer_reference_group" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

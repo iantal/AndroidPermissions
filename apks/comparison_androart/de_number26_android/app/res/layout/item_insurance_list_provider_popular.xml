@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_insurance_list_item_popular_provider" android:layout_width="fill_parent" android:layout_height="84.0dip" android:foreground="@null" style="@style/InsuranceListItemPopular"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_insurance_list_item_provider_popular" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:scaleType="centerInside" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+    <View android:id="@id/overlay_insurance_list_item_provider_popular" android:background="@drawable/overlay_insurance_list_item_popular_provider" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?selectableItemBackground" />
+</FrameLayout>

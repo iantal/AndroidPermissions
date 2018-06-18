@@ -1,0 +1,873 @@
+package com.google.zxing.g.a;
+
+import com.google.zxing.b.b;
+import com.google.zxing.h;
+
+public final class j
+{
+  private static final int[] a = { 31892, 34236, 39577, 42195, 48118, 51042, 55367, 58893, 63784, 68472, 70749, 76311, 79154, 84390, 87683, 92361, 96236, 102084, 102881, 110507, 110734, 117786, 119615, 126325, 127568, 133589, 136944, 141498, 145311, 150283, 152622, 158308, 161089, 167017 };
+  private static final j[] b = f();
+  private final int c;
+  private final int[] d;
+  private final l[] e;
+  private final int f;
+  
+  private j(int paramInt, int[] paramArrayOfInt, l... paramVarArgs)
+  {
+    this.c = paramInt;
+    this.d = paramArrayOfInt;
+    this.e = paramVarArgs;
+    int j = paramVarArgs[0].a();
+    k[] arrayOfK = paramVarArgs[0].d();
+    int k = arrayOfK.length;
+    int m = 0;
+    while (i < k)
+    {
+      k localK = arrayOfK[i];
+      m += localK.a() * (j + localK.b());
+      i++;
+    }
+    this.f = m;
+  }
+  
+  public static j a(int paramInt)
+  {
+    if (paramInt % 4 != 1) {
+      throw h.a();
+    }
+    int i = paramInt - 17;
+    try
+    {
+      j localJ = b(i / 4);
+      return localJ;
+    }
+    catch (IllegalArgumentException localIllegalArgumentException)
+    {
+      throw h.a();
+    }
+  }
+  
+  public static j b(int paramInt)
+  {
+    if ((paramInt <= 0) || (paramInt > 40)) {
+      throw new IllegalArgumentException();
+    }
+    return b[(paramInt - 1)];
+  }
+  
+  static j c(int paramInt)
+  {
+    int i = 0;
+    int j = Integer.MAX_VALUE;
+    int k = 0;
+    while (i < a.length)
+    {
+      int m = a[i];
+      if (m == paramInt) {
+        return b(i + 7);
+      }
+      int n = g.a(paramInt, m);
+      if (n < j)
+      {
+        k = i + 7;
+        j = n;
+      }
+      i++;
+    }
+    if (j <= 3) {
+      return b(k);
+    }
+    return null;
+  }
+  
+  private static j[] f()
+  {
+    j[] arrayOfJ = new j[40];
+    int[] arrayOfInt1 = new int[0];
+    l[] arrayOfL1 = new l[4];
+    k[] arrayOfK1 = new k[1];
+    arrayOfK1[0] = new k(1, 19);
+    arrayOfL1[0] = new l(7, arrayOfK1);
+    k[] arrayOfK2 = new k[1];
+    arrayOfK2[0] = new k(1, 16);
+    arrayOfL1[1] = new l(10, arrayOfK2);
+    k[] arrayOfK3 = new k[1];
+    arrayOfK3[0] = new k(1, 13);
+    arrayOfL1[2] = new l(13, arrayOfK3);
+    k[] arrayOfK4 = new k[1];
+    arrayOfK4[0] = new k(1, 9);
+    arrayOfL1[3] = new l(17, arrayOfK4);
+    arrayOfJ[0] = new j(1, arrayOfInt1, arrayOfL1);
+    int[] arrayOfInt2 = { 6, 18 };
+    l[] arrayOfL2 = new l[4];
+    k[] arrayOfK5 = new k[1];
+    arrayOfK5[0] = new k(1, 34);
+    arrayOfL2[0] = new l(10, arrayOfK5);
+    k[] arrayOfK6 = new k[1];
+    arrayOfK6[0] = new k(1, 28);
+    arrayOfL2[1] = new l(16, arrayOfK6);
+    k[] arrayOfK7 = new k[1];
+    arrayOfK7[0] = new k(1, 22);
+    arrayOfL2[2] = new l(22, arrayOfK7);
+    k[] arrayOfK8 = new k[1];
+    arrayOfK8[0] = new k(1, 16);
+    arrayOfL2[3] = new l(28, arrayOfK8);
+    arrayOfJ[1] = new j(2, arrayOfInt2, arrayOfL2);
+    int[] arrayOfInt3 = { 6, 22 };
+    l[] arrayOfL3 = new l[4];
+    k[] arrayOfK9 = new k[1];
+    arrayOfK9[0] = new k(1, 55);
+    arrayOfL3[0] = new l(15, arrayOfK9);
+    k[] arrayOfK10 = new k[1];
+    arrayOfK10[0] = new k(1, 44);
+    arrayOfL3[1] = new l(26, arrayOfK10);
+    k[] arrayOfK11 = new k[1];
+    arrayOfK11[0] = new k(2, 17);
+    arrayOfL3[2] = new l(18, arrayOfK11);
+    k[] arrayOfK12 = new k[1];
+    arrayOfK12[0] = new k(2, 13);
+    arrayOfL3[3] = new l(22, arrayOfK12);
+    arrayOfJ[2] = new j(3, arrayOfInt3, arrayOfL3);
+    int[] arrayOfInt4 = { 6, 26 };
+    l[] arrayOfL4 = new l[4];
+    k[] arrayOfK13 = new k[1];
+    arrayOfK13[0] = new k(1, 80);
+    arrayOfL4[0] = new l(20, arrayOfK13);
+    k[] arrayOfK14 = new k[1];
+    arrayOfK14[0] = new k(2, 32);
+    arrayOfL4[1] = new l(18, arrayOfK14);
+    k[] arrayOfK15 = new k[1];
+    arrayOfK15[0] = new k(2, 24);
+    arrayOfL4[2] = new l(26, arrayOfK15);
+    k[] arrayOfK16 = new k[1];
+    arrayOfK16[0] = new k(4, 9);
+    arrayOfL4[3] = new l(16, arrayOfK16);
+    arrayOfJ[3] = new j(4, arrayOfInt4, arrayOfL4);
+    int[] arrayOfInt5 = { 6, 30 };
+    l[] arrayOfL5 = new l[4];
+    k[] arrayOfK17 = new k[1];
+    arrayOfK17[0] = new k(1, 108);
+    arrayOfL5[0] = new l(26, arrayOfK17);
+    k[] arrayOfK18 = new k[1];
+    arrayOfK18[0] = new k(2, 43);
+    arrayOfL5[1] = new l(24, arrayOfK18);
+    k[] arrayOfK19 = new k[2];
+    arrayOfK19[0] = new k(2, 15);
+    arrayOfK19[1] = new k(2, 16);
+    arrayOfL5[2] = new l(18, arrayOfK19);
+    k[] arrayOfK20 = new k[2];
+    arrayOfK20[0] = new k(2, 11);
+    arrayOfK20[1] = new k(2, 12);
+    arrayOfL5[3] = new l(22, arrayOfK20);
+    arrayOfJ[4] = new j(5, arrayOfInt5, arrayOfL5);
+    int[] arrayOfInt6 = { 6, 34 };
+    l[] arrayOfL6 = new l[4];
+    k[] arrayOfK21 = new k[1];
+    arrayOfK21[0] = new k(2, 68);
+    arrayOfL6[0] = new l(18, arrayOfK21);
+    k[] arrayOfK22 = new k[1];
+    arrayOfK22[0] = new k(4, 27);
+    arrayOfL6[1] = new l(16, arrayOfK22);
+    k[] arrayOfK23 = new k[1];
+    arrayOfK23[0] = new k(4, 19);
+    arrayOfL6[2] = new l(24, arrayOfK23);
+    k[] arrayOfK24 = new k[1];
+    arrayOfK24[0] = new k(4, 15);
+    arrayOfL6[3] = new l(28, arrayOfK24);
+    arrayOfJ[5] = new j(6, arrayOfInt6, arrayOfL6);
+    int[] arrayOfInt7 = { 6, 22, 38 };
+    l[] arrayOfL7 = new l[4];
+    k[] arrayOfK25 = new k[1];
+    arrayOfK25[0] = new k(2, 78);
+    arrayOfL7[0] = new l(20, arrayOfK25);
+    k[] arrayOfK26 = new k[1];
+    arrayOfK26[0] = new k(4, 31);
+    arrayOfL7[1] = new l(18, arrayOfK26);
+    k[] arrayOfK27 = new k[2];
+    arrayOfK27[0] = new k(2, 14);
+    arrayOfK27[1] = new k(4, 15);
+    arrayOfL7[2] = new l(18, arrayOfK27);
+    k[] arrayOfK28 = new k[2];
+    arrayOfK28[0] = new k(4, 13);
+    arrayOfK28[1] = new k(1, 14);
+    arrayOfL7[3] = new l(26, arrayOfK28);
+    arrayOfJ[6] = new j(7, arrayOfInt7, arrayOfL7);
+    int[] arrayOfInt8 = { 6, 24, 42 };
+    l[] arrayOfL8 = new l[4];
+    k[] arrayOfK29 = new k[1];
+    arrayOfK29[0] = new k(2, 97);
+    arrayOfL8[0] = new l(24, arrayOfK29);
+    k[] arrayOfK30 = new k[2];
+    arrayOfK30[0] = new k(2, 38);
+    arrayOfK30[1] = new k(2, 39);
+    arrayOfL8[1] = new l(22, arrayOfK30);
+    k[] arrayOfK31 = new k[2];
+    arrayOfK31[0] = new k(4, 18);
+    arrayOfK31[1] = new k(2, 19);
+    arrayOfL8[2] = new l(22, arrayOfK31);
+    k[] arrayOfK32 = new k[2];
+    arrayOfK32[0] = new k(4, 14);
+    arrayOfK32[1] = new k(2, 15);
+    arrayOfL8[3] = new l(26, arrayOfK32);
+    arrayOfJ[7] = new j(8, arrayOfInt8, arrayOfL8);
+    int[] arrayOfInt9 = { 6, 26, 46 };
+    l[] arrayOfL9 = new l[4];
+    k[] arrayOfK33 = new k[1];
+    arrayOfK33[0] = new k(2, 116);
+    arrayOfL9[0] = new l(30, arrayOfK33);
+    k[] arrayOfK34 = new k[2];
+    arrayOfK34[0] = new k(3, 36);
+    arrayOfK34[1] = new k(2, 37);
+    arrayOfL9[1] = new l(22, arrayOfK34);
+    k[] arrayOfK35 = new k[2];
+    arrayOfK35[0] = new k(4, 16);
+    arrayOfK35[1] = new k(4, 17);
+    arrayOfL9[2] = new l(20, arrayOfK35);
+    k[] arrayOfK36 = new k[2];
+    arrayOfK36[0] = new k(4, 12);
+    arrayOfK36[1] = new k(4, 13);
+    arrayOfL9[3] = new l(24, arrayOfK36);
+    arrayOfJ[8] = new j(9, arrayOfInt9, arrayOfL9);
+    int[] arrayOfInt10 = { 6, 28, 50 };
+    l[] arrayOfL10 = new l[4];
+    k[] arrayOfK37 = new k[2];
+    arrayOfK37[0] = new k(2, 68);
+    arrayOfK37[1] = new k(2, 69);
+    arrayOfL10[0] = new l(18, arrayOfK37);
+    k[] arrayOfK38 = new k[2];
+    arrayOfK38[0] = new k(4, 43);
+    arrayOfK38[1] = new k(1, 44);
+    arrayOfL10[1] = new l(26, arrayOfK38);
+    k[] arrayOfK39 = new k[2];
+    arrayOfK39[0] = new k(6, 19);
+    arrayOfK39[1] = new k(2, 20);
+    arrayOfL10[2] = new l(24, arrayOfK39);
+    k[] arrayOfK40 = new k[2];
+    arrayOfK40[0] = new k(6, 15);
+    arrayOfK40[1] = new k(2, 16);
+    arrayOfL10[3] = new l(28, arrayOfK40);
+    arrayOfJ[9] = new j(10, arrayOfInt10, arrayOfL10);
+    int[] arrayOfInt11 = { 6, 30, 54 };
+    l[] arrayOfL11 = new l[4];
+    k[] arrayOfK41 = new k[1];
+    arrayOfK41[0] = new k(4, 81);
+    arrayOfL11[0] = new l(20, arrayOfK41);
+    k[] arrayOfK42 = new k[2];
+    arrayOfK42[0] = new k(1, 50);
+    arrayOfK42[1] = new k(4, 51);
+    arrayOfL11[1] = new l(30, arrayOfK42);
+    k[] arrayOfK43 = new k[2];
+    arrayOfK43[0] = new k(4, 22);
+    arrayOfK43[1] = new k(4, 23);
+    arrayOfL11[2] = new l(28, arrayOfK43);
+    k[] arrayOfK44 = new k[2];
+    arrayOfK44[0] = new k(3, 12);
+    arrayOfK44[1] = new k(8, 13);
+    arrayOfL11[3] = new l(24, arrayOfK44);
+    arrayOfJ[10] = new j(11, arrayOfInt11, arrayOfL11);
+    int[] arrayOfInt12 = { 6, 32, 58 };
+    l[] arrayOfL12 = new l[4];
+    k[] arrayOfK45 = new k[2];
+    arrayOfK45[0] = new k(2, 92);
+    arrayOfK45[1] = new k(2, 93);
+    arrayOfL12[0] = new l(24, arrayOfK45);
+    k[] arrayOfK46 = new k[2];
+    arrayOfK46[0] = new k(6, 36);
+    arrayOfK46[1] = new k(2, 37);
+    arrayOfL12[1] = new l(22, arrayOfK46);
+    k[] arrayOfK47 = new k[2];
+    arrayOfK47[0] = new k(4, 20);
+    arrayOfK47[1] = new k(6, 21);
+    arrayOfL12[2] = new l(26, arrayOfK47);
+    k[] arrayOfK48 = new k[2];
+    arrayOfK48[0] = new k(7, 14);
+    arrayOfK48[1] = new k(4, 15);
+    arrayOfL12[3] = new l(28, arrayOfK48);
+    arrayOfJ[11] = new j(12, arrayOfInt12, arrayOfL12);
+    int[] arrayOfInt13 = { 6, 34, 62 };
+    l[] arrayOfL13 = new l[4];
+    k[] arrayOfK49 = new k[1];
+    arrayOfK49[0] = new k(4, 107);
+    arrayOfL13[0] = new l(26, arrayOfK49);
+    k[] arrayOfK50 = new k[2];
+    arrayOfK50[0] = new k(8, 37);
+    arrayOfK50[1] = new k(1, 38);
+    arrayOfL13[1] = new l(22, arrayOfK50);
+    k[] arrayOfK51 = new k[2];
+    arrayOfK51[0] = new k(8, 20);
+    arrayOfK51[1] = new k(4, 21);
+    arrayOfL13[2] = new l(24, arrayOfK51);
+    k[] arrayOfK52 = new k[2];
+    arrayOfK52[0] = new k(12, 11);
+    arrayOfK52[1] = new k(4, 12);
+    arrayOfL13[3] = new l(22, arrayOfK52);
+    arrayOfJ[12] = new j(13, arrayOfInt13, arrayOfL13);
+    int[] arrayOfInt14 = { 6, 26, 46, 66 };
+    l[] arrayOfL14 = new l[4];
+    k[] arrayOfK53 = new k[2];
+    arrayOfK53[0] = new k(3, 115);
+    arrayOfK53[1] = new k(1, 116);
+    arrayOfL14[0] = new l(30, arrayOfK53);
+    k[] arrayOfK54 = new k[2];
+    arrayOfK54[0] = new k(4, 40);
+    arrayOfK54[1] = new k(5, 41);
+    arrayOfL14[1] = new l(24, arrayOfK54);
+    k[] arrayOfK55 = new k[2];
+    arrayOfK55[0] = new k(11, 16);
+    arrayOfK55[1] = new k(5, 17);
+    arrayOfL14[2] = new l(20, arrayOfK55);
+    k[] arrayOfK56 = new k[2];
+    arrayOfK56[0] = new k(11, 12);
+    arrayOfK56[1] = new k(5, 13);
+    arrayOfL14[3] = new l(24, arrayOfK56);
+    arrayOfJ[13] = new j(14, arrayOfInt14, arrayOfL14);
+    int[] arrayOfInt15 = { 6, 26, 48, 70 };
+    l[] arrayOfL15 = new l[4];
+    k[] arrayOfK57 = new k[2];
+    arrayOfK57[0] = new k(5, 87);
+    arrayOfK57[1] = new k(1, 88);
+    arrayOfL15[0] = new l(22, arrayOfK57);
+    k[] arrayOfK58 = new k[2];
+    arrayOfK58[0] = new k(5, 41);
+    arrayOfK58[1] = new k(5, 42);
+    arrayOfL15[1] = new l(24, arrayOfK58);
+    k[] arrayOfK59 = new k[2];
+    arrayOfK59[0] = new k(5, 24);
+    arrayOfK59[1] = new k(7, 25);
+    arrayOfL15[2] = new l(30, arrayOfK59);
+    k[] arrayOfK60 = new k[2];
+    arrayOfK60[0] = new k(11, 12);
+    arrayOfK60[1] = new k(7, 13);
+    arrayOfL15[3] = new l(24, arrayOfK60);
+    arrayOfJ[14] = new j(15, arrayOfInt15, arrayOfL15);
+    int[] arrayOfInt16 = { 6, 26, 50, 74 };
+    l[] arrayOfL16 = new l[4];
+    k[] arrayOfK61 = new k[2];
+    arrayOfK61[0] = new k(5, 98);
+    arrayOfK61[1] = new k(1, 99);
+    arrayOfL16[0] = new l(24, arrayOfK61);
+    k[] arrayOfK62 = new k[2];
+    arrayOfK62[0] = new k(7, 45);
+    arrayOfK62[1] = new k(3, 46);
+    arrayOfL16[1] = new l(28, arrayOfK62);
+    k[] arrayOfK63 = new k[2];
+    arrayOfK63[0] = new k(15, 19);
+    arrayOfK63[1] = new k(2, 20);
+    arrayOfL16[2] = new l(24, arrayOfK63);
+    k[] arrayOfK64 = new k[2];
+    arrayOfK64[0] = new k(3, 15);
+    arrayOfK64[1] = new k(13, 16);
+    arrayOfL16[3] = new l(30, arrayOfK64);
+    arrayOfJ[15] = new j(16, arrayOfInt16, arrayOfL16);
+    int[] arrayOfInt17 = { 6, 30, 54, 78 };
+    l[] arrayOfL17 = new l[4];
+    k[] arrayOfK65 = new k[2];
+    arrayOfK65[0] = new k(1, 107);
+    arrayOfK65[1] = new k(5, 108);
+    arrayOfL17[0] = new l(28, arrayOfK65);
+    k[] arrayOfK66 = new k[2];
+    arrayOfK66[0] = new k(10, 46);
+    arrayOfK66[1] = new k(1, 47);
+    arrayOfL17[1] = new l(28, arrayOfK66);
+    k[] arrayOfK67 = new k[2];
+    arrayOfK67[0] = new k(1, 22);
+    arrayOfK67[1] = new k(15, 23);
+    arrayOfL17[2] = new l(28, arrayOfK67);
+    k[] arrayOfK68 = new k[2];
+    arrayOfK68[0] = new k(2, 14);
+    arrayOfK68[1] = new k(17, 15);
+    arrayOfL17[3] = new l(28, arrayOfK68);
+    arrayOfJ[16] = new j(17, arrayOfInt17, arrayOfL17);
+    int[] arrayOfInt18 = { 6, 30, 56, 82 };
+    l[] arrayOfL18 = new l[4];
+    k[] arrayOfK69 = new k[2];
+    arrayOfK69[0] = new k(5, 120);
+    arrayOfK69[1] = new k(1, 121);
+    arrayOfL18[0] = new l(30, arrayOfK69);
+    k[] arrayOfK70 = new k[2];
+    arrayOfK70[0] = new k(9, 43);
+    arrayOfK70[1] = new k(4, 44);
+    arrayOfL18[1] = new l(26, arrayOfK70);
+    k[] arrayOfK71 = new k[2];
+    arrayOfK71[0] = new k(17, 22);
+    arrayOfK71[1] = new k(1, 23);
+    arrayOfL18[2] = new l(28, arrayOfK71);
+    k[] arrayOfK72 = new k[2];
+    arrayOfK72[0] = new k(2, 14);
+    arrayOfK72[1] = new k(19, 15);
+    arrayOfL18[3] = new l(28, arrayOfK72);
+    arrayOfJ[17] = new j(18, arrayOfInt18, arrayOfL18);
+    int[] arrayOfInt19 = { 6, 30, 58, 86 };
+    l[] arrayOfL19 = new l[4];
+    k[] arrayOfK73 = new k[2];
+    arrayOfK73[0] = new k(3, 113);
+    arrayOfK73[1] = new k(4, 114);
+    arrayOfL19[0] = new l(28, arrayOfK73);
+    k[] arrayOfK74 = new k[2];
+    arrayOfK74[0] = new k(3, 44);
+    arrayOfK74[1] = new k(11, 45);
+    arrayOfL19[1] = new l(26, arrayOfK74);
+    k[] arrayOfK75 = new k[2];
+    arrayOfK75[0] = new k(17, 21);
+    arrayOfK75[1] = new k(4, 22);
+    arrayOfL19[2] = new l(26, arrayOfK75);
+    k[] arrayOfK76 = new k[2];
+    arrayOfK76[0] = new k(9, 13);
+    arrayOfK76[1] = new k(16, 14);
+    arrayOfL19[3] = new l(26, arrayOfK76);
+    arrayOfJ[18] = new j(19, arrayOfInt19, arrayOfL19);
+    int[] arrayOfInt20 = { 6, 34, 62, 90 };
+    l[] arrayOfL20 = new l[4];
+    k[] arrayOfK77 = new k[2];
+    arrayOfK77[0] = new k(3, 107);
+    arrayOfK77[1] = new k(5, 108);
+    arrayOfL20[0] = new l(28, arrayOfK77);
+    k[] arrayOfK78 = new k[2];
+    arrayOfK78[0] = new k(3, 41);
+    arrayOfK78[1] = new k(13, 42);
+    arrayOfL20[1] = new l(26, arrayOfK78);
+    k[] arrayOfK79 = new k[2];
+    arrayOfK79[0] = new k(15, 24);
+    arrayOfK79[1] = new k(5, 25);
+    arrayOfL20[2] = new l(30, arrayOfK79);
+    k[] arrayOfK80 = new k[2];
+    arrayOfK80[0] = new k(15, 15);
+    arrayOfK80[1] = new k(10, 16);
+    arrayOfL20[3] = new l(28, arrayOfK80);
+    arrayOfJ[19] = new j(20, arrayOfInt20, arrayOfL20);
+    int[] arrayOfInt21 = { 6, 28, 50, 72, 94 };
+    l[] arrayOfL21 = new l[4];
+    k[] arrayOfK81 = new k[2];
+    arrayOfK81[0] = new k(4, 116);
+    arrayOfK81[1] = new k(4, 117);
+    arrayOfL21[0] = new l(28, arrayOfK81);
+    k[] arrayOfK82 = new k[1];
+    arrayOfK82[0] = new k(17, 42);
+    arrayOfL21[1] = new l(26, arrayOfK82);
+    k[] arrayOfK83 = new k[2];
+    arrayOfK83[0] = new k(17, 22);
+    arrayOfK83[1] = new k(6, 23);
+    arrayOfL21[2] = new l(28, arrayOfK83);
+    k[] arrayOfK84 = new k[2];
+    arrayOfK84[0] = new k(19, 16);
+    arrayOfK84[1] = new k(6, 17);
+    arrayOfL21[3] = new l(30, arrayOfK84);
+    arrayOfJ[20] = new j(21, arrayOfInt21, arrayOfL21);
+    int[] arrayOfInt22 = { 6, 26, 50, 74, 98 };
+    l[] arrayOfL22 = new l[4];
+    k[] arrayOfK85 = new k[2];
+    arrayOfK85[0] = new k(2, 111);
+    arrayOfK85[1] = new k(7, 112);
+    arrayOfL22[0] = new l(28, arrayOfK85);
+    k[] arrayOfK86 = new k[1];
+    arrayOfK86[0] = new k(17, 46);
+    arrayOfL22[1] = new l(28, arrayOfK86);
+    k[] arrayOfK87 = new k[2];
+    arrayOfK87[0] = new k(7, 24);
+    arrayOfK87[1] = new k(16, 25);
+    arrayOfL22[2] = new l(30, arrayOfK87);
+    k[] arrayOfK88 = new k[1];
+    arrayOfK88[0] = new k(34, 13);
+    arrayOfL22[3] = new l(24, arrayOfK88);
+    arrayOfJ[21] = new j(22, arrayOfInt22, arrayOfL22);
+    int[] arrayOfInt23 = { 6, 30, 54, 78, 102 };
+    l[] arrayOfL23 = new l[4];
+    k[] arrayOfK89 = new k[2];
+    arrayOfK89[0] = new k(4, 121);
+    arrayOfK89[1] = new k(5, 122);
+    arrayOfL23[0] = new l(30, arrayOfK89);
+    k[] arrayOfK90 = new k[2];
+    arrayOfK90[0] = new k(4, 47);
+    arrayOfK90[1] = new k(14, 48);
+    arrayOfL23[1] = new l(28, arrayOfK90);
+    k[] arrayOfK91 = new k[2];
+    arrayOfK91[0] = new k(11, 24);
+    arrayOfK91[1] = new k(14, 25);
+    arrayOfL23[2] = new l(30, arrayOfK91);
+    k[] arrayOfK92 = new k[2];
+    arrayOfK92[0] = new k(16, 15);
+    arrayOfK92[1] = new k(14, 16);
+    arrayOfL23[3] = new l(30, arrayOfK92);
+    arrayOfJ[22] = new j(23, arrayOfInt23, arrayOfL23);
+    int[] arrayOfInt24 = { 6, 28, 54, 80, 106 };
+    l[] arrayOfL24 = new l[4];
+    k[] arrayOfK93 = new k[2];
+    arrayOfK93[0] = new k(6, 117);
+    arrayOfK93[1] = new k(4, 118);
+    arrayOfL24[0] = new l(30, arrayOfK93);
+    k[] arrayOfK94 = new k[2];
+    arrayOfK94[0] = new k(6, 45);
+    arrayOfK94[1] = new k(14, 46);
+    arrayOfL24[1] = new l(28, arrayOfK94);
+    k[] arrayOfK95 = new k[2];
+    arrayOfK95[0] = new k(11, 24);
+    arrayOfK95[1] = new k(16, 25);
+    arrayOfL24[2] = new l(30, arrayOfK95);
+    k[] arrayOfK96 = new k[2];
+    arrayOfK96[0] = new k(30, 16);
+    arrayOfK96[1] = new k(2, 17);
+    arrayOfL24[3] = new l(30, arrayOfK96);
+    arrayOfJ[23] = new j(24, arrayOfInt24, arrayOfL24);
+    int[] arrayOfInt25 = { 6, 32, 58, 84, 110 };
+    l[] arrayOfL25 = new l[4];
+    k[] arrayOfK97 = new k[2];
+    arrayOfK97[0] = new k(8, 106);
+    arrayOfK97[1] = new k(4, 107);
+    arrayOfL25[0] = new l(26, arrayOfK97);
+    k[] arrayOfK98 = new k[2];
+    arrayOfK98[0] = new k(8, 47);
+    arrayOfK98[1] = new k(13, 48);
+    arrayOfL25[1] = new l(28, arrayOfK98);
+    k[] arrayOfK99 = new k[2];
+    arrayOfK99[0] = new k(7, 24);
+    arrayOfK99[1] = new k(22, 25);
+    arrayOfL25[2] = new l(30, arrayOfK99);
+    k[] arrayOfK100 = new k[2];
+    arrayOfK100[0] = new k(22, 15);
+    arrayOfK100[1] = new k(13, 16);
+    arrayOfL25[3] = new l(30, arrayOfK100);
+    arrayOfJ[24] = new j(25, arrayOfInt25, arrayOfL25);
+    int[] arrayOfInt26 = { 6, 30, 58, 86, 114 };
+    l[] arrayOfL26 = new l[4];
+    k[] arrayOfK101 = new k[2];
+    arrayOfK101[0] = new k(10, 114);
+    arrayOfK101[1] = new k(2, 115);
+    arrayOfL26[0] = new l(28, arrayOfK101);
+    k[] arrayOfK102 = new k[2];
+    arrayOfK102[0] = new k(19, 46);
+    arrayOfK102[1] = new k(4, 47);
+    arrayOfL26[1] = new l(28, arrayOfK102);
+    k[] arrayOfK103 = new k[2];
+    arrayOfK103[0] = new k(28, 22);
+    arrayOfK103[1] = new k(6, 23);
+    arrayOfL26[2] = new l(28, arrayOfK103);
+    k[] arrayOfK104 = new k[2];
+    arrayOfK104[0] = new k(33, 16);
+    arrayOfK104[1] = new k(4, 17);
+    arrayOfL26[3] = new l(30, arrayOfK104);
+    arrayOfJ[25] = new j(26, arrayOfInt26, arrayOfL26);
+    int[] arrayOfInt27 = { 6, 34, 62, 90, 118 };
+    l[] arrayOfL27 = new l[4];
+    k[] arrayOfK105 = new k[2];
+    arrayOfK105[0] = new k(8, 122);
+    arrayOfK105[1] = new k(4, 123);
+    arrayOfL27[0] = new l(30, arrayOfK105);
+    k[] arrayOfK106 = new k[2];
+    arrayOfK106[0] = new k(22, 45);
+    arrayOfK106[1] = new k(3, 46);
+    arrayOfL27[1] = new l(28, arrayOfK106);
+    k[] arrayOfK107 = new k[2];
+    arrayOfK107[0] = new k(8, 23);
+    arrayOfK107[1] = new k(26, 24);
+    arrayOfL27[2] = new l(30, arrayOfK107);
+    k[] arrayOfK108 = new k[2];
+    arrayOfK108[0] = new k(12, 15);
+    arrayOfK108[1] = new k(28, 16);
+    arrayOfL27[3] = new l(30, arrayOfK108);
+    arrayOfJ[26] = new j(27, arrayOfInt27, arrayOfL27);
+    int[] arrayOfInt28 = { 6, 26, 50, 74, 98, 122 };
+    l[] arrayOfL28 = new l[4];
+    k[] arrayOfK109 = new k[2];
+    arrayOfK109[0] = new k(3, 117);
+    arrayOfK109[1] = new k(10, 118);
+    arrayOfL28[0] = new l(30, arrayOfK109);
+    k[] arrayOfK110 = new k[2];
+    arrayOfK110[0] = new k(3, 45);
+    arrayOfK110[1] = new k(23, 46);
+    arrayOfL28[1] = new l(28, arrayOfK110);
+    k[] arrayOfK111 = new k[2];
+    arrayOfK111[0] = new k(4, 24);
+    arrayOfK111[1] = new k(31, 25);
+    arrayOfL28[2] = new l(30, arrayOfK111);
+    k[] arrayOfK112 = new k[2];
+    arrayOfK112[0] = new k(11, 15);
+    arrayOfK112[1] = new k(31, 16);
+    arrayOfL28[3] = new l(30, arrayOfK112);
+    arrayOfJ[27] = new j(28, arrayOfInt28, arrayOfL28);
+    int[] arrayOfInt29 = { 6, 30, 54, 78, 102, 126 };
+    l[] arrayOfL29 = new l[4];
+    k[] arrayOfK113 = new k[2];
+    arrayOfK113[0] = new k(7, 116);
+    arrayOfK113[1] = new k(7, 117);
+    arrayOfL29[0] = new l(30, arrayOfK113);
+    k[] arrayOfK114 = new k[2];
+    arrayOfK114[0] = new k(21, 45);
+    arrayOfK114[1] = new k(7, 46);
+    arrayOfL29[1] = new l(28, arrayOfK114);
+    k[] arrayOfK115 = new k[2];
+    arrayOfK115[0] = new k(1, 23);
+    arrayOfK115[1] = new k(37, 24);
+    arrayOfL29[2] = new l(30, arrayOfK115);
+    k[] arrayOfK116 = new k[2];
+    arrayOfK116[0] = new k(19, 15);
+    arrayOfK116[1] = new k(26, 16);
+    arrayOfL29[3] = new l(30, arrayOfK116);
+    arrayOfJ[28] = new j(29, arrayOfInt29, arrayOfL29);
+    int[] arrayOfInt30 = { 6, 26, 52, 78, 104, 130 };
+    l[] arrayOfL30 = new l[4];
+    k[] arrayOfK117 = new k[2];
+    arrayOfK117[0] = new k(5, 115);
+    arrayOfK117[1] = new k(10, 116);
+    arrayOfL30[0] = new l(30, arrayOfK117);
+    k[] arrayOfK118 = new k[2];
+    arrayOfK118[0] = new k(19, 47);
+    arrayOfK118[1] = new k(10, 48);
+    arrayOfL30[1] = new l(28, arrayOfK118);
+    k[] arrayOfK119 = new k[2];
+    arrayOfK119[0] = new k(15, 24);
+    arrayOfK119[1] = new k(25, 25);
+    arrayOfL30[2] = new l(30, arrayOfK119);
+    k[] arrayOfK120 = new k[2];
+    arrayOfK120[0] = new k(23, 15);
+    arrayOfK120[1] = new k(25, 16);
+    arrayOfL30[3] = new l(30, arrayOfK120);
+    arrayOfJ[29] = new j(30, arrayOfInt30, arrayOfL30);
+    int[] arrayOfInt31 = { 6, 30, 56, 82, 108, 134 };
+    l[] arrayOfL31 = new l[4];
+    k[] arrayOfK121 = new k[2];
+    arrayOfK121[0] = new k(13, 115);
+    arrayOfK121[1] = new k(3, 116);
+    arrayOfL31[0] = new l(30, arrayOfK121);
+    k[] arrayOfK122 = new k[2];
+    arrayOfK122[0] = new k(2, 46);
+    arrayOfK122[1] = new k(29, 47);
+    arrayOfL31[1] = new l(28, arrayOfK122);
+    k[] arrayOfK123 = new k[2];
+    arrayOfK123[0] = new k(42, 24);
+    arrayOfK123[1] = new k(1, 25);
+    arrayOfL31[2] = new l(30, arrayOfK123);
+    k[] arrayOfK124 = new k[2];
+    arrayOfK124[0] = new k(23, 15);
+    arrayOfK124[1] = new k(28, 16);
+    arrayOfL31[3] = new l(30, arrayOfK124);
+    arrayOfJ[30] = new j(31, arrayOfInt31, arrayOfL31);
+    int[] arrayOfInt32 = { 6, 34, 60, 86, 112, 138 };
+    l[] arrayOfL32 = new l[4];
+    k[] arrayOfK125 = new k[1];
+    arrayOfK125[0] = new k(17, 115);
+    arrayOfL32[0] = new l(30, arrayOfK125);
+    k[] arrayOfK126 = new k[2];
+    arrayOfK126[0] = new k(10, 46);
+    arrayOfK126[1] = new k(23, 47);
+    arrayOfL32[1] = new l(28, arrayOfK126);
+    k[] arrayOfK127 = new k[2];
+    arrayOfK127[0] = new k(10, 24);
+    arrayOfK127[1] = new k(35, 25);
+    arrayOfL32[2] = new l(30, arrayOfK127);
+    k[] arrayOfK128 = new k[2];
+    arrayOfK128[0] = new k(19, 15);
+    arrayOfK128[1] = new k(35, 16);
+    arrayOfL32[3] = new l(30, arrayOfK128);
+    arrayOfJ[31] = new j(32, arrayOfInt32, arrayOfL32);
+    int[] arrayOfInt33 = { 6, 30, 58, 86, 114, 142 };
+    l[] arrayOfL33 = new l[4];
+    k[] arrayOfK129 = new k[2];
+    arrayOfK129[0] = new k(17, 115);
+    arrayOfK129[1] = new k(1, 116);
+    arrayOfL33[0] = new l(30, arrayOfK129);
+    k[] arrayOfK130 = new k[2];
+    arrayOfK130[0] = new k(14, 46);
+    arrayOfK130[1] = new k(21, 47);
+    arrayOfL33[1] = new l(28, arrayOfK130);
+    k[] arrayOfK131 = new k[2];
+    arrayOfK131[0] = new k(29, 24);
+    arrayOfK131[1] = new k(19, 25);
+    arrayOfL33[2] = new l(30, arrayOfK131);
+    k[] arrayOfK132 = new k[2];
+    arrayOfK132[0] = new k(11, 15);
+    arrayOfK132[1] = new k(46, 16);
+    arrayOfL33[3] = new l(30, arrayOfK132);
+    arrayOfJ[32] = new j(33, arrayOfInt33, arrayOfL33);
+    int[] arrayOfInt34 = { 6, 34, 62, 90, 118, 146 };
+    l[] arrayOfL34 = new l[4];
+    k[] arrayOfK133 = new k[2];
+    arrayOfK133[0] = new k(13, 115);
+    arrayOfK133[1] = new k(6, 116);
+    arrayOfL34[0] = new l(30, arrayOfK133);
+    k[] arrayOfK134 = new k[2];
+    arrayOfK134[0] = new k(14, 46);
+    arrayOfK134[1] = new k(23, 47);
+    arrayOfL34[1] = new l(28, arrayOfK134);
+    k[] arrayOfK135 = new k[2];
+    arrayOfK135[0] = new k(44, 24);
+    arrayOfK135[1] = new k(7, 25);
+    arrayOfL34[2] = new l(30, arrayOfK135);
+    k[] arrayOfK136 = new k[2];
+    arrayOfK136[0] = new k(59, 16);
+    arrayOfK136[1] = new k(1, 17);
+    arrayOfL34[3] = new l(30, arrayOfK136);
+    arrayOfJ[33] = new j(34, arrayOfInt34, arrayOfL34);
+    int[] arrayOfInt35 = { 6, 30, 54, 78, 102, 126, 150 };
+    l[] arrayOfL35 = new l[4];
+    k[] arrayOfK137 = new k[2];
+    arrayOfK137[0] = new k(12, 121);
+    arrayOfK137[1] = new k(7, 122);
+    arrayOfL35[0] = new l(30, arrayOfK137);
+    k[] arrayOfK138 = new k[2];
+    arrayOfK138[0] = new k(12, 47);
+    arrayOfK138[1] = new k(26, 48);
+    arrayOfL35[1] = new l(28, arrayOfK138);
+    k[] arrayOfK139 = new k[2];
+    arrayOfK139[0] = new k(39, 24);
+    arrayOfK139[1] = new k(14, 25);
+    arrayOfL35[2] = new l(30, arrayOfK139);
+    k[] arrayOfK140 = new k[2];
+    arrayOfK140[0] = new k(22, 15);
+    arrayOfK140[1] = new k(41, 16);
+    arrayOfL35[3] = new l(30, arrayOfK140);
+    arrayOfJ[34] = new j(35, arrayOfInt35, arrayOfL35);
+    int[] arrayOfInt36 = { 6, 24, 50, 76, 102, 128, 154 };
+    l[] arrayOfL36 = new l[4];
+    k[] arrayOfK141 = new k[2];
+    arrayOfK141[0] = new k(6, 121);
+    arrayOfK141[1] = new k(14, 122);
+    arrayOfL36[0] = new l(30, arrayOfK141);
+    k[] arrayOfK142 = new k[2];
+    arrayOfK142[0] = new k(6, 47);
+    arrayOfK142[1] = new k(34, 48);
+    arrayOfL36[1] = new l(28, arrayOfK142);
+    k[] arrayOfK143 = new k[2];
+    arrayOfK143[0] = new k(46, 24);
+    arrayOfK143[1] = new k(10, 25);
+    arrayOfL36[2] = new l(30, arrayOfK143);
+    k[] arrayOfK144 = new k[2];
+    arrayOfK144[0] = new k(2, 15);
+    arrayOfK144[1] = new k(64, 16);
+    arrayOfL36[3] = new l(30, arrayOfK144);
+    arrayOfJ[35] = new j(36, arrayOfInt36, arrayOfL36);
+    int[] arrayOfInt37 = { 6, 28, 54, 80, 106, 132, 158 };
+    l[] arrayOfL37 = new l[4];
+    k[] arrayOfK145 = new k[2];
+    arrayOfK145[0] = new k(17, 122);
+    arrayOfK145[1] = new k(4, 123);
+    arrayOfL37[0] = new l(30, arrayOfK145);
+    k[] arrayOfK146 = new k[2];
+    arrayOfK146[0] = new k(29, 46);
+    arrayOfK146[1] = new k(14, 47);
+    arrayOfL37[1] = new l(28, arrayOfK146);
+    k[] arrayOfK147 = new k[2];
+    arrayOfK147[0] = new k(49, 24);
+    arrayOfK147[1] = new k(10, 25);
+    arrayOfL37[2] = new l(30, arrayOfK147);
+    k[] arrayOfK148 = new k[2];
+    arrayOfK148[0] = new k(24, 15);
+    arrayOfK148[1] = new k(46, 16);
+    arrayOfL37[3] = new l(30, arrayOfK148);
+    arrayOfJ[36] = new j(37, arrayOfInt37, arrayOfL37);
+    int[] arrayOfInt38 = { 6, 32, 58, 84, 110, 136, 162 };
+    l[] arrayOfL38 = new l[4];
+    k[] arrayOfK149 = new k[2];
+    arrayOfK149[0] = new k(4, 122);
+    arrayOfK149[1] = new k(18, 123);
+    arrayOfL38[0] = new l(30, arrayOfK149);
+    k[] arrayOfK150 = new k[2];
+    arrayOfK150[0] = new k(13, 46);
+    arrayOfK150[1] = new k(32, 47);
+    arrayOfL38[1] = new l(28, arrayOfK150);
+    k[] arrayOfK151 = new k[2];
+    arrayOfK151[0] = new k(48, 24);
+    arrayOfK151[1] = new k(14, 25);
+    arrayOfL38[2] = new l(30, arrayOfK151);
+    k[] arrayOfK152 = new k[2];
+    arrayOfK152[0] = new k(42, 15);
+    arrayOfK152[1] = new k(32, 16);
+    arrayOfL38[3] = new l(30, arrayOfK152);
+    arrayOfJ[37] = new j(38, arrayOfInt38, arrayOfL38);
+    int[] arrayOfInt39 = { 6, 26, 54, 82, 110, 138, 166 };
+    l[] arrayOfL39 = new l[4];
+    k[] arrayOfK153 = new k[2];
+    arrayOfK153[0] = new k(20, 117);
+    arrayOfK153[1] = new k(4, 118);
+    arrayOfL39[0] = new l(30, arrayOfK153);
+    k[] arrayOfK154 = new k[2];
+    arrayOfK154[0] = new k(40, 47);
+    arrayOfK154[1] = new k(7, 48);
+    arrayOfL39[1] = new l(28, arrayOfK154);
+    k[] arrayOfK155 = new k[2];
+    arrayOfK155[0] = new k(43, 24);
+    arrayOfK155[1] = new k(22, 25);
+    arrayOfL39[2] = new l(30, arrayOfK155);
+    k[] arrayOfK156 = new k[2];
+    arrayOfK156[0] = new k(10, 15);
+    arrayOfK156[1] = new k(67, 16);
+    arrayOfL39[3] = new l(30, arrayOfK156);
+    arrayOfJ[38] = new j(39, arrayOfInt39, arrayOfL39);
+    int[] arrayOfInt40 = { 6, 30, 58, 86, 114, 142, 170 };
+    l[] arrayOfL40 = new l[4];
+    k[] arrayOfK157 = new k[2];
+    arrayOfK157[0] = new k(19, 118);
+    arrayOfK157[1] = new k(6, 119);
+    arrayOfL40[0] = new l(30, arrayOfK157);
+    k[] arrayOfK158 = new k[2];
+    arrayOfK158[0] = new k(18, 47);
+    arrayOfK158[1] = new k(31, 48);
+    arrayOfL40[1] = new l(28, arrayOfK158);
+    k[] arrayOfK159 = new k[2];
+    arrayOfK159[0] = new k(34, 24);
+    arrayOfK159[1] = new k(34, 25);
+    arrayOfL40[2] = new l(30, arrayOfK159);
+    k[] arrayOfK160 = new k[2];
+    arrayOfK160[0] = new k(20, 15);
+    arrayOfK160[1] = new k(61, 16);
+    arrayOfL40[3] = new l(30, arrayOfK160);
+    arrayOfJ[39] = new j(40, arrayOfInt40, arrayOfL40);
+    return arrayOfJ;
+  }
+  
+  public final int a()
+  {
+    return this.c;
+  }
+  
+  public final l a(f paramF)
+  {
+    return this.e[paramF.ordinal()];
+  }
+  
+  public final int[] b()
+  {
+    return this.d;
+  }
+  
+  public final int c()
+  {
+    return this.f;
+  }
+  
+  public final int d()
+  {
+    return 17 + 4 * this.c;
+  }
+  
+  final b e()
+  {
+    int i = d();
+    b localB = new b(i);
+    localB.a(0, 0, 9, 9);
+    localB.a(i - 8, 0, 8, 9);
+    localB.a(0, i - 8, 9, 8);
+    int j = this.d.length;
+    for (int k = 0; k < j; k++)
+    {
+      int m = -2 + this.d[k];
+      for (int n = 0; n < j; n++) {
+        if (((k != 0) || ((n != 0) && (n != j - 1))) && ((k != j - 1) || (n != 0))) {
+          localB.a(-2 + this.d[n], m, 5, 5);
+        }
+      }
+    }
+    localB.a(6, 9, 1, i - 17);
+    localB.a(9, 6, i - 17, 1);
+    if (this.c > 6)
+    {
+      localB.a(i - 11, 0, 3, 6);
+      localB.a(0, i - 11, 6, 3);
+    }
+    return localB;
+  }
+  
+  public final String toString()
+  {
+    return String.valueOf(this.c);
+  }
+}

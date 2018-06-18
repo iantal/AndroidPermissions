@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="36.0dip" android:id="@id/picker_minus" android:padding="0.0dip" android:layout_width="70.0dip" android:layout_height="55.0dip" android:layout_marginLeft="16.0dip" android:text="@string/minus" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/RaisedButtonWhite" />
+    <TextView android:textSize="25.0sp" android:textColor="@color/black_1b" android:gravity="bottom" android:id="@id/text_picker_selected" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_centerInParent="true" fontPath="@string/font_regular" />
+    <Button android:textSize="36.0dip" android:id="@id/picker_plus" android:padding="0.0dip" android:layout_width="70.0dip" android:layout_height="55.0dip" android:layout_marginRight="16.0dip" android:text="@string/plus" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/RaisedButtonWhite" />
+</RelativeLayout>

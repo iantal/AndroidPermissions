@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/mortgage_element_padding_start" android:paddingEnd="@dimen/mortgage_element_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+        <com.db.pwcc.dbmobile.mortgages.views.MortgageProgressChart android:id="@id/mortgage_progress_chart" android:layout_width="@dimen/mortgage_tile_donut_dimension" android:layout_height="@dimen/mortgage_tile_donut_dimension" android:layout_marginEnd="@dimen/mortgage_progress_chart_margin" app:pcTitleSize="@dimen/mortgage_tile_donut_text_size" app:pcTitleColor="@color/textColorDefault" app:pcInnerContent="labels" app:pcStyle="mini" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/mortgage_element_name_size" android:textColor="@color/textColorDefault" android:ellipsize="end" android:id="@id/mortgage_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/mortgage_element_rate_value_size" android:textColor="@color/labelViewTextColor" android:id="@id/mortgage_rate_value" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/mortgage_element_value_size" android:textColor="@color/textColorDefault" android:gravity="end|center" android:id="@id/mortgage_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    </LinearLayout>
+    <View android:background="@color/colorListHorizontalLine" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

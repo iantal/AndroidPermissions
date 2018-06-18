@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.db.pwcc.dbmobile.foundation.views.button.ButtonView android:background="@drawable/btn_selector_secondary" android:paddingLeft="@dimen/button_margin_lateral" android:paddingTop="@dimen/button_top_padding" android:paddingRight="@dimen/button_margin_lateral" android:paddingBottom="@dimen/button_top_padding" android:layout_width="fill_parent" android:layout_height="@dimen/button_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/button_progress_primary_text" android:visibility="gone" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/ButtonProgress" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="start|center" android:id="@id/left_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:id="@id/button_progress_secondary_text" android:visibility="gone" android:layout_centerVertical="true" style="@style/ButtonProgress" />
+            <ImageView android:id="@id/button_drawable" android:layout_width="@dimen/button_drawable_size" android:layout_height="@dimen/button_drawable_size" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/button_text_size" android:ellipsize="marquee" android:gravity="center" android:id="@id/button_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:textAllCaps="false" />
+    </LinearLayout>
+</com.db.pwcc.dbmobile.foundation.views.button.ButtonView>

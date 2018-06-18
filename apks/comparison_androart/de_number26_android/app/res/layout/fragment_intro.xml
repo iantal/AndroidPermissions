@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/backgrounds" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_intro_transactions" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_intro_send_money" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_intro_financial_services" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_intro_statistics" android:scaleType="centerCrop" android:contentDescription="@null" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/newAccountButton">
+        <android.support.v4.view.ViewPager android:id="@id/pager_intro" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        <com.viewpagerindicator.CirclePageIndicator android:id="@id/indicator_intro" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:fillColor="@android:color/white" app:radius="3.0dip" app:snap="true" app:strokeColor="@android:color/white" app:strokeWidth="1.0dip" />
+        <TextView android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/loginButton" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="@string/action_login" android:textAllCaps="true" android:layout_marginEnd="2.0dip" android:layout_alignParentEnd="true" fontPath="@string/font_medium" />
+    </RelativeLayout>
+    <Button android:id="@id/newAccountButton" android:text="@string/get_your_free_account" android:layout_alignParentBottom="true" style="@style/MainButtonStyle" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="310.0dip" android:layout_height="210.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_cards_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_card_mastercard_mpts" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="@null" />
+    <ImageView android:id="@id/image_cards_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/lock_overlay" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="@null" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="112.0dip" android:layout_marginStart="36.0dip" android:layout_alignParentStart="true">
+        <TextView android:textSize="@dimen/card_numbers" android:textColor="@android:color/white" android:layout_gravity="start" android:id="@id/text_cards_number" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@android:color/white" android:layout_gravity="start" android:id="@id/text_cards_expiry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginStart="70.0dip" />
+        <TextView android:textSize="@dimen/textSizePrimary" android:textColor="@android:color/white" android:layout_gravity="start" android:id="@id/text_cards_owner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="54.0dip" />
+    </FrameLayout>
+</RelativeLayout>

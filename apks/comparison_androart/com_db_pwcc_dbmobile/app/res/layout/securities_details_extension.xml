@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.db.pwcc.dbmobile.foundation.widgets.dbFloatingActionMenu.DbFloatingActionMenu android:id="@id/floating_action_menu_securities" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" floatingMenu:famAccentTint="@color/colorDefaultFAB" floatingMenu:famIconCollapsed="@drawable/ic_add_white_24dp" floatingMenu:famIconExpanded="@drawable/ic_close_white_24dp" floatingMenu:famMenu="@menu/security_details_menu" floatingMenu:famState="collapsed" xmlns:floatingMenu="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

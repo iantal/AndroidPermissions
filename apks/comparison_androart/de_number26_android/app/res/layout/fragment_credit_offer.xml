@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/creditOfferMainLayout" android:background="@drawable/bg_credit_offer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <TextView android:id="@id/creditOfferTitle" android:layout_marginTop="@dimen/creditScreenPaddingTopBottom" style="@style/creditTitle" />
+        <TextView android:id="@id/creditOfferSubtitle" style="@style/creditOfferSubtitle" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/creditOfferMonthlyAmountLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:text="@string/credit_offers_per_month" style="@style/creditOfferMonthlyAmountLabel" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:layout_marginBottom="-5.0dip">
+                <TextView android:id="@id/creditOfferMonthlyAmount" android:layout_centerHorizontal="true" style="@style/creditOfferMonthlyAmount" />
+                <TextView android:gravity="center_horizontal" android:id="@id/creditOfferAmountChange" android:visibility="gone" android:layout_centerVertical="true" android:layout_toEndOf="@id/creditOfferMonthlyAmount" android:layout_alignParentEnd="true" style="@style/creditOfferMonthlyAmountChange" />
+            </RelativeLayout>
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/creditOfferMonths" style="@style/creditOfferMonths" />
+        </LinearLayout>
+        <android.support.percent.PercentRelativeLayout android:id="@id/creditOfferRepayInterestLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd">
+            <TextView android:id="@id/creditOfferTotalRepayValue" app:layout_widthPercent="50.0%" style="@style/creditOfferRepayInterestValue" />
+            <TextView android:id="@id/creditOfferTotalRepayLabel" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:text="@string/credit_offers_total_to_repay" android:layout_below="@id/creditOfferTotalRepayValue" app:layout_widthPercent="50.0%" style="@style/creditOfferRepayInterestLabel" />
+            <TextView android:id="@id/creditOfferInterestValue" android:layout_alignParentEnd="true" app:layout_widthPercent="50.0%" style="@style/creditOfferRepayInterestValue" />
+            <RelativeLayout android:id="@id/creditOfferInterestTypeLayout" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_height="wrap_content" android:layout_below="@id/creditOfferInterestValue" android:layout_alignParentEnd="true" app:layout_widthPercent="50.0%">
+                <ImageView android:id="@id/creditOfferInterestTypeChangeIcon" android:layout_centerInParent="true" style="@style/creditOfferInterestChangeType" />
+                <TextView android:id="@id/creditOfferInterestLabelNominal" android:layout_width="wrap_content" android:text="@string/credit_offers_interest_rate_nominal" android:layout_toStartOf="@id/creditOfferInterestTypeChangeIcon" style="@style/creditOfferRepayInterestLabel" />
+                <TextView android:textColor="@color/creditOfferLabelTextDisabled" android:id="@id/creditOfferInterestLabelEffective" android:layout_width="wrap_content" android:text="@string/credit_offers_interest_rate_effective" android:layout_toEndOf="@id/creditOfferInterestTypeChangeIcon" style="@style/creditOfferRepayInterestLabel" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:id="@id/creditOfferInterestExplanation" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:text="@string/credit_offers_what_are_these" android:layout_below="@id/creditOfferInterestTypeLayout" android:layout_alignParentEnd="true" app:layout_widthPercent="50.0%" style="@style/creditOfferRepayInterestLabel" />
+            <View android:id="@id/repayInterestHideEditOverlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/creditOfferInterestExplanation" android:layout_alignParentTop="true" />
+        </android.support.percent.PercentRelativeLayout>
+        <View android:id="@id/creditOfferEditLayoutShadow" android:background="@drawable/credit_offer_edit_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginTop="2.0dip" />
+        <android.support.percent.PercentRelativeLayout android:id="@id/creditOfferEditLayout" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/creditOfferEditFilterSelectedText" android:id="@id/creditOfferEditFilterPayment" android:text="@string/credit_offer_edit_monthly_payment" app:layout_widthPercent="50.0%" style="@style/creditOfferEditFilterView" />
+            <Button android:id="@id/creditOfferEditFilterDuration" android:text="@string/credit_offer_edit_loan_duration" android:layout_alignParentEnd="true" app:layout_widthPercent="50.0%" style="@style/creditOfferEditFilterView" />
+            <android.support.v7.widget.RecyclerView android:id="@id/creditOfferEditList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/creditOfferInsuranceMarginTopBottom" android:layout_below="@id/creditOfferEditFilterPayment" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/creditOfferInsuranceLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/creditOfferInsuranceMarginTopBottom" android:layout_below="@id/creditOfferEditList">
+                <ImageView android:id="@id/creditOfferInsuranceIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/creditOfferInsuranceTitle" style="@style/creditOfferInsuranceTitle" />
+                    <TextView android:id="@id/creditOfferInsuranceText" style="@style/creditOfferInsuranceText" />
+                </LinearLayout>
+                <Switch android:id="@id/creditOfferInsuranceSwitcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" />
+            </LinearLayout>
+        </android.support.percent.PercentRelativeLayout>
+        <TextView android:id="@id/creditOfferModifyOffer" android:layout_marginTop="16.0dip" style="@style/creditOfferModifyButton" />
+        <FrameLayout android:id="@id/creditOfferContinueLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/creditOfferContinue" android:layout_marginTop="8.0dip" android:layout_marginBottom="@dimen/creditScreenPaddingTopBottom" style="@style/creditAccentButton" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

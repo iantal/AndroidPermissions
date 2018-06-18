@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/ic_insurance_clark_logo_blue" />
+    <TextView android:id="@id/text_existing_clark_user_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" fontPath="@string/font_medium" style="@style/InsuranceHeader" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/insurance_confirm_existing_account_popup_subtitle" style="@style/InsuranceText" />
+</LinearLayout>

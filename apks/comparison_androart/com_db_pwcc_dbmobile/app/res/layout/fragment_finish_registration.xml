@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="Success!! Yeeeey." android:layout_centerHorizontal="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_confirmation_ok" android:layout_centerInParent="true" android:contentDescription="@string/none" />
+    <Button android:textColor="@color/btn_default_text_selector" android:id="@id/finish_button" android:background="@drawable/loginbutton_shape_filled" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginBottom="20.0dip" android:text="@string/finish" android:layout_alignParentBottom="true" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+</RelativeLayout>

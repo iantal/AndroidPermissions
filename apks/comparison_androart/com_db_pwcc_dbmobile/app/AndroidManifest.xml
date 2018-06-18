@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.db.pwcc.dbmobile" platformBuildVersionCode="26" platformBuildVersionName="8.0.0">
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.nfc.hce" android:required="false"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <permission android:name="com.db.pwcc.dbmobile.foundation.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.db.pwcc.dbmobile.foundation.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <permission android:name="com.db.pwcc.dbmobile.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.db.pwcc.dbmobile.permission.C2D_MESSAGE"/>
+    <application android:allowBackup="false" android:icon="@mipmap/ic_launcher" android:label="@string/APP_NAME" android:largeHeap="true" android:name="com.db.pwcc.dbmobile.DbApplication" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/GOOGLE_MAPS_API_KEY"/>
+        <activity android:name="com.db.pwcc.dbmobile.activities.SplashScreenActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/release_verification_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.db.pwcc.dbmobile.activities.login.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.db.pwcc.dbmobile.activities.mainactivity.MainActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="@string/efi_provider_authority" android:exported="false" android:name="com.db.pwcc.dbmobile.provider.EfiModelProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.db.pwcc.dbmobile.branchfinder.mapview.BranchFinderActivity" android:noHistory="false" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.db.pwcc.dbmobile.financial_overview.activities.transactions.TransactionsActivity" android:noHistory="false" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.db.pwcc.dbmobile.financial_overview.activities.transaction_details.TransactionDetailsActivity" android:noHistory="false" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.db.pwcc.dbmobile.financial_overview.activities.securities.SecuritiesListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.db.pwcc.dbmobile.financial_overview.activities.securities_details.SecuritiesDetailsActivity" android:noHistory="false" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.db.pwcc.dbmobile.financial_overview.activities.securities_details.MbaSecuritiesDetailsActivity" android:noHistory="false" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.db.pwcc.dbmobile.financial_overview.credit_cards.CreditCardTransactionsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.financial_overview.credit_cards.CreditCardDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.financial_overview.credit_cards.CreditCardTransactionDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.multi_bank_aggregator.activities.efi_list.EfiListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.multi_bank_aggregator.activities.register_efi.RegisterEfiActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.multi_bank_aggregator.activities.efi_products.EfiProductSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.multi_bank_aggregator.activities.efi_settings_details.EfiDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.multi_bank_aggregator.activities.mba_settings.MbaSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.multi_bank_aggregator.activities.mba_settings.MbaConsentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.transfer.inputscreen.activities.AddFriendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.db.pwcc.dbmobile.transfer.inputscreen.activities.SepaTransferActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.transfer.inputscreen.activities.InputSubaccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.transfer.inputscreen.activities.SepaConfirmationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.tan.PhotoTanImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.transfer.inputscreen.activities.TemplatesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.transfer.inputscreen.activities.StandingOrdersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.transfer.inputscreen.activities.StandingOrderDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.transfer.standingorder.createupdate.CreateUpdateStandingOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.transfer.standingorder.confirm.StandingOrderConfirmationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.gini.activities.ginivision.GiniVisionActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <activity android:exported="false" android:label="@string/gv_title_camera" android:name="net.gini.android.vision.camera.CameraActivity" android:theme="@style/GiniVisionTheme"/>
+        <activity android:exported="false" android:name="net.gini.android.vision.noresults.NoResultsActivity" android:theme="@style/GiniVisionTheme"/>
+        <activity android:exported="false" android:label="@string/gv_title_onboarding" android:name="net.gini.android.vision.onboarding.OnboardingActivity" android:theme="@style/GiniVisionTheme.Transparent"/>
+        <activity android:exported="false" android:name="net.gini.android.vision.internal.fileimport.FileChooserActivity" android:theme="@style/GiniVisionTheme.Chooser"/>
+        <activity android:exported="false" android:label="@string/gv_title_help" android:name="net.gini.android.vision.help.HelpActivity" android:theme="@style/GiniVisionTheme"/>
+        <activity android:exported="false" android:label="@string/gv_title_photo_tips" android:name="net.gini.android.vision.help.PhotoTipsActivity" android:theme="@style/GiniVisionTheme"/>
+        <activity android:exported="false" android:label="@string/gv_title_supported_formats" android:name="net.gini.android.vision.help.SupportedFormatsActivity" android:theme="@style/GiniVisionTheme"/>
+        <activity android:exported="false" android:label="@string/gv_title_file_import" android:name="net.gini.android.vision.help.FileImportActivity" android:theme="@style/GiniVisionTheme"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.0.2"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.db.pwcc.dbmobile.postbox.messages.PostboxActivity" android:noHistory="false" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.db.pwcc.dbmobile.postbox.activation.ActivationActivity" android:noHistory="false" android:screenOrientation="portrait"/>
+        <service android:enabled="true" android:exported="false" android:name="com.db.pwcc.dbmobile.postbox.messages.DownloadContentService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.db.pwcc.dbmobile.mobile_payment.activities.registration.MobilePaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.db.pwcc.dbmobile.mobile_payment.activities.registration.tutorial.TutorialMoPayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <service android:exported="true" android:name="com.db.pwcc.dbmobile.mobile_payment.services.ApduService" android:permission="android.permission.BIND_NFC_SERVICE">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.nfc.cardemulation.host_apdu_service" android:resource="@xml/apduservice"/>
+        </service>
+        <receiver android:exported="true" android:name="com.db.pwcc.dbmobile.mobile_payment.processor.GcmPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="10">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.db.pwcc.dbmobile.ON_TOKEN_REFRESH"/>
+                <category android:name="com.db.pwcc.dbmobile"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.db.pwcc.dbmobile.ibanbic.IbanBicActivity" android:noHistory="false" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.db.pwcc.dbmobile.treatments.fullscreen.FullscreenTreatmentActivity" android:noHistory="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.mortgages.details.MortgageDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.click4credit.views.OverdraftActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.db.pwcc.dbmobile.investment.activities.OrderTransactionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.investment.marketplace_selector.MarketplaceSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.investment.edit_ordertype.OrderTypeEditActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="tile" android:value="tile_1"/>
+        <service android:exported="false" android:name="com.db.pwcc.dbmobile.foundation.gcm.RegistrationIntentService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="999">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.db.pwcc.dbmobile"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.db.pwcc.dbmobile.foundation.gcm.PushGcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.db.pwcc.dbmobile.foundation.gcm.IDListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.db.pwcc.dbmobile.foundation.activities.common.DialogActivity" android:screenOrientation="portrait" android:theme="@style/NoTitleDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/menu_item_settings" android:name="com.db.pwcc.dbmobile.foundation.settings.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.foundation.tutorial.TutorialActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.foundation.settings.background.BackgroundChangeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.db.pwcc.dbmobile.foundation.activities.common.PermissionsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.db.pwcc.dbmobile.foundation.activities.common.TextInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.foundation.activities.common.WebViewInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.db.pwcc.dbmobile.foundation.activities.select_account.SelectAccountActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.db.pwcc.dbmobile.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/files"/>
+        </provider>
+        <service android:exported="false" android:name="com.db.pwcc.dbmobile.foundation.session.SessionService" android:stopWithTask="true"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.db.pwcc.dbmobile"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.db.pwcc.dbmobile.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:excludeFromRecents="true" android:name="com.db.pwcc.dbmobile.data.networking.ExitActivity" android:noHistory="true"/>
+    </application>
+</manifest>

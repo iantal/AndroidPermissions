@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b002e" android:insetRight="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b002e" android:insetTop="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b002e" android:insetBottom="@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b002e"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item android:state_checked="false" android:state_pressed="false">
+            <layer-list>
+                <item android:drawable="@drawable/l_APKTOOL_DUPLICATENAME_0x7f02004e" />
+                <item android:drawable="@drawable/l_APKTOOL_DUPLICATENAME_0x7f020040" />
+            </layer-list>
+        </item>
+        <item>
+            <layer-list>
+                <item android:drawable="@drawable/l_APKTOOL_DUPLICATENAME_0x7f02004d" />
+                <item android:drawable="@drawable/l_APKTOOL_DUPLICATENAME_0x7f020040" />
+            </layer-list>
+        </item>
+    </selector>
+</inset>

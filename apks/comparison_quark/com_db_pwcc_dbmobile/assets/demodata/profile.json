@@ -1,0 +1,24 @@
+{
+  "replies": [
+    {
+      "key": "basicProfile",
+      "data": {
+        //please use these values for partnerID and vbNumber for all accounts
+        "partnerId": "1234567890123",
+        "fkn": "1234567890",
+        "mandatorId": "DemoUser",
+        "vbNumber": "123456789000001",
+        "vbName": "PTS UAT Testkonto IV",
+        "accountHolder": "Testkonto IV, PTS UAT",
+        "accountAccessorRole": "01",
+        "jointAccountOwner": false,
+        "roles": {
+          "rightCreateStandingOrder": true,
+          "rightCreateMoneyTransfer": true,
+          "rightCreateForeignCurrencyOrder": true
+        },
+        "isPotenzialOverdraftUser": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/db_toolbar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+        <com.db.pwcc.dbmobile.foundation.widgets.ToggleableSettingItemView android:id="@id/mba_consent_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" app:toggleTitle="@string/mba_menu_consent_toggle_description" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/menu_subtitle_text_size" android:textColor="@color/lightGrey" android:id="@id/mba_consent_disclaimer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/mba_activation_consent" />
+    </LinearLayout>
+</LinearLayout>

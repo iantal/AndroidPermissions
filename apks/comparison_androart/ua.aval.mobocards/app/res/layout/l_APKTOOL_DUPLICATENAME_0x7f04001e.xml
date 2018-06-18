@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/l_APKTOOL_DUPLICATENAME_0x7f02008a" android:paddingTop="24.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200b5" android:padding="16.0dip" android:layout_width="?l_APKTOOL_DUPLICATENAME_0x7f01004d" android:layout_height="?l_APKTOOL_DUPLICATENAME_0x7f01004d" app:srcCompat="@drawable/l_APKTOOL_DUPLICATENAME_0x7f020087" />
+    <ua.aval.mobocards.ui.custom.FuturaDemiTextView android:textSize="20.0dip" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200b6" android:layout_width="fill_parent" android:layout_height="?l_APKTOOL_DUPLICATENAME_0x7f01004d" android:text="@string/l_APKTOOL_DUPLICATENAME_0x7f0a0054" android:lines="1" android:layout_toEndOf="@id/l_APKTOOL_DUPLICATENAME_0x7f1200b5" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/l_APKTOOL_DUPLICATENAME_0x7f1200b6">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ua.aval.mobocards.ui.custom.FuturaBookTextView android:textSize="16.0dip" android:textColor="@android:color/black" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200b7" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:text="@string/l_APKTOOL_DUPLICATENAME_0x7f0a0051" />
+            <ua.aval.mobocards.ui.custom.FuturaBookTextView android:textSize="16.0dip" android:textColor="@android:color/black" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200b8" android:layout_width="fill_parent" android:layout_height="?l_APKTOOL_DUPLICATENAME_0x7f01004d" android:layout_marginTop="4.0dip" android:layout_below="@id/l_APKTOOL_DUPLICATENAME_0x7f1200b7" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

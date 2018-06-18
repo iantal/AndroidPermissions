@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/ApplicationTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/mailbox_header" layout="@layout/click24_header_view" />
+    <FrameLayout android:id="@id/mailbox_items_layout" style="@style/AllMatchParent">
+        <ListView android:id="@id/lv_mailbox_items" android:fadingEdge="none" android:cacheColorHint="@color/transparent" android:divider="@color/separator_bg" android:dividerHeight="1.0dip" android:fadeScrollbars="true" style="@style/AllMatchParent" />
+        <include android:id="@id/view_progress_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/data_loading_progress_view" />
+    </FrameLayout>
+</LinearLayout>

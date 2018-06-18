@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_insurance_dashboard_product_item" android:src="@drawable/ic_insurance_review_item_default" style="@style/InsuranceWalletItemIcon" />
+    <TextView android:id="@id/text_insurance_dashboard_product_item_category" android:layout_marginEnd="16.0dip" android:layout_toStartOf="@id/text_insurance_dashboard_product_item_amount" android:layout_toEndOf="@id/image_insurance_dashboard_product_item" style="@style/InsuranceWalletItemCategory" />
+    <TextView android:id="@id/text_insurance_dashboard_product_item_provider" android:layout_below="@id/text_insurance_dashboard_product_item_category" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/text_insurance_dashboard_product_item_amount" android:layout_toEndOf="@id/image_insurance_dashboard_product_item" style="@style/InsuranceWalletItemProvider" />
+    <TextView android:id="@id/text_insurance_dashboard_product_item_amount" android:layout_alignParentEnd="true" style="@style/InsuranceWalletProductItemAmount" />
+    <TextView android:id="@id/text_insurance_dashboard_product_item_interval" android:layout_below="@id/text_insurance_dashboard_product_item_amount" android:layout_alignParentEnd="true" style="@style/InsuranceWalletProductItemInterval" />
+    <TextView android:id="@id/text_insurance_dashboard_product_item_cancellation_status" android:visibility="gone" android:layout_below="@id/text_insurance_dashboard_product_item_provider" android:layout_marginEnd="12.0dip" android:layout_toEndOf="@id/image_insurance_dashboard_product_item" style="@style/InsuranceWalletProductItemCancellationStatus" />
+</RelativeLayout>

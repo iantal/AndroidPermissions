@@ -1,0 +1,960 @@
+{
+  "replies": [
+    {
+      "key": "securitiesAccounts/123456789000/securityPositions",
+      "referenceDate": "2013-10-08",
+      "data": {
+        "baseCurrency": "EUR",
+        "sumOfSecurityPositions": {
+          "currentValuation": {
+            "baseCurrencyValues": {
+              "marketValue": {
+                "total": "25494.62"
+              }
+            }
+          }
+        },
+        "securityPositions": [
+          {
+            "currentValuation": {
+              "baseCurrencyValues": {
+                "marketValue": {
+                  "amount": "2057.88000",
+                  "total": "2057.88000"
+                },
+                "securityRate": {
+                  "rate": "93.54000"
+                },
+                "unrealizedForeignExchangeProfitAndLoss": {
+                  "amount": "0.00000"
+                },
+                "unrealizedProfitAndLoss": {
+                  "amount": "93.24000",
+                  "percent": "16.60434"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "tradeCurrencyValues": {
+                "marketValue": {
+                  "amount": "2057.88000",
+                  "total": "2057.88000"
+                },
+                "securityRate": {
+                  "rate": "93.54000"
+                }
+              }
+            },
+            "initialValuation": {
+              "baseCurrencyValues": {
+                "securityRate": {
+                  "rate": "80.22000"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "securityRateQuality": "0",
+              "tradeCurrencyValues": {
+                "securityRate": {
+                  "rate": "80.22000"
+                }
+              }
+            },
+            "lastBuyDate": "2013-10-08",
+            "quantity": "22.00000",
+            "securitiesAccount": {
+              "id": "123456789000"
+            },
+            "security": {
+              "alternativeId": "DE0003304101",
+              "categories": {
+                "accountStructureBase": "0001",
+                "security": "0001"
+              },
+              "category": "0001",
+              "id": "330410",
+              "isin": "DE0003304101",
+              "name": "LIQUIDIT\u00c4T A",
+              "riskClass": "1",
+              "unitCode": "1",
+              "unitPer": "1.00000",
+              "wkn": "ABC123"
+            },
+            "tradeCurrency": "EUR"
+          },
+          {
+            "currentValuation": {
+              "baseCurrencyValues": {
+                "marketValue": {
+                  "amount": "455.60000",
+                  "total": "455.60000"
+                },
+                "securityRate": {
+                  "rate": "56.95000"
+                },
+                "unrealizedForeignExchangeProfitAndLoss": {
+                  "amount": "0.00000"
+                },
+                "unrealizedProfitAndLoss": {
+                  "amount": "-147.12000",
+                  "percent": "-24.40934"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "tradeCurrencyValues": {
+                "marketValue": {
+                  "amount": "455.60000",
+                  "total": "455.60000"
+                },
+                "securityRate": {
+                  "rate": "56.95000"
+                }
+              }
+            },
+            "initialValuation": {
+              "baseCurrencyValues": {
+                "securityRate": {
+                  "rate": "75.34000"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "securityRateQuality": "0",
+              "tradeCurrencyValues": {
+                "securityRate": {
+                  "rate": "75.34000"
+                }
+              }
+            },
+            "lastBuyDate": "2013-10-08",
+            "quantity": "8.00000",
+            "securitiesAccount": {
+              "id": "123456789000"
+            },
+            "security": {
+              "alternativeId": "DE0003304101",
+              "categories": {
+                "accountStructureBase": "0001",
+                "security": "0001"
+              },
+              "category": "0001",
+              "id": "330411",
+              "isin": "DE0003304101",
+              "name": "LIQUIDIT\u00c4T B",
+              "riskClass": "2",
+              "unitCode": "1",
+              "unitPer": "1.00000",
+              "wkn": "ABC123"
+            },
+            "tradeCurrency": "EUR"
+          },
+          {
+            "currentValuation": {
+              "baseCurrencyValues": {
+                "marketValue": {
+                  "amount": "196.48000",
+                  "total": "196.48000"
+                },
+                "securityRate": {
+                  "rate": "49.120000"
+                },
+                "unrealizedForeignExchangeProfitAndLoss": {
+                  "amount": "0.00000"
+                },
+                "unrealizedProfitAndLoss": {
+                  "amount": "391.75000",
+                  "percent": "46.84604"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "tradeCurrencyValues": {
+                "marketValue": {
+                  "amount": "196.48000",
+                  "total": "196.48000"
+                },
+                "securityRate": {
+                  "rate": "49.120000"
+                }
+              }
+            },
+            "initialValuation": {
+              "baseCurrencyValues": {
+                "securityRate": {
+                  "rate": "33.45000"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "securityRateQuality": "0",
+              "tradeCurrencyValues": {
+                "securityRate": {
+                  "rate": "33.45000"
+                }
+              }
+            },
+            "lastBuyDate": "2013-10-08",
+            "quantity": "4.00000",
+            "securitiesAccount": {
+              "id": "123456789000"
+            },
+            "security": {
+              "alternativeId": "DE0003304101",
+              "category": "0040",
+              "categories": {
+                "accountStructureBase": "0100",
+                "security": "0100"
+              },
+              "id": "330412",
+              "isin": "DE0003304101",
+              "name": "IMMOBILIENFOND A",
+              "riskClass": "2",
+              "unitCode": "1",
+              "unitPer": "1.00000",
+              "wkn": "ABC123"
+            },
+            "tradeCurrency": "EUR"
+          },
+          {
+            "currentValuation": {
+              "baseCurrencyValues": {
+                "marketValue": {
+                  "amount": "162.66000",
+                  "total": "162.66000"
+                },
+                "securityRate": {
+                  "rate": "54.220000"
+                },
+                "unrealizedForeignExchangeProfitAndLoss": {
+                  "amount": "0.00000"
+                },
+                "unrealizedProfitAndLoss": {
+                  "amount": "-36.60000",
+                  "percent": "-2.20058"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "tradeCurrencyValues": {
+                "marketValue": {
+                  "amount": "162.66000",
+                  "total": "162.66000"
+                },
+                "securityRate": {
+                  "rate": "54.220000"
+                }
+              }
+            },
+            "initialValuation": {
+              "baseCurrencyValues": {
+                "securityRate": {
+                  "rate": "55.44000"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "securityRateQuality": "0",
+              "tradeCurrencyValues": {
+                "securityRate": {
+                  "rate": "55.44000"
+                }
+              }
+            },
+            "lastBuyDate": "2013-10-08",
+            "quantity": "3.00000",
+            "securitiesAccount": {
+              "id": "123456789000"
+            },
+            "security": {
+              "alternativeId": "DE0003304101",
+              "categories": {
+                "accountStructureBase": "0100",
+                "security": "0100"
+              },
+              "category": "0100",
+              "id": "330413",
+              "isin": "DE0003304101",
+              "name": "IMMOBILIENFOND B",
+              "riskClass": "3",
+              "unitCode": "1",
+              "unitPer": "1.00000",
+              "wkn": "ABC123"
+            },
+            "tradeCurrency": "EUR"
+          },
+          {
+            "currentValuation": {
+              "baseCurrencyValues": {
+                "marketValue": {
+                  "amount": "4261.40000",
+                  "total": "4261.40000"
+                },
+                "securityRate": {
+                  "rate": "38.74000"
+                },
+                "unrealizedForeignExchangeProfitAndLoss": {
+                  "amount": "0.00000"
+                },
+                "unrealizedProfitAndLoss": {
+                  "amount": "1158.30000",
+                  "percent": "37.32719"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "tradeCurrencyValues": {
+                "marketValue": {
+                  "amount": "4261.40000",
+                  "total": "4261.40000"
+                },
+                "securityRate": {
+                  "rate": "38.74000"
+                }
+              }
+            },
+            "initialValuation": {
+              "baseCurrencyValues": {
+                "securityRate": {
+                  "rate": "28.21000"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "securityRateQuality": "0",
+              "tradeCurrencyValues": {
+                "securityRate": {
+                  "rate": "28.21000"
+                }
+              }
+            },
+            "lastBuyDate": "2013-10-08",
+            "quantity": "110.00000",
+            "securitiesAccount": {
+              "id": "123456789000"
+            },
+            "security": {
+              "alternativeId": "DE0003304101",
+              "categories": {
+                "accountStructureBase": "0200",
+                "security": "0200"
+              },
+              "category": "0200",
+              "id": "330414",
+              "isin": "DE0003304101",
+              "name": "Bonds Euro A",
+              "riskClass": "2",
+              "unitCode": "1",
+              "unitPer": "1.00000",
+              "wkn": "ABC123"
+            },
+            "tradeCurrency": "EUR"
+          },
+          {
+            "currentValuation": {
+              "baseCurrencyValues": {
+                "marketValue": {
+                  "amount": "6854.00000",
+                  "total": "6854.00000"
+                },
+                "securityRate": {
+                  "rate": "34.27000"
+                },
+                "unrealizedForeignExchangeProfitAndLoss": {
+                  "amount": "0.00000"
+                },
+                "unrealizedProfitAndLoss": {
+                  "amount": "694.00000",
+                  "percent": "25.39334"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "tradeCurrencyValues": {
+                "marketValue": {
+                  "amount": "6854.00000",
+                  "total": "6854.00000"
+                },
+                "securityRate": {
+                  "rate": "34.27000"
+                }
+              }
+            },
+            "initialValuation": {
+              "baseCurrencyValues": {
+                "securityRate": {
+                  "rate": "27.33000"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "securityRateQuality": "0",
+              "tradeCurrencyValues": {
+                "securityRate": {
+                  "rate": "27.33000"
+                }
+              }
+            },
+            "lastBuyDate": "2013-10-08",
+            "quantity": "200.00000",
+            "securitiesAccount": {
+              "id": "123456789000"
+            },
+            "security": {
+              "alternativeId": "DE0003304101",
+              "categories": {
+                "accountStructureBase": "0200",
+                "security": "0200"
+              },
+              "category": "0200",
+              "id": "330415",
+              "isin": "DE0003304101",
+              "name": "Bonds Euro B",
+              "riskClass": "4",
+              "unitCode": "1",
+              "unitPer": "1.00000",
+              "wkn": "ABC123"
+            },
+            "tradeCurrency": "EUR"
+          },
+          {
+            "currentValuation": {
+              "baseCurrencyValues": {
+                "marketValue": {
+                  "amount": "2356.00000",
+                  "total": "2356.00000"
+                },
+                "securityRate": {
+                  "rate": "12.40000"
+                },
+                "unrealizedForeignExchangeProfitAndLoss": {
+                  "amount": "0.00000"
+                },
+                "unrealizedProfitAndLoss": {
+                  "amount": "-522.75000",
+                  "percent": "-33.15364"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "tradeCurrencyValues": {
+                "marketValue": {
+                  "amount": "2356.00000",
+                  "total": "2356.00000"
+                },
+                "securityRate": {
+                  "rate": "12.40000"
+                }
+              }
+            },
+            "initialValuation": {
+              "baseCurrencyValues": {
+                "securityRate": {
+                  "rate": "18.55000"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "securityRateQuality": "0",
+              "tradeCurrencyValues": {
+                "securityRate": {
+                  "rate": "18.55000"
+                }
+              }
+            },
+            "lastBuyDate": "2013-10-08",
+            "quantity": "190.00000",
+            "securitiesAccount": {
+              "id": "123456789000"
+            },
+            "security": {
+              "alternativeId": "DE0003304101",
+              "categories": {
+                "accountStructureBase": "0300",
+                "security": "0300"
+              },
+              "category": "0300",
+              "id": "330416",
+              "isin": "DE0003304101",
+              "name": "AKTIE USA A",
+              "riskClass": "4",
+              "unitCode": "1",
+              "unitPer": "1.00000",
+              "wkn": "ABC123"
+            },
+            "tradeCurrency": "EUR"
+          },
+          {
+            "currentValuation": {
+              "baseCurrencyValues": {
+                "marketValue": {
+                  "amount": "336.60000",
+                  "total": "336.60000"
+                },
+                "securityRate": {
+                  "rate": "22.44000"
+                },
+                "unrealizedForeignExchangeProfitAndLoss": {
+                  "amount": "0.00000"
+                },
+                "unrealizedProfitAndLoss": {
+                  "amount": "140.25000",
+                  "percent": "9.09091"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "tradeCurrencyValues": {
+                "marketValue": {
+                  "amount": "336.60000",
+                  "total": "336.60000"
+                },
+                "securityRate": {
+                  "rate": "22.44000"
+                }
+              }
+            },
+            "initialValuation": {
+              "baseCurrencyValues": {
+                "securityRate": {
+                  "rate": "20.57000"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "securityRateQuality": "0",
+              "tradeCurrencyValues": {
+                "securityRate": {
+                  "rate": "20.57000"
+                }
+              }
+            },
+            "lastBuyDate": "2013-10-08",
+            "quantity": "15.00000",
+            "securitiesAccount": {
+              "id": "123456789000"
+            },
+            "security": {
+              "alternativeId": "DE0003304101",
+              "categories": {
+                "accountStructureBase": "0300",
+                "security": "0300"
+              },
+              "category": "0300",
+              "id": "330417",
+              "isin": "DE0003304101",
+              "name": "AKTIE USA B",
+              "riskClass": "5",
+              "unitCode": "1",
+              "unitPer": "1.00000",
+              "wkn": "ABC123"
+            },
+            "tradeCurrency": "EUR"
+          },
+          {
+            "currentValuation": {
+              "baseCurrencyValues": {
+                "marketValue": {
+                  "amount": "526.20000",
+                  "total": "526.20000"
+                },
+                "securityRate": {
+                  "rate": "17.54000"
+                },
+                "unrealizedForeignExchangeProfitAndLoss": {
+                  "amount": "0.00000"
+                },
+                "unrealizedProfitAndLoss": {
+                  "amount": "129.60000",
+                  "percent": "32.67776"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "tradeCurrencyValues": {
+                "marketValue": {
+                  "amount": "526.20000",
+                  "total": "526.20000"
+                },
+                "securityRate": {
+                  "rate": "17.54000"
+                }
+              }
+            },
+            "initialValuation": {
+              "baseCurrencyValues": {
+                "securityRate": {
+                  "rate": "13.22000"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "securityRateQuality": "0",
+              "tradeCurrencyValues": {
+                "securityRate": {
+                  "rate": "13.22000"
+                }
+              }
+            },
+            "lastBuyDate": "2013-10-08",
+            "quantity": "30.00000",
+            "securitiesAccount": {
+              "id": "123456789000"
+            },
+            "security": {
+              "alternativeId": "DE0003304101",
+              "categories": {
+                "accountStructureBase": "0500",
+                "security": "0500"
+              },
+              "category": "0500",
+              "id": "330418",
+              "isin": "DE0003304101",
+              "name": "AKTIE A",
+              "riskClass": "3",
+              "unitCode": "1",
+              "unitPer": "1.00000",
+              "wkn": "ABC123"
+            },
+            "tradeCurrency": "EUR"
+          },
+          {
+            "currentValuation": {
+              "baseCurrencyValues": {
+                "marketValue": {
+                  "amount": "699.00000",
+                  "total": "699.00000"
+                },
+                "securityRate": {
+                  "rate": "69.90000"
+                },
+                "unrealizedForeignExchangeProfitAndLoss": {
+                  "amount": "0.00000"
+                },
+                "unrealizedProfitAndLoss": {
+                  "amount": "648.90000",
+                  "percent": "44.81044"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "tradeCurrencyValues": {
+                "marketValue": {
+                  "amount": "699.00000",
+                  "total": "699.00000"
+                },
+                "securityRate": {
+                  "rate": "69.90000"
+                }
+              }
+            },
+            "initialValuation": {
+              "baseCurrencyValues": {
+                "securityRate": {
+                  "rate": "48.27000"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "securityRateQuality": "0",
+              "tradeCurrencyValues": {
+                "securityRate": {
+                  "rate": "48.27000"
+                }
+              }
+            },
+            "lastBuyDate": "2013-10-08",
+            "quantity": "10.00000",
+            "securitiesAccount": {
+              "id": "123456789000"
+            },
+            "security": {
+              "alternativeId": "DE0003304101",
+              "categories": {
+                "accountStructureBase": "0500",
+                "security": "0020"
+              },
+              "category": "0020",
+              "id": "330419",
+              "isin": "DE0003304101",
+              "name": "AKTIE B",
+              "riskClass": "2",
+              "unitCode": "1",
+              "unitPer": "1.00000",
+              "wkn": "ABC123"
+            },
+            "tradeCurrency": "EUR"
+          },
+          {
+            "currentValuation": {
+              "baseCurrencyValues": {
+                "marketValue": {
+                  "amount": "874.60000",
+                  "total": "874.60000"
+                },
+                "securityRate": {
+                  "rate": "43.73000"
+                },
+                "unrealizedForeignExchangeProfitAndLoss": {
+                  "amount": "0.00000"
+                },
+                "unrealizedProfitAndLoss": {
+                  "amount": "194.40000",
+                  "percent": "17.39597"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "tradeCurrencyValues": {
+                "marketValue": {
+                  "amount": "874.60000",
+                  "total": "874.60000"
+                },
+                "securityRate": {
+                  "rate": "43.73000"
+                }
+              }
+            },
+            "initialValuation": {
+              "baseCurrencyValues": {
+                "securityRate": {
+                  "rate": "37.25000"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "securityRateQuality": "0",
+              "tradeCurrencyValues": {
+                "securityRate": {
+                  "rate": "37.25000"
+                }
+              }
+            },
+            "lastBuyDate": "2013-10-08",
+            "quantity": "20.00000",
+            "securitiesAccount": {
+              "id": "123456789000"
+            },
+            "security": {
+              "alternativeId": "DE0003304101",
+              "categories": {
+                "accountStructureBase": "0500",
+                "security": "0020"
+              },
+              "category": "0020",
+              "id": "330420",
+              "isin": "DE0003304101",
+              "name": "AKTIE C",
+              "riskClass": "4",
+              "unitCode": "1",
+              "unitPer": "1.00000",
+              "wkn": "ABC123"
+            },
+            "tradeCurrency": "EUR"
+          },
+          {
+            "currentValuation": {
+              "baseCurrencyValues": {
+                "marketValue": {
+                  "amount": "3900.00000",
+                  "total": "3900.00000"
+                },
+                "securityRate": {
+                  "rate": "650.00000"
+                },
+                "unrealizedForeignExchangeProfitAndLoss": {
+                  "amount": "0.00000"
+                },
+                "unrealizedProfitAndLoss": {
+                  "amount": "-320.00000",
+                  "percent": "-5.79710"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "tradeCurrencyValues": {
+                "marketValue": {
+                  "amount": "3900.00000",
+                  "total": "3900.00000"
+                },
+                "securityRate": {
+                  "rate": "650.00000"
+                }
+              }
+            },
+            "initialValuation": {
+              "baseCurrencyValues": {
+                "securityRate": {
+                  "rate": "690.00000"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "securityRateQuality": "0",
+              "tradeCurrencyValues": {
+                "securityRate": {
+                  "rate": "690.00000"
+                }
+              }
+            },
+            "lastBuyDate": "2013-10-08",
+            "quantity": "6.00000",
+            "securitiesAccount": {
+              "id": "123456789000"
+            },
+            "security": {
+              "alternativeId": "DE0003304101",
+              "categories": {
+                "accountStructureBase": "0500",
+                "security": "0020"
+              },
+              "category": "0020",
+              "id": "330420",
+              "isin": "DE0003304101",
+              "name": "AKTIE D",
+              "riskClass": "1",
+              "unitCode": "1",
+              "unitPer": "1.00000",
+              "wkn": "ABC123"
+            },
+            "tradeCurrency": "EUR"
+          },
+          {
+            "currentValuation": {
+              "baseCurrencyValues": {
+                "marketValue": {
+                  "amount": "1389.20000",
+                  "total": "1389.20000"
+                },
+                "securityRate": {
+                  "rate": "69.46000"
+                },
+                "unrealizedForeignExchangeProfitAndLoss": {
+                  "amount": "0.00000"
+                },
+                "unrealizedProfitAndLoss": {
+                  "amount": "237.30000",
+                  "percent": "12.85134"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "tradeCurrencyValues": {
+                "marketValue": {
+                  "amount": "1389.20000",
+                  "total": "1389.20000"
+                },
+                "securityRate": {
+                  "rate": "69.46000"
+                }
+              }
+            },
+            "initialValuation": {
+              "baseCurrencyValues": {
+                "securityRate": {
+                  "rate": "61.55000"
+                }
+              },
+              "foreignExchangeRate": "1.0",
+              "fxRate": "1.0",
+              "securityRateQuality": "2",
+              "tradeCurrencyValues": {
+                "securityRate": {
+                  "rate": "61.55000"
+                }
+              }
+            },
+            "lastBuyDate": "2013-10-08",
+            "quantity": "20.00000",
+            "securitiesAccount": {
+              "id": "123456789000"
+            },
+            "security": {
+              "alternativeId": "DE0003304101",
+              "categories": {
+                "accountStructureBase": "0500",
+                "security": "0020"
+              },
+              "category": "0020",
+              "id": "330420",
+              "isin": "DE0003304101",
+              "name": "AKTIE E",
+              "riskClass": "5",
+              "unitCode": "1",
+              "unitPer": "1.00000",
+              "wkn": "ABC123"
+            },
+            "tradeCurrency": "EUR"
+          },
+          {
+            "currentValuation": {
+              "baseCurrencyValues": {
+                "marketValue": {
+                  "amount": "1425.00000",
+                  "total": "1425.00000"
+                },
+                "securityRate": {
+                  "rate": "25.00000"
+                },
+                "unrealizedForeignExchangeProfitAndLoss": {
+                  "amount": "1.50000"
+                },
+                "unrealizedProfitAndLoss": {
+                  "amount": "142.50000",
+                  "percent": "23.45679"
+                }
+              },
+              "foreignExchangeRate": "1.1020",
+              "fxRate": "1.1020",
+              "tradeCurrencyValues": {
+                "marketValue": {
+                  "amount": "1425.00000",
+                  "total": "1425.00000"
+                },
+                "securityRate": {
+                  "rate": "25.00000"
+                }
+              }
+            },
+            "initialValuation": {
+              "baseCurrencyValues": {
+                "securityRate": {
+                  "rate": "20.25000"
+                }
+              },
+              "foreignExchangeRate": "1.2595",
+              "fxRate": "1.2595",
+              "securityRateQuality": "1",
+              "tradeCurrencyValues": {
+                "securityRate": {
+                  "rate": "20.25000"
+                }
+              }
+            },
+            "lastBuyDate": "2013-10-08",
+            "quantity": "57.00000",
+            "securitiesAccount": {
+              "id": "123456789000"
+            },
+            "security": {
+              "alternativeId": "DE0003304101",
+              "categories": {
+                "accountStructureBase": "0500",
+                "security": "0020"
+              },
+              "category": "0020",
+              "id": "330420",
+              "isin": "DE0003304101",
+              "name": "AKTIE F",
+              "riskClass": "2",
+              "unitCode": "1",
+              "unitPer": "1.00000",
+              "wkn": "ABC123"
+            },
+            "tradeCurrency": "USD"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/toolbar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <include layout="@layout/db_toolbar" />
+        <include android:id="@id/postbox_search_bar" android:visibility="invisible" layout="@layout/search_bar" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/postbox_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar_container" android:animateLayoutChanges="true">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbSeekBar android:id="@id/filter_postbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:paddingStart="@dimen/misc_clickable_area_padding" android:paddingEnd="@dimen/misc_clickable_area_padding" style="@style/DbSeekBar" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.dbPicker.DbPicker android:id="@id/account_picker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/misc_clickable_area_padding" android:paddingEnd="@dimen/misc_clickable_area_padding" android:layout_marginStart="5.0dip" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/no_messages_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="16.0dip">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_info_default" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="17.0sp" android:layout_gravity="center" android:id="@id/no_messages_label" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_unread_documents" />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView android:id="@id/postbox_messages_recycler" android:paddingBottom="@dimen/postbox_messages_recycler_padding_bottom" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/account_picker" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.db.pwcc.dbmobile.foundation.views.layouts.LoadingOverlayLayout android:gravity="center" android:orientation="vertical" android:id="@id/securities_loading_not_successful_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar_container" />
+    <android.support.design.widget.FloatingActionButton android:id="@id/fab_read_all" android:src="@drawable/ic_msg_read_all" style="@style/FloatingActionButton" />
+</RelativeLayout>

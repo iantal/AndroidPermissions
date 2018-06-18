@@ -1,0 +1,90 @@
+{
+  "replies": [
+    {
+      "key": "customers/1234567890/cashAccounts/123456789000EUR/futureDateTransfers",
+      "referenceDate": "2017-06-30",
+      "data": {
+        "futureDateTransfers": [
+          {
+            "id": "aef9e0df-6750-4aba-a346-3ac5057cb9b9",
+            "postingDate": "2017-06-30",
+            "desiredTransferDate": "2017-07-07",
+            "executionDate": "2017-07-07",
+            "beneficiaryName": "Max Mustermann",
+            "beneficiaryIban": "DE16533700240123456701",
+            "beneficiaryBic": "DEUTDEDB533",
+            "purpose": "Dauerauftrag Miete",
+            "amount": {
+              "value": "1235",
+              "currency": "EUR"
+            }
+          },
+          {
+            "id": "7de324a1-edd2-44b4-ab32-b8d8dabf8515",
+            "postingDate": "2017-07-03",
+            "desiredTransferDate": "2017-07-06",
+            "executionDate": "2017-07-06",
+            "beneficiaryName": "Ralf Schneider",
+            "beneficiaryIban": "DE06265501050080069800",
+            "beneficiaryBic": "NOLADE22XXX",
+            "purpose": "Bezahlung Rechnung",
+            "amount": {
+              "value": "10",
+              "currency": "EUR"
+            }
+          },
+          {
+            "id": "bc9c6292-ebd9-4dcc-ba21-f3ceb25fcbff",
+            "postingDate": "2017-07-03",
+            "desiredTransferDate": "2017-07-05",
+            "executionDate": "2017-07-05",
+            "beneficiaryName": "Marc Schneider",
+            "beneficiaryIban": "DE05215730420470458100",
+            "beneficiaryBic": "DEUTDEDBFRA",
+            "purpose": "Lastschrift R\u00fcckgabe aus Umsatz",
+            "amount": {
+              "value": "20.18",
+              "currency": "EUR"
+            }
+          },
+          {
+            "id": "461cc6c7-6953-49e4-9999-801a771a06de",
+            "postingDate": "2017-07-04",
+            "desiredTransferDate": "2017-07-05",
+            "executionDate": "2017-07-05",
+            "beneficiaryName": "Bernd Mueller",
+            "beneficiaryIban": "DE16533700240123456701",
+            "beneficiaryBic": "DEUTDEDB533",
+            "purpose": "Sofa",
+            "amount": {
+              "value": "123.11",
+              "currency": "EUR"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "customers/1234567890/cashAccounts/123456789060EUR/futureDateTransfers",
+      "referenceDate": "2017-06-30",
+      "data": {
+        "futureDateTransfers": [
+          {
+            "id": "aef9e0df-6750-4aba-a346-3ac5057cb9b9",
+            "postingDate": "2017-06-30",
+            "desiredTransferDate": "2017-07-07",
+            "executionDate": "2017-07-07",
+            "beneficiaryName": "Max Mustermann",
+            "beneficiaryIban": "DE16533700240123456701",
+            "beneficiaryBic": "DEUTDEDB533",
+            "purpose": "Dauerauftrag Miete",
+            "amount": {
+              "value": "980",
+              "currency": "EUR"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

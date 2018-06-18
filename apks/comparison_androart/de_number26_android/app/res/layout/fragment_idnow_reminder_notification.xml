@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/grey_79" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="32.0dip" android:layout_marginBottom="16.0dip" android:text="@string/idnow_reminder_availability_label" />
+    <de.number26.machete.android.ui.activation.view.LabelledCheckboxView android:id="@id/reminder_time_morning" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <de.number26.machete.android.ui.activation.view.LabelledCheckboxView android:id="@id/reminder_time_noon" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <de.number26.machete.android.ui.activation.view.LabelledCheckboxView android:id="@id/reminder_time_afternoon" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <de.number26.machete.android.ui.activation.view.LabelledCheckboxView android:id="@id/reminder_time_evening" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Button android:id="@id/action_save" android:layout_margin="16.0dip" android:text="@string/action_save" style="@style/MintRaisedButton" />
+</LinearLayout>

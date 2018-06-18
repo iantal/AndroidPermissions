@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" style="@style/creditTermsItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/creditTermsItemCheckBox" style="@style/creditTermsItemCheckBox" />
+    <TextView android:id="@id/creditTermsItemText" style="@style/creditTermsItemText" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/picker_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.TextInputLayout android:theme="@style/FloatingInput" android:id="@id/result_viewer_layout" android:layout_width="fill_parent" android:layout_height="55.0dip" style="@style/dbTextInputLayout">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbEditText android:theme="@style/DbEditTextPadding" android:textSize="@dimen/picker_edittext_fontsize" android:id="@id/result_viewer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="@dimen/picker_edittext_padding" android:drawableEnd="@drawable/arrow_down" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="@dimen/picker_space_height" />
+    <FrameLayout android:id="@id/list_container" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/item_picker" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="@dimen/picker_listview_height" android:divider="@null" android:choiceMode="singleChoice" android:overScrollMode="never" />
+    </FrameLayout>
+</LinearLayout>

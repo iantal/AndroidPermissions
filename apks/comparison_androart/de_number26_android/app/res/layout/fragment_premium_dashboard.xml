@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layoutPremiumDashboard" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <android.support.v7.widget.RecyclerView android:id="@id/recyclerPremiumContentDashboardVouchers" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:layout_collapseMode="parallax" app:layout_scrollFlags="scroll" />
+            <TextView android:textSize="21.0sp" android:textColor="@color/black_1b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="16.0dip" android:text="@string/premium_dashboard_your_account" app:layout_scrollFlags="scroll" fontPath="@string/font_regular" />
+            <include layout="@layout/partial_premium_dashboard_account" />
+            <TextView android:textSize="21.0sp" android:textColor="@color/black_1b" android:id="@id/textPremiumDashboardArticleFeed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="16.0dip" android:text="@string/premium_dashboard_your_feed" fontPath="@string/font_regular" />
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/recyclerPremiumContentDashboardArticles" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="48.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

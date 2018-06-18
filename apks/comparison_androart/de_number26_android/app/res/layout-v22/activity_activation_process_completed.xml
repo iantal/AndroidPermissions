@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="25.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/welcome_title" style="@style/activation_title" />
+            <include layout="@layout/activity_activation_process_completed_wirecard" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_subtitle" android:allowUndo="true" style="@style/activation_subtitle" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_subtitle2" style="@style/activation_subtitle" />
+        </LinearLayout>
+        <TextView android:id="@id/nextButton" android:text="@string/action_lets_go" style="@style/mainbutton" />
+    </LinearLayout>
+</ScrollView>

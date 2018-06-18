@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerViewKycRelianceDataPointsEntryPictures" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <de.number26.machete.android.adl.atoms.PageIndicator android:layout_gravity="bottom" android:id="@id/pageIndicatorKycRelianceDataPointsEntry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" app:layout_constraintBottom_toTopOf="@id/layoutDataPointsEntryHolder" app:viewPagerId="@id/pagerKycRelianceTerms" />
+    <FrameLayout android:id="@id/layoutDataPointsEntryHolder" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+        <include android:layout_gravity="bottom" android:id="@id/layoutDataPointsEntryText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_kyc_reliance_data_entry_text" />
+        <include android:layout_gravity="bottom" android:id="@id/layoutDataPointsEntryDate" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_kyc_reliance_data_entry_date" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

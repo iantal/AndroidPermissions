@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/roundrect_shape" android:layout_marginTop="2.5dip" android:layout_marginBottom="2.5dip" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_error" android:background="@drawable/roundrect_shape_text_view" android:visibility="gone" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:layout_alignParentTop="true" style="@style/ErrorStrip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_content" android:padding="10.0dip" android:layout_below="@id/tv_error" style="@style/MatchParentWrapContent">
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_row_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_weight="0.33" style="@style/PaymentItemTextSmallBold" />
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_row_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.67" style="@style/PaymentItemTextSmallNormal" />
+        <EditText android:id="@id/et_row_value" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:layout_weight="0.67" android:inputType="text" style="@style/PaymentItemTextSmallNormal" />
+        <Spinner android:gravity="center_vertical" android:id="@id/spinner_policy" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.67" />
+    </LinearLayout>
+    <View android:id="@id/view_separator" android:visibility="gone" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_below="@id/view_content" style="@style/ListSeparator" />
+</RelativeLayout>

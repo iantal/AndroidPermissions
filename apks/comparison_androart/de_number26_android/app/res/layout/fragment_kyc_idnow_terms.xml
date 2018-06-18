@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingTop="24.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="195.0dip" android:src="@drawable/ic_idnow_terms" />
+            <TextView android:textSize="26.0sp" android:textColor="@color/grey_dark" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="16.0dip" android:text="@string/kyc_idnow_terms_title" fontPath="@string/font_medium" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+                <CheckBox android:gravity="center" android:layout_gravity="center" android:id="@id/check_kyc_idnow_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:scaleX="1.5" android:scaleY="1.5" fontPath="@string/font_regular" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/grey_dark" android:layout_gravity="center_horizontal" android:id="@id/text_kyc_idnow_terms_subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="@string/font_regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/button_kyc_idnow_terms_start_verification" android:background="@drawable/main_button_rounded" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="16.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signup_kyc_start_verification" android:drawableLeft="@drawable/ic_video_verification" android:drawablePadding="12.0dip" fontPath="@string/font_regular" />
+    </FrameLayout>
+</LinearLayout>

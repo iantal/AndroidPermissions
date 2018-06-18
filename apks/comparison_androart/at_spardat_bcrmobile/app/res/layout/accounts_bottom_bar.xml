@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:scrollbars="none" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" style="@style/AllWrapContent">
+        <include android:id="@id/view_dashboard_button1" layout="@layout/account_dashboard_bottom_button" />
+        <include android:id="@id/view_dashboard_button2" layout="@layout/account_dashboard_bottom_button" />
+        <include android:id="@id/view_dashboard_button3" layout="@layout/account_dashboard_bottom_button" />
+        <include android:id="@id/view_dashboard_button4" layout="@layout/account_dashboard_bottom_button" />
+        <include android:id="@id/view_dashboard_button5" layout="@layout/account_dashboard_bottom_button" />
+    </LinearLayout>
+</HorizontalScrollView>

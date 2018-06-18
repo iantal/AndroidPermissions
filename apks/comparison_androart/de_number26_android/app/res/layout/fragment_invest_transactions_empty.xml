@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/nonDocuments" android:paddingLeft="@dimen/default_padding_large" android:paddingTop="@dimen/default_padding_large" android:paddingRight="@dimen/default_padding_large" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_documents" />
+    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_padding_large" android:text="@string/no_transactions_yet" style="@style/TextAppearance.Item.Title" />
+    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_padding" android:text="@string/no_transactions_yet_desc" style="@style/TextAppearance.Item.Sub" />
+</LinearLayout>

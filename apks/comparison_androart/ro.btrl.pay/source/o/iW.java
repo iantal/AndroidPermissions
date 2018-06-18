@@ -1,0 +1,100 @@
+package o;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public final class iW
+{
+  public static iX<Long> ʻ;
+  public static iX<Integer> ʻॱ;
+  public static iX<Boolean> ʼ;
+  public static iX<Integer> ʼॱ;
+  public static iX<String> ʽ;
+  public static iX<Long> ʽॱ;
+  public static iX<Long> ʾ;
+  public static iX<String> ʿ;
+  public static iX<Integer> ˈ;
+  public static iX<Long> ˉ;
+  static List<iX<String>> ˊ;
+  public static iX<Long> ˊˊ;
+  public static iX<Long> ˊˋ;
+  public static iX<Integer> ˊॱ;
+  public static iX<Long> ˊᐝ;
+  static List<iX<Boolean>> ˋ;
+  public static iX<Long> ˋˊ;
+  public static iX<Integer> ˋˋ;
+  public static iX<Integer> ˋॱ;
+  public static iX<Long> ˋᐝ;
+  public static iX<Long> ˌ;
+  public static iX<Long> ˍ;
+  static List<iX<Long>> ˎ;
+  public static iX<Long> ˎˎ;
+  public static iX<Long> ˎˏ = iX.ˎ("measurement.service_client.idle_disconnect_millis", 5000L, 5000L);
+  static List<iX<Integer>> ˏ = new ArrayList();
+  public static iX<Integer> ˏˎ;
+  public static iX<Integer> ˏˏ;
+  public static iX<String> ˏॱ;
+  public static iX<Boolean> ˑ = iX.ˏ("measurement.lifetimevalue.user_engagement_tracking_enabled", false, false);
+  public static iX<String> ͺ;
+  public static iX<Long> ͺॱ;
+  private static iX<Boolean> ـ;
+  public static iX<Boolean> ॱ;
+  private static List<iX<Double>> ॱʻ;
+  private static iX<Boolean> ॱʼ;
+  private static iX<Boolean> ॱʽ;
+  public static iX<Integer> ॱˊ;
+  public static iX<Integer> ॱˋ;
+  public static iX<Integer> ॱˎ;
+  public static iX<Boolean> ॱͺ = iX.ˏ("measurement.audience.complex_param_evaluation", false, false);
+  public static iX<Long> ॱॱ;
+  public static iX<Integer> ॱᐝ;
+  public static iX<Long> ᐝ;
+  public static iX<Integer> ᐝॱ;
+  private static iX<Boolean> ᐧ;
+  
+  static
+  {
+    ˎ = new ArrayList();
+    ˋ = new ArrayList();
+    ˊ = new ArrayList();
+    ॱʻ = new ArrayList();
+    ॱʼ = iX.ˏ("measurement.log_third_party_store_events_enabled", false, false);
+    ـ = iX.ˏ("measurement.log_installs_enabled", false, false);
+    ॱʽ = iX.ˏ("measurement.log_upgrades_enabled", false, false);
+    ᐧ = iX.ˏ("measurement.log_androidId_enabled", false, false);
+    ॱ = iX.ˏ("measurement.upload_dsid_enabled", false, false);
+    ʼ = iX.ˏ("measurement.event_sampling_enabled", false, false);
+    ʽ = iX.ॱ("measurement.log_tag", "FA", "FA-SVC");
+    ʻ = iX.ˎ("measurement.ad_id_cache_time", 10000L, 10000L);
+    ॱॱ = iX.ˎ("measurement.monitoring.sample_period_millis", 86400000L, 86400000L);
+    ᐝ = iX.ˎ("measurement.config.cache_time", 86400000L, 3600000L);
+    ˏॱ = iX.ॱ("measurement.config.url_scheme", "https", "https");
+    ͺ = iX.ॱ("measurement.config.url_authority", "app-measurement.com", "app-measurement.com");
+    ˊॱ = iX.ˎ("measurement.upload.max_bundles", 100, 100);
+    ॱˊ = iX.ˎ("measurement.upload.max_batch_size", 65536, 65536);
+    ˋॱ = iX.ˎ("measurement.upload.max_bundle_size", 65536, 65536);
+    ᐝॱ = iX.ˎ("measurement.upload.max_events_per_bundle", 1000, 1000);
+    ʻॱ = iX.ˎ("measurement.upload.max_events_per_day", 100000, 100000);
+    ॱˋ = iX.ˎ("measurement.upload.max_error_events_per_day", 1000, 1000);
+    ॱˎ = iX.ˎ("measurement.upload.max_public_events_per_day", 50000, 50000);
+    ॱᐝ = iX.ˎ("measurement.upload.max_conversions_per_day", 500, 500);
+    ʼॱ = iX.ˎ("measurement.upload.max_realtime_events_per_day", 10, 10);
+    ˈ = iX.ˎ("measurement.store.max_stored_events_per_app", 100000, 100000);
+    ʿ = iX.ॱ("measurement.upload.url", "https://app-measurement.com/a", "https://app-measurement.com/a");
+    ʽॱ = iX.ˎ("measurement.upload.backoff_period", 43200000L, 43200000L);
+    ʾ = iX.ˎ("measurement.upload.window_interval", 3600000L, 3600000L);
+    ˉ = iX.ˎ("measurement.upload.interval", 3600000L, 3600000L);
+    ˊˋ = iX.ˎ("measurement.upload.realtime_upload_interval", 10000L, 10000L);
+    ˊᐝ = iX.ˎ("measurement.upload.debug_upload_interval", 1000L, 1000L);
+    ˋˊ = iX.ˎ("measurement.upload.minimum_delay", 500L, 500L);
+    ˊˊ = iX.ˎ("measurement.alarm_manager.minimum_interval", 60000L, 60000L);
+    ˋᐝ = iX.ˎ("measurement.upload.stale_data_deletion_interval", 86400000L, 86400000L);
+    ˌ = iX.ˎ("measurement.upload.refresh_blacklisted_config_interval", 604800000L, 604800000L);
+    ˍ = iX.ˎ("measurement.upload.initial_upload_delay_time", 15000L, 15000L);
+    ˎˎ = iX.ˎ("measurement.upload.retry_time", 1800000L, 1800000L);
+    ˋˋ = iX.ˎ("measurement.upload.retry_count", 6, 6);
+    ͺॱ = iX.ˎ("measurement.upload.max_queue_time", 2419200000L, 2419200000L);
+    ˏˏ = iX.ˎ("measurement.lifetimevalue.max_currency_tracked", 4, 4);
+    ˏˎ = iX.ˎ("measurement.audience.filter_result_max_count", 200, 200);
+  }
+}

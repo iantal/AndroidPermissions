@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.db.pwcc.dbmobile.foundation.views.toolbar.DbToolbar android:id="@id/db_toolbar_view" android:background="@drawable/toolbar_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/actionbarHeight" app:contentInsetStart="0.0dip" app:contentInsetLeft="0.0dip" style="@style/DbToolbarStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_content" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/toolbar_custom_root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/actionbarHeight" />
+</com.db.pwcc.dbmobile.foundation.views.toolbar.DbToolbar>

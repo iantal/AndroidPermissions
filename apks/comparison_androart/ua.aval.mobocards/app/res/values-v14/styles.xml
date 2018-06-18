@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="l_APKTOOL_DUPLICATENAME_0x7f0c000c" parent="@android:style/Theme.Holo.Light.DarkActionBar" />
+    <style name="l_APKTOOL_DUPLICATENAME_0x7f0c0020" parent="@style/l_APKTOOL_DUPLICATENAME_0x7f0c002a" />
+    <style name="l_APKTOOL_DUPLICATENAME_0x7f0c0021" parent="@style/l_APKTOOL_DUPLICATENAME_0x7f0c002b" />
+    <style name="l_APKTOOL_DUPLICATENAME_0x7f0c0029" parent="@style/l_APKTOOL_DUPLICATENAME_0x7f0c003b">
+        <item name="android:textSize">@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b0048</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="l_APKTOOL_DUPLICATENAME_0x7f0c002a" parent="@style/l_APKTOOL_DUPLICATENAME_0x7f0c0022">
+        <item name="android:actionModeSelectAllDrawable">?l_APKTOOL_DUPLICATENAME_0x7f01005a</item>
+        <item name="android:listPreferredItemPaddingLeft">@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b003e</item>
+        <item name="android:listPreferredItemPaddingRight">@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b003e</item>
+    </style>
+    <style name="l_APKTOOL_DUPLICATENAME_0x7f0c002b" parent="@style/l_APKTOOL_DUPLICATENAME_0x7f0c0023">
+        <item name="android:actionModeSelectAllDrawable">?l_APKTOOL_DUPLICATENAME_0x7f01005a</item>
+        <item name="android:listPreferredItemPaddingLeft">@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b003e</item>
+        <item name="android:listPreferredItemPaddingRight">@dimen/l_APKTOOL_DUPLICATENAME_0x7f0b003e</item>
+    </style>
+</resources>

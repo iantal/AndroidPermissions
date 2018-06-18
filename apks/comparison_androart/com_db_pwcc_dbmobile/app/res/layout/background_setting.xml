@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/background_setting_title" android:text="@string/settings_item_background" style="@style/SettingsItemHeader" />
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/background_setting_status" android:text="@string/settings_item_background" android:layout_below="@id/background_setting_title" style="@style/SettingsItemValue" />
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/background_setting_button" android:text="@string/settings_item_background_button" style="@style/SettingsItemButton" />
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="42.0dip" android:layout_alignParentRight="true">
+        <RelativeLayout android:id="@id/bubble" android:background="@drawable/chat_bubble_self" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/messageText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/chat_text_message_style" />
+        </RelativeLayout>
+        <TextView android:textSize="11.0sp" android:gravity="bottom" android:layout_gravity="bottom|center|left" android:id="@id/timeText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

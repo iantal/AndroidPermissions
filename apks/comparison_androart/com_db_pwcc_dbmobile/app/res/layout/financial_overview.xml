@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.db.pwcc.dbmobile.financial_overview.layouts.FinancialOverviewLayout android:orientation="vertical" android:id="@id/financialoverview_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/financialoverview_tile" android:paddingTop="@dimen/financial_overview_tile_padding_top" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <com.db.pwcc.dbmobile.financial_overview.db_tab_bar.MbaTabBar android:id="@id/financial_overview_tab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/financial_overview_tile_margin_left" android:layout_marginRight="@dimen/financial_overview_tile_margin_right" android:layout_marginBottom="@dimen/financial_overview_tile_tab_bar_margin_bottom" />
+        <LinearLayout android:orientation="vertical" android:id="@id/financial_overview_balance_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/financial_overview_tile_margin_left" android:layout_marginRight="@dimen/financial_overview_tile_margin_right">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/financial_overview_tile_bank_title_size" android:id="@id/financialoverview_balance_bank_title" android:paddingTop="0.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/default_bank_name" android:textAlignment="center" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="36.0sp" android:id="@id/financialoverview_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/financialoverview_loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_efi_refresh" android:layout_marginStart="@dimen/efi_refresh_icon_margin" />
+            </LinearLayout>
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="15.0sp" android:textColor="@color/prebookedBalanceText" android:ellipsize="end" android:id="@id/financialoverview_online_balance" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:textAlignment="center" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/financial_overview_pager_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.SizableViewPager android:id="@id/financial_overview_pager" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.db.pwcc.dbmobile.foundation.widgets.CirclePageIndicator android:id="@id/indicator" android:paddingTop="7.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PageIndicator" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.db.pwcc.dbmobile.foundation.views.layouts.LoadingOverlayLayout android:id="@id/tile_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+</com.db.pwcc.dbmobile.financial_overview.layouts.FinancialOverviewLayout>

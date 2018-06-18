@@ -1,0 +1,206 @@
+package com.google.android.gms.common;
+
+import android.app.Activity;
+import android.app.PendingIntent;
+import android.content.IntentSender.SendIntentException;
+import android.os.Parcel;
+import android.os.Parcelable.Creator;
+import android.support.annotation.Nullable;
+import com.google.android.gms.common.internal.zzbg;
+import com.google.android.gms.common.internal.zzbi;
+import com.google.android.gms.internal.zzbfm;
+import com.google.android.gms.internal.zzbfp;
+import java.util.Arrays;
+
+public final class ConnectionResult
+  extends zzbfm
+{
+  public static final int API_UNAVAILABLE = 16;
+  public static final int CANCELED = 13;
+  public static final Parcelable.Creator<ConnectionResult> CREATOR = new zzb();
+  public static final int DEVELOPER_ERROR = 10;
+  @Deprecated
+  public static final int DRIVE_EXTERNAL_STORAGE_REQUIRED = 1500;
+  public static final int INTERNAL_ERROR = 8;
+  public static final int INTERRUPTED = 15;
+  public static final int INVALID_ACCOUNT = 5;
+  public static final int LICENSE_CHECK_FAILED = 11;
+  public static final int NETWORK_ERROR = 7;
+  public static final int RESOLUTION_REQUIRED = 6;
+  public static final int RESTRICTED_PROFILE = 20;
+  public static final int SERVICE_DISABLED = 3;
+  public static final int SERVICE_INVALID = 9;
+  public static final int SERVICE_MISSING = 1;
+  public static final int SERVICE_MISSING_PERMISSION = 19;
+  public static final int SERVICE_UPDATING = 18;
+  public static final int SERVICE_VERSION_UPDATE_REQUIRED = 2;
+  public static final int SIGN_IN_FAILED = 17;
+  public static final int SIGN_IN_REQUIRED = 4;
+  public static final int SUCCESS = 0;
+  public static final int TIMEOUT = 14;
+  public static final ConnectionResult zzfkr = new ConnectionResult(0);
+  private final int zzcd;
+  private int zzeck;
+  private final PendingIntent zzeeo;
+  private final String zzfks;
+  
+  public ConnectionResult(int paramInt)
+  {
+    this(paramInt, null, null);
+  }
+  
+  ConnectionResult(int paramInt1, int paramInt2, PendingIntent paramPendingIntent, String paramString)
+  {
+    this.zzeck = paramInt1;
+    this.zzcd = paramInt2;
+    this.zzeeo = paramPendingIntent;
+    this.zzfks = paramString;
+  }
+  
+  public ConnectionResult(int paramInt, PendingIntent paramPendingIntent)
+  {
+    this(paramInt, paramPendingIntent, null);
+  }
+  
+  public ConnectionResult(int paramInt, PendingIntent paramPendingIntent, String paramString)
+  {
+    this(1, paramInt, paramPendingIntent, paramString);
+  }
+  
+  static String getStatusString(int paramInt)
+  {
+    switch (paramInt)
+    {
+    default: 
+      return 31 + "UNKNOWN_ERROR_CODE(" + paramInt + ")";
+    case 0: 
+      return "SUCCESS";
+    case 1: 
+      return "SERVICE_MISSING";
+    case 2: 
+      return "SERVICE_VERSION_UPDATE_REQUIRED";
+    case 3: 
+      return "SERVICE_DISABLED";
+    case 4: 
+      return "SIGN_IN_REQUIRED";
+    case 5: 
+      return "INVALID_ACCOUNT";
+    case 6: 
+      return "RESOLUTION_REQUIRED";
+    case 7: 
+      return "NETWORK_ERROR";
+    case 8: 
+      return "INTERNAL_ERROR";
+    case 9: 
+      return "SERVICE_INVALID";
+    case 10: 
+      return "DEVELOPER_ERROR";
+    case 11: 
+      return "LICENSE_CHECK_FAILED";
+    case 13: 
+      return "CANCELED";
+    case 14: 
+      return "TIMEOUT";
+    case 15: 
+      return "INTERRUPTED";
+    case 16: 
+      return "API_UNAVAILABLE";
+    case 17: 
+      return "SIGN_IN_FAILED";
+    case 18: 
+      return "SERVICE_UPDATING";
+    case 19: 
+      return "SERVICE_MISSING_PERMISSION";
+    case 20: 
+      return "RESTRICTED_PROFILE";
+    case 21: 
+      return "API_VERSION_UPDATE_REQUIRED";
+    case 1500: 
+      return "DRIVE_EXTERNAL_STORAGE_REQUIRED";
+    case 99: 
+      return "UNFINISHED";
+    }
+    return "UNKNOWN";
+  }
+  
+  public final boolean equals(Object paramObject)
+  {
+    boolean bool2 = false;
+    if (paramObject == this) {}
+    do
+    {
+      boolean bool1 = true;
+      do
+      {
+        do
+        {
+          do
+          {
+            return bool1;
+            bool1 = bool2;
+          } while (!(paramObject instanceof ConnectionResult));
+          paramObject = (ConnectionResult)paramObject;
+          bool1 = bool2;
+        } while (this.zzcd != paramObject.zzcd);
+        bool1 = bool2;
+      } while (!zzbg.equal(this.zzeeo, paramObject.zzeeo));
+    } while (zzbg.equal(this.zzfks, paramObject.zzfks));
+    return false;
+  }
+  
+  public final int getErrorCode()
+  {
+    return this.zzcd;
+  }
+  
+  @Nullable
+  public final String getErrorMessage()
+  {
+    return this.zzfks;
+  }
+  
+  @Nullable
+  public final PendingIntent getResolution()
+  {
+    return this.zzeeo;
+  }
+  
+  public final boolean hasResolution()
+  {
+    return (this.zzcd != 0) && (this.zzeeo != null);
+  }
+  
+  public final int hashCode()
+  {
+    return Arrays.hashCode(new Object[] { Integer.valueOf(this.zzcd), this.zzeeo, this.zzfks });
+  }
+  
+  public final boolean isSuccess()
+  {
+    return this.zzcd == 0;
+  }
+  
+  public final void startResolutionForResult(Activity paramActivity, int paramInt)
+    throws IntentSender.SendIntentException
+  {
+    if (!hasResolution()) {
+      return;
+    }
+    paramActivity.startIntentSenderForResult(this.zzeeo.getIntentSender(), paramInt, null, 0, 0, 0);
+  }
+  
+  public final String toString()
+  {
+    return zzbg.zzx(this).zzg("statusCode", getStatusString(this.zzcd)).zzg("resolution", this.zzeeo).zzg("message", this.zzfks).toString();
+  }
+  
+  public final void writeToParcel(Parcel paramParcel, int paramInt)
+  {
+    int i = zzbfp.zze(paramParcel);
+    zzbfp.zzc(paramParcel, 1, this.zzeck);
+    zzbfp.zzc(paramParcel, 2, getErrorCode());
+    zzbfp.zza(paramParcel, 3, getResolution(), paramInt, false);
+    zzbfp.zza(paramParcel, 4, getErrorMessage(), false);
+    zzbfp.zzai(paramParcel, i);
+  }
+}

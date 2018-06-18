@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <de.number26.machete.android.ui.savings.fixedterm.duration.CurvesView android:id="@id/curves_fixed_term_duration" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <de.number26.machete.android.ui.savings.fixedterm.duration.CometView android:id="@id/comet_fixed_term_duration" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="20.0dip" android:gravity="center" android:id="@id/text_fixed_term_duration_question" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="48.0dip" android:layout_marginRight="@dimen/default_margin" android:layout_marginBottom="32.0dip" android:text="@string/fixed_term_duration_text" android:layout_alignParentStart="true" fontPath="@string/font_regular" />
+        <de.number26.machete.android.ui.savings.fixedterm.duration.PickerView android:id="@id/picker_fixed_term_duration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" android:layout_marginBottom="45.0dip" android:layout_below="@id/text_fixed_term_duration_question" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/grey_79" android:gravity="center" android:id="@id/text_fixed_term_duration_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_duration_max_pa" android:layout_below="@id/picker_fixed_term_duration" fontPath="@string/font_regular" />
+        <TextView android:textSize="32.0sp" android:textColor="@color/black_1b" android:id="@id/text_fixed_term_duration_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/text_fixed_term_duration_hint" android:layout_centerHorizontal="true" fontPath="@string/font_regular" />
+        <de.number26.machete.android.adl.atoms.MainButton android:id="@id/main_button_fixed_term_duration_next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:textAllCaps="false" app:text="@string/fixed_term_duration_next" />
+    </RelativeLayout>
+</ScrollView>

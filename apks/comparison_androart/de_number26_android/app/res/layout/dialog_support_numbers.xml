@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:gravity="start|center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="@dimen/contact_row_height" android:text="@string/settings_service_main_title" style="@style/choosing_options" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="295.0dip" android:layout_margin="@dimen/default_margin" />
+</LinearLayout>

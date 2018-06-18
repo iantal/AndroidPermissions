@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/creditScreenPaddingTopBottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/creditReviewTitle" android:layout_marginBottom="32.0dip" android:text="@string/credit_finance_review_title" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditTitle" />
+        <RelativeLayout android:id="@id/creditReviewButtonIncome" style="@style/creditReviewButton">
+            <TextView android:text="@string/credit_finance_review_income" android:layout_toStartOf="@id/creditReviewButtonIncomeAmount" style="@style/creditReviewButtonText" />
+            <TextView android:id="@id/creditReviewButtonIncomeAmount" android:layout_marginEnd="@dimen/creditFinanceReviewItemMarginStartEnd" android:layout_alignParentEnd="true" style="@style/creditReviewButtonAmount" />
+            <View style="@style/creditReviewButtonDivider" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/creditReviewButtonExpenses" style="@style/creditReviewButton">
+            <TextView android:text="@string/credit_finance_review_expenses" android:layout_toStartOf="@id/creditReviewButtonExpensesAmount" style="@style/creditReviewButtonText" />
+            <TextView android:id="@id/creditReviewButtonExpensesAmount" android:layout_marginEnd="@dimen/creditFinanceReviewItemMarginStartEnd" android:layout_alignParentEnd="true" style="@style/creditReviewButtonAmount" />
+            <View style="@style/creditReviewButtonDivider" />
+        </RelativeLayout>
+        <RelativeLayout style="@style/creditReviewButton">
+            <TextView android:text="@string/credit_finance_review_remaining" android:layout_toStartOf="@id/creditReviewRemainingAmount" fontPath="@string/font_medium" style="@style/creditReviewButtonText" />
+            <TextView android:id="@id/creditReviewRemainingAmount" android:background="@drawable/credit_mint_bg" android:padding="@dimen/creditFinanceReviewValueRemainingPadding" android:layout_marginEnd="@dimen/creditFinanceReviewValueRemainingMarginEnd" android:layout_alignParentEnd="true" fontPath="@string/font_medium" style="@style/creditReviewButtonAmount" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/grey_79" android:layout_marginTop="12.0dip" android:text="@string/credit_finance_review_note" style="@style/creditDescription" />
+            <Button android:id="@id/creditReviewContinue" android:layout_marginTop="12.0dip" android:layout_marginBottom="@dimen/creditScreenPaddingTopBottom" android:text="@string/credit_finance_review_continue" style="@style/creditAccentButton" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

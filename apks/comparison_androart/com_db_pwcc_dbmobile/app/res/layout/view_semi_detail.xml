@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:gravity="center_vertical" android:id="@id/branch_finder_detail_address_tv" android:layout_width="fill_parent" android:layout_height="@dimen/branch_finder_detail_text_height" android:layout_marginTop="@dimen/branch_finder_detail_small_margin" android:layout_marginStart="@dimen/activity_horizontal_margin" android:layout_marginEnd="@dimen/activity_horizontal_margin" style="@style/BranchfinderText.Normal" />
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:gravity="center_vertical" android:id="@id/branch_finder_detail_city_tv" android:layout_width="fill_parent" android:layout_height="@dimen/branch_finder_detail_text_height" android:layout_marginStart="@dimen/activity_horizontal_margin" android:layout_marginEnd="@dimen/activity_horizontal_margin" style="@style/BranchfinderText.Normal" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/branch_finder_detail_text_height" android:layout_marginBottom="@dimen/branch_finder_detail_small_margin" android:layout_marginStart="@dimen/activity_horizontal_margin" android:layout_marginEnd="@dimen/activity_horizontal_margin">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:gravity="center_vertical" android:id="@id/branch_finder_detail_phone_tv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/BranchfinderText.Normal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/branch_finder_detail_distance_ly" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip">
+            <ImageView android:layout_width="@dimen/branch_finder_detail_small_icon_size" android:layout_height="@dimen/branch_finder_detail_small_icon_size" android:src="@drawable/ic_location_crosshair_white" android:layout_marginEnd="@dimen/branch_finder_detail_small_margin" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:gravity="center_vertical" android:id="@id/branch_finder_detail_distance_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BranchfinderText.Small" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/branch_finder_detail_status_ly" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <View android:id="@id/branch_finder_details_status_image" android:background="@drawable/branch_finder_detail_open_shape" android:layout_width="@dimen/branch_finder_detail_small_icon_size" android:layout_height="@dimen/branch_finder_detail_small_icon_size" android:layout_marginEnd="@dimen/branch_finder_detail_small_margin" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/branch_finder_detail_status_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BranchfinderText.Small" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/branch_finder_divider" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/branch_finder_detail_actions_height">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/branch_finder_detail_action_call" android:background="@drawable/actionbuttons_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:padding="5.0dip" android:layout_width="@dimen/branch_finder_detail_action_icons_size" android:layout_height="@dimen/branch_finder_detail_action_icons_size" android:src="@drawable/ic_call" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/branch_finder_action_call" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/branch_finder_detail_action_directions" android:background="@drawable/actionbuttons_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:padding="5.0dip" android:layout_width="@dimen/branch_finder_detail_action_icons_size" android:layout_height="@dimen/branch_finder_detail_action_icons_size" android:src="@drawable/ic_directions" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/branch_finder_action_directions" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/branch_finder_detail_action_share" android:background="@drawable/actionbuttons_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:padding="5.0dip" android:layout_width="@dimen/branch_finder_detail_action_icons_size" android:layout_height="@dimen/branch_finder_detail_action_icons_size" android:src="@drawable/ic_share" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/branch_finder_action_share" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

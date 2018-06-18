@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/main_frame" style="@style/DashboardTheme">
+        <include android:id="@id/view_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/account_dashboard_header_view" />
+        <LinearLayout android:orientation="vertical" android:id="@id/view_offer_account_parent" android:layout_below="@id/view_header" style="@style/AllMatchParent">
+            <TextView android:id="@id/tv_error" android:visibility="gone" style="@style/ErrorStrip" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/view_product_offers_parent" android:background="@color/background_light" android:visibility="gone" style="@style/MatchParentWrapContent" />
+            <RelativeLayout android:background="@color/background_center" android:layout_marginTop="1.0dip" style="@style/AllMatchParent">
+                <ScrollView style="@style/MatchParentWrapContent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/view_accounts" android:background="@color/background_center" android:paddingLeft="@dimen/screen_padding" android:paddingTop="5.0dip" android:paddingRight="@dimen/screen_padding" android:paddingBottom="5.0dip" style="@style/MatchParentWrapContent" />
+                </ScrollView>
+                <include android:id="@id/view_account_list_progress_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/data_loading_progress_view" />
+                <LinearLayout android:gravity="center" android:layout_gravity="right" android:id="@id/view_bottom_progress_container" android:background="@color/map_progress_background" android:padding="5.0dip" android:visibility="gone" android:layout_alignParentBottom="true" style="@style/MatchParentWrapContent">
+                    <ProgressBar android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+                    <TextView android:textColor="@color/text_view_color" android:id="@id/tv_progress" android:layout_marginLeft="3.0dip" style="@style/TextSmallNormalAllWrap" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <include android:id="@id/view_product_offer_progress_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/view_header" layout="@layout/data_loading_progress_view" />
+    </RelativeLayout>
+    <include android:id="@id/showcase_view" android:visibility="gone" layout="@layout/view_show_case" />
+    <include layout="@layout/view_drawer_sidebar_layout" />
+</android.support.v4.widget.DrawerLayout>

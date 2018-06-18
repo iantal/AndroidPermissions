@@ -1,0 +1,8 @@
+package butterknife;
+
+public abstract interface Unbinder
+{
+  public static final Unbinder a = new Unbinder.1();
+  
+  public abstract void a();
+}

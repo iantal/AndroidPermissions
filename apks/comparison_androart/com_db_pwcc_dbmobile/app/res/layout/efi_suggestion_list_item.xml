@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/efi_suggestion_container" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="@dimen/efi_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/efi_suggestion_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/efi_list_item_icon_margin_end" android:layout_alignParentStart="true" app:srcCompat="@drawable/ic_standard_bank" />
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/efi_list_item_title_size" android:gravity="start|center" android:id="@id/efi_suggestion_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toEndOf="@id/efi_suggestion_icon" />
+</RelativeLayout>

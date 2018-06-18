@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.number26.machete.android.ui.components.TransactionDetailsSection android:orientation="horizontal" android:id="@id/button_transaction_download_confirmation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" app:icon="@drawable/ic_download">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.Item.Title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/transaction_details_heading_transfer_confirmation" />
+            <TextView android:textAppearance="@style/TextAppearance.Item.Sub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/transaction_details_subtitle_transfer_confirmation" />
+        </LinearLayout>
+    </de.number26.machete.android.ui.components.TransactionDetailsSection>
+</merge>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="l">Перейти на головний</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0001">%1$s, %2$s</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0002">%1$s, %2$s, %3$s</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0003">Перейти вгору</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0004">Інші опції</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0005">Готово</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0006">Переглянути всі</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0007">Вибрати програму</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0008">ВИМК.</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0009">УВІМК.</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a000a">Пошук…</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a000b">Очистити запит</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a000c">Пошуковий запит</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a000d">Пошук</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a000e">Надіслати запит</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a000f">Голосовий пошук</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0010">Надіслати через</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0011">Надіслати через %s</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0012">Згорнути</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0013">Увімкнути</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0014">Додаток %1$s не працюватиме, якщо не ввімкнути сервіси Google Play.</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0015">Увімкнути сервіси Google Play</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0016">Установити</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0017">Додаток %1$s не працюватиме без сервісів Google Play, яких немає на вашому пристрої.</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0018">Установити сервіси Google Play</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0019">Помилка сервісів Google Play</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a001a">У додатку %1$s виникла проблема із сервісами Google Play. Повторіть спробу.</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a001b">Додаток %1$s не працюватиме без сервісів Google Play, які не підтримуються на вашому пристрої.</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a001c">Оновити</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a001d">Додаток %1$s не працюватиме, якщо не оновити сервіси Google Play.</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a001e">Оновіть сервіси Google Play</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a001f">Додаток %1$s не працюватиме без сервісів Google Play, які зараз оновлюються.</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0020">Потрібна нова версія сервісів Google Play. Вони невдовзі оновляться.</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0021">Відкрити на телефоні</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0022">Увійти</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0023">Увійти в облік. запис Google</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0024">Пошук</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0025">999+</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0026">Система банка відхилила запит: %s</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0027">Система банка недоступна або не відповідає. Повторіть запит пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0028">"Ваш обліковий запиc заблоковано. Будь ласка, зв'яжіться з банком."</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0029">На платформі мобільних платежів виникла помилка. Будь ласка, повторіть запит пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a002a">Будь ласка, підключення до Інтернет. Не вдалося розшифрувати дані від сервера</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a002b">"Будь ласка, підключення до Інтернет. Невідома помилка
+Код: %s"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a002c" formatted="false">"Будь ласка, підключення до Інтернет. Невідома помилка
+Код: %s :
+ %s"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a002d">"Будь ласка, підключення до Інтернет. Невідома помилка:
+ %s"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a002e" formatted="false">"Будь ласка, підключення до Інтернет. Невідома помилка
+Код: %s 
+ %s"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a002f">Знайдено дублікат мобільного додатку на сервері мобільних платежів. Будь ласка, розпочніть процес реєстрації з початку</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0030">Невірний логін або пароль</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0031">На платформі мобільних платежів виникла помилка. Будь ласка, повторіть запит пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0032">"Неможливо оцифрувати картку. Будь ласка, повторіть процес оцифровки карти або зв'яжіться з центром підтримки користувачів"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0033" formatted="false">Некоректний формат запиту: %s / %s . Будь ласка, перевірте наявність оновлення додатку на Google Play Market</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0034">Запит до платформи мобільних платежів відхилено. Можливо, ваш мобільний додаток застарів і потребує оновлення. Будь ласка, перевірте наявність оновлень додатку на Google Play Market</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0035">"Ваш додаток заблоковано або видалено. Будь ласка, зв'яжіться з банком для отримання деталей"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0036">Помилка отримання статусу запиту. Будь ласка, повторіть процедуру пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0037">"Некоректний ідентифікатор Умов договору. Повторіть оцифровку пізніше або зв'яжіться з центром підтримки користувачів"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0038">"Ваш додаток заблоковано або цифрова картка призупинена. Будь ласка, зв'яжіться з банком для отримання деталей"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0039">"Неможливо виконати операцію з даною карткою. Будь ласка, оновіть список карт, якщо помилка залишилась зв'яжіться з банком"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a003a">Помилка послідовності обробки запитів. Якщо ця помилка виникає постійно, будь ласка, переустановіть додаток</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a003b">Некоректний логін або пароль</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a003c">Неправильний логін або пароль. Можливо, термін дії пароля вичерпано. Будь ласка, змініть пароль через систему Інтернет-банкінгу \"Райффайзен Онлайн\"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a003d">Ваш обліковий запис у банку не дає можливості використовувати додаток Raiffeisen Pay</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a003e">Ваш обліковий запис тимчасово заблоковано. Будь ласка, повторіть процес пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a003f">Помилка оновлення історії платежів для однієї чи декількох карток. Будь ласка, спробуйте ще раз пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0040">"Відсутній наявний сеанс зв'язку з сервером"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0041">"Немає доступних карт. Будь ласка, зв'яжіться з банком"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0042">"Неправильний SMS-код.
+У вас обмежене число спроб ввести SMS-код"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0043">Перевищено ліміт числа спроб ввести SMS-код. Будь ласка, повторіть спробу пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0044">"Картку вже оцифровано у вашому мобільному додатку. Будь ласка, перевірте статус картки або зв'яжіться з банком"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0045">Час на реєстрацію вичерпано. Будь ласка, виконайте процес реєстрації з початку</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0046">Помилка реєстрації, будь ласка, спробуйте ще раз через %s</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0047">Сервіс тимчасово недоступний. Будь ласка, повторіть ваш запит пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0048">На платформі мобільних платежів виникла помилка. Будь ласка, повторіть запит пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0049">"Система банку вказала невідомий тип карти. Будь ласка, зв'яжіться з банком або повторіть операцію пізніше"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a004a">Сервіс тимчасово недоступний. Будь ласка, спробуйте пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a004b">Помилка роботи з Visa Tokenization Service: VTS ERROR. Будь ласка, спробуйте пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a004c">Помилка доступу до даних Visa Tokenization Service: VTS_INVALID_CARD. Будь ласка, спробуйте пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a004d">"Відмова в обробці запиту до Visa Tokenization Service: VTS_INVALID_PARAMETERS. Будь ласка, зв'яжіться з банком і перевірте статус картки"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a004e">"Відмова в обробці запиту до Visa Tokenization Service: VTS_OPERATIONS_NOT_ALLOWED. Будь ласка, зв'яжіться з банком і перевірте статус картки"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a004f">"Внутрішня помилка в Visa Tokenization Service: VTS_SERVICE_ERROR. Будь ласка, зв'яжіться з банком та перевірте статус картки"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0050">Виникла внутрішня помилка в Visa Tokenization Service. Будь ласка, спробуйте пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0051">Ця Політика конфіденційності містить загальну інформацію про обробку та забезпечення АТ «Райффайзен Банк Аваль» конфіденційності інформації у додатку «Raiffeisen Pay». Відносини Банку з клієнтами при використанні ними додатку «Raiffeisen Pay» регулюються законодавством України, нормативно-правовими актами Національного банку України, угодами між клієнтами та Банком, наданою клієнтами Банку згодою і цією Політикою конфіденційності. Політка конфіденційності застосовується Банком до додатку «Raiffeisen Pay» незалежно від того яким шляхом Ви користуєтесь даним Сервісом: комп’ютер, мобільний телефон, планшет, або інший пристрій, за допомогою якого клієнт Банку можете скористатися Сервісами, що покриваються Політикою конфіденційності.</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0052">https://www.aval.ua/data_protection/</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0053">Дізнатись більше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0054">Політика конфіденційності</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0055">На Вашому пристрої знайдено проблеми з безпекою. Додаток не може працювати на пристрої з root-правами!</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0056">Баланс</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0057">Запит оброблюється</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0058">"Картка неактивна.
+Будь ласка, зв'яжіться з банком для отримання деталей"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0059">"Картку призупинено.удь ласка, зв'яжіться з банком для отримання деталей"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a005a">Номер картки</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a005b">"Виконується деактивація.
+Ви не можете використовувати картку до завершення процесу"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a005c">Останні платежі</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a005d">Немає доступних карток</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a005e">"Очікується підтвердження зміни статусу картки.
+Зв'яжіться з банком для отримання деталей"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a005f">Картку %s активовано</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0060">Мова</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0061">Деактивувати</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0062">Помилка оновлення балансу</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0063">Дії з карткою</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0064">Підтримка</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0065">Опції</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0066">Оновити список транзакцій</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0067">Оновити список карток</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0068">Показати баланс карти</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0069">Налаштування</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a006a">Виникла помилка, будь ласка, оновіть список карток</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a006b">Встановити за замовчуванням</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a006c">Мої картки</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a006d">"Щоб здійснити оплату,
+розблокуйте картку"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a006e">Залишилось %d спроб</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a006f" formatted="false">"Ви можете ввести код за
+ %02d : %02d"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0070">Вхід заблоковано</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0071">Введіть PIN-код додатку</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0072">Використайте відбиток пальця або PIN-код</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0073" formatted="false">"%s 
+ Залишилось %d спроб"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0074" formatted="false">"Наступна спроба за
+ %02d : %02d"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0075">Забули PIN-код додатку?</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0076">м. Київ, вул. Лєскова, 9</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0077">Контакт-центр</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0078">01011, Україна</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0079">Підтримка Raiffeisen Pay</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a007a">Райффайзен Банк Аваль</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a007b">На вашому пристрої не знайдено поштовий клієнт</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a007c">На вашому пристрої не знайдено додатку для перегляду мап</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a007d">Перегляд</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a007e">Перегляд</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a007f">Підтримка</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0080">Додаток не може коректно працювати без деяких дозволів. Будь ласка, перейдіть до налаштувань Android та надайте додатку необхідні дозволи</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0081">Будь ласка, перейдіть до налаштувань Android і надайте необхідні дозволи додатку</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0082">Відмінити</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0083">Перейти</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0084">Налаштування</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0085">Дозволи</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0086">Для платежів необхідно оновити транзакційні ключі картки. Перевірте підключення до мережі інтернет й повторіть спробу</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0087">OK</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0088">"Відсутнє з'єднання з Інтернетом"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0089">Помилка</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a008a">Ви можете відновити PIN-код додатку. Для цього вам необхідно ввести логін та пароль від системи Інтернет-банкінгу \"Райффайзен Онлайн\", потім підтвердіть свої дії SMS-кодом</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a008b">Відміна</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a008c">Відновити</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a008d">Відновлення PIN-коду</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a008e">Будь ласка, увімкніть функцію NFC. Перейти до налаштувань Android?</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a008f">Відмінити</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0090">Увімкнути</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0091">NFC вимкнено</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0092">Будь ласка, перевірте доступ до мережі інтернету та повторіть операцію</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0093">OK</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0094">"Відсутнє з'єднання з Інтернетом"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0095">"Помилка доступу до сервера мобільних платежів. Перевірте з'єднання з інтернет"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0096">Помилка отримання параметрів пристрою</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0097">"Перевірте підключення до Інтернету. Помилка з'єднання: %s"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0098">Помилка установки захищеної сесії з сервером. Будь ласка, повторіть запит пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a0099">Помилка установки захищеної сесії з сервером. Будь ласка, повторіть запит пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a009a">Немає підключення до мережі інтернет</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a009b">English</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a009c">Русский</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a009d">Мова</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a009e">Українська</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a009f">Запит оброблюється…</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00a0">Встановіть PIN-код додатку</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00a1">PIN-коди додатку не співпадають</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00a2">Далі</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00a3">Увійти</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00a4">Перевірте формат логіна і переконайтесь, що Ви здійснювали перший вхід в Інтернет-банкінг \"Райффайзен Онлайн\"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00a5">Перевірте формат пароля і переконайтесь, що Ви здійснювали перший вхід в Інтернет-банкінг \"Райффайзен Онлайн\"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00a6">PIN-код додатку</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00a7">Пароль</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00a8">Повторіть PIN-код</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00a9">Логін</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00aa">Дані \"Райффайзен Онлайн\"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00ab">Правові засади</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00ac">Підтримка</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00ad">Технологія Host Card Emulation не підтримується пристроєм</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00ae">Модуль NFC не знайдено на даному пристрої</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00af">Помилка оновлення статусу картки *%s</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00b0">*%s - статус картки змінено</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00b1">Зміна статусу картки</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00b2">Активуючи дану опцію Ви можете здійснювати платежі не запускаючи Raiffeisen Pay. Розблокуйте екран або введіть PIN-код додатку в процессі оплати</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00b3">Завжди ввімкнено</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00b4">Тільки оцифровані карти</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00b5">Показувати кнопку платежу</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00b6">Показувати баланс карти</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00b7">Показувати історію операцій</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00b8">Налаштування</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00b9">Використовувати сканер відбитка пальця</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00ba">Далі</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00bb">Перевірте формат SMS-коду</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00bc">SMS-код</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00bd">Назад</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00be" formatted="false">Цифрова картка: %s ....%s</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00bf">Використовується у додатку для захисту Вашої картки та персональних даних</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00c0">"Увімкніть з'єднання з інтернетом, щоб надалі здійснювати транзакції за допомогою додатку"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00c1">"Зв'язок не встановлено"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00c2">"Зв'язок встановлено"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00c3">Піднесіть телефон до терміналу</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00c4">Оплата</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00c5">Cпробуйте ще раз</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00c6">Додаток не може коректно працювати без деяких дозволів. Будь ласка, перейдіть до налаштувань Android та надайте додатку необхідні дозволи</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00c7">Відмінити</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00c8">Налаштування</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00c9">Дозволи</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00ca">Для коректної роботи додатку потрібні деякі дозволи. Будь ласка, підтвердіть запит</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00cb">Відмінити</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00cc">OK</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00cd">Необхідний доступ</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00ce">Помилка оновлення транзакційних ключів. Перевірте підключення до Інтернету та спробуйте ще раз пізніше</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00cf">Додаток не може працювати в root-режимі</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00d0">"Ініціалізація....
+Будь ласка, зачекайте"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00d1">Політика конфіденційності</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00d2">Прийняти</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00d3">Відміна</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00d4">Я погоджуюсь на активацію додатку Raiffeisen Pay. Я поінформований про те, що користування додатком регулюється Правилами банківського обслуговування фізичних осіб в АТ «Райффайзен Банк Аваль» (розміщено на www.aval.ua), які є невід’ємною частиною Публічної пропозиції АТ «Райффайзен Банк Аваль» про надання Послуг укладеної між банком та клієнтом.</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00d5">Умови договору</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00d6">"Помилка при роботі мобільного компоненту Visa.
+Додаток може працювати некоректно!
+Програма не може працювати на пристроях з root-правами. %s"</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00d7">Далі</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00d8">English</string>
+    <string name="l_APKTOOL_DUPLICATENAME_0x7f0a00d9">Ласкаво просимо до Raiffeisen Pay. Активуйте картку Visa та сплачуйте покупки безконтактно мобільним телефоном</string>
+</resources>

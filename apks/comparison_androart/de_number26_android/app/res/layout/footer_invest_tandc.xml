@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip">
+        <CheckBox android:textColor="@color/grey_46" android:gravity="center|left|top" android:layout_gravity="left" android:id="@id/check_footer_invest_tandc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:button="@drawable/checkbox_selector_mint" fontPath="@string/font_regular" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black_1b" android:id="@id/text_footer_invest_tandc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/invest_tnc_ffb_ack" android:lineSpacingExtra="8.0sp" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/grey" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/invest_tnc_email_sent" android:lineSpacingExtra="8.0sp" fontPath="@string/font_regular" />
+    <de.number26.machete.android.adl.atoms.MainButton android:id="@id/button_invest_tandc_agree" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:enabled="false" app:text="@string/invest_tnc_continue" />
+</LinearLayout>

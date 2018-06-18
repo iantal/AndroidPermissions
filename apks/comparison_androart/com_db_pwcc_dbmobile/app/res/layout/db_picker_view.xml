@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding_amount_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_small_text_size" android:id="@id/hint_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/picker_edittext_padding" />
+        <android.support.design.widget.TextInputLayout android:theme="@style/FloatingInput" android:textSize="@dimen/picker_edittext_fontsize" android:id="@id/text_input_view" android:layout_width="fill_parent" android:layout_height="35.0dip">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:theme="@style/DbEditTextPadding" android:textSize="@dimen/picker_edittext_fontsize" android:id="@id/textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="@dimen/picker_edittext_padding" android:drawableEnd="@drawable/ic_arrow_right" />
+        </android.support.design.widget.TextInputLayout>
+        <View android:background="@color/colorListHorizontalLine" android:layout_width="fill_parent" android:layout_height="@dimen/picker_tiny_padding" android:layout_below="@id/text_input_view" />
+    </LinearLayout>
+</RelativeLayout>

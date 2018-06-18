@@ -1,16 +1,4 @@
 {
-  "emulator": {
-    "strings": [
-      "google_sdk",
-      "init.goldfish.rc"
-    ],
-    "imports": [
-      "EmulatorDetector"
-    ],
-    "methods": [
-      "isEmulator"
-    ]
-  },
   "url": {
     "strings": [
       "http:",
@@ -19,74 +7,7 @@
       "rtsp:"
     ]
   },
-  "root": {
-    "strings": [
-      "bin/su",
-      "sudo",
-      "superuser"
-    ]
-  },
-  "apk": {
-    "strings": [
-      ".apk",
-      ".dex"
-    ]
-  },
-  "network": {
-    "strings": [
-      "client",
-      "socket",
-      "connect",
-      "url",
-      "uri"
-    ],
-    "imports": [
-      "http",
-      "socket",
-      "tcp",
-      "udp"
-    ],
-    "methods": [
-      "connect",
-      "send",
-      "tcp",
-      "udp"
-    ]
-  },
-  "libs": {
-    "strings": [
-      "loadLibrary"
-    ]
-  },
-  "file": {
-    "strings": [
-      "file:",
-      "/tmp/",
-      "/data/"
-    ],
-    "imports": [
-      "java/io/File"
-    ]
-  },
-  "other": {
-    "strings": [
-      "api_key",
-      "password",
-      "pass",
-      "admin",
-      "secret",
-      "encrypt",
-      "decrypt"
-    ],
-    "methods": [
-      "password",
-      "pass",
-      "admin",
-      "secret",
-      "encrypt",
-      "decrypt"
-    ]
-  },
+
   "api": {
     "imports": [
       "nfc",
@@ -102,33 +23,6 @@
       "bluetooth",
       "install",
       "package"
-    ]
-  },
-  "sms": {
-    "imports": [
-      "sms",
-      "telephony"
-    ],
-    "methods": [
-      "sms",
-      "telephony",
-      "getDeviceId",
-      "getSimOperator",
-      "getSimCountry",
-      "getImei"
-    ]
-  },
-  "location": {
-    "imports": [
-      "GoogleApiClient",
-      "FusedLocationProvider",
-      "setMockLocation"
-    ],
-    "methods": [
-      "getLastLocation",
-      "getLocationAvailability",
-      "requestLocationUpdates",
-      "setMockLocation"
     ]
   }
 }

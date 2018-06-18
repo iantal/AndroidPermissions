@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/db_toolbar" />
+        <LinearLayout android:orientation="vertical" android:id="@id/section_personalization" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/section_header_personalization" android:text="@string/settings_header_personalization" style="@style/SettingsSectionHeader" />
+            <com.db.pwcc.dbmobile.foundation.settings.background.BackgroundSettingView android:id="@id/background_setting_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_horizontal_margin" />
+            <com.db.pwcc.dbmobile.foundation.settings.charttoggle.ChartToggleSettingView android:id="@id/chart_toggle_setting_view" android:paddingRight="@dimen/activity_horizontal_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_horizontal_margin" />
+        </LinearLayout>
+        <View style="@style/SettingsDivider" />
+        <LinearLayout android:orientation="vertical" android:id="@id/section_features" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_horizontal_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/section_header_features" android:text="@string/settings_header_features" style="@style/SettingsSectionHeader" />
+            <com.db.pwcc.dbmobile.foundation.settings.fingerprint.FingerprintLoginSettingView android:id="@id/fingerprintlogin_setting_view" android:paddingRight="@dimen/activity_horizontal_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_horizontal_margin" />
+            <com.db.pwcc.dbmobile.foundation.settings.mobilepayment.MobilePaymentSettingView android:id="@id/mobilepayment_setting_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_horizontal_margin" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

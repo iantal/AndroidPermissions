@@ -1,0 +1,17 @@
+{
+  "replies": [
+    {
+      "key": "creditCards/41231234987667789/transactions",
+      "data": {
+        "baseCurrency": "EUR",
+        "account": {
+          "id": "41231234987667789",
+          "number": "41231234987667789",
+          "onlineBalanceInBaseCurrency": "0"
+          //The online balance (booked balance + queued balance).
+        },
+        "bookedTransactions": []
+      }
+    }
+  ]
+}

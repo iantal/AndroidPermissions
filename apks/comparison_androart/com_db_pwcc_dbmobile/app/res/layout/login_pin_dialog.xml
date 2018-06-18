@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootview" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/fingerprint_dialog_margin" android:paddingEnd="@dimen/fingerprint_dialog_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/fs_fingerprint_text" android:textColor="@color/black" android:gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fingerprint_dialog_title_spacing" android:text="@string/fingerprint_request_pin_dialog_message" />
+    <android.support.v7.widget.AppCompatEditText android:textSize="@dimen/fs_fingerprint_text" android:textColor="@color/fingerprintPinDialogTextColor" android:textColorHint="@color/fingerprintPinDialogTextColor" android:id="@id/pin_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fingerprint_dialog_title_spacing" android:maxLines="1" android:maxLength="5" android:inputType="textPassword" android:imeOptions="actionDone" android:textCursorDrawable="@null" app:backgroundTint="@color/fingerprintPinDialogAccentColor">
+        <requestFocus />
+    </android.support.v7.widget.AppCompatEditText>
+</LinearLayout>

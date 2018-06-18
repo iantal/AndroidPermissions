@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/postbox_document_item_height" android:paddingEnd="@dimen/misc_clickable_area_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/blue_indicator" android:paddingTop="0.5dip" android:paddingBottom="0.5dip" android:layout_width="4.0dip" android:layout_height="fill_parent" android:src="@drawable/unread_indicator" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/message_icon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/ic_msg_read" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/message_text_container" android:paddingLeft="@dimen/misc_clickable_area_padding" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/message_icon" android:layout_alignParentStart="true">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/received_date" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" style="@style/ListItem.SubLine" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/product_num" android:layout_toRightOf="@id/received_date" android:layout_alignParentTop="true" style="@style/ListItem.SubLine" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/subject" android:layout_below="@id/received_date" style="@style/ListItem.Title" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/message_details" android:layout_marginRight="10.0dip" android:layout_below="@id/subject" style="@style/ListItem.SubLine" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:ellipsize="end" android:id="@id/owner" android:layout_toRightOf="@id/message_details" android:layout_below="@id/subject" style="@style/ListItem.SubLine" />
+    </RelativeLayout>
+</RelativeLayout>

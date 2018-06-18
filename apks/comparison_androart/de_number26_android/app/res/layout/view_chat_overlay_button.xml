@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_alignParentRight="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fab_chat_action_bg" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:src="@drawable/fab_chat_action" />
+        <ImageView android:layout_gravity="center" android:id="@id/chatButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chat_black" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/chatIndicatorLayout" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/circle_filled" />
+        <TextView android:textColor="@android:color/white" android:id="@id/indicatorTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

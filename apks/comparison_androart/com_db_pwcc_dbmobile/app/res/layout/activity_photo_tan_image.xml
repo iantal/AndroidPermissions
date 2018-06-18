@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/phototan_image_container" android:background="@color/photoTanBackground" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/phototan_image" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/fs_sepa_normal" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/sepatransfer_verify_phototan_popup_description" android:layout_above="@id/phototan_image" android:layout_centerHorizontal="true" android:textAlignment="center" />
+</RelativeLayout>

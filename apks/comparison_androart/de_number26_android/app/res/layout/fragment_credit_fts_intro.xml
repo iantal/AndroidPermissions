@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/creditScreenPaddingTopBottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/credit_link_account_icon" />
+        <TextView android:layout_marginBottom="10.0dip" android:text="@string/credit_link_account_title" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditTitle" />
+        <TextView style="@style/creditLinkAccountDescription" />
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView style="@style/creditLinkAccountTermsHeader" />
+            <LinearLayout style="@style/creditTermsItem">
+                <CheckBox android:id="@id/check_box_credit_fts_intro_fintec" style="@style/creditTermsItemCheckBox" />
+                <TextView android:id="@id/text_credit_fts_intro_fintec" style="@style/creditTermsItemText" />
+            </LinearLayout>
+            <LinearLayout style="@style/creditTermsItem">
+                <CheckBox android:id="@id/check_box_credit_fts_intro_use_bank_data" style="@style/creditTermsItemCheckBox" />
+                <TextView android:id="@id/creditLinkAccountTermsUseBankDataText" android:text="@string/credit_link_account_bank_account_data_terms" style="@style/creditTermsItemText" />
+            </LinearLayout>
+            <Button android:enabled="false" android:id="@id/button_credit_fts_intro_continue" android:layout_marginTop="16.0dip" android:layout_marginBottom="@dimen/creditScreenPaddingTopBottom" android:text="@string/credit_link_account_continue" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditAccentButton" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

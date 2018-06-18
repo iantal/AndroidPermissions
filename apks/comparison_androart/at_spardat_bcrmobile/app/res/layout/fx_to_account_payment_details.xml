@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/roundrect_shape" android:padding="10.0dip" android:layout_marginTop="2.5dip" android:layout_marginBottom="2.5dip" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/text_default" android:id="@id/account_name" style="@style/TextSmallBoldAllWrap" />
+    <TextView android:textColor="@color/text_default" android:id="@id/account_balance" android:layout_marginTop="5.0dip" style="@style/TextSmallBoldAllWrap" />
+    <TextView android:textColor="@color/text_default" android:id="@id/iban_payment" android:layout_marginTop="5.0dip" style="@style/TextSmallNormalAllWrap" />
+</LinearLayout>

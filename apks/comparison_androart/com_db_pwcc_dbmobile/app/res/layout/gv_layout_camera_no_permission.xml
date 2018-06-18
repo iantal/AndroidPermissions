@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/gv_layout_camera_no_permission" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/gv_image_camera_no_permission" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gv_no_camera" />
+    <net.gini.android.vision.internal.ui.CustomFontTextView android:textStyle="bold" android:gravity="center" android:id="@id/gv_text_camera_no_permission" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="@string/gv_camera_error_no_permission" style="@style/GiniVisionTheme.Camera.Error.NoPermission.TextStyle" />
+    <net.gini.android.vision.internal.ui.CustomFontButton android:id="@id/gv_button_camera_no_permission" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/gv_camera_error_no_permission_button_title" style="@style/GiniVisionTheme.Camera.Error.NoPermission.Button.TextStyle" />
+</LinearLayout>

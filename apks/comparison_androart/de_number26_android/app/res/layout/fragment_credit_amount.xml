@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/creditAmountTitleText" android:id="@id/creditAmountQuestion" android:paddingBottom="@dimen/creditAmountTitlePaddingBottom" android:layout_marginTop="@dimen/creditScreenPaddingTopBottom" android:lineSpacingMultiplier="@dimen/creditAmountTitleLineSpacingMultiplier" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditTitle" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/creditAmountAmountLayoutBottomMargin" android:fillViewport="true" android:layout_below="@id/creditAmountQuestion" android:animateLayoutChanges="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:paddingStart="@dimen/creditScreenPaddingStartEnd" android:paddingEnd="@dimen/creditScreenPaddingStartEnd">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/creditAmountAmountMarginTop" android:layout_marginBottom="@dimen/creditAmountAmountMarginBottom">
+                <EditText android:id="@id/creditAmount" style="@style/creditAmount" />
+                <TextView android:id="@id/creditAmountSymbol" style="@style/creditAmountSymbol" />
+            </LinearLayout>
+            <TextView android:id="@id/creditAmountRange" style="@style/creditAmountRange" />
+            <TextView android:id="@id/creditAmountError" android:visibility="gone" style="@style/creditAmountError" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:enabled="false" android:id="@id/creditAmountContinue" android:layout_alignParentBottom="true" style="@style/creditAmountContinueButton" />
+    <TextView android:id="@id/creditAmountInstallmentRange" android:layout_marginBottom="@dimen/creditAmountInstalmentRangeMarginBottom" android:layout_above="@id/creditAmountContinue" style="@style/creditAmountInstalmentRange" />
+    <TextView android:id="@id/creditAmountTooBig" android:visibility="gone" android:layout_marginBottom="@dimen/creditAmountInstalmentRangeMarginBottom" android:layout_above="@id/creditAmountContinue" style="@style/creditAmountTooBig" />
+    <TextView android:id="@id/creditAmountTryOverdraft" android:visibility="gone" android:layout_marginBottom="@dimen/creditAmountInstalmentRangeMarginBottom" android:text="@null" android:layout_above="@id/creditAmountContinue" style="@style/creditAmountTryOverdraft" />
+</RelativeLayout>

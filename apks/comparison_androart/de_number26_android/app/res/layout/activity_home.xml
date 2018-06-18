@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:id="@id/coordinator" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:background="?colorPrimary" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll">
+                <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/center_logo" />
+                </android.support.v7.widget.Toolbar>
+            </FrameLayout>
+            <android.support.design.widget.TabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_tab_height" app:tabPaddingEnd="0.0dip" app:tabPaddingStart="0.0dip" />
+        </android.support.design.widget.AppBarLayout>
+        <FrameLayout android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    <include layout="@layout/activity_home_onboarding_overlay" />
+    <FrameLayout android:orientation="vertical" android:id="@id/layout_fab" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.github.clans.fab.FloatingActionMenu android:layout_gravity="end|bottom|center" android:id="@id/fab_home" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:layout_marginEnd="6.0dip" app:menu_colorNormal="@color/colorAccent" app:menu_colorPressed="@color/colorAccent" app:menu_labels_position="left" app:menu_labels_style="@style/Theme.Number26.ActionMenu.Item" />
+    </FrameLayout>
+    <android.support.design.widget.NavigationView android:layout_gravity="start" android:id="@id/navigation_view" android:layout_width="wrap_content" android:layout_height="fill_parent" app:headerLayout="@layout/layout_navigation_header" app:menu="@menu/navigation" app:theme="@style/NavigationItem" />
+</android.support.v4.widget.DrawerLayout>

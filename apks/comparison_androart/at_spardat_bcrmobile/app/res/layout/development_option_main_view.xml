@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/ApplicationTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/development_option" style="@style/ScreenHeader" />
+    <ScrollView style="@style/AllMatchParent">
+        <LinearLayout android:orientation="vertical" android:padding="10.0dip" style="@style/MatchParentWrapContent">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/view_envt" android:background="@drawable/roundrect_shape" android:padding="10.0dip" android:layout_marginBottom="10.0dip" style="@style/MatchParentWrapContent">
+                <TextView android:textColor="@color/text_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/environment" android:layout_weight="0.4" style="@style/TextNormal" />
+                <Spinner android:id="@id/spinner_envt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.6" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/view_backend_envt" android:background="@drawable/roundrect_shape" android:visibility="gone" android:layout_marginBottom="10.0dip" style="@style/MatchParentWrapContent">
+                <TextView android:textColor="@color/text_title" android:id="@id/tv_envt_error" android:padding="10.0dip" android:visibility="gone" android:text="@string/err_envt_not_available" style="@style/MatchParentWrapContent" />
+                <LinearLayout android:orientation="vertical" android:id="@id/view_envt_details" android:visibility="gone" style="@style/MatchParentWrapContent">
+                    <LinearLayout android:id="@id/view_envt_name" android:padding="10.0dip" style="@style/TextNormalMatchWrap">
+                        <TextView android:textColor="@color/text_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/envt_name" android:layout_weight="0.4" style="@style/TextNormal" />
+                        <TextView android:textColor="@color/text_title" android:id="@id/envt_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_weight="0.6" style="@style/TextNormal" />
+                    </LinearLayout>
+                    <View android:layout_margin="1.0dip" style="@style/ListSeparator" />
+                    <LinearLayout android:id="@id/view_envt_romanian_name" android:padding="10.0dip" style="@style/MatchParentWrapContent">
+                        <TextView android:textColor="@color/text_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/envt_romanian_name" android:layout_weight="0.4" style="@style/TextNormal" />
+                        <TextView android:textColor="@color/text_title" android:id="@id/envt_romanian_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_weight="0.6" style="@style/TextNormal" />
+                    </LinearLayout>
+                    <View android:layout_margin="1.0dip" style="@style/ListSeparator" />
+                    <LinearLayout android:id="@id/view_proxy" android:padding="10.0dip" style="@style/MatchParentWrapContent">
+                        <TextView android:textColor="@color/text_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/proxy" android:layout_weight="0.4" style="@style/TextNormal" />
+                        <TextView android:textColor="@color/text_title" android:id="@id/proxy" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_weight="0.6" style="@style/TextNormal" />
+                    </LinearLayout>
+                    <View android:layout_margin="1.0dip" style="@style/ListSeparator" />
+                    <LinearLayout android:id="@id/view_user_backend" android:padding="10.0dip" style="@style/MatchParentWrapContent">
+                        <TextView android:textColor="@color/text_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/user_backend" android:layout_weight="0.4" style="@style/TextNormal" />
+                        <TextView android:textColor="@color/text_title" android:id="@id/user_backend" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_weight="0.6" style="@style/TextNormal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/view_logging" android:background="@drawable/roundrect_shape" android:layout_marginBottom="10.0dip" style="@style/MatchParentWrapContent">
+                <LinearLayout android:gravity="center_vertical" android:padding="10.0dip" style="@style/MatchParentWrapContent">
+                    <TextView android:textColor="@color/text_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/logging_enable" android:layout_weight="0.4" style="@style/TextNormal" />
+                    <Spinner android:id="@id/spinner_logging_enable" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.6" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/view_logging_level" android:visibility="gone" style="@style/MatchParentWrapContent">
+                    <View android:layout_margin="1.0dip" style="@style/ListSeparator" />
+                    <LinearLayout android:gravity="center_vertical" android:padding="10.0dip" style="@style/MatchParentWrapContent">
+                        <TextView android:textColor="@color/text_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/logging_level" android:layout_weight="0.4" style="@style/TextNormal" />
+                        <Spinner android:id="@id/spinner_logging_level" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_weight="0.6" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/view_hockey_app" android:background="@drawable/roundrect_shape" android:padding="10.0dip" android:layout_marginBottom="10.0dip" style="@style/MatchParentWrapContent">
+                <TextView android:textColor="@color/text_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/hockey_app_enable" android:layout_weight="0.4" style="@style/TextNormal" />
+                <Spinner android:id="@id/spinner_hockeyapp_enable" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.6" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/view_mail_logs" android:background="@drawable/roundrect_shape" android:padding="10.0dip" android:layout_marginBottom="10.0dip" style="@style/MatchParentWrapContent">
+                <Button android:id="@id/btn_mail_logs" android:text="@string/mail_logs" android:layout_centerInParent="true" style="@style/ButtonStyleConfiguration" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/view_clear_logs" android:background="@drawable/roundrect_shape" android:padding="10.0dip" android:layout_marginBottom="10.0dip" style="@style/MatchParentWrapContent">
+                <Button android:id="@id/btn_clear_logs" android:text="@string/clear_logs" android:layout_centerInParent="true" style="@style/ButtonStyleConfiguration" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/view_version_info" android:background="@drawable/roundrect_shape" android:padding="10.0dip" style="@style/MatchParentWrapContent">
+                <Button android:id="@id/btn_version_info" android:text="@string/version_information" android:layout_centerInParent="true" style="@style/ButtonStyleConfiguration" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

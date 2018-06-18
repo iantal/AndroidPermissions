@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/db_toolbar_view" layout="@layout/db_toolbar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/db_toolbar_view">
+        <LinearLayout android:orientation="vertical" android:id="@id/order_details_data_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sepatransfer_name_label_short" />
+                <View android:layout_marginTop="10.0dip" style="@style/Separator" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <RelativeLayout android:id="@id/order_details_beneficiary_photo_group" android:layout_width="70.0dip" android:layout_height="70.0dip">
+                        <com.db.pwcc.dbmobile.foundation.widgets.UserAvatar android:textSize="@dimen/fs_avatar_initials" android:textColor="@color/userAvatarTextColor" android:id="@id/order_details_beneficiary_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        <ProgressBar android:id="@id/avatar_progress" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="15.0dip" android:layout_toEndOf="@id/order_details_beneficiary_photo_group">
+                        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:ellipsize="end" android:id="@id/order_details_beneficiary_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:maxLines="1" />
+                        <com.db.pwcc.dbmobile.foundation.widgets.DbTextViewIban android:textSize="@dimen/fs_confirmation_normal" android:id="@id/order_details_beneficiary_iban" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:ellipsize="end" android:id="@id/order_details_beneficiary_bank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" />
+                        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:ellipsize="end" android:id="@id/order_details_beneficiary_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" />
+                        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:ellipsize="end" android:id="@id/order_details_beneficiary_reference" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" />
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/amountbeneficiary" />
+                            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:ellipsize="end" android:id="@id/order_details_beneficiary_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="3.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/order_details_beneficiary_execution_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_details_next_execution" />
+                            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:ellipsize="end" android:id="@id/order_details_beneficiary_execution_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="3.0dip" />
+                        </LinearLayout>
+                        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:ellipsize="end" android:id="@id/order_details_beneficiary_recurring" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" />
+                        <LinearLayout android:id="@id/order_details_beneficiary_valid_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_details_valid_until" />
+                            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:ellipsize="end" android:id="@id/order_details_beneficiary_valid_until" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="3.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_title" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/principal" android:layout_marginEnd="15.0dip" />
+                <View android:layout_marginTop="10.0dip" style="@style/Separator" />
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="15.0dip" android:layout_toStartOf="@id/order_details_principal_initials">
+                        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:ellipsize="end" android:gravity="end" android:id="@id/order_details_principal_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+                        <com.db.pwcc.dbmobile.foundation.widgets.DbTextViewIban android:textSize="@dimen/fs_confirmation_normal" android:gravity="end" android:id="@id/order_details_principal_iban" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+                        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:ellipsize="end" android:gravity="end" android:id="@id/order_details_principal_account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/fs_avatar_initials" android:gravity="center" android:id="@id/order_details_principal_initials" android:background="@drawable/bg_round_textview" android:layout_width="70.0dip" android:layout_height="70.0dip" android:foregroundGravity="right" android:textAlignment="center" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <com.db.pwcc.dbmobile.foundation.views.layouts.LoadingOverlayLayout android:id="@id/retry_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton android:id="@id/fab_edit_standing_order" android:visibility="gone" android:src="@drawable/ic_edit_36dp" style="@style/FloatingActionButton" />
+</RelativeLayout>

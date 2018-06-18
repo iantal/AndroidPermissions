@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <de.number26.machete.android.ui.components.PersonalInfo android:enabled="false" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/premium_card_details_screen_name" />
+        <de.number26.machete.android.ui.components.PersonalInfo android:enabled="false" android:id="@id/dob" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/premium_card_details_screen_dob" />
+        <de.number26.machete.android.ui.components.PersonalInfo android:enabled="false" android:id="@id/black_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/premium_card_details_screen_n26_black_id" />
+        <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/textColorSecondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/premium_card_details_screen_n26_black_id_summary" />
+        <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/textColorSecondary" android:id="@id/coverage_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/premium_card_details_screen_membership_details" />
+        <TextView android:enabled="false" android:textSize="@dimen/textSizeSecondary" android:textColor="@color/textColorSecondary" android:id="@id/valid_from" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/contentSpacing" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin" />
+        <TextView android:enabled="false" android:textSize="@dimen/textSizeSecondary" android:textColor="@color/textColorSecondary" android:id="@id/valid_to" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin" />
+        <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/textColorSecondary" android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+package android.support.v4.view;
+
+import android.os.Build.VERSION;
+
+public final class j
+{
+  static final k a = new l();
+  
+  static
+  {
+    if (Build.VERSION.SDK_INT >= 17)
+    {
+      a = new m();
+      return;
+    }
+  }
+  
+  public static int a(int paramInt1, int paramInt2)
+  {
+    return a.a(paramInt1, paramInt2);
+  }
+}

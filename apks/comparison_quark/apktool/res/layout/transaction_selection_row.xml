@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" style="@style/ListSelector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/text_default" android:id="@id/transaction_type" style="@style/ListTextItemStyle" />
+    <View android:id="@id/separator_line" style="@style/ListSeparator" />
+</LinearLayout>

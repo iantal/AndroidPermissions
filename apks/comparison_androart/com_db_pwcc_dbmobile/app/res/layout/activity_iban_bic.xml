@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/db_toolbar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:text="@string/ibanbic_account_number" style="@style/IbanBicItem" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/account_number" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="15.0sp" style="@style/IbanBicItem" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/accounts_menu_list" android:background="@android:color/transparent" android:paddingTop="@dimen/recycler_section_header_height" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+</LinearLayout>

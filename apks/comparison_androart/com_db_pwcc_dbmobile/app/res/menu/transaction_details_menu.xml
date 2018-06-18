@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_create_contact_white_24dp" android:id="@id/menu_item_create_contact" android:orderInCategory="1" android:title="@string/menu_item_label_create_contact" />
+    <item android:icon="@drawable/ic_transfer" android:id="@id/menu_item_create_transaction" android:orderInCategory="2" android:title="@string/menu_item_label_create_transaction" />
+    <item android:icon="@drawable/ic_standingorders" android:id="@id/menu_item_create_standing_order" android:orderInCategory="3" android:title="@string/menu_item_label_create_standing_order" />
+</menu>

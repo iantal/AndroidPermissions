@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.db.pwcc.dbmobile.mobile_payment.views.CardLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/root" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/credit_card" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true" android:contentDescription="@string/none" />
+    </com.db.pwcc.dbmobile.mobile_payment.views.CardLinearLayout>
+</LinearLayout>

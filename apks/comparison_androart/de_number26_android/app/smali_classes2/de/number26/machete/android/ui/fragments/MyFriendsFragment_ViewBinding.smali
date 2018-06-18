@@ -1,0 +1,138 @@
+.class public Lde/number26/machete/android/ui/fragments/MyFriendsFragment_ViewBinding;
+.super Ljava/lang/Object;
+.source "MyFriendsFragment_ViewBinding.java"
+
+# interfaces
+.implements Lbutterknife/Unbinder;
+
+
+# instance fields
+.field private b:Lde/number26/machete/android/ui/fragments/MyFriendsFragment;
+
+
+# direct methods
+.method public constructor <init>(Lde/number26/machete/android/ui/fragments/MyFriendsFragment;Landroid/view/View;)V
+    .locals 3
+
+    .line 21
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 22
+    iput-object p1, p0, Lde/number26/machete/android/ui/fragments/MyFriendsFragment_ViewBinding;->b:Lde/number26/machete/android/ui/fragments/MyFriendsFragment;
+
+    const-string v0, "field \'recyclerView\'"
+
+    .line 24
+    const-class v1, Landroid/support/v7/widget/RecyclerView;
+
+    const v2, 0x7f0905ee
+
+    invoke-static {p2, v2, v0, v1}, Lbutterknife/a/b;->b(Landroid/view/View;ILjava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/support/v7/widget/RecyclerView;
+
+    iput-object v0, p1, Lde/number26/machete/android/ui/fragments/MyFriendsFragment;->recyclerView:Landroid/support/v7/widget/RecyclerView;
+
+    const-string v0, "field \'swipeRefreshLayout\'"
+
+    .line 25
+    const-class v1, Landroid/support/v4/widget/SwipeRefreshLayout;
+
+    const v2, 0x7f0906d9
+
+    invoke-static {p2, v2, v0, v1}, Lbutterknife/a/b;->b(Landroid/view/View;ILjava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/support/v4/widget/SwipeRefreshLayout;
+
+    iput-object v0, p1, Lde/number26/machete/android/ui/fragments/MyFriendsFragment;->swipeRefreshLayout:Landroid/support/v4/widget/SwipeRefreshLayout;
+
+    const-string v0, "field \'noResults\'"
+
+    const v1, 0x7f09055a
+
+    .line 26
+    invoke-static {p2, v1, v0}, Lbutterknife/a/b;->a(Landroid/view/View;ILjava/lang/String;)Landroid/view/View;
+
+    move-result-object v0
+
+    iput-object v0, p1, Lde/number26/machete/android/ui/fragments/MyFriendsFragment;->noResults:Landroid/view/View;
+
+    const-string v0, "field \'noResultsIcon\'"
+
+    .line 27
+    const-class v1, Landroid/widget/ImageView;
+
+    const v2, 0x7f09055b
+
+    invoke-static {p2, v2, v0, v1}, Lbutterknife/a/b;->b(Landroid/view/View;ILjava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageView;
+
+    iput-object v0, p1, Lde/number26/machete/android/ui/fragments/MyFriendsFragment;->noResultsIcon:Landroid/widget/ImageView;
+
+    const-string v0, "field \'noResultsText\'"
+
+    .line 28
+    const-class v1, Landroid/widget/TextView;
+
+    const v2, 0x7f09055c
+
+    invoke-static {p2, v2, v0, v1}, Lbutterknife/a/b;->b(Landroid/view/View;ILjava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/widget/TextView;
+
+    iput-object p2, p1, Lde/number26/machete/android/ui/fragments/MyFriendsFragment;->noResultsText:Landroid/widget/TextView;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()V
+    .locals 2
+
+    .line 34
+    iget-object v0, p0, Lde/number26/machete/android/ui/fragments/MyFriendsFragment_ViewBinding;->b:Lde/number26/machete/android/ui/fragments/MyFriendsFragment;
+
+    if-nez v0, :cond_0
+
+    .line 35
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "Bindings already cleared."
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 36
+    iput-object v1, p0, Lde/number26/machete/android/ui/fragments/MyFriendsFragment_ViewBinding;->b:Lde/number26/machete/android/ui/fragments/MyFriendsFragment;
+
+    .line 38
+    iput-object v1, v0, Lde/number26/machete/android/ui/fragments/MyFriendsFragment;->recyclerView:Landroid/support/v7/widget/RecyclerView;
+
+    .line 39
+    iput-object v1, v0, Lde/number26/machete/android/ui/fragments/MyFriendsFragment;->swipeRefreshLayout:Landroid/support/v4/widget/SwipeRefreshLayout;
+
+    .line 40
+    iput-object v1, v0, Lde/number26/machete/android/ui/fragments/MyFriendsFragment;->noResults:Landroid/view/View;
+
+    .line 41
+    iput-object v1, v0, Lde/number26/machete/android/ui/fragments/MyFriendsFragment;->noResultsIcon:Landroid/widget/ImageView;
+
+    .line 42
+    iput-object v1, v0, Lde/number26/machete/android/ui/fragments/MyFriendsFragment;->noResultsText:Landroid/widget/TextView;
+
+    return-void
+.end method

@@ -1,0 +1,220 @@
+package com.db.pwcc.dbmobile.model.fingerprint;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.os.Parcelable.Creator;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import uuuuuu.popopp;
+import uuuuuu.ppphhp;
+import xxxxxx.uxxxxx;
+
+public class SecureFingerprintData
+  implements popopp, Parcelable
+{
+  public static final Parcelable.Creator<SecureFingerprintData> CREATOR = new SecureFingerprintData.1();
+  public static int b00710071q0071q0071q0071 = 63;
+  public static int b0071q00710071q0071q0071 = 1;
+  public static int bq007100710071q0071q0071 = 2;
+  public static int bqq00710071q0071q0071;
+  private String token;
+  private String tokenVersion;
+  
+  static
+  {
+    int i = b00710071q0071q0071q0071;
+    int j = b0071q00710071q0071q0071;
+    int k = b00710071q0071q0071q0071;
+    if ((b00710071q0071q0071q0071 + b0071q00710071q0071q0071) * b00710071q0071q0071q0071 % bq007100710071q0071q0071 != bqq00710071q0071q0071)
+    {
+      b00710071q0071q0071q0071 = b0071007100710071q0071q0071();
+      bqq00710071q0071q0071 = 84;
+    }
+    if ((i + j) * k % bq007100710071q0071q0071 != bqq00710071q0071q0071)
+    {
+      b00710071q0071q0071q0071 = 54;
+      bqq00710071q0071q0071 = b0071007100710071q0071q0071();
+    }
+  }
+  
+  protected SecureFingerprintData(Parcel paramParcel)
+  {
+    this.token = paramParcel.readString();
+    this.tokenVersion = paramParcel.readString();
+  }
+  
+  public SecureFingerprintData(String paramString)
+  {
+    Object localObject = ppphhp.class.getMethod(uxxxxx.bbbb0062b0062b0062b0062("Th \037%$cb\032\031\037\036\026\025\033\032Y\021\020\026\025\r\f\022\021P", 'ó', 'å', '\001'), new Class[] { String.class, Character.TYPE, Character.TYPE, Character.TYPE });
+    try
+    {
+      localObject = ((Method)localObject).invoke(null, new Object[] { "_", Character.valueOf('H'), Character.valueOf('{'), Character.valueOf('\001') });
+      paramString = paramString.split((String)localObject);
+      if (paramString.length == 2)
+      {
+        this.token = paramString[0];
+        this.tokenVersion = paramString[1];
+      }
+      return;
+    }
+    catch (InvocationTargetException paramString)
+    {
+      throw paramString.getCause();
+    }
+  }
+  
+  public SecureFingerprintData(String paramString1, String paramString2)
+  {
+    this.token = paramString1;
+    this.tokenVersion = paramString2;
+  }
+  
+  public static int b0071007100710071q0071q0071()
+  {
+    return 46;
+  }
+  
+  public static int b0071qqq00710071q0071()
+  {
+    return 1;
+  }
+  
+  public static int bq0071qq00710071q0071()
+  {
+    return 0;
+  }
+  
+  public static int bqqqq00710071q0071()
+  {
+    return 2;
+  }
+  
+  public int describeContents()
+  {
+    if ((b00710071q0071q0071q0071 + b0071q00710071q0071q0071) * b00710071q0071q0071q0071 % bq007100710071q0071q0071 != bqq00710071q0071q0071)
+    {
+      int i = b0071007100710071q0071q0071();
+      switch (i * (b0071q00710071q0071q0071 + i) % bqqqq00710071q0071())
+      {
+      default: 
+        b00710071q0071q0071q0071 = 45;
+        bqq00710071q0071q0071 = 32;
+      }
+      b00710071q0071q0071q0071 = b0071007100710071q0071q0071();
+      bqq00710071q0071q0071 = 80;
+    }
+    return 0;
+  }
+  
+  public String getSecureStoreValue()
+  {
+    StringBuilder localStringBuilder = new StringBuilder().append(this.token);
+    Object localObject = ppphhp.class.getMethod(uxxxxx.bb00620062bb0062b0062b0062("Pfghi#$,-'(01r,-56019:{", 'v', '\001'), new Class[] { String.class, Character.TYPE, Character.TYPE });
+    try
+    {
+      localObject = ((Method)localObject).invoke(null, new Object[] { "\r", Character.valueOf('_'), Character.valueOf('\005') });
+      localStringBuilder = localStringBuilder.append((String)localObject);
+      if ((b00710071q0071q0071q0071 + b0071q00710071q0071q0071) * b00710071q0071q0071q0071 % bqqqq00710071q0071() != bqq00710071q0071q0071)
+      {
+        b00710071q0071q0071q0071 = b0071007100710071q0071q0071();
+        bqq00710071q0071q0071 = b0071007100710071q0071q0071();
+        int i = b00710071q0071q0071q0071;
+        switch (i * (b0071qqq00710071q0071() + i) % bq007100710071q0071q0071)
+        {
+        default: 
+          b00710071q0071q0071q0071 = b0071007100710071q0071q0071();
+          bqq00710071q0071q0071 = 96;
+        }
+      }
+      return this.tokenVersion;
+    }
+    catch (InvocationTargetException localInvocationTargetException)
+    {
+      throw localInvocationTargetException.getCause();
+    }
+  }
+  
+  public String getToken()
+  {
+    String str = this.token;
+    if ((b00710071q0071q0071q0071 + b0071q00710071q0071q0071) * b00710071q0071q0071q0071 % bq007100710071q0071q0071 != bqq00710071q0071q0071)
+    {
+      int i = b00710071q0071q0071q0071;
+      switch (i * (b0071q00710071q0071q0071 + i) % bq007100710071q0071q0071)
+      {
+      default: 
+        b00710071q0071q0071q0071 = 78;
+        bqq00710071q0071q0071 = 85;
+      }
+      b00710071q0071q0071q0071 = b0071007100710071q0071q0071();
+      bqq00710071q0071q0071 = b0071007100710071q0071q0071();
+    }
+    return str;
+  }
+  
+  public String getTokenVersion()
+  {
+    if ((b00710071q0071q0071q0071 + b0071qqq00710071q0071()) * b00710071q0071q0071q0071 % bq007100710071q0071q0071 != bqq00710071q0071q0071)
+    {
+      b00710071q0071q0071q0071 = b0071007100710071q0071q0071();
+      bqq00710071q0071q0071 = 25;
+    }
+    String str = this.tokenVersion;
+    if ((b00710071q0071q0071q0071 + b0071q00710071q0071q0071) * b00710071q0071q0071q0071 % bq007100710071q0071q0071 != bq0071qq00710071q0071())
+    {
+      b00710071q0071q0071q0071 = 67;
+      bqq00710071q0071q0071 = b0071007100710071q0071q0071();
+    }
+    return str;
+  }
+  
+  public String toString()
+  {
+    StringBuilder localStringBuilder = new StringBuilder();
+    Object localObject = this.token;
+    int i = b0071007100710071q0071q0071();
+    int j = b0071q00710071q0071q0071;
+    int k = b0071007100710071q0071q0071();
+    int m = bq007100710071q0071q0071;
+    int n = b00710071q0071q0071q0071;
+    switch (n * (b0071q00710071q0071q0071 + n) % bq007100710071q0071q0071)
+    {
+    default: 
+      b00710071q0071q0071q0071 = 22;
+      bqq00710071q0071q0071 = 17;
+    }
+    if ((i + j) * k % m != bqq00710071q0071q0071)
+    {
+      b00710071q0071q0071q0071 = b0071007100710071q0071q0071();
+      bqq00710071q0071q0071 = b0071007100710071q0071q0071();
+    }
+    localStringBuilder = localStringBuilder.append((String)localObject);
+    localObject = ppphhp.class.getMethod(uxxxxx.bbbb0062b0062b0062b0062("\022(abjk-.ghpqkltu7pqyztu}~@", '\\', '-', '\002'), new Class[] { String.class, Character.TYPE, Character.TYPE, Character.TYPE });
+    try
+    {
+      localObject = ((Method)localObject).invoke(null, new Object[] { "W", Character.valueOf('ß'), Character.valueOf('æ'), Character.valueOf('\000') });
+      return (String)localObject + this.tokenVersion;
+    }
+    catch (InvocationTargetException localInvocationTargetException)
+    {
+      throw localInvocationTargetException.getCause();
+    }
+  }
+  
+  public void writeToParcel(Parcel paramParcel, int paramInt)
+  {
+    paramParcel.writeString(this.token);
+    String str = this.tokenVersion;
+    if ((b00710071q0071q0071q0071 + b0071qqq00710071q0071()) * b00710071q0071q0071q0071 % bq007100710071q0071q0071 != bqq00710071q0071q0071)
+    {
+      if ((b00710071q0071q0071q0071 + b0071q00710071q0071q0071) * b00710071q0071q0071q0071 % bqqqq00710071q0071() != bqq00710071q0071q0071)
+      {
+        b00710071q0071q0071q0071 = b0071007100710071q0071q0071();
+        bqq00710071q0071q0071 = b0071007100710071q0071q0071();
+      }
+      b00710071q0071q0071q0071 = b0071007100710071q0071q0071();
+      bqq00710071q0071q0071 = b0071007100710071q0071q0071();
+    }
+    paramParcel.writeString(str);
+  }
+}

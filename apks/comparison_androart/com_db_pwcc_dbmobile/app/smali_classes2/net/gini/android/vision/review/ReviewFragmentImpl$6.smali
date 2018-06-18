@@ -1,0 +1,56 @@
+.class Lnet/gini/android/vision/review/ReviewFragmentImpl$6;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lnet/gini/android/vision/review/ReviewFragmentImpl;->observeViewTree()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lnet/gini/android/vision/review/ReviewFragmentImpl;
+
+.field final synthetic val$view:Landroid/view/View;
+
+
+# direct methods
+.method constructor <init>(Lnet/gini/android/vision/review/ReviewFragmentImpl;Landroid/view/View;)V
+    .locals 0
+
+    iput-object p1, p0, Lnet/gini/android/vision/review/ReviewFragmentImpl$6;->this$0:Lnet/gini/android/vision/review/ReviewFragmentImpl;
+
+    iput-object p2, p0, Lnet/gini/android/vision/review/ReviewFragmentImpl$6;->val$view:Landroid/view/View;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onGlobalLayout()V
+    .locals 1
+
+    iget-object v0, p0, Lnet/gini/android/vision/review/ReviewFragmentImpl$6;->this$0:Lnet/gini/android/vision/review/ReviewFragmentImpl;
+
+    invoke-static {v0}, Lnet/gini/android/vision/review/ReviewFragmentImpl;->access$1300(Lnet/gini/android/vision/review/ReviewFragmentImpl;)V
+
+    iget-object v0, p0, Lnet/gini/android/vision/review/ReviewFragmentImpl$6;->val$view:Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeGlobalOnLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+
+    return-void
+.end method

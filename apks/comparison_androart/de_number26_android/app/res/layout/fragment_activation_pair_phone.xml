@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:src="@drawable/activate_phone" />
+        <TextView android:textAppearance="@style/TextAppearance.Instruction.Subtitle" android:gravity="center" android:id="@id/boldTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="35.0dip" android:text="@string/not_active" />
+        <TextView android:textAppearance="@style/TextAppearance.Instruction.Text" android:textSize="20.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="25.0dip" android:text="@string/konto_aktivierung_text" />
+        <TextView android:textAppearance="@style/TextAppearance.Instruction.Text" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/is_this_your_number" />
+        <TextView android:textAppearance="@style/TextAppearance.Instruction.Subtitle" android:textSize="22.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/telephoneNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <Button android:textSize="16.0sp" android:id="@id/no" android:layout_width="80.0dip" android:layout_height="45.0dip" android:text="@string/nein" style="@style/RaisedButtonBlack" />
+            <Button android:textSize="16.0sp" android:id="@id/yes" android:layout_width="80.0dip" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:text="@string/ja" style="@style/RaisedButton" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

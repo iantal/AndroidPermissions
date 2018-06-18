@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mortgage_details_category_spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/mortgage_details_description_small" android:textColor="@color/labelViewTextColor" android:id="@id/mortgage_property_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mortgage_details_label_text_spacing" />
+    <com.db.pwcc.dbmobile.mortgages.views.WrappedWidthTextView android:textSize="@dimen/mortgage_details_value_small" android:textColor="@color/textColorDefault" android:id="@id/mortgage_property_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/mortgage_details_info_icon_padding" android:paddingEnd="@dimen/mortgage_details_info_icon_padding" />
+</LinearLayout>

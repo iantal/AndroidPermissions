@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_transactionlist_fab" android:id="@id/menu_item_new_transfer_sepa_flow" android:orderInCategory="5" android:title="@string/menu_item_label_new_transfer_sepa_flow" />
+    <item android:icon="@drawable/ic_transactionlist_fab" android:id="@id/menu_item_new_transaction" android:orderInCategory="4" android:title="@string/menu_item_label_new_transaction" />
+    <item android:icon="@drawable/ic_fab_smarttransfer" android:id="@id/menu_item_photo_transfer" android:orderInCategory="3" android:title="@string/menu_item_label_photo_transfer" />
+    <item android:icon="@drawable/ic_fab_standingorder" android:id="@id/menu_item_new_standing_order" android:orderInCategory="2" android:title="@string/menu_item_label_new_standing_order" />
+    <item android:icon="@drawable/ic_fab_subaccount" android:id="@id/menu_item_transfer_subaccount" android:orderInCategory="1" android:title="@string/menu_item_label_transfer_subaccount" />
+</menu>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/search" android:title="@string/transfers_search_hint" app:actionLayout="@layout/view_transactions_searchview" app:showAsAction="always|collapseActionView" />
+    <item android:icon="@drawable/filter_icon" android:id="@id/filter" android:title="@string/filter" app:showAsAction="always" />
+</menu>

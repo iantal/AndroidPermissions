@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/list_item_text_size" android:gravity="center" android:id="@id/marketplace_name" android:layout_width="wrap_content" android:layout_height="@dimen/list_item_height" android:layout_marginLeft="@dimen/list_item_margin" android:layout_centerVertical="true" />
+    <RadioButton android:theme="@style/DbRadioButtonStyle" android:id="@id/selection_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_item_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_img_promo_t_w" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" android:fillViewport="true" android:paddingStart="@dimen/default_padding" android:paddingEnd="@dimen/default_padding">
+        <LinearLayout android:orientation="vertical" android:id="@id/contentHolder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_item_title" android:textColor="@color/mint" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/promo_transferwise_title" android:textAllCaps="true" fontPath="@string/font_regular" />
+            <ImageView android:layout_gravity="center" android:background="@android:color/transparent" android:layout_width="160.0dip" android:layout_height="160.0dip" android:layout_marginTop="@dimen/default_padding" android:src="@drawable/screen_t_w" />
+            <TextView android:textSize="@dimen/text_default" android:textColor="@android:color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/promo_transferwise_description" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/got_it" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/promo_transferwise_action" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" style="?buttonBarPositiveButtonStyle" />
+</RelativeLayout>

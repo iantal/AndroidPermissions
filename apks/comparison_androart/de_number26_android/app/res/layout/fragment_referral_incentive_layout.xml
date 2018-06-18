@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="100.0dip" style="@style/referral_incentive_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/friends_joined_layout" style="@style/referral_fragment_box_tab">
+        <TextView android:id="@id/friends_joined_amount" style="@style/referral_fragment_box_title" />
+        <TextView android:id="@id/friends_joined_text" style="@style/referral_fragment_box_subtitle" />
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:background="@color/grey_bright" android:layout_width="1.0dip" android:layout_height="45.0dip" />
+    <LinearLayout android:id="@id/friends_invited_layout" style="@style/referral_fragment_box_tab">
+        <TextView android:textColor="@color/colorAccent" android:id="@id/friends_invited_amount" style="@style/referral_fragment_box_title" />
+        <TextView android:id="@id/friends_invited_text" style="@style/referral_fragment_box_subtitle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.number26.machete.android.ui.components.CurrencySeekView android:gravity="center" android:id="@id/oneOff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5" android:title="@string/savings_once_off_amount" app:amount="1200" />
+    <ImageView android:background="@color/grey_bright" android:layout_width="1.0dip" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <de.number26.machete.android.ui.components.CurrencySeekView android:gravity="center" android:id="@id/monthly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5" android:title="@string/savings_recurrent_amount" app:amount="200" />
+</LinearLayout>

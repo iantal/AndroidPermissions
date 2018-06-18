@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/progressBar" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:paddingLeft="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/processing" />
+        </LinearLayout>
+        <ScrollView android:id="@id/details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:textColor="@android:color/white" android:layout_gravity="center" android:orientation="vertical" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_savings_confirmation" />
+                <TextView android:textSize="22.0sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="10.0dip" android:textAllCaps="true" fontPath="@string/font_regular" />
+                <include android:layout_width="200.0dip" android:layout_height="wrap_content" layout="@layout/horizontal_separator" />
+                <TextView android:layout_gravity="center_horizontal" android:id="@id/savingsPlanName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/paragraphSpacing" style="@style/TextAppearance.Item.Title" />
+                <TextView android:layout_gravity="center_horizontal" android:id="@id/initialAmountTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/paragraphSpacing" android:text="@string/one_time_amount" android:textAllCaps="true" style="@style/TextAppearance.Item.Sub" />
+                <TextView android:layout_gravity="center_horizontal" android:id="@id/initialAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:textAllCaps="true" style="@style/TextAppearance.Item.Title" />
+                <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/paragraphSpacing" android:textAllCaps="true" style="@style/TextAppearance.Item.Sub" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:id="@id/monthlyAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:textAllCaps="true" style="@style/TextAppearance.Item.Title" />
+                    <include layout="@layout/vertical_separator" />
+                    <TextView android:id="@id/nextDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:textAllCaps="true" style="@style/TextAppearance.Item.Title" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <include layout="@layout/dialog_positive_negative_buttons" />
+</LinearLayout>

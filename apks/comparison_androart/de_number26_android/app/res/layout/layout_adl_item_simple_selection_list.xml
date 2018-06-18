@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="48.0dip" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageViewCreditPurposeAllSelection" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/check" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/guidelineStart" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_item_title" android:textColor="@color/grey_dark" android:id="@id/textViewCreditPurposeAllName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="1.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/guidelineStart" app:layout_constraintTop_toTopOf="parent" fontPath="@string/font_regular" style="@style/creditCheckListItemText" />
+    <android.support.constraint.Guideline android:orientation="vertical" android:id="@id/guidelineStart" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.14" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,103 @@
+.class public final Lrx/internal/operators/OperatorDebounceWithTime;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lrx/Observable$Operator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lrx/internal/operators/OperatorDebounceWithTime$DebounceState;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lrx/Observable$Operator",
+        "<TT;TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final scheduler:Lrx/Scheduler;
+
+.field final timeout:J
+
+.field final unit:Ljava/util/concurrent/TimeUnit;
+
+
+# direct methods
+.method public constructor <init>(JLjava/util/concurrent/TimeUnit;Lrx/Scheduler;)V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-wide p1, p0, Lrx/internal/operators/OperatorDebounceWithTime;->timeout:J
+
+    iput-object p3, p0, Lrx/internal/operators/OperatorDebounceWithTime;->unit:Ljava/util/concurrent/TimeUnit;
+
+    iput-object p4, p0, Lrx/internal/operators/OperatorDebounceWithTime;->scheduler:Lrx/Scheduler;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    check-cast p1, Lrx/Subscriber;
+
+    invoke-virtual {p0, p1}, Lrx/internal/operators/OperatorDebounceWithTime;->call(Lrx/Subscriber;)Lrx/Subscriber;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public call(Lrx/Subscriber;)Lrx/Subscriber;
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lrx/Subscriber",
+            "<-TT;>;)",
+            "Lrx/Subscriber",
+            "<-TT;>;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lrx/internal/operators/OperatorDebounceWithTime;->scheduler:Lrx/Scheduler;
+
+    invoke-virtual {v0}, Lrx/Scheduler;->createWorker()Lrx/Scheduler$Worker;
+
+    move-result-object v4
+
+    new-instance v5, Lrx/observers/SerializedSubscriber;
+
+    invoke-direct {v5, p1}, Lrx/observers/SerializedSubscriber;-><init>(Lrx/Subscriber;)V
+
+    new-instance v3, Lrx/subscriptions/SerialSubscription;
+
+    invoke-direct {v3}, Lrx/subscriptions/SerialSubscription;-><init>()V
+
+    invoke-virtual {v5, v4}, Lrx/observers/SerializedSubscriber;->add(Lrx/Subscription;)V
+
+    invoke-virtual {v5, v3}, Lrx/observers/SerializedSubscriber;->add(Lrx/Subscription;)V
+
+    new-instance v0, Lrx/internal/operators/OperatorDebounceWithTime$1;
+
+    move-object v1, p0
+
+    move-object v2, p1
+
+    invoke-direct/range {v0 .. v5}, Lrx/internal/operators/OperatorDebounceWithTime$1;-><init>(Lrx/internal/operators/OperatorDebounceWithTime;Lrx/Subscriber;Lrx/subscriptions/SerialSubscription;Lrx/Scheduler$Worker;Lrx/observers/SerializedSubscriber;)V
+
+    return-object v0
+.end method

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <include layout="@layout/progress" />
+    <LinearLayout android:orientation="vertical" android:id="@id/tags" android:paddingLeft="@dimen/transactions_padding" android:paddingTop="@dimen/transactions_padding" android:paddingRight="@dimen/transactions_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <de.number26.machete.android.ui.components.TagsView android:textSize="@dimen/textSizePrimary" android:textColor="@color/textColorPrimary" android:id="@id/input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/transaction_details_tag_hint" android:drawablePadding="@dimen/transactions_padding" android:inputType="textMultiLine|textNoSuggestions" android:drawableStart="@drawable/ic_tags" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/red" android:id="@id/error" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@color/textColorSecondary" android:gravity="end" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

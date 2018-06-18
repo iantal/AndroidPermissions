@@ -1,0 +1,592 @@
+package com.db.pwcc.dbmobile.model.profile;
+
+import com.google.gson.annotations.SerializedName;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import uuuuuu.popopp;
+import uuuuuu.ppphhp;
+import xxxxxx.uxxxxx;
+
+public class Profile
+  implements popopp
+{
+  private static final String DVAG_BUSINESS_UNIT = "YjTYpTQm]SViJO";
+  public static int b0071007100710071q007100710071 = 1;
+  public static int b0071qqq0071007100710071 = 88;
+  public static int bq007100710071q007100710071 = 0;
+  public static int bqqqq0071007100710071 = 2;
+  private String accountAccessorRole = null;
+  private String accountHolder = null;
+  private String businessUnit;
+  private String fkn = null;
+  private boolean isPfmTermsAccepted = false;
+  private boolean isPotentialMbaUser = false;
+  @SerializedName("isPotenzialOverdraftUser")
+  private boolean isPotentialOverdraftUser;
+  private boolean isPotentialPfmUser = false;
+  private boolean jointAccountOwner = false;
+  private String mandatorId = null;
+  private String partnerId = null;
+  private ProfileRole roles = null;
+  private String vbName = null;
+  private String vbNumber = null;
+  
+  public Profile() {}
+  
+  public static int b00710071qq0071007100710071()
+  {
+    return 2;
+  }
+  
+  public static int b0071q00710071q007100710071()
+  {
+    return 53;
+  }
+  
+  public static int bq0071qq0071007100710071()
+  {
+    return 0;
+  }
+  
+  public static int bqq0071q0071007100710071()
+  {
+    return 1;
+  }
+  
+  private boolean isOwner()
+  {
+    String str = AccountAccessorRole.ROLE_OWNER.toString();
+    if ((b0071q00710071q007100710071() + b0071007100710071q007100710071) * b0071q00710071q007100710071() % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      bq007100710071q007100710071 = b0071q00710071q007100710071();
+      int i = b0071qqq0071007100710071;
+      switch (i * (b0071007100710071q007100710071 + i) % bqqqq0071007100710071)
+      {
+      default: 
+        b0071qqq0071007100710071 = 81;
+        bq007100710071q007100710071 = b0071q00710071q007100710071();
+      }
+    }
+    return str.equals(getAccountAccessorRole());
+  }
+  
+  public String getAccountAccessorRole()
+  {
+    String str = this.accountAccessorRole;
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      b0071qqq0071007100710071 = b0071q00710071q007100710071();
+      int i = b0071q00710071q007100710071();
+      if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+      {
+        b0071qqq0071007100710071 = 53;
+        bq007100710071q007100710071 = 20;
+      }
+      bq007100710071q007100710071 = i;
+    }
+    return str;
+  }
+  
+  public String getAccountHolder()
+  {
+    String str = this.accountHolder;
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      int i = b0071qqq0071007100710071;
+      switch (i * (b0071007100710071q007100710071 + i) % bqqqq0071007100710071)
+      {
+      default: 
+        b0071qqq0071007100710071 = 30;
+        bq007100710071q007100710071 = 21;
+      }
+      b0071qqq0071007100710071 = b0071q00710071q007100710071();
+      bq007100710071q007100710071 = 49;
+    }
+    return str;
+  }
+  
+  public String getBusinessUnit()
+  {
+    String str = this.businessUnit;
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq0071qq0071007100710071())
+    {
+      b0071qqq0071007100710071 = b0071q00710071q007100710071();
+      if ((b0071q00710071q007100710071() + b0071007100710071q007100710071) * b0071q00710071q007100710071() % bqqqq0071007100710071 != bq0071qq0071007100710071())
+      {
+        b0071qqq0071007100710071 = 77;
+        bq007100710071q007100710071 = b0071q00710071q007100710071();
+      }
+      bq007100710071q007100710071 = 39;
+    }
+    return str;
+  }
+  
+  public String getFkn()
+  {
+    String str = this.fkn;
+    int i = b0071qqq0071007100710071;
+    switch (i * (b0071007100710071q007100710071 + i) % b00710071qq0071007100710071())
+    {
+    default: 
+      if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+      {
+        b0071qqq0071007100710071 = b0071q00710071q007100710071();
+        bq007100710071q007100710071 = 42;
+      }
+      b0071qqq0071007100710071 = b0071q00710071q007100710071();
+      bq007100710071q007100710071 = 89;
+    }
+    return str;
+  }
+  
+  public String getMandatorId()
+  {
+    String str = this.mandatorId;
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq0071qq0071007100710071())
+    {
+      b0071qqq0071007100710071 = 23;
+      bq007100710071q007100710071 = b0071q00710071q007100710071();
+      int i = b0071qqq0071007100710071;
+      switch (i * (b0071007100710071q007100710071 + i) % bqqqq0071007100710071)
+      {
+      default: 
+        b0071qqq0071007100710071 = 89;
+        bq007100710071q007100710071 = b0071q00710071q007100710071();
+      }
+    }
+    return str;
+  }
+  
+  public String getPartnerId()
+  {
+    String str = this.partnerId;
+    if ((b0071qqq0071007100710071 + bqq0071q0071007100710071()) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      int i = b0071qqq0071007100710071;
+      switch (i * (b0071007100710071q007100710071 + i) % bqqqq0071007100710071)
+      {
+      default: 
+        b0071qqq0071007100710071 = 18;
+        bq007100710071q007100710071 = b0071q00710071q007100710071();
+      }
+      b0071qqq0071007100710071 = 43;
+      bq007100710071q007100710071 = b0071q00710071q007100710071();
+    }
+    return str;
+  }
+  
+  public ProfileRole getRoles()
+  {
+    ProfileRole localProfileRole = this.roles;
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+      {
+        b0071qqq0071007100710071 = b0071q00710071q007100710071();
+        bq007100710071q007100710071 = b0071q00710071q007100710071();
+      }
+      b0071qqq0071007100710071 = 15;
+      bq007100710071q007100710071 = 86;
+    }
+    return localProfileRole;
+  }
+  
+  public String getVbName()
+  {
+    int i = b0071qqq0071007100710071;
+    int j = b0071007100710071q007100710071;
+    int k = bqqqq0071007100710071;
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      b0071qqq0071007100710071 = 5;
+      bq007100710071q007100710071 = 29;
+    }
+    switch (i * (j + i) % k)
+    {
+    default: 
+      b0071qqq0071007100710071 = 53;
+      bq007100710071q007100710071 = b0071q00710071q007100710071();
+    }
+    return this.vbName;
+  }
+  
+  public String getVbNumber()
+  {
+    String str = this.vbNumber;
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % b00710071qq0071007100710071() != bq007100710071q007100710071)
+    {
+      b0071qqq0071007100710071 = 20;
+      bq007100710071q007100710071 = b0071q00710071q007100710071();
+      if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+      {
+        b0071qqq0071007100710071 = b0071q00710071q007100710071();
+        bq007100710071q007100710071 = b0071q00710071q007100710071();
+      }
+    }
+    return str;
+  }
+  
+  public boolean isDvagBusinessUnit()
+  {
+    Object localObject = ppphhp.class.getMethod(uxxxxx.bbbb0062b0062b0062b0062("Kabcd\036\037'(\"#+,m'(01+,45v", 'u', 'r', '\003'), new Class[] { String.class, Character.TYPE, Character.TYPE });
+    try
+    {
+      localObject = ((Method)localObject).invoke(null, new Object[] { "\021\"\f\021(\f\t%\025\013\016!\002\007", Character.valueOf('Y'), Character.valueOf('\004') });
+      localObject = (String)localObject;
+      if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % b00710071qq0071007100710071() != bq0071qq0071007100710071())
+      {
+        b0071qqq0071007100710071 = b0071q00710071q007100710071();
+        bq007100710071q007100710071 = b0071q00710071q007100710071();
+      }
+      int i = b0071qqq0071007100710071;
+      switch (i * (bqq0071q0071007100710071() + i) % bqqqq0071007100710071)
+      {
+      default: 
+        b0071qqq0071007100710071 = b0071q00710071q007100710071();
+        bq007100710071q007100710071 = 2;
+      }
+      return ((String)localObject).equals(this.businessUnit);
+    }
+    catch (InvocationTargetException localInvocationTargetException)
+    {
+      throw localInvocationTargetException.getCause();
+    }
+  }
+  
+  public boolean isJointAccountOwner()
+  {
+    boolean bool = this.jointAccountOwner;
+    int i = b0071qqq0071007100710071;
+    int j = b0071007100710071q007100710071;
+    int k = b0071qqq0071007100710071;
+    switch (k * (b0071007100710071q007100710071 + k) % bqqqq0071007100710071)
+    {
+    default: 
+      b0071qqq0071007100710071 = 1;
+      bq007100710071q007100710071 = b0071q00710071q007100710071();
+    }
+    if ((i + j) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      b0071qqq0071007100710071 = 54;
+      bq007100710071q007100710071 = 73;
+    }
+    return bool;
+  }
+  
+  public boolean isPfmTermsAccepted()
+  {
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      int i = b0071q00710071q007100710071();
+      switch (i * (b0071007100710071q007100710071 + i) % bqqqq0071007100710071)
+      {
+      default: 
+        b0071qqq0071007100710071 = b0071q00710071q007100710071();
+        bq007100710071q007100710071 = b0071q00710071q007100710071();
+      }
+      b0071qqq0071007100710071 = b0071q00710071q007100710071();
+      bq007100710071q007100710071 = b0071q00710071q007100710071();
+    }
+    return this.isPfmTermsAccepted;
+  }
+  
+  public boolean isPotentialMbaUser()
+  {
+    boolean bool = this.isPotentialMbaUser;
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      b0071qqq0071007100710071 = b0071q00710071q007100710071();
+      bq007100710071q007100710071 = 42;
+    }
+    return bool;
+  }
+  
+  public boolean isPotentialOverdraftUser()
+  {
+    int i = b0071qqq0071007100710071;
+    int j = b0071007100710071q007100710071;
+    int k = b0071qqq0071007100710071;
+    int m = bqqqq0071007100710071;
+    int n = b0071q00710071q007100710071();
+    switch (n * (b0071007100710071q007100710071 + n) % bqqqq0071007100710071)
+    {
+    default: 
+      b0071qqq0071007100710071 = b0071q00710071q007100710071();
+      bq007100710071q007100710071 = b0071q00710071q007100710071();
+    }
+    if ((i + j) * k % m != bq007100710071q007100710071)
+    {
+      b0071qqq0071007100710071 = 75;
+      bq007100710071q007100710071 = 89;
+    }
+    return this.isPotentialOverdraftUser;
+  }
+  
+  public boolean isPotentialPfmUser()
+  {
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      int i = b0071qqq0071007100710071;
+      switch (i * (bqq0071q0071007100710071() + i) % bqqqq0071007100710071)
+      {
+      default: 
+        b0071qqq0071007100710071 = b0071q00710071q007100710071();
+        bq007100710071q007100710071 = b0071q00710071q007100710071();
+      }
+      b0071qqq0071007100710071 = 78;
+      bq007100710071q007100710071 = b0071q00710071q007100710071();
+    }
+    return this.isPotentialPfmUser;
+  }
+  
+  public void setAccountAccessorRole(String paramString)
+  {
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      b0071qqq0071007100710071 = 27;
+      int i = b0071qqq0071007100710071;
+      switch (i * (b0071007100710071q007100710071 + i) % bqqqq0071007100710071)
+      {
+      default: 
+        b0071qqq0071007100710071 = 13;
+        bq007100710071q007100710071 = b0071q00710071q007100710071();
+      }
+      bq007100710071q007100710071 = b0071q00710071q007100710071();
+    }
+    this.accountAccessorRole = paramString;
+  }
+  
+  public void setAccountHolder(String paramString)
+  {
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      b0071qqq0071007100710071 = b0071q00710071q007100710071();
+      bq007100710071q007100710071 = 18;
+      if ((b0071q00710071q007100710071() + b0071007100710071q007100710071) * b0071q00710071q007100710071() % bqqqq0071007100710071 != bq007100710071q007100710071)
+      {
+        b0071qqq0071007100710071 = 14;
+        bq007100710071q007100710071 = b0071q00710071q007100710071();
+      }
+    }
+    this.accountHolder = paramString;
+  }
+  
+  public void setBusinessUnit(String paramString)
+  {
+    int i = b0071qqq0071007100710071;
+    int j = b0071007100710071q007100710071;
+    int k = b0071qqq0071007100710071;
+    int m = bqqqq0071007100710071;
+    int n = bq007100710071q007100710071;
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      b0071qqq0071007100710071 = b0071q00710071q007100710071();
+      bq007100710071q007100710071 = b0071q00710071q007100710071();
+    }
+    if ((i + j) * k % m != n)
+    {
+      b0071qqq0071007100710071 = 67;
+      bq007100710071q007100710071 = b0071q00710071q007100710071();
+    }
+    this.businessUnit = paramString;
+  }
+  
+  public void setJointAccountOwner(boolean paramBoolean)
+  {
+    this.jointAccountOwner = paramBoolean;
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      b0071qqq0071007100710071 = 56;
+      bq007100710071q007100710071 = 21;
+      if ((b0071q00710071q007100710071() + b0071007100710071q007100710071) * b0071q00710071q007100710071() % bqqqq0071007100710071 != bq007100710071q007100710071)
+      {
+        b0071qqq0071007100710071 = b0071q00710071q007100710071();
+        bq007100710071q007100710071 = b0071q00710071q007100710071();
+      }
+    }
+  }
+  
+  public void setMandatorId(String paramString)
+  {
+    int i = b0071qqq0071007100710071;
+    switch (i * (b0071007100710071q007100710071 + i) % bqqqq0071007100710071)
+    {
+    default: 
+      b0071qqq0071007100710071 = 38;
+      i = b0071q00710071q007100710071();
+      int j = b0071qqq0071007100710071;
+      switch (j * (bqq0071q0071007100710071() + j) % bqqqq0071007100710071)
+      {
+      default: 
+        b0071qqq0071007100710071 = b0071q00710071q007100710071();
+        bq007100710071q007100710071 = 5;
+      }
+      bq007100710071q007100710071 = i;
+    }
+    this.mandatorId = paramString;
+  }
+  
+  public void setPotentialOverdraftUser(boolean paramBoolean)
+  {
+    this.isPotentialOverdraftUser = paramBoolean;
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      int i = b0071q00710071q007100710071();
+      switch (i * (b0071007100710071q007100710071 + i) % bqqqq0071007100710071)
+      {
+      default: 
+        b0071qqq0071007100710071 = b0071q00710071q007100710071();
+        bq007100710071q007100710071 = b0071q00710071q007100710071();
+      }
+      b0071qqq0071007100710071 = 61;
+      bq007100710071q007100710071 = 56;
+    }
+  }
+  
+  public void setRoles(ProfileRole paramProfileRole)
+  {
+    this.roles = paramProfileRole;
+    if ((b0071qqq0071007100710071 + b0071007100710071q007100710071) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+    {
+      if ((b0071qqq0071007100710071 + bqq0071q0071007100710071()) * b0071qqq0071007100710071 % bqqqq0071007100710071 != bq007100710071q007100710071)
+      {
+        b0071qqq0071007100710071 = 56;
+        bq007100710071q007100710071 = b0071q00710071q007100710071();
+      }
+      b0071qqq0071007100710071 = 37;
+      bq007100710071q007100710071 = 59;
+    }
+  }
+  
+  public boolean showMoPayTile()
+  {
+    boolean bool1 = isOwner();
+    boolean bool2 = isJointAccountOwner();
+    int i = b0071qqq0071007100710071;
+    switch (i * (b0071007100710071q007100710071 + i) % bqqqq0071007100710071)
+    {
+    default: 
+      b0071qqq0071007100710071 = b0071q00710071q007100710071();
+      bq007100710071q007100710071 = 31;
+    }
+    if ((bool1) && (!bool2)) {}
+    for (bool1 = true;; bool1 = false)
+    {
+      i = b0071q00710071q007100710071();
+      switch (i * (b0071007100710071q007100710071 + i) % bqqqq0071007100710071)
+      {
+      default: 
+        b0071qqq0071007100710071 = b0071q00710071q007100710071();
+        bq007100710071q007100710071 = 82;
+      }
+      return bool1;
+    }
+  }
+  
+  public static class ProfileRole
+    implements popopp
+  {
+    public static int b007100710071q0071007100710071 = 1;
+    public static int b0071q0071q0071007100710071 = 33;
+    public static int bq00710071q0071007100710071 = 0;
+    public static int bqqq00710071007100710071 = 2;
+    private boolean rightCreateForeignCurrencyOrder = false;
+    private boolean rightCreateMoneyTransfer = false;
+    private boolean rightCreateStandingOrder = false;
+    private boolean rightUseMobilePayment = false;
+    
+    public ProfileRole() {}
+    
+    public static int b0071qq00710071007100710071()
+    {
+      return 1;
+    }
+    
+    public static int bq0071q00710071007100710071()
+    {
+      return 1;
+    }
+    
+    public boolean hasRightCreateForeignCurrencyOrder()
+    {
+      boolean bool = this.rightCreateForeignCurrencyOrder;
+      if ((b0071q0071q0071007100710071 + b007100710071q0071007100710071) * b0071q0071q0071007100710071 % bqqq00710071007100710071 != bq00710071q0071007100710071)
+      {
+        b0071q0071q0071007100710071 = 28;
+        bq00710071q0071007100710071 = b0071qq00710071007100710071();
+        int i = b0071q0071q0071007100710071;
+        switch (i * (b007100710071q0071007100710071 + i) % bqqq00710071007100710071)
+        {
+        default: 
+          b0071q0071q0071007100710071 = 69;
+          bq00710071q0071007100710071 = b0071qq00710071007100710071();
+        }
+      }
+      return bool;
+    }
+    
+    public boolean isRightCreateMoneyTransfer()
+    {
+      boolean bool = this.rightCreateMoneyTransfer;
+      int i = b0071q0071q0071007100710071;
+      int j = b007100710071q0071007100710071;
+      int k = bqqq00710071007100710071;
+      int m = b0071q0071q0071007100710071;
+      switch (m * (b007100710071q0071007100710071 + m) % bqqq00710071007100710071)
+      {
+      default: 
+        b0071q0071q0071007100710071 = 0;
+        bq00710071q0071007100710071 = b0071qq00710071007100710071();
+      }
+      switch (i * (j + i) % k)
+      {
+      default: 
+        b0071q0071q0071007100710071 = 1;
+        bq00710071q0071007100710071 = b0071qq00710071007100710071();
+      }
+      return bool;
+    }
+    
+    public boolean isRightCreateStandingOrder()
+    {
+      if ((b0071q0071q0071007100710071 + b007100710071q0071007100710071) * b0071q0071q0071007100710071 % bqqq00710071007100710071 != bq00710071q0071007100710071)
+      {
+        int i = b0071qq00710071007100710071();
+        switch (i * (b007100710071q0071007100710071 + i) % bqqq00710071007100710071)
+        {
+        default: 
+          b0071q0071q0071007100710071 = 15;
+          bq00710071q0071007100710071 = b0071qq00710071007100710071();
+        }
+        b0071q0071q0071007100710071 = 13;
+        bq00710071q0071007100710071 = 55;
+      }
+      return this.rightCreateStandingOrder;
+    }
+    
+    public boolean isRightUseMobilePayment()
+    {
+      if ((b0071q0071q0071007100710071 + bq0071q00710071007100710071()) * b0071q0071q0071007100710071 % bqqq00710071007100710071 != bq00710071q0071007100710071)
+      {
+        b0071q0071q0071007100710071 = 73;
+        bq00710071q0071007100710071 = b0071qq00710071007100710071();
+        if ((b0071q0071q0071007100710071 + b007100710071q0071007100710071) * b0071q0071q0071007100710071 % bqqq00710071007100710071 != bq00710071q0071007100710071)
+        {
+          b0071q0071q0071007100710071 = 30;
+          bq00710071q0071007100710071 = 47;
+        }
+      }
+      return this.rightUseMobilePayment;
+    }
+    
+    public void setRightCreateStandingOrder(boolean paramBoolean)
+    {
+      if ((b0071q0071q0071007100710071 + bq0071q00710071007100710071()) * b0071q0071q0071007100710071 % bqqq00710071007100710071 != bq00710071q0071007100710071)
+      {
+        b0071q0071q0071007100710071 = 64;
+        bq00710071q0071007100710071 = 50;
+      }
+      this.rightCreateStandingOrder = paramBoolean;
+    }
+  }
+}

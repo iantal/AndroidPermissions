@@ -1,0 +1,59 @@
+.class public final Lo/gQ;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field private static ˎ:Landroid/content/SharedPreferences;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    sput-object v0, Lo/gQ;->ˎ:Landroid/content/SharedPreferences;
+
+    return-void
+.end method
+
+.method public static ˏ(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    .locals 3
+
+    const-class v1, Landroid/content/SharedPreferences;
+
+    monitor-enter v1
+
+    :try_start_0
+    sget-object v0, Lo/gQ;->ˎ:Landroid/content/SharedPreferences;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Lo/gR;
+
+    invoke-direct {v0, p0}, Lo/gR;-><init>(Landroid/content/Context;)V
+
+    invoke-static {v0}, Lo/ir;->ˎ(Ljava/util/concurrent/Callable;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/content/SharedPreferences;
+
+    sput-object v0, Lo/gQ;->ˎ:Landroid/content/SharedPreferences;
+
+    :cond_0
+    sget-object v0, Lo/gQ;->ˎ:Landroid/content/SharedPreferences;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit v1
+
+    return-object v0
+
+    :catchall_0
+    move-exception v2
+
+    monitor-exit v1
+
+    throw v2
+.end method

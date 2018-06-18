@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/branchfinder_current_day_background" />
+    <corners android:topLeftRadius="@dimen/branch_finder_detail_current_day_corner_radius" android:topRightRadius="@dimen/branch_finder_detail_current_day_corner_radius" android:bottomLeftRadius="@dimen/branch_finder_detail_current_day_corner_radius" android:bottomRightRadius="@dimen/branch_finder_detail_current_day_corner_radius" />
+</shape>

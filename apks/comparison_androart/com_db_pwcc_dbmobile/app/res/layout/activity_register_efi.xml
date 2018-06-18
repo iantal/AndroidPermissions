@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/db_toolbar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.db.pwcc.dbmobile.transfer.views.DbScrollview android:id="@id/main_content_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/efi_register_input_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/activity_default_text_size" android:id="@id/text_general" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/activity_default_text_size" android:id="@id/text_specific" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                <View android:background="@color/colorListHorizontalLine" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="@dimen/efi_register_input_margin" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/efi_list_item_height">
+                    <ImageView android:id="@id/efi_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/efi_list_item_icon_margin_end" android:layout_alignParentStart="true" app:srcCompat="@drawable/ic_standard_bank" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/efi_icon">
+                        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/efi_list_item_title_size" android:ellipsize="end" android:id="@id/efi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/efi_list_item_subtitle_size" android:textColor="@color/lightGrey" android:ellipsize="end" android:id="@id/efi_blz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/efi_list_item_subtitle_size" android:textColor="@color/lightGrey" android:ellipsize="end" android:id="@id/efi_bic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/input_fields_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbSwitch android:layout_gravity="end" android:id="@id/remember_pin_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/efi_register_input_margin" android:text="@string/efi_remember_pin" />
+                <View android:id="@id/remember_pin_switch_separator" android:background="@color/colorListHorizontalLine" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/efi_register_input_margin" />
+                <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/pfm_registration_layout" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbSwitch android:layout_gravity="end" android:id="@id/terms_mba_switch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/registration_margin_30" android:layout_marginBottom="@dimen/registration_margin_15" android:text="@string/mba_activation_terms_conditions" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbSwitch android:layout_gravity="end" android:id="@id/consent_mba_switch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/registration_margin_15" android:layout_marginBottom="@dimen/registration_margin_15" android:text="@string/mba_activation_consent" />
+                <com.db.pwcc.dbmobile.foundation.views.button.Button android:id="@id/button_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/efi_register_input_margin" android:layout_marginBottom="@dimen/registration_margin_25" app:buttonType="disabled" app:buttonText="@string/login_button_text_efi" />
+            </LinearLayout>
+        </com.db.pwcc.dbmobile.transfer.views.DbScrollview>
+        <com.db.pwcc.dbmobile.foundation.views.layouts.LoadingOverlayLayout android:id="@id/overlay_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

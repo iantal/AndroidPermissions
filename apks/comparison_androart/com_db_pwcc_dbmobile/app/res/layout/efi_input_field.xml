@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/efi_input_view" android:layout_width="fill_parent" android:layout_height="@dimen/efi_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.db.pwcc.dbmobile.foundation.widgets.CustomTextInputLayout android:theme="@style/FloatingInput" android:textColorHint="@android:color/white" android:id="@id/efi_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:passwordToggleEnabled="false">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbEditText android:theme="@style/DbEditTextPadding" android:textSize="@dimen/efi_list_item_subtitle_size" android:textColor="@android:color/white" android:textColorHint="@android:color/white" android:id="@id/efi_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </com.db.pwcc.dbmobile.foundation.widgets.CustomTextInputLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/view_template_list_parent" android:padding="10.0dip" style="@style/AllMatchParent">
+        <TextView android:textColor="@color/text_title" android:id="@id/tv_already_template" android:padding="5.0dip" android:visibility="gone" android:text="@string/already_template_for_iban" style="@style/TextBoldMatchWrap" />
+        <LinearLayout android:orientation="vertical" android:id="@id/view_new_payment" android:background="@drawable/roundrect_shape" android:padding="2.0dip" android:visibility="gone" style="@style/MatchParentWrapContent">
+            <TextView android:textColor="@color/text_default" android:id="@id/tv_new_payment" android:background="@drawable/list_single_item_selector" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:text="@string/new_payment_order" android:drawableRight="@drawable/right_arrow_blue" android:drawablePadding="2.0dip" style="@style/TextBoldMatchWrap" />
+        </LinearLayout>
+        <TextView android:textColor="@color/text_title" android:id="@id/tv_select_template" android:padding="5.0dip" android:visibility="gone" android:layout_marginTop="5.0dip" android:text="@string/select_a_template" style="@style/TextBoldMatchWrap" />
+    </LinearLayout>
+    <include android:id="@id/view_progress_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/data_loading_progress_view" />
+</merge>

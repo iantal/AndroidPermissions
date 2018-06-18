@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_efi_list" android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/db_toolbar_view" layout="@layout/db_toolbar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/db_toolbar_view" />
+    <LinearLayout android:orientation="vertical" android:id="@id/main_content_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/db_toolbar_view">
+        <EditText android:textSize="16.0sp" android:textColorHint="@color/lightGrey" android:id="@id/search_bar_placeholder" android:background="@drawable/seekbar_progress" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/efi_search_bar_margin_bottom" android:hint="@string/hint_search_efi_list" android:maxLines="1" android:paddingStart="10.0dip" android:paddingEnd="5.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+        <ListView android:scrollbarThumbVertical="@drawable/scrollbar" android:id="@id/efi_list" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@drawable/list_divider" android:dividerHeight="1.0dip" android:fastScrollEnabled="true" android:footerDividersEnabled="false" android:overScrollFooter="@color/transparent" />
+    </LinearLayout>
+    <com.db.pwcc.dbmobile.foundation.views.layouts.LoadingOverlayLayout android:id="@id/overlay_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/db_toolbar_view" />
+</RelativeLayout>

@@ -1,0 +1,287 @@
+package uuuuuu;
+
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
+import com.db.pwcc.dbmobile.model.banking.Account;
+import java.util.List;
+
+public class lvvvvv
+  extends ArrayAdapter<Account>
+  implements kvkvvk
+{
+  public static int b006F006Fo006Fo006F006F006F006F = 2;
+  public static int b006Foo006Fo006F006F006F006F = 11;
+  public static int bo006Fo006Fo006F006F006F006F = 1;
+  public static int boo006F006Fo006F006F006F006F;
+  private List<Account> booo006Fo006F006F006F006F;
+  
+  public lvvvvv(Context paramContext, int paramInt, List<Account> paramList)
+  {
+    super(paramContext, paramInt, paramList);
+    this.booo006Fo006F006F006F006F = paramList;
+  }
+  
+  public static int b006900690069iii0069006900690069()
+  {
+    return 2;
+  }
+  
+  public static int b0069i0069iii0069006900690069()
+  {
+    return 87;
+  }
+  
+  public static int bi00690069iii0069006900690069()
+  {
+    return 0;
+  }
+  
+  public static int bii0069iii0069006900690069()
+  {
+    return 1;
+  }
+  
+  public Account b0069ii0069ii0069006900690069(int paramInt)
+  {
+    if ((b006Foo006Fo006F006F006F006F + bo006Fo006Fo006F006F006F006F) * b006Foo006Fo006F006F006F006F % b006F006Fo006Fo006F006F006F006F != boo006F006Fo006F006F006F006F)
+    {
+      b006Foo006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+      boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+    }
+    Object localObject = this.booo006Fo006F006F006F006F.get(paramInt);
+    paramInt = b006Foo006Fo006F006F006F006F;
+    int i = bo006Fo006Fo006F006F006F006F;
+    if ((b006Foo006Fo006F006F006F006F + bo006Fo006Fo006F006F006F006F) * b006Foo006Fo006F006F006F006F % b006F006Fo006Fo006F006F006F006F != boo006F006Fo006F006F006F006F)
+    {
+      if ((b006Foo006Fo006F006F006F006F + bo006Fo006Fo006F006F006F006F) * b006Foo006Fo006F006F006F006F % b006F006Fo006Fo006F006F006F006F != boo006F006Fo006F006F006F006F)
+      {
+        b006Foo006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+        boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+      }
+      b006Foo006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+      boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+    }
+    switch (paramInt * (i + paramInt) % b006F006Fo006Fo006F006F006F006F)
+    {
+    default: 
+      b006Foo006Fo006F006F006F006F = 91;
+      boo006F006Fo006F006F006F006F = 44;
+    }
+    return (Account)localObject;
+  }
+  
+  public boolean b0071007100710071qq0071qqq(int paramInt)
+  {
+    if ((b006Foo006Fo006F006F006F006F + bii0069iii0069006900690069()) * b006Foo006Fo006F006F006F006F % b006F006Fo006Fo006F006F006F006F != boo006F006Fo006F006F006F006F)
+    {
+      b006Foo006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+      boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+    }
+    if ((b006Foo006Fo006F006F006F006F + bo006Fo006Fo006F006F006F006F) * b006Foo006Fo006F006F006F006F % b006F006Fo006Fo006F006F006F006F != boo006F006Fo006F006F006F006F)
+    {
+      paramInt = b006Foo006Fo006F006F006F006F;
+      switch (paramInt * (bo006Fo006Fo006F006F006F006F + paramInt) % b006F006Fo006Fo006F006F006F006F)
+      {
+      default: 
+        b006Foo006Fo006F006F006F006F = 90;
+        boo006F006Fo006F006F006F006F = 41;
+      }
+      paramInt = b006Foo006Fo006F006F006F006F;
+      switch (paramInt * (bo006Fo006Fo006F006F006F006F + paramInt) % b006F006Fo006Fo006F006F006F006F)
+      {
+      default: 
+        b006Foo006Fo006F006F006F006F = 31;
+        boo006F006Fo006F006F006F006F = 26;
+      }
+      b006Foo006Fo006F006F006F006F = 50;
+      boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+    }
+    return true;
+  }
+  
+  public String b0071q00710071qq0071qqq(int paramInt)
+  {
+    int i = b006Foo006Fo006F006F006F006F;
+    switch (i * (bo006Fo006Fo006F006F006F006F + i) % b006F006Fo006Fo006F006F006F006F)
+    {
+    default: 
+      b006Foo006Fo006F006F006F006F = 16;
+      boo006F006Fo006F006F006F006F = 73;
+    }
+    if (this.booo006Fo006F006F006F006F != null)
+    {
+      boolean bool = this.booo006Fo006F006F006F006F.isEmpty();
+      i = b006Foo006Fo006F006F006F006F;
+      switch (i * (bo006Fo006Fo006F006F006F006F + i) % b006F006Fo006Fo006F006F006F006F)
+      {
+      default: 
+        b006Foo006Fo006F006F006F006F = 68;
+        boo006F006Fo006F006F006F006F = 23;
+      }
+      if (!bool) {}
+    }
+    else
+    {
+      return null;
+    }
+    if ((b006Foo006Fo006F006F006F006F + bo006Fo006Fo006F006F006F006F) * b006Foo006Fo006F006F006F006F % b006F006Fo006Fo006F006F006F006F != bi00690069iii0069006900690069())
+    {
+      if ((b006Foo006Fo006F006F006F006F + bo006Fo006Fo006F006F006F006F) * b006Foo006Fo006F006F006F006F % b006F006Fo006Fo006F006F006F006F != boo006F006Fo006F006F006F006F)
+      {
+        b006Foo006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+        boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+      }
+      b006Foo006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+      boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+    }
+    return ((Account)this.booo006Fo006F006F006F006F.get(paramInt)).getDisplayName();
+  }
+  
+  public int bi0069i0069ii0069006900690069(String paramString)
+  {
+    int i = b006Foo006Fo006F006F006F006F;
+    switch (i * (bo006Fo006Fo006F006F006F006F + i) % b006F006Fo006Fo006F006F006F006F)
+    {
+    default: 
+      b006Foo006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+      boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+    }
+    if ((this.booo006Fo006F006F006F006F == null) || (this.booo006Fo006F006F006F006F.isEmpty())) {
+      return 0;
+    }
+    i = 0;
+    while (i < this.booo006Fo006F006F006F006F.size())
+    {
+      if (((Account)this.booo006Fo006F006F006F006F.get(i)).getId().equals(paramString)) {
+        return i;
+      }
+      i += 1;
+    }
+    if ((b006Foo006Fo006F006F006F006F + bo006Fo006Fo006F006F006F006F) * b006Foo006Fo006F006F006F006F % b006F006Fo006Fo006F006F006F006F != boo006F006Fo006F006F006F006F)
+    {
+      if ((b006Foo006Fo006F006F006F006F + bo006Fo006Fo006F006F006F006F) * b006Foo006Fo006F006F006F006F % b006F006Fo006Fo006F006F006F006F != boo006F006Fo006F006F006F006F)
+      {
+        b006Foo006Fo006F006F006F006F = 94;
+        boo006F006Fo006F006F006F006F = 78;
+      }
+      b006Foo006Fo006F006F006F006F = 97;
+      boo006F006Fo006F006F006F006F = 79;
+      if ((b006Foo006Fo006F006F006F006F + bo006Fo006Fo006F006F006F006F) * b006Foo006Fo006F006F006F006F % b006F006Fo006Fo006F006F006F006F != boo006F006Fo006F006F006F006F)
+      {
+        b006Foo006Fo006F006F006F006F = 14;
+        boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+      }
+    }
+    return 0;
+    return i;
+  }
+  
+  public String biii0069ii0069006900690069(int paramInt)
+  {
+    Object localObject;
+    if ((this.booo006Fo006F006F006F006F == null) || (this.booo006Fo006F006F006F006F.isEmpty()) || (this.booo006Fo006F006F006F006F.size() < paramInt) || (paramInt < 0)) {
+      localObject = null;
+    }
+    String str;
+    do
+    {
+      return localObject;
+      int i = b006Foo006Fo006F006F006F006F;
+      if ((b006Foo006Fo006F006F006F006F + bo006Fo006Fo006F006F006F006F) * b006Foo006Fo006F006F006F006F % b006F006Fo006Fo006F006F006F006F != bi00690069iii0069006900690069())
+      {
+        b006Foo006Fo006F006F006F006F = 15;
+        boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+      }
+      switch (i * (bo006Fo006Fo006F006F006F006F + i) % b006F006Fo006Fo006F006F006F006F)
+      {
+      default: 
+        b006Foo006Fo006F006F006F006F = 20;
+        bo006Fo006Fo006F006F006F006F = 3;
+      }
+      str = ((Account)this.booo006Fo006F006F006F006F.get(paramInt)).getId();
+      paramInt = b006Foo006Fo006F006F006F006F;
+      localObject = str;
+      switch (paramInt * (bo006Fo006Fo006F006F006F006F + paramInt) % b006F006Fo006Fo006F006F006F006F)
+      {
+      }
+      b006Foo006Fo006F006F006F006F = 69;
+      bo006Fo006Fo006F006F006F006F = 2;
+      localObject = str;
+    } while ((b006Foo006Fo006F006F006F006F + bo006Fo006Fo006F006F006F006F) * b006Foo006Fo006F006F006F006F % b006F006Fo006Fo006F006F006F006F == boo006F006Fo006F006F006F006F);
+    b006Foo006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+    boo006F006Fo006F006F006F006F = 38;
+    return str;
+  }
+  
+  public int bq007100710071qq0071qqq(int paramInt)
+  {
+    int i = b006Foo006Fo006F006F006F006F;
+    int j = bo006Fo006Fo006F006F006F006F;
+    int k = b006F006Fo006Fo006F006F006F006F;
+    if ((b006Foo006Fo006F006F006F006F + bii0069iii0069006900690069()) * b006Foo006Fo006F006F006F006F % b006F006Fo006Fo006F006F006F006F != boo006F006Fo006F006F006F006F)
+    {
+      b006Foo006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+      boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+    }
+    switch (i * (j + i) % k)
+    {
+    default: 
+      if ((b006Foo006Fo006F006F006F006F + bo006Fo006Fo006F006F006F006F) * b006Foo006Fo006F006F006F006F % b006F006Fo006Fo006F006F006F006F != boo006F006Fo006F006F006F006F)
+      {
+        b006Foo006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+        boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+        i = b006Foo006Fo006F006F006F006F;
+        switch (i * (bo006Fo006Fo006F006F006F006F + i) % b006F006Fo006Fo006F006F006F006F)
+        {
+        default: 
+          b006Foo006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+          boo006F006Fo006F006F006F006F = 61;
+        }
+      }
+      b006Foo006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+      boo006F006Fo006F006F006F006F = 4;
+    }
+    return paramInt;
+  }
+  
+  public View getView(int paramInt, View paramView, ViewGroup paramViewGroup)
+  {
+    paramView = super.getView(paramInt, paramView, paramViewGroup);
+    int i = b006Foo006Fo006F006F006F006F;
+    int j = bo006Fo006Fo006F006F006F006F;
+    int k = b006Foo006Fo006F006F006F006F;
+    int m = b006Foo006Fo006F006F006F006F;
+    switch (m * (bii0069iii0069006900690069() + m) % b006F006Fo006Fo006F006F006F006F)
+    {
+    default: 
+      b006Foo006Fo006F006F006F006F = 54;
+      boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+    }
+    m = bo006Fo006Fo006F006F006F006F;
+    int n = b006Foo006Fo006F006F006F006F;
+    int i1 = b006F006Fo006Fo006F006F006F006F;
+    int i2 = b006Foo006Fo006F006F006F006F;
+    switch (i2 * (bo006Fo006Fo006F006F006F006F + i2) % b006F006Fo006Fo006F006F006F006F)
+    {
+    default: 
+      b006Foo006Fo006F006F006F006F = 92;
+      boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+    }
+    if ((k + m) * n % i1 != boo006F006Fo006F006F006F006F)
+    {
+      b006Foo006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+      boo006F006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+    }
+    switch (i * (j + i) % b006900690069iii0069006900690069())
+    {
+    default: 
+      b006Foo006Fo006F006F006F006F = b0069i0069iii0069006900690069();
+      boo006F006Fo006F006F006F006F = 93;
+    }
+    ((TextView)paramView).setText(b0071q00710071qq0071qqq(paramInt));
+    return paramView;
+  }
+}

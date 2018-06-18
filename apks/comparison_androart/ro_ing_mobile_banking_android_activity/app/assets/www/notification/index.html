@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="ING">
+        <meta name="msapplication-tap-highlight" content="no"/>
+        <title>Notification</title>
+        <link rel="stylesheet" href="./assets/css/style.css"/>
+    </head>
+    <body>
+        <header id="topbar" page-header="">
+            <div id="logo"/></div>
+        </header>
+        <div class="lightbox">
+            <div class="lightboxContent">
+                <button onclick="MyNotification.closeNotifications()" class="buton-close-x">x</button>
+                <div class="pushDetails">
+                    <h3 id="notificationDate"></h3>
+                    <p id="notificationText"></p>
+                </div>
+                <button onclick="MyNotification.closeNotifications()" class="buton-continua">Inchide</button>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <script type="text/javascript" charset="UTF-8" src="./assets/js/script.js"></script>
+    </body>
+</html>

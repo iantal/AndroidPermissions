@@ -1,0 +1,23 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: at.spardat.bcrmobile.apk
+compressionType: false
+doNotCompress:
+- arsc
+- assets/html-zh-rHK
+isFrameworkApk: false
+packageInfo: null
+sdkInfo:
+  minSdkVersion: '15'
+  targetSdkVersion: '25'
+sharedLibrary: false
+unknownFiles:
+  build-data.properties: '8'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.1.0
+versionInfo:
+  versionCode: '33'
+  versionName: '4.30'

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_fixed_term_education_close" android:background="@drawable/ic_close" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="16.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip">
+            <include android:id="@id/layout_fixed_term_education_no_bullets" android:visibility="gone" layout="@layout/layout_fixed_term_education_no_bullets" />
+            <include android:id="@id/layout_fixed_term_education_bullets" android:visibility="gone" layout="@layout/layout_fixed_term_education_bullets" />
+            <include android:id="@id/layout_fixed_term_partners" android:visibility="gone" layout="@layout/layout_fixed_term_partners" />
+            <include android:id="@id/layout_fixed_term_weltsparen" android:visibility="gone" layout="@layout/layout_fixed_term_weltsparen" />
+            <include android:id="@id/layout_fixed_term_withholding" android:visibility="gone" layout="@layout/layout_fixed_term_withholding" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

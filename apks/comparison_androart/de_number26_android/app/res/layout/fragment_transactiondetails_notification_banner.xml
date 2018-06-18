@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/layout_transaction_banner" android:background="@color/blue" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="72.0dip" android:layout_height="wrap_content" android:src="@drawable/i_n_f_o" android:scaleType="centerInside" />
+    <TextView android:textSize="@dimen/text_caption" android:textColor="@color/white" android:id="@id/text_banner" android:paddingRight="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

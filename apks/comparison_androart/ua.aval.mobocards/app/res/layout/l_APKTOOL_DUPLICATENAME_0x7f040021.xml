@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/l_APKTOOL_DUPLICATENAME_0x7f02008a" android:paddingTop="24.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200b5" android:padding="16.0dip" android:layout_width="?l_APKTOOL_DUPLICATENAME_0x7f01004d" android:layout_height="?l_APKTOOL_DUPLICATENAME_0x7f01004d" app:srcCompat="@drawable/l_APKTOOL_DUPLICATENAME_0x7f020087" />
+    <ua.aval.mobocards.ui.custom.FuturaDemiTextView android:textSize="20.0dip" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200c6" android:layout_width="fill_parent" android:layout_height="?l_APKTOOL_DUPLICATENAME_0x7f01004d" android:text="@string/l_APKTOOL_DUPLICATENAME_0x7f0a00d5" android:layout_toRightOf="@id/l_APKTOOL_DUPLICATENAME_0x7f1200b5" android:layout_alignParentTop="true" />
+    <ua.aval.mobocards.ui.custom.FuturaBookTextView android:textSize="18.0dip" android:textColor="@android:color/black" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200c7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:text="@string/l_APKTOOL_DUPLICATENAME_0x7f0a00d4" android:layout_below="@id/l_APKTOOL_DUPLICATENAME_0x7f1200c6" />
+</RelativeLayout>

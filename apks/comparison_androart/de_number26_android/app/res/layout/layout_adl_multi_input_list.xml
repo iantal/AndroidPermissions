@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+        <android.support.constraint.Guideline android:orientation="horizontal" android:id="@id/guidelineMultiInputListTop" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.15" />
+        <de.number26.machete.android.adl.atoms.CenterHeadline android:id="@id/centerHeadlineMultiInputListTitle" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/guidelineMultiInputListTop" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <android.support.v7.widget.RecyclerView android:id="@id/recyclerViewMultiInputList" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/mainButtonMultiInputListPrimary" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/centerHeadlineMultiInputListTitle" />
+        <de.number26.machete.android.adl.atoms.MainButton android:id="@id/mainButtonMultiInputListPrimary" android:layout_width="0.0dip" android:layout_height="0.0dip" app:enabled="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_default="wrap" app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="1.0" app:text="@string/action_continue" />
+    </android.support.constraint.ConstraintLayout>
+</merge>

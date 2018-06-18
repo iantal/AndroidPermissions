@@ -13,12 +13,7 @@ from utils.directory_analyser import DirectoryAnalyser
 from analyse.xml_parser import XMLParser
 from analyse.permissions_classifier import PermissionsClassifier
 
-'''
-TODO:
-- create a folder <<report>> in base_apk_dir
-- inside report dir, create a <<vulns>> dir
-- inside vulns dir, put all the json files obtained as result
-'''
+
 
 
 class Report(object):

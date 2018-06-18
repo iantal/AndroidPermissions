@@ -1,0 +1,99 @@
+package android.support.v4.content;
+
+import android.content.Context;
+import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
+import android.os.Build.VERSION;
+import android.os.Bundle;
+import android.os.Process;
+import android.util.TypedValue;
+import java.io.File;
+
+public class c
+{
+  private static final Object a = new Object();
+  private static TypedValue b;
+  
+  public static Drawable a(Context paramContext, int paramInt)
+  {
+    if (Build.VERSION.SDK_INT >= 21) {
+      return paramContext.getDrawable(paramInt);
+    }
+    if (Build.VERSION.SDK_INT >= 16) {
+      return paramContext.getResources().getDrawable(paramInt);
+    }
+    synchronized (a)
+    {
+      if (b == null) {
+        b = new TypedValue();
+      }
+      paramContext.getResources().getValue(paramInt, b, true);
+      int i = b.resourceId;
+      return paramContext.getResources().getDrawable(i);
+    }
+  }
+  
+  public static boolean a(Context paramContext, Intent[] paramArrayOfIntent, Bundle paramBundle)
+  {
+    if (Build.VERSION.SDK_INT >= 16) {
+      paramContext.startActivities(paramArrayOfIntent, paramBundle);
+    } else {
+      paramContext.startActivities(paramArrayOfIntent);
+    }
+    return true;
+  }
+  
+  public static File[] a(Context paramContext)
+  {
+    if (Build.VERSION.SDK_INT >= 19) {
+      return paramContext.getExternalCacheDirs();
+    }
+    File[] arrayOfFile = new File[1];
+    arrayOfFile[0] = paramContext.getExternalCacheDir();
+    return arrayOfFile;
+  }
+  
+  public static File[] a(Context paramContext, String paramString)
+  {
+    if (Build.VERSION.SDK_INT >= 19) {
+      return paramContext.getExternalFilesDirs(paramString);
+    }
+    File[] arrayOfFile = new File[1];
+    arrayOfFile[0] = paramContext.getExternalFilesDir(paramString);
+    return arrayOfFile;
+  }
+  
+  public static int b(Context paramContext, String paramString)
+  {
+    if (paramString == null) {
+      throw new IllegalArgumentException("permission is null");
+    }
+    return paramContext.checkPermission(paramString, Process.myPid(), Process.myUid());
+  }
+  
+  public static ColorStateList b(Context paramContext, int paramInt)
+  {
+    if (Build.VERSION.SDK_INT >= 23) {
+      return paramContext.getColorStateList(paramInt);
+    }
+    return paramContext.getResources().getColorStateList(paramInt);
+  }
+  
+  public static boolean b(Context paramContext)
+  {
+    if (Build.VERSION.SDK_INT >= 24) {
+      return paramContext.isDeviceProtectedStorage();
+    }
+    return false;
+  }
+  
+  public static int c(Context paramContext, int paramInt)
+  {
+    if (Build.VERSION.SDK_INT >= 23) {
+      return paramContext.getColor(paramInt);
+    }
+    return paramContext.getResources().getColor(paramInt);
+  }
+}

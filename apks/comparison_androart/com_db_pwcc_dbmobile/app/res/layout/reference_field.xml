@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.db.pwcc.dbmobile.foundation.widgets.CustomTextInputLayout android:theme="@style/FloatingInput" android:id="@id/text_input_reference" android:layout_width="fill_parent" android:layout_height="55.0dip" android:hint="@string/sepatransfer_customerReferenceTextField_label">
+        <com.db.pwcc.dbmobile.transfer.widgets.inputFields.InputField android:theme="@style/DbEditTextPadding" android:textSize="@dimen/fs_input_hint" android:id="@id/customer_reference" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:inputType="text" android:imeOptions="actionDone" android:nextFocusForward="@id/description" />
+    </com.db.pwcc.dbmobile.foundation.widgets.CustomTextInputLayout>
+</LinearLayout>

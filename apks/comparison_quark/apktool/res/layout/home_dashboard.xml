@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout style="@style/DashboardTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include android:id="@id/view_dashboard_account" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:layout_weight="0.5" layout="@layout/dashboard_button" />
+        <include android:id="@id/view_dashboard_billpayment" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:layout_weight="0.5" layout="@layout/dashboard_button" />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include android:id="@id/view_dashboard_rapid_transfer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:layout_weight="0.5" layout="@layout/dashboard_button" />
+        <include android:id="@id/view_dashboard_foriegn_exchange" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:layout_weight="0.5" layout="@layout/dashboard_button" />
+    </TableRow>
+    <LinearLayout android:gravity="center" android:id="@id/view_dashboard_orderstatus" android:background="@drawable/header_footer" android:clickable="true" style="@style/MatchParentWrapContent">
+        <TextView android:textColor="@color/text_on_dark" android:gravity="center" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:text="@string/dashboard_title_order_status" android:drawableLeft="@drawable/ic_order_status" android:drawablePadding="5.0dip" style="@style/TextBoldAllWrap" />
+    </LinearLayout>
+</TableLayout>

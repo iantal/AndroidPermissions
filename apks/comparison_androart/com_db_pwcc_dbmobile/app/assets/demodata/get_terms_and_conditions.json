@@ -1,0 +1,35 @@
+{
+  "replies": [
+    {
+      "key": "customers/1234567890/termsAndConditions",
+      "data": {
+        "termsAndConditionsResponse": [
+          {
+            "term": "nachrichtenbox",
+            "status": "ACCEPTED"
+          },
+          {
+            "term": "pfm",
+            "status": "DECLINED"
+          },
+          {
+            "term": "mba",
+            "status": "ACCEPTED"
+          },
+          {
+            "term": "zurich",
+            "status": "DECLINED"
+          },
+          {
+            "term": "esafe",
+            "status": "UNKNOWN"
+          },
+          {
+            "term": "mopay",
+            "status": "ACCEPTED"
+          }
+        ]
+      }
+    }
+  ]
+}

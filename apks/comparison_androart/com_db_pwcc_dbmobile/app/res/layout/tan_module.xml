@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.db.pwcc.dbmobile.tan.ui.TanModuleView android:layout_width="fill_parent" android:layout_height="190.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/tans_container" android:background="@color/tanModuleBackground" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:id="@id/itan_title" android:background="@drawable/rounded_bottom_corners_shape_right" android:clickable="true" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_alignLeft="@id/center_point">
+                <ImageView android:layout_gravity="center" android:id="@id/itan_image_title" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_itan" android:foregroundGravity="center" android:contentDescription="@string/app_name" />
+                <TextView android:theme="@style/TanModuleTitleTextViewStyle" android:layout_gravity="center" android:id="@id/itan_textview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="iTAN" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/phototan_title" android:background="@drawable/rounded_bottom_corners_shape_left" android:clickable="true" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_alignRight="@id/center_point">
+                <ImageView android:layout_gravity="center" android:id="@id/phototan_image_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_phototan" android:foregroundGravity="center" android:contentDescription="@string/app_name" />
+                <TextView android:theme="@style/TanModuleTitleTextViewStyle" android:layout_gravity="center" android:id="@id/phototan_textview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="photoTAN" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/center_point" android:background="@color/tanModuleTitleSeperator" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/iTan_module" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/fs_confirmation_normal" android:textColor="@color/enterTanColor" android:id="@id/itan_please_enter" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/sepatransfer_verify_inputtan_message" />
+            <android.support.design.widget.TextInputLayout android:theme="@style/FloatingInput" android:id="@id/itan_text_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+                <com.db.pwcc.dbmobile.foundation.widgets.DbEditText android:theme="@style/dbTanInputEditTextStyle" android:id="@id/itan_number_input" android:layout_width="125.0dip" android:layout_height="wrap_content" android:singleLine="false" android:maxLength="6" android:inputType="number" android:imeOptions="actionDone" />
+            </android.support.design.widget.TextInputLayout>
+            <com.db.pwcc.dbmobile.foundation.views.button.Button android:id="@id/itan_button_execute" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_alignBottom="@id/itan_text_input" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:buttonType="disabled" app:buttonText="@string/sepatransfer_verify_phototan_button_execute_title" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/phototan_module" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true">
+            <ImageButton android:id="@id/phototan_show_imagebutton" android:background="@drawable/ic_phototan_glass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" />
+            <TextView android:textSize="@dimen/fs_confirmation_normal" android:textColor="@color/enterTanColor" android:id="@id/phototan_please_enter" android:padding="15.0dip" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/sepatransfer_verify_phototan_textfield_magnify" android:layout_toEndOf="@id/phototan_show_imagebutton" />
+            <android.support.design.widget.TextInputLayout android:theme="@style/FloatingInput" android:id="@id/phototan_text_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+                <com.db.pwcc.dbmobile.foundation.widgets.DbEditText android:theme="@style/dbTanInputEditTextStyle" android:id="@id/phototan_number_input" android:layout_width="125.0dip" android:layout_height="wrap_content" android:singleLine="false" android:maxLength="7" android:inputType="number" android:imeOptions="actionDone" />
+            </android.support.design.widget.TextInputLayout>
+            <com.db.pwcc.dbmobile.foundation.views.button.Button android:id="@id/phototan_button_execute" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_alignBottom="@id/phototan_text_input" android:layout_alignParentEnd="true" app:buttonType="disabled" app:buttonText="@string/sepatransfer_verify_phototan_button_execute_title" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/tan_loading_screen" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:theme="@style/CircleProgressBar" android:id="@id/tan_loading_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/result_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:visibility="visible" style="@style/Separator" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_above="@id/result_buttons_container">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/result_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_confirmation_ok" />
+                <ScrollView android:layout_gravity="center" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" android:layout_marginStart="12.0dip">
+                    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:id="@id/result_description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </ScrollView>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/result_buttons_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.db.pwcc.dbmobile.foundation.views.button.Button android:id="@id/result_button_newtransfer" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="15.0dip" app:buttonType="secondary" app:buttonText="@string/sepatransfer_result_newtransfer_button" app:lateralPadding="3.0dip" />
+            <com.db.pwcc.dbmobile.foundation.views.button.Button android:id="@id/result_button_done" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:buttonType="primary" app:buttonText="@string/sepatransfer_input_done_label" app:lateralPadding="10.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.db.pwcc.dbmobile.tan.ui.TanModuleView>

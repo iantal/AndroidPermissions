@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/db_toolbar_view" layout="@layout/db_toolbar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/db_toolbar_view">
+        <LinearLayout android:orientation="vertical" android:id="@id/switch_item_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/menu_minimum_height">
+            <com.db.pwcc.dbmobile.foundation.widgets.ListSectionHeaderView android:id="@id/mba_switch_header" android:background="@color/transparent" android:text="@string/activate_or_deactivate_mba" style="@style/ListSectionHeader" />
+            <com.db.pwcc.dbmobile.foundation.widgets.ToggleableSettingItemView android:id="@id/mba_activation_toggle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_horizontal_margin" android:paddingStart="@dimen/activity_horizontal_margin" android:paddingEnd="@dimen/activity_horizontal_margin" app:toggleTitle="@string/finance_planner_multi_banking" app:toggleStatusTextOn="@string/settings_label_active" app:toggleStatusTextOff="@string/settings_label_inactive" app:toggleChecked="false" />
+            <com.db.pwcc.dbmobile.multi_bank_aggregator.views.SettingWithStatusItemView android:id="@id/consent_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_horizontal_margin" android:paddingStart="@dimen/activity_horizontal_margin" android:paddingEnd="@dimen/activity_horizontal_margin" app:toggleTitle="@string/mba_menu_consent_toggle_description" app:toggleStatusTextOn="@string/on" app:toggleStatusTextOff="@string/off" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/mba_menu_institute_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/menu_minimum_height" android:layout_below="@id/switch_item_group">
+            <View style="@style/SettingsDivider" />
+            <com.db.pwcc.dbmobile.foundation.widgets.ListSectionHeaderView android:id="@id/mba_menu_institutes_header" android:background="@color/transparent" android:text="@string/mba_menu_institutes_header_text" style="@style/ListSectionHeader" />
+            <ListView android:id="@id/mba_menu_institute_list" android:background="@android:color/transparent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:groupIndicator="@null" android:divider="@color/colorListDivider" android:dividerHeight="0.0dip" />
+        </LinearLayout>
+        <android.support.design.widget.FloatingActionButton android:id="@id/mba_menu_floating_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fab_margin" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/fab_margin" android:layout_alignParentEnd="true" app:elevation="0.0dip" app:fabSize="normal" app:pressedTranslationZ="0.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

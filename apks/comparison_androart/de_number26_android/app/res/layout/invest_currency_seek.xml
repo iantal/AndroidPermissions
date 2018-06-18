@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="21.0dip" android:id="@id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contentSpacing" android:inputType="number" />
+    <TextView android:textSize="13.0dip" android:gravity="center" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contentSpacing" style="@style/TextAppearance.Item.Sub" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contentSpacing">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/minusTap" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="40.0dip" android:layout_height="30.0dip" android:src="@drawable/minus_tap" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/plusTap" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="40.0dip" android:layout_height="30.0dip" android:src="@drawable/plus_tap" android:scaleType="fitXY" />
+    </LinearLayout>
+</LinearLayout>

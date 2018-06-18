@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/security_search_detail_item" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/search_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/search_item_small_font" android:id="@id/risk_class_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/risk_class" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/search_item_small_font" android:id="@id/risk_class" android:paddingLeft="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/search_item_big_font" android:id="@id/security_name" android:paddingTop="@dimen/search_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/search_item_padding" android:paddingBottom="@dimen/search_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/search_item_small_font" android:id="@id/wkn_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wkn" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/search_item_small_font" android:id="@id/wkn" android:paddingLeft="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/search_item_small_font" android:id="@id/isin_label" android:paddingLeft="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/isin" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/search_item_small_font" android:id="@id/isin" android:paddingLeft="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/colorListHorizontalLine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</RelativeLayout>

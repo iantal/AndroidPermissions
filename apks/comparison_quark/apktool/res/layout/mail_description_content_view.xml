@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:fadingEdge="none" android:fillViewport="true" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="5.0dip" style="@style/AllMatchParent">
+        <RelativeLayout android:padding="@dimen/screen_padding" style="@style/MatchParentWrapContent">
+            <ImageView android:id="@id/confirm_message_icon" android:background="@drawable/forwarded_for_processing" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" android:contentDescription="@string/mailbox_message" />
+            <TextView android:textColor="@color/text_title" android:id="@id/tv_mail_subject" android:layout_toLeftOf="@id/confirm_message_icon" android:layout_alignParentLeft="true" style="@style/TextBigBoldAllWrap" />
+            <TextView android:textColor="@color/text_default" android:id="@id/tv_mail_date" android:layout_toLeftOf="@id/confirm_message_icon" android:layout_below="@id/tv_mail_subject" android:layout_alignParentLeft="true" style="@style/TextSmallNormalAllWrap" />
+        </RelativeLayout>
+        <WebView android:id="@id/webview" style="@style/MatchParentWrapContent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/view_attachment" android:visibility="gone" android:layout_marginTop="10.0dip" style="@style/MatchParentWrapContent">
+            <View android:background="@color/separator_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:textColor="@android:color/white" android:orientation="horizontal" android:id="@id/savings_initial_amount_layout" android:background="@drawable/invest_setamount_bg" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="57.0sp" android:layout_marginTop="@dimen/halfContentSpacing" android:paddingStart="@dimen/action_margin" android:paddingEnd="@dimen/action_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/colorAccent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/savings_once_off_amount" style="@style/TextAppearance.Item.Title" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/savings_initial_amount_off" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/invest_default_amount_one_time" android:layout_weight="1.0" style="@style/savingsEditTextInput" />
+        <TextView android:textAppearance="@style/TextAppearance.Item.Title" android:textSize="25.0sp" android:textColor="@color/textColorSecondary" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/symbol_initial" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/halfContentSpacing" />
+    </LinearLayout>
+</LinearLayout>

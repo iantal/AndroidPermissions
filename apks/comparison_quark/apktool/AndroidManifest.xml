@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="33" android:versionName="4.30" package="at.spardat.bcrmobile" platformBuildVersionCode="24" platformBuildVersionName="7.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="25" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+    <application android:theme="@style/Theme.NoTitleBar.BackgroundNull.Animated" android:label="@string/app_name" android:icon="@drawable/app_icon" android:name="at.spardat.bcrmobile.application.BaseApplication" android:allowBackup="true" android:logo="@drawable/launcher_icon">
+        <uses-library android:name="com.google.android.maps" />
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="at.spardat.bcrmobile.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths" />
+        </provider>
+        <activity android:name="at.spardat.bcrmobile.activity.SplashActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/app_linking_scheme" android:host="*" android:path="@string/app_linking_path" />
+            </intent-filter>
+        </activity>
+        <activity android:name="at.spardat.bcrmobile.activity.AppDemoActivity" android:screenOrientation="portrait" android:configChanges="locale" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.HomeActivity" android:clearTaskOnLaunch="true" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.bcrlocation.ATMBranchLocationActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.login.LoginActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.login.RenewPasswordActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.login.ResetStaticPasswordActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.login.ResetStaticAliasActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.login.ResetStaticPasswordActivityNoLogin" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.login.ResetStaticAliasActivityNoLogin" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.infoservices.FXRateActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.bcrlocation.ATMDetailActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.bcrlocation.BranchDetailActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.bcrlocation.BCRPartnerDetailActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.contactemergencyservice.ContactEmergencyServiceActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.AppBrowserActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.apiversion.APIVersionUpdateActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.accounts.currentaccount.CurrentAccountActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.accounts.AccountsHomeActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.accounts.loanaccount.LoanAccountActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.accounts.savingaccount.SavingAccountActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.accounts.assetmgmtaccount.AssetMgmtAccountActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.accounts.creditcardaccount.CreditCardAccountActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.accounts.creditcardaccount.CreditCardPayNowActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.PaymentAuthorizationActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.PaymentStatusActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.accounts.currentaccount.TransactionSelectionActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.PayeeIBANCheckActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.IBANPaymentValidationActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.accounts.savingaccount.CallDepositTransferActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.mailbox.MailBoxHomeActivity" android:screenOrientation="portrait" android:configChanges="locale" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.mailbox.MailBoxItemDetailActivity" android:screenOrientation="portrait" android:configChanges="locale" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.mailbox.MailBoxItemConfirmActivity" android:screenOrientation="portrait" android:configChanges="locale" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.mailbox.MailBoxAttachmentActivity" android:screenOrientation="portrait" android:configChanges="locale" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.foreignexchange.FXTargetAccountSelectionActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.foreignexchange.FXQuotationActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.foreignexchange.FXPaymentAuthorizationActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.PersonalTemplateActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.PersonalTemplateValidationActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentCategoriesActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentStandardTemplateListActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentTemplateDetailActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.orderstatus.OrderStatusListActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.orderstatus.OrderStatusDetailActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.accounts.BillPaymentAccountListActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.foreignexchange.FXAccountListActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.accounts.IbanTermPersonalTemplatePaymentAccountListActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="net.hockeyapp.android.UpdateActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.DevelopmentOptionActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.google.zxing.client.android.CaptureActivity" android:exported="false" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.SCAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="zxing.appspot.com" android:path="/scan" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="www.google.com" android:path="/m/products/scan" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="www.google.co.uk" android:path="/m/products/scan" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="zxing" android:host="scan" android:path="/" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.google.zxing.client.android.BarcodeInputActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.BarcodeTemplateListActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.BarcodeTemplateDetailActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentPersonalTemplateListActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentBookmarkTemplateListActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.BookmarkTemplateDetailActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.PersonalTemplateSavingActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.IBANPaymentPersonalTemplateListActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.offer.ProductOfferDetailActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.offer.ProductOfferConfirmationActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.Click24AppBrowserActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.rapidtransfer.RapidTransferAccountListActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.rapidtransfer.RapidTransferPaymentActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.rapidtransfer.CurrentAccountRapidTransferPaymentActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.accounts.savingaccount.TermDepositClosingActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.TermDepositLiquidationActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.TermDepositClosingStatusActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.OpenTermDepositActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.OpenTermDepositAcceptanceActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.payment.OpenTermDepositStatusActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.settings.Click24SettingActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.settings.PhoneNumberSettingActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.settings.AliasNameSettingActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.settings.PasswordSettingActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.click24.settings.ModifyPasswordSettingActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden" />
+        <activity android:name="at.spardat.bcrmobile.activity.MaintenanceActivity" android:screenOrientation="portrait" />
+        <service android:name="at.spardat.bcrmobile.service.APIVersionUpdateService" />
+        <receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" android:enabled="true" android:exported="false" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" />
+        <activity android:label="@string/preferences_name" android:name="com.google.zxing.client.android.PreferencesActivity" android:stateNotNeeded="true" />
+        <activity android:name="com.google.zxing.client.android.encode.EncodeActivity" android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.ENCODE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/x-vcard" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/sbc_name" android:name="com.google.zxing.client.android.book.SearchBookContentsActivity" android:stateNotNeeded="true" android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SEARCH_BOOK_CONTENTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.google.zxing.client.android.share.ShareActivity" android:stateNotNeeded="true" android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SHARE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/history_title" android:name="com.google.zxing.client.android.history.HistoryActivity" android:stateNotNeeded="true" />
+        <activity android:label="@string/bookmark_picker_name" android:name="com.google.zxing.client.android.share.BookmarkPickerActivity" android:stateNotNeeded="true" />
+        <activity android:label="@string/app_picker_name" android:name="com.google.zxing.client.android.share.AppPickerActivity" android:stateNotNeeded="true" />
+        <activity android:label="@string/menu_help" android:name="com.google.zxing.client.android.HelpActivity" android:stateNotNeeded="true" android:screenOrientation="user" />
+    </application>
+</manifest>

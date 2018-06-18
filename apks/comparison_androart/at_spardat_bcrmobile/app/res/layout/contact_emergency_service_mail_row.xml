@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/roundrect_shape" android:padding="2.0dip" android:clickable="true" android:layout_margin="2.0dip" style="@style/MatchParentWrapContent">
+        <TextView android:textColor="@color/text_default" android:gravity="center_vertical" android:id="@id/tv_call_msg" android:background="@drawable/list_single_item_selector" android:padding="5.0dip" android:clickable="true" android:drawableRight="@drawable/mail_icon" style="@style/TextBoldMatchWrap" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/text_title" android:id="@id/tv_call_description" android:paddingLeft="2.0dip" android:paddingTop="5.0dip" android:paddingRight="2.0dip" android:paddingBottom="5.0dip" style="@style/TextNormalMatchWrap" />
+</LinearLayout>

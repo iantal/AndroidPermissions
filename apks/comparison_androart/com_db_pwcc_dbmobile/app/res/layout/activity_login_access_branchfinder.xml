@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageview_branchfinder_map" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_map_branchfinder" android:scaleType="centerCrop" />
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/button_text_size_small" android:textColor="@color/toggle_access_branchfinder" android:id="@id/login_branchfinder_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_text_find_branch" android:drawablePadding="10.0dip" android:layout_centerInParent="true" android:drawableStart="@drawable/ic_location_crosshair_selector" android:paddingStart="13.0dip" android:paddingEnd="13.0dip" />
+</RelativeLayout>

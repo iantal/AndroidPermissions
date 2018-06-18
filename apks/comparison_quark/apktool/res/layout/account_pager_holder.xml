@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:orientation="vertical" android:id="@id/view_pager_account" style="@style/AllMatchParent" />
+    <LinearLayout android:orientation="vertical" android:baselineAligned="false" style="@style/AllMatchParent">
+        <View android:id="@id/dot_top_view" style="@style/MatchParentWrapContent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/view_dots_area" style="@style/MatchParentWrapContent" />
+    </LinearLayout>
+</merge>

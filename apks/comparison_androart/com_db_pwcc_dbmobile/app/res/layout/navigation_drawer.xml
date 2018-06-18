@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.internal.ScrimInsetsFrameLayout android:layout_gravity="left" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:insetForeground="@color/statusbar"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scrollview_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingBottom="@dimen/actionbar_horizontal_margin" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/navigation_drawer_header" />
+            <LinearLayout android:orientation="vertical" android:id="@id/logged_in_items" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/multibanking_item" android:visibility="gone" android:text="@string/menu_item_multi_banking" android:drawableLeft="@drawable/ic_drawer_multibanking" style="@style/NavigationDrawerItem" />
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/postbox_item" android:layout_width="fill_parent" android:text="@string/menu_item_postbox" android:drawableLeft="@drawable/ic_drawer_postbox" style="@style/NavigationDrawerItem" />
+                    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" layout="@layout/notification_bubble" />
+                </RelativeLayout>
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/ibanbic_item" android:text="@string/menu_item_iban_bic" android:drawableLeft="@drawable/ic_drawer_ibanbic" style="@style/NavigationDrawerItem" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/overdraft_item" android:visibility="gone" android:text="@string/menu_item_overdraft" android:drawableLeft="@drawable/ic_drawer_overdraft" style="@style/NavigationDrawerItem" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/branchfinder_item" android:text="@string/menu_item_branchfinder" android:drawableLeft="@drawable/ic_drawer_branchfinder" style="@style/NavigationDrawerItem" />
+                <View style="@style/NavigationDrawerDivider" />
+            </LinearLayout>
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/settings_item" android:text="@string/menu_item_settings" android:drawableLeft="@drawable/ic_drawer_settings" style="@style/NavigationDrawerItem" />
+            <View style="@style/NavigationDrawerDivider" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/whatsnew_item" android:text="@string/menu_item_what_is_new" android:drawableLeft="@drawable/ic_drawer_whatsnew" style="@style/NavigationDrawerItem" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/feedback_item" android:text="@string/menu_item_feedback" android:drawableLeft="@drawable/ic_drawer_feedback" style="@style/NavigationDrawerItem" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/imprint_item" android:text="@string/menu_item_imprint" android:drawableLeft="@drawable/ic_drawer_imprint" style="@style/NavigationDrawerItem" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textColor="@color/db_slate_grey" android:id="@id/version_item" android:text="@string/menu_item_version_name_prefix" style="@style/NavigationDrawerItem.Info" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="10.0sp" android:textColor="@color/db_slate_grey" android:id="@id/buildinfo_item" android:visibility="gone" android:layout_height="wrap_content" android:maxLines="10" style="@style/NavigationDrawerItem.Info" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.internal.ScrimInsetsFrameLayout>

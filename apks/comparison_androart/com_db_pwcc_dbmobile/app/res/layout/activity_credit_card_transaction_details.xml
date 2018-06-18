@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/db_toolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/credit_card_details_horizontal_padding" android:paddingEnd="@dimen/credit_card_details_horizontal_padding">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/credit_card_details_margin_top" layout="@layout/details_header" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/credit_card_details_label_text_size" android:textColor="@color/transactionInfo" android:id="@id/amount_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/credit_card_details_amount_margin_top" android:text="@string/transaction_amount_label" android:maxLines="1" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/credit_card_details_value_text_size" android:textColor="@color/db_green" android:id="@id/amount_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/foreign_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/credit_card_details_margin_top" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/dates_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

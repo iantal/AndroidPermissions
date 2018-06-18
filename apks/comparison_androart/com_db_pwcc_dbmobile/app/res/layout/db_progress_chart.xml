@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/circular_progressBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:progress="0" android:layout_centerInParent="true" android:rotation="-90.0" style="?android:attr/progressBarStyleHorizontal" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/text_container" android:padding="@dimen/progress_chart_inner_padding" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:ellipsize="end" android:id="@id/circular_progressBar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textStyle="bold" android:ellipsize="end" android:id="@id/circular_progressBar_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <ImageView android:id="@id/circular_progressBar_inner_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

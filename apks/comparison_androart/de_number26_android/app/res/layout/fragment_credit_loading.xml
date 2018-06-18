@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/creditScreenPaddingTopBottom" android:paddingBottom="@dimen/creditScreenPaddingTopBottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/creditLoadingTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditTitle" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="16.0dip" android:layout_above="@id/creditLoadingDescription" android:layout_below="@id/creditLoadingTitle">
+        <com.mklimek.frameviedoview.FrameVideoView android:layout_gravity="bottom|center" android:id="@id/creditLoadingVideo" android:layout_width="56.0dip" android:layout_height="68.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="18.0sp" android:layout_gravity="center" android:id="@id/creditLoadingDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/credit_loading_description" android:layout_centerInParent="true" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" fontPath="@string/font_regular" style="@style/creditTitle" />
+</RelativeLayout>

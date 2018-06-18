@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/donut_subaccount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="154.0dip" android:layout_above="@id/donut_description" android:layout_centerHorizontal="true" style="@style/DonutCenter" />
+    <TextView android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/donut_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="" android:singleLine="true" android:layout_above="@id/donut_balance" android:layout_centerHorizontal="true" style="@style/DonutCenter" />
+    <TextView android:layout_gravity="center" android:id="@id/donut_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0sp" android:layout_centerInParent="true" style="@style/DonutCenter.Balance" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/donut_lbl_prebooked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donut_prebooks_included" android:layout_below="@id/donut_balance" android:layout_centerHorizontal="true" style="@style/DonutCenter.Small" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/donut_lbl_open" android:paddingBottom="4.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donut_btn_show" android:layout_alignParentTop="false" android:layout_alignParentRight="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAlignment="center" style="@style/DonutCenter.Small.Show" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.db.pwcc.dbmobile.foundation.views.layouts.MainDrawerLayout android:id="@id/main_drawer_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/db_toolbar_view" layout="@layout/db_toolbar" />
+        <com.db.pwcc.dbmobile.foundation.widgets.TileRecyclerView android:id="@id/tile_recycler" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/db_toolbar_view" />
+    </RelativeLayout>
+    <include android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/navigation_drawer" />
+</com.db.pwcc.dbmobile.foundation.views.layouts.MainDrawerLayout>

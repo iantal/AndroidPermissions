@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/fullscreen_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/background_treatment_information" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:contentDescription="@string/app_name" android:layout_alignParentStart="true" />
+    <include android:id="@id/db_toolbar_view" layout="@layout/db_toolbar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/information_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/button_layout" android:layout_below="@id/db_toolbar_view" android:layout_marginStart="@dimen/activity_horizontal_margin" android:layout_marginEnd="@dimen/activity_horizontal_margin">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/treatment_information_text_size" android:textColor="@color/treatment_information_text_color" android:gravity="center" android:id="@id/information_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/treatment_information_title_margin" />
+        <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/treatment_information_content_margin" android:layout_marginBottom="@dimen/treatment_information_content_margin">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/treatment_information_text_size" android:textColor="@color/treatment_information_text_color" android:gravity="center" android:id="@id/information_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/button_margin_lateral" android:layout_alignParentBottom="true">
+        <com.db.pwcc.dbmobile.foundation.views.button.Button android:id="@id/button_more_information" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/button_drawable_margin" app:buttonType="primary" app:buttonText="@string/get_more_info" />
+        <com.db.pwcc.dbmobile.foundation.views.button.Button android:id="@id/button_dismiss" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:buttonType="primary" app:buttonText="@string/close_label" />
+    </LinearLayout>
+</RelativeLayout>

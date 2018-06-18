@@ -1,0 +1,48 @@
+.class Lde/number26/machete/android/ui/transfers/moneybeam/BeamContactsFragment_ViewBinding$2;
+.super Lbutterknife/a/a;
+.source "BeamContactsFragment_ViewBinding.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lde/number26/machete/android/ui/transfers/moneybeam/BeamContactsFragment_ViewBinding;-><init>(Lde/number26/machete/android/ui/transfers/moneybeam/BeamContactsFragment;Landroid/view/View;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic b:Lde/number26/machete/android/ui/transfers/moneybeam/BeamContactsFragment;
+
+.field final synthetic c:Lde/number26/machete/android/ui/transfers/moneybeam/BeamContactsFragment_ViewBinding;
+
+
+# direct methods
+.method constructor <init>(Lde/number26/machete/android/ui/transfers/moneybeam/BeamContactsFragment_ViewBinding;Lde/number26/machete/android/ui/transfers/moneybeam/BeamContactsFragment;)V
+    .locals 0
+
+    .line 46
+    iput-object p1, p0, Lde/number26/machete/android/ui/transfers/moneybeam/BeamContactsFragment_ViewBinding$2;->c:Lde/number26/machete/android/ui/transfers/moneybeam/BeamContactsFragment_ViewBinding;
+
+    iput-object p2, p0, Lde/number26/machete/android/ui/transfers/moneybeam/BeamContactsFragment_ViewBinding$2;->b:Lde/number26/machete/android/ui/transfers/moneybeam/BeamContactsFragment;
+
+    invoke-direct {p0}, Lbutterknife/a/a;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Landroid/view/View;)V
+    .locals 0
+
+    .line 49
+    iget-object p1, p0, Lde/number26/machete/android/ui/transfers/moneybeam/BeamContactsFragment_ViewBinding$2;->b:Lde/number26/machete/android/ui/transfers/moneybeam/BeamContactsFragment;
+
+    invoke-virtual {p1}, Lde/number26/machete/android/ui/transfers/moneybeam/BeamContactsFragment;->onImportContactsClicked()V
+
+    return-void
+.end method

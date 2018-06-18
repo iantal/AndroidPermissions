@@ -1,0 +1,90 @@
+.class final Lde/number26/machete/android/refactor/domain/v/c/c$b;
+.super Ljava/lang/Object;
+.source "ComputeQuestionVisibility.kt"
+
+# interfaces
+.implements Lrx/c/f;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lde/number26/machete/android/refactor/domain/v/c/c;->a(Lh/a/b;)Lrx/e;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        "R:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lrx/c/f<",
+        "TT;",
+        "Lrx/e<",
+        "+TR;>;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lde/number26/machete/android/refactor/domain/v/c/c;
+
+
+# direct methods
+.method constructor <init>(Lde/number26/machete/android/refactor/domain/v/c/c;)V
+    .locals 0
+
+    iput-object p1, p0, Lde/number26/machete/android/refactor/domain/v/c/c$b;->a:Lde/number26/machete/android/refactor/domain/v/c/c;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 25
+    check-cast p1, Lde/number26/machete/android/refactor/data/questionnaire/questions/k;
+
+    invoke-virtual {p0, p1}, Lde/number26/machete/android/refactor/domain/v/c/c$b;->a(Lde/number26/machete/android/refactor/data/questionnaire/questions/k;)Lrx/e;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final a(Lde/number26/machete/android/refactor/data/questionnaire/questions/k;)Lrx/e;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lde/number26/machete/android/refactor/data/questionnaire/questions/k;",
+            ")",
+            "Lrx/e<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .line 36
+    iget-object v0, p0, Lde/number26/machete/android/refactor/domain/v/c/c$b;->a:Lde/number26/machete/android/refactor/domain/v/c/c;
+
+    const-string v1, "it"
+
+    invoke-static {p1, v1}, Lf/d/b/j;->a(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0, p1}, Lde/number26/machete/android/refactor/domain/v/c/c;->a(Lde/number26/machete/android/refactor/domain/v/c/c;Lde/number26/machete/android/refactor/data/questionnaire/questions/k;)Lrx/e;
+
+    move-result-object p1
+
+    return-object p1
+.end method

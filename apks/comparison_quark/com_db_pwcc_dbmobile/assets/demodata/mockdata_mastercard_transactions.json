@@ -1,0 +1,195 @@
+{
+  "replies": [
+    {
+      "key": "creditCards/5232270000105989/transactions",
+      "referenceDate": "2016-12-26",
+      "data": {
+        "baseCurrency": "EUR",
+        "account": {
+          "id": "5232270000105989",
+          "number": "5232270000105989",
+          "onlineBalanceInBaseCurrency": "-90.00"
+        },
+        "bookedTransactions": [
+          {
+            "postingDate": "2016-12-06T22:00:00.000Z",
+            "bookDate": "2016-12-06",
+            "valueDate": "2016-12-06T22:00:00.000Z",
+            "valueDateV2": "2016-12-06",
+            "description": "GOOGLE PLAY STORE EUR",
+            "amountInBaseCurrency": "-90.0",
+            "amountInForeignCurrency": "-90.0",
+            "foreignCurrency": "EUR",
+            "fxRate": "1.0",
+            "currency": "EUR",
+            "amount": "-90.0"
+          }
+        ],
+        "creditLimit": "5000",
+        "billingDates": [
+          "2016-11-25",
+          "2016-10-25"
+        ]
+      }
+    },
+    {
+      "key": "creditCards/5232270000105989/transactions?billingDate=2016-11-25",
+      "referenceDate": "2016-12-26",
+      "data": {
+        "baseCurrency": "EUR",
+        "maxResultsReached": false,
+        "bookedTransactionsCount": 0,
+        "account": {
+          "id": "5232270000105989",
+          "number": "5232270000105989",
+          "onlineBalanceInBaseCurrency": "-90.00"
+        },
+        "bookedTransactions": [
+          {
+            "postingDate": "2016-11-21T10:00:00.000Z",
+            "bookDate": "2016-11-21",
+            "valueDate": "2016-11-22T10:00:00.000Z",
+            "valueDateV2": "2016-11-22",
+            "description": "FAHRRAD ONLINE SHOP",
+            "amountInBaseCurrency": "-212.3",
+            "amountInForeignCurrency": "-212.3",
+            "foreignCurrency": "EUR",
+            "fxRate": "1.0",
+            "currency": "EUR",
+            "amount": "-212.3"
+          },
+          {
+            "postingDate": "2016-11-19T10:00:00.000Z",
+            "bookDate": "2016-11-19",
+            "valueDate": "2016-11-20T10:00:00.000Z",
+            "valueDateV2": "2016-11-20",
+            "description": "SUPERMARKT RECHNUNG",
+            "amountInBaseCurrency": "-54.7",
+            "amountInForeignCurrency": "-54.7",
+            "foreignCurrency": "EUR",
+            "fxRate": "1.0",
+            "currency": "EUR",
+            "amount": "-54.7"
+          },
+          {
+            "postingDate": "2016-11-15T10:00:00.000Z",
+            "bookDate": "2016-11-15",
+            "valueDate": "2016-11-16T10:00:00.000Z",
+            "valueDateV2": "2016-11-16",
+            "description": "RÜCKZAHLUNG ABC ONLINE SHOP",
+            "amountInBaseCurrency": "56.0",
+            "amountInForeignCurrency": "56.0",
+            "foreignCurrency": "EUR",
+            "fxRate": "1.0",
+            "currency": "EUR",
+            "amount": "56.0"
+          },
+          {
+            "postingDate": "2016-11-10T10:00:00.000Z",
+            "bookDate": "2016-11-10",
+            "valueDate": "2016-11-11T10:00:00.000Z",
+            "valueDateV2": "2016-11-11",
+            "description": "BC SHOP",
+            "amountInBaseCurrency": "-89.8",
+            "amountInForeignCurrency": "-89.8",
+            "foreignCurrency": "EUR",
+            "fxRate": "1.0",
+            "currency": "EUR",
+            "amount": "89.8"
+          },
+          {
+            "postingDate": "2016-11-07T10:00:00.000Z",
+            "bookDate": "2016-11-07",
+            "valueDate": "2016-11-08T10:00:00.000Z",
+            "valueDateV2": "2016-11-08",
+            "description": "OP ONLINE SHOP",
+            "amountInBaseCurrency": "-176.0",
+            "amountInForeignCurrency": "-193.6",
+            "foreignCurrency": "USD",
+            "fxRate": "1.1",
+            "currency": "EUR",
+            "amount": "-176.0"
+          }
+        ],
+        "creditLimit": "5000",
+        "billingDates": [
+          "2016-11-25",
+          "2016-10-25"
+        ]
+      }
+    },
+    {
+      "key": "creditCards/5232270000105989/transactions?billingDate=2016-10-25",
+      "referenceDate": "2016-12-26",
+      "data": {
+        "baseCurrency": "EUR",
+        "maxResultsReached": false,
+        "bookedTransactionsCount": 0,
+        "account": {
+          "id": "5232270000105989",
+          "number": "5232270000105989",
+          "onlineBalanceInBaseCurrency": "-90.00"
+        },
+        "bookedTransactions": [
+          {
+            "postingDate": "2016-10-19T10:00:00.000Z",
+            "bookDate": "2016-10-19",
+            "valueDate": "2016-10-20T10:00:00.000Z",
+            "valueDateV2": "2016-10-20",
+            "description": "TH ONLINE SHOP",
+            "amountInBaseCurrency": "-202.8",
+            "amountInForeignCurrency": "-202.8",
+            "foreignCurrency": "EUR",
+            "fxRate": "1.0",
+            "currency": "EUR",
+            "amount": "-202.8"
+          },
+          {
+            "postingDate": "2016-10-19T10:00:00.000Z",
+            "bookDate": "2016-10-19",
+            "valueDate": "2016-10-20T10:00:00.000Z",
+            "valueDateV2": "2016-10-20",
+            "description": "TANKSTELLEN ABRECHNUNG",
+            "amountInBaseCurrency": "-56.0",
+            "amountInForeignCurrency": "-56.0",
+            "foreignCurrency": "EUR",
+            "fxRate": "1.0",
+            "currency": "EUR",
+            "amount": "-56.0"
+          },
+          {
+            "postingDate": "2016-10-10T10:00:00.000Z",
+            "bookDate": "2016-10-10",
+            "valueDate": "2016-10-11T10:00:00.000Z",
+            "valueDateV2": "2016-10-11",
+            "description": "RÜCKZAHLUNG BC SHOP",
+            "amountInBaseCurrency": "89.8",
+            "amountInForeignCurrency": "89.8",
+            "foreignCurrency": "EUR",
+            "fxRate": "1.0",
+            "currency": "EUR",
+            "amount": "89.8"
+          },
+          {
+            "postingDate": "2016-10-07T10:00:00.000Z",
+            "bookDate": "2016-10-07",
+            "valueDate": "2016-10-08T10:00:00.000Z",
+            "valueDateV2": "2016-10-08",
+            "description": "ABC ONLINE SHOP",
+            "amountInBaseCurrency": "-176.0",
+            "amountInForeignCurrency": "-193.6",
+            "foreignCurrency": "USD",
+            "fxRate": "1.1",
+            "currency": "EUR",
+            "amount": "-176.0"
+          }
+        ],
+        "creditLimit": "5000",
+        "billingDates": [
+          "2016-11-25",
+          "2016-10-25"
+        ]
+      }
+    }
+  ]
+}

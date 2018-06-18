@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f0e0000">
+        <item quantity="other">%d days</item>
+        <item quantity="zero">%d days</item>
+        <item quantity="one">%d day</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f0e0001">
+        <item quantity="other">%d hours</item>
+        <item quantity="zero">%d hours</item>
+        <item quantity="one">%d hour</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f0e0002">
+        <item quantity="other">%d minutes</item>
+        <item quantity="zero">%d minutes</item>
+        <item quantity="one">%d minute</item>
+    </plurals>
+    <plurals name="APKTOOL_DUMMYVAL_0x7f0e0003">
+        <item quantity="other">There are %d operations in progress for this card. Deleting it will cancel all operations.</item>
+        <item quantity="one">There is one operation in progress for this card. Deleting it will cancel the operation.</item>
+        <item quantity="few">There are %d operations in progress for this card. Deleting it will cancel all operations.</item>
+    </plurals>
+</resources>

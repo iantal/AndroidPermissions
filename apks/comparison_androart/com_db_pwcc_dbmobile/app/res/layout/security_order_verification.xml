@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/order_container" android:background="@color/screen_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/main_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/order_verification_details" layout="@layout/order_verification_details" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/error" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.db.pwcc.dbmobile.tan.ui.TanModule android:id="@id/confirmation_tanModule" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding" android:layout_alignParentBottom="true" app:itanDescription="@string/sell_all_verify_inputtan_message" app:ptanDescription="@string/verify_ptan_message" app:descriptionResult="@string/sell_all_verify_success_label_format" app:timeoutMessage="@string/investment_no_internet" app:networkError="@string/investment_no_internet" app:executeButtonLabel="@string/sell_with_costs" />
+</RelativeLayout>

@@ -1,0 +1,258 @@
+{
+  "replies": [
+    {
+      "key": "lending/mortgages/1234567890/loans/overview",
+      "data": {
+        "mortgages": [
+          {
+            "id": "640473058685",
+            "account": {
+              "branchId": "640",
+              "customerNumber": "4730586",
+              "subAccountNumber": "85"
+            },
+            "contract": {
+              "agreementType": "FIXED",
+              "conditions": {
+                "currentInstalment": {
+                  "amount": "250.00",
+                  "frequency": "MONTHLY"
+                },
+                "currentInterestRate": {
+                  "endOfPeriod": "2017-01-15",
+                  "percentage": "3.00"
+                }
+              },
+              "originalAmount": "150000.00",
+              "validTo": "2039-08-31"
+            },
+            "currency": "EUR",
+            "currentBalance": "100375"
+          },
+          {
+            "id": "640473058686",
+            "account": {
+              "branchId": "640",
+              "customerNumber": "4730586",
+              "subAccountNumber": "86"
+            },
+            "contract": {
+              "agreementType": "VARIABLE",
+              "conditions": {
+                "currentInstalment": {
+                  "amount": "666.67",
+                  "frequency": "MONTHLY"
+                },
+                "currentInterestRate": {
+                  "endOfPeriod": "2017-01-15",
+                  "percentage": "2.59"
+                }
+              },
+              "originalAmount": "160000.00",
+              "validTo": "2045-08-31"
+            },
+            "currency": "EUR",
+            "currentBalance": "152895.9"
+          },
+          {
+            "id": "640473058687",
+            "account": {
+              "branchId": "640",
+              "customerNumber": "4730586",
+              "subAccountNumber": "87"
+            },
+            "contract": {
+              "agreementType": "VARIABLE_CAP",
+              "conditions": {
+                "currentInstalment": {
+                  "amount": "5001",
+                  "frequency": "BIANNUAL"
+                },
+                "currentInterestRate": {
+                  "endOfPeriod": "2017-01-15",
+                  "percentage": "2.77"
+                }
+              },
+              "originalAmount": "110000.00",
+              "validTo": "2018-08-31"
+            },
+            "currency": "EUR",
+            "currentBalance": "0"
+          },
+          {
+            "id": "640473058688",
+            "account": {
+              "branchId": "640",
+              "customerNumber": "4730586",
+              "subAccountNumber": "88"
+            },
+            "contract": {
+              "agreementType": "FIXED",
+              "conditions": {
+                "currentInstalment": {
+                  "amount": "870.00",
+                  "frequency": "QUARTERLY"
+                },
+                "currentInterestRate": {
+                  "endOfPeriod": "2017-01-15",
+                  "percentage": "1.20"
+                }
+              },
+              "originalAmount": "300000.00",
+              "validTo": "2022-08-31"
+            },
+            "currency": "EUR",
+            "currentBalance": "87000"
+          }
+        ],
+        "remainingDebt": "340270.9",
+        "totalInstalment": {
+          "amount": "2287.34",
+          "frequency": "MONTHLY"
+        }
+      }
+    },
+    {
+      "key": "lending/mortgages/1234567890/loans/640473058685",
+      "data": {
+        "account": {
+          "branchId": "640",
+          "customerNumber": "4730586",
+          "subAccountNumber": "85"
+        },
+        "contract": {
+          "agreementType": "FIXED",
+          "conditions": {
+            "currentInstalment": {
+              "amount": "250.00",
+              "frequency": "MONTHLY"
+            },
+            "currentInterestRate": {
+              "endOfPeriod": "2017-01-15",
+              "percentage": "3.00"
+            }
+          },
+          "capPeriod": {
+            "lowerLimit": "1.50",
+            "upperLimit": "4.75",
+            "endDate": "2024-08-31"
+          },
+          "hasLoanInsurance": false,
+          "hasUnscheduledPaymentOption": false,
+          "originalAmount": "150000.00",
+          "validTo": "2039-08-31"
+        },
+        "currency": "EUR",
+        "currentBalance": "100375",
+        "disbursementStatus": "IN_DISBURSEMENT",
+        "iban": "DE74533700240123456785",
+        "id": "640473058685",
+        "nextPaymentDate": "2019-01-01"
+      }
+    },
+    {
+      "key": "lending/mortgages/1234567890/loans/640473058686",
+      "data": {
+        "account": {
+          "branchId": "640",
+          "customerNumber": "4730586",
+          "subAccountNumber": "86"
+        },
+        "contract": {
+          "agreementType": "VARIABLE",
+          "conditions": {
+            "currentInstalment": {
+              "amount": "666.67",
+              "frequency": "MONTHLY"
+            },
+            "currentInterestRate": {
+              "endOfPeriod": "2017-01-15",
+              "percentage": "2.59"
+            }
+          },
+          "capPeriod": {
+            "lowerLimit": "1.75",
+            "upperLimit": "5.00",
+            "endDate": "2024-10-14"
+          },
+          "hasLoanInsurance": false,
+          "hasUnscheduledPaymentOption": false,
+          "originalAmount": "160000.00",
+          "validTo": "2045-08-31"
+        },
+        "currency": "EUR",
+        "currentBalance": "152895.9",
+        "disbursementStatus": "IN_DISBURSEMENT",
+        "iban": "DE74533700240123456786",
+        "id": "640473058686",
+        "nextPaymentDate": "2019-01-01"
+      }
+    },
+    {
+      "key": "lending/mortgages/1234567890/loans/640473058687",
+      "data": {
+        "account": {
+          "branchId": "640",
+          "customerNumber": "4730586",
+          "subAccountNumber": "87"
+        },
+        "contract": {
+          "agreementType": "VARIABLE_CAP",
+          "conditions": {
+            "currentInstalment": {
+              "amount": "5001",
+              "frequency": "BIANNUAL"
+            },
+            "currentInterestRate": {
+              "endOfPeriod": "2017-01-15",
+              "percentage": "2.77"
+            }
+          },
+          "hasLoanInsurance": false,
+          "hasUnscheduledPaymentOption": true,
+          "originalAmount": "110000.00",
+          "validTo": "2018-08-31"
+        },
+        "currency": "EUR",
+        "currentBalance": "0",
+        "disbursementStatus": "IN_REPAYMENT",
+        "iban": "DE74533700240123456787",
+        "id": "640473058687",
+        "nextPaymentDate": "2019-01-01"
+      }
+    },
+    {
+      "key": "lending/mortgages/1234567890/loans/640473058688",
+      "data": {
+        "account": {
+          "branchId": "640",
+          "customerNumber": "4730586",
+          "subAccountNumber": "88"
+        },
+        "contract": {
+          "agreementType": "FIXED",
+          "conditions": {
+            "currentInstalment": {
+              "amount": "870.00",
+              "frequency": "QUARTERLY"
+            },
+            "currentInterestRate": {
+              "endOfPeriod": "2017-01-15",
+              "percentage": "1.20"
+            }
+          },
+          "hasLoanInsurance": true,
+          "hasUnscheduledPaymentOption": true,
+          "originalAmount": "300000.00",
+          "validTo": "2022-08-31"
+        },
+        "currency": "EUR",
+        "currentBalance": "87000",
+        "disbursementStatus": "IN_DISBURSEMENT",
+        "iban": "DE74533700240123456788",
+        "id": "640473058688",
+        "nextPaymentDate": "2019-01-01"
+      }
+    }
+  ]
+}

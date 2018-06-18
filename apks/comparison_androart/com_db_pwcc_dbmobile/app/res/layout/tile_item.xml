@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/tileBackgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.db.pwcc.dbmobile.foundation.widgets.SectionTitleLabel android:id="@id/tile_sectionLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/tileHeaderStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/tile_content_placeholder" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

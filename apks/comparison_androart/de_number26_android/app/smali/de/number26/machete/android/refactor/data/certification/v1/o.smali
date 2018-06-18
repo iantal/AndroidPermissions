@@ -1,0 +1,54 @@
+.class interface abstract Lde/number26/machete/android/refactor/data/certification/v1/o;
+.super Ljava/lang/Object;
+.source "TanCertificationService.java"
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/String;)Lrx/e;
+    .param p1    # Ljava/lang/String;
+        .annotation runtime Li/c/s;
+            a = "tanId"
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Lrx/e<",
+            "Lde/number26/machete/android/refactor/data/certification/v1/EncryptedTanRaw;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Li/c/f;
+        a = "api/tps/certification/{tanId}"
+    .end annotation
+.end method
+
+.method public abstract a(Ljava/lang/String;Lde/number26/machete/android/refactor/data/certification/v1/g;)Lrx/e;
+    .param p1    # Ljava/lang/String;
+        .annotation runtime Li/c/s;
+            a = "tanId"
+        .end annotation
+    .end param
+    .param p2    # Lde/number26/machete/android/refactor/data/certification/v1/g;
+        .annotation runtime Li/c/a;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Lde/number26/machete/android/refactor/data/certification/v1/g;",
+            ")",
+            "Lrx/e<",
+            "Ljava/lang/Void;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Li/c/p;
+        a = "api/tps/certification/{tanId}/:certify"
+    .end annotation
+.end method

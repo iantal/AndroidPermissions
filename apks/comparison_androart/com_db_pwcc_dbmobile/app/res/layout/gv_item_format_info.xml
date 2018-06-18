@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gv_supported_formats_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/gv_format_info_item_icon_background" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gv_format_info_unsupported_icon_background" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/gv_format_info_item_icon_foreground" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gv_format_info_unsupported_icon_foreground" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <net.gini.android.vision.internal.ui.CustomFontTextView android:layout_gravity="center_vertical" android:id="@id/gv_format_info_item_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gv_supported_formats_item_margin" android:layout_marginRight="@dimen/gv_supported_formats_item_margin" android:layout_marginBottom="@dimen/gv_supported_formats_item_margin" android:layout_marginEnd="@dimen/gv_supported_formats_item_margin" style="@style/GiniVisionTheme.Help.SupportedFormats.Item.TextStyle" />
+    </LinearLayout>
+    <View android:background="@color/gv_supported_formats_item_background" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

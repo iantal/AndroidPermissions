@@ -1,0 +1,95 @@
+.class Lo/Һ$ˊ;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lo/ԅ;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lo/Һ;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "\u02ca"
+.end annotation
+
+
+# static fields
+.field private static final ˎ:[Ljava/lang/String;
+
+
+# instance fields
+.field private final ॱ:Landroid/content/ContentResolver;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    .line 147
+    const/4 v0, 0x1
+
+    new-array v0, v0, [Ljava/lang/String;
+
+    const-string v1, "_data"
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    sput-object v0, Lo/Һ$ˊ;->ˎ:[Ljava/lang/String;
+
+    return-void
+.end method
+
+.method constructor <init>(Landroid/content/ContentResolver;)V
+    .locals 0
+
+    .line 143
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 144
+    iput-object p1, p0, Lo/Һ$ˊ;->ॱ:Landroid/content/ContentResolver;
+
+    .line 145
+    return-void
+.end method
+
+
+# virtual methods
+.method public ˊ(Landroid/net/Uri;)Landroid/database/Cursor;
+    .locals 7
+
+    .line 156
+    invoke-virtual {p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 157
+    iget-object v0, p0, Lo/Һ$ˊ;->ॱ:Landroid/content/ContentResolver;
+
+    sget-object v1, Landroid/provider/MediaStore$Images$Thumbnails;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+
+    sget-object v2, Lo/Һ$ˊ;->ˎ:[Ljava/lang/String;
+
+    const-string v3, "kind = 1 AND image_id = ?"
+
+    const/4 v4, 0x1
+
+    new-array v4, v4, [Ljava/lang/String;
+
+    const/4 v5, 0x0
+
+    aput-object v6, v4, v5
+
+    const/4 v5, 0x0
+
+    invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object v0
+
+    return-object v0
+.end method

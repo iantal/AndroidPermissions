@@ -1,0 +1,132 @@
+package com.google.zxing.common.reedsolomon;
+
+public final class GenericGF
+{
+  public static final GenericGF AZTEC_DATA_10;
+  public static final GenericGF AZTEC_DATA_12 = new GenericGF(4201, 4096, 1);
+  public static final GenericGF AZTEC_DATA_6;
+  public static final GenericGF AZTEC_DATA_8 = DATA_MATRIX_FIELD_256;
+  public static final GenericGF AZTEC_PARAM;
+  public static final GenericGF DATA_MATRIX_FIELD_256;
+  public static final GenericGF MAXICODE_FIELD_64 = AZTEC_DATA_6;
+  public static final GenericGF QR_CODE_FIELD_256;
+  private final int[] expTable;
+  private final int generatorBase;
+  private final int[] logTable;
+  private final GenericGFPoly one;
+  private final int primitive;
+  private final int size;
+  private final GenericGFPoly zero;
+  
+  static
+  {
+    AZTEC_DATA_10 = new GenericGF(1033, 1024, 1);
+    AZTEC_DATA_6 = new GenericGF(67, 64, 1);
+    AZTEC_PARAM = new GenericGF(19, 16, 1);
+    QR_CODE_FIELD_256 = new GenericGF(285, 256, 0);
+    DATA_MATRIX_FIELD_256 = new GenericGF(301, 256, 1);
+  }
+  
+  public GenericGF(int paramInt1, int paramInt2, int paramInt3)
+  {
+    this.primitive = paramInt1;
+    this.size = paramInt2;
+    this.generatorBase = paramInt3;
+    this.expTable = new int[paramInt2];
+    this.logTable = new int[paramInt2];
+    int i = 0;
+    int j = 1;
+    while (i < paramInt2)
+    {
+      this.expTable[i] = j;
+      j *= 2;
+      if (j >= paramInt2) {
+        j = (j ^ paramInt1) & paramInt2 - 1;
+      }
+      i++;
+    }
+    for (int k = 0; k < paramInt2 - 1; k++) {
+      this.logTable[this.expTable[k]] = k;
+    }
+    this.zero = new GenericGFPoly(this, new int[] { 0 });
+    this.one = new GenericGFPoly(this, new int[] { 1 });
+  }
+  
+  static int addOrSubtract(int paramInt1, int paramInt2)
+  {
+    return paramInt1 ^ paramInt2;
+  }
+  
+  GenericGFPoly buildMonomial(int paramInt1, int paramInt2)
+  {
+    if (paramInt1 < 0) {
+      throw new IllegalArgumentException();
+    }
+    if (paramInt2 == 0) {
+      return this.zero;
+    }
+    int[] arrayOfInt = new int[paramInt1 + 1];
+    arrayOfInt[0] = paramInt2;
+    return new GenericGFPoly(this, arrayOfInt);
+  }
+  
+  int exp(int paramInt)
+  {
+    return this.expTable[paramInt];
+  }
+  
+  public int getGeneratorBase()
+  {
+    return this.generatorBase;
+  }
+  
+  GenericGFPoly getOne()
+  {
+    return this.one;
+  }
+  
+  public int getSize()
+  {
+    return this.size;
+  }
+  
+  GenericGFPoly getZero()
+  {
+    return this.zero;
+  }
+  
+  int inverse(int paramInt)
+  {
+    if (paramInt == 0) {
+      throw new ArithmeticException();
+    }
+    return this.expTable[(-1 + (this.size - this.logTable[paramInt]))];
+  }
+  
+  int log(int paramInt)
+  {
+    if (paramInt == 0) {
+      throw new IllegalArgumentException();
+    }
+    return this.logTable[paramInt];
+  }
+  
+  int multiply(int paramInt1, int paramInt2)
+  {
+    if ((paramInt1 != 0) && (paramInt2 != 0)) {
+      return this.expTable[((this.logTable[paramInt1] + this.logTable[paramInt2]) % (-1 + this.size))];
+    }
+    return 0;
+  }
+  
+  public String toString()
+  {
+    StringBuilder localStringBuilder = new StringBuilder();
+    localStringBuilder.append("GF(0x");
+    localStringBuilder.append(Integer.toHexString(this.primitive));
+    localStringBuilder.append(',');
+    localStringBuilder.append(this.size);
+    localStringBuilder.append(')');
+    return localStringBuilder.toString();
+  }
+}

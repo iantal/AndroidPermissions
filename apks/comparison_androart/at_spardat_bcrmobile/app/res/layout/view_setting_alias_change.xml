@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/ApplicationTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/view_header" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/click24_header_view" />
+    <FrameLayout style="@style/AllMatchParent">
+        <at.spardat.bcrmobile.view.widget.NonFocusingScrollView android:id="@id/view_scroll_parent_setting_alias" android:focusable="false" android:fadingEdge="none" android:fillViewport="true" style="@style/AllMatchParent">
+            <LinearLayout android:orientation="vertical" style="@style/ApplicationTheme">
+                <TextView android:textColor="@color/text_title" android:gravity="center_vertical" android:padding="10.0dip" android:text="@string/authentication_setting" android:drawableLeft="@drawable/ic_alias" android:drawablePadding="10.0dip" style="@style/TextBigNormalMatchWrap" />
+                <TextView android:gravity="center|left" android:paddingLeft="@dimen/screen_padding" android:text="@string/alias_setting" android:drawableLeft="@drawable/info" android:drawablePadding="15.0dip" style="@style/OperationBar" />
+                <TextView android:id="@id/tv_error_alias" android:visibility="gone" style="@style/ErrorStrip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/roundrect_shape" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" style="@style/MatchParentWrapContent">
+                        <TextView android:id="@id/tv_error_alias_name" android:background="@drawable/roundrect_shape_text_view" android:visibility="gone" android:layout_margin="2.0dip" style="@style/ErrorStrip" />
+                        <TextView android:textColor="@color/text_default" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:text="@string/label_alias_delivery" style="@style/TextBigNormalMatchWrap" />
+                        <EditText android:id="@id/et_alias_change" android:layout_margin="15.0dip" android:hint="@string/alias_hint" android:maxLines="1" android:maxLength="30" android:inputType="text" style="@style/MatchParentWrapContent" />
+                    </LinearLayout>
+                    <ImageView android:background="@color/info_background" android:src="@drawable/info" android:contentDescription="@string/no_description" style="@style/MatchParentWrapContent" />
+                    <LinearLayout android:orientation="vertical" android:layout_margin="10.0dip" style="@style/MatchParentWrapContent">
+                        <TextView android:text="@string/err_alias_too_long" style="@style/PasswordPolicyStyle" />
+                        <TextView android:text="@string/err_alias_first_letter" style="@style/PasswordPolicyStyle" />
+                        <TextView android:text="@string/err_alias_more_than_one_dot" style="@style/PasswordPolicyStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@id/view_footer" android:paddingTop="5.0dip" android:paddingBottom="3.0dip" style="@style/ScreenFooter">
+                    <Button android:gravity="center_vertical" android:id="@id/btn_submit_alias" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:text="@string/submit_setting" android:layout_centerInParent="true" style="@style/ButtonStyleNormal" />
+                    <RelativeLayout android:gravity="center" android:id="@id/view_submit_progress_alias" android:visibility="gone" style="@style/MatchParentWrapContent">
+                        <ProgressBar android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmall" />
+                        <TextView android:textColor="@color/text_on_dark" android:id="@id/tv_progress" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/progress_bar" android:layout_centerVertical="true" style="@style/TextBoldAllWrap" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </at.spardat.bcrmobile.view.widget.NonFocusingScrollView>
+        <include android:id="@id/view_touch_blocker_alias" layout="@layout/disable_touch_view" />
+    </FrameLayout>
+</LinearLayout>

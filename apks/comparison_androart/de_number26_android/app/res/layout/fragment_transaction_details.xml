@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scroll_view" android:background="@color/white" android:scrollbars="none" android:fillViewport="true" style="@style/LayoutTabletCompatible"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="72.0dip" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image_header" android:layout_width="fill_parent" android:layout_height="160.0dip" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <include layout="@layout/fragment_transactiondetails_notification_banner" />
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/partial_transaction_details_category" />
+            <include layout="@layout/partial_transaction_details_category_question" />
+            <include layout="@layout/partial_transaction_details_essentials" />
+            <View style="@style/transactionDetailsHorizontalSeparator" />
+            <TextView android:text="@string/transaction_details_heading_details" style="@style/transactionDetailsSectionHeading" />
+            <include layout="@layout/fragment_transactiondetails_tags" />
+            <include layout="@layout/fragment_transactiondetails_reference" />
+            <include layout="@layout/partial_transaction_details_referral" />
+            <include layout="@layout/fragment_transactiondetails_photo" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_contact_section" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View style="@style/transactionDetailsHorizontalSeparator" />
+                <TextView android:text="@string/transaction_details_contact_heading" style="@style/transactionDetailsSectionHeading" />
+                <include layout="@layout/fragment_transactiondetails_iban_bic" />
+                <de.number26.machete.android.ui.components.TransactionDetailsActionButton android:id="@id/button_new_transfer" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/new_transfer" app:icon="@drawable/outgoing_transfers" />
+            </LinearLayout>
+            <de.number26.machete.android.ui.components.TransactionDetailsActionButton android:id="@id/button_chargeback" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chargeback" app:actionIcon="@drawable/icon_dark_arrow" app:icon="@drawable/icon_chargeback" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_transaction_information_section" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View style="@style/transactionDetailsHorizontalSeparator" />
+            <TextView android:text="@string/transaction_details_information_heading" style="@style/transactionDetailsSectionHeading" />
+            <include layout="@layout/partial_download_transaction_confirmation" />
+            <include layout="@layout/fragment_transactiondetails_history" />
+            <include layout="@layout/fragment_transactiondetails_exchange_rate" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

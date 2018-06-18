@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:floatingMenu="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/db_toolbar_view" layout="@layout/db_toolbar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/db_toolbar_view" />
+    <ScrollView android:id="@id/main_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/db_toolbar_view">
+        <LinearLayout android:orientation="vertical" android:id="@id/base_layer" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" layout="@layout/details_header" />
+            <LinearLayout android:orientation="vertical" android:id="@id/crop_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="14.0sp" android:textColor="@color/transactionInfo" android:id="@id/transaction_type_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/transaction_type" android:singleLine="true" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="16.0sp" android:id="@id/transactions_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="14.0sp" android:textColor="@color/transactionInfo" android:id="@id/amount_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/transaction_amount_label" android:maxLines="1" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="16.0sp" android:textColor="@color/db_green" android:id="@id/transactionAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/childDataContainer" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.db.pwcc.dbmobile.foundation.widgets.dbFloatingActionMenu.DbFloatingActionMenu android:id="@id/floating_action_menu" android:layout_width="fill_parent" android:layout_height="fill_parent" floatingMenu:famAccentTint="@color/colorDefaultFAB" floatingMenu:famIconCollapsed="@drawable/ic_add_white_24dp" floatingMenu:famIconExpanded="@drawable/ic_close_white_24dp" floatingMenu:famMenu="@menu/transaction_details_menu" floatingMenu:famState="collapsed" />
+    <RelativeLayout android:id="@id/progress_overlay" android:background="@color/screen_background_color" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

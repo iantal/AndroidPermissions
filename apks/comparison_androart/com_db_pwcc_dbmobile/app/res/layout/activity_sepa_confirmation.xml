@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/db_toolbar_view" layout="@layout/db_toolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/db_toolbar_view">
+        <LinearLayout android:orientation="vertical" android:id="@id/confirmation_container" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/beneficiary_section" layout="@layout/confirmation_beneficiary" />
+            <LinearLayout android:id="@id/executionDateContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginStart="100.0dip">
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:id="@id/confirmation_executionDateDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mock_execution_date" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_confirmation_normal" android:textStyle="bold" android:ellipsize="end" android:id="@id/confirmation_executionDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:maxLines="1" android:layout_marginStart="3.0dip" />
+            </LinearLayout>
+            <include android:id="@id/principal_section" layout="@layout/confirmation_principal" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="25.0dip" android:layout_weight="1.0" />
+            <com.db.pwcc.dbmobile.tan.ui.TanModule android:id="@id/confirmation_tanModule" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" app:itanDescription="@string/sepatransfer_verify_inputtan_message" app:descriptionResult="@string/sepatransfer_verify_success_label_format" app:timeoutMessage="@string/sepatransfer_error_execution_timeout" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

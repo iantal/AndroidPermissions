@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200dc" android:background="@android:color/transparent" android:paddingTop="?l_APKTOOL_DUPLICATENAME_0x7f01004d" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ua.aval.mobocards.ui.custom.CardContainer android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200dd" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_centerHorizontal="true" android:alpha="0.0">
+        <ua.aval.mobocards.ui.custom.ShadowLayout android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200de" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:sl_cornerRadius="8.0dip" app:sl_shadowRadius="8.0dip" app:sl_dx="0.0dip" app:sl_dy="0.0dip">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200df" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/l_APKTOOL_DUPLICATENAME_0x7f020068" android:adjustViewBounds="true" />
+                <ua.aval.mobocards.ui.custom.MyriadTextView android:textSize="24.0dip" android:textColor="@android:color/white" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200e0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:layout_alignParentRight="true" style="@style/TextPanShadowStyle" />
+                <ImageView android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200e1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/l_APKTOOL_DUPLICATENAME_0x7f020057" android:adjustViewBounds="true" />
+                <ua.aval.mobocards.ui.custom.FuturaDemiTextView android:textSize="20.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200e2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </ua.aval.mobocards.ui.custom.ShadowLayout>
+        <android.support.design.widget.FloatingActionButton android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200e3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:fabSize="l_APKTOOL_DUPLICATENAME_0x7f120045" app:backgroundTint="@android:color/white" />
+    </ua.aval.mobocards.ui.custom.CardContainer>
+    <LinearLayout android:orientation="vertical" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200e4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/l_APKTOOL_DUPLICATENAME_0x7f1200dd" android:layout_centerHorizontal="true">
+        <TextView android:textColor="@android:color/black" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200e5" android:background="@drawable/l_APKTOOL_DUPLICATENAME_0x7f0200c2" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l_APKTOOL_DUPLICATENAME_0x7f0a0056" android:textAllCaps="true" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+    </LinearLayout>
+    <ua.aval.mobocards.ui.custom.StatementsContainer android:orientation="vertical" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200e6" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200e7" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <ua.aval.mobocards.ui.custom.FuturaBookTextView android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200e8" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/l_APKTOOL_DUPLICATENAME_0x7f0a005c" android:textAllCaps="true" />
+            <ImageView android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200e9" android:background="?l_APKTOOL_DUPLICATENAME_0x7f01006c" android:padding="12.0dip" android:clickable="true" android:layout_width="48.0dip" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" app:srcCompat="@drawable/l_APKTOOL_DUPLICATENAME_0x7f0200a9" />
+        </RelativeLayout>
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200ea" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200eb" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </ua.aval.mobocards.ui.custom.StatementsContainer>
+    <RelativeLayout android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200ec" android:background="@android:color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="36.0dip" android:layout_below="@id/l_APKTOOL_DUPLICATENAME_0x7f1200e4">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200ed" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/l_APKTOOL_DUPLICATENAME_0x7f02009a" />
+            <ua.aval.mobocards.ui.custom.FuturaBookTextView android:textSize="16.0dip" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/l_APKTOOL_DUPLICATENAME_0x7f1200ee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l_APKTOOL_DUPLICATENAME_0x7f0a006d" android:textAllCaps="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.db.pwcc.dbmobile.mortgages.tiles.MortgagesTileLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/mortgages_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/mortgages_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/total_mortgage_title_size" android:textColor="@color/textColorDefault" android:gravity="center" android:id="@id/mortgage_total_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mortgage_header_margin" android:text="@string/mortgages_tile_label" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/total_mortgage_value_size" android:textColor="@color/textColorDefault" android:gravity="center" android:id="@id/mortgage_total_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mortgage_small_margin" android:layout_marginBottom="@dimen/mortgage_header_margin" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/mortgages_pager_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.SizableViewPager android:id="@id/mortgages_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+            <com.db.pwcc.dbmobile.foundation.widgets.CirclePageIndicator android:id="@id/mortgage_pager_indicator" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PageIndicator" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.db.pwcc.dbmobile.foundation.views.layouts.LoadingOverlayLayout android:id="@id/tile_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/mortgage_header_margin" android:layout_marginBottom="@dimen/mortgage_header_margin" android:layout_centerInParent="true" />
+</com.db.pwcc.dbmobile.mortgages.tiles.MortgagesTileLayout>

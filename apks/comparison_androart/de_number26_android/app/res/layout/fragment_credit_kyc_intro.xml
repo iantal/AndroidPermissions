@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/bg_waves" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/credit_kyc_intro_icon" android:scaleType="centerInside" />
+        <TextView android:layout_marginBottom="10.0dip" style="@style/creditKycIntroTitle" />
+        <TextView android:id="@id/creditKycIntroBeforeStart" android:layout_marginBottom="5.0dip" style="@style/creditKycIntroBeforeStart" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/creditKycIntroProcess" style="@style/creditKycIntroButtonProcess" />
+        <TextView android:gravity="center" android:id="@id/text_credit_kyc_intro_legal" android:visibility="gone" android:layout_marginTop="12.0dip" style="@style/creditContractReviewLegal" />
+        <de.number26.machete.android.adl.DoubleLineIcon android:id="@id/double_line_icon_credit_kyc_intro_loading_contract" android:layout_width="fill_parent" android:layout_height="wrap_content" app:icon="@drawable/ic_adl_loading_32" app:subtitle="@string/credit_kyc_intro_contract_loading_subtitle" app:title="@string/credit_kyc_intro_contract_loading_title" />
+        <de.number26.machete.android.adl.DoubleLineIcon android:id="@id/double_line_icon_credit_kyc_intro_error_loading_contract" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:icon="@drawable/ic_refresh" app:subtitle="@string/credit_kyc_intro_contract_error_subtitle" app:title="@string/credit_kyc_intro_contract_error_title" />
+        <LinearLayout android:id="@id/creditKycIntroStoreDataTermLayout" android:visibility="gone" android:layout_marginStart="6.0dip" style="@style/creditTermsItem">
+            <CheckBox android:id="@id/creditKycIntroStoreDataTermCheckBox" style="@style/creditTermsItemCheckBox" />
+            <TextView android:text="@string/credit_kyc_intro_data_transfer" android:layout_marginStart="8.0dip" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditTermsItemText" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/creditKycIntroIdNowTermLayout" android:visibility="gone" android:layout_marginStart="6.0dip" style="@style/creditTermsItem">
+            <CheckBox android:id="@id/creditKycIntroIdNowTermCheckBox" style="@style/creditTermsItemCheckBox" />
+            <TextView android:id="@id/creditKycIntroIdNowTermText" android:layout_marginStart="8.0dip" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditTermsItemText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="8.0dip">
+            <TextView android:id="@id/creditKycIntroNoAgentsDescription" android:visibility="gone" android:layout_marginTop="8.0dip" style="@style/creditKycIntroNoAgentsDescription" />
+            <Button android:id="@id/creditKycIntroReturnLater" android:visibility="gone" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="18.0dip" android:layout_marginEnd="18.0dip" style="@style/creditKycIntroButtonReturnLater" />
+            <FrameLayout android:id="@id/creditKycIntroStartVerification" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" style="@style/creditKycIntroButtonStartVerification">
+                <TextView style="@style/creditKycIntroButtonStartVerificationContent" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

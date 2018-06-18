@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.db.pwcc.dbmobile.financial_overview.donut.DonutView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/DonutView.Default"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layoutdonut" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/donut" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/donut_selected" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/donut_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <include android:id="@id/donut_center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/donut_center_info" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/donut_plusminus" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:layout_gravity="center_horizontal" android:id="@id/donut_lbl_iban" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_alignParentTop="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAlignment="center" />
+</com.db.pwcc.dbmobile.financial_overview.donut.DonutView>

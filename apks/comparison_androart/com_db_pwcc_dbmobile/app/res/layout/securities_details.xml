@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/db_toolbar_view" layout="@layout/db_toolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/db_toolbar_view">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" layout="@layout/details_header" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="14.0sp" android:textColor="@color/transactionInfo" android:id="@id/amount_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/market_value" android:singleLine="true" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="16.0sp" android:id="@id/transaction_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="14.0sp" android:textColor="@color/transactionInfo" android:id="@id/profit_and_loss" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/profit_and_loss" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/win_loss_container" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="14.0sp" android:textColor="@color/db_green" android:id="@id/sec_win_loss_in_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <View android:background="@color/db_cold_grey" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="14.0sp" android:textColor="@color/db_green" android:id="@id/sec_win_loss_in_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+23,68%" android:singleLine="true" />
+            </LinearLayout>
+            <android.support.v7.widget.GridLayout android:id="@id/securities_details_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" app:columnCount="2" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/securities_details_extension" layout="@layout/securities_details_extension" />
+</RelativeLayout>

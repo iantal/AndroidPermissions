@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_credit_card" android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/db_toolbar" />
+    <RelativeLayout android:id="@id/main_view_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.dbProgressChart.DbProgressChart android:id="@id/balance_chart" android:layout_width="@dimen/balance_chart_width" android:layout_height="@dimen/balance_chart_height" app:pcTitleSize="@dimen/balance_chart_title_size" app:pcTitleColor="@color/labelViewTextColor" app:pcSubtitleSize="@dimen/balance_chart_subtitle_size" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/header_text_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/credit_card_details_header_font_size" android:id="@id/header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/credit_card_activity_header_vertical_margin" />
+                <TextView android:ellipsize="end" android:id="@id/header_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:ellipsize="end" android:id="@id/header_remaining" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.db.pwcc.dbmobile.foundation.widgets.ListSectionHeaderView android:id="@id/billing_date_header" android:layout_marginTop="@dimen/billing_date_top_margin" android:layout_below="@id/header_container" style="@style/ListSectionHeader" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/billing_date_header">
+            <ListView android:id="@id/billing_list" style="@style/ListWithHeaders" />
+            <RelativeLayout android:id="@id/no_item_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" layout="@layout/no_item_view" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.db.pwcc.dbmobile.foundation.views.layouts.LoadingOverlayLayout android:id="@id/overlay_container" android:background="@color/screen_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

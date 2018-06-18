@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/institute_list_item" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="@dimen/menu_item_item_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/mba_menu_item_icon" android:layout_width="@dimen/menu_item_icon_size" android:layout_height="@dimen/menu_item_icon_size" android:layout_marginEnd="@dimen/menu_item_icon_margin" />
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/efi_list_item_title_size" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/mba_menu_item_institute_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/black_information_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/contentHolder" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/partial_premium_card_policy" />
+    </ScrollView>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:background="@drawable/gradient_trans_white" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/premium_card_policy_download_policy" style="@style/Widget.AppCompat.Button.Colored" />
+    </LinearLayout>
+</FrameLayout>

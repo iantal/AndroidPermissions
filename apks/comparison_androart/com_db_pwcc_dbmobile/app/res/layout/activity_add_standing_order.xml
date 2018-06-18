@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:button="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/db_toolbar_view" layout="@layout/db_toolbar" />
+    <com.db.pwcc.dbmobile.transfer.views.DbScrollview android:id="@id/transfer_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/recycler_view" android:layout_below="@id/db_toolbar_view">
+        <LinearLayout android:orientation="vertical" android:id="@id/container_principal" android:paddingLeft="@dimen/activity_lateral_padding" android:paddingRight="@dimen/activity_lateral_padding" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/base_input_view" layout="@layout/base_input" />
+            <com.db.pwcc.dbmobile.foundation.widgets.dbPicker.DbPicker android:id="@id/account_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacer_input_default">
+                <com.db.pwcc.dbmobile.foundation.widgets.dbPicker.DbPicker android:id="@id/picker_first_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/spacer_input_default" />
+                <com.db.pwcc.dbmobile.foundation.widgets.dbPicker.DbPicker android:id="@id/picker_until" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacer_input_default">
+                <com.db.pwcc.dbmobile.foundation.widgets.dbPicker.DbPicker android:id="@id/picker_frequency" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/spacer_input_default" />
+                <com.db.pwcc.dbmobile.foundation.widgets.dbPicker.DbPicker android:id="@id/picker_each_on" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacer_input_default" android:layout_marginBottom="@dimen/spacer_input_default">
+                <com.db.pwcc.dbmobile.foundation.views.button.Button android:id="@id/btn_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" button:buttonType="destructive" button:buttonText="@string/edit_standing_order_button_delete" />
+                <android.support.v4.widget.Space android:id="@id/spacer" android:visibility="gone" android:layout_width="@dimen/spacer_input_default" android:layout_height="wrap_content" />
+                <com.db.pwcc.dbmobile.foundation.views.button.Button android:id="@id/btn_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" button:buttonType="disabled" button:buttonText="@string/add_standing_order_button_next" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.db.pwcc.dbmobile.transfer.views.DbScrollview>
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:background="@color/db_ice_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

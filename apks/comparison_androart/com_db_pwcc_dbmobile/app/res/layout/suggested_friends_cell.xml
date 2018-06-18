@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/contact_group" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.db.pwcc.dbmobile.foundation.widgets.UserAvatar android:textSize="@dimen/cell_suggested_textsize" android:textColor="@color/suggestedFriendAvatar" android:id="@id/suggested_friend_avatar" android:layout_width="@dimen/cell_suggested_avatar_width" android:layout_height="@dimen/cell_suggested_avatar_height" android:layout_marginTop="@dimen/cell_suggested_avatar_margin_top" android:layout_marginBottom="@dimen/cell_suggested_avatar_margin_bottom" android:layout_marginStart="@dimen/cell_suggested_avatar_margin_start" android:layout_marginEnd="@dimen/cell_suggested_avatar_margin_end" />
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/cell_suggested_textsize" android:textColor="@color/suggestedFriendName" android:id="@id/suggested_friend_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:background="@color/suggestedFriendBackground" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginStart="10.0dip" />
+</LinearLayout>

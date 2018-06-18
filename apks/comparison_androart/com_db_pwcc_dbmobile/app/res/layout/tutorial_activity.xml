@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/tutorial_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/db_toolbar" />
+    <android.support.v4.view.ViewPager android:id="@id/fragment_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:id="@id/control_container" android:layout_width="fill_parent" android:layout_height="88.0dip">
+        <com.db.pwcc.dbmobile.foundation.widgets.CirclePageIndicator android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" app:strokeWidth="0.0dip" app:fillColor="@color/colorCircleIndicatorFillColor" app:pageColor="@color/colorCircleIndicatorPageColor" app:extraSpacing="4.0dip" />
+        <android.support.design.widget.FloatingActionButton android:id="@id/button_try_now" android:visibility="invisible" android:src="@drawable/ic_arrow_forward_36dp" app:backgroundTint="@color/tutorial_floating_action_button_background_tint" style="@style/FloatingActionButton" />
+    </RelativeLayout>
+</LinearLayout>

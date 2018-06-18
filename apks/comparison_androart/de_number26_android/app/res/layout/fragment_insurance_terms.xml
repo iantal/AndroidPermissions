@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_waves" android:paddingBottom="96.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="24.0dip" android:src="@drawable/img_terms" />
+            <TextView android:id="@id/text_insurance_terms_header" android:text="@string/insurance_terms_mandate_info" style="@style/InsuranceTermsHeader" />
+            <CheckBox android:id="@id/checkbox_insurance_terms" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" style="@style/InsuranceTermsCheckBox" />
+            <TextView android:id="@id/text_insurance_terms_description" style="@style/InsuranceTermsDescription" />
+        </LinearLayout>
+    </ScrollView>
+    <de.number26.machete.android.adl.atoms.MainButton android:layout_gravity="bottom" android:id="@id/button_insurance_terms_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" app:enabled="false" app:text="@string/insurance_terms_continue" />
+</FrameLayout>

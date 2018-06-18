@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@android:color/black" android:gravity="center" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/prompt_logout_header" fontPath="@string/font_regular" style="@android:style/TextAppearance.Large" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:src="@drawable/icon_phone_n26" android:contentDescription="@null" />
+            <TextView android:textColor="@android:color/black" android:gravity="center" android:id="@id/logout_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/prompt_logout_title" fontPath="@string/font_regular" />
+            <TextView android:textColor="@android:color/black" android:gravity="center" android:id="@id/logout_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/prompt_logout_text" />
+            <TextView android:textColor="@android:color/black" android:gravity="center" android:id="@id/or" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/prompt_logout_or" />
+            <TextView android:textColor="@android:color/black" android:gravity="center" android:id="@id/close_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/prompt_close_title" fontPath="@string/font_regular" />
+            <TextView android:textColor="@android:color/black" android:gravity="center" android:id="@id/close_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" android:layout_marginBottom="20.0dip" android:text="@string/prompt_close_text" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="18.0sp" android:textColor="@color/colorAccent" android:layout_gravity="right" android:id="@id/button_logout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" fontPath="@string/font_medium" style="@style/Base.Widget.AppCompat.Button.Borderless" />
+</LinearLayout>

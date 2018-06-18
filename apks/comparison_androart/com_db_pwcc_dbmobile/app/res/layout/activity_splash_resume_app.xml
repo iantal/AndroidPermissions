@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/background_image_custom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/none" />
+    <ImageView android:id="@id/background_image_splash" android:background="@color/splashScreenAppResume" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/none" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_db_logo_white" android:layout_centerInParent="true" android:contentDescription="@string/none" />
+</RelativeLayout>

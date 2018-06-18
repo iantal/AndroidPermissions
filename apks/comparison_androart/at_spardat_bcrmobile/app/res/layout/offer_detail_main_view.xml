@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/view_offer_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/offer_header_view" />
+    <FrameLayout android:id="@id/view_offer_parent" android:layout_below="@id/view_offer_header_container" style="@style/AllMatchParent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/view_offer_pager_container" android:background="@color/background_light" style="@style/AllMatchParent" />
+        <include android:id="@id/view_touch_blocker" layout="@layout/disable_touch_view" />
+    </FrameLayout>
+</RelativeLayout>

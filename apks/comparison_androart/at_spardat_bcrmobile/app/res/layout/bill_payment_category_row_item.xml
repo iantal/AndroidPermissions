@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:clickable="true" style="@style/ListSelector"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_bill_payment_category" android:paddingLeft="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_centerVertical="true" android:contentDescription="@string/category" />
+    <TextView android:textColor="@color/text_default" android:gravity="center_vertical" android:id="@id/tv_bill_payment_category" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/img_bill_payment_category" style="@style/ListTextItemStyle" />
+    <View android:id="@id/separator_line" android:layout_below="@id/tv_bill_payment_category" style="@style/ListSeparator" />
+</RelativeLayout>

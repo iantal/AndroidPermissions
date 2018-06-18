@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_default_selector" android:padding="5.0dip" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btn_atm_desc" android:background="@drawable/right_arrow_blue" android:clickable="true" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:contentDescription="@string/right_arrow" style="@style/AllWrapContent" />
+    <ImageView android:id="@id/img_view_atm_icon" android:background="@drawable/atm_icon" android:clickable="true" android:layout_alignParentLeft="true" android:layout_centerInParent="true" android:contentDescription="@string/atm" style="@style/AllWrapContent" />
+    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_toLeftOf="@id/btn_atm_desc" android:layout_toRightOf="@id/img_view_atm_icon" style="@style/MatchParentWrapContent">
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_atm_title" style="@style/TextBoldAllWrap" />
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_atm_distance" android:visibility="gone" style="@style/TextNormalAllWrap" />
+    </LinearLayout>
+</RelativeLayout>

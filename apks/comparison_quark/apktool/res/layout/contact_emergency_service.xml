@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:fadingEdge="none" android:fillViewport="true" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" style="@style/ApplicationTheme">
+        <TextView android:id="@id/tv_contact_emergency_service_header" android:text="@string/contacts_title" style="@style/ScreenHeader" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/MatchParentWrapContent">
+            <TextView android:textColor="@color/text_title" android:paddingLeft="2.0dip" android:paddingTop="8.0dip" android:paddingRight="2.0dip" android:paddingBottom="8.0dip" android:text="@string/contact_center_non_stop" style="@style/TextBigBoldMatchWrap" />
+            <include android:id="@id/view_bcr_technical_support" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/contact_emergency_service_call_row" />
+            <TextView android:textColor="@color/text_title" android:paddingLeft="2.0dip" android:paddingTop="8.0dip" android:paddingRight="2.0dip" android:paddingBottom="8.0dip" android:text="@string/contact_center_abroad" style="@style/TextBigBoldMatchWrap" />
+            <include android:id="@id/view_alo_banking" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/contact_emergency_service_call_row" />
+            <TextView android:textColor="@color/text_title" android:paddingLeft="2.0dip" android:paddingTop="8.0dip" android:paddingRight="2.0dip" android:paddingBottom="8.0dip" android:text="@string/contact_center_email" style="@style/TextBigBoldMatchWrap" />
+            <include android:id="@id/view_bcr_mail" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/contact_emergency_service_mail_row" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/view_confirm_parent" android:background="@drawable/header_footer" android:visibility="gone" style="@style/MatchParentWrapContent">
+            <Button android:id="@id/btn_contact_ok" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:text="@string/ok" android:layout_centerInParent="true" style="@style/ButtonStyleNormal" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.db.pwcc.dbmobile.financial_overview.layouts.TransactionGroupItemView android:id="@id/whole_transaction" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.db.pwcc.dbmobile.foundation.widgets.ListSectionHeaderView android:id="@id/section_label" style="@style/ListSectionHeader" />
+    </RelativeLayout>
+    <View android:id="@id/separator" style="@style/ListSeparator" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_margin" android:layout_marginBottom="@dimen/list_item_vertical_margin" android:layout_below="@id/header_container" android:layout_marginStart="@dimen/list_item_horizontal_margin" android:layout_marginEnd="@dimen/list_item_horizontal_margin">
+        <LinearLayout android:orientation="vertical" android:id="@id/list_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="12.0sp" android:textColor="@color/upcomingLabel" android:id="@id/upcoming_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/transactions_queued" android:maxLines="1" />
+            <RelativeLayout android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/transaction_list_default_text_size" android:id="@id/group_timestamp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toStartOf="@id/group_amount" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/transaction_list_default_text_size" android:textColor="@color/db_green" android:id="@id/group_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/transaction_list_default_text_size" android:ellipsize="end" android:id="@id/group_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textColor="@color/negativeOrError" android:id="@id/transaction_error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/transaction_error_view_vertical_margin" android:layout_marginBottom="@dimen/transaction_error_view_vertical_margin" android:text="@string/missing_future_dates_transactions" />
+    </RelativeLayout>
+</com.db.pwcc.dbmobile.financial_overview.layouts.TransactionGroupItemView>

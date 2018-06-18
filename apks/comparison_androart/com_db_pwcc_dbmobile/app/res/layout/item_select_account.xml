@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/productlistitem_root" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/productlistitem_height" android:paddingStart="@dimen/activity_horizontal_margin" android:paddingEnd="@dimen/activity_horizontal_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="84.0dip" android:paddingStart="8.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/product_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/productInfoContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="12.0dip" android:paddingEnd="6.0dip" android:layout_toEndOf="@id/product_icon">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="16.0sp" android:id="@id/product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="16.0sp" android:id="@id/product_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="14.0sp" android:textColor="@color/prebookedBalanceText" android:ellipsize="end" android:id="@id/product_iban" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbarPinInput" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_fragment_confirm_identity" style="@style/Text.Toolbar" />
+    </android.support.v7.widget.Toolbar>
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/icon_safe_step_two" />
+    <TextView android:gravity="center" android:id="@id/textPinInputTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" style="@style/Text.Screen.Title.Small" />
+    <TextView android:gravity="center" android:id="@id/textPinInputSubtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" style="@style/Text.Screen.Body.XSmall" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <de.number26.machete.android.ui.components.PinEntryView android:orientation="horizontal" android:id="@id/pinViewPinInput" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:accentType="character" app:accentWidth="2.0dip" app:digitBackground="@drawable/line_edit_text_for_codes" app:digitHeight="40.0dip" app:digitSpacing="15.0dip" app:digitTextColor="@color/grey_dark" app:digitTextSize="10.0dip" app:digitWidth="40.0dip" app:numDigits="4" app:pinAccentColor="@android:color/transparent" />
+        <ImageView android:id="@id/imagePinInputLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_adl_loading_32" />
+    </FrameLayout>
+</LinearLayout>

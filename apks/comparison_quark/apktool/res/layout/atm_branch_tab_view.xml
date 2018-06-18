@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" style="@style/AllMatchParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" style="@style/AllMatchParent">
+        <TabWidget android:gravity="left" android:id="@android:id/tabs" android:background="@drawable/header_footer" android:padding="4.0dip" style="@style/MatchParentWrapContent" />
+        <FrameLayout android:id="@android:id/tabcontent" style="@style/AllMatchParent">
+            <RelativeLayout android:id="@id/view_list_atm_branch" style="@style/ApplicationTheme">
+                <TextView android:textColor="@color/text_title" android:id="@id/tv_empty_list" android:visibility="gone" android:text="@string/err_no_branch_atm_available" android:layout_centerInParent="true" style="@style/TextBoldAllWrap" />
+                <ListView android:id="@id/list_view_atm_branch" android:fadingEdge="none" android:cacheColorHint="@color/transparent" android:divider="@color/separator_bg" android:dividerHeight="1.0dip" style="@style/ListTheme" />
+            </RelativeLayout>
+            <ListView android:id="@id/list_view_bcr_partners" android:fadingEdge="none" android:cacheColorHint="@color/transparent" android:divider="@color/separator_bg" android:dividerHeight="1.0dip" style="@style/ListTheme" />
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

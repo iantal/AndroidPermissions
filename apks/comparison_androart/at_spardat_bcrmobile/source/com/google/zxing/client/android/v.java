@@ -1,0 +1,53 @@
+package com.google.zxing.client.android;
+
+public final class v
+{
+  public static final int A = 2131427522;
+  public static final int B = 2131427763;
+  public static final int C = 2131427515;
+  public static final int D = 2131427761;
+  public static final int E = 2131427760;
+  public static final int F = 2131427332;
+  public static final int G = 2131427333;
+  public static final int H = 2131427526;
+  public static final int I = 2131427762;
+  public static final int J = 2131427517;
+  public static final int K = 2131427334;
+  public static final int L = 2131427490;
+  public static final int M = 2131427768;
+  public static final int N = 2131427769;
+  public static final int O = 2131427771;
+  public static final int P = 2131427770;
+  public static final int Q = 2131427772;
+  public static final int R = 2131427764;
+  public static final int S = 2131427527;
+  public static final int T = 2131427521;
+  public static final int U = 2131427520;
+  public static final int V = 2131427516;
+  public static final int a = 2131427449;
+  public static final int b = 2131427450;
+  public static final int c = 2131427518;
+  public static final int d = 2131427497;
+  public static final int e = 2131427498;
+  public static final int f = 2131427525;
+  public static final int g = 2131427524;
+  public static final int h = 2131427328;
+  public static final int i = 2131427329;
+  public static final int j = 2131427330;
+  public static final int k = 2131427491;
+  public static final int l = 2131427519;
+  public static final int m = 2131427608;
+  public static final int n = 2131427610;
+  public static final int o = 2131427609;
+  public static final int p = 2131427578;
+  public static final int q = 2131427529;
+  public static final int r = 2131427331;
+  public static final int s = 2131427906;
+  public static final int t = 2131427905;
+  public static final int u = 2131427903;
+  public static final int v = 2131427908;
+  public static final int w = 2131427907;
+  public static final int x = 2131427904;
+  public static final int y = 2131427902;
+  public static final int z = 2131427523;
+}

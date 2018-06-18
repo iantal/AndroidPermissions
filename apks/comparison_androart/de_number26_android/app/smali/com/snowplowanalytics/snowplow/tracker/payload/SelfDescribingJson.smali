@@ -1,0 +1,358 @@
+.class public Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;
+.super Ljava/lang/Object;
+.source "SelfDescribingJson.java"
+
+# interfaces
+.implements Lcom/snowplowanalytics/snowplow/tracker/payload/Payload;
+
+
+# instance fields
+.field private final TAG:Ljava/lang/String;
+
+.field private final payload:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
+
+    .line 39
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    invoke-direct {p0, p1, v0}, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;)V
+    .locals 1
+
+    .line 61
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 30
+    const-class v0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->TAG:Ljava/lang/String;
+
+    .line 31
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->payload:Ljava/util/HashMap;
+
+    .line 62
+    invoke-virtual {p0, p1}, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->setSchema(Ljava/lang/String;)Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;
+
+    .line 63
+    invoke-virtual {p0, p2}, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->setData(Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;)Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Lcom/snowplowanalytics/snowplow/tracker/payload/TrackerPayload;)V
+    .locals 1
+
+    .line 49
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 30
+    const-class v0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->TAG:Ljava/lang/String;
+
+    .line 31
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->payload:Ljava/util/HashMap;
+
+    .line 50
+    invoke-virtual {p0, p1}, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->setSchema(Ljava/lang/String;)Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;
+
+    .line 51
+    invoke-virtual {p0, p2}, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->setData(Lcom/snowplowanalytics/snowplow/tracker/payload/TrackerPayload;)Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Object;)V
+    .locals 1
+
+    .line 73
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 30
+    const-class v0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->TAG:Ljava/lang/String;
+
+    .line 31
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->payload:Ljava/util/HashMap;
+
+    .line 74
+    invoke-virtual {p0, p1}, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->setSchema(Ljava/lang/String;)Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;
+
+    .line 75
+    invoke-virtual {p0, p2}, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->setData(Ljava/lang/Object;)Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public add(Ljava/lang/String;Ljava/lang/Object;)V
+    .locals 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 154
+    iget-object p1, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->TAG:Ljava/lang/String;
+
+    const-string p2, "Payload: add(String, Object) method called - Doing nothing."
+
+    const/4 v0, 0x0
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    invoke-static {p1, p2, v0}, Lcom/snowplowanalytics/snowplow/tracker/utils/Logger;->v(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public add(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 144
+    iget-object p1, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->TAG:Ljava/lang/String;
+
+    const-string p2, "Payload: add(String, String) method called - Doing nothing."
+
+    const/4 v0, 0x0
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    invoke-static {p1, p2, v0}, Lcom/snowplowanalytics/snowplow/tracker/utils/Logger;->v(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public addMap(Ljava/util/Map;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;)V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 164
+    iget-object p1, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->TAG:Ljava/lang/String;
+
+    const-string v0, "Payload: addMap(Map<String, Object>) method called - Doing nothing."
+
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    invoke-static {p1, v0, v1}, Lcom/snowplowanalytics/snowplow/tracker/utils/Logger;->v(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public addMap(Ljava/util/Map;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 175
+    iget-object p1, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->TAG:Ljava/lang/String;
+
+    const-string p2, "Payload: addMap(Map, Boolean, String, String) method called - Doing nothing."
+
+    const/4 p3, 0x0
+
+    new-array p3, p3, [Ljava/lang/Object;
+
+    invoke-static {p1, p2, p3}, Lcom/snowplowanalytics/snowplow/tracker/utils/Logger;->v(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public getByteSize()J
+    .locals 2
+
+    .line 187
+    invoke-virtual {p0}, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/snowplowanalytics/snowplow/tracker/utils/Util;->getUTF8Length(Ljava/lang/String;)J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public getMap()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .line 179
+    iget-object v0, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->payload:Ljava/util/HashMap;
+
+    return-object v0
+.end method
+
+.method public setData(Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;)Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;
+    .locals 2
+
+    if-nez p1, :cond_0
+
+    return-object p0
+
+    .line 133
+    :cond_0
+    iget-object v0, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->payload:Ljava/util/HashMap;
+
+    const-string v1, "data"
+
+    invoke-virtual {p1}, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->getMap()Ljava/util/Map;
+
+    move-result-object p1
+
+    invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object p0
+.end method
+
+.method public setData(Lcom/snowplowanalytics/snowplow/tracker/payload/TrackerPayload;)Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;
+    .locals 2
+
+    if-nez p1, :cond_0
+
+    return-object p0
+
+    .line 103
+    :cond_0
+    iget-object v0, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->payload:Ljava/util/HashMap;
+
+    const-string v1, "data"
+
+    invoke-virtual {p1}, Lcom/snowplowanalytics/snowplow/tracker/payload/TrackerPayload;->getMap()Ljava/util/Map;
+
+    move-result-object p1
+
+    invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object p0
+.end method
+
+.method public setData(Ljava/lang/Object;)Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;
+    .locals 2
+
+    if-nez p1, :cond_0
+
+    return-object p0
+
+    .line 118
+    :cond_0
+    iget-object v0, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->payload:Ljava/util/HashMap;
+
+    const-string v1, "data"
+
+    invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object p0
+.end method
+
+.method public setSchema(Ljava/lang/String;)Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;
+    .locals 2
+
+    const-string v0, "schema cannot be null"
+
+    .line 86
+    invoke-static {p1, v0}, Lcom/snowplowanalytics/snowplow/tracker/utils/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 87
+    invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v0
+
+    xor-int/lit8 v0, v0, 0x1
+
+    const-string v1, "schema cannot be empty."
+
+    invoke-static {v0, v1}, Lcom/snowplowanalytics/snowplow/tracker/utils/Preconditions;->checkArgument(ZLjava/lang/Object;)V
+
+    .line 88
+    iget-object v0, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->payload:Ljava/util/HashMap;
+
+    const-string v1, "schema"
+
+    invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object p0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 1
+
+    .line 183
+    iget-object v0, p0, Lcom/snowplowanalytics/snowplow/tracker/payload/SelfDescribingJson;->payload:Ljava/util/HashMap;
+
+    invoke-static {v0}, Lcom/snowplowanalytics/snowplow/tracker/utils/Util;->mapToJSONObject(Ljava/util/Map;)Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

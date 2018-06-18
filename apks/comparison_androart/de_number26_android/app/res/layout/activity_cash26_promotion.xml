@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@drawable/tutorial_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" android:fillViewport="true" android:layout_above="@id/got_it" android:paddingStart="@dimen/default_padding" android:paddingEnd="@dimen/default_padding">
+        <LinearLayout android:orientation="vertical" android:id="@id/contentHolder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:background="@android:color/transparent" android:layout_width="160.0dip" android:layout_height="160.0dip" android:src="@drawable/cash26_learn_more" />
+            <TextView android:textAppearance="@style/TextAppearance.Instruction.Title" android:textColor="@color/colorAccent" android:gravity="center" android:layout_gravity="center" android:paddingTop="@dimen/default_padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cash26_learn_more_title" android:textAllCaps="true" />
+            <TextView android:textAppearance="@style/TextAppearance.Instruction.Text" android:gravity="center" android:layout_gravity="center" android:id="@id/cash26_learn_more_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_large" android:layout_marginBottom="@dimen/default_margin" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:id="@id/got_it" android:text="@string/gotit" style="@style/mainbutton" />
+</RelativeLayout>

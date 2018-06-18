@@ -1,0 +1,92 @@
+package com.db.pwcc.dbmobile.multi_bank_aggregator.model;
+
+import uuuuuu.popopp;
+
+public class BankLogin
+  implements popopp
+{
+  public static int b00640064d00640064d00640064 = 1;
+  public static int b0064dd00640064d00640064 = 98;
+  public static int bd0064d00640064d00640064 = 0;
+  public static int bdd006400640064d00640064 = 2;
+  private String id;
+  private Boolean pinSaved;
+  
+  public BankLogin() {}
+  
+  public static int b0064d006400640064d00640064()
+  {
+    return 55;
+  }
+  
+  public static int bd0064006400640064d00640064()
+  {
+    return 1;
+  }
+  
+  public String getId()
+  {
+    String str = this.id;
+    if ((b0064dd00640064d00640064 + b00640064d00640064d00640064) * b0064dd00640064d00640064 % bdd006400640064d00640064 != bd0064d00640064d00640064)
+    {
+      if ((b0064dd00640064d00640064 + b00640064d00640064d00640064) * b0064dd00640064d00640064 % bdd006400640064d00640064 != bd0064d00640064d00640064)
+      {
+        b0064dd00640064d00640064 = 52;
+        bd0064d00640064d00640064 = 99;
+      }
+      b0064dd00640064d00640064 = 44;
+      bd0064d00640064d00640064 = 40;
+    }
+    return str;
+  }
+  
+  public Boolean getPinSaved()
+  {
+    Boolean localBoolean = this.pinSaved;
+    if ((b0064dd00640064d00640064 + b00640064d00640064d00640064) * b0064dd00640064d00640064 % bdd006400640064d00640064 != bd0064d00640064d00640064)
+    {
+      if ((b0064dd00640064d00640064 + b00640064d00640064d00640064) * b0064dd00640064d00640064 % bdd006400640064d00640064 != bd0064d00640064d00640064)
+      {
+        b0064dd00640064d00640064 = b0064d006400640064d00640064();
+        bd0064d00640064d00640064 = b0064d006400640064d00640064();
+      }
+      b0064dd00640064d00640064 = 18;
+      bd0064d00640064d00640064 = 96;
+    }
+    return localBoolean;
+  }
+  
+  public void setId(String paramString)
+  {
+    int i = b0064d006400640064d00640064();
+    switch (i * (b00640064d00640064d00640064 + i) % bdd006400640064d00640064)
+    {
+    default: 
+      b0064dd00640064d00640064 = b0064d006400640064d00640064();
+      bd0064d00640064d00640064 = 55;
+    }
+    if ((b0064dd00640064d00640064 + bd0064006400640064d00640064()) * b0064dd00640064d00640064 % bdd006400640064d00640064 != bd0064d00640064d00640064)
+    {
+      b0064dd00640064d00640064 = 83;
+      bd0064d00640064d00640064 = 40;
+    }
+    this.id = paramString;
+  }
+  
+  public void setPinSaved(Boolean paramBoolean)
+  {
+    int i = b0064dd00640064d00640064;
+    switch (i * (b00640064d00640064d00640064 + i) % bdd006400640064d00640064)
+    {
+    default: 
+      b0064dd00640064d00640064 = b0064d006400640064d00640064();
+      bd0064d00640064d00640064 = 24;
+    }
+    this.pinSaved = paramBoolean;
+    if ((b0064dd00640064d00640064 + b00640064d00640064d00640064) * b0064dd00640064d00640064 % bdd006400640064d00640064 != bd0064d00640064d00640064)
+    {
+      b0064dd00640064d00640064 = 30;
+      bd0064d00640064d00640064 = 47;
+    }
+  }
+}

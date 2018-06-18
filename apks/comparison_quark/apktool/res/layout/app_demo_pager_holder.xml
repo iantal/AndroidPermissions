@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/view_pager_app_demo" style="@style/MatchParentWrapContent" />
+    <LinearLayout android:orientation="vertical" android:baselineAligned="false" style="@style/AllMatchParent">
+        <View android:id="@id/view_app_demo_dot_top_view" style="@style/MatchParentWrapContent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/view_app_demo_dots_area" style="@style/MatchParentWrapContent" />
+    </LinearLayout>
+    <Button android:textColor="@color/app_demo_ok_color" android:id="@id/btn_ok_got_it" android:background="@color/transparent" android:padding="10.0dip" android:text="@string/ok_got_it" android:layout_alignParentRight="true" style="@style/TextBigNormalAllWrap" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/title_group" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/account_name_label" android:layout_width="fill_parent" android:layout_centerVertical="true" android:layout_toStartOf="@id/share_button" style="@style/IbanBicItem" />
+            <ImageView android:layout_gravity="end" android:id="@id/share_button" android:background="?selectableItemBackgroundBorderless" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_height="@dimen/actionbar_button_size" android:src="@drawable/ic_stat_social_share" android:layout_centerVertical="true" android:contentDescription="@string/none" android:layout_alignParentEnd="true" style="@style/ToolbarButton" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/account_item_container" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/iban_info_label" android:text="@string/iban_item" style="@style/IbanBicItem" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/bic_info_label" android:text="@string/bic_item" style="@style/IbanBicItem" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/account_info_label" android:text="@string/bic_account" style="@style/IbanBicItem" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/blz_info_label" android:text="@string/blz_item" style="@style/IbanBicItem" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/display_iban_info" style="@style/IbanBicItem" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/display_bic_info" style="@style/IbanBicItem" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/display_account_info" style="@style/IbanBicItem" />
+                <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/display_blz_info" style="@style/IbanBicItem" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/colorListDivider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

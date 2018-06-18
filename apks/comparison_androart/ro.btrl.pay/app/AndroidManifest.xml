@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ro.btrl.pay">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="true"/>
+    <uses-feature android:name="android.hardware.nfc.hce" android:required="true"/>
+    <meta-data android:name="a" android:value=""/>
+    <permission android:name="ro.btrl.pay.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="ro.btrl.pay.permission.C2D_MESSAGE"/>
+    <application android:allowBackup="false" android:fullBackupContent="@xml/APKTOOL_DUMMYVAL_0x7f130001" android:icon="@mipmap/ic_launcher" android:label="@string/APKTOOL_DUMMYVAL_0x7f100038" android:largeHeap="true" android:name=".App" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+        <service android:exported="true" android:name=".matrixhce.service.HCEApduService" android:permission="android.permission.BIND_NFC_SERVICE">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.nfc.cardemulation.host_apdu_service" android:resource="@xml/APKTOOL_DUMMYVAL_0x7f130000"/>
+        </service>
+        <meta-data android:name="a" android:value=""/>
+        <activity android:exported="false" android:name="ro.btrl.boot.ui.activity.TourActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="btwallet.TOUR_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:name="ro.btrl.boot.ui.activity.TncActivity" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="btwallet.TNC_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="ro.btrl.boot.ui.activity.SplashScreenActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110008"/>
+        <activity-alias android:name="ro.btrl.pay.tour.activity.SplashScreenActivity" android:targetActivity="ro.btrl.boot.ui.activity.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="btwallet.SPLASH_SCREEN_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <service android:exported="false" android:name="o.DD">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="o.DG">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="ro.btrl.boot.receiver.SystemBroadcastReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="com.insidesecure.hce.intent.HCE_INITIALIZATION_REQUIRED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.insidesecure.hce.rns.MatrixHCEGcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.insidesecure.hce.rns.MatrixHCEInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="o.DJ"/>
+        <activity android:exported="false" android:name="o.MI" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110007">
+            <intent-filter>
+                <action android:name="btwallet.ABOUT_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.MK" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110007">
+            <intent-filter>
+                <action android:name="btwallet.CARD_MORE_INFORMATION_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.MP" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.WEB_PAGE_INTERNAL_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.MN" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.CONTACT_DETAILS_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.MO" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110007">
+            <intent-filter>
+                <action android:name="btwallet.SETTINGS_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="o.LU" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.ACCEPT_REQUEST_MONEY_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="o.LY" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.ACCEPT_SEND_MONEY_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Ma" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="btwallet.CONFIRM_REQUEST_MONEY_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Mc" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="btwallet.CONFIRM_SEND_MONEY_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Mb" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.INTER_CARDS_TRANSFER_DETAILS_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Mf" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="btwallet.INTER_CARDS_TRANSFER_INPUTS_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Md" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.PICK_CARD_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/APKTOOL_DUMMYVAL_0x7f1001df" android:name="o.Mh" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="btwallet.PICK_CONTACT_PERSON_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Me" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.TRANSFER_MONEY_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Ml" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="btwallet.TRANSFER_MONEY_DETAILS_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Kp" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.ADD_PAYMENT_CARD_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="o.Kn" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.CARD_DETAILS_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Km" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="btwallet.CARD_PRESENTMENT_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Ku" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.CVV_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Ks" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="btwallet.ENTER_BIRTH_DATE_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Kr" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="btwallet.ENTER_OTP_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Kv" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="btwallet.ENTER_PHONE_NUMBER_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="o.Ky" android:screenOrientation="portrait" android:showOnLockScreen="true" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.PAYMENT_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Kz" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="btwallet.PICK_COUNTRY_PREFIX_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.KA" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="btwallet.PICK_OTP_OPTION_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Kw" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.PIN_SETUP_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Lk" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="btwallet.NOTIFICATION_LIST_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Ll" android:parentActivityName="o.Lk" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.NOTIFICATION_DETAILS_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Lv" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.OFFER_CITY_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Ly" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.OFFER_DETAILS_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Lw" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.OFFER_FAVORITES_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.Lu" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110006">
+            <intent-filter>
+                <action android:name="btwallet.OFFER_LIST_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="o.JC" android:screenOrientation="portrait" android:theme="@style/APKTOOL_DUMMYVAL_0x7f110007">
+            <intent-filter>
+                <action android:name="btwallet.DEV_OPTIONS_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="net.openid.appauth.RedirectUriReceiverActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="pocfitbit"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="ro.btrl.commons.navigation.PushNotificationHandlingActivity" android:noHistory="true" android:screenOrientation="portrait" android:showOnLockScreen="true">
+            <intent-filter>
+                <action android:name="btwallet.PUSH_NOTIFICATION_HANDLING_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*.btrl.ro" android:pathPrefix="/btwallet/api/v1/redirect/send" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*.btrl.ro" android:pathPrefix="/btwallet/api/v1/redirect/request" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="o.Iw" android:noHistory="true" android:screenOrientation="portrait" android:showOnLockScreen="true">
+            <intent-filter>
+                <action android:name="btwallet.CONFIRMATION_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="false" android:name="o.HS">
+            <intent-filter>
+                <action android:name="com.insidesecure.hce.intent.HCE_LIFECYCLE_DELETE_REQUIRED"/>
+                <action android:name="btwallet.START_TOKENIZATION"/>
+                <action android:name="com.insidesecure.hce.intent.HCE_RNS_TOKEN_UPDATED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="o.aj"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="o.wg" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="o.cn" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="o.mj" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="ro.btrl.pay"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="ro.btrl.pay.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="o.nt"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/APKTOOL_DUMMYVAL_0x7f0a0007"/>
+        <provider android:authorities="ro.btrl.pay.crashlyticsinitprovider" android:exported="false" android:initOrder="100" android:name="o.н"/>
+        <meta-data android:name="aia-compat-api-min-version" android:value="1"/>
+    </application>
+</manifest>

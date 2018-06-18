@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:layout_above="@id/phototan_tutorial_button" android:layout_marginStart="@dimen/activity_horizontal_margin" android:layout_marginEnd="@dimen/activity_horizontal_margin">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/tutorial_text_size_title" android:gravity="center" android:layout_gravity="center" android:id="@id/phototan_tutorial_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phototan_tutorial_title" android:textAlignment="center" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/tutorial_text_size_description" android:textColor="@color/colorTutorialText" android:gravity="center" android:layout_gravity="center" android:id="@id/phototan_tutorial_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:text="@string/phototan_tutorial_subtitle" android:textAlignment="center" />
+        <ImageView android:layout_gravity="center" android:id="@id/phototan_tutorial_image" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/img_tutorial_phototan" android:layout_weight="1.0" android:contentDescription="@string/phototan_tutorial_title" />
+    </LinearLayout>
+    <com.db.pwcc.dbmobile.foundation.views.button.Button android:id="@id/phototan_tutorial_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/activity_horizontal_margin" android:layout_marginEnd="@dimen/activity_horizontal_margin" button:buttonType="primary" button:buttonText="@string/phototan_tutorial_button" xmlns:button="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" style="@style/ListTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_branch_detail_header" android:text="@string/branch_detail_title" style="@style/ScreenHeader" />
+    <include android:id="@id/view_progress_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_branch_detail_header" layout="@layout/data_loading_progress_view" />
+    <RelativeLayout android:id="@id/view_branch_container" android:layout_below="@id/tv_branch_detail_header" style="@style/AllMatchParent">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/view_branch_info" android:padding="2.0dip" android:layout_height="wrap_content" style="@style/ApplicationTheme">
+            <ImageView android:id="@id/img_view_branch" android:padding="10.0dip" android:visibility="gone" android:layout_alignParentLeft="true" android:contentDescription="@string/branch_detail_title" style="@style/AllWrapContent" />
+            <RelativeLayout android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:layout_toRightOf="@id/img_view_branch" style="@style/AllWrapContent">
+                <TextView android:textColor="@color/text_title" android:id="@id/tv_branch_name" style="@style/TextBoldMatchWrap" />
+                <TextView android:textColor="@color/text_title" android:id="@id/tv_branch_address" android:paddingTop="10.0dip" android:layout_below="@id/tv_branch_name" style="@style/TextNormalMatchWrap" />
+                <TextView android:textColor="@color/text_title" android:id="@id/tv_branch_phone" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_below="@id/tv_branch_address" style="@style/TextNormalMatchWrap" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/view_branch_options" android:layout_below="@id/view_branch_info" style="@style/MatchParentWrapContent">
+            <Button android:textColor="@color/button_text_color" android:gravity="center" android:id="@id/btn_map" android:background="@drawable/transaction_button_selector" android:paddingLeft="15.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/branch_detail_action_map_title" android:maxLines="1" android:drawableLeft="@drawable/map_icn" android:layout_weight="1.0" style="@style/TextSmallBold" />
+            <Button android:textColor="@color/button_text_color" android:gravity="center" android:id="@id/btn_route" android:background="@drawable/transaction_button_selector" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:paddingBottom="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/branch_detail_action_route_title" android:maxLines="1" android:drawableLeft="@drawable/route_icn" android:layout_weight="1.0" style="@style/TextSmallBold" />
+            <Button android:textColor="@color/button_text_color" android:gravity="center" android:id="@id/btn_call" android:background="@drawable/transaction_button_selector" android:paddingLeft="15.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/branch_detail_action_call_title" android:maxLines="1" android:drawableLeft="@drawable/call_icn" android:layout_weight="1.0" style="@style/TextSmallBold" />
+        </LinearLayout>
+        <TextView android:textColor="@color/button_text_color" android:id="@id/tv_opening" android:background="@drawable/gradient_separator" android:padding="5.0dip" android:text="@string/opening" android:layout_below="@id/view_branch_options" style="@style/TextBoldMatchWrap" />
+        <ListView android:id="@id/lv_items" android:fadingEdge="none" android:cacheColorHint="@color/transparent" android:divider="@color/separator_bg" android:dividerHeight="1.0dip" android:layout_below="@id/tv_opening" android:fadeScrollbars="true" style="@style/ListTheme" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/text_title" android:gravity="center" android:id="@id/tv_no_informtion_available" android:visibility="gone" android:text="@string/branch_detail_no_hours_information_available" android:layout_below="@id/tv_opening" style="@style/ApplicationTheme" />
+    </RelativeLayout>
+</RelativeLayout>

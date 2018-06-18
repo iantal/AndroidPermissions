@@ -21,13 +21,16 @@ class AbstractWebViewAnalyser(ABC):
     def check_javascript_enabled(self, method):
         m_method = method.copy()
         for call in m_method['calls']:
-            if 'setJavaScriptEnabled' in call['to_method']:
-                for arg in call['local_args'].strip('{}').split(", "):
-                    try:
-                        if call['params'][arg]['value'] == '0x1':
-                            return True
-                    except KeyError:
-                        continue
+            try:
+                if 'setJavaScriptEnabled' in call['to_method']:
+                    for arg in call['local_args'].strip('{}').split(", "):
+                        try:
+                            if call['params'][arg]['value'] == '0x1':
+                                return True
+                        except KeyError:
+                            continue
+            except Exception:
+                continue
         return False
 
     def detect(self):

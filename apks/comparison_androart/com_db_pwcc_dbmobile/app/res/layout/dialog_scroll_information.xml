@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/scroll_information_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:src="@drawable/img_popup_scroll" android:contentDescription="@string/none" />
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="26.0sp" android:textColor="@color/scroll_information_title_textcolor" android:id="@id/scroll_information_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/scroll_information_title" />
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="24.0dip" android:text="@string/scroll_information_message" android:lineSpacingMultiplier="1.4" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+</LinearLayout>

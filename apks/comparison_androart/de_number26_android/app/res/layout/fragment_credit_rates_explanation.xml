@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/creditScreenPaddingTopBottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/creditExplanationViewMargin" android:src="@drawable/credit_rates_explanation_icon" />
+        <TextView android:layout_marginBottom="@dimen/creditExplanationViewMargin" android:text="@string/credit_rates_explanation_title" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditTitle" />
+        <TextView android:layout_marginBottom="@dimen/creditExplanationViewMargin" android:text="@string/credit_rates_explanation_subtitle" style="@style/creditDescription" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/credit_mint_bg" android:padding="@dimen/creditExplanationTextPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd">
+            <TextView android:layout_marginBottom="24.0dip" android:text="@string/credit_rates_explanation_content_title" style="@style/creditExplanationSectionText" />
+            <TextView android:text="@string/credit_rates_explanation_nominal" style="@style/creditExplanationSectionTitle" />
+            <TextView android:layout_marginBottom="24.0dip" android:text="@string/credit_rates_explanation_nominal_text" style="@style/creditExplanationSectionText" />
+            <TextView android:text="@string/credit_rates_explanation_effective" style="@style/creditExplanationSectionTitle" />
+            <TextView android:text="@string/credit_rates_explanation_effective_text" style="@style/creditExplanationSectionText" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:layout_gravity="bottom" android:id="@id/creditExplanationOk" android:layout_marginTop="16.0dip" android:layout_marginBottom="@dimen/creditScreenPaddingTopBottom" android:text="@string/credit_rates_explanation_okay" android:layout_marginStart="@dimen/creditScreenPaddingStartEnd" android:layout_marginEnd="@dimen/creditScreenPaddingStartEnd" style="@style/creditAccentButton" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

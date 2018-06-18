@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/mainlayout" android:background="@color/background_white_trans" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/explanationContainer" android:background="@color/background_white_trans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_gravity="center|right" android:id="@id/dividerView" android:background="@color/photo_ident_retake_button_background" android:layout_width="1.0dip" android:layout_height="160.0dip" />
+                <include android:id="@id/view_complete_identification" android:visibility="gone" layout="@layout/view_complete_identification" />
+                <include android:id="@id/view_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="160.0dip" layout="@layout/view_live_screen_explanation" />
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/aboveExplanationContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/explanationContainer">
+            <RelativeLayout android:id="@id/publisherView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/poweredByView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginBottom="16.0dip" android:layout_alignParentBottom="true">
+                <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/powered_by_idnow" />
+                <ImageView android:id="@id/icon0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_placeholder_watermark" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/subscriberLayout" android:background="@color/video_subscriber_border_color" android:padding="@dimen/video_subscriber_border_width" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                <RelativeLayout android:id="@id/subscriberContainer" android:background="@color/photo_ident_retake_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/subscriberView" android:layout_width="120.0dip" android:layout_height="160.0dip">
+                        <ProgressBar android:id="@id/loadingSpinner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                        <RelativeLayout android:id="@id/audioOnlyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+                            <ImageView android:id="@id/noVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:src="@drawable/no_video" android:layout_alignTop="@id/avatar" android:layout_centerHorizontal="true" />
+                            <ImageView android:id="@id/avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/avatar" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </FrameLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/video_signing_mask" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/video_signing_mask" android:scaleType="fitCenter" android:layout_below="@id/subscriberLayout" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/buttonHolderBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/explanationContainer">
+            <include android:id="@id/chatButtonHolder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/view_chat_overlay_button" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/notifyViaPushSuccessLayout" android:background="@color/background_light_gray_trans" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/notifyViaPushSuccessIcon" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginTop="32.0dip" android:src="@drawable/icon_placeholder" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:id="@id/notifyViaPushSuccessText" android:padding="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="@string/result_success_detail_smsnotification" android:layout_below="@id/notifyViaPushSuccessIcon" android:layout_centerHorizontal="true" />
+        <Button android:id="@id/notifyViaPushSuccessBackButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/result_success_home_button" android:layout_below="@id/notifyViaPushSuccessText" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <include android:id="@id/eSignatureOverlay" android:visibility="gone" layout="@layout/view_overlay" />
+    <include android:id="@id/view_retrieve_tan" android:visibility="gone" layout="@layout/view_retrieve_tan" />
+    <include android:id="@id/view_insert_tan" android:visibility="gone" layout="@layout/view_insert_tan" />
+    <include android:id="@id/chatLayout" android:visibility="gone" layout="@layout/view_chat_overlay" />
+    <RelativeLayout android:layout_gravity="center|right|top" android:id="@id/buttonHolderTop" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBarLoading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+</FrameLayout>

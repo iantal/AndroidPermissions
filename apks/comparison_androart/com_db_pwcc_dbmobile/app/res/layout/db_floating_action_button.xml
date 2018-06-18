@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/floating_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fab_margin" android:layout_marginEnd="@dimen/fab_menu_item_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="14.0sp" android:id="@id/floating_button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" />
+    <android.support.design.widget.FloatingActionButton android:id="@id/floating_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:elevation="0.0dip" app:fabSize="mini" app:pressedTranslationZ="0.0dip" />
+</LinearLayout>

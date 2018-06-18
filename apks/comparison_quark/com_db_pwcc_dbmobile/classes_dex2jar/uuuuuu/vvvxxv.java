@@ -1,0 +1,152 @@
+package uuuuuu;
+
+import com.db.pwcc.dbmobile.model.banking.Account;
+import com.db.pwcc.dbmobile.model.error.DbError;
+import com.db.pwcc.dbmobile.multi_bank_aggregator.data.MbaFinancialOverviewData;
+import java.util.ArrayList;
+import java.util.List;
+import javax.inject.Inject;
+
+public class vvvxxv
+  implements vxvxvv.xvvxvv
+{
+  public static int b00760076v0076vv007600760076 = 1;
+  public static int b0076vv0076vv007600760076 = 38;
+  public static int bv0076v0076vv007600760076 = 0;
+  public static int bvv00760076vv007600760076 = 2;
+  private boolean b007600760076vvv007600760076 = true;
+  public final List<Account> b00760076vvvv007600760076;
+  private final xvvxxv b0076v0076vvv007600760076;
+  public DbError bv00760076vvv007600760076;
+  private String bvv0076vvv007600760076;
+  @Inject
+  public hyhyhh bvvv0076vv007600760076;
+  
+  public vvvxxv(MbaFinancialOverviewData paramMbaFinancialOverviewData, xvvxxv paramXvvxxv)
+  {
+    xvvvxx.b0075uu00750075007500750075u0075().b00700070007000700070ppppp(this);
+    this.b0076v0076vvv007600760076 = paramXvvxxv;
+    this.bvv0076vvv007600760076 = paramMbaFinancialOverviewData.getBankLoginId();
+    this.b00760076vvvv007600760076 = new ArrayList(paramMbaFinancialOverviewData.getAccounts());
+  }
+  
+  public static int b00750075u00750075uu007500750075()
+  {
+    return 2;
+  }
+  
+  public static int b0075uu00750075uu007500750075()
+  {
+    return 0;
+  }
+  
+  private void bu0075007500750075uu007500750075()
+  {
+    this.b007600760076vvv007600760076 = true;
+    xvvxxv localXvvxxv = this.b0076v0076vvv007600760076;
+    String str = this.bvv0076vvv007600760076;
+    int i = b0076vv0076vv007600760076;
+    switch (i * (i + b00760076v0076vv007600760076) % bvv00760076vv007600760076)
+    {
+    default: 
+      b0076vv0076vv007600760076 = bu0075u00750075uu007500750075();
+      bv0076v0076vv007600760076 = 47;
+    }
+    localXvvxxv.b0075007500750075007500750075u00750075(str, this.bv00760076vvv007600760076);
+    if ((b0076vv0076vv007600760076 + b00760076v0076vv007600760076) * b0076vv0076vv007600760076 % bvv00760076vv007600760076 != bv0076v0076vv007600760076)
+    {
+      b0076vv0076vv007600760076 = 17;
+      bv0076v0076vv007600760076 = bu0075u00750075uu007500750075();
+    }
+  }
+  
+  public static int bu0075u00750075uu007500750075()
+  {
+    return 20;
+  }
+  
+  public void b006Fooooo006Fooo(DbError paramDbError)
+  {
+    if ((b0076vv0076vv007600760076 + b00760076v0076vv007600760076) * b0076vv0076vv007600760076 % bvv00760076vv007600760076 != bv0076v0076vv007600760076)
+    {
+      b0076vv0076vv007600760076 = bu0075u00750075uu007500750075();
+      bv0076v0076vv007600760076 = bu0075u00750075uu007500750075();
+    }
+    this.bv00760076vvv007600760076 = paramDbError;
+    b0075u007500750075uu007500750075();
+    if ((b0076vv0076vv007600760076 + b00760076v0076vv007600760076) * b0076vv0076vv007600760076 % b00750075u00750075uu007500750075() != bv0076v0076vv007600760076)
+    {
+      b0076vv0076vv007600760076 = bu0075u00750075uu007500750075();
+      bv0076v0076vv007600760076 = 32;
+    }
+  }
+  
+  public void b0075u007500750075uu007500750075()
+  {
+    if (this.b00760076vvvv007600760076 == null) {
+      return;
+    }
+    do
+    {
+      Account localAccount = (Account)this.b00760076vvvv007600760076.get(0);
+      int i = b0076vv0076vv007600760076;
+      switch (i * (i + b00760076v0076vv007600760076) % bvv00760076vv007600760076)
+      {
+      default: 
+        b0076vv0076vv007600760076 = 10;
+        bv0076v0076vv007600760076 = bu0075u00750075uu007500750075();
+      }
+      new aaalla().bu0075007500750075u0075007500750075(this, this.bvvv0076vv007600760076.b0070pp007000700070p007000700070(), localAccount.getId());
+      if ((b0076vv0076vv007600760076 + b00760076v0076vv007600760076) * b0076vv0076vv007600760076 % bvv00760076vv007600760076 != bv0076v0076vv007600760076)
+      {
+        b0076vv0076vv007600760076 = bu0075u00750075uu007500750075();
+        bv0076v0076vv007600760076 = bu0075u00750075uu007500750075();
+      }
+      this.b00760076vvvv007600760076.remove(0);
+      return;
+      this.b007600760076vvv007600760076 = false;
+    } while (!this.b00760076vvvv007600760076.isEmpty());
+    bu0075007500750075uu007500750075();
+  }
+  
+  public void bo006Foooo006Fooo()
+  {
+    if ((b0076vv0076vv007600760076 + b00760076v0076vv007600760076) * b0076vv0076vv007600760076 % bvv00760076vv007600760076 != b0075uu00750075uu007500750075())
+    {
+      int i = b0076vv0076vv007600760076;
+      switch (i * (i + b00760076v0076vv007600760076) % bvv00760076vv007600760076)
+      {
+      default: 
+        b0076vv0076vv007600760076 = bu0075u00750075uu007500750075();
+        bv0076v0076vv007600760076 = 36;
+      }
+      b0076vv0076vv007600760076 = 64;
+      bv0076v0076vv007600760076 = bu0075u00750075uu007500750075();
+    }
+    b0075u007500750075uu007500750075();
+  }
+  
+  public boolean buu007500750075uu007500750075()
+  {
+    boolean bool;
+    if (!this.b007600760076vvv007600760076) {
+      bool = false;
+    }
+    do
+    {
+      return bool;
+      b0075u007500750075uu007500750075();
+      int i = bu0075u00750075uu007500750075();
+      switch (i * (i + b00760076v0076vv007600760076) % b00750075u00750075uu007500750075())
+      {
+      default: 
+        b0076vv0076vv007600760076 = 42;
+        bv0076v0076vv007600760076 = bu0075u00750075uu007500750075();
+      }
+      bool = true;
+    } while ((b0076vv0076vv007600760076 + b00760076v0076vv007600760076) * b0076vv0076vv007600760076 % bvv00760076vv007600760076 == bv0076v0076vv007600760076);
+    b0076vv0076vv007600760076 = bu0075u00750075uu007500750075();
+    bv0076v0076vv007600760076 = bu0075u00750075uu007500750075();
+    return bool;
+  }
+}

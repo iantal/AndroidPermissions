@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/chart_setting_title" android:text="@string/settings_item_chart_toggle" style="@style/SettingsItemHeader" />
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:id="@id/chart_setting_status" android:text="@string/settings_label_inactive" android:layout_below="@id/chart_setting_title" style="@style/SettingsItemValue" />
+    <com.db.pwcc.dbmobile.foundation.widgets.DbSwitch android:id="@id/chart_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</merge>

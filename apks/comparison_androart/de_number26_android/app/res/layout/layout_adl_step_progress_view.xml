@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/parentLayout" android:layout_width="fill_parent" android:layout_height="56.0dip" android:weightSum="1.0" android:paddingStart="24.0dip" android:paddingEnd="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_vertical" android:id="@id/viewStepProgressBarBlue" android:background="@color/mint" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="0.0" />
+    <View android:layout_gravity="center" android:id="@id/viewStepProgressBarGrey" android:background="@color/grey_f3" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_weight="1.0" />
+</LinearLayout>

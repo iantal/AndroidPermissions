@@ -1,0 +1,37 @@
+.class final synthetic Lde/number26/machete/android/refactor/presentation/home/insurance/review/as;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lrx/c/f;
+
+
+# instance fields
+.field private final a:Lde/number26/machete/android/refactor/presentation/home/insurance/review/aq;
+
+
+# direct methods
+.method constructor <init>(Lde/number26/machete/android/refactor/presentation/home/insurance/review/aq;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lde/number26/machete/android/refactor/presentation/home/insurance/review/as;->a:Lde/number26/machete/android/refactor/presentation/home/insurance/review/aq;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lde/number26/machete/android/refactor/presentation/home/insurance/review/as;->a:Lde/number26/machete/android/refactor/presentation/home/insurance/review/aq;
+
+    check-cast p1, Lde/number26/machete/android/refactor/presentation/home/insurance/common/m$b;
+
+    invoke-virtual {v0, p1}, Lde/number26/machete/android/refactor/presentation/home/insurance/review/aq;->b(Lde/number26/machete/android/refactor/presentation/home/insurance/common/m$b;)Lde/number26/machete/android/refactor/presentation/home/insurance/review/ab;
+
+    move-result-object p1
+
+    return-object p1
+.end method

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.db.pwcc.dbmobile.mobile_payment.views.CardCanvasView android:id="@id/card_canvas" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="20.0sp" android:id="@id/itan_screen_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/selected_payment_method" android:layout_centerHorizontal="true" />
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="16.0sp" android:textColor="@color/lightGrey" android:gravity="center" android:id="@id/itan_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/card_type_format" android:layout_below="@id/itan_screen_title" android:layout_centerHorizontal="true" />
+    <com.db.pwcc.dbmobile.tan.ui.TanModule android:id="@id/confirmation_tanModule" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true" app:itanDescription="@string/mopay_verify_inputtan_message" app:ptanDescription="@string/mopay_verify_ptan_message" app:descriptionResult="@string/mopay_verify_success_label_format" app:timeoutMessage="@string/mopay_error_execution_timeout" app:networkError="@string/mopay_no_internet" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

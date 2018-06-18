@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/view_pdf_webview" />
+    <ImageView android:orientation="vertical" android:id="@id/contentView" android:background="@color/background_light_gray_trans" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/buttonView" android:background="@color/white" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/proceed_button_text" android:layout_gravity="bottom" android:id="@id/buttonNext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/e_signature_accept_contract_button" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/linearLayoutSignatureButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+            <TextView android:id="@id/declineContractTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/e_signature_decline_contract" android:drawableLeft="@drawable/action_close_contract" android:drawablePadding="4.0dip" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/buttonView" android:animateLayoutChanges="true">
+        <include android:id="@id/view_sign_contract" android:visibility="visible" layout="@layout/view_sign_contract" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        <WebView android:id="@id/openTrustWebView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <Button android:id="@id/showContractTextView" android:background="@android:drawable/dialog_holo_light_frame" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="@string/e_signature_check_contract" android:drawableLeft="@drawable/action_show_contract" android:drawablePadding="4.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

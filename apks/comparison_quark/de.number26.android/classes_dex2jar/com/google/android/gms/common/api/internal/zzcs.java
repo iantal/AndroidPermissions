@@ -1,0 +1,23 @@
+package com.google.android.gms.common.api.internal;
+
+import com.google.android.gms.internal.zzbie;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+public final class zzcs
+{
+  private static final ExecutorService zza;
+  
+  static
+  {
+    ThreadPoolExecutor localThreadPoolExecutor = new ThreadPoolExecutor(0, 4, 60L, TimeUnit.SECONDS, new LinkedBlockingQueue(), new zzbie("GAC_Transform"));
+    zza = localThreadPoolExecutor;
+  }
+  
+  public static ExecutorService zza()
+  {
+    return zza;
+  }
+}

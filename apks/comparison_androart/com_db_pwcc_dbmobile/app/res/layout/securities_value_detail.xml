@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/securities_detail_top_padding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_columnWeight="1.0" app:layout_gravity="fill_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/text_container" android:paddingTop="@dimen/securities_detail_top_padding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="0.0dip" android:paddingEnd="@dimen/securities_indicator_clickable_plus_spacing"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_securities_value_label" android:textColor="@color/transactionInfo" android:id="@id/value_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/fs_securities_value" android:textColor="@color/contentViewDefaultColor" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/securities_spacing_description_value" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/indicator_clickable_area" android:padding="@dimen/misc_clickable_area_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignEnd="@id/text_container">
+        <TextView android:textSize="@dimen/fs_securities_indicator" android:textColor="@color/indicatorButton" android:gravity="center" android:id="@id/indicator_button" android:background="@drawable/circle" android:layout_width="@dimen/securities_indicator_button_size" android:layout_height="@dimen/securities_indicator_button_size" />
+    </FrameLayout>
+</RelativeLayout>

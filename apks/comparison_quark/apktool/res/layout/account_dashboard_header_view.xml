@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/account_header" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_header_title" android:text="@string/dashboard_title_accounts" android:maxLines="1" style="@style/ScreenHeader" />
+    <ImageView android:id="@id/banking24_logo" android:visibility="gone" android:src="@drawable/banking24_logo" android:layout_centerInParent="true" android:contentDescription="@string/no_description" style="@style/AllWrapContent" />
+    <FrameLayout android:id="@id/view_left_menu" android:background="@color/menu_btn_background" android:visibility="gone" android:layout_width="@dimen/header_height" android:layout_height="@dimen/header_height" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="center" android:id="@id/imageView" android:padding="5.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_hamburger_alb" android:contentDescription="@string/left_menu" style="@style/AllWrapContent" />
+        <TextView android:textColor="@color/text_on_dark" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/tv_message_count" android:background="@drawable/message_count_background" android:visibility="gone" android:layout_marginTop="2.0dip" style="@style/AllWrapContent.TextVerySmallBold" />
+    </FrameLayout>
+    <ImageView android:id="@id/img_reload" android:padding="5.0dip" android:clickable="true" android:layout_marginRight="5.0dip" android:src="@drawable/reload_button_selector" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_centerVertical="true" android:contentDescription="@string/no_description" style="@style/AllWrapContent" />
+</RelativeLayout>

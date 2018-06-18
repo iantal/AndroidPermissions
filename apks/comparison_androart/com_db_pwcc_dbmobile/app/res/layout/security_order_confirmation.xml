@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/screen_background_color" android:paddingLeft="@dimen/padding" android:paddingRight="@dimen/padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:button="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/order_verification_details" layout="@layout/order_verification_details" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:paddingRight="@dimen/padding" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/order_id" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/order_id" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:paddingRight="@dimen/padding" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/issuing_timestamp_date" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/issuing_timestamp_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:paddingRight="@dimen/padding" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/tan_method" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/tan_method" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:paddingRight="@dimen/padding" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/used_tan" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/used_tan" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:paddingRight="@dimen/padding" android:layout_width="@dimen/width_text_view" android:layout_height="wrap_content" android:text="@string/order_status" />
+            <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/investment_text_size" android:id="@id/order_status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.db.pwcc.dbmobile.foundation.views.button.Button android:id="@id/done_button" android:paddingTop="20.0dip" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" button:buttonText="@string/done" />
+</LinearLayout>

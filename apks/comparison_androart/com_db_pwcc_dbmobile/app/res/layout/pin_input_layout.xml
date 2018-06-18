@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.AppCompatEditText android:textSize="@dimen/activity_default_text_size" android:textColor="@color/db_slate_grey" android:textColorHint="@color/db_slate_grey" android:id="@android:id/input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textPassword" android:imeOptions="actionDone" android:textSelectHandle="@drawable/navigation_empty_icon" android:textCursorDrawable="@null" android:paddingStart="@dimen/pin_input_padding" android:paddingEnd="@dimen/pin_input_padding" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" app:backgroundTint="@color/db_slate_grey" />
+    <CheckBox android:theme="@style/PinDialogCheckBox" android:textSize="@dimen/activity_default_text_size" android:id="@android:id/checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pin_checkbox_margin" android:text="@string/efi_remember_pin" android:layout_marginStart="@dimen/pin_checkbox_margin" />
+</LinearLayout>

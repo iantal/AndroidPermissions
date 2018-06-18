@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/transactions_list" android:clipToPadding="false" style="@style/ListWithHeaders" />
+    <com.db.pwcc.dbmobile.foundation.views.layouts.LoadingOverlayLayout android:orientation="vertical" android:id="@id/transactions_loading_not_successful_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <com.db.pwcc.dbmobile.foundation.widgets.ListSectionHeaderView android:id="@id/static_section_label" android:visibility="invisible" style="@style/ListSectionHeader" />
+</RelativeLayout>

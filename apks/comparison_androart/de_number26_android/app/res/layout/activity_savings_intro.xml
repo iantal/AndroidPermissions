@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mklimek.frameviedoview.FrameVideoView android:id="@id/video_savings_intro" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_savings_intro_greeting" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <de.number26.machete.android.ui.components.TypeWriterView android:textColorHint="@color/white" android:id="@id/text_savings_intro_greeting" android:layout_marginTop="48.0dip" android:layout_marginBottom="16.0dip" style="@style/creditIntroTextTitle" />
+        <de.number26.machete.android.ui.components.TypeWriterView android:textColorHint="@color/white" android:id="@id/text_savings_intro_greeting_message" style="@style/creditIntroText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_savings_intro_fixed_savings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="72.0dip">
+        <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/text_savings_intro_label_fixed_savings" android:visibility="gone" android:layout_marginBottom="4.0dip" android:text="@string/fixed_term_popup_intro_title" style="@style/creditIntroTextTitle" />
+        <TextView android:gravity="center" android:id="@id/text_savings_intro_fixed_savings_message" android:visibility="gone" android:text="@string/fixed_term_popup_intro_subtitle" fontPath="@string/font_medium" style="@style/creditIntroText" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_savings_intro_interest" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200.0dip">
+        <TextView android:textColor="@color/grey_79" android:gravity="center" android:id="@id/text_savings_intro_interest_message1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed_term_duration_hint" fontPath="@string/font_regular" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="24.0sp" android:textColor="@color/black_1b" android:id="@id/text_savings_intro_interest_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" fontPath="@string/font_medium" />
+            <TextView android:textColor="@color/grey_79" android:gravity="bottom|center|right" android:id="@id/text_savings_intro_interest_message2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_duration_pa" fontPath="@string/font_regular" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/grey_79" android:gravity="center" android:layout_gravity="bottom" android:id="@id/text_savings_intro_eu_protection_law" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="180.0dip" android:text="@string/fixed_term_popup_deposit_protected_eu_law" fontPath="@string/font_regular" />
+    <include layout="@layout/partial_savings_intro_conclusion" />
+</FrameLayout>

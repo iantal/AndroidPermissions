@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="@dimen/efi_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/efi_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/efi_list_item_icon_margin_end" android:layout_alignParentStart="true" app:srcCompat="@drawable/ic_standard_bank" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/efi_icon">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/efi_list_item_title_size" android:ellipsize="end" android:id="@id/efi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/efi_list_item_subtitle_size" android:textColor="@color/lightGrey" android:ellipsize="end" android:id="@id/efi_blz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/efi_list_item_subtitle_size" android:textColor="@color/lightGrey" android:ellipsize="end" android:id="@id/efi_bic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

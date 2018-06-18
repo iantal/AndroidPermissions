@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+            <title>Info Overlay</title>
+            <meta name="description" content="Info Overlay">
+                <meta name="author" content="Deutsche Bank AG">
+                    <style>
+                        body {
+                            margin: 0px; padding: 0px;
+                            background-color: transparent;
+                        }
+                    .list_item {
+                        display:table;
+                        margin-bottom: 10px;
+                    }
+                    .list_detail {
+                        display:table-cell;
+                        color: #CDCDCD;
+                        font-size: 11pt;
+                        font-family: DeuBaUnivers-Regular;
+                    }
+                    img {
+                        margin-right:10px;
+                    }
+                    
+                    #imgCont{
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                    p {
+                        margin-bottom: 14px;
+                        color: #CDCDCD;
+                        font-size: 11pt;
+                        font-family: DeuBaUnivers-Regular;
+                    }
+                    .pheadline{
+                        margin-bottom: -12px;
+                    }
+                    .pheader{
+                    	font-size: 12pt;
+                    	margin-bottom: -10px;
+                    }
+                    </style>
+                    </head>
+    <body>
+    	<p class="pheader"><b>Allgemeine Hinweise:</b></p>
+		<p>Zur ausgewählten Depotposition (Aktie, Fondanteil, etc.) sehen Sie den Namen, den Marktwert inklusive Gewinn/Verlust und die Bestände. Sie erhalten einen Überblick über den aktuell verbuchten Bestand und den aktuellen Wert dieser Depotposition. Die Ermittlung des Wertes erfolgt mit mindestens 15 Minuten zeitverzögerten Kursen.</p>
+		
+		<p>Die Stückzahl bzw. das Nominal spiegelt den gegenwärtig in Ihrem Depot verbuchten Bestand wider. Aktuelle noch nicht verbuchte Käufe und Verkäufe sind ggf. noch nicht berücksichtigt und können den tatsächlichen Bestand beeinflussen.</p>
+        
+        <p>Die angezeigten Beträge zu Gewinn/Verlust resultieren aus dem Vergleich der angezeigten aktuellen Kurse mit den angezeigten Einstandskursen, die bereits Provisionen und eventuelle Fremdkosten enthalten. Ein Indikator am Wert des Einstandskurses zeigt Ihnen an, dass dieser nachträglich verändert wurde. Folgende Ausprägungen sind möglich:</p>
+        
+        <p></p>
+        
+        <div class="list_item">
+            <div id="imgCont">
+                <img width="20" height="20" src="ListImage1.png" />
+            </div>
+            <p class="list_detail">Der Einstandskurs wurde durch eine Kapitalmaßnahme beeinflusst.</p>
+        </div>
+        <div class="list_item">
+            <div id="imgCont">
+                <img width="20" height="20" src="ListImage2.png" />
+            </div>
+            <p class="list_detail">Der Einstandskurs wurde durch einen Depotübertrag beeinflusst.</p>
+        </div>
+        <div class="list_item">
+            <div id="imgCont">
+                <img width="20" height="20" src="ListImage3.png" />
+            </div>
+            <p class="list_detail">Der Einstandskurs wurde manuell geändert.</p>
+            <p></p>
+        </div>
+        <div class="list_item">
+            <div id="imgCont">
+                <img width="20" height="20" src="ListImage4.png" />
+            </div>
+            <p class="list_detail">Der Einstandskurs entspricht dem Bewertungskurs vom 31.12.1998 oder wurde durch diesen Kurs beeinflusst.</p>
+        </div>
+        
+        <p>Zusätzlich werden die Wertpapierkennnummer (WKN) und die Risikoklasse, sowie der aktuelle Kurs, der mindestens 15 Minuten zeitverzögert ist, dargestellt. Bei Fremdwährungspositionen werden zusätzlich der Devisen-Einstandskurs (z.B. in US-Dollar), eventuelle Stückzinsen und der Devisenkurs angezeigt, der mindestens 15 Minuten zeitverzögert ist.</p>
+        
+        <p>Bitte beachten Sie, dass Positionen aus Future- und Optionsgeschäften nicht berücksichtigt/angezeigt werden.</p>
+        <p>Sollten Sie Fragen zur Nutzung der Depotposition Detailübersicht haben,  wenden Sie sich bitte telefonisch an unsere Kunden-Hotline (069) 910-10000 oder an Ihren Kundenberater.</p>
+    </body>
+</html>

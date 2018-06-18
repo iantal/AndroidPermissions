@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/screen_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/db_toolbar" />
+    <RelativeLayout android:id="@id/postbox_container" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="@dimen/postbox_activation_heading_text_size" android:gravity="center" android:id="@id/activation_heading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/activation_heading" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textColor="@color/textDefault" android:gravity="center" android:id="@id/activation_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/activation_content" android:layout_below="@id/activation_heading" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_postbox_devices" android:layout_above="@id/activation_bottom_label" android:layout_below="@id/activation_content" />
+        <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textColor="@color/textDefault" android:gravity="center" android:id="@id/activation_bottom_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/postbox_activation_bottom_label_margin_bottom" android:text="@string/activation_bottom_label" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

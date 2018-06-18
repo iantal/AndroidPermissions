@@ -1,0 +1,219 @@
+{
+  "replies": [
+    {
+      "key": "customers/1234567890/postbox/messages",
+      "referenceDate": "2017-03-21",
+      "data": {
+        "postboxMessages": [
+          {
+            "id": "428559921",
+            "header": "Ertragsthesaurierung",
+            "product": {
+              "id": "1234567890",
+              "type": "DEPOT",
+              "currency": "EUR",
+              "productReference": "1234567890#DEPOT#EUR"
+            },
+            "receivedDate": "2017-02-21T10:59:31.246Z",
+            "confirmationDueDate": "2017-03-21",
+            "status": "NEW",
+            "type": "RETENTIONS",
+            "sender": "Ihre Bank",
+            "subject": "Ertragsthesaurierung",
+            "deletionAllowed": true,
+            "locator": "/trxmapi/v1/db/customers/1234567890/postbox/messages/428559921?productReference=1234567890%23DEPOT%23EUR"
+          },
+          {
+            "id": "428557871",
+            "header": "Wertpapierabrechnung",
+            "product": {
+              "id": "1234567890",
+              "type": "DEPOT",
+              "currency": "EUR",
+              "productReference": "1234567890#DEPOT#EUR"
+            },
+            "receivedDate": "2017-02-16T17:59:27.610Z",
+            "confirmationDueDate": "2017-03-26",
+            "status": "NEW",
+            "type": "ACCOUNTING",
+            "sender": "Ihre Bank",
+            "subject": "Wertpapierabrechnung",
+            "deletionAllowed": true,
+            "locator": "/trxmapi/v1/db/customers/1234567890/postbox/messages/428557871?productReference=1234567890%23DEPOT%23EUR"
+          },
+          {
+            "id": "428551795",
+            "header": "Anlage",
+            "product": {
+              "id": "1234567890",
+              "type": "ACCOUNT",
+              "currency": "EUR",
+              "productReference": "1234567890#KONTO#EUR"
+            },
+            "receivedDate": "2017-02-07T06:59:40.095Z",
+            "readDate": "2017-02-14",
+            "confirmationDueDate": "2017-03-29",
+            "status": "ACKNOWLEDGED",
+            "type": "ENCLOSURES_TO_ACCOUNT_STATEMENT",
+            "sender": "Ihre Bank",
+            "subject": "Anlage",
+            "deletionAllowed": false,
+            "locator": "/trxmapi/v1/db/customers/1234567890/postbox/messages/428551795?productReference=1234567890%23KONTO%23EUR"
+          },
+          {
+            "id": "428548796",
+            "header": "Anlage",
+            "product": {
+              "id": "1234567890",
+              "type": "ACCOUNT",
+              "currency": "EUR",
+              "productReference": "1234567890#KONTO#EUR"
+            },
+            "receivedDate": "2017-01-31T07:59:43.537Z",
+            "confirmationDueDate": "2017-03-24",
+            "status": "NEW",
+            "type": "ENCLOSURES_TO_ACCOUNT_STATEMENT",
+            "sender": "Ihre Bank",
+            "subject": "Anlage",
+            "deletionAllowed": false,
+            "locator": "/trxmapi/v1/db/customers/1234567890/postbox/messages/428548796?productReference=1234567890%23KONTO%23EUR"
+          },
+          {
+            "id": "428313911",
+            "header": "Deutsche Bank BusinessCard PROFDRFREIHERR V DB",
+            "product": {
+              "id": "1234567890",
+              "type": "CREDIT_CARD",
+              "currency": "EUR",
+              "productReference": "1234567890#KREDITKARTE"
+            },
+            "receivedDate": "2015-06-08T17:59:29.749Z",
+            "readDate": "2015-06-18",
+            "confirmationDueDate": "2300-01-01",
+            "status": "ACKNOWLEDGED",
+            "type": "CREDIT_CARD_ACCOUNTING",
+            "sender": "Ihre Bank",
+            "subject": "Deutsche Bank BusinessCard PROFDRFREIHERR V DB",
+            "deletionAllowed": true,
+            "locator": "/trxmapi/v1/db/customers/1234567890/postbox/messages/428313911?productReference=1234567890%23KREDITKARTE"
+          },
+          {
+            "id": "428313892",
+            "header": "Wertpapierabrechnung",
+            "product": {
+              "id": "1234567890",
+              "type": "DEPOT",
+              "currency": "EUR",
+              "productReference": "1234567890#DEPOT#EUR"
+            },
+            "receivedDate": "2015-06-02T12:59:27.573Z",
+            "readDate": "2015-06-08",
+            "confirmationDueDate": "2015-06-30",
+            "status": "ACKNOWLEDGED",
+            "type": "ACCOUNTING",
+            "sender": "Ihre Bank",
+            "subject": "Wertpapierabrechnung",
+            "deletionAllowed": true,
+            "locator": "/trxmapi/v1/db/customers/1234567890/postbox/messages/428313892?productReference=1234567890%23DEPOT%23EUR"
+          },
+          {
+            "id": "428313894",
+            "header": "Wertpapierabrechnung",
+            "product": {
+              "id": "1234567890",
+              "type": "DEPOT",
+              "currency": "EUR",
+              "productReference": "1234567890#DEPOT#EUR"
+            },
+            "receivedDate": "2015-06-02T12:59:27.573Z",
+            "readDate": "2015-06-08",
+            "confirmationDueDate": "2015-06-30",
+            "status": "ACKNOWLEDGED",
+            "type": "ACCOUNTING",
+            "sender": "Ihre Bank",
+            "subject": "Wertpapierabrechnung",
+            "deletionAllowed": true,
+            "locator": "/trxmapi/v1/db/customers/1234567890/postbox/messages/428313894?productReference=1234567890%23DEPOT%23EUR"
+          },
+          {
+            "id": "428313893",
+            "header": "Wertpapierabrechnung",
+            "product": {
+              "id": "1234567890",
+              "type": "DEPOT",
+              "currency": "EUR",
+              "productReference": "1234567890#DEPOT#EUR"
+            },
+            "receivedDate": "2015-06-02T12:59:27.573Z",
+            "readDate": "2015-06-08",
+            "confirmationDueDate": "2015-06-30",
+            "status": "ACKNOWLEDGED",
+            "type": "ACCOUNTING",
+            "sender": "Ihre Bank",
+            "subject": "Wertpapierabrechnung",
+            "deletionAllowed": true,
+            "locator": "/trxmapi/v1/db/customers/1234567890/postbox/messages/428313893?productReference=1234567890%23DEPOT%23EUR"
+          },
+          {
+            "id": "428317046",
+            "header": "Kontoauszug",
+            "product": {
+              "id": "1234567890",
+              "type": "ACCOUNT",
+              "currency": "EUR",
+              "productReference": "1234567890#KONTO#EUR"
+            },
+            "receivedDate": "2015-06-01T07:44:35.830Z",
+            "readDate": "2015-06-08",
+            "confirmationDueDate": "2015-07-18",
+            "status": "ACKNOWLEDGED",
+            "type": "CURRENT_ACCOUNT_STATEMENT",
+            "sender": "Ihre Bank",
+            "subject": "Kontoauszug",
+            "deletionAllowed": false,
+            "locator": "/trxmapi/v1/db/customers/1234567890/postbox/messages/428317046?productReference=1234567890%23KONTO%23EUR"
+          },
+          {
+            "id": "428316982",
+            "header": "Kontoauszug",
+            "product": {
+              "id": "1234567890",
+              "type": "ACCOUNT",
+              "currency": "EUR",
+              "productReference": "1234567890#KONTO#EUR"
+            },
+            "receivedDate": "2015-06-01T07:44:35.830Z",
+            "readDate": "2015-06-08",
+            "confirmationDueDate": "2015-07-18",
+            "status": "ACKNOWLEDGED",
+            "type": "CURRENT_ACCOUNT_STATEMENT",
+            "sender": "Ihre Bank",
+            "subject": "Kontoauszug",
+            "deletionAllowed": false,
+            "locator": "/trxmapi/v1/db/customers/1234567890/postbox/messages/428316982?productReference=1234567890%23KONTO%23EUR"
+          },
+          {
+            "id": "428316978",
+            "header": "Kontoauszug",
+            "product": {
+              "id": "1234567890",
+              "type": "ACCOUNT",
+              "currency": "EUR",
+              "productReference": "1234567890#KONTO#EUR"
+            },
+            "receivedDate": "2017-02-01T07:44:35.830Z",
+            "confirmationDueDate": "2017-04-18",
+            "status": "NEW",
+            "type": "CURRENT_ACCOUNT_STATEMENT",
+            "sender": "Ihre Bank",
+            "subject": "Kontoauszug",
+            "deletionAllowed": false,
+            "locator": "/trxmapi/v1/db/customers/1234567890/postbox/messages/428316978?productReference=1234567890%23KONTO%23EUR"
+          }
+        ],
+        "unreadMessageCount": 4
+      }
+    }
+  ]
+}
+

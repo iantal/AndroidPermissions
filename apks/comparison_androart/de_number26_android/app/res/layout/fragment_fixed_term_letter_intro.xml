@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="44.0dip" android:src="@drawable/img_fixed_term_letter_intro" />
+        <TextView android:textSize="25.0sp" android:gravity="left" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/fixed_term_letter_intro_last_chance" fontPath="@string/font_medium" />
+        <TextView android:textSize="16.0sp" android:gravity="left" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fixed_term_letter_intro_description" fontPath="@string/font_regular" />
+    </LinearLayout>
+    <de.number26.machete.android.adl.atoms.MainButton android:id="@id/main_button_fixed_term_intro_compose" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="false" app:text="@string/fixed_term_letter_intro_compose" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background_result" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/imageViewStatus" android:layout_width="fill_parent" android:layout_height="@dimen/result_icon_height" android:layout_margin="@dimen/activity_vertical_margin" android:src="@drawable/ic_result_success" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/success" android:gravity="center_horizontal" android:id="@id/textViewStatus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/result_screen_status_success" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/text_default" android:gravity="center_horizontal" android:id="@id/textViewTransactionNrTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/result_vertical_margin" android:text="@string/result_screen_transaction_nr_title" />
+            <TextView android:textSize="16.0sp" android:gravity="center_horizontal" android:id="@id/textViewTransactionNrContent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:gravity="center_horizontal" android:id="@id/textViewInformation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/result_vertical_margin" android:layout_marginBottom="@dimen/result_vertical_margin" android:text="@string/result_screen_info_success_video_ident" />
+            <Button android:textColor="@color/proceed_button_text" android:layout_gravity="bottom" android:id="@id/buttonRetry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/result_screen_button_retry" />
+            <Button android:textColor="@color/proceed_button_text" android:layout_gravity="bottom" android:id="@id/buttonDone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/result_margin_between_result_buttons" android:text="@string/result_screen_button_done" />
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:id="@id/progressBar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+</RelativeLayout>

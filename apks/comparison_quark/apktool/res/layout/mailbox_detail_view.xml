@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" style="@style/ListTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/mailbox_header" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/click24_header_view" />
+    <RadioGroup android:orientation="vertical" android:id="@id/rbg_voting_choice" android:visibility="gone" android:layout_alignParentBottom="true" style="@style/MatchParentWrapContent">
+        <View android:background="@color/separator_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RadioButton android:enabled="false" android:textColor="@color/text_default" android:id="@id/rbtn_voting_choice_ok" style="@style/TextBigBoldMatchWrap" />
+        <View android:background="@color/separator_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RadioButton android:enabled="false" android:textColor="@color/text_default" android:id="@id/rbtn_voting_choice_cancel" style="@style/TextBigBoldMatchWrap" />
+    </RadioGroup>
+    <FrameLayout android:layout_above="@id/rbg_voting_choice" android:layout_below="@id/mailbox_header" style="@style/AllMatchParent">
+        <include android:id="@id/view_mail_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/mail_description_content_view" />
+        <include android:id="@id/view_mail_progress_container" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/data_loading_progress_view" />
+    </FrameLayout>
+</RelativeLayout>

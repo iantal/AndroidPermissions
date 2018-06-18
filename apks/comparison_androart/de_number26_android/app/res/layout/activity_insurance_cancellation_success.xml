@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/screen_insurance_padding_start_end" android:paddingEnd="@dimen/screen_insurance_padding_start_end">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="68.0dip" android:layout_marginBottom="44.0dip" android:src="@drawable/img_insurance_cancellation_success" />
+            <TextView android:textSize="22.0sp" android:gravity="center_horizontal" android:id="@id/text_ins_cancellation_success_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/insurance_cancelled_title" fontPath="@string/font_medium" style="@style/InsuranceHeader" />
+            <TextView android:gravity="center_horizontal" android:id="@id/text_ins_cancellation_success_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="@string/font_light" style="@style/InsuranceText" />
+        </LinearLayout>
+    </ScrollView>
+    <de.number26.machete.android.adl.atoms.MainButton android:id="@id/button_ins_cancellation_success_close" android:layout_width="fill_parent" android:layout_height="wrap_content" app:text="@string/insurance_cancelled_close" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/view_pull_refresh_parent" android:paddingLeft="@dimen/header_footer_left_right_padding" android:paddingTop="@dimen/header_footer_top_bottom_padding" android:paddingRight="@dimen/header_footer_left_right_padding" android:paddingBottom="@dimen/header_footer_top_bottom_padding" style="@style/MatchParentWrapContent">
+        <FrameLayout android:layout_gravity="center|left" style="@style/AllWrapContent">
+            <ImageView android:layout_gravity="center" android:id="@id/img_pull_to_refresh" android:contentDescription="@string/pull_icon" style="@style/AllWrapContent" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:padding="5.0dip" style="@style/AllWrapContent">
+            <ProgressBar android:id="@id/progress_pull_to_refresh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" style="?android:attr/progressBarStyleSmallInverse" />
+            <TextView android:textAppearance="?android:textAppearance" android:gravity="center_horizontal" android:layout_gravity="fill_horizontal" android:id="@id/tv_pull_to_refresh" android:maxLines="1" style="@style/AllWrapContent" />
+        </LinearLayout>
+    </FrameLayout>
+</merge>

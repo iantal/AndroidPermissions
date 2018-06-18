@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/animation" android:background="@drawable/unpairing_00000" android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_marginTop="24.0dip" android:contentDescription="@null" />
+            <TextView android:textAppearance="@style/TextAppearance.Instruction.Title" android:gravity="center" android:id="@id/description1" android:layout_marginTop="25.0dip" android:text="@string/update_private_keys_1" style="@style/unpair_text" />
+            <TextView android:textAppearance="@style/TextAppearance.Instruction.Text" android:gravity="center" android:id="@id/description2" android:layout_marginTop="15.0dip" android:text="@string/update_private_keys_2" style="@style/unpair_text" />
+        </LinearLayout>
+        <TextView android:layout_gravity="bottom" android:id="@id/main_button" style="@style/mainbutton" />
+    </LinearLayout>
+</ScrollView>

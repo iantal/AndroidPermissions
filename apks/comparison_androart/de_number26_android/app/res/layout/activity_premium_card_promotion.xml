@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/black_promotion_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <TextView android:textSize="@dimen/textSizePrimary" android:textStyle="bold" android:textColor="@color/colorAccent" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/premium_card_promotion_title" android:textAllCaps="true" fontPath="@string/font_regular" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="22.0sp" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/premium_card_promotion_subtitle" />
+        <TextView android:textSize="@dimen/textSizeSecondary" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/premium_card_promotion_summary" android:lineSpacingExtra="@dimen/contentSpacing" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_padding">
+        <Button android:id="@id/explore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/premium_card_promotion_explore" style="@style/Widget.AppCompat.Button.Colored" />
+        <Button android:textColor="@color/colorAccent" android:id="@id/not_now" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/premium_card_promotion_not_now" style="@style/Widget.AppCompat.Button.Borderless" />
+    </LinearLayout>
+</LinearLayout>

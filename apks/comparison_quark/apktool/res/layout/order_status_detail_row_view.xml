@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_marginTop="2.5dip" android:layout_marginBottom="2.5dip" style="@style/MatchParentWrapContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_marginTop="2.5dip" android:layout_marginBottom="2.5dip" style="@style/MatchParentWrapContent">
+        <LinearLayout android:orientation="horizontal" style="@style/MatchParentWrapContent">
+            <TextView android:textColor="@color/text_default" android:id="@id/tv_row_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" style="@style/TextSmallBold" />
+            <TextView android:textColor="@color/text_default" android:gravity="right" android:id="@id/tv_rightof_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" style="@style/TextSmallBold" />
+        </LinearLayout>
+        <TextView android:textColor="@color/text_default" android:id="@id/tv_below_title" android:visibility="gone" style="@style/TextSmallNormalMatchWrap" />
+    </LinearLayout>
+    <View android:id="@id/separator_line" style="@style/ListSeparator" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/toolbar_gradient" android:layout_width="fill_parent" android:layout_height="@dimen/actionbarHeight" android:paddingStart="@dimen/search_field_padding" android:paddingEnd="@dimen/search_field_start_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_container" android:background="@drawable/seekbar_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/cancel_search">
+        <EditText android:id="@id/search_input" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionDone" android:layout_marginStart="@dimen/cancel_button_padding" style="@style/dbEditTextSimpleStyle" />
+        <ImageView android:id="@id/clear_search_input" android:padding="@dimen/search_field_margin_small" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear_search_selector" />
+    </LinearLayout>
+    <com.db.pwcc.dbmobile.foundation.widgets.DbTextView android:textSize="16.0sp" android:textColor="@color/btn_cancel_text_selector" android:id="@id/cancel_search" android:padding="@dimen/cancel_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:maxLines="1" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

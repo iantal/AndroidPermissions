@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar_fixed_term_blocker" android:layout_width="fill_parent" android:layout_height="?actionBarSize"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="29.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/image_fixed_term_blocker" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="220.0dip" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/progress_fixed_term_blocker" android:layout_width="fill_parent" android:layout_height="220.0dip">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="25.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="4.0dip" android:text="@string/fixed_term_block_fatca_title" fontPath="@string/font_medium" />
+        <TextView android:textSize="16.0sp" android:id="@id/text_fixed_term_blocker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:text="@string/fixed_term_block_fatca_description" android:lineSpacingExtra="4.0sp" fontPath="@string/font_regular" />
+    </LinearLayout>
+</LinearLayout>
