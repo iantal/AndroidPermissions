@@ -2,162 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bb13603-be0e-45bf-888f-a0ab45ef8049" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/python/radare/malware.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/ui/malware_stats.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/at_spardat_bcrmobile/raw/at.spardat.bcrmobile.jar" beforeDir="false" afterPath="$PROJECT_DIR$/apks/obfuscation_and_logging/at_spardat_bcrmobile/raw/at.spardat.bcrmobile.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/at_spardat_bcrmobile/report/hotspot.json" beforeDir="false" afterPath="$PROJECT_DIR$/apks/obfuscation_and_logging/at_spardat_bcrmobile/report/hotspot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/apktool.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/lib/x86/libiconv.so" beforeDir="false" afterPath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/lib/x86/libiconv.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/lib/x86/libzbarjni.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/lib/x86_64/libiconv.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/lib/x86_64/libzbarjni.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/original/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/original/META-INF/CERT.RSA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/original/META-INF/CERT.SF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/original/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/original/META-INF/leiningen/frankiesardo/icepick/project.clj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/original/META-INF/services/javax.annotation.processing.Processor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/build-data.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/com/thinkdesquared/banking/models/response/t.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/jsr305_annotations/Jsr305_annotations.gwt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_approx_any.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_approx_common.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_approx_cyrillic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_approx_english.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_approx_french.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_approx_german.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_approx_hebrew.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_approx_hungarian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_approx_polish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_approx_romanian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_approx_russian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_approx_spanish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_exact_any.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_exact_approx_common.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_exact_common.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_exact_cyrillic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_exact_english.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_exact_french.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_exact_german.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_exact_hebrew.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_exact_hungarian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_exact_polish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_exact_romanian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_exact_russian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_exact_spanish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_hebrew_common.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_lang.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_languages.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_rules_any.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_rules_cyrillic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_rules_english.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_rules_french.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_rules_german.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_rules_hebrew.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_rules_hungarian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_rules_polish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_rules_romanian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_rules_russian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/ash_rules_spanish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_any.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_arabic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_common.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_cyrillic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_czech.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_dutch.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_english.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_french.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_german.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_greek.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_greeklatin.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_hebrew.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_hungarian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_italian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_polish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_portuguese.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_romanian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_russian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_spanish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_approx_turkish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_any.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_approx_common.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_arabic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_common.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_cyrillic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_czech.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_dutch.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_english.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_french.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_german.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_greek.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_greeklatin.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_hebrew.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_hungarian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_italian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_polish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_portuguese.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_romanian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_russian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_spanish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_exact_turkish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_hebrew_common.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_lang.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_languages.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_any.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_arabic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_cyrillic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_czech.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_dutch.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_english.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_french.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_german.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_greek.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_greeklatin.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_hebrew.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_hungarian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_italian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_polish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_portuguese.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_romanian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_russian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_spanish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/gen_rules_turkish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/lang.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_approx_any.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_approx_common.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_approx_french.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_approx_hebrew.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_approx_italian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_approx_portuguese.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_approx_spanish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_exact_any.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_exact_approx_common.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_exact_common.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_exact_french.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_exact_hebrew.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_exact_italian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_exact_portuguese.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_exact_spanish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_hebrew_common.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_lang.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_languages.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_rules_any.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_rules_french.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_rules_hebrew.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_rules_italian.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_rules_portuguese.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/bm/sep_rules_spanish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/apache/commons/codec/language/dmrules.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/org/ksoap2_custom/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/com_advantage_RaiffeisenBank/app/unknown/project.clj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/ro_ing_mobile_banking_android_activity/raw/ro.ing.mobile.banking.android.activity.jar" beforeDir="false" afterPath="$PROJECT_DIR$/apks/obfuscation_and_logging/ro_ing_mobile_banking_android_activity/raw/ro.ing.mobile.banking.android.activity.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/obfuscation_and_logging/ro_ing_mobile_banking_android_activity/report/hotspot.json" beforeDir="false" afterPath="$PROJECT_DIR$/apks/obfuscation_and_logging/ro_ing_mobile_banking_android_activity/report/hotspot.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/radare/radare_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/python/radare/radare_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/ui/plot.html" beforeDir="false" afterPath="$PROJECT_DIR$/python/ui/plot.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/ui/stats_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ui/stats_script.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/vulns/report.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/report.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/vulns/webview_vulns.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/webview_vulns.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -168,23 +16,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="stats_script.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="stats_script.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python/ui/stats_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="359" column="51" selection-start-line="359" selection-start-column="51" selection-end-line="359" selection-end-column="51" />
+            <state relative-caret-position="714">
+              <caret line="462" column="26" selection-start-line="462" selection-start-column="26" selection-end-line="462" selection-end-column="26" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#8238#11785#0" />
+                <element signature="e#7647#9790#0" />
+                <element signature="e#9843#11100#0" />
+                <element signature="e#11142#11896#0" />
+                <element signature="e#11933#12782#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="report.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="report.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/vulns/report.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="49" column="41" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="41" />
+            <state relative-caret-position="189">
+              <caret line="370" selection-start-line="370" selection-end-line="370" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -195,7 +48,7 @@
       <file leaf-file-name="log_detection.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/vulns/log_detection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="210">
               <caret line="17" column="28" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="28" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -207,15 +60,29 @@
       <file leaf-file-name="radare_config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/radare/radare_config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-172">
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            <state relative-caret-position="810">
+              <caret line="96" column="2" selection-start-line="96" selection-start-column="2" selection-end-line="96" selection-end-column="2" />
+              <folding>
+                <element signature="n#!!block;n#emulator#0;n#!!top" />
+                <element signature="n#!!block;n#url#0;n#!!top" />
+                <element signature="n#!!block;n#root#0;n#!!top" />
+                <element signature="n#!!block;n#apk#0;n#!!top" />
+                <element signature="n#!!block;n#libs#0;n#!!top" />
+                <element signature="n#!!block;n#file#0;n#!!top" />
+                <element signature="n#!!block;n#sms#0;n#!!top" />
+                <element signature="n#!!block;n#location#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constantenckeys.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apks/comparison_androart/ro_ing_mobile_banking_android_activity/report/vulns/constantenckeys.json">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="malware.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/radare/malware.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="127" column="22" selection-end-line="133" selection-end-column="1" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="ecb.json" pinned="false" current-in-tab="false">
@@ -348,10 +215,10 @@
         <option value="$PROJECT_DIR$/python/vulns/webview_vulns.py" />
         <option value="$PROJECT_DIR$/python/ui/malware_stats.py" />
         <option value="$PROJECT_DIR$/python/radare/malware.json" />
-        <option value="$PROJECT_DIR$/python/radare/radare_config.json" />
         <option value="$PROJECT_DIR$/apks/comparison_androart/ro_ing_mobile_banking_android_activity/report/vulns/access_local_resources.json" />
-        <option value="$PROJECT_DIR$/python/ui/stats_script.py" />
         <option value="$PROJECT_DIR$/python/vulns/report.py" />
+        <option value="$PROJECT_DIR$/python/radare/radare_config.json" />
+        <option value="$PROJECT_DIR$/python/ui/stats_script.py" />
       </list>
     </option>
   </component>
@@ -379,24 +246,6 @@
               <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
               <item name="apks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
-              <item name="apks" type="462c0819:PsiDirectoryNode" />
-              <item name="comparison_androart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
-              <item name="apks" type="462c0819:PsiDirectoryNode" />
-              <item name="obfuscation_and_logging" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
-              <item name="apks" type="462c0819:PsiDirectoryNode" />
-              <item name="playstore_apps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
@@ -504,16 +353,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="762" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33509934" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4629139" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50066227" side_tool="true" weight="0.4499205" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289183" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49933776" visible="true" weight="0.40381557" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49933776" visible="true" weight="0.40381557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -740,9 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
           <caret line="81" selection-start-line="81" selection-end-line="82" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,9 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,20 +607,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python/ui/malware_stats.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/radare/malware.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="133" column="1" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/radare/radare_config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apks/comparison_androart/ro_ing_mobile_banking_android_activity/report/vulns/constantenckeys.json">
       <provider selected="true" editor-type-id="text-editor" />
@@ -797,7 +625,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python/vulns/log_detection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="210">
           <caret line="17" column="28" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="28" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -812,22 +640,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/ui/stats_script.py">
+    <entry file="file://$PROJECT_DIR$/python/vulns/report.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="359" column="51" selection-start-line="359" selection-start-column="51" selection-end-line="359" selection-end-column="51" />
+        <state relative-caret-position="189">
+          <caret line="370" selection-start-line="370" selection-end-line="370" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/vulns/report.py">
+    <entry file="file://$PROJECT_DIR$/python/radare/malware.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="49" column="41" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="41" />
+        <state relative-caret-position="203">
+          <caret line="127" column="22" selection-end-line="133" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/radare/radare_config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="96" column="2" selection-start-line="96" selection-start-column="2" selection-end-line="96" selection-end-column="2" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="n#!!block;n#emulator#0;n#!!top" />
+            <element signature="n#!!block;n#url#0;n#!!top" />
+            <element signature="n#!!block;n#root#0;n#!!top" />
+            <element signature="n#!!block;n#apk#0;n#!!top" />
+            <element signature="n#!!block;n#libs#0;n#!!top" />
+            <element signature="n#!!block;n#file#0;n#!!top" />
+            <element signature="n#!!block;n#sms#0;n#!!top" />
+            <element signature="n#!!block;n#location#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/ui/stats_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="462" column="26" selection-start-line="462" selection-start-column="26" selection-end-line="462" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#8238#11785#0" />
+            <element signature="e#7647#9790#0" />
+            <element signature="e#9843#11100#0" />
+            <element signature="e#11142#11896#0" />
+            <element signature="e#11933#12782#0" />
           </folding>
         </state>
       </provider>

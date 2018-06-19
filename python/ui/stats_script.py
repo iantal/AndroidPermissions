@@ -45,6 +45,7 @@ BENCHMARK_REFLECTION = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/refl
 BENCHMARK_PERMISSION = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/permission/"
 BENCHMARK_OBFS_LOG = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/obfuscation_and_logging/"
 BENCHMARK_COMP_ANDROART = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/"
+MALWARE = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/malware/"
 
 
 def create_dir(dir_name):
@@ -66,6 +67,18 @@ def organize_files(directory):
                 dir_name = '_'.join(apk.split("-"))
                 create_dir(dir_name)
                 os.rename(os.path.join(directory, filename), os.path.join(directory, dir_name, filename))
+
+
+def organize_malware_files(directory):
+    os.chdir(directory)
+    print(os.getcwd())
+    i = 0
+    for (dirpath, dirnames, filenames) in os.walk(directory):
+        for filename in filenames:
+            i += 1
+            dir_name = "app" + str(i)
+            create_dir(dir_name)
+            os.rename(os.path.join(directory, filename), os.path.join(directory, dir_name, filename))
 
 
 def extract_apk(apk):
@@ -113,6 +126,52 @@ def setup_visualizations(base_dir, package_name):
     write_json_to_file(out_file, d)
 
     # hot spots
+
+
+def analyse_malware_files(directory):
+    os.chdir(directory)
+    analysed_apks = {}
+    s = 0
+
+    for (dirpath, dirnames, filenames) in os.walk(directory):
+        for filename in filenames:
+
+            print(dirpath)
+            apk = os.path.join(dirpath, filename)
+
+            t0 = time.time()
+            # print(get_package_name(dirpath))
+
+            # TODO: uncomment after testing
+            print("########### " + apk)
+            extract_apk(apk)
+
+            xml_file = os.path.join(dirpath, 'app', 'AndroidManifest.xml')
+            parser = XMLParser(xml_file)
+            d = DirectoryAnalyser(dirpath)
+            perm_classifier = PermissionsClassifier(d, parser)
+            perm_classifier.write_results(os.path.join(dirpath, 'report', 'permissions.json'))
+
+            apk_analyser = ApplicationAnalyzer(dirpath)
+            os.system("pkill r2")
+            try:
+                print('\033[92m' + "[*] " + '\033[0m' + "Running radare2")
+                apk_analyser.run_radare()
+                print('\033[92m' + "[+] " + '\033[0m' + "Done")
+            except OSError:
+                print("{*****}  " + apk)
+                continue
+            except Exception:
+                continue
+            os.system("pkill -INT r2")
+
+            t1 = time.time()
+            total = t1 - t0
+            analysed_apks[apk] = total
+            s += total
+
+    pprint.pprint(analysed_apks)
+    print("TOTAL: " + str(s))
 
 
 def analyse_files(directory):
@@ -165,6 +224,9 @@ def analyse_files(directory):
                     print('\033[92m' + "[+] " + '\033[0m' + "Done")
                 except OSError:
                     print("{*****}  " + apk)
+                    continue
+                except Exception:
+                    continue
                 os.system("pkill -INT r2")
 
 
@@ -192,7 +254,6 @@ def analyse_files(directory):
 
     pprint.pprint(analysed_apks)
     print("TOTAL: " + str(s))
-
 
 def plot_stats():
     y = [100.0, 100.0, 70.0, 100.0, 100.0, 100.0, 100.0]
@@ -394,9 +455,9 @@ def plot_comparison_by_app():
 
 
 if __name__ == "__main__":
-    # organize_files(BENCHMARK_OBFS_LOG)
-    # analyse_files(BENCHMARK_COMP_ANDROART)
+    # organize_malware_files(MALWARE)
+    analyse_malware_files(MALWARE)
     # plot_stats()
     # compute_findings_distribution(BENCHMARK_COMP_ANDROART)
     # plot_comparison_by_findings()
-    plot_comparison_by_app()
+    # plot_comparison_by_app()
