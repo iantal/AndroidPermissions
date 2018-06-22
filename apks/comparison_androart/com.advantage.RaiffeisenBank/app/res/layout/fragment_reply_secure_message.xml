@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?dsq_background_lists" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:paddingLeft="@dimen/inbox_message_element_side_margin" android:paddingTop="@dimen/inbox_message_element_top_margin" android:paddingRight="@dimen/inbox_message_element_side_margin" android:paddingBottom="@dimen/inbox_message_element_top_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="46.0dip">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" layout="@layout/include_secure_message_info_layout" />
+            </RelativeLayout>
+            <include layout="@layout/include_separator" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/inbox_message_element_side_margin" android:layout_marginTop="@dimen/inbox_message_element_margin" android:layout_marginRight="@dimen/inbox_message_element_side_margin">
+                <ImageView android:id="@id/user_avatar_img" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/InboxMessageElementStyle" />
+                <TextView android:ellipsize="end" android:id="@id/message_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/inbox_message_element_margin" android:text="@string/you" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/user_avatar_img" android:layout_alignTop="@id/user_avatar_img" style="@style/DSQTextAppearance.listRight" />
+            </RelativeLayout>
+            <include layout="@layout/include_rte_editor_with_attachments" />
+            <LinearLayout android:orientation="vertical" android:id="@id/inflateLinearLayout" android:paddingBottom="70.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/rte_toolbar_container" layout="@layout/include_rte_toolbar" />
+</RelativeLayout>

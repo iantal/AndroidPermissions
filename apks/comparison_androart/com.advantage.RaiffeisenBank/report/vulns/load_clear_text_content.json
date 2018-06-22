@@ -1,0 +1,15 @@
+{
+  "findings": [
+    {
+      "title": "Load cleartext content",
+      "stat": "high",
+      "description": "",
+      "recommendation": "",
+      "evidence": [
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.advantage.RaiffeisenBank/app/smali/com/thinkdesquared/banking/WebViewActivity.smali loadUrl",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.advantage.RaiffeisenBank/app/smali/com/thinkdesquared/banking/WebViewActivity.smali loadUrl",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.advantage.RaiffeisenBank/app/smali/com/thinkdesquared/banking/WebViewActivity.smali loadUrl"
+      ]
+    }
+  ]
+}

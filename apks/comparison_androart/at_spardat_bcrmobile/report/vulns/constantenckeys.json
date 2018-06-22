@@ -1,1 +1,13 @@
-{"findings": [{"title": "\n            Constant Encryption Keys\n        ", "stat": "high", "description": "\n            Backtracking the key parameter of SecretKeySpec constructors does not not necessarily lead\n            to an unambiguous result. In practice, it is probable that a statically defined value is concatenated\n            with a non-constant input. Declaring the resulting key as a constant would not resemble the actual\n            situation since a the non-constant part might still provide enough entropy. Of course, the contrary\n            would be true if the statically defined part prevails. As a consequence, we decided for a compromise:\n            if statically defined values influence the resulting key, a warning is raised although the key is\n            not entirely constant. Thereby, we emphasize the fact that the key might be substantially affected,\n            rather than stating that it is statically defined.\n        ", "recommendation": "Test recommendation", "evidence": ["/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/at_spardat_bcrmobile/app/smali/at/spardat/bcrmobile/e/a.smali"]}]}
+{
+  "findings": [
+    {
+      "title": "\n            Constant Encryption Keys\n        ",
+      "stat": "high",
+      "description": "\n            Backtracking the key parameter of SecretKeySpec constructors does not not necessarily lead\n            to an unambiguous result. In practice, it is probable that a statically defined value is concatenated\n            with a non-constant input. Declaring the resulting key as a constant would not resemble the actual\n            situation since a the non-constant part might still provide enough entropy. Of course, the contrary\n            would be true if the statically defined part prevails. As a consequence, we decided for a compromise:\n            if statically defined values influence the resulting key, a warning is raised although the key is\n            not entirely constant. Thereby, we emphasize the fact that the key might be substantially affected,\n            rather than stating that it is statically defined.\n        ",
+      "recommendation": "Test recommendation",
+      "evidence": [
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/at_spardat_bcrmobile/app/smali/at/spardat/bcrmobile/e/a.smali"
+      ]
+    }
+  ]
+}

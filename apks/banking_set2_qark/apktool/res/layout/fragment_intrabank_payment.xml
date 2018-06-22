@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/wrapperLinearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container_layout" android:background="@color/fwr_white_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+        <LinearLayout android:orientation="vertical" android:id="@id/request_focus_layout" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/from_account_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+            <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/from" style="@style/DSQTextAppearance.Label.material" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/from_account_spinner_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="false">
+                    <com.thinkdesquared.banking.helpers.ui.widgets.DSQAppCompatSpinner android:layout_gravity="center_vertical" android:id="@id/from_account_spinner" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" style="@style/rzb_Spinner.DropDown" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/payments_intrabank" />
+        <include android:id="@id/switchForAdditionalSepaLayout" android:visibility="gone" layout="@layout/switch_for_additional_sepa_layouts" />
+        <include android:id="@id/additionalSepaLayoutDetails" android:visibility="gone" layout="@layout/additional_sepa_layout_details" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/submit_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/submit_button_layout" />
+    </LinearLayout>
+</LinearLayout>

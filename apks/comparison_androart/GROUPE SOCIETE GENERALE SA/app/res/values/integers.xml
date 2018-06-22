@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ind.bankingapp.android.framework.pin_length">4</integer>
+    <integer name="ind.bankingapp.communication_timeout">60000</integer>
+    <integer name="ind.bankingapp.communication_numberofretires">5</integer>
+    <integer name="ind.bankingapp.communication_retryinterval">1000</integer>
+    <integer name="ind.bankingapp.communication_dialog_dismiss_delay">1500</integer>
+    <integer name="googlemaps_geoautocomplete_connection_timeout">5000</integer>
+    <integer name="googlemaps_geoautocomplete_socket_timeout">5000</integer>
+    <integer name="ind.bankingapp.android.framework.mainwebview.webhider_show_wait">200</integer>
+    <integer name="ind.bankingapp.android.framework.mainwebview.webpreloader_start_wait">500</integer>
+    <integer name="ind.bankingapp.android.framework.toolbar_minimum_item_width">80</integer>
+    <integer name="ind.bankingapp.android.framework.connection.session_check_period">5000</integer>
+    <integer name="ind.bankingapp.android.framework.connection.session_expiration_warning_seconds">60</integer>
+    <integer name="ind.bankingapp.android.framework.webviewpreload_maxsize">3</integer>
+    <integer name="geolocation.min_time">600000</integer>
+    <integer name="geolocation.min_accuracy">500</integer>
+    <integer name="geolocation.gps_timeout">60</integer>
+    <item type="integer" name="anim_duration">@android:integer/config_shortAnimTime</item>
+    <integer name="ind.bankingapp.phablet_max_diamater">7</integer>
+    <integer name="ind.bankingapp.phablet_min_diamater">6</integer>
+    <integer name="ind.bankingapp.finish_attempt_expiry_seconds">5</integer>
+    <integer name="session_timeout_seconds">120</integer>
+    <integer name="message_validity_minutes">60</integer>
+    <integer name="activation_id_length">8</integer>
+    <integer name="activation_code_length">8</integer>
+    <integer name="location.googlemaps_zoomlevel">16</integer>
+    <integer name="location.googlemaps_default_location_latitude_e6">44452562</integer>
+    <integer name="location.googlemaps_default_location_longitude_e6">26083613</integer>
+    <integer name="ind_bankingapp_function_location_numberofresults">10</integer>
+    <integer name="ind_bankingapp_function_location_maxlocationdifference">250</integer>
+    <integer name="ind_bankingapp_function_location_update_interval">20000</integer>
+    <integer name="ind_bankingapp_function_location_fastest_interval">10000</integer>
+    <integer name="ind_bankingapp_function_location_userlocationmaturity">180000</integer>
+    <integer name="ind_bankingapp_function_location_locationchangecheckinterval">300000</integer>
+    <integer name="function.fxrates.textview_maxlength">11</integer>
+</resources>

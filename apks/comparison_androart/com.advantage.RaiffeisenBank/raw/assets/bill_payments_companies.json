@@ -1,0 +1,5749 @@
+{
+    "utilityCompanies": [
+    {
+        "id": "12892302",
+        "account": "12892302",
+        "currency": "RON",
+        "cif": "4637776",
+        "name": "COSMOTE ROMANIAN MOBILE/RON12892302",
+        "barcodeSupported": "true",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Abonat"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Abonat"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "9424399",
+        "account": "9424399",
+        "currency": "RON",
+        "cif": "3734604",
+        "name": "ENEL ENERGIE SA-plata facturi/RON 9424399",
+        "barcodeSupported": "true",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Factura"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Eneltel"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "ID Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "true",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6",
+            "label": "Data Emitere Factura (zzllaa)"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "10681082",
+        "account": "10681082",
+        "currency": "RON",
+        "cif": "4210718",
+        "name": "ENEL MUNTENIA-plata facturi/RON 10681082",
+        "barcodeSupported": "true",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Factura"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Eneltel"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "ID Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "true",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6",
+            "label": "Data Emitere Factura (zzllaa)"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "10660361",
+        "account": "10660361",
+        "currency": "RON",
+        "cif": "841039",
+        "name": "GDF SUEZ ENERGY(Distrigaz)consum gaze/RON10660361",
+        "barcodeSupported": "true",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Client"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "true",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6",
+            "label": "Data Emitere Factura (zzllaa)"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "3074933",
+        "account": "3074933",
+        "currency": "RON",
+        "cif": "1029385",
+        "name": "ORANGE-convorbiri mobil/RON3074933",
+        "barcodeSupported": "true",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Abonat"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Abonat"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP/ Cod fiscal"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Telefon"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Referinta Interna"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "true",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6",
+            "label": "Data Emitere Factura (zzllaa)"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "14548181",
+        "account": "14548181",
+        "currency": "RON",
+        "cif": "815507",
+        "name": "ROMTELECOM/plata factura",
+        "barcodeSupported": "true",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Abonat"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Facturare"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Telefon"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "true",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6",
+            "label": "Data Scadenta Factura(zzllaa)"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "2002020",
+        "account": "2002020",
+        "currency": "RON",
+        "cif": "815334",
+        "name": "VODAFONE-convorbiri mobil/RON2002020",
+        "barcodeSupported": "true",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Abonat"
+            
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cont Client (Cod Abonat)"
+           
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "11176394",
+        "account": "11176394",
+        "currency": "EUR",
+        "cif": "4291659",
+        "name": "AEGON -asig esalonate si suplimentare /EUR11176394",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Polita"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Contract"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "11176361",
+        "account": "11176361",
+        "currency": "RON",
+        "cif": "4291659",
+        "name": "AEGON -asig esalonate si suplimentare /RON11176361",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Polita"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Contract"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "11560299",
+        "account": "11560299",
+        "currency": "RON",
+        "cif": "2499942",
+        "name": "AKTA-PLATI FACTURI/RON 11560299",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "COD CLIENT"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "NUMAR FACTURA"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "11932875",
+        "account": "11932875",
+        "currency": "RON",
+        "cif": "439375",
+        "name": "APAVITAL-consum apa/RON11932875",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Client"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "16350124",
+        "account": "16350124",
+        "currency": "RON",
+        "cif": "446057",
+        "name": "AQUABIS - plata facturi/CONT 16350124",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Client"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "15115549",
+        "account": "15115549",
+        "currency": "RON",
+        "cif": "5596626",
+        "name": "AQUATIM-plata factura/RON 15115549",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Platitor"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Incasare"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "14771690",
+        "account": "14771690",
+        "currency": "RON",
+        "cif": "226671",
+        "name": "ASIROM-Incasari Clienti PF-PJ/CONT RON 14771690",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP Cient(PF)/CUI(PJ)"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Agent"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Nr.Polita(PF)/Nr.decont(PJ)"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Alte Detalii de Plata"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "14586912",
+        "account": "14586912",
+        "currency": "RON",
+        "cif": "2236952",
+        "name": "AX Perpetuum - plata facturi/RON14586912",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Platitor"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CUI/CIF/CNP"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "15905376",
+        "account": "15905376",
+        "currency": "RON",
+        "cif": "443196",
+        "name": "CARPATICA ASIGURARI-POLITE ASIGURARE/RON15905376",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Borderou"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "16241558",
+        "account": "16241558",
+        "currency": "RON",
+        "cif": "5894885",
+        "name": "CASA DE PENSII A NOTARILOR-CONTRIB,DOBANZI,PENALIT",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Platitor"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Personal Asigurat-CPas"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Nume Asigurat"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Tip Plata(contrib,dob,penalit)"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "true",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6",
+            "label": "Data Platii(Data Scadenta)"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "16350758",
+        "account": "16350758",
+        "currency": "RON",
+        "cif": "2885954",
+        "name": "COLEGIUL PSIHOLOGILOR - PLATA COTIZATII",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Cod Taxa/Nr Identificare"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "3082053",
+        "account": "3082053",
+        "currency": "RON",
+        "cif": "1097398",
+        "name": "CONGAZ - plata factura",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Platitor"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Client"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "14511388",
+        "account": "14511388",
+        "currency": "RON",
+        "cif": "5376812",
+        "name": "DIGINET Botosani-plata factura/RON14511388",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume platitor"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod client"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "3756182",
+        "account": "3756182",
+        "currency": "RON",
+        "cif": "1066192",
+        "name": "EUREKO-asigurare non-viata/RON3756182",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Platitor"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Numar Contract"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Numar Chitanta/Nr Cerere Asig"
+          }
+        ]
+      },
+      {
+        "id": "6619106",
+        "account": "6619106",
+        "currency": "RON",
+        "cif": "2644365",
+        "name": "EUREKO-asigurare sanatate/RON6619106",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Platitor"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Numar Contract"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Numar Chitanta"
+          }
+        ]
+      },
+      {
+        "id": "5212105",
+        "account": "5212105",
+        "currency": "EUR",
+        "cif": "2072564",
+        "name": "EUREKO-asigurare unit-linked/EUR5212105",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Asigurat"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "PRES sau EXTR"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Numar Contract"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Numar Chitanta/Nr Cerere Asig"
+          }
+        ]
+      },
+      {
+        "id": "7598214",
+        "account": "7598214",
+        "currency": "RON",
+        "cif": "2072564",
+        "name": "EUREKO-asigurare unit-linked/RON7598214",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Asigurat"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "PRES sau EXTR"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Numar Contract"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Numar Chitanta/Nr Cerere Asig"
+          }
+        ]
+      },
+      {
+        "id": "3756092",
+        "account": "3756092",
+        "currency": "RON",
+        "cif": "1066192",
+        "name": "EUREKO-asigurare viata/RON3756092",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Platitor"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Numar Contract"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Numar Chitanta/Nr Cerere Asig"
+          }
+        ]
+      },
+      {
+        "id": "16160748",
+        "account": "16160748",
+        "currency": "EUR",
+        "cif": "4815852",
+        "name": "FUNDATIA REGIMA MARIA-donatii/EUR 16160748",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Platitor"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Telefon"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Adresa E-mail"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "16160707",
+        "account": "16160707",
+        "currency": "RON",
+        "cif": "4815852",
+        "name": "FUNDATIA REGIMA MARIA-donatii/RON 16160707",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Platitor"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Telefon"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Adresa E-mail"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "10424826",
+        "account": "10424826",
+        "currency": "RON",
+        "cif": "4096767",
+        "name": "GDR-plata factura",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Client"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "2931447",
+        "account": "2931447",
+        "currency": "EUR",
+        "cif": "584871",
+        "name": "GENERALI asigurare non-viata/EUR2931447",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Contractant"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP/Cod Fiscal Broker"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Serie/Nr Cupon/Nr Borderou"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Numar Polita Asigurare"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "2931439",
+        "account": "2931439",
+        "currency": "RON",
+        "cif": "584871",
+        "name": "GENERALI asigurare non-viata/RON2931439",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Contractant"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP/Cod Fiscal Broker"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Serie/Nr Cupon/Nr Borderou"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Numar Polita Asigurare"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "2937916",
+        "account": "2937916",
+        "currency": "EUR",
+        "cif": "584871",
+        "name": "GENERALI asigurare viata unit-linked/EUR2937916",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Contractant"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP/Cod Fiscal Broker"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Serie/Nr Cupon/Nr Borderou"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Numar Polita Asigurare"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "2937912",
+        "account": "2937912",
+        "currency": "RON",
+        "cif": "584871",
+        "name": "GENERALI asigurare viata unit-linked/RON2937912",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Contractant"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP/Cod Fiscal Broker"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Serie/Nr Cupon/Nr Borderou"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Numar Polita Asigurare"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "11508058",
+        "account": "11508058",
+        "currency": "RON",
+        "cif": "2049956",
+        "name": "GRAWE-asig generale(non-viata)/RON11508058",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Polita"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Polita/ Cerere"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "6562289",
+        "account": "6562289",
+        "currency": "EUR",
+        "cif": "2049956",
+        "name": "GRAWE-asigurare/EUR6562289",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Polita"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Polita/ Cerere"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "6562249",
+        "account": "6562249",
+        "currency": "RON",
+        "cif": "2049956",
+        "name": "GRAWE-asigurare/RON6562249",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Polita"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Polita/ Cerere"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "14391954",
+        "account": "14391954",
+        "currency": "RON",
+        "cif": "832886",
+        "name": "G4S Secure Solutions-plata facturi/RON14391954",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Client"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "16031752",
+        "account": "16031752",
+        "currency": "RON",
+        "cif": "1786378",
+        "name": "HOSPICE-donatii/RON 16031752",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Platitor"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Telefon"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "E-mail"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "14874196",
+        "account": "14874196",
+        "currency": "RON",
+        "cif": "2517733",
+        "name": "ING ASIGURARI DE VIATA-PLATA POLITE/RON 14874196",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Platitor"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Foaie Depunere"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "13276869",
+        "account": "13276869",
+        "currency": "RON",
+        "cif": "513940",
+        "name": "INTERCAPITAL INVEST-alimentare cont/RON13276869",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP Client"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "2283212",
+        "account": "2283212",
+        "currency": "EUR",
+        "cif": "766178",
+        "name": "METROPOLITAN LIFE -asigurare/EUR2283212",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Deponent"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP/ Cod Fiscal"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Polita/Cerere Asig/Cod Client"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Polita"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "2280873",
+        "account": "2280873",
+        "currency": "RON",
+        "cif": "766178",
+        "name": "METROPOLITAN LIFE -asigurare/RON2280873",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Deponent"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP/ Cod Fiscal"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Polita/Cerere Asig/Cod Client"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Polita"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "3182982",
+        "account": "3182982",
+        "currency": "RON",
+        "cif": "766178",
+        "name": "METROPOLITAN LIFE -asigurare/RON3182982",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Deponent"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP/ Cod Fiscal"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Polita/Cerere Asig/Cod Client"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Polita"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "2283185",
+        "account": "2283185",
+        "currency": "USD",
+        "cif": "766178",
+        "name": "METROPOLITAN LIFE -asigurare/USD2283185",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Deponent"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP/ Cod Fiscal"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Polita/Cerere Asig/Cod Client"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Polita"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "2544959",
+        "account": "2544959",
+        "currency": "RON",
+        "cif": "647672",
+        "name": "NORD GAZ - plata factura",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Abonat"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "15623442",
+        "account": "15623442",
+        "currency": "RON",
+        "cif": "1850772",
+        "name": "OMNIASIG - POLITE(PF)/15623442 CONT RON",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Serie Polita"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Polita"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "3075046",
+        "account": "3075046",
+        "currency": "RON",
+        "cif": "2373377",
+        "name": "ORANGE-garantii/RON3075046",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Abonat"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Telefon"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP/Cod Fiscal"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "15362930",
+        "account": "15362930",
+        "currency": "RON",
+        "cif": "4279691",
+        "name": "PORSCHE ASIGURARI-POLITE ASIGURARE/RON 15362930",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP Titular"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Polita"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "9666417",
+        "account": "9666417",
+        "currency": "RON",
+        "cif": "3737928",
+        "name": "PORSCHE AUTO-facturi Bucuresti Aviatiei/RON9666417",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Comanda / Numar Contract"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "9666409",
+        "account": "9666409",
+        "currency": "RON",
+        "cif": "3737928",
+        "name": "PORSCHE AUTO-facturi Bucuresti Nord/RON9666409",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Comanda / Numar Contract"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "9666434",
+        "account": "9666434",
+        "currency": "RON",
+        "cif": "3737928",
+        "name": "PORSCHE AUTO-facturi Bucuresti Vest1/RON9666434",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Comanda / Numar Contract"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "9666436",
+        "account": "9666436",
+        "currency": "RON",
+        "cif": "3737928",
+        "name": "PORSCHE AUTO-facturi Bucuresti Vest2/RON9666436",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Comanda / Numar Contract"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "15537311",
+        "account": "15537311",
+        "currency": "RON",
+        "cif": "3737928",
+        "name": "PORSCHE AUTO-facturi Pipera/15537311",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Comanda / Numar Contract"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "9666437",
+        "account": "9666437",
+        "currency": "RON",
+        "cif": "3737928",
+        "name": "PORSCHE AUTO-facturi Timisoara/RON9666437",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Comanda / Numar Contract"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "10113520",
+        "account": "10113520",
+        "currency": "RON",
+        "cif": "993454",
+        "name": "PORSCHE BROKER/facturi/RON10113520",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume cumparator"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod client"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "10113530",
+        "account": "10113530",
+        "currency": "RON",
+        "cif": "815108",
+        "name": "PORSCHE LEASING/facturi/RON10113530",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume cumparator"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod client"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "8237735",
+        "account": "8237735",
+        "currency": "RON",
+        "cif": "3816762",
+        "name": "PREMIER ENERGY - plata factura",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Client"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Nr client/Cod Client"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "2951701",
+        "account": "2951701",
+        "currency": "RON",
+        "cif": "815251",
+        "name": "RAIFFEISEN LEASING-rata leasing BERD/RON2951701",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Contractant"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Client"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Contract"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "2407246",
+        "account": "2407246",
+        "currency": "RON",
+        "cif": "815251",
+        "name": "RAIFFEISEN LEASING-rata leasing/RON2407246",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Contractant"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Client"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Contract"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "11402686",
+        "account": "11402686",
+        "currency": "RON",
+        "cif": "4381304",
+        "name": "RAIFFEISEN-alimentare card preplatit/RON11402686",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Card"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP Titular Card"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Ultimele 4 Cifre Ale Cardului"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "13633884",
+        "account": "13633884",
+        "currency": "RON",
+        "cif": "5061204",
+        "name": "Salubris Iasi/RON 13633884",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Factura"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Contract"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "true",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6",
+            "label": "Data Emitere Factura (zzllaa)"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "3767609",
+        "account": "3767609",
+        "currency": "RON",
+        "cif": "1351508",
+        "name": "SANOMA-abonament National Geographic/RON3767609",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Platitor"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Telefon"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Adresa E-Mail"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "15233961",
+        "account": "15233961",
+        "currency": "RON",
+        "cif": "4830497",
+        "name": "SERVICII EDILITARE MIOVENI-PLATA FACTURI/15233961",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Platitor"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP/Cod Fiscal"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "12731210",
+        "account": "12731210",
+        "currency": "EUR",
+        "cif": "230158",
+        "name": "UNIQA ASIGURARI DE VIATA/EUR12731210",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titutlar Polita"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Polita"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "12731196",
+        "account": "12731196",
+        "currency": "RON",
+        "cif": "230158",
+        "name": "UNIQA ASIGURARI DE VIATA/RON12731196",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titutlar Polita"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Polita"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "11637433",
+        "account": "11637433",
+        "currency": "EUR",
+        "cif": "393722",
+        "name": "UNIQA ASIGURARI/EUR11637433",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Polita"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Polita"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Sucursala Uniqa"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Serie Polita"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "11637426",
+        "account": "11637426",
+        "currency": "RON",
+        "cif": "393722",
+        "name": "UNIQA ASIGURARI/RON11637426",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Polita"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Polita"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Sucursala Uniqa"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Serie Polita"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "11686096",
+        "account": "11686096",
+        "currency": "USD",
+        "cif": "393722",
+        "name": "UNIQA ASIGURARI/USD11686096",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Polita"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Numar Polita"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Sucursala Uniqa"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Serie Polita"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "15948415",
+        "account": "15948415",
+        "currency": "USD",
+        "cif": "4174283",
+        "name": "VERIDA CREDIT IFN-PLATA RATE CREDIT/USD 15948415",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Contract"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "CNP Titular Contract"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Nume Platitor"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Contract"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      },
+      {
+        "id": "7881090",
+        "account": "7881090",
+        "currency": "RON",
+        "cif": "2202796",
+        "name": "WIROM GAS consum gaze/RON7881090",
+        "barcodeSupported": "false",
+        "billerFields": [
+          {
+            "id": "IDENFLD1",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40",
+            "label": "Nume Titular Factura"
+          },
+          {
+            "id": "IDENFLD2",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30",
+            "label": "Cod Client"
+          },
+          {
+            "id": "IDENFLD3",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD4",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "30"
+          },
+          {
+            "id": "IDENFLD5",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "8"
+          },
+          {
+            "id": "IDENFLD6",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD7",
+            "displayable": "true",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "80",
+            "label": "Numar Factura"
+          },
+          {
+            "id": "IDENFLD8",
+            "displayable": "false",
+            "onlyDigits": "true",
+            "locked": "false",
+            "maxLength": "6"
+          },
+          {
+            "id": "IDENFLD9",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          },
+          {
+            "id": "IDENFLD10",
+            "displayable": "false",
+            "onlyDigits": "false",
+            "locked": "false",
+            "maxLength": "40"
+          }
+        ]
+      }
+    ]
+}

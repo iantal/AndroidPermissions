@@ -1,0 +1,19 @@
+package com.google.android.gms.internal;
+
+import android.database.CharArrayBuffer;
+
+public final class ao
+{
+  public static void b(String paramString, CharArrayBuffer paramCharArrayBuffer)
+  {
+    if ((paramCharArrayBuffer.data == null) || (paramCharArrayBuffer.data.length < paramString.length())) {
+      paramCharArrayBuffer.data = paramString.toCharArray();
+    }
+    for (;;)
+    {
+      paramCharArrayBuffer.sizeCopied = paramString.length();
+      return;
+      paramString.getChars(0, paramString.length(), paramCharArrayBuffer.data, 0);
+    }
+  }
+}

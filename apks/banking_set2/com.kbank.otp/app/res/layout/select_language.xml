@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_panel" android:background="@color/top_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/top_panel_height">
+        <ImageButton android:id="@id/menu" style="@style/MenuStyle" />
+        <TextView android:text="@string/title_language" style="@style/CaptionStyle" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/english" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lang_en" android:layout_below="@id/top_panel" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/romana" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lang_ro" android:layout_below="@id/english" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/hungarian" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lang_hu" android:layout_below="@id/romana" />
+</RelativeLayout>

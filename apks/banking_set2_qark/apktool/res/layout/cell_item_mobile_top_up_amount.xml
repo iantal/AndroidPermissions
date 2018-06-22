@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip">
+        <ImageView android:id="@id/tickImageView" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/tick" />
+        <TextView android:id="@id/mobileTopUpAmountTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" style="@style/DSQTextAppearance.value2" />
+    </LinearLayout>
+    <include android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_marginLeft="28.0dip" layout="@layout/include_separator" />
+</LinearLayout>

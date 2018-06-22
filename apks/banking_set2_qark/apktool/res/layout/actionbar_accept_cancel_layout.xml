@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/accept_close_layout" android:layout_width="fill_parent" android:layout_height="48.0dip" android:minWidth="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="?dsq_separator_color" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/actionbar_close" android:background="?dsq_contract_button_drawable" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <android.support.v7.widget.AppCompatTextView android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/close_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_actionbar" android:drawablePadding="8.0dip" app:textAllCaps="true" style="@style/DSQTextAppearance.listLeft" />
+        </FrameLayout>
+        <View android:background="?dsq_separator_color" android:layout_width="@dimen/dimen_1dp_low_res_support" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" />
+        <FrameLayout android:id="@id/actionbar_accept" android:background="?dsq_contract_button_drawable" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <android.support.v7.widget.AppCompatTextView android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/accept_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/accept" android:drawablePadding="8.0dip" app:textAllCaps="true" style="@style/DSQTextAppearance.listLeft" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

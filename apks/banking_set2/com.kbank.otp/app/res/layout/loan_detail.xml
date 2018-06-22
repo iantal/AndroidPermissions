@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/top_panel" android:background="@color/top_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/top_panel_height">
+            <ImageButton android:id="@id/menu" style="@style/MenuStyle" />
+            <TextView android:text="@string/title_atm_details" style="@style/CaptionStyle" />
+        </RelativeLayout>
+        <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="@android:color/black" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" />
+        <LinearLayout android:layout_marginTop="10.0dip" style="@style/LoanDetailLayoutStyle">
+            <TextView android:text="@string/loan_maturity" style="@style/LoanDetailKeyStyle" />
+            <TextView android:id="@id/maturity_value" style="@style/LoanDetailValueStyle" />
+        </LinearLayout>
+        <LinearLayout style="@style/LoanDetailLayoutStyle">
+            <TextView android:text="@string/loan_granted_amount" style="@style/LoanDetailKeyStyle" />
+            <TextView android:id="@id/granted_amount_value" style="@style/LoanDetailValueStyle" />
+        </LinearLayout>
+        <LinearLayout style="@style/LoanDetailLayoutStyle">
+            <TextView android:text="@string/loan_next_payment_amount" style="@style/LoanDetailKeyStyle" />
+            <TextView android:id="@id/next_payment_amount_value" style="@style/LoanDetailValueStyle" />
+        </LinearLayout>
+        <LinearLayout style="@style/LoanDetailLayoutStyle">
+            <TextView android:text="@string/loan_next_payment_date" style="@style/LoanDetailKeyStyle" />
+            <TextView android:id="@id/next_payment_date_value" style="@style/LoanDetailValueStyle" />
+        </LinearLayout>
+        <LinearLayout style="@style/LoanDetailLayoutStyle">
+            <TextView android:text="@string/loan_interest" style="@style/LoanDetailKeyStyle" />
+            <TextView android:id="@id/interest_value" style="@style/LoanDetailValueStyle" />
+        </LinearLayout>
+        <LinearLayout style="@style/LoanDetailLayoutStyle">
+            <TextView android:text="@string/loan_interest_date" style="@style/LoanDetailKeyStyle" />
+            <TextView android:id="@id/interest_date_value" style="@style/LoanDetailValueStyle" />
+        </LinearLayout>
+        <LinearLayout style="@style/LoanDetailLayoutStyle">
+            <TextView android:text="@string/loan_detail_sum" style="@style/LoanDetailKeyStyle" />
+            <TextView android:id="@id/amountValue" style="@style/LoanDetailValueStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

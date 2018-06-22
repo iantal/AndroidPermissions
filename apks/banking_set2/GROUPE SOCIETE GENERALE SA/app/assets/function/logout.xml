@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../xsd/nativefunctiondescriptor.xsd">
+
+	<name>logout</name>
+	<title>native_bankingapp_function_logout_title</title>
+	<views>
+		<view>
+			<url>view://bankingapp/function/logout/logout</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/3mgWcvfmp5LiLVcS.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+			<tabletApp>
+				<fullScreen>always</fullScreen>
+			</tabletApp>
+		</view>
+	</views>
+</function>

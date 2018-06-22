@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_codes">
+        <item>-</item>
+        <item>AR</item>
+        <item>AU</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>CA</item>
+        <item>CN</item>
+        <item>CZ</item>
+        <item>DE</item>
+        <item>DK</item>
+        <item>ES</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GB</item>
+        <item>GR</item>
+        <item>HU</item>
+        <item>ID</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>KR</item>
+        <item>NL</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>RU</item>
+        <item>SE</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>TR</item>
+        <item>TW</item>
+        <item>US</item>
+    </string-array>
+    <string-array name="settings_languages">
+        <item>@string/native_settings_languages_en</item>
+        <item>@string/native_settings_languages_ro</item>
+    </string-array>
+    <string-array name="settings_languageValues">
+        <item>en</item>
+        <item>ro</item>
+    </string-array>
+    <string-array name="rtl_languages">
+        <item>ar</item>
+    </string-array>
+    <string-array name="device_type_names">
+        <item>@string/native_settings_layout_phone</item>
+        <item>@string/native_settings_layout_tablet</item>
+    </string-array>
+    <string-array name="device_type_values">
+        <item>phone</item>
+        <item>tablet</item>
+    </string-array>
+    <string-array name="numpad_numbers">
+        <item>@string/native_framework_numpad_button1_number</item>
+        <item>@string/native_framework_numpad_button2_number</item>
+        <item>@string/native_framework_numpad_button3_number</item>
+        <item>@string/native_framework_numpad_button4_number</item>
+        <item>@string/native_framework_numpad_button5_number</item>
+        <item>@string/native_framework_numpad_button6_number</item>
+        <item>@string/native_framework_numpad_button7_number</item>
+        <item>@string/native_framework_numpad_button8_number</item>
+        <item>@string/native_framework_numpad_button9_number</item>
+        <item>@string/native_framework_numpad_button0_number</item>
+    </string-array>
+    <string-array name="numpad_letters">
+        <item>@string/native_framework_numpad_button1_letters</item>
+        <item>@string/native_framework_numpad_button2_letters</item>
+        <item>@string/native_framework_numpad_button3_letters</item>
+        <item>@string/native_framework_numpad_button4_letters</item>
+        <item>@string/native_framework_numpad_button5_letters</item>
+        <item>@string/native_framework_numpad_button6_letters</item>
+        <item>@string/native_framework_numpad_button7_letters</item>
+        <item>@string/native_framework_numpad_button8_letters</item>
+        <item>@string/native_framework_numpad_button9_letters</item>
+        <item>@string/native_framework_numpad_button0_letters</item>
+    </string-array>
+    <string-array name="theme_names">
+        <item>@string/native_settings_skin_name_default</item>
+        <item>@string/native_settings_skin_name_vip</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>default</item>
+        <item>vip</item>
+    </string-array>
+    <string-array name="languages">
+        <item>English</item>
+    </string-array>
+    <string-array name="languageValues">
+        <item>en</item>
+    </string-array>
+    <string-array name="pinStyle">
+        <item>@string/pinStyleNumeric</item>
+        <item>@string/pinStyleAlphaNumeric</item>
+        <item>@string/pinStyleIDontKnow</item>
+    </string-array>
+    <string-array name="pinStyleValues">
+        <item>numeric</item>
+        <item>alphanumeric</item>
+        <item>i_dont_know</item>
+    </string-array>
+    <string-array name="securityMessages">
+        <item>@string/secMsg1</item>
+        <item>@string/secMsg2</item>
+        <item>@string/secMsg3</item>
+    </string-array>
+    <string-array name="native_settings_feed_category_name">
+        <item>@string/native_settings_feed_category_cardTransactions</item>
+        <item>@string/native_settings_feed_category_accountTransactions</item>
+        <item>@string/native_settings_feed_category_incomingEBills</item>
+        <item>@string/native_settings_feed_category_specialOffers</item>
+        <item>@string/native_settings_feed_category_budgetNotifications</item>
+    </string-array>
+    <string-array name="native_settings_feed_category_id">
+        <item>ind.feed.cardTransactions</item>
+        <item>ind.feed.accountTransactions</item>
+        <item>ind.feed.incomingEBills</item>
+        <item>ind.feed.specialOffers</item>
+        <item>ind.feed.budgetNotifications</item>
+    </string-array>
+    <string-array name="googlemaps_overlaytypelist">
+        <item>{typeId:ATM,mapIcon:atm,name:native_locations_overlaytype_atm,filterable:true}</item>
+        <item>{typeId:BRANCH,mapIcon:branch,name:native_locations_overlaytype_branch,filterable:true}</item>
+    </string-array>
+</resources>

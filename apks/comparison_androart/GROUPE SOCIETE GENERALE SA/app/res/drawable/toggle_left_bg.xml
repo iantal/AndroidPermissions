@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:topLeftRadius="@dimen/radius_outer" android:topRightRadius="1.0dip" android:bottomLeftRadius="@dimen/left_rounded_bottom_left_radius" android:bottomRightRadius="@dimen/left_rounded_bottom_right_radius" />
+                    <solid android:color="@color/stroke_color" />
+                </shape>
+            </item>
+            <item android:left="@dimen/stroke_width" android:top="@dimen/stroke_width" android:right="@dimen/stroke_width" android:bottom="@dimen/stroke_width">
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="@dimen/radius_inner" android:topRightRadius="1.0dip" android:bottomLeftRadius="@dimen/left_rounded_bottom_left_radius" android:bottomRightRadius="@dimen/left_rounded_bottom_right_radius" />
+                    <gradient android:startColor="#ffc8d2c6" android:endColor="#ffd8dfd6" android:angle="270.0" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:topLeftRadius="@dimen/radius_outer" android:topRightRadius="1.0dip" android:bottomLeftRadius="@dimen/left_rounded_bottom_left_radius" android:bottomRightRadius="@dimen/left_rounded_bottom_right_radius" />
+                    <solid android:color="@color/stroke_color" />
+                </shape>
+            </item>
+            <item android:left="@dimen/stroke_width" android:top="@dimen/stroke_width" android:right="@dimen/stroke_width" android:bottom="@dimen/stroke_width">
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="@dimen/radius_inner" android:topRightRadius="1.0dip" android:bottomLeftRadius="@dimen/left_rounded_bottom_left_radius" android:bottomRightRadius="@dimen/left_rounded_bottom_right_radius" />
+                    <gradient android:startColor="@color/pressed_top" android:endColor="@color/pressed_bottom" android:angle="270.0" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:topLeftRadius="@dimen/radius_outer" android:topRightRadius="1.0dip" android:bottomLeftRadius="@dimen/left_rounded_bottom_left_radius" android:bottomRightRadius="@dimen/left_rounded_bottom_right_radius" />
+                    <solid android:color="@color/stroke_color" />
+                </shape>
+            </item>
+            <item android:left="@dimen/stroke_width" android:top="@dimen/stroke_width" android:right="@dimen/stroke_width" android:bottom="@dimen/stroke_width">
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="@dimen/radius_inner" android:topRightRadius="1.0dip" android:bottomLeftRadius="@dimen/left_rounded_bottom_left_radius" android:bottomRightRadius="@dimen/left_rounded_bottom_right_radius" />
+                    <gradient android:startColor="@color/bg_white" android:endColor="@color/bg_lightblue" android:angle="270.0" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

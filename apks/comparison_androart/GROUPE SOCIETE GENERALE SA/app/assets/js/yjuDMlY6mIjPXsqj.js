@@ -1,0 +1,1 @@
+Class.ns("Bankingapp.functions.bankfeed");Bankingapp.functions.bankfeed.BankFeedBase=Class.extend(Bankingapp.framework.View,{getBankFeedCacheItemId:function(){var b=isLoggedIn().valueOf();var a=getSessionAttribute("CURRENT_CUSTOMER").id;var c=getSessionAttribute("CURRENT_TRUSTEE").id;return b?"PRIVATE_BANK_FEED_LIST_"+a+"_"+c:"PUBLIC_BANK_FEED_LIST";}});

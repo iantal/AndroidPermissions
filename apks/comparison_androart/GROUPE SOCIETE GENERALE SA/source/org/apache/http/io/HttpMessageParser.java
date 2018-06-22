@@ -1,0 +1,12 @@
+package org.apache.http.io;
+
+import java.io.IOException;
+import org.apache.http.HttpException;
+import org.apache.http.HttpMessage;
+
+@Deprecated
+public abstract interface HttpMessageParser
+{
+  public abstract HttpMessage parse()
+    throws IOException, HttpException;
+}

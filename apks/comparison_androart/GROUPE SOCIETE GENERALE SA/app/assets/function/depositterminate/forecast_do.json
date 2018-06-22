@@ -1,0 +1,32 @@
+{
+  "success": true,
+  "data": {
+    "@xsi:type": "pegasus.project.brd.function.payment.bean.PaymentTransferResponse",
+    "transactionId": 0,
+    "version": 0,
+    "status": "DRAFT",
+    "forecastReply": {
+      "cUI_CNP": "1234567890123",
+      "iBankId": "1234567",
+      "freeTextSearchIndexField": "null RON",
+      "customerName": "Daniela"
+    },
+    "authorizationData": {
+      "@xsi:type": "pegasus.project.brd.component.transactionframework.glue.transaction.bean.AuthorizationData",
+      "customerId": "160",
+      "trusteeId": "160",
+      "channelId": "MBL",
+      "functionTypeId": 15,
+      "protectedObjectId": "RO44BRDE450TD12345678900",
+      "currency": "RON",
+      "functionId": "depositterminate",
+      "credentialFunction": [
+        "DepositTerminate"
+      ]
+    }
+  },
+  "header": {
+    "token": "d+4ipCguKNHfTda/ZH2ghg==",
+    "sessionTimeout": 600
+  }
+}

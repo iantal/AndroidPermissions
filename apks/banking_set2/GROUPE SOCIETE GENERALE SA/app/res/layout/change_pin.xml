@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:padding="@dimen/pagePadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1" android:shrinkColumns="1">
+        <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        <LinearLayout>
+            <TextView android:id="@id/pageDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rowPaddingBig" android:layout_weight="95.0" style="@style/pageDescription" />
+            <ImageView android:layout_gravity="center" android:id="@id/infoButton" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/info_icon" android:layout_weight="5.0" />
+        </LinearLayout>
+        <TableRow android:layout_marginBottom="@dimen/rowPadding">
+            <TextView android:text="@string/currentPinLabel" style="@style/detailLabel" />
+            <EditText android:id="@id/oldPin" android:hint="@string/currentPinHint" style="@style/editBox" />
+        </TableRow>
+        <TableRow android:layout_marginBottom="@dimen/rowPadding">
+            <TextView android:text="@string/newPinLabel" style="@style/detailLabel" />
+            <EditText android:id="@id/newPin" android:hint="@string/newPinHint" style="@style/editBox" />
+        </TableRow>
+        <TableRow android:layout_marginBottom="@dimen/rowPaddingBig">
+            <TextView android:text="@string/newPinAgainLabel" style="@style/detailLabel" />
+            <EditText android:id="@id/newPinConfirm" android:hint="@string/newPinAgainHint" style="@style/editBox" />
+        </TableRow>
+        <Button android:id="@id/changePinButton" android:text="@string/native_changePinButtonText" style="@style/actionButton" />
+    </TableLayout>
+</ScrollView>

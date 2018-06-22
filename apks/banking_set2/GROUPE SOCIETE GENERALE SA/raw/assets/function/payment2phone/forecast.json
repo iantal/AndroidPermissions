@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "data": {
+    "@xsi:type": "pegasus.project.brd.function.payment.bean.PaymentTransferResponse",
+    "transactionId": 0,
+    "version": 0,
+    "status": "DRAFT",
+    "forecastReply": {
+      "fXAmountData": {
+        "fromAmount": 150,
+        "fromCurrency": "RON",
+        "toAmount": 150,
+        "toCurrency": "RON",
+        "fXRate": 1,
+        "backendFXRate": 1
+      },
+      "cUI_CNP": "2690411301979",
+      "iBankId": "9444500",
+      "freeTextSearchIndexField": "Testing Tester +40724377623 ABCD 150 RON",
+      "payment2PhoneData": {
+        "expiryDate": "2017-07-09T12:17:10.892"
+      },
+      "customerName": "Daniela"
+    },
+    "authorizationData": {
+      "@xsi:type": "pegasus.project.brd.component.transactionframework.glue.transaction.bean.AuthorizationData",
+      "customerId": "160",
+      "trusteeId": "160",
+      "channelId": "MBL",
+      "functionTypeId": 1001,
+      "protectedObjectId": "RO94BRDE450SV22222222222",
+      "amount": 150,
+      "currency": "RON",
+      "functionId": "payment2phonetransfer",
+      "credentialFunction": [
+        "Payment2Phone"
+      ]
+    }
+  },
+  "header": {
+    "token": "niL3d0i3T06uaojvxgyEWg==",
+    "sessionTimeout": 600
+  }
+}

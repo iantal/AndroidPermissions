@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="320.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/wrapperScrollView" android:background="@drawable/rounded_corners_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView android:paddingLeft="0.0dip" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginTop="15.0dip" android:text="@string/filters" app:textAllCaps="true" style="@style/DSQTextAppearance.Header.material" />
+            <RelativeLayout android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <ImageButton android:id="@id/tooltipImageButton" android:background="@color/transparent" android:paddingLeft="10.0dip" android:focusable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/payment_type" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip" android:layout_toLeftOf="@id/tooltipImageButton">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+                        <Spinner android:layout_gravity="center_vertical" android:id="@id/transaction_type_spinner" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_weight="6.0" android:dropDownHorizontalOffset="-1.0dip" style="@style/rzb_Spinner.DropDown" />
+                        <ImageView android:id="@id/spinner_arrow" android:paddingLeft="-5.0dip" android:paddingTop="15.0dip" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-15.0dip" android:layout_marginRight="0.0dip" android:src="@drawable/triangle" style="?attr/dsq_spinner_button_style" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/accountStatementLinearLayout" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/msg_account_statement_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:minHeight="22.0dip" android:text="" style="@style/DSQTextAppearance.details2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/from_date_linearlayout" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip">
+                <TextView android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/from_date_full" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0" android:animateLayoutChanges="false">
+                    <android.support.v7.widget.AppCompatButton android:id="@id/from_date_button" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" style="?attr/dsq_edittext_button_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/to_date_linearlayout" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip">
+                <TextView android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/to_date" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0" android:animateLayoutChanges="false">
+                    <android.support.v7.widget.AppCompatButton android:id="@id/to_date_button" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" style="?attr/dsq_edittext_button_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/actionbar_done_cancel_layout" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

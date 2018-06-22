@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toolbar>
+	<toolbarItem>
+		<name>bankfeed</name>
+		<title>native_toolbar_home</title>
+		<drawable>home</drawable>
+		<url>view://brd/bankingapp/function/homescreen/homescreen</url>
+		<authority>homescreen/view</authority>
+	</toolbarItem>
+	<toolbarItem>
+		<name>myfinances</name>
+		<title>native_toolbar_myfinances</title>
+		<drawable>myfin</drawable>
+		<url>view://brd/bankingapp/function/finances/finances</url>
+		<authority>myfinances/view</authority>
+	</toolbarItem>
+	<toolbarItem>
+		<name>payments</name>
+		<title>native_toolbar_payments</title>
+		<drawable>payments</drawable>
+		<url>view://brd/bankingapp/function/payments/payments</url>
+		<authority>payments/view</authority>
+	</toolbarItem>
+	<!--toolbarItem>
+		<name>locations</name>
+		<title>native_toolbar_locations</title>
+		<drawable>locations</drawable>
+		<url>view://bankingapp/function/locations/mapview</url>
+	</toolbarItem-->
+	<toolbarItem>
+		<name>support</name>
+		<title>native_toolbar_support</title>
+		<drawable>support</drawable>
+		<url>view://bankingapp/function/support/support</url>
+		<authority>homescreen/view</authority>
+	</toolbarItem>
+	<!-- MOBILETOKEN AUTH -->
+	<toolbarItem>	
+		<name>token</name>
+		<title>native_toolbar_token</title>
+		<drawable>token</drawable>
+		<url>view://bankingapp/function/login/tokenwelcomescreen</url>
+		<hideWhenLoggedIn>true</hideWhenLoggedIn>
+	</toolbarItem>
+	<!-- PASSWORD AUTH -->
+<!-- 	<toolbarItem> -->
+<!-- 		<name>login</name> -->
+<!-- 		<title>native_toolbar_login</title> -->
+<!-- 		<drawable>login</drawable> -->
+<!-- 		<url>view://bankingapp/function/login/login</url>	 -->
+<!-- 		<hideWhenLoggedIn>true</hideWhenLoggedIn> -->
+<!-- 	</toolbarItem> -->
+	
+	
+</toolbar>

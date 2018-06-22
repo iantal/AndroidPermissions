@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../xsd/nativefunctiondescriptor.xsd">
+	<name>contacts</name>
+	<views>
+		<view>
+			<title>native_bankingapp_brd_function_contactinfo_title</title>
+			<url>view://brd/bankingapp/function/contacts/contacts</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/T9pmPt0COhXUfpOS.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+		</view>
+	</views>
+</function>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../xsd/nativefunctiondescriptor.xsd">
+	<name>homescreen</name>
+	<authority>homescreen/view</authority>
+	<views>
+		<view>
+			<url>view://brd/bankingapp/function/homescreen/homescreen</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/0XfYUn36ZFGzELmL.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>true</showToolbar>
+			<tabletApp>
+				<pushToLeft>false</pushToLeft>
+			</tabletApp>
+		</view>
+	</views>
+</function>

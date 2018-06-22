@@ -1,0 +1,25 @@
+{
+  "findings": [
+    {
+      "title": "Access local ressources",
+      "stat": "high",
+      "description": "",
+      "recommendation": "",
+      "evidence": [
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/OffersActivity.smali",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/HelpUrlActivity.smali",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/ATGWebViewActivity.smali",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/PreLoginOffers.smali"
+      ]
+    },
+    {
+      "title": "WebView Injection",
+      "stat": "low",
+      "description": "",
+      "recommendation": "",
+      "evidence": [
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/BranchLocatorActivity.smali"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/loginactivityHeaderLayout" android:background="@drawable/onealphalightgrey" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:background="@drawable/abrlogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/seperator" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/loginactivityHeaderLayout" />
+    <RelativeLayout android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/seperator">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="@color/alpha_blue" android:gravity="center" android:id="@id/logoffText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="166.0dip" android:layout_marginRight="50.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <Button android:textColor="@color/alpha_blue" android:id="@id/toLoginButton" android:background="@drawable/abrbutton" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginTop="42.0dip" android:text="@string/login" android:layout_below="@id/logoffText" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

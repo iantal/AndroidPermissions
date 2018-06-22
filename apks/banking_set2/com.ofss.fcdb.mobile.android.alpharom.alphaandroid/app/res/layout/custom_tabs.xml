@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/customtab" android:background="@drawable/tab_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tabimg" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/login_tab_icons" />
+    <TextView android:textSize="10.0dip" android:textStyle="bold" android:textColor="@drawable/tab_text_color" android:gravity="center_horizontal" android:id="@id/tabtxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="ttttttttttttttttttttttttt" android:maxLines="1" android:lines="1" android:singleLine="false" />
+</LinearLayout>

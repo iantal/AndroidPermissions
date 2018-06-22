@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/rzb_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?dsq_main_separator_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="3.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:id="@id/imageLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip">
+                <ImageView android:gravity="center" android:id="@id/iconImageView" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+            </LinearLayout>
+            <TextView android:id="@id/messageTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="6.0dip" android:lineSpacingExtra="4.0dip" style="@style/DSQTextAppearance.details" />
+        </LinearLayout>
+        <com.jmedeisis.draglinearlayout.DragLinearLayout android:orientation="vertical" android:id="@id/selectedList" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <View android:id="@id/separator" android:background="?dsq_main_separator_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/noSelectedList" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

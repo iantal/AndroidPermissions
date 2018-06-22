@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/FilterLayoutListItems" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/alpha_blue" android:id="@id/filterlistitemlabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" />
+    <EditText android:textColor="@color/alpha_blue" android:id="@id/filterlistitemtextbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/filterlistitemlabel" />
+    <TextView android:id="@id/filterlistitemhiddenparams" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <TextView android:id="@id/filterlistitemsparams" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <TextView android:id="@id/filterlistitemsparamValue" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <TextView android:id="@id/filterlistitemdatatype" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</RelativeLayout>

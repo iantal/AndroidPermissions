@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../xsd/nativefunctiondescriptor.xsd">
+
+	<name>finances</name>
+	<views>
+		<view>
+			<url>view://brd/bankingapp/function/finances/finances</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/Tk6c4hbUONdNjMSL.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>true</showToolbar>
+			<tabletApp>
+				<moveToLeft>true</moveToLeft>
+			</tabletApp>
+		</view>
+	</views>
+</function>

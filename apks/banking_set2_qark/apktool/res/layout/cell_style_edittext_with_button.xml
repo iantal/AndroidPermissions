@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:minHeight="52.0dip">
+        <com.thinkdesquared.banking.helpers.ui.widgets.AutoResizeTextView android:id="@id/labelTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0">
+            <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/infoButton" android:background="@drawable/ic_action_about" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" />
+            <android.support.v7.widget.AppCompatEditText android:id="@id/valueEditText" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:singleLine="true" android:layout_toLeftOf="@id/infoButton" android:inputType="textCapSentences|textNoSuggestions" style="@style/DSQWidget.Holo.AlphanumericNoSpecialCharactersAllowedEditText.value" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/raiffeisen_black" android:gravity="center|right" android:id="@id/remainingCharsTextView" android:paddingTop="0.0dip" android:paddingRight="16.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/main_layout" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/DSQTextAppearance.Small" />
+</RelativeLayout>

@@ -1,0 +1,1 @@
+String.format=function(){var c=arguments[0];for(var a=0;a<arguments.length-1;a++){var b=new RegExp("\\{"+a+"\\}","gm");c=c.replace(b,arguments[a+1]);}return c;};

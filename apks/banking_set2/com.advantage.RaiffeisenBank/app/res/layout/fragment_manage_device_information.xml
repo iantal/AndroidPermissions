@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/rounded_bottom_corners_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="?dsq_second_text_color" android:id="@id/textView8" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/manage_device_information" style="@style/DSQTextAppearance.value2.withSpaceLine" />
+            <Space android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

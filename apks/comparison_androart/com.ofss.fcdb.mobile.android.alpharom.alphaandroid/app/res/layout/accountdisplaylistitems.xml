@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/AccountDisplayhiddenparams" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/AccountDisplayclickable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/AccountDisplaynextactivity" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/AccountDisplayFirstImage" android:paddingLeft="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/alpha_blue" android:id="@id/AccountDisplayFirstText" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="30.0dip" android:layout_toRightOf="@id/AccountDisplayFirstImage" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/lin1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:weightSum="1.0" android:layout_toRightOf="@id/AccountDisplayFirstImage" android:layout_below="@id/AccountDisplayFirstText" android:layout_centerVertical="true">
+        <TextView android:textSize="13.0sp" android:textColor="@color/alpha_blue" android:id="@id/AccountDisplayThirdText" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.35" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/alpha_blue" android:gravity="right" android:id="@id/AccountDisplaySecondText" android:background="@color/transparent" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.65" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/alpha_blue" android:id="@id/AccountDisplayFourthText" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="5.0dip" android:layout_toRightOf="@id/AccountDisplayFirstImage" android:layout_below="@id/lin1" />
+    <ImageView android:id="@id/AccountDisplayimageviewselector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/discloser" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/minheightpillar" android:layout_width="1.0dip" android:layout_height="50.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_alignParentLeft="true" />
+    <ImageView android:background="@drawable/onealphadarkgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+</RelativeLayout>

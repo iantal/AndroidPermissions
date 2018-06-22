@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/top_panel" android:background="@color/top_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/top_panel_height">
+                <ImageButton android:id="@id/menu" style="@style/MenuStyle" />
+                <TextView android:text="@string/title_atm_details" style="@style/CaptionStyle" />
+            </RelativeLayout>
+            <LinearLayout android:layout_marginTop="10.0dip" style="@style/CardDetailLayoutStyle">
+                <TextView android:text="@string/card_type" style="@style/CardDetailKeyStyle" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="6.5">
+                    <ImageView android:id="@id/logo" android:layout_width="40.0dip" android:layout_height="20.0dip" android:scaleType="fitStart" android:adjustViewBounds="true" />
+                    <TextView android:id="@id/card_type_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" style="@style/CardDetailKeyStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/CardDetailLayoutStyle">
+                <TextView android:text="@string/card_number" style="@style/CardDetailKeyStyle" />
+                <TextView android:id="@id/card_number" style="@style/CardDetailValueStyle" />
+            </LinearLayout>
+            <LinearLayout style="@style/CardDetailLayoutStyle">
+                <TextView android:text="@string/card_holder" style="@style/CardDetailKeyStyle" />
+                <TextView android:id="@id/card_holder" style="@style/CardDetailValueStyle" />
+            </LinearLayout>
+            <LinearLayout style="@style/CardDetailLayoutStyle">
+                <TextView android:text="@string/card_expire_date" style="@style/CardDetailKeyStyle" />
+                <TextView android:id="@id/card_expire_date" style="@style/CardDetailValueStyle" />
+            </LinearLayout>
+            <LinearLayout style="@style/CardDetailLayoutStyle">
+                <TextView android:text="@string/card_iban" style="@style/CardDetailKeyStyle" />
+                <TextView android:id="@id/card_iban" style="@style/CardDetailValueStyle" />
+            </LinearLayout>
+            <LinearLayout style="@style/CardDetailLayoutStyle">
+                <TextView android:text="@string/card_blocked_amount" style="@style/CardDetailKeyStyle" />
+                <TextView android:id="@id/card_blocked_amount" style="@style/CardDetailValueStyle" />
+            </LinearLayout>
+            <LinearLayout style="@style/CardDetailLayoutStyle">
+                <TextView android:text="@string/card_available_amount" style="@style/CardDetailKeyStyle" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/green" android:id="@id/card_available_amount" style="@style/CardDetailValueStyle" />
+            </LinearLayout>
+            <TextView android:id="@id/card_more_details" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="14.0dip" android:text="@string/card_more_details" />
+            <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="14.0dip" />
+            <com.kbank.otp.base.TheSwitchCompat android:id="@id/btn_internet" android:background="@android:color/white" android:text="@string/card_internet_payments" style="@style/CardDetailButtonStyle" />
+            <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <Button android:id="@id/btn_limit" android:text="@string/card_spending_limit" android:drawableLeft="@drawable/ic_limits_24dp" android:drawablePadding="8.0dip" style="@style/CardDetailButtonStyle" />
+            <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <Button android:id="@id/btn_trans" android:text="@string/card_view_transactions" android:drawableLeft="@drawable/ic_list_24dp" android:drawablePadding="8.0dip" style="@style/CardDetailButtonStyle" />
+            <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <Button android:id="@id/btn_block" android:text="@string/card_block_card" android:drawableLeft="@drawable/ic_lock_24dp" android:drawablePadding="8.0dip" style="@style/CardDetailButtonStyle" />
+            <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/popup" android:background="#b0000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_gravity="center" android:background="@drawable/sub_panel" android:layout_width="160.0dip" android:layout_height="178.0dip">
+                <ProgressBar android:id="@id/isreg_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/processing" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </FrameLayout>
+    </FrameLayout>
+</ScrollView>

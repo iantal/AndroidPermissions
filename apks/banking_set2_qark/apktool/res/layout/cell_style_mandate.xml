@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:swipe="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.daimajia.swipe.SwipeLayout android:id="@id/swipe" android:layout_width="fill_parent" android:layout_height="fill_parent" swipe:clickToClose="true">
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:id="@id/editLinearLayout" android:background="@color/mandate_edit_button_bkg" android:layout_width="77.0dip" android:layout_height="fill_parent">
+                <ImageView android:id="@id/edit" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/edit" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/rejectLinearLayout" android:background="@color/mandate_reject_button_bkg" android:layout_width="77.0dip" android:layout_height="fill_parent">
+                <ImageView android:id="@id/reject" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/reject_next_pay" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/deleteLinearLayout" android:background="@color/delete_button_background" android:layout_width="77.0dip" android:layout_height="fill_parent">
+                <ImageView android:id="@id/delete" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/delete_button" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/relativeLayout" android:background="@color/rzb_white" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/imageLayout" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/imageView" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/valueWrapperLinearLayout" android:paddingLeft="0.0dip" android:paddingRight="16.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_alignParentRight="true">
+                <TextView android:gravity="center_vertical" android:layout_gravity="center|right" android:id="@id/valueTextView" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/DSQTextAppearance.listLeft" />
+                <TextView android:gravity="center_vertical" android:layout_gravity="center|right" android:id="@id/infoTextView" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/mandate_amount_max_limit" android:layout_weight="1.0" style="@style/DSQTextAppearance.details" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/wrapperLinearLayout" android:paddingLeft="0.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_toLeftOf="@id/valueWrapperLinearLayout" android:layout_toRightOf="@id/imageLayout">
+                <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/descriptionTextView" android:layout_width="wrap_content" android:layout_height="0.0dip" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" style="@style/DSQTextAppearance.listLeft" />
+                <TextView android:gravity="center_vertical" android:id="@id/dateTextView" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/DSQTextAppearance.details" />
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_marginLeft="41.0dip" android:layout_alignParentBottom="true" layout="@layout/include_separator" />
+        </RelativeLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</FrameLayout>

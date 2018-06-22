@@ -1,0 +1,203 @@
+{
+  "success": true,
+  "results": 13,
+  "data": [
+    {
+      "@xsi:type": "pegasus.project.brd.component.brdcommon.transactionhistory.bean.TransactionHistoryFlattenDetail",
+      "transactionId": 10805,
+      "date": "2017-07-04T11:43:47.139",
+      "amount": 152,
+      "currency": "RON",
+      "status": "FAILED",
+      "statusName": "Failed",
+      "type": "domesticTransactionTransferLifeCycle",
+      "typeName": "Domestic transfer",
+      "direction": {
+        "@name": "DEBIT",
+        "$": "D"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.project.brd.component.brdcommon.transactionhistory.bean.TransactionHistoryFlattenDetail",
+      "transactionId": 10804,
+      "date": "2017-07-04T11:18:30.307",
+      "amount": 15,
+      "currency": "RON",
+      "status": "FAILED",
+      "statusName": "Failed",
+      "type": "domesticTransactionTransferLifeCycle",
+      "typeName": "Domestic transfer",
+      "direction": {
+        "@name": "DEBIT",
+        "$": "D"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.project.brd.component.brdcommon.transactionhistory.bean.TransactionHistoryFlattenDetail",
+      "transactionId": 10803,
+      "date": "2017-07-04T11:05:44.267",
+      "amount": 125,
+      "currency": "RON",
+      "status": "FAILED",
+      "statusName": "Failed",
+      "type": "domesticTransactionTransferLifeCycle",
+      "typeName": "Domestic transfer",
+      "direction": {
+        "@name": "DEBIT",
+        "$": "D"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.project.brd.component.brdcommon.transactionhistory.bean.TransactionHistoryFlattenDetail",
+      "transactionId": 10801,
+      "date": "2017-07-04T10:57:35.018",
+      "amount": 10,
+      "currency": "RON",
+      "status": "WAITINGFORCOLLECTION",
+      "statusName": "Waiting for collection",
+      "type": "splitBillTransferLifeCycle",
+      "typeName": "Split the bill",
+      "direction": {
+        "@name": "CREDIT",
+        "$": "C"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.project.brd.component.brdcommon.transactionhistory.bean.TransactionHistoryFlattenDetail",
+      "transactionId": 10782,
+      "date": "2017-07-03T11:39:15.618",
+      "amount": 50,
+      "currency": "RON",
+      "status": "PROCESSED",
+      "statusName": "Processed",
+      "type": "domesticTransactionTransferLifeCycle",
+      "typeName": "Domestic transfer",
+      "direction": {
+        "@name": "DEBIT",
+        "$": "D"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.project.brd.component.brdcommon.transactionhistory.bean.TransactionHistoryFlattenDetail",
+      "transactionId": 10769,
+      "date": "2017-06-30T11:38:33.995",
+      "amount": 25,
+      "currency": "RON",
+      "status": "FAILED",
+      "statusName": "Failed",
+      "type": "internalTransactionTransferLifeCycle",
+      "typeName": "Internal Transfer",
+      "direction": {
+        "@name": "DEBIT",
+        "$": "D"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.project.brd.component.brdcommon.transactionhistory.bean.TransactionHistoryFlattenDetail",
+      "transactionId": 10768,
+      "date": "2017-06-30T11:36:02.023",
+      "amount": 23,
+      "currency": "RON",
+      "status": "PROCESSED",
+      "statusName": "Processed",
+      "type": "domesticTransactionTransferLifeCycle",
+      "typeName": "Domestic transfer",
+      "direction": {
+        "@name": "DEBIT",
+        "$": "D"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.project.brd.component.brdcommon.transactionhistory.bean.TransactionHistoryFlattenDetail",
+      "transactionId": 10766,
+      "date": "2017-06-30T11:33:46.153",
+      "amount": 130,
+      "currency": "RON",
+      "status": "WAITINGFORCOLLECTION",
+      "statusName": "Waiting for collection",
+      "type": "requestMoneyTransferLifeCycle",
+      "typeName": "Request money transfer",
+      "direction": {
+        "@name": "CREDIT",
+        "$": "C"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.project.brd.component.brdcommon.transactionhistory.bean.TransactionHistoryFlattenDetail",
+      "transactionId": 6666,
+      "date": "2017-06-30T11:12:17.856",
+      "status": "FAILED",
+      "statusName": "Failed",
+      "type": "westernUnionReceiveTransferLifeCycle",
+      "typeName": "Receive WU Payment",
+      "direction": {
+        "@name": "CREDIT",
+        "$": "C"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.project.brd.component.brdcommon.transactionhistory.bean.TransactionHistoryFlattenDetail",
+      "transactionId": 10763,
+      "date": "2017-06-30T10:49:36.727",
+      "amount": 36,
+      "currency": "RON",
+      "status": "WAITINGFORCOLLECTION",
+      "statusName": "Waiting for collection",
+      "type": "requestMoneyTransferLifeCycle",
+      "typeName": "Request money transfer",
+      "direction": {
+        "@name": "CREDIT",
+        "$": "C"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.project.brd.component.brdcommon.transactionhistory.bean.TransactionHistoryFlattenDetail",
+      "transactionId": 10761,
+      "date": "2017-06-30T10:30:07.587",
+      "amount": 10,
+      "currency": "RON",
+      "status": "WAITINGFORCOLLECTION",
+      "statusName": "Waiting for collection",
+      "type": "splitBillTransferLifeCycle",
+      "typeName": "Split the bill",
+      "direction": {
+        "@name": "CREDIT",
+        "$": "C"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.project.brd.component.brdcommon.transactionhistory.bean.TransactionHistoryFlattenDetail",
+      "transactionId": 10742,
+      "date": "2017-06-29T12:17:33.671",
+      "amount": 150,
+      "currency": "RON",
+      "status": "FAILED",
+      "statusName": "Failed",
+      "type": "payment2phoneTermDepositLifeCycle",
+      "typeName": "Payment 2 phone transfer",
+      "direction": {
+        "@name": "DEBIT",
+        "$": "D"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.project.brd.component.brdcommon.transactionhistory.bean.TransactionHistoryFlattenDetail",
+      "transactionId": 10741,
+      "date": "2017-06-29T11:56:15.429",
+      "amount": 120,
+      "currency": "RON",
+      "status": "FAILED",
+      "statusName": "Failed",
+      "type": "domesticTransactionTransferLifeCycle",
+      "typeName": "Domestic transfer",
+      "direction": {
+        "@name": "DEBIT",
+        "$": "D"
+      }
+    }
+  ],
+  "header": {
+    "token": "hX8DzZxXEvP/JdFgmRAOzQ==",
+    "sessionTimeout": 600
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="@dimen/dsq_information_dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="?dsq_portfolio_text_color_primary" android:id="@id/show_information_text_view" android:paddingLeft="8.0dip" android:paddingTop="12.0dip" android:paddingRight="8.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+    <LinearLayout android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/show_information_text_view">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQWidget.Holo.ButtonBar">
+            <include layout="@layout/separator_style_simple" />
+            <Button android:textSize="18.0sp" android:textColor="?dsq_portfolio_text_color_primary" android:id="@id/ok_button" android:background="@drawable/btn_demo" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/button_ok" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

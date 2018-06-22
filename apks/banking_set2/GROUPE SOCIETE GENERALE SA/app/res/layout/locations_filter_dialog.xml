@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/filterLayout" android:background="@drawable/dimlayer_bg" android:padding="@dimen/content_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/filterList" style="@style/listBox" />
+    <Button android:id="@id/startFilter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_padding" android:text="@string/native_locations_setfilter" android:onClick="onButtonClick" style="@style/SubmitButton" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/image_layout" android:layout_width="wrap_content" android:layout_height="54.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/leftImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="54.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/cityTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="8.0dip" android:singleLine="true" style="@style/DSQTextAppearance.listLeft" />
+                <TextView android:gravity="center_vertical" android:id="@id/addressTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" style="@style/DSQTextAppearance.details" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="54.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:gravity="center" android:id="@id/distanceTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:singleLine="true" style="@style/DSQTextAppearance.listLeft" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/include_separator" />
+</LinearLayout>

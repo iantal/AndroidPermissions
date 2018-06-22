@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/rzb_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_marginTop="16.0dip" android:layout_marginBottom="10.0dip" layout="@layout/include_separator" />
+            <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/sepa_reference_from_beneficiary" android:layout_weight="0.04" style="@style/DSQTextAppearance.Label.material" />
+            <RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.v7.widget.AppCompatEditText android:id="@id/reference_from_benef" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:maxLines="1" android:maxLength="35" android:layout_toLeftOf="@id/tooltipImageButtonBenef" android:inputType="textCapSentences" style="@style/DSQWidget.Holo.AlphanumericWithSomeSpecialCharactersAllowedEditText.value" />
+                <ImageButton android:id="@id/tooltipImageButtonBenef" android:background="@color/transparent" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/tooltip_content" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/tooltip_txt_reference" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:minHeight="22.0dip" android:text="@string/sepa_tooltip_reference_from_beneficiary" style="@style/DSQTextAppearance.details2" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/transaction_details_row_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/sepa_reference_issuer" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+            <RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.v7.widget.AppCompatEditText android:id="@id/reference_issuer" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:maxLines="1" android:maxLength="35" android:layout_toLeftOf="@id/tooltipImageButtonIssuer" android:inputType="textCapSentences" style="@style/DSQWidget.Holo.AlphanumericWithSomeSpecialCharactersAllowedEditText.value" />
+                <ImageButton android:id="@id/tooltipImageButtonIssuer" android:background="@color/transparent" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/tooltip_content2" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/tooltip_txt_issuer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:minHeight="22.0dip" android:text="@string/sepa_tooltip_reference_issuer" style="@style/DSQTextAppearance.details2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

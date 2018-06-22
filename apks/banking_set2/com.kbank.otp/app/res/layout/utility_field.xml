@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/payFrom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="23.0dip" android:text="@string/new_payment_from" android:layout_below="@id/top_panel" />
+    <TextView android:textSize="16.0sp" android:textColor="@drawable/payment_selector" android:gravity="right" android:id="@id/account_src" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="20.0dip" android:text="@string/new_payment_select_acc" android:drawableRight="@drawable/ar_item_list" android:drawablePadding="10.0dip" android:layout_toRightOf="@id/payFrom" android:layout_alignBaseline="@id/payFrom" android:layout_alignParentRight="true" />
+    <View android:id="@id/line" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/payFrom" />
+</LinearLayout>

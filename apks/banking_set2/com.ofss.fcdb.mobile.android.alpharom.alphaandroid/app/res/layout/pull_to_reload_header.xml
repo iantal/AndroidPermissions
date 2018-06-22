@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/pull_to_reload_headerContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pulltoreloadheader" style="@style/pull_to_reload_header">
+        <ImageView android:id="@id/pulltoreloadimage" style="@style/pull_to_reload_image" />
+        <ProgressBar android:id="@id/pulltoreloadspinner" style="@style/pull_to_reload_progressbar" />
+        <TextView android:id="@id/pulltoreloadtext" style="@style/pull_to_reload_textview" />
+    </RelativeLayout>
+</LinearLayout>

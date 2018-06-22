@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:padding="@dimen/pagePadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1" android:shrinkColumns="1">
+        <TextView android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rowPadding" android:text="@string/native_activate_token" style="@style/text.emphasized" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rowPaddingBig" android:text="@string/native_activation_description" style="@style/pageDescription" />
+        <TableRow android:layout_marginBottom="@dimen/rowPadding">
+            <TextView android:text="@string/native_activationIDLabel" style="@style/detailLabel" />
+            <EditText android:id="@id/activationId" android:hint="@string/native_activationIDHint" style="@style/actIdText" />
+        </TableRow>
+        <TableRow android:layout_marginBottom="@dimen/rowPaddingBig">
+            <TextView android:text="@string/native_activationCodeLabel" style="@style/detailLabel" />
+            <EditText android:id="@id/activationCode" android:hint="@string/native_activationCodeHint" style="@style/actCodeText" />
+        </TableRow>
+        <Button android:id="@id/activateButton" android:text="@string/native_activateButtonText" android:onClick="onActivateClick" style="@style/actionButton" />
+    </TableLayout>
+</ScrollView>

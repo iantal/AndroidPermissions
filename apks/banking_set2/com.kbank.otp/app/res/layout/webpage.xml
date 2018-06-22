@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_panel" android:background="@color/top_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/top_panel_height">
+        <ImageButton android:id="@id/menu" style="@style/MenuStyle" />
+        <TextView android:text="@string/title_deposit_detail" style="@style/CaptionStyle" />
+        <Button android:id="@id/liquidate" android:text="@string/cmd_liquidate" style="@style/LogoutStyle" />
+    </RelativeLayout>
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_panel"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</RelativeLayout>

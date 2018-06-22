@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/wrapperLoadingLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/white_card_left_margin" android:layout_marginRight="@dimen/white_card_right_margin">
+        <include layout="@layout/loading" />
+    </LinearLayout>
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout" android:background="@drawable/rounded_bottom_corners_white" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/white_card_left_margin" android:layout_marginRight="@dimen/white_card_right_margin" />
+    </ScrollView>
+</LinearLayout>

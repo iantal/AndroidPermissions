@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="false">
+        <TextView android:id="@id/recurring_title" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="16.0dip" android:text="@string/transaction_status_recurring" android:layout_alignParentRight="true" style="@style/DSQTextAppearance.Label.material" />
+        <TextView android:id="@id/date_label" android:paddingLeft="0.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/on_date" android:layout_toLeftOf="@id/recurring_title" style="@style/DSQTextAppearance.Label.material" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="52.0dip" android:animateLayoutChanges="false">
+        <LinearLayout android:id="@id/repeat_checkbox_viewgroup" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="18.0dip" android:layout_alignParentRight="true">
+            <android.support.v7.widget.SwitchCompat android:theme="@style/DSQSwitchStyle" android:gravity="center" android:id="@id/repeat_checkbox" android:background="@color/transparent" android:layout_width="60.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatButton android:id="@id/date_button" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_toLeftOf="@id/repeat_checkbox_viewgroup" style="?attr/dsq_edittext_button_style" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/repeat_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="175.0dip" android:minHeight="52.0dip" android:layout_weight="0.6">
+            <com.thinkdesquared.banking.helpers.ui.widgets.AutoResizeTextView android:id="@id/autoResizeTextView" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="24.0dip" android:text="@string/every" style="@style/DSQTextAppearance.Label.material" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="false">
+                <com.thinkdesquared.banking.helpers.ui.widgets.DSQAppCompatSpinner android:layout_gravity="center_vertical" android:id="@id/period_value_spinner" android:paddingRight="2.0dip" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="2.0dip" android:layout_weight="2.0" style="@style/rzb_Spinner.DropDown" />
+                <com.thinkdesquared.banking.helpers.ui.widgets.DSQAppCompatSpinner android:layout_gravity="center_vertical" android:id="@id/period_name_spinner" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_weight="3.0" style="@style/rzb_Spinner.DropDown" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="52.0dip" android:layout_weight="0.4">
+            <TextView android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="0.0dip" android:text="@string/until_date" style="@style/DSQTextAppearance.Label.material" />
+            <android.support.v7.widget.AppCompatButton android:id="@id/until_date_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginLeft="1.0dip" android:maxLines="2" android:singleLine="false" style="?attr/dsq_edittext_button_style" />
+            <View android:background="?dsq_main_line_color" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_marginLeft="12.0dip" android:layout_marginRight="16.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/end_date_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip">
+        <TextView android:paddingLeft="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/end_date" style="@style/DSQTextAppearance.Label.material" />
+        <android.support.v7.widget.AppCompatButton android:id="@id/end_date_button" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" style="?attr/dsq_edittext_button_style" />
+    </LinearLayout>
+</LinearLayout>

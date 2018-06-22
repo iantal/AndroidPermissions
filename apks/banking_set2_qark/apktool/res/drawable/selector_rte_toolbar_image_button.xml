@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_pressed="true" android:drawable="@color/raiffeisen_black_10_opacity" />
+    <item android:state_pressed="false" android:drawable="@color/raiffeisen_black_10_opacity" app:state_checked="true" />
+    <item android:drawable="@color/transparent" />
+</selector>

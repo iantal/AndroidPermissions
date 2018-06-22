@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/images_layout" android:layout_width="wrap_content" android:layout_height="54.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/leftImageView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/rightImageView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="54.0dip" android:layout_toLeftOf="@id/images_layout" android:layout_alignParentLeft="true">
+        <TextView android:textColor="?dsq_portfolio_text_color_secondary" android:gravity="center_vertical" android:id="@id/city" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textColor="?dsq_portfolio_text_color_primary" android:gravity="center_vertical" android:id="@id/address" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <include layout="@layout/separator_style_simple" />
+</RelativeLayout>

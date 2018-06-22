@@ -1,0 +1,63 @@
+{
+  "success": true,
+  "data": [
+    {
+      "@xsi:type": "pegasus.project.brd.function.brdfunctionutil.account.bean.InvestmentFundItem",
+      "iconPostfix": "IF4",
+      "accountName": "BRD SIMFONIA",
+      "balance": 1478.17,
+      "currency": "RON",
+      "accountNumber": "RO89BRDE450IF12345678930",
+      "accountNumberIban": "RO89BRDE450IF12345678930",
+      "balanceDate": "2015-02-05T16:42:49.000",
+      "registrationNumberAndFund": "CSC06FDIR_400014",
+      "investmentFundBalance": 1478.17,
+      "releaseDateOfTheFund": "1064/26.02.2004",
+      "accountBalanceAtTheLastKnownPrice": 1167.942,
+      "productId": "BRD SIMFONIA",
+      "investmentType": "SIMFONIA",
+      "individual": false,
+      "unitsNumber": 30
+    },
+    {
+      "@xsi:type": "pegasus.project.brd.function.brdfunctionutil.account.bean.InvestmentFundItem",
+      "iconPostfix": "IF5",
+      "accountName": "BRD OBLIGATIUNI",
+      "balance": 123456,
+      "currency": "RON",
+      "accountNumber": "RO89BRDE450IF12345678932",
+      "accountNumberIban": "RO89BRDE450IF12345678932",
+      "balanceDate": "2015-03-05T09:42:49.000",
+      "registrationNumberAndFund": "CSC06FDIR_400025",
+      "investmentFundBalance": 123456,
+      "releaseDateOfTheFund": "3455/21.12.2005",
+      "accountBalanceAtTheLastKnownPrice": 1606.325,
+      "productId": "BRD OBLIGATIUNI",
+      "investmentType": "INDEX ER",
+      "individual": false,
+      "unitsNumber": 10
+    },
+    {
+      "@xsi:type": "pegasus.project.brd.function.brdfunctionutil.account.bean.InvestmentFundItem",
+      "iconPostfix": "IF27",
+      "accountName": "BRD INDEX",
+      "balance": 1.17,
+      "currency": "RON",
+      "accountNumber": "RO89BRDE450IF12345678931",
+      "accountNumberIban": "RO89BRDE450IF12345678931",
+      "balanceDate": "2015-02-05T16:42:49.000",
+      "registrationNumberAndFund": "CSC06FDIR_400065",
+      "investmentFundBalance": 1.17,
+      "releaseDateOfTheFund": "453/30.03.2010",
+      "accountBalanceAtTheLastKnownPrice": 25095.46,
+      "productId": "BRD INDEX",
+      "investmentType": "OBLIG",
+      "individual": false,
+      "unitsNumber": 200
+    }
+  ],
+  "header": {
+    "token": "fQB3xLpfmX9JxrXNw/EqpA==",
+    "sessionTimeout": 600
+  }
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/DSQTextAppearance.value" />
+    <ImageView android:id="@id/triangle_ImageView" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="26.0dip" android:layout_marginTop="2.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/line_seperator" android:background="?dsq_main_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_relativeLayout" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/front_relativeLayout" android:background="?dsq_account_card_gradient" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/account_imageView" android:layout_width="@dimen/white_card_width" android:layout_height="@dimen/white_card_height" android:layout_marginBottom="@dimen/white_card_margin_bottom" android:src="@drawable/bg_savings_account" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/horizontal_more_imageView" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:layout_width="38.0dip" android:layout_height="42.0dip" android:src="@drawable/horizontal_more" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="16.0sp" android:textColor="?dsq_account_pager_main_color" android:id="@id/nicknameTextView" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="My Salary" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/DSQTextAppearance.value5" />
+        <TextView android:textSize="30.0dip" android:textColor="?dsq_account_pager_main_color" android:id="@id/balanceTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="available balance" android:layout_centerHorizontal="true" style="@style/DSQTextAppearance.value3" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/frontRow1LinearLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="14.0sp" android:textColor="?dsq_account_pager_second_color" android:id="@id/frontRow1LabelTextView" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value2" />
+            <TextView android:textSize="14.0sp" android:textColor="?dsq_account_pager_main_color" android:id="@id/frontRow1TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/frontRow2LinearLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_above="@id/frontRow1LinearLayout" android:layout_centerHorizontal="true">
+            <TextView android:textSize="14.0sp" android:textColor="?dsq_account_pager_second_color" android:id="@id/frontRow2LabelTextView" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value2" />
+            <TextView android:textSize="14.0sp" android:textColor="?dsq_account_pager_main_color" android:id="@id/frontRow2TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value2" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="?dsq_account_pager_second_color" android:id="@id/availablebalanceTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/available_balance" android:layout_below="@id/balanceTextView" android:layout_centerInParent="true" style="@style/DSQTextAppearance.value2" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/back_relativeLayout" android:background="@drawable/rounded_corners_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/back_arrow_imageView" android:padding="8.0dip" android:layout_width="42.0dip" android:layout_height="44.0dip" android:src="@drawable/back_arrow" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/share_imageView" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="38.0dip" android:layout_height="42.0dip" android:src="@drawable/share" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ibanLinearLayout" android:paddingLeft="0.0dip" android:paddingTop="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/back_arrow_imageView">
+            <TextView android:textSize="14.0sp" android:textColor="?dsq_main_amount_text_color" android:id="@id/ibanTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value5" />
+            <TextView android:textSize="14.0sp" android:textColor="?dsq_fourth_text_color" android:id="@id/ibanLabelTextView" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iban" style="@style/DSQTextAppearance.value5" />
+        </LinearLayout>
+        <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_marginTop="6.0dip" android:layout_below="@id/back_arrow_imageView" layout="@layout/include_separator" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/firstRow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="42.0dip" android:layout_marginTop="5.0dip" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/field1LinearLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="?dsq_main_text_color" android:id="@id/field1TextView" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value5" />
+                <TextView android:textSize="14.0sp" android:textColor="?dsq_fourth_text_color" android:id="@id/field1LabelTextView" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/field2LinearLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0dip" android:textColor="?dsq_main_text_color" android:id="@id/field2TextView" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value5" />
+                <TextView android:textSize="14.0dip" android:textColor="?dsq_fourth_text_color" android:id="@id/field2LabelTextView" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value5" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/secondRow" android:paddingTop="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="42.0dip" android:layout_below="@id/firstRow">
+            <LinearLayout android:orientation="vertical" android:id="@id/field3LinearLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0dip" android:textColor="?dsq_main_text_color" android:id="@id/field3TextView" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value5" />
+                <TextView android:textSize="14.0dip" android:textColor="?dsq_fourth_text_color" android:id="@id/field3LabelTextView" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/field4LinearLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0dip" android:textColor="?dsq_main_text_color" android:id="@id/field4TextView" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value5" />
+                <TextView android:textSize="14.0dip" android:textColor="?dsq_fourth_text_color" android:id="@id/field4LabelTextView" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value5" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/thirdRow" android:paddingTop="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="42.0dip" android:layout_below="@id/secondRow">
+            <LinearLayout android:orientation="vertical" android:id="@id/field5LinearLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0dip" android:textColor="?dsq_main_text_color" android:id="@id/field5TextView" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value5" />
+                <TextView android:textSize="14.0dip" android:textColor="?dsq_fourth_text_color" android:id="@id/field5LabelTextView" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/field6LinearLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0dip" android:textColor="?dsq_main_text_color" android:id="@id/field6TextView" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value5" />
+                <TextView android:textSize="14.0dip" android:textColor="?dsq_fourth_text_color" android:id="@id/field6LabelTextView" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.value5" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

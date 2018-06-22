@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/native_settings_devicemanagement_about"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:enabled="false" android:title="@string/native_settings_about_name" android:summary="@string/native_settings_token_about_name_summary" />
+    <Preference android:enabled="false" android:title="@string/native_settings_about_applicationversion" android:key="ind.token.version" />
+    <Preference android:enabled="false" android:title="@string/native_settings_about_technicalversion" android:key="ind.token.build" />
+    <Preference android:enabled="false" android:title="@string/native_settings_token_serial" android:key="TOKEN_SERIAL" />
+</PreferenceScreen>

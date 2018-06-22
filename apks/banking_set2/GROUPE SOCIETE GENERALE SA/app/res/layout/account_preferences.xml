@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/favoriteButton" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginBottom="5.0dip" android:text="@string/native_bankingapp_function_accountinfo_editaccountlist_favoritsettings" style="@style/SubmitButton" />
+    <TextView android:id="@id/instructions" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/native_bankingapp_function_accountinfo_top_label" style="@style/Instruction" />
+    <ind.bankingapp.android.framework.view.DragAndDropListView android:textSize="18.0sp" android:id="@id/account_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:drawSelectorOnTop="false" android:layout_weight="1.0" android:fastScrollEnabled="true" />
+    <Button android:id="@id/saveButton" android:layout_marginTop="5.0dip" android:text="@string/native_bankingapp_function_accountinfo_editaccountlist_save" style="@style/SubmitButton" />
+</LinearLayout>

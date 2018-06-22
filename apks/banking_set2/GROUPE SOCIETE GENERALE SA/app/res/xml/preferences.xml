@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:textColor="#ff000000" android:title="@string/native_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:key="PREFERENCES_CATEGORY">
+        <Preference android:textColorPrimary="#ff000000" android:textColor="#ff000000" android:layout="@layout/customer" android:title="@string/native_settings_customer_customer" android:selectable="false" android:key="CUSTOMER_NAME" android:summary="unknown" />
+        <PreferenceScreen android:layout="@layout/language" android:title="@string/native_settings_language_language" android:key="LANGUAGE">
+            <brd.bankingapp.android.function.settings.RadioButtonPreference android:title="@string/native_settings_languages_ro" android:key="ro" android:defaultValue="false" />
+            <brd.bankingapp.android.function.settings.RadioButtonPreference android:title="@string/native_settings_languages_en" android:key="en" android:defaultValue="false" />
+        </PreferenceScreen>
+        <PreferenceScreen android:layout="@layout/preference_with_arrow" android:title="@string/native_settings_devicemanagement_about">
+            <Preference android:title="@string/native_settings_about_name" android:selectable="false" android:key="APPLICATION_NAME" android:summary="@string/native_settings_about_name_summary" />
+            <Preference android:title="@string/native_settings_about_applicationversion" android:selectable="false" android:key="APPLICATION_VERSION" />
+            <Preference android:title="@string/native_settings_about_technicalversion" android:selectable="false" android:key="TECHNICAL_VERSION" />
+            <Preference android:title="@string/native_settings_about_website" android:key="ind.websitePref" android:summary="@string/native_settings_website_summary" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/mobile_title_layout" android:title="@string/native_settings_devicemanagement_about" android:key="DEVICES_PREFERENCES_CATEGORY">
+        <Preference android:layout="@layout/preference_with_arrow" android:title="@string/native_settings_token_dialogtitle" android:key="TOKEN_PREFERENCES" />
+        <Preference android:layout="@layout/preference_with_arrow" android:title="@string/native_settings_devicemanagement_manage" android:key="MANAGE_DEVICES" />
+        <Preference android:layout="@layout/preference_with_arrow" android:title="@string/native_settings_devicemanagement_add_new" android:key="ADD_DEVICE" />
+        <Preference android:layout="@layout/preference_with_arrow" android:title="@string/native_settings_token_reset" android:key="ind.token.resetToken" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/feed_title_layout" android:title="@string/native_settings_feed_categorytitle" android:key="FEED_PREFERENCES_CATEGORY">
+        <PreferenceScreen android:layout="@layout/preference_with_arrow" android:title="@string/native_settings_feed_selectfeed_dialogtitle" android:key="SELECTED_FEED_ITEM_LIST" />
+        <CheckBoxPreference android:title="@string/native_settings_feed_showreadmessages" android:key="SHOW_READ_MESSAGES" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

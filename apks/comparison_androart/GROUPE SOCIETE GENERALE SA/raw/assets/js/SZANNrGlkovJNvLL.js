@@ -1,0 +1,1 @@
+Class.ns("Functions.transferfunds.qr");Functions.transferfunds.QRNodeNamesISO20022=function(){return{BENEFICIARY_NAME:"beneficiaryName",BENEFICIARY_ADDRESS:"beneficiaryAddress",BENEFICIARY_ACCOUNT:"targetAccountNumber",BENEFICIARY_ACCOUNT_CURRENCY:"targetAccountCurrency",TRANSACTION_AMOUNT:"amount",TRANSACTION_DESCRIPTION:"description"};}();

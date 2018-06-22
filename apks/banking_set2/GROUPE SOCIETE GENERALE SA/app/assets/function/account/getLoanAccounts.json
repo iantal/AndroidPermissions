@@ -1,0 +1,97 @@
+{
+  "success": true,
+  "data": {
+    "@xsi:type": "pegasus.project.brd.function.brdfunctionutil.loans.bean.GetLoanAccountsReply",
+    "loanAccount": [
+      {
+        "accountNumber": "RO48BRDE450CL11111111111",
+        "accountNumberIban": "RO48BRDE450CL11111111111",
+        "accountType": "Loan accounts (CL)",
+        "accountTypeId": "Loan accounts (CL)",
+        "customerId": "160",
+        "currency": "EUR",
+        "availableBalance": 28072.26,
+        "bookedBalance": 28072.26,
+        "accountOpeningDate": "2014-09-15",
+        "closed": false,
+        "blocked": false,
+        "activityList": [
+          "Q"
+        ],
+        "enabled": true,
+        "loanCreditType": "LOAN",
+        "loanNextInstallmentDate": "2017-08-05",
+        "loanNextInstallmentAmount": 0.2164271618366289,
+        "loanDueDate": "2013-07-18",
+        "loanMinimumDueAmount": 0,
+        "loanAvailableBalance": "28072.26",
+        "loanBookedBalance": "28072.26",
+        "loanTotalDebt": "28072.26",
+        "accountName": "Cont credit 1",
+        "revolving": false,
+        "accountOrder": 8
+      },
+      {
+        "accountNumber": "RO35BRDE450CL22222222222",
+        "accountNumberIban": "RO35BRDE450CL22222222222",
+        "accountType": "Loan accounts (CL)",
+        "accountTypeId": "Loan accounts (CL)",
+        "customerId": "160",
+        "currency": "RON",
+        "availableBalance": 42499.0,
+        "bookedBalance": 42499.0,
+        "accountOpeningDate": "2014-09-15",
+        "closed": false,
+        "blocked": false,
+        "activityList": [
+          "Q"
+        ],
+        "enabled": true,
+        "loanCreditType": "LOAN",
+        "loanNextInstallmentDate": "2017-08-05",
+        "loanNextInstallmentAmount": 94.571827461029100,
+        "loanDueDate": "2013-07-18",
+        "loanMinimumDueAmount": 0,
+        "loanAvailableBalance": "42499.0",
+        "loanBookedBalance": "42499.0",
+        "loanTotalDebt": "42499.0",
+        "accountName": "Cont credit 2",
+        "revolving": false,
+        "accountOrder": 8
+      },
+      {
+        "accountNumber": "RO49BRDE450CR03333333333",
+        "accountNumberIban": "RO49BRDE450CR03333333333",
+        "accountType": "Loan accounts (CL)",
+        "accountTypeId": "Loan accounts (CL)",
+        "customerId": "160",
+        "currency": "RON",
+        "availableBalance": 19791.0,
+        "bookedBalance": 19791.0,
+        "accountOpeningDate": "2014-09-15",
+        "closed": false,
+        "blocked": false,
+        "activityList": [
+          "Q"
+        ],
+        "enabled": true,
+        "loanCreditType": "LOAN",
+        "loanNextInstallmentDate": "2017-08-05",
+        "loanNextInstallmentAmount": 0.8698765616727248,
+        "loanDueDate": "2013-07-18",
+        "loanMinimumDueAmount": 0,
+        "loanAvailableBalance": "19791.0",
+        "loanBookedBalance": "19791.0",
+        "loanTotalDebt": "19791.0",
+        "accountName": "Cont credit 3",
+        "revolving": false,
+        "accountOrder": 8
+      }
+    ],
+    "loanInitFilterDate": "2017-07-05"
+  },
+  "header": {
+    "token": "vuWxsc/fid2ndedjppZmpg==",
+    "sessionTimeout": 600
+  }
+}

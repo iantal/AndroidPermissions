@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/pin_code_keyboard_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/textsPinCodeLinear" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.thinkdesquared.banking.helpers.ui.widgets.PinCodeTextScreenWidget android:id="@id/pinCodeBlankViewUp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DSQTextAppearance.ChangePinCodeEdit" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/enterPinMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_insert_pin_register_edit" android:layout_alignParentBottom="false" android:layout_centerHorizontal="true" style="@style/DSQTextAppearance.ChangePinCode" />
+        <com.thinkdesquared.banking.helpers.ui.widgets.PinCodeTextScreenWidget android:gravity="center" android:layout_gravity="center" android:id="@id/pinView" android:layout_width="@dimen/pin_keyboard_width" android:layout_height="wrap_content" style="@style/DSQTextAppearance.ChangePinCodeEdit" />
+        <com.thinkdesquared.banking.helpers.ui.widgets.PinCodeTextScreenWidget android:id="@id/pinCodeBlankViewDown" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.ChangePinCodeEdit" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/keyboardLayout" android:layout_width="wrap_content" android:layout_height="@dimen/pin_keyboard_height" android:minWidth="@dimen/pin_keyboard_width">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <Button android:gravity="center" android:id="@id/button1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1" style="?attr/dsq_pin_chooser_keyboard_button" />
+            <Button android:id="@id/button2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/pin_keyboard_margin" android:layout_marginRight="@dimen/pin_keyboard_margin" android:text="2" style="?attr/dsq_pin_chooser_keyboard_button" />
+            <Button android:gravity="center" android:id="@id/button3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="3" style="?attr/dsq_pin_chooser_keyboard_button" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <Button android:gravity="center" android:id="@id/button4" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="4" style="?attr/dsq_pin_chooser_keyboard_button" />
+            <Button android:id="@id/button5" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/pin_keyboard_margin" android:layout_marginRight="@dimen/pin_keyboard_margin" android:text="5" style="?attr/dsq_pin_chooser_keyboard_button" />
+            <Button android:gravity="center" android:id="@id/button6" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="6" style="?attr/dsq_pin_chooser_keyboard_button" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <Button android:gravity="center" android:id="@id/button7" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="7" style="?attr/dsq_pin_chooser_keyboard_button" />
+            <Button android:id="@id/button8" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/pin_keyboard_margin" android:layout_marginRight="@dimen/pin_keyboard_margin" android:text="8" style="?attr/dsq_pin_chooser_keyboard_button" />
+            <Button android:id="@id/button9" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="9" style="?attr/dsq_pin_chooser_keyboard_button" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/lastRowLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1.0" android:layout_weight="1.0">
+            <Button android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?attr/dsq_pin_chooser_keyboard_button" />
+            <Button android:id="@id/button0" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/pin_keyboard_margin" android:layout_marginRight="@dimen/pin_keyboard_margin" android:text="0" android:layout_centerInParent="true" style="?attr/dsq_pin_chooser_keyboard_button" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageButton android:id="@id/button_delete" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/backspace" android:layout_centerInParent="true" android:layout_centerVertical="true" style="?attr/dsq_pin_chooser_keyboard_button" />
+                <Button android:textSize="19.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/button_cancel" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="?attr/dsq_pin_chooser_keyboard_button" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

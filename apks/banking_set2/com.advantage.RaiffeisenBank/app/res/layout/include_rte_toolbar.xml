@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:scrollbarStyle="outsideOverlay" android:background="@color/raiffeisen_light_bg_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/raiffeisen_black_20_opacity" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" />
+        <com.thinkdesquared.banking.services.securemessages.widgets.SimpleHorizontalRTToolbar android:orientation="horizontal" android:id="@id/rte_toolbar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_bold" android:src="@drawable/bold" style="@style/dsqRteToolBarButton" />
+            <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_italic" android:src="@drawable/italic" style="@style/dsqRteToolBarButton" />
+            <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_underline" android:src="@drawable/underline" style="@style/dsqRteToolBarButton" />
+            <View android:background="@color/raiffeisen_black_20_opacity" android:layout_width="@dimen/dimen_1dp_low_res_support" android:layout_height="fill_parent" />
+            <Spinner android:id="@id/toolbar_fontcolor" style="@style/dsqRteToolBarButton" />
+            <View android:background="@color/raiffeisen_black_20_opacity" android:layout_width="@dimen/dimen_1dp_low_res_support" android:layout_height="fill_parent" />
+            <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_number" android:src="@drawable/ordered_list" style="@style/dsqRteToolBarButton" />
+            <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_bullet" android:src="@drawable/unordered_list" style="@style/dsqRteToolBarButton" />
+            <View android:background="@color/raiffeisen_black_20_opacity" android:layout_width="@dimen/dimen_1dp_low_res_support" android:layout_height="fill_parent" />
+            <Spinner android:id="@id/toolbar_fontsize" style="@style/Simple_RTE_ToolbarSpinner" />
+        </com.thinkdesquared.banking.services.securemessages.widgets.SimpleHorizontalRTToolbar>
+        <View android:background="@color/raiffeisen_black_20_opacity" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" />
+    </LinearLayout>
+</HorizontalScrollView>

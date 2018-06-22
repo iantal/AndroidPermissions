@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/raiffeisen_black_33_opacity" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_container_margin" android:layout_marginTop="@dimen/widget_element_padding_top_bottom" android:layout_marginRight="@dimen/widget_container_margin" android:layout_marginBottom="@dimen/widget_element_padding_top_bottom" android:text="@string/widget_available_balance" />
+</LinearLayout>

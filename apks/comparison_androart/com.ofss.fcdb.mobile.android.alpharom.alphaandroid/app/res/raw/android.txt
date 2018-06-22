@@ -1,0 +1,14 @@
+#Uncomment the following if using IBM Websphere Application server
+#APP.JSF= 0000{0}:-1
+##################################################################################################
+## The following block contains the name-value pairing of server url and their display names 	##
+## This will be displayed in the EntitySelector Activity of the Application						##
+## NOTE-- THERE SHOULD BE ATLEAST ONE URL IN APP.SERVER.URL.LIST AND ONE NAME IN				##
+## APP.SERVER.URL.NAME. Kindly make sure of this before building the application				##
+##################################################################################################
+#APP.SERVER.URL.LIST=http://193.193.185.232:8888/B001/internet
+#APP.SERVER.URL.LIST=https://193.193.185.232:4443/B001/internet
+APP.SERVER.URL.LIST=https://secure2.alphabank.ro/B001/internet
+APP.SERVER.URL.NAME=UAT
+#APP.SERVER.URL.LIST=https://10.255.249.11:7004/B001/internet
+

@@ -1,1 +1,31 @@
-{"findings": [{"title": "", "stat": "low", "description": "", "recommendation": "", "evidence": {"result": "", "anti_vm": ["Build.FINGERPRINT check", "Build.MODEL check", "Build.MANUFACTURER check", "Build.PRODUCT check", "possible Build.SERIAL check", "Build.TAGS check", "network operator name check"], "compiler": ["dx"], "packer": "", "obfuscator": "Proguard", "abnormal": "", "anti_disassembly": "", "dropper": "", "manipulator": ""}}]}
+{
+  "findings": [
+    {
+      "title": "",
+      "stat": "low",
+      "description": "",
+      "recommendation": "",
+      "evidence": {
+        "result": "",
+        "anti_vm": [
+          "Build.FINGERPRINT check",
+          "Build.MODEL check",
+          "Build.MANUFACTURER check",
+          "Build.PRODUCT check",
+          "possible Build.SERIAL check",
+          "Build.TAGS check",
+          "network operator name check"
+        ],
+        "compiler": [
+          "dx"
+        ],
+        "packer": "",
+        "obfuscator": "Proguard",
+        "abnormal": "",
+        "anti_disassembly": "",
+        "dropper": "",
+        "manipulator": ""
+      }
+    }
+  ]
+}

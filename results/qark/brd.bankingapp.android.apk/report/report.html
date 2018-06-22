@@ -1,0 +1,2178 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta charset="utf-8"/>
+  <title>
+   QARK Report
+  </title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Chart.js for charts -->
+  <script src="js/Chart.js/Chart.js">
+  </script>
+  <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+
+    <![endif]-->
+  <link href="css/styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="navbar navbar-inverse navbar-fixed-top gradient">
+   <div class="navbar-header">
+    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+     <span class="icon-bar">
+     </span>
+     <span class="icon-bar">
+     </span>
+     <span class="icon-bar">
+     </span>
+    </button>
+    <a class="navbar-brand" href="#">
+     QARK
+    </a>
+   </div>
+   <div class="collapse navbar-collapse">
+    <!--
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        -->
+   </div>
+   <!--/.nav-collapse -->
+  </div>
+  <!--/.navbar -->
+  <div class="row-offcanvas row-offcanvas-left">
+   <div class="sidebar-offcanvas" id="sidebar">
+    <div class="gradient2 col-md-12">
+     <h3>
+      Information
+     </h3>
+     <ul class="nav nav-pills nav-stacked">
+      <li class="active">
+       <a data-toggle="tab" href="#dashboard">
+        Dashboard
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#manifest">
+        Manifest
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#appcomponents">
+        App Components
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#webviews">
+        Web Views
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#x509">
+        X.509 Issues
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#filepermission">
+        File Permissions
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#crypto">
+        Crypto bugs
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#pendingintent">
+        Pending Intents
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#adbcommands">
+        ADB Commands
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#osbugs">
+        OS bugs
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#plugin">
+        Plugin Issues
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#parsingerrors">
+        Parsing Errors
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#about">
+        About
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="main">
+    <div class="col-md-12">
+     <p class="visible-xs">
+      <button class="btn btn-primary btn-xs" data-toggle="offcanvas" type="button">
+       <i class="glyphicon glyphicon-chevron-left">
+       </i>
+      </button>
+     </p>
+     <br/>
+     <div class="tab-content">
+      <div class="tab-pane active" id="dashboard">
+       <div class="row">
+        <div class="col-md-12">
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="well">
+          <div class="row">
+           <div class="col-lg-12">
+            <h2>
+             <strong>
+              STATIC CODE ANALYSIS RESULT
+             </strong>
+            </h2>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-6">
+            <h6>
+             <strong>
+              SOURCE:
+             </strong>
+             <strong>
+              <span id="apkpath">
+               <span>
+                /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android.apk
+               </span>
+              </span>
+             </strong>
+            </h6>
+            <h6>
+             <strong>
+              TOTAL FILES:
+             </strong>
+             <strong>
+              <span id="totalfiles">
+               <span>
+                3824
+               </span>
+              </span>
+             </strong>
+            </h6>
+            <h6>
+             <strong>
+              JAVA FILES:
+             </strong>
+             <strong>
+              <span id="javafiles">
+               <span>
+                1980
+               </span>
+              </span>
+             </strong>
+            </h6>
+            <h6>
+             <strong>
+              <span id="restorestats">
+               <span>
+                Restored 76 file(s) out of 78 corrupt file(s)
+               </span>
+              </span>
+             </strong>
+            </h6>
+           </div>
+           <div class="col-lg-6">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-12 col-sm-12">
+         <div class="well">
+          <div class="row">
+           <div class="col-lg-12">
+            <div class="container-fluid">
+             <div class="row">
+              <div class="col-xs-3 col-md-3">
+               <div class="panel status panel-danger">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="vulnerability_count">
+                  <div>
+                   4
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Potential Vulnerabilities
+                 </strong>
+                </div>
+               </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+               <div class="panel status panel-warning">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="warning_count">
+                  <div>
+                   6
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Warnings
+                 </strong>
+                </div>
+               </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+               <div class="panel status panel-success">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="information_count">
+                  <div>
+                   10
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Informational
+                 </strong>
+                </div>
+               </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+               <div class="panel status panel-info">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="debug_count">
+                  <div>
+                   242
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Debug
+                 </strong>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="manifest">
+       <div class="row">
+        <div class="col-md-12">
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12" id="manifest-issues">
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <strong>
+              Backups not enabled.
+             </strong>
+             <ul>
+             </ul>
+            </div>
+            <pre id="rawmanifest"><code class="xml">&lt;?xml version="1.0" ?&gt;&lt;manifest android:versionCode="280410" android:versionName="2.9.4" package="brd.bankingapp.android" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002" xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+    &lt;uses-sdk android:minSdkVersion="7" android:targetSdkVersion="23"/&gt;
+    &lt;uses-permission android:name="ind.token.permission.BANKINGAPP_INTEGRATION"/&gt;
+    &lt;uses-permission android:name="android.permission.INTERNET"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/&gt;
+    &lt;uses-permission android:name="android.permission.READ_CONTACTS"/&gt;
+    &lt;uses-permission android:name="android.permission.READ_PHONE_STATE"/&gt;
+    &lt;uses-permission android:name="android.permission.CAMERA"/&gt;
+    &lt;uses-permission android:name="android.permission.USE_FINGERPRINT"/&gt;
+    &lt;uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/&gt;
+    &lt;uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/&gt;
+    &lt;uses-permission android:name="android.permission.WAKE_LOCK"/&gt;
+    &lt;uses-permission android:name="android.permission.BROADCAST_STICKY"/&gt;
+    &lt;uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/&gt;
+    &lt;permission android:name="brd.bankingapp.android.permission.MAPS_RECEIVE" android:protectionLevel="signature"/&gt;
+    &lt;uses-permission android:name="brd.bankingapp.android.permission.MAPS_RECEIVE"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/&gt;
+    &lt;uses-permission android:name="android.permission.VIBRATE"/&gt;
+    &lt;permission android:name="brd.bankingapp.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/&gt;
+    &lt;uses-permission android:name="brd.bankingapp.android.permission.C2D_MESSAGE"/&gt;
+    &lt;uses-feature android:name="android.hardware.camera" android:required="false"/&gt;
+    &lt;uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/&gt;
+    &lt;uses-feature android:glEsVersion="0x20000" android:required="true"/&gt;
+    &lt;supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/&gt;
+    &lt;application android:allowBackup="false" android:debuggable="false" android:hardwareAccelerated="@bool/hardware.accelerated" android:icon="@drawable/icon" android:label="@string/app_name" android:logo="@drawable/header_logo" android:name="ind.bankingapp.android.framework.BankingApplication"&gt;
+        &lt;uses-library android:name="com.google.android.maps"/&gt;
+        &lt;activity android:name="ind.bankingapp.android.framework.activity.TutorialActivity"/&gt;
+        &lt;activity android:name="ind.bankingapp.android.framework.activity.CoordinatorActivity"/&gt;
+        &lt;activity android:name="ind.bankingapp.android.framework.activity.FragmentHolderActivity"/&gt;
+        &lt;activity android:name="brd.bankingapp.android.function.settings.SettingsActivity" android:theme="@style/PreferencesTheme"/&gt;
+        &lt;activity android:name="ind.token.android.core.ui.activity.SettingsActivity" android:theme="@style/PreferencesTheme"/&gt;
+        &lt;activity android:name="ind.token.android.core.ui.activity.AboutActivity" android:theme="@style/PreferencesTheme"/&gt;
+        &lt;activity android:name="ind.token.android.core.ui.activity.TokenActivity" android:theme="@style/PreferencesTheme"/&gt;
+        &lt;activity android:name="ind.bankingapp.android.framework.activity.ActivatorActivity" android:theme="@style/AppThemeNoTitle"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.MAIN"/&gt;
+                &lt;category android:name="android.intent.category.LAUNCHER"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden|orientation" android:name="com.google.zxing.client.android.CaptureActivity" android:screenOrientation="landscape" android:stateNotNeeded="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="com.google.zxing.client.android.SCAN"/&gt;
+                &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="ind.bankingapp.android.framework.bump.BumpSenderActivity" android:screenOrientation="portrait" android:theme="@style/BaseDialogTheme" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="ind.bankingapp.android.framework.bump.BumpReceiverActivity" android:screenOrientation="portrait" android:theme="@style/BaseDialogTheme" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;receiver android:name="ind.bankingapp.android.framework.gcm.CustomGCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="com.google.android.c2dm.intent.RECEIVE"/&gt;
+                &lt;action android:name="com.google.android.c2dm.intent.REGISTRATION"/&gt;
+                &lt;category android:name="brd.bankingapp.android"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/receiver&gt;
+        &lt;service android:name="ind.bankingapp.android.framework.gcm.GCMIntentService"/&gt;
+        &lt;service android:name="com.bump.api.BumpAPI" android:process=":bumpProcess"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="com.bump.api.IBumpAPI"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/service&gt;
+        &lt;meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDmpOSAWdFhuy9Rcrz1nyFBRawiQw2v0wo"/&gt;
+    &lt;/application&gt;
+&lt;/manifest&gt;</code></pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="appcomponents">
+       <div class="badger-div badger-left badger-warning" data-badger="Warning">
+        <strong>
+         The following receiver are exported and protected by a permission, but the permission can be obtained by malicious apps installed prior to this one. More info: https://github.com/commonsguy/cwac-security/blob/master/PERMS.md. Failing to protect receiver could leave them vulnerable to attack by malicious apps. The receiver should be reviewed for vulnerabilities, such as injection and information leakage.
+        </strong>
+        <ul>
+         <li>
+          ind.bankingapp.android.framework.gcm.CustomGCMBroadcastReceiver
+          <ul>
+           <li>
+            com.google.android.c2dm.permission.SEND
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </div>
+       <div class="badger-div badger-left badger-warning" data-badger="Warning">
+        <strong>
+         The following service are exported, but not protected by any permissions. Failing to protect service could leave them vulnerable to attack by malicious apps. The service should be reviewed for vulnerabilities, such as injection and information leakage.
+        </strong>
+        <ul>
+         <li>
+          com.bump.api.BumpAPI
+         </li>
+        </ul>
+       </div>
+       <div class="badger-div badger-left badger-warning" data-badger="Warning">
+        <strong>
+         The following activity are exported, but not protected by any permissions. Failing to protect activity could leave them vulnerable to attack by malicious apps. The activity should be reviewed for vulnerabilities, such as injection and information leakage.
+        </strong>
+        <ul>
+         <li>
+          com.google.zxing.client.android.CaptureActivity
+         </li>
+         <li>
+          ind.bankingapp.android.framework.activity.ActivatorActivity
+         </li>
+        </ul>
+       </div>
+       <div class="row">
+        <div class="col-md-12">
+         <!--<div class="well">-->
+         <!--<p>-->
+         <!--Issues related to Application Components.-->
+         <!--</p>-->
+         <!--</div>-->
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12" id="appcomponent-issues">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="webviews">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           A View that displays web pages. This class is the basis upon which you can roll your
+                                    own web browser or simply display some online content within your Activity. It uses
+                                    the WebKit rendering engine to display web pages and includes methods to navigate
+                                    forward and backward through a history, zoom in and out, perform text searches and
+                                    more. WebViews may be implemented using the "Android/AOSP" (WebViewClient) or 
+                                    Chrome (WebChromeClient) browsers.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="webview-issues-list">
+               <div class="badger-div badger-left badger-success" data-badger="Info">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/webview/WebViewLoader.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     BaseURL not redefined in this WebView.
+                    </li>
+                    <li class="row-odd">
+                     File system access is enabled in this WebView. If untrusted data is used to specify the URL opened by this WebView, a malicious app or site may be able to read your app's private files, if it returns the response to them. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/FILE_SYS_WARN.html
+                    </li>
+                    <li class="row-even">
+                     While not a vulnerability by itself, it appears this app does not explicitly disable Content Provider access from WebViews. If the WebViews take in untrusted input, this can allow for data theft. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/WV_CPA_WARNING.html
+                    </li>
+                    <li class="row-odd">
+                     JavaScript running in a file scheme context can access content from any origin. This is an insecure default value for minSdkVersion &lt; 16 or may have been overridden (setAllowUniversalAccessFromFileURLs) in later versions. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/UNIV_FILE_WARNING.html
+                    </li>
+                    <li class="row-even">
+                     addJavascriptInterface not used in this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/webview/WebViewLoader.java
+                    </li>
+                    <li class="row-odd">
+                     DOM Storage not enabled for this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/webview/WebViewLoader.java
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+               <div class="badger-div badger-left badger-success" data-badger="Info">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/function/help/HelpFragment.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     While not a vulnerability by itself, it appears this app has JavaScript enabled in this WebView. If this is not expressly necessary, you should disable it, to prevent the possibility of XSS (cross-site scripting) attacks. More info: http://developer.android.com/guide/practices/security.html. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/JS_WARNING.html
+                    </li>
+                    <li class="row-odd">
+                     BaseURL not redefined in this WebView.
+                    </li>
+                    <li class="row-even">
+                     File system access is enabled in this WebView. If untrusted data is used to specify the URL opened by this WebView, a malicious app or site may be able to read your app's private files, if it returns the response to them. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/FILE_SYS_WARN.html
+                    </li>
+                    <li class="row-odd">
+                     While not a vulnerability by itself, it appears this app does not explicitly disable Content Provider access from WebViews. If the WebViews take in untrusted input, this can allow for data theft. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/WV_CPA_WARNING.html
+                    </li>
+                    <li class="row-even">
+                     JavaScript running in a file scheme context can access content from any origin. This is an insecure default value for minSdkVersion &lt; 16 or may have been overridden (setAllowUniversalAccessFromFileURLs) in later versions. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/UNIV_FILE_WARNING.html
+                    </li>
+                    <li class="row-odd">
+                     addJavascriptInterface not used in this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/function/help/HelpFragment.java
+                    </li>
+                    <li class="row-even">
+                     DOM Storage not enabled for this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/function/help/HelpFragment.java
+                    </li>
+                    <li class="row-odd">
+                     While not a vulnerability by itself, it appears this app has JavaScript enabled in this WebView. If this is not expressly necessary, you should disable it, to prevent the possibility of XSS (cross-site scripting) attacks. More info: http://developer.android.com/guide/practices/security.html. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/JS_WARNING.html
+                    </li>
+                    <li class="row-even">
+                     BaseURL not redefined in this WebView.
+                    </li>
+                    <li class="row-odd">
+                     File system access is enabled in this WebView. If untrusted data is used to specify the URL opened by this WebView, a malicious app or site may be able to read your app's private files, if it returns the response to them. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/FILE_SYS_WARN.html
+                    </li>
+                    <li class="row-even">
+                     While not a vulnerability by itself, it appears this app does not explicitly disable Content Provider access from WebViews. If the WebViews take in untrusted input, this can allow for data theft. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/WV_CPA_WARNING.html
+                    </li>
+                    <li class="row-odd">
+                     JavaScript running in a file scheme context can access content from any origin. This is an insecure default value for minSdkVersion &lt; 16 or may have been overridden (setAllowUniversalAccessFromFileURLs) in later versions. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/UNIV_FILE_WARNING.html
+                    </li>
+                    <li class="row-even">
+                     addJavascriptInterface not used in this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/function/help/HelpFragment.java
+                    </li>
+                    <li class="row-odd">
+                     DOM Storage not enabled for this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/function/help/HelpFragment.java
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="x509">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This is a list of all the findings related to Certificate validation.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="x509-issues-list">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="filepermission">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section lists any issues related to File permissions.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-10 col-sm-10">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="filepermission-issues-list">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="pendingintent">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section lists any issues related to pending intents.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="pendingintent-issues-list">
+               <div class="badger-div badger-left badger-danger" data-badger="Potential Vulnerability">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/TaskStackBuilder.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     Implicit Intent: localIntent used to create instance of PendingIntent. A malicious application could potentially intercept, redirect and/or modify (in a limited manner) this Intent. Pending Intents retain the UID of your application and all related permissions, allowing another application to act as yours.  File: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/TaskStackBuilder.java More details: https://www.securecoding.cert.org/confluence/display/android/DRD21-J.+Always+pass+explicit+intents+to+a+PendingIntent
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+               <div class="badger-div badger-left badger-warning" data-badger="Warning">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gcm/GCMRegistrar.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     Empty Pending instance found in: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gcm/GCMRegistrar.java. For security reasons, the Intent you supply here should almost always be an explicit intent that is specify an explicit component to be delivered to through Intent.setClass. A malicious application could potentially intercept, redirect and/or modify this Intent. Pending Intents retain the UID of your application and all related permissions, allowing another application to act as yours. Reference: https://developer.android.com/reference/android/app/PendingIntent.html
+                    </li>
+                    <li class="row-odd">
+                     Empty Pending instance found in: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gcm/GCMRegistrar.java. For security reasons, the Intent you supply here should almost always be an explicit intent that is specify an explicit component to be delivered to through Intent.setClass. A malicious application could potentially intercept, redirect and/or modify this Intent. Pending Intents retain the UID of your application and all related permissions, allowing another application to act as yours. Reference: https://developer.android.com/reference/android/app/PendingIntent.html
+                    </li>
+                    <li class="row-even">
+                     Empty Pending instance found in: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gcm/GCMRegistrar.java. For security reasons, the Intent you supply here should almost always be an explicit intent that is specify an explicit component to be delivered to through Intent.setClass. A malicious application could potentially intercept, redirect and/or modify this Intent. Pending Intents retain the UID of your application and all related permissions, allowing another application to act as yours. Reference: https://developer.android.com/reference/android/app/PendingIntent.html
+                    </li>
+                    <li class="row-odd">
+                     Empty Pending instance found in: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gcm/GCMRegistrar.java. For security reasons, the Intent you supply here should almost always be an explicit intent that is specify an explicit component to be delivered to through Intent.setClass. A malicious application could potentially intercept, redirect and/or modify this Intent. Pending Intents retain the UID of your application and all related permissions, allowing another application to act as yours. Reference: https://developer.android.com/reference/android/app/PendingIntent.html
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="crypto">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section lists any issues related to crypto vulnerabilities in the application
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-10 col-sm-10">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="crypto-issues-list">
+               <div class="badger-div badger-left badger-danger" data-badger="Potential Vulnerability">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/java/napalm/aes/AESGenerator.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     getInstance should not be called with ECB as the cipher mode, as it is insecure.
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="Potential Vulnerability">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/java/napalm/api/TokenParameters.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     setSeed should not be called with SecureRandom, as it is insecure. Specifying a fixed seed will cause the instance to return a predictable sequence of numbers. This may be useful for testing but it is not appropriate for secure use.
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="adbcommands">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           Until we perfect this, for manually testing, run the following command to see all the options and their meanings:
+           <kbd>
+            adb shell am
+           </kbd>
+           . Make sure to update qark frequently to get all the enhancements! You'll also find some good examples here:
+           <a href="http://xgouchet.fr/android/index.php?article42/launch-intents-using-adb">
+            http://xgouchet.fr/android/index.php?article42/launch-intents-using-adb
+           </a>
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="adbcommands-issues-list">
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "brd.bankingapp.android/com.bump.api.BumpAPI"
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.MAIN" -n "brd.bankingapp.android/ind.bankingapp.android.framework.activity.ActivatorActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.MAIN" -n "brd.bankingapp.android/ind.bankingapp.android.framework.activity.ActivatorActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SCAN" -n "brd.bankingapp.android/com.google.zxing.client.android.CaptureActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SCAN" -n "brd.bankingapp.android/com.google.zxing.client.android.CaptureActivity" --el
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SCAN" -n "brd.bankingapp.android/com.google.zxing.client.android.CaptureActivity" --ez
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SCAN" -n "brd.bankingapp.android/com.google.zxing.client.android.CaptureActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SCAN" -n "brd.bankingapp.android/com.google.zxing.client.android.CaptureActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SCAN" -n "brd.bankingapp.android/com.google.zxing.client.android.CaptureActivity" --el
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SCAN" -n "brd.bankingapp.android/com.google.zxing.client.android.CaptureActivity" --ez
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SCAN" -n "brd.bankingapp.android/com.google.zxing.client.android.CaptureActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="parsingerrors">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           Until we perfect this, please review these files manually. Due to parsing errors, it is possible that an issue may not have been reported correctly.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="issues-list">
+               <span id="parsingerror-issues-list">
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/print/PrintHelperKitkat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/util/TimeUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/util/LruCache.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/graphics/ColorUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/NotificationCompatKitKat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/NotificationCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/NotificationCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/NotificationCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/NotificationCompatApi21.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/NotificationCompatIceCreamSandwich.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/NotificationCompatJellybean.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/BundleUtil.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/BackStackRecord.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/FragmentActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/NotificationCompatApi20.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/TaskStackBuilder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/NotificationCompatHoneycomb.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/FragmentTransitionCompat21.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/BackStackState.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/media/MediaBrowserCompatUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/media/TransportMediatorJellybeanMR2.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/media/MediaMetadataCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/media/session/MediaControllerCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/media/session/MediaSessionCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/widget/NestedScrollView.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/widget/ViewDragHelper.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/widget/AutoScrollHelper.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/widget/DrawerLayout.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/widget/CursorAdapter.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/widget/SlidingPaneLayout.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/content/FileProvider.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/content/LocalBroadcastManager.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/content/ModernAsyncTask.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/os/CancellationSignal.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/view/GestureDetectorCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/view/ViewPager.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/games/GameEntity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/games/leaderboard/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/games/multiplayer/ParticipantEntity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/gcm/GoogleCloudMessaging.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/location/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bf.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/be.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/p.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bg.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/o.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bt.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bt.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bt.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bt.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bt.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bt.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bt.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/ay.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/ae.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/q.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/d.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/w.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bh.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bh.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bh.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/br.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/ar.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bs.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bn.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bp.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bq.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/az.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/ak.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/common/GooglePlayServicesUtil.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/common/internal/safeparcel/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/common/data/d.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/common/data/f.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/plus/PlusShare.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/GoogleMap.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/model/GroundOverlayOptions.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/model/LatLngBounds.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/model/internal/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/model/internal/IPolylineDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/model/internal/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/model/internal/d.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/model/internal/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/model/internal/g.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/model/internal/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/model/internal/f.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/IProjectionDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/j.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/IGoogleMapDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/ILocationSourceDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/h.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/ICameraUpdateFactoryDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/d.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/m.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/n.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/IUiSettingsDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/l.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/g.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/k.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/IMapFragmentDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/IMapViewDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/i.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/maps/internal/f.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gcm/GCMBaseIntentService.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/BarcodeFormat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/ResultMetadataType.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/MultiFormatWriter.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/DecodeHintType.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/EncodeHintType.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/oned/EAN8Writer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/oned/OneDReader.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/oned/EAN13Writer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/oned/Code128Writer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/oned/CodaBarWriter.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/oned/MultiFormatUPCEANReader.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/oned/Code39Writer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/oned/rss/RSS14Reader.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/oned/rss/expanded/RSSExpandedReader.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/oned/rss/expanded/decoders/GeneralAppIdDecoder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/oned/rss/expanded/decoders/CurrentParsingState.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/oned/rss/expanded/decoders/FieldParser.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/aztec/decoder/Decoder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/aztec/detector/Detector.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/pdf417/decoder/DecodedBitStreamParser.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/pdf417/encoder/PDF417Writer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/pdf417/encoder/PDF417HighLevelEncoder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/pdf417/encoder/Compaction.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/pdf417/encoder/PDF417.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/pdf417/detector/Detector.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/multi/qrcode/detector/MultiFinderPatternFinder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/common/StringUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/common/BitArray.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/common/CharacterSetECI.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/common/reedsolomon/GenericGFPoly.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/common/detector/MonochromeRectangleDetector.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/common/detector/WhiteRectangleDetector.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/datamatrix/decoder/BitMatrixParser.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/datamatrix/decoder/DecodedBitStreamParser.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/datamatrix/decoder/Version.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/datamatrix/detector/Detector.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/IntentSource.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/CaptureActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/DecodeHandler.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/PreferencesActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/InactivityTimer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/HttpHelper.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/ViewfinderView.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/CaptureActivityHandler.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/history/HistoryManager.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/history/HistoryItemAdapter.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/share/ShareActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/camera/CameraConfigurationManager.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/wifi/NetworkType.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/encode/EncodeActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/encode/ContactEncoder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/result/AddressBookResultHandler.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/result/ResultHandlerFactory.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/result/supplement/BookResultInfoRetriever.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/book/SearchBookContentsActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/result/ParsedResultType.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/result/CalendarParsedResult.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/result/VEventResultParser.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/qrcode/decoder/BitMatrixParser.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/qrcode/decoder/DecodedBitStreamParser.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/qrcode/decoder/DataBlock.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/qrcode/decoder/ErrorCorrectionLevel.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/qrcode/decoder/Mode.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/qrcode/encoder/MaskUtil.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/qrcode/encoder/Encoder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/qrcode/detector/FinderPatternFinder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/qrcode/detector/AlignmentPatternFinder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/qrcode/detector/Detector.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/commons/lang3/StringUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/commons/lang3/SerializationUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/commons/lang3/JavaVersion.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/commons/lang3/ObjectUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/commons/lang3/Range.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/commons/lang3/ArrayUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/commons/lang3/text/FormattableUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/commons/lang3/text/StrBuilder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/commons/lang3/time/DateUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/commons/lang3/math/NumberUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/commons/lang3/reflect/TypeUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/http/conn/routing/RouteInfo.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/barcode/android/integration/BarcodeType.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/function/settings/SettingsFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/function/fxrates/CalculatorFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/Status.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/activity/TabletCoordinator.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/activity/ActivityDecorator.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/activity/ActivatorActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/activity/TabletFragmentTracker.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/activity/ActivityFeature.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/activity/PageNavigator.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/activity/fragment/BaseFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/activity/fragment/BaseUrlFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/activity/fragment/WebViewFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/activity/fragment/ToolbarFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/activity/fragment/dialog/ListPickerDialogFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/util/DeviceInfo.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/util/IntentHelper.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/util/Resolution.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/util/DateUtil.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/util/Base64.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/cache/CacheStatus.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/cache/CacheScope.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/service/BankingServiceParams.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/bump/BumpRole.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/permissions/PermissionHandlerIds.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/permissions/PermissionHandler.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/network/BankingServiceResponse.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/frameworkapi/DefaultJavascriptBridge.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/descriptor/ViewDescriptor.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/descriptor/GuiElementVisibility.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/descriptor/SlidingDrawerDescriptor.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/descriptor/TabletAppDescriptor.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/fingerprint/FingerprintUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/fingerprint/FingerprintHelper.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/view/MultiDirectionSlidingDrawer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/view/TwoPaneLayout.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/view/CoordinatorLayout.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/view/ViewUtil.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/paymentcode/paymenturl/PaymentUrlModel.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/PinStyle.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/ui/activity/SettingsActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/ui/util/Validator.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/ui/fragment/BaseFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/ui/fragment/SignFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/ui/securitymessage/SecurityMessage.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/ui/titlebar/TitlebarButton.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/ui/templates/SignTemplateField.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/utils/Base64.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/file/parameter/TokenFunction.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/file/parameter/CharSet.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/file/parameter/PinRule.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/activity/SessionManager.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/common/images/ImageManager.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/ui/session/SessionManager.java
+                </strong>
+               </span>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="osbugs">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section is related to any operating system related issues. This information was
+                                    identified from the application's manifest and we encourage you to understand the type
+                                    of vulnerabilities that live ourside your application's sandbox but may affect your
+                                     application in some way or the other.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-8 col-sm-8">
+         <div class="well">
+          <div class="row">
+           <div class="col-lg-8">
+            <h2>
+             OS Version specific bugs
+            </h2>
+            <p class="text-justify">
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+         <div class="well">
+          <p>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="plugin">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="">
+          <p>
+           Plugin content output if any
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12" id="plugin-issues-list">
+            <div class="badger-div badger-left badger-danger" data-badger="Potential Vulnerability">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/apktool/AndroidManifest.xml
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  User created permission: &lt;permission android:name="brd.bankingapp.android.permission.MAPS_RECEIVE" android:protectionLevel="signature"/&gt;
+                 </li>
+                 <li class="row-odd">
+                  User created permission: &lt;permission android:name="brd.bankingapp.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/&gt;
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/apktool/AndroidManifest.xml
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  API Key Found
+&lt;?xml version="1.0" ?&gt;&lt;manifest android:versionCode="280410" android:versionName="2.9.4" package="brd.bankingapp.android" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002" xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+    &lt;uses-sdk android:minSdkVersion="7" android:targetSdkVersion="23"/&gt;
+    &lt;uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/&gt;
+    &lt;permission android:name="brd.bankingapp.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/&gt;
+    &lt;uses-permission android:name="brd.bankingapp.android.permission.C2D_MESSAGE"/&gt;
+    &lt;uses-feature android:glEsVersion="0x20000" android:required="true"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden|orientation" android:name="com.google.zxing.client.android.CaptureActivity" android:screenOrientation="landscape" android:stateNotNeeded="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="ind.bankingapp.android.framework.bump.BumpSenderActivity" android:screenOrientation="portrait" android:theme="@style/BaseDialogTheme" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="ind.bankingapp.android.framework.bump.BumpReceiverActivity" android:screenOrientation="portrait" android:theme="@style/BaseDialogTheme" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;receiver android:name="ind.bankingapp.android.framework.gcm.CustomGCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND"&gt;
+                &lt;action android:name="com.google.android.c2dm.intent.RECEIVE"/&gt;
+                &lt;action android:name="com.google.android.c2dm.intent.REGISTRATION"/&gt;
+        &lt;service android:name="com.bump.api.BumpAPI" android:process=":bumpProcess"&gt;
+                &lt;action android:name="com.bump.api.IBumpAPI"/&gt;
+        &lt;meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDmpOSAWdFhuy9Rcrz1nyFBRawiQw2v0wo"/&gt;
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/util/DeviceInfo.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Access of phone number or IMEI, is detected in file: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/util/DeviceInfo.java.
+Avoid storing or transmitting this data.
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/NotificationCompatSideChannelService.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Be careful with use of Check permission function
+App maybe vulnerable to Privilege escalation or Confused Deputy Attack. This function can grant access to malicious application, lacking the appropriate permission, by assuming your applications permissions. This means a malicious application, without appropriate permissions, can bypass its permission check by using your applicationpermission to get access to otherwise denied resources. Use - checkCallingPermission instead.
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/NotificationCompatSideChannelService.java
+Reference: https://developer.android.com/reference/android/content/Context.html#checkCallingOrSelfPermission(java.lang.String)
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/java/napalm/dummyst/CodeGenerator.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Debug logs are detected
+This may allow potential leakage of information from Android applications.
+Debug logs should never be compiled into an application except during development.
+https://developer.android.com/reference/android/util/Log.html
+
+Filepath:
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/ax.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/at.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/s.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/cc.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/t.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/n.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/common/SignInButton.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/common/internal/safeparcel/a.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/common/data/c.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/common/data/b.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/plus/PlusOneButton.java
+12 debug logs were found in the application
+                 </li>
+                 <li class="row-odd">
+                  Verbose logs are detected
+This may allow potential leakage of information from Android applications.
+Verbose logs should never be compiled into an application except during development.
+https://developer.android.com/reference/android/util/Log.html
+
+Filepath:
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/j.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/at.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/bw.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/al.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/common/internal/safeparcel/a.java
+5 verbose logs were found in the application
+                 </li>
+                 <li class="row-even">
+                  Debug logs are detected
+This may allow potential leakage of information from Android applications.
+Debug logs should never be compiled into an application except during development.
+https://developer.android.com/reference/android/util/Log.html
+
+Filepath:
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/util/LogWriter.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/NotificationManagerCompat.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/media/MediaBrowserCompat.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/widget/TextViewCompatDonut.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/view/ViewCompat.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/internal/n.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gcm/GCMRegistrar.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gcm/GCMBaseIntentService.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/DecodeHandler.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/CaptureActivityHandler.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/camera/CameraManager.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/camera/PreviewCallback.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/encode/QRCodeEncoder.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/result/ResultHandler.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/brd/bankingapp/android/function/settings/SettingsFragment.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/brd/bankingapp/android/function/settings/SettingsActivity.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/brd/bankingapp/android/function/accountinfo/AccountPreferencesFragment.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/function/settings/SettingsFragment.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/function/settings/SettingsActivity.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/service/DemoContentProvider.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/logger/Logger.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/fingerprint/FingerprintAuthenticationDialogFragment.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/fingerprint/FingerprintHelper.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/view/toolbar/TabletToolbar.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/ui/Logger.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/java/napalm/crypto/CryptoUtils.java
+26 debug logs were found in the application
+                 </li>
+                 <li class="row-odd">
+                  Verbose logs are detected
+This may allow potential leakage of information from Android applications.
+Verbose logs should never be compiled into an application except during development.
+https://developer.android.com/reference/android/util/Log.html
+
+Filepath:
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/FragmentState.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/LoaderManagerImpl.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/BackStackRecord.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/FragmentManagerImpl.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/app/BackStackState.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/content/LocalBroadcastManager.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gms/common/GooglePlayServicesUtil.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gcm/GCMRegistrar.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gcm/GCMBroadcastReceiver.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gcm/GCMBaseIntentService.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/ui/Logger.java
+11 verbose logs were found in the application
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-warning" data-badger="Warning">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/java/napalm/dummyst/CodeGenerator.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Reading files stored on External Storage makes it vulnerable to data injection attacks
+Note that this code does no error checking and there is no security enforced with these files. 
+For example, any application holding WRITE_EXTERNAL_STORAGE can write to these files.
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/content/ContextCompatKitKat.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/content/ContextCompatFroyo.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/content/ContextCompat.java
+Reference: https://developer.android.com/reference/android/content/Context.html#getExternalFilesDir(java.lang.String)
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/java/napalm/dummyst/CodeGenerator.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  File System Access is by default enabled
+setAllowFileAccess() and setAllowContentAccess() are by default true. This should be set to false to restrict access to local data since it is used to display content from locally stored HTML or fetch HTML and other content from the server.
+Reference: https://developer.android.com/reference/android/webkit/WebSettings.html
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/function/help/HelpFragment.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/bankingapp/android/framework/webview/WebViewUtils.java
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/result/supplement/ProductResultInfoRetriever.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Application contains hardcoded http url 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/zxing/client/android/result/supplement/ProductResultInfoRetriever.java. 
+http://www.google. 
+Ignore if HSTS is implemented
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/commons/lang3/concurrent/BackgroundInitializer.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  The Content provider API provides a method call
+The framework does no permission checking on this entry into the content provider besides the basic ability for the application to get access to the provider at all. Any implementation of this method must do its own permission checks on incoming calls to make sure they are allowed.Failure to do so will allow unauthorized components to interact with the content provider.
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/org/apache/commons/lang3/concurrent/BackgroundInitializer.java
+Reference: https://bitbucket.org/secure-it-i/android-app-vulnerability-benchmarks/src/d5305b9481df3502e60e98fa352d5f58e4a69044/ICC/WeakChecksOnDynamicInvocation-InformationExposure/?at=master
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-warning" data-badger="Warning">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/java/napalm/dummyst/CodeGenerator.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Application dynamically registers a broadcast receiver
+Application that register a broadcast receiver dynamically is vulnerable to granting unrestricted access to the broadcast receiver.
+The receiver will be called with any broadcast Intent that matches filter.
+ https://developer.android.com/reference/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver, android.content.IntentFilter)
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/android/support/v4/media/TransportMediatorJellybeanMR2.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/com/google/android/gcm/GCMRegistrar.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/ui/activity/TokenActivity.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/ui/activity/AboutActivity.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/brd.bankingapp.android/classes_dex2jar/ind/token/android/core/ui/session/SessionManager.java
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="references">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="">
+          <p>
+           This is a list of resources you may refer to understand more about android security
+                                     in general and also how specific programming mistakes or insecure-by-default settings may manifest themselves into
+                                     vulnerabilities. We are currently hand picking credible resources to add to the list. Please check for updates to get a revised list of references.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12">
+            <h2>
+             List of resources
+            </h2>
+            <br/>
+            <br/>
+            <ul>
+             <li>
+              <p class="">
+               For general Android security information:
+               <a href="http://developer.android.com/training/articles/security-tips.html">
+                http://developer.android.com/training/articles/security-tips.html
+               </a>
+              </p>
+             </li>
+             <li>
+              For information on proper TLS implementation:
+              <a href="http://developer.android.com/training/articles/security-ssl.html">
+               http://developer.android.com/training/articles/security-ssl.html
+              </a>
+             </li>
+             <li>
+              A great guide to Android security, from the Japanese Smartphone Security Association:
+              <a href="https://www.jssec.org/report/android_securecoding_en_20140801.html">
+               https://www.jssec.org/report/android_securecoding_en_20140801.html
+              </a>
+             </li>
+             <p>
+             </p>
+            </ul>
+            <br/>
+            <br/>
+            <br/>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="about">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="">
+          <h2>
+           <strong>
+            QUICK ANDROID REVIEW KIT
+           </strong>
+          </h2>
+          <strong>
+           Version 0.9
+          </strong>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12">
+            <br/>
+            <br/>
+            <br/>
+            <h4>
+             <strong>
+              Source:
+             </strong>
+            </h4>
+            <p class="">
+             Github:
+             <a href="https://www.github.com/linkedin/qark">
+              https://www.github.com/linkedin/qark
+             </a>
+             <br/>
+            </p>
+            <h4>
+             <strong>
+              Authors:
+             </strong>
+            </h4>
+            <strong>
+             Anthony Trummer:
+            </strong>
+            <a href="https://www.linkedin.com/in/tonytrummer">
+             https://www.linkedin.com/in/tonytrummer
+            </a>
+            <br/>
+            <strong>
+             Tushar Dalvi:
+            </strong>
+            <a href="https://www.linkedin.com/in/tdalvi">
+             https://www.linkedin.com/in/tdalvi
+            </a>
+            <p>
+            </p>
+            <br/>
+            <br/>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-xs-12">
+        <div class="well">
+         <p>
+          QARK Version 0.9
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--/row-offcanvas -->
+  </div>
+  <!-- /.modal -->
+  <!-- script references -->
+  <script src="js/jquery-2.1.4.min.js">
+  </script>
+  <script src="js/bootstrap.min.js">
+  </script>
+  <script src="js/scripts.js">
+  </script>
+  <link href="js/highlight/styles/magula.css" rel="stylesheet"/>
+  <script src="js/highlight/highlight.pack.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+ </body>
+</html>

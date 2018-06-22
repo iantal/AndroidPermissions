@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/rounded_bottom_corners_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/loading" />
+    <FrameLayout android:id="@id/info_message_container" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:textColor="?dsq_portfolio_text_color_secondary" android:layout_gravity="center" android:id="@id/info_message" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Text" android:layout_centerInParent="true" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/current_devices_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:layout_gravity="center_horizontal" android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/my_device_registration_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_below="@id/current_devices_container" android:layout_alignParentBottom="false">
+        <include android:id="@id/submit_layout" layout="@layout/submit_button_layout" />
+    </FrameLayout>
+</RelativeLayout>

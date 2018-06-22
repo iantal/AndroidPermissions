@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:background="?dsq_border_background" android:layout_width="@dimen/dsq_dialog_width" android:layout_height="@dimen/dsq_dialog_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/header_layout" android:background="?dsq_actionbar_background" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="?dsq_actionbar_text_color" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/beneficiary_account_number" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/done_cancel_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/actionbar_done_cancel_layout" />
+    </LinearLayout>
+    <ScrollView android:id="@id/beneficiary_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_above="@id/done_cancel_layout" android:layout_below="@id/header_layout">
+        <FrameLayout android:id="@id/beneficiary_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

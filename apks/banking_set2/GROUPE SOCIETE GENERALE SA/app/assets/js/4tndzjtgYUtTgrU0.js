@@ -1,0 +1,1 @@
+(function(a){a.IBAN_FORMAT="#### #### #### #### #### ####";})(jQuery);$.fn.ibanFormatter=function(c){if(c==null||c==undefined){return"";}var d=0;var a="";var b;for(b=0;b<$.IBAN_FORMAT.length;b++){if($.IBAN_FORMAT.charAt(b)=="#"){a+=c.charAt(d);d++;}else{a+=$.IBAN_FORMAT.charAt(b);}}return a;};

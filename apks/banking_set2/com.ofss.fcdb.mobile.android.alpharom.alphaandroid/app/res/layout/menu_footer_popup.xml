@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/menu_footer_popup_view" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/menufooterHeading" android:background="@drawable/titlebg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:textSize="10.0sp" android:textColor="@color/alpha_blue" android:id="@id/menufooterEditButton" android:background="@color/transparent" android:paddingLeft="15.0dip" android:paddingTop="2.0dip" android:paddingRight="15.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="4.0dip" android:text="@string/edit" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/menufooterLogo" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:background="@drawable/abrlogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <Button android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/footerPopupClose" android:background="@drawable/back" android:paddingLeft="15.0dip" android:paddingTop="2.0dip" android:paddingRight="15.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:background="@color/alpha_blue" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/footerPopupHeaderLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/footerPopupList" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:cacheColorHint="@color/transparent" />
+</LinearLayout>

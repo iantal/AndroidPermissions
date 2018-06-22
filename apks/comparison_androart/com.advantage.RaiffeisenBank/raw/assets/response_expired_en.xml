@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <ns2:executeSessionKeyExchange2Response xmlns:ns2="http://services.framework.ebanking/">
+            <return>
+                <resultCode>X</resultCode>
+                <errors>You have exceeded the inactivity limit. Please login again.</errors>
+                <numberOfDirectLogs>5</numberOfDirectLogs>
+            </return>
+        </ns2:executeSessionKeyExchange2Response>
+    </soapenv:Body>
+</soapenv:Envelope>

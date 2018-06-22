@@ -1,1 +1,13 @@
-{"findings": [{"title": "JavascriptInterfaceAnalyser", "stat": "high", "description": "", "recommendation": "", "evidence": ["/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/com_db_pwcc_dbmobile/app/smali/bolts/WebViewAppLinkResolver$2.smali addJavascriptInterface"]}]}
+{
+  "findings": [
+    {
+      "title": "JavascriptInterfaceAnalyser",
+      "stat": "high",
+      "description": "",
+      "recommendation": "",
+      "evidence": [
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/com_db_pwcc_dbmobile/app/smali/bolts/WebViewAppLinkResolver$2.smali addJavascriptInterface"
+      ]
+    }
+  ]
+}

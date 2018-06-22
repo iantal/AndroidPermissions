@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/pagePadding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_marginBottom="@dimen/rowPadding" android:text="@string/templateChooserDescription" style="@style/pageDescription" />
+        <LinearLayout android:orientation="vertical" android:id="@id/templatesContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/rowPadding" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/security_message" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,103 @@
+{
+  "success": true,
+  "data": {
+    "@xsi:type": "pegasus.project.brd.function.payment.bean.InitRequestMoneyTransferResponse",
+    "targetAccounts": [
+      {
+        "@xsi:type": "pegasus.project.common.brdcustomer.bean.BrdAccountWithPreferences",
+        "accountNumber": "RO94BRDE450SV49149054500",
+        "accountNumberIban": "RO94BRDE450SV49149054500",
+        "accountType": "Cont curent",
+        "accountTypeId": "SVC0",
+        "customerId": "10098320",
+        "currency": "RON",
+        "availableBalance": 4995,
+        "bookedBalance": 4995,
+        "blockedAmount": 0,
+        "creditLimit": 600,
+        "closed": false,
+        "blocked": false,
+        "activityList": [
+          "M",
+          "Q"
+        ],
+        "enabled": true,
+        "accountName": "Cont curent RON",
+        "accountOrder": 1,
+        "ownerCBSId": "9444500",
+        "ownerName": "Daniela",
+        "accountStatus": true,
+        "primaryChargeAccount": true,
+        "accountProductTypeId": "A",
+        "dateOfBalance": "2013-12-04T20:02:54.556",
+        "debtAmount": 0,
+        "overlimit": 0
+      },
+      {
+        "@xsi:type": "pegasus.project.common.brdcustomer.bean.BrdAccountWithPreferences",
+        "accountNumber": "RO20BRDE450SV49149564500",
+        "accountNumberIban": "RO20BRDE450SV49149564500",
+        "accountType": "Cont curent",
+        "accountTypeId": "SVC4",
+        "customerId": "10098320",
+        "currency": "EUR",
+        "availableBalance": 1254.67,
+        "bookedBalance": 1254.67,
+        "blockedAmount": 0,
+        "creditLimit": 0,
+        "closed": false,
+        "blocked": false,
+        "activityList": [
+          "M",
+          "Q"
+        ],
+        "enabled": true,
+        "accountName": "Cont curent EUR",
+        "accountOrder": 1,
+        "ownerCBSId": "9444500",
+        "ownerName": "Daniela",
+        "accountStatus": true,
+        "primaryChargeAccount": false,
+        "accountProductTypeId": "A",
+        "dateOfBalance": "2013-12-04T20:02:54.529",
+        "debtAmount": 0,
+        "overlimit": 0
+      },
+      {
+        "@xsi:type": "pegasus.project.common.brdcustomer.bean.BrdAccountWithPreferences",
+        "accountNumber": "RO12BRDE450SV49149724500",
+        "accountNumberIban": "RO12BRDE450SV49149724500",
+        "accountType": "Atucont",
+        "accountTypeId": "SVET",
+        "customerId": "10098320",
+        "currency": "RON",
+        "availableBalance": 17750.5,
+        "bookedBalance": 17750.5,
+        "blockedAmount": 0,
+        "creditLimit": 0,
+        "closed": false,
+        "blocked": false,
+        "activityList": [
+          "M",
+          "Q"
+        ],
+        "enabled": true,
+        "accountName": "Atucont",
+        "accountOrder": 3,
+        "ownerCBSId": "9444500",
+        "ownerName": "Daniela",
+        "accountStatus": true,
+        "primaryChargeAccount": false,
+        "accountProductTypeId": "S",
+        "dateOfBalance": "2013-12-04T20:02:54.542",
+        "debtAmount": 0,
+        "overlimit": 0
+      }
+    ],
+    "validPhoneNumberPrefixes": "72,73,74,75,76,77,78,79"
+  },
+  "header": {
+    "token": "LTJhMl4ebWg7MUi385q4Ug==",
+    "sessionTimeout": 600
+  }
+}

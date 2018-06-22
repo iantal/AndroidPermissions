@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no"/>
+		<script type="text/javascript" src="../js/thirdparty/jquery/jquery-1.8.1.js"></script>
+		<script type="text/javascript" src="../js/thirdparty/jquery-encoder/Class.create.js"></script>
+		<script type="text/javascript" src="../js/thirdparty/jquery-encoder/encoder.js"></script>
+		<script type="text/javascript" src="../js/thirdparty/xaprb/date-functions.js"></script>
+		<script type="text/javascript" src="../js/framework/framework.js"></script>
+		<script type="text/javascript" src="../js/bankingapp-framework-core.debug.js"></script>
+		<script type="text/javascript" src="../js/bankingapp-framework-ui.debug.js"></script>
+		<script type="text/javascript" src="../js/dPDtG6z58EDd28lf.js"></script>
+		<script type="text/javascript" src="../js/23eu7cKdB0WiGq0Y.js"></script>
+		<script type="text/javascript" src="../js/init.js"></script>
+		<script type="text/javascript" src="../js/QrLcmBk3KMZytTdZ.js"></script>
+		<script type="text/javascript" src="../js/x3c6jvGQtEl6FN3Z.js"></script>
+		
+		<script type="text/javascript">
+			//turn ajax caching on, in this case jQuery will not append timestamp to urls when using getScript method.
+			$.ajaxSetup({cache: true});
+			//load base CSS file
+			$().loadCss(getCurrentSkin(), 'common', 'style.agg' + $().getCssSuffix() + '.css');
+ 			$().loadCss(getCurrentSkin(), getDeviceInformation().os, 'style.agg' + $().getCssSuffix() + '.css');
+			//load resources
+			try
+			{
+				$().loadJavaScript('/js/resources/' + getLocale() + '/resources.js');
+			}
+			catch(err)
+			{
+				//TODO: This can not happen, only during resource refator process.
+			}
+		</script>
+	</head>
+	<body>
+		<div id="warnings"></div>
+		<div id="content"></div>
+		<div id="infos"></div>
+		<div id="successes"></div>
+		<div id="navigation"></div>
+	</body>
+</html>

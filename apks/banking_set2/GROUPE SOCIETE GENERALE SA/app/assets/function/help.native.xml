@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<function>
+  <name>help</name>
+  <views>
+    <view>
+      <title>native_help_title</title>
+      <url>view://ind/bankingapp/function/help/help</url>
+      <implementationType>NATIVE</implementationType>
+      <implementation>ind.bankingapp.android.function.help.HelpFragment</implementation>
+      <htmlTemplate></htmlTemplate>
+      <showToolbar>false</showToolbar>
+      <supplementaryFunction>true</supplementaryFunction>
+      <contextMenu>
+        <addDefaultContextMenuItems>false</addDefaultContextMenuItems>
+      </contextMenu>
+      <resources>
+      </resources>
+      <bankParameters>
+      </bankParameters>
+    </view>
+  </views>
+</function>

@@ -1,1 +1,17 @@
-{"findings": [{"title": "Access local ressources", "stat": "high", "description": "", "recommendation": "", "evidence": ["/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/at_spardat_bcrmobile/app/smali/at/spardat/bcrmobile/activity/AppBrowserActivity.smali", "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/at_spardat_bcrmobile/app/smali/at/spardat/bcrmobile/activity/click24/Click24AppBrowserActivity.smali", "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/at_spardat_bcrmobile/app/smali/at/spardat/bcrmobile/activity/click24/mailbox/MailBoxItemDetailActivity.smali", "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/at_spardat_bcrmobile/app/smali/at/spardat/bcrmobile/activity/click24/mailbox/MailBoxItemConfirmActivity.smali", "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/at_spardat_bcrmobile/app/smali/at/spardat/bcrmobile/activity/click24/offer/a.smali"]}]}
+{
+  "findings": [
+    {
+      "title": "Access local ressources",
+      "stat": "high",
+      "description": "",
+      "recommendation": "",
+      "evidence": [
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/at_spardat_bcrmobile/app/smali/at/spardat/bcrmobile/activity/AppBrowserActivity.smali",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/at_spardat_bcrmobile/app/smali/at/spardat/bcrmobile/activity/click24/Click24AppBrowserActivity.smali",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/at_spardat_bcrmobile/app/smali/at/spardat/bcrmobile/activity/click24/mailbox/MailBoxItemDetailActivity.smali",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/at_spardat_bcrmobile/app/smali/at/spardat/bcrmobile/activity/click24/mailbox/MailBoxItemConfirmActivity.smali",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/at_spardat_bcrmobile/app/smali/at/spardat/bcrmobile/activity/click24/offer/a.smali"
+      ]
+    }
+  ]
+}

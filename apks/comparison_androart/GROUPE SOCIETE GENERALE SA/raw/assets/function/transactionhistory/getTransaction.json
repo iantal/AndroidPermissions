@@ -1,0 +1,180 @@
+{
+  "success": true,
+  "data": {
+    "@xsi:type": "pegasus.project.brd.component.brdcommon.transactionhistory.bean.TransactionHistoryDetail",
+    "transaction": {
+      "id": 10842,
+      "version": 3,
+      "signature": [
+        {
+          "created": "2017-07-06T10:24:53.040",
+          "principal": {
+            "trusteePrincipal": {
+              "id": "160",
+              "name": "Daniela",
+              "loginId": "MBL_15508050"
+            },
+            "customerPrincipal": {
+              "@xsi:type": "pegasus.project.brd.component.brdsecurity.bean.BrdPrincipal",
+              "id": "160",
+              "name": "Daniela",
+              "loginId": "MBL_15508050",
+              "customerType": "1",
+              "customerStatus": "A",
+              "subscriptionPackageId": [
+                "13",
+                "21"
+              ],
+              "customerAddress": "STR STEFAN MIHAILEANU 32B, bl. 32B, et. 2, ap. 3, BUCURESTI, S2",
+              "statementTableIndexes": [
+                "13"
+              ]
+            }
+          }
+        }
+      ],
+      "status": {
+        "@name": "PROCESSED",
+        "$": "5"
+      },
+      "operation": {
+        "@name": "PROCESSREPLY",
+        "$": "5"
+      },
+      "operationChannel": "MBL",
+      "closed": true,
+      "created": "2017-07-06T10:24:53.050",
+      "creator": {
+        "trusteePrincipal": {
+          "id": "160"
+        },
+        "customerPrincipal": {
+          "id": "160"
+        }
+      },
+      "lastModified": "2017-07-06T10:25:01.733",
+      "type": "openAccountTransferLifeCycle",
+      "index": [
+        {
+          "sequence": 1,
+          "name": "CustomerId",
+          "text": "160"
+        },
+        {
+          "sequence": 2,
+          "name": "FunctionTypeId",
+          "integer": 54
+        },
+        {
+          "sequence": 3,
+          "name": "Account",
+          "text": "RO94BRDE450SV49149054500"
+        },
+        {
+          "sequence": 4,
+          "name": "Amount",
+          "real": 2500
+        },
+        {
+          "sequence": 5,
+          "name": "ValueDate",
+          "date": "2017-07-06T00:00:00.000"
+        },
+        {
+          "sequence": 6,
+          "name": "Currency",
+          "text": "RON"
+        },
+        {
+          "sequence": 7,
+          "name": "AccountType",
+          "text": "TD0T6F0F0T101D"
+        },
+        {
+          "sequence": 8,
+          "name": "AccountTypeCode",
+          "text": "TDT6"
+        },
+        {
+          "sequence": 9,
+          "name": "CreatedAccount",
+          "text": "RO94BRDE450SV49149054500"
+        },
+        {
+          "sequence": 10,
+          "name": "FreeTextSearchIndex",
+          "text": ""
+        },
+        {
+          "sequence": 11,
+          "name": "ProtectedObject",
+          "text": "RO94BRDE450SV49149054500"
+        }
+      ],
+      "transactionData": {
+        "@xsi:type": "pegasus.project.brd.component.transactionframework.glue.transaction.bean.TransactionData",
+        "details": "unauthorized",
+        "authorizationData": {
+          "@xsi:type": "pegasus.project.brd.component.transactionframework.glue.transaction.bean.AuthorizationData",
+          "customerId": "160",
+          "trusteeId": "160",
+          "channelId": "MBL",
+          "functionTypeId": 54,
+          "protectedObjectId": "RO94BRDE450SV49149054500",
+          "functionId": "openaccount",
+          "credentialFunction": [
+            "OpenSavingsAccount"
+          ]
+        },
+        "transactionRequest": {
+          "@xsi:type": "pegasus.project.brd.component.transactionframework.glue.transfer.bean.OpenAccountTransferRequest",
+          "transactionType": "D",
+          "initialAmountNeeded": true,
+          "sourceAccount": "RO94BRDE450SV49149054500",
+          "initialAmount": 2500,
+          "minInitialAmount": 150,
+          "interestRate": 3.1,
+          "interestType": {
+            "@name": "FIX_INTEREST",
+            "$": "X"
+          },
+          "valueDate": "2017-07-06",
+          "currency": "RON",
+          "accountType": "TD0T6F0F0T101D",
+          "accountTypeCode": "TDT6",
+          "friendlyName": "saving"
+        },
+        "transactionResponse": {
+          "@xsi:type": "pegasus.project.brd.component.transactionframework.glue.transfer.bean.OpenAccountTransferResponse",
+          "reasonCode": "0",
+          "accountNumber": "RO94BRDE450SV49149054500"
+        },
+        "forecastReply": {
+          "cUI_CNP": "2690411301979",
+          "iBankId": "9444500",
+          "freeTextSearchIndexField": "",
+          "customerName": "Daniela"
+        },
+        "transactionStatusUpdateData": [
+          {
+            "bFOTransactionId": "000000000000010842",
+            "cBSTransactionId": "P",
+            "newTransactionStatusCode": "PROCESSED",
+            "reasonCode": "0",
+            "extraDetails": "RO94BRDE450SV49149054500"
+          }
+        ]
+      }
+    },
+    "statusName": "Processed",
+    "reasonName": "unauthorized",
+    "sourceAccountName": "Current account 3",
+    "sourceAccountType": "Practicont RON",
+    "sourceAccountCurrency": "RON",
+    "typeName": "Open account"
+  },
+  "header": {
+    "token": "1Mux6Ra7AxHCxCsRIFWqag==",
+    "sessionTimeout": 600
+  }
+}

@@ -1,0 +1,1 @@
+Class.ns("Bankingapp.functions.accountinfo");Bankingapp.functions.accountinfo.CardList=Class.extend(Bankingapp.ui.List,{constructor:function(c,a){var b={};if(c){if($.isArray(c)){if(a){$.extend(b,a);}b.listData=c;}else{$.extend(b,c);}b.itemRenderer=Bankingapp.functions.accountinfo.CardListItem;}Bankingapp.functions.accountinfo.CardList.superclass.constructor.call(this,b);}});

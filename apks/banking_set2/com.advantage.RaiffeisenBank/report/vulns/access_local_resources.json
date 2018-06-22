@@ -1,0 +1,14 @@
+{
+  "findings": [
+    {
+      "title": "WebView Injection",
+      "stat": "low",
+      "description": "",
+      "recommendation": "",
+      "evidence": [
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.advantage.RaiffeisenBank/app/smali/com/thinkdesquared/banking/WebViewActivity.smali",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.advantage.RaiffeisenBank/app/smali/com/thinkdesquared/banking/ViewCyberReceiptActivity.smali"
+      ]
+    }
+  ]
+}

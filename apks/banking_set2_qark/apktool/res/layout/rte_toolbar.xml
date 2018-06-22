@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:scrollbarStyle="outsideOverlay" android:background="?actionBarItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.onegravity.rteditor.toolbar.HorizontalRTToolbar android:orientation="horizontal" android:id="@id/rte_toolbar" android:background="?actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_bold" android:background="?rte_icToolbarBold" style="@style/RTE_ToolbarButton" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_italic" android:background="?rte_icToolbarItalic" style="@style/RTE_ToolbarButton" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_underline" android:background="?rte_icToolbarUnderline" style="@style/RTE_ToolbarButton" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_strikethrough" android:background="?rte_icToolbarStrikethrough" style="@style/RTE_ToolbarButton" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_superscript" android:background="?rte_icToolbarSuperscript" style="@style/RTE_ToolbarButton" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_subscript" android:background="?rte_icToolbarSubscript" style="@style/RTE_ToolbarButton" />
+        <include layout="@layout/rte_toolbar_divider" />
+        <Spinner android:id="@id/toolbar_font" android:background="?rte_icToolbarFont" style="?attr/rte_ToolbarSpinner" />
+        <Spinner android:id="@id/toolbar_fontsize" android:background="?rte_icToolbarFontSize" style="?attr/rte_ToolbarSpinner" />
+        <Spinner android:id="@id/toolbar_fontcolor" android:background="?rte_icToolbarFontColor" style="?attr/rte_ToolbarSpinner" />
+        <Spinner android:id="@id/toolbar_bgcolor" android:background="?rte_icToolbarBGColor" style="?attr/rte_ToolbarSpinner" />
+        <include layout="@layout/rte_toolbar_divider" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_number" android:background="?rte_icToolbarNumber" style="@style/RTE_ToolbarButton" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_bullet" android:background="?rte_icToolbarBullet" style="@style/RTE_ToolbarButton" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_inc_indent" android:background="?rte_icToolbarIncIndent" style="@style/RTE_ToolbarButton" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_dec_indent" android:background="?rte_icToolbarDecIntent" style="@style/RTE_ToolbarButton" />
+        <include layout="@layout/rte_toolbar_divider" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_align_left" android:background="?rte_icToolbarAlignLeft" style="@style/RTE_ToolbarButton" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_align_center" android:background="?rte_icToolbarAlignCenter" style="@style/RTE_ToolbarButton" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_align_right" android:background="?rte_icToolbarAlignRight" style="@style/RTE_ToolbarButton" />
+        <include layout="@layout/rte_toolbar_divider" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_link" android:background="?rte_icToolbarLink" style="@style/RTE_ToolbarButton" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_image" android:background="?rte_icToolbarImage" style="@style/RTE_ToolbarButton" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_image_capture" android:background="?rte_icToolbarCapture" style="@style/RTE_ToolbarButton" />
+        <include layout="@layout/rte_toolbar_divider" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_undo" android:background="?rte_icToolbarUndo" style="@style/RTE_ToolbarButton" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_redo" android:background="?rte_icToolbarRedo" style="@style/RTE_ToolbarButton" />
+        <com.onegravity.rteditor.toolbar.RTToolbarImageButton android:id="@id/toolbar_clear" android:background="?rte_icToolbarClear" android:layout_marginRight="4.0dip" style="@style/RTE_ToolbarButton" />
+    </com.onegravity.rteditor.toolbar.HorizontalRTToolbar>
+</HorizontalScrollView>

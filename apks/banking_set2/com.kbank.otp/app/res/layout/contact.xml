@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_panel" android:background="@color/top_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/top_panel_height">
+        <ImageButton android:id="@id/menu" style="@style/MenuStyle" />
+        <TextView android:text="@string/title_contact_us" style="@style/CaptionStyle" />
+    </RelativeLayout>
+    <ListView android:id="@android:id/list" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:layout_below="@id/top_panel" />
+</RelativeLayout>

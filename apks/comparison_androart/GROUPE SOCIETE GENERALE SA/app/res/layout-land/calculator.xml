@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:background="?fragmentBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:id="@id/toggleBox" android:layout_marginBottom="@dimen/content_padding" style="@style/radioGroup" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/content_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/pageContent">
+            <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow>
+                    <ind.bankingapp.android.function.fxrates.AmountEditText android:layout_gravity="center_vertical" android:id="@id/fromValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="@integer/function.fxrates.textview_maxlength" android:layout_weight="1.0" style="@style/calcBox" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/bigPadding" android:layout_marginRight="@dimen/bigPadding" android:src="@drawable/calc_arrow_right" android:layout_weight="0.0" />
+                    <ind.bankingapp.android.function.fxrates.AmountEditText android:enabled="false" android:layout_gravity="center_vertical" android:id="@id/toValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/calcBox" />
+                </TableRow>
+                <TableRow android:layout_marginTop="@dimen/content_padding">
+                    <TextSwitcher android:gravity="center|left" android:id="@id/leftCurrencyBox" android:background="@drawable/calculator_lower_flag_bg" android:paddingLeft="@dimen/buttonPadding" android:paddingTop="@dimen/bigPadding" android:paddingRight="@dimen/buttonPadding" android:paddingBottom="@dimen/bigPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="1.0px" android:layout_weight="1.0" />
+                    <ImageButton android:id="@id/replace" android:background="@drawable/calc_replace_bg" android:padding="@dimen/buttonPaddingMedium" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/calc_replace" />
+                    <TextSwitcher android:gravity="center|right" android:id="@id/rightCurrencyBox" android:background="@drawable/calculator_upper_flag_bg" android:paddingLeft="@dimen/buttonPadding" android:paddingTop="@dimen/bigPadding" android:paddingRight="@dimen/buttonPadding" android:paddingBottom="@dimen/bigPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0px" android:layout_weight="1.0" />
+                </TableRow>
+            </TableLayout>
+            <TextView android:id="@id/ratesValidComment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_padding" android:layout_marginBottom="@dimen/content_padding" style="@style/commentText" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/content_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/pageContent">
+            <ind.bankingapp.android.framework.view.numpad.NumpadView android:id="@id/numpad" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:cellSpace="5.0dip" custom:numbersArray="@array/numpad_numbers">
+                <Button android:id="@id/numpad_extra" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/native_bankingapp_common_decimal_separator" style="?numpadButtonStyle" />
+            </ind.bankingapp.android.framework.view.numpad.NumpadView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta charset="utf-8"/>
+  <title>
+   QARK Report
+  </title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Chart.js for charts -->
+  <script src="js/Chart.js/Chart.js">
+  </script>
+  <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+
+    <![endif]-->
+  <link href="css/styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="navbar navbar-inverse navbar-fixed-top gradient">
+   <div class="navbar-header">
+    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+     <span class="icon-bar">
+     </span>
+     <span class="icon-bar">
+     </span>
+     <span class="icon-bar">
+     </span>
+    </button>
+    <a class="navbar-brand" href="#">
+     QARK
+    </a>
+   </div>
+   <div class="collapse navbar-collapse">
+    <!--
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        -->
+   </div>
+   <!--/.nav-collapse -->
+  </div>
+  <!--/.navbar -->
+  <div class="row-offcanvas row-offcanvas-left">
+   <div class="sidebar-offcanvas" id="sidebar">
+    <div class="gradient2 col-md-12">
+     <h3>
+      Information
+     </h3>
+     <ul class="nav nav-pills nav-stacked">
+      <li class="active">
+       <a data-toggle="tab" href="#dashboard">
+        Dashboard
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#manifest">
+        Manifest
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#appcomponents">
+        App Components
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#webviews">
+        Web Views
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#x509">
+        X.509 Issues
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#filepermission">
+        File Permissions
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#crypto">
+        Crypto bugs
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#pendingintent">
+        Pending Intents
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#adbcommands">
+        ADB Commands
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#osbugs">
+        OS bugs
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#plugin">
+        Plugin Issues
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#parsingerrors">
+        Parsing Errors
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#about">
+        About
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="main">
+    <div class="col-md-12">
+     <p class="visible-xs">
+      <button class="btn btn-primary btn-xs" data-toggle="offcanvas" type="button">
+       <i class="glyphicon glyphicon-chevron-left">
+       </i>
+      </button>
+     </p>
+     <br/>
+     <div class="tab-content">
+      <div class="tab-pane active" id="dashboard">
+       <div class="row">
+        <div class="col-md-12">
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="well">
+          <div class="row">
+           <div class="col-lg-12">
+            <h2>
+             <strong>
+              STATIC CODE ANALYSIS RESULT
+             </strong>
+            </h2>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-6">
+            <h6>
+             <strong>
+              SOURCE:
+             </strong>
+             <strong>
+              <span id="apkpath">
+               <span>
+                /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid.apk
+               </span>
+              </span>
+             </strong>
+            </h6>
+            <h6>
+             <strong>
+              TOTAL FILES:
+             </strong>
+             <strong>
+              <span id="totalfiles">
+               <span>
+                753
+               </span>
+              </span>
+             </strong>
+            </h6>
+            <h6>
+             <strong>
+              JAVA FILES:
+             </strong>
+             <strong>
+              <span id="javafiles">
+               <span>
+                212
+               </span>
+              </span>
+             </strong>
+            </h6>
+            <h6>
+             <strong>
+              <span id="restorestats">
+               <span>
+                Restored 7 file(s) out of 12 corrupt file(s)
+               </span>
+              </span>
+             </strong>
+            </h6>
+           </div>
+           <div class="col-lg-6">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-12 col-sm-12">
+         <div class="well">
+          <div class="row">
+           <div class="col-lg-12">
+            <div class="container-fluid">
+             <div class="row">
+              <div class="col-xs-3 col-md-3">
+               <div class="panel status panel-danger">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="vulnerability_count">
+                  <div>
+                   1
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Potential Vulnerabilities
+                 </strong>
+                </div>
+               </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+               <div class="panel status panel-warning">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="warning_count">
+                  <div>
+                   3
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Warnings
+                 </strong>
+                </div>
+               </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+               <div class="panel status panel-success">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="information_count">
+                  <div>
+                   7
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Informational
+                 </strong>
+                </div>
+               </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+               <div class="panel status panel-info">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="debug_count">
+                  <div>
+                   35
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Debug
+                 </strong>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="manifest">
+       <div class="row">
+        <div class="col-md-12">
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12" id="manifest-issues">
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <strong>
+              Backups not enabled.
+             </strong>
+             <ul>
+             </ul>
+            </div>
+            <pre id="rawmanifest"><code class="xml">&lt;?xml version="1.0" ?&gt;&lt;manifest android:installLocation="auto" android:versionCode="1444190" android:versionName="1.9" package="com.ofss.fcdb.mobile.android.alpharom.alphaandroid" xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+    &lt;uses-sdk android:minSdkVersion="8" android:targetSdkVersion="10"/&gt;
+    &lt;uses-permission android:name="android.permission.CALL_PHONE"/&gt;
+    &lt;uses-permission android:name="android.permission.INTERNET"/&gt;
+    &lt;uses-permission android:name="android.permission.VIBRATE"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/&gt;
+    &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/&gt;
+    &lt;application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/ABRTheme"&gt;
+        &lt;service android:name="com.iflex.fcat.mobile.android.infra.DownloadPDFService"/&gt;
+        &lt;activity android:name="com.ofss.fcdb.mobile.android.alpharom.alphaandroid.LaunchApplication" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.MAIN"/&gt;
+                &lt;category android:name="android.intent.category.LAUNCHER"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+        &lt;activity android:label="@string/app_name" android:name="com.iflex.fcat.mobile.android.infra.FCDBLoginTab" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:launchMode="standard" android:name="com.iflex.fcat.mobile.android.infra.LandingScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.BaseActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:launchMode="singleInstance" android:name="com.iflex.fcat.mobile.android.infra.LoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/&gt;
+        &lt;activity android:name="com.iflex.fcat.mobile.android.infra.ForexActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.HelpUrlActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.TemplateTwo" android:screenOrientation="portrait" android:theme="@android:style/Theme" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.TransactionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:name="com.iflex.fcat.mobile.android.infra.BranchLocatorActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.TemplateFour" android:screenOrientation="portrait" android:theme="@android:style/Theme" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.TemplateOne" android:screenOrientation="portrait" android:theme="@android:style/Theme" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:name="com.iflex.fcat.mobile.android.infra.PreLoginOffers" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:name="com.iflex.fcat.mobile.android.infra.ContactUs" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.OffersActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.ATGWebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:name="com.iflex.fcat.mobile.android.infra.TemplateThree" android:screenOrientation="portrait" android:theme="@android:style/Theme"/&gt;
+        &lt;activity android:label="@string/title_activity_alerts" android:name="com.iflex.fcat.mobile.android.infra.TemplateFive"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_edit_favorites" android:name="com.iflex.fcat.mobile.android.infra.EditFavorites" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_add_attachment" android:name="com.iflex.fcat.mobile.android.infra.AddAttachment" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/&gt;
+        &lt;activity android:name="com.iflex.fcat.mobile.android.infra.LogoffActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/&gt;
+        &lt;meta-data android:name="android.max_aspect" android:value="2.1"/&gt;
+    &lt;/application&gt;
+&lt;/manifest&gt;</code></pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="appcomponents">
+       <div class="badger-div badger-left badger-warning" data-badger="Warning">
+        <strong>
+         The following activity are exported, but not protected by any permissions. Failing to protect activity could leave them vulnerable to attack by malicious apps. The activity should be reviewed for vulnerabilities, such as injection and information leakage.
+        </strong>
+        <ul>
+         <li>
+          com.ofss.fcdb.mobile.android.alpharom.alphaandroid.LaunchApplication
+         </li>
+        </ul>
+       </div>
+       <div class="row">
+        <div class="col-md-12">
+         <!--<div class="well">-->
+         <!--<p>-->
+         <!--Issues related to Application Components.-->
+         <!--</p>-->
+         <!--</div>-->
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12" id="appcomponent-issues">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="webviews">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           A View that displays web pages. This class is the basis upon which you can roll your
+                                    own web browser or simply display some online content within your Activity. It uses
+                                    the WebKit rendering engine to display web pages and includes methods to navigate
+                                    forward and backward through a history, zoom in and out, perform text searches and
+                                    more. WebViews may be implemented using the "Android/AOSP" (WebViewClient) or 
+                                    Chrome (WebChromeClient) browsers.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="webview-issues-list">
+               <div class="badger-div badger-left badger-success" data-badger="Info">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/BranchLocatorActivity.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     While not a vulnerability by itself, it appears this app has JavaScript enabled in this WebView. If this is not expressly necessary, you should disable it, to prevent the possibility of XSS (cross-site scripting) attacks. More info: http://developer.android.com/guide/practices/security.html. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/JS_WARNING.html
+                    </li>
+                    <li class="row-odd">
+                     BaseURL not redefined in this WebView.
+                    </li>
+                    <li class="row-even">
+                     File system access is enabled in this WebView. If untrusted data is used to specify the URL opened by this WebView, a malicious app or site may be able to read your app's private files, if it returns the response to them. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/FILE_SYS_WARN.html
+                    </li>
+                    <li class="row-odd">
+                     While not a vulnerability by itself, it appears this app does not explicitly disable Content Provider access from WebViews. If the WebViews take in untrusted input, this can allow for data theft. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/WV_CPA_WARNING.html
+                    </li>
+                    <li class="row-even">
+                     JavaScript running in a file scheme context can access content from any origin. This is an insecure default value for minSdkVersion &lt; 16 or may have been overridden (setAllowUniversalAccessFromFileURLs) in later versions. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/UNIV_FILE_WARNING.html
+                    </li>
+                    <li class="row-odd">
+                     addJavascriptInterface not used in this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/BranchLocatorActivity.java
+                    </li>
+                    <li class="row-even">
+                     DOM Storage enabled for this WebView, there is a potential for caching sensitive information.mapView&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/BranchLocatorActivity.java
+                    </li>
+                    <li class="row-odd">
+                     While not a vulnerability by itself, it appears this app has JavaScript enabled in this WebView. If this is not expressly necessary, you should disable it, to prevent the possibility of XSS (cross-site scripting) attacks. More info: http://developer.android.com/guide/practices/security.html. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/JS_WARNING.html
+                    </li>
+                    <li class="row-even">
+                     BaseURL not redefined in this WebView.
+                    </li>
+                    <li class="row-odd">
+                     File system access is enabled in this WebView. If untrusted data is used to specify the URL opened by this WebView, a malicious app or site may be able to read your app's private files, if it returns the response to them. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/FILE_SYS_WARN.html
+                    </li>
+                    <li class="row-even">
+                     While not a vulnerability by itself, it appears this app does not explicitly disable Content Provider access from WebViews. If the WebViews take in untrusted input, this can allow for data theft. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/WV_CPA_WARNING.html
+                    </li>
+                    <li class="row-odd">
+                     JavaScript running in a file scheme context can access content from any origin. This is an insecure default value for minSdkVersion &lt; 16 or may have been overridden (setAllowUniversalAccessFromFileURLs) in later versions. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/UNIV_FILE_WARNING.html
+                    </li>
+                    <li class="row-even">
+                     addJavascriptInterface not used in this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/BranchLocatorActivity.java
+                    </li>
+                    <li class="row-odd">
+                     DOM Storage enabled for this WebView, there is a potential for caching sensitive information.mapView&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/BranchLocatorActivity.java
+                    </li>
+                    <li class="row-even">
+                     While not a vulnerability by itself, it appears this app has JavaScript enabled in this WebView. If this is not expressly necessary, you should disable it, to prevent the possibility of XSS (cross-site scripting) attacks. More info: http://developer.android.com/guide/practices/security.html. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/JS_WARNING.html
+                    </li>
+                    <li class="row-odd">
+                     BaseURL not redefined in this WebView.
+                    </li>
+                    <li class="row-even">
+                     File system access is enabled in this WebView. If untrusted data is used to specify the URL opened by this WebView, a malicious app or site may be able to read your app's private files, if it returns the response to them. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/FILE_SYS_WARN.html
+                    </li>
+                    <li class="row-odd">
+                     While not a vulnerability by itself, it appears this app does not explicitly disable Content Provider access from WebViews. If the WebViews take in untrusted input, this can allow for data theft. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/WV_CPA_WARNING.html
+                    </li>
+                    <li class="row-even">
+                     JavaScript running in a file scheme context can access content from any origin. This is an insecure default value for minSdkVersion &lt; 16 or may have been overridden (setAllowUniversalAccessFromFileURLs) in later versions. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/UNIV_FILE_WARNING.html
+                    </li>
+                    <li class="row-odd">
+                     addJavascriptInterface not used in this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/BranchLocatorActivity.java
+                    </li>
+                    <li class="row-even">
+                     DOM Storage enabled for this WebView, there is a potential for caching sensitive information.mapView&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/BranchLocatorActivity.java
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="x509">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This is a list of all the findings related to Certificate validation.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="x509-issues-list">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="filepermission">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section lists any issues related to File permissions.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-10 col-sm-10">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="filepermission-issues-list">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="pendingintent">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section lists any issues related to pending intents.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="pendingintent-issues-list">
+               <div class="badger-div badger-left badger-danger" data-badger="Potential Vulnerability">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/app/TaskStackBuilder.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     Implicit Intent: localIntent used to create instance of PendingIntent. A malicious application could potentially intercept, redirect and/or modify (in a limited manner) this Intent. Pending Intents retain the UID of your application and all related permissions, allowing another application to act as yours.  File: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/app/TaskStackBuilder.java More details: https://www.securecoding.cert.org/confluence/display/android/DRD21-J.+Always+pass+explicit+intents+to+a+PendingIntent
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="crypto">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section lists any issues related to crypto vulnerabilities in the application
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-10 col-sm-10">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="crypto-issues-list">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="adbcommands">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           Until we perfect this, for manually testing, run the following command to see all the options and their meanings:
+           <kbd>
+            adb shell am
+           </kbd>
+           . Make sure to update qark frequently to get all the enhancements! You'll also find some good examples here:
+           <a href="http://xgouchet.fr/android/index.php?article42/launch-intents-using-adb">
+            http://xgouchet.fr/android/index.php?article42/launch-intents-using-adb
+           </a>
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="adbcommands-issues-list">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="parsingerrors">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           Until we perfect this, please review these files manually. Due to parsing errors, it is possible that an issue may not have been reported correctly.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="issues-list">
+               <span id="parsingerror-issues-list">
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/util/TimeUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/util/LruCache.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/app/NotificationCompatIceCreamSandwich.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/app/NotificationCompatJellybean.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/app/FragmentActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/app/TaskStackBuilder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/app/NotificationCompatHoneycomb.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/app/BackStackState.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/media/TransportMediatorJellybeanMR2.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/widget/ViewDragHelper.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/widget/DrawerLayout.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/widget/CursorAdapter.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/widget/SlidingPaneLayout.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/content/FileProvider.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/content/LocalBroadcastManager.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/content/ModernAsyncTask.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/view/GestureDetectorCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/view/ViewPager.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/DownloadPDFService.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/AddAttachment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/AppHelper.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/TransactionActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/TemplateFour.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/EditFavorites.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/CustomGallery.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/PopUPAction.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/TemplateOne.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/HTTPWorker.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/TemplateThree.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/TemplateFive.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/LandingScreen.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/Global.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/CustomListAdapter.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/BaseActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/Flog.java
+                </strong>
+               </span>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="osbugs">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section is related to any operating system related issues. This information was
+                                    identified from the application's manifest and we encourage you to understand the type
+                                    of vulnerabilities that live ourside your application's sandbox but may affect your
+                                     application in some way or the other.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-8 col-sm-8">
+         <div class="well">
+          <div class="row">
+           <div class="col-lg-8">
+            <h2>
+             OS Version specific bugs
+            </h2>
+            <p class="text-justify">
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+         <div class="well">
+          <p>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="plugin">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="">
+          <p>
+           Plugin content output if any
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12" id="plugin-issues-list">
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/apktool/AndroidManifest.xml
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  API Key Found
+&lt;?xml version="1.0" ?&gt;&lt;manifest android:installLocation="auto" android:versionCode="1444190" android:versionName="1.9" package="com.ofss.fcdb.mobile.android.alpharom.alphaandroid" xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+    &lt;uses-sdk android:minSdkVersion="8" android:targetSdkVersion="10"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:launchMode="standard" android:name="com.iflex.fcat.mobile.android.infra.LandingScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.BaseActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.HelpUrlActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.TemplateTwo" android:screenOrientation="portrait" android:theme="@android:style/Theme" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.TransactionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.TemplateFour" android:screenOrientation="portrait" android:theme="@android:style/Theme" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.TemplateOne" android:screenOrientation="portrait" android:theme="@android:style/Theme" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.OffersActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.iflex.fcat.mobile.android.infra.ATGWebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light" android:windowSoftInputMode="adjustPan"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_edit_favorites" android:name="com.iflex.fcat.mobile.android.infra.EditFavorites" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_add_attachment" android:name="com.iflex.fcat.mobile.android.infra.AddAttachment" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"/&gt;
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/resmap/ResourceMapper.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  API Key Found
+Line:   static final String BOUNDARY = "----------V2ymHFg03ehbqgZCaKO6jy";
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/HttpMultipart.java
+
+Line:     return "----------V2ymHFg03ehbqgZCaKO6jy";
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/HttpMultipart.java
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-warning" data-badger="Warning">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/HelloWebViewClient.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Improper implementation of shouldOverrideUrlLoading method
+This incorrect implementation allows any url to load in the webview
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/HelloWebViewClient.java
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/resmap/ResourceMapper.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  File System Access is by default enabled
+setAllowFileAccess() and setAllowContentAccess() are by default true. This should be set to false to restrict access to local data since it is used to display content from locally stored HTML or fetch HTML and other content from the server.
+Reference: https://developer.android.com/reference/android/webkit/WebSettings.html
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/ATGWebViewActivity.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/HelpUrlActivity.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/PreLoginOffers.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/BranchLocatorActivity.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/OffersActivity.java
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/ContactUs.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  The Content provider API provides a method call
+The framework does no permission checking on this entry into the content provider besides the basic ability for the application to get access to the provider at all. Any implementation of this method must do its own permission checks on incoming calls to make sure they are allowed.Failure to do so will allow unauthorized components to interact with the content provider.
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/infra/ContactUs.java
+Reference: https://bitbucket.org/secure-it-i/android-app-vulnerability-benchmarks/src/d5305b9481df3502e60e98fa352d5f58e4a69044/ICC/WeakChecksOnDynamicInvocation-InformationExposure/?at=master
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/resmap/ResourceMapper.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Debug logs are detected
+This may allow potential leakage of information from Android applications.
+Debug logs should never be compiled into an application except during development.
+https://developer.android.com/reference/android/util/Log.html
+
+Filepath:
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/util/LogWriter.java
+1 debug logs were found in the application
+                 </li>
+                 <li class="row-odd">
+                  Verbose logs are detected
+This may allow potential leakage of information from Android applications.
+Verbose logs should never be compiled into an application except during development.
+https://developer.android.com/reference/android/util/Log.html
+
+Filepath:
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/app/FragmentState.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/app/LoaderManagerImpl.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/app/BackStackRecord.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/app/FragmentActivity.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/app/FragmentManagerImpl.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/app/BackStackState.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/content/LocalBroadcastManager.java
+7 verbose logs were found in the application
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-warning" data-badger="Warning">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/com/iflex/fcat/mobile/android/resmap/ResourceMapper.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Application dynamically registers a broadcast receiver
+Application that register a broadcast receiver dynamically is vulnerable to granting unrestricted access to the broadcast receiver.
+The receiver will be called with any broadcast Intent that matches filter.
+ https://developer.android.com/reference/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver, android.content.IntentFilter)
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/classes_dex2jar/android/support/v4/media/TransportMediatorJellybeanMR2.java
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="references">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="">
+          <p>
+           This is a list of resources you may refer to understand more about android security
+                                     in general and also how specific programming mistakes or insecure-by-default settings may manifest themselves into
+                                     vulnerabilities. We are currently hand picking credible resources to add to the list. Please check for updates to get a revised list of references.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12">
+            <h2>
+             List of resources
+            </h2>
+            <br/>
+            <br/>
+            <ul>
+             <li>
+              <p class="">
+               For general Android security information:
+               <a href="http://developer.android.com/training/articles/security-tips.html">
+                http://developer.android.com/training/articles/security-tips.html
+               </a>
+              </p>
+             </li>
+             <li>
+              For information on proper TLS implementation:
+              <a href="http://developer.android.com/training/articles/security-ssl.html">
+               http://developer.android.com/training/articles/security-ssl.html
+              </a>
+             </li>
+             <li>
+              A great guide to Android security, from the Japanese Smartphone Security Association:
+              <a href="https://www.jssec.org/report/android_securecoding_en_20140801.html">
+               https://www.jssec.org/report/android_securecoding_en_20140801.html
+              </a>
+             </li>
+             <p>
+             </p>
+            </ul>
+            <br/>
+            <br/>
+            <br/>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="about">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="">
+          <h2>
+           <strong>
+            QUICK ANDROID REVIEW KIT
+           </strong>
+          </h2>
+          <strong>
+           Version 0.9
+          </strong>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12">
+            <br/>
+            <br/>
+            <br/>
+            <h4>
+             <strong>
+              Source:
+             </strong>
+            </h4>
+            <p class="">
+             Github:
+             <a href="https://www.github.com/linkedin/qark">
+              https://www.github.com/linkedin/qark
+             </a>
+             <br/>
+            </p>
+            <h4>
+             <strong>
+              Authors:
+             </strong>
+            </h4>
+            <strong>
+             Anthony Trummer:
+            </strong>
+            <a href="https://www.linkedin.com/in/tonytrummer">
+             https://www.linkedin.com/in/tonytrummer
+            </a>
+            <br/>
+            <strong>
+             Tushar Dalvi:
+            </strong>
+            <a href="https://www.linkedin.com/in/tdalvi">
+             https://www.linkedin.com/in/tdalvi
+            </a>
+            <p>
+            </p>
+            <br/>
+            <br/>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-xs-12">
+        <div class="well">
+         <p>
+          QARK Version 0.9
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--/row-offcanvas -->
+  </div>
+  <!-- /.modal -->
+  <!-- script references -->
+  <script src="js/jquery-2.1.4.min.js">
+  </script>
+  <script src="js/bootstrap.min.js">
+  </script>
+  <script src="js/scripts.js">
+  </script>
+  <link href="js/highlight/styles/magula.css" rel="stylesheet"/>
+  <script src="js/highlight/highlight.pack.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+ </body>
+</html>

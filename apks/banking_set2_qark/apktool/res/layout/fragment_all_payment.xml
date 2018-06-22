@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/loading" />
+        <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="365.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/container" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:weightSum="6.0" android:minHeight="72.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/dummy_container_linearlayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="-5.0dip" android:layout_marginBottom="0.0dip" android:layout_weight="1.0">
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/dummy_linearlayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+                        <ImageView android:background="@color/transparent" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="1.0dip" android:src="?dsq_bill_payment" />
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/templates_container_linearlayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/templates_linearlayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/templates_imageview" android:background="@color/transparent" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?dsq_templates" />
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/fwr_white_color" android:id="@id/templates_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/templatesTitle" style="@style/DSQTextAppearance.listLeft" />
+                            <TextView android:textColor="@color/fwr_light_gray_color" android:id="@id/templates_subtitle_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/templatesSubTitle" style="@style/DSQTextAppearance.details2" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/transferown_container_linearlayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/transferown_linearlayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/transfer_own_imageview" android:background="@color/transparent" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?dsq_transfer_own_payment" />
+                        <LinearLayout android:gravity="left" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/fwr_white_color" android:id="@id/transfer_own_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfer_own_title" style="@style/DSQTextAppearance.listLeft" />
+                            <TextView android:textColor="@color/fwr_light_gray_color" android:id="@id/transfer_own_subtitle_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfer_own_subtitle" style="@style/DSQTextAppearance.details2" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/intrabank_container_linearlayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/intrabank_linearlayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/intrabank_imageview" android:background="@color/transparent" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?dsq_intrabank_payment" />
+                        <LinearLayout android:gravity="left" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/fwr_white_color" android:id="@id/intrabank_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intrabank_title" style="@style/DSQTextAppearance.listLeft" />
+                            <TextView android:textColor="@color/fwr_light_gray_color" android:id="@id/intrabank_subtitle_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intrabank_subtitle" style="@style/DSQTextAppearance.details2" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/treasury_container_linearlayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/treasury_linearlayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/treasury_imageview" android:background="@color/transparent" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?dsq_treasury" />
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/fwr_white_color" android:id="@id/treasury_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/treasury_title" style="@style/DSQTextAppearance.listLeft" />
+                            <TextView android:textColor="@color/fwr_light_gray_color" android:id="@id/treasury_subtitle_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/treasury_subtitle" style="@style/DSQTextAppearance.details2" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/billpayment_container_linearlayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/billpayment_linearlayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/bill_payment_imageview" android:background="@color/transparent" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?dsq_bill_payment" />
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/fwr_white_color" android:id="@id/bill_payment_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bill_payment_title" style="@style/DSQTextAppearance.listLeft" />
+                            <TextView android:textColor="@color/fwr_light_gray_color" android:id="@id/bill_payment_subtitle_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bill_payment_subtitle" style="@style/DSQTextAppearance.details2" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/domestic_container_linearlayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/domestic_linearlayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+                        <ImageView android:gravity="center_vertical" android:id="@id/domestic_imageview" android:background="@color/transparent" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?dsq_domestic_payment" />
+                        <LinearLayout android:gravity="left" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/fwr_white_color" android:id="@id/domestic_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/domestic_title" style="@style/DSQTextAppearance.listLeft" />
+                            <TextView android:textColor="@color/fwr_light_gray_color" android:id="@id/domestic_subtitle_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/domestic_subtitle" style="@style/DSQTextAppearance.details2" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/international_container_linearlayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/international_linearlayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/international_imageview" android:background="@color/transparent" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?dsq_international_payment" />
+                        <LinearLayout android:gravity="left" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/fwr_white_color" android:id="@id/international_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/international_title" style="@style/DSQTextAppearance.listLeft" />
+                            <TextView android:textColor="@color/fwr_light_gray_color" android:id="@id/international_subtitle_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/international_subtitle" style="@style/DSQTextAppearance.details2" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

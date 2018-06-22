@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/accountdisplaymainlayout" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/accountdisplayTopHeading" android:background="@drawable/titlebg" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageButton android:id="@id/accountdisplayH1BackButton" android:background="@drawable/back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:background="@drawable/abrlogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageButton android:textSize="15.0sp" android:gravity="center" android:id="@id/AccountDisplayHeaderbutton" android:background="@drawable/logoff" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/transactionheadingpane2" android:background="@color/alpha_blue" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:scaleType="fitXY" android:layout_below="@id/accountdisplayTopHeading">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/AccountDisplayTitle" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/accountdisplayH2HeaderLayout" android:background="@color/alpha_light_grey" android:paddingLeft="5.0sp" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_below="@id/transactionheadingpane2">
+        <TextView android:textSize="15.0sp" android:textColor="@color/alpha_blue" android:gravity="center" android:id="@id/lblAccountNumber" android:paddingTop="8.0sp" android:visibility="gone" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginRight="45.0dip" android:singleLine="false" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/alpha_blue" android:gravity="center_horizontal" android:id="@id/lblCurrentBalance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="45.0dip" android:layout_below="@id/lblAccountNumber" />
+        <ImageButton android:id="@id/accountdisplaygraph" android:background="@drawable/pie" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageButton android:id="@id/accountDisplayH2Button1" android:background="@color/transparent" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/camera" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <ImageButton android:id="@id/accountDisplayH2Button2" android:background="@drawable/calltoclick" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="2.0dip" android:layout_below="@id/accountDisplayH2Button1" android:layout_alignParentRight="true" />
+        <Button android:id="@id/accountDisplayFilterButton" android:background="@drawable/search" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginBottom="5.0dip" android:layout_toLeftOf="@id/accountDisplayH2Button2" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip" android:layout_below="@id/accountdisplayH2HeaderLayout">
+        <RelativeLayout android:orientation="vertical" android:id="@id/graph_container" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+            <RelativeLayout android:orientation="vertical" android:id="@id/graph_container_inner" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip">
+                <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/piechart" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_centerHorizontal="true" />
+                <Button android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/graph_close" android:background="@drawable/closebutton" android:paddingLeft="15.0dip" android:paddingTop="2.0dip" android:paddingRight="15.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="4.0dip" android:text="Close" android:layout_alignParentRight="true" />
+                <RelativeLayout android:orientation="vertical" android:id="@id/piechartdetails" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/piechart" android:layout_alignParentLeft="true">
+                    <TableLayout android:id="@id/TableLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+                        <TableRow android:id="@id/TableRow01" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:id="@id/rect" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <TextView android:id="@id/TextView01" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </TableRow>
+                    </TableLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/footerView" android:background="@drawable/onealphablue" android:layout_width="fill_parent" android:layout_height="40.0dip" android:weightSum="1.0" android:layout_alignParentBottom="true">
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/lblRecordsLeft" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:singleLine="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/lblClickMore" android:background="@color/transparent" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clickhere" android:singleLine="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ProgressBar android:id="@id/progressdialog" android:background="@color/transparent" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="fill_parent" android:indeterminate="true" android:indeterminateDrawable="@drawable/progress" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footerView">
+                <LinearLayout android:id="@id/accountdisplaylistmainlayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip">
+                    <LinearLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <com.iflex.fcat.mobile.android.infra.PullToReLoad android:id="@id/accountdisplayList" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="0.0dip" android:cacheColorHint="@color/transparent" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ad_layout" android:background="@drawable/onealphablue" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginRight="55.0dip" android:layout_alignParentBottom="true">
+        <include android:id="@id/accountdetailsfooter" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/menu_footer" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/menutop" android:layout_width="55.0dip" android:layout_height="60.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <Button android:gravity="center_horizontal" android:id="@id/accountdisplayFavoritesButton" android:background="@drawable/f1" android:padding="5.0dip" android:drawingCacheQuality="high" android:layout_width="60.0dip" android:layout_height="25.0dip" android:layout_marginTop="10.0dip" />
+        <TextView android:textSize="10.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/favtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/fav" android:maxLines="1" android:lines="1" android:singleLine="false" />
+    </LinearLayout>
+    <include android:id="@id/accountdisplaymenufooterpopup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="55.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/menu_footer_popup" />
+    <include android:id="@id/accountdisplayFilterLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/filter_layout" />
+</RelativeLayout>

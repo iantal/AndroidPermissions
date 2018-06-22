@@ -1,0 +1,76 @@
+{
+  "success": true,
+  "data": {
+    "@xsi:type": "pegasus.project.brd.function.brdfunctionutil.account.bean.InvestmentFundListResponse",
+    "investments": [
+      {
+        "investmentFundId": 11,
+        "investmentTypeCode": "IF11",
+        "investmentTypeName": "BRD ACTIUNI",
+        "currency": "RON",
+        "unit": 1,
+        "price": 141.4203,
+        "insertDateTime": "2017-08-14T00:00:00.000"
+      },
+      {
+        "investmentFundId": 12,
+        "investmentTypeCode": "IF12",
+        "investmentTypeName": "BRD DIVERSO",
+        "currency": "RON",
+        "unit": 1,
+        "price": 151.3383,
+        "insertDateTime": "2017-08-14T00:00:00.000"
+      },
+      {
+        "investmentFundId": 26,
+        "investmentTypeCode": "IF26",
+        "investmentTypeName": "BRD EURO FOND",
+        "currency": "EUR",
+        "unit": 1,
+        "price": 130.5986,
+        "insertDateTime": "2017-08-14T00:00:00.000"
+      },
+      {
+        "investmentFundId": 27,
+        "investmentTypeCode": "IF27",
+        "investmentTypeName": "BRD INDEX",
+        "currency": "RON",
+        "unit": 1,
+        "price": 125.4773,
+        "insertDateTime": "2017-08-14T00:00:00.000"
+      },
+      {
+        "investmentFundId": 5,
+        "investmentTypeCode": "IF5",
+        "investmentTypeName": "BRD OBLIGATIUNI",
+        "currency": "RON",
+        "unit": 1,
+        "price": 160.6325,
+        "insertDateTime": "2017-08-14T00:00:00.000"
+      },
+      {
+        "investmentFundId": 4,
+        "investmentTypeCode": "IF4",
+        "investmentTypeName": "BRD SIMFONIA",
+        "currency": "RON",
+        "unit": 1,
+        "price": 38.9314,
+        "insertDateTime": "2017-08-14T00:00:00.000"
+      },
+      {
+        "investmentFundId": 30,
+        "investmentTypeCode": "IF30",
+        "investmentTypeName": "BRD USD FOND",
+        "currency": "USD",
+        "unit": 1,
+        "price": 99.7547,
+        "insertDateTime": "2017-08-14T00:00:00.000"
+      }
+    ],
+    "maxLastModified": "2017-08-14T00:00:00.000"
+  },
+  "header": {
+    "token": "6U5FCLgDCF5PwQ9NKiDopQ==",
+    "sessionTimeout": 600
+  }
+}

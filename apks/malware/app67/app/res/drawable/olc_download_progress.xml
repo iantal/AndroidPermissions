@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@drawable/download_seek_bg">
+        <shape>
+            <corners android:radius="5.0dip" />
+            <gradient android:startColor="#ff4169e1" android:endColor="#ff747674" android:angle="270.0" android:centerY="0.75" android:centerColor="#ff4169e1" />
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="5.0dip" />
+                <gradient android:startColor="#ff4169e1" android:endColor="#a0ffcb00" android:angle="270.0" android:centerY="0.75" android:centerColor="#ff4169e1" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="5.0dip" />
+                <gradient android:startColor="#ff4169e1" android:endColor="#ff4169e1" android:angle="270.0" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

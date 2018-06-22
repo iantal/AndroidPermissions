@@ -1,0 +1,1 @@
+Class.ns("Bankingapp.functions.fxrates");Bankingapp.functions.fxrates.HistoricalRateContent=Class.extend(Bankingapp.ui.TabContent,{renderContent:function(){}});

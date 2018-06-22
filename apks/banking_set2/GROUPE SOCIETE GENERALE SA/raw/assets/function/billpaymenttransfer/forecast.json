@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "data": {
+    "@xsi:type": "pegasus.project.brd.function.payment.bean.PaymentTransferResponse",
+    "transactionId": 0,
+    "version": 0,
+    "status": "DRAFT",
+    "forecastReply": {
+      "cUI_CNP": "2690411301979",
+      "iBankId": "9444500",
+      "freeTextSearchIndexField": "ENEL ENERGIE RO86BRDE450SV47653474500 125 RON",
+      "billPaymentData": {
+        "billerName": "ENEL ENERGIE",
+        "billerAccount": "RO86BRDE450SV47653474500"
+      },
+      "customerName": "Daniela"
+    },
+    "authorizationData": {
+      "@xsi:type": "pegasus.project.brd.component.transactionframework.glue.transaction.bean.AuthorizationData",
+      "customerId": "160",
+      "trusteeId": "160",
+      "channelId": "MBL",
+      "functionTypeId": 21,
+      "protectedObjectId": "RO45BRDE762SV10331220647",
+      "amount": 125,
+      "currency": "RON",
+      "functionId": "billpayment",
+      "credentialFunction": [
+        "BillPayment"
+      ]
+    }
+  },
+  "header": {
+    "token": "6laFHmbFIynKGLmAqx+zCA==",
+    "sessionTimeout": 600
+  }
+}

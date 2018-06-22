@@ -1,0 +1,577 @@
+{
+  "success": true,
+  "data": {
+    "@xsi:type": "pegasus.project.brd.component.brdcommon.interestrate.bean.GetInterestRateListReply",
+    "interestRateList": {
+      "interestRateItem": [
+        {
+          "interestCategory": "EURIBOR",
+          "interestType": "1M",
+          "interestRate": -0.374,
+          "interestRateHistory": [
+            {
+              "interestDate": "2017-07-14",
+              "interestRate": 1.11
+            },
+            {
+              "interestDate": "2017-07-13",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-12",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-11",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-10",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-09",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-08",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-07",
+              "interestRate": 1.14
+            },
+            {
+              "interestDate": "2017-07-06",
+              "interestRate": 1.15
+            },
+            {
+              "interestDate": "2017-07-05",
+              "interestRate": 1.13
+            }
+          ]
+        },
+        {
+          "interestCategory": "EURIBOR",
+          "interestType": "3M",
+          "interestRate": 0.331,
+          "interestRateHistory": [
+            {
+              "interestDate": "2017-07-14",
+              "interestRate": 1.11
+            },
+            {
+              "interestDate": "2017-07-13",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-12",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-11",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-10",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-09",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-08",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-07",
+              "interestRate": 1.14
+            },
+            {
+              "interestDate": "2017-07-06",
+              "interestRate": 1.15
+            },
+            {
+              "interestDate": "2017-07-05",
+              "interestRate": 1.13
+            }
+          ]
+        },
+        {
+          "interestCategory": "EURIBOR",
+          "interestType": "6M",
+          "interestRate": -0.273,
+          "interestRateHistory": [
+            {
+              "interestDate": "2017-07-14",
+              "interestRate": 1.11
+            },
+            {
+              "interestDate": "2017-07-13",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-12",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-11",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-10",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-09",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-08",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-07",
+              "interestRate": 1.14
+            },
+            {
+              "interestDate": "2017-07-06",
+              "interestRate": 1.15
+            },
+            {
+              "interestDate": "2017-07-05",
+              "interestRate": 1.13
+            }
+          ]
+        },
+        {
+          "interestCategory": "EURIBOR",
+          "interestType": "12M",
+          "interestRate": -0.156,
+          "interestRateHistory": [
+            {
+              "interestDate": "2017-07-14",
+              "interestRate": 1.11
+            },
+            {
+              "interestDate": "2017-07-13",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-12",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-11",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-10",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-09",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-08",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-07",
+              "interestRate": 1.14
+            },
+            {
+              "interestDate": "2017-07-06",
+              "interestRate": 1.15
+            },
+            {
+              "interestDate": "2017-07-05",
+              "interestRate": 1.13
+            }
+          ]
+        },
+        {
+          "interestCategory": "LIBOR",
+          "interestType": "1M",
+          "interestRate": 1.2339,
+          "interestRateHistory": [
+            {
+              "interestDate": "2017-07-14",
+              "interestRate": 1.11
+            },
+            {
+              "interestDate": "2017-07-13",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-12",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-11",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-10",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-09",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-08",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-07",
+              "interestRate": 1.14
+            },
+            {
+              "interestDate": "2017-07-06",
+              "interestRate": 1.15
+            },
+            {
+              "interestDate": "2017-07-05",
+              "interestRate": 1.13
+            }
+          ]
+        },
+        {
+          "interestCategory": "LIBOR",
+          "interestType": "3M",
+          "interestRate": 1.3041,
+          "interestRateHistory": [
+            {
+              "interestDate": "2017-07-14",
+              "interestRate": 1.11
+            },
+            {
+              "interestDate": "2017-07-13",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-12",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-11",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-10",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-09",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-08",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-07",
+              "interestRate": 1.14
+            },
+            {
+              "interestDate": "2017-07-06",
+              "interestRate": 1.15
+            },
+            {
+              "interestDate": "2017-07-05",
+              "interestRate": 1.13
+            }
+          ]
+        },
+        {
+          "interestCategory": "LIBOR",
+          "interestType": "6M",
+          "interestRate": 1.4621,
+          "interestRateHistory": [
+            {
+              "interestDate": "2017-07-14",
+              "interestRate": 1.11
+            },
+            {
+              "interestDate": "2017-07-13",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-12",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-11",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-10",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-09",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-08",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-07",
+              "interestRate": 1.14
+            },
+            {
+              "interestDate": "2017-07-06",
+              "interestRate": 1.15
+            },
+            {
+              "interestDate": "2017-07-05",
+              "interestRate": 1.13
+            }
+          ]
+        },
+        {
+          "interestCategory": "LIBOR",
+          "interestType": "12M",
+          "interestRate": 1.7509,
+          "interestRateHistory": [
+            {
+              "interestDate": "2017-07-14",
+              "interestRate": 1.11
+            },
+            {
+              "interestDate": "2017-07-13",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-12",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-11",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-10",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-09",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-08",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-07",
+              "interestRate": 1.14
+            },
+            {
+              "interestDate": "2017-07-06",
+              "interestRate": 1.15
+            },
+            {
+              "interestDate": "2017-07-05",
+              "interestRate": 1.13
+            }
+          ]
+        },
+        {
+          "interestCategory": "ROBOR",
+          "interestType": "1M",
+          "interestRate": 0.65,
+          "interestRateHistory": [
+            {
+              "interestDate": "2017-07-14",
+              "interestRate": 1.11
+            },
+            {
+              "interestDate": "2017-07-13",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-12",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-11",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-10",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-09",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-08",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-07",
+              "interestRate": 1.14
+            },
+            {
+              "interestDate": "2017-07-06",
+              "interestRate": 1.15
+            },
+            {
+              "interestDate": "2017-07-05",
+              "interestRate": 1.13
+            }
+          ]
+        },
+        {
+          "interestCategory": "ROBOR",
+          "interestType": "3M",
+          "interestRate": 0.88,
+          "interestRateHistory": [
+            {
+              "interestDate": "2017-07-14",
+              "interestRate": 1.11
+            },
+            {
+              "interestDate": "2017-07-13",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-12",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-11",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-10",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-09",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-08",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-07",
+              "interestRate": 1.14
+            },
+            {
+              "interestDate": "2017-07-06",
+              "interestRate": 1.15
+            },
+            {
+              "interestDate": "2017-07-05",
+              "interestRate": 1.13
+            }
+          ]
+        },
+        {
+          "interestCategory": "ROBOR",
+          "interestType": "6M",
+          "interestRate": 1.0,
+          "interestRateHistory": [
+            {
+              "interestDate": "2017-07-14",
+              "interestRate": 1.11
+            },
+            {
+              "interestDate": "2017-07-13",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-12",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-11",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-10",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-09",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-08",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-07",
+              "interestRate": 1.14
+            },
+            {
+              "interestDate": "2017-07-06",
+              "interestRate": 1.15
+            },
+            {
+              "interestDate": "2017-07-05",
+              "interestRate": 1.13
+            }
+          ]
+        },
+        {
+          "interestCategory": "ROBOR",
+          "interestType": "12M",
+          "interestRate": 1.2,
+          "interestRateHistory": [
+            {
+              "interestDate": "2017-07-14",
+              "interestRate": 1.11
+            },
+            {
+              "interestDate": "2017-07-13",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-12",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-11",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-10",
+              "interestRate": 1.12
+            },
+            {
+              "interestDate": "2017-07-09",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-08",
+              "interestRate": 1.13
+            },
+            {
+              "interestDate": "2017-07-07",
+              "interestRate": 1.14
+            },
+            {
+              "interestDate": "2017-07-06",
+              "interestRate": 1.15
+            },
+            {
+              "interestDate": "2017-07-05",
+              "interestRate": 1.13
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "header": {
+    "sessionTimeout": 600
+  }
+}

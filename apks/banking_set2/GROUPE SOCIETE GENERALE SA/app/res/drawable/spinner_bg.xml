@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:radius="@dimen/cornerRadiusOuter" />
+                    <solid android:color="@color/strokeColor" />
+                </shape>
+            </item>
+            <item android:left="@dimen/strokeWidth" android:top="@dimen/strokeWidth" android:right="@dimen/strokeWidth" android:bottom="@dimen/strokeWidth">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/cornerRadiusInner" />
+                    <gradient android:startColor="#ffffffff" android:endColor="#ffffdc9b" android:angle="270.0" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:radius="@dimen/cornerRadiusOuter" />
+                    <solid android:color="@color/strokeColor" />
+                </shape>
+            </item>
+            <item android:left="@dimen/strokeWidth" android:top="@dimen/strokeWidth" android:right="@dimen/strokeWidth" android:bottom="@dimen/strokeWidth">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/cornerRadiusInner" />
+                    <gradient android:startColor="#ffffbe3d" android:endColor="#ffffdc9b" android:angle="270.0" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:radius="@dimen/cornerRadiusOuter" />
+                    <solid android:color="@color/strokeColor" />
+                </shape>
+            </item>
+            <item android:left="@dimen/strokeWidth" android:top="@dimen/strokeWidth" android:right="@dimen/strokeWidth" android:bottom="@dimen/strokeWidth">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/cornerRadiusInner" />
+                    <gradient android:startColor="@color/bgLight" android:endColor="@color/bgDark" android:angle="270.0" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

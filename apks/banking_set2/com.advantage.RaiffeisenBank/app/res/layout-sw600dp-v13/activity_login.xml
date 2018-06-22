@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?dsq_background" android:paddingTop="-8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/dsq_border" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="-8.0dip" android:layout_marginRight="8.0dip">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="false">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/fragment_above_container" android:paddingTop="8.0dip" android:layout_width="@dimen/dsq_bordered_layout_width" android:layout_height="wrap_content" android:minHeight="@dimen/dsq_bordered_layout_min_height" />
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

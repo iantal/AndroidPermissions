@@ -1,0 +1,29 @@
+package com.hannesdorfmann.mosby.mvp;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+
+final class NoOp
+{
+  private static final InvocationHandler DEFAULT_VALUE = new DefaultValueInvocationHandler(null);
+  
+  private NoOp() {}
+  
+  public static <T> T of(Class<T> paramClass)
+  {
+    return Proxy.newProxyInstance(paramClass.getClassLoader(), new Class[] { paramClass }, DEFAULT_VALUE);
+  }
+  
+  private static class DefaultValueInvocationHandler
+    implements InvocationHandler
+  {
+    private DefaultValueInvocationHandler() {}
+    
+    public Object invoke(Object paramObject, Method paramMethod, Object[] paramArrayOfObject)
+      throws Throwable
+    {
+      return Defaults.defaultValue(paramMethod.getReturnType());
+    }
+  }
+}

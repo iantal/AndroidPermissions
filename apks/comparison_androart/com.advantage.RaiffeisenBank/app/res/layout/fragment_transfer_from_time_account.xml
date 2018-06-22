@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_LinearLayout" android:background="@drawable/rounded_corners_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/request_focus_layout" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minHeight="52.0dip">
+            <com.thinkdesquared.banking.helpers.ui.widgets.AutoResizeTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/transfer_from" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/from_spinner_account_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0" android:animateLayoutChanges="false">
+                <Spinner android:layout_gravity="center_vertical" android:id="@id/from_account_spinner" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" style="@style/rzb_Spinner.DropDown" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minHeight="52.0dip">
+            <com.thinkdesquared.banking.helpers.ui.widgets.AutoResizeTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/transfer_to" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0" android:animateLayoutChanges="false">
+                <Spinner android:layout_gravity="center_vertical" android:id="@id/to_account_spinner" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:dropDownHorizontalOffset="-1.0dip" style="@style/rzb_Spinner.DropDown" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/payments_layout_amount" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/payments_layout_without_full_dates" />
+        <include layout="@layout/include_separator" />
+        <LinearLayout android:orientation="vertical" android:id="@id/transaction_details_group" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.0dip" android:minHeight="52.0dip">
+            <com.thinkdesquared.banking.helpers.ui.widgets.AutoResizeTextView android:id="@id/details_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_details_1" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0">
+                <android.support.v7.widget.AppCompatEditText android:ellipsize="end" android:id="@id/detailsEditText" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/transaction_details_hint" android:singleLine="true" android:maxLength="30" android:inputType="textCapSentences" style="@style/DSQWidget.Holo.AlphanumericWithSomeSpecialCharactersAllowedEditText.value" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/transaction_details_2" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:minHeight="52.0dip">
+            <com.thinkdesquared.banking.helpers.ui.widgets.AutoResizeTextView android:id="@id/details_label2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/line2" android:layout_weight="1.0" style="@style/DSQTextAppearance.Label.material" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+                <android.support.v7.widget.AppCompatEditText android:ellipsize="end" android:id="@id/detailsEditText2" android:layout_width="fill_parent" android:layout_height="48.0dip" android:singleLine="true" android:maxLength="35" android:inputType="textCapSentences" android:imeOptions="actionDone" style="@style/DSQWidget.Holo.AlphanumericWithSomeSpecialCharactersAllowedEditText.value" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/payments_layout_ordernumber" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/submit_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/submit_button_layout" />
+    </LinearLayout>
+</LinearLayout>

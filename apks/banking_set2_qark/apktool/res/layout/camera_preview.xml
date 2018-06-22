@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/cameraPreview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_gravity="top" android:id="@id/transparentbar1" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:alpha="0.25" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/transparentbar3" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" android:alpha="0.25" />
+            <FrameLayout android:layout_width="350.0dip" android:layout_height="250.0dip">
+                <ImageView android:layout_gravity="center|left|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yellow_line2" />
+                <ImageView android:layout_gravity="center|right|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yellow_line1" />
+                <ImageView android:layout_gravity="bottom|center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yellow_line0" />
+                <ImageView android:layout_gravity="bottom|center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yellow_line3" />
+            </FrameLayout>
+            <View android:id="@id/transparentbar4" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" android:alpha="0.25" />
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:id="@id/transparentbar2" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:alpha="0.25" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:background="@color/bg_white" android:padding="@dimen/pagePadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="1" android:shrinkColumns="1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout>
+        <TextView android:gravity="left" android:id="@id/pageDescription" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rowPaddingBig" android:layout_weight="95.0" style="@style/pageDescription" />
+        <ImageView android:layout_gravity="center" android:id="@id/infoButton" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/info_icon" android:scaleType="fitCenter" android:layout_weight="5.0" />
+    </LinearLayout>
+    <TableRow android:layout_marginBottom="@dimen/rowPadding">
+        <TextView android:text="@string/native_pinLabel" style="@style/detailLabel" />
+        <EditText android:id="@id/newPin" android:hint="@string/native_pinHint" style="@style/editBox" />
+    </TableRow>
+    <TableRow android:layout_marginBottom="@dimen/rowPaddingBig">
+        <TextView android:text="@string/native_pinAgainLabel" style="@style/detailLabel" />
+        <EditText android:id="@id/newPinConfirm" android:hint="@string/native_pinAgainHint" style="@style/editBox" />
+    </TableRow>
+    <Button android:id="@id/changePinButton" android:text="@string/native_activationChangePinButtonText" style="@style/actionButton" />
+</TableLayout>

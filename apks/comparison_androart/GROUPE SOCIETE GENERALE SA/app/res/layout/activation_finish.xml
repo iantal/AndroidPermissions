@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_marginBottom="@dimen/rowPadding" android:text="@string/finishDescription" style="@style/message.success" />
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/pagePadding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ind.token.android.core.ui.widget.AuthCodeDisplay android:id="@id/passwordText" android:layout_marginBottom="@dimen/rowPaddingBig" style="@style/passwordLayout" />
+        <Button android:id="@id/finishButton" android:text="@string/finishButtonText" style="@style/actionButton" />
+    </LinearLayout>
+</LinearLayout>

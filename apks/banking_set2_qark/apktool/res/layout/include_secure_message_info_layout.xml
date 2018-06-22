@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/wrapperLinearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/subjectTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/priorityImageView" style="@style/DSQTextAppearance.listRight" />
+        <com.thinkdesquared.banking.helpers.ui.widgets.CircleImageView android:id="@id/priorityImageView" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/important_icon" android:scaleType="centerCrop" android:layout_alignParentLeft="true" app:border_width="@dimen/dimen_1dp_low_res_support" app:border_color="@color/rzb_white" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:gravity="center_vertical" android:id="@id/topicTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/dummyPriorityImageView" style="@style/DSQTextAppearance.details" />
+        <com.thinkdesquared.banking.helpers.ui.widgets.CircleImageView android:id="@id/dummyPriorityImageView" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/important_icon" android:scaleType="centerCrop" android:layout_alignParentLeft="true" app:border_width="@dimen/dimen_1dp_low_res_support" app:border_color="@color/rzb_white" />
+    </RelativeLayout>
+</LinearLayout>

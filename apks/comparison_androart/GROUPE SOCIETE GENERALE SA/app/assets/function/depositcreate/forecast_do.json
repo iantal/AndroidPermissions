@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "data": {
+    "@xsi:type": "pegasus.project.brd.function.payment.bean.PaymentTransferResponse",
+    "transactionId": 0,
+    "version": 0,
+    "status": "DRAFT",
+    "forecastReply": {
+      "depositData": {
+        "dueDate": "2017-10-04",
+        "periodStartDate": "2017-07-06",
+        "periodEndDate": "2017-10-04"
+      },
+      "cUI_CNP": "2690411301979",
+      "iBankId": "9444500",
+      "freeTextSearchIndexField": "150 RON",
+      "customerName": "Daniela"
+    },
+    "authorizationData": {
+      "@xsi:type": "pegasus.project.brd.component.transactionframework.glue.transaction.bean.AuthorizationData",
+      "customerId": "160",
+      "trusteeId": "160",
+      "channelId": "MBL",
+      "functionTypeId": 14,
+      "protectedObjectId": "RO94BRDE450SV22222222222",
+      "amount": 150,
+      "currency": "RON",
+      "functionId": "depositcreate",
+      "credentialFunction": [
+        "DepositCreate"
+      ]
+    }
+  },
+  "header": {
+    "token": "xmxpJ2RQYRxN/sXfB6Hkng==",
+    "sessionTimeout": 600
+  }
+}

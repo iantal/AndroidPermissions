@@ -1,0 +1,14 @@
+package org.ksoap2.serialization_custom;
+
+import java.util.Hashtable;
+
+public abstract interface KvmSerializable
+{
+  public abstract Object getProperty(int paramInt);
+  
+  public abstract int getPropertyCount();
+  
+  public abstract void getPropertyInfo(int paramInt, Hashtable paramHashtable, PropertyInfo paramPropertyInfo);
+  
+  public abstract void setProperty(int paramInt, Object paramObject);
+}

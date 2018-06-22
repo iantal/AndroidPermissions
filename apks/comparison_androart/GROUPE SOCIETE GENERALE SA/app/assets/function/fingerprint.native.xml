@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../xsd/nativefunctiondescriptor.xsd">
+
+	<name>activateTouchId</name>
+	<views>
+
+		<view>
+			<url>view://bankingapp/function/fingerprint/settings/activation</url>
+			<implementationType>NATIVE</implementationType>
+			<implementation>ind.bankingapp.android.function.fingerprint.FingerprintSettingsActivationFragment</implementation>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+			<supplementaryFunction>false</supplementaryFunction>
+		</view>
+
+		<view>
+			<url>view://bankingapp/function/fingerprint/settings/tc</url>
+			<implementationType>NATIVE</implementationType>
+			<implementation>ind.bankingapp.android.function.fingerprint.FingerprintSettingsTCFragment</implementation>
+			<contextMenu>
+				<addDefaultContextMenuItems>false</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+			<supplementaryFunction>false</supplementaryFunction>
+		</view>
+
+		<view>
+			<url>view://bankingapp/function/fingerprint/activation/tc</url>
+			<implementationType>NATIVE</implementationType>
+			<implementation>ind.bankingapp.android.function.fingerprint.FingerprintActivationTCFragment</implementation>
+			<contextMenu>
+				<addDefaultContextMenuItems>false</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+			<supplementaryFunction>false</supplementaryFunction>
+		</view>
+
+	</views>
+</function>

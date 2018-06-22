@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/loginScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/loginLinearLayout" android:background="@color/bg_white" android:padding="@dimen/pagePadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:id="@id/pinDescriptionText" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rowPadding" android:text="@string/enterYourPin" style="@style/text.emphasized" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rowPadding" android:layout_marginBottom="@dimen/largePadding">
+            <ind.token.android.core.ui.widget.StyleablePinText android:id="@id/pinText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/pinBoxWidth" android:hint="@string/pinHint" android:maxLength="6" android:layout_centerHorizontal="true" android:inputType="textNoSuggestions|textPassword" android:imeOptions="flagNoExtractUi" style="@style/editBox" />
+        </RelativeLayout>
+        <Button android:id="@id/loginButton" android:text="@string/loginButtonText" style="@style/loginButton" />
+        <LinearLayout android:id="@id/callingAppBox" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+            <ImageView android:id="@id/warnIcon" style="@style/warnIcon" />
+            <TextView android:id="@id/callingAppWarning" style="@style/text.warn" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/openFingerprintLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip" android:layout_marginBottom="20.0dip">
+            <ImageView android:id="@id/touchIcon" android:clickable="true" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/fingerprint_icon" />
+            <TextView android:textStyle="bold" android:textColor="#ff0099ff" android:id="@id/openFingerprintLink" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/openFingerPrintText" android:onClick="openFingerprintClick" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

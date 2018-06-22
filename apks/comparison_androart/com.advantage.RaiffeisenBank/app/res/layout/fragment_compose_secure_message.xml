@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?dsq_background_lists" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="14.0sp" android:textColor="?dsq_main_text_color" android:textColorHint="?dsq_text_color_hint" android:id="@id/subject_edittext" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/subject" android:maxLength="80" android:imeOptions="actionDone|flagNoExtractUi" style="@style/DSQTextAppearance.value2.InboxMessageStyle" />
+            <include layout="@layout/include_separator" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/InboxMessageStyle">
+                <TextView android:textSize="14.0sp" android:textColor="?dsq_inbox_label_color" android:layout_gravity="center_vertical" android:id="@id/topic_dep_textview" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/topic_departure" style="@style/TextStyle_Material.Label.regularMediumFont" />
+                <com.thinkdesquared.banking.helpers.ui.widgets.DSQAppCompatSpinner android:layout_gravity="center_vertical" android:id="@id/topic_department_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/rzb_Spinner.DropDown" />
+            </LinearLayout>
+            <include layout="@layout/include_separator" />
+            <include layout="@layout/include_rte_editor_with_attachments" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/rte_toolbar_container" layout="@layout/include_rte_toolbar" />
+</RelativeLayout>

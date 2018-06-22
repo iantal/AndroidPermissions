@@ -1,0 +1,150 @@
+{
+  "success": true,
+  "data": [
+    {
+      "@xsi:type": "pegasus.function.customermessaging.bean.FlatFeedMessage",
+      "messageId": 3735,
+      "categoryTypeId": 4,
+      "subject": "TR_BOOKING",
+      "summary": "TR_BOOKING",
+      "status": {
+        "@name": "UNREAD",
+        "$": "U"
+      },
+      "contentText": "TR_BOOKING",
+      "createTs": "2017-07-14T14:45:42.000",
+      "replyEnabled": false,
+      "payload": {
+        "@xsi:type": "pegasus.project.brd.component.brdmessaging.bean.TransactionBookingPayload",
+        "amount": 150,
+        "currency": "RON",
+        "creditDebit": "C",
+        "transactionId": "SV103312206472017071414454100"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.function.customermessaging.bean.FlatFeedMessage",
+      "messageId": 3651,
+      "categoryTypeId": 3,
+      "subject": "TR_STATUS_UPDATE",
+      "summary": "TR_STATUS_UPDATE",
+      "status": {
+        "@name": "UNREAD",
+        "$": "U"
+      },
+      "contentText": "TR_STATUS_UPDATE",
+      "createTs": "2017-06-15T15:18:53.000",
+      "replyEnabled": false,
+      "payload": {
+        "@xsi:type": "pegasus.project.brd.component.brdmessaging.bean.TransactionStatusChangePayload",
+        "amount": 24.95,
+        "currency": "RON",
+        "partnerName": "RO12BRDE450SV33333333333",
+        "transactionStatus": 7,
+        "transactionVersion": 3,
+        "transactionId": 10583,
+        "transactionType": "billPaymentTransactionLifeCycle"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.function.customermessaging.bean.FlatFeedMessage",
+      "messageId": 3652,
+      "categoryTypeId": 3,
+      "subject": "TR_STATUS_UPDATE",
+      "summary": "TR_STATUS_UPDATE",
+      "status": {
+        "@name": "UNREAD",
+        "$": "U"
+      },
+      "contentText": "TR_STATUS_UPDATE",
+      "createTs": "2017-06-15T15:18:53.000",
+      "replyEnabled": false,
+      "payload": {
+        "@xsi:type": "pegasus.project.brd.component.brdmessaging.bean.TransactionStatusChangePayload",
+        "amount": 280.86,
+        "currency": "RON",
+        "partnerName": "RO94BRDE450SV22222222222",
+        "transactionStatus": 7,
+        "transactionVersion": 3,
+        "transactionId": 10583,
+        "transactionType": "billPaymentTransactionLifeCycle"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.function.customermessaging.bean.FlatFeedMessage",
+      "messageId": 3725,
+      "categoryTypeId": 4,
+      "subject": "TR_BOOKING",
+      "summary": "TR_BOOKING",
+      "status": {
+        "@name": "UNREAD",
+        "$": "U"
+      },
+      "contentText": "TR_BOOKING",
+      "createTs": "2017-07-10T12:43:23.000",
+      "replyEnabled": false,
+      "payload": {
+        "@xsi:type": "pegasus.project.brd.component.brdmessaging.bean.TransactionBookingPayload",
+        "amount": 255,
+        "currency": "RON",
+        "creditDebit": "C",
+        "transactionId": "SV103801237302017071012432300"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.function.customermessaging.bean.FlatFeedMessage",
+      "messageId": 3702,
+      "categoryTypeId": 4,
+      "subject": "TR_BOOKING",
+      "summary": "TR_BOOKING",
+      "status": {
+        "@name": "UNREAD",
+        "$": "U"
+      },
+      "contentText": "TR_BOOKING",
+      "createTs": "2017-06-30T11:36:05.000",
+      "replyEnabled": false,
+      "payload": {
+        "@xsi:type": "pegasus.project.brd.component.brdmessaging.bean.TransactionBookingPayload",
+        "amount": 23,
+        "currency": "RON",
+        "creditDebit": "C",
+        "transactionId": "SV765940045002017063011360400"
+      }
+    },
+    {
+      "@xsi:type": "pegasus.function.customermessaging.bean.FlatFeedMessage",
+      "messageId": 3655,
+      "categoryTypeId": 3,
+      "subject": "TR_STATUS_UPDATE",
+      "summary": "TR_STATUS_UPDATE",
+      "status": {
+        "@name": "UNREAD",
+        "$": "U"
+      },
+      "contentText": "TR_STATUS_UPDATE",
+      "createTs": "2017-06-15T15:18:53.000",
+      "replyEnabled": false,
+      "payload": {
+        "@xsi:type": "pegasus.project.brd.component.brdmessaging.bean.TransactionStatusChangePayload",
+        "amount": 280.86,
+        "currency": "RON",
+        "partnerName": "RO20BRDE450SV11111111111",
+        "transactionStatus": 7,
+        "transactionVersion": 3,
+        "transactionId": 10583,
+        "transactionType": "billPaymentTransactionLifeCycle"
+      }
+    }
+  ],
+  "header": {
+    "validity": 60,
+    "cacheStatus": "MERGE",
+    "deletedFlagField": "deleted",
+    "isPrivate": true,
+    "token": "LTJhMl4ebWg7MUi385q4Ug==",
+    "sessionTimeout": 600,
+    "idField": "messageId",
+    "lastModified": "2017-06-22T10:48:01.122"
+  }
+}

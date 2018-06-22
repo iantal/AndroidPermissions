@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/balloonView" android:background="@drawable/balloon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/balloonClickable" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/balloonIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/balloonTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Title" android:layout_toRightOf="@id/balloonIcon" android:layout_alignParentTop="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff444444" android:id="@id/balloonSnippet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Snippet" android:layout_below="@id/balloonTitle" android:layout_alignLeft="@id/balloonTitle" />
+    </RelativeLayout>
+</LinearLayout>

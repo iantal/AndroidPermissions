@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="ind.bankingapp.android.framework.allow_offline_mode">true</bool>
+    <bool name="ind.bankingapp.android.framework.allow_public_mode">true</bool>
+    <bool name="ind.bankingapp.android.framework.pushmessages.enabled">true</bool>
+    <bool name="logger.debug">false</bool>
+    <bool name="ind.bankingapp.token_integrated">true</bool>
+    <bool name="ind_bankingapp_activate_webview_memory_leak_fix">true</bool>
+    <bool name="ind_bankingapp_activate_targetdpi_fix">true</bool>
+    <bool name="ind_bankingapp_activate_maintenance_fix">true</bool>
+    <bool name="use_message_source">false</bool>
+    <bool name="hasTitleLogo">true</bool>
+    <bool name="enable_debug_log">true</bool>
+    <bool name="hardware.accelerated">false</bool>
+</resources>

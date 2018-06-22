@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/rzb_white" android:paddingLeft="6.0dip" android:paddingTop="-8.0dip" android:paddingRight="12.0dip" android:paddingBottom="-8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/imageLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center" android:id="@id/imageView" android:layout_width="35.0dip" android:layout_height="28.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?dsq_header_my_portofolio_text_color" android:gravity="center_vertical" android:id="@id/choosenOffer" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/imageLayout" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?dsq_my_portofolio_text_color" android:id="@id/titleTextView" android:paddingLeft="4.0dip" android:paddingTop="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/choosenOffer" />
+    <View android:id="@id/line_seperator" android:background="@color/raiffeisen_black_05_opacity" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="40.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/cell_background" android:background="?dsq_list_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/rzb_primary_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/linkDescription" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" style="@style/DSQWidget.Holo.Button" />
+    <include android:id="@id/separator" layout="@layout/separator_style_simple" />
+</LinearLayout>

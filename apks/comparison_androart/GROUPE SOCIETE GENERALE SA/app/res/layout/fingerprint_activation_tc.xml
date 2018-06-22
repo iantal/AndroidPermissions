@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/standard_padding" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/standard_padding" android:layout_marginBottom="@dimen/standard_padding" android:src="@drawable/default_fingerprint" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_padding" android:text="@string/native_fingerprint_activation_title" style="@style/TitleText" />
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/textViewFingerprintInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_padding" android:text="@string/native_fingerprint_activation_info" />
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/textViewFingerprintTc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_padding" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/buttonFingerprintTcNegative" android:layout_marginTop="@dimen/buttonPaddingMedium" android:layout_marginBottom="@dimen/buttonPaddingMedium" android:text="@string/native_fingerprint_activation_negative_button" style="@style/NormalButton" />
+    <Button android:id="@id/buttonFingerprintTcPositive" android:layout_marginBottom="@dimen/buttonPaddingMedium" android:text="@string/native_fingerprint_activation_positive_button" style="@style/SubmitButton" />
+</LinearLayout>

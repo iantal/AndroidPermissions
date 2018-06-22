@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_gravity="start" android:id="@id/left_drawer" android:background="@color/drawer_item_normal" android:layout_width="290.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/drawer_item_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" android:choiceMode="singleChoice">
+        <ToggleButton android:id="@id/drawer_btn_login" android:textOn="@string/cmd_login" android:textOff="@string/cmd_login" style="@style/DrawerButtonStyle" />
+        <ToggleButton android:id="@id/drawer_btn_accounts" android:textOn="@string/title_accounts" android:textOff="@string/title_accounts" android:drawableLeft="@drawable/ic_home" android:drawablePadding="10.0dip" style="@style/DrawerButtonStyle" />
+        <ToggleButton android:id="@id/drawer_btn_cards" android:textOn="@string/title_cards" android:textOff="@string/title_cards" style="@style/DrawerButtonStyle" />
+        <ToggleButton android:id="@id/drawer_btn_ron_payment" android:textOn="@string/title_transfers" android:textOff="@string/title_transfers" style="@style/DrawerButtonStyle" />
+        <ToggleButton android:id="@id/drawer_btn_foreign_payment" android:textOn="@string/title_foreign_payment" android:textOff="@string/title_foreign_payment" style="@style/DrawerButtonStyle" />
+        <ToggleButton android:id="@id/drawer_btn_foreign_exchange" android:textOn="@string/title_foreign_exchange" android:textOff="@string/title_foreign_exchange" style="@style/DrawerButtonStyle" />
+        <ToggleButton android:id="@id/drawer_btn_money_transfer" android:paddingRight="@dimen/magnet_icon_padding_right" android:textOn="@string/title_money_transfer" android:textOff="@string/title_money_transfer" android:drawableRight="@drawable/ic_magnet_24dp" style="@style/DrawerButtonStyle" />
+        <ToggleButton android:id="@id/drawer_btn_deposits" android:textOn="@string/title_deposits" android:textOff="@string/title_deposits" style="@style/DrawerButtonStyle" />
+        <ToggleButton android:id="@id/drawer_btn_loans" android:textOn="@string/title_loans" android:textOff="@string/title_loans" style="@style/DrawerButtonStyle" />
+        <ToggleButton android:id="@id/drawer_btn_unauthorized" android:textOn="@string/title_sign_transactions" android:textOff="@string/title_sign_transactions" style="@style/DrawerButtonStyle" />
+        <ToggleButton android:id="@id/drawer_btn_finance" android:textOn="@string/title_finance" android:textOff="@string/title_finance" style="@style/DrawerButtonStyle" />
+        <ToggleButton android:id="@id/drawer_btn_messages" android:textOn="@string/title_messages" android:textOff="@string/title_messages" style="@style/DrawerButtonStyle" />
+        <ToggleButton android:id="@id/drawer_btn_logout" android:textOn="@string/cmd_logout" android:textOff="@string/cmd_logout" style="@style/DrawerButtonStyle" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ff999966" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/other" />
+            <View android:background="#ff999966" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+            <ToggleButton android:id="@id/drawer_btn_rates" android:textOn="@string/title_exchange_rates" android:textOff="@string/title_exchange_rates" style="@style/DrawerButtonStyle" />
+            <ToggleButton android:id="@id/drawer_btn_atms" android:textOn="@string/title_find_atm" android:textOff="@string/title_find_atm" style="@style/DrawerButtonStyle" />
+            <ToggleButton android:id="@id/drawer_btn_prefs" android:textOn="@string/title_preferences" android:textOff="@string/title_preferences" style="@style/DrawerButtonStyle" />
+            <ToggleButton android:id="@id/drawer_btn_policy" android:textOn="@string/title_privacy_policy" android:textOff="@string/title_privacy_policy" style="@style/DrawerButtonStyle" />
+            <ToggleButton android:id="@id/drawer_btn_contacts" android:textOn="@string/title_contact_us" android:textOff="@string/title_contact_us" style="@style/DrawerButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

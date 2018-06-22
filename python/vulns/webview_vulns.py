@@ -202,10 +202,13 @@ class AccessLocalResources(object):
 
         for call in _method['calls']:
             try:
-                if 'setAllowFileAccess' or 'setAllowFileAccessFromFileURLs' in call['to_method']:
+                if 'setAllowFileAccess' in call['to_method'] or 'setAllowFileAccessFromFileURLs' in call['to_method']:
+                    print(call['to_method'])
+
                     for arg in call['local_args'].strip('{}').split(", "):
                         try:
                             if call['params'][arg]['value'] == '0x1':
+                                print("will return true")
                                 return True
                         except KeyError:
                             pass
@@ -213,6 +216,7 @@ class AccessLocalResources(object):
                 continue
             except Exception:
                 continue
+        print("will return false")
         return False
 
     def detect(self):
@@ -222,6 +226,12 @@ class AccessLocalResources(object):
         stat = "high"
         evidence = []
         ret_list = []
+
+        title2 = "WebView Injection"
+        description2 = ""
+        recommendation2 = ""
+        stat2 = "low"
+        evidence2 = []
 
         file = os.path.join(self.base_dir, 'report', 'hotspot.json')
         with open(file, 'r') as f:
@@ -236,6 +246,8 @@ class AccessLocalResources(object):
                         if self.check_file_access(method):
                             evidence.append(cl['path'])
                             d[cl["path"]] += 1
+                        else:
+                            evidence2.append(cl['path'])
             except KeyError:
                 continue
         if evidence:
@@ -245,6 +257,14 @@ class AccessLocalResources(object):
                 "description": description,
                 "recommendation": recommendation,
                 "evidence": evidence
+            })
+        if evidence2:
+            ret_list.append({
+                "title": title2,
+                "stat": stat2,
+                "description": description2,
+                "recommendation": recommendation2,
+                "evidence": evidence2
             })
 
         with open(file, 'w') as ff:

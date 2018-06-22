@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../xsd/nativefunctiondescriptor.xsd">
+
+	<name>fxrates</name>
+	<views>
+		<view>
+			<title>native_bankingapp_function_fxrates_fxcalculator_title</title>
+			<url>view://brd/bankingapp/function/fxrates/fxcalculator</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/bankingapp/function/fxrates/fxcalculator.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+		</view>
+	</views>
+</function>

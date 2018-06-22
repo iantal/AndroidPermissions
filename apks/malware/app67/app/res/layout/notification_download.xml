@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/image" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/notification_download_title_textsize" android:textColor="@color/notification_recommend_textclolor" android:ellipsize="end" android:id="@id/title" android:paddingTop="@dimen/notification_download_text_paddingtop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <RelativeLayout android:id="@id/progress_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+            <TextView android:gravity="right" android:id="@id/progressNum" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="48.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            <ProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/progressNum" style="?android:attr/progressBarStyleHorizontal" />
+        </RelativeLayout>
+        <TextView android:id="@id/description" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title" />
+    </RelativeLayout>
+</RelativeLayout>

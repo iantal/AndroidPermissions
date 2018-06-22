@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_wrapper" android:background="@drawable/bg_black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/include_toolbar" />
+        <com.thinkdesquared.banking.helpers.ui.widgets.SlidingUpPanelLayout android:gravity="top" android:id="@id/sliding_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="?dsq_background" android:paddingTop="-8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-8.0dip">
+                <include layout="@layout/loading" />
+                <FrameLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="?dsq_border_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="-8.0dip" android:layout_marginRight="8.0dip">
+                    <ScrollView android:id="@id/tablet_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="false">
+                        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/fragment_above_container" android:paddingTop="8.0dip" android:layout_width="@dimen/dsq_bordered_layout_width" android:layout_height="wrap_content" android:minHeight="@dimen/dsq_bordered_layout_min_height" />
+                    </ScrollView>
+                </FrameLayout>
+            </LinearLayout>
+            <RelativeLayout android:background="?dsq_background_templates_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/show_templates_layout" android:background="?dsq_background" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-5.0dip" android:layout_alignParentBottom="true">
+                    <View android:background="?dsq_template_chooser_button_color" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="-1.0dip" />
+                    <Button android:textSize="18.0sp" android:textColor="?dsq_template_chooser_button_title_color" android:id="@id/show_templates_button" android:layout_width="200.0dip" android:layout_height="48.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="0.0dip" android:text="@string/show_templates_button_info" style="?attr/dsq_template_chooser_button" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/template_chooser" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:layout_above="@id/show_templates_layout" />
+            </RelativeLayout>
+        </com.thinkdesquared.banking.helpers.ui.widgets.SlidingUpPanelLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="start" android:id="@id/fragment_below_container" android:layout_width="320.0dip" android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

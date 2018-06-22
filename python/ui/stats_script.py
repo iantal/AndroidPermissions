@@ -46,6 +46,7 @@ BENCHMARK_PERMISSION = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/perm
 BENCHMARK_OBFS_LOG = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/obfuscation_and_logging/"
 BENCHMARK_COMP_ANDROART = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/"
 MALWARE = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/malware/"
+BANKING = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/"
 
 
 def create_dir(dir_name):
@@ -62,8 +63,8 @@ def organize_files(directory):
     for (dirpath, dirnames, filenames) in os.walk(directory):
         for filename in filenames:
             if filename.endswith('.apk'):
-                # apk_name = filename.split(" - ")[1]
-                apk = filename.split(".apk")[0]
+                apk_name = filename.split(" - ")[1]
+                apk = apk_name.split(".apk")[0]
                 dir_name = '_'.join(apk.split("-"))
                 create_dir(dir_name)
                 os.rename(os.path.join(directory, filename), os.path.join(directory, dir_name, filename))
@@ -217,17 +218,17 @@ def analyse_files(directory):
                 apk_analyser.find_webview_vulns()
                 print('\033[92m' + "[+] " + '\033[0m' + "WebView")
 
-                os.system("pkill r2")
-                try:
-                    print('\033[92m' + "[*] " + '\033[0m' + "Running radare2")
-                    apk_analyser.run_radare()
-                    print('\033[92m' + "[+] " + '\033[0m' + "Done")
-                except OSError:
-                    print("{*****}  " + apk)
-                    continue
-                except Exception:
-                    continue
-                os.system("pkill -INT r2")
+                # os.system("pkill r2")
+                # try:
+                #     print('\033[92m' + "[*] " + '\033[0m' + "Running radare2")
+                #     apk_analyser.run_radare()
+                #     print('\033[92m' + "[+] " + '\033[0m' + "Done")
+                # except OSError:
+                #     print("{*****}  " + apk)
+                #     continue
+                # except Exception:
+                #     continue
+                # os.system("pkill -INT r2")
 
 
                 # ch = ChordVisualizer(dirpath, "/".join(package_name.split(".")))
@@ -255,11 +256,32 @@ def analyse_files(directory):
     pprint.pprint(analysed_apks)
     print("TOTAL: " + str(s))
 
+
 def plot_stats():
-    y = [100.0, 100.0, 70.0, 100.0, 100.0, 100.0, 100.0]
-    y_ = [1,2,3,4,5,6,7,8]
-    x = ['Criptografie', 'Web', 'Componente', 'Permisiuni',
-                'Reflection', 'Obfuscare', 'Logging']
+
+    #  Stats for the benchmark
+    # y = [100.0, 100.0, 70.0, 100.0, 100.0, 100.0, 100.0]
+    # y_ = [1,2,3,4,5,6,7,8]
+    # x = ['Criptografie', 'Web', 'Componente', 'Permisiuni',
+    #             'Reflection', 'Obfuscare', 'Logging']
+
+    #  Stats for malware
+    y = [0, 2, 61, 100, 80, 52, 52, 56, 29, 79, 57]
+    y_ = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    x = [
+        "Location",
+        "Emulator",
+        "API",
+        "APK",
+        "Files",
+        "Libs",
+        "Native",
+        "Other",
+        "Root",
+        "SMS & Telephony",
+        "URL"
+    ]
+
 
     trace0 = go.Bar(
         x=y,
@@ -454,10 +476,77 @@ def plot_comparison_by_app():
     offline.plot(data, filename='plot.html')
 
 
+def compute_malware_findings(directory):
+    os.chdir(directory)
+
+    _emulator = 0
+    _url = 0
+    _root = 0
+    _apk = 0
+    _libs = 0
+    _file = 0
+    _other = 0
+    _api = 0
+    _nativechecks = 0
+    _sms = 0
+    _location =0
+
+    for (dirpath, dirnames, filenames) in os.walk(directory):
+        if "report/vulns" in dirpath:
+            for filename in filenames:
+                if filename.endswith('.json'):
+                    file = os.path.join(dirpath, filename)
+                    print(file)
+                    with open(file, 'r') as f:
+                        d = json.load(f)
+
+                    for finding in d["findings"]:
+                        if finding["evidence"] != ["", "", ""]:
+                            if "emulator" in finding["title"]:
+                                _emulator += 1
+                            elif "url" in finding["title"]:
+                                _url += 1
+                            elif "root" in finding["title"]:
+                                _root += 1
+                            elif "apk" in finding["title"]:
+                                _apk += 1
+                            elif "libs" in finding["title"]:
+                                _libs += 1
+                            elif "file" in finding["title"]:
+                                _file += 1
+                            elif "other" in finding["title"]:
+                                _other += 1
+                            elif "api" in finding["title"]:
+                                _api += 1
+                            elif "native" in finding["title"]:
+                                _nativechecks += 1
+                            elif "sms" in finding["title"]:
+                                _sms += 1
+                            elif "location" in finding["title"]:
+                                _location += 1
+    print("####################################")
+    print("Emulator:\t" + str(_emulator))
+    print("URL:\t" + str(_url))
+    print("Root:\t" + str(_root))
+    print("APK:\t" + str(_apk))
+    print("Libs:\t" + str(_libs))
+    print("File:\t" + str(_file))
+    print("Other:\t" + str(_other))
+    print("API:\t" + str(_api))
+    print("Native checks:\t" + str(_nativechecks))
+    print("SMS:\t" + str(_sms))
+    print("Location:\t" + str(_location))
+    print("####################################")
+
+
 if __name__ == "__main__":
+    # organize_files(BANKING)
+    analyse_files(BANKING)
     # organize_malware_files(MALWARE)
-    analyse_malware_files(MALWARE)
+    # analyse_malware_files(MALWARE)
     # plot_stats()
     # compute_findings_distribution(BENCHMARK_COMP_ANDROART)
     # plot_comparison_by_findings()
     # plot_comparison_by_app()
+    # compute_malware_findings(MALWARE)
+    # plot_stats()

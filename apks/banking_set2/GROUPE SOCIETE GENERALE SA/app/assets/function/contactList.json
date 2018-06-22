@@ -1,0 +1,45 @@
+{
+  "success": true,
+  "data": {
+    "@xsi:type": "pegasus.project.common.contacts.bean.GetContactListReply",
+    "phoneNumberList": {
+      "contactList": {
+        "contactItem": [
+          {
+            "contactValue": "+4 021 302 6161"
+          },
+          {
+            "contactValue": "*22622"
+          },
+          {
+            "contactValue": "0800 803 803"
+          }
+        ]
+      }
+    },
+    "emailAddressList": {
+      "contactList": {
+        "contactItem": [
+          {
+            "contactValue": "mybrdcontact@brd.ro"
+          }
+        ]
+      }
+    },
+    "webURLList": {
+      "contactList": {
+        "contactItem": [
+          {
+            "contactValue": "http://www.brd.ro"
+          },
+          {
+            "contactValue": "http://www.facebook.com/pages/BRD-Groupe-Societe-Generale/114198928632140"
+          }
+        ]
+      }
+    }
+  },
+  "header": {
+    "sessionTimeout": 600
+  }
+}

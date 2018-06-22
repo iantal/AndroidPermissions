@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/loading_and_error_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/include_progress_bar" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/error_layout" android:background="@drawable/rounded_bottom_corners_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="?dsq_error_layout_margin_bottom_for_footer_logo">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/error_message" android:background="?dsq_list_selector" android:padding="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DSQTextAppearance.listLeft3" />
+    </FrameLayout>
+</LinearLayout>

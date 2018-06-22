@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/native_settings_token_reset" android:key="ind.token.resetToken" />
+    <Preference android:title="@string/native_settings_token_lock" android:key="ind.token.lockToken" />
+    <ListPreference android:entries="@array/languages" android:title="@string/settingsItemLanguage" android:key="LANGUAGE" android:entryValues="@array/languageValues" />
+    <ListPreference android:entries="@array/pinStyle" android:title="@string/native_settings_token_pin_style" android:key="ind.token.pinStyle" android:defaultValue="alphanumeric" android:entryValues="@array/pinStyleValues" />
+    <PreferenceScreen android:title="@string/native_settings_devicemanagement_about" android:key="ind.token.about">
+        <Preference android:enabled="false" android:title="@string/native_settings_about_name" android:summary="@string/native_settings_token_about_name_summary" />
+        <Preference android:enabled="false" android:title="@string/native_settings_about_applicationversion" android:key="ind.token.version" />
+        <Preference android:enabled="false" android:title="@string/native_settings_about_technicalversion" android:key="ind.token.build" />
+        <Preference android:enabled="false" android:title="@string/native_settings_token_serial" android:key="TOKEN_SERIAL" />
+    </PreferenceScreen>
+</PreferenceScreen>

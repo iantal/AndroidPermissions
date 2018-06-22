@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/InboxMessageElementStyle">
+        <ProgressBar android:theme="@style/Theme.Overlay.YellowAccent" android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminate="true" style="?android:attr/progressBarStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </FrameLayout>
+    <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="16.0dip" android:layout_below="@id/loading_layout" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/attachment_container" android:background="@color/rzb_attachment_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/webView" style="@style/InboxMessageElementStyle" />
+</RelativeLayout>

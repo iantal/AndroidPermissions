@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/wrapperRelativeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/dummySpace" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/treasuryImageView" android:layout_width="@dimen/popular_icon_width_height" android:layout_height="@dimen/popular_icon_width_height" android:layout_below="@id/dummySpace" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="20.0sp" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/treasuryPaymentNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="4.0dip" android:maxLines="1" android:layout_below="@id/treasuryImageView" android:layout_centerHorizontal="true" style="@style/DSQTextAppearance.toolBarTitle" />
+    <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/budgetAccountCodeTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="1" android:layout_below="@id/treasuryPaymentNameTextView" android:layout_centerHorizontal="true" style="@style/DSQTextAppearance.value2" />
+    <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/treasuryPaymentDescriptionTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@id/budgetAccountCodeTextView" android:layout_centerHorizontal="true" style="@style/DSQTextAppearance.value2.withSpaceLine" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ind.bankingapp.android.framework.view.MultiDirectionSlidingDrawer android:layout_gravity="bottom" android:id="@id/slidingDrawer" android:layout_width="fill_parent" android:layout_height="fill_parent" drawer:handle="@id/drawerHandle" drawer:content="@id/drawerContent" drawer:direction="bottomToTop"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:drawer="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/drawerHandle" style="?slidingDrawerBottomHandleStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/drawerContent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</ind.bankingapp.android.framework.view.MultiDirectionSlidingDrawer>

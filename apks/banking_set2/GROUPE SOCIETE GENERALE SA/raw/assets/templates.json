@@ -1,0 +1,21 @@
+[
+	{
+		"nameKey": "templateDomesticPayment",
+		"fields":
+		[
+			{
+				"nameKey": "native_challenge1Name",
+				"hintKey": "native_challenge1Hint",
+				"inputType": "NUMBER",
+				"constraint": "[0-9]{6}"
+			},
+			{
+				"nameKey": "native_challenge2Name",
+				"hintKey": "native_challenge2Hint",
+				"inputType": "NUMBER",
+				"constraint": "[0-9]{6}"
+			}
+		]
+		
+	}
+]

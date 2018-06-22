@@ -1,0 +1,29 @@
+{
+  "findings": [
+    {
+      "title": "",
+      "stat": "low",
+      "description": "",
+      "recommendation": "",
+      "evidence": [
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/android/support/v4/text/ICUCompatIcs.smali forName",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/android/support/v4/text/ICUCompatIcs.smali invoke",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/android/support/v4/text/ICUCompatIcs.smali invoke",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/android/support/v4/app/ActionBarDrawerToggleHoneycomb.smali invoke",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/android/support/v4/app/ActionBarDrawerToggleHoneycomb.smali invoke",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/android/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB.smali invoke",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/android/support/v4/view/ViewPager.smali invoke",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/TemplateOne.smali forName",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/LogoffActivity$1.smali forName",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/TemplateOne$14.smali forName",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/BaseActivity.smali forName",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/BaseActivity$12.smali forName",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/FCDBLoginTab.smali forName",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/FCDBLoginTab.smali forName",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/LoginActivity$6.smali forName",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/TemplateOne$18.smali forName",
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/app/smali/com/iflex/fcat/mobile/android/infra/TransactionActivity.smali forName"
+      ]
+    }
+  ]
+}

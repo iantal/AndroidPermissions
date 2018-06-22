@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/show_device_registration" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:background="@color/fwr_black_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-12.0dip">
+            <com.thinkdesquared.banking.helpers.ui.widgets.TextView_RobotoLight android:textSize="14.0dip" android:textColor="@color/fwr_white_color" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/msgTextView" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_registration_prompt" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/register_now_container" android:background="@color/fwr_yellow_color" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textColor="@color/fwr_black_color" android:layout_gravity="center" android:id="@id/registerButtonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_registration_ok" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/register_later_container" android:background="@color/rzb_device_registration_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="10.0dip">
+            <com.thinkdesquared.banking.helpers.ui.widgets.TextView_Roboto android:textColor="@color/fwr_yellow_color" android:layout_gravity="center" android:id="@id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_registration_no" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

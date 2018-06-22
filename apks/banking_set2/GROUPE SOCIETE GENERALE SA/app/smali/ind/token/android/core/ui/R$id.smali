@@ -1,0 +1,352 @@
+.class public final Lind/token/android/core/ui/R$id;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lind/token/android/core/ui/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "id"
+.end annotation
+
+
+# static fields
+.field public static final RelativeLayout1:I = 0x7f0c00c4
+
+.field public static final actionbar_compat_item_container:I = 0x7f0c0021
+
+.field public static final actionbar_compat_title:I = 0x7f0c0022
+
+.field public static final actionbar_logo:I = 0x7f0c0023
+
+.field public static final activateButton:I = 0x7f0c0026
+
+.field public static final activationCode:I = 0x7f0c0025
+
+.field public static final activationId:I = 0x7f0c0024
+
+.field public static final alertMessage:I = 0x7f0c00b9
+
+.field public static final app_picker_list_item_icon:I = 0x7f0c0034
+
+.field public static final app_picker_list_item_label:I = 0x7f0c0035
+
+.field public static final balloonClickable:I = 0x7f0c0037
+
+.field public static final balloonIcon:I = 0x7f0c0038
+
+.field public static final balloonSnippet:I = 0x7f0c003a
+
+.field public static final balloonTitle:I = 0x7f0c0039
+
+.field public static final balloonView:I = 0x7f0c0036
+
+.field public static final barcode_image_view:I = 0x7f0c0052
+
+.field public static final baseRoot:I = 0x7f0c003b
+
+.field public static final bookmark_title:I = 0x7f0c0042
+
+.field public static final bookmark_url:I = 0x7f0c0043
+
+.field public static final bottomToTop:I = 0x7f0c000d
+
+.field public static final browser:I = 0x7f0c006e
+
+.field public static final bump_flipper:I = 0x7f0c0044
+
+.field public static final buttonContainer:I = 0x7f0c00c2
+
+.field public static final callingAppBox:I = 0x7f0c0085
+
+.field public static final callingAppWarning:I = 0x7f0c0087
+
+.field public static final cancel_button:I = 0x7f0c006b
+
+.field public static final challengeButton:I = 0x7f0c0093
+
+.field public static final challengeText:I = 0x7f0c005d
+
+.field public static final changePinButton:I = 0x7f0c002b
+
+.field public static final contents_supplement_text_view:I = 0x7f0c0059
+
+.field public static final contents_text_view:I = 0x7f0c0058
+
+.field public static final continue_btn:I = 0x7f0c00aa
+
+.field public static final decode:I = 0x7f0c0000
+
+.field public static final decode_failed:I = 0x7f0c0001
+
+.field public static final decode_succeeded:I = 0x7f0c0002
+
+.field public static final drawerContent:I = 0x7f0c00be
+
+.field public static final drawerHandle:I = 0x7f0c00bf
+
+.field public static final exitFromDemo:I = 0x7f0c0030
+
+.field public static final explainImage:I = 0x7f0c00c6
+
+.field public static final fieldsTable:I = 0x7f0c00bb
+
+.field public static final fields_container:I = 0x7f0c00a9
+
+.field public static final fingerprint_container:I = 0x7f0c0067
+
+.field public static final fingerprint_description:I = 0x7f0c0068
+
+.field public static final fingerprint_header:I = 0x7f0c0066
+
+.field public static final fingerprint_icon:I = 0x7f0c0069
+
+.field public static final fingerprint_status:I = 0x7f0c006a
+
+.field public static final finishButton:I = 0x7f0c002d
+
+.field public static final format_text_view:I = 0x7f0c0053
+
+.field public static final fragment_container:I = 0x7f0c009b
+
+.field public static final fragment_content:I = 0x7f0c006c
+
+.field public static final fullpane:I = 0x7f0c000a
+
+.field public static final fullscreenSlidingDrawerContainer:I = 0x7f0c003f
+
+.field public static final generateButton:I = 0x7f0c005e
+
+.field public static final headerLogo:I = 0x7f0c002f
+
+.field public static final history_detail:I = 0x7f0c0070
+
+.field public static final history_title:I = 0x7f0c006f
+
+.field public static final hotlineBtn:I = 0x7f0c00ab
+
+.field public static final hswToolbarScroller:I = 0x7f0c0040
+
+.field public static final hybrid:I = 0x7f0c0011
+
+.field public static final image_view:I = 0x7f0c0060
+
+.field public static final infoButton:I = 0x7f0c0028
+
+.field public static final launch_product_query:I = 0x7f0c0003
+
+.field public static final leftToRight:I = 0x7f0c000e
+
+.field public static final linBase:I = 0x7f0c003c
+
+.field public static final linlToolbarBase:I = 0x7f0c0041
+
+.field public static final linlToolbarWrapper:I = 0x7f0c003d
+
+.field public static final loginButton:I = 0x7f0c000c
+
+.field public static final loginLinearLayout:I = 0x7f0c0082
+
+.field public static final loginScrollView:I = 0x7f0c0081
+
+.field public static final mainwebview:I = 0x7f0c008e
+
+.field public static final menuHelp:I = 0x7f0c00d2
+
+.field public static final menuSettings:I = 0x7f0c00d3
+
+.field public static final menu_encode:I = 0x7f0c00cf
+
+.field public static final menu_help:I = 0x7f0c00ce
+
+.field public static final menu_history:I = 0x7f0c00cc
+
+.field public static final menu_history_clear_text:I = 0x7f0c00d1
+
+.field public static final menu_history_send:I = 0x7f0c00d0
+
+.field public static final menu_settings:I = 0x7f0c00cd
+
+.field public static final menu_share:I = 0x7f0c00cb
+
+.field public static final message:I = 0x7f0c0045
+
+.field public static final messageInfo:I = 0x7f0c0097
+
+.field public static final messageSuccess:I = 0x7f0c0098
+
+.field public static final messageWarning:I = 0x7f0c0096
+
+.field public static final messagesLayout:I = 0x7f0c0095
+
+.field public static final meta_text_view:I = 0x7f0c0057
+
+.field public static final meta_text_view_label:I = 0x7f0c0056
+
+.field public static final nested_fragment_container:I = 0x7f0c006d
+
+.field public static final newPin:I = 0x7f0c0029
+
+.field public static final newPinConfirm:I = 0x7f0c002a
+
+.field public static final nonFullscreenSlidingDrawerContainer:I = 0x7f0c003e
+
+.field public static final none:I = 0x7f0c0012
+
+.field public static final normal:I = 0x7f0c0013
+
+.field public static final numpad:I = 0x7f0c004e
+
+.field public static final numpad_clear:I = 0x7f0c009a
+
+.field public static final numpad_empty_cell:I = 0x7f0c0099
+
+.field public static final numpad_extra:I = 0x7f0c000b
+
+.field public static final oldPin:I = 0x7f0c005f
+
+.field public static final openFingerprintLayout:I = 0x7f0c0088
+
+.field public static final openFingerprintLink:I = 0x7f0c0089
+
+.field public static final otpButton:I = 0x7f0c0092
+
+.field public static final pageDescription:I = 0x7f0c0027
+
+.field public static final page_number_view:I = 0x7f0c00b0
+
+.field public static final passwordText:I = 0x7f0c002c
+
+.field public static final phone_content:I = 0x7f0c009d
+
+.field public static final phone_toolbar:I = 0x7f0c009e
+
+.field public static final pinDescriptionText:I = 0x7f0c0083
+
+.field public static final pinDisplay:I = 0x7f0c009f
+
+.field public static final pinText:I = 0x7f0c0084
+
+.field public static final pin_style_icon:I = 0x7f0c00a7
+
+.field public static final preview_view:I = 0x7f0c004f
+
+.field public static final progress:I = 0x7f0c0091
+
+.field public static final qr_messages_container:I = 0x7f0c00a8
+
+.field public static final query_button:I = 0x7f0c00ae
+
+.field public static final query_text_view:I = 0x7f0c00ad
+
+.field public static final quit:I = 0x7f0c0004
+
+.field public static final reset_token_btn:I = 0x7f0c00ac
+
+.field public static final restart_preview:I = 0x7f0c0005
+
+.field public static final result_button_view:I = 0x7f0c005a
+
+.field public static final result_list_view:I = 0x7f0c00af
+
+.field public static final result_view:I = 0x7f0c0051
+
+.field public static final return_scan_result:I = 0x7f0c0006
+
+.field public static final rightToLeft:I = 0x7f0c000f
+
+.field public static final satellite:I = 0x7f0c0014
+
+.field public static final securityMessage:I = 0x7f0c00b2
+
+.field public static final shareWarnCheckBox:I = 0x7f0c00ba
+
+.field public static final share_app_button:I = 0x7f0c00b4
+
+.field public static final share_bookmark_button:I = 0x7f0c00b5
+
+.field public static final share_clipboard_button:I = 0x7f0c00b7
+
+.field public static final share_contact_button:I = 0x7f0c00b6
+
+.field public static final share_text_view:I = 0x7f0c00b8
+
+.field public static final shopper_button:I = 0x7f0c005b
+
+.field public static final signButton:I = 0x7f0c0094
+
+.field public static final slidingDrawer:I = 0x7f0c00bd
+
+.field public static final snippet_view:I = 0x7f0c00b1
+
+.field public static final splashScreenLogo:I = 0x7f0c002e
+
+.field public static final status_view:I = 0x7f0c005c
+
+.field public static final tablet_container:I = 0x7f0c0007
+
+.field public static final tablet_left_pane:I = 0x7f0c0008
+
+.field public static final tablet_pane_separator:I = 0x7f0c00c0
+
+.field public static final tablet_right_pane:I = 0x7f0c0009
+
+.field public static final tablet_toolbar:I = 0x7f0c00c1
+
+.field public static final templatesContainer:I = 0x7f0c00bc
+
+.field public static final terrain:I = 0x7f0c0015
+
+.field public static final time_text_view:I = 0x7f0c0055
+
+.field public static final titleText:I = 0x7f0c00c3
+
+.field public static final toolbar_container:I = 0x7f0c009c
+
+.field public static final topToBottom:I = 0x7f0c0010
+
+.field public static final touchIcon:I = 0x7f0c001c
+
+.field public static final tutorialText:I = 0x7f0c00c8
+
+.field public static final tutorialTitle:I = 0x7f0c00c7
+
+.field public static final tutorial_header:I = 0x7f0c00c5
+
+.field public static final type_text_view:I = 0x7f0c0054
+
+.field public static final viewPager:I = 0x7f0c0031
+
+.field public static final viewPagerCountDots:I = 0x7f0c0033
+
+.field public static final viewPagerIndicator:I = 0x7f0c0032
+
+.field public static final viewfinder_view:I = 0x7f0c0050
+
+.field public static final warnIcon:I = 0x7f0c0086
+
+.field public static final webHider:I = 0x7f0c0090
+
+.field public static final webView1:I = 0x7f0c008f
+
+.field public static final webView_maintenance:I = 0x7f0c008d
+
+.field public static final web_hider:I = 0x7f0c00ca
+
+.field public static final webview_container:I = 0x7f0c00c9
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 446
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

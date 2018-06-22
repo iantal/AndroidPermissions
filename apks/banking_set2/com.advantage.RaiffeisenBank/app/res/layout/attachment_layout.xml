@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/attachmentLinearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/attachmentImageView" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/attachment" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <View android:id="@id/separatorView" android:background="?dsq_main_line_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/attachmentImageView" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="4.0dip" android:layout_toRightOf="@id/attachmentImageView" android:layout_below="@id/separatorView">
+        <TextView android:id="@id/attachmentTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Identify.png" style="@style/DSQTextAppearance.value2" />
+        <TextView android:id="@id/attachmentSizeTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="43KB" style="@style/DSQTextAppearance.Label.material.normalFont" />
+    </LinearLayout>
+    <ImageView android:id="@id/deleteAttachmentImageView" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/ic_action_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

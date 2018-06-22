@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../xsd/nativefunctiondescriptor.xsd">
+
+	<name>activation</name>
+	<views>
+		<view>
+			<url>view://bankingapp/function/activation/login</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/bankingapp/function/activation/Login.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>true</showToolbar>
+			<tabletApp>
+				<fullScreen>always</fullScreen>
+			</tabletApp>
+		</view>
+		<view>
+			<url>view://bankingapp/function/activation/passwordchange</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/bankingapp/function/activation/passwordchange.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>true</showToolbar>
+			<tabletApp>
+				<fullScreen>always</fullScreen>
+			</tabletApp>
+		</view>
+		<view>
+			<url>view://bankingapp/function/activation/disclaimer</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/bankingapp/function/activation/disclaimer.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>true</showToolbar>
+			<tabletApp>
+				<fullScreen>always</fullScreen>
+			</tabletApp>
+		</view>
+	</views>
+</function>

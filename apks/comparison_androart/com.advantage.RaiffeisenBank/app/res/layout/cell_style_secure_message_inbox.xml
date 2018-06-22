@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.daimajia.swipe.SwipeLayout android:id="@id/swipe" android:layout_width="fill_parent" android:layout_height="fill_parent" app:clickToClose="true">
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:background="?dsq_delete_button_icon_color" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <Space android:layout_width="130.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:id="@id/deleteLinearLayout" android:layout_width="40.0dip" android:layout_height="fill_parent">
+                <ImageView android:id="@id/deleteImageView" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/delete_button" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/relativeLayout" android:background="@color/rzb_white" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/imageLayout" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="2.0dip">
+                <ImageView android:id="@id/backCircleImageView" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+                <com.thinkdesquared.banking.helpers.ui.widgets.CircleImageView android:id="@id/priorityImageView" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/important_icon" android:scaleType="centerCrop" android:layout_alignParentRight="true" app:border_width="@dimen/dimen_1dp_low_res_support" app:border_color="?dsq_inbox_important_border_color" />
+                <ImageView android:id="@id/frontCircleImageView" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/dateTimeLinearLayout" android:paddingLeft="4.0dip" android:paddingTop="10.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="44.0dip" android:layout_alignParentRight="true">
+                <TextView android:gravity="center_vertical" android:layout_gravity="center|right" android:id="@id/dateTextView" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/DSQTextAppearance.details" />
+                <TextView android:gravity="center_vertical" android:layout_gravity="center|right" android:id="@id/timeTextView" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/DSQTextAppearance.details" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/attachmentLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="2.0dip" android:layout_toLeftOf="@id/dateTimeLinearLayout">
+                <ImageView android:layout_gravity="center" android:id="@id/attachmentImageView" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/wrapperLinearLayout" android:paddingLeft="4.0dip" android:paddingTop="10.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="44.0dip" android:layout_toLeftOf="@id/attachmentLinearLayout" android:layout_toRightOf="@id/imageLayout">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:ellipsize="end" android:id="@id/subjectTextView" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/DSQTextAppearance.TitleUnreadStyle" />
+                    <TextView android:ellipsize="end" android:id="@id/numberOfMessagesTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_alignRight="@id/subjectTextView" style="@style/DSQTextAppearance.TitleUnreadStyle" />
+                </RelativeLayout>
+                <TextView android:textSize="14.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bodyTextView" android:layout_width="wrap_content" android:layout_height="0.0dip" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" style="@style/DSQTextAppearance.SubTitleUnreadStyle" />
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_marginLeft="4.0dip" android:layout_alignParentBottom="true" layout="@layout/include_separator" />
+        </RelativeLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</FrameLayout>

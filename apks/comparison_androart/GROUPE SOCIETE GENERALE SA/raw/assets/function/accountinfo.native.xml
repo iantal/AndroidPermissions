@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../xsd/nativefunctiondescriptor.xsd">
+
+	<name>accountinfo</name>
+	<views>
+		<view>
+		    <title>native_bankingapp_function_accountinfo_editlist_title</title>
+			<url>view://bankingapp/function/accountinfo/editaccountlist</url>
+			<implementationType>NATIVE</implementationType>
+			<implementation>brd.bankingapp.android.function.accountinfo.AccountPreferencesFragment</implementation>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+			<supplementaryFunction>true</supplementaryFunction>
+		</view>
+	</views>
+</function>

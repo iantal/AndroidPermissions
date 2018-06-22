@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container_with_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/relativeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/images" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:id="@id/image1" android:paddingTop="4.0dip" android:layout_width="28.0dip" android:layout_height="28.0dip" android:contentDescription="@string/title_online_activity" />
+                <View android:id="@id/seperator_of_imageView" android:background="?dsq_main_separator_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/images">
+                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/vertical_divider" android:background="?dsq_background_online_activity_cell" android:layout_width="@dimen/dimen_1dp_low_res_support" android:layout_height="wrap_content" android:minHeight="62.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/timestamp_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:gravity="center" android:id="@id/cyberReceipt" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/file_download" android:layout_centerVertical="true" />
+                    </LinearLayout>
+                    <TextView android:textSize="13.0sp" android:gravity="center|right" android:id="@id/valueTextView" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_toLeftOf="@id/timestamp_box" android:layout_alignTop="@id/timestamp_box" style="@style/DSQTextAppearance.Header.material" />
+                    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/contentLinearLayout" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/valueTextView" android:layout_toRightOf="@id/vertical_divider">
+                        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/online_activity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:singleLine="true" style="@style/DSQTextAppearance.listLeft" />
+                        <TextView android:ellipsize="none" android:gravity="center_vertical" android:id="@id/dateTimeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/DSQTextAppearance.details" />
+                        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/transactionErrorsTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/DSQTextAppearance.details" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <View android:id="@id/seperator" android:background="?dsq_main_separator_color" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/expansionLayout" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/cell_style_online_activity_item_detail" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

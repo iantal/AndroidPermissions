@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../xsd/nativefunctiondescriptor.xsd">
+
+	<name>support</name>
+	<views>
+		<view>
+			<url>view://bankingapp/function/support/support</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/QSArthN79YYQRoA3.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>true</showToolbar>
+			<tabletApp>
+				<moveToLeft>true</moveToLeft>
+			</tabletApp>
+		</view>
+		<view>
+			<url>view://bankingapp/function/support/publicsupport</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/U3ZWsSkJb2EFECug.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+			<showTitlebar>false</showTitlebar>
+			<tabletApp>
+				<moveToLeft>true</moveToLeft>
+				<fullScreen>always</fullScreen>
+			</tabletApp>
+		</view>
+	</views>
+</function>

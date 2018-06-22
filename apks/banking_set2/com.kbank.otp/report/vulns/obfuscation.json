@@ -1,0 +1,28 @@
+{
+  "findings": [
+    {
+      "title": "",
+      "stat": "low",
+      "description": "",
+      "recommendation": "",
+      "evidence": {
+        "result": "",
+        "anti_vm": [
+          "Build.MODEL check",
+          "Build.PRODUCT check"
+        ],
+        "compiler": [
+          "dx (possible dexmerge)"
+        ],
+        "packer": "",
+        "obfuscator": "Proguard",
+        "abnormal": "",
+        "anti_disassembly": "",
+        "dropper": "",
+        "manipulator": [
+          "dexmerge"
+        ]
+      }
+    }
+  ]
+}

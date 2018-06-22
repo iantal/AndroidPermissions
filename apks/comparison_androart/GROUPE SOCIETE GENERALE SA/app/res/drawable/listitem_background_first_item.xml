@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#ffeff0ef" />
+                </shape>
+            </item>
+            <item android:left="0.0dip" android:top="0.0dip" android:right="0.0dip" android:bottom="1.0dip">
+                <shape>
+                    <solid android:color="#ffeaedea" />
+                </shape>
+            </item>
+            <item android:left="0.0dip" android:top="1.0dip" android:right="0.0dip" android:bottom="1.0dip">
+                <shape>
+                    <solid android:color="#fff2f2f2" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#ffeff0ef" />
+                </shape>
+            </item>
+            <item android:left="0.0dip" android:top="0.0dip" android:right="0.0dip" android:bottom="1.0dip">
+                <shape>
+                    <solid android:color="#ffeaedea" />
+                </shape>
+            </item>
+            <item android:left="0.0dip" android:top="1.0dip" android:right="0.0dip" android:bottom="1.0dip">
+                <shape>
+                    <gradient android:startColor="#fff2f2f2" android:endColor="#ffffffff" android:angle="270.0" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#fff2f2f2" />
+                </shape>
+            </item>
+            <item android:left="0.0dip" android:top="0.0dip" android:right="0.0dip" android:bottom="1.0dip">
+                <shape>
+                    <solid android:color="#ffc4c4c4" />
+                </shape>
+            </item>
+            <item android:left="0.0dip" android:top="1.0dip" android:right="0.0dip" android:bottom="1.0dip">
+                <shape>
+                    <gradient android:startColor="#fff2f2f2" android:endColor="#ffc4c4c4" android:angle="270.0" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

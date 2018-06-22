@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TitleBackgroundStyle">
+        <item name="android:background">@drawable/titlebar_bkg</item>
+    </style>
+    <style name="WindowTitleStyle">
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+    <style name="ActionBarCompatTitleBase">
+        <item name="android:textSize">22.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="ActionBarCompatItemBase">
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="ActionBarTitleStyle" parent="@style/ActionBarCompatTitleBase">
+        <item name="android:textColor">@color/actionbar_title_color</item>
+    </style>
+    <style name="ActionBarCompatItem" parent="@style/ActionBarCompatItemBase" />
+    <style name="ActionBarCompatHomeItem" parent="@style/ActionBarCompatItemBase">
+        <item name="android:src">@drawable/header_logo</item>
+    </style>
+    <style name="dialogTopAnim">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="GoogleMapsButton">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/black_transparent_btn_bg</item>
+        <item name="android:paddingTop">10.0sp</item>
+        <item name="android:paddingBottom">10.0sp</item>
+        <item name="android:layout_width">90.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="CurrencyBox">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="CalculatorButton">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/listitem_bg_single</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:onClick">onNumClick</item>
+    </style>
+    <style name="radioGroup">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="radioButton">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">@dimen/buttonPadding</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">@dimen/buttonPadding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="DrawerHandleTop">
+        <item name="android:textAppearance">@style/SlidingDrawerText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/drawer_handle_top</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="DrawerHandleBottom" parent="@style/DrawerHandleTop">
+        <item name="android:background">@drawable/drawer_handle_bottom</item>
+    </style>
+    <style name="SlidingDrawerText">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffcccccc</item>
+    </style>
+    <style name="numpadButton">
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:padding">2.0dip</item>
+        <item name="numberTextStyle">@style/numpadNumber</item>
+        <item name="lettersTextStyle">@style/numpadLetters</item>
+        <item name="tryToShowLetters">false</item>
+        <item name="numberLettersDistance">1.0dip</item>
+    </style>
+    <style name="NumpadBackspace">
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:src">@drawable/calc_clear</item>
+    </style>
+    <style name="numpadNumber">
+        <item name="android:textSize">30.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="numpadLetters">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff959595</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="PhoneTab">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/tab_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/tab_blue_selector</item>
+        <item name="android:padding">3.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TabletTab">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:background">@drawable/tablet_toolbaritem_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">6.0dip</item>
+    </style>
+    <style name="PinDisplay">
+        <item name="android:background">@drawable/pin_background</item>
+        <item name="digitBackground">@drawable/pin_char_bg</item>
+        <item name="asteriskImage">@drawable/pin_char</item>
+        <item name="digitMargin">8.0dip</item>
+    </style>
+    <style name="pinDrawer">
+        <item name="android:background">#ff000000</item>
+    </style>
+    <style name="SubmitButton" parent="@style/NormalButton">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/submit_button</item>
+    </style>
+    <style name="NormalButton">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">52.0dip</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="TabletToolbarItemSeparator">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2.0dip</item>
+    </style>
+    <style name="PhoneToolbarItemSeparator">
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="Background">
+        <item name="android:background">#ffebebeb</item>
+    </style>
+    <style name="Instruction">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffa3a3a3</item>
+    </style>
+    <style name="AccountListItemAccountName">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff383838</item>
+        <item name="android:paddingBottom">2.0dip</item>
+    </style>
+    <style name="AccountListItemAccountType">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff959595</item>
+    </style>
+    <style name="AccountListItemEditText">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff383838</item>
+        <item name="android:background">@drawable/accountlistitem_edittext_background</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45.0dip</item>
+    </style>
+    <style name="OverflowButtonStyle">
+        <item name="android:src">@drawable/titlebar_bkg</item>
+    </style>
+    <style name="supplementaryAnimation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:activityOpenExitAnimation">@anim/null_anim</item>
+        <item name="android:activityCloseEnterAnimation">@anim/null_anim</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+    <style name="TitleText">
+        <item name="android:textSize">20.0sp</item>
+    </style>
+    <style name="AppThemeNoTitle" parent="@android:style/Theme.Light.NoTitleBar" />
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowTitleSize">48.0dip</item>
+        <item name="android:windowTitleStyle">@style/WindowTitleStyle</item>
+        <item name="android:windowTitleBackgroundStyle">@style/TitleBackgroundStyle</item>
+        <item name="actionbarCompatTitleStyle">@style/ActionBarTitleStyle</item>
+    </style>
+    <style name="BaseDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="AlertDialogStyle" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:textColorPrimary">#ff000000</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">#ffffffff</item>
+    </style>
+    <style name="SettingsTheme" parent="@android:style/Theme">
+        <item name="android:colorBackground">@color/bg_white</item>
+        <item name="android:windowBackground">@drawable/background</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:background">@color/bg_white</item>
+    </style>
+    <style name="Theme_Default" parent="@style/AppTheme">
+        <item name="actionbarCompatTitleStyle">@style/ActionBarTitleStyle</item>
+        <item name="actionbarCompatItemStyle">@style/ActionBarCompatItem</item>
+        <item name="actionbarCompatItemHomeStyle">@style/ActionBarCompatHomeItem</item>
+        <item name="googlemapsButtonStyle">@style/GoogleMapsButton</item>
+        <item name="currencyBoxStyle">@style/CurrencyBox</item>
+        <item name="calcButtonStyle">@style/CalculatorButton</item>
+        <item name="radioGroupStyle">@style/radioGroup</item>
+        <item name="radioButtonStyle">@style/radioButton</item>
+        <item name="pinDisplayStyle">@style/PinDisplay</item>
+        <item name="pinDrawerStyle">@style/pinDrawer</item>
+        <item name="tabletTabStyle">@style/TabletTab</item>
+        <item name="tabletToolbarItemSeparatorStyle">@style/TabletToolbarItemSeparator</item>
+        <item name="phoneTabStyle">@style/PhoneTab</item>
+        <item name="phoneToolbarFadingEdgeColor">@android:color/darker_gray</item>
+        <item name="phoneToolbarItemSeparatorStyle">@style/PhoneToolbarItemSeparator</item>
+        <item name="phoneToolbarBackground">@color/phone_toolbar_background</item>
+        <item name="fragmentBackground">@drawable/background</item>
+        <item name="tabletPaneSeparator">@drawable/tablet_pane_separator</item>
+        <item name="tabletPaneSeparatorWidth">2.0dip</item>
+        <item name="numpadButtonStyle">@style/numpadButton</item>
+        <item name="numpadBackspaceStyle">@style/NumpadBackspace</item>
+        <item name="slidingDrawerTopHandleStyle">@style/DrawerHandleTop</item>
+        <item name="slidingDrawerBottomHandleStyle">@style/DrawerHandleBottom</item>
+    </style>
+    <style name="Theme.Light.NoTitleBar" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/startscreen</item>
+    </style>
+    <style name="SupplementaryTheme" parent="@style/AppTheme">
+        <item name="android:windowAnimationStyle">@style/supplementaryAnimation</item>
+    </style>
+    <style name="SettingsActionBarStyle">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="pageContent">
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="text">
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+    <style name="valueText" parent="@style/text">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="commentText" parent="@style/text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3.0sp</item>
+        <item name="android:layout_marginBottom">@dimen/content_padding</item>
+    </style>
+    <style name="editBox" parent="@style/valueText">
+        <item name="android:textAppearance">@style/text.edit</item>
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:background">@drawable/edit_text_bg</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="whiteButton">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:background">@drawable/listitem_bg_single</item>
+        <item name="android:padding">@dimen/buttonPadding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="listBox">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:scrollingCache">true</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+    </style>
+    <style name="message">
+        <item name="android:textAppearance">@style/text.value</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/buttonPadding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/buttonPadding</item>
+    </style>
+    <style name="message.info" parent="@style/message">
+        <item name="android:background">@color/message_info</item>
+        <item name="android:drawableLeft">@drawable/message_info</item>
+    </style>
+    <style name="message.success" parent="@style/message">
+        <item name="android:background">@color/message_pass</item>
+        <item name="android:drawableLeft">@drawable/message_success</item>
+    </style>
+    <style name="message.warning" parent="@style/message">
+        <item name="android:background">@color/message_attention</item>
+        <item name="android:drawableLeft">@drawable/message_warning</item>
+    </style>
+    <style name="checkedText" parent="@style/valueText">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:checkMark">@drawable/checkbox</item>
+    </style>
+    <style name="headerText">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="normalButton">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/normal_button_selector</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">5.0dip</item>
+    </style>
+    <style name="actionButton">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/action_button_selector</item>
+        <item name="android:padding">8.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="generateButton" parent="@style/actionButton">
+        <item name="android:textColor">#ff222222</item>
+        <item name="android:background">@drawable/generate_button_selector</item>
+    </style>
+    <style name="generateMenuButton" parent="@style/generateButton">
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">start</item>
+        <item name="android:drawablePadding">16.0dip</item>
+    </style>
+    <style name="detailLabel" parent="@style/text.value">
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="text.warn" parent="@style/text">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="autoCompleteBox" parent="@style/editBox" />
+    <style name="warnIcon">
+        <item name="android:layout_width">30.0dip</item>
+        <item name="android:layout_height">30.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:src">@drawable/message_warning</item>
+    </style>
+    <style name="text.value" parent="@style/text">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="text.emphasized" parent="@style/text">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="text.password" parent="@style/text">
+        <item name="android:textSize">26.0dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="text.edit" parent="@style/text">
+        <item name="android:textColor">#ff121212</item>
+    </style>
+    <style name="text.dropdown" parent="@style/text">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff121212</item>
+    </style>
+    <style name="pageDescription" parent="@style/text">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    <style name="passwordLayout">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/password_bg</item>
+        <item name="android:padding">@dimen/pagePadding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="loginButton" parent="@style/actionButton">
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">100.0dip</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="actIdText" parent="@style/editBox">
+        <item name="android:inputType">number</item>
+    </style>
+    <style name="actCodeText" parent="@style/editBox">
+        <item name="android:inputType">number</item>
+    </style>
+    <style name="message.error" parent="@style/message">
+        <item name="android:background">@color/message_warning</item>
+        <item name="android:drawableLeft">@drawable/message_warning</item>
+    </style>
+    <style name="calcBox">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">right</item>
+        <item name="android:background">@drawable/calc_edittext</item>
+        <item name="android:padding">10.0dip</item>
+    </style>
+    <style name="currencyText">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="PreferencesTheme">
+        <item name="android:textColorPrimary">#ff000000</item>
+        <item name="android:textColorSecondary">@color/blue</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">#ffffffff</item>
+    </style>
+</resources>

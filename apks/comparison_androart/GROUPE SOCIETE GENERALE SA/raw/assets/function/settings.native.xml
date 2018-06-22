@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<function>
+  <name>settings</name>
+  <views>
+    <view>
+      <title>native_settings_title</title>
+      <url>view://ind/bankingapp/function/settings/settings</url>
+      <implementationType>NATIVE</implementationType>
+      <implementation>brd.bankingapp.android.function.settings.SettingsActivity</implementation>
+      <htmlTemplate></htmlTemplate>
+      <showToolbar>false</showToolbar>
+      <supplementaryFunction>true</supplementaryFunction>
+      <contextMenu>
+        <addDefaultContextMenuItems>false</addDefaultContextMenuItems>
+      </contextMenu>
+      <resources>
+      </resources>
+      <bankParameters>
+      </bankParameters>
+    </view>
+  </views>
+</function>

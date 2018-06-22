@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">ഹോമിലേക്ക് നാവിഗേറ്റുചെയ്യുക</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">മുകളിലേക്ക് നാവിഗേറ്റുചെയ്യുക</string>
+    <string name="abc_action_menu_overflow_description">കൂടുതല്‍ ഓപ്‌ഷനുകള്‍</string>
+    <string name="abc_action_mode_done">പൂർത്തിയാക്കി</string>
+    <string name="abc_activity_chooser_view_see_all">എല്ലാം കാണുക</string>
+    <string name="abc_activitychooserview_choose_application">ഒരു അപ്ലിക്കേഷൻ തിരഞ്ഞെടുക്കുക</string>
+    <string name="abc_capital_off">ഓഫ്</string>
+    <string name="abc_capital_on">ഓൺ</string>
+    <string name="abc_search_hint">തിരയുക…</string>
+    <string name="abc_searchview_description_clear">അന്വേഷണം മായ്‌ക്കുക</string>
+    <string name="abc_searchview_description_query">തിരയൽ അന്വേഷണം</string>
+    <string name="abc_searchview_description_search">തിരയൽ</string>
+    <string name="abc_searchview_description_submit">അന്വേഷണം സമർപ്പിക്കുക</string>
+    <string name="abc_searchview_description_voice">ശബ്ദ തിരയൽ</string>
+    <string name="abc_shareactionprovider_share_with">ഇവരുമായി പങ്കിടുക</string>
+    <string name="abc_shareactionprovider_share_with_application">%s എന്നതുമായി പങ്കിടുക</string>
+    <string name="abc_toolbar_collapse_description">ചുരുക്കുക</string>
+    <string name="fingerprint_acquired_imager_dirty">വിരലടയാള സെൻസറിന് വൃത്തിയില്ല. അത് ശുചിയാക്കി വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="fingerprint_acquired_insufficient">വിരലടയാളം പ്രോസസ്സ് ചെയ്യാനായില്ല. വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="fingerprint_acquired_partial">വിരലടയാളം ഭാഗികമായി തിരിച്ചറിഞ്ഞു. വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="fingerprint_acquired_too_fast">വിരൽ വളരെ വേഗത്തിൽ നീക്കി. വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="fingerprint_acquired_too_slow">വിരൽ വളരെ പതുക്കെ നീക്കി. വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="fingerprint_error_canceled">ഫിംഗർപ്രിന്റ് പ്രവർത്തനം റദ്ദാക്കി.</string>
+    <string name="fingerprint_error_hw_not_available">ഫിംഗർപ്രിന്റ് ഹാർഡ്‌വെയർ ലഭ്യമല്ല.</string>
+    <string name="fingerprint_error_lockout">നിരവധി തവണ ശ്രമിച്ചു. പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="fingerprint_error_no_space">വിരലടയാളം സംഭരിക്കാനാവില്ല. നിലവിലുള്ള വിരലടയാളം നീക്കംചെയ്യുക.</string>
+    <string name="fingerprint_error_timeout">വിരലടയാളം നൽകേണ്ട സമയം കഴിഞ്ഞു. വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="fingerprint_error_unable_to_process">വീണ്ടും ശ്രമിക്കൂ.</string>
+    <string name="fingerprint_not_recognized">തിരിച്ചറിഞ്ഞില്ല</string>
+    <string name="fingerprints">വിരലടയാളങ്ങൾ:</string>
+    <string name="mdtp_day_picker_description">മാസപ്രകാരമുള്ള ദിവസ ഗ്രിഡ്</string>
+    <string name="mdtp_deleted_key">%1$s ഇല്ലാതാക്കി</string>
+    <string name="mdtp_done_label">പൂർത്തിയായി</string>
+    <string name="mdtp_hour_picker_description">ചാക്രികമായി മണിക്കൂറുകൾ ദൃശ്യമാകുന്ന സ്ലൈഡർ</string>
+    <string name="mdtp_item_is_selected">%1$s തിരഞ്ഞെടുത്തു</string>
+    <string name="mdtp_minute_picker_description">ചാക്രികമായി മിനിറ്റുകൾ ദൃശ്യമാകുന്ന സ്ലൈഡർ</string>
+    <string name="mdtp_select_day">മാസവും ദിവസവും തിരഞ്ഞെടുക്കുക</string>
+    <string name="mdtp_select_hours">മണിക്കൂർ തിരഞ്ഞെടുക്കുക</string>
+    <string name="mdtp_select_minutes">മിനിറ്റ് തിരഞ്ഞെടുക്കുക</string>
+    <string name="mdtp_select_year">വർഷം തിരഞ്ഞെടുക്കുക</string>
+    <string name="mdtp_year_picker_description">വർഷങ്ങളുടെ ലിസ്റ്റ്</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

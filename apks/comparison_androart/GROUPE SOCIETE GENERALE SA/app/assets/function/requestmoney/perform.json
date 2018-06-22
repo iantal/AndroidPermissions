@@ -1,0 +1,34 @@
+{
+  "success": true,
+  "data": {
+    "@xsi:type": "pegasus.project.brd.function.payment.bean.PaymentTransferResponse",
+    "transactionId": 10763,
+    "version": 2,
+    "status": "WAITINGFORCOLLECTION",
+    "created": "2017-06-30T10:49:36.727",
+    "lastModified": "2017-06-30T10:49:37.609",
+    "forecastReply": {
+      "cUI_CNP": "2690411301979",
+      "iBankId": "9444500",
+      "freeTextSearchIndexField": "dhjfxjj hhjc RO94BRDE450SV22222222222 40721239875 36",
+      "customerName": "Daniela"
+    },
+    "authorizationData": {
+      "@xsi:type": "pegasus.project.brd.component.transactionframework.glue.transaction.bean.AuthorizationData",
+      "customerId": "160",
+      "trusteeId": "160",
+      "channelId": "MBL",
+      "functionTypeId": 44,
+      "protectedObjectId": "160",
+      "amount": 36,
+      "functionId": "requestmoneytransfer",
+      "credentialFunction": [
+        "RequestMoneyTransfer"
+      ]
+    }
+  },
+  "header": {
+    "token": "LTJhMl4ebWg7MUi385q4Ug==",
+    "sessionTimeout": 600
+  }
+}

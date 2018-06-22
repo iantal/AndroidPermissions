@@ -1,0 +1,307 @@
+{
+  "treasuryPayments": {
+    "treasuryPayment": [
+      {
+        "budgetAccountCode": "20.A.03.01.00",
+        "treasuryPayType": "Impozit activitati independente",
+        "treasuryPayDescr": "Impozit pe venituri din activitati independente",
+        "beneficiaryType": "INCOME TAX",
+        "useTaxPayerCNP": "1",
+        "documentNumber": "eeee",
+        "supportsEvidenceNo": "1",
+        "priority": "5",
+        "activationDateTime": "20160421095058692000",
+        "deactivationDateTime": "20170512095058692000"
+      },
+      {
+        "budgetAccountCode": "20.A.03.03.00",
+        "treasuryPayType": "Impozit chirii",
+        "treasuryPayDescr": "Impozit pe venituri din cedarea folosintei bunurilor",
+        "beneficiaryType": "RENTAL INCOME TAX",
+        "useTaxPayerCNP": "0",
+        "documentNumber": "fffff",
+        "supportsEvidenceNo": "1",
+        "priority": "4",
+        "activationDateTime": "20160421095058692000",
+        "deactivationDateTime": "20170512095058692000"
+      },
+      {
+        "budgetAccountCode": "50.26.02",
+        "treasuryPayType": "Taxe pasaport",
+        "treasuryPayDescr": "Disponibil din sume colectate reprezentand taxe de pasaport conform art.15s din Legea nr.248/2005",
+        "beneficiaryType": "PASSPORT TAX",
+        "useTaxPayerCNP": "0",
+        "documentNumber": "gggg",
+        "supportsEvidenceNo": "1",
+        "priority": "6",
+        "activationDateTime": "20160421095058692000",
+        "deactivationDateTime": "20170512095058692000"
+      },
+      {
+        "budgetAccountCode": "21.A.16.02.01",
+        "treasuryPayType": "Impozit masina",
+        "treasuryPayDescr": "Impozit pe mijloacele de transport detinute de persoane fizice",
+        "beneficiaryType": "CAR TAX",
+        "useTaxPayerCNP": "0",
+        "documentNumber": "bbb",
+        "supportsEvidenceNo": "1",
+        "priority": "3",
+        "activationDateTime": "20160421095058692000",
+        "deactivationDateTime": "20170517095058692000"
+      },
+      {
+        "budgetAccountCode": "21.A.07.02.01",
+        "treasuryPayType": "Impozit teren",
+        "treasuryPayDescr": "Impozit pe terenuri de la persoane fizice",
+        "beneficiaryType": "LAND TAX",
+        "useTaxPayerCNP": "1",
+        "documentNumber": "ccc",
+        "supportsEvidenceNo": "1",
+        "priority": "2",
+        "activationDateTime": "20160421095058692000",
+        "deactivationDateTime": "20170512095058692000"
+      },
+      {
+        "budgetAccountCode": "21.A.07.01.01",
+        "treasuryPayType": "Impozit case",
+        "treasuryPayDescr": "Impozit pe cladiri de la persoane fizice",
+        "beneficiaryType": "BUILDING TAX U",
+        "useTaxPayerCNP": "0",
+        "documentNumber": "FFFFF",
+        "supportsEvidenceNo": "1",
+        "priority": "1",
+        "activationDateTime": "20160421095058692000",
+        "deactivationDateTime": "20170421095058692000"
+      }
+    ]
+  },
+  "treasuryPaymentBeneficiaries": {
+    "treasuryPaymentBeneficiary": [
+      {
+        "fiscalCode": "0",
+        "beneficiaryName": "Municipiul Bucuresti",
+        "countryCode": "02",
+        "countryName": "Mun. Bucuresti",
+        "active": "1",
+        "updateTime": "20160421095058600000",
+        "beneficiaryType": "BUILDING TAX U"
+      },
+      {
+        "fiscalCode": "1",
+        "beneficiaryName": "Municipiul Campulung Muscel",
+        "countryCode": "01",
+        "countryName": "Judet Arges",
+        "active": "1",
+        "updateTime": "20160421095058600000",
+        "beneficiaryType": "BUILDING TAX U"
+      },
+      {
+        "fiscalCode": "2",
+        "beneficiaryName": "Municipiul Cluj Napoca",
+        "countryCode": "01",
+        "countryName": "Judet Cluj",
+        "active": "1",
+        "updateTime": "20160421095058600000",
+        "beneficiaryType": "BUILDING TAX U"
+      },
+      {
+        "fiscalCode": "3",
+        "beneficiaryName": "Comuna Balotesti",
+        "countryCode": "01",
+        "countryName": "Judet Ilfov",
+        "active": "1",
+        "updateTime": "20160421095058600000",
+        "beneficiaryType": "BUILDING TAX U"
+      },
+      {
+        "fiscalCode": "4",
+        "beneficiaryName": "Comuna Ostrov",
+        "countryCode": "01",
+        "countryName": "Judet Tulcea",
+        "active": "1",
+        "updateTime": "20160421095058600000",
+        "beneficiaryType": "BUILDING TAX U"
+      },
+      {
+        "fiscalCode": "5",
+        "beneficiaryName": "Oras Panciu",
+        "countryCode": "03",
+        "countryName": "Judet Vrancea",
+        "active": "1",
+        "updateTime": "20160421095058600000",
+        "beneficiaryType": "BUILDING TAX U"
+      },
+      {
+        "fiscalCode": "6",
+        "beneficiaryName": "Municipiul Bucuresti",
+        "countryCode": "03",
+        "countryName": "Mun. Bucuresti",
+        "active": "1",
+        "updateTime": "20160421095058600000",
+        "beneficiaryType": "LAND TAX"
+      },
+      {
+        "fiscalCode": "7",
+        "beneficiaryName": "Municipiul Campulung Muscel",
+        "countryCode": "01",
+        "countryName": "Judet Arges",
+        "active": "1",
+        "updateTime": "20160421095058600000",
+        "beneficiaryType": "LAND TAX"
+      },
+      {
+        "fiscalCode": "8",
+        "beneficiaryName": "Municipiul Cluj Napoca",
+        "countryCode": "03",
+        "countryName": "Judet Cluj",
+        "active": "1",
+        "updateTime": "20160421095058600010",
+        "beneficiaryType": "LAND TAX"
+      },
+      {
+        "fiscalCode": "9",
+        "beneficiaryName": "Comuna Balotesti",
+        "countryCode": "03",
+        "countryName": "Judet Ilfov",
+        "active": "1",
+        "updateTime": "20160421095058600010",
+        "beneficiaryType": "LAND TAX"
+      },
+      {
+        "fiscalCode": "10",
+        "beneficiaryName": "Comuna Ostrov",
+        "countryCode": "02",
+        "countryName": "Judet Tulcea",
+        "active": "1",
+        "updateTime": "20160421095058600000",
+        "beneficiaryType": "LAND TAX"
+      },
+      {
+        "fiscalCode": "11",
+        "beneficiaryName": "Oras Panciu",
+        "countryCode": "03",
+        "countryName": "Judet Vrancea",
+        "active": "1",
+        "updateTime": "20160421095058600000",
+        "beneficiaryType": "LAND TAX"
+      },
+
+
+      {
+        "fiscalCode": "12",
+        "beneficiaryName": "Municipiul Bucuresti",
+        "countryCode": "02",
+        "countryName": "Mun. Bucuresti",
+        "active": "1",
+        "beneficiaryType": "CAR TAX"
+      },
+      {
+        "fiscalCode": "13",
+        "beneficiaryName": "Municipiul Campulung Muscel",
+        "countryCode": "02",
+        "countryName": "Judet Arges",
+        "active": "1",
+        "beneficiaryType": "CAR TAX"
+      },
+      {
+        "fiscalCode": "14",
+        "beneficiaryName": "Municipiul Clij Napoca",
+        "countryCode": "02",
+        "countryName": "Judet Cluj",
+        "active": "1",
+        "beneficiaryType": "CAR TAX"
+      },
+      {
+        "fiscalCode": "15",
+        "beneficiaryName": "Comuna Balotesti",
+        "countryCode": "02",
+        "countryName": "Judet Iflov",
+        "active": "1",
+        "beneficiaryType": "CAR TAX"
+      },
+      {
+        "fiscalCode": "16",
+        "beneficiaryName": "Comuna Ostrov",
+        "countryCode": "02",
+        "countryName": "Judet Tulcea",
+        "active": "1",
+        "beneficiaryType": "CAR TAX"
+      },
+      {
+        "fiscalCode": "17",
+        "beneficiaryName": "Oras Panciu",
+        "countryCode": "02",
+        "countryName": "Judet Vrancea",
+        "active": "1",
+        "beneficiaryType": "CAR TAX"
+      },
+
+      {
+        "fiscalCode": "18",
+        "beneficiaryName": "Bugetul de Stat",
+        "countryCode": "02",
+        "countryName": "ARAD",
+        "active": "1",
+        "beneficiaryType": "RENTAL INCOME TAX"
+      },
+      {
+        "fiscalCode": "19",
+        "beneficiaryName": "Bugetul de Stat",
+        "countryCode": "02",
+        "countryName": "ARAD",
+        "active": "1",
+        "beneficiaryType": "INCOME TAX"
+      },
+
+
+      {
+        "fiscalCode": "20",
+        "beneficiaryName": "Prefectura Arges",
+        "countryCode": "02",
+        "countryName": "Judet Arges",
+        "active": "1",
+        "beneficiaryType": "PASSPORT TAX"
+      },
+      {
+        "fiscalCode": "21",
+        "beneficiaryName": "Prefectura Cluj",
+        "countryCode": "02",
+        "countryName": "Judet Cluj",
+        "active": "1",
+        "beneficiaryType": "PASSPORT TAX"
+      }, {
+        "fiscalCode": "22",
+        "beneficiaryName": "Prefectura Ilfov",
+        "countryCode": "02",
+        "countryName": "Judet Ilfov",
+        "active": "1",
+        "beneficiaryType": "PASSPORT TAX"
+      },
+      {
+        "fiscalCode": "23",
+        "beneficiaryName": "Prefectura Prahova",
+        "countryCode": "02",
+        "countryName": "Judet Prahova",
+        "active": "1",
+        "beneficiaryType": "PASSPORT TAX"
+      }
+    , {
+        "fiscalCode": "24",
+        "beneficiaryName": "Prefectura Vrancea",
+        "countryCode": "02",
+        "countryName": "Judet Vrancea",
+        "active": "1",
+        "beneficiaryType": "PASSPORT TAX"
+      },
+      {
+        "fiscalCode": "25",
+        "beneficiaryName": "Prefectura Municipiului Bucuresti",
+        "countryCode": "02",
+        "countryName": "Mun. Bucuresti",
+        "active": "1",
+        "beneficiaryType": "PASSPORT TAX"
+      }
+
+    ]
+  }
+}

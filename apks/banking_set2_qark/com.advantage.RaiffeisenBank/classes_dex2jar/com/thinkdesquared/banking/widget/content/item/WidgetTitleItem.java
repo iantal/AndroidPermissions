@@ -1,0 +1,49 @@
+package com.thinkdesquared.banking.widget.content.item;
+
+import android.content.Context;
+import android.widget.RemoteViews;
+
+public class WidgetTitleItem
+  implements WidgetItem
+{
+  private int appWidgetId;
+  private String title;
+  
+  public WidgetTitleItem(String paramString)
+  {
+    this.title = paramString;
+  }
+  
+  public WidgetTitleItem(String paramString, int paramInt)
+  {
+    this.title = paramString;
+    this.appWidgetId = paramInt;
+  }
+  
+  public int getAppWidgetId()
+  {
+    return this.appWidgetId;
+  }
+  
+  public String getTitle()
+  {
+    return this.title;
+  }
+  
+  public RemoteViews getView(Context paramContext, int paramInt)
+  {
+    RemoteViews localRemoteViews = new RemoteViews(paramContext.getPackageName(), 2130903446);
+    localRemoteViews.setTextViewText(2131558560, this.title);
+    return localRemoteViews;
+  }
+  
+  public void setAppWidgetId(int paramInt)
+  {
+    this.appWidgetId = paramInt;
+  }
+  
+  public void setTitle(String paramString)
+  {
+    this.title = paramString;
+  }
+}

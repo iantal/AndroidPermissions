@@ -1,0 +1,21 @@
+package org.acra.jraf.android.util.activitylifecyclecallbackscompat;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public abstract interface ActivityLifecycleCallbacksCompat
+{
+  public abstract void onActivityCreated(Activity paramActivity, Bundle paramBundle);
+  
+  public abstract void onActivityDestroyed(Activity paramActivity);
+  
+  public abstract void onActivityPaused(Activity paramActivity);
+  
+  public abstract void onActivityResumed(Activity paramActivity);
+  
+  public abstract void onActivitySaveInstanceState(Activity paramActivity, Bundle paramBundle);
+  
+  public abstract void onActivityStarted(Activity paramActivity);
+  
+  public abstract void onActivityStopped(Activity paramActivity);
+}

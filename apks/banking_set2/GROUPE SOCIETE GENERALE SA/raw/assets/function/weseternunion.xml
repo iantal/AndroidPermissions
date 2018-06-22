@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../xsd/nativefunctiondescriptor.xsd">
+	
+	<name>westernunion</name>
+	<authority>westernunion_receive/view</authority>
+	<title>native_bankingapp_brd_function_westernunion_receive_title</title>
+	<views>
+
+		<view>
+			<title>native_bankingapp_brd_function_westernunion_receive_title</title>
+			<url>view://brd/bankingapp/function/receivemoney/westernunion_receive/Disclaimer</url>
+			<authority>westernunion_receive/create</authority>
+			<implementationType>JS</implementationType>
+			<implementation>js/R2HIuSyPR9eLtByT.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+			<tabletApp>
+				<moveToLeft>false</moveToLeft>
+				<pushToLeft>false</pushToLeft>
+			</tabletApp>	
+		</view>
+		
+		<view>
+			<title>native_bankingapp_brd_function_westernunion_receive_title</title>
+			<url>view://brd/bankingapp/function/receivemoney/westernunion_receive/targetaccountselection</url>
+			<authority>westernunion_receive/create</authority>
+			<implementationType>JS</implementationType>
+			<implementation>js/nkIG5FRdGfNrS08A.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+			<tabletApp>
+				<pushToLeft>false</pushToLeft>
+			</tabletApp>	
+			<protectedView>
+			    <urlWhiteList>
+			        <urlPattern>.*westernunion_receive.*</urlPattern>
+			    </urlWhiteList>
+			</protectedView>
+		</view>
+		
+		<view>
+			<title>native_bankingapp_brd_function_westernunion_receive_title</title>
+			<url>view://brd/bankingapp/function/receivemoney/westernunion_receive/TransactionDetails</url>
+			<authority>westernunion_receive/create</authority>
+			<implementationType>JS</implementationType>
+			<implementation>js/bnX3x8FQZyqQbFpT.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+			<tabletApp>
+				<moveToLeft>false</moveToLeft>
+				<pushToLeft>false</pushToLeft>
+			</tabletApp>	
+		</view>
+		
+		<view>
+			<title>native_bankingapp_brd_function_westernunion_receive_title</title>
+			<url>view://brd/bankingapp/function/receivemoney/westernunion_receive/forecast</url>
+			<authority>westernunion_receive/create</authority>
+			<implementationType>JS</implementationType>
+			<implementation>js/yDpumTB3X3DIigD9.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+			<tabletApp>
+				<pushToLeft>false</pushToLeft>
+			</tabletApp>	
+			<protectedView>
+			    <urlWhiteList>
+			        <urlPattern>.*westernunion_receive.*</urlPattern>
+			        <urlPattern>.*token.*</urlPattern>
+			    </urlWhiteList>
+			</protectedView>
+		</view>
+		
+		<view>
+			<title>native_bankingapp_brd_function_westernunion_receive_title</title>
+			<url>view://brd/bankingapp/function/receivemoney/westernunion_receive/result</url>
+			<authority>westernunion_receive/create</authority>
+			<implementationType>JS</implementationType>
+			<implementation>js/NLdvdGHwhBOXTnpB.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+			<tabletApp>
+				<pushToLeft>false</pushToLeft>
+			</tabletApp>	
+		</view>
+
+	</views>
+</function>

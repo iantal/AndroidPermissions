@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/imageLayout" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="2.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/iconImageView" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <com.thinkdesquared.banking.helpers.ui.widgets.CircleImageView android:id="@id/priorityImageView" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/important_icon" android:scaleType="centerCrop" android:layout_alignParentRight="true" app:border_width="@dimen/dimen_1dp_low_res_support" app:border_color="@color/rzb_white" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/wrapperLinearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/replyImageView" android:layout_toRightOf="@id/imageLayout" android:layout_centerVertical="true">
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/userTextView" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="User" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" style="@style/DSQTextAppearance.listRight" />
+        <TextView android:gravity="center_vertical" android:id="@id/dateTimeTextView" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="Date and time" android:layout_weight="1.0" style="@style/DSQTextAppearance.details" />
+    </LinearLayout>
+    <ImageView android:id="@id/replyImageView" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/reply" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/dropdownArrowImageView" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/dropdown_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

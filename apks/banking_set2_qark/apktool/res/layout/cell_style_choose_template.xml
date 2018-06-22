@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/scan_button">
+            <TextView android:gravity="center_vertical" android:id="@id/templateNameTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" style="@style/DSQTextAppearance.Header.material" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip">
+                <TextView android:textSize="12.0dip" android:ellipsize="end" android:id="@id/fromAccountTextView" android:paddingTop="1.0dip" android:paddingRight="2.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" style="@style/DSQTextAppearance.details" />
+                <ImageView android:layout_gravity="center" android:id="@id/arrowImageView" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/back_arrow" />
+                <TextView android:textSize="12.0dip" android:id="@id/toAccountTextView" android:paddingLeft="2.0dip" android:paddingTop="1.0dip" android:paddingRight="2.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:singleLine="true" style="@style/DSQTextAppearance.details" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:gravity="center_vertical" android:id="@id/scan_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/scan" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

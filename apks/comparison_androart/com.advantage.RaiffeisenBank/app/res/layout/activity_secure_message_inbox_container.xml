@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/main_content_frame_layout" android:background="?dsq_main_content_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/include_rpb_yellow_line_logo" />
+        <RelativeLayout android:id="@id/content_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/toolbar_background" android:background="?dsq_actionbar_background" android:layout_width="fill_parent" android:layout_height="@dimen/dsq_action_bar_expanded_height" android:scaleType="fitXY" android:layout_alignParentTop="true" android:contentDescription="@null" />
+            <android.support.v7.widget.Toolbar android:theme="@style/DSQStyled.Toolbar.Transparent" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dsq_toolbar_top_margin">
+                <LinearLayout android:orientation="vertical" android:id="@id/fragment_inbox_filters_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </android.support.v7.widget.Toolbar>
+            <include layout="@layout/include_footer_logo" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar_background" style="@style/CardContentAboveActionBarStyle">
+                <FrameLayout android:id="@id/fragment_inbox_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/white_card_left_margin" android:layout_marginRight="@dimen/white_card_right_margin" />
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/white_card_left_margin" android:layout_marginTop="@dimen/dsq_inbox_overlay_top_margin" android:layout_marginRight="@dimen/white_card_right_margin" android:layout_below="@id/toolbar_background" layout="@layout/include_greyout_overlay" />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="start" android:id="@id/fragment_below_container" android:layout_width="320.0dip" android:layout_height="fill_parent" />
+</android.support.v4.widget.DrawerLayout>

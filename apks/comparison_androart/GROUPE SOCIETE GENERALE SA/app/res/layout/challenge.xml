@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:padding="@dimen/pagePadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <TableRow android:layout_marginBottom="@dimen/rowPadding">
+        <TextView android:text="@string/challengeLabel" style="@style/detailLabel" />
+        <EditText android:id="@id/challengeText" android:hint="@string/challengeHint" android:inputType="number" style="@style/editBox" />
+    </TableRow>
+    <ind.token.android.core.ui.widget.AuthCodeDisplay android:id="@id/passwordText" android:layout_marginBottom="@dimen/rowPadding" style="@style/passwordLayout" />
+    <Button android:id="@id/generateButton" android:layout_marginBottom="@dimen/rowPadding" android:text="@string/commonGenerate" android:onClick="onGenerateClick" style="@style/generateButton" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/security_message" />
+    <LinearLayout />
+</TableLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/pageContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/messages" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/messages" />
+    <com.google.android.gms.maps.MapView android:id="@id/mapView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Button android:id="@id/btnGoogleMapsSearchBtn" android:layout_marginLeft="15.0dip" android:layout_marginBottom="32.0dip" android:text="@string/native_locations_search" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="?googlemapsButtonStyle" />
+    <Button android:id="@id/btnGoogleMapsListView" android:layout_marginRight="15.0dip" android:layout_marginBottom="32.0dip" android:text="@string/native_locations_listview" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="?googlemapsButtonStyle" />
+</RelativeLayout>

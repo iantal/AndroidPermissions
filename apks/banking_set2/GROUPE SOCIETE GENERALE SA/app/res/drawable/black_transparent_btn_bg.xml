@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_window_focused="false" android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_outer" />
+            <gradient android:startColor="#cc414141" android:endColor="#cc000000" android:angle="270.0" />
+        </shape>
+    </item>
+    <item android:state_window_focused="false" android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_outer" />
+            <gradient android:startColor="#cc414141" android:endColor="#cc000000" android:angle="270.0" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_outer" />
+            <gradient android:startColor="#cc535353" android:endColor="#cc121212" android:angle="270.0" />
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_outer" />
+            <gradient android:startColor="#cca14141" android:endColor="#cc600000" android:angle="270.0" />
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_outer" />
+            <gradient android:startColor="#cc414141" android:endColor="#cc000000" android:angle="270.0" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/radius_outer" />
+            <gradient android:startColor="#cc414141" android:endColor="#cc000000" android:angle="270.0" />
+        </shape>
+    </item>
+</selector>

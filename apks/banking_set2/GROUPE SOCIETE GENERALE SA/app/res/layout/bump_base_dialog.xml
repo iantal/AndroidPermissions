@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper android:gravity="center" android:id="@id/bump_flipper" android:paddingLeft="8.0dip" android:paddingTop="12.0dip" android:paddingRight="8.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bump_connecting" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bump_bump_to_connect" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bump_searching_for_match" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bump_waiting_for_partner_to_confirm" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bump_sending_data" />
+</ViewFlipper>

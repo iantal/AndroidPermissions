@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.thinkdesquared.banking.helpers.ui.widgets.TextView_RobotoThin android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_to" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:src="@drawable/rzb_login_logo_with_slogan" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

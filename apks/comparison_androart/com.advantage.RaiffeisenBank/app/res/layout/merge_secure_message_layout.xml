@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SecureMessageStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/separator_view" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_alignParentTop="true" layout="@layout/include_separator" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/inbox_message_element_side_margin" android:layout_marginTop="@dimen/inbox_message_element_margin" android:layout_marginRight="@dimen/inbox_message_element_side_margin" android:layout_marginBottom="@dimen/inbox_message_element_margin">
+        <ImageView android:id="@id/avatar_img" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/InboxMessageElementStyle" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/title_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/inbox_message_element_margin" android:layout_toRightOf="@id/avatar_img" android:layout_alignTop="@id/avatar_img" android:layout_alignBottom="@id/avatar_img">
+            <TextView android:ellipsize="end" android:id="@id/message_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/DSQTextAppearance.listRight" />
+            <TextView android:ellipsize="end" android:id="@id/message_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/DSQTextAppearance.details" />
+        </LinearLayout>
+        <ImageView android:id="@id/dropdownArrowImageView" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/dropdown_arrow" android:layout_alignTop="@id/title_container" android:layout_alignBottom="@id/title_container" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/replyImageView" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/reply" android:layout_alignTop="@id/title_container" android:layout_alignBottom="@id/title_container" android:layout_alignParentRight="true" />
+        <ViewStub android:id="@id/stub_message_content" android:layout="@layout/layout_message_content" android:inflatedId="@id/container_message_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/avatar_img" />
+    </RelativeLayout>
+</merge>

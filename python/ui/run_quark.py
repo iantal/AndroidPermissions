@@ -3,7 +3,7 @@ import time
 import pprint
 import subprocess
 
-APK_DIR = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/"
+APK_DIR = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/"
 QUARK_DIR = "/home/miki/Documents/qark/qark/"
 
 

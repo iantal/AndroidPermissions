@@ -1,0 +1,10 @@
+package ind.bankingapp.android.framework.frameworkapi;
+
+import ind.bankingapp.android.framework.activity.fragment.dialog.ConfirmationDialogFragment.TaggedConfirmationListener;
+import ind.bankingapp.android.framework.activity.fragment.dialog.DatePickerDialogFragment.TaggedDateSetListener;
+import ind.bankingapp.android.framework.activity.fragment.dialog.ErrorDialogFragment.TaggedErrorOkClickListener;
+import ind.bankingapp.android.framework.activity.fragment.dialog.ListPickerDialogFragment.TaggedListItemClickListener;
+
+public abstract interface TaggedDialogResultListener
+  extends DatePickerDialogFragment.TaggedDateSetListener, ErrorDialogFragment.TaggedErrorOkClickListener, ListPickerDialogFragment.TaggedListItemClickListener, ConfirmationDialogFragment.TaggedConfirmationListener
+{}

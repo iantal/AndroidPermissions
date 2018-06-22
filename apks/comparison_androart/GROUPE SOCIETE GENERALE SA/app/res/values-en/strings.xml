@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyBRD Mobile</string>
+    <string name="native_common_resource_not_found">Resource not found!</string>
+    <string name="native_framework_newversion">New version available!</string>
+    <string name="native_framework_newversionmandatory">"New version available!
+(mandatory)"</string>
+    <string name="native_context_menu_settings">Settings</string>
+    <string name="native_context_menu_help">Help</string>
+    <string name="native_context_menu_logout">Logout</string>
+    <string name="native_context_menu_home">Home</string>
+    <string name="native_context_menu_changepin">Change PIN</string>
+    <string name="native_framework_error_applicationerror">Application error.</string>
+    <string name="native_framework_error_sessioninvaliderror">Your session has been expired!</string>
+    <string name="native_framework_error_communicationerror">"Communication error!
+Reload data."</string>
+    <string name="native_framework_confirmation_communicationerror">"Communication error!
+Shall we try to load the transaction result again?"</string>
+    <string name="native_framework_confirmation_sessionrevive">For inactivity reasons your session has expired. Do you want to continue?</string>
+    <string name="native_framework_error_accessdeniederror">Access is denied!</string>
+    <string name="native_framework_error_loginrequirederror">Login is required!</string>
+    <string name="native_common_update">Update</string>
+    <string name="native_common_updatetitle">Update</string>
+    <string name="native_common_updatetitlemandatory">Mandatory update</string>
+    <string name="native_common_cancel">Cancel</string>
+    <string name="native_common_error">Error</string>
+    <string name="native_common_ok">Ok</string>
+    <string name="native_common_yes">Yes</string>
+    <string name="native_common_no">No</string>
+    <string name="native_common_confirmation">Confirmation</string>
+    <string name="native_common_notwarmagaig">Do not warn me again!</string>
+    <string name="native_common_exit">Exit</string>
+    <string name="native_common_restart">Restart</string>
+    <string name="native_common_continue">Continue</string>
+    <string name="native_common_loading">Loading</string>
+    <string name="native_common_loading_pleasewait">Please wait...</string>
+    <string name="native_common_selectemailclient">Select email application.</string>
+    <string name="native_framework_offline_cache_title">Network is offline.</string>
+    <string name="native_framework_offline_cache_message">No network connection, application can work offline.</string>
+    <string name="native_framework_offline_nocache_title">Network is offline.</string>
+    <string name="native_framework_offline_nocache_message">No network connection.</string>
+    <string name="native_framework_offline_button_network">go to network settings</string>
+    <string name="native_framework_offline_button_offline">work in offline mode</string>
+    <string name="native_framework_authorizationerror_dialogtitle">Authorization error</string>
+    <string name="native_framework_authorizationerror_dialogmessage">No rights to execute the operation.</string>
+    <string name="native_framework_pushmessages_userallowdialogtitle">Push messages</string>
+    <string name="native_framework_pushmessages_userallowdialogmessage">Do you want to enable Push messaging?</string>
+    <string name="native_framework_pushmessages_errordialogtitle">Error</string>
+    <string name="native_framework_pushmessages_error_system">Registration failed.</string>
+    <string name="native_framework_pushmessages_error_accountmissing">Registration failed. Your Google account is missing.</string>
+    <string name="native_framework_pushmessages_error_authenticationfailed">Registration failed. Your Google account password is bad.</string>
+    <string name="native_framework_pushmessages_error_toomanyregistrations">Registration failed. You have too many applications registered for push messaging.</string>
+    <string name="native_framework_pushmessages_notifiy_messsage">You have %s new messages.</string>
+    <string name="native_settings_languages_hu">Hungarian</string>
+    <string name="native_settings_languages_en">English</string>
+    <string name="native_settings_languages_ru">Russian</string>
+    <string name="native_bankingapp_notification_session_timeout">Because of security reasons you have been logged out!</string>
+    <string name="native_bankingapp_function_bankfeed_contextmenu_markasunread">Mark as unread</string>
+    <string name="native_bankingapp_function_bankfeed_contextmenu_markallasread">Mark all as read</string>
+    <string name="native_bump_prepare">Warming up!</string>
+    <string name="native_bump_ready">Bump to connect!</string>
+    <string name="native_bump_searching">Searching, please wait...</string>
+    <string name="native_bump_no_match">No matching partner found! Please try again.</string>
+    <string name="native_bump_same_operation">You are doing the same operation!</string>
+    <string name="native_bump_other_user_cancel">Other user canceled the bump!</string>
+    <string name="native_bump_data_send">Sending data, please wait...</string>
+    <string name="native_android_bump_confirm_match">Connect with %s?</string>
+    <string name="native_bump_invalid_data">Invalid data received!</string>
+    <string name="native_common_protectedview_confirmation">Are you sure you want to interrupt the current function?</string>
+    <string name="native_android_validation_mandatory">%s field is mandatory! Please fill it in!</string>
+    <string name="native_bankingapp_function_logout_confirmation">Are you sure?</string>
+    <string name="native_settings_skin_name_default">Default</string>
+    <string name="native_settings_skin_name_vip">VIP</string>
+    <string name="native_framework_permission_rationale_dialog_title">Grant Permissions</string>
+    <string name="native_framework_permission_rationale_dialog_message">"The application requests permission for:
+Contacts: only when you use P2P payments;
+Phone: Access IMEI for activation;
+Camera: only for scanning an invoice;
+Location: only when you search an ATM.
+You can use the application only if you allow the required permissions."</string>
+    <string name="native_framework_permission_exit_dialog_message">You can use the application only if you allow the required permissions.</string>
+    <string name="native_framework_fingerprint_GoToSecuritySettings">Go to security settings</string>
+    <string name="native_framework_fingerprint_Keyguard_Error">Cannot authenticate with fingerprint: no keyguard is present, please set one!</string>
+    <string name="native_framework_fingerprint_NoFingerprintError">Cannot authenticate with fingerprint: no enrolled fingerprints, please go to Settings/Security/Fingerprint and set at least one!</string>
+    <string name="native_framework_fingerprint_Success">Fingerprint recognized</string>
+    <string name="native_framework_fingerprint_NotRecognized">Fingerprint not recognized. Try again.</string>
+    <string name="native_framework_fingerprint_Warning">Warning</string>
+    <string name="native_framework_fingerprint_NewEnrolledDescription">Cannot authenticate with fingerprint: a new fingerprint was added to this device. If you want to use fingerprint again, please go to MyBRD settings and enable it.</string>
+    <string name="native_framework_fingerprint_Hint">Touch sensor</string>
+    <string name="native_framework_fingerprint_Description">Confirm fingerprint to continue</string>
+    <string name="native_framework_fingerprint_android_label">Fingerprint for \"MyBRD Mobile\"</string>
+    <string name="native_framework_fingerprint_android_cancel">Cancel</string>
+    <string name="native_framework_fingerprint_FingerprintAuthenticationDisabledTitle">Warning</string>
+    <string name="native_framework_fingerprint_FingerprintAuthenticationDisabledText">Fingerprint Authentication has been disabled!</string>
+    <string name="native_framework_fingerprint_FingerprintAuthenticationDisabledLogoutText">"Fingerprint Authentication has been disabled!
+Because of security reasons the option is temporary suspended. Please try again after this with your PIN code."</string>
+    <string name="native_framework_fingerprint_FingerprintAuthenticationDisabledPositiveButton">Ok</string>
+    <string name="native_framework_fingerprint_FingerprintAuthenticationOfferTitle">Fingerprint Authentication</string>
+    <string name="native_framework_fingerprint_FingerprintAuthenticationOfferText">Fingerprint Authentication is available!</string>
+    <string name="native_framework_fingerprint_FingerprintAuthenticationOfferPositiveButton">Activate now</string>
+    <string name="native_framework_fingerprint_FingerprintAuthenticationOfferNegativeButton">Cancel</string>
+    <string name="native_tutorial_salute_title">"Welcome to &lt;font color='#EE0000'>MyBRD Mobile&lt;/font>"</string>
+    <string name="native_tutorial_salute_description">For following screens, we will show you some of the features you are going to experience by using the application</string>
+    <string name="native_tutorial_fingerprint_title">Fingerprint authentication</string>
+    <string name="native_tutorial_cards_title">24/7 access to your account balance</string>
+    <string name="native_tutorial_barcode_title">Pay your utility bills with a simple scan</string>
+    <string name="native_tutorial_qrcode_title">Transfers have never been easier</string>
+    <string name="native_tutorial_wu_title">Your Western Union incomings directly in your account.</string>
+    <string name="native_tutorial_gift_title">Now that we have drawn your interest</string>
+    <string name="native_tutorial_fingerprint_description">"If you have a phone with such capabilities, it's very simple to sign in or to sign your transactions, they are a touch away."</string>
+    <string name="native_tutorial_cards_description">"After authentication, you have &lt;font color='#EE0000'>all the relevant information&lt;/font> about your &lt;font color='#EE0000'>accounts, cards, savings or investments&lt;/font>, but also an overview on the operations you can perform. Additionally you will receive messages with all our special offers."</string>
+    <string name="native_tutorial_barcode_description">"Now, &lt;font color='#EE0000'> paying your bills &lt;/font> just got easier. &lt;font color='#EE0000'>Scan the barcode &lt;/font>of your bill or, if you don't have it close by, just select the billers details from the predefined templates."</string>
+    <string name="native_tutorial_qrcode_description">"Be it about account transfers, payments to family or friends. And with &lt;font color='#EE0000'>Send to QR&lt;/font> functionality transactions to other &lt;font color='#EE0000'>MyBRD Mobile&lt;/font> users are instant."</string>
+    <string name="native_tutorial_wu_description">"Receiving money through &lt;font color='#EE0000'>Western Union&lt;/font>, and not having to go to the branch for that. You can do it directly in the application, with only the transaction details."</string>
+    <string name="native_tutorial_gift_description">"It's time to discover all the &lt;font color='#EE0000'>MyBRD Mobile&lt;/font> functionalities. One thing is for sure, your life just got easier with our application."</string>
+    <string name="native_tutorial_cancel">Skip</string>
+    <string name="native_tutorial_swipe_title">Browse through a simple Swipe</string>
+    <string name="native_tutorial_swipe_description">Swipe left or right to navigate through the main menu of the application</string>
+    <string name="native_pin_info_explanation">The PIN must contain 6 digits with at least 3 different elements. It can not contain more than 2 consecutive identical digits. May contain ascending or descending sequences consisting of up to 2 digits.</string>
+    <string name="changePinButtonTitle">Change PIN</string>
+    <string name="changePinButtonDetails">Changing PIN</string>
+    <string name="challenge1Name">Challenge1</string>
+    <string name="challenge1Hint">e.g. 123456</string>
+    <string name="challenge2Name">Challenge2</string>
+    <string name="challenge2Hint">e.g. 123456</string>
+    <string name="native_settings_about_name">Name</string>
+    <string name="native_settings_about_applicationversion">Application Version</string>
+    <string name="native_settings_about_technicalversion">Technical Version</string>
+    <string name="native_settings_token_reset">Reset Token</string>
+    <string name="native_settings_token_pin_style">PIN Style</string>
+    <string name="native_settings_devicemanagement_about">About</string>
+    <string name="native_settings_token_about_name_summary">Mobile Token</string>
+    <string name="native_settings_token_serial">Serial Number</string>
+    <string name="native_settings_token_lock">Lock Token (quit)</string>
+    <string name="native_settings_token_autocomplete_reset">Reset autocomplete fields</string>
+    <string name="native_settings_token_reset_autocomplete_confirmdialogmessage">Field history will be deleted. Are you sure?</string>
+    <string name="native_settings_token_reset_confirmdialogbutton">Reset Token</string>
+    <string name="native_settings_token_reset_confirmdialogmessage">You are about to reset your mobile token. This will essentially disable your token and you will be unable to use it unless it is re-activated. Are you completely sure?</string>
+    <string name="native_error_pin_different">The password must contain at least 3 different digits</string>
+    <string name="native_error_pin_sequences">The password must not contain forward or reverse numeric sequences of more than 2 digits</string>
+    <string name="native_error_pin_consecutive">The password must not contain more than 2 consecutive identical digits</string>
+    <string name="pinDescription">"&lt;h2>&lt;font color='#EE0000' size='6' >MyBRD Mobile Demo&lt;/font>&lt;/h2>&lt;p>&lt;font size='5'>To access the DEMO application, enter any 6 digit PIN code&lt;/font>&lt;/p>"</string>
+    <string name="native_demo_pindescription">"&lt;h2>&lt;font color='#EE0000' size='6'>MyBRD Mobile Demo&lt;/font>&lt;/h2>&lt;p>&lt;font size='5'>To access the DEMO application, enter any 6 digit PIN code&lt;/font>&lt;/p>"</string>
+    <string name="native_activate_change_pin_description">With this PIN you will access the MyBRD Mobile application. Make sure you remember it. See more on the PIN code rules.</string>
+    <string name="native_change_pin_description">See more on the PIN code rules.</string>
+    <string name="native_activationChangePinDescription">Please submit a PIN that will be used to login to your application every time.</string>
+    <string name="native_changePinDescription">Please submit your old PIN before defining a new one in the fields below.</string>
+    <string name="native_locations_search">Search</string>
+    <string name="native_locations_listview">List View</string>
+    <string name="native_locations_searcharoundme">Search around me</string>
+    <string name="native_locations_findlocationscomment">Find 10 nearest ATM/Branch around the following location:</string>
+    <string name="native_locations_nolocationfound">No location found!</string>
+    <string name="native_locations_connectionerror">You either do not have internet connection or a problem occured during connecting.</string>
+    <string name="native_locations_locationhint">eg. Szabadsag ter, Budapest</string>
+    <string name="native_locations_phonelocationtext">You are here!</string>
+    <string name="native_locations_contextmenu_filter">Filter</string>
+    <string name="native_locations_setfilter">Set Filter</string>
+    <string name="native_locations_overlaytype_atm">ATM</string>
+    <string name="native_locations_overlaytype_branch">Branch</string>
+    <string name="native_locations_overlaytype_partner">Partner</string>
+    <string name="native_toolbar_home">HOME</string>
+    <string name="native_toolbar_locations">Locations</string>
+    <string name="native_toolbar_contact">Contact</string>
+    <string name="native_toolbar_support">INFO</string>
+    <string name="native_toolbar_login">LOGIN</string>
+    <string name="native_toolbar_myfinances">FINANCES</string>
+    <string name="native_toolbar_payments">PAYMENTS</string>
+    <string name="native_help_title">Help</string>
+    <string name="native_settings_title">Settings</string>
+    <string name="native_settings_security_warnings_resetted">Security warnings resetted.</string>
+    <string name="native_settings_customer_customer">Customer</string>
+    <string name="native_settings_customer_customer_notlogged">Nobody is logged in</string>
+    <string name="native_settings_customer_rememberme">Remember Me</string>
+    <string name="native_settings_feed_categorytitle">Feed settings:</string>
+    <string name="native_settings_feed_selectfeed">Select feed item to show</string>
+    <string name="native_settings_feed_selectfeed_dialogtitle">Select feed item to show</string>
+    <string name="native_settings_feed_showreadmessages">Show Read Messages</string>
+    <string name="native_settings_feed_markfeedsunread">Mark feeds unread</string>
+    <string name="native_settings_location_categorytitle">Location search settings:</string>
+    <string name="native_settings_location_locationtypesearch">Location type search</string>
+    <string name="native_settings_location_gpslocation">GPS location service</string>
+    <string name="native_settings_language_categorytitle">Language settings:</string>
+    <string name="native_settings_language_language">Language</string>
+    <string name="native_settings_language_language_dialogtitle">Language</string>
+    <string name="native_settings_language_language_confirmdialogtitle">Change language</string>
+    <string name="native_settings_language_language_confirmdialogmessage">"Language change requires to restart the application, this will abort the current transaction. The 'continue' won't abort the current transaction, but the language change will be applied the next application start."</string>
+    <string name="native_settings_layout_layout">Layout</string>
+    <string name="native_settings_layout_phone">Phone</string>
+    <string name="native_settings_layout_tablet">Tablet</string>
+    <string name="native_settings_layout_layout_confirmdialogtitle">Change layout</string>
+    <string name="native_settings_layout_layout_confirmdialogmessage">"Layout change requires to restart the application, this will abort the current transaction. The 'continue' won't abort the current transaction, but the layout change will be applied the next application start."</string>
+    <string name="native_settings_warnings_categorytitle">Warning messages:</string>
+    <string name="native_settings_warnings_reset">Reset Security Warnings</string>
+    <string name="native_settings_warnings_reset_dialogtitle">Reset security warnings</string>
+    <string name="native_settings_about_categorytitle">About:</string>
+    <string name="native_settings_about_name_summary">Banking Application of BRD</string>
+    <string name="native_settings_about_applicationversion_format">v %s</string>
+    <string name="native_settings_about_website">Website</string>
+    <string name="native_settings_website_url">http://www.brd.ro/</string>
+    <string name="native_settings_website_summary">www.brd.ro</string>
+    <string name="native_settings_skin_skin">Skin</string>
+    <string name="native_settings_skin_skin_confirmdialogmessage">"Skin change requires to restart the application, this will abort the current transaction. The 'continue' won't abort the current transaction, but the skin change will be applied the next application start."</string>
+    <string name="native_settings_skin_skin_confirmdialogtitle">Change skin</string>
+    <string name="native_settings_token_categorytitle">Mobile Token settings:</string>
+    <string name="native_settings_feed_category_cardTransactions">Card Transactions</string>
+    <string name="native_settings_feed_category_accountTransactions">Account Transactions</string>
+    <string name="native_settings_feed_category_incomingEBills">Incoming E-bills</string>
+    <string name="native_settings_feed_category_specialOffers">Special Offers</string>
+    <string name="native_settings_feed_category_budgetNotifications">Budget Notifications</string>
+    <string name="native_fxrates_title">Calculator</string>
+    <string name="native_bankingapp_function_fxrates_error_na">Data not available for calculation!</string>
+    <string name="native_fxrates_ratesvalidof">Exhange rates are valid of %1$s</string>
+    <string name="native_fxrates_selectCurrency">Select currency</string>
+    <string name="native_bankingapp_common_decimal_separator">.</string>
+    <string name="native_bankingapp_common_grouping_separator">,</string>
+    <string name="native_activation_activate">Activate</string>
+    <string name="native_activation_confirmpin">Confirm PIN</string>
+    <string name="native_activation_pin">PIN</string>
+    <string name="native_activation_setpincomment">Select a mobile PIN that you can use in the future to access easily your mobile banking information.</string>
+    <string name="native_activation_title">Activation</string>
+    <string name="native_activation_setpin_pin_not_match">The given PIN codes do not match!</string>
+    <string name="native_bankingapp_function_accountinfo_editaccountlist_save">Save modifications</string>
+    <string name="native_bankingapp_function_accountinfo_editaccountlist_favoritsettings">Favourite account settings</string>
+    <string name="native_bankingapp_function_accountinfo_top_label">Rename an account or change the order of the accounts</string>
+    <string name="native_settings_token_dialogtitle">Mobile settings</string>
+    <string name="native_settings_token_reset_autocomplete_confirmdialogbutton">Reset fields</string>
+    <string name="native_fingerprint_wrong_current_pin">The current PIN is not valid.</string>
+    <string name="native_fingerprint_activation_title">Fingerprint Authentication</string>
+    <string name="native_fingerprint_activation_info">"We have detected that your device has a fingerprint sensor which you can use. This won't change your standard authentication method, it is an extra feature. You can also add this later in the Settings menu of the application. Would you like to activate the fingerprint authentication now?"</string>
+    <string name="native_fingerprint_activation_tc_1">"I agree that my digital fingerprint (hereinafter referred to as the \"Fingerprint\") stored in this mobile device's memory will be used as a security element for (i) authentication in the MyBRD Mobile Application (hereinafter referred to as the \"Application\") and for (ii) authorization of the following types of transactions: transfers between my accounts, foreign exchange transfers, transfers to pre-defined national beneficiaries, bill payments, QR code payments, receive money through Western Union, deposit creation and redemption, opening of current and savings accounts, made through the Application.
+
+I understand that Fingerprint registration is not a condition for doing the above mentioned operations, and they can be done based on the PIN code. I have been informed that the Fingerprint option is enabled by PIN authorization.
+
+If the Fingerprint authentication method is blocked (as a result of successive unsuccessful attempts to use the Fingerprint), the PIN may be used.
+
+I have also been informed that I may revoke my consent to use the Fingerprint at any time by disabling it from the \"Settings\" menu of the Application.
+
+I have acknowledged that the Bank reserves the right to disable the Fingerprint's use option if it detects security risks related to its scanning technology and will inform me of this measure before deactivation or, if it is not possible, immediately after disabling this option.
+I understand that I have the obligation to keep the mobile device secure against unauthorized access by third parties and not to record any third-party fingerprints for the purposes of the operations mentioned in (i) and (ii) above.
+
+I know that the Fingerprint is a personal data that allows me to identify myself, which does not circumscribe the scope of my personal data processed by BRD for the purpose of providing the MyBRD Mobile service.
+"</string>
+    <string name="native_fingerprint_activation_tc_2">I know that the mobile-specific technology that allows fingerprint scanning is not created by the Bank, so it is not responsible and does not provide any statement or warranty for the operation of this technology.</string>
+    <string name="native_fingerprint_activation_positive_button">Yes</string>
+    <string name="native_fingerprint_activation_negative_button">No</string>
+    <string name="native_fingerprint_settings_title">Fingerprint Authentication</string>
+    <string name="native_fingerprint_settings_info">Add the fingerprint authentication now.</string>
+    <string name="native_fingerprint_settings_tc_1">"I agree that my digital fingerprint (hereinafter referred to as the \"Fingerprint\") stored in this mobile device's memory will be used as a security element for (i) authentication in the MyBRD Mobile Application (hereinafter referred to as the \"Application\") and for (ii) authorization of the following types of transactions: transfers between my accounts, foreign exchange transfers, transfers to pre-defined national beneficiaries, bill payments, QR code payments, receive money through Western Union, deposit creation and redemption, opening of current and savings accounts, made through the Application.
+
+I understand that Fingerprint registration is not a condition for doing the above mentioned operations, and they can be done based on the PIN code. I have been informed that the Fingerprint option is enabled by PIN authorization.
+
+If the Fingerprint authentication method is blocked (as a result of successive unsuccessful attempts to use the Fingerprint), the PIN may be used.
+
+I have also been informed that I may revoke my consent to use the Fingerprint at any time by disabling it from the \"Settings\" menu of the Application.
+
+I have acknowledged that the Bank reserves the right to disable the Fingerprint's use option if it detects security risks related to its scanning technology and will inform me of this measure before deactivation or, if it is not possible, immediately after disabling this option.
+I understand that I have the obligation to keep the mobile device secure against unauthorized access by third parties and not to record any third-party fingerprints for the purposes of the operations mentioned in (i) and (ii) above.
+
+I know that the Fingerprint is a personal data that allows me to identify myself, which does not circumscribe the scope of my personal data processed by BRD for the purpose of providing the MyBRD Mobile service.
+"</string>
+    <string name="native_fingerprint_settings_tc_2">I know that the mobile-specific technology that allows fingerprint scanning is not created by the Bank, so it is not responsible and does not provide any statement or warranty for the operation of this technology.</string>
+    <string name="native_fingerprint_settings_positive_button">Yes</string>
+    <string name="native_fingerprint_settings_negative_button">No</string>
+    <string name="native_fingerprint_settings_sign">Sign</string>
+    <string name="native_settings_languages_ro">Romanian</string>
+    <string name="native_settings_devicemanagement_category_title">Mobile settings:</string>
+    <string name="native_settings_devicemanagement_manage">Manage mobile devices</string>
+    <string name="native_settings_devicemanagement_add_new">Add new device</string>
+    <string name="native_settings_customer_trustee_user">Trustee user</string>
+    <string name="native_activateButtonText">Continue</string>
+    <string name="native_activateToken" />
+    <string name="native_activationChangePinButtonText">Activate</string>
+    <string name="native_activationCodeHint">SMS OTP</string>
+    <string name="native_activationCodeLabel">SMS OTP</string>
+    <string name="native_activationDescription">Please activate token</string>
+    <string name="native_activationIDHint">Activation ID</string>
+    <string name="native_activationIDLabel">Activation ID</string>
+    <string name="native_changePinButtonText">Save</string>
+    <string name="native_pinAgainHint">Confirm PIN</string>
+    <string name="native_pinAgainLabel">Confirm PIN</string>
+    <string name="native_pinHint">PIN</string>
+    <string name="native_pinLabel">PIN</string>
+    <string name="native_settings_fingerprint">Fingerprint</string>
+    <string name="native_activate_token">Activate MyBRD Mobile account</string>
+    <string name="native_activation_description">Enter the Activation code and the Password received via SMS on your mobile phone number.</string>
+    <string name="native_common_datepicker_button_positive">Done</string>
+    <string name="native_common_datepicker_button_negative">Cancel</string>
+    <string name="native_bankingapp_brd_function_billpayment_sourceaccountselection_title">Pay a Bill</string>
+    <string name="native_bankingapp_brd_function_billpayment_billerselection_title">Bill Payment</string>
+    <string name="native_bankingapp_brd_function_billpayment_barcode_manualinput_title">Bill Payment</string>
+    <string name="native_bankingapp_function_accountinfo_favoriteaccount_title">Account Settings</string>
+    <string name="native_common_tryagain">Try again</string>
+    <string name="native_challenge1Name">Amount</string>
+    <string name="native_bankingapp_brd_function_deposit_contextmenu_preferences">Edit</string>
+    <string name="native_bankingapp_brd_function_deposits_create_title">Create Deposit</string>
+    <string name="native_bankingapp_brd_function_deposits_detail_title">Deposit</string>
+    <string name="native_bankingapp_brd_function_deposits_list_title">Investments</string>
+    <string name="native_bankingapp_brd_function_deposits_terminate_title">Terminate</string>
+    <string name="native_bankingapp_brd_function_accountinfo_accounttype_SV">Current account</string>
+    <string name="native_bankingapp_brd_function_accountinfo_accounttype_SA">Savings account</string>
+    <string name="native_bankingapp_brd_function_accountinfo_accounttype_TD">Term deposit (TD)</string>
+    <string name="native_bankingapp_brd_function_accountinfo_accounttype_IS">Term deposit (IS)</string>
+    <string name="native_bankingapp_brd_function_accountinfo_accounttype_CL">Loan account (CL)</string>
+    <string name="native_bankingapp_brd_function_accountinfo_accounttype_BL">Loan account (BL)</string>
+    <string name="native_bankingapp_brd_function_accountinfo_accounttype_LC">Loan account (LC)</string>
+    <string name="native_bankingapp_brd_function_accountinfo_accounttype_CR">Revolving account</string>
+    <string name="native_bankingapp_brd_function_accountinfo_accounttype_notfound">Account type not found!</string>
+    <string name="native_common_done">Done</string>
+    <string name="native_common_slidingdrawer_more">More</string>
+    <string name="native_common_dateformat">dd/MM/yyyy</string>
+    <string name="native_common_datetimeformat">dd/MM/yyyy HH:mm:ss</string>
+    <string name="native_common_permission_needed">Permission needed</string>
+    <string name="native_common_contact_permission">Please grant permission for contacts in Settings</string>
+    <string name="native_bankingapp_brd_function_contactinfo_title">Contact BRD</string>
+    <string name="native_bankingapp_brd_function_statement_contextmenu_filter">Statement Filter</string>
+    <string name="native_bankingapp_brd_function_loans_title">Loans</string>
+    <string name="native_iphone_bump_confirm_match">Connect with %@?</string>
+    <string name="native_bankingapp_brd_function_splitbill">Split the Bill</string>
+    <string name="native_settings_languages_ar">Arabic</string>
+    <string name="native_locations_title">Locations</string>
+    <string name="native_toolbar_transferfunds">Send money</string>
+    <string name="native_toolbar_finances">Finances</string>
+    <string name="native_toolbar_token">TOKEN</string>
+    <string name="native_bankingapp_brd_function_requestmoney">Request money</string>
+    <string name="native_locations_nogps">Unable to get GPS coordinates!</string>
+    <string name="native_settings_layout_categorytitle">Layout settings:</string>
+    <string name="native_bankingapp_function_fxrates_contextmenu_fxratecalculator">FX Calculator</string>
+    <string name="native_bankingapp_brd_function_account_preferences_emptyaccountnameerror">Account name is empty!</string>
+    <string name="native_bankingapp_function_fxrates_title">Exchange Rates</string>
+    <string name="native_bankingapp_function_fxrates_currencyselector_title">Currency Selection</string>
+    <string name="native_bankingapp_function_logout_title">Logout</string>
+    <string name="native_bankingapp_function_capselect_title">Select Customer</string>
+    <string name="native_bankingapp_function_accountinfo_title">Accounts</string>
+    <string name="native_bankingapp_function_accountinfo_loan_title">Edit List</string>
+    <string name="native_bankingapp_function_accountinfo_editlist_title">Edit List</string>
+    <string name="native_bankingapp_function_accountinfo_accountdetails_title">Account</string>
+    <string name="native_bankingapp_function_transactionhistory_list_title">Transactions</string>
+    <string name="native_bankingapp_function_transactionhistory_filter_title">Filter setting</string>
+    <string name="native_bankingapp_function_accountinfo_transactiondetails_title">Transaction Details</string>
+    <string name="native_bankingapp_function_fxrates_fxcalculator_title">FX Calculator</string>
+    <string name="native_bankingapp_function_contacts_title">Contact IND Bank</string>
+    <string name="native_bankingapp_function_internaltransfer_transferdetails_title">Add transaction details</string>
+    <string name="native_bankingapp_function_internaltransfer_forecast_title">Sign transfer</string>
+    <string name="native_bankingapp_function_bankfeed_contextmenu_deletemessage">Delete message</string>
+    <string name="native_bankingapp_function_bankfeed_deletemessage_confirmation">Are you sure you want to delete it?</string>
+    <string name="native_bankingapp_function_bankfeed_bankfeeddetails_title">Bank feed details</string>
+    <string name="native_bankingapp_function_bankfeed_bankfeedlist_title">Bank Feed</string>
+    <string name="native_bankingapp_function_bankfeed_markasunread_title">Mark as unread</string>
+    <string name="native_bankingapp_function_transactionhistory_contextmenu_filter">Filter options</string>
+    <string name="native_common_back">Back</string>
+    <string name="native_bankingapp_function_transferfunds_title">Send Money</string>
+    <string name="native_bankingapp_function_accountinfo_accountdetails_details_tab_title">Account Details</string>
+    <string name="native_bankingapp_function_accountinfo_statementlist_title">Statement List</string>
+    <string name="native_bankingapp_function_billpayment_contextmenu_history">History</string>
+    <string name="native_bankingapp_check_network">Checking network status</string>
+    <string name="native_context_menu_cancel">Cancel</string>
+    <string name="native_contact_work">work</string>
+    <string name="native_contact_home">home</string>
+    <string name="native_contact_other">other</string>
+    <string name="native_contact_phone_mobile">mobile</string>
+    <string name="native_contact_phone_iphone">iPhone</string>
+    <string name="native_contact_phone_main">main</string>
+    <string name="native_contact_phone_homefax">home fax</string>
+    <string name="native_contact_phone_workfax">work fax</string>
+    <string name="native_contact_phone_pager">pager</string>
+    <string name="native_sessiontimeout_message">For inactivity reasons your session has expired. Do you want to continue?</string>
+    <string name="native_sessiontimeout_extend">Extend</string>
+    <string name="native_sessiontimeout_logout">Logout</string>
+    <string name="native_callservice_communicating">Communicating with server</string>
+    <string name="native_callservice_communication_failed">Communication with server was failed</string>
+    <string name="native_callservice_communication_fatal_error">Fatal error during communicating with server</string>
+    <string name="native_callservice_communication_failed_button">OK</string>
+    <string name="native_bankingapp_compatibility_appstore_title">Go to AppStore</string>
+    <string name="native_bankingapp_function_fxrates_validity">Exchange rates are valid of %@</string>
+    <string name="native_iphone_validation_mandatory">%@ field is mandatory! Please fill it in!</string>
+    <string name="native_bankingapp_function_domestictransfer_contextmenu_delete_partner">Delete partner</string>
+    <string name="native_bankingapp_brd_function_loans_details">Loan</string>
+    <string name="native_bankingapp_function_accountdetails_contextmenu_favorite">Favorite Account Settings</string>
+    <string name="native_bankingapp_function_fxrates_historicalrates_title">Exchange Rates</string>
+    <string name="native_bankingapp_brd_function_interestrate_title">Interest Rates</string>
+    <string name="native_fingerprint_pin">PIN</string>
+    <string name="native_bankingapp_brd_function_payments_send_money">Send money</string>
+    <string name="native_bankingapp_brd_function_payments_receive_money">Receive money</string>
+    <string name="native_bankingapp_function_accountinfo_accountdetails_statement_tab_title">Account activity</string>
+    <string name="native_bankingapp_function_loan_accountdetails_statement_tab_title">Account activity</string>
+    <string name="native_bankingapp_function_loan_accountdetails_details_tab_title">Account details</string>
+    <string name="native_bankingapp_brd_function_bringyourmoney">Bring your Money</string>
+    <string name="native_bankingapp_function_internationaltransfer_contextmenu_delete_partner">Delete partner</string>
+    <string name="native_bankingapp_brd_function_paymentinformation_title">Payment information</string>
+    <string name="native_bankingapp_brd_function_locations_title">Locations</string>
+    <string name="native_bankingapp_brd_function_loancalculator_title">Loan Calculator</string>
+    <string name="native_bankingapp_brd_function_productinformation_title">Product Information</string>
+    <string name="native_bankingapp_brd_function_requesttokenlogin_title">Login</string>
+    <string name="native_bankingapp_brd_function_activationchangepin_title">Activate</string>
+    <string name="native_challenge1Hint">e.g. 123456</string>
+    <string name="native_challenge2Hint">e.g. 123456</string>
+    <string name="native_bankingapp_brd_function_investmentfunds_list_title">Investment funds list</string>
+    <string name="native_brd_function_devicemanagement">Manage mobile devices</string>
+    <string name="native_brd_function_activatedevice">Add new device</string>
+    <string name="native_brd_function_devicemanagement_title">Mobile device management</string>
+    <string name="native_brd_function_devicemanagement_unlink_title">Mobile devices - Delete</string>
+    <string name="native_bankingapp_brd_function_investmentfund_detail_title">Investment funds</string>
+    <string name="native_brd_function_devicemanagement_addnew_title">Add new device</string>
+    <string name="native_bankingapp_function_accountinfo_shareeaccount_title">Share account</string>
+    <string name="native_challenge2Name">Account Number</string>
+    <string name="native_toolbar_mobile_token">Token</string>
+    <string name="native_bankingapp_brd_function_openaccount_title">Open a new account</string>
+    <string name="native_bankingapp_brd_function_openaccount_createcurrentaccount_title">Create Current Account</string>
+    <string name="native_bankingapp_brd_function_openaccount_createsavingaccount_title">Create Saving Account</string>
+    <string name="native_bankingapp_brd_function_openaccount_transactiondetails_title">Create Account</string>
+    <string name="native_bankingapp_brd_function_blockedamounts_list_title">Blocked amount details</string>
+    <string name="native_settings_devicemanagement_fingerprint">Fingerprint</string>
+    <string name="native_settings_fingerprint_title">Fingerprint settings</string>
+    <string name="native_settings_fingerprint_enabled">Enabled</string>
+    <string name="native_settings_fingerprint_disabled">Disabled</string>
+    <string name="native_bankingapp_brd_function_westernunion_receive_title">Receive WU Payment</string>
+    <string name="native_fingerprint_activation_tc">"Example Terms and conditions text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tellus ac quam semper rutrum. Fusce ullamcorper ornare augue, id tincidunt turpis lobortis nec. Vivamus at arcu velit. Etiam pulvinar ligula quis pretium facilisis. Donec vitae orci sit amet arcu pretium pulvinar tincidunt bibendum elit. Proin tortor justo, iaculis in felis id, imperdiet vulputate orci.
+Example Terms and conditions text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tellus ac quam semper rutrum. Fusce ullamcorper ornare augue, id tincidunt turpis lobortis nec. Vivamus at arcu velit. Etiam pulvinar ligula quis pretium facilisis. Donec vitae orci sit amet arcu pretium pulvinar tincidunt bibendum elit. Proin tortor justo, iaculis in felis id, imperdiet vulputate orci."</string>
+    <string name="native_fingerprint_activation_failed_message">Fingerprint not recognized. Try again.</string>
+    <string name="native_fingerprint_auth_message">Please authenticate yourself with fingerprint</string>
+    <string name="native_fingerprint_activation_message">To continue, please authenticate with your fingerprint.</string>
+    <string name="native_framework_fingerprint_TouchID_present_Error">Cannot authenticate with fingerprint: no keyguard is present, please set one!</string>
+    <string name="native_fingerprint_settings_tc">"Example Terms and conditions text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tellus ac quam semper rutrum. Fusce ullamcorper ornare augue, id tincidunt turpis lobortis nec. Vivamus at arcu velit. Etiam pulvinar ligula quis pretium facilisis. Donec vitae orci sit amet arcu pretium pulvinar tincidunt bibendum elit. Proin tortor justo, iaculis in felis id, imperdiet vulputate orci.
+Example Terms and conditions text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tellus ac quam semper rutrum. Fusce ullamcorper ornare augue, id tincidunt turpis lobortis nec. Vivamus at arcu velit. Etiam pulvinar ligula quis pretium facilisis. Donec vitae orci sit amet arcu pretium pulvinar tincidunt bibendum elit. Proin tortor justo, iaculis in felis id, imperdiet vulputate orci."</string>
+    <string name="native_framework_fingerprint_TouchID_present_button_accept">OK</string>
+    <string name="native_bump_waiting_for_partner">Waiting for partner to confirm...</string>
+    <string name="native_token_menu_main_title">Main Menu</string>
+    <string name="native_token_menu_otp_title">One-Time Password</string>
+    <string name="native_token_menu_cr_title">Generate Response</string>
+    <string name="native_token_menu_sign_title">Sign Transaction</string>
+    <string name="native_token_menu_qrcode_sign_title">QR Code Sign</string>
+    <string name="native_token_changepin_title">Change pin</string>
+    <string name="native_token_contextmenu_changepin">Change pin</string>
+    <string name="app_marketid">market://details?id=brd.bankingapp.android</string>
+</resources>

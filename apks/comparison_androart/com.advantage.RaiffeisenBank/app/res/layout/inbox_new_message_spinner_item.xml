@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="marquee" android:id="@id/descriptionTextView" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:singleLine="true" android:layout_toLeftOf="@id/dropdownArrowImageView" android:layout_centerVertical="true" style="@style/DSQTextAppearance.value5" />
+    <ImageView android:id="@id/dropdownArrowImageView" android:layout_width="25.0dip" android:layout_height="30.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/dropdown_arrow" android:layout_alignParentRight="true" />
+</RelativeLayout>

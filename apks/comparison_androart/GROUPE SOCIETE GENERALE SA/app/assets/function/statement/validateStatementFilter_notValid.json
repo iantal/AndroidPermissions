@@ -1,0 +1,16 @@
+{
+  "success": false,
+  "header": {
+    "token": "3C7NUb3Y6JnRtAdj+PbphQ==",
+    "sessionTimeout": 600
+  },
+  "failure": false,
+  "messages": {
+    "errors": [
+      {
+        "code": "pegasus.brd.function.statement.validation.StartDateBeforeEndDate",
+        "title": "The start date must be before the end date."
+      }
+    ]
+  }
+}

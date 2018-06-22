@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "title": "Activity (com. google. zxing. client. android. CaptureActivity) is not Protected. An intent-filter exists.",
+      "stat": "high",
+      "description": "A  Activity is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Activity is explicitly exported.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    },
+    {
+      "title": "Service (com. bump. api. BumpAPI) is not Protected. An intent-filter exists.",
+      "stat": "high",
+      "description": "A  Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device. The presence of intent-filter indicates that the Service is explicitly exported.",
+      "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/separator" android:background="@color/raiffeisen_black_10_opacity" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="false" android:layout_alignParentBottom="false" />
+    <TextView android:layout_gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="10.0dip" android:text="@string/header_enable_sections" style="@style/DSQTextAppearance.Header.Color" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/info_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/info" android:layout_alignParentRight="true" />
+    <TextView android:textColor="?dsq_fourth_text_color" android:id="@id/info_text" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:text="@string/msg_enabled_sections" android:layout_below="@id/text" android:layout_alignLeft="@id/text" style="@style/DSQTextAppearance.Label.material" />
+</RelativeLayout>

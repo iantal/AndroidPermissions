@@ -1,0 +1,1 @@
+Class.ns("Functions.transferfunds");Functions.transferfunds.MPIUtils=function(){return{callServer:function(b,c,d){debugLog("MPI callServer ...");$.each(b,function(e,f){debugLog(e+": "+f);});var a={authNeeded:true,success:true};return a;}};}();

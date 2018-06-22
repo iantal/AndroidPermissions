@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/FilterLayoutListItems" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/alpha_blue" android:id="@id/filterlistitemspinnerlabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="30.0dip" />
+    <Spinner android:id="@id/filterlistitemspinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/filterlistitemspinnerlabel" />
+    <TextView android:id="@id/filterlistitemspinnerhiddenparams" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <TextView android:id="@id/filterlistitemspinnerparams" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <TextView android:id="@id/filterlistitemspinnerparamValue" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <TextView android:id="@id/filterlistitemdatatype" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</RelativeLayout>

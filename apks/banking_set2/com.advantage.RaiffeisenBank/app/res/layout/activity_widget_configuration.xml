@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/content_wrapper" android:background="@drawable/bg_black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/dummy" android:layout_width="fill_parent" android:layout_height="@dimen/dsq_action_bar_expanded_height" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/dummy" style="@style/CardContentAboveActionBarStyle">
+            <include layout="@layout/loading" />
+            <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/white_card_left_margin" android:layout_marginRight="@dimen/white_card_right_margin" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

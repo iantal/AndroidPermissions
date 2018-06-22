@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/baseRoot" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/linBase" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/linlToolbarWrapper" />
+    <FrameLayout android:id="@id/nonFullscreenSlidingDrawerContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/linlToolbarWrapper" />
+    <FrameLayout android:id="@id/fullscreenSlidingDrawerContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linlToolbarWrapper" android:background="@drawable/toolbar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <HorizontalScrollView android:layout_gravity="center_horizontal" android:id="@id/hswToolbarScroller" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/linlToolbarBase" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+    </LinearLayout>
+</RelativeLayout>

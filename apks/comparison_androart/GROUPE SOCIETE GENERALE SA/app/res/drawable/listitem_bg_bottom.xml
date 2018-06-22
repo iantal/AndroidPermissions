@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:topLeftRadius="1.0dip" android:topRightRadius="1.0dip" android:bottomLeftRadius="@dimen/radius_outer" android:bottomRightRadius="@dimen/radius_outer" />
+                    <solid android:color="@color/stroke_color" />
+                </shape>
+            </item>
+            <item android:left="@dimen/stroke_width" android:right="@dimen/stroke_width" android:bottom="@dimen/stroke_width">
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="1.0dip" android:topRightRadius="1.0dip" android:bottomLeftRadius="@dimen/radius_inner" android:bottomRightRadius="@dimen/radius_inner" />
+                    <solid android:color="@color/bg_white" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list name="pressed">
+            <item>
+                <shape>
+                    <corners android:topLeftRadius="1.0dip" android:topRightRadius="1.0dip" android:bottomLeftRadius="@dimen/radius_outer" android:bottomRightRadius="@dimen/radius_outer" />
+                    <solid android:color="@color/stroke_color" />
+                </shape>
+            </item>
+            <item android:left="@dimen/stroke_width" android:right="@dimen/stroke_width" android:bottom="@dimen/stroke_width">
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="1.0dip" android:topRightRadius="1.0dip" android:bottomLeftRadius="@dimen/radius_inner" android:bottomRightRadius="@dimen/radius_inner" />
+                    <solid android:color="@color/bg_white" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:topLeftRadius="1.0dip" android:topRightRadius="1.0dip" android:bottomLeftRadius="@dimen/radius_outer" android:bottomRightRadius="@dimen/radius_outer" />
+                    <solid android:color="@color/stroke_color" />
+                </shape>
+            </item>
+            <item android:left="@dimen/stroke_width" android:right="@dimen/stroke_width" android:bottom="@dimen/stroke_width">
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="1.0dip" android:topRightRadius="1.0dip" android:bottomLeftRadius="@dimen/radius_inner" android:bottomRightRadius="@dimen/radius_inner" />
+                    <solid android:color="@color/bg_white" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

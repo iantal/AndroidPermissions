@@ -1,0 +1,91 @@
+{
+  "success": true,
+  "data": {
+    "@xsi:type": "pegasus.project.brd.component.brdcommon.bean.controller.StatementListResponse",
+    "statementList": [
+      {
+        "transactionId": "SV006866245002017071913142100",
+        "beneficiaryAccount": "RO94BRDE450SV22222222222",
+        "paymentType": "Plata Transfer",
+        "amount": 300,
+        "valueDate": "2017-07-19T00:00:00.000",
+        "transactionDate": "2017-07-19T13:14:21.000",
+        "currency": "RON",
+        "transactionDirection": "C",
+        "narrative": "Test description (Narrative) "
+      },
+      {
+        "transactionId": "SV006866245002017071913133800",
+        "beneficiaryAccount": "RO12BRDE450SV33333333333",
+        "paymentType": "Plata Transfer",
+        "amount": 95,
+        "valueDate": "2017-07-21T00:00:00.000",
+        "transactionDate": "2017-07-19T13:13:38.000",
+        "currency": "RON",
+        "transactionDirection": "C",
+        "narrative": "Test description (Narrative) "
+      },
+      {
+        "transactionId": "SV006866245002017071913125200",
+        "beneficiaryAccount": "RO20BRDE450SV11111111111",
+        "paymentType": "Plata Transfer",
+        "amount": 25,
+        "valueDate": "2017-07-21T00:00:00.000",
+        "transactionDate": "2017-07-19T13:12:52.000",
+        "currency": "RON",
+        "transactionDirection": "C",
+        "narrative": "Test description (Narrative) "
+      },
+      {
+        "transactionId": "SV006866245002017071913115000",
+        "beneficiaryAccount": "RO94BRDE450SV22222222222",
+        "paymentType": "Plata Transfer",
+        "amount": 79,
+        "valueDate": "2017-07-22T00:00:00.000",
+        "transactionDate": "2017-07-19T13:11:50.000",
+        "currency": "RON",
+        "transactionDirection": "C",
+        "narrative": "Test description (Narrative) "
+      },
+      {
+        "transactionId": "SV006866245002017071913101500",
+        "beneficiaryAccount": "RO12BRDE450SV33333333333",
+        "paymentType": "Plata Transfer",
+        "amount": 99,
+        "valueDate": "2017-07-25T00:00:00.000",
+        "transactionDate": "2017-07-19T13:10:15.000",
+        "currency": "RON",
+        "transactionDirection": "C",
+        "narrative": "Test description (Narrative) "
+      },
+      {
+        "transactionId": "SV006866245002017071913070300",
+        "beneficiaryAccount": "RO20BRDE450SV11111111111",
+        "paymentType": "Plata Transfer",
+        "amount": 125,
+        "valueDate": "2017-07-25T00:00:00.000",
+        "transactionDate": "2017-07-19T13:07:03.000",
+        "currency": "RON",
+        "transactionDirection": "C",
+        "narrative": "Test description (Narrative) "
+      },
+      {
+        "transactionId": "SV006866245002017071912153500",
+        "beneficiaryAccount": "RO94BRDE450SV22222222222",
+        "paymentType": "Plata Transfer",
+        "amount": 250,
+        "valueDate": "2017-07-25T00:00:00.000",
+        "transactionDate": "2017-07-19T12:15:35.000",
+        "currency": "RON",
+        "transactionDirection": "C",
+        "narrative": "Test description (Narrative) "
+      }
+    ],
+    "maxPeriod": 60,
+    "statementSyncTime": "2017-07-19T13:14:21.000"
+  },
+  "header": {
+    "token": "MoAX0lO53BSbtzUIxYcpNg==",
+    "sessionTimeout": 600
+  }
+}

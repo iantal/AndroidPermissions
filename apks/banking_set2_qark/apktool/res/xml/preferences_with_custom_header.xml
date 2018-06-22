@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:focusable="false" android:focusableInTouchMode="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.thinkdesquared.banking.helpers.CustomPreferenceCategory android:title="@string/menu_settings">
+        <ListPreference android:entries="@array/settings_language_title" android:title="@string/choose_language" android:key="language" android:defaultValue="@string/language_romanian" android:entryValues="@array/settings_language_values" />
+        <com.thinkdesquared.banking.settings.CustomCheckBoxPreference android:enabled="true" android:title="@string/enable_auto_send_reports" android:key="never_send_crash_report_checkbox" android:defaultValue="true" />
+        <com.thinkdesquared.banking.settings.CustomCheckBoxPreference android:enabled="true" android:title="@string/enable_auto_send_reports_via_wifi" android:key="automatically_send_crash_report_via_wifi" android:defaultValue="true" />
+    </com.thinkdesquared.banking.helpers.CustomPreferenceCategory>
+</PreferenceScreen>

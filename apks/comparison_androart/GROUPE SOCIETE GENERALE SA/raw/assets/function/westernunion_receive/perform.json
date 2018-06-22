@@ -1,0 +1,81 @@
+{
+  "success": true,
+  "data": {
+    "@xsi:type": "pegasus.project.brd.function.payment.bean.PaymentTransferResponse",
+    "transactionId": 6666,
+    "version": 0,
+    "status": "DRAFT",
+    "forecastReply": {
+      "cBSError": [
+        {
+          "errorCode": "1006",
+          "errorLevel": "INFORMATION"
+        },
+        {
+          "errorCode": "1003",
+          "errorLevel": "INFORMATION"
+        },
+        {
+          "errorCode": "1008",
+          "errorLevel": "INFORMATION"
+        },
+        {
+          "errorCode": "1001",
+          "errorLevel": "INFORMATION"
+        },
+        {
+          "errorCode": "1008",
+          "errorLevel": "INFORMATION"
+        },
+        {
+          "errorCode": "1200",
+          "errorLevel": "INFORMATION"
+        }
+      ],
+      "fXAmountData": {
+        "fromAmount": 155,
+        "fromCurrency": "RON",
+        "toAmount": 155,
+        "toCurrency": "RON",
+        "fXRate": 1,
+        "backendFXRate": 1
+      },
+      "cUI_CNP": "2690411301979",
+      "iBankId": "9444500",
+      "freeTextSearchIndexField": "RO94BRDE450SV49149054500 155 RON",
+      "westernUnionReceiveData": {
+        "actualPayoutAmount": 155,
+        "paymentDate": "2016-07-08T10:11:00.000",
+        "originationCurrency": "RON",
+        "destinationCurrency": "RON",
+        "principalAmount": 155.11,
+        "grossAmount": 155.11,
+        "personalMessage": "-",
+        "senderName": "Test Maria",
+        "senderAddress": "Test Sender Address 1/b.",
+        "senderCountry": "RO",
+        "receiverName": "Daniela",
+        "receiverAddress": "STR STEFAN MIHAILEANU 32B, bl. 32B, et. 2, ap. 3, BUCURESTI, S2",
+        "receiverCountry": "RO",
+        "receiverPhoneNumber": "0040721234568"
+      },
+      "customerName": "Daniela"
+    },
+    "authorizationData": {
+      "@xsi:type": "pegasus.project.brd.component.transactionframework.glue.transaction.bean.AuthorizationData",
+      "customerId": "160",
+      "trusteeId": "160",
+      "channelId": "MBL",
+      "functionTypeId": 52,
+      "protectedObjectId": "RO20BRDE450SV49149564500",
+      "functionId": "westernunion_receive",
+      "credentialFunction": [
+        "WesternUnionReceive"
+      ]
+    }
+  },
+  "header": {
+    "token": "LTJhMl4ebWg7MUi385q4Ug==",
+    "sessionTimeout": 600
+  }
+}

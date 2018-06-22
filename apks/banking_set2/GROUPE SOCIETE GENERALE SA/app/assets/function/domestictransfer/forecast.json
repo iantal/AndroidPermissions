@@ -1,0 +1,43 @@
+{
+  "success": true,
+  "data": {
+    "@xsi:type": "pegasus.project.brd.function.payment.bean.PaymentTransferResponse",
+    "transactionId": 0,
+    "version": 0,
+    "status": "DRAFT",
+    "forecastReply": {
+      "fXAmountData": {
+        "fromAmount": 65,
+        "fromCurrency": "RON",
+        "toAmount": 65,
+        "toCurrency": "RON",
+        "fXRate": 1,
+        "backendFXRate": 1
+      },
+      "beneficiaryBankCode": "BRDEROBU",
+      "beneficiaryBankName": "B.R.D. - G.S.G.",
+      "cUI_CNP": "2690411301979",
+      "iBankId": "9444500",
+      "freeTextSearchIndexField": "test RO12BRDE450SV33333333333 65 RON",
+      "customerName": "Daniela"
+    },
+    "authorizationData": {
+      "@xsi:type": "pegasus.project.brd.component.transactionframework.glue.transaction.bean.AuthorizationData",
+      "customerId": "160",
+      "trusteeId": "160",
+      "channelId": "MBL",
+      "functionTypeId": 1,
+      "protectedObjectId": "RO94BRDE450SV49149054500",
+      "amount": 65,
+      "currency": "RON",
+      "functionId": "domestictransferTemplate",
+      "credentialFunction": [
+        "DomesticTransferTemplate"
+      ]
+    }
+  },
+  "header": {
+    "token": "LTJhMl4ebWg7MUi385q4Ug==",
+    "sessionTimeout": 600
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/listitem_background" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/drag_and_drop_list_normal_row_height" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/editIconContainer" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/icon_edit" />
+        <LinearLayout android:orientation="vertical" android:id="@id/accountDataContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/editIconContainer" android:layout_centerVertical="true">
+            <TextView android:id="@id/accountName" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AccountListItemAccountName" />
+            <TextView android:id="@id/accountType" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AccountListItemAccountType" />
+        </LinearLayout>
+        <EditText android:enabled="true" android:id="@id/accountNameEditText" android:visibility="invisible" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionDone" style="@style/AccountListItemEditText" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/touchIconContainer" android:layout_width="@dimen/drag_and_drop_list_touch_area" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/touchIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_drag" />
+    </FrameLayout>
+</LinearLayout>

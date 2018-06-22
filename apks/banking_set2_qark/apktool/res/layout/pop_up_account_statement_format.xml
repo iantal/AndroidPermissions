@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/rounded_corners_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/account_statement_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account_statement_format" style="@style/DSQTextAppearance.Header.material" />
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_marginTop="6.0dip" layout="@layout/include_separator" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/Pdf_view" android:background="?dsq_popup_textview_selector" android:paddingLeft="24.0dip" android:paddingTop="12.0dip" android:paddingRight="24.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/account_statement_format_pdf" style="?attr/dsq_style_textview_value2" />
+        <TextView android:id="@id/Excel_view" android:background="?dsq_popup_textview_selector" android:paddingLeft="24.0dip" android:paddingTop="12.0dip" android:paddingRight="24.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/account_statement_format_xls" style="?attr/dsq_style_textview_value2" />
+        <TextView android:id="@id/Transaction_list_view" android:background="?dsq_popup_textview_selector" android:paddingLeft="24.0dip" android:paddingTop="12.0dip" android:paddingRight="24.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/account_statement_format_display" style="?attr/dsq_style_textview_value2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/beneficiaryAddressRow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/beneficiary_address" style="@style/DSQTextAppearance.Label.material" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+            <android.support.v7.widget.AppCompatEditText android:id="@id/beneficiaryAddressButton" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="35" android:imeOptions="actionNext|flagNoExtractUi" style="?attr/dsq_edittext_button_style" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/infoSwiftLinearLayout" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/swift_code" style="@style/DSQTextAppearance.Label.material" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/infoSwiftButton" android:background="@drawable/transparent" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" />
+            <android.support.v7.widget.AppCompatEditText android:id="@id/beneficiaryBankSWIFTButton" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:maxLength="11" android:layout_toLeftOf="@id/infoSwiftButton" android:imeOptions="actionNext|flagNoExtractUi" style="@style/DSQWidget.Holo.AlphanumericNoSpecialCharactersAllowedEditText.value" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

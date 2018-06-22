@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <ns2:executeSessionKeyExchange2Response xmlns:ns2="http://services.framework.ebanking/">
+            <return>
+                <resultCode>E</resultCode>
+                <errors>Your application version is too old please update your version to the latest</errors>
+                <numberOfDirectLogs>5</numberOfDirectLogs>
+            </return>
+        </ns2:executeSessionKeyExchange2Response>
+    </soapenv:Body>
+</soapenv:Envelope>

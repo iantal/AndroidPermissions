@@ -1,0 +1,17 @@
+package com.google.android.gms.maps.model;
+
+import android.os.Parcel;
+import com.google.android.gms.common.internal.safeparcel.b;
+
+public class j
+{
+  static void a(TileOverlayOptions paramTileOverlayOptions, Parcel paramParcel, int paramInt)
+  {
+    paramInt = b.d(paramParcel);
+    b.c(paramParcel, 1, paramTileOverlayOptions.i());
+    b.a(paramParcel, 2, paramTileOverlayOptions.bs(), false);
+    b.a(paramParcel, 3, paramTileOverlayOptions.isVisible());
+    b.a(paramParcel, 4, paramTileOverlayOptions.getZIndex());
+    b.C(paramParcel, paramInt);
+  }
+}

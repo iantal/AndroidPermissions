@@ -1,0 +1,170 @@
+package com.google.android.gms.auth.api.signin.internal;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.text.TextUtils;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.internal.zzac;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+import org.json.JSONException;
+
+public class zzk
+{
+  private static final Lock hI = new ReentrantLock();
+  private static zzk hJ;
+  private final Lock hK = new ReentrantLock();
+  private final SharedPreferences hL;
+  
+  zzk(Context paramContext)
+  {
+    this.hL = paramContext.getSharedPreferences("com.google.android.gms.signin", 0);
+  }
+  
+  public static zzk zzbd(Context paramContext)
+  {
+    zzac.zzy(paramContext);
+    hI.lock();
+    try
+    {
+      if (hJ == null) {
+        hJ = new zzk(paramContext.getApplicationContext());
+      }
+      zzk localZzk = hJ;
+      return localZzk;
+    }
+    finally
+    {
+      hI.unlock();
+    }
+  }
+  
+  private String zzy(String paramString1, String paramString2)
+  {
+    String str = String.valueOf(":");
+    return 0 + String.valueOf(paramString1).length() + String.valueOf(str).length() + String.valueOf(paramString2).length() + paramString1 + str + paramString2;
+  }
+  
+  void zza(GoogleSignInAccount paramGoogleSignInAccount, GoogleSignInOptions paramGoogleSignInOptions)
+  {
+    zzac.zzy(paramGoogleSignInAccount);
+    zzac.zzy(paramGoogleSignInOptions);
+    String str = paramGoogleSignInAccount.zzahf();
+    zzx(zzy("googleSignInAccount", str), paramGoogleSignInAccount.zzahh());
+    zzx(zzy("googleSignInOptions", str), paramGoogleSignInOptions.zzahg());
+  }
+  
+  public GoogleSignInAccount zzaic()
+  {
+    return zzga(zzgc("defaultGoogleSignInAccount"));
+  }
+  
+  public GoogleSignInOptions zzaid()
+  {
+    return zzgb(zzgc("defaultGoogleSignInAccount"));
+  }
+  
+  public void zzaie()
+  {
+    String str = zzgc("defaultGoogleSignInAccount");
+    zzge("defaultGoogleSignInAccount");
+    zzgd(str);
+  }
+  
+  public void zzb(GoogleSignInAccount paramGoogleSignInAccount, GoogleSignInOptions paramGoogleSignInOptions)
+  {
+    zzac.zzy(paramGoogleSignInAccount);
+    zzac.zzy(paramGoogleSignInOptions);
+    zzx("defaultGoogleSignInAccount", paramGoogleSignInAccount.zzahf());
+    zza(paramGoogleSignInAccount, paramGoogleSignInOptions);
+  }
+  
+  GoogleSignInAccount zzga(String paramString)
+  {
+    if (TextUtils.isEmpty(paramString)) {}
+    String str;
+    do
+    {
+      return null;
+      str = zzgc(zzy("googleSignInAccount", paramString));
+    } while (str == null);
+    try
+    {
+      GoogleSignInAccount localGoogleSignInAccount = GoogleSignInAccount.zzfw(str);
+      return localGoogleSignInAccount;
+    }
+    catch (JSONException localJSONException) {}
+    return null;
+  }
+  
+  GoogleSignInOptions zzgb(String paramString)
+  {
+    if (TextUtils.isEmpty(paramString)) {}
+    String str;
+    do
+    {
+      return null;
+      str = zzgc(zzy("googleSignInOptions", paramString));
+    } while (str == null);
+    try
+    {
+      GoogleSignInOptions localGoogleSignInOptions = GoogleSignInOptions.zzfy(str);
+      return localGoogleSignInOptions;
+    }
+    catch (JSONException localJSONException) {}
+    return null;
+  }
+  
+  protected String zzgc(String paramString)
+  {
+    this.hK.lock();
+    try
+    {
+      String str = this.hL.getString(paramString, null);
+      return str;
+    }
+    finally
+    {
+      this.hK.unlock();
+    }
+  }
+  
+  void zzgd(String paramString)
+  {
+    if (TextUtils.isEmpty(paramString)) {
+      return;
+    }
+    zzge(zzy("googleSignInAccount", paramString));
+    zzge(zzy("googleSignInOptions", paramString));
+  }
+  
+  protected void zzge(String paramString)
+  {
+    this.hK.lock();
+    try
+    {
+      this.hL.edit().remove(paramString).apply();
+      return;
+    }
+    finally
+    {
+      this.hK.unlock();
+    }
+  }
+  
+  protected void zzx(String paramString1, String paramString2)
+  {
+    this.hK.lock();
+    try
+    {
+      this.hL.edit().putString(paramString1, paramString2).apply();
+      return;
+    }
+    finally
+    {
+      this.hK.unlock();
+    }
+  }
+}

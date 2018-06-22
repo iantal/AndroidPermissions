@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/rzb_white" android:paddingTop="-8.0dip" android:paddingBottom="-8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/imageLayout" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center" android:id="@id/tickImageView" android:layout_width="35.0dip" android:layout_height="28.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_toLeftOf="@id/detailTextView" android:layout_toRightOf="@id/imageLayout" android:layout_centerVertical="true">
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/titleTextView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_weight="1.0" android:layout_toLeftOf="@id/detail_linearlayout" style="@style/DSQTextAppearance.value" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/dimen_1dp_low_res_support" android:layout_marginLeft="40.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" layout="@layout/include_separator" />
+</RelativeLayout>

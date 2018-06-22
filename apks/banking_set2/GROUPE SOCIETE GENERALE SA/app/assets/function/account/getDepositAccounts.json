@@ -1,0 +1,75 @@
+{
+  "success": true,
+  "data": [
+    {
+      "@xsi:type": "pegasus.component.brdcustomer.depositaccount.bean.DepositAccountWithPreferences",
+      "accountNumber": "RO44BRDE450TD49149814500",
+      "accountNumberIban": "RO44BRDE450TD49149814500",
+      "accountType": "depo TY",
+      "accountTypeId": "depo TY",
+      "customerId": "160",
+      "currency": "RON",
+      "availableBalance": 10000.0,
+      "bookedBalance": 10000.0,
+      "accountOpeningDate": "2014-09-15",
+      "closed": false,
+      "blocked": false,
+      "activityList": [
+        "Q"
+      ],
+      "enabled": true,
+      "depositSourceAccount": "RO44BRDE450TD49149814500",
+      "depositMaturityCount": 90,
+      "depositInterestRate": 3.9,
+      "depositInterestType": "true",
+      "depositDueDate": "2013-07-12",
+      "depositPeriodStartDate": "2013-06-12",
+      "depositPeriodEndDate": "2013-07-12",
+      "depositRevolving": "true",
+      "depositCapOfInterest": "true",
+      "depositCode": "TD0T0PCP0T1C1M",
+      "depositCodeName": "Fixed interest deposit EUR",
+      "depositInterestPayment": "EOP",
+      "ownerCBSId": "9444500",
+      "accountName": "Depozit RON",
+      "accountOrder": 9
+    },
+    {
+      "@xsi:type": "pegasus.component.brdcustomer.depositaccount.bean.DepositAccountWithPreferences",
+      "accountNumber": "RO44BRDE450TD49327324500",
+      "accountNumberIban": "RO44BRDE450TD49327324500",
+      "accountType": "Depozit 1000-RON",
+      "accountTypeId": "Depozit 1000-RON",
+      "customerId": "160",
+      "currency": "RON",
+      "availableBalance": 1000.0,
+      "bookedBalance": 1000.0,
+      "accountOpeningDate": "2014-09-15",
+      "closed": false,
+      "blocked": false,
+      "activityList": [
+        "Q"
+      ],
+      "enabled": true,
+      "depositSourceAccount": "NA",
+      "depositMaturityCount": 30,
+      "depositInterestRate": 3.4,
+      "depositInterestType": "true",
+      "depositDueDate": "2013-07-03",
+      "depositPeriodStartDate": "2013-06-03",
+      "depositPeriodEndDate": "2013-07-03",
+      "depositRevolving": "true",
+      "depositCapOfInterest": "true",
+      "depositCode": "TD0T0PCP0T1C1M",
+      "depositCodeName": "Deposit 5000 RON",
+      "depositInterestPayment": "EOP",
+      "ownerCBSId": "9444500",
+      "accountName": "Depozit la termen 8",
+      "accountOrder": 10
+    }
+  ],
+  "header": {
+    "token": "vuWxsc/fid2ndedjppZmpg==",
+    "sessionTimeout": 600
+  }
+}

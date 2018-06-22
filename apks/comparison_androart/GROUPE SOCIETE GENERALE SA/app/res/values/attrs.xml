@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="actionbarCompatTitleStyle" format="reference" />
+    <attr name="actionbarCompatItemStyle" format="reference" />
+    <attr name="actionbarCompatItemHomeStyle" format="reference" />
+    <attr name="googlemapsButtonStyle" format="reference" />
+    <attr name="currencyBoxStyle" format="reference" />
+    <attr name="calcButtonStyle" format="reference" />
+    <attr name="radioGroupStyle" format="reference" />
+    <attr name="radioButtonStyle" format="reference" />
+    <attr name="pinDisplayStyle" format="reference" />
+    <attr name="pinDrawerStyle" format="reference" />
+    <attr name="tabletTabStyle" format="reference" />
+    <attr name="tabletToolbarItemSeparatorStyle" format="reference" />
+    <attr name="phoneTabStyle" format="reference" />
+    <attr name="phoneToolbarFadingEdgeColor" format="color" />
+    <attr name="phoneToolbarItemSeparatorStyle" format="reference" />
+    <attr name="phoneToolbarBackground" format="reference" />
+    <attr name="fragmentBackground" format="reference" />
+    <attr name="tabletPaneSeparator" format="reference" />
+    <attr name="tabletPaneSeparatorWidth" format="dimension" />
+    <attr name="numpadButtonStyle" format="reference" />
+    <attr name="numpadBackspaceStyle" format="reference" />
+    <attr name="slidingDrawerTopHandleStyle" format="reference" />
+    <attr name="slidingDrawerBottomHandleStyle" format="reference" />
+    <attr name="handle" format="reference" />
+    <attr name="content" format="reference" />
+    <attr name="direction">
+        <enum name="bottomToTop" value="1" />
+        <enum name="leftToRight" value="2" />
+        <enum name="rightToLeft" value="0" />
+        <enum name="topToBottom" value="3" />
+    </attr>
+    <attr name="bottomOffset" format="dimension" />
+    <attr name="topOffset" format="dimension" />
+    <attr name="allowSingleTap" format="boolean" />
+    <attr name="animateOnClick" format="boolean" />
+    <attr name="showAnimation" format="reference" />
+    <attr name="hideAnimation" format="reference" />
+    <attr name="maxWidth" format="dimension" />
+    <attr name="maxHeight" format="dimension" />
+    <attr name="numberTextStyle" format="reference" />
+    <attr name="lettersTextStyle" format="dimension" />
+    <attr name="tryToShowLetters" format="boolean" />
+    <attr name="numberLettersDistance" format="dimension" />
+    <attr name="cellSpace" format="dimension" />
+    <attr name="numbersArray" format="reference" />
+    <attr name="lettersArray" format="reference" />
+    <attr name="numButtonStyle" format="reference" />
+    <attr name="digitBackground" format="reference" />
+    <attr name="asteriskImage" format="reference" />
+    <attr name="digitMargin" format="dimension" />
+    <attr name="mapType">
+        <enum name="hybrid" value="4" />
+        <enum name="none" value="0" />
+        <enum name="normal" value="1" />
+        <enum name="satellite" value="2" />
+        <enum name="terrain" value="3" />
+    </attr>
+    <attr name="cameraBearing" format="float" />
+    <attr name="cameraTargetLat" format="float" />
+    <attr name="cameraTargetLng" format="float" />
+    <attr name="cameraTilt" format="float" />
+    <attr name="cameraZoom" format="float" />
+    <attr name="uiCompass" format="boolean" />
+    <attr name="uiRotateGestures" format="boolean" />
+    <attr name="uiScrollGestures" format="boolean" />
+    <attr name="uiTiltGestures" format="boolean" />
+    <attr name="uiZoomControls" format="boolean" />
+    <attr name="uiZoomGestures" format="boolean" />
+    <attr name="useViewLifecycle" format="boolean" />
+    <attr name="zOrderOnTop" format="boolean" />
+</resources>

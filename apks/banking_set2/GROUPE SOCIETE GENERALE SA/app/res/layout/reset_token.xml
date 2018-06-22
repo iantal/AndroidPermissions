@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/pagePadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rowPaddingBig" android:text="@string/native_settings_token_reset_confirmdialogmessage" style="@style/pageDescription" />
+    <Button android:id="@id/reset_token_btn" android:text="@string/native_settings_token_reset_confirmdialogbutton" style="@style/actionButton" />
+</LinearLayout>

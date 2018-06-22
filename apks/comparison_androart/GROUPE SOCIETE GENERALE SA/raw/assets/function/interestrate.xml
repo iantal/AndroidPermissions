@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../xsd/nativefunctiondescriptor.xsd">
+	<name>interestrate</name>
+	<views>
+		<view>
+		    <title>native_bankingapp_brd_function_interestrate_title</title>
+			<url>view://brd/bankingapp/function/interestrate/interestrate</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/pEtkW57r0nINXsdj.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>never</showToolbar>
+			<tabletApp>
+				<moveToLeft>true</moveToLeft>
+			</tabletApp>
+		</view>
+		<view>
+		    <title>native_bankingapp_brd_function_interestrate_title</title>
+		    <url>view://brd/bankingapp/function/interestrate/historicalinterestrate</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/3E5m6elfN7MbYkDa.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>never</showToolbar>
+			<tabletApp>
+				<moveToLeft>true</moveToLeft>
+			</tabletApp>
+		</view>
+	</views>
+</function>

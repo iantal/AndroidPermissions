@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:background="?dsq_amount_chooser_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/done_cancel_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/keyboard_layout">
+        <include layout="@layout/actionbar_done_cancel_layout" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/keyboard_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/currency_layout" android:layout_below="@id/screen_layout" />
+    <FrameLayout android:id="@id/currency_layout" android:background="?amount_chooser_ccy_list" android:layout_width="80.0dip" android:layout_height="@dimen/amount_keyboard_height" android:layout_above="@id/done_cancel_layout" android:layout_alignTop="@id/keyboard_layout" android:layout_alignParentRight="true" />
+    <FrameLayout android:id="@id/screen_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

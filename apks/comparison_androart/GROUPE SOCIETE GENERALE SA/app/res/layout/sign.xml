@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:id="@id/fieldsTable" android:padding="@dimen/pagePadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+        <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        <ind.token.android.core.ui.widget.AuthCodeDisplay android:id="@id/passwordText" android:layout_marginBottom="@dimen/rowPadding" style="@style/passwordLayout" />
+        <Button android:id="@id/generateButton" android:layout_marginBottom="@dimen/rowPadding" android:text="@string/commonGenerate" style="@style/generateButton" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/security_message" />
+    </TableLayout>
+</ScrollView>

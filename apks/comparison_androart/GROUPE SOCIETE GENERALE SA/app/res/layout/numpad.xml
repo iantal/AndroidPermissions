@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:numpad="http://schemas.android.com/apk/res-auto">
+    <ind.bankingapp.android.framework.view.numpad.NumpadButton android:layout_width="fill_parent" android:layout_height="fill_parent" style="?numpadButtonStyle" />
+    <ind.bankingapp.android.framework.view.numpad.NumpadButton android:layout_width="fill_parent" android:layout_height="fill_parent" style="?numpadButtonStyle" />
+    <ind.bankingapp.android.framework.view.numpad.NumpadButton android:layout_width="fill_parent" android:layout_height="fill_parent" style="?numpadButtonStyle" />
+    <ind.bankingapp.android.framework.view.numpad.NumpadButton android:layout_width="fill_parent" android:layout_height="fill_parent" style="?numpadButtonStyle" />
+    <ind.bankingapp.android.framework.view.numpad.NumpadButton android:layout_width="fill_parent" android:layout_height="fill_parent" style="?numpadButtonStyle" />
+    <ind.bankingapp.android.framework.view.numpad.NumpadButton android:layout_width="fill_parent" android:layout_height="fill_parent" style="?numpadButtonStyle" />
+    <ind.bankingapp.android.framework.view.numpad.NumpadButton android:layout_width="fill_parent" android:layout_height="fill_parent" style="?numpadButtonStyle" />
+    <ind.bankingapp.android.framework.view.numpad.NumpadButton android:layout_width="fill_parent" android:layout_height="fill_parent" style="?numpadButtonStyle" />
+    <ind.bankingapp.android.framework.view.numpad.NumpadButton android:layout_width="fill_parent" android:layout_height="fill_parent" style="?numpadButtonStyle" />
+    <View android:id="@id/numpad_empty_cell" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <ind.bankingapp.android.framework.view.numpad.NumpadButton android:layout_width="fill_parent" android:layout_height="fill_parent" style="?numpadButtonStyle" />
+    <ImageButton android:id="@id/numpad_clear" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?numpadBackspaceStyle" />
+</merge>

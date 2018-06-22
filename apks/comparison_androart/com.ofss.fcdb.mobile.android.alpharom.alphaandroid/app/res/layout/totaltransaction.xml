@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/totaltransactionmainlayout" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/nuhlayout1" android:background="@color/alpha_light_grey" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/relativelayouttotaltransactiontitle" android:background="@drawable/titlebg" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/totaltransactionOracleLogo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:background="@drawable/abrlogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+            <ImageButton android:id="@id/btnH1button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_margin="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/transactionheadingpane2" android:background="@color/alpha_blue" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:scaleType="fitXY">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/lblTotaltransactionTitle" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/totaltransactionh2layout" android:background="@color/white" android:paddingLeft="5.0sp" android:layout_width="fill_parent" android:layout_height="80.0dip">
+            <ImageView android:id="@id/imgPig" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="117.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/alpha_blue" android:gravity="center" android:id="@id/lblCustomerName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="40.0dip" android:singleLine="false" />
+            <ImageButton android:id="@id/totaltransactiongraph" android:background="@drawable/pie" android:visibility="invisible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+            <RelativeLayout android:id="@id/totaltransactionH2ButtonContainer" android:paddingTop="3.0dip" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                <ImageButton android:id="@id/totaltransactionH2Button1" android:background="@color/transparent" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/camera" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                <ImageButton android:id="@id/totaltransactionH2Button2" android:background="@color/transparent" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/graph_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="65.0dip" android:layout_below="@id/nuhlayout1">
+        <LinearLayout android:id="@id/totaltransactionListMainLayout" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip">
+                <LinearLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.iflex.fcat.mobile.android.infra.PullToReLoad android:id="@id/lstTotal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip" android:cacheColorHint="@color/transparent" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/graph_container_inner" android:background="@color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="65.0dip" android:layout_below="@id/nuhlayout1">
+        <ScrollView android:id="@id/pichartscrollview" android:background="@drawable/transparent_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="vertical" android:id="@id/scrollinnerview" android:background="@drawable/transparent_background" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@color/white" android:id="@id/graph_close" android:background="@drawable/minimize" android:paddingLeft="15.0dip" android:paddingTop="2.0dip" android:paddingRight="15.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="4.0dip" android:layout_alignParentRight="true" />
+                <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/piechart" android:visibility="invisible" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" />
+                <RelativeLayout android:orientation="vertical" android:id="@id/piechartdetails" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/piechart">
+                    <TableLayout android:id="@id/TableLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+                        <TableRow android:id="@id/TableRow01" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="20.0sp" android:id="@id/rect" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <TextView android:textSize="20.0sp" android:id="@id/TextView01" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </TableRow>
+                    </TableLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ad_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginRight="55.0dip" android:layout_alignParentBottom="true">
+        <include android:id="@id/transactionfooter" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/menu_footer" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/favLayout" android:background="@drawable/menutop" android:layout_width="55.0dip" android:layout_height="60.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <Button android:gravity="center_horizontal" android:id="@id/totaltransactionFavoritesButton" android:background="@drawable/f1" android:padding="5.0dip" android:drawingCacheQuality="high" android:layout_width="60.0dip" android:layout_height="25.0dip" android:layout_marginTop="10.0dip" />
+        <TextView android:textSize="10.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/favtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/fav" android:maxLines="1" android:lines="1" android:singleLine="false" />
+    </LinearLayout>
+    <include android:id="@id/transactionmenufooterpopup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/menu_footer_popup" />
+</RelativeLayout>

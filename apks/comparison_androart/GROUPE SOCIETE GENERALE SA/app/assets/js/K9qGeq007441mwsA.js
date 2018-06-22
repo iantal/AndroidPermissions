@@ -1,0 +1,1 @@
+Class.ns("Functions.transactionhistory");Functions.transactionhistory.TransactionHistoryUtil=function(){return{IMMEDIATE_SEARCH:"IMMEDIATE_SEARCH",IMMEDIATE_SEARCH_FREETEXT:"FreeText",IMMEDIATE_SEARCH_TYPE:"Type"};}();

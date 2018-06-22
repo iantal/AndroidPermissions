@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/splash" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/splash_layout" />
+    <RelativeLayout android:id="@id/moon_explorer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include android:id="@id/top" layout="@layout/top_include" />
+        <RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top" />
+        <include android:id="@id/waitting_layout" android:layout_centerInParent="true" layout="@layout/waitting" />
+    </RelativeLayout>
+</merge>

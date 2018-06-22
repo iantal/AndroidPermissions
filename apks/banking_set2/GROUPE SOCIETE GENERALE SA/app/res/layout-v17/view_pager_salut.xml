@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout1" android:background="@color/bg_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tutorial_header">
+            <ImageView android:layout_gravity="center" android:id="@id/explainImage" android:layout_width="220.0dip" android:layout_height="220.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="50.0dip" android:src="@drawable/tutorial_salut" android:layout_centerHorizontal="true" android:layout_marginEnd="50.0dip" />
+            <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="left" android:id="@id/tutorialTitle" android:paddingLeft="50.0dip" android:paddingTop="50.0dip" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/native_tutorial_salute_title" android:layout_below="@id/explainImage" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="17.0dip" android:textColor="@android:color/black" android:gravity="left" android:id="@id/tutorialText" android:paddingLeft="50.0dip" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/native_tutorial_salute_description" android:layout_below="@id/tutorialTitle" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

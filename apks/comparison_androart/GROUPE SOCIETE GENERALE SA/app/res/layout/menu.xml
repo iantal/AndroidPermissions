@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/pagePadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/otpButton" android:layout_marginBottom="@dimen/rowPaddingBig" android:drawableLeft="@drawable/icon36_otp" style="@style/generateMenuButton" />
+        <Button android:id="@id/challengeButton" android:layout_marginBottom="@dimen/rowPaddingBig" android:drawableLeft="@drawable/icon36_response" style="@style/generateMenuButton" />
+        <Button android:id="@id/signButton" android:layout_marginBottom="@dimen/rowPaddingBig" android:drawableLeft="@drawable/icon36_sign" style="@style/generateMenuButton" />
+        <Button android:id="@id/changePinButton" android:layout_marginBottom="@dimen/rowPaddingBig" android:drawableLeft="@drawable/pin_stlye_icon" style="@style/generateMenuButton" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/security_message" />
+    </LinearLayout>
+</ScrollView>

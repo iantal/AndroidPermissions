@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/menu_layout" android:background="@drawable/fwr_menu_bg" android:paddingTop="@dimen/dsq_drawer_menu_top_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.emilsjolander.components.StickyListHeaders.StickyListHeadersListView android:scrollbarSize="8.0dip" android:layout_gravity="bottom" android:id="@id/list" android:background="@android:color/transparent" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="145.0dip" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="1.0dip" android:choiceMode="singleChoice" android:overScrollMode="never" slh:areHeadersSticky="false" style="@style/DSQMenuListView" scrollbarStyle="outsideOverlay" xmlns:slh="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/logoutImageView" android:background="@color/transparent" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="20.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <ImageView android:layout_gravity="top" android:id="@id/imageview_header" android:layout_width="fill_parent" android:layout_height="120.0dip" android:src="@drawable/header_big_logo_fwr" />
+    </RelativeLayout>
+</FrameLayout>

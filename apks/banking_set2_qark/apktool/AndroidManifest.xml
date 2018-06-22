@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="3500" android:versionName="3.5.0" package="com.advantage.RaiffeisenBank" platformBuildVersionCode="24" platformBuildVersionName="7.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="23" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <permission android:name="com.advantage.RaiffeisenBank.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.advantage.RaiffeisenBank.permission.MAPS_RECEIVE" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:glEsVersion="0x20000" android:required="true" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="true" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application android:theme="@style/Theme.DSQStyled" android:label="@string/app_name" android:icon="@drawable/rzb_icon" android:name="com.thinkdesquared.banking.core.SmartMobileApplication" android:allowBackup="false" android:logo="@drawable/rzb_icon" android:largeHeap="true">
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCiQOK8rlRntirErn5qBwa9idf5SuZgVt0" />
+        <activity android:name="com.thinkdesquared.banking.settings.SettingsActivity" />
+        <activity android:theme="@style/Theme.DSQStyled.Settings.Material" android:name="com.thinkdesquared.banking.settings.SettingsWithPreferenceFragmentActivity" />
+        <activity android:name="com.thinkdesquared.banking.LoginActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.thinkdesquared.banking.barcodes.ZBarScannerActivity" android:screenOrientation="landscape" />
+        <activity android:label="@string/app_name" android:name="com.thinkdesquared.banking.HomeActivity" />
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.thinkdesquared.banking.ShowValidationDialogActivity" />
+        <activity android:name="com.thinkdesquared.banking.money.MyPortfolioActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan" />
+        <activity android:label="@string/title_account_details" android:name="com.thinkdesquared.banking.money.AccountInfoActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/title_account_statement" android:name="com.thinkdesquared.banking.money.AccountStatementActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog_Account_Statement" android:name="com.thinkdesquared.banking.money.AccountStatementFilterActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/title_create_current_savings_account" android:name="com.thinkdesquared.banking.money.CreateAccountActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/title_active_transfers" android:name="com.thinkdesquared.banking.money.ActiveTransfersActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/title_direct_debits" android:name="com.thinkdesquared.banking.money.DirectDebitsActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/title_create_mandate" android:name="com.thinkdesquared.banking.money.mandates.CreateMandateActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/title_list_mandates" android:name="com.thinkdesquared.banking.money.mandates.ListMandatesActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="" android:name="com.thinkdesquared.banking.money.mandates.ViewMandateActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="" android:name="com.thinkdesquared.banking.money.DeleteRejectContainerActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/title_transfer_own" android:name="com.thinkdesquared.banking.transfers.TransferOwnActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:label="@string/title_third_party_transfer" android:name="com.thinkdesquared.banking.transfers.payments.IntrabankPaymentActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:label="@string/title_third_party_transfer" android:name="com.thinkdesquared.banking.transfers.payments.DomesticPaymentActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:label="@string/title_third_party_transfer" android:name="com.thinkdesquared.banking.transfers.payments.InternationalPaymentActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:label="@string/title_bill_payment" android:name="com.thinkdesquared.banking.transfers.BillPaymentActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:label="@string/title_all_payment" android:name="com.thinkdesquared.banking.transfers.AllPaymentsActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:label="" android:name="com.thinkdesquared.banking.transfers.mobiletopup.MobileTopUpActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:name="com.thinkdesquared.banking.transfers.mobiletopup.MobileTopUpAmountActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.thinkdesquared.banking.choosers.templates.TemplatesChooserActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:label="" android:name="com.thinkdesquared.banking.transfers.treasury.CreateTreasuryActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:name="com.thinkdesquared.banking.transfers.treasury.TreasuryPaymentSearchActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:name="com.thinkdesquared.banking.transfers.treasury.TreasuryPaymentBeneficiarySearchActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:name="com.thinkdesquared.banking.transfers.payments.PaymentReasonCodeSearchActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:label="@string/title_change_credentials" android:name="com.thinkdesquared.banking.ChangeCredentialsActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:label="@string/title_change_credentials" android:name="com.thinkdesquared.banking.SessionExpiredActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:name="com.thinkdesquared.banking.choosers.ChooseAccountProductActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:name="com.thinkdesquared.banking.choosers.ChooseAmount_ContainerActivity" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:name="com.thinkdesquared.banking.services.OnlineActivityFilterActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:name="com.thinkdesquared.banking.money.AccountHistoryFiltersContainerActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:name="com.thinkdesquared.banking.choosers.ChooseCompanyActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:name="com.thinkdesquared.banking.money.mandates.MandateListFiltersContainerActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/title_buy_investment_units" android:name="com.thinkdesquared.banking.investments.BuyInvestmentUnitsActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:label="@string/title_create_time_deposit" android:name="com.thinkdesquared.banking.investments.CreateTimeDepositActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:label="@string/title_redeem_time_deposit" android:name="com.thinkdesquared.banking.investments.RedeemTimeDepositActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:label="@string/title_create_time_deposit" android:name="com.thinkdesquared.banking.investments.TransferFromTimeAccountActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan" />
+        <activity android:label="@string/title_create_time_deposit" android:name="com.thinkdesquared.banking.investments.TransferToTimeAccountActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan" />
+        <activity android:label="@string/title_exchange_rates" android:name="com.thinkdesquared.banking.investments.ExchangeRatesActivity" />
+        <activity android:label="@string/title_interest_rates" android:name="com.thinkdesquared.banking.investments.InterestRatesHasOneFragmentActivity" />
+        <activity android:label="@string/title_transfer_to_time_account" android:name="com.thinkdesquared.banking.investments.AllTransferToTimeActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan" />
+        <activity android:label="@string/title_online_activity" android:name="com.thinkdesquared.banking.services.OnlineActivityActivity" android:configChanges="locale|orientation|screenSize" />
+        <activity android:label="@string/title_contact_information" android:name="com.thinkdesquared.banking.services.ContactInformationActivity" />
+        <activity android:label="@string/title_about_smart_mobile" android:name="com.thinkdesquared.banking.services.AboutSmartMobileActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/title_manageDevices" android:name="com.thinkdesquared.banking.services.ManageDevicesActivity" android:configChanges="locale|orientation|screenSize" android:windowSoftInputMode="adjustNothing|stateUnchanged" />
+        <activity android:label="" android:name="com.thinkdesquared.banking.services.securemessages.SendSecureMessageActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/title_messages" android:name="com.thinkdesquared.banking.services.securemessages.SecureMessageInboxActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan" />
+        <activity android:label="@string/title_view_message" android:name="com.thinkdesquared.banking.services.securemessages.SecureMessageInboxViewMessageActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/title_change_username" android:name="com.thinkdesquared.banking.services.ChangeUsernameActivity" android:configChanges="screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:label="@string/title_change_password" android:name="com.thinkdesquared.banking.services.ChangePasswordActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:label="@string/title_locator" android:name="com.thinkdesquared.banking.services.LocatorWithMapFragmentActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:label="@string/title_locator_poi_details" android:name="com.thinkdesquared.banking.services.LocatorPoiDetailsActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:label="@string/title_locator_poi_search" android:name="com.thinkdesquared.banking.services.LocatorPoiSearchActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/Theme.DSQStyled.Dialog" android:name="com.thinkdesquared.banking.WebViewActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/title_cyber_receipt" android:name="com.thinkdesquared.banking.ViewCyberReceiptActivity" android:configChanges="locale|orientation|screenSize" />
+        <activity android:label="@string/title_account_statement" android:name="com.thinkdesquared.banking.ViewAccountStatementActivity" android:configChanges="orientation|screenSize" />
+        <activity android:name="com.thinkdesquared.banking.services.ManageDeviceChangePinActivity" />
+        <activity android:name="com.thinkdesquared.banking.result.ResultActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name="com.thinkdesquared.banking.rememberme.RememberMeLoginActivity" android:configChanges="orientation|screenSize" />
+        <activity android:name="com.thinkdesquared.banking.rememberme.RememberMeLoginCheckProfileActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Theme.DSQStyled.Transparent.Dialog.NoDismiss" android:name="com.thinkdesquared.banking.services.ShowDeviceRegistrationPromptActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Theme.DSQStyled.Transparent.Dialog.NoDismiss" android:name="com.thinkdesquared.banking.services.ShowSetupFingerprintPromptActivity" android:configChanges="orientation|screenSize" />
+        <activity android:label="@string/title_manageWidgets" android:name="com.thinkdesquared.banking.widget.ManageWidgetsActivity" android:configChanges="locale|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_widget_configuration" android:name="com.thinkdesquared.banking.widget.RZBAppWidgetConfigurationActivity" android:launchMode="singleTop" android:configChanges="locale|orientation|screenSize" />
+        <service android:name="com.thinkdesquared.banking.widget.content.WidgetViewsService" android:permission="android.permission.BIND_REMOTEVIEWS" />
+        <receiver android:name="com.thinkdesquared.banking.widget.content.RZBAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget" />
+        </receiver>
+        <uses-library android:name="com.google.android.maps" android:required="false" />
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:multiprocess="false" android:authorities="@string/authority">
+            <grant-uri-permission android:pathPrefix="@string/attachments_prefix_pattern" />
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+        </provider>
+        <service android:name="com.thinkdesquared.banking.widget.services.WidgetGetDataService" android:enabled="true" android:exported="true" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    </application>
+</manifest>

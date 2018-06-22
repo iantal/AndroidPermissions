@@ -1,1 +1,13 @@
-{"findings": [{"title": "Load cleartext content", "stat": "high", "description": "", "recommendation": "", "evidence": ["/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/at_spardat_bcrmobile/app/smali/at/spardat/bcrmobile/activity/click24/Click24AppBrowserActivity.smali loadUrl"]}]}
+{
+  "findings": [
+    {
+      "title": "Load cleartext content",
+      "stat": "high",
+      "description": "",
+      "recommendation": "",
+      "evidence": [
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_androart/at_spardat_bcrmobile/app/smali/at/spardat/bcrmobile/activity/click24/Click24AppBrowserActivity.smali loadUrl"
+      ]
+    }
+  ]
+}

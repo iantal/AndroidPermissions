@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/attachmentType" android:layout_width="35.0dip" android:layout_height="40.0dip" />
+    <TextView android:gravity="center_vertical" android:id="@id/attachmentName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="120.0dip" android:layout_toRightOf="@id/attachmentType" />
+    <Button android:id="@id/attachmentUpload" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/attachmentName" />
+</RelativeLayout>

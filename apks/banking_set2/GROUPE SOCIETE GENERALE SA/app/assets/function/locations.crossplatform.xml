@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../xsd/nativefunctiondescriptor.xsd">
+
+	<name>locations</name>
+	<title>native_locations_title</title>
+	<views>
+		<view>
+			<title>native_bankingapp_brd_function_locations_title</title>
+			<url>view://bankingapp/function/locations/locationdetails</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/pUHHKLc12vFGqV9v.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+		</view>
+		<view>
+			<title>native_bankingapp_brd_function_locations_title</title>
+			<url>view://ind/bankingapp/function/location/listview</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/0LxymDX3u4srGYZb.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+		</view>
+	</views>
+</function>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/FilterLayoutListItems" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/filterlistitemradiobutton" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:button="@drawable/radio_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/alpha_blue" android:id="@id/filterlistitemlabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginRight="30.0dip" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/filterlistitemselectable" android:background="@drawable/discloser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:background="@drawable/onealphadarkgrey" android:layout_width="1.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rel2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rel1">
+        <TextView android:textColor="@color/alpha_blue" android:id="@id/filterlistitemselectedText1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65.0dip" />
+    </RelativeLayout>
+    <ImageView android:background="@drawable/onealphadarkgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <TextView android:id="@id/filterlistitemhiddenparams" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <TextView android:id="@id/filterlistitemsparams" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <TextView android:id="@id/filterlistitemsparamValue" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <TextView android:id="@id/filterlistitemdatatype" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="@string/radio" />
+</RelativeLayout>

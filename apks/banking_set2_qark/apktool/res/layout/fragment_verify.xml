@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/loading_and_error_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="center" android:id="@id/loading_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/include_progress_bar" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/error_layout" android:background="@drawable/rounded_corners_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="?dsq_error_layout_margin_bottom_for_footer_logo">
+            <TextView android:textColor="?dsq_portfolio_text_color_secondary" android:gravity="center" android:layout_gravity="center" android:id="@id/error_message" android:background="?dsq_list_selector" android:padding="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/wrapperScrollView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/container_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/main_linearLayout" android:background="@drawable/rounded_corners_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableLayout android:id="@id/list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <include android:id="@id/warning_message_layout" android:visibility="gone" layout="@layout/cell_style_create_account_warning_message" />
+                <LinearLayout android:orientation="vertical" android:id="@id/authorization_layout" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-16.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/warning_message_layout_section2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:visibility="visible" layout="@layout/separator_style_simple" />
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip">
+                        <include layout="@layout/cell_style_warning_message" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <include android:id="@id/verify_button" layout="@layout/submit_button_layout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

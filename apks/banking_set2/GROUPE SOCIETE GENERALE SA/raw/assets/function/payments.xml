@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../xsd/nativefunctiondescriptor.xsd">
+
+	<name>payments</name>
+	<views>
+		<view>	<!-- Payment method selector page -->
+			<url>view://brd/bankingapp/function/payments/payments</url>
+			<implementationType>JS</implementationType>
+			<implementation>js/ZwsvGEQJwyIABaNH.js</implementation>
+			<htmlTemplate>template/functiontemplate.html</htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+			</contextMenu>
+			<showToolbar>true</showToolbar>
+			<tabletApp>
+				<moveToLeft>true</moveToLeft>
+			</tabletApp>			
+		</view>
+	</views>
+</function>

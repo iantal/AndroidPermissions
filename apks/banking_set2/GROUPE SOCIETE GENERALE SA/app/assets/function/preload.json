@@ -1,0 +1,562 @@
+{
+  "success": true,
+  "data": {
+    "actionData": [
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "domestictransfer/sign",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "account_overview/query",
+        "enabled": true,
+        "text": "pegasus.mobilegateway.menu:AccountOverview"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "loanlist/manage"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "depositterminate/create",
+        "enabled": true,
+        "text": "pegasus.mobilegateway.menu:DepositTerminate"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "bumptransferreceive/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "splitbilltransfer/book",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "opensavingsaccount/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "investmentfund_list/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "investmentfund_buy/book",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "cards/query",
+        "text": "pegasus.mobilegateway.menu:Cards"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "welcome/page",
+        "enabled": true,
+        "text": "pegasus.mobilegateway.func.welcome:welcome"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "investmentfund_sell/book",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "mailbox/view",
+        "enabled": true,
+        "text": "pegasus.mobilegateway.menu:Mailbox"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "loancalculator/manage"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "transactionmanagement/history",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "homescreen/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "investmentfund_buy/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "domestictransfer/book",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "internaltransfer/create",
+        "enabled": true,
+        "text": "pegasus.mobilegateway.menu:InternalTransfer"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "internationaltransferoneshot/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "payments/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "foreigntransfer/create",
+        "text": "pegasus.mobilegateway.menu:ForeignTransfer"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "activityhistory/search",
+        "enabled": true,
+        "text": "pegasus.intranet.menu:ActivityHistory"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "dummy/dummyfunction",
+        "text": "pegasus.intranet.menu:DummyFunction"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "payment2phonetransfer/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "splitbilltransfer/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "westernunion_status/search"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "westernunion_receive/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "requestmoneytransfer/sign",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "devicesmanagement/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "internationaltransferTemplate/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "depositcreate/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "transactionspotter/query",
+        "enabled": true,
+        "text": "pegasus.mobilegateway.menu:TransactionSpotter"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "loanlist/view",
+        "enabled": true,
+        "text": "pegasus.mobilegateway.menu:LoanList"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "payment2phonetransfer/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "interestrate/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "deposit/create",
+        "enabled": true,
+        "text": "pegasus.mobilegateway.menu:Deposit"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "westernunion/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "depositcreate/create",
+        "enabled": true,
+        "text": "pegasus.mobilegateway.menu:DepositCreate"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "openaccount/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "depositcreate/sign",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "westernunion_receive/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "transactionmanagement/manage",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "investmentfund_overview/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "billpayment/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "depositlist/view",
+        "enabled": true,
+        "text": "pegasus.mobilegateway.menu:DepositList"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "requestmoneytransfer/book",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "accountpreferences/modify",
+        "enabled": true,
+        "text": "pegasus.mobilegateway.menu:AccountPreferences"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "payment2phonetransfer/sign",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "transfer/create",
+        "enabled": true,
+        "text": "pegasus.mobilegateway.menu:Transfer"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "bumptransfersend/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "loancalculator/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "error/show",
+        "text": "error",
+        "params": {
+          "param": [
+            {
+              "key": "Error",
+              "value": "Error"
+            }
+          ]
+        }
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "password/change",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "openaccount/sign",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "westernunion_receive/sign",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "internaltransfer/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "billpayment/sign",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "depositterminate/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "investmentfund_sell/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "authtest/query",
+        "text": "pegasus.mobilegateway.menu:AuthTest"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "qrtransferreceive/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "westernunion/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "investmentfund_overview/query"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "bankfeed/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "depositcreate/book",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "mobiletransfer/create",
+        "text": "pegasus.mobilegateway.menu:MobileTransfer"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "domestictransfer/create",
+        "enabled": true,
+        "text": "pegasus.mobilegateway.menu:DomesticTransfer"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "pensionfundlist/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "internaltransfer/sign",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "messagingpreferences/edit",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "splitbilltransfer/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "depositterminate/sign",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "payment2phonetransfer/book",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "distributor/view",
+        "enabled": true,
+        "text": "pegasus.mobilegateway.menu:Distributor"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "opencurrentaccount/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "westernunion/sign",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "domestictransferoneshot/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "investmentfund_buy/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "openaccount/book",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "transactionmanagement/search",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "westernunion_receive/book",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "qrtransfersend/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "devicesmanagement/query"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "billpayment/book",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "investmentfund_sell/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "capselect/create",
+        "text": "pegasus.mobilegateway.function:CapSelect"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "statements/query",
+        "text": "pegasus.mobilegateway.menu:Statements"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "splitbilltransfer/sign",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "contacts/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "loan_overview/query",
+        "text": "pegasus.mobilegateway.menu:LoanOverview"
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "domestictransferTemplate/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "openaccount/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "domestictransfer/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "billpayment/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "investmentfund_buy/sign",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "myfinances/view",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "requestmoneytransfer/create",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "internaltransfer/book",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "investmentfund_sell/sign",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "depositterminate/book",
+        "enabled": true
+      },
+      {
+        "@xsi:type": "pegasus.framework.web.framework.api.bean.Action",
+        "id": "westernunion/book",
+        "enabled": true
+      }
+    ],
+    "currentCustomer": {
+      "@xsi:type": "pegasus.project.brd.component.brdsecurity.bean.BrdPrincipal",
+      "id": "160",
+      "name": "Daniela",
+      "loginId": "MBL_15508050",
+      "customerType": "1",
+      "customerStatus": "A",
+      "subscriptionPackageId": [
+        "13",
+        "21"
+      ],
+      "customerAddress": "STR STEFAN MIHAILEANU 32B, bl. 32B, et. 2, ap. 3, BUCURESTI, S2",
+      "statementTableIndexes": [
+        "13"
+      ]
+    },
+    "secureKey": "tVtWywpFh2lp0ASC3IH8SQ==",
+    "currentTrustee": {
+      "@xsi:type": "pegasus.component.security.bean.Principal",
+      "id": "160",
+      "name": "Daniela",
+      "loginId": "MBL_15508050"
+    }
+  },
+  "header": {
+    "token": "LTJhMl4ebWg7MUi385q4Ug==",
+    "sessionTimeout": 600
+  }
+}

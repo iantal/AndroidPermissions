@@ -1,0 +1,2297 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta charset="utf-8"/>
+  <title>
+   QARK Report
+  </title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Chart.js for charts -->
+  <script src="js/Chart.js/Chart.js">
+  </script>
+  <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+
+    <![endif]-->
+  <link href="css/styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="navbar navbar-inverse navbar-fixed-top gradient">
+   <div class="navbar-header">
+    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+     <span class="icon-bar">
+     </span>
+     <span class="icon-bar">
+     </span>
+     <span class="icon-bar">
+     </span>
+    </button>
+    <a class="navbar-brand" href="#">
+     QARK
+    </a>
+   </div>
+   <div class="collapse navbar-collapse">
+    <!--
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        -->
+   </div>
+   <!--/.nav-collapse -->
+  </div>
+  <!--/.navbar -->
+  <div class="row-offcanvas row-offcanvas-left">
+   <div class="sidebar-offcanvas" id="sidebar">
+    <div class="gradient2 col-md-12">
+     <h3>
+      Information
+     </h3>
+     <ul class="nav nav-pills nav-stacked">
+      <li class="active">
+       <a data-toggle="tab" href="#dashboard">
+        Dashboard
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#manifest">
+        Manifest
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#appcomponents">
+        App Components
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#webviews">
+        Web Views
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#x509">
+        X.509 Issues
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#filepermission">
+        File Permissions
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#crypto">
+        Crypto bugs
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#pendingintent">
+        Pending Intents
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#adbcommands">
+        ADB Commands
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#osbugs">
+        OS bugs
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#plugin">
+        Plugin Issues
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#parsingerrors">
+        Parsing Errors
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#about">
+        About
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="main">
+    <div class="col-md-12">
+     <p class="visible-xs">
+      <button class="btn btn-primary btn-xs" data-toggle="offcanvas" type="button">
+       <i class="glyphicon glyphicon-chevron-left">
+       </i>
+      </button>
+     </p>
+     <br/>
+     <div class="tab-content">
+      <div class="tab-pane active" id="dashboard">
+       <div class="row">
+        <div class="col-md-12">
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="well">
+          <div class="row">
+           <div class="col-lg-12">
+            <h2>
+             <strong>
+              STATIC CODE ANALYSIS RESULT
+             </strong>
+            </h2>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-6">
+            <h6>
+             <strong>
+              SOURCE:
+             </strong>
+             <strong>
+              <span id="apkpath">
+               <span>
+                /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile.apk
+               </span>
+              </span>
+             </strong>
+            </h6>
+            <h6>
+             <strong>
+              TOTAL FILES:
+             </strong>
+             <strong>
+              <span id="totalfiles">
+               <span>
+                2317
+               </span>
+              </span>
+             </strong>
+            </h6>
+            <h6>
+             <strong>
+              JAVA FILES:
+             </strong>
+             <strong>
+              <span id="javafiles">
+               <span>
+                1483
+               </span>
+              </span>
+             </strong>
+            </h6>
+            <h6>
+             <strong>
+              <span id="restorestats">
+               <span>
+                Restored 42 file(s) out of 46 corrupt file(s)
+               </span>
+              </span>
+             </strong>
+            </h6>
+           </div>
+           <div class="col-lg-6">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-12 col-sm-12">
+         <div class="well">
+          <div class="row">
+           <div class="col-lg-12">
+            <div class="container-fluid">
+             <div class="row">
+              <div class="col-xs-3 col-md-3">
+               <div class="panel status panel-danger">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="vulnerability_count">
+                  <div>
+                   2
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Potential Vulnerabilities
+                 </strong>
+                </div>
+               </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+               <div class="panel status panel-warning">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="warning_count">
+                  <div>
+                   4
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Warnings
+                 </strong>
+                </div>
+               </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+               <div class="panel status panel-success">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="information_count">
+                  <div>
+                   5
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Informational
+                 </strong>
+                </div>
+               </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+               <div class="panel status panel-info">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="debug_count">
+                  <div>
+                   231
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Debug
+                 </strong>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="manifest">
+       <div class="row">
+        <div class="col-md-12">
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12" id="manifest-issues">
+            <div class="badger-div badger-left badger-warning" data-badger="Warning">
+             <strong>
+              Backups enabled: Potential for data theft via local attacks via adb backup, if the device has USB debugging enabled (not common). More info: http://developer.android.com/reference/android/R.attr.html#allowBackup
+             </strong>
+             <ul>
+             </ul>
+            </div>
+            <pre id="rawmanifest"><code class="xml">&lt;?xml version="1.0" ?&gt;&lt;manifest android:versionCode="33" android:versionName="4.30" package="at.spardat.bcrmobile" platformBuildVersionCode="24" platformBuildVersionName="7.0" xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+    &lt;uses-sdk android:minSdkVersion="15" android:targetSdkVersion="25"/&gt;
+    &lt;uses-permission android:name="android.permission.INTERNET"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/&gt;
+    &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/&gt;
+    &lt;uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/&gt;
+    &lt;uses-permission android:name="android.permission.CAMERA"/&gt;
+    &lt;uses-permission android:name="android.permission.WAKE_LOCK"/&gt;
+    &lt;uses-feature android:name="android.hardware.camera" android:required="false"/&gt;
+    &lt;uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/&gt;
+    &lt;uses-feature android:name="android.hardware.camera.front" android:required="false"/&gt;
+    &lt;uses-feature android:name="android.hardware.camera.flash" android:required="false"/&gt;
+    &lt;uses-feature android:name="android.hardware.screen.landscape"/&gt;
+    &lt;uses-feature android:name="android.hardware.wifi" android:required="false"/&gt;
+    &lt;uses-feature android:name="android.hardware.touchscreen"/&gt;
+    &lt;supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/&gt;
+    &lt;application android:allowBackup="true" android:icon="@drawable/app_icon" android:label="@string/app_name" android:logo="@drawable/launcher_icon" android:name="at.spardat.bcrmobile.application.BaseApplication" android:theme="@style/Theme.NoTitleBar.BackgroundNull.Animated"&gt;
+        &lt;uses-library android:name="com.google.android.maps"/&gt;
+        &lt;provider android:authorities="at.spardat.bcrmobile.provider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider"&gt;
+            &lt;meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/&gt;
+        &lt;/provider&gt;
+        &lt;activity android:launchMode="singleTask" android:name="at.spardat.bcrmobile.activity.SplashActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.MAIN"/&gt;
+                &lt;category android:name="android.intent.category.LAUNCHER"/&gt;
+            &lt;/intent-filter&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.VIEW"/&gt;
+                &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+                &lt;category android:name="android.intent.category.BROWSABLE"/&gt;
+                &lt;data android:host="*" android:path="@string/app_linking_path" android:scheme="@string/app_linking_scheme"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+        &lt;activity android:configChanges="locale" android:name="at.spardat.bcrmobile.activity.AppDemoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.bcrlocation.ATMBranchLocationActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.login.LoginActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.login.RenewPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.login.ResetStaticPasswordActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.login.ResetStaticAliasActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.login.ResetStaticPasswordActivityNoLogin" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.login.ResetStaticAliasActivityNoLogin" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.infoservices.FXRateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.bcrlocation.ATMDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.bcrlocation.BranchDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.bcrlocation.BCRPartnerDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.contactemergencyservice.ContactEmergencyServiceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.AppBrowserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.apiversion.APIVersionUpdateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.currentaccount.CurrentAccountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.AccountsHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.loanaccount.LoanAccountActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.savingaccount.SavingAccountActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.assetmgmtaccount.AssetMgmtAccountActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.creditcardaccount.CreditCardAccountActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.creditcardaccount.CreditCardPayNowActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.PaymentAuthorizationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.PaymentStatusActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.currentaccount.TransactionSelectionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.PayeeIBANCheckActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.IBANPaymentValidationActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.savingaccount.CallDepositTransferActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale" android:name="at.spardat.bcrmobile.activity.click24.mailbox.MailBoxHomeActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale" android:name="at.spardat.bcrmobile.activity.click24.mailbox.MailBoxItemDetailActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale" android:name="at.spardat.bcrmobile.activity.click24.mailbox.MailBoxItemConfirmActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale" android:name="at.spardat.bcrmobile.activity.click24.mailbox.MailBoxAttachmentActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.foreignexchange.FXTargetAccountSelectionActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.foreignexchange.FXQuotationActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.foreignexchange.FXPaymentAuthorizationActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.PersonalTemplateActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.PersonalTemplateValidationActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentCategoriesActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentStandardTemplateListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentTemplateDetailActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.orderstatus.OrderStatusListActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.orderstatus.OrderStatusDetailActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.BillPaymentAccountListActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.foreignexchange.FXAccountListActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.IbanTermPersonalTemplatePaymentAccountListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="net.hockeyapp.android.UpdateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.DevelopmentOptionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.google.zxing.client.android.CaptureActivity" android:screenOrientation="landscape" android:stateNotNeeded="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="com.google.zxing.client.SCAN"/&gt;
+                &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+            &lt;/intent-filter&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.MAIN"/&gt;
+            &lt;/intent-filter&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="com.google.zxing.client.android.SCAN"/&gt;
+                &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+            &lt;/intent-filter&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.VIEW"/&gt;
+                &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+                &lt;category android:name="android.intent.category.BROWSABLE"/&gt;
+                &lt;data android:host="zxing.appspot.com" android:path="/scan" android:scheme="http"/&gt;
+            &lt;/intent-filter&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.VIEW"/&gt;
+                &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+                &lt;category android:name="android.intent.category.BROWSABLE"/&gt;
+                &lt;data android:host="www.google.com" android:path="/m/products/scan" android:scheme="http"/&gt;
+            &lt;/intent-filter&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.VIEW"/&gt;
+                &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+                &lt;category android:name="android.intent.category.BROWSABLE"/&gt;
+                &lt;data android:host="www.google.co.uk" android:path="/m/products/scan" android:scheme="http"/&gt;
+            &lt;/intent-filter&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.VIEW"/&gt;
+                &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+                &lt;category android:name="android.intent.category.BROWSABLE"/&gt;
+                &lt;data android:host="scan" android:path="/" android:scheme="zxing"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.google.zxing.client.android.BarcodeInputActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BarcodeTemplateListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BarcodeTemplateDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentPersonalTemplateListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentBookmarkTemplateListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BookmarkTemplateDetailActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.PersonalTemplateSavingActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.IBANPaymentPersonalTemplateListActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.offer.ProductOfferDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.offer.ProductOfferConfirmationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.Click24AppBrowserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.rapidtransfer.RapidTransferAccountListActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.rapidtransfer.RapidTransferPaymentActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.rapidtransfer.CurrentAccountRapidTransferPaymentActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.savingaccount.TermDepositClosingActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.TermDepositLiquidationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.TermDepositClosingStatusActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.OpenTermDepositActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.OpenTermDepositAcceptanceActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.OpenTermDepositStatusActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.settings.Click24SettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.settings.PhoneNumberSettingActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.settings.AliasNameSettingActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.settings.PasswordSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.settings.ModifyPasswordSettingActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:name="at.spardat.bcrmobile.activity.MaintenanceActivity" android:screenOrientation="portrait"/&gt;
+        &lt;service android:name="at.spardat.bcrmobile.service.APIVersionUpdateService"/&gt;
+        &lt;receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="com.android.vending.INSTALL_REFERRER"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/receiver&gt;
+        &lt;service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.CampaignTrackingService"/&gt;
+        &lt;meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/&gt;
+        &lt;activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/&gt;
+        &lt;activity android:label="@string/preferences_name" android:name="com.google.zxing.client.android.PreferencesActivity" android:stateNotNeeded="true"/&gt;
+        &lt;activity android:name="com.google.zxing.client.android.encode.EncodeActivity" android:stateNotNeeded="true"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="com.google.zxing.client.android.ENCODE"/&gt;
+                &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+            &lt;/intent-filter&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.SEND"/&gt;
+                &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+                &lt;data android:mimeType="text/x-vcard"/&gt;
+            &lt;/intent-filter&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.SEND"/&gt;
+                &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+                &lt;data android:mimeType="text/plain"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+        &lt;activity android:label="@string/sbc_name" android:name="com.google.zxing.client.android.book.SearchBookContentsActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="com.google.zxing.client.android.SEARCH_BOOK_CONTENTS"/&gt;
+                &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+        &lt;activity android:name="com.google.zxing.client.android.share.ShareActivity" android:screenOrientation="user" android:stateNotNeeded="true"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="com.google.zxing.client.android.SHARE"/&gt;
+                &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+        &lt;activity android:label="@string/history_title" android:name="com.google.zxing.client.android.history.HistoryActivity" android:stateNotNeeded="true"/&gt;
+        &lt;activity android:label="@string/bookmark_picker_name" android:name="com.google.zxing.client.android.share.BookmarkPickerActivity" android:stateNotNeeded="true"/&gt;
+        &lt;activity android:label="@string/app_picker_name" android:name="com.google.zxing.client.android.share.AppPickerActivity" android:stateNotNeeded="true"/&gt;
+        &lt;activity android:label="@string/menu_help" android:name="com.google.zxing.client.android.HelpActivity" android:screenOrientation="user" android:stateNotNeeded="true"/&gt;
+    &lt;/application&gt;
+&lt;/manifest&gt;</code></pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="appcomponents">
+       <div class="badger-div badger-left badger-warning" data-badger="Warning">
+        <strong>
+         The following receiver are exported, but not protected by any permissions. Failing to protect receiver could leave them vulnerable to attack by malicious apps. The receiver should be reviewed for vulnerabilities, such as injection and information leakage.
+        </strong>
+        <ul>
+         <li>
+          com.google.android.gms.analytics.CampaignTrackingReceiver
+         </li>
+        </ul>
+       </div>
+       <div class="badger-div badger-left badger-warning" data-badger="Warning">
+        <strong>
+         The following activity are exported, but not protected by any permissions. Failing to protect activity could leave them vulnerable to attack by malicious apps. The activity should be reviewed for vulnerabilities, such as injection and information leakage.
+        </strong>
+        <ul>
+         <li>
+          at.spardat.bcrmobile.activity.SplashActivity
+         </li>
+         <li>
+          com.google.zxing.client.android.book.SearchBookContentsActivity
+         </li>
+         <li>
+          com.google.zxing.client.android.encode.EncodeActivity
+         </li>
+         <li>
+          com.google.zxing.client.android.share.ShareActivity
+         </li>
+        </ul>
+       </div>
+       <div class="row">
+        <div class="col-md-12">
+         <!--<div class="well">-->
+         <!--<p>-->
+         <!--Issues related to Application Components.-->
+         <!--</p>-->
+         <!--</div>-->
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12" id="appcomponent-issues">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="webviews">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           A View that displays web pages. This class is the basis upon which you can roll your
+                                    own web browser or simply display some online content within your Activity. It uses
+                                    the WebKit rendering engine to display web pages and includes methods to navigate
+                                    forward and backward through a history, zoom in and out, perform text searches and
+                                    more. WebViews may be implemented using the "Android/AOSP" (WebViewClient) or 
+                                    Chrome (WebChromeClient) browsers.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="webview-issues-list">
+               <div class="badger-div badger-left badger-success" data-badger="Info">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/mailbox/MailBoxItemConfirmActivity.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     While not a vulnerability by itself, it appears this app has JavaScript enabled in this WebView. If this is not expressly necessary, you should disable it, to prevent the possibility of XSS (cross-site scripting) attacks. More info: http://developer.android.com/guide/practices/security.html. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/JS_WARNING.html
+                    </li>
+                    <li class="row-odd">
+                     BaseURL not redefined in this WebView.
+                    </li>
+                    <li class="row-even">
+                     File system access is enabled in this WebView. If untrusted data is used to specify the URL opened by this WebView, a malicious app or site may be able to read your app's private files, if it returns the response to them. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/FILE_SYS_WARN.html
+                    </li>
+                    <li class="row-odd">
+                     While not a vulnerability by itself, it appears this app does not explicitly disable Content Provider access from WebViews. If the WebViews take in untrusted input, this can allow for data theft. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/WV_CPA_WARNING.html
+                    </li>
+                    <li class="row-even">
+                     JavaScript running in a file scheme context can access content from any origin. This is an insecure default value for minSdkVersion &lt; 16 or may have been overridden (setAllowUniversalAccessFromFileURLs) in later versions. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/UNIV_FILE_WARNING.html
+                    </li>
+                    <li class="row-odd">
+                     addJavascriptInterface not used in this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/mailbox/MailBoxItemConfirmActivity.java
+                    </li>
+                    <li class="row-even">
+                     DOM Storage not enabled for this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/mailbox/MailBoxItemConfirmActivity.java
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="x509">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This is a list of all the findings related to Certificate validation.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="x509-issues-list">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="filepermission">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section lists any issues related to File permissions.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-10 col-sm-10">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="filepermission-issues-list">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="pendingintent">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section lists any issues related to pending intents.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="pendingintent-issues-list">
+               <div class="badger-div badger-left badger-danger" data-badger="Potential Vulnerability">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/cs.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     Implicit Intent: localIntent used to create instance of PendingIntent. A malicious application could potentially intercept, redirect and/or modify (in a limited manner) this Intent. Pending Intents retain the UID of your application and all related permissions, allowing another application to act as yours.  File: /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/cs.java More details: https://www.securecoding.cert.org/confluence/display/android/DRD21-J.+Always+pass+explicit+intents+to+a+PendingIntent
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="Potential Vulnerability">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/k.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     Implicit Intent: localIntent used to create instance of PendingIntent. A malicious application could potentially intercept, redirect and/or modify (in a limited manner) this Intent. Pending Intents retain the UID of your application and all related permissions, allowing another application to act as yours.  File: /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/k.java More details: https://www.securecoding.cert.org/confluence/display/android/DRD21-J.+Always+pass+explicit+intents+to+a+PendingIntent
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="crypto">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section lists any issues related to crypto vulnerabilities in the application
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-10 col-sm-10">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="crypto-issues-list">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="adbcommands">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           Until we perfect this, for manually testing, run the following command to see all the options and their meanings:
+           <kbd>
+            adb shell am
+           </kbd>
+           . Make sure to update qark frequently to get all the enhancements! You'll also find some good examples here:
+           <a href="http://xgouchet.fr/android/index.php?article42/launch-intents-using-adb">
+            http://xgouchet.fr/android/index.php?article42/launch-intents-using-adb
+           </a>
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="adbcommands-issues-list">
+               <div class="badger-div badger-left badger-danger" data-badger="receiver">
+                <kbd>
+                 adb shell am broadcast -a "com.android.vending.INSTALL_REFERRER" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SHARE" -n "at.spardat.bcrmobile/com.google.zxing.client.android.share.ShareActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SHARE" -n "at.spardat.bcrmobile/com.google.zxing.client.android.share.ShareActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SHARE" -n "at.spardat.bcrmobile/com.google.zxing.client.android.share.ShareActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SHARE" -n "at.spardat.bcrmobile/com.google.zxing.client.android.share.ShareActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.ENCODE" -n "at.spardat.bcrmobile/com.google.zxing.client.android.encode.EncodeActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.ENCODE" -n "at.spardat.bcrmobile/com.google.zxing.client.android.encode.EncodeActivity" --ez
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.ENCODE" -n "at.spardat.bcrmobile/com.google.zxing.client.android.encode.EncodeActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.ENCODE" -n "at.spardat.bcrmobile/com.google.zxing.client.android.encode.EncodeActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.ENCODE" -n "at.spardat.bcrmobile/com.google.zxing.client.android.encode.EncodeActivity" --ez
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.ENCODE" -n "at.spardat.bcrmobile/com.google.zxing.client.android.encode.EncodeActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.SEND" -n "at.spardat.bcrmobile/com.google.zxing.client.android.encode.EncodeActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.SEND" -n "at.spardat.bcrmobile/com.google.zxing.client.android.encode.EncodeActivity" --ez
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.SEND" -n "at.spardat.bcrmobile/com.google.zxing.client.android.encode.EncodeActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.SEND" -n "at.spardat.bcrmobile/com.google.zxing.client.android.encode.EncodeActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.SEND" -n "at.spardat.bcrmobile/com.google.zxing.client.android.encode.EncodeActivity" --ez
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.SEND" -n "at.spardat.bcrmobile/com.google.zxing.client.android.encode.EncodeActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SEARCH_BOOK_CONTENTS" -n "at.spardat.bcrmobile/com.google.zxing.client.android.book.SearchBookContentsActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SEARCH_BOOK_CONTENTS" -n "at.spardat.bcrmobile/com.google.zxing.client.android.book.SearchBookContentsActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "com.google.zxing.client.android.SEARCH_BOOK_CONTENTS" -n "at.spardat.bcrmobile/com.google.zxing.client.android.book.SearchBookContentsActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.VIEW" -n "at.spardat.bcrmobile/at.spardat.bcrmobile.activity.SplashActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.VIEW" -n "at.spardat.bcrmobile/at.spardat.bcrmobile.activity.SplashActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.VIEW" -n "at.spardat.bcrmobile/at.spardat.bcrmobile.activity.SplashActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.MAIN" -n "at.spardat.bcrmobile/at.spardat.bcrmobile.activity.SplashActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.MAIN" -n "at.spardat.bcrmobile/at.spardat.bcrmobile.activity.SplashActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.MAIN" -n "at.spardat.bcrmobile/at.spardat.bcrmobile.activity.SplashActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="parsingerrors">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           Until we perfect this, please review these files manually. Due to parsing errors, it is possible that an issue may not have been reported correctly.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="issues-list">
+               <span id="parsingerror-issues-list">
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/FragmentState.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/bu.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/ac.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/p.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/bb.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/bh.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/bs.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/bl.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/bq.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/ah.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/BackStackState.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/bj.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/media/g.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/widget/ac.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/widget/NestedScrollView.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/widget/DrawerLayout.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/widget/SlidingPaneLayout.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/content/FileProvider.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/content/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/content/g.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/bg.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/AbsSavedState.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/d.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/ViewPager.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/a/t.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/a/u.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/j.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/p.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/h.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/o.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/s.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/q.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/d.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/m.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/w.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/t.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/n.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/y.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/l.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/g.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/r.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/x.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/k.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/v.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/u.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/i.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/a/f.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/DevelopmentOptionActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/bcrlocation/ATMBranchLocationActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/bcrlocation/ATMDetailActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/rapidtransfer/RapidTransferAccountListActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/settings/ModifyPasswordSettingActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/payment/BillPaymentTemplateDetailActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/payment/BookmarkTemplateDetailActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/payment/g.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/payment/BillPaymentCategoriesActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/mailbox/MailBoxAttachmentActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/mailbox/MailBoxItemConfirmActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/accounts/creditcardaccount/CreditCardAccountActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/offer/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/offer/ProductOfferConfirmationActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/login/ResetStaticPasswordActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/login/ResetStaticAliasActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/login/LoginActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/login/ResetStaticPasswordActivityNoLogin.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/orderstatus/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/orderstatus/OrderStatusDetailActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/a/c/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/service/c/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/service/c/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/e/d.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/e/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/e/k.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/e/i.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/e/f.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/application/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/view/layout/bcrlocation/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/view/layout/a/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/view/layout/a/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/view/layout/a/k.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/view/pulltorefresh/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/view/pulltorefresh/h.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/view/widget/AnimatedProgressBar.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/analytics/j.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/flags/impl/FlagProviderImpl.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/auth/api/signin/GoogleSignInOptions.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/bu.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/cj.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/dz.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/dy.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/ci.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/dj.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/cc.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/dq.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/do.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/dh.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/ch.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/df.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/ce.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/cd.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/bd.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/ck.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/ah.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/cf.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/p.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/q.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/m.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/util/o.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/util/r.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/internal/p.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/internal/ax.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/internal/z.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/internal/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/internal/k.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/internal/safeparcel/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/data/BitmapTeleporter.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/data/DataHolder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/api/GoogleApiActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/stats/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/stats/WakeLockEvent.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/o.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/r.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/b/j.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/b/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/b/n.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/b/l.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/b/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/b/k.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/b/a/q.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/b/a/k.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/d/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/q.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/r.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/b/d.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/b/l.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/b/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/b/b/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/b/b/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/f/a/j.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/f/a/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/f/a/g.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/f/a/k.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/f/a/i.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/f/c/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/f/c/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/f/c/g.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/a/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/a/b/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/a/a/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/a/c/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/a/c/d.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/h.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/s.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/d.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/f.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/a/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/a/a/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/a/a/a/s.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/a/a/a/t.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/c/b/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/c/a/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/c/a/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/c/c/j.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/c/c/l.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/c/c/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/CaptureActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/q.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/d.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/n.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/l.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/ViewfinderView.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/i.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/history/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/history/d.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/share/ShareActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/a/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/a/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/a/d.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/a/f.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/a/a/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/a/a/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/c/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/encode/EncodeActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/encode/h.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/encode/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/encode/g.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/book/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/a/af.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/a/ag.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/a/g.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/a/r.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/b/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/b/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/b/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/a/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/a/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/a/h.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/a/f.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/c/c.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/c/e.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/c/d.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/net/hockeyapp/android/b/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/net/hockeyapp/android/e/b.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/net/hockeyapp/android/d/g.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/net/hockeyapp/android/c/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/org/apache/a/a/a/a.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/SplashActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/analytics/CampaignTrackingReceiver.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/book/SearchBookContentsActivity.java
+                </strong>
+               </span>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="osbugs">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section is related to any operating system related issues. This information was
+                                    identified from the application's manifest and we encourage you to understand the type
+                                    of vulnerabilities that live ourside your application's sandbox but may affect your
+                                     application in some way or the other.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-8 col-sm-8">
+         <div class="well">
+          <div class="row">
+           <div class="col-lg-8">
+            <h2>
+             OS Version specific bugs
+            </h2>
+            <p class="text-justify">
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+         <div class="well">
+          <p>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="plugin">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="">
+          <p>
+           Plugin content output if any
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12" id="plugin-issues-list">
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/apktool/AndroidManifest.xml
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  &lt;receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"&gt;
+                 </li>
+                 <li class="row-odd">
+                  Be careful with the use of android:path in the &lt;path-permission&gt; tag
+android:path means that the permission applies to the exact path declared in android:path. This expression does not protect the sub-directories
+                &lt;data android:host="*" android:path="@string/app_linking_path" android:scheme="@string/app_linking_scheme"/&gt; 
+                &lt;data android:host="zxing.appspot.com" android:path="/scan" android:scheme="http"/&gt; 
+                &lt;data android:host="www.google.com" android:path="/m/products/scan" android:scheme="http"/&gt; 
+                &lt;data android:host="www.google.co.uk" android:path="/m/products/scan" android:scheme="http"/&gt; 
+                &lt;data android:host="scan" android:path="/" android:scheme="zxing"/&gt;
+                 </li>
+                 <li class="row-even">
+                  Use of android:launchMode=singleTask is found
+This results in AMS either resuming the earlier activity or loads it in a task with same affinity or the activity is started as a new task. This may result in Task Poisoning.
+https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-ren-chuangang.pdf
+        &lt;activity android:launchMode="singleTask" android:name="at.spardat.bcrmobile.activity.SplashActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"&gt;
+                 </li>
+                 <li class="row-odd">
+                  API Key Found
+&lt;?xml version="1.0" ?&gt;&lt;manifest android:versionCode="33" android:versionName="4.30" package="at.spardat.bcrmobile" platformBuildVersionCode="24" platformBuildVersionName="7.0" xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+    &lt;uses-sdk android:minSdkVersion="15" android:targetSdkVersion="25"/&gt;
+        &lt;provider android:authorities="at.spardat.bcrmobile.provider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider"&gt;
+        &lt;activity android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.bcrlocation.ATMBranchLocationActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.login.LoginActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.login.RenewPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.login.ResetStaticPasswordActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.login.ResetStaticAliasActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.login.ResetStaticPasswordActivityNoLogin" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.login.ResetStaticAliasActivityNoLogin" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.infoservices.FXRateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.bcrlocation.ATMDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.bcrlocation.BranchDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.bcrlocation.BCRPartnerDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.contactemergencyservice.ContactEmergencyServiceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.AppBrowserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.apiversion.APIVersionUpdateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.currentaccount.CurrentAccountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.AccountsHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.loanaccount.LoanAccountActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.savingaccount.SavingAccountActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.assetmgmtaccount.AssetMgmtAccountActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.creditcardaccount.CreditCardAccountActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.creditcardaccount.CreditCardPayNowActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.PaymentAuthorizationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.PaymentStatusActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.currentaccount.TransactionSelectionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.PayeeIBANCheckActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.IBANPaymentValidationActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.savingaccount.CallDepositTransferActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale" android:name="at.spardat.bcrmobile.activity.click24.mailbox.MailBoxHomeActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale" android:name="at.spardat.bcrmobile.activity.click24.mailbox.MailBoxItemDetailActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale" android:name="at.spardat.bcrmobile.activity.click24.mailbox.MailBoxItemConfirmActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale" android:name="at.spardat.bcrmobile.activity.click24.mailbox.MailBoxAttachmentActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.foreignexchange.FXTargetAccountSelectionActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.foreignexchange.FXQuotationActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.foreignexchange.FXPaymentAuthorizationActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.PersonalTemplateActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.PersonalTemplateValidationActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentCategoriesActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentStandardTemplateListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentTemplateDetailActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.orderstatus.OrderStatusListActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.orderstatus.OrderStatusDetailActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.BillPaymentAccountListActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.foreignexchange.FXAccountListActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.IbanTermPersonalTemplatePaymentAccountListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="net.hockeyapp.android.UpdateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.DevelopmentOptionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.google.zxing.client.android.CaptureActivity" android:screenOrientation="landscape" android:stateNotNeeded="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"&gt;
+        &lt;activity android:configChanges="keyboardHidden|orientation" android:name="com.google.zxing.client.android.BarcodeInputActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BarcodeTemplateListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BarcodeTemplateDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentPersonalTemplateListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BillPaymentBookmarkTemplateListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.BookmarkTemplateDetailActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.PersonalTemplateSavingActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.IBANPaymentPersonalTemplateListActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.offer.ProductOfferDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.offer.ProductOfferConfirmationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.Click24AppBrowserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.rapidtransfer.RapidTransferAccountListActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.rapidtransfer.RapidTransferPaymentActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.rapidtransfer.CurrentAccountRapidTransferPaymentActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.accounts.savingaccount.TermDepositClosingActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.TermDepositLiquidationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.TermDepositClosingStatusActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.OpenTermDepositActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.OpenTermDepositAcceptanceActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.payment.OpenTermDepositStatusActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.settings.Click24SettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.settings.PhoneNumberSettingActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.settings.AliasNameSettingActivity" android:screenOrientation="portrait"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.settings.PasswordSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/&gt;
+        &lt;activity android:configChanges="locale|keyboardHidden" android:name="at.spardat.bcrmobile.activity.click24.settings.ModifyPasswordSettingActivity" android:screenOrientation="portrait"/&gt;
+        &lt;service android:name="at.spardat.bcrmobile.service.APIVersionUpdateService"/&gt;
+        &lt;activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/&gt;
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/c/h.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Application contains hardcoded http url 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/c/h.java. 
+http://maps.google. 
+http://www.google. 
+http://books.google. 
+Ignore if HSTS is implemented
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/org/apache/a/a/a/a.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  File System Access is by default enabled
+setAllowFileAccess() and setAllowContentAccess() are by default true. This should be set to false to restrict access to local data since it is used to display content from locally stored HTML or fetch HTML and other content from the server.
+Reference: https://developer.android.com/reference/android/webkit/WebSettings.html
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/AppBrowserActivity.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/Click24AppBrowserActivity.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/mailbox/MailBoxItemDetailActivity.java
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/org/apache/a/a/a/a.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Debug logs are detected
+This may allow potential leakage of information from Android applications.
+Debug logs should never be compiled into an application except during development.
+https://developer.android.com/reference/android/util/Log.html
+
+Filepath:
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/b/m.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/b/n.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/aq.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/an.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/bv.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/au.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/Fragment.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/q.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/w.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/cc.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/t.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/n.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/bn.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/app/u.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/widget/q.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/widget/t.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/widget/a.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/widget/ad.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/widget/g.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/widget/r.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/widget/v.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/widget/u.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/ac.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/e.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/cn.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/au.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/aw.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/ae.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/bh.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/a.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/co.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/ad.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/cb.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/az.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/a/ab.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/a/af.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/a/q.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/a/r.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/a/k.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/a/aa.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/android/support/v4/view/a/f.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/d.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/d.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/payment/PaymentAuthorizationActivity.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/payment/BarcodeTemplateListActivity.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/service/c/c.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/e/e.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/e/l.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/d/c.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/view/layout/a/a/b.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/view/pulltorefresh/a.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/view/pulltorefresh/b.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/view/pulltorefresh/f.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/analytics/e.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/analytics/a.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/analytics/g.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/auth/api/signin/GoogleSignInAccount.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/bv.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/bi.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/bo.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/cq.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/cs.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/bz.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/da.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/d.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/dg.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/bh.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/ba.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/zzacr.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/co.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/bw.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/bn.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/dk.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/ca.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/bq.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/ao.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/cb.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/o.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/ConnectionResult.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/internal/zzaf.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/internal/af.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/internal/w.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/internal/y.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/internal/safeparcel/a.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/api/Status.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/stats/StatsEvent.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/j.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/h.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/b/a/g.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/b/a/f.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/d/c.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/d/a.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/p.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/m.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/b.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/b/e.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/b/a.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/b/g.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/b/b/a.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/f/a/d.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/f/a/a.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/f/a/a/b.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/f/c/d.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/a/d.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/a/a.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/a/a/a.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/a/a/a/q.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/e/a/a/a/m.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/c/a/f.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/c/c/h.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/c/c/k.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/a/a.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/c/h.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/android/book/d.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/a/ai.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/a/h.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/a/d.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/a/n.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/a/aj.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/a/u.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/client/a/i.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/b/d.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/a/j.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/a/a.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/zxing/g/a/l.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/net/hockeyapp/android/UpdateActivity.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/net/hockeyapp/android/c/d.java
+150 debug logs were found in the application
+                 </li>
+                 <li class="row-odd">
+                  Verbose logs are detected
+This may allow potential leakage of information from Android applications.
+Verbose logs should never be compiled into an application except during development.
+https://developer.android.com/reference/android/util/Log.html
+
+Filepath:
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/a/d/a.java
+1 verbose logs were found in the application
+                 </li>
+                 <li class="row-even">
+                  Debug logs are detected
+This may allow potential leakage of information from Android applications.
+Debug logs should never be compiled into an application except during development.
+https://developer.android.com/reference/android/util/Log.html
+
+Filepath:
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/b.java
+1 debug logs were found in the application
+                 </li>
+                 <li class="row-odd">
+                  Verbose logs are detected
+This may allow potential leakage of information from Android applications.
+Verbose logs should never be compiled into an application except during development.
+https://developer.android.com/reference/android/util/Log.html
+
+Filepath:
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/b/b.java
+1 verbose logs were found in the application
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-warning" data-badger="Warning">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/org/apache/a/a/a/a.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Application dynamically registers a broadcast receiver
+Application that register a broadcast receiver dynamically is vulnerable to granting unrestricted access to the broadcast receiver.
+The receiver will be called with any broadcast Intent that matches filter.
+ https://developer.android.com/reference/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver, android.content.IntentFilter)
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/mailbox/MailBoxHomeActivity.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/at/spardat/bcrmobile/activity/click24/accounts/currentaccount/CurrentAccountActivity.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/dg.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/internal/zzaar.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/b.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/comparison_quark/at.spardat.bcrmobile/classes_dex2jar/com/google/android/gms/common/util/h.java
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="references">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="">
+          <p>
+           This is a list of resources you may refer to understand more about android security
+                                     in general and also how specific programming mistakes or insecure-by-default settings may manifest themselves into
+                                     vulnerabilities. We are currently hand picking credible resources to add to the list. Please check for updates to get a revised list of references.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12">
+            <h2>
+             List of resources
+            </h2>
+            <br/>
+            <br/>
+            <ul>
+             <li>
+              <p class="">
+               For general Android security information:
+               <a href="http://developer.android.com/training/articles/security-tips.html">
+                http://developer.android.com/training/articles/security-tips.html
+               </a>
+              </p>
+             </li>
+             <li>
+              For information on proper TLS implementation:
+              <a href="http://developer.android.com/training/articles/security-ssl.html">
+               http://developer.android.com/training/articles/security-ssl.html
+              </a>
+             </li>
+             <li>
+              A great guide to Android security, from the Japanese Smartphone Security Association:
+              <a href="https://www.jssec.org/report/android_securecoding_en_20140801.html">
+               https://www.jssec.org/report/android_securecoding_en_20140801.html
+              </a>
+             </li>
+             <p>
+             </p>
+            </ul>
+            <br/>
+            <br/>
+            <br/>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="about">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="">
+          <h2>
+           <strong>
+            QUICK ANDROID REVIEW KIT
+           </strong>
+          </h2>
+          <strong>
+           Version 0.9
+          </strong>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12">
+            <br/>
+            <br/>
+            <br/>
+            <h4>
+             <strong>
+              Source:
+             </strong>
+            </h4>
+            <p class="">
+             Github:
+             <a href="https://www.github.com/linkedin/qark">
+              https://www.github.com/linkedin/qark
+             </a>
+             <br/>
+            </p>
+            <h4>
+             <strong>
+              Authors:
+             </strong>
+            </h4>
+            <strong>
+             Anthony Trummer:
+            </strong>
+            <a href="https://www.linkedin.com/in/tonytrummer">
+             https://www.linkedin.com/in/tonytrummer
+            </a>
+            <br/>
+            <strong>
+             Tushar Dalvi:
+            </strong>
+            <a href="https://www.linkedin.com/in/tdalvi">
+             https://www.linkedin.com/in/tdalvi
+            </a>
+            <p>
+            </p>
+            <br/>
+            <br/>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-xs-12">
+        <div class="well">
+         <p>
+          QARK Version 0.9
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--/row-offcanvas -->
+  </div>
+  <!-- /.modal -->
+  <!-- script references -->
+  <script src="js/jquery-2.1.4.min.js">
+  </script>
+  <script src="js/bootstrap.min.js">
+  </script>
+  <script src="js/scripts.js">
+  </script>
+  <link href="js/highlight/styles/magula.css" rel="stylesheet"/>
+  <script src="js/highlight/highlight.pack.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+ </body>
+</html>

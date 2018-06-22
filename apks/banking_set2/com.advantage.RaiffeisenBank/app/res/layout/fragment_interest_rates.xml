@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout" android:background="@drawable/rounded_corners_white" android:paddingBottom="@dimen/fragment_side_padding_rzb" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="72.0dip">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/fragment_side_padding_rzb" android:paddingRight="@dimen/fragment_side_padding_rzb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/robor_header" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="0.0dip" style="@style/DSQTextAppearance.Header.material" />
+        </LinearLayout>
+        <FrameLayout android:orientation="vertical" android:paddingLeft="@dimen/fragment_side_padding_rzb" android:paddingRight="@dimen/fragment_side_padding_rzb" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="24.0dip">
+            <include android:id="@id/loading1" layout="@layout/loading_only_progress_bar" />
+            <TableLayout android:orientation="horizontal" android:id="@id/robor_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <include layout="@layout/include_separator" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/fragment_side_padding_rzb" android:paddingRight="@dimen/fragment_side_padding_rzb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/euribor_header" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="0.0dip" android:text="@string/euribor" style="@style/DSQTextAppearance.Header.material" />
+        </LinearLayout>
+        <FrameLayout android:orientation="vertical" android:paddingLeft="@dimen/fragment_side_padding_rzb" android:paddingRight="@dimen/fragment_side_padding_rzb" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="24.0dip">
+            <include android:id="@id/loading2" layout="@layout/loading_only_progress_bar" />
+            <TableLayout android:orientation="horizontal" android:id="@id/euribor_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <include layout="@layout/include_separator" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/fragment_side_padding_rzb" android:paddingRight="@dimen/fragment_side_padding_rzb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/libor_header" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="0.0dip" style="@style/DSQTextAppearance.Header.material" />
+        </LinearLayout>
+        <FrameLayout android:orientation="vertical" android:paddingLeft="@dimen/fragment_side_padding_rzb" android:paddingRight="@dimen/fragment_side_padding_rzb" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="24.0dip">
+            <TableLayout android:orientation="horizontal" android:id="@id/libor_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include android:id="@id/loading3" layout="@layout/loading_only_progress_bar" />
+        </FrameLayout>
+        <View android:layout_width="1.0dip" android:layout_height="16.0dip" />
+    </LinearLayout>
+</ScrollView>

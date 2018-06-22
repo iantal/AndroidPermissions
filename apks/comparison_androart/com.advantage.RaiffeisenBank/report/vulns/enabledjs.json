@@ -1,0 +1,13 @@
+{
+  "findings": [
+    {
+      "title": "WebView vuln",
+      "stat": "low",
+      "description": "JavascriptInterfaceAnalyser",
+      "recommendation": "",
+      "evidence": [
+        "/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2/com.advantage.RaiffeisenBank/app/smali/com/thinkdesquared/banking/WebViewActivity.smali"
+      ]
+    }
+  ]
+}

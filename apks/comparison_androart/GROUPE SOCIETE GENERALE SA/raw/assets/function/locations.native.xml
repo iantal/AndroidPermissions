@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<function>
+	<name>locations</name>
+	<views>
+		<view>
+			<title>native_bankingapp_brd_function_locations_title</title>
+			<url>view://bankingapp/function/locations/mapview</url>
+			<implementationType>NATIVE</implementationType>
+			<implementation>ind.bankingapp.android.function.locations.GoogleMapsFragment</implementation>
+			<htmlTemplate></htmlTemplate>
+			<contextMenu>
+				<addDefaultContextMenuItems>true</addDefaultContextMenuItems>
+				<contextMenuItem>
+					<name>filter</name>
+					<title>native_locations_contextmenu_filter</title>
+					<icon>filter</icon>
+				</contextMenuItem>
+				<highlightedContextMenuItemOnPhone>filter</highlightedContextMenuItemOnPhone>
+				<highlightedContextMenuItemsOnTablet>
+					<name>filter</name>
+				</highlightedContextMenuItemsOnTablet>
+			</contextMenu>
+			<showToolbar>false</showToolbar>
+		</view>
+	</views>
+</function>

@@ -1,0 +1,2564 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta charset="utf-8"/>
+  <title>
+   QARK Report
+  </title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Chart.js for charts -->
+  <script src="js/Chart.js/Chart.js">
+  </script>
+  <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+
+    <![endif]-->
+  <link href="css/styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="navbar navbar-inverse navbar-fixed-top gradient">
+   <div class="navbar-header">
+    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+     <span class="icon-bar">
+     </span>
+     <span class="icon-bar">
+     </span>
+     <span class="icon-bar">
+     </span>
+    </button>
+    <a class="navbar-brand" href="#">
+     QARK
+    </a>
+   </div>
+   <div class="collapse navbar-collapse">
+    <!--
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        -->
+   </div>
+   <!--/.nav-collapse -->
+  </div>
+  <!--/.navbar -->
+  <div class="row-offcanvas row-offcanvas-left">
+   <div class="sidebar-offcanvas" id="sidebar">
+    <div class="gradient2 col-md-12">
+     <h3>
+      Information
+     </h3>
+     <ul class="nav nav-pills nav-stacked">
+      <li class="active">
+       <a data-toggle="tab" href="#dashboard">
+        Dashboard
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#manifest">
+        Manifest
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#appcomponents">
+        App Components
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#webviews">
+        Web Views
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#x509">
+        X.509 Issues
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#filepermission">
+        File Permissions
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#crypto">
+        Crypto bugs
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#pendingintent">
+        Pending Intents
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#adbcommands">
+        ADB Commands
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#osbugs">
+        OS bugs
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#plugin">
+        Plugin Issues
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#parsingerrors">
+        Parsing Errors
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       <a data-toggle="tab" href="#about">
+        About
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="main">
+    <div class="col-md-12">
+     <p class="visible-xs">
+      <button class="btn btn-primary btn-xs" data-toggle="offcanvas" type="button">
+       <i class="glyphicon glyphicon-chevron-left">
+       </i>
+      </button>
+     </p>
+     <br/>
+     <div class="tab-content">
+      <div class="tab-pane active" id="dashboard">
+       <div class="row">
+        <div class="col-md-12">
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="well">
+          <div class="row">
+           <div class="col-lg-12">
+            <h2>
+             <strong>
+              STATIC CODE ANALYSIS RESULT
+             </strong>
+            </h2>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-6">
+            <h6>
+             <strong>
+              SOURCE:
+             </strong>
+             <strong>
+              <span id="apkpath">
+               <span>
+                /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp.apk
+               </span>
+              </span>
+             </strong>
+            </h6>
+            <h6>
+             <strong>
+              TOTAL FILES:
+             </strong>
+             <strong>
+              <span id="totalfiles">
+               <span>
+                4331
+               </span>
+              </span>
+             </strong>
+            </h6>
+            <h6>
+             <strong>
+              JAVA FILES:
+             </strong>
+             <strong>
+              <span id="javafiles">
+               <span>
+                1958
+               </span>
+              </span>
+             </strong>
+            </h6>
+            <h6>
+             <strong>
+              <span id="restorestats">
+               <span>
+                Restored 112 file(s) out of 120 corrupt file(s)
+               </span>
+              </span>
+             </strong>
+            </h6>
+           </div>
+           <div class="col-lg-6">
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-12 col-sm-12">
+         <div class="well">
+          <div class="row">
+           <div class="col-lg-12">
+            <div class="container-fluid">
+             <div class="row">
+              <div class="col-xs-3 col-md-3">
+               <div class="panel status panel-danger">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="vulnerability_count">
+                  <div>
+                   5
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Potential Vulnerabilities
+                 </strong>
+                </div>
+               </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+               <div class="panel status panel-warning">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="warning_count">
+                  <div>
+                   7
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Warnings
+                 </strong>
+                </div>
+               </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+               <div class="panel status panel-success">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="information_count">
+                  <div>
+                   10
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Informational
+                 </strong>
+                </div>
+               </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+               <div class="panel status panel-info">
+                <div class="panel-heading">
+                 <h1 class="panel-title text-center" id="debug_count">
+                  <div>
+                   337
+                  </div>
+                 </h1>
+                </div>
+                <div class="panel-body text-center">
+                 <strong>
+                  Debug
+                 </strong>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="manifest">
+       <div class="row">
+        <div class="col-md-12">
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12" id="manifest-issues">
+            <div class="badger-div badger-left badger-warning" data-badger="Warning">
+             <strong>
+              Backups enabled: Potential for data theft via local attacks via adb backup, if the device has USB debugging enabled (not common). More info: http://developer.android.com/reference/android/R.attr.html#allowBackup
+             </strong>
+             <ul>
+             </ul>
+            </div>
+            <pre id="rawmanifest"><code class="xml">&lt;?xml version="1.0" ?&gt;&lt;manifest android:versionCode="24" android:versionName="4.2.1" package="com.kbank.otp" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002" xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+    &lt;uses-sdk android:minSdkVersion="9" android:targetSdkVersion="23"/&gt;
+    &lt;supports-screens android:largeScreens="true" android:xlargeScreens="true"/&gt;
+    &lt;uses-feature android:glEsVersion="0x20000" android:required="true"/&gt;
+    &lt;permission android:name="com.kbank.otp.permission.MAPS_RECEIVE" android:protectionLevel="signature"/&gt;
+    &lt;uses-permission android:name="com.kbank.otp.permission.MAPS_RECEIVE"/&gt;
+    &lt;uses-permission android:name="android.permission.INTERNET"/&gt;
+    &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/&gt;
+    &lt;uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/&gt;
+    &lt;uses-permission android:name="android.permission.READ_PHONE_STATE"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/&gt;
+    &lt;uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/&gt;
+    &lt;uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/&gt;
+    &lt;uses-permission android:name="android.permission.WAKE_LOCK"/&gt;
+    &lt;uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/&gt;
+    &lt;permission android:name="com.kbank.otp.permission.C2D_MESSAGE" android:protectionLevel="signature"/&gt;
+    &lt;uses-permission android:name="com.kbank.otp.permission.C2D_MESSAGE"/&gt;
+    &lt;application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/title_application" android:name="com.kbank.otp.TheApplication" android:theme="@style/AppTheme"&gt;
+        &lt;activity android:configChanges="locale|layoutDirection" android:label="@string/title_application" android:launchMode="singleTask" android:name="com.kbank.otp.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"&gt;
+            &lt;intent-filter&gt;
+                &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+                &lt;action android:name="android.intent.action.VIEW"/&gt;
+                &lt;data android:scheme="com.kbank.otp"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+        &lt;activity android:name="com.kbank.otp.SplashActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.MAIN"/&gt;
+                &lt;category android:name="android.intent.category.LAUNCHER"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+        &lt;meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/&gt;
+        &lt;meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCSzNhgjE648S215MjCk02Oq69MegrIpYs"/&gt;
+        &lt;meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_stat_ic_notification"/&gt;
+        &lt;meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/statusbar_color"/&gt;
+        &lt;service android:name="com.kbank.otp.services.FirebaseMessagingService"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="com.google.firebase.MESSAGING_EVENT"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/service&gt;
+        &lt;service android:name="com.kbank.otp.services.FirebaseInstanceIDService"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="com.google.firebase.INSTANCE_ID_EVENT"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/service&gt;
+        &lt;service android:exported="false" android:name="com.kbank.otp.services.FirebaseTokenService"/&gt;
+        &lt;activity android:name="com.kbank.otp.MoneyTransferActivity"/&gt;
+        &lt;uses-library android:name="android.test.runner"/&gt;
+        &lt;activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/&gt;
+        &lt;service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService"&gt;
+            &lt;intent-filter android:priority="-500"&gt;
+                &lt;action android:name="com.google.firebase.MESSAGING_EVENT"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/service&gt;
+        &lt;receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/&gt;
+        &lt;receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="com.android.vending.INSTALL_REFERRER"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/receiver&gt;
+        &lt;service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/&gt;
+        &lt;receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="com.google.android.c2dm.intent.RECEIVE"/&gt;
+                &lt;action android:name="com.google.android.c2dm.intent.REGISTRATION"/&gt;
+                &lt;category android:name="com.kbank.otp"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/receiver&gt;
+        &lt;receiver android:exported="false" android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"/&gt;
+        &lt;service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService"&gt;
+            &lt;intent-filter android:priority="-500"&gt;
+                &lt;action android:name="com.google.firebase.INSTANCE_ID_EVENT"/&gt;
+            &lt;/intent-filter&gt;
+        &lt;/service&gt;
+        &lt;provider android:authorities="com.kbank.otp.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/&gt;
+    &lt;/application&gt;
+&lt;/manifest&gt;</code></pre>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="appcomponents">
+       <div class="badger-div badger-left badger-warning" data-badger="Warning">
+        <strong>
+         The following receiver are exported and protected by a permission, but the permission can be obtained by malicious apps installed prior to this one. More info: https://github.com/commonsguy/cwac-security/blob/master/PERMS.md. Failing to protect receiver could leave them vulnerable to attack by malicious apps. The receiver should be reviewed for vulnerabilities, such as injection and information leakage.
+        </strong>
+        <ul>
+         <li>
+          com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+          <ul>
+           <li>
+            android.permission.INSTALL_PACKAGES
+           </li>
+          </ul>
+         </li>
+         <li>
+          com.google.firebase.iid.FirebaseInstanceIdReceiver
+          <ul>
+           <li>
+            com.google.android.c2dm.permission.SEND
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </div>
+       <div class="badger-div badger-left badger-warning" data-badger="Warning">
+        <strong>
+         The following service are exported, but not protected by any permissions. Failing to protect service could leave them vulnerable to attack by malicious apps. The service should be reviewed for vulnerabilities, such as injection and information leakage.
+        </strong>
+        <ul>
+         <li>
+          com.google.firebase.iid.FirebaseInstanceIdService
+         </li>
+         <li>
+          com.google.firebase.messaging.FirebaseMessagingService
+         </li>
+         <li>
+          com.kbank.otp.services.FirebaseInstanceIDService
+         </li>
+         <li>
+          com.kbank.otp.services.FirebaseMessagingService
+         </li>
+        </ul>
+       </div>
+       <div class="badger-div badger-left badger-warning" data-badger="Warning">
+        <strong>
+         The following activity are exported, but not protected by any permissions. Failing to protect activity could leave them vulnerable to attack by malicious apps. The activity should be reviewed for vulnerabilities, such as injection and information leakage.
+        </strong>
+        <ul>
+         <li>
+          com.kbank.otp.MainActivity
+         </li>
+         <li>
+          com.kbank.otp.SplashActivity
+         </li>
+        </ul>
+       </div>
+       <div class="row">
+        <div class="col-md-12">
+         <!--<div class="well">-->
+         <!--<p>-->
+         <!--Issues related to Application Components.-->
+         <!--</p>-->
+         <!--</div>-->
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12" id="appcomponent-issues">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="webviews">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           A View that displays web pages. This class is the basis upon which you can roll your
+                                    own web browser or simply display some online content within your Activity. It uses
+                                    the WebKit rendering engine to display web pages and includes methods to navigate
+                                    forward and backward through a history, zoom in and out, perform text searches and
+                                    more. WebViews may be implemented using the "Android/AOSP" (WebViewClient) or 
+                                    Chrome (WebChromeClient) browsers.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="webview-issues-list">
+               <div class="badger-div badger-left badger-success" data-badger="Info">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/MoneyTransferActivity.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     BaseURL not redefined in this WebView.
+                    </li>
+                    <li class="row-odd">
+                     File system access is enabled in this WebView. If untrusted data is used to specify the URL opened by this WebView, a malicious app or site may be able to read your app's private files, if it returns the response to them. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/FILE_SYS_WARN.html
+                    </li>
+                    <li class="row-even">
+                     While not a vulnerability by itself, it appears this app does not explicitly disable Content Provider access from WebViews. If the WebViews take in untrusted input, this can allow for data theft. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/WV_CPA_WARNING.html
+                    </li>
+                    <li class="row-odd">
+                     JavaScript running in a file scheme context can access content from any origin. This is an insecure default value for minSdkVersion &lt; 16 or may have been overridden (setAllowUniversalAccessFromFileURLs) in later versions. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/UNIV_FILE_WARNING.html
+                    </li>
+                    <li class="row-even">
+                     addJavascriptInterface not used in this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/MoneyTransferActivity.java
+                    </li>
+                    <li class="row-odd">
+                     DOM Storage not enabled for this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/MoneyTransferActivity.java
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+               <div class="badger-div badger-left badger-success" data-badger="Info">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/WebFragment.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     BaseURL not redefined in this WebView.
+                    </li>
+                    <li class="row-odd">
+                     File system access is enabled in this WebView. If untrusted data is used to specify the URL opened by this WebView, a malicious app or site may be able to read your app's private files, if it returns the response to them. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/FILE_SYS_WARN.html
+                    </li>
+                    <li class="row-even">
+                     While not a vulnerability by itself, it appears this app does not explicitly disable Content Provider access from WebViews. If the WebViews take in untrusted input, this can allow for data theft. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/WV_CPA_WARNING.html
+                    </li>
+                    <li class="row-odd">
+                     JavaScript running in a file scheme context can access content from any origin. This is an insecure default value for minSdkVersion &lt; 16 or may have been overridden (setAllowUniversalAccessFromFileURLs) in later versions. To validate this vulnerability, load the following local file in this WebView: file://&lt;install_dir&gt;/quark/poc/html/UNIV_FILE_WARNING.html
+                    </li>
+                    <li class="row-even">
+                     addJavascriptInterface not used in this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/WebFragment.java
+                    </li>
+                    <li class="row-odd">
+                     DOM Storage not enabled for this WebView.&lt;br&gt;FILE: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/WebFragment.java
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="x509">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This is a list of all the findings related to Certificate validation.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="x509-issues-list">
+               <div class="badger-div badger-left badger-warning" data-badger="Warning">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/WebFragment.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     Unsafe implementation of onReceivedSslError handler found in: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/WebFragment.java. Specifically, the implementation ignores all SSL certificate validation errors, making your app vulnerable to man-in-the-middle attacks. To properly handle SSL certificate validation, change your code to invoke SslErrorHandler.cancel(). For details, please see: https://developer.android.com/reference/android/webkit/WebViewClient.html
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="filepermission">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section lists any issues related to File permissions.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-10 col-sm-10">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="filepermission-issues-list">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="pendingintent">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section lists any issues related to pending intents.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="pendingintent-issues-list">
+               <div class="badger-div badger-left badger-danger" data-badger="Potential Vulnerability">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/TaskStackBuilder.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     Implicit Intent: localIntent used to create instance of PendingIntent. A malicious application could potentially intercept, redirect and/or modify (in a limited manner) this Intent. Pending Intents retain the UID of your application and all related permissions, allowing another application to act as yours.  File: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/TaskStackBuilder.java More details: https://www.securecoding.cert.org/confluence/display/android/DRD21-J.+Always+pass+explicit+intents+to+a+PendingIntent
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="Potential Vulnerability">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zzai.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     Implicit Intent: localIntent2 used to create instance of PendingIntent. A malicious application could potentially intercept, redirect and/or modify (in a limited manner) this Intent. Pending Intents retain the UID of your application and all related permissions, allowing another application to act as yours.  File: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zzai.java More details: https://www.securecoding.cert.org/confluence/display/android/DRD21-J.+Always+pass+explicit+intents+to+a+PendingIntent
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="Potential Vulnerability">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/zzc.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     Implicit Intent: localIntent used to create instance of PendingIntent. A malicious application could potentially intercept, redirect and/or modify (in a limited manner) this Intent. Pending Intents retain the UID of your application and all related permissions, allowing another application to act as yours.  File: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/zzc.java More details: https://www.securecoding.cert.org/confluence/display/android/DRD21-J.+Always+pass+explicit+intents+to+a+PendingIntent
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="Potential Vulnerability">
+                <br/>
+                <strong>
+                 File:
+                 <code>
+                  /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/messaging/FirebaseMessaging.java
+                 </code>
+                </strong>
+                <br/>
+                <h4>
+                 <strong class="details">
+                  <div>
+                   <ul>
+                    <li class="row-even">
+                     Implicit Intent: localIntent used to create instance of PendingIntent. A malicious application could potentially intercept, redirect and/or modify (in a limited manner) this Intent. Pending Intents retain the UID of your application and all related permissions, allowing another application to act as yours.  File: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/messaging/FirebaseMessaging.java More details: https://www.securecoding.cert.org/confluence/display/android/DRD21-J.+Always+pass+explicit+intents+to+a+PendingIntent
+                    </li>
+                   </ul>
+                  </div>
+                 </strong>
+                </h4>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="crypto">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section lists any issues related to crypto vulnerabilities in the application
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-10 col-sm-10">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="crypto-issues-list">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="adbcommands">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           Until we perfect this, for manually testing, run the following command to see all the options and their meanings:
+           <kbd>
+            adb shell am
+           </kbd>
+           . Make sure to update qark frequently to get all the enhancements! You'll also find some good examples here:
+           <a href="http://xgouchet.fr/android/index.php?article42/launch-intents-using-adb">
+            http://xgouchet.fr/android/index.php?article42/launch-intents-using-adb
+           </a>
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="adbcommands-issues-list">
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.kbank.otp.services.FirebaseMessagingService"
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.kbank.otp.services.FirebaseInstanceIDService"
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.google.firebase.messaging.FirebaseMessagingService" -a "com.google.firebase.MESSAGING_EVENT" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.google.firebase.messaging.FirebaseMessagingService" -a "com.google.firebase.MESSAGING_EVENT"
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.google.firebase.messaging.FirebaseMessagingService" -a "com.google.firebase.MESSAGING_EVENT" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.google.firebase.messaging.FirebaseMessagingService" -a "com.google.firebase.MESSAGING_EVENT" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.google.firebase.messaging.FirebaseMessagingService" -a "com.google.firebase.MESSAGING_EVENT"
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.google.firebase.messaging.FirebaseMessagingService" -a "com.google.firebase.MESSAGING_EVENT" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.google.firebase.messaging.FirebaseMessagingService" -a "com.google.firebase.MESSAGING_EVENT" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.google.firebase.messaging.FirebaseMessagingService" -a "com.google.firebase.MESSAGING_EVENT"
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.google.firebase.messaging.FirebaseMessagingService" -a "com.google.firebase.MESSAGING_EVENT" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.google.firebase.messaging.FirebaseMessagingService" -a "com.google.firebase.MESSAGING_EVENT" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.google.firebase.messaging.FirebaseMessagingService" -a "com.google.firebase.MESSAGING_EVENT"
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.google.firebase.messaging.FirebaseMessagingService" -a "com.google.firebase.MESSAGING_EVENT" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="service">
+                <kbd>
+                 adb shell am startservice -n "com.kbank.otp/com.google.firebase.iid.FirebaseInstanceIdService"
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.MAIN" -n "com.kbank.otp/com.kbank.otp.SplashActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.VIEW" -n "com.kbank.otp/com.kbank.otp.MainActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.VIEW" -n "com.kbank.otp/com.kbank.otp.MainActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.VIEW" -n "com.kbank.otp/com.kbank.otp.MainActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+               <div class="badger-div badger-left badger-danger" data-badger="activity">
+                <kbd>
+                 adb shell am start -a "android.intent.action.VIEW" -n "com.kbank.otp/com.kbank.otp.MainActivity" --es
+                </kbd>
+                <ul>
+                </ul>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="parsingerrors">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           Until we perfect this, please review these files manually. Due to parsing errors, it is possible that an issue may not have been reported correctly.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div>
+          <div class="row">
+           <div>
+            <div class="container-fluid">
+             <div class="row-fluid">
+              <div id="issues-list">
+               <span id="parsingerror-issues-list">
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/print/PrintHelperKitkat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/print/PrintHelperApi24.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/print/PrintHelperApi20.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/print/PrintHelperApi23.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/util/TimeUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/util/LruCache.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/graphics/ColorUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/FragmentState.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/NotificationCompatKitKat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/NotificationCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/NotificationCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/NotificationCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/NotificationCompatApi24.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/NotificationCompatApi21.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/NotificationCompatIceCreamSandwich.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/NotificationCompatJellybean.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/BundleUtil.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/BackStackRecord.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/FragmentActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/NotificationCompatApi20.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/TaskStackBuilder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/NotificationCompatHoneycomb.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/FragmentTransitionCompat21.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/BackStackState.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/media/MediaBrowserCompatUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/media/TransportMediatorJellybeanMR2.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/media/MediaMetadataCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/media/MediaBrowserCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/media/session/MediaControllerCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/media/session/MediaSessionCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/widget/NestedScrollView.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/widget/ViewDragHelper.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/widget/AutoScrollHelper.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/widget/DrawerLayout.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/widget/FocusStrategy.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/widget/CursorAdapter.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/widget/SlidingPaneLayout.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/content/FileProvider.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/content/LocalBroadcastManager.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/content/ModernAsyncTask.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/os/CancellationSignal.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/view/AbsSavedState.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/view/GestureDetectorCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/view/ViewPager.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/graphics/drawable/PathParser.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/graphics/drawable/AnimatedVectorDrawableCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/graphics/drawable/DrawerArrowDrawable.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/app/NotificationCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/app/AppCompatDelegateImplV7.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/app/WindowDecorActionBar.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/app/ActionBarDrawerToggle.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/app/AppCompatViewInflater.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/app/NotificationCompatImplBase.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/app/AlertController.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/LinearLayoutCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/ButtonBarLayout.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/ActionBarOverlayLayout.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/AppCompatSpinner.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/ListPopupWindow.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/ActionMenuView.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/SuggestionsAdapter.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/ScrollingTabContainerView.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/ActionBarContextView.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/ContentFrameLayout.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/ActionMenuPresenter.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/SwitchCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/SearchView.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/ActivityChooserModel.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/AppCompatDrawableManager.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/Toolbar.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/ThemeUtils.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/ListViewCompat.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/ActivityChooserView.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/view/menu/MenuBuilder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/NewBeneficiaryFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/TheApplication.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/AbsActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/PayAccountsFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/TransactionsFragment_.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/Helper.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/CustomAdapterView.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/EcoGallery.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/MainActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/ContactDetailFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/AccountOperaionsFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/CustomAbsSpinner.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/TransactionsFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/MyAccountsFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/DashboardFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/messages/MessagesFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/payment/NewPaymentFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/payment/SelectDestinationFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/cards/Card.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/cards/CardTransactionsFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/cards/CardLimitsReceiptFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/cards/CardsFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/finance/IncomeExpenseType.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/request/DepositTypesRequest.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/request/LoansRequest.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/request/AtmsRequest.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/request/FinanceTransactionsRequest.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/request/TransactionsRequest.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/request/AccountsRequest.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/request/CardLimitsRequest.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/request/BeneficiariesRequest.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/request/DepositsRequest.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/fragments/selection/BeneficiariesFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/exchange/DemoView.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/fxpayment/NewFxPaymentFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/deposit/DepositsFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/deposit/DepositReceiptFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/login/LoginCardFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/login/LoginClientFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/login/LoginPasswordFragment.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/signin/internal/zze.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/signin/internal/zzd.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/flags/impl/zza.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/iid/zzb.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/security/ProviderInstaller.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zzy.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zzv.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zzaf.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zzac.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zzm.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zzn.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zze.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zzal.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zzq.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zzc.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zzx.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/auth/api/signin/GoogleSignInOptions.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzqq.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzk.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzrl.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzqt.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzs.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzqu.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zztn.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzvv.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzvt.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzwa.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzvs.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzqv.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzaqp.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzaqq.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzah.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzapw.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zztm.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzaoq.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzag.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzary.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzc.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzwb.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzapi.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzrb.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzaqj.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzapr.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzaa.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzcl.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzagp.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zztl.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzqp.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzaqn.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzaqi.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzwc.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/zze.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/util/zzy.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/util/zzt.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/util/zzq.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/internal/zzk.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/internal/zzs.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/internal/zzp.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/internal/zzy.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/internal/zzv.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/internal/zzt.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/internal/zze.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/internal/zzu.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/internal/zzw.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/internal/zza.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/internal/safeparcel/zzb.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/data/BitmapTeleporter.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/data/DataHolder.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/api/GoogleApiClient.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/api/GoogleApiActivity.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/stats/WakeLockEvent.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/stats/zza.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/dynamic/zzc.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/ads/identifier/zza.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/ads/identifier/AdvertisingIdClient.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/GoogleMap.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/MapsInitializer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/model/GroundOverlayOptions.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/model/LatLngBounds.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/model/internal/zzb.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/model/internal/zzg.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/model/internal/IPolylineDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/model/internal/zzf.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/model/internal/zzh.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/model/internal/zzi.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/model/internal/zze.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/model/internal/zzc.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/model/internal/zzd.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/model/internal/zza.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/IStreetViewPanoramaDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/IProjectionDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzk.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzs.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/IGoogleMapDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzp.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzy.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzv.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzt.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/ILocationSourceDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzaf.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzac.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzm.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzj.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzn.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/ICameraUpdateFactoryDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zze.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzq.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzz.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzag.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/IUiSettingsDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzad.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzc.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzu.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/IStreetViewPanoramaFragmentDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzd.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzaa.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzo.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzl.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzw.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzae.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzab.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/zzx.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/IMapFragmentDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/IMapViewDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/maps/internal/IStreetViewPanoramaViewDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/FirebaseApp.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/zzg.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/zzf.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/FirebaseInstanceIdService.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/FirebaseInstanceIdService.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/messaging/FirebaseMessaging.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/messaging/FirebaseMessaging.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/messaging/FirebaseMessagingService.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/messaging/zza.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/viewpagerindicator/LinePageIndicator.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/viewpagerindicator/CirclePageIndicator.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/viewpagerindicator/TitlePageIndicator.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/renderer/XYMultipleSeriesRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/renderer/DialRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/renderer/XYSeriesRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/chart/XYChart.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/chart/BarChart.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/chart/PieChart.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/chart/ScatterChart.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/chart/PointStyle.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/chart/LineChart.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/util/MathHelper.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/model/RangeCategorySeries.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/model/TimeSeries.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/model/XYMultipleSeriesDataset.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/model/XYValueSeries.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/model/CategorySeries.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/tools/Pan.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/achartengine/tools/Zoom.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/ChartFactory.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/AFreeChart.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/RendererUtilities.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/xy/XYStepRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/xy/CandlestickRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/xy/StackedXYBarRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/xy/AbstractXYItemRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/xy/XYErrorRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/xy/XYBarRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/xy/ClusteredXYBarRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/xy/XYDifferenceRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/xy/XYSplineRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/xy/XYLineAndShapeRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/xy/StandardXYItemRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/category/AreaRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/category/AbstractCategoryItemRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/category/BarRenderer3D.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/category/LineAndShapeRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/renderer/category/BarRenderer.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/title/TextTitle.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/annotations/XYTextAnnotation.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/annotations/XYTitleAnnotation.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/annotations/XYPointerAnnotation.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/plot/CombinedRangeXYPlot.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/plot/CombinedRangeCategoryPlot.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/plot/CrosshairState.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/plot/CombinedDomainXYPlot.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/plot/CategoryPlot.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/plot/PiePlot.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/plot/PieLabelRecord.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/plot/XYPlot.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/plot/DefaultDrawingSupplier.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/plot/CombinedDomainCategoryPlot.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/plot/dial/DialPlot.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/plot/dial/StandardDialScale.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/axis/ValueAxis.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/axis/PeriodAxisLabelInfo.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/axis/DateAxis.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/axis/SegmentedTimeline.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/axis/NumberAxis.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/axis/SymbolAxis.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/axis/PeriodAxis.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/axis/CategoryAxis.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/chart/axis/LogarithmicAxis.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/DefaultKeyedValue.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/DataUtilities.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/time/RegularTimePeriod.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/time/TimeSeries.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/time/TimePeriodValuesCollection.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/time/ohlc/OHLCItem.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/jdbc/JDBCPieDataset.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/jdbc/JDBCXYDataset.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/xy/XYIntervalDataItem.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/xy/AbstractIntervalXYDataset.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/xy/IntervalXYDelegate.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/xy/XYDataItem.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/xy/VectorDataItem.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/xy/DefaultTableXYDataset.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/xy/XYSeriesCollection.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/xy/XYSeries.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/xy/DefaultHighLowDataset.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/xy/YIntervalDataItem.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/data/xy/AbstractXYDataset.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/afree/graphics/geom/RectShape.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/jraf/android/backport/switchwidget/Switch.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/FirebaseInstanceIdService.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zzai.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/images/ImageManager.java
+                </strong>
+                <strong class="debug-level">
+                 /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/FirebaseInstanceId.java
+                </strong>
+               </span>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="osbugs">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="well">
+          <p>
+           This section is related to any operating system related issues. This information was
+                                    identified from the application's manifest and we encourage you to understand the type
+                                    of vulnerabilities that live ourside your application's sandbox but may affect your
+                                     application in some way or the other.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-8 col-sm-8">
+         <div class="well">
+          <div class="row">
+           <div class="col-lg-8">
+            <h2>
+             OS Version specific bugs
+            </h2>
+            <p class="text-justify">
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+         <div class="well">
+          <p>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="plugin">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="">
+          <p>
+           Plugin content output if any
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12" id="plugin-issues-list">
+            <div class="badger-div badger-left badger-danger" data-badger="Potential Vulnerability">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/apktool/AndroidManifest.xml
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  User created permission: &lt;permission android:name="com.kbank.otp.permission.MAPS_RECEIVE" android:protectionLevel="signature"/&gt;
+                 </li>
+                 <li class="row-odd">
+                  User created permission: &lt;permission android:name="com.kbank.otp.permission.C2D_MESSAGE" android:protectionLevel="signature"/&gt;
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/apktool/AndroidManifest.xml
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  &lt;receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/&gt; 
+&lt;receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND"&gt;
+                 </li>
+                 <li class="row-odd">
+                  Use of android:launchMode=singleTask is found
+This results in AMS either resuming the earlier activity or loads it in a task with same affinity or the activity is started as a new task. This may result in Task Poisoning.
+https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-ren-chuangang.pdf
+        &lt;activity android:configChanges="locale|layoutDirection" android:label="@string/title_application" android:launchMode="singleTask" android:name="com.kbank.otp.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"&gt;
+                 </li>
+                 <li class="row-even">
+                  API Key Found
+&lt;?xml version="1.0" ?&gt;&lt;manifest android:versionCode="24" android:versionName="4.2.1" package="com.kbank.otp" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002" xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+    &lt;uses-sdk android:minSdkVersion="9" android:targetSdkVersion="23"/&gt;
+    &lt;uses-feature android:glEsVersion="0x20000" android:required="true"/&gt;
+    &lt;uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/&gt;
+    &lt;permission android:name="com.kbank.otp.permission.C2D_MESSAGE" android:protectionLevel="signature"/&gt;
+    &lt;uses-permission android:name="com.kbank.otp.permission.C2D_MESSAGE"/&gt;
+        &lt;meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCSzNhgjE648S215MjCk02Oq69MegrIpYs"/&gt;
+        &lt;activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/&gt;
+        &lt;receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND"&gt;
+                &lt;action android:name="com.google.android.c2dm.intent.RECEIVE"/&gt;
+                &lt;action android:name="com.google.android.c2dm.intent.REGISTRATION"/&gt;
+        &lt;provider android:authorities="com.kbank.otp.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/&gt;
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/NotificationCompatSideChannelService.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Be careful with use of Check permission function
+App maybe vulnerable to Privilege escalation or Confused Deputy Attack. This function can grant access to malicious application, lacking the appropriate permission, by assuming your applications permissions. This means a malicious application, without appropriate permissions, can bypass its permission check by using your applicationpermission to get access to otherwise denied resources. Use - checkCallingPermission instead.
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/NotificationCompatSideChannelService.java
+Reference: https://developer.android.com/reference/android/content/Context.html#checkCallingOrSelfPermission(java.lang.String)
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/zzf.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Be careful with use of Check permission function
+App maybe vulnerable to Privilege escalation or Confused Deputy Attack. This function can grant access to malicious application, lacking the appropriate permission, by assuming your applications permissions. This means a malicious application, without appropriate permissions, can bypass its permission check by using your applicationpermission to get access to otherwise denied resources. Use - checkCallingPermission instead.
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/zzf.java
+Reference: https://developer.android.com/reference/android/content/Context.html#checkCallingOrSelfPermission(java.lang.String)
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/FirebaseInstanceIdInternalReceiver.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Be careful with use of Check permission function
+App maybe vulnerable to Privilege escalation or Confused Deputy Attack. This function can grant access to malicious application, lacking the appropriate permission, by assuming your applications permissions. This means a malicious application, without appropriate permissions, can bypass its permission check by using your applicationpermission to get access to otherwise denied resources. Use - checkCallingPermission instead.
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/FirebaseInstanceIdInternalReceiver.java
+Reference: https://developer.android.com/reference/android/content/Context.html#checkCallingOrSelfPermission(java.lang.String)
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/MoneyTransferActivity.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Application contains hardcoded http url 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/MoneyTransferActivity.java. 
+http://localhost 
+Ignore if HSTS is implemented
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-warning" data-badger="Warning">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/jraf/android/backport/switchwidget/TwoStatePreference.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Reading files stored on External Storage makes it vulnerable to data injection attacks
+Note that this code does no error checking and there is no security enforced with these files. 
+For example, any application holding WRITE_EXTERNAL_STORAGE can write to these files.
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/content/ContextCompatKitKat.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/content/ContextCompatFroyo.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/content/ContextCompat.java
+Reference: https://developer.android.com/reference/android/content/Context.html#getExternalFilesDir(java.lang.String)
+                 </li>
+                 <li class="row-odd">
+                  Reading files stored on External Storage Public Directory makes it vulnerable to data injection attacks
+Note that this code does no error checking and there is no security enforced with these files. 
+For example, any application holding WRITE_EXTERNAL_STORAGE can write to these files.
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/WebFragment.java
+Reference: https://developer.android.com/reference/android/content/Context.html#getExternalStoragePublicDirectory(java.lang.String)
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/jraf/android/backport/switchwidget/TwoStatePreference.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  File System Access is by default enabled
+setAllowFileAccess() and setAllowContentAccess() are by default true. This should be set to false to restrict access to local data since it is used to display content from locally stored HTML or fetch HTML and other content from the server.
+Reference: https://developer.android.com/reference/android/webkit/WebSettings.html
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/MoneyTransferActivity.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/WebFragment.java
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/jraf/android/backport/switchwidget/TwoStatePreference.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Debug logs are detected
+This may allow potential leakage of information from Android applications.
+Debug logs should never be compiled into an application except during development.
+https://developer.android.com/reference/android/util/Log.html
+
+Filepath:
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/util/LogWriter.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/NotificationManagerCompat.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/media/MediaBrowserServiceCompat.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/media/MediaBrowserCompat.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/widget/TextViewCompatDonut.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/view/ViewCompat.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/app/AppCompatDelegateImplV14.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/app/AppCompatDelegate.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/app/TwilightManager.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/ViewUtils.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/AppCompatPopupWindow.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v7/widget/AppCompatDrawableManager.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/MoneyTransferActivity.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/TheApplication.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/TransactionsFragment_.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/MainActivity.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/services/FirebaseMessagingService.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/services/FirebaseInstanceIDService.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/services/FirebaseTokenService.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/atm/AtmFragment.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzs.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzqm.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/zzd.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/util/zzx.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/internal/zzo.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/FirebaseApp.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/zzg.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/zzf.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/FirebaseInstanceIdService.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/FirebaseInstanceIdInternalReceiver.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/FirebaseInstanceIdReceiver.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/messaging/zzb.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/messaging/FirebaseMessagingService.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/messaging/zza.java
+34 debug logs were found in the application
+                 </li>
+                 <li class="row-odd">
+                  Verbose logs are detected
+This may allow potential leakage of information from Android applications.
+Verbose logs should never be compiled into an application except during development.
+https://developer.android.com/reference/android/util/Log.html
+
+Filepath:
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/FragmentState.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/LoaderManagerImpl.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/BackStackRecord.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/FragmentManagerImpl.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/app/BackStackState.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/content/LocalBroadcastManager.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/graphics/drawable/VectorDrawableCompat.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzsu.java 
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzs.java
+9 verbose logs were found in the application
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-success" data-badger="Info">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/tasks/Tasks.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  The Content provider API provides a method call
+The framework does no permission checking on this entry into the content provider besides the basic ability for the application to get access to the provider at all. Any implementation of this method must do its own permission checks on incoming calls to make sure they are allowed.Failure to do so will allow unauthorized components to interact with the content provider.
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/tasks/Tasks.java
+Reference: https://bitbucket.org/secure-it-i/android-app-vulnerability-benchmarks/src/d5305b9481df3502e60e98fa352d5f58e4a69044/ICC/WeakChecksOnDynamicInvocation-InformationExposure/?at=master
+                 </li>
+                 <li class="row-odd">
+                  The Content provider API provides a method call
+The framework does no permission checking on this entry into the content provider besides the basic ability for the application to get access to the provider at all. Any implementation of this method must do its own permission checks on incoming calls to make sure they are allowed.Failure to do so will allow unauthorized components to interact with the content provider.
+Filepath: /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/tasks/Tasks.java
+Reference: https://bitbucket.org/secure-it-i/android-app-vulnerability-benchmarks/src/d5305b9481df3502e60e98fa352d5f58e4a69044/ICC/WeakChecksOnDynamicInvocation-InformationExposure/?at=master
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+            <div class="badger-div badger-left badger-warning" data-badger="Warning">
+             <br/>
+             <strong>
+              File:
+              <code>
+               /home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/org/jraf/android/backport/switchwidget/TwoStatePreference.java
+              </code>
+             </strong>
+             <br/>
+             <h4>
+              <strong class="details">
+               <div>
+                <ul>
+                 <li class="row-even">
+                  Application dynamically registers a broadcast receiver
+Application that register a broadcast receiver dynamically is vulnerable to granting unrestricted access to the broadcast receiver.
+The receiver will be called with any broadcast Intent that matches filter.
+ https://developer.android.com/reference/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver, android.content.IntentFilter)
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/android/support/v4/media/TransportMediatorJellybeanMR2.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/kbank/otp/WebFragment.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/measurement/internal/zzs.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/internal/zzrj.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/GoogleApiAvailability.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/android/gms/common/util/zzj.java
+/home/miki/Documents/GITHUB/AndroidPermissions/apks/banking_set2_qark/com.kbank.otp/classes_dex2jar/com/google/firebase/iid/FirebaseInstanceIdService.java
+                 </li>
+                </ul>
+               </div>
+              </strong>
+             </h4>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="references">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="">
+          <p>
+           This is a list of resources you may refer to understand more about android security
+                                     in general and also how specific programming mistakes or insecure-by-default settings may manifest themselves into
+                                     vulnerabilities. We are currently hand picking credible resources to add to the list. Please check for updates to get a revised list of references.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12">
+            <h2>
+             List of resources
+            </h2>
+            <br/>
+            <br/>
+            <ul>
+             <li>
+              <p class="">
+               For general Android security information:
+               <a href="http://developer.android.com/training/articles/security-tips.html">
+                http://developer.android.com/training/articles/security-tips.html
+               </a>
+              </p>
+             </li>
+             <li>
+              For information on proper TLS implementation:
+              <a href="http://developer.android.com/training/articles/security-ssl.html">
+               http://developer.android.com/training/articles/security-ssl.html
+              </a>
+             </li>
+             <li>
+              A great guide to Android security, from the Japanese Smartphone Security Association:
+              <a href="https://www.jssec.org/report/android_securecoding_en_20140801.html">
+               https://www.jssec.org/report/android_securecoding_en_20140801.html
+              </a>
+             </li>
+             <p>
+             </p>
+            </ul>
+            <br/>
+            <br/>
+            <br/>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane" id="about">
+       <div class="row">
+        <div class="col-md-12">
+         <div class="">
+          <h2>
+           <strong>
+            QUICK ANDROID REVIEW KIT
+           </strong>
+          </h2>
+          <strong>
+           Version 0.9
+          </strong>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-lg-12 col-sm-12">
+         <div class="">
+          <div class="row">
+           <div class="col-lg-12">
+            <br/>
+            <br/>
+            <br/>
+            <h4>
+             <strong>
+              Source:
+             </strong>
+            </h4>
+            <p class="">
+             Github:
+             <a href="https://www.github.com/linkedin/qark">
+              https://www.github.com/linkedin/qark
+             </a>
+             <br/>
+            </p>
+            <h4>
+             <strong>
+              Authors:
+             </strong>
+            </h4>
+            <strong>
+             Anthony Trummer:
+            </strong>
+            <a href="https://www.linkedin.com/in/tonytrummer">
+             https://www.linkedin.com/in/tonytrummer
+            </a>
+            <br/>
+            <strong>
+             Tushar Dalvi:
+            </strong>
+            <a href="https://www.linkedin.com/in/tdalvi">
+             https://www.linkedin.com/in/tdalvi
+            </a>
+            <p>
+            </p>
+            <br/>
+            <br/>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-xs-12">
+        <div class="well">
+         <p>
+          QARK Version 0.9
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--/row-offcanvas -->
+  </div>
+  <!-- /.modal -->
+  <!-- script references -->
+  <script src="js/jquery-2.1.4.min.js">
+  </script>
+  <script src="js/bootstrap.min.js">
+  </script>
+  <script src="js/scripts.js">
+  </script>
+  <link href="js/highlight/styles/magula.css" rel="stylesheet"/>
+  <script src="js/highlight/highlight.pack.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+ </body>
+</html>

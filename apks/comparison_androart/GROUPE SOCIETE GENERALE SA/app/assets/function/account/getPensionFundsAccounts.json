@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "data": [
+    {
+      "@xsi:type": "pegasus.component.brdcustomer.pensionfundaccount.bean.PensionFundAccountWithPreferences",
+      "accountNumber": "RO71BRDE450TD70441744500",
+      "accountNumberIban": "RO71BRDE450TD33344444555",
+      "accountType": "Pension fund (BR)",
+      "accountTypeId": "BRDP1",
+      "currency": "RON",
+      "closed": false,
+      "blocked": false,
+      "enabled": false,
+      "pensionDateOfBalance": "2015-05-06T16:42:49.000",
+      "pensionNetAssetValue": 9991.68,
+      "pensionTotalNumberOfUnits": 3,
+      "accountProductTypeId": "P",
+      "accountName": "Pensie",
+      "accountOrder": 29
+    }
+  ],
+  "header": {
+    "token": "rL2cGfkJV0F8lQVHAgPLvQ==",
+    "sessionTimeout": 600
+  }
+}
