@@ -33,9 +33,9 @@ class ReflectionChecker(object):
         return True if dcn in acn and self.__is_valid_to_method_call(mcl, mc) else False
 
     def detect(self):
-        title = ""
-        description = ""
-        recommendation = ""
+        title = "Use of Reflection"
+        description = "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner. "
+        recommendation = "We recommend to review the usage of reflection in the application."
         ret_list = []
         evidence = []
 

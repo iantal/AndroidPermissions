@@ -97,8 +97,8 @@ class MainApplication(object):
     def analyse(self):
         # apk_file = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/com_grppl_android_shell_halifax/com.grppl.android.shell.halifax.apk"
         #apk_file = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/test_apks/insecurebank/InsecureBankv2.apk"
-        apk_file = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/de_number26_android/de.number26.android.apk"
-        # apk_file = self.filename
+        # apk_file = "/home/miki/Documents/GITHUB/AndroidPermissions/apks/playstore_apps/de_number26_android/de.number26.android.apk"
+        apk_file = self.filename
 
         print("## " + apk_file)
         l = apk_file.split("/")
@@ -106,7 +106,7 @@ class MainApplication(object):
         print("## " + base_dir)
 
         # TODO: uncomment after testing
-        # self.__extract(apk_file)
+        self.__extract(apk_file)
 
         xml_file = os.path.join(base_dir, 'app', 'AndroidManifest.xml')
         parser = XMLParser(xml_file)
@@ -118,39 +118,39 @@ class MainApplication(object):
         self.setup_visualizations(base_dir, package_name)
 
         ap = ApplicationAnalyzer(base_dir)
-        if True:
-        # if self.v1_1.get() == "ok":
-        #     print("[*] Crypto")
-        #     ap.find_crypto_vulns()
-        #     print("[+] Done")
-        # if self.v2_1.get() == "ok":
+        # if True:
+        if self.v1_1.get() == "ok":
+            print("[*] Crypto")
+            ap.find_crypto_vulns()
+            print("[+] Done")
+        if self.v2_1.get() == "ok":
             print("[*] Manifest")
             ap.find_manifest_vulns()
             print("[+] Done")
-        # if self.v3_1.get() == "ok":
-        #     print("[*] Webview")
-        #     ap.find_webview_vulns()
-        #     print("[+] Done")
-        # if self.v4_1.get() == "ok":
-        #     print("[*] Logs")
-        #     ap.find_logs()
-        #     print("[+] Done")
-        # if self.v5_1.get() == "ok":
+        if self.v3_1.get() == "ok":
+            print("[*] Webview")
+            ap.find_webview_vulns()
+            print("[+] Done")
+        if self.v4_1.get() == "ok":
+            print("[*] Logs")
+            ap.find_logs()
+            print("[+] Done")
+        if self.v5_1.get() == "ok":
             print("[*] Obfuscation")
             ap.find_obfuscation()
             print("[+] Done")
-        # if self.v6_1.get() == "ok":
-        #     print("[*] Reflection")
-        #     ap.find_reflection()
-        #     print("[+] Done")
-        # if self.v7_1.get() == "ok":
+        if self.v6_1.get() == "ok":
+            print("[*] Reflection")
+            ap.find_reflection()
+            print("[+] Done")
+        if self.v7_1.get() == "ok":
             print("[*] Signature")
             ap.find_signature()
             print("[+] Done")
-        # if self.v8_1.get() == "ok":
-        #     print("[*] Running radare2")
-        #     ap.run_radare()
-        #     print("[+] Done")
+        if self.v8_1.get() == "ok":
+            print("[*] Running radare2")
+            ap.run_radare()
+            print("[+] Done")
 
         ch = ChordVisualizer(base_dir, "/".join(package_name.split(".")))
         data = json.load(open(os.path.join(base_dir, 'report', 'chord.json')))
@@ -163,6 +163,7 @@ class MainApplication(object):
 
         ha.get_directory_tree(dataa, "/home/miki/Documents/GITHUB/AndroidPermissions/web/hotspot/a.json")
 
+        self.create_report(base_dir, package_name, "Demo app")
         self.create_report(base_dir, package_name, "Demo app")
         print("[+] Done")
 
@@ -196,7 +197,7 @@ class MainApplication(object):
 
     def __take_screenshot(self, base_dir, package_name):
 
-        port = 8002
+        port = 8004
         skt = ScreenshotTaker()
 
         webserver_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "web")
@@ -233,8 +234,8 @@ def main():
     root.geometry("910x600")
     root.configure(background="#a1dbcd")
     app = MainApplication(root)
-    # root.mainloop()
-    app.analyse()
+    root.mainloop()
+    # app.analyse()
 
 if __name__ == "__main__":
     main()

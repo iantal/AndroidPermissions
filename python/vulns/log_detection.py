@@ -19,8 +19,8 @@ class LogDetector(object):
             f.close()
 
 
-        title = ""
-        description = ""
+        title = "Application is using Logs"
+        description = "Logs were found during the analysis process. When improperly used, they may expose sensitive information such as passwords, usernames, etc."
         recommendation = ""
         ret_list = []
         evidence = []
