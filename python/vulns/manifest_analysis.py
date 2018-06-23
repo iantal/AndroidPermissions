@@ -74,6 +74,17 @@ class ManifestAnalyser(object):
                 'Set the protection level to signature instead of normal. Doing so, only applications'
                 ' signed with the same certificate could obtain the permission.'
             ),
+
+            'b_protected_but_vulnerable': (
+                '%s (%s) is protected by a custom permission.',
+                'medium',
+                'A%s %s is found to be protected by a custom defined permission. The permission can '
+                'be obtained by malicious apps installed prior to this one. More info at '
+                '\\url{https://github.com/commonsguy/cwac-security/blob/master/PERMS.md}',
+                'Failing to protect components could leave them vulnerable to attack by malicious apps.' 
+                'The component should be reviewed for vulnerabilities, such as injection and information leakage. '
+            ),
+
             'a_prot_danger': (
                 '%s (%s) is Protected by a permission, but the protection level of '
                 'the permission should be checked.%s [android:exported=true]',
@@ -768,12 +779,21 @@ class ManifestAnalyser(object):
                 if tag_full_name != "Inexistent":
                     if node.getAttribute("android:exported") == "true":
                         item = node.getAttribute("android:name")
-
                         res = self.__get_permission_if_exists(node)
                         perm, is_perm_exist = res["perm"], res["is_perm_exist"]
+                        print("Item: " + item + " perm: " + perm + " is_perm_ex: " + str(is_perm_exist))
 
                         if True:#item != self.extracted_manifest_data['mainactivity']:
                             if is_perm_exist:
+
+                                self.findings.append(
+                                    (
+                                        "b_protected_but_vulnerable",
+                                        (tag_full_name, self.__escape_characters(item)),
+                                        ('', tag_full_name,),
+                                    )
+                                )
+
                                 perm_appl_level = node.getAttribute("android:permission")
                                 possible_findings = [
                                     "a_prot_normal",
@@ -833,6 +853,13 @@ class ManifestAnalyser(object):
 
                             if True:
                                 if is_perm_exist:
+                                    self.findings.append(
+                                        (
+                                            "b_protected_but_vulnerable",
+                                            (tag_full_name, self.__escape_characters(item)),
+                                            ('', tag_full_name,),
+                                        )
+                                    )
                                     perm_appl_level = node.getAttribute("android:permission")
                                     possible_findings = [
                                         "a_prot_normal",

@@ -4,12 +4,9 @@
     <list default="true" id="7bb13603-be0e-45bf-888f-a0ab45ef8049" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apks/comparison_androart/GROUPE SOCIETE GENERALE SA/report/vulns/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/apks/comparison_androart/GROUPE SOCIETE GENERALE SA/report/vulns/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/comparison_androart/at_spardat_bcrmobile/report/vulns/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/apks/comparison_androart/at_spardat_bcrmobile/report/vulns/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/report/vulns/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/report/vulns/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/report/vulns/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/report/vulns/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/comparison_androart/de_number26_android/report/vulns/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/apks/comparison_androart/de_number26_android/report/vulns/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/vulns/manifest_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/manifest_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/vulns/tests/test_manifest_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/vulns/tests/test_manifest_analysis.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,40 +17,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apks/comparison_androart/de_number26_android/report/vulns/manifest.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
-              <folding>
-                <element signature="e#22#546#0" />
-                <element signature="e#552#1122#0" />
-                <element signature="e#1128#1697#0" />
-                <element signature="e#1127#1686#0" />
-                <element signature="e#1692#2179#0" />
-                <element signature="e#2185#2801#0" />
-                <element signature="e#2807#3422#0" />
-                <element signature="e#3428#3965#0" />
-                <element signature="e#3971#4506#0" />
-                <element signature="e#4512#4995#0" />
-                <element signature="e#5001#5479#0" />
-                <element signature="e#5485#5976#0" />
-                <element signature="e#5982#6316#0" />
-                <element signature="e#6322#6656#0" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="obfuscation.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/report/vulns/obfuscation.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="manifest_analysis.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python/vulns/manifest_analysis.py">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/app/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="806" column="37" lean-forward="true" selection-start-line="806" selection-start-column="37" selection-end-line="806" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#354#32180#0" />
-              </folding>
+            <state relative-caret-position="158">
+              <caret line="95" column="34" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -70,55 +43,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="obfuscation.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/report/vulns/obfuscation.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apks/comparison_androart/GROUPE SOCIETE GENERALE SA/report/vulns/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manifest_test.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/report/vulns/manifest_test.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/report/vulns/manifest.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-              <folding>
-                <element signature="e#22#590#0" />
-                <element signature="e#596#1074#0" />
-                <element signature="e#506#840#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apks/comparison_androart/de_number26_android/app/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="33" column="30" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="30" />
-              <folding>
-                <element signature="n#application#0;n#manifest#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/app/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="20" column="172" selection-start-line="20" selection-start-column="167" selection-end-line="20" selection-end-column="172" />
+            <state relative-caret-position="383">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -126,17 +60,38 @@
       <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/report/vulns/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+            <state relative-caret-position="383">
+              <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/app/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="57" column="127" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="127" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/report/vulns/manifest.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" column="20" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="42" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manifest_analysis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/vulns/manifest_analysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="861" column="37" selection-start-line="861" selection-start-column="37" selection-end-line="861" selection-end-column="37" />
               <folding>
-                <element signature="e#22#339#0" />
-                <element signature="e#345#839#0" />
-                <element signature="e#845#1385#0" />
-                <element signature="e#1391#1933#0" />
-                <element signature="e#1939#2498#0" />
-                <element signature="e#1956#2516#0" />
-                <element signature="e#2522#3005#0" />
-                <element signature="e#3011#3489#0" />
+                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#354#32837#0" />
               </folding>
             </state>
           </provider>
@@ -153,7 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>spla</find>
       <find>SplashScreenActivity</find>
       <find>PushNotificationHa</find>
       <find>Secret</find>
@@ -183,6 +137,7 @@
       <find>MainA</find>
       <find>SplashActivity</find>
       <find>print</find>
+      <find>AppMeasurementInstallReferrerReceiver</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -236,17 +191,17 @@
         <option value="$PROJECT_DIR$/python/ui/run_quark.py" />
         <option value="$PROJECT_DIR$/apks/comparison_androart/at_spardat_bcrmobile/report/vulns/manifest_test.json" />
         <option value="$PROJECT_DIR$/apks/comparison_androart/at_spardat_bcrmobile/report/vulns/manifest.json" />
-        <option value="$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/report/vulns/manifest_test.json" />
-        <option value="$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/report/vulns/manifest.json" />
         <option value="$PROJECT_DIR$/apks/comparison_androart/de_number26_android/report/vulns/manifest_test.json" />
         <option value="$PROJECT_DIR$/apks/comparison_androart/de_number26_android/report/vulns/manifest.json" />
+        <option value="$PROJECT_DIR$/apks/comparison_androart/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/report/vulns/manifest_test.json" />
+        <option value="$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/report/vulns/manifest_test.json" />
+        <option value="$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/report/vulns/manifest.json" />
+        <option value="$PROJECT_DIR$/python/vulns/manifest_analysis.py" />
         <option value="$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/report/vulns/manifest_test.json" />
         <option value="$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/report/vulns/manifest.json" />
-        <option value="$PROJECT_DIR$/apks/comparison_androart/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/report/vulns/manifest_test.json" />
         <option value="$PROJECT_DIR$/python/vulns/tests/test_manifest_analysis.py" />
         <option value="$PROJECT_DIR$/apks/comparison_androart/GROUPE SOCIETE GENERALE SA/report/vulns/manifest_test.json" />
         <option value="$PROJECT_DIR$/apks/comparison_androart/GROUPE SOCIETE GENERALE SA/report/vulns/manifest.json" />
-        <option value="$PROJECT_DIR$/python/vulns/manifest_analysis.py" />
       </list>
     </option>
   </component>
@@ -285,7 +240,57 @@
               <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
               <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
               <item name="apks" type="462c0819:PsiDirectoryNode" />
-              <item name="comparison_qark" type="462c0819:PsiDirectoryNode" />
+              <item name="comparison_androart" type="462c0819:PsiDirectoryNode" />
+              <item name="com.kbank.otp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="comparison_androart" type="462c0819:PsiDirectoryNode" />
+              <item name="com.kbank.otp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="comparison_androart" type="462c0819:PsiDirectoryNode" />
+              <item name="com.kbank.otp" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="comparison_androart" type="462c0819:PsiDirectoryNode" />
+              <item name="com.kbank.otp" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+              <item name="vulns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="comparison_androart" type="462c0819:PsiDirectoryNode" />
+              <item name="GROUPE SOCIETE GENERALE SA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="comparison_androart" type="462c0819:PsiDirectoryNode" />
+              <item name="GROUPE SOCIETE GENERALE SA" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AndroidPermissions" type="462c0819:PsiDirectoryNode" />
+              <item name="apks" type="462c0819:PsiDirectoryNode" />
+              <item name="comparison_androart" type="462c0819:PsiDirectoryNode" />
+              <item name="GROUPE SOCIETE GENERALE SA" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+              <item name="vulns" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AndroidPermissions" type="b2602c69:ProjectViewProjectNode" />
@@ -398,7 +403,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289183" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49933776" visible="true" weight="0.42607313" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49933776" visible="true" weight="0.2607313" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -441,34 +446,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apks/banking_set2/com.advantage.RaiffeisenBank/report/vulns/enabledjs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="161" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="161" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apks/banking_set2/com.advantage.RaiffeisenBank/app/smali/com/thinkdesquared/banking/WebViewActivity.smali">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="178" column="59" selection-start-line="178" selection-start-column="55" selection-end-line="178" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apks/banking_set2/com.advantage.RaiffeisenBank/report/vulns/logs.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apks/banking_set2/com.advantage.RaiffeisenBank/report/vulns/obfuscation.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apks/banking_set2/com.kbank.otp/app/smali/com/kbank/otp/MoneyTransferActivity.smali">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -664,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/app/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="20" column="172" selection-start-line="20" selection-start-column="167" selection-end-line="20" selection-end-column="172" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apks/comparison_androart/at_spardat_bcrmobile/app/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -706,30 +680,6 @@
             <element signature="e#1379#1949#0" />
             <element signature="e#1955#2535#0" />
             <element signature="e#2541#3109#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/report/vulns/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="e#22#590#0" />
-            <element signature="e#596#1074#0" />
-            <element signature="e#506#840#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/report/vulns/manifest_test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="21" column="1" lean-forward="true" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="e#22#590#0" />
-            <element signature="e#596#1074#0" />
-            <element signature="e#1080#1414#0" />
           </folding>
         </state>
       </provider>
@@ -780,40 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/report/vulns/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-          <folding>
-            <element signature="e#22#339#0" />
-            <element signature="e#345#839#0" />
-            <element signature="e#845#1385#0" />
-            <element signature="e#1391#1933#0" />
-            <element signature="e#1939#2498#0" />
-            <element signature="e#1956#2516#0" />
-            <element signature="e#2522#3005#0" />
-            <element signature="e#3011#3489#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/report/vulns/manifest_test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="51" column="1" lean-forward="true" selection-end-line="51" selection-end-column="1" />
-          <folding>
-            <element signature="e#22#339#0" />
-            <element signature="e#345#839#0" />
-            <element signature="e#845#1385#0" />
-            <element signature="e#1391#1933#0" />
-            <element signature="e#1939#2498#0" />
-            <element signature="e#2504#3064#0" />
-            <element signature="e#3070#3553#0" />
-            <element signature="e#3559#4037#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com.ofss.fcdb.mobile.android.alpharom.alphaandroid/report/vulns/manifest_test.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -821,17 +737,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/GROUPE SOCIETE GENERALE SA/report/vulns/manifest.json">
+    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/app/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="158">
+          <caret line="95" column="34" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/GROUPE SOCIETE GENERALE SA/report/vulns/manifest_test.json">
+    <entry file="file://$PROJECT_DIR$/python/vulns/obfuscation_detection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="16" selection-end-line="21" selection-end-column="1" />
+        <state>
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/report/vulns/manifest_test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="9" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/report/vulns/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="20" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="42" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com_db_pwcc_dbmobile/report/vulns/obfuscation.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/app/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="57" column="127" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/vulns/manifest_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="861" column="37" selection-start-line="861" selection-start-column="37" selection-end-line="861" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#354#32837#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/report/vulns/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/report/vulns/manifest_test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="46" column="23" lean-forward="true" selection-end-line="63" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -845,16 +812,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/vulns/manifest_analysis.py">
+    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/GROUPE SOCIETE GENERALE SA/report/vulns/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="806" column="37" lean-forward="true" selection-start-line="806" selection-start-column="37" selection-end-line="806" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#354#32180#0" />
-          </folding>
+        <state relative-caret-position="383">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/GROUPE SOCIETE GENERALE SA/report/vulns/manifest_test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="34" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apks/comparison_androart/com.kbank.otp/report/vulns/obfuscation.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

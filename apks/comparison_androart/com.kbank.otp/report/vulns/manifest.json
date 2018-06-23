@@ -43,6 +43,18 @@
       "recommendation": "It is recommended to set the protection level to signature, so only applications signed with the same certificate can obtain the permission."
     },
     {
+      "title": "Broadcast Receiver (com. google. android. gms. measurement. AppMeasurementInstallReferrerReceiver) is protected by a custom permission.",
+      "stat": "medium",
+      "description": "A Broadcast Receiver is found to be protected by a custom defined permission. The permission can be obtained by malicious apps installed prior to this one. More info at \\url{https://github.com/commonsguy/cwac-security/blob/master/PERMS.md}",
+      "recommendation": "Failing to protect components could leave them vulnerable to attack by malicious apps.The component should be reviewed for vulnerabilities, such as injection and information leakage. "
+    },
+    {
+      "title": "Broadcast Receiver (com. google. firebase. iid. FirebaseInstanceIdReceiver) is protected by a custom permission.",
+      "stat": "medium",
+      "description": "A Broadcast Receiver is found to be protected by a custom defined permission. The permission can be obtained by malicious apps installed prior to this one. More info at \\url{https://github.com/commonsguy/cwac-security/blob/master/PERMS.md}",
+      "recommendation": "Failing to protect components could leave them vulnerable to attack by malicious apps.The component should be reviewed for vulnerabilities, such as injection and information leakage. "
+    },
+    {
       "title": "Service (com. google. firebase. iid. FirebaseInstanceIdService) is not Protected. [android:exported=true]",
       "stat": "high",
       "description": "A Service is found to be shared with other apps on the device therefore leaving it accessible to any other application on the device.",
