@@ -768,10 +768,11 @@ class ManifestAnalyser(object):
                 if tag_full_name != "Inexistent":
                     if node.getAttribute("android:exported") == "true":
                         item = node.getAttribute("android:name")
+
                         res = self.__get_permission_if_exists(node)
                         perm, is_perm_exist = res["perm"], res["is_perm_exist"]
 
-                        if item != self.extracted_manifest_data['mainactivity']:
+                        if True:#item != self.extracted_manifest_data['mainactivity']:
                             if is_perm_exist:
                                 perm_appl_level = node.getAttribute("android:permission")
                                 possible_findings = [
@@ -824,12 +825,13 @@ class ManifestAnalyser(object):
                                         )
 
                     elif node.getAttribute("android:exported") != 'false':
+
                         if self.__is_intent_filter(node):
                             item = node.getAttribute("android:name")
                             res = self.__get_permission_if_exists(node)
                             perm, is_perm_exist = res["perm"], res["is_perm_exist"]
 
-                            if item != self.extracted_manifest_data['mainactivity']:
+                            if True:
                                 if is_perm_exist:
                                     perm_appl_level = node.getAttribute("android:permission")
                                     possible_findings = [
@@ -1082,7 +1084,6 @@ class ManifestAnalyser(object):
             escaped = "\\" + ch + " "
             s = escaped.join(s.split(ch))
 
-        print("[DEBUG] " + s)
 
         return s
 
